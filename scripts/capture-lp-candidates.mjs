@@ -243,6 +243,74 @@ async function createContactSheet(browser, sections, outputPath, title) {
   await context.close();
 }
 
+async function createSectionPreview(browser, sections, outputPath, title, viewport) {
+  const context = await browser.newContext({
+    viewport: { width: viewport.width, height: viewport.height },
+    deviceScaleFactor: 1,
+    locale: "ja-JP"
+  });
+  const page = await context.newPage();
+  const rows = await Promise.all(
+    sections.map(async (section) => {
+      const encoded = await fs.readFile(section.path, "base64");
+      return `
+        <section class="section">
+          <img src="data:image/png;base64,${encoded}" alt="${section.id}" />
+        </section>
+      `;
+    })
+  );
+
+  await page.setContent(
+    `<!doctype html>
+    <html lang="ja">
+      <head>
+        <meta charset="utf-8" />
+        <title>${title}</title>
+        <style>
+          * { box-sizing: border-box; }
+          html,
+          body {
+            margin: 0;
+            padding: 0;
+            background: white;
+          }
+          .sheet {
+            width: ${viewport.width}px;
+            margin: 0;
+            padding: 0;
+            background: white;
+          }
+          .section {
+            margin: 0;
+            padding: 0;
+            background: white;
+          }
+          img {
+            display: block;
+            width: 100%;
+            height: auto;
+          }
+        </style>
+      </head>
+      <body>
+        <main class="sheet">
+          ${rows.join("")}
+        </main>
+      </body>
+    </html>`,
+    { waitUntil: "load" }
+  );
+
+  await page.evaluate(async () => {
+    const images = Array.from(document.images);
+    await Promise.all(images.map((image) => image.decode().catch(() => {})));
+  });
+
+  await page.screenshot({ path: outputPath, fullPage: true, timeout: 60000 });
+  await context.close();
+}
+
 const candidates = candidateData.candidates.slice(0, candidateLimit);
 await fs.mkdir(outputRoot, { recursive: true });
 
@@ -294,6 +362,7 @@ try {
         const firstViewPath = path.join(candidateDir, `${candidate.id}_${viewport.key.toUpperCase()}_first_view.png`);
         const fullPagePath = path.join(candidateDir, `${candidate.id}_${viewport.key.toUpperCase()}_full.png`);
         const contactSheetPath = path.join(candidateDir, `${candidate.id}_${viewport.key.toUpperCase()}_sections.png`);
+        const sectionPreviewPath = path.join(candidateDir, `${candidate.id}_${viewport.key.toUpperCase()}_sections_preview.png`);
         const sectionsDir = path.join(candidateDir, `${viewport.key}_sections`);
         await fs.mkdir(sectionsDir, { recursive: true });
 
@@ -326,11 +395,20 @@ try {
           `${candidate.id} ${viewport.label} Section Index`
         );
 
+        await createSectionPreview(
+          browser,
+          sections,
+          sectionPreviewPath,
+          `${candidate.id} ${viewport.label} Section Preview`,
+          viewport
+        );
+
         result.status = "captured";
         result.screenshots = {
           fullPage: fullPagePath,
           firstView: firstViewPath,
-          sectionIndex: contactSheetPath
+          sectionIndex: contactSheetPath,
+          sectionPreview: sectionPreviewPath
         };
         result.sections = sections;
       } catch (error) {
