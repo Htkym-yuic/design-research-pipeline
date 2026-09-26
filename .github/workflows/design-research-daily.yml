@@ -32,11 +32,12 @@ jobs:
       - name: Extract LP Archive candidates
         run: npm run extract:lp:test
 
-      - name: Capture screenshots
-        run: npm run capture:test
-
       - name: Capture LP candidate screenshots
         run: LP_CANDIDATE_LIMIT=1 LP_SECTION_LIMIT=6 npm run capture:lp:candidates
+
+      - name: Capture screenshots
+        timeout-minutes: 5
+        run: npm run capture:test
 
       - name: Upload candidate artifact
         uses: actions/upload-artifact@v4
