@@ -27,7 +27,18 @@
 | Mixed | Pinterest | `https://www.pinterest.jp` |
 | Parts | Parts. | `https://partsdesign.net/` |
 
-初期テストでは、各サイトをPCファーストビューとSPファーストビューで撮影します。
+初期参考元の接続テストでは、各サイトをPCファーストビューとSPファーストビューで撮影します。
+
+LP候補の本取得では、既存のLP分析ページに合わせて以下を基本セットにします。
+
+- PC Full Page
+- PC First View
+- PC Section一覧
+- SP Full Page
+- SP First View
+- SP Section一覧
+
+Section一覧は分析用の目次画像です。裏側には `S01` / `C01` 形式の個別切り出し候補とy座標を残し、Notionの「Section位置索引」「パーツ切り出し指示書」で確認・調整できるようにします。
 
 ## 候補抽出
 
