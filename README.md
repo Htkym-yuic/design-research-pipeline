@@ -1,30 +1,61 @@
 # design-research-pipeline
 
-Design research pipeline for collecting, capturing, analyzing, and exporting reusable design knowledge.
+Creative Brief Studio AIとは分離して運用する、デザインリサーチ用パイプラインです。
 
-This repository is intended to be separate from Creative Brief Studio AI. It will be used as the pipeline that creates structured design knowledge, while Creative Brief Studio AI will consume the final knowledge output.
+このリポジトリでは、LP / Banner / Web / Graphic / Parts / Patterns の参考収集、スクリーンショット取得、分析、Dropbox / Notion連携、そして最終的なCreative Brief Studio AIへのナレッジ同期を行う予定です。
 
-## Purpose
+## 目的
 
-This pipeline is planned to support research across:
+- デザイン参考の収集と一次資料管理
+- PC / SP のスクリーンショット取得
+- レイアウト、情報設計、CTA、配色、タイポグラフィ、再利用パターンの分析
+- Dropboxへの画像・素材保存
+- Notionへの人が読む分析結果の登録
+- Creative Brief Studio AIが利用できる構造化ナレッジの生成
+- Creative Brief Studio AI側への同期
 
-- LP
-- Banner
-- Web
-- Graphic
-- Parts
-- Patterns
+## 対象ライブラリ
 
-## Planned Workflow
+| 種別 | ID例 | Notion | Dropbox |
+| --- | --- | --- | --- |
+| LP | `LP-0001` | `01｜LPリサーチライブラリー` | `LP_Research_Library` |
+| Banner | `BN-0001` | `02｜バナーリサーチライブラリー` | `Banner_Research_Library` |
+| Web | `WEB-0001` | `03｜Webサイトリサーチライブラリー` | `Web_Research_Library` |
+| Graphic | `GR-0001` | `04｜グラフィックデザインリサーチライブラリー` | `Graphic_Research_Library` |
+| Parts | `PT-0001` | `05｜デザインパーツライブラリ` | `Parts_Research_Library` |
+| Patterns | `PATTERN-0001` | `06｜デザイン原則・パターン` | `Design_Research_System` |
 
-- Collect design references from target sources
-- Capture screenshots for desktop and mobile views
-- Analyze layout, visual hierarchy, copy, CTA, color, typography, and reusable patterns
-- Store source materials and screenshots in Dropbox
-- Save human-readable research notes and analysis in Notion
-- Generate structured knowledge data for downstream use
-- Sync final knowledge into Creative Brief Studio AI
+## 連携先
 
-## Visibility
+- Dropbox正本ルート: `/design/Design_Research_Library/`
+- Notion管理ページ: `02｜デザインリサーチ`
+- GitHubナレッジ出力: `knowledge/`
+- Creative Brief Studio AI同期用出力: `exports/creative-brief-studio-ai/`
 
-This repository should be kept private by default because it may contain research sources, operational notes, and integration configuration.
+## ディレクトリ
+
+```text
+.
+├── .github/workflows/
+├── docs/
+├── exports/
+│   └── creative-brief-studio-ai/
+├── knowledge/
+│   ├── lp/
+│   ├── banner/
+│   ├── web/
+│   ├── graphic/
+│   ├── parts/
+│   └── patterns/
+└── scripts/
+```
+
+## 定期実行
+
+初期状態では、GitHub Actionsに手動実行と毎日実行の入口だけを用意しています。
+
+実際のスクリーンショット取得、Dropbox保存、Notion登録、Creative Brief Studio AI同期には、各サービスの接続情報をGitHub Secretsへ安全に登録してから処理を追加します。
+
+## 公開範囲
+
+このリポジトリはprivate運用を前提にします。調査元URL、分析メモ、連携設定、将来的なAPI連携情報を扱うためです。
