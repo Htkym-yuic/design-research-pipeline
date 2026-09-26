@@ -1,6 +1,7 @@
 import { chromium } from "playwright";
 import fs from "node:fs/promises";
 import path from "node:path";
+import sharp from "sharp";
 
 const candidatesPath = process.env.LP_CANDIDATES_FILE
   ? path.resolve(process.env.LP_CANDIDATES_FILE)
@@ -10,6 +11,8 @@ const candidateData = JSON.parse(await fs.readFile(candidatesPath, "utf8"));
 const outputRoot = process.env.LP_CANDIDATE_OUTPUT_DIR || "screenshots/lp-candidates";
 const candidateLimit = Number.parseInt(process.env.LP_CANDIDATE_LIMIT || `${candidateData.candidates.length}`, 10);
 const sectionLimit = Number.parseInt(process.env.LP_SECTION_LIMIT || "8", 10);
+const notionImageWidth = Number.parseInt(process.env.LP_NOTION_IMAGE_WIDTH || "720", 10);
+const notionImageQuality = Number.parseInt(process.env.LP_NOTION_IMAGE_QUALITY || "78", 10);
 
 const viewports = [
   { key: "pc", label: "PC", width: 1200, height: 900, isMobile: false },
@@ -243,6 +246,19 @@ async function createContactSheet(browser, sections, outputPath, title) {
   await context.close();
 }
 
+async function createNotionImage(sourcePath, outputPath) {
+  await sharp(sourcePath, { limitInputPixels: false })
+    .resize({
+      width: notionImageWidth,
+      withoutEnlargement: false
+    })
+    .jpeg({
+      quality: notionImageQuality,
+      mozjpeg: true
+    })
+    .toFile(outputPath);
+}
+
 const candidates = candidateData.candidates.slice(0, candidateLimit);
 await fs.mkdir(outputRoot, { recursive: true });
 
@@ -295,6 +311,8 @@ try {
         const fullPagePath = path.join(candidateDir, `${candidate.id}_${viewport.key.toUpperCase()}_full.png`);
         const contactSheetPath = path.join(candidateDir, `${candidate.id}_${viewport.key.toUpperCase()}_sections.png`);
         const sectionPreviewPath = path.join(candidateDir, `${candidate.id}_${viewport.key.toUpperCase()}_sections_preview.png`);
+        const notionFirstViewPath = path.join(candidateDir, `${candidate.id}_${viewport.key.toUpperCase()}_first_view_notion.jpg`);
+        const notionSectionsPath = path.join(candidateDir, `${candidate.id}_${viewport.key.toUpperCase()}_sections_notion.jpg`);
         const sectionsDir = path.join(candidateDir, `${viewport.key}_sections`);
         await fs.mkdir(sectionsDir, { recursive: true });
 
@@ -328,13 +346,17 @@ try {
         );
 
         await fs.copyFile(fullPagePath, sectionPreviewPath);
+        await createNotionImage(firstViewPath, notionFirstViewPath);
+        await createNotionImage(fullPagePath, notionSectionsPath);
 
         result.status = "captured";
         result.screenshots = {
           fullPage: fullPagePath,
           firstView: firstViewPath,
           sectionIndex: contactSheetPath,
-          sectionPreview: sectionPreviewPath
+          sectionPreview: sectionPreviewPath,
+          notionFirstView: notionFirstViewPath,
+          notionSections: notionSectionsPath
         };
         result.sections = sections;
       } catch (error) {
@@ -356,7 +378,9 @@ const summary = {
   outputRoot,
   candidateCount: candidates.length,
   sectionLimit,
-  captureSet: ["fullPage", "firstView", "sectionIndex", "sectionSlices"],
+  notionImageWidth,
+  notionImageQuality,
+  captureSet: ["fullPage", "firstView", "sectionIndex", "sectionSlices", "notionFirstView", "notionSections"],
   results
 };
 

@@ -9,6 +9,7 @@
     "extract:lp:test": "node scripts/extract-lp-archive-candidates.mjs"
   },
   "dependencies": {
-    "playwright": "^1.55.0"
+    "playwright": "^1.55.0",
+    "sharp": "^0.35.4"
   }
 }
