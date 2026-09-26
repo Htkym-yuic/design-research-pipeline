@@ -34,8 +34,7 @@ async function hideElements(page, selectors) {
 
   for (const selector of uniqueSelectors) {
     const hiddenCount = await page
-      .locator(selector)
-      .evaluateAll((elements) => {
+      .$$eval(selector, (elements) => {
         for (const element of elements) {
           element.setAttribute("data-screenshot-hidden", "true");
           element.style.setProperty("display", "none", "important");
