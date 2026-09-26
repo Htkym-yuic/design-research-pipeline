@@ -120,3 +120,74 @@ npm run knowledge:crosscheck-lp -- --input <LPフォルダ>
 `knowledge:validate-lp` は、LP ID、URL、参考元詳細URL、Dropbox正本パス、GitHubナレッジパス、CBS同期状態など、分析・ナレッジ化に必要な項目を確認します。
 
 `knowledge:crosscheck-lp` は、PC / SP の Full Page、First View、Section一覧、個別セクション画像、Notion用画像、`metadata.json` を確認します。SP Full Page はスマホ幅として扱えるよう、430px以下であることを検証します。
+
+## 自動化（GitHub Actions）
+
+`.github/workflows/design-research-daily.yml` が、LPの日次軽量分析パイプライン（収集→スクショ取得→Dropbox保存→Notion登録）をMacを起動せずに実行する。毎日09:00 JSTに自動実行されるほか、`workflow_dispatch`で手動実行もできる。
+
+### 必要なGitHub Secrets
+
+リポジトリの `Settings > Secrets and variables > Actions > Secrets` に登録する（値をリポジトリへ直接保存しない）。
+
+| Secret名 | 用途 |
+| --- | --- |
+| `DROPBOX_APP_KEY` | DropboxアプリのApp key |
+| `DROPBOX_APP_SECRET` | Dropboxアプリのapp secret |
+| `DROPBOX_REFRESH_TOKEN` | Dropboxのリフレッシュトークン（長期間有効。実行のたびに短命なアクセストークンへ交換する） |
+| `NOTION_TOKEN` | Notion Internal Integration Token |
+| `OPENAI_API_KEY` または `ANTHROPIC_API_KEY` | 将来、分析処理でLLMを使う場合に備えて（現時点の日次パイプラインでは未使用） |
+
+Dropboxのリフレッシュトークンの取得手順（概要）：Dropbox App Console でアプリを作成し、OAuth2のAuthorization Code フローに `token_access_type=offline` を指定して認可コードを取得、`https://api.dropboxapi.com/oauth2/token` へ交換リクエストを送ると `refresh_token` が得られる。
+
+### 必要なGitHub Variables
+
+`Settings > Secrets and variables > Actions > Variables` に登録する（秘密情報ではないのでVariablesでよい）。
+
+| Variable名 | 例 | 用途 |
+| --- | --- | --- |
+| `DROPBOX_DESIGN_ROOT` | `/design/Design_Research_Library` | Dropbox正本ルート |
+| `NOTION_LP_DATA_SOURCE_ID` | `39624d4f-a671-8094-ba0c-000b11fefbd0` | NotionのLPリサーチライブラリーのデータソースID |
+| `DAILY_LP_LIMIT` | `2` | 日次で新規抽出・撮影するLP候補数 |
+| `DRY_RUN` | `true` | 未設定または`true`の場合、Dropbox/Notionへ実際には書き込まない（安全側の既定値） |
+
+LP以外（バナー・Web・グラフィック・パーツ・パターン）は、まだNotionデータソースIDが未確定のため、確定後に以下のVariable名で登録する想定（現時点ではコード側は未対応）。
+
+| Variable名（予定） | 用途 |
+| --- | --- |
+| `NOTION_BANNER_DATA_SOURCE_ID` | NotionのバナーリサーチライブラリーのデータソースID |
+| `NOTION_WEB_DATA_SOURCE_ID` | NotionのウェブサイトリサーチライブラリーのデータソースID |
+| `NOTION_GRAPHIC_DATA_SOURCE_ID` | NotionのグラフィックデザインリサーチライブラリーのデータソースID |
+| `NOTION_PARTS_DATA_SOURCE_ID` | NotionのデザインパーツライブラリのデータソースID |
+| `NOTION_PATTERNS_DATA_SOURCE_ID` | Notionのデザイン原則・パターンのデータソースID |
+| `DAILY_BANNER_LIMIT` / `DAILY_WEB_LIMIT` / `DAILY_GRAPHIC_LIMIT` / `DAILY_PARTS_LIMIT` | 各媒体の日次収集件数（当面のLP優先方針のため未使用。7章参照） |
+
+### Notionのプロパティ対応表
+
+`config/notion-lp-properties.json` に、Notion側の実際のプロパティ名・型との対応表を持つ。実際のNotionデータベースのプロパティ名が異なる場合は、このJSONだけを編集すればよい（スクリプトのコードは変更不要）。`matchProperty`（既定："LP ID"）で既存ページを検索し、見つかれば更新、無ければ新規作成する。
+
+### 実行フロー
+
+1. `npm run check:env` — 必要なSecrets / Variablesが揃っているか確認する（DRY_RUN=trueのときはSecretsが無くてもよい）
+2. `npm run extract:lp:test`（`RESERVE_LP_IDS=true`）— LPアーカイブから新規候補を抽出し、`data/id-counters.json` の採番を進める
+3. 候補予約（`candidates/lp-archive/candidates.json` 等）をコミット・push
+4. `npm run capture:lp:candidates` — 抽出した実候補（フィクスチャではない）をPC/SPで撮影する
+5. `npm run dropbox:upload:lp` — 撮影結果を`99_Needs_Review/<日付>/daily-intake-<開始ID>-<終了ID>/`配下へアップロードする
+6. `npm run notion:register:lp` — Notionへ軽量分析ページを新規作成・更新する
+7. `npm run report:lp:summary` — GitHub ActionsのStep Summaryへ結果（失敗があればその内容）を出力する
+8. 候補・撮影結果・Dropboxアップロード結果・Notion登録結果をGitHub Artifactとして保存する（`if-no-files-found: warn` のため、途中で失敗しても直前までの結果は残る）
+
+候補1件の処理に失敗しても、他の候補の処理は継続する（各スクリプト内で候補単位にtry/catchしている）。
+
+### DRY_RUNモード
+
+- `DRY_RUN=true`（既定）：Dropbox/Notionへ実際には書き込まず、書き込み予定の内容だけを`dropbox-upload-result.json` / `notion-registration-result.json`へ出力する。
+- `DRY_RUN=false`：実際にDropboxへアップロードし、Notionへページを作成・更新する。
+- 手動実行（`workflow_dispatch`）では毎回選べる。スケジュール実行はリポジトリVariable `DRY_RUN` の値に従う（未設定なら`true`のまま）。**本番反映する場合は、Variable `DRY_RUN` を`false`に変更すること。**
+
+### 現時点でまだ自動化していないこと
+
+- Creative Brief Studio AIへの同期（`npm run knowledge:apply`等）は対象外。Notionへの軽量分析ページ登録までがこのワークフローの範囲。
+- LP-0180・LP-0215と同じ29項目の詳細分析（週末レビューで人が選んだ候補のみ、別途手動で実施する）。
+- FV印象・構成ざっくり・業種・訴求・配色・レイアウトタグ等、実際に画面を見て判断する軽量分析の中身。Notionページの該当プロパティ・本文は「軽量分析未実施」のプレースホルダーのまま作成される（見ていない内容を自動生成しないため）。
+- バナー・Web・グラフィック・パーツ・パターンの自動収集（データソースID未確定、日次件数のVariableも未使用）。
+- DropboxやNotion内の既存資産の移動・削除。

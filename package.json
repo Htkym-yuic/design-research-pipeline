@@ -8,7 +8,12 @@
     "capture:lp:candidates": "node scripts/capture-lp-candidates.mjs",
     "extract:lp:test": "node scripts/extract-lp-archive-candidates.mjs",
     "knowledge:validate-lp": "node scripts/validate-lp-knowledge.mjs",
-    "knowledge:crosscheck-lp": "node scripts/crosscheck-lp-assets.mjs"
+    "knowledge:crosscheck-lp": "node scripts/crosscheck-lp-assets.mjs",
+    "check:env": "node scripts/lib/check-env.mjs",
+    "lint:syntax": "node scripts/lib/check-syntax.mjs",
+    "dropbox:upload:lp": "node scripts/upload-lp-intake-to-dropbox.mjs",
+    "notion:register:lp": "node scripts/register-lp-intake-notion.mjs",
+    "report:lp:summary": "node scripts/lib/write-step-summary.mjs"
   },
   "dependencies": {
     "playwright": "^1.55.0",

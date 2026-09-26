@@ -54,15 +54,22 @@ Creative Brief Studio AIとは分離して運用する、デザインリサー�
 
 ## 定期実行
 
-初期状態では、GitHub Actionsに手動実行と毎日実行の入口を用意しています。
+`.github/workflows/design-research-daily.yml` が、GitHub Actions上で毎日09:00 JSTに自動実行されます（`workflow_dispatch`での手動実行も可能）。Macを起動する必要はありません。
 
-現在は `data/targets.json` に登録した撮影対象を、PC / SP のファーストビューで撮影するテストを行います。
+現在自動化されているのはLPのみです。日次で以下を行います。
+
+1. LPアーカイブから新規候補を抽出する（`data/id-counters.json` で採番）
+2. 抽出した候補をPC/SPで撮影する
+3. Dropboxの `99_Needs_Review/<日付>/daily-intake-<開始ID>-<終了ID>/` へ正本画像・Notion用軽量画像を保存する
+4. Notionの「01｜LPリサーチライブラリー」へ軽量分析ページを新規作成・更新する
+
+詳細な設定手順（必要なGitHub Secrets / Variables、DRY_RUNモードの使い方等）は [`docs/OPERATIONS.md`](docs/OPERATIONS.md) の「自動化（GitHub Actions）」を参照してください。
 
 `data/reference-sources.json` は参考元サイト一覧、`data/targets.json` は実際にスクリーンショットを撮る対象URL一覧です。LPアーカイブなどの参考元を使う場合も、トップページだけでなく、撮影時に見ていた個別詳細ページURLを `sourceDetailUrl` に残します。
 
 LPアーカイブは、一覧ページそのものではなく、一覧から個別LP候補を抽出します。候補は `candidates/lp-archive/candidates.json` に出力します。LP候補IDは `data/id-counters.json` で管理し、日次実行では抽出後に次回開始番号を進めて重複を防ぎます。
 
-実際のスクリーンショット取得、Dropbox保存、Notion登録、Creative Brief Studio AI同期には、各サービスの接続情報をGitHub Secretsへ安全に登録してから処理を追加します。
+バナー・Web・グラフィック・パーツ・パターンの自動収集、および Creative Brief Studio AI への同期は、まだこのワークフローには含まれていません（`docs/OPERATIONS.md` の「現時点でまだ自動化していないこと」を参照）。
 
 ## 公開範囲
 
