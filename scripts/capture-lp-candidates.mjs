@@ -40,10 +40,11 @@ const cleanupCss = `
 `;
 
 function safeName(value) {
-  return value
+  const normalized = value
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
+  return normalized || "untitled";
 }
 
 function zeroPad(value, digits = 2) {
@@ -259,6 +260,33 @@ async function createNotionImage(sourcePath, outputPath) {
     .toFile(outputPath);
 }
 
+async function captureMobileFullPage(page, viewport, totalHeight, outputPath) {
+  const sliceHeight = viewport.height;
+  const slices = [];
+
+  for (let y = 0; y < totalHeight; y += sliceHeight) {
+    const height = Math.min(sliceHeight, totalHeight - y);
+    await page.setViewportSize({ width: viewport.width, height });
+    await page.evaluate((scrollY) => window.scrollTo(0, scrollY), y);
+    await page.waitForTimeout(200);
+
+    const buffer = await page.screenshot({ fullPage: false, timeout: 30000 });
+    slices.push({ input: buffer, top: y, left: 0 });
+  }
+
+  await sharp({
+    create: {
+      width: viewport.width,
+      height: totalHeight,
+      channels: 4,
+      background: "#ffffff"
+    }
+  })
+    .composite(slices)
+    .png()
+    .toFile(outputPath);
+}
+
 const candidates = candidateData.candidates.slice(0, candidateLimit);
 await fs.mkdir(outputRoot, { recursive: true });
 
@@ -319,7 +347,11 @@ try {
         await page.screenshot({ path: firstViewPath, fullPage: false, timeout: 30000 });
         await preloadLazyAssets(page, viewport.height);
         result.pageMetrics = await getPageMetrics(page);
-        await page.screenshot({ path: fullPagePath, fullPage: true, timeout: 60000 });
+        if (viewport.isMobile) {
+          await captureMobileFullPage(page, viewport, result.pageMetrics.height, fullPagePath);
+        } else {
+          await page.screenshot({ path: fullPagePath, fullPage: true, timeout: 60000 });
+        }
 
         const sections = buildSections(result.pageMetrics.height, viewport, sectionLimit);
         for (const section of sections) {

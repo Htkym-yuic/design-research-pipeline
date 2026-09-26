@@ -50,32 +50,34 @@
       "id": "LP-0215",
       "status": "candidate",
       "mediaType": "LP",
-      "title": "秋をあそびつくそうSunshine City",
-      "captureUrl": "https://sunshinecity.jp/file/official/autumn/",
+      "title": "生活本舗",
+      "captureUrl": "https://seikatsuhonpo.com/ihinseiri/",
       "captureMode": "target_site",
       "sourceType": "Reference Site",
       "sourceName": "LPアーカイブ",
       "sourceUrl": "https://rdlp.jp/lp-archive/",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229259",
-      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103540/200x400.jpg",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229263",
+      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103547/200x400.jpg",
       "metadata": {
-        "lpArchivePostId": "229259",
-        "company": "株式会社サンシャインシティ",
-        "category": "企業・会社・お店",
-        "tasteTag": "キレイ系",
+        "lpArchivePostId": "229263",
+        "company": "生活本舗",
+        "category": "仕入れ・買い取り・下取り",
+        "tasteTag": "信頼・安心系",
         "favoriteCount": "0",
-        "thumbnailAlt": "秋をあそびつくそうSunshine CityのLPデザイン（企業・会社・お店／ベージュ系／キレイ系）PC版"
+        "thumbnailAlt": "生活本舗のLPデザイン（仕入れ・買い取り・下取り／グリーン系／信頼・安心系）PC版"
       },
       "archiveAssets": {
         "pcImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103540/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103547/full.jpg"
         ],
         "spImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103541/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103548/full_1.jpg",
+          "https://rdlp.jp/image/lp-archive/103548/full_2.jpg"
         ],
         "allImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103540/full.jpg",
-          "https://rdlp.jp/image/lp-archive/103541/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103547/full.jpg",
+          "https://rdlp.jp/image/lp-archive/103548/full_1.jpg",
+          "https://rdlp.jp/image/lp-archive/103548/full_2.jpg"
         ]
       },
       "notes": "LPアーカイブ一覧から自動抽出した候補。採用前に人が確認する。"

@@ -101,3 +101,16 @@ LPアーカイブの場合は、一覧ページから個別LP候補を抽出し�
 ## 注意
 
 APIキー、アクセストークン、NotionやDropboxの秘密情報はリポジトリへ直接保存しません。GitHub Secretsで管理します。
+
+## LP検証
+
+LPを「完了」扱いにする前に、以下の2種類の検証を行います。
+
+```bash
+npm run knowledge:validate-lp -- --input <analysis.md または metadata.json>
+npm run knowledge:crosscheck-lp -- --input <LPフォルダ>
+```
+
+`knowledge:validate-lp` は、LP ID、URL、参考元詳細URL、Dropbox正本パス、GitHubナレッジパス、CBS同期状態など、分析・ナレッジ化に必要な項目を確認します。
+
+`knowledge:crosscheck-lp` は、PC / SP の Full Page、First View、Section一覧、個別セクション画像、Notion用画像、`metadata.json` を確認します。SP Full Page はスマホ幅として扱えるよう、430px以下であることを検証します。
