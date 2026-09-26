@@ -16,6 +16,18 @@
 6. `knowledge/` に機械利用用JSONを生成する
 7. `exports/creative-brief-studio-ai/` に同期用パッケージを生成する
 
+## 初期参考元
+
+| 種別 | 参考元 | URL |
+| --- | --- | --- |
+| Banner | バナー広場 | `https://banner-hiroba.com/` |
+| LP | LPアーカイブ | `https://rdlp.jp/lp-archive/` |
+| Web | SANKOU! | `https://sankoudesign.com/` |
+| Mixed | Pinterest | `https://www.pinterest.jp` |
+| Parts | Parts. | `https://partsdesign.net/` |
+
+初期テストでは、各サイトをPCファーストビューとSPファーストビューで撮影します。
+
 ## Notionステータス
 
 - `CBS同期状態`

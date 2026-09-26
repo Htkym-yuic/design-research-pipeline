@@ -2,23 +2,39 @@ name: Design Research Daily
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
   schedule:
     # 09:00 JST daily
     - cron: "0 0 * * *"
 
 jobs:
-  prepare:
-    name: Prepare research pipeline
+  screenshot-test:
+    name: Screenshot reference sources
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Show pipeline status
-        run: |
-          echo "Design Research Pipeline"
-          echo "Dropbox root: /design/Design_Research_Library/"
-          echo "Knowledge output: knowledge/"
-          echo "CBS export: exports/creative-brief-studio-ai/"
-          echo "Next step: add screenshot capture, Dropbox upload, Notion registration, and CBS sync."
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install browser
+        run: npx playwright install --with-deps chromium
+
+      - name: Capture screenshots
+        run: npm run capture:test
+
+      - name: Upload screenshot artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshot-test-results
+          path: screenshots/test-run/
+          if-no-files-found: error

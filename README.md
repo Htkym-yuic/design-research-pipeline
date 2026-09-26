@@ -37,6 +37,7 @@ Creative Brief Studio AIとは分離して運用する、デザインリサー�
 ```text
 .
 ├── .github/workflows/
+├── data/
 ├── docs/
 ├── exports/
 │   └── creative-brief-studio-ai/
@@ -52,7 +53,9 @@ Creative Brief Studio AIとは分離して運用する、デザインリサー�
 
 ## 定期実行
 
-初期状態では、GitHub Actionsに手動実行と毎日実行の入口だけを用意しています。
+初期状態では、GitHub Actionsに手動実行と毎日実行の入口を用意しています。
+
+現在は `data/reference-sources.json` に登録した参考元を、PC / SP のファーストビューで撮影するテストを行います。
 
 実際のスクリーンショット取得、Dropbox保存、Notion登録、Creative Brief Studio AI同期には、各サービスの接続情報をGitHub Secretsへ安全に登録してから処理を追加します。
 

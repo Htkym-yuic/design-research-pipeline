@@ -1,0 +1,42 @@
+[
+  {
+    "id": "BN-SOURCE-0001",
+    "name": "バナー広場",
+    "url": "https://banner-hiroba.com/",
+    "primaryCategory": "Banner",
+    "relatedLibraries": ["Banner"],
+    "notes": "バナーデザインの参考元。"
+  },
+  {
+    "id": "LP-SOURCE-0001",
+    "name": "LPアーカイブ",
+    "url": "https://rdlp.jp/lp-archive/",
+    "primaryCategory": "LP",
+    "relatedLibraries": ["LP"],
+    "notes": "LPデザインの参考元。"
+  },
+  {
+    "id": "WEB-SOURCE-0001",
+    "name": "SANKOU!",
+    "url": "https://sankoudesign.com/",
+    "primaryCategory": "Web",
+    "relatedLibraries": ["Web", "Parts", "Patterns"],
+    "notes": "Webサイトデザインの参考元。"
+  },
+  {
+    "id": "MIX-SOURCE-0001",
+    "name": "Pinterest",
+    "url": "https://www.pinterest.jp",
+    "primaryCategory": "Mixed",
+    "relatedLibraries": ["Banner", "LP", "Graphic", "Parts"],
+    "notes": "幅広い参考収集用。ログイン誘導や地域表示が出る可能性あり。"
+  },
+  {
+    "id": "PT-SOURCE-0001",
+    "name": "Parts.",
+    "url": "https://partsdesign.net/",
+    "primaryCategory": "Parts",
+    "relatedLibraries": ["Parts", "Web", "Patterns"],
+    "notes": "セクション別・パーツ別の参考元。"
+  }
+]
