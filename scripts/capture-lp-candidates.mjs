@@ -70,6 +70,43 @@ async function getPageMetrics(page) {
   });
 }
 
+async function waitForImages(page) {
+  await page.evaluate(async (timeoutMs) => {
+    const images = Array.from(document.images);
+    const timeout = new Promise((resolve) => window.setTimeout(resolve, timeoutMs));
+    const decodeAll = Promise.all(
+      images
+        .filter((image) => !image.complete || image.naturalWidth === 0)
+        .slice(0, 80)
+        .map((image) => image.decode().catch(() => {}))
+    );
+    await Promise.race([decodeAll, timeout]);
+  }, 3000);
+}
+
+async function preloadLazyAssets(page, viewportHeight) {
+  await page.evaluate(async (step) => {
+    const getHeight = () => Math.max(
+      document.body.scrollHeight,
+      document.documentElement.scrollHeight,
+      document.documentElement.clientHeight
+    );
+
+    for (let y = 0; y < getHeight(); y += step) {
+      window.scrollTo(0, y);
+      await new Promise((resolve) => window.setTimeout(resolve, 250));
+    }
+
+    window.scrollTo(0, getHeight());
+    await new Promise((resolve) => window.setTimeout(resolve, 500));
+    window.scrollTo(0, 0);
+    await new Promise((resolve) => window.setTimeout(resolve, 500));
+  }, Math.max(600, Math.floor(viewportHeight * 0.8)));
+
+  await page.waitForLoadState("networkidle", { timeout: 8000 }).catch(() => {});
+  await waitForImages(page);
+}
+
 function buildSections(totalHeight, viewport, maxSections) {
   const preferredSectionHeight = viewport.isMobile ? 1800 : 1400;
   const maxCaptureHeight = 4800;
@@ -259,6 +296,8 @@ try {
         await fs.mkdir(sectionsDir, { recursive: true });
 
         await page.screenshot({ path: firstViewPath, fullPage: false, timeout: 30000 });
+        await preloadLazyAssets(page, viewport.height);
+        result.pageMetrics = await getPageMetrics(page);
         await page.screenshot({ path: fullPagePath, fullPage: true, timeout: 60000 });
 
         const sections = buildSections(result.pageMetrics.height, viewport, sectionLimit);
