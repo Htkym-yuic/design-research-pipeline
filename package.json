@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "capture:test": "node scripts/capture-screenshots.mjs",
+    "capture:lp:candidates": "node scripts/capture-lp-candidates.mjs",
     "extract:lp:test": "node scripts/extract-lp-archive-candidates.mjs"
   },
   "dependencies": {
