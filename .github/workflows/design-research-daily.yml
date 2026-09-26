@@ -2,12 +2,12 @@ name: Design Research Daily
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
   schedule:
     # 09:00 JST daily
     - cron: "0 0 * * *"
+
+permissions:
+  contents: write
 
 jobs:
   screenshot-test:
@@ -30,7 +30,19 @@ jobs:
         run: npx playwright install --with-deps chromium
 
       - name: Extract LP Archive candidates
-        run: npm run extract:lp:test
+        run: RESERVE_LP_IDS=true npm run extract:lp:test
+
+      - name: Commit candidate reservation
+        run: |
+          if git diff --quiet -- candidates/lp-archive/candidates.json data/id-counters.json; then
+            echo "No candidate reservation changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add candidates/lp-archive/candidates.json data/id-counters.json
+          git commit -m "Reserve daily LP candidate IDs"
+          git push
 
       - name: Capture LP candidate screenshots
         run: LP_CANDIDATES_FILE=candidates/lp-archive/fixtures/lp-0214-awarefy.json LP_CANDIDATE_LIMIT=1 LP_SECTION_LIMIT=6 npm run capture:lp:candidates

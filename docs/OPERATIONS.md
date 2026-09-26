@@ -44,7 +44,13 @@ Section一覧は分析用の目次画像です。裏側には `S01` / `C01` 形�
 
 参考元サイトの一覧ページは、最終的な研究対象そのものではありません。
 
-LPアーカイブの場合は、一覧ページから個別LP候補を抽出し、`candidates/lp-archive/candidates.json` に保存します。候補には `LP-0214` 以降の仮IDを付与します。
+LPアーカイブの場合は、一覧ページから個別LP候補を抽出し、`candidates/lp-archive/candidates.json` に保存します。候補IDは `data/id-counters.json` の `lp.nextNumber` から開始します。
+
+2026-09-26時点で、Dropboxには `LP-0214〜LP-0221` の候補フォルダが存在します。`LP-0215` は生活本舗のCBS同期済みIDとして固定し、重複していたSunshine City候補は `LP-0222` へ変更しました。2026-09-27以降の正式な新規候補は `LP-0223` から開始します。
+
+現在の予約状況は `candidates/lp-archive/intake-reservations.json` に記録します。
+
+日次実行では `RESERVE_LP_IDS=true` を付けて候補抽出を行い、抽出後に `data/id-counters.json` を次回開始番号へ進めます。これにより、翌日の収集で同じIDを再利用しないようにします。
 
 抽出候補には以下を含めます。
 

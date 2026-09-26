@@ -9,6 +9,7 @@ const sourceUrl = process.env.LP_ARCHIVE_SOURCE_URL || "https://rdlp.jp/lp-archi
 const outputRoot = process.env.CANDIDATE_OUTPUT_DIR || "candidates/lp-archive";
 const candidateLimit = Number.parseInt(process.env.CANDIDATE_LIMIT || "8", 10);
 const nextLpNumber = Number.parseInt(process.env.NEXT_LP_NUMBER || `${idCounters.lp.nextNumber}`, 10);
+const shouldReserveIds = process.env.RESERVE_LP_IDS === "true";
 
 function absoluteUrl(value, baseUrl) {
   if (!value) return null;
@@ -156,8 +157,27 @@ try {
   const outputPath = path.join(outputRoot, "candidates.json");
   await fs.writeFile(outputPath, JSON.stringify(summary, null, 2));
 
+  if (shouldReserveIds && candidates.length > 0) {
+    const reservedMax = nextLpNumber + candidates.length - 1;
+    idCounters.lp.existingMax = Math.max(Number(idCounters.lp.existingMax || 0), reservedMax);
+    idCounters.lp.nextNumber = reservedMax + 1;
+    idCounters.lp.sourceOfTruth = "Notion 01｜LPリサーチライブラリー + Dropbox/GitHub intake reservations";
+    idCounters.lp.lastReservation = {
+      reservedAt: summary.extractedAt,
+      idStart: summary.idStart,
+      idEnd: summary.idEnd,
+      candidateCount: candidates.length,
+      sourceName: summary.sourceName,
+      outputPath
+    };
+    await fs.writeFile(idCountersPath, JSON.stringify(idCounters, null, 2) + "\n");
+  }
+
   console.log(`Extracted ${candidates.length} LP Archive candidates.`);
   console.log(`Output: ${outputPath}`);
+  if (shouldReserveIds && candidates.length > 0) {
+    console.log(`Reserved LP IDs: ${summary.idStart} - ${summary.idEnd}`);
+  }
 } finally {
   await page.close();
   await browser.close();

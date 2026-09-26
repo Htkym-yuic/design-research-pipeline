@@ -1,10 +1,10 @@
 {
   "lp": {
     "prefix": "LP",
-    "existingMax": 215,
-    "nextNumber": 216,
+    "existingMax": 222,
+    "nextNumber": 223,
     "digits": 4,
-    "sourceOfTruth": "Notion 01｜LPリサーチライブラリー"
+    "sourceOfTruth": "Notion 01｜LPリサーチライブラリー + Dropbox/GitHub intake reservations"
   },
   "banner": {
     "prefix": "BN",
