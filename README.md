@@ -37,6 +37,7 @@ Creative Brief Studio AIとは分離して運用する、デザインリサー�
 ```text
 .
 ├── .github/workflows/
+├── candidates/
 ├── data/
 ├── docs/
 ├── exports/
@@ -58,6 +59,8 @@ Creative Brief Studio AIとは分離して運用する、デザインリサー�
 現在は `data/targets.json` に登録した撮影対象を、PC / SP のファーストビューで撮影するテストを行います。
 
 `data/reference-sources.json` は参考元サイト一覧、`data/targets.json` は実際にスクリーンショットを撮る対象URL一覧です。LPアーカイブなどの参考元を使う場合も、トップページだけでなく、撮影時に見ていた個別詳細ページURLを `sourceDetailUrl` に残します。
+
+LPアーカイブは、一覧ページそのものではなく、一覧から個別LP候補を抽出します。候補は `candidates/lp-archive/candidates.json` に出力します。
 
 実際のスクリーンショット取得、Dropbox保存、Notion登録、Creative Brief Studio AI同期には、各サービスの接続情報をGitHub Secretsへ安全に登録してから処理を追加します。
 

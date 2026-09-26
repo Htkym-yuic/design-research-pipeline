@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "capture:test": "node scripts/capture-screenshots.mjs"
+    "capture:test": "node scripts/capture-screenshots.mjs",
+    "extract:lp:test": "node scripts/extract-lp-archive-candidates.mjs"
   },
   "dependencies": {
     "playwright": "^1.55.0"

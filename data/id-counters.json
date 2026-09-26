@@ -1,0 +1,44 @@
+{
+  "lp": {
+    "prefix": "LP",
+    "existingMax": 213,
+    "nextNumber": 214,
+    "digits": 4,
+    "sourceOfTruth": "Notion 01｜LPリサーチライブラリー"
+  },
+  "banner": {
+    "prefix": "BN",
+    "existingMax": null,
+    "nextNumber": null,
+    "digits": 4,
+    "sourceOfTruth": "Notion 02｜バナーリサーチライブラリー"
+  },
+  "web": {
+    "prefix": "WEB",
+    "existingMax": null,
+    "nextNumber": null,
+    "digits": 4,
+    "sourceOfTruth": "Notion 03｜Webサイトリサーチライブラリー"
+  },
+  "graphic": {
+    "prefix": "GR",
+    "existingMax": null,
+    "nextNumber": null,
+    "digits": 4,
+    "sourceOfTruth": "Notion 04｜グラフィックデザインリサーチライブラリー"
+  },
+  "parts": {
+    "prefix": "PT",
+    "existingMax": null,
+    "nextNumber": null,
+    "digits": 4,
+    "sourceOfTruth": "Notion 05｜デザインパーツライブラリ"
+  },
+  "patterns": {
+    "prefix": "PATTERN",
+    "existingMax": null,
+    "nextNumber": null,
+    "digits": 4,
+    "sourceOfTruth": "Notion 06｜デザイン原則・パターン"
+  }
+}

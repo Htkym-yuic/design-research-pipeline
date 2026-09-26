@@ -28,6 +28,14 @@ Creative Brief Studio AIへ渡す同期用データは、以下にまとめま�
 exports/creative-brief-studio-ai/
 ```
 
+候補抽出結果は、正式登録前の確認用として以下に保存します。
+
+```text
+candidates/
+└── lp-archive/
+    └── candidates.json
+```
+
 ## URL項目
 
 撮影対象は `data/targets.json` で管理します。
@@ -42,6 +50,12 @@ exports/creative-brief-studio-ai/
 | `hideSelectors` | 撮影時に非表示にする広告・不要要素のCSSセレクタ |
 
 重要なのは `captureUrl` と `sourceDetailUrl` です。LPアーカイブなどの参考元を使う場合は、トップページURLだけでなく、撮影時に参照した個別詳細ページURLを残します。
+
+## 採番
+
+Notionに既に存在する最大IDの次から採番します。
+
+LPは現時点で `LP-0213` まで存在するため、新規候補は `LP-0214` から開始します。この設定は `data/id-counters.json` で管理します。
 
 ## Dropboxとの対応
 
