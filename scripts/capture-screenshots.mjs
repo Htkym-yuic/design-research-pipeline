@@ -14,11 +14,44 @@ const viewports = [
   { key: "sp_fv", label: "SP first view", width: 375, height: 812, isMobile: true }
 ];
 
+const defaultHideSelectors = [
+  "[aria-label='広告']",
+  "[data-ad]",
+  "[data-ads]",
+  "[data-ad-slot]"
+];
+
 function safeName(value) {
   return value
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
+}
+
+async function hideElements(page, selectors) {
+  const uniqueSelectors = [...new Set([...defaultHideSelectors, ...(selectors || [])])];
+  const hiddenSelectors = [];
+
+  for (const selector of uniqueSelectors) {
+    const hiddenCount = await page
+      .locator(selector)
+      .evaluateAll((elements) => {
+        for (const element of elements) {
+          element.setAttribute("data-screenshot-hidden", "true");
+          element.style.setProperty("display", "none", "important");
+          element.style.setProperty("visibility", "hidden", "important");
+        }
+
+        return elements.length;
+      })
+      .catch(() => 0);
+
+    if (hiddenCount > 0) {
+      hiddenSelectors.push({ selector, hiddenCount });
+    }
+  }
+
+  return hiddenSelectors;
 }
 
 const captureTargets = targets
@@ -66,6 +99,7 @@ try {
         await page.waitForTimeout(1500);
 
         result.finalUrl = page.url();
+        result.hiddenSelectors = await hideElements(page, target.hideSelectors);
 
         const screenshotPath = path.join(targetDir, `${viewport.key}.png`);
         await page.screenshot({ path: screenshotPath, fullPage: false });

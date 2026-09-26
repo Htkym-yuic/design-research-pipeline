@@ -39,6 +39,7 @@ exports/creative-brief-studio-ai/
 | `sourceName` | LPアーカイブ、SANKOU!、Google検索など |
 | `sourceUrl` | 参考元サービスや参考元サイトのURL |
 | `sourceDetailUrl` | 参考元内の詳細ページURL |
+| `hideSelectors` | 撮影時に非表示にする広告・不要要素のCSSセレクタ |
 
 重要なのは `captureUrl` と `sourceDetailUrl` です。LPアーカイブなどの参考元を使う場合は、トップページURLだけでなく、撮影時に参照した個別詳細ページURLを残します。
 

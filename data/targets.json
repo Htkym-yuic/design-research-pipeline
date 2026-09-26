@@ -19,6 +19,17 @@
     "sourceName": "LPアーカイブ",
     "sourceUrl": "https://rdlp.jp/lp-archive/",
     "sourceDetailUrl": "https://rdlp.jp/lp-archive/",
+    "hideSelectors": [
+      "iframe[src*='googlesyndication']",
+      "ins.adsbygoogle",
+      "[id*='google_ads']",
+      "[id*='google_ads_iframe']",
+      "[id*='ad']",
+      "[class*='ad']",
+      "[class*='banner']",
+      "[class*='sponsor']",
+      "a[href*='googleadservices']"
+    ],
     "notes": "初期テスト用。個別LPを撮影する場合は、LPアーカイブの個別詳細ページURLをsourceDetailUrlへ登録する。"
   },
   {
