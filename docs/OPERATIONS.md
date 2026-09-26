@@ -28,6 +28,16 @@
 
 初期テストでは、各サイトをPCファーストビューとSPファーストビューで撮影します。
 
+## 撮影対象URLの扱い
+
+スクリーンショット取得では、参考元サイトのトップURLだけで止めず、実際に撮影したページURLを保存します。
+
+- `captureUrl`: 実際にスクリーンショットを撮るURL
+- `sourceUrl`: 参考元サービスや参考元サイトのURL
+- `sourceDetailUrl`: 掲載元の詳細ページURL
+
+たとえばLPアーカイブ経由で個別LPを撮影する場合、`sourceUrl` はLPアーカイブ、`sourceDetailUrl` はLPアーカイブ内の個別詳細ページURL、`captureUrl` は実際に撮影する対象LPのURLとして管理します。
+
 ## Notionステータス
 
 - `CBS同期状態`

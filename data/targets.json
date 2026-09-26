@@ -1,0 +1,57 @@
+[
+  {
+    "id": "TEST-BN-0001",
+    "title": "バナー広場 トップページ撮影テスト",
+    "mediaType": "Banner",
+    "captureUrl": "https://banner-hiroba.com/",
+    "sourceType": "Reference Site",
+    "sourceName": "バナー広場",
+    "sourceUrl": "https://banner-hiroba.com/",
+    "sourceDetailUrl": "https://banner-hiroba.com/",
+    "notes": "初期テスト用。今後は個別バナー詳細ページや一覧ページURLをsourceDetailUrlへ登録する。"
+  },
+  {
+    "id": "TEST-LP-0001",
+    "title": "LPアーカイブ 一覧ページ撮影テスト",
+    "mediaType": "LP",
+    "captureUrl": "https://rdlp.jp/lp-archive/",
+    "sourceType": "Reference Site",
+    "sourceName": "LPアーカイブ",
+    "sourceUrl": "https://rdlp.jp/lp-archive/",
+    "sourceDetailUrl": "https://rdlp.jp/lp-archive/",
+    "notes": "初期テスト用。個別LPを撮影する場合は、LPアーカイブの個別詳細ページURLをsourceDetailUrlへ登録する。"
+  },
+  {
+    "id": "TEST-WEB-0001",
+    "title": "SANKOU! トップページ撮影テスト",
+    "mediaType": "Web",
+    "captureUrl": "https://sankoudesign.com/",
+    "sourceType": "Reference Site",
+    "sourceName": "SANKOU!",
+    "sourceUrl": "https://sankoudesign.com/",
+    "sourceDetailUrl": "https://sankoudesign.com/",
+    "notes": "初期テスト用。個別掲載ページがある場合は、その詳細URLをsourceDetailUrlへ登録する。"
+  },
+  {
+    "id": "TEST-MIX-0001",
+    "title": "Pinterest トップページ撮影テスト",
+    "mediaType": "Mixed",
+    "captureUrl": "https://www.pinterest.jp",
+    "sourceType": "Reference Site",
+    "sourceName": "Pinterest",
+    "sourceUrl": "https://www.pinterest.jp",
+    "sourceDetailUrl": "https://www.pinterest.jp",
+    "notes": "初期テスト用。ログイン誘導やBot判定が出る可能性あり。実運用ではPinの詳細URLをsourceDetailUrlへ登録する。"
+  },
+  {
+    "id": "TEST-PT-0001",
+    "title": "Parts. トップページ撮影テスト",
+    "mediaType": "Parts",
+    "captureUrl": "https://partsdesign.net/",
+    "sourceType": "Reference Site",
+    "sourceName": "Parts.",
+    "sourceUrl": "https://partsdesign.net/",
+    "sourceDetailUrl": "https://partsdesign.net/",
+    "notes": "初期テスト用。セクション別の個別ページを撮る場合は、その詳細URLをsourceDetailUrlへ登録する。"
+  }
+]

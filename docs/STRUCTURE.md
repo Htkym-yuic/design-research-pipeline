@@ -28,6 +28,20 @@ Creative Brief Studio AIへ渡す同期用データは、以下にまとめま�
 exports/creative-brief-studio-ai/
 ```
 
+## URL項目
+
+撮影対象は `data/targets.json` で管理します。
+
+| 項目 | 意味 |
+| --- | --- |
+| `captureUrl` | 実際にスクリーンショットを撮ったURL |
+| `sourceType` | `Reference Site` / `Direct` / `Search` / `SNS` / `Client` / `Manual` / `Unknown` |
+| `sourceName` | LPアーカイブ、SANKOU!、Google検索など |
+| `sourceUrl` | 参考元サービスや参考元サイトのURL |
+| `sourceDetailUrl` | 参考元内の詳細ページURL |
+
+重要なのは `captureUrl` と `sourceDetailUrl` です。LPアーカイブなどの参考元を使う場合は、トップページURLだけでなく、撮影時に参照した個別詳細ページURLを残します。
+
 ## Dropboxとの対応
 
 | GitHub | Dropbox |

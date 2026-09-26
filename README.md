@@ -55,7 +55,9 @@ Creative Brief Studio AIとは分離して運用する、デザインリサー�
 
 初期状態では、GitHub Actionsに手動実行と毎日実行の入口を用意しています。
 
-現在は `data/reference-sources.json` に登録した参考元を、PC / SP のファーストビューで撮影するテストを行います。
+現在は `data/targets.json` に登録した撮影対象を、PC / SP のファーストビューで撮影するテストを行います。
+
+`data/reference-sources.json` は参考元サイト一覧、`data/targets.json` は実際にスクリーンショットを撮る対象URL一覧です。LPアーカイブなどの参考元を使う場合も、トップページだけでなく、撮影時に見ていた個別詳細ページURLを `sourceDetailUrl` に残します。
 
 実際のスクリーンショット取得、Dropbox保存、Notion登録、Creative Brief Studio AI同期には、各サービスの接続情報をGitHub Secretsへ安全に登録してから処理を追加します。
 

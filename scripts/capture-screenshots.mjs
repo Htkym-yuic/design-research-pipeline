@@ -2,12 +2,12 @@ import { chromium } from "playwright";
 import fs from "node:fs/promises";
 import path from "node:path";
 
-const sourcesPath = new URL("../data/reference-sources.json", import.meta.url);
-const sources = JSON.parse(await fs.readFile(sourcesPath, "utf8"));
+const targetsPath = new URL("../data/targets.json", import.meta.url);
+const targets = JSON.parse(await fs.readFile(targetsPath, "utf8"));
 
 const outputRoot = process.env.SCREENSHOT_OUTPUT_DIR || "screenshots/test-run";
-const sourceFilter = process.env.SOURCE_ID;
-const sourceLimit = Number.parseInt(process.env.SOURCE_LIMIT || `${sources.length}`, 10);
+const targetFilter = process.env.TARGET_ID;
+const targetLimit = Number.parseInt(process.env.TARGET_LIMIT || `${targets.length}`, 10);
 
 const viewports = [
   { key: "pc_fv", label: "PC first view", width: 1200, height: 900, isMobile: false },
@@ -21,9 +21,9 @@ function safeName(value) {
     .replace(/^-+|-+$/g, "");
 }
 
-const targetSources = sources
-  .filter((source) => !sourceFilter || source.id === sourceFilter)
-  .slice(0, sourceLimit);
+const captureTargets = targets
+  .filter((target) => !targetFilter || target.id === targetFilter)
+  .slice(0, targetLimit);
 
 await fs.mkdir(outputRoot, { recursive: true });
 
@@ -31,10 +31,10 @@ const browser = await chromium.launch();
 const results = [];
 
 try {
-  for (const source of targetSources) {
-    const sourceSlug = safeName(`${source.id}-${source.name}`);
-    const sourceDir = path.join(outputRoot, sourceSlug);
-    await fs.mkdir(sourceDir, { recursive: true });
+  for (const target of captureTargets) {
+    const targetSlug = safeName(`${target.id}-${target.title}`);
+    const targetDir = path.join(outputRoot, targetSlug);
+    await fs.mkdir(targetDir, { recursive: true });
 
     for (const viewport of viewports) {
       const context = await browser.newContext({
@@ -45,10 +45,14 @@ try {
       });
       const page = await context.newPage();
       const result = {
-        sourceId: source.id,
-        name: source.name,
-        url: source.url,
-        category: source.primaryCategory,
+        targetId: target.id,
+        title: target.title,
+        mediaType: target.mediaType,
+        captureUrl: target.captureUrl,
+        sourceType: target.sourceType,
+        sourceName: target.sourceName,
+        sourceUrl: target.sourceUrl,
+        sourceDetailUrl: target.sourceDetailUrl,
         viewport: viewport.key,
         viewportLabel: viewport.label,
         status: "pending",
@@ -57,11 +61,13 @@ try {
       };
 
       try {
-        await page.goto(source.url, { waitUntil: "domcontentloaded", timeout: 60000 });
+        await page.goto(target.captureUrl, { waitUntil: "domcontentloaded", timeout: 60000 });
         await page.waitForLoadState("networkidle", { timeout: 10000 }).catch(() => {});
         await page.waitForTimeout(1500);
 
-        const screenshotPath = path.join(sourceDir, `${viewport.key}.png`);
+        result.finalUrl = page.url();
+
+        const screenshotPath = path.join(targetDir, `${viewport.key}.png`);
         await page.screenshot({ path: screenshotPath, fullPage: false });
 
         result.status = "captured";
@@ -82,7 +88,7 @@ try {
 const summary = {
   capturedAt: new Date().toISOString(),
   outputRoot,
-  sourceCount: targetSources.length,
+  targetCount: captureTargets.length,
   results
 };
 
