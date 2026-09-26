@@ -28,29 +28,25 @@ function safeName(value) {
     .replace(/^-+|-+$/g, "");
 }
 
-async function hideElements(page, selectors) {
+function cssEscapeSelector(selector) {
+  return selector.replaceAll("}", "\\}");
+}
+
+async function applyHideStyles(page, selectors) {
   const uniqueSelectors = [...new Set([...defaultHideSelectors, ...(selectors || [])])];
-  const hiddenSelectors = [];
 
-  for (const selector of uniqueSelectors) {
-    const hiddenCount = await page
-      .$$eval(selector, (elements) => {
-        for (const element of elements) {
-          element.setAttribute("data-screenshot-hidden", "true");
-          element.style.setProperty("display", "none", "important");
-          element.style.setProperty("visibility", "hidden", "important");
-        }
-
-        return elements.length;
-      })
-      .catch(() => 0);
-
-    if (hiddenCount > 0) {
-      hiddenSelectors.push({ selector, hiddenCount });
-    }
+  if (uniqueSelectors.length === 0) {
+    return [];
   }
 
-  return hiddenSelectors;
+  await page.addStyleTag({
+    content: `${uniqueSelectors.map(cssEscapeSelector).join(",\n")} {
+  display: none !important;
+  visibility: hidden !important;
+}`
+  });
+
+  return uniqueSelectors;
 }
 
 const captureTargets = targets
@@ -64,6 +60,7 @@ const results = [];
 
 try {
   for (const target of captureTargets) {
+    console.log(`Capturing ${target.id}: ${target.captureUrl}`);
     const targetSlug = safeName(`${target.id}-${target.title}`);
     const targetDir = path.join(outputRoot, targetSlug);
     await fs.mkdir(targetDir, { recursive: true });
@@ -93,15 +90,15 @@ try {
       };
 
       try {
-        await page.goto(target.captureUrl, { waitUntil: "domcontentloaded", timeout: 60000 });
-        await page.waitForLoadState("networkidle", { timeout: 10000 }).catch(() => {});
+        await page.goto(target.captureUrl, { waitUntil: "domcontentloaded", timeout: 30000 });
+        await page.waitForLoadState("networkidle", { timeout: 5000 }).catch(() => {});
         await page.waitForTimeout(1500);
 
         result.finalUrl = page.url();
-        result.hiddenSelectors = await hideElements(page, target.hideSelectors);
+        result.hiddenSelectors = await applyHideStyles(page, target.hideSelectors);
 
         const screenshotPath = path.join(targetDir, `${viewport.key}.png`);
-        await page.screenshot({ path: screenshotPath, fullPage: false });
+        await page.screenshot({ path: screenshotPath, fullPage: false, timeout: 30000 });
 
         result.status = "captured";
         result.screenshotPath = screenshotPath;
