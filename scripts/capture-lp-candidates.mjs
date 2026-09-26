@@ -2,7 +2,9 @@ import { chromium } from "playwright";
 import fs from "node:fs/promises";
 import path from "node:path";
 
-const candidatesPath = new URL("../candidates/lp-archive/candidates.json", import.meta.url);
+const candidatesPath = process.env.LP_CANDIDATES_FILE
+  ? path.resolve(process.env.LP_CANDIDATES_FILE)
+  : new URL("../candidates/lp-archive/candidates.json", import.meta.url);
 const candidateData = JSON.parse(await fs.readFile(candidatesPath, "utf8"));
 
 const outputRoot = process.env.LP_CANDIDATE_OUTPUT_DIR || "screenshots/lp-candidates";

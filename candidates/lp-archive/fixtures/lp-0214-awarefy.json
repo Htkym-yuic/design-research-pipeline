@@ -1,0 +1,50 @@
+{
+  "extractedAt": "2026-09-26T13:59:58.922Z",
+  "sourceUrl": "https://rdlp.jp/lp-archive/",
+  "sourceName": "LPアーカイブ",
+  "mediaType": "LP",
+  "requestedLimit": 1,
+  "candidateCount": 1,
+  "idStart": "LP-0214",
+  "idEnd": "LP-0214",
+  "candidates": [
+    {
+      "id": "LP-0214",
+      "status": "candidate",
+      "mediaType": "LP",
+      "title": "Awarefy",
+      "captureUrl": "https://www.awarefy.com/app",
+      "captureMode": "target_site",
+      "sourceType": "Reference Site",
+      "sourceName": "LPアーカイブ",
+      "sourceUrl": "https://rdlp.jp/lp-archive/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229261",
+      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103543/200x400.jpg",
+      "metadata": {
+        "lpArchivePostId": "229261",
+        "company": "株式会社Awarefy",
+        "category": "デザイン・アプリ・システム",
+        "tasteTag": "信頼・安心系",
+        "favoriteCount": "0",
+        "thumbnailAlt": "AwarefyのLPデザイン（デザイン・アプリ・システム／ブルー系／信頼・安心系）PC版"
+      },
+      "archiveAssets": {
+        "pcImageUrls": [
+          "https://rdlp.jp/image/lp-archive/103543/full.jpg"
+        ],
+        "spImageUrls": [
+          "https://rdlp.jp/image/lp-archive/103544/full_1.jpg",
+          "https://rdlp.jp/image/lp-archive/103544/full_2.jpg",
+          "https://rdlp.jp/image/lp-archive/103544/full_3.jpg"
+        ],
+        "allImageUrls": [
+          "https://rdlp.jp/image/lp-archive/103543/full.jpg",
+          "https://rdlp.jp/image/lp-archive/103544/full_1.jpg",
+          "https://rdlp.jp/image/lp-archive/103544/full_2.jpg",
+          "https://rdlp.jp/image/lp-archive/103544/full_3.jpg"
+        ]
+      },
+      "notes": "LP-0214の比較撮影用に固定した候補。GitHub ActionsとMac撮影の差分確認に使う。"
+    }
+  ]
+}
