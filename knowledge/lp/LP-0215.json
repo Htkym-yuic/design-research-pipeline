@@ -1,0 +1,391 @@
+{
+  "id": "LP-0215",
+  "mediaType": "LP",
+  "media_type": "LP",
+  "title": "生活本舗 遺品整理・生前整理 LP",
+  "brand": "生活本舗",
+  "industry_tags": [
+    "サービス・保険・金融",
+    "仕入れ・買い取り・下取り",
+    "地域密着型サービス"
+  ],
+  "product_tags": [
+    "LP",
+    "サービス",
+    "遺品整理",
+    "生前整理",
+    "不用品回収",
+    "買取"
+  ],
+  "color_tags": [
+    "ホワイト基調",
+    "グリーン",
+    "安心系",
+    "価格強調アクセント"
+  ],
+  "layout_tags": [
+    "人物主役FV",
+    "長尺LP",
+    "セクション分割",
+    "カード型",
+    "写真主役",
+    "証明重視",
+    "FAQフォーム終盤導線"
+  ],
+  "copy_types": [
+    "価格訴求",
+    "実績訴求",
+    "権威性訴求",
+    "問題解決型",
+    "利便性訴求"
+  ],
+  "primary_appeal": "価格不安を下げる無料見積・追加料金なし訴求と、認定・写真・FAQによる信頼形成",
+  "offer": "出張見積無料、追加料金一切なし、電話問い合わせ導線",
+  "captureUrl": "https://seikatsuhonpo.com/ihinseiri/",
+  "sourceUrl": "https://rdlp.jp/lp-archive/",
+  "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229263",
+  "source": {
+    "captured_url": "https://seikatsuhonpo.com/ihinseiri/",
+    "reference_name": "LPアーカイブ",
+    "reference_url": "https://rdlp.jp/lp-archive/",
+    "reference_detail_url": "https://rdlp.jp/archives/otherdesign/lp/229263",
+    "notion_url": "https://app.notion.com/p/3e724d4fa67181aa9d0aebd25c310912",
+    "dropbox_master_path": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-09-27/lp-archive-candidates-LP-0215/LP-0215-seikatsuhonpo/",
+    "github_knowledge_path": "knowledge/lp/LP-0215.json",
+    "archive_post_id": "229263"
+  },
+  "asset_status": {
+    "pc_full": {
+      "path": "01_Normal_Images/LP-0215_PC_full.png",
+      "width": 1257,
+      "height": 18237,
+      "status": "verified"
+    },
+    "pc_first_view": {
+      "path": "01_Normal_Images/LP-0215_PC_first_view.png",
+      "width": 1200,
+      "height": 900,
+      "status": "verified"
+    },
+    "pc_sections": {
+      "path": "01_Normal_Images/LP-0215_PC_sections.png",
+      "status": "verified"
+    },
+    "sp_full": {
+      "path": "01_Normal_Images/LP-0215_SP_full.png",
+      "width": 375,
+      "height": 18237,
+      "status": "verified_375px_recapture"
+    },
+    "sp_first_view": {
+      "path": "01_Normal_Images/LP-0215_SP_first_view.png",
+      "width": 375,
+      "height": 812,
+      "status": "verified"
+    },
+    "sp_sections": {
+      "path": "01_Normal_Images/LP-0215_SP_sections.png",
+      "status": "verified"
+    },
+    "repository_crosscheck": "passed_with_0_warnings"
+  },
+  "funnel_structure": [
+    {
+      "step": 1,
+      "role": "つかみ",
+      "pattern": "価格不安をFVで先に下げる",
+      "description": "大きな価格訴求、無料見積、追加料金なしを冒頭に集め、問い合わせ前の費用不安を下げる。"
+    },
+    {
+      "step": 2,
+      "role": "対象の明示",
+      "pattern": "サービス範囲をアイコンと短文で提示",
+      "description": "遺品整理、生前整理、不用品回収、買取など、依頼できる内容を早い段階で見せる。"
+    },
+    {
+      "step": 3,
+      "role": "権威づけ・信頼形成",
+      "pattern": "認定・専任スタッフ・写真証拠を積む",
+      "description": "低価格だけに見えないよう、認定表現、スタッフ紹介、店舗写真、作業写真を中盤前に配置する。"
+    },
+    {
+      "step": 4,
+      "role": "価格具体化",
+      "pattern": "価格例カードで見積前の不安を下げる",
+      "description": "複数の価格例をカード化し、利用前に大まかな費用感を持たせる。"
+    },
+    {
+      "step": 5,
+      "role": "対応可能性の確認",
+      "pattern": "対応エリアとサービス範囲を明示",
+      "description": "依頼できる地域や作業範囲を示し、問い合わせ前の適合不安を減らす。"
+    },
+    {
+      "step": 6,
+      "role": "反論処理とクロージング",
+      "pattern": "作業フロー、FAQ、フォーム、会社情報で締める",
+      "description": "依頼の流れとFAQで疑問を処理し、フォームと会社概要で行動直前の不安を下げる。"
+    }
+  ],
+  "section_patterns": [
+    {
+      "id": "C01",
+      "source_section": "S01",
+      "name": "価格不安解消FV",
+      "role": "price_anxiety_reduction_hero",
+      "reusable_structure": [
+        "大見出しで価格メリットを提示",
+        "無料見積・追加料金なしを近接配置",
+        "人物写真または相談相手感のあるビジュアルで安心感を補う",
+        "サービス対象をアイコンで早期提示"
+      ],
+      "replace_required": [
+        "ロゴ",
+        "人物写真",
+        "実績数値",
+        "固有コピー"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C02",
+      "source_section": "S02",
+      "name": "選ばれる理由カード",
+      "role": "trust_reason_cards",
+      "reusable_structure": [
+        "他社比較の前に選ばれる理由を提示",
+        "認定・専任スタッフ・安心対応をカードで分解",
+        "信頼要素を価格訴求の直後に置く"
+      ],
+      "replace_required": [
+        "認定証",
+        "スタッフ写真",
+        "会社固有説明"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C03",
+      "source_section": "S03",
+      "name": "価格例カード",
+      "role": "price_case_cards",
+      "reusable_structure": [
+        "価格だけでなく作業量や現場イメージをセットで見せる",
+        "複数価格帯を並べて見積前の心理的ハードルを下げる",
+        "作業写真を証拠として添える"
+      ],
+      "replace_required": [
+        "現場写真",
+        "価格",
+        "作業条件"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C04",
+      "source_section": "S04",
+      "name": "対応エリア＋実績CTA",
+      "role": "area_proof_cta",
+      "reusable_structure": [
+        "対応エリアを明示して利用可能性を判断させる",
+        "実績表現の近くに電話や問い合わせ導線を置く",
+        "中盤で再度CTAを出して検討者の行動を拾う"
+      ],
+      "replace_required": [
+        "電話番号",
+        "地域名",
+        "実績数値"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C05",
+      "source_section": "S05",
+      "name": "サービス内容・流れリスト",
+      "role": "service_scope_and_flow",
+      "reusable_structure": [
+        "依頼できる内容をリストで整理",
+        "申し込み後の流れをステップ化",
+        "作業前の不安を手順説明で下げる"
+      ],
+      "replace_required": [
+        "サービス名",
+        "写真素材",
+        "作業条件"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C06",
+      "source_section": "S06",
+      "name": "FAQからフォームへの終盤導線",
+      "role": "faq_to_form_closing",
+      "reusable_structure": [
+        "お客様の声で第三者評価を補強",
+        "FAQで最後の反論を処理",
+        "フォームと会社情報を連続配置してクロージングする"
+      ],
+      "replace_required": [
+        "FAQ文言",
+        "電話番号",
+        "会社情報",
+        "店舗写真"
+      ],
+      "rights_status": "reference_only"
+    }
+  ],
+  "reusable_principles": [
+    "価格への不安が強いサービスでは、FVで価格条件と無料相談条件を先に出す。",
+    "低価格訴求だけでは不信感が出やすいため、直後に認定・スタッフ・写真証拠を置く。",
+    "価格例は金額だけでなく、作業量・現場イメージ・条件とセットで提示する。",
+    "地域密着型サービスでは、対応エリアと電話導線を中盤以降で再提示する。",
+    "問い合わせ前の不安が多い商材では、作業フローとFAQをフォーム直前に置く。",
+    "長尺LPでは、FV、信頼形成、価格例、サービス範囲、FAQ、フォームの順序で検討心理を進める。"
+  ],
+  "cta_patterns": [
+    {
+      "name": "free_estimate_cta",
+      "description": "無料見積を主CTAにし、価格不安を下げた状態で問い合わせへつなげる。",
+      "recommended_for": [
+        "出張見積サービス",
+        "修理",
+        "不用品回収",
+        "リフォーム"
+      ]
+    },
+    {
+      "name": "phone_and_form_dual_cta",
+      "description": "電話問い合わせとフォーム問い合わせを併用し、急ぎの相談と比較検討の両方を拾う。",
+      "recommended_for": [
+        "地域サービス",
+        "緊急性のあるサービス",
+        "高齢者・家族向けサービス"
+      ]
+    }
+  ],
+  "trust_patterns": [
+    {
+      "name": "certification_staff_photo_trust_stack",
+      "description": "認定表現、専任スタッフ、店舗・作業写真を重ねて、低価格訴求の不安を補正する。",
+      "required_caution": "認定・実績・写真は案件ごとの権利と現在性確認が必要。"
+    },
+    {
+      "name": "proof_before_price_detail",
+      "description": "価格例に進む前に信頼要素を挟み、安さだけで選ばせない構成にする。"
+    }
+  ],
+  "pricing_patterns": [
+    {
+      "name": "lowest_price_claim_with_conditions",
+      "description": "最安値や追加料金なしをFVで強調する場合、比較条件・対象範囲・除外条件の注記が必要。",
+      "basis_status": "requires_verification"
+    },
+    {
+      "name": "multi_case_price_cards",
+      "description": "複数の作業規模ごとに価格例を見せ、見積前の不透明感を下げる。",
+      "basis_status": "structure_reusable_amounts_not_reusable"
+    }
+  ],
+  "visual_patterns": [
+    {
+      "name": "green_reassurance_palette",
+      "description": "白と淡いグリーンを基調にし、安心・清潔感・リサイクル感を作る。価格や実績は黄色・ピンクなどのアクセントで限定的に強調する。",
+      "approx_colors": {
+        "background": "#FFFFFF",
+        "surface": "#F7FFE8",
+        "body_text": "#333333",
+        "sub_text": "#666666",
+        "accent": "#F15A8A",
+        "cta": "#37B34A",
+        "line": "#8CC63F"
+      }
+    },
+    {
+      "name": "photo_evidence_long_lp",
+      "description": "店舗写真、作業写真、人物写真を各段階に配置し、実在性と作業品質を補強する。ただし素材自体は再利用しない。"
+    }
+  ],
+  "rights_excluded": [
+    "ロゴ",
+    "人物写真",
+    "スタッフ写真",
+    "店舗写真",
+    "作業写真",
+    "認定証画像",
+    "電話番号",
+    "会社情報",
+    "価格例の具体金額",
+    "満足度・No.1等の実績数値",
+    "固有コピー"
+  ],
+  "unverified_claims": [
+    {
+      "claim": "業界最安値",
+      "status": "basis_unverified",
+      "required_basis": [
+        "比較対象",
+        "比較時点",
+        "対象地域",
+        "除外条件"
+      ],
+      "reusable_pattern": "lowest_price_claim_requires_comparison_condition"
+    },
+    {
+      "claim": "お客様満足度98%",
+      "status": "basis_unverified",
+      "required_basis": [
+        "調査主体",
+        "調査期間",
+        "回答者数",
+        "質問内容"
+      ],
+      "reusable_pattern": "satisfaction_metric_requires_survey_note"
+    },
+    {
+      "claim": "年間実績No.1",
+      "status": "basis_unverified",
+      "required_basis": [
+        "ランキング主体",
+        "対象期間",
+        "比較カテゴリ",
+        "調査方法"
+      ],
+      "reusable_pattern": "ranking_claim_requires_basis"
+    },
+    {
+      "claim": "優良事業所・認定表現",
+      "status": "currentness_unverified",
+      "required_basis": [
+        "認定団体",
+        "認定年月",
+        "認定継続状況"
+      ],
+      "reusable_pattern": "certification_claim_requires_currentness_check"
+    }
+  ],
+  "recommended_use_cases": [
+    "遺品整理・生前整理サービス",
+    "不用品回収",
+    "出張買取",
+    "ハウスクリーニング",
+    "水回り修理",
+    "外壁塗装見積",
+    "地域密着型の無料見積サービス"
+  ],
+  "analysis_notes": {
+    "completion_status": "analysis_done_assets_verified",
+    "remaining_limits": [
+      "実績根拠の調査主体・期間・母数は未確認",
+      "CBS本体への実同期は未実施",
+      "フォーム送信先・個人情報同意の動作確認は未実施"
+    ],
+    "notion_layout_reference": "LP-0180系の29章構成に整備済み",
+    "sp_width_resolution": "初回SP Fullは1320pxだったが、375px幅で再取得しDropbox反映・検証済み"
+  },
+  "cbs_sync": {
+    "status": "ready_for_sync",
+    "knowledge_path": "knowledge/lp/LP-0215.json",
+    "exported_at": "2026-09-27",
+    "actual_cbs_import": "not_yet_synced"
+  }
+}
