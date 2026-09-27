@@ -92,11 +92,13 @@ export async function uploadFile(dropboxPath, fileBuffer) {
 export async function checkAuth() {
   const accessToken = await getAccessToken();
 
+  // users/get_current_accountは引数を取らないAPI。Dropbox公式のcurl例もContent-Type/ボディなし
+  // で呼んでおり、Content-Type: application/jsonを付けて空ボディで送ると
+  // サーバー側で500 "unexpected error occurred"になることを確認したため付けない。
   const response = await fetch(CURRENT_ACCOUNT_URL, {
     method: "POST",
     headers: {
       Authorization: `Bearer ${accessToken}`,
-      "Content-Type": "application/json",
     },
   });
 
