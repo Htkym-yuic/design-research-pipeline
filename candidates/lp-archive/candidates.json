@@ -1,79 +1,79 @@
 {
-  "extractedAt": "2026-09-27T03:19:11.718Z",
+  "extractedAt": "2026-09-27T03:45:08.276Z",
   "sourceUrl": "https://rdlp.jp/lp-archive/",
   "sourceName": "LPアーカイブ",
   "mediaType": "LP",
   "requestedLimit": 2,
   "scannedLimit": 40,
   "candidateCount": 2,
-  "skippedDuplicateCount": 9,
-  "idStart": "LP-0227",
-  "idEnd": "LP-0228",
+  "skippedDuplicateCount": 11,
+  "idStart": "LP-0229",
+  "idEnd": "LP-0230",
   "candidates": [
     {
-      "id": "LP-0227",
+      "id": "LP-0229",
       "status": "candidate",
       "mediaType": "LP",
-      "title": "自衛官募集",
-      "captureUrl": "https://www.mod.go.jp/gsdf/jieikanbosyu/",
+      "title": "レックインドアテニススクール新百合ヶ丘",
+      "captureUrl": "https://rec-tennis.com/school/shinyurigaoka/campaign/goldenkids",
       "captureMode": "target_site",
       "sourceType": "Reference Site",
       "sourceName": "LPアーカイブ",
       "sourceUrl": "https://rdlp.jp/lp-archive/",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229262",
-      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103545/200x400.jpg",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229246",
+      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103520/200x400.jpg",
       "metadata": {
-        "lpArchivePostId": "229262",
-        "company": "防衛省",
-        "category": "中途採用",
-        "tasteTag": "かっこいい系",
+        "lpArchivePostId": "229246",
+        "company": "レックインドアテニススクール新百合ヶ丘",
+        "category": "イベント・キャンペーン・体験",
+        "tasteTag": "にぎやか系",
         "favoriteCount": "0",
-        "thumbnailAlt": "自衛官募集のLPデザイン（中途採用／ホワイト系／かっこいい系）PC版"
+        "thumbnailAlt": "レックインドアテニススクール新百合ヶ丘のLPデザイン（イベント・キャンペーン・体験／レッド系／にぎやか系）PC版"
       },
       "archiveAssets": {
         "pcImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103545/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103520/full.jpg"
         ],
         "spImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103546/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103521/full.jpg"
         ],
         "allImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103545/full.jpg",
-          "https://rdlp.jp/image/lp-archive/103546/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103520/full.jpg",
+          "https://rdlp.jp/image/lp-archive/103521/full.jpg"
         ]
       },
       "notes": "LPアーカイブ一覧から自動抽出した候補。採用前に人が確認する。"
     },
     {
-      "id": "LP-0228",
+      "id": "LP-0230",
       "status": "candidate",
       "mediaType": "LP",
-      "title": "LOCOKウェルネスガーデン品川御殿⼭テニススクール",
-      "captureUrl": "https://www.sports-create.com/gotenyama/jrtennis/",
+      "title": "まっぷたつ？パフェ",
+      "captureUrl": "https://www.dennys.jp/menu/half-parfait/grapes/",
       "captureMode": "target_site",
       "sourceType": "Reference Site",
       "sourceName": "LPアーカイブ",
       "sourceUrl": "https://rdlp.jp/lp-archive/",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229247",
-      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103522/200x400.jpg",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229244",
+      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103517/200x400.jpg",
       "metadata": {
-        "lpArchivePostId": "229247",
-        "company": "LOCOKウェルネスガーデン品川御殿⼭テニススクール",
-        "category": "企業・会社・お店",
+        "lpArchivePostId": "229244",
+        "company": "株式会社デニーズジャパン",
+        "category": "洋菓子",
         "tasteTag": "かわいい系",
         "favoriteCount": "0",
-        "thumbnailAlt": "LOCOKウェルネスガーデン品川御殿⼭テニススクールのLPデザイン（企業・会社・お店／カラフル系／かわいい系）PC版"
+        "thumbnailAlt": "まっぷたつ？パフェのLPデザイン（洋菓子／ベージュ系／かわいい系）PC版"
       },
       "archiveAssets": {
         "pcImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103522/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103517/full.jpg"
         ],
         "spImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103523/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103518/full.jpg"
         ],
         "allImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103522/full.jpg",
-          "https://rdlp.jp/image/lp-archive/103523/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103517/full.jpg",
+          "https://rdlp.jp/image/lp-archive/103518/full.jpg"
         ]
       },
       "notes": "LPアーカイブ一覧から自動抽出した候補。採用前に人が確認する。"
@@ -90,6 +90,18 @@
         "field": "captureUrl",
         "value": "https://seikatsuhonpo.com/ihinseiri/",
         "reason": "knowledge source.captured_url"
+      }
+    },
+    {
+      "title": "自衛官募集",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229262",
+      "captureUrl": "https://www.mod.go.jp/gsdf/jieikanbosyu/",
+      "lpArchivePostId": "229262",
+      "duplicate": {
+        "duplicateOf": "LP-0227",
+        "field": "captureUrl",
+        "value": "https://www.mod.go.jp/gsdf/jieikanbosyu/",
+        "reason": "existing candidate captureUrl"
       }
     },
     {
@@ -186,6 +198,18 @@
         "field": "captureUrl",
         "value": "https://www.aft.or.jp/shikisaigakuen2023/",
         "reason": "intake reservation captureUrl"
+      }
+    },
+    {
+      "title": "LOCOKウェルネスガーデン品川御殿⼭テニススクール",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229247",
+      "captureUrl": "https://www.sports-create.com/gotenyama/jrtennis/",
+      "lpArchivePostId": "229247",
+      "duplicate": {
+        "duplicateOf": "LP-0228",
+        "field": "captureUrl",
+        "value": "https://www.sports-create.com/gotenyama/jrtennis/",
+        "reason": "existing candidate captureUrl"
       }
     }
   ]
