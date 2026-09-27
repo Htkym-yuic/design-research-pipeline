@@ -25,9 +25,21 @@ on:
         description: "手動実行で処理する候補数。空欄は日次設定を使用"
         type: string
         default: ""
+      force_run:
+        description: "true=当日成功済みでも再実行"
+        type: choice
+        options:
+          - "false"
+          - "true"
+        default: "false"
   schedule:
-    # 01:30 JST daily. Start overnight so collection and rough analysis can finish before 04:00-04:30 JST.
-    - cron: "30 16 * * *"
+    # GitHubの毎時混雑を避け、01:37 JSTに本実行。01:52 JSTは未完了時のみ動く予備便。
+    - cron: "37 16 * * *"
+    - cron: "52 16 * * *"
+
+concurrency:
+  group: design-research-daily-intake
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -56,22 +68,32 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Check whether today's intake already succeeded
+        id: guard
+        env:
+          FORCE_RUN: ${{ github.event.inputs.force_run || 'false' }}
+        run: npm run daily:check
+
       - name: Setup Node.js
+        if: steps.guard.outputs.skip != 'true'
         uses: actions/setup-node@v4
         with:
           node-version: "24"
 
       - name: Install dependencies
+        if: steps.guard.outputs.skip != 'true'
         run: npm ci
 
       - name: Check required Secrets / Variables
+        if: steps.guard.outputs.skip != 'true'
         run: npm run check:env
 
       - name: Install browser
+        if: steps.guard.outputs.skip != 'true'
         run: npx playwright install --with-deps chromium
 
       - name: Extract LP Archive candidates
-        if: github.event_name == 'schedule' || github.event.inputs.refresh_candidates != 'false'
+        if: steps.guard.outputs.skip != 'true' && (github.event_name == 'schedule' || github.event.inputs.refresh_candidates != 'false')
         env:
           CANDIDATE_LIMIT: ${{ env.DAILY_LP_LIMIT }}
           CANDIDATE_SCAN_LIMIT: ${{ vars.LP_CANDIDATE_SCAN_LIMIT || '40' }}
@@ -79,39 +101,56 @@ jobs:
         run: npm run extract:lp:test
 
       - name: Commit candidate reservation
-        if: env.DRY_RUN != 'true' && (github.event_name == 'schedule' || github.event.inputs.refresh_candidates != 'false')
+        if: steps.guard.outputs.skip != 'true' && env.DRY_RUN != 'true' && (github.event_name == 'schedule' || github.event.inputs.refresh_candidates != 'false')
         run: |
-          if git diff --quiet -- candidates/lp-archive/candidates.json data/id-counters.json; then
+          if git diff --quiet -- candidates/lp-archive/candidates.json candidates/lp-archive/intake-reservations.json data/id-counters.json; then
             echo "No candidate reservation changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add candidates/lp-archive/candidates.json data/id-counters.json
+          git add candidates/lp-archive/candidates.json candidates/lp-archive/intake-reservations.json data/id-counters.json
           git commit -m "Reserve daily LP candidate IDs"
           git push
 
       - name: Capture LP candidate screenshots
+        if: steps.guard.outputs.skip != 'true'
         env:
           LP_CANDIDATE_LIMIT: ${{ env.DAILY_LP_LIMIT }}
           LP_SECTION_LIMIT: "6"
         run: npm run capture:lp:candidates
 
       - name: Capture reference source screenshots
+        if: steps.guard.outputs.skip != 'true'
         timeout-minutes: 5
         run: npm run capture:test
 
+      - name: Generate daily lightweight analysis
+        if: steps.guard.outputs.skip != 'true'
+        run: npm run analyze:lp:light
+
       - name: Upload to Dropbox
-        if: always()
+        if: always() && steps.guard.outputs.skip != 'true'
         run: npm run dropbox:upload:lp
 
       - name: Register to Notion
-        if: always()
+        if: always() && steps.guard.outputs.skip != 'true'
         run: npm run notion:register:lp
 
       - name: Write step summary
-        if: always()
+        if: always() && steps.guard.outputs.skip != 'true'
         run: npm run report:lp:summary
+
+      - name: Mark successful daily intake
+        if: success() && steps.guard.outputs.skip != 'true' && env.DRY_RUN != 'true'
+        run: |
+          npm run daily:mark
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/daily-run-state.json candidates/lp-archive/lightweight-analysis.json
+          git commit -m "Record successful daily design intake" || exit 0
+          git pull --rebase origin main
+          git push
 
       - name: Upload candidate artifact
         if: always()

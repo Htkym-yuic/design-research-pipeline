@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T00:00:00+09:00",
+  "updatedAt": "2026-09-27T19:52:57.413Z",
   "mediaType": "LP",
   "sourceName": "LPアーカイブ",
   "notes": [
@@ -90,7 +90,57 @@
       "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229259",
       "lpArchivePostId": "229259",
       "dropboxPath": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-09-26/lp-archive-candidates-LP-0214-LP-0222/LP-0222-sunshine-city"
+    },
+    {
+      "id": "LP-0223",
+      "title": "自衛官募集",
+      "status": "captured_needs_review",
+      "captureUrl": "https://www.mod.go.jp/gsdf/jieikanbosyu/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229262",
+      "lpArchivePostId": "229262"
+    },
+    {
+      "id": "LP-0224",
+      "title": "LOCOKウェルネスガーデン品川御殿⼭テニススクール",
+      "status": "captured_needs_review",
+      "captureUrl": "https://www.sports-create.com/gotenyama/jrtennis/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229247",
+      "lpArchivePostId": "229247"
+    },
+    {
+      "id": "LP-0225",
+      "title": "レックインドアテニススクール新百合ヶ丘",
+      "captureUrl": "https://rec-tennis.com/school/shinyurigaoka/campaign/goldenkids",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229246",
+      "lpArchivePostId": "229246",
+      "status": "captured_needs_review"
+    },
+    {
+      "id": "LP-0226",
+      "title": "まっぷたつ？パフェ",
+      "captureUrl": "https://www.dennys.jp/menu/half-parfait/grapes/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229244",
+      "lpArchivePostId": "229244",
+      "status": "captured_needs_review"
+    },
+    {
+      "id": "LP-0227",
+      "title": "自衛官募集",
+      "status": "duplicate_erroneous",
+      "duplicateOf": "LP-0223",
+      "captureUrl": "https://www.mod.go.jp/gsdf/jieikanbosyu/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229262",
+      "lpArchivePostId": "229262"
+    },
+    {
+      "id": "LP-0228",
+      "title": "LOCOKウェルネスガーデン品川御殿⼭テニススクール",
+      "status": "duplicate_erroneous",
+      "duplicateOf": "LP-0224",
+      "captureUrl": "https://www.sports-create.com/gotenyama/jrtennis/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229247",
+      "lpArchivePostId": "229247"
     }
   ],
-  "nextLpId": "LP-0223"
+  "nextLpId": "LP-0229"
 }

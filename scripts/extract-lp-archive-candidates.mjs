@@ -60,11 +60,13 @@ async function buildKnownLpIndex(outputPath) {
 
   function addUrl(value, id, reason) {
     const normalized = normalizeUrl(value);
-    if (normalized && id) knownUrls.set(normalized, { id, reason });
+    if (normalized && id && !knownUrls.has(normalized)) knownUrls.set(normalized, { id, reason });
   }
 
   function addArchivePostId(value, id, reason) {
-    if (value && id) knownArchivePostIds.set(String(value), { id, reason });
+    if (value && id && !knownArchivePostIds.has(String(value))) {
+      knownArchivePostIds.set(String(value), { id, reason });
+    }
   }
 
   const existingCandidates = await readJsonIfExists(outputPath, { candidates: [] });
@@ -72,6 +74,12 @@ async function buildKnownLpIndex(outputPath) {
     addUrl(candidate.captureUrl, candidate.id, "existing candidate captureUrl");
     addUrl(candidate.sourceDetailUrl, candidate.id, "existing candidate sourceDetailUrl");
     addArchivePostId(candidate.metadata?.lpArchivePostId, candidate.id, "existing candidate lpArchivePostId");
+  }
+  for (const candidate of existingCandidates.skippedCandidates || []) {
+    const id = candidate.duplicate?.duplicateOf;
+    addUrl(candidate.captureUrl, id, "previously skipped duplicate captureUrl");
+    addUrl(candidate.sourceDetailUrl, id, "previously skipped duplicate sourceDetailUrl");
+    addArchivePostId(candidate.lpArchivePostId, id, "previously skipped duplicate lpArchivePostId");
   }
 
   const reservations = await readJsonIfExists(intakeReservationsPath, { reserved: [] });
@@ -288,6 +296,20 @@ try {
   await fs.writeFile(outputPath, JSON.stringify(summary, null, 2));
 
   if (shouldReserveIds && candidates.length > 0) {
+    const reservations = await readJsonIfExists(intakeReservationsPath, { reserved: [] });
+    const reservedById = new Map((reservations.reserved || []).map((item) => [item.id, item]));
+    for (const candidate of candidates) {
+      reservedById.set(candidate.id, {
+        id: candidate.id,
+        title: candidate.title,
+        status: "reserved_daily_intake",
+        captureUrl: candidate.captureUrl,
+        sourceDetailUrl: candidate.sourceDetailUrl,
+        lpArchivePostId: candidate.metadata?.lpArchivePostId || null,
+        reservedAt: summary.extractedAt
+      });
+    }
+
     const reservedMax = nextLpNumber + candidates.length - 1;
     idCounters.lp.existingMax = Math.max(Number(idCounters.lp.existingMax || 0), reservedMax);
     idCounters.lp.nextNumber = reservedMax + 1;
@@ -300,6 +322,10 @@ try {
       sourceName: summary.sourceName,
       outputPath
     };
+    reservations.updatedAt = summary.extractedAt;
+    reservations.reserved = [...reservedById.values()].sort((a, b) => a.id.localeCompare(b.id));
+    reservations.nextLpId = formatId(idCounters.lp.prefix, reservedMax + 1, idCounters.lp.digits);
+    await fs.writeFile(intakeReservationsPath, JSON.stringify(reservations, null, 2) + "\n");
     await fs.writeFile(idCountersPath, JSON.stringify(idCounters, null, 2) + "\n");
   }
 
