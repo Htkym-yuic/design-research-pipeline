@@ -151,5 +151,8 @@ const output = {
 };
 await fs.writeFile(outputPath, JSON.stringify(output, null, 2));
 
-const failedCount = uploadResults.filter((item) => item.files?.some((file) => file.status === "failed")).length;
+const failedCount = uploadResults.filter(
+  (item) => item.status === "failed" || item.files?.some((file) => file.status === "failed"),
+).length;
 console.log(`Dropboxアップロード結果: ${uploadResults.length}候補中${failedCount}候補で失敗あり。詳細: ${outputPath}`);
+if (failedCount > 0) process.exitCode = 1;

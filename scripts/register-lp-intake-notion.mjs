@@ -70,19 +70,18 @@ for (const dropboxCandidate of dropboxResult.candidates) {
 
   const values = {
     title: `${candidate.id} ${candidate.title || ""}`.trim(),
-    lpId: candidate.id,
     brand: candidate.metadata?.company || "",
     referenceUrl: candidate.captureUrl || "",
     source: candidate.sourceName || "",
     capturedAt: todayJst(),
-    status: "軽量分析待ち",
+    status: "未着手",
     analysisDone: false,
     notionSynced: true,
     cbsSyncStatus: "未同期",
-    knowledgeStatus: "軽量分析のみ",
+    knowledgeStatus: "未着手",
     dropboxPath: dropboxCandidate.dropboxPath || "",
-    productType: candidate.metadata?.category || "",
-    category: candidate.metadata?.category || "",
+    productType: ["LP"],
+    category: "その他",
     progressNote:
       "自動収集のみ実施。FV印象・構成・訴求・配色・レイアウトタグ等の軽量分析は未実施（週末レビューで判断）。",
   };
@@ -137,3 +136,4 @@ await fs.writeFile(
 
 const failedCount = results.filter((item) => item.status === "failed").length;
 console.log(`Notion登録結果: ${results.length}候補中${failedCount}候補で失敗あり。詳細: ${outputPath}`);
+if (failedCount > 0) process.exitCode = 1;

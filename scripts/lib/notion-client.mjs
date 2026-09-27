@@ -70,6 +70,8 @@ function buildPropertyValue(type, value) {
       return { date: { start: String(value) } };
     case "select":
       return { select: { name: String(value) } };
+    case "status":
+      return { status: { name: String(value) } };
     case "checkbox":
       return { checkbox: Boolean(value) };
     case "multi_select":
@@ -114,12 +116,13 @@ export async function findPageByMatchProperty(dataSourceId, config, matchValue) 
   }
 
   const filterType = fieldConfig.type === "title" ? "title" : "rich_text";
+  const matchOperator = config.matchOperator === "contains" ? "contains" : "equals";
   const result = await notionFetch(`/data_sources/${dataSourceId}/query`, {
     method: "POST",
     body: JSON.stringify({
       filter: {
         property: config.matchProperty,
-        [filterType]: { equals: matchValue },
+        [filterType]: { [matchOperator]: matchValue },
       },
       page_size: 1,
     }),
