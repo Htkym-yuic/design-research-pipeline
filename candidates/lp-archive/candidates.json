@@ -1,51 +1,17 @@
 {
-  "extractedAt": "2026-09-27T00:56:48.237Z",
+  "extractedAt": "2026-09-27T02:31:34.973Z",
   "sourceUrl": "https://rdlp.jp/lp-archive/",
   "sourceName": "LPアーカイブ",
   "mediaType": "LP",
   "requestedLimit": 2,
+  "scannedLimit": 12,
   "candidateCount": 2,
+  "skippedDuplicateCount": 9,
   "idStart": "LP-0223",
   "idEnd": "LP-0224",
   "candidates": [
     {
       "id": "LP-0223",
-      "status": "candidate",
-      "mediaType": "LP",
-      "title": "生活本舗",
-      "captureUrl": "https://seikatsuhonpo.com/ihinseiri/",
-      "captureMode": "target_site",
-      "sourceType": "Reference Site",
-      "sourceName": "LPアーカイブ",
-      "sourceUrl": "https://rdlp.jp/lp-archive/",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229263",
-      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103547/200x400.jpg",
-      "metadata": {
-        "lpArchivePostId": "229263",
-        "company": "生活本舗",
-        "category": "仕入れ・買い取り・下取り",
-        "tasteTag": "信頼・安心系",
-        "favoriteCount": "0",
-        "thumbnailAlt": "生活本舗のLPデザイン（仕入れ・買い取り・下取り／グリーン系／信頼・安心系）PC版"
-      },
-      "archiveAssets": {
-        "pcImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103547/full.jpg"
-        ],
-        "spImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103548/full_1.jpg",
-          "https://rdlp.jp/image/lp-archive/103548/full_2.jpg"
-        ],
-        "allImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103547/full.jpg",
-          "https://rdlp.jp/image/lp-archive/103548/full_1.jpg",
-          "https://rdlp.jp/image/lp-archive/103548/full_2.jpg"
-        ]
-      },
-      "notes": "LPアーカイブ一覧から自動抽出した候補。採用前に人が確認する。"
-    },
-    {
-      "id": "LP-0224",
       "status": "candidate",
       "mediaType": "LP",
       "title": "自衛官募集",
@@ -77,6 +43,150 @@
         ]
       },
       "notes": "LPアーカイブ一覧から自動抽出した候補。採用前に人が確認する。"
+    },
+    {
+      "id": "LP-0224",
+      "status": "candidate",
+      "mediaType": "LP",
+      "title": "LOCOKウェルネスガーデン品川御殿⼭テニススクール",
+      "captureUrl": "https://www.sports-create.com/gotenyama/jrtennis/",
+      "captureMode": "target_site",
+      "sourceType": "Reference Site",
+      "sourceName": "LPアーカイブ",
+      "sourceUrl": "https://rdlp.jp/lp-archive/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229247",
+      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103522/200x400.jpg",
+      "metadata": {
+        "lpArchivePostId": "229247",
+        "company": "LOCOKウェルネスガーデン品川御殿⼭テニススクール",
+        "category": "企業・会社・お店",
+        "tasteTag": "かわいい系",
+        "favoriteCount": "0",
+        "thumbnailAlt": "LOCOKウェルネスガーデン品川御殿⼭テニススクールのLPデザイン（企業・会社・お店／カラフル系／かわいい系）PC版"
+      },
+      "archiveAssets": {
+        "pcImageUrls": [
+          "https://rdlp.jp/image/lp-archive/103522/full.jpg"
+        ],
+        "spImageUrls": [
+          "https://rdlp.jp/image/lp-archive/103523/full.jpg"
+        ],
+        "allImageUrls": [
+          "https://rdlp.jp/image/lp-archive/103522/full.jpg",
+          "https://rdlp.jp/image/lp-archive/103523/full.jpg"
+        ]
+      },
+      "notes": "LPアーカイブ一覧から自動抽出した候補。採用前に人が確認する。"
+    }
+  ],
+  "skippedCandidates": [
+    {
+      "title": "生活本舗",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229263",
+      "captureUrl": "https://seikatsuhonpo.com/ihinseiri/",
+      "lpArchivePostId": "229263",
+      "duplicate": {
+        "duplicateOf": "LP-0215",
+        "field": "captureUrl",
+        "value": "https://seikatsuhonpo.com/ihinseiri/",
+        "reason": "knowledge source.captured_url"
+      }
+    },
+    {
+      "title": "Awarefy",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229261",
+      "captureUrl": "https://www.awarefy.com/app",
+      "lpArchivePostId": "229261",
+      "duplicate": {
+        "duplicateOf": "LP-0214",
+        "field": "captureUrl",
+        "value": "https://www.awarefy.com/app",
+        "reason": "intake reservation captureUrl"
+      }
+    },
+    {
+      "title": "秋をあそびつくそうSunshine City",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229259",
+      "captureUrl": "https://sunshinecity.jp/file/official/autumn/",
+      "lpArchivePostId": "229259",
+      "duplicate": {
+        "duplicateOf": "LP-0222",
+        "field": "captureUrl",
+        "value": "https://sunshinecity.jp/file/official/autumn/",
+        "reason": "intake reservation captureUrl"
+      }
+    },
+    {
+      "title": "QuizKnock10周年プロジェクト",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229258",
+      "captureUrl": "https://10th.quizknock.com/",
+      "lpArchivePostId": "229258",
+      "duplicate": {
+        "duplicateOf": "LP-0216",
+        "field": "captureUrl",
+        "value": "https://10th.quizknock.com/",
+        "reason": "intake reservation captureUrl"
+      }
+    },
+    {
+      "title": "ここだけのミルチグッズで100周年をお祝いしよう！",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229257",
+      "captureUrl": "https://www.felissimo.co.jp/collect/mchoco_fsc?tid=sbn_fc_MEIJICHOCOLATE2609_L",
+      "lpArchivePostId": "229257",
+      "duplicate": {
+        "duplicateOf": "LP-0217",
+        "field": "captureUrl",
+        "value": "https://www.felissimo.co.jp/collect/mchoco_fsc?tid=sbn_fc_MEIJICHOCOLATE2609_L",
+        "reason": "intake reservation captureUrl"
+      }
+    },
+    {
+      "title": "タンブルウィード オールスター THE LAST",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229256",
+      "captureUrl": "https://cont.tumbleweed.jp/allstar26/",
+      "lpArchivePostId": "229256",
+      "duplicate": {
+        "duplicateOf": "LP-0218",
+        "field": "captureUrl",
+        "value": "https://cont.tumbleweed.jp/allstar26/",
+        "reason": "intake reservation captureUrl"
+      }
+    },
+    {
+      "title": "マイプレッカ",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229255",
+      "captureUrl": "https://www.kaneka-womens-healthcare.com/",
+      "lpArchivePostId": "229255",
+      "duplicate": {
+        "duplicateOf": "LP-0219",
+        "field": "captureUrl",
+        "value": "https://www.kaneka-womens-healthcare.com/",
+        "reason": "intake reservation captureUrl"
+      }
+    },
+    {
+      "title": "premal",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229253",
+      "captureUrl": "https://sfc.jp/ie/lineup/premal/",
+      "lpArchivePostId": "229253",
+      "duplicate": {
+        "duplicateOf": "LP-0220",
+        "field": "captureUrl",
+        "value": "https://sfc.jp/ie/lineup/premal/",
+        "reason": "intake reservation captureUrl"
+      }
+    },
+    {
+      "title": "色彩学園",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229249",
+      "captureUrl": "https://www.aft.or.jp/shikisaigakuen2023/",
+      "lpArchivePostId": "229249",
+      "duplicate": {
+        "duplicateOf": "LP-0221",
+        "field": "captureUrl",
+        "value": "https://www.aft.or.jp/shikisaigakuen2023/",
+        "reason": "intake reservation captureUrl"
+      }
     }
   ]
 }

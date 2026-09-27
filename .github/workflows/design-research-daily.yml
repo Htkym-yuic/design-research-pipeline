@@ -10,6 +10,13 @@ on:
           - "true"
           - "false"
         default: "true"
+      refresh_candidates:
+        description: "true=新規候補を抽出・採番、false=確認済み候補を再利用"
+        type: choice
+        options:
+          - "true"
+          - "false"
+        default: "true"
   schedule:
     # 01:30 JST daily. Start overnight so collection and rough analysis can finish before 04:00-04:30 JST.
     - cron: "30 16 * * *"
@@ -55,12 +62,14 @@ jobs:
         run: npx playwright install --with-deps chromium
 
       - name: Extract LP Archive candidates
+        if: github.event_name == 'schedule' || github.event.inputs.refresh_candidates != 'false'
         env:
           CANDIDATE_LIMIT: ${{ vars.DAILY_LP_LIMIT || '2' }}
           CANDIDATE_SCAN_LIMIT: ${{ vars.LP_CANDIDATE_SCAN_LIMIT || '40' }}
         run: RESERVE_LP_IDS=true npm run extract:lp:test
 
       - name: Commit candidate reservation
+        if: github.event_name == 'schedule' || github.event.inputs.refresh_candidates != 'false'
         run: |
           if git diff --quiet -- candidates/lp-archive/candidates.json data/id-counters.json; then
             echo "No candidate reservation changes."
