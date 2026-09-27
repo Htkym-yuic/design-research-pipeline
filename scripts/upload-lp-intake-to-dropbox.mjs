@@ -17,7 +17,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { isDryRun, requireEnv } from "./lib/env.mjs";
-import { ensureFolder, uploadFile } from "./lib/dropbox-client.mjs";
+import { checkAuth, ensureFolder, uploadFile } from "./lib/dropbox-client.mjs";
 
 function getArg(name) {
   const index = process.argv.indexOf(`--${name}`);
@@ -101,6 +101,20 @@ const intakeBasePath = `${dropboxRoot}/LP_Research_Library/99_Needs_Review/${int
 
 if (!dryRun) {
   requireEnv("DROPBOX_APP_KEY");
+}
+
+// DRY_RUN=true では以降の書き込み処理を一切呼ばないため、認証情報が揃っている場合だけ
+// 読み取り専用チェック（アカウント情報取得）で認証だけを確認する。書き込みは行わない。
+// 認証情報が無い場合は従来通りスキップする（Secrets未設定でも試せる、という既存の性質を保つ）。
+const hasDropboxCredentials = Boolean(
+  process.env.DROPBOX_APP_KEY && process.env.DROPBOX_APP_SECRET && process.env.DROPBOX_REFRESH_TOKEN,
+);
+
+if (!dryRun || hasDropboxCredentials) {
+  const account = await checkAuth();
+  console.log(`${dryRun ? "[DRY_RUN] " : ""}Dropbox認証OK（接続先アカウント: ${account.email}）`);
+} else {
+  console.log("[DRY_RUN] Dropbox認証情報が未設定のため、認証チェックをスキップします。");
 }
 
 console.log(`${dryRun ? "[DRY_RUN] " : ""}Dropboxアップロード先: ${intakeBasePath}`);

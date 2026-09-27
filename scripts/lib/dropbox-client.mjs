@@ -16,6 +16,7 @@ import { requireEnvAll } from "./env.mjs";
 const TOKEN_URL = "https://api.dropboxapi.com/oauth2/token";
 const UPLOAD_URL = "https://content.dropboxapi.com/2/files/upload";
 const CREATE_FOLDER_URL = "https://api.dropboxapi.com/2/files/create_folder_v2";
+const CURRENT_ACCOUNT_URL = "https://api.dropboxapi.com/2/users/get_current_account";
 
 let cachedAccessToken = null;
 
@@ -81,6 +82,33 @@ export async function uploadFile(dropboxPath, fileBuffer) {
   }
 
   return response.json();
+}
+
+/**
+ * 認証のみを確認する読み取り専用チェック。書き込みは一切行わない。
+ * リフレッシュトークンからのアクセストークン交換が通るか、
+ * その先の最小限のAPI呼び出し（アカウント情報取得）が通るかだけを見る。
+ */
+export async function checkAuth() {
+  const accessToken = await getAccessToken();
+
+  // users/get_current_accountは引数を取らないAPI。Dropbox公式のcurl例もContent-Type/ボディなし
+  // で呼んでおり、Content-Type: application/jsonを付けて空ボディで送ると
+  // サーバー側で500 "unexpected error occurred"になることを確認したため付けない。
+  const response = await fetch(CURRENT_ACCOUNT_URL, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${accessToken}`,
+    },
+  });
+
+  if (!response.ok) {
+    const text = await response.text().catch(() => "");
+    throw new Error(`Dropbox認証チェックに失敗しました（${response.status}）: ${text}`);
+  }
+
+  const data = await response.json();
+  return { email: data.email, accountId: data.account_id };
 }
 
 /** フォルダを作成する（既に存在する場合のエラーは無視する） */
