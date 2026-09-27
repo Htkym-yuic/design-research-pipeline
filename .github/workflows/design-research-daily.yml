@@ -11,8 +11,8 @@ on:
           - "false"
         default: "true"
   schedule:
-    # 09:00 JST daily
-    - cron: "0 0 * * *"
+    # 01:30 JST daily（深夜帯に収集し、朝までに余裕をもって終わらせる）
+    - cron: "30 16 * * *"
 
 permissions:
   contents: write
