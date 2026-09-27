@@ -2,7 +2,7 @@
   "updatedAt": "2026-09-27T20:31:16.155Z",
   "reserved": [
     {
-      "id": "BN-0021",
+      "id": "BN-0001",
       "title": "おせち先行予約販売_400 x 400のバナーデザイン",
       "mediaType": "Banner",
       "sourceName": "バナー広場",
@@ -13,7 +13,7 @@
       "reservedAt": "2026-09-27T20:18:40.789Z"
     },
     {
-      "id": "BN-0022",
+      "id": "BN-0002",
       "title": "遊園地_1200 x 675のバナーデザイン",
       "mediaType": "Banner",
       "sourceName": "バナー広場",
@@ -24,7 +24,7 @@
       "reservedAt": "2026-09-27T20:18:40.789Z"
     },
     {
-      "id": "BN-0023",
+      "id": "BN-0003",
       "title": "コンタクトレンズ割引_1080 x 1080のバナーデザイン",
       "mediaType": "Banner",
       "sourceName": "バナー広場",
@@ -35,7 +35,7 @@
       "reservedAt": "2026-09-27T20:18:40.789Z"
     },
     {
-      "id": "BN-0024",
+      "id": "BN-0004",
       "title": "ハイクラス転職_600 x 500のバナーデザイン",
       "mediaType": "Banner",
       "sourceName": "バナー広場",
@@ -46,7 +46,7 @@
       "reservedAt": "2026-09-27T20:18:40.789Z"
     },
     {
-      "id": "BN-0025",
+      "id": "BN-0005",
       "title": "クリスマスケーキ予約_560 x 420のバナーデザイン",
       "mediaType": "Banner",
       "sourceName": "バナー広場",
@@ -57,7 +57,7 @@
       "reservedAt": "2026-09-27T20:18:40.789Z"
     },
     {
-      "id": "BN-0026",
+      "id": "BN-0006",
       "title": "オリジナルグッズ制作OEM_600 x 500のバナーデザイン",
       "mediaType": "Banner",
       "sourceName": "バナー広場",
@@ -68,7 +68,7 @@
       "reservedAt": "2026-09-27T20:31:16.155Z"
     },
     {
-      "id": "BN-0027",
+      "id": "BN-0007",
       "title": "メディカルダイエット_600 x 500のバナーデザイン",
       "mediaType": "Banner",
       "sourceName": "バナー広場",
@@ -79,7 +79,7 @@
       "reservedAt": "2026-09-27T20:31:16.155Z"
     },
     {
-      "id": "BN-0028",
+      "id": "BN-0008",
       "title": "脱毛・美白体験_480 x 480のバナーデザイン",
       "mediaType": "Banner",
       "sourceName": "バナー広場",
@@ -90,7 +90,7 @@
       "reservedAt": "2026-09-27T20:31:16.155Z"
     },
     {
-      "id": "BN-0029",
+      "id": "BN-0009",
       "title": "日本酒ナイト_960 x 640のバナーデザイン",
       "mediaType": "Banner",
       "sourceName": "バナー広場",
@@ -101,7 +101,7 @@
       "reservedAt": "2026-09-27T20:31:16.155Z"
     },
     {
-      "id": "BN-0030",
+      "id": "BN-0010",
       "title": "海外留学_600 x 500のバナーデザイン",
       "mediaType": "Banner",
       "sourceName": "バナー広場",
@@ -387,7 +387,7 @@
       "reservedAt": "2026-09-27T20:31:16.155Z"
     },
     {
-      "id": "WB-0004",
+      "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
       "sourceName": "SANKOU!",
@@ -398,7 +398,7 @@
       "reservedAt": "2026-09-27T20:18:40.789Z"
     },
     {
-      "id": "WB-0005",
+      "id": "WB-0002",
       "title": "味覚編集",
       "mediaType": "Web",
       "sourceName": "SANKOU!",
@@ -409,7 +409,7 @@
       "reservedAt": "2026-09-27T20:18:40.789Z"
     },
     {
-      "id": "WB-0006",
+      "id": "WB-0003",
       "title": "フェリシモクラファン | フェリシモ",
       "mediaType": "Web",
       "sourceName": "SANKOU!",
@@ -420,7 +420,7 @@
       "reservedAt": "2026-09-27T20:31:16.155Z"
     },
     {
-      "id": "WB-0007",
+      "id": "WB-0004",
       "title": "売れるお店をつくる、店舗運営プラットフォーム | STORES",
       "mediaType": "Web",
       "sourceName": "SANKOU!",

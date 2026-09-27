@@ -3,7 +3,7 @@
   "candidateCount": 22,
   "candidates": [
     {
-      "id": "BN-0026",
+      "id": "BN-0006",
       "status": "candidate",
       "mediaType": "Banner",
       "sourceKey": "banner",
@@ -26,7 +26,7 @@
       }
     },
     {
-      "id": "BN-0027",
+      "id": "BN-0007",
       "status": "candidate",
       "mediaType": "Banner",
       "sourceKey": "banner",
@@ -49,7 +49,7 @@
       }
     },
     {
-      "id": "BN-0028",
+      "id": "BN-0008",
       "status": "candidate",
       "mediaType": "Banner",
       "sourceKey": "banner",
@@ -72,7 +72,7 @@
       }
     },
     {
-      "id": "BN-0029",
+      "id": "BN-0009",
       "status": "candidate",
       "mediaType": "Banner",
       "sourceKey": "banner",
@@ -95,7 +95,7 @@
       }
     },
     {
-      "id": "BN-0030",
+      "id": "BN-0010",
       "status": "candidate",
       "mediaType": "Banner",
       "sourceKey": "banner",
@@ -118,7 +118,7 @@
       }
     },
     {
-      "id": "WB-0006",
+      "id": "WB-0003",
       "status": "candidate",
       "mediaType": "Web",
       "sourceKey": "web",
@@ -141,7 +141,7 @@
       }
     },
     {
-      "id": "WB-0007",
+      "id": "WB-0004",
       "status": "candidate",
       "mediaType": "Web",
       "sourceKey": "web",

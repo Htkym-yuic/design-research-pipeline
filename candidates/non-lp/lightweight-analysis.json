@@ -1,7 +1,7 @@
 {
   "version": 2,
   "analyses": {
-    "BN-0021": {
+    "BN-0001": {
       "analysisMode": "automated_daily_first_pass",
       "overview": "バナー広場から収集したBanner参考。おせち先行予約販売_400 x 400のバナーデザイン。",
       "visualSummary": "暖色・黄橙系。400×400の掲載画像を基準に確認。",
@@ -10,7 +10,7 @@
       "deepDivePriority": "中",
       "generatedAt": "2026-09-27T20:19:24.710Z"
     },
-    "BN-0022": {
+    "BN-0002": {
       "analysisMode": "automated_daily_first_pass",
       "overview": "バナー広場から収集したBanner参考。遊園地_1200 x 675のバナーデザイン。",
       "visualSummary": "暗色・黒基調。1200×675の掲載画像を基準に確認。",
@@ -19,7 +19,7 @@
       "deepDivePriority": "中",
       "generatedAt": "2026-09-27T20:19:24.753Z"
     },
-    "BN-0023": {
+    "BN-0003": {
       "analysisMode": "automated_daily_first_pass",
       "overview": "バナー広場から収集したBanner参考。コンタクトレンズ割引_1080 x 1080のバナーデザイン。",
       "visualSummary": "明色・白基調。1080×1080の掲載画像を基準に確認。",
@@ -28,7 +28,7 @@
       "deepDivePriority": "中",
       "generatedAt": "2026-09-27T20:19:24.811Z"
     },
-    "BN-0024": {
+    "BN-0004": {
       "analysisMode": "automated_daily_first_pass",
       "overview": "バナー広場から収集したBanner参考。ハイクラス転職_600 x 500のバナーデザイン。",
       "visualSummary": "ニュートラル。600×500の掲載画像を基準に確認。",
@@ -37,7 +37,7 @@
       "deepDivePriority": "中",
       "generatedAt": "2026-09-27T20:19:24.834Z"
     },
-    "BN-0025": {
+    "BN-0005": {
       "analysisMode": "automated_daily_first_pass",
       "overview": "バナー広場から収集したBanner参考。クリスマスケーキ予約_560 x 420のバナーデザイン。",
       "visualSummary": "暖色・黄橙系。560×420の掲載画像を基準に確認。",
@@ -46,7 +46,7 @@
       "deepDivePriority": "中",
       "generatedAt": "2026-09-27T20:19:24.853Z"
     },
-    "WB-0004": {
+    "WB-0001": {
       "analysisMode": "automated_daily_first_pass",
       "overview": "SANKOU!から収集したWeb参考。コーディング代行･外注サービスならくまWeb。",
       "visualSummary": "寒色・青紫系。400×350の掲載画像を基準に確認。",
@@ -55,7 +55,7 @@
       "deepDivePriority": "中",
       "generatedAt": "2026-09-27T20:19:24.868Z"
     },
-    "WB-0005": {
+    "WB-0002": {
       "analysisMode": "automated_daily_first_pass",
       "overview": "SANKOU!から収集したWeb参考。味覚編集。",
       "visualSummary": "ニュートラル。400×350の掲載画像を基準に確認。",
@@ -154,7 +154,7 @@
       "deepDivePriority": "中",
       "generatedAt": "2026-09-27T20:19:25.128Z"
     },
-    "BN-0026": {
+    "BN-0006": {
       "analysisMode": "automated_daily_first_pass",
       "overview": "バナー広場から収集したBanner参考。オリジナルグッズ制作OEM_600 x 500のバナーデザイン。",
       "visualSummary": "暖色・黄橙系。600×500の掲載画像を基準に確認。",
@@ -163,7 +163,7 @@
       "deepDivePriority": "中",
       "generatedAt": "2026-09-27T20:32:06.220Z"
     },
-    "BN-0027": {
+    "BN-0007": {
       "analysisMode": "automated_daily_first_pass",
       "overview": "バナー広場から収集したBanner参考。メディカルダイエット_600 x 500のバナーデザイン。",
       "visualSummary": "ニュートラル。600×500の掲載画像を基準に確認。",
@@ -172,7 +172,7 @@
       "deepDivePriority": "中",
       "generatedAt": "2026-09-27T20:32:06.243Z"
     },
-    "BN-0028": {
+    "BN-0008": {
       "analysisMode": "automated_daily_first_pass",
       "overview": "バナー広場から収集したBanner参考。脱毛・美白体験_480 x 480のバナーデザイン。",
       "visualSummary": "寒色・青紫系。480×480の掲載画像を基準に確認。",
@@ -181,7 +181,7 @@
       "deepDivePriority": "中",
       "generatedAt": "2026-09-27T20:32:06.261Z"
     },
-    "BN-0029": {
+    "BN-0009": {
       "analysisMode": "automated_daily_first_pass",
       "overview": "バナー広場から収集したBanner参考。日本酒ナイト_960 x 640のバナーデザイン。",
       "visualSummary": "ニュートラル。960×640の掲載画像を基準に確認。",
@@ -190,7 +190,7 @@
       "deepDivePriority": "中",
       "generatedAt": "2026-09-27T20:32:06.292Z"
     },
-    "BN-0030": {
+    "BN-0010": {
       "analysisMode": "automated_daily_first_pass",
       "overview": "バナー広場から収集したBanner参考。海外留学_600 x 500のバナーデザイン。",
       "visualSummary": "寒色・青紫系。600×500の掲載画像を基準に確認。",
@@ -199,7 +199,7 @@
       "deepDivePriority": "中",
       "generatedAt": "2026-09-27T20:32:06.310Z"
     },
-    "WB-0006": {
+    "WB-0003": {
       "analysisMode": "automated_daily_first_pass",
       "overview": "SANKOU!から収集したWeb参考。フェリシモクラファン | フェリシモ。",
       "visualSummary": "明色・白基調。400×350の掲載画像を基準に確認。",
@@ -208,7 +208,7 @@
       "deepDivePriority": "中",
       "generatedAt": "2026-09-27T20:32:06.323Z"
     },
-    "WB-0007": {
+    "WB-0004": {
       "analysisMode": "automated_daily_first_pass",
       "overview": "SANKOU!から収集したWeb参考。売れるお店をつくる、店舗運営プラットフォーム | STORES。",
       "visualSummary": "ニュートラル。400×350の掲載画像を基準に確認。",
