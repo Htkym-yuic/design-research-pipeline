@@ -1,4 +1,158 @@
 {
   "version": 2,
-  "analyses": {}
+  "analyses": {
+    "BN-0021": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "バナー広場から収集したBanner参考。おせち先行予約販売_400 x 400のバナーデザイン。",
+      "visualSummary": "暖色・黄橙系。400×400の掲載画像を基準に確認。",
+      "usefulPoints": "遷移先URLを取得できず、バナー単体で保留",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:19:24.710Z"
+    },
+    "BN-0022": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "バナー広場から収集したBanner参考。遊園地_1200 x 675のバナーデザイン。",
+      "visualSummary": "暗色・黒基調。1200×675の掲載画像を基準に確認。",
+      "usefulPoints": "遷移先URLを取得できず、バナー単体で保留",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:19:24.753Z"
+    },
+    "BN-0023": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "バナー広場から収集したBanner参考。コンタクトレンズ割引_1080 x 1080のバナーデザイン。",
+      "visualSummary": "明色・白基調。1080×1080の掲載画像を基準に確認。",
+      "usefulPoints": "遷移先URLを取得できず、バナー単体で保留",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:19:24.811Z"
+    },
+    "BN-0024": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "バナー広場から収集したBanner参考。ハイクラス転職_600 x 500のバナーデザイン。",
+      "visualSummary": "ニュートラル。600×500の掲載画像を基準に確認。",
+      "usefulPoints": "遷移先URLを取得できず、バナー単体で保留",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:19:24.834Z"
+    },
+    "BN-0025": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "バナー広場から収集したBanner参考。クリスマスケーキ予約_560 x 420のバナーデザイン。",
+      "visualSummary": "暖色・黄橙系。560×420の掲載画像を基準に確認。",
+      "usefulPoints": "遷移先URLを取得できず、バナー単体で保留",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:19:24.853Z"
+    },
+    "WB-0004": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。コーディング代行･外注サービスならくまWeb。",
+      "visualSummary": "寒色・青紫系。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:19:24.868Z"
+    },
+    "WB-0005": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。味覚編集。",
+      "visualSummary": "ニュートラル。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:19:24.883Z"
+    },
+    "GR-0001": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したGraphic参考。夏季休業のお知らせチラシのチラシテンプレート。",
+      "visualSummary": "明色・白基調。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:19:24.898Z"
+    },
+    "GR-0002": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したGraphic参考。カラフルな縁日チラシのチラシテンプレート。",
+      "visualSummary": "ニュートラル。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:19:24.913Z"
+    },
+    "GR-0003": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したGraphic参考。サマーセール（トロピカルイメージ）のチラシテンプレート。",
+      "visualSummary": "緑・青緑系。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:19:24.927Z"
+    },
+    "GR-0004": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したGraphic参考。サマーフェスティバルのお知らせのチラシテンプレート。",
+      "visualSummary": "緑・青緑系。400×283の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:19:24.941Z"
+    },
+    "GR-0005": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したGraphic参考。夏季休業のお知らせテンプレートのチラシテンプレート。",
+      "visualSummary": "寒色・青紫系。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:19:24.955Z"
+    },
+    "PT-0001": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。Parts. reference。",
+      "visualSummary": "暖色・黄橙系。1409×765の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:19:24.994Z"
+    },
+    "PT-0002": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。Parts. reference。",
+      "visualSummary": "寒色・青紫系。1414×844の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:19:25.036Z"
+    },
+    "PT-0003": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。Parts. reference。",
+      "visualSummary": "緑・青緑系。1327×764の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:19:25.074Z"
+    },
+    "PT-0004": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。Parts. reference。",
+      "visualSummary": "ニュートラル。1505×382の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:19:25.097Z"
+    },
+    "PT-0005": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。Parts. reference。",
+      "visualSummary": "明色・白基調。1504×665の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:19:25.128Z"
+    }
+  }
 }
