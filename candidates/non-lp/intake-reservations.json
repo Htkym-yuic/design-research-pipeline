@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T20:18:40.789Z",
+  "updatedAt": "2026-09-27T20:31:16.155Z",
   "reserved": [
     {
       "id": "BN-0021",
@@ -57,6 +57,116 @@
       "reservedAt": "2026-09-27T20:18:40.789Z"
     },
     {
+      "id": "BN-0026",
+      "title": "オリジナルグッズ制作OEM_600 x 500のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/09/0efe24c9926f8cb982ef4cf4696983c9.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64715",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/09/0efe24c9926f8cb982ef4cf4696983c9.jpg.webp",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:31:16.155Z"
+    },
+    {
+      "id": "BN-0027",
+      "title": "メディカルダイエット_600 x 500のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/09/c63d8af34568ac82920a36efb4112b7d.png.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64712",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/09/c63d8af34568ac82920a36efb4112b7d.png.webp",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:31:16.155Z"
+    },
+    {
+      "id": "BN-0028",
+      "title": "脱毛・美白体験_480 x 480のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/09/14ba9fe00889d787425421131b1197fe.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64709",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/09/14ba9fe00889d787425421131b1197fe.jpg.webp",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:31:16.155Z"
+    },
+    {
+      "id": "BN-0029",
+      "title": "日本酒ナイト_960 x 640のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/09/d0c9b6b22386e5dd84323a9ab0fe9954.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64706",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/09/d0c9b6b22386e5dd84323a9ab0fe9954.jpg.webp",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:31:16.155Z"
+    },
+    {
+      "id": "BN-0030",
+      "title": "海外留学_600 x 500のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/09/8bebb75e867f77a2a39fab8754e3bdf5.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64703",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/09/8bebb75e867f77a2a39fab8754e3bdf5.jpg.webp",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:31:16.155Z"
+    },
+    {
+      "id": "CV-0001",
+      "title": "Beige Aesthetic Photo Collage Portrait Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAGyF6SuqI8/1/0/320w-okyveHONquU.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAGyF6SuqI8-beige-aesthetic-photo-collage-portrait-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAGyF6SuqI8/1/0/320w-okyveHONquU.jpg",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:31:16.155Z"
+    },
+    {
+      "id": "CV-0002",
+      "title": "Monochrome Modern Minimalist Fashion Photo Collage Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAGuCx0VNrI/2/0/320w-_VIwo2dSZPY.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAGuCx0VNrI-monochrome-modern-minimalist-fashion-photo-collage-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAGuCx0VNrI/2/0/320w-_VIwo2dSZPY.jpg",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:31:16.155Z"
+    },
+    {
+      "id": "CV-0003",
+      "title": "Blue and White Simple Minimalist Summer Photo Collage Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAGk9kuuJBQ/1/0/320w-aVwglpbVeXI.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAGk9kuuJBQ-blue-and-white-simple-minimalist-summer-photo-collage-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAGk9kuuJBQ/1/0/320w-aVwglpbVeXI.jpg",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:31:16.155Z"
+    },
+    {
+      "id": "CV-0004",
+      "title": "Beige Simple Reminder Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAGB0KRyPGU/2/0/320w-jievy-_k-e0.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAGB0KRyPGU-beige-simple-reminder-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAGB0KRyPGU/2/0/320w-jievy-_k-e0.jpg",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:31:16.155Z"
+    },
+    {
+      "id": "CV-0005",
+      "title": "Yellow Modern Minimalist Day in My Life Instagram Carousel Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAHDRTsvfbQ/1/0/320w-1A6tThPGghA.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/search/instagram-posts/",
+      "imageUrl": "https://template.canva.com/EAHDRTsvfbQ/1/0/320w-1A6tThPGghA.jpg",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:31:16.155Z"
+    },
+    {
       "id": "GR-0001",
       "title": "夏季休業のお知らせチラシのチラシテンプレート",
       "mediaType": "Graphic",
@@ -110,6 +220,61 @@
       "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fce061f7723ce2ef8763392b2b5c41b56%2Fce061f7723ce2ef8763392b2b5c41b56-400.webp&w=828&q=75",
       "materialId": null,
       "reservedAt": "2026-09-27T20:18:40.789Z"
+    },
+    {
+      "id": "GR-0006",
+      "title": "夏祭り開催のお知らせテンプレートのチラシテンプレート",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F6279e9430bc0816b69edb8b42fa0e047%2F6279e9430bc0816b69edb8b42fa0e047-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30594",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F6279e9430bc0816b69edb8b42fa0e047%2F6279e9430bc0816b69edb8b42fa0e047-400.webp&w=828&q=75",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:31:16.155Z"
+    },
+    {
+      "id": "GR-0007",
+      "title": "サマーセールチラシのチラシテンプレート",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F4cd884fdfa6cf760bb4b27cb14f733ae%2F4cd884fdfa6cf760bb4b27cb14f733ae-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30508",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F4cd884fdfa6cf760bb4b27cb14f733ae%2F4cd884fdfa6cf760bb4b27cb14f733ae-400.webp&w=828&q=75",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:31:16.155Z"
+    },
+    {
+      "id": "GR-0008",
+      "title": "青空とレモンのサマーセールポスターのチラシテンプレート",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F41b8a38ef1dfeb050250d67344109e42%2F41b8a38ef1dfeb050250d67344109e42-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30506",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F41b8a38ef1dfeb050250d67344109e42%2F41b8a38ef1dfeb050250d67344109e42-400.webp&w=828&q=75",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:31:16.155Z"
+    },
+    {
+      "id": "GR-0009",
+      "title": "夏季休業のお知らせのチラシテンプレート",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F0b3f820587da64719afc642e9c54cef6%2F0b3f820587da64719afc642e9c54cef6-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30495",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F0b3f820587da64719afc642e9c54cef6%2F0b3f820587da64719afc642e9c54cef6-400.webp&w=828&q=75",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:31:16.155Z"
+    },
+    {
+      "id": "GR-0010",
+      "title": "夏のサマーセールポスターのチラシテンプレート",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F2336bae59ef47f867ba7363c6683daa0%2F2336bae59ef47f867ba7363c6683daa0-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30486",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F2336bae59ef47f867ba7363c6683daa0%2F2336bae59ef47f867ba7363c6683daa0-400.webp&w=828&q=75",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:31:16.155Z"
     },
     {
       "id": "PT-0001",
@@ -167,6 +332,61 @@
       "reservedAt": "2026-09-27T20:18:40.789Z"
     },
     {
+      "id": "PT-0006",
+      "title": "Parts. reference",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/07/all_corp_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/7189",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/07/all_corp_00002.png",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:31:16.155Z"
+    },
+    {
+      "id": "PT-0007",
+      "title": "Parts. reference",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/07/ovice_00003.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/7179",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/07/ovice_00003.png",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:31:16.155Z"
+    },
+    {
+      "id": "PT-0008",
+      "title": "Parts. reference",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/07/mines_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/7161",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/07/mines_00001.png",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:31:16.155Z"
+    },
+    {
+      "id": "PT-0009",
+      "title": "Parts. reference",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/07/theletter_00013.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/7151",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/07/theletter_00013.png",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:31:16.155Z"
+    },
+    {
+      "id": "PT-0010",
+      "title": "Parts. reference",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/07/sugosugi_00007.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/7137",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/07/sugosugi_00007.png",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:31:16.155Z"
+    },
+    {
       "id": "WB-0004",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -187,6 +407,28 @@
       "imageUrl": "https://sankoudesign.com/wp-content/uploads/mikakuhenshu_t-400x350.jpg",
       "materialId": null,
       "reservedAt": "2026-09-27T20:18:40.789Z"
+    },
+    {
+      "id": "WB-0006",
+      "title": "フェリシモクラファン | フェリシモ",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.felissimo.co.jp/contents/crowdfunding/crowdfunding_fc.html",
+      "sourceDetailUrl": "https://sankoudesign.com/contentpage/felissimo-crowdfunding/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/felissimocrowdfunding_t-400x350.jpg",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:31:16.155Z"
+    },
+    {
+      "id": "WB-0007",
+      "title": "売れるお店をつくる、店舗運営プラットフォーム | STORES",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://stores.fun/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/stores/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/stores02_t-400x350.jpg",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:31:16.155Z"
     }
   ]
 }
