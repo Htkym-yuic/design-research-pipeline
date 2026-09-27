@@ -54,7 +54,9 @@ Creative Brief Studio AIとは分離して運用する、デザインリサー�
 
 ## 定期実行
 
-`.github/workflows/design-research-daily.yml` が、GitHub Actions上で毎日09:00 JSTに自動実行されます（`workflow_dispatch`での手動実行も可能）。Macを起動する必要はありません。
+`.github/workflows/design-research-daily.yml` が、GitHub Actions上で毎日01:30 JSTに自動実行されます（`workflow_dispatch`での手動実行も可能）。Macを起動する必要はありません。
+
+夜中に収集とラフ分析を進め、朝4:00〜4:30頃までに確認できる状態を目指します。
 
 現在自動化されているのはLPのみです。日次で以下を行います。
 
@@ -67,7 +69,7 @@ Creative Brief Studio AIとは分離して運用する、デザインリサー�
 
 `data/reference-sources.json` は参考元サイト一覧、`data/targets.json` は実際にスクリーンショットを撮る対象URL一覧です。LPアーカイブなどの参考元を使う場合も、トップページだけでなく、撮影時に見ていた個別詳細ページURLを `sourceDetailUrl` に残します。
 
-LPアーカイブは、一覧ページそのものではなく、一覧から個別LP候補を抽出します。候補は `candidates/lp-archive/candidates.json` に出力します。LP候補IDは `data/id-counters.json` で管理し、日次実行では抽出後に次回開始番号を進めて重複を防ぎます。
+LPアーカイブは、一覧ページそのものではなく、一覧から個別LP候補を抽出します。候補は `candidates/lp-archive/candidates.json` に出力します。LP候補IDは `data/id-counters.json` で管理し、日次実行では抽出後に次回開始番号を進めて重複を防ぎます。既存候補や同期済みナレッジと同じURLが出た場合は、その候補をスキップして次の未登録候補を繰り上げます。
 
 バナー・Web・グラフィック・パーツ・パターンの自動収集、および Creative Brief Studio AI への同期は、まだこのワークフローには含まれていません（`docs/OPERATIONS.md` の「現時点でまだ自動化していないこと」を参照）。
 

@@ -11,8 +11,8 @@ on:
           - "false"
         default: "true"
   schedule:
-    # 09:00 JST daily
-    - cron: "0 0 * * *"
+    # 01:30 JST daily. Start overnight so collection and rough analysis can finish before 04:00-04:30 JST.
+    - cron: "30 16 * * *"
 
 permissions:
   contents: write
@@ -32,6 +32,9 @@ jobs:
   lp-daily-intake:
     name: LP daily intake (collect → Dropbox → Notion)
     runs-on: ubuntu-latest
+    env:
+      DAILY_LP_LIMIT: ${{ vars.DAILY_LP_LIMIT || '2' }}
+      CANDIDATE_SCAN_LIMIT: ${{ vars.LP_CANDIDATE_SCAN_LIMIT || '40' }}
 
     steps:
       - name: Checkout
@@ -54,6 +57,7 @@ jobs:
       - name: Extract LP Archive candidates
         env:
           CANDIDATE_LIMIT: ${{ vars.DAILY_LP_LIMIT || '2' }}
+          CANDIDATE_SCAN_LIMIT: ${{ vars.LP_CANDIDATE_SCAN_LIMIT || '40' }}
         run: RESERVE_LP_IDS=true npm run extract:lp:test
 
       - name: Commit candidate reservation

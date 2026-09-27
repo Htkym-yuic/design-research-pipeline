@@ -18,6 +18,9 @@
       "id": "LP-0215",
       "title": "生活本舗",
       "status": "knowledge_synced",
+      "captureUrl": "https://seikatsuhonpo.com/ihinseiri/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229263",
+      "lpArchivePostId": "229263",
       "dropboxPath": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-09-27/lp-archive-candidates-LP-0215/LP-0215-seikatsuhonpo",
       "knowledgePath": "knowledge/lp/LP-0215.json"
     },
@@ -62,6 +65,7 @@
       "previousId": "LP-0215",
       "title": "秋をあそびつくそうSunshine City",
       "status": "captured_needs_review",
+      "captureUrl": "https://sunshinecity.jp/file/official/autumn/",
       "dropboxPath": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-09-26/lp-archive-candidates-LP-0214-LP-0222/LP-0222-sunshine-city"
     }
   ],

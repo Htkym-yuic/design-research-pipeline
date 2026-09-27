@@ -52,6 +52,10 @@ LPアーカイブの場合は、一覧ページから個別LP候補を抽出し�
 
 日次実行では `RESERVE_LP_IDS=true` を付けて候補抽出を行い、抽出後に `data/id-counters.json` を次回開始番号へ進めます。これにより、翌日の収集で同じIDを再利用しないようにします。
 
+候補抽出時には、既存の候補ファイル、`intake-reservations.json`、`knowledge/lp/*.json` の `captureUrl` / `sourceDetailUrl` / LP Archive post ID を確認します。すでに `LP-0215` などで登録済みのLPが再度一覧に出てきた場合は、新しいIDを付与せずスキップし、次の未登録候補を `LP-0223` 以降へ繰り上げます。
+
+日次スケジュールは、収集とラフ分析が朝4:00〜4:30頃までに終わることを目標に、GitHub Actionsを毎日1:30 JSTに開始します。
+
 抽出候補には以下を含めます。
 
 - 仮ID
