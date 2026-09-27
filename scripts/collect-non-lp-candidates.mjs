@@ -246,13 +246,18 @@ try {
       }
 
       allCandidates.push(...accepted);
+      const accessBlocked = pageDiagnostic && /403|request blocked|access denied|captcha/i.test(
+        `${pageDiagnostic.title} ${pageDiagnostic.bodyPreview}`
+      );
       sourceResults.push({
         key: source.key,
         sourceName: source.sourceName,
-        status: cards.length === 0 ? "unavailable" : "collected",
+        status: accessBlocked ? "blocked" : cards.length === 0 ? "unavailable" : "collected",
         found: cards.length,
         accepted: accepted.length,
-        reason: cards.length === 0 ? "対象画像を取得できませんでした。次回再試行します。" : null,
+        reason: accessBlocked
+          ? "取得元がGitHubホストランナーからのアクセスを拒否しました。ローカル収集ルートで再実行してください。"
+          : cards.length === 0 ? "対象画像を取得できませんでした。次回再試行します。" : null,
         diagnostic: pageDiagnostic,
       });
 
