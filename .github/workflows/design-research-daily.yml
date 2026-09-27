@@ -21,6 +21,10 @@ on:
         description: "復旧時のみ候補JSONを指定。空欄は通常の日次候補を使用"
         type: string
         default: ""
+      candidate_limit:
+        description: "手動実行で処理する候補数。空欄は日次設定を使用"
+        type: string
+        default: ""
   schedule:
     # 01:30 JST daily. Start overnight so collection and rough analysis can finish before 04:00-04:30 JST.
     - cron: "30 16 * * *"
@@ -45,7 +49,7 @@ jobs:
     name: LP daily intake (collect → Dropbox → Notion)
     runs-on: ubuntu-latest
     env:
-      DAILY_LP_LIMIT: ${{ vars.DAILY_LP_LIMIT || '2' }}
+      DAILY_LP_LIMIT: ${{ github.event.inputs.candidate_limit || vars.DAILY_LP_LIMIT || '2' }}
       CANDIDATE_SCAN_LIMIT: ${{ vars.LP_CANDIDATE_SCAN_LIMIT || '40' }}
 
     steps:
@@ -69,7 +73,7 @@ jobs:
       - name: Extract LP Archive candidates
         if: github.event_name == 'schedule' || github.event.inputs.refresh_candidates != 'false'
         env:
-          CANDIDATE_LIMIT: ${{ vars.DAILY_LP_LIMIT || '2' }}
+          CANDIDATE_LIMIT: ${{ env.DAILY_LP_LIMIT }}
           CANDIDATE_SCAN_LIMIT: ${{ vars.LP_CANDIDATE_SCAN_LIMIT || '40' }}
           RESERVE_LP_IDS: ${{ env.DRY_RUN == 'true' && 'false' || 'true' }}
         run: npm run extract:lp:test
@@ -89,7 +93,7 @@ jobs:
 
       - name: Capture LP candidate screenshots
         env:
-          LP_CANDIDATE_LIMIT: ${{ vars.DAILY_LP_LIMIT || '2' }}
+          LP_CANDIDATE_LIMIT: ${{ env.DAILY_LP_LIMIT }}
           LP_SECTION_LIMIT: "6"
         run: npm run capture:lp:candidates
 
