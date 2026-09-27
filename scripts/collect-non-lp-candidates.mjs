@@ -7,6 +7,11 @@ const countersPath = "data/id-counters.json";
 const reservationsPath = "candidates/non-lp/intake-reservations.json";
 const outputPath = "candidates/non-lp/candidates.json";
 const reserveIds = process.env.RESERVE_NON_LP_IDS === "true";
+const browserContextOptions = {
+  locale: "ja-JP",
+  timezoneId: "Asia/Tokyo",
+  userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+};
 
 const sources = JSON.parse(await fs.readFile(sourcePath, "utf8"));
 const counters = JSON.parse(await fs.readFile(countersPath, "utf8"));
@@ -106,7 +111,7 @@ async function extractCards(page, source) {
 
 async function findBannerLanding(browser, detailUrl, sourceHost) {
   if (!detailUrl) return null;
-  const page = await browser.newPage({ locale: "ja-JP" });
+  const page = await browser.newPage(browserContextOptions);
   try {
     await page.goto(detailUrl, { waitUntil: "domcontentloaded", timeout: 20000 });
     return await page.evaluate((host) => {
@@ -133,7 +138,7 @@ const sourceResults = [];
 try {
   for (const source of sources) {
     const limit = Number.parseInt(process.env[source.limitEnv] || `${source.defaultLimit}`, 10);
-    const page = await browser.newPage({ viewport: { width: 1200, height: 900 }, locale: "ja-JP" });
+    const page = await browser.newPage({ viewport: { width: 1200, height: 900 }, ...browserContextOptions });
     try {
       await page.goto(source.sourceUrl, { waitUntil: "domcontentloaded", timeout: 30000 });
       await page.waitForTimeout(2500);
@@ -145,7 +150,12 @@ try {
         }
         window.scrollTo(0, 0);
       });
-      const cards = await extractCards(page, source);
+      let cards = await extractCards(page, source);
+      if (cards.length === 0) {
+        await page.reload({ waitUntil: "domcontentloaded", timeout: 30000 });
+        await page.waitForTimeout(6000);
+        cards = await extractCards(page, source);
+      }
       const accepted = [];
 
       for (const card of cards) {
@@ -180,7 +190,14 @@ try {
       }
 
       allCandidates.push(...accepted);
-      sourceResults.push({ key: source.key, sourceName: source.sourceName, status: "collected", found: cards.length, accepted: accepted.length });
+      sourceResults.push({
+        key: source.key,
+        sourceName: source.sourceName,
+        status: cards.length === 0 ? "unavailable" : "collected",
+        found: cards.length,
+        accepted: accepted.length,
+        reason: cards.length === 0 ? "対象画像を取得できませんでした。次回再試行します。" : null,
+      });
 
       if (reserveIds && accepted.length > 0) {
         const counter = counters[source.key];

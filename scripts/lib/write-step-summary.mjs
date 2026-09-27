@@ -19,6 +19,7 @@ const notionResult = await readJsonSafe("screenshots/lp-candidates/notion-regist
 const nonLpCapture = await readJsonSafe("screenshots/non-lp-candidates/summary.json");
 const nonLpDropbox = await readJsonSafe("screenshots/non-lp-candidates/dropbox-upload-result.json");
 const nonLpNotion = await readJsonSafe("screenshots/non-lp-candidates/notion-registration-result.json");
+const nonLpCandidates = await readJsonSafe("candidates/non-lp/candidates.json");
 
 const lines = ["# LP日次収集 実行結果", ""];
 
@@ -73,6 +74,12 @@ if (nonLpCapture) {
   lines.push("## 収集・撮影", `- 対象: ${nonLpCapture.candidateCount}件`, `- 媒体別: ${Object.entries(byMedia).map(([key, count]) => `${key} ${count}件`).join(" / ") || "0件"}`, `- 失敗・要確認: ${failed.length}件`);
   for (const item of failed) lines.push(`  - ⚠ ${item.id}: ${item.error || "unknown error"}`);
   lines.push("");
+  const unavailable = (nonLpCandidates?.sourceResults || []).filter((item) => item.status !== "collected" || item.accepted === 0);
+  if (unavailable.length > 0) {
+    lines.push("### 未取得・次回再試行");
+    for (const item of unavailable) lines.push(`- ⚠ ${item.sourceName}: ${item.reason || item.error || "新規候補0件（重複除外を含む）"}`);
+    lines.push("");
+  }
 } else {
   lines.push("## 収集・撮影", "- 非LP処理は未実行です", "");
 }

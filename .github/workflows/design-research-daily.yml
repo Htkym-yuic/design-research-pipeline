@@ -213,16 +213,8 @@ jobs:
           path: candidates/
           if-no-files-found: warn
 
-      - name: Upload screenshot artifact
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: screenshot-test-results
-          path: screenshots/test-run/
-          if-no-files-found: warn
-
       - name: Upload LP candidate screenshot artifact
-        if: always()
+        if: always() && github.event.inputs.run_lp != 'false'
         uses: actions/upload-artifact@v4
         with:
           name: lp-candidate-screenshot-results
