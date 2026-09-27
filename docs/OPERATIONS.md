@@ -161,6 +161,7 @@ LP以外は以下のVariableで保存先と件数を管理する。
 | `NOTION_BANNER_DATA_SOURCE_ID` | NotionのバナーリサーチライブラリーのデータソースID |
 | `NOTION_WEB_DATA_SOURCE_ID` | NotionのウェブサイトリサーチライブラリーのデータソースID |
 | `NOTION_GRAPHIC_DATA_SOURCE_ID` | NotionのグラフィックデザインリサーチライブラリーのデータソースID |
+| `NOTION_CANVA_DATA_SOURCE_ID` | NotionのCanvaリサーチライブラリーのデータソースID |
 | `NOTION_PARTS_DATA_SOURCE_ID` | NotionのデザインパーツライブラリのデータソースID |
 | `NOTION_PARTS_REVIEW_DATA_SOURCE_ID` | 旧パーツ514件を保管する`99｜要確認・移行待ち / 04｜デザインパーツ再分析待ち`のデータソースID |
 | `NOTION_PATTERNS_DATA_SOURCE_ID` | Notionのデザイン原則・パターンのデータソースID |

@@ -73,7 +73,7 @@ for (const item of summary.results || []) {
       continue;
     }
     setProperty(properties, schema, ["タイトル", "サイト名", "作品名", "パーツ名", "素材名"], "title", titleValue);
-    setProperty(properties, schema, ["広告ID", "サイトID", "作品ID", "パーツID", "素材ID", "候補ID"], "rich_text", item.materialId || item.id);
+    setProperty(properties, schema, ["広告ID", "サイトID", "作品ID", "パーツID", "Canva ID", "素材ID", "候補ID"], "rich_text", item.materialId || item.id);
     setProperty(properties, schema, ["参考URL", "公式サイトURL", "素材ページURL", "参考元詳細URL"], "url", item.sourceDetailUrl || item.captureUrl);
     setProperty(properties, schema, ["出典", "取得元サイト", "参考元"], "rich_text", item.sourceName);
     setProperty(properties, schema, ["取得日"], "date", dateJst);
