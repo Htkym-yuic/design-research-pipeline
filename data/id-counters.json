@@ -1,17 +1,18 @@
 {
   "lp": {
     "prefix": "LP",
-    "existingMax": 224,
-    "nextNumber": 225,
+    "existingMax": 223,
+    "nextNumber": 224,
     "digits": 4,
     "sourceOfTruth": "Notion 01｜LPリサーチライブラリー + Dropbox/GitHub intake reservations",
     "lastReservation": {
       "reservedAt": "2026-09-27T00:56:48.237Z",
       "idStart": "LP-0223",
-      "idEnd": "LP-0224",
-      "candidateCount": 2,
+      "idEnd": "LP-0223",
+      "candidateCount": 1,
       "sourceName": "LPアーカイブ",
-      "outputPath": "candidates/lp-archive/candidates.json"
+      "outputPath": "candidates/lp-archive/candidates.json",
+      "note": "重複取消・繰り上げ後の状態。旧LP-0224（自衛官募集）がLP-0223になった。旧LP-0223（生活本舗、LP-0215と重複）は取消。"
     }
   },
   "banner": {

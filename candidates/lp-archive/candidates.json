@@ -4,48 +4,13 @@
   "sourceName": "LPアーカイブ",
   "mediaType": "LP",
   "requestedLimit": 2,
-  "candidateCount": 2,
+  "candidateCount": 1,
   "idStart": "LP-0223",
-  "idEnd": "LP-0224",
+  "idEnd": "LP-0223",
+  "notes": "2026-09-27の抽出で生成された旧LP-0223（生活本舗）は、LP-0215と同一のLPアーカイブ投稿（post_id=229263）の重複だったため取消し、旧LP-0224（自衛官募集）をLP-0223へ繰り上げた。次回の新規候補はLP-0224から開始する（data/id-counters.json参照）。",
   "candidates": [
     {
       "id": "LP-0223",
-      "status": "candidate",
-      "mediaType": "LP",
-      "title": "生活本舗",
-      "captureUrl": "https://seikatsuhonpo.com/ihinseiri/",
-      "captureMode": "target_site",
-      "sourceType": "Reference Site",
-      "sourceName": "LPアーカイブ",
-      "sourceUrl": "https://rdlp.jp/lp-archive/",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229263",
-      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103547/200x400.jpg",
-      "metadata": {
-        "lpArchivePostId": "229263",
-        "company": "生活本舗",
-        "category": "仕入れ・買い取り・下取り",
-        "tasteTag": "信頼・安心系",
-        "favoriteCount": "0",
-        "thumbnailAlt": "生活本舗のLPデザイン（仕入れ・買い取り・下取り／グリーン系／信頼・安心系）PC版"
-      },
-      "archiveAssets": {
-        "pcImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103547/full.jpg"
-        ],
-        "spImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103548/full_1.jpg",
-          "https://rdlp.jp/image/lp-archive/103548/full_2.jpg"
-        ],
-        "allImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103547/full.jpg",
-          "https://rdlp.jp/image/lp-archive/103548/full_1.jpg",
-          "https://rdlp.jp/image/lp-archive/103548/full_2.jpg"
-        ]
-      },
-      "notes": "LPアーカイブ一覧から自動抽出した候補。採用前に人が確認する。"
-    },
-    {
-      "id": "LP-0224",
       "status": "candidate",
       "mediaType": "LP",
       "title": "自衛官募集",
@@ -76,7 +41,7 @@
           "https://rdlp.jp/image/lp-archive/103546/full.jpg"
         ]
       },
-      "notes": "LPアーカイブ一覧から自動抽出した候補。採用前に人が確認する。"
+      "notes": "LPアーカイブ一覧から自動抽出した候補。採用前に人が確認する。旧ID: LP-0224（重複取消に伴いLP-0223へ繰り上げ）。"
     }
   ]
 }

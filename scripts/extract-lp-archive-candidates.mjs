@@ -5,9 +5,23 @@ import path from "node:path";
 const idCountersPath = new URL("../data/id-counters.json", import.meta.url);
 const idCounters = JSON.parse(await fs.readFile(idCountersPath, "utf8"));
 
+const seenPostsPath = new URL("../data/lp-archive-seen-posts.json", import.meta.url);
+async function loadSeenPosts() {
+  try {
+    const raw = JSON.parse(await fs.readFile(seenPostsPath, "utf8"));
+    return raw.seenPostIds || {};
+  } catch {
+    return {};
+  }
+}
+const seenPosts = await loadSeenPosts();
+
 const sourceUrl = process.env.LP_ARCHIVE_SOURCE_URL || "https://rdlp.jp/lp-archive/";
 const outputRoot = process.env.CANDIDATE_OUTPUT_DIR || "candidates/lp-archive";
 const candidateLimit = Number.parseInt(process.env.CANDIDATE_LIMIT || "8", 10);
+// LPアーカイブの一覧は新着順とは限らず、既に採用済みの投稿が上位に居座ることがある。
+// 重複除外後もcandidateLimit件を確保できるよう、実際の一覧取得は多めに行う。
+const fetchPoolSize = Math.max(candidateLimit * 5, 20);
 const nextLpNumber = Number.parseInt(process.env.NEXT_LP_NUMBER || `${idCounters.lp.nextNumber}`, 10);
 const shouldReserveIds = process.env.RESERVE_LP_IDS === "true";
 
@@ -33,7 +47,7 @@ try {
   await page.goto(sourceUrl, { waitUntil: "domcontentloaded", timeout: 30000 });
   await page.waitForLoadState("networkidle", { timeout: 5000 }).catch(() => {});
 
-  const listingCandidates = await page.$$eval(
+  const listingCandidatesPool = await page.$$eval(
     ".lp-card.lp-show-wrap",
     (cards, { limit, baseUrl }) =>
       cards.slice(0, limit).map((card) => {
@@ -57,8 +71,25 @@ try {
           favoriteCount: card.querySelector(".fav-num")?.textContent?.trim() || null
         };
       }),
-    { limit: candidateLimit, baseUrl: sourceUrl }
+    { limit: fetchPoolSize, baseUrl: sourceUrl }
   );
+
+  // 既に採用済みの投稿（post_id）は候補から除外する。post_idが取れない場合は
+  // 重複判定できないため、そのまま通す（誤って弾かないことを優先する）。
+  const skippedAsDuplicate = listingCandidatesPool.filter(
+    (candidate) => candidate.lpArchivePostId && seenPosts[candidate.lpArchivePostId],
+  );
+  const listingCandidates = listingCandidatesPool
+    .filter((candidate) => !candidate.lpArchivePostId || !seenPosts[candidate.lpArchivePostId])
+    .slice(0, candidateLimit);
+
+  if (skippedAsDuplicate.length > 0) {
+    console.log(
+      `重複のため除外: ${skippedAsDuplicate
+        .map((c) => `${c.title}（post_id=${c.lpArchivePostId} → ${seenPosts[c.lpArchivePostId]?.id}）`)
+        .join(", ")}`,
+    );
+  }
 
   const candidates = [];
 
@@ -171,6 +202,17 @@ try {
       outputPath
     };
     await fs.writeFile(idCountersPath, JSON.stringify(idCounters, null, 2) + "\n");
+
+    // 今回採番した候補のpost_idを重複防止台帳へ記録する（次回以降の抽出で除外されるようにする）
+    for (const candidate of candidates) {
+      const postId = candidate.metadata?.lpArchivePostId;
+      if (!postId) continue;
+      seenPosts[postId] = { id: candidate.id, title: candidate.title, firstSeenAt: summary.extractedAt };
+    }
+    await fs.writeFile(
+      seenPostsPath,
+      JSON.stringify({ _comment: "LPアーカイブの投稿（post_id）単位の重複防止台帳。", seenPostIds: seenPosts }, null, 2) + "\n",
+    );
   }
 
   console.log(`Extracted ${candidates.length} LP Archive candidates.`);

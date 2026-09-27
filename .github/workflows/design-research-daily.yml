@@ -58,13 +58,13 @@ jobs:
 
       - name: Commit candidate reservation
         run: |
-          if git diff --quiet -- candidates/lp-archive/candidates.json data/id-counters.json; then
+          if git diff --quiet -- candidates/lp-archive/candidates.json data/id-counters.json data/lp-archive-seen-posts.json; then
             echo "No candidate reservation changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add candidates/lp-archive/candidates.json data/id-counters.json
+          git add candidates/lp-archive/candidates.json data/id-counters.json data/lp-archive-seen-posts.json
           git commit -m "Reserve daily LP candidate IDs"
           git push
 

@@ -1,11 +1,12 @@
 {
-  "updatedAt": "2026-09-27T00:00:00+09:00",
+  "updatedAt": "2026-09-27T01:20:00+09:00",
   "mediaType": "LP",
   "sourceName": "LPアーカイブ",
   "notes": [
     "Dropbox上の既存候補とCBS同期済みナレッジを突き合わせ、次回以降の新規LP候補はLP-0223から開始する。",
     "LP-0215は生活本舗のCBS同期済みIDとして固定する。",
-    "2026-09-26取得分のSunshine City候補は、ID重複回避のためLP-0215からLP-0222へ変更した。"
+    "2026-09-26取得分のSunshine City候補は、ID重複回避のためLP-0215からLP-0222へ変更した。",
+    "2026-09-27のDRY_RUN検証実行で抽出された旧LP-0223（生活本舗、post_id=229263）は、LP-0215と同一のLPアーカイブ投稿の重複だったため取消した。旧LP-0224（自衛官募集、post_id=229262）をLP-0223へ繰り上げ、次回の新規候補はLP-0224から開始する。以後は data/lp-archive-seen-posts.json による重複防止台帳で、同じpost_idの再抽出を自動的に除外する。"
   ],
   "reserved": [
     {
@@ -63,7 +64,24 @@
       "title": "秋をあそびつくそうSunshine City",
       "status": "captured_needs_review",
       "dropboxPath": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-09-26/lp-archive-candidates-LP-0214-LP-0222/LP-0222-sunshine-city"
+    },
+    {
+      "id": "LP-0223",
+      "previousId": "LP-0224",
+      "title": "自衛官募集",
+      "status": "candidate",
+      "note": "2026-09-27にworkflow_dispatch(dry_run=true)で抽出・撮影のみ実施。DRY_RUNのためDropbox未保存・Notion未登録。旧LP-0223（生活本舗、LP-0215の重複）取消に伴いLP-0224からLP-0223へ繰り上げ。"
     }
   ],
-  "nextLpId": "LP-0223"
+  "duplicatesRejected": [
+    {
+      "rejectedId": "LP-0223",
+      "title": "生活本舗",
+      "lpArchivePostId": "229263",
+      "duplicateOf": "LP-0215",
+      "detectedAt": "2026-09-27T01:20:00+09:00",
+      "reason": "LP-0215と同一のLPアーカイブ投稿（post_id=229263）"
+    }
+  ],
+  "nextLpId": "LP-0224"
 }

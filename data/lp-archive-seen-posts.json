@@ -1,0 +1,7 @@
+{
+  "_comment": "LPアーカイブの投稿（post_id）単位で、既に候補として採用済みのものを記録する重複防止台帳。extract-lp-archive-candidates.mjsが、抽出時にここに載っているpost_idを候補から除外する。RESERVE_LP_IDS=trueで実行したときだけ更新される。",
+  "seenPostIds": {
+    "229263": { "id": "LP-0215", "title": "生活本舗", "firstSeenAt": "2026-09-26" },
+    "229262": { "id": "LP-0223", "title": "自衛官募集", "firstSeenAt": "2026-09-27" }
+  }
+}
