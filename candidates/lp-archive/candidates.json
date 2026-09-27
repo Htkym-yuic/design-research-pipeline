@@ -1,5 +1,5 @@
 {
-  "extractedAt": "2026-09-27T03:45:08.276Z",
+  "extractedAt": "2026-09-27T03:00:37.589Z",
   "sourceUrl": "https://rdlp.jp/lp-archive/",
   "sourceName": "LPアーカイブ",
   "mediaType": "LP",
@@ -7,11 +7,11 @@
   "scannedLimit": 40,
   "candidateCount": 2,
   "skippedDuplicateCount": 11,
-  "idStart": "LP-0229",
-  "idEnd": "LP-0230",
+  "idStart": "LP-0225",
+  "idEnd": "LP-0226",
   "candidates": [
     {
-      "id": "LP-0229",
+      "id": "LP-0225",
       "status": "candidate",
       "mediaType": "LP",
       "title": "レックインドアテニススクール新百合ヶ丘",
@@ -45,7 +45,7 @@
       "notes": "LPアーカイブ一覧から自動抽出した候補。採用前に人が確認する。"
     },
     {
-      "id": "LP-0230",
+      "id": "LP-0226",
       "status": "candidate",
       "mediaType": "LP",
       "title": "まっぷたつ？パフェ",
@@ -98,7 +98,7 @@
       "captureUrl": "https://www.mod.go.jp/gsdf/jieikanbosyu/",
       "lpArchivePostId": "229262",
       "duplicate": {
-        "duplicateOf": "LP-0227",
+        "duplicateOf": "LP-0223",
         "field": "captureUrl",
         "value": "https://www.mod.go.jp/gsdf/jieikanbosyu/",
         "reason": "existing candidate captureUrl"
@@ -206,7 +206,7 @@
       "captureUrl": "https://www.sports-create.com/gotenyama/jrtennis/",
       "lpArchivePostId": "229247",
       "duplicate": {
-        "duplicateOf": "LP-0228",
+        "duplicateOf": "LP-0224",
         "field": "captureUrl",
         "value": "https://www.sports-create.com/gotenyama/jrtennis/",
         "reason": "existing candidate captureUrl"

@@ -66,10 +66,11 @@ jobs:
         env:
           CANDIDATE_LIMIT: ${{ vars.DAILY_LP_LIMIT || '2' }}
           CANDIDATE_SCAN_LIMIT: ${{ vars.LP_CANDIDATE_SCAN_LIMIT || '40' }}
-        run: RESERVE_LP_IDS=true npm run extract:lp:test
+          RESERVE_LP_IDS: ${{ env.DRY_RUN == 'true' && 'false' || 'true' }}
+        run: npm run extract:lp:test
 
       - name: Commit candidate reservation
-        if: github.event_name == 'schedule' || github.event.inputs.refresh_candidates != 'false'
+        if: env.DRY_RUN != 'true' && (github.event_name == 'schedule' || github.event.inputs.refresh_candidates != 'false')
         run: |
           if git diff --quiet -- candidates/lp-archive/candidates.json data/id-counters.json; then
             echo "No candidate reservation changes."
