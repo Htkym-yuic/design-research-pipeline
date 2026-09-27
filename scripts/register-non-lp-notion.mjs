@@ -90,6 +90,7 @@ for (const item of summary.results || []) {
     if (item.mediaType === "Asset") {
       setProperty(properties, schema, ["素材種別"], "select", item.sourceName);
       setProperty(properties, schema, ["検索語"], "rich_text", item.searchTerm || "");
+      setProperty(properties, schema, ["作者URL", "作者プロフィールURL", "制作者URL"], "url", item.authorProfileUrl || "");
     }
 
     const blocks = [
@@ -102,6 +103,7 @@ for (const item of summary.results || []) {
       headingBlock("取得情報"),
       paragraphBlock(`参考元: ${item.sourceName}`),
       paragraphBlock(`参考元詳細URL: ${item.sourceDetailUrl || "取得できず"}`),
+      ...(item.authorProfileUrl ? [paragraphBlock(`作者プロフィールURL: ${item.authorProfileUrl}`)] : []),
       paragraphBlock(`撮影対象URL: ${item.captureUrl || "メタ情報のみ"}`),
       paragraphBlock(`Dropbox正本パス: ${upload?.dropboxPath || "メタ情報のみ"}`)
     ];

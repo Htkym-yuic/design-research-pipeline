@@ -42,6 +42,14 @@ on:
         type: choice
         options: ["true", "false"]
         default: "true"
+      non_lp_source_filter:
+        description: "非LPの対象をカンマ区切りで限定。空欄は全媒体（例: illustrationAc）"
+        type: string
+        default: ""
+      asset_limit:
+        description: "素材探索の取得件数。空欄は日次設定を使用"
+        type: string
+        default: ""
   schedule:
     # GitHubの毎時混雑を避け、01:37 JSTに本実行。01:52 JSTは未完了時のみ動く予備便。
     - cron: "37 16 * * *"
@@ -85,7 +93,7 @@ jobs:
       DAILY_GRAPHIC_LIMIT: ${{ vars.DAILY_GRAPHIC_LIMIT || '5' }}
       DAILY_PARTS_LIMIT: ${{ vars.DAILY_PARTS_LIMIT || '5' }}
       DAILY_CANVA_LIMIT: ${{ vars.DAILY_CANVA_LIMIT || '5' }}
-      DAILY_ASSET_LIMIT: ${{ vars.DAILY_ASSET_LIMIT || '10' }}
+      DAILY_ASSET_LIMIT: ${{ github.event.inputs.asset_limit || vars.DAILY_ASSET_LIMIT || '10' }}
 
     steps:
       - name: Checkout
@@ -159,6 +167,7 @@ jobs:
         if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_non_lp != 'false'
         env:
           RESERVE_NON_LP_IDS: ${{ env.DRY_RUN == 'true' && 'false' || 'true' }}
+          NON_LP_SOURCE_FILTER: ${{ github.event.inputs.non_lp_source_filter || '' }}
         run: npm run collect:non-lp
 
       - name: Commit non-LP candidate reservations

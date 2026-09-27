@@ -193,6 +193,7 @@ LP以外は以下のVariableで保存先と件数を管理する。
 - `DRY_RUN=true`（既定）：Dropbox/Notionへ実際には書き込まず、書き込み予定の内容だけを`dropbox-upload-result.json` / `notion-registration-result.json`へ出力する。
 - `DRY_RUN=false`：実際にDropboxへアップロードし、Notionへページを作成・更新する。
 - 手動実行（`workflow_dispatch`）では毎回選べる。スケジュール実行はリポジトリVariable `DRY_RUN` の値に従う（未設定なら`true`のまま）。**本番反映する場合は、Variable `DRY_RUN` を`false`に変更すること。**
+- 非LPだけを個別検証するときは、`non_lp_source_filter` に `illustrationAc` などのsource keyを指定する。イラストACは素材をダウンロードせず、`ILAC-XXXX`、素材ID、正式な素材ページURL、検索語、作者プロフィールURLのみを保存する。
 
 ### 現時点でまだ自動化していないこと
 

@@ -74,6 +74,7 @@
     "prefix": "ILAC",
     "sourceName": "イラストAC",
     "sourceUrl": "https://www.ac-illust.com/main/search_result.php?mode=cate&cid=1&cword=%E3%83%93%E3%82%B8%E3%82%B9",
+    "collectionUrl": "https://www.ac-illust.com/main/search_result.php?word=%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9",
     "mode": "ac_metadata",
     "library": "Asset_Research_Library",
     "notionEnv": "NOTION_ASSET_DATA_SOURCE_ID",

@@ -5,8 +5,14 @@ import path from "node:path";
 const sourcePath = "data/non-lp-sources.json";
 const countersPath = "data/id-counters.json";
 const reservationsPath = "candidates/non-lp/intake-reservations.json";
-const outputPath = "candidates/non-lp/candidates.json";
+const outputPath = process.env.NON_LP_OUTPUT_PATH || "candidates/non-lp/candidates.json";
 const reserveIds = process.env.RESERVE_NON_LP_IDS === "true";
+const sourceFilter = new Set(
+  String(process.env.NON_LP_SOURCE_FILTER || "")
+    .split(",")
+    .map((value) => value.trim())
+    .filter(Boolean)
+);
 const browserContextOptions = {
   locale: "ja-JP",
   timezoneId: "Asia/Tokyo",
@@ -46,9 +52,63 @@ function titleFrom(candidate, source) {
 
 async function extractCards(page, source) {
   return page.evaluate((definition) => {
-    const images = [...document.images];
     const values = [];
     const seen = new Set();
+
+    if (definition.mode === "ac_metadata") {
+      for (const figure of document.querySelectorAll("figure")) {
+        const image = [...figure.querySelectorAll("img")].find((item) => {
+          const src = item.currentSrc || item.src || item.dataset.src || "";
+          return src.includes(definition.imageHostIncludes);
+        });
+        if (!image) continue;
+
+        const hrefs = [...figure.querySelectorAll("a[href]")].map((anchor) => anchor.href);
+        let materialUrl = null;
+        let materialId = null;
+        let title = null;
+        for (const href of hrefs) {
+          try {
+            const parsed = new URL(href);
+            const nested = parsed.searchParams.get("url");
+            if (nested?.includes("/main/detail.php")) {
+              const detail = new URL(nested);
+              materialId = detail.searchParams.get("id");
+              materialUrl = materialId
+                ? `${detail.origin}${detail.pathname}?id=${encodeURIComponent(materialId)}`
+                : detail.toString();
+              title = parsed.searchParams.get("word") || title;
+            }
+            if (!materialId && parsed.searchParams.get("id") && ["/main/related.php", "/search/ris.php"].includes(parsed.pathname)) {
+              materialId = parsed.searchParams.get("id");
+            }
+          } catch {}
+        }
+        if (!materialUrl && materialId) {
+          materialUrl = `${new URL(definition.sourceUrl).origin}/main/detail.php?id=${encodeURIComponent(materialId)}`;
+        }
+        if (!materialUrl || !materialId || seen.has(materialUrl)) continue;
+        seen.add(materialUrl);
+
+        const src = image.currentSrc || image.src || image.dataset.src || null;
+        values.push({
+          title: title || image.alt?.split(/[,_\n]/)[0]?.trim() || null,
+          alt: image.alt || null,
+          imageUrl: src,
+          width: image.naturalWidth || Number(image.getAttribute("width")) || null,
+          height: image.naturalHeight || Number(image.getAttribute("height")) || null,
+          sourceDetailUrl: materialUrl,
+          captureUrl: materialUrl,
+          landingUrl: null,
+          materialId,
+          authorProfileUrl: hrefs.find((href) => href.includes("/main/profile.php")) || null,
+          searchTerm: definition.searchTerm || null
+        });
+      }
+      return values;
+    }
+
+    const images = [...document.images];
 
     function linksNear(image) {
       const links = [];
@@ -77,31 +137,17 @@ async function extractCards(page, source) {
         try { return new URL(href).hostname === new URL(definition.sourceUrl).hostname; } catch { return false; }
       });
 
-      let materialUrl = null;
-      let materialId = null;
-      if (definition.mode === "ac_metadata") {
-        const figure = image.closest("figure") || image.parentElement;
-        const hrefs = [...(figure?.querySelectorAll("a[href]") || [])].map((anchor) => anchor.href);
-        for (const href of hrefs) {
-          try {
-            const parsed = new URL(href);
-            const nested = parsed.searchParams.get("url");
-            if (nested?.includes("/main/detail.php")) materialUrl = nested;
-          } catch {}
-        }
-        if (materialUrl) materialId = new URL(materialUrl).searchParams.get("id");
-      }
-
       values.push({
         title: image.title || image.alt?.split(/[,\n]/)[0]?.trim() || null,
         alt: image.alt || null,
         imageUrl: src,
         width: image.naturalWidth,
         height: image.naturalHeight,
-        sourceDetailUrl: materialUrl || internalDetail || sameHost || definition.sourceUrl,
+        sourceDetailUrl: internalDetail || sameHost || definition.sourceUrl,
         captureUrl: definition.mode === "web" ? external : src,
         landingUrl: definition.captureLandingPage ? external : null,
-        materialId,
+        materialId: null,
+        authorProfileUrl: null,
         searchTerm: definition.searchTerm || null
       });
     }
@@ -136,11 +182,11 @@ const allCandidates = [];
 const sourceResults = [];
 
 try {
-  for (const source of sources) {
+  for (const source of sources.filter((item) => sourceFilter.size === 0 || sourceFilter.has(item.key))) {
     const limit = Number.parseInt(process.env[source.limitEnv] || `${source.defaultLimit}`, 10);
     const page = await browser.newPage({ viewport: { width: 1200, height: 900 }, ...browserContextOptions });
     try {
-      await page.goto(source.sourceUrl, { waitUntil: "domcontentloaded", timeout: 30000 });
+      await page.goto(source.collectionUrl || source.sourceUrl, { waitUntil: "domcontentloaded", timeout: 30000 });
       await page.waitForTimeout(2500);
       await page.evaluate(async () => {
         const limit = Math.min(document.documentElement.scrollHeight, 5000);
@@ -184,6 +230,7 @@ try {
           notionEnv: source.notionEnv,
           saveImage: source.mode !== "ac_metadata",
           materialId: card.materialId,
+          authorProfileUrl: card.authorProfileUrl,
           searchTerm: card.searchTerm,
           metadata: { width: card.width, height: card.height, alt: card.alt }
         });
@@ -230,6 +277,7 @@ if (reserveIds && allCandidates.length > 0) {
       sourceDetailUrl: candidate.sourceDetailUrl,
       imageUrl: candidate.imageUrl,
       materialId: candidate.materialId || null,
+      authorProfileUrl: candidate.authorProfileUrl || null,
       reservedAt: output.collectedAt
     });
   }

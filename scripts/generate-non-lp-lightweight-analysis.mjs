@@ -30,7 +30,9 @@ for (const item of summary.results || []) {
   }
   const relation = item.mediaType === "Banner"
     ? item.landingUrl ? "バナーと遷移先FVを比較可能" : "遷移先URLを取得できず、バナー単体で保留"
-    : item.mediaType === "Web" ? "PC/SPのFV・全体構成を比較可能" : "単体ビジュアルの構成・余白・文字組みを確認可能";
+    : item.mediaType === "Web" ? "PC/SPのFV・全体構成を比較可能"
+    : item.mediaType === "Asset" ? `素材ID ${item.materialId || "未取得"} と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない`
+    : "単体ビジュアルの構成・余白・文字組みを確認可能";
   output.analyses[item.id] = {
     analysisMode: "automated_daily_first_pass",
     overview: `${item.sourceName}から収集した${item.mediaType}参考。${item.title}。`,
