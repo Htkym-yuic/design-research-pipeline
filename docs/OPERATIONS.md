@@ -176,9 +176,12 @@ LP以外（バナー・Web・グラフィック・パーツ・パターン）は
 3. 候補予約（`candidates/lp-archive/candidates.json` 等）をコミット・push
 4. `npm run capture:lp:candidates` — 抽出した実候補（フィクスチャではない）をPC/SPで撮影する
 5. `npm run dropbox:upload:lp` — 撮影結果を`99_Needs_Review/<日付>/daily-intake-<開始ID>-<終了ID>/`配下へアップロードする
-6. `npm run notion:register:lp` — Notionへ軽量分析ページを新規作成・更新する
-7. `npm run report:lp:summary` — GitHub ActionsのStep Summaryへ結果（失敗があればその内容）を出力する
-8. 候補・撮影結果・Dropboxアップロード結果・Notion登録結果をGitHub Artifactとして保存する（`if-no-files-found: warn` のため、途中で失敗しても直前までの結果は残る）
+6. `candidates/lp-archive/lightweight-analysis.json`へ画面確認済みの軽量分析を用意する。未記入の候補は分析待ちとして扱う
+7. `npm run notion:register:lp` — Notionへ軽量分析とPC/SPのFV・全体画像を新規作成・更新する
+
+日次のNotion登録では、軽量分析を週末まで保留しない。概要、FV印象、構成、テイスト・配色、参考点、要確認点、詳細分析候補度を短く記録し、PC/SPそれぞれのファーストビューと全体確認画像を掲載する。週末へ回すのは29項目の詳細分析とCBS同期である。
+8. `npm run report:lp:summary` — GitHub ActionsのStep Summaryへ結果（失敗があればその内容）を出力する
+9. 候補・撮影結果・Dropboxアップロード結果・Notion登録結果をGitHub Artifactとして保存する（`if-no-files-found: warn` のため、途中で失敗しても直前までの結果は残る）
 
 候補1件の処理に失敗しても、他の候補の処理は継続する（各スクリプト内で候補単位にtry/catchしている）。
 

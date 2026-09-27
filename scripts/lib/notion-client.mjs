@@ -9,6 +9,7 @@
  */
 
 import fs from "node:fs/promises";
+import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { requireEnv } from "./env.mjs";
 
@@ -156,11 +157,76 @@ export async function appendBlockChildren(pageId, children) {
   });
 }
 
+/** 20 MiB未満のローカルファイルをNotionへ直接アップロードする。 */
+export async function uploadFileForNotion(filePath, contentType = "image/jpeg") {
+  const filename = path.basename(filePath);
+  const upload = await notionFetch("/file_uploads", {
+    method: "POST",
+    body: JSON.stringify({ mode: "single_part", filename, content_type: contentType }),
+  });
+
+  const form = new FormData();
+  const buffer = await fs.readFile(filePath);
+  form.append("file", new Blob([buffer], { type: contentType }), filename);
+
+  const token = requireEnv("NOTION_TOKEN");
+  const response = await fetch(upload.upload_url || `${API_BASE}/file_uploads/${upload.id}/send`, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${token}`,
+      "Notion-Version": NOTION_VERSION,
+    },
+    body: form,
+  });
+  const sent = await response.json().catch(() => ({}));
+  if (!response.ok) {
+    throw new Error(`Notion画像アップロードに失敗しました（${response.status}）: ${sent?.message || JSON.stringify(sent)}`);
+  }
+  return sent.id || upload.id;
+}
+
+/** 未分析の自動取り込みページだけを、安全に日次内容へ差し替える。 */
+export async function replaceIntakePageChildren(pageId, children) {
+  let cursor;
+  do {
+    const query = cursor ? `?start_cursor=${encodeURIComponent(cursor)}` : "";
+    const result = await notionFetch(`/blocks/${pageId}/children${query}`);
+    for (const block of result.results || []) {
+      if (["child_page", "child_database", "meeting_notes"].includes(block.type)) continue;
+      await notionFetch(`/blocks/${block.id}`, { method: "DELETE" });
+    }
+    cursor = result.has_more ? result.next_cursor : null;
+  } while (cursor);
+
+  return appendBlockChildren(pageId, children);
+}
+
 /** 段落ブロックを組み立てる小さなヘルパー */
 export function paragraphBlock(text) {
   return {
     object: "block",
     type: "paragraph",
     paragraph: { rich_text: [{ type: "text", text: { content: text } }] },
+  };
+}
+
+export function headingBlock(text, level = 2) {
+  const type = `heading_${Math.min(Math.max(level, 1), 3)}`;
+  return {
+    object: "block",
+    type,
+    [type]: { rich_text: [{ type: "text", text: { content: text } }] },
+  };
+}
+
+export function imageUploadBlock(fileUploadId, caption = "") {
+  return {
+    object: "block",
+    type: "image",
+    image: {
+      type: "file_upload",
+      file_upload: { id: fileUploadId },
+      caption: caption ? [{ type: "text", text: { content: caption } }] : [],
+    },
   };
 }

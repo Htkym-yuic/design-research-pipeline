@@ -9,10 +9,8 @@
  *
  * 出力：<出力ディレクトリ>/notion-registration-result.json
  *
- * 【重要】ここで登録するのは構造化・追跡用の項目（ステータス・URL・Dropboxパス等）まで。
- * FV印象・構成ざっくり・業種・訴求・配色・レイアウトタグ等の「軽量分析の中身」は、
- * 実際に画面を見て判断する工程（人手 or 週末レビュー時のChatGPT分析）に委ねる。
- * ここで自動生成すると、見ていない内容を捏造することになるため行わない。
+ * 軽量分析JSONがある候補は、日次所見とPC/SP画像も掲載する。
+ * JSONがない候補を「軽量分析済み」とは扱わず、収集済み・分析待ちとして明示する。
  *
  * DRY_RUN=true の場合、Notionへは書き込まず、登録予定の内容だけを出力する。
  */
@@ -24,8 +22,12 @@ import {
   buildLpProperties,
   createPage,
   findPageByMatchProperty,
+  headingBlock,
+  imageUploadBlock,
   loadLpPropertyConfig,
   paragraphBlock,
+  replaceIntakePageChildren,
+  uploadFileForNotion,
   updatePageProperties,
 } from "./lib/notion-client.mjs";
 
@@ -43,6 +45,9 @@ const candidatesPath = getArg("candidates") || process.env.LP_CANDIDATES_FILE ||
 const dropboxResultPath =
   getArg("dropbox-result") || process.env.LP_DROPBOX_RESULT_FILE || "screenshots/lp-candidates/dropbox-upload-result.json";
 const dryRun = isDryRun();
+const summaryPath = getArg("summary") || process.env.LP_CAPTURE_SUMMARY_FILE || "screenshots/lp-candidates/summary.json";
+const analysisPath =
+  getArg("analysis") || process.env.LP_LIGHTWEIGHT_ANALYSIS_FILE || "candidates/lp-archive/lightweight-analysis.json";
 
 const candidatesData = JSON.parse(await fs.readFile(candidatesPath, "utf8").catch((error) => {
   throw new Error(`候補ファイルを読み込めません（${candidatesPath}）: ${error.message}`);
@@ -50,8 +55,18 @@ const candidatesData = JSON.parse(await fs.readFile(candidatesPath, "utf8").catc
 const dropboxResult = JSON.parse(await fs.readFile(dropboxResultPath, "utf8").catch((error) => {
   throw new Error(`Dropboxアップロード結果を読み込めません（${dropboxResultPath}）: ${error.message}`);
 }));
+const captureSummary = JSON.parse(await fs.readFile(summaryPath, "utf8").catch((error) => {
+  throw new Error(`撮影結果を読み込めません（${summaryPath}）: ${error.message}`);
+}));
+const lightweightData = JSON.parse(await fs.readFile(analysisPath, "utf8").catch(() => '{"analyses":{}}'));
 
 const candidateById = new Map(candidatesData.candidates.map((candidate) => [candidate.id, candidate]));
+const captureById = new Map();
+for (const item of captureSummary.results || []) {
+  if (item.status !== "captured") continue;
+  if (!captureById.has(item.id)) captureById.set(item.id, {});
+  captureById.get(item.id)[item.device] = item;
+}
 const propertyConfig = await loadLpPropertyConfig();
 
 if (!dryRun) {
@@ -67,6 +82,13 @@ for (const dropboxCandidate of dropboxResult.candidates) {
     results.push({ id: dropboxCandidate.id, status: "skipped", reason: "candidates.jsonに該当IDが見つかりません" });
     continue;
   }
+  const analysis = lightweightData.analyses?.[candidate.id] || null;
+  const analysisReady = Boolean(
+    analysis?.overview && analysis?.fvImpression && analysis?.roughStructure && analysis?.deepDivePriority,
+  );
+  const progressNote = analysisReady
+    ? "日次軽量分析実施済み。PC/SPのFV・全体確認画像を掲載。詳細分析とCBS同期は週末レビュー後に実施。"
+    : "収集・撮影・Dropbox保存まで完了。軽量分析JSONがないため分析待ち。詳細分析とCBS同期は未実施。";
 
   const values = {
     title: `${candidate.id} ${candidate.title || ""}`.trim(),
@@ -82,8 +104,11 @@ for (const dropboxCandidate of dropboxResult.candidates) {
     dropboxPath: dropboxCandidate.dropboxPath || "",
     productType: ["LP"],
     category: "その他",
-    progressNote:
-      "自動収集のみ実施。FV印象・構成・訴求・配色・レイアウトタグ等の軽量分析は未実施（週末レビューで判断）。",
+    mainAppeal: analysis?.mainAppeal || "",
+    industryTags: analysis?.industryTags || [],
+    colorTags: analysis?.colorTags || [],
+    layoutTags: analysis?.layoutTags || [],
+    progressNote,
   };
 
   const { properties, unknownKeys } = buildLpProperties(propertyConfig, values);
@@ -91,16 +116,26 @@ for (const dropboxCandidate of dropboxResult.candidates) {
     console.warn(`${candidate.id}: config/notion-lp-properties.jsonに定義の無いキーを無視しました: ${unknownKeys.join(", ")}`);
   }
 
-  const bodyBlocks = [
-    paragraphBlock("この分析は軽量分析ページです。詳細分析は週末レビューで選定した候補のみ行います。"),
+  const bodyBlocks = [headingBlock(analysisReady ? "日次軽量分析" : "日次収集結果")];
+  if (analysisReady) {
+    bodyBlocks.push(
+      paragraphBlock(`概要: ${analysis.overview}`),
+      paragraphBlock(`FV印象: ${analysis.fvImpression}`),
+      paragraphBlock(`構成ざっくり: ${analysis.roughStructure}`),
+      paragraphBlock(`テイスト・配色: ${analysis.tasteAndColor || "要確認"}`),
+      paragraphBlock(`参考にできる点: ${analysis.usefulPoints || "要確認"}`),
+      paragraphBlock(`要確認点: ${analysis.reviewPoints || "なし"}`),
+      paragraphBlock(`詳細分析候補度: ${analysis.deepDivePriority}`),
+    );
+  } else {
+    bodyBlocks.push(paragraphBlock("軽量分析は未実施です。画像を確認して軽量分析JSONを用意するまで、分析済みとして扱いません。"));
+  }
+  bodyBlocks.push(
+    headingBlock("基本情報"),
     paragraphBlock(`対象URL: ${candidate.captureUrl || "（未取得）"}`),
     paragraphBlock(`LP Archive詳細URL: ${candidate.sourceDetailUrl || "（未取得）"}`),
     paragraphBlock(`Dropbox正本パス: ${dropboxCandidate.dropboxPath || "（未アップロード）"}`),
-    paragraphBlock("FV印象: （軽量分析未実施）"),
-    paragraphBlock("構成ざっくり: （軽量分析未実施）"),
-    paragraphBlock("深掘り候補度: （軽量分析未実施・週末レビューでCBS取り込み候補を判断します）"),
-    paragraphBlock("画像について: Notionに登録する画像は軽量版のみです。正本画像はDropboxに保管しています。"),
-  ];
+  );
 
   if (dryRun) {
     results.push({ id: candidate.id, status: "dry_run", properties, bodyBlockCount: bodyBlocks.length });
@@ -109,10 +144,29 @@ for (const dropboxCandidate of dropboxResult.candidates) {
   }
 
   try {
+    const captures = captureById.get(candidate.id) || {};
+    const imageDefinitions = [
+      ["PC ファーストビュー", captures.pc?.screenshots?.notionFirstView],
+      ["PC 全体", captures.pc?.screenshots?.notionSections],
+      ["SP ファーストビュー", captures.sp?.screenshots?.notionFirstView],
+      ["SP 全体", captures.sp?.screenshots?.notionSections],
+    ].filter(([, filePath]) => filePath);
+    for (const [label, filePath] of imageDefinitions) {
+      bodyBlocks.push(headingBlock(label));
+      const fileUploadId = await uploadFileForNotion(filePath);
+      bodyBlocks.push(imageUploadBlock(fileUploadId, `${candidate.id} ${label}`));
+    }
+    bodyBlocks.push(paragraphBlock("画像はNotion用軽量版です。正本画像と個別画像はDropboxに保管しています。"));
+
     const existingPage = await findPageByMatchProperty(dataSourceId, propertyConfig, candidate.id);
 
     if (existingPage) {
       await updatePageProperties(existingPage.id, properties);
+      const analysisDoneProperty = propertyConfig.properties.analysisDone?.notionName;
+      const analysisDone = analysisDoneProperty
+        ? existingPage.properties?.[analysisDoneProperty]?.checkbox === true
+        : false;
+      if (!analysisDone) await replaceIntakePageChildren(existingPage.id, bodyBlocks);
       results.push({ id: candidate.id, status: "updated", pageId: existingPage.id });
       console.log(`${candidate.id}: 既存のNotionページを更新しました（${existingPage.id}）`);
     } else {
