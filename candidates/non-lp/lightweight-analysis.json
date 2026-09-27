@@ -153,6 +153,204 @@
       "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
       "deepDivePriority": "中",
       "generatedAt": "2026-09-27T20:19:25.128Z"
+    },
+    "BN-0026": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "バナー広場から収集したBanner参考。オリジナルグッズ制作OEM_600 x 500のバナーデザイン。",
+      "visualSummary": "暖色・黄橙系。600×500の掲載画像を基準に確認。",
+      "usefulPoints": "遷移先URLを取得できず、バナー単体で保留",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:32:06.220Z"
+    },
+    "BN-0027": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "バナー広場から収集したBanner参考。メディカルダイエット_600 x 500のバナーデザイン。",
+      "visualSummary": "ニュートラル。600×500の掲載画像を基準に確認。",
+      "usefulPoints": "遷移先URLを取得できず、バナー単体で保留",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:32:06.243Z"
+    },
+    "BN-0028": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "バナー広場から収集したBanner参考。脱毛・美白体験_480 x 480のバナーデザイン。",
+      "visualSummary": "寒色・青紫系。480×480の掲載画像を基準に確認。",
+      "usefulPoints": "遷移先URLを取得できず、バナー単体で保留",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:32:06.261Z"
+    },
+    "BN-0029": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "バナー広場から収集したBanner参考。日本酒ナイト_960 x 640のバナーデザイン。",
+      "visualSummary": "ニュートラル。960×640の掲載画像を基準に確認。",
+      "usefulPoints": "遷移先URLを取得できず、バナー単体で保留",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:32:06.292Z"
+    },
+    "BN-0030": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "バナー広場から収集したBanner参考。海外留学_600 x 500のバナーデザイン。",
+      "visualSummary": "寒色・青紫系。600×500の掲載画像を基準に確認。",
+      "usefulPoints": "遷移先URLを取得できず、バナー単体で保留",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:32:06.310Z"
+    },
+    "WB-0006": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。フェリシモクラファン | フェリシモ。",
+      "visualSummary": "明色・白基調。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:32:06.323Z"
+    },
+    "WB-0007": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。売れるお店をつくる、店舗運営プラットフォーム | STORES。",
+      "visualSummary": "ニュートラル。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:32:06.335Z"
+    },
+    "GR-0006": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したGraphic参考。夏祭り開催のお知らせテンプレートのチラシテンプレート。",
+      "visualSummary": "ニュートラル。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:32:06.346Z"
+    },
+    "GR-0007": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したGraphic参考。サマーセールチラシのチラシテンプレート。",
+      "visualSummary": "寒色・青紫系。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:32:06.359Z"
+    },
+    "GR-0008": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したGraphic参考。青空とレモンのサマーセールポスターのチラシテンプレート。",
+      "visualSummary": "緑・青緑系。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:32:06.374Z"
+    },
+    "GR-0009": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したGraphic参考。夏季休業のお知らせのチラシテンプレート。",
+      "visualSummary": "寒色・青紫系。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:32:06.387Z"
+    },
+    "GR-0010": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したGraphic参考。夏のサマーセールポスターのチラシテンプレート。",
+      "visualSummary": "緑・青緑系。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:32:06.398Z"
+    },
+    "PT-0006": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。Parts. reference。",
+      "visualSummary": "明色・白基調。1507×1004の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:32:06.432Z"
+    },
+    "PT-0007": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。Parts. reference。",
+      "visualSummary": "寒色・青紫系。1506×816の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:32:06.462Z"
+    },
+    "PT-0008": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。Parts. reference。",
+      "visualSummary": "明色・白基調。1508×1061の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:32:06.503Z"
+    },
+    "PT-0009": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。Parts. reference。",
+      "visualSummary": "ニュートラル。1510×478の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:32:06.525Z"
+    },
+    "PT-0010": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。Parts. reference。",
+      "visualSummary": "明色・白基調。1514×611の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:32:06.549Z"
+    },
+    "CV-0001": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。Beige Aesthetic Photo Collage Portrait Instagram Post。",
+      "visualSummary": "ニュートラル。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:32:06.567Z"
+    },
+    "CV-0002": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。Monochrome Modern Minimalist Fashion Photo Collage Instagram Post。",
+      "visualSummary": "ニュートラル。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:32:06.585Z"
+    },
+    "CV-0003": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。Blue and White Simple Minimalist Summer Photo Collage Instagram Post。",
+      "visualSummary": "ニュートラル。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:32:06.602Z"
+    },
+    "CV-0004": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。Beige Simple Reminder Instagram Post。",
+      "visualSummary": "明色・白基調。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:32:06.614Z"
+    },
+    "CV-0005": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。Yellow Modern Minimalist Day in My Life Instagram Carousel Post。",
+      "visualSummary": "暖色・黄橙系。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T20:32:06.626Z"
     }
   }
 }
