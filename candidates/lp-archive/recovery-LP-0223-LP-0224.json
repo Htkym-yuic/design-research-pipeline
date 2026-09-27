@@ -1,0 +1,71 @@
+{
+  "extractedAt": "2026-09-27T02:31:34.973Z",
+  "sourceUrl": "https://rdlp.jp/lp-archive/",
+  "sourceName": "LPアーカイブ",
+  "mediaType": "LP",
+  "candidateCount": 2,
+  "idStart": "LP-0223",
+  "idEnd": "LP-0224",
+  "candidates": [
+    {
+      "id": "LP-0223",
+      "status": "candidate",
+      "mediaType": "LP",
+      "title": "自衛官募集",
+      "captureUrl": "https://www.mod.go.jp/gsdf/jieikanbosyu/",
+      "captureMode": "archive_asset",
+      "sourceType": "Reference Site",
+      "sourceName": "LPアーカイブ",
+      "sourceUrl": "https://rdlp.jp/lp-archive/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229262",
+      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103545/200x400.jpg",
+      "metadata": {
+        "lpArchivePostId": "229262",
+        "company": "防衛省",
+        "category": "中途採用",
+        "tasteTag": "かっこいい系",
+        "favoriteCount": "0",
+        "thumbnailAlt": "自衛官募集のLPデザイン（中途採用／ホワイト系／かっこいい系）PC版"
+      },
+      "archiveAssets": {
+        "pcImageUrls": ["https://rdlp.jp/image/lp-archive/103545/full.jpg"],
+        "spImageUrls": ["https://rdlp.jp/image/lp-archive/103546/full.jpg"],
+        "allImageUrls": [
+          "https://rdlp.jp/image/lp-archive/103545/full.jpg",
+          "https://rdlp.jp/image/lp-archive/103546/full.jpg"
+        ]
+      },
+      "notes": "公式サイトが自動取得時にセキュリティ確認画面となるため、LPアーカイブ保存画像から復旧。"
+    },
+    {
+      "id": "LP-0224",
+      "status": "candidate",
+      "mediaType": "LP",
+      "title": "LOCOKウェルネスガーデン品川御殿⼭テニススクール",
+      "captureUrl": "https://www.sports-create.com/gotenyama/jrtennis/",
+      "captureMode": "target_site",
+      "sourceType": "Reference Site",
+      "sourceName": "LPアーカイブ",
+      "sourceUrl": "https://rdlp.jp/lp-archive/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229247",
+      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103522/200x400.jpg",
+      "metadata": {
+        "lpArchivePostId": "229247",
+        "company": "LOCOKウェルネスガーデン品川御殿⼭テニススクール",
+        "category": "企業・会社・お店",
+        "tasteTag": "かわいい系",
+        "favoriteCount": "0",
+        "thumbnailAlt": "LOCOKウェルネスガーデン品川御殿⼭テニススクールのLPデザイン（企業・会社・お店／カラフル系／かわいい系）PC版"
+      },
+      "archiveAssets": {
+        "pcImageUrls": ["https://rdlp.jp/image/lp-archive/103522/full.jpg"],
+        "spImageUrls": ["https://rdlp.jp/image/lp-archive/103523/full.jpg"],
+        "allImageUrls": [
+          "https://rdlp.jp/image/lp-archive/103522/full.jpg",
+          "https://rdlp.jp/image/lp-archive/103523/full.jpg"
+        ]
+      },
+      "notes": "LP-0224のDropbox・Notion反映失敗を復旧するための固定候補。"
+    }
+  ]
+}

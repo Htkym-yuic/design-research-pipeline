@@ -260,6 +260,72 @@ async function createNotionImage(sourcePath, outputPath) {
     .toFile(outputPath);
 }
 
+async function captureArchiveAsset(browser, candidate, viewport, candidateDir, result) {
+  const assetUrl = viewport.isMobile
+    ? candidate.archiveAssets?.spImageUrls?.[0]
+    : candidate.archiveAssets?.pcImageUrls?.[0];
+  if (!assetUrl) throw new Error(`${viewport.label}用のLPアーカイブ画像URLがありません`);
+
+  const response = await fetch(assetUrl);
+  if (!response.ok) throw new Error(`LPアーカイブ画像の取得に失敗しました（${response.status}）: ${assetUrl}`);
+  const source = Buffer.from(await response.arrayBuffer());
+  const resized = await sharp(source, { limitInputPixels: false })
+    .resize({ width: viewport.width })
+    .png()
+    .toBuffer();
+  const metadata = await sharp(resized, { limitInputPixels: false }).metadata();
+  const totalHeight = metadata.height;
+
+  const prefix = `${candidate.id}_${viewport.key.toUpperCase()}`;
+  const firstViewPath = path.join(candidateDir, `${prefix}_first_view.png`);
+  const fullPagePath = path.join(candidateDir, `${prefix}_full.png`);
+  const contactSheetPath = path.join(candidateDir, `${prefix}_sections.png`);
+  const sectionPreviewPath = path.join(candidateDir, `${prefix}_sections_preview.png`);
+  const notionFirstViewPath = path.join(candidateDir, `${prefix}_first_view_notion.jpg`);
+  const notionSectionsPath = path.join(candidateDir, `${prefix}_sections_notion.jpg`);
+  const sectionsDir = path.join(candidateDir, `${viewport.key}_sections`);
+  await fs.mkdir(sectionsDir, { recursive: true });
+  await fs.writeFile(fullPagePath, resized);
+  await sharp(resized, { limitInputPixels: false })
+    .extract({ left: 0, top: 0, width: viewport.width, height: Math.min(viewport.height, totalHeight) })
+    .png()
+    .toFile(firstViewPath);
+
+  const sections = buildSections(totalHeight, viewport, sectionLimit);
+  for (const section of sections) {
+    const number = Number.parseInt(section.id.slice(1), 10);
+    const sectionPath = path.join(
+      sectionsDir,
+      `${candidate.id}_${viewport.key.toUpperCase()}_C${zeroPad(number)}-${sectionSlug(number)}.png`,
+    );
+    await sharp(resized, { limitInputPixels: false })
+      .extract({ left: 0, top: section.yStart, width: viewport.width, height: section.height })
+      .png()
+      .toFile(sectionPath);
+    section.path = sectionPath;
+    section.naming = path.basename(sectionPath, ".png");
+  }
+
+  await createContactSheet(browser, sections, contactSheetPath, `${candidate.id} ${viewport.label} Section Index`);
+  await fs.copyFile(fullPagePath, sectionPreviewPath);
+  await createNotionImage(firstViewPath, notionFirstViewPath);
+  await createNotionImage(fullPagePath, notionSectionsPath);
+
+  result.status = "captured";
+  result.finalUrl = assetUrl;
+  result.captureMethod = "archive_asset";
+  result.pageMetrics = { width: viewport.width, height: totalHeight };
+  result.screenshots = {
+    fullPage: fullPagePath,
+    firstView: firstViewPath,
+    sectionIndex: contactSheetPath,
+    sectionPreview: sectionPreviewPath,
+    notionFirstView: notionFirstViewPath,
+    notionSections: notionSectionsPath,
+  };
+  result.sections = sections;
+}
+
 async function captureMobileFullPage(page, viewport, totalHeight, outputPath) {
   const sliceHeight = viewport.height;
   const slices = [];
@@ -325,6 +391,11 @@ try {
       };
 
       try {
+        if (candidate.captureMode === "archive_asset") {
+          console.log(`Capturing ${candidate.id} ${viewport.key} from LP Archive asset`);
+          await captureArchiveAsset(browser, candidate, viewport, candidateDir, result);
+          continue;
+        }
         console.log(`Capturing ${candidate.id} ${viewport.key}: ${candidate.captureUrl}`);
         await page.goto(candidate.captureUrl, { waitUntil: "domcontentloaded", timeout: 45000 });
         await page.waitForLoadState("networkidle", { timeout: 8000 }).catch(() => {});

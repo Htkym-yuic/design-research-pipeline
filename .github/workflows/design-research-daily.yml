@@ -17,6 +17,10 @@ on:
           - "true"
           - "false"
         default: "true"
+      candidate_file:
+        description: "復旧時のみ候補JSONを指定。空欄は通常の日次候補を使用"
+        type: string
+        default: ""
   schedule:
     # 01:30 JST daily. Start overnight so collection and rough analysis can finish before 04:00-04:30 JST.
     - cron: "30 16 * * *"
@@ -34,6 +38,7 @@ env:
   # 手動実行時の入力 > リポジトリVariable > 既定値(true=安全側) の優先順位。
   # スケジュール実行では inputs が空文字になるため vars.DRY_RUN 以降にフォールバックする。
   DRY_RUN: ${{ github.event.inputs.dry_run || vars.DRY_RUN || 'true' }}
+  LP_CANDIDATES_FILE: ${{ github.event.inputs.candidate_file || 'candidates/lp-archive/candidates.json' }}
 
 jobs:
   lp-daily-intake:
