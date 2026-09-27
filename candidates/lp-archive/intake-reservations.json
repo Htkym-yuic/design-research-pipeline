@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T19:52:57.413Z",
+  "updatedAt": "2026-09-27T19:56:21.472Z",
   "mediaType": "LP",
   "sourceName": "LPアーカイブ",
   "notes": [
@@ -140,7 +140,25 @@
       "captureUrl": "https://www.sports-create.com/gotenyama/jrtennis/",
       "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229247",
       "lpArchivePostId": "229247"
+    },
+    {
+      "id": "LP-0229",
+      "title": "FAIRLUCENT",
+      "status": "reserved_daily_intake",
+      "captureUrl": "https://www.menard.co.jp/fairlucent/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229243",
+      "lpArchivePostId": "229243",
+      "reservedAt": "2026-09-27T19:56:21.472Z"
+    },
+    {
+      "id": "LP-0230",
+      "title": "ポケモンカードゲーム事業",
+      "status": "reserved_daily_intake",
+      "captureUrl": "https://www.creatures.co.jp/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229242",
+      "lpArchivePostId": "229242",
+      "reservedAt": "2026-09-27T19:56:21.472Z"
     }
   ],
-  "nextLpId": "LP-0229"
+  "nextLpId": "LP-0231"
 }

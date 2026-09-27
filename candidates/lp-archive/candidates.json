@@ -1,79 +1,76 @@
 {
-  "extractedAt": "2026-09-27T16:51:52.915Z",
+  "extractedAt": "2026-09-27T19:56:21.472Z",
   "sourceUrl": "https://rdlp.jp/lp-archive/",
   "sourceName": "LPアーカイブ",
   "mediaType": "LP",
   "requestedLimit": 2,
   "scannedLimit": 40,
   "candidateCount": 2,
-  "skippedDuplicateCount": 9,
-  "idStart": "LP-0227",
-  "idEnd": "LP-0228",
+  "skippedDuplicateCount": 13,
+  "idStart": "LP-0229",
+  "idEnd": "LP-0230",
   "candidates": [
     {
-      "id": "LP-0227",
+      "id": "LP-0229",
       "status": "candidate",
       "mediaType": "LP",
-      "title": "自衛官募集",
-      "captureUrl": "https://www.mod.go.jp/gsdf/jieikanbosyu/",
+      "title": "FAIRLUCENT",
+      "captureUrl": "https://www.menard.co.jp/fairlucent/",
       "captureMode": "target_site",
       "sourceType": "Reference Site",
       "sourceName": "LPアーカイブ",
       "sourceUrl": "https://rdlp.jp/lp-archive/",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229262",
-      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103545/200x400.jpg",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229243",
+      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103515/200x400.jpg",
       "metadata": {
-        "lpArchivePostId": "229262",
-        "company": "防衛省",
-        "category": "中途採用",
-        "tasteTag": "かっこいい系",
+        "lpArchivePostId": "229243",
+        "company": "MENARD",
+        "category": "コスメ・化粧品・コンタクトレンズ",
+        "tasteTag": "シンプル系",
         "favoriteCount": "0",
-        "thumbnailAlt": "自衛官募集のLPデザイン（中途採用／ホワイト系／かっこいい系）PC版"
+        "thumbnailAlt": "FAIRLUCENTのLPデザイン（コスメ・化粧品・コンタクトレンズ／ブルー系／シンプル系）PC版"
       },
       "archiveAssets": {
         "pcImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103545/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103515/full.jpg"
         ],
         "spImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103546/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103516/full.jpg"
         ],
         "allImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103545/full.jpg",
-          "https://rdlp.jp/image/lp-archive/103546/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103515/full.jpg",
+          "https://rdlp.jp/image/lp-archive/103516/full.jpg"
         ]
       },
       "notes": "LPアーカイブ一覧から自動抽出した候補。採用前に人が確認する。"
     },
     {
-      "id": "LP-0228",
+      "id": "LP-0230",
       "status": "candidate",
       "mediaType": "LP",
-      "title": "LOCOKウェルネスガーデン品川御殿⼭テニススクール",
-      "captureUrl": "https://www.sports-create.com/gotenyama/jrtennis/",
+      "title": "ポケモンカードゲーム事業",
+      "captureUrl": "https://www.creatures.co.jp/",
       "captureMode": "target_site",
       "sourceType": "Reference Site",
       "sourceName": "LPアーカイブ",
       "sourceUrl": "https://rdlp.jp/lp-archive/",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229247",
-      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103522/200x400.jpg",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229242",
+      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103514/200x400.jpg",
       "metadata": {
-        "lpArchivePostId": "229247",
-        "company": "LOCOKウェルネスガーデン品川御殿⼭テニススクール",
+        "lpArchivePostId": "229242",
+        "company": "株式会社クリーチャーズ",
         "category": "企業・会社・お店",
-        "tasteTag": "かわいい系",
+        "tasteTag": "シンプル系",
         "favoriteCount": "0",
-        "thumbnailAlt": "LOCOKウェルネスガーデン品川御殿⼭テニススクールのLPデザイン（企業・会社・お店／カラフル系／かわいい系）PC版"
+        "thumbnailAlt": "ポケモンカードゲーム事業のLPデザイン（企業・会社・お店／ホワイト系／シンプル系）PC版"
       },
       "archiveAssets": {
         "pcImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103522/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103514/full.jpg"
         ],
-        "spImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103523/full.jpg"
-        ],
+        "spImageUrls": [],
         "allImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103522/full.jpg",
-          "https://rdlp.jp/image/lp-archive/103523/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103514/full.jpg"
         ]
       },
       "notes": "LPアーカイブ一覧から自動抽出した候補。採用前に人が確認する。"
@@ -89,7 +86,19 @@
         "duplicateOf": "LP-0215",
         "field": "captureUrl",
         "value": "https://seikatsuhonpo.com/ihinseiri/",
-        "reason": "knowledge source.captured_url"
+        "reason": "previously skipped duplicate captureUrl"
+      }
+    },
+    {
+      "title": "自衛官募集",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229262",
+      "captureUrl": "https://www.mod.go.jp/gsdf/jieikanbosyu/",
+      "lpArchivePostId": "229262",
+      "duplicate": {
+        "duplicateOf": "LP-0227",
+        "field": "captureUrl",
+        "value": "https://www.mod.go.jp/gsdf/jieikanbosyu/",
+        "reason": "existing candidate captureUrl"
       }
     },
     {
@@ -101,7 +110,7 @@
         "duplicateOf": "LP-0214",
         "field": "captureUrl",
         "value": "https://www.awarefy.com/app",
-        "reason": "intake reservation captureUrl"
+        "reason": "previously skipped duplicate captureUrl"
       }
     },
     {
@@ -113,7 +122,7 @@
         "duplicateOf": "LP-0222",
         "field": "captureUrl",
         "value": "https://sunshinecity.jp/file/official/autumn/",
-        "reason": "intake reservation captureUrl"
+        "reason": "previously skipped duplicate captureUrl"
       }
     },
     {
@@ -125,7 +134,7 @@
         "duplicateOf": "LP-0216",
         "field": "captureUrl",
         "value": "https://10th.quizknock.com/",
-        "reason": "intake reservation captureUrl"
+        "reason": "previously skipped duplicate captureUrl"
       }
     },
     {
@@ -137,7 +146,7 @@
         "duplicateOf": "LP-0217",
         "field": "captureUrl",
         "value": "https://www.felissimo.co.jp/collect/mchoco_fsc?tid=sbn_fc_MEIJICHOCOLATE2609_L",
-        "reason": "intake reservation captureUrl"
+        "reason": "previously skipped duplicate captureUrl"
       }
     },
     {
@@ -149,7 +158,7 @@
         "duplicateOf": "LP-0218",
         "field": "captureUrl",
         "value": "https://cont.tumbleweed.jp/allstar26/",
-        "reason": "intake reservation captureUrl"
+        "reason": "previously skipped duplicate captureUrl"
       }
     },
     {
@@ -161,7 +170,7 @@
         "duplicateOf": "LP-0219",
         "field": "captureUrl",
         "value": "https://www.kaneka-womens-healthcare.com/",
-        "reason": "intake reservation captureUrl"
+        "reason": "previously skipped duplicate captureUrl"
       }
     },
     {
@@ -173,7 +182,7 @@
         "duplicateOf": "LP-0220",
         "field": "captureUrl",
         "value": "https://sfc.jp/ie/lineup/premal/",
-        "reason": "intake reservation captureUrl"
+        "reason": "previously skipped duplicate captureUrl"
       }
     },
     {
@@ -185,6 +194,42 @@
         "duplicateOf": "LP-0221",
         "field": "captureUrl",
         "value": "https://www.aft.or.jp/shikisaigakuen2023/",
+        "reason": "previously skipped duplicate captureUrl"
+      }
+    },
+    {
+      "title": "LOCOKウェルネスガーデン品川御殿⼭テニススクール",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229247",
+      "captureUrl": "https://www.sports-create.com/gotenyama/jrtennis/",
+      "lpArchivePostId": "229247",
+      "duplicate": {
+        "duplicateOf": "LP-0228",
+        "field": "captureUrl",
+        "value": "https://www.sports-create.com/gotenyama/jrtennis/",
+        "reason": "existing candidate captureUrl"
+      }
+    },
+    {
+      "title": "レックインドアテニススクール新百合ヶ丘",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229246",
+      "captureUrl": "https://rec-tennis.com/school/shinyurigaoka/campaign/goldenkids",
+      "lpArchivePostId": "229246",
+      "duplicate": {
+        "duplicateOf": "LP-0225",
+        "field": "captureUrl",
+        "value": "https://rec-tennis.com/school/shinyurigaoka/campaign/goldenkids",
+        "reason": "intake reservation captureUrl"
+      }
+    },
+    {
+      "title": "まっぷたつ？パフェ",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229244",
+      "captureUrl": "https://www.dennys.jp/menu/half-parfait/grapes/",
+      "lpArchivePostId": "229244",
+      "duplicate": {
+        "duplicateOf": "LP-0226",
+        "field": "captureUrl",
+        "value": "https://www.dennys.jp/menu/half-parfait/grapes/",
         "reason": "intake reservation captureUrl"
       }
     }
