@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T20:31:16.155Z",
+  "updatedAt": "2026-09-27T21:15:32.398Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -165,6 +165,42 @@
       "imageUrl": "https://template.canva.com/EAHDRTsvfbQ/1/0/320w-1A6tThPGghA.jpg",
       "materialId": null,
       "reservedAt": "2026-09-27T20:31:16.155Z"
+    },
+    {
+      "id": "CV-0006",
+      "title": "Beige Aesthetic Moodboard Photo Collage Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAGjao4hAcU/2/0/320w-ZV-2ghTKqFg.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAGjao4hAcU-beige-aesthetic-moodboard-photo-collage-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAGjao4hAcU/2/0/320w-ZV-2ghTKqFg.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-27T21:12:55.451Z"
+    },
+    {
+      "id": "CV-0007",
+      "title": "Neutral Modern Interior Design Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAHCE6b6QWw/1/0/320w-LbtRcy2gAHo.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAHCE6b6QWw-neutral-modern-interior-design-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAHCE6b6QWw/1/0/320w-LbtRcy2gAHo.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-27T21:12:55.451Z"
+    },
+    {
+      "id": "CV-0008",
+      "title": "Beige Minimalist Mood Photo Collage Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAGPk4HhIFk/1/0/320w-rufg9X4Wi4w.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAGPk4HhIFk-beige-minimalist-mood-photo-collage-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAGPk4HhIFk/1/0/320w-rufg9X4Wi4w.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-27T21:12:55.451Z"
     },
     {
       "id": "GR-0001",
@@ -429,6 +465,45 @@
       "imageUrl": "https://sankoudesign.com/wp-content/uploads/stores02_t-400x350.jpg",
       "materialId": null,
       "reservedAt": "2026-09-27T20:31:16.155Z"
+    },
+    {
+      "id": "ILAC-0001",
+      "title": "DX デジタルトランスフォーメーション 人物",
+      "mediaType": "Asset",
+      "sourceName": "イラストAC",
+      "captureUrl": null,
+      "sourceDetailUrl": "https://www.ac-illust.com/main/detail.php?id=2625396",
+      "imageUrl": null,
+      "materialId": "2625396",
+      "authorProfileUrl": "https://www.ac-illust.com/main/profile.php?id=dHnWEUCn&area=1",
+      "searchTerm": "ビジネス",
+      "reservedAt": "2026-09-27T21:15:32.398Z"
+    },
+    {
+      "id": "ILAC-0002",
+      "title": "AIを使って効率よく仕事をする男性",
+      "mediaType": "Asset",
+      "sourceName": "イラストAC",
+      "captureUrl": null,
+      "sourceDetailUrl": "https://www.ac-illust.com/main/detail.php?id=22935366",
+      "imageUrl": null,
+      "materialId": "22935366",
+      "authorProfileUrl": "https://www.ac-illust.com/main/profile.php?id=vmqApWG5&area=1",
+      "searchTerm": "ビジネス",
+      "reservedAt": "2026-09-27T21:15:32.398Z"
+    },
+    {
+      "id": "ILAC-0003",
+      "title": "IoTをイメージしたアイコンセット",
+      "mediaType": "Asset",
+      "sourceName": "イラストAC",
+      "captureUrl": null,
+      "sourceDetailUrl": "https://www.ac-illust.com/main/detail.php?id=23195884",
+      "imageUrl": null,
+      "materialId": "23195884",
+      "authorProfileUrl": "https://www.ac-illust.com/main/profile.php?id=Z0hRKDRc&area=1",
+      "searchTerm": "ビジネス",
+      "reservedAt": "2026-09-27T21:15:32.398Z"
     }
   ]
 }

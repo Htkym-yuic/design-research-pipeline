@@ -351,6 +351,60 @@
       "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
       "deepDivePriority": "中",
       "generatedAt": "2026-09-27T20:32:06.626Z"
+    },
+    "CV-0006": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。Beige Aesthetic Moodboard Photo Collage Instagram Post。",
+      "visualSummary": "ニュートラル。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T21:13:09.002Z"
+    },
+    "CV-0007": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。Neutral Modern Interior Design Instagram Post。",
+      "visualSummary": "ニュートラル。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T21:13:09.011Z"
+    },
+    "CV-0008": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。Beige Minimalist Mood Photo Collage Instagram Post。",
+      "visualSummary": "暖色・黄橙系。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T21:13:09.020Z"
+    },
+    "ILAC-0001": {
+      "analysisMode": "manual_metadata_first_pass",
+      "overview": "イラストACの「ビジネス」検索から収集した素材候補。DX デジタルトランスフォーメーション 人物。",
+      "visualSummary": "素材本体は保存せず、公開検索結果の素材ID・正式URL・タグを確認。",
+      "usefulPoints": "DX・業務改善・法人向けSaaSの説明に使用候補",
+      "reviewPoints": "採用時にユーザーが契約条件を確認し、手動ダウンロードする。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T21:15:32.398Z"
+    },
+    "ILAC-0002": {
+      "analysisMode": "manual_metadata_first_pass",
+      "overview": "イラストACの「ビジネス」検索から収集した素材候補。AIを使って効率よく仕事をする男性。",
+      "visualSummary": "素材本体は保存せず、公開検索結果の素材ID・正式URL・タグを確認。",
+      "usefulPoints": "AI活用・業務効率化・生成AI講座の説明に使用候補",
+      "reviewPoints": "採用時にユーザーが契約条件を確認し、手動ダウンロードする。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T21:15:32.398Z"
+    },
+    "ILAC-0003": {
+      "analysisMode": "manual_metadata_first_pass",
+      "overview": "イラストACの「ビジネス」検索から収集した素材候補。IoTをイメージしたアイコンセット。",
+      "visualSummary": "素材本体は保存せず、公開検索結果の素材ID・正式URL・タグを確認。",
+      "usefulPoints": "IoT・クラウド・ITサービスの機能説明に使用候補",
+      "reviewPoints": "採用時にユーザーが契約条件を確認し、手動ダウンロードする。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-27T21:15:32.398Z"
     }
   }
 }
