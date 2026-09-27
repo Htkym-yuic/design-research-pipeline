@@ -1,4 +1,192 @@
 {
-  "updatedAt": null,
-  "reserved": []
+  "updatedAt": "2026-09-27T20:18:40.789Z",
+  "reserved": [
+    {
+      "id": "BN-0021",
+      "title": "おせち先行予約販売_400 x 400のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/09/2ce555286dc51ab85d418394080b84fd.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64731",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/09/2ce555286dc51ab85d418394080b84fd.jpg.webp",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:18:40.789Z"
+    },
+    {
+      "id": "BN-0022",
+      "title": "遊園地_1200 x 675のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/09/ae063acb7d06cffbe074c5883124c50e.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64728",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/09/ae063acb7d06cffbe074c5883124c50e.jpg.webp",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:18:40.789Z"
+    },
+    {
+      "id": "BN-0023",
+      "title": "コンタクトレンズ割引_1080 x 1080のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/09/fe368d7896a98188e4c56c7ce2d2a035.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64725",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/09/fe368d7896a98188e4c56c7ce2d2a035.jpg.webp",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:18:40.789Z"
+    },
+    {
+      "id": "BN-0024",
+      "title": "ハイクラス転職_600 x 500のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/09/4397c75d298de6b1bcd2e5b3ccd4f49a.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64721",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/09/4397c75d298de6b1bcd2e5b3ccd4f49a.jpg.webp",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:18:40.789Z"
+    },
+    {
+      "id": "BN-0025",
+      "title": "クリスマスケーキ予約_560 x 420のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/09/789b6c14dd5fd2d323e59198e38baa80.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64718",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/09/789b6c14dd5fd2d323e59198e38baa80.jpg.webp",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:18:40.789Z"
+    },
+    {
+      "id": "GR-0001",
+      "title": "夏季休業のお知らせチラシのチラシテンプレート",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F2f721be794492934b1daa77ea1be5bc5%2F2f721be794492934b1daa77ea1be5bc5-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30656",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F2f721be794492934b1daa77ea1be5bc5%2F2f721be794492934b1daa77ea1be5bc5-400.webp&w=828&q=75",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:18:40.789Z"
+    },
+    {
+      "id": "GR-0002",
+      "title": "カラフルな縁日チラシのチラシテンプレート",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fa87961cc169c84218699ec5607fca0bb%2Fa87961cc169c84218699ec5607fca0bb-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30651",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fa87961cc169c84218699ec5607fca0bb%2Fa87961cc169c84218699ec5607fca0bb-400.webp&w=828&q=75",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:18:40.789Z"
+    },
+    {
+      "id": "GR-0003",
+      "title": "サマーセール（トロピカルイメージ）のチラシテンプレート",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F4361d2ff3911ced1763baaa956363bac%2F4361d2ff3911ced1763baaa956363bac-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30618",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F4361d2ff3911ced1763baaa956363bac%2F4361d2ff3911ced1763baaa956363bac-400.webp&w=828&q=75",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:18:40.789Z"
+    },
+    {
+      "id": "GR-0004",
+      "title": "サマーフェスティバルのお知らせのチラシテンプレート",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F47c3882ca61c824054b92542756fe570%2F47c3882ca61c824054b92542756fe570-400.webp&w=1200&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30612",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F47c3882ca61c824054b92542756fe570%2F47c3882ca61c824054b92542756fe570-400.webp&w=1200&q=75",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:18:40.789Z"
+    },
+    {
+      "id": "GR-0005",
+      "title": "夏季休業のお知らせテンプレートのチラシテンプレート",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fce061f7723ce2ef8763392b2b5c41b56%2Fce061f7723ce2ef8763392b2b5c41b56-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30572",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fce061f7723ce2ef8763392b2b5c41b56%2Fce061f7723ce2ef8763392b2b5c41b56-400.webp&w=828&q=75",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:18:40.789Z"
+    },
+    {
+      "id": "PT-0001",
+      "title": "Parts. reference",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/09/kiyasse_00004.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/7254",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/09/kiyasse_00004.png",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:18:40.789Z"
+    },
+    {
+      "id": "PT-0002",
+      "title": "Parts. reference",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/09/openwork_02.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/7243",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/09/openwork_02.png",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:18:40.789Z"
+    },
+    {
+      "id": "PT-0003",
+      "title": "Parts. reference",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/09/curon_00007.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/7235",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/09/curon_00007.png",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:18:40.789Z"
+    },
+    {
+      "id": "PT-0004",
+      "title": "Parts. reference",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/08/staff-start_00016.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/7224",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/08/staff-start_00016.png",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:18:40.789Z"
+    },
+    {
+      "id": "PT-0005",
+      "title": "Parts. reference",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/07/qast_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/7204",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/07/qast_00001.png",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:18:40.789Z"
+    },
+    {
+      "id": "WB-0004",
+      "title": "コーディング代行･外注サービスならくまWeb",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://kumaweb-coding.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/kumawebcoding/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/kumawebcoding_t-400x350.jpg",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:18:40.789Z"
+    },
+    {
+      "id": "WB-0005",
+      "title": "味覚編集",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://mikakuhenshu.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/mikakuhenshu/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/mikakuhenshu_t-400x350.jpg",
+      "materialId": null,
+      "reservedAt": "2026-09-27T20:18:40.789Z"
+    }
+  ]
 }
