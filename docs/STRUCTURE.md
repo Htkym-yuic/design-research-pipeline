@@ -6,10 +6,10 @@
 | --- | --- |
 | LP | `LP-0001` |
 | Banner | `BN-0001` |
-| Web | `WEB-0001` |
+| Web | `WB-0001` |
 | Graphic | `GR-0001` |
 | Parts | `PT-0001` |
-| Patterns | `PATTERN-0001` |
+| Patterns | `PAT-0001` |
 
 ## GitHub内の保存先
 

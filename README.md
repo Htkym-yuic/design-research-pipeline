@@ -20,10 +20,10 @@ Creative Brief Studio AIとは分離して運用する、デザインリサー�
 | --- | --- | --- | --- |
 | LP | `LP-0001` | `01｜LPリサーチライブラリー` | `LP_Research_Library` |
 | Banner | `BN-0001` | `02｜バナーリサーチライブラリー` | `Banner_Research_Library` |
-| Web | `WEB-0001` | `03｜Webサイトリサーチライブラリー` | `Web_Research_Library` |
+| Web | `WB-0001` | `03｜Webサイトリサーチライブラリー` | `Web_Research_Library` |
 | Graphic | `GR-0001` | `04｜グラフィックデザインリサーチライブラリー` | `Graphic_Research_Library` |
 | Parts | `PT-0001` | `05｜デザインパーツライブラリ` | `Parts_Research_Library` |
-| Patterns | `PATTERN-0001` | `06｜デザイン原則・パターン` | `Design_Research_System` |
+| Patterns | `PAT-0001` | `06｜デザイン原則・パターン` | `Design_Research_System` |
 
 ## 連携先
 

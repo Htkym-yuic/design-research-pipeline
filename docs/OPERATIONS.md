@@ -127,7 +127,7 @@ npm run knowledge:crosscheck-lp -- --input <LPフォルダ>
 
 ## 自動化（GitHub Actions）
 
-`.github/workflows/design-research-daily.yml` が、LPの日次軽量分析パイプライン（収集→スクショ取得→Dropbox保存→Notion登録）をMacを起動せずに実行する。毎日09:00 JSTに自動実行されるほか、`workflow_dispatch`で手動実行もできる。
+`.github/workflows/design-research-daily.yml` が、LPと非LPの日次軽量分析パイプライン（収集→スクショ取得→Dropbox保存→Notion登録）をMacを起動せずに実行する。毎日01:37 JSTに本実行し、未完了時のみ01:52 JSTの予備便が動く。`workflow_dispatch`ではLPと非LPを個別に選んで手動実行できる。
 
 ### 必要なGitHub Secrets
 
@@ -152,9 +152,9 @@ Dropboxのリフレッシュトークンの取得手順（概要）：Dropbox Ap
 | `DROPBOX_DESIGN_ROOT` | `/design/Design_Research_Library` | Dropbox正本ルート |
 | `NOTION_LP_DATA_SOURCE_ID` | `39624d4f-a671-8094-ba0c-000b11fefbd0` | NotionのLPリサーチライブラリーのデータソースID |
 | `DAILY_LP_LIMIT` | `2` | 日次で新規抽出・撮影するLP候補数 |
-| `DRY_RUN` | `true` | 未設定または`true`の場合、Dropbox/Notionへ実際には書き込まない（安全側の既定値） |
+| `DRY_RUN` | `false` | `true`の場合、Dropbox/Notionへ実際には書き込まない |
 
-LP以外（バナー・Web・グラフィック・パーツ・パターン）は、まだNotionデータソースIDが未確定のため、確定後に以下のVariable名で登録する想定（現時点ではコード側は未対応）。
+LP以外は以下のVariableで保存先と件数を管理する。
 
 | Variable名（予定） | 用途 |
 | --- | --- |
@@ -162,8 +162,10 @@ LP以外（バナー・Web・グラフィック・パーツ・パターン）は
 | `NOTION_WEB_DATA_SOURCE_ID` | NotionのウェブサイトリサーチライブラリーのデータソースID |
 | `NOTION_GRAPHIC_DATA_SOURCE_ID` | NotionのグラフィックデザインリサーチライブラリーのデータソースID |
 | `NOTION_PARTS_DATA_SOURCE_ID` | NotionのデザインパーツライブラリのデータソースID |
+| `NOTION_PARTS_REVIEW_DATA_SOURCE_ID` | `99｜要確認・移行待ち / 04｜デザインパーツ再分析待ち`のデータソースID。日次候補は正本DBではなくここへ登録する |
 | `NOTION_PATTERNS_DATA_SOURCE_ID` | Notionのデザイン原則・パターンのデータソースID |
-| `DAILY_BANNER_LIMIT` / `DAILY_WEB_LIMIT` / `DAILY_GRAPHIC_LIMIT` / `DAILY_PARTS_LIMIT` | 各媒体の日次収集件数（当面のLP優先方針のため未使用。7章参照） |
+| `NOTION_ASSET_DATA_SOURCE_ID` | Notionの素材探索ナレッジのデータソースID |
+| `DAILY_BANNER_LIMIT` / `DAILY_WEB_LIMIT` / `DAILY_GRAPHIC_LIMIT` / `DAILY_PARTS_LIMIT` / `DAILY_CANVA_LIMIT` / `DAILY_ASSET_LIMIT` | 各媒体の日次収集件数 |
 
 ### Notionのプロパティ対応表
 
@@ -180,8 +182,9 @@ LP以外（バナー・Web・グラフィック・パーツ・パターン）は
 7. `npm run notion:register:lp` — Notionへ軽量分析とPC/SPのFV・全体画像を新規作成・更新する
 
 日次のNotion登録では、軽量分析を週末まで保留しない。概要、FV印象、構成、テイスト・配色、参考点、要確認点、詳細分析候補度を短く記録し、PC/SPそれぞれのファーストビューと全体確認画像を掲載する。週末へ回すのは29項目の詳細分析とCBS同期である。
-8. `npm run report:lp:summary` — GitHub ActionsのStep Summaryへ結果（失敗があればその内容）を出力する
-9. 候補・撮影結果・Dropboxアップロード結果・Notion登録結果をGitHub Artifactとして保存する（`if-no-files-found: warn` のため、途中で失敗しても直前までの結果は残る）
+8. `npm run collect:non-lp`以降で、バナー・Web・グラフィック・パーツ・Canva・素材候補を収集、撮影、軽量分析、Dropbox/Notion登録する。パーツ候補は正本の05ではなく、99配下の再分析待ちDBへ入れる
+9. `npm run report:daily:summary` — GitHub ActionsのStep SummaryへLP・非LPの結果（失敗があればその内容）を出力する
+10. 候補・撮影結果・Dropboxアップロード結果・Notion登録結果をGitHub Artifactとして保存する（`if-no-files-found: warn` のため、途中で失敗しても直前までの結果は残る）
 
 候補1件の処理に失敗しても、他の候補の処理は継続する（各スクリプト内で候補単位にtry/catchしている）。
 

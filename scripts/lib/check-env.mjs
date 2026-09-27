@@ -13,7 +13,15 @@ import { isDryRun, requireEnvAll } from "./env.mjs";
 
 const DROPBOX_SECRETS = ["DROPBOX_APP_KEY", "DROPBOX_APP_SECRET", "DROPBOX_REFRESH_TOKEN"];
 const NOTION_SECRETS = ["NOTION_TOKEN"];
-const NOTION_VARS = ["NOTION_LP_DATA_SOURCE_ID"];
+const NOTION_VARS = [
+  "NOTION_LP_DATA_SOURCE_ID",
+  "NOTION_BANNER_DATA_SOURCE_ID",
+  "NOTION_WEB_DATA_SOURCE_ID",
+  "NOTION_GRAPHIC_DATA_SOURCE_ID",
+  "NOTION_PARTS_DATA_SOURCE_ID",
+  "NOTION_PARTS_REVIEW_DATA_SOURCE_ID",
+  "NOTION_ASSET_DATA_SOURCE_ID",
+];
 
 const checkDropbox = process.argv.includes("--dropbox") || !process.argv.includes("--notion");
 const checkNotion = process.argv.includes("--notion") || !process.argv.includes("--dropbox");

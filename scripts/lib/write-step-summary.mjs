@@ -16,6 +16,9 @@ async function readJsonSafe(filePath) {
 const captureSummary = await readJsonSafe("screenshots/lp-candidates/summary.json");
 const dropboxResult = await readJsonSafe("screenshots/lp-candidates/dropbox-upload-result.json");
 const notionResult = await readJsonSafe("screenshots/lp-candidates/notion-registration-result.json");
+const nonLpCapture = await readJsonSafe("screenshots/non-lp-candidates/summary.json");
+const nonLpDropbox = await readJsonSafe("screenshots/non-lp-candidates/dropbox-upload-result.json");
+const nonLpNotion = await readJsonSafe("screenshots/non-lp-candidates/notion-registration-result.json");
 
 const lines = ["# LP日次収集 実行結果", ""];
 
@@ -59,6 +62,33 @@ if (notionResult) {
   lines.push("");
 } else {
   lines.push("## Notion登録", "- notion-registration-result.jsonが見つかりませんでした", "");
+}
+
+lines.push("# LP以外の日次収集 実行結果", "");
+
+if (nonLpCapture) {
+  const byMedia = {};
+  for (const item of nonLpCapture.results || []) byMedia[item.mediaType] = (byMedia[item.mediaType] || 0) + 1;
+  const failed = (nonLpCapture.results || []).filter((item) => item.status !== "captured");
+  lines.push("## 収集・撮影", `- 対象: ${nonLpCapture.candidateCount}件`, `- 媒体別: ${Object.entries(byMedia).map(([key, count]) => `${key} ${count}件`).join(" / ") || "0件"}`, `- 失敗・要確認: ${failed.length}件`);
+  for (const item of failed) lines.push(`  - ⚠ ${item.id}: ${item.error || "unknown error"}`);
+  lines.push("");
+} else {
+  lines.push("## 収集・撮影", "- 非LP処理は未実行です", "");
+}
+
+if (nonLpDropbox) {
+  const failed = (nonLpDropbox.results || []).filter((item) => item.status === "failed");
+  lines.push(`## 非LP Dropbox${nonLpDropbox.dryRun ? "（DRY_RUN）" : ""}`, `- 対象: ${(nonLpDropbox.results || []).length}件`, `- 失敗: ${failed.length}件`, "");
+}
+
+if (nonLpNotion) {
+  const created = (nonLpNotion.results || []).filter((item) => item.status === "created").length;
+  const existing = (nonLpNotion.results || []).filter((item) => item.status === "already_exists").length;
+  const failed = (nonLpNotion.results || []).filter((item) => item.status === "failed");
+  lines.push(`## 非LP Notion${nonLpNotion.dryRun ? "（DRY_RUN）" : ""}`, `- 新規登録: ${created}件`, `- 重複スキップ: ${existing}件`, `- 失敗: ${failed.length}件`);
+  for (const item of failed) lines.push(`  - ⚠ ${item.id}: ${item.error}`);
+  lines.push("");
 }
 
 const output = lines.join("\n");

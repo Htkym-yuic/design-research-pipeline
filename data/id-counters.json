@@ -16,37 +16,51 @@
   },
   "banner": {
     "prefix": "BN",
-    "existingMax": null,
-    "nextNumber": null,
+    "existingMax": 20,
+    "nextNumber": 21,
     "digits": 4,
     "sourceOfTruth": "Notion 02｜バナーリサーチライブラリー"
   },
   "web": {
-    "prefix": "WEB",
-    "existingMax": null,
-    "nextNumber": null,
+    "prefix": "WB",
+    "existingMax": 3,
+    "nextNumber": 4,
     "digits": 4,
     "sourceOfTruth": "Notion 03｜Webサイトリサーチライブラリー"
   },
   "graphic": {
     "prefix": "GR",
-    "existingMax": null,
-    "nextNumber": null,
+    "existingMax": 0,
+    "nextNumber": 1,
     "digits": 4,
     "sourceOfTruth": "Notion 04｜グラフィックデザインリサーチライブラリー"
   },
   "parts": {
     "prefix": "PT",
-    "existingMax": null,
-    "nextNumber": null,
+    "existingMax": 0,
+    "nextNumber": 1,
     "digits": 4,
     "sourceOfTruth": "Notion 05｜デザインパーツライブラリ"
   },
   "patterns": {
-    "prefix": "PATTERN",
-    "existingMax": null,
-    "nextNumber": null,
+    "prefix": "PAT",
+    "existingMax": 0,
+    "nextNumber": 1,
     "digits": 4,
     "sourceOfTruth": "Notion 06｜デザイン原則・パターン"
+  },
+  "canva": {
+    "prefix": "CV",
+    "existingMax": 0,
+    "nextNumber": 1,
+    "digits": 4,
+    "sourceOfTruth": "Notion 04｜グラフィックデザインリサーチライブラリー"
+  },
+  "illustrationAc": {
+    "prefix": "ILAC",
+    "existingMax": 0,
+    "nextNumber": 1,
+    "digits": 4,
+    "sourceOfTruth": "Notion 07｜素材探索ナレッジ"
   }
 }

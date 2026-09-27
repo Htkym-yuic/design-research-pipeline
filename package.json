@@ -8,6 +8,9 @@
     "capture:lp:candidates": "node scripts/capture-lp-candidates.mjs",
     "extract:lp:test": "node scripts/extract-lp-archive-candidates.mjs",
     "analyze:lp:light": "node scripts/generate-lp-lightweight-analysis.mjs",
+    "collect:non-lp": "node scripts/collect-non-lp-candidates.mjs",
+    "capture:non-lp": "node scripts/capture-non-lp-candidates.mjs",
+    "analyze:non-lp:light": "node scripts/generate-non-lp-lightweight-analysis.mjs",
     "daily:check": "node scripts/check-daily-run.mjs",
     "daily:mark": "node scripts/mark-daily-run.mjs",
     "knowledge:validate-lp": "node scripts/validate-lp-knowledge.mjs",
@@ -15,8 +18,10 @@
     "check:env": "node scripts/lib/check-env.mjs",
     "lint:syntax": "node scripts/lib/check-syntax.mjs",
     "dropbox:upload:lp": "node scripts/upload-lp-intake-to-dropbox.mjs",
+    "dropbox:upload:non-lp": "node scripts/upload-non-lp-to-dropbox.mjs",
     "notion:register:lp": "node scripts/register-lp-intake-notion.mjs",
-    "report:lp:summary": "node scripts/lib/write-step-summary.mjs"
+    "notion:register:non-lp": "node scripts/register-non-lp-notion.mjs",
+    "report:daily:summary": "node scripts/lib/write-step-summary.mjs"
   },
   "dependencies": {
     "playwright": "^1.55.0",

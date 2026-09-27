@@ -51,6 +51,14 @@ async function notionFetch(path, options = {}) {
   return data;
 }
 
+export async function getDataSource(dataSourceId) {
+  return notionFetch(`/data_sources/${dataSourceId}`);
+}
+
+export function buildPropertyByType(type, value) {
+  return buildPropertyValue(type, value);
+}
+
 /**
  * 値の型に応じてNotionのプロパティ値オブジェクトを組み立てる。
  * 値がnull/undefined/空文字/空配列の場合はプロパティ自体を省略する
@@ -129,6 +137,24 @@ export async function findPageByMatchProperty(dataSourceId, config, matchValue) 
     }),
   });
 
+  return result.results?.[0] || null;
+}
+
+/** 任意スキーマのtitle/rich_textプロパティで一致するページを1件探す。 */
+export async function findPageByProperty(dataSourceId, propertyName, propertyType, matchValue) {
+  if (!["title", "rich_text"].includes(propertyType)) {
+    throw new Error(`検索に未対応のNotionプロパティ型です: ${propertyType}`);
+  }
+  const result = await notionFetch(`/data_sources/${dataSourceId}/query`, {
+    method: "POST",
+    body: JSON.stringify({
+      filter: {
+        property: propertyName,
+        [propertyType]: { equals: String(matchValue) },
+      },
+      page_size: 1,
+    }),
+  });
   return result.results?.[0] || null;
 }
 
