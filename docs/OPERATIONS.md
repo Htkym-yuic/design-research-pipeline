@@ -162,7 +162,7 @@ LP以外は以下のVariableで保存先と件数を管理する。
 | `NOTION_WEB_DATA_SOURCE_ID` | NotionのウェブサイトリサーチライブラリーのデータソースID |
 | `NOTION_GRAPHIC_DATA_SOURCE_ID` | NotionのグラフィックデザインリサーチライブラリーのデータソースID |
 | `NOTION_PARTS_DATA_SOURCE_ID` | NotionのデザインパーツライブラリのデータソースID |
-| `NOTION_PARTS_REVIEW_DATA_SOURCE_ID` | `99｜要確認・移行待ち / 04｜デザインパーツ再分析待ち`のデータソースID。日次候補は正本DBではなくここへ登録する |
+| `NOTION_PARTS_REVIEW_DATA_SOURCE_ID` | 旧パーツ514件を保管する`99｜要確認・移行待ち / 04｜デザインパーツ再分析待ち`のデータソースID |
 | `NOTION_PATTERNS_DATA_SOURCE_ID` | Notionのデザイン原則・パターンのデータソースID |
 | `NOTION_ASSET_DATA_SOURCE_ID` | Notionの素材探索ナレッジのデータソースID |
 | `DAILY_BANNER_LIMIT` / `DAILY_WEB_LIMIT` / `DAILY_GRAPHIC_LIMIT` / `DAILY_PARTS_LIMIT` / `DAILY_CANVA_LIMIT` / `DAILY_ASSET_LIMIT` | 各媒体の日次収集件数 |
@@ -182,7 +182,7 @@ LP以外は以下のVariableで保存先と件数を管理する。
 7. `npm run notion:register:lp` — Notionへ軽量分析とPC/SPのFV・全体画像を新規作成・更新する
 
 日次のNotion登録では、軽量分析を週末まで保留しない。概要、FV印象、構成、テイスト・配色、参考点、要確認点、詳細分析候補度を短く記録し、PC/SPそれぞれのファーストビューと全体確認画像を掲載する。週末へ回すのは29項目の詳細分析とCBS同期である。
-8. `npm run collect:non-lp`以降で、バナー・Web・グラフィック・パーツ・Canva・素材候補を収集、撮影、軽量分析、Dropbox/Notion登録する。パーツ候補は正本の05ではなく、99配下の再分析待ちDBへ入れる
+8. `npm run collect:non-lp`以降で、バナー・Web・グラフィック・パーツ・Canva・素材候補を収集、撮影、軽量分析、Dropbox/Notion登録する。新規パーツ候補は05へ登録し、旧パーツ514件は99配下の再分析待ちDBで保管する
 9. `npm run report:daily:summary` — GitHub ActionsのStep SummaryへLP・非LPの結果（失敗があればその内容）を出力する
 10. 候補・撮影結果・Dropboxアップロード結果・Notion登録結果をGitHub Artifactとして保存する（`if-no-files-found: warn` のため、途中で失敗しても直前までの結果は残る）
 

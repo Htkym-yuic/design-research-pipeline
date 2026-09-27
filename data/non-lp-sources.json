@@ -49,7 +49,7 @@
     "sourceUrl": "https://partsdesign.net/",
     "mode": "image",
     "library": "Parts_Research_Library",
-    "notionEnv": "NOTION_PARTS_REVIEW_DATA_SOURCE_ID",
+    "notionEnv": "NOTION_PARTS_DATA_SOURCE_ID",
     "limitEnv": "DAILY_PARTS_LIMIT",
     "defaultLimit": 5,
     "imageHostIncludes": "partsdesign.net/wp-content/uploads/"
