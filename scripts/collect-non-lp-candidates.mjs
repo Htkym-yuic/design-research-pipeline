@@ -202,6 +202,15 @@ try {
         await page.waitForTimeout(6000);
         cards = await extractCards(page, source);
       }
+      const pageDiagnostic = cards.length === 0
+        ? await page.evaluate(() => ({
+            finalUrl: location.href,
+            title: document.title,
+            bodyPreview: document.body?.innerText?.replace(/\s+/g, " ").slice(0, 500) || "",
+            figureCount: document.querySelectorAll("figure").length,
+            imageCount: document.images.length
+          }))
+        : null;
       const accepted = [];
 
       for (const card of cards) {
@@ -244,7 +253,10 @@ try {
         found: cards.length,
         accepted: accepted.length,
         reason: cards.length === 0 ? "対象画像を取得できませんでした。次回再試行します。" : null,
+        diagnostic: pageDiagnostic,
       });
+
+      if (pageDiagnostic) console.warn(`${source.sourceName} diagnostic: ${JSON.stringify(pageDiagnostic)}`);
 
       if (reserveIds && accepted.length > 0) {
         const counter = counters[source.key];
