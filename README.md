@@ -25,6 +25,7 @@ Creative Brief Studio AIとは分離して運用する、デザインリサー�
 | Parts | `PT-0001` | `05｜デザインパーツライブラリ` | `Parts_Research_Library` |
 | Patterns | `PAT-0001` | `06｜デザイン原則・パターン` | `Design_Research_System` |
 | Canva | `CV-0001` | `07｜Canvaリサーチライブラリー` | `Canva_Research_Library` |
+| Asset | `ILAC-0001`など | `08｜素材探索ナレッジ` | `Asset_Research_Library` |
 
 ## 連携先
 
