@@ -24,12 +24,42 @@ function getArg(name) {
   return index >= 0 ? process.argv[index + 1] : null;
 }
 
-function safeName(value) {
-  const normalized = (value || "")
+/** 英数字以外を落として安全なフォルダ名断片にする。全て非対応文字なら空文字を返す（"untitled"にはしない） */
+function safeNameFragment(value) {
+  return (value || "")
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
-  return normalized || "untitled";
+}
+
+/**
+ * captureUrlのホスト名からフォルダ名断片を作る（例: "https://seikatsuhonpo.com/ihinseiri/" → "seikatsuhonpo"）。
+ * タイトルが日本語のみ等でsafeNameFragmentが空になった場合の代替に使う。
+ * 実際に過去のLP-0215はこの方式（ドメイン名由来のスラッグ）で命名されていた実績がある。
+ */
+function domainNameFragment(url) {
+  try {
+    const hostname = new URL(url).hostname.replace(/^www\./, "");
+    return safeNameFragment(hostname.split(".")[0]);
+  } catch {
+    return "";
+  }
+}
+
+/**
+ * 候補のDropboxフォルダ名断片を決める。
+ * 1. タイトルから作れればそれを使う（例: "Awarefy" → "awarefy"）
+ * 2. タイトルが日本語のみ等で作れなければ、撮影URLのドメイン名から作る
+ * 3. どちらも作れなければ"untitled"にする（起きにくいが最後の保険）
+ */
+function slugForCandidate(candidate) {
+  const fromTitle = safeNameFragment(candidate.title);
+  if (fromTitle) return fromTitle;
+
+  const fromDomain = domainNameFragment(candidate.captureUrl);
+  if (fromDomain) return fromDomain;
+
+  return "untitled";
 }
 
 function todayJst() {
@@ -53,7 +83,7 @@ const byCandidate = new Map();
 for (const result of summary.results) {
   if (result.status !== "captured") continue;
   if (!byCandidate.has(result.id)) {
-    byCandidate.set(result.id, { id: result.id, title: result.title, devices: [] });
+    byCandidate.set(result.id, { id: result.id, title: result.title, captureUrl: result.captureUrl, devices: [] });
   }
   byCandidate.get(result.id).devices.push(result);
 }
@@ -78,7 +108,7 @@ console.log(`${dryRun ? "[DRY_RUN] " : ""}Dropboxアップロード先: ${intake
 const uploadResults = [];
 
 for (const candidate of byCandidate.values()) {
-  const candidateFolder = `${candidate.id}-${safeName(candidate.title)}`;
+  const candidateFolder = `${candidate.id}-${slugForCandidate(candidate)}`;
   const candidateDropboxPath = `${intakeBasePath}/${candidateFolder}`;
   const normalDir = `${candidateDropboxPath}/01_Normal_Images`;
   const notionDir = `${candidateDropboxPath}/02_Notion_Images`;
