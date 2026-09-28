@@ -95,6 +95,7 @@ jobs:
       DAILY_PARTS_LIMIT: ${{ vars.DAILY_PARTS_LIMIT || '5' }}
       DAILY_CANVA_LIMIT: ${{ vars.DAILY_CANVA_LIMIT || '5' }}
       DAILY_ASSET_LIMIT: ${{ github.event.inputs.asset_limit || vars.DAILY_ASSET_LIMIT || '10' }}
+      DAILY_PATTERN_LIMIT: ${{ vars.DAILY_PATTERN_LIMIT || '2' }}
 
     steps:
       - name: Checkout

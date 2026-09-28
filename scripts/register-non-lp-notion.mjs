@@ -119,7 +119,7 @@ for (const item of summary.results || []) {
       setProperty(properties, schema, ["素材種別"], "select", item.sourceName);
       setProperty(properties, schema, ["検索語"], "rich_text", item.searchTerm || "");
       setProperty(properties, schema, ["作者URL", "作者プロフィールURL", "制作者URL"], "url", item.authorProfileUrl || "");
-      const assetTags = ["ビジネス"];
+      const assetTags = item.searchTerm ? [item.searchTerm] : [];
       const searchable = `${item.title} ${item.metadata?.alt || ""}`;
       for (const tag of ["DX", "AI", "PC", "IoT", "アイコン", "IT", "業務効率化", "人物", "SaaS", "機能説明"]) {
         if (searchable.toLowerCase().includes(tag.toLowerCase())) assetTags.push(tag);

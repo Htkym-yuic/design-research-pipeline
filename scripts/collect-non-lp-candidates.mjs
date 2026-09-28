@@ -43,6 +43,33 @@ function normalizeUrl(value) {
   }
 }
 
+function researchDateJst() {
+  return process.env.RESEARCH_DATE_JST
+    || new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10);
+}
+
+function dateIndex(dateValue = researchDateJst()) {
+  const parsed = Date.parse(`${dateValue}T00:00:00Z`);
+  return Number.isNaN(parsed) ? 0 : Math.floor(parsed / 86400000);
+}
+
+function configureDailySearch(source) {
+  if (!Array.isArray(source.searchTerms) || source.searchTerms.length === 0 || !source.searchParam) return source;
+  const searchTerm = source.searchTerms[dateIndex() % source.searchTerms.length];
+  const collectionUrl = new URL(source.collectionUrl || source.sourceUrl);
+  collectionUrl.searchParams.set(source.searchParam, searchTerm);
+  return { ...source, searchTerm, collectionUrl: collectionUrl.toString() };
+}
+
+function collectionUrlsFor(source) {
+  const primary = source.collectionUrl || source.sourceUrl;
+  if (!source.paginationPattern || !source.pageScanLimit) return [primary];
+  return Array.from({ length: source.pageScanLimit }, (_, index) => {
+    const pageNumber = index + 1;
+    return pageNumber === 1 ? primary : source.paginationPattern.replace("{page}", String(pageNumber));
+  });
+}
+
 function nextId(source, offset) {
   const key = source.counterKey || source.key;
   const counter = counters[key];
@@ -175,38 +202,55 @@ function buildPatternCandidates(candidates, reservations, counters) {
   const patternCounter = counters.patterns;
   if (!patternCounter?.nextNumber) return [];
   const knownTitles = new Set((reservations.reserved || []).filter((item) => item.id?.startsWith("PAT-")).map((item) => item.title));
-  const definitions = [
-    {
-      title: "バナーと遷移先FVで訴求の連続性を保つ",
-      condition: candidates.some((item) => item.mediaType === "Banner" && item.landingUrl),
-      patternType: "訴求",
-      targetMedia: ["Banner", "LP"],
-      rule: "広告で約束した価値・対象・オファーを、遷移先ファーストビューでも同じ順序と言葉で再提示する。",
-      cautions: "遷移先で別の訴求を先に出すと離脱要因になるため、表現差を週末レビューで確認する。",
-      evidenceIds: candidates.filter((item) => item.mediaType === "Banner" && item.landingUrl).map((item) => item.id)
-    },
-    {
-      title: "PCとSPで主要情報の優先順位を維持する",
-      condition: candidates.some((item) => item.mediaType === "Web"),
-      patternType: "情報設計",
-      targetMedia: ["Web", "LP"],
-      rule: "画面幅が変わっても、主見出し・主要ベネフィット・CTAの順序と意味を維持する。",
-      cautions: "単なる縮小ではなく、SPでの折り返し・CTA位置・画像トリミングを確認する。",
-      evidenceIds: candidates.filter((item) => item.mediaType === "Web").map((item) => item.id)
-    },
-    {
-      title: "反復グリッドで複数素材の視線リズムを作る",
-      condition: candidates.some((item) => ["Graphic", "Canva"].includes(item.mediaType)),
-      patternType: "構成",
-      targetMedia: ["Graphic", "Parts"],
-      rule: "複数の写真や情報を同じグリッド単位で反復し、サイズ差で主従を作る。",
-      cautions: "素材数を増やしすぎず、色温度と余白量を揃えて散漫さを防ぐ。",
-      evidenceIds: candidates.filter((item) => ["Graphic", "Canva"].includes(item.mediaType)).map((item) => item.id)
-    }
-  ];
+  const firstOf = (predicate) => candidates.find(predicate);
+  const observations = [];
+  const banner = firstOf((item) => item.mediaType === "Banner" && item.landingUrl);
+  const web = firstOf((item) => item.mediaType === "Web");
+  const parts = firstOf((item) => item.mediaType === "Parts");
+  const graphic = firstOf((item) => item.mediaType === "Graphic");
+  const canva = firstOf((item) => item.mediaType === "Canva");
+  const shortTitle = (item) => String(item?.title || item?.id || "参考事例").replace(/\s+/g, " ").slice(0, 70);
+  if (banner) observations.push({
+    evidence: banner,
+    title: `${shortTitle(banner)}に見る広告と遷移先FVの訴求連続性`,
+    patternType: "訴求", targetMedia: ["Banner", "LP"],
+    rule: "広告で約束した価値・対象・オファーが、遷移先ファーストビューでも同じ優先順位で示されているかを比較する。",
+    cautions: "コピーの一致だけで判断せず、画像・CTA・価格条件を週末レビューで確認する。"
+  });
+  if (web) observations.push({
+    evidence: web,
+    title: `${shortTitle(web)}に見るPC・SPの情報優先順位`,
+    patternType: "情報設計", targetMedia: ["Web", "LP"],
+    rule: "画面幅が変わっても、主見出し・主要ベネフィット・CTAの意味と順序を維持する。",
+    cautions: "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。"
+  });
+  if (parts) observations.push({
+    evidence: parts,
+    title: `${shortTitle(parts)}に見るセクション内の役割集約`,
+    patternType: "構成", targetMedia: ["Parts", "Web", "LP"],
+    rule: "一つのセクション内で見出し・説明・証拠・行動導線の役割を整理し、他案件へ転用可能な単位として捉える。",
+    cautions: "切り出し範囲が広すぎないか、前後セクションへの依存がないかを確認する。"
+  });
+  if (graphic) observations.push({
+    evidence: graphic,
+    title: `${shortTitle(graphic)}に見る文字組みと視線誘導`,
+    patternType: "視線誘導", targetMedia: ["Graphic", "Banner"],
+    rule: "主見出し・補足・画像・行動情報のサイズ差と配置から、最初に読ませる情報を明確にする。",
+    cautions: "素材そのものではなく、情報階層と余白の考え方だけを転用する。"
+  });
+  if (canva) observations.push({
+    evidence: canva,
+    title: `${shortTitle(canva)}に見る反復可能なテンプレート構造`,
+    patternType: "反復", targetMedia: ["Canva", "Graphic", "SNS"],
+    rule: "画像枠・見出し・補足情報の位置を固定し、素材を差し替えても情報階層が崩れない構造を作る。",
+    cautions: "テンプレートの複製ではなく、グリッド・余白・主従関係のみを参考にする。"
+  });
+  if (observations.length === 0) return [];
+  const rotated = observations.map((_, index) => observations[(dateIndex() + index) % observations.length]);
+  const limit = Number.parseInt(process.env.DAILY_PATTERN_LIMIT || "2", 10);
   const accepted = [];
-  for (const definition of definitions) {
-    if (!definition.condition || knownTitles.has(definition.title)) continue;
+  for (const definition of rotated) {
+    if (accepted.length >= limit || knownTitles.has(definition.title)) continue;
     const id = `PAT-${String(patternCounter.nextNumber + accepted.length).padStart(4, "0")}`;
     accepted.push({
       id,
@@ -214,19 +258,26 @@ function buildPatternCandidates(candidates, reservations, counters) {
       mediaType: "Pattern",
       sourceKey: "patterns",
       title: definition.title,
-      captureUrl: null,
+      captureUrl: definition.evidence.captureUrl,
       imageUrl: null,
       landingUrl: null,
-      sourceName: "日次収集から抽出",
-      sourceUrl: null,
-      sourceDetailUrl: null,
+      sourceName: `日次収集から抽出（${definition.evidence.sourceName}）`,
+      sourceUrl: definition.evidence.sourceUrl,
+      sourceDetailUrl: definition.evidence.sourceDetailUrl,
       library: "Pattern_Research_Library",
       notionEnv: "NOTION_PATTERNS_DATA_SOURCE_ID",
       saveImage: false,
       materialId: id,
       authorProfileUrl: null,
       searchTerm: null,
-      metadata: { collectionMode: "derived_pattern", ...definition }
+      metadata: {
+        collectionMode: "derived_pattern",
+        patternType: definition.patternType,
+        targetMedia: definition.targetMedia,
+        rule: definition.rule,
+        cautions: definition.cautions,
+        evidenceIds: [definition.evidence.id]
+      }
     });
   }
   return accepted;
@@ -277,35 +328,52 @@ const allCandidates = [];
 const sourceResults = [];
 
 try {
-  for (const source of sources.filter((item) => sourceFilter.size === 0 || sourceFilter.has(item.key))) {
+  for (const originalSource of sources.filter((item) => sourceFilter.size === 0 || sourceFilter.has(item.key))) {
+    const source = configureDailySearch(originalSource);
     const limit = Number.parseInt(`${source.perRunLimit ?? process.env[source.limitEnv] ?? source.defaultLimit}`, 10);
     const page = await browser.newPage({ viewport: { width: 1200, height: 900 }, ...browserContextOptions });
     try {
-      await page.goto(source.collectionUrl || source.sourceUrl, { waitUntil: "domcontentloaded", timeout: 30000 });
-      await page.waitForTimeout(2500);
-      await page.evaluate(async () => {
-        const limit = Math.min(document.documentElement.scrollHeight, 5000);
-        for (let y = 0; y < limit; y += 700) {
-          window.scrollTo(0, y);
-          await new Promise((resolve) => setTimeout(resolve, 180));
+      const cards = [];
+      const seenCards = new Set();
+      const diagnostics = [];
+      for (const collectionUrl of collectionUrlsFor(source)) {
+        await page.goto(collectionUrl, { waitUntil: "domcontentloaded", timeout: 30000 });
+        await page.waitForTimeout(2500);
+        await page.evaluate(async () => {
+          const limit = Math.min(document.documentElement.scrollHeight, 5000);
+          for (let y = 0; y < limit; y += 700) {
+            window.scrollTo(0, y);
+            await new Promise((resolve) => setTimeout(resolve, 180));
+          }
+          window.scrollTo(0, 0);
+        });
+        let pageCards = await extractCards(page, source);
+        if (pageCards.length === 0) {
+          await page.reload({ waitUntil: "domcontentloaded", timeout: 30000 });
+          await page.waitForTimeout(6000);
+          pageCards = await extractCards(page, source);
         }
-        window.scrollTo(0, 0);
-      });
-      let cards = await extractCards(page, source);
-      if (cards.length === 0) {
-        await page.reload({ waitUntil: "domcontentloaded", timeout: 30000 });
-        await page.waitForTimeout(6000);
-        cards = await extractCards(page, source);
-      }
-      const pageDiagnostic = cards.length === 0
-        ? await page.evaluate(() => ({
+        if (pageCards.length === 0) diagnostics.push(await page.evaluate(() => ({
             finalUrl: location.href,
             title: document.title,
             bodyPreview: document.body?.innerText?.replace(/\s+/g, " ").slice(0, 500) || "",
             figureCount: document.querySelectorAll("figure").length,
             imageCount: document.images.length
-          }))
-        : null;
+          })));
+        for (const card of pageCards) {
+          const identity = normalizeUrl(card.sourceDetailUrl || card.imageUrl || card.captureUrl);
+          if (seenCards.has(identity)) continue;
+          seenCards.add(identity);
+          cards.push(card);
+        }
+        const unseenCount = cards.filter((card) => {
+          const urls = [card.sourceDetailUrl, card.captureUrl, card.imageUrl].filter(Boolean).map(normalizeUrl);
+          const materialIdentity = card.materialId ? `${source.sourceName}:${card.materialId}` : null;
+          return !urls.some((value) => knownUrls.has(value)) && !(materialIdentity && knownMaterialIds.has(materialIdentity));
+        }).length;
+        if (unseenCount >= limit) break;
+      }
+      const pageDiagnostic = cards.length === 0 ? diagnostics[0] || null : null;
       const accepted = [];
 
       for (const card of cards) {

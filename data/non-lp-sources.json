@@ -130,7 +130,9 @@
     "notionEnv": "NOTION_PARTS_DATA_SOURCE_ID",
     "limitEnv": "DAILY_PARTS_LIMIT",
     "defaultLimit": 5,
-    "imageHostIncludes": "partsdesign.net/wp-content/uploads/"
+    "imageHostIncludes": "partsdesign.net/wp-content/uploads/",
+    "paginationPattern": "https://partsdesign.net/page/{page}/",
+    "pageScanLimit": 12
   },
   {
     "key": "canva",
@@ -159,7 +161,11 @@
     "limitEnv": "DAILY_ASSET_LIMIT",
     "defaultLimit": 10,
     "imageHostIncludes": "thumb.ac-illust.com",
-    "searchTerm": "ビジネス"
+    "searchParam": "word",
+    "searchTerms": [
+      "ビジネス", "美容", "医療", "介護", "教育", "飲食", "EC 物販",
+      "住宅", "士業", "採用", "家族", "シニア", "テクノロジー", "自然 地域"
+    ]
   },
   {
     "key": "photoAc",
@@ -175,6 +181,10 @@
     "limitEnv": "DAILY_ASSET_LIMIT",
     "defaultLimit": 10,
     "imageHostIncludes": "thumb.photo-ac.com",
-    "searchTerm": "ビジネス"
+    "searchParam": "q",
+    "searchTerms": [
+      "ビジネス", "美容", "医療", "介護", "教育", "飲食", "EC 物販",
+      "住宅", "士業", "採用", "家族", "シニア", "テクノロジー", "自然 地域"
+    ]
   }
 ]

@@ -167,6 +167,7 @@ LP以外は以下のVariableで保存先と件数を管理する。
 | `NOTION_PATTERNS_DATA_SOURCE_ID` | Notionのデザイン原則・パターンのデータソースID |
 | `NOTION_ASSET_DATA_SOURCE_ID` | Notionの素材探索ナレッジのデータソースID |
 | `DAILY_BANNER_LIMIT` / `DAILY_WEB_LIMIT` / `DAILY_GRAPHIC_LIMIT` / `DAILY_PARTS_LIMIT` / `DAILY_CANVA_LIMIT` / `DAILY_ASSET_LIMIT` | 各媒体の日次収集件数 |
+| `DAILY_PATTERN_LIMIT` | 当日の実例から抽出するデザイン原則・パターン件数（既定2件） |
 
 ### Notionのプロパティ対応表
 
@@ -194,13 +195,14 @@ LP以外は以下のVariableで保存先と件数を管理する。
 - `DRY_RUN=true`（既定）：Dropbox/Notionへ実際には書き込まず、書き込み予定の内容だけを`dropbox-upload-result.json` / `notion-registration-result.json`へ出力する。
 - `DRY_RUN=false`：実際にDropboxへアップロードし、Notionへページを作成・更新する。
 - 手動実行（`workflow_dispatch`）では毎回選べる。スケジュール実行はリポジトリVariable `DRY_RUN` の値に従う（未設定なら`true`のまま）。**本番反映する場合は、Variable `DRY_RUN` を`false`に変更すること。**
-- 非LPだけを個別検証するときは、`non_lp_source_filter` に `illustrationAc` などのsource keyを指定する。イラストACは素材をダウンロードせず、`ILAC-XXXX`、素材ID、正式な素材ページURL、検索語、作者プロフィールURLのみを保存する。
-- イラストACはGitHubホストランナーのIPにCloudFront 403を返す場合がある。その場合は`blocked`として報告し、同じ収集コードをローカル環境で実行する。アクセス制限の迂回は行わない。
+- 非LPだけを個別検証するときは、`non_lp_source_filter` に `illustrationAc`、`photoAc`、`parts` などのsource keyを指定する。AC系は素材をダウンロードせず、ID、正式な素材ページURL、検索語、作者プロフィールURLのみを保存する。
+- 写真AC・イラストACの検索語は、ビジネス、美容、医療、介護、教育、飲食、EC・物販、住宅、士業、採用、家族、シニア、テクノロジー、自然・地域をJSTの日付で循環する。`RESEARCH_DATE_JST=YYYY-MM-DD`で検証日を固定できる。
+- 写真AC・イラストACはGitHubホストランナーのIPにCloudFront 403を返す場合がある。その場合は`blocked`として報告し、同じ収集コードをローカルMacで実行する。アクセス制限の迂回は行わない。
+- Parts.はトップページだけでなく過去ページも走査し、予約済みURLを除外して新規候補を探す。当日の実例から、根拠ID付きのデザイン原則・パターンを最大`DAILY_PATTERN_LIMIT`件生成する。
 
 ### 現時点でまだ自動化していないこと
 
 - Creative Brief Studio AIへの同期（`npm run knowledge:apply`等）は対象外。Notionへの軽量分析ページ登録までがこのワークフローの範囲。
 - LP-0180・LP-0215と同じ29項目の詳細分析（週末レビューで人が選んだ候補のみ、別途手動で実施する）。
-- FV印象・構成ざっくり・業種・訴求・配色・レイアウトタグ等、実際に画面を見て判断する軽量分析の中身。Notionページの該当プロパティ・本文は「軽量分析未実施」のプレースホルダーのまま作成される（見ていない内容を自動生成しないため）。
-- バナー・Web・グラフィック・パーツ・パターンの自動収集（データソースID未確定、日次件数のVariableも未使用）。
+- 画像理解を伴う最終的な意味判断。日次は自動一次分析までとし、コピー、正確な訴求分類、パーツ境界、原則の妥当性は週末レビューで確認する。
 - DropboxやNotion内の既存資産の移動・削除。
