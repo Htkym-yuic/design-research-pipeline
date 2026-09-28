@@ -27,9 +27,9 @@ function propertyType(property) {
   return property?.type || Object.keys(property || {}).find((key) => ["title", "rich_text", "url", "date", "select", "status", "checkbox", "multi_select"].includes(key));
 }
 
-function findProperty(properties, type, names = []) {
+function findProperty(properties, type, names = [], allowFallback = false) {
   for (const name of names) if (properties[name] && propertyType(properties[name]) === type) return name;
-  return Object.entries(properties).find(([, property]) => propertyType(property) === type)?.[0] || null;
+  return allowFallback ? Object.entries(properties).find(([, property]) => propertyType(property) === type)?.[0] || null : null;
 }
 
 function setProperty(properties, schema, names, type, value) {
@@ -65,25 +65,50 @@ for (const item of summary.results || []) {
 
     const properties = {};
     const titleValue = `${item.id}｜${item.title}`;
-    const titleName = findProperty(schema, "title", ["タイトル", "サイト名", "作品名", "パーツ名", "素材名"]);
+    const titleName = findProperty(schema, "title", ["タイトル", "サイト名", "作品名", "パーツ名", "素材名", "パターン名"], true);
     if (!titleName) throw new Error("Notionデータソースにtitleプロパティがありません");
     const existing = await findPageByProperty(dataSourceId, titleName, "title", titleValue);
     if (existing) {
       results.push({ id: item.id, status: "already_exists", pageId: existing.id });
       continue;
     }
-    setProperty(properties, schema, ["タイトル", "サイト名", "作品名", "パーツ名", "素材名"], "title", titleValue);
-    setProperty(properties, schema, ["広告ID", "サイトID", "作品ID", "パーツID", "Canva ID", "素材ID", "候補ID"], "rich_text", item.materialId || item.id);
+    setProperty(properties, schema, ["タイトル", "サイト名", "作品名", "パーツ名", "素材名", "パターン名"], "title", titleValue);
+    setProperty(properties, schema, ["広告ID", "サイトID", "HP-ID", "作品ID", "パーツID", "Canva ID", "素材ID", "候補ID", "パターンID"], "rich_text", item.materialId || item.id);
     setProperty(properties, schema, ["参考URL", "公式サイトURL", "素材ページURL", "参考元詳細URL"], "url", item.sourceDetailUrl || item.captureUrl);
     setProperty(properties, schema, ["出典", "取得元サイト", "参考元"], "rich_text", item.sourceName);
     setProperty(properties, schema, ["取得日"], "date", dateJst);
     setProperty(properties, schema, ["Dropbox正本パス", "Dropbox保存先", "保存先"], "rich_text", upload?.dropboxPath || "");
-    setProperty(properties, schema, ["ステータス", "確認状態"], "status", "未着手");
+    setProperty(properties, schema, ["ステータス", "確認状態"], "status", Object.keys(analysis).length > 0 ? "完了" : "未着手");
+    setProperty(properties, schema, ["ステータス"], "select", item.mediaType === "Web" ? "レビュー待ち" : null);
     setProperty(properties, schema, ["Notion同期"], "checkbox", true);
     setProperty(properties, schema, ["分析完了"], "checkbox", false);
     setProperty(properties, schema, ["メイン訴求", "良い理由", "用途候補"], "rich_text", analysis.usefulPoints || "");
+    setProperty(properties, schema, ["詳細分析候補度"], "select", analysis.deepDivePriority || "中");
+    setProperty(properties, schema, ["ナレッジ化ステータス"], "select", item.mediaType === "Pattern" ? "レビュー待ち" : "未着手");
+    setProperty(properties, schema, ["CBS同期状態"], "select", "未同期");
+    setProperty(properties, schema, ["出典サイト"], "rich_text", item.sourceName);
+    setProperty(properties, schema, ["学べる要素", "再利用原則", "再利用パターン"], "rich_text", analysis.usefulPoints || item.metadata?.rule || "");
+    if (item.mediaType === "Banner") {
+      setProperty(properties, schema, ["バナー画像URL"], "url", item.imageUrl || item.captureUrl);
+      setProperty(properties, schema, ["LP URL"], "url", item.landingUrl || "");
+      setProperty(properties, schema, ["広告タイプ"], "select", "サイト掲載");
+    }
+    if (item.mediaType === "Web") {
+      setProperty(properties, schema, ["SANKOU詳細URL"], "url", item.sourceDetailUrl);
+      setProperty(properties, schema, ["公式サイトURL"], "url", item.captureUrl);
+      setProperty(properties, schema, ["参照元"], "select", item.sourceName === "SANKOU!" ? "SANKOU!" : "その他");
+      setProperty(properties, schema, ["スクショ状態"], "select", item.status === "captured" ? "撮影済み" : "要再撮影");
+      setProperty(properties, schema, ["プレビュー方針"], "select", "内部分析用スクショ");
+      setProperty(properties, schema, ["スクショ用途"], "select", "本人非公開分析のみ");
+    }
+    if (item.mediaType === "Graphic") setProperty(properties, schema, ["ジャンル"], "select", "チラシ・フライヤー");
+    if (item.mediaType === "Canva") {
+      setProperty(properties, schema, ["テンプレート種別"], "select", /instagram/i.test(item.title) ? "Instagram投稿" : "その他");
+      setProperty(properties, schema, ["レイアウト"], "rich_text", analysis.visualSummary || "");
+      setProperty(properties, schema, ["情報階層"], "rich_text", "主画像・見出し・補足情報の順序を週末レビューで確認する。");
+    }
     if (item.mediaType === "Parts") {
-      setProperty(properties, schema, ["分析状態"], "select", "再切り出し待ち");
+      setProperty(properties, schema, ["分析状態"], "select", "要確認");
       setProperty(properties, schema, ["画像精度"], "select", "未確認");
       setProperty(properties, schema, ["要確認点"], "rich_text", analysis.reviewPoints || "切り出し範囲とパーツ種別を確認する。");
     }
@@ -91,6 +116,19 @@ for (const item of summary.results || []) {
       setProperty(properties, schema, ["素材種別"], "select", item.sourceName);
       setProperty(properties, schema, ["検索語"], "rich_text", item.searchTerm || "");
       setProperty(properties, schema, ["作者URL", "作者プロフィールURL", "制作者URL"], "url", item.authorProfileUrl || "");
+      const assetTags = ["ビジネス"];
+      const searchable = `${item.title} ${item.metadata?.alt || ""}`;
+      for (const tag of ["DX", "AI", "PC", "IoT", "アイコン", "IT", "業務効率化", "人物", "SaaS", "機能説明"]) {
+        if (searchable.toLowerCase().includes(tag.toLowerCase())) assetTags.push(tag);
+      }
+      setProperty(properties, schema, ["タグ"], "multi_select", [...new Set(assetTags)]);
+    }
+    if (item.mediaType === "Pattern") {
+      setProperty(properties, schema, ["種別"], "select", item.metadata?.patternType || "その他");
+      setProperty(properties, schema, ["対象媒体"], "multi_select", item.metadata?.targetMedia || []);
+      setProperty(properties, schema, ["再利用原則"], "rich_text", item.metadata?.rule || "");
+      setProperty(properties, schema, ["適用条件"], "rich_text", `根拠候補: ${(item.metadata?.evidenceIds || []).join(", ") || "要確認"}`);
+      setProperty(properties, schema, ["注意点"], "rich_text", item.metadata?.cautions || "");
     }
 
     const blocks = [

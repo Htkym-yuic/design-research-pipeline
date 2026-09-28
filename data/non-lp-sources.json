@@ -82,5 +82,21 @@
     "defaultLimit": 10,
     "imageHostIncludes": "thumb.ac-illust.com",
     "searchTerm": "ビジネス"
+  },
+  {
+    "key": "photoAc",
+    "mediaType": "Asset",
+    "prefix": "PHAC",
+    "sourceName": "写真AC",
+    "sourceUrl": "https://www.photo-ac.com/",
+    "collectionUrl": "https://www.photo-ac.com/main/search?q=%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9",
+    "mode": "ac_metadata",
+    "detailStyle": "path",
+    "library": "Asset_Research_Library",
+    "notionEnv": "NOTION_ASSET_DATA_SOURCE_ID",
+    "limitEnv": "DAILY_ASSET_LIMIT",
+    "defaultLimit": 10,
+    "imageHostIncludes": "thumb.photo-ac.com",
+    "searchTerm": "ビジネス"
   }
 ]

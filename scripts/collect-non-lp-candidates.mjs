@@ -23,10 +23,12 @@ const sources = JSON.parse(await fs.readFile(sourcePath, "utf8"));
 const counters = JSON.parse(await fs.readFile(countersPath, "utf8"));
 const reservations = JSON.parse(await fs.readFile(reservationsPath, "utf8").catch(() => '{"reserved":[]}'));
 const knownUrls = new Set();
+const knownMaterialIds = new Set();
 for (const item of reservations.reserved || []) {
   for (const value of [item.captureUrl, item.sourceDetailUrl, item.imageUrl]) {
     if (value) knownUrls.add(normalizeUrl(value));
   }
+  if (item.sourceName && item.materialId) knownMaterialIds.add(`${item.sourceName}:${item.materialId}`);
 }
 
 function normalizeUrl(value) {
@@ -71,21 +73,25 @@ async function extractCards(page, source) {
           try {
             const parsed = new URL(href);
             const nested = parsed.searchParams.get("url");
-            if (nested?.includes("/main/detail.php")) {
+            if (nested?.includes("/main/detail")) {
               const detail = new URL(nested);
-              materialId = detail.searchParams.get("id");
+              materialId = detail.searchParams.get("id") || detail.pathname.match(/\/main\/detail\/(\d+)/)?.[1];
               materialUrl = materialId
-                ? `${detail.origin}${detail.pathname}?id=${encodeURIComponent(materialId)}`
+                ? definition.detailStyle === "path"
+                  ? `${detail.origin}/main/detail/${encodeURIComponent(materialId)}`
+                  : `${detail.origin}/main/detail.php?id=${encodeURIComponent(materialId)}`
                 : detail.toString();
               title = parsed.searchParams.get("word") || title;
             }
-            if (!materialId && parsed.searchParams.get("id") && ["/main/related.php", "/search/ris.php"].includes(parsed.pathname)) {
+            if (!materialId && parsed.searchParams.get("id") && ["/main/related.php", "/search/ris.php", "/search/ris"].includes(parsed.pathname)) {
               materialId = parsed.searchParams.get("id");
             }
           } catch {}
         }
         if (!materialUrl && materialId) {
-          materialUrl = `${new URL(definition.sourceUrl).origin}/main/detail.php?id=${encodeURIComponent(materialId)}`;
+          materialUrl = definition.detailStyle === "path"
+            ? `${new URL(definition.sourceUrl).origin}/main/detail/${encodeURIComponent(materialId)}`
+            : `${new URL(definition.sourceUrl).origin}/main/detail.php?id=${encodeURIComponent(materialId)}`;
         }
         if (!materialUrl || !materialId || seen.has(materialUrl)) continue;
         seen.add(materialUrl);
@@ -101,7 +107,7 @@ async function extractCards(page, source) {
           captureUrl: materialUrl,
           landingUrl: null,
           materialId,
-          authorProfileUrl: hrefs.find((href) => href.includes("/main/profile.php")) || null,
+          authorProfileUrl: hrefs.find((href) => href.includes("/main/profile.php") || href.includes("/profile/")) || null,
           searchTerm: definition.searchTerm || null
         });
       }
@@ -153,6 +159,67 @@ async function extractCards(page, source) {
     }
     return values;
   }, source);
+}
+
+function buildPatternCandidates(candidates, reservations, counters) {
+  const patternCounter = counters.patterns;
+  if (!patternCounter?.nextNumber) return [];
+  const knownTitles = new Set((reservations.reserved || []).filter((item) => item.id?.startsWith("PAT-")).map((item) => item.title));
+  const definitions = [
+    {
+      title: "バナーと遷移先FVで訴求の連続性を保つ",
+      condition: candidates.some((item) => item.mediaType === "Banner" && item.landingUrl),
+      patternType: "訴求",
+      targetMedia: ["Banner", "LP"],
+      rule: "広告で約束した価値・対象・オファーを、遷移先ファーストビューでも同じ順序と言葉で再提示する。",
+      cautions: "遷移先で別の訴求を先に出すと離脱要因になるため、表現差を週末レビューで確認する。",
+      evidenceIds: candidates.filter((item) => item.mediaType === "Banner" && item.landingUrl).map((item) => item.id)
+    },
+    {
+      title: "PCとSPで主要情報の優先順位を維持する",
+      condition: candidates.some((item) => item.mediaType === "Web"),
+      patternType: "情報設計",
+      targetMedia: ["Web", "LP"],
+      rule: "画面幅が変わっても、主見出し・主要ベネフィット・CTAの順序と意味を維持する。",
+      cautions: "単なる縮小ではなく、SPでの折り返し・CTA位置・画像トリミングを確認する。",
+      evidenceIds: candidates.filter((item) => item.mediaType === "Web").map((item) => item.id)
+    },
+    {
+      title: "反復グリッドで複数素材の視線リズムを作る",
+      condition: candidates.some((item) => ["Graphic", "Canva"].includes(item.mediaType)),
+      patternType: "構成",
+      targetMedia: ["Graphic", "Parts"],
+      rule: "複数の写真や情報を同じグリッド単位で反復し、サイズ差で主従を作る。",
+      cautions: "素材数を増やしすぎず、色温度と余白量を揃えて散漫さを防ぐ。",
+      evidenceIds: candidates.filter((item) => ["Graphic", "Canva"].includes(item.mediaType)).map((item) => item.id)
+    }
+  ];
+  const accepted = [];
+  for (const definition of definitions) {
+    if (!definition.condition || knownTitles.has(definition.title)) continue;
+    const id = `PAT-${String(patternCounter.nextNumber + accepted.length).padStart(4, "0")}`;
+    accepted.push({
+      id,
+      status: "candidate",
+      mediaType: "Pattern",
+      sourceKey: "patterns",
+      title: definition.title,
+      captureUrl: null,
+      imageUrl: null,
+      landingUrl: null,
+      sourceName: "日次収集から抽出",
+      sourceUrl: null,
+      sourceDetailUrl: null,
+      library: "Pattern_Research_Library",
+      notionEnv: "NOTION_PATTERNS_DATA_SOURCE_ID",
+      saveImage: false,
+      materialId: id,
+      authorProfileUrl: null,
+      searchTerm: null,
+      metadata: { collectionMode: "derived_pattern", ...definition }
+    });
+  }
+  return accepted;
 }
 
 async function findBannerLanding(browser, detailUrl, sourceHost) {
@@ -219,8 +286,10 @@ try {
           card.landingUrl = await findBannerLanding(browser, card.sourceDetailUrl, new URL(source.sourceUrl).hostname);
         }
         const identityUrls = [card.sourceDetailUrl, card.captureUrl, card.imageUrl].filter(Boolean).map(normalizeUrl);
-        if (identityUrls.some((value) => knownUrls.has(value))) continue;
+        const materialIdentity = card.materialId ? `${source.sourceName}:${card.materialId}` : null;
+        if (identityUrls.some((value) => knownUrls.has(value)) || (materialIdentity && knownMaterialIds.has(materialIdentity))) continue;
         identityUrls.forEach((value) => knownUrls.add(value));
+        if (materialIdentity) knownMaterialIds.add(materialIdentity);
 
         const id = nextId(source, accepted.length);
         accepted.push({
@@ -277,6 +346,17 @@ try {
   }
 } finally {
   await browser.close();
+}
+
+const patternCandidates = buildPatternCandidates(allCandidates, reservations, counters);
+if (patternCandidates.length > 0) {
+  allCandidates.push(...patternCandidates);
+  sourceResults.push({ key: "patterns", sourceName: "日次収集から抽出", status: "collected", found: patternCandidates.length, accepted: patternCandidates.length, reason: null, diagnostic: null });
+  if (reserveIds) {
+    counters.patterns.existingMax = counters.patterns.nextNumber + patternCandidates.length - 1;
+    counters.patterns.nextNumber += patternCandidates.length;
+    counters.patterns.lastReservationAt = new Date().toISOString();
+  }
 }
 
 const output = { collectedAt: new Date().toISOString(), candidateCount: allCandidates.length, candidates: allCandidates, sourceResults };

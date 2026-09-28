@@ -12,6 +12,7 @@
     "capture:non-lp": "node scripts/capture-non-lp-candidates.mjs",
     "analyze:non-lp:light": "node scripts/generate-non-lp-lightweight-analysis.mjs",
     "daily:check": "node scripts/check-daily-run.mjs",
+    "intake:audit": "node scripts/audit-intake-state.mjs",
     "daily:mark": "node scripts/mark-daily-run.mjs",
     "knowledge:validate-lp": "node scripts/validate-lp-knowledge.mjs",
     "knowledge:crosscheck-lp": "node scripts/crosscheck-lp-assets.mjs",

@@ -32,13 +32,14 @@ for (const item of summary.results || []) {
     ? item.landingUrl ? "バナーと遷移先FVを比較可能" : "遷移先URLを取得できず、バナー単体で保留"
     : item.mediaType === "Web" ? "PC/SPのFV・全体構成を比較可能"
     : item.mediaType === "Asset" ? `素材ID ${item.materialId || "未取得"} と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない`
+    : item.mediaType === "Pattern" ? `${item.metadata?.rule || "日次収集から再利用可能な原則を抽出"} 根拠候補: ${(item.metadata?.evidenceIds || []).join(", ") || "要確認"}`
     : "単体ビジュアルの構成・余白・文字組みを確認可能";
   output.analyses[item.id] = {
     analysisMode: "automated_daily_first_pass",
     overview: `${item.sourceName}から収集した${item.mediaType}参考。${item.title}。`,
     visualSummary: `${palette}。${item.metadata?.width || "?"}×${item.metadata?.height || "?"}の掲載画像を基準に確認。`,
     usefulPoints: relation,
-    reviewPoints: item.status === "failed" ? item.error : "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+    reviewPoints: item.status === "failed" ? item.error : item.metadata?.cautions || "コピー・権利・正確な訴求分類は週末レビューで確認する。",
     deepDivePriority: item.status === "captured" ? "中" : "要確認",
     generatedAt: new Date().toISOString()
   };

@@ -43,7 +43,7 @@ on:
         options: ["true", "false"]
         default: "true"
       non_lp_source_filter:
-        description: "非LPの対象をカンマ区切りで限定。空欄は全媒体（例: illustrationAc）"
+        description: "非LPの対象をカンマ区切りで限定。空欄は全媒体（例: illustrationAc,photoAc）"
         type: string
         default: ""
       asset_limit:
@@ -119,6 +119,10 @@ jobs:
       - name: Check required Secrets / Variables
         if: steps.guard.outputs.skip != 'true'
         run: npm run check:env
+
+      - name: Audit numbering and intake configuration
+        if: steps.guard.outputs.skip != 'true'
+        run: npm run intake:audit
 
       - name: Install browser
         if: steps.guard.outputs.skip != 'true'
