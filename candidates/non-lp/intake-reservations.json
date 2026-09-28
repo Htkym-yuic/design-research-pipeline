@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T16:30:09.729Z",
+  "updatedAt": "2026-09-28T19:59:27.427Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -712,6 +712,126 @@
       "reservedAt": "2026-09-27T21:15:32.398Z"
     },
     {
+      "id": "ILAC-0004",
+      "title": "食べる人物の素材集",
+      "mediaType": "Asset",
+      "sourceName": "イラストAC",
+      "captureUrl": "https://www.ac-illust.com/main/detail.php?id=22012538",
+      "sourceDetailUrl": "https://www.ac-illust.com/main/detail.php?id=22012538",
+      "imageUrl": "https://thumb.ac-illust.com/91/91d6c6a2cda66a42a1c1859213c1de8a_t.jpeg",
+      "materialId": "22012538",
+      "authorProfileUrl": "https://www.ac-illust.com/main/profile.php?id=oecL5FWS&area=1",
+      "reservedAt": "2026-09-28T19:59:27.427Z"
+    },
+    {
+      "id": "ILAC-0005",
+      "title": "キッチンカーと店員さん",
+      "mediaType": "Asset",
+      "sourceName": "イラストAC",
+      "captureUrl": "https://www.ac-illust.com/main/detail.php?id=22310793",
+      "sourceDetailUrl": "https://www.ac-illust.com/main/detail.php?id=22310793",
+      "imageUrl": "https://thumb.ac-illust.com/3d/3d4d8354e1124c356d4110cc234ed529_t.jpeg",
+      "materialId": "22310793",
+      "authorProfileUrl": "https://www.ac-illust.com/main/profile.php?id=RxmfAmyC&area=1",
+      "reservedAt": "2026-09-28T19:59:27.427Z"
+    },
+    {
+      "id": "ILAC-0006",
+      "title": "キッチンカー・フードトラック4種類",
+      "mediaType": "Asset",
+      "sourceName": "イラストAC",
+      "captureUrl": "https://www.ac-illust.com/main/detail.php?id=22621443",
+      "sourceDetailUrl": "https://www.ac-illust.com/main/detail.php?id=22621443",
+      "imageUrl": "https://thumb.ac-illust.com/20/206642e865946956de337e591e1179a7_t.jpeg",
+      "materialId": "22621443",
+      "authorProfileUrl": "https://www.ac-illust.com/main/profile.php?id=23254065&area=1",
+      "reservedAt": "2026-09-28T19:59:27.427Z"
+    },
+    {
+      "id": "ILAC-0007",
+      "title": "コンビニ関連アイコン02",
+      "mediaType": "Asset",
+      "sourceName": "イラストAC",
+      "captureUrl": "https://www.ac-illust.com/main/detail.php?id=22743868",
+      "sourceDetailUrl": "https://www.ac-illust.com/main/detail.php?id=22743868",
+      "imageUrl": "https://thumb.ac-illust.com/c7/c7580692f6d39366764bc3be6945d296_t.jpeg",
+      "materialId": "22743868",
+      "authorProfileUrl": "https://www.ac-illust.com/main/profile.php?id=WhwdAUFf&area=1",
+      "reservedAt": "2026-09-28T19:59:27.427Z"
+    },
+    {
+      "id": "ILAC-0008",
+      "title": "みんなでビール",
+      "mediaType": "Asset",
+      "sourceName": "イラストAC",
+      "captureUrl": "https://www.ac-illust.com/main/detail.php?id=2190439",
+      "sourceDetailUrl": "https://www.ac-illust.com/main/detail.php?id=2190439",
+      "imageUrl": "https://thumb.ac-illust.com/a9/a9fce4b828a186d9df59c8a95d6c2d94_t.jpeg",
+      "materialId": "2190439",
+      "authorProfileUrl": "https://www.ac-illust.com/main/profile.php?id=oecL5FWS&area=1",
+      "reservedAt": "2026-09-28T19:59:27.427Z"
+    },
+    {
+      "id": "ILAC-0009",
+      "title": "コリアンフードのイラスト",
+      "mediaType": "Asset",
+      "sourceName": "イラストAC",
+      "captureUrl": "https://www.ac-illust.com/main/detail.php?id=640075",
+      "sourceDetailUrl": "https://www.ac-illust.com/main/detail.php?id=640075",
+      "imageUrl": "https://thumb.ac-illust.com/21/21a0a66c5dbab798df119e76020235cb_t.jpeg",
+      "materialId": "640075",
+      "authorProfileUrl": "https://www.ac-illust.com/main/profile.php?id=acworks&area=1",
+      "reservedAt": "2026-09-28T19:59:27.427Z"
+    },
+    {
+      "id": "ILAC-0010",
+      "title": "調理-001",
+      "mediaType": "Asset",
+      "sourceName": "イラストAC",
+      "captureUrl": "https://www.ac-illust.com/main/detail.php?id=773409",
+      "sourceDetailUrl": "https://www.ac-illust.com/main/detail.php?id=773409",
+      "imageUrl": "https://thumb.ac-illust.com/fe/fedc3c350a98326fc25295dc49906a08_t.jpeg",
+      "materialId": "773409",
+      "authorProfileUrl": "https://www.ac-illust.com/main/profile.php?id=n4P5pfLX&area=1",
+      "reservedAt": "2026-09-28T19:59:27.427Z"
+    },
+    {
+      "id": "ILAC-0011",
+      "title": "バレンタインセット",
+      "mediaType": "Asset",
+      "sourceName": "イラストAC",
+      "captureUrl": "https://www.ac-illust.com/main/detail.php?id=23376765",
+      "sourceDetailUrl": "https://www.ac-illust.com/main/detail.php?id=23376765",
+      "imageUrl": "https://thumb.ac-illust.com/9e/9ee00ef78ae792720dbbd78eac85a82f_t.jpeg",
+      "materialId": "23376765",
+      "authorProfileUrl": "https://www.ac-illust.com/main/profile.php?id=23583038&area=1",
+      "reservedAt": "2026-09-28T19:59:27.427Z"
+    },
+    {
+      "id": "ILAC-0012",
+      "title": "ビールを飲む人々 人物素材集",
+      "mediaType": "Asset",
+      "sourceName": "イラストAC",
+      "captureUrl": "https://www.ac-illust.com/main/detail.php?id=2190533",
+      "sourceDetailUrl": "https://www.ac-illust.com/main/detail.php?id=2190533",
+      "imageUrl": "https://thumb.ac-illust.com/40/40e428ccfd0ff0d005912a735e1b6f2c_t.jpeg",
+      "materialId": "2190533",
+      "authorProfileUrl": "https://www.ac-illust.com/main/profile.php?id=oecL5FWS&area=1",
+      "reservedAt": "2026-09-28T19:59:27.427Z"
+    },
+    {
+      "id": "ILAC-0013",
+      "title": "ビールのモチーフセット",
+      "mediaType": "Asset",
+      "sourceName": "イラストAC",
+      "captureUrl": "https://www.ac-illust.com/main/detail.php?id=26857917",
+      "sourceDetailUrl": "https://www.ac-illust.com/main/detail.php?id=26857917",
+      "imageUrl": "https://thumb.ac-illust.com/35/35563b8c81efbbe77d5265aa645baa42_t.jpeg",
+      "materialId": "26857917",
+      "authorProfileUrl": "https://www.ac-illust.com/main/profile.php?id=oMCPYkaU&area=1",
+      "reservedAt": "2026-09-28T19:59:27.427Z"
+    },
+    {
       "id": "PAT-0004",
       "title": "PCとSPで主要情報の優先順位を維持する",
       "mediaType": "Pattern",
@@ -734,6 +854,18 @@
       "materialId": "PAT-0005",
       "authorProfileUrl": null,
       "reservedAt": "2026-09-28T03:30:12.887Z"
+    },
+    {
+      "id": "PAT-0006",
+      "title": "株式会社アレグロマジック 採用サイトに見るセクション内の役割集約",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Parts.）",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/06/all_rec_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/7020",
+      "imageUrl": null,
+      "materialId": "PAT-0006",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-28T19:59:27.427Z"
     },
     {
       "id": "PHAC-0001",
@@ -1063,6 +1195,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-09-28T03:30:12.887Z"
+    },
+    {
+      "id": "PT-0016",
+      "title": "株式会社アレグロマジック 採用サイト",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/06/all_rec_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/7020",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/06/all_rec_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-28T19:59:27.427Z"
+    },
+    {
+      "id": "PT-0017",
+      "title": "OKI",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/06/oki_00005.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/7011",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/06/oki_00005.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-28T19:59:27.427Z"
+    },
+    {
+      "id": "PT-0018",
+      "title": "Otolio",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/06/otolio_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6996",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/06/otolio_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-28T19:59:27.427Z"
+    },
+    {
+      "id": "PT-0019",
+      "title": "セゾン投信",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/05/saison-am_00010.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6978",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/05/saison-am_00010.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-28T19:59:27.427Z"
+    },
+    {
+      "id": "PT-0020",
+      "title": "Avatar Maker",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/05/avatarmaker_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6963",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/05/avatarmaker_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-28T19:59:27.427Z"
     },
     {
       "id": "WB-0001",
