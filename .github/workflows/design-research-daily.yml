@@ -169,14 +169,14 @@ jobs:
         run: npm run notion:register:lp
 
       - name: Collect non-LP candidates
-        if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_non_lp != 'false'
+        if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_non_lp != 'false' && (github.event_name == 'schedule' || github.event.inputs.refresh_candidates != 'false')
         env:
           RESERVE_NON_LP_IDS: ${{ env.DRY_RUN == 'true' && 'false' || 'true' }}
           NON_LP_SOURCE_FILTER: ${{ github.event.inputs.non_lp_source_filter || '' }}
         run: npm run collect:non-lp
 
       - name: Commit non-LP candidate reservations
-        if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_non_lp != 'false' && env.DRY_RUN != 'true'
+        if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_non_lp != 'false' && env.DRY_RUN != 'true' && (github.event_name == 'schedule' || github.event.inputs.refresh_candidates != 'false')
         run: |
           if git diff --quiet -- candidates/non-lp/candidates.json candidates/non-lp/intake-reservations.json data/id-counters.json; then
             echo "No non-LP candidate reservation changes."
