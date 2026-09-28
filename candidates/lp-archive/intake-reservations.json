@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T03:26:15.293Z",
+  "updatedAt": "2026-09-28T16:19:13.158Z",
   "mediaType": "LP",
   "sourceName": "LPアーカイブ",
   "notes": [
@@ -176,7 +176,25 @@
       "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229240",
       "lpArchivePostId": "229240",
       "reservedAt": "2026-09-28T03:26:15.293Z"
+    },
+    {
+      "id": "LP-0233",
+      "title": "白玉姫",
+      "status": "reserved_daily_intake",
+      "captureUrl": "https://item.rakuten.co.jp/oga/sth_12/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/227366",
+      "lpArchivePostId": "227366",
+      "reservedAt": "2026-09-28T16:19:13.158Z"
+    },
+    {
+      "id": "LP-0234",
+      "title": "ロープライスセット",
+      "status": "reserved_daily_intake",
+      "captureUrl": "https://www.aigan.co.jp/feature/set_megane/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/227485",
+      "lpArchivePostId": "227485",
+      "reservedAt": "2026-09-28T16:19:13.158Z"
     }
   ],
-  "nextLpId": "LP-0233"
+  "nextLpId": "LP-0235"
 }
