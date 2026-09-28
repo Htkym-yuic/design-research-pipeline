@@ -34,9 +34,19 @@ for (const item of summary.results || []) {
     : item.mediaType === "Asset" ? `素材ID ${item.materialId || "未取得"} と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない`
     : item.mediaType === "Pattern" ? `${item.metadata?.rule || "日次収集から再利用可能な原則を抽出"} 根拠候補: ${(item.metadata?.evidenceIds || []).join(", ") || "要確認"}`
     : "単体ビジュアルの構成・余白・文字組みを確認可能";
+  const selectionReasonByType = {
+    Banner: `バナー単体の訴求・文字量・配色を確認でき${item.landingUrl ? "、遷移先FVとの表現の連続性も比較できる" : "る"}ため。`,
+    Web: "PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+    Graphic: "文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+    Parts: "セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+    Canva: "テンプレート化しやすい構成、文字組み、配色、情報階層の型を確認できるため。",
+    Asset: `素材IDと検索語を残し、${item.sourceName}で将来の制作条件に合う素材を手動選定しやすくするため。`,
+    Pattern: "複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+  };
   output.analyses[item.id] = {
     analysisMode: "automated_daily_first_pass",
     overview: `${item.sourceName}から収集した${item.mediaType}参考。${item.title}。`,
+    selectionReason: `${item.sourceName}の新規候補として重複確認を通過。${selectionReasonByType[item.mediaType] || "日次リサーチの比較対象として有用なため。"}`,
     visualSummary: `${palette}。${item.metadata?.width || "?"}×${item.metadata?.height || "?"}の掲載画像を基準に確認。`,
     usefulPoints: relation,
     reviewPoints: item.status === "failed" ? item.error : item.metadata?.cautions || "コピー・権利・正確な訴求分類は週末レビューで確認する。",

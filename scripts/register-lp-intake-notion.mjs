@@ -120,6 +120,7 @@ for (const dropboxCandidate of dropboxResult.candidates) {
   if (analysisReady) {
     bodyBlocks.push(
       paragraphBlock(`概要: ${analysis.overview}`),
+      paragraphBlock(`選定理由: ${analysis.selectionReason || "日次候補として収集。詳細な選定根拠は要確認"}`),
       paragraphBlock(`FV印象: ${analysis.fvImpression}`),
       paragraphBlock(`構成ざっくり: ${analysis.roughStructure}`),
       paragraphBlock(`テイスト・配色: ${analysis.tasteAndColor || "要確認"}`),

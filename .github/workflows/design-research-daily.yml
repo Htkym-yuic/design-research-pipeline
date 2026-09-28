@@ -51,9 +51,9 @@ on:
         type: string
         default: ""
   schedule:
-    # GitHubの毎時混雑を避け、01:37 JSTに本実行。01:52 JSTは未完了時のみ動く予備便。
-    - cron: "37 16 * * *"
-    - cron: "52 16 * * *"
+    # GitHubの毎時混雑を避け、00:37 JSTに本実行。00:52 JSTは未完了時のみ動く予備便。
+    - cron: "37 15 * * *"
+    - cron: "52 15 * * *"
 
 concurrency:
   group: design-research-daily-intake

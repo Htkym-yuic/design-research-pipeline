@@ -82,7 +82,7 @@ for (const item of summary.results || []) {
     setProperty(properties, schema, ["ステータス"], "select", item.mediaType === "Web" ? "レビュー待ち" : null);
     setProperty(properties, schema, ["Notion同期"], "checkbox", true);
     setProperty(properties, schema, ["分析完了"], "checkbox", false);
-    setProperty(properties, schema, ["メイン訴求", "良い理由", "用途候補"], "rich_text", analysis.usefulPoints || "");
+    setProperty(properties, schema, ["選定理由", "収集理由", "採用理由", "良い理由"], "rich_text", analysis.selectionReason || analysis.usefulPoints || "");
     setProperty(properties, schema, ["詳細分析候補度"], "select", analysis.deepDivePriority || "中");
     setProperty(properties, schema, ["ナレッジ化ステータス"], "select", item.mediaType === "Pattern" ? "レビュー待ち" : "未着手");
     setProperty(properties, schema, ["CBS同期状態"], "select", "未同期");
@@ -134,6 +134,7 @@ for (const item of summary.results || []) {
     const blocks = [
       headingBlock("日次軽量分析"),
       paragraphBlock(`概要: ${analysis.overview || "収集済み・軽量分析待ち"}`),
+      paragraphBlock(`選定理由: ${analysis.selectionReason || "日次候補として収集。詳細な選定根拠は要確認"}`),
       paragraphBlock(`ビジュアル: ${analysis.visualSummary || "要確認"}`),
       paragraphBlock(`参考にできる点: ${analysis.usefulPoints || "要確認"}`),
       paragraphBlock(`要確認点: ${analysis.reviewPoints || "なし"}`),

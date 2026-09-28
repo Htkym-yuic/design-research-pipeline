@@ -55,11 +55,17 @@ for (const candidate of candidatesData.candidates || []) {
     ? `${sectionRoles.join(" → ")} の順で分割確認。週末レビューで実際の役割名を確定する。`
     : "PC/SPのFVと全体画像を収集済み。週末レビューでセクション構成を確定する。";
   const palette = [...new Set([pcColor, spColor].filter(Boolean))].join("、") || "画像で要確認";
+  const selectionReason = [
+    `${candidate.sourceName || "参考元"}の新規候補で、既存ID・URLとの重複確認を通過したため。`,
+    `${category}・${taste}の事例として分類でき、PC/SPのファーストビューと全体構成を比較できるため。`,
+    "週末レビューで既存ナレッジとの差分や再利用可能な構造を評価する材料になるため。",
+  ].join("");
 
   existing.analyses ||= {};
   existing.analyses[candidate.id] = {
     analysisMode: "automated_daily_first_pass",
     overview: `${company}の${category}に関するLP。${candidate.title || "対象ページ"}の訴求と画面構成を日次候補として収集した。`,
+    selectionReason,
     mainAppeal: `${candidate.title || company}の主要価値を伝え、次の行動へつなげる構成`,
     fvImpression: `${taste}として掲載された事例。PC/SPのFV画像を確認でき、画面の主調色は${palette}。`,
     roughStructure: structure,
