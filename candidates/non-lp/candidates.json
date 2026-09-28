@@ -1,6 +1,6 @@
 {
-  "collectedAt": "2026-09-27T21:15:32.398Z",
-  "candidateCount": 6,
+  "collectedAt": "2026-09-28T03:10:39Z",
+  "candidateCount": 9,
   "candidates": [
     {
       "id": "CV-0006",
@@ -139,6 +139,72 @@
       "metadata": {
         "collectionMode": "metadata_only"
       }
+    },
+    {
+      "id": "PHAC-0001",
+      "status": "candidate",
+      "mediaType": "Asset",
+      "sourceKey": "photoAc",
+      "title": "ノートパソコンを持つおしゃれな女性",
+      "captureUrl": null,
+      "imageUrl": null,
+      "landingUrl": null,
+      "sourceName": "写真AC",
+      "sourceUrl": "https://www.photo-ac.com/",
+      "sourceDetailUrl": "https://www.photo-ac.com/main/detail/35133306?title=%E3%83%8E%E3%83%BC%E3%83%88%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3%E3%82%92%E6%8C%81%E3%81%A4%E3%81%8A%E3%81%97%E3%82%83%E3%82%8C%E3%81%AA%E5%A5%B3%E6%80%A7",
+      "library": "Asset_Research_Library",
+      "notionEnv": "NOTION_ASSET_DATA_SOURCE_ID",
+      "saveImage": false,
+      "materialId": "35133306",
+      "authorProfileUrl": "https://www.photo-ac.com/profile/638920",
+      "searchTerm": "ビジネス",
+      "metadata": {
+        "collectionMode": "metadata_only"
+      }
+    },
+    {
+      "id": "PHAC-0002",
+      "status": "candidate",
+      "mediaType": "Asset",
+      "sourceKey": "photoAc",
+      "title": "作業着を着た製造業・建設業の男女スタッフ",
+      "captureUrl": null,
+      "imageUrl": null,
+      "landingUrl": null,
+      "sourceName": "写真AC",
+      "sourceUrl": "https://www.photo-ac.com/",
+      "sourceDetailUrl": "https://www.photo-ac.com/main/detail/34825614?title=%E4%BD%9C%E6%A5%AD%E7%9D%80%E3%82%92%E7%9D%80%E3%81%9F%E8%A3%BD%E9%80%A0%E6%A5%AD%E3%83%BB%E5%BB%BA%E8%A8%AD%E6%A5%AD%E3%81%AE%E7%94%B7%E5%A5%B3%E3%82%B9%E3%82%BF%E3%83%83%E3%83%95",
+      "library": "Asset_Research_Library",
+      "notionEnv": "NOTION_ASSET_DATA_SOURCE_ID",
+      "saveImage": false,
+      "materialId": "34825614",
+      "authorProfileUrl": "https://www.photo-ac.com/profile/638920",
+      "searchTerm": "ビジネス",
+      "metadata": {
+        "collectionMode": "metadata_only"
+      }
+    },
+    {
+      "id": "PHAC-0003",
+      "status": "candidate",
+      "mediaType": "Asset",
+      "sourceKey": "photoAc",
+      "title": "オフィスで働くエンジニアのチーム",
+      "captureUrl": null,
+      "imageUrl": null,
+      "landingUrl": null,
+      "sourceName": "写真AC",
+      "sourceUrl": "https://www.photo-ac.com/",
+      "sourceDetailUrl": "https://www.photo-ac.com/main/detail/35331034?title=%E3%82%AA%E3%83%95%E3%82%A3%E3%82%B9%E3%81%A7%E5%83%8D%E3%81%8F%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%AE%E3%83%81%E3%83%BC%E3%83%A0",
+      "library": "Asset_Research_Library",
+      "notionEnv": "NOTION_ASSET_DATA_SOURCE_ID",
+      "saveImage": false,
+      "materialId": "35331034",
+      "authorProfileUrl": "https://www.photo-ac.com/profile/26655007",
+      "searchTerm": "ビジネス",
+      "metadata": {
+        "collectionMode": "metadata_only"
+      }
     }
   ],
   "sourceResults": [
@@ -150,6 +216,15 @@
       "accepted": 3,
       "reason": null,
       "diagnostic": null
+    },
+    {
+      "key": "photoAc",
+      "sourceName": "写真AC",
+      "status": "collected",
+      "found": 304613,
+      "accepted": 3,
+      "reason": null,
+      "diagnostic": "Public search metadata only; asset files were not downloaded."
     }
   ]
 }

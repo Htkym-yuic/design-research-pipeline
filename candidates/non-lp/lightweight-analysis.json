@@ -405,6 +405,33 @@
       "reviewPoints": "採用時にユーザーが契約条件を確認し、手動ダウンロードする。",
       "deepDivePriority": "中",
       "generatedAt": "2026-09-27T21:15:32.398Z"
+    },
+    "PHAC-0001": {
+      "analysisMode": "manual_metadata_first_pass",
+      "overview": "写真ACの「ビジネス」検索から収集した素材候補。ノートパソコンを持つおしゃれな女性。",
+      "visualSummary": "人物とPCでWebサービスの利用場面を端的に示せる写真候補。素材本体は保存していない。",
+      "usefulPoints": "SaaS・採用・働き方・クリエイター向けLPのファーストビューに使用候補",
+      "reviewPoints": "採用時にユーザーが契約条件を確認し、手動ダウンロードする。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:10:39Z"
+    },
+    "PHAC-0002": {
+      "analysisMode": "manual_metadata_first_pass",
+      "overview": "写真ACの「ビジネス」検索から収集した素材候補。作業着を着た製造業・建設業の男女スタッフ。",
+      "visualSummary": "作業着と男女スタッフによって製造・建設系の業種と組織感を伝えやすい写真候補。素材本体は保存していない。",
+      "usefulPoints": "製造業・建設業・工務店の採用サイト、企業紹介、現場サービスLPに使用候補",
+      "reviewPoints": "採用時にユーザーが契約条件を確認し、手動ダウンロードする。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:10:39Z"
+    },
+    "PHAC-0003": {
+      "analysisMode": "manual_metadata_first_pass",
+      "overview": "写真ACの「ビジネス」検索から収集した素材候補。オフィスで働くエンジニアのチーム。",
+      "visualSummary": "複数人とPCで協働・開発・オフィス環境を一枚で伝えやすい写真候補。素材本体は保存していない。",
+      "usefulPoints": "IT企業・SaaS・開発会社の採用サイト、チーム紹介、業務効率化LPに使用候補",
+      "reviewPoints": "採用時にユーザーが契約条件を確認し、手動ダウンロードする。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:10:39Z"
     }
   }
 }
