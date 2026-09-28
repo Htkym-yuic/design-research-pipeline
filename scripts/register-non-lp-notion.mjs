@@ -101,7 +101,10 @@ for (const item of summary.results || []) {
       setProperty(properties, schema, ["プレビュー方針"], "select", "内部分析用スクショ");
       setProperty(properties, schema, ["スクショ用途"], "select", "本人非公開分析のみ");
     }
-    if (item.mediaType === "Graphic") setProperty(properties, schema, ["ジャンル"], "select", "チラシ・フライヤー");
+    if (item.mediaType === "Graphic") {
+      setProperty(properties, schema, ["ジャンル"], "select", item.metadata?.subtypeLabel || "その他");
+      setProperty(properties, schema, ["媒体", "種別"], "rich_text", item.metadata?.subtypeLabel || "グラフィック");
+    }
     if (item.mediaType === "Canva") {
       setProperty(properties, schema, ["テンプレート種別"], "select", /instagram/i.test(item.title) ? "Instagram投稿" : "その他");
       setProperty(properties, schema, ["レイアウト"], "rich_text", analysis.visualSummary || "");
@@ -135,6 +138,7 @@ for (const item of summary.results || []) {
       headingBlock("日次軽量分析"),
       paragraphBlock(`概要: ${analysis.overview || "収集済み・軽量分析待ち"}`),
       paragraphBlock(`選定理由: ${analysis.selectionReason || "日次候補として収集。詳細な選定根拠は要確認"}`),
+      ...(item.mediaType === "Graphic" ? [paragraphBlock(`グラフィック種別: ${item.metadata?.subtypeLabel || "要確認"}`)] : []),
       paragraphBlock(`ビジュアル: ${analysis.visualSummary || "要確認"}`),
       paragraphBlock(`参考にできる点: ${analysis.usefulPoints || "要確認"}`),
       paragraphBlock(`要確認点: ${analysis.reviewPoints || "なし"}`),

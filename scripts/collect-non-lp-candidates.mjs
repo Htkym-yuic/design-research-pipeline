@@ -24,6 +24,7 @@ const counters = JSON.parse(await fs.readFile(countersPath, "utf8"));
 const reservations = JSON.parse(await fs.readFile(reservationsPath, "utf8").catch(() => '{"reserved":[]}'));
 const knownUrls = new Set();
 const knownMaterialIds = new Set();
+const allocatedByCounter = new Map();
 for (const item of reservations.reserved || []) {
   for (const value of [item.captureUrl, item.sourceDetailUrl, item.imageUrl]) {
     if (value) knownUrls.add(normalizeUrl(value));
@@ -43,9 +44,10 @@ function normalizeUrl(value) {
 }
 
 function nextId(source, offset) {
-  const counter = counters[source.key];
-  if (!counter?.nextNumber) throw new Error(`${source.key} のnextNumberがdata/id-counters.jsonにありません`);
-  return `${source.prefix}-${String(counter.nextNumber + offset).padStart(4, "0")}`;
+  const key = source.counterKey || source.key;
+  const counter = counters[key];
+  if (!counter?.nextNumber) throw new Error(`${key} のnextNumberがdata/id-counters.jsonにありません`);
+  return `${source.prefix}-${String(counter.nextNumber + (allocatedByCounter.get(key) || 0) + offset).padStart(4, "0")}`;
 }
 
 function titleFrom(candidate, source) {
@@ -129,7 +131,11 @@ async function extractCards(page, source) {
     for (const image of images) {
       const src = image.currentSrc || image.src;
       if (!src || src.startsWith("data:") || !src.includes(definition.imageHostIncludes)) continue;
-      if (image.naturalWidth < 180 || image.naturalHeight < 120 || seen.has(src)) continue;
+      if (
+        image.naturalWidth < (definition.minImageWidth || 180)
+        || image.naturalHeight < (definition.minImageHeight || 120)
+        || seen.has(src)
+      ) continue;
       seen.add(src);
 
       const links = linksNear(image);
@@ -143,8 +149,12 @@ async function extractCards(page, source) {
         try { return new URL(href).hostname === new URL(definition.sourceUrl).hostname; } catch { return false; }
       });
 
+      const caption = image.closest("figure")?.querySelector("figcaption")?.textContent?.trim();
       values.push({
-        title: image.title || image.alt?.split(/[,\n]/)[0]?.trim() || null,
+        title: caption && caption !== "Add new" ? caption : null
+          || (image.title && image.title !== "Add new" ? image.title : null)
+          || image.alt?.split(/[,\n]/)[0]?.trim()
+          || null,
         alt: image.alt || null,
         imageUrl: src,
         width: image.naturalWidth,
@@ -243,6 +253,24 @@ async function findBannerLanding(browser, detailUrl, sourceHost) {
   }
 }
 
+async function findDetailTitle(browser, detailUrl) {
+  if (!detailUrl) return null;
+  const page = await browser.newPage(browserContextOptions);
+  try {
+    await page.goto(detailUrl, { waitUntil: "domcontentloaded", timeout: 20000 });
+    return await page.evaluate(() => {
+      const value = document.querySelector("h1")?.textContent?.trim()
+        || document.querySelector('meta[property="og:title"]')?.content?.trim()
+        || document.title?.trim();
+      return value?.replace(/\s*[-|｜].*デザインAC.*$/i, "").trim() || null;
+    });
+  } catch {
+    return null;
+  } finally {
+    await page.close();
+  }
+}
+
 await fs.mkdir(path.dirname(outputPath), { recursive: true });
 const browser = await chromium.launch();
 const allCandidates = [];
@@ -250,7 +278,7 @@ const sourceResults = [];
 
 try {
   for (const source of sources.filter((item) => sourceFilter.size === 0 || sourceFilter.has(item.key))) {
-    const limit = Number.parseInt(process.env[source.limitEnv] || `${source.defaultLimit}`, 10);
+    const limit = Number.parseInt(`${source.perRunLimit ?? process.env[source.limitEnv] ?? source.defaultLimit}`, 10);
     const page = await browser.newPage({ viewport: { width: 1200, height: 900 }, ...browserContextOptions });
     try {
       await page.goto(source.collectionUrl || source.sourceUrl, { waitUntil: "domcontentloaded", timeout: 30000 });
@@ -285,6 +313,9 @@ try {
         if (source.captureLandingPage && !card.landingUrl) {
           card.landingUrl = await findBannerLanding(browser, card.sourceDetailUrl, new URL(source.sourceUrl).hostname);
         }
+        if (!card.title || card.title === "Add new") {
+          card.title = await findDetailTitle(browser, card.sourceDetailUrl) || card.title;
+        }
         const identityUrls = [card.sourceDetailUrl, card.captureUrl, card.imageUrl].filter(Boolean).map(normalizeUrl);
         const materialIdentity = card.materialId ? `${source.sourceName}:${card.materialId}` : null;
         if (identityUrls.some((value) => knownUrls.has(value)) || (materialIdentity && knownMaterialIds.has(materialIdentity))) continue;
@@ -310,11 +341,19 @@ try {
           materialId: card.materialId,
           authorProfileUrl: card.authorProfileUrl,
           searchTerm: card.searchTerm,
-          metadata: { width: card.width, height: card.height, alt: card.alt }
+          metadata: {
+            width: card.width,
+            height: card.height,
+            alt: card.alt,
+            subtype: source.subtype || null,
+            subtypeLabel: source.subtypeLabel || null
+          }
         });
       }
 
       allCandidates.push(...accepted);
+      const counterKey = source.counterKey || source.key;
+      allocatedByCounter.set(counterKey, (allocatedByCounter.get(counterKey) || 0) + accepted.length);
       const accessBlocked = pageDiagnostic && /403|request blocked|access denied|captcha/i.test(
         `${pageDiagnostic.title} ${pageDiagnostic.bodyPreview}`
       );
@@ -332,12 +371,6 @@ try {
 
       if (pageDiagnostic) console.warn(`${source.sourceName} diagnostic: ${JSON.stringify(pageDiagnostic)}`);
 
-      if (reserveIds && accepted.length > 0) {
-        const counter = counters[source.key];
-        counter.existingMax = counter.nextNumber + accepted.length - 1;
-        counter.nextNumber += accepted.length;
-        counter.lastReservationAt = new Date().toISOString();
-      }
     } catch (error) {
       sourceResults.push({ key: source.key, sourceName: source.sourceName, status: "failed", error: error.message });
     } finally {
@@ -363,6 +396,13 @@ const output = { collectedAt: new Date().toISOString(), candidateCount: allCandi
 await fs.writeFile(outputPath, JSON.stringify(output, null, 2) + "\n");
 
 if (reserveIds && allCandidates.length > 0) {
+  for (const [key, count] of allocatedByCounter) {
+    if (count <= 0) continue;
+    const counter = counters[key];
+    counter.existingMax = counter.nextNumber + count - 1;
+    counter.nextNumber += count;
+    counter.lastReservationAt = new Date().toISOString();
+  }
   const byId = new Map((reservations.reserved || []).map((item) => [item.id, item]));
   for (const candidate of allCandidates) {
     byId.set(candidate.id, {

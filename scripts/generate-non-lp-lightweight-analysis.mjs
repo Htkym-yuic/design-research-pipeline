@@ -45,7 +45,7 @@ for (const item of summary.results || []) {
   };
   output.analyses[item.id] = {
     analysisMode: "automated_daily_first_pass",
-    overview: `${item.sourceName}から収集した${item.mediaType}参考。${item.title}。`,
+    overview: `${item.sourceName}から収集した${item.metadata?.subtypeLabel || item.mediaType}参考。${item.title}。`,
     selectionReason: `${item.sourceName}の新規候補として重複確認を通過。${selectionReasonByType[item.mediaType] || "日次リサーチの比較対象として有用なため。"}`,
     visualSummary: `${palette}。${item.metadata?.width || "?"}×${item.metadata?.height || "?"}の掲載画像を基準に確認。`,
     usefulPoints: relation,
