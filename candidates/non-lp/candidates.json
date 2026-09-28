@@ -1,67 +1,19 @@
 {
-  "collectedAt": "2026-09-28T03:30:12.887Z",
-  "candidateCount": 24,
+  "collectedAt": "2026-09-28T16:25:14.230Z",
+  "candidateCount": 17,
   "candidates": [
     {
-      "id": "BN-0011",
+      "id": "BN-0016",
       "status": "candidate",
       "mediaType": "Banner",
       "sourceKey": "banner",
-      "title": "早割キャンペーン_540 x 300のバナーデザイン",
-      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/09/3feb8defb48036fe08d4262cff976861.jpg.webp",
-      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/09/3feb8defb48036fe08d4262cff976861.jpg.webp",
+      "title": "資産形成オンライン学習_600 x 500のバナーデザイン",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/bec42064a52591cdcec3616266b72121.jpg.webp",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/bec42064a52591cdcec3616266b72121.jpg.webp",
       "landingUrl": null,
       "sourceName": "バナー広場",
       "sourceUrl": "https://banner-hiroba.com/",
-      "sourceDetailUrl": "https://banner-hiroba.com/archives/64700",
-      "library": "Banner_Research_Library",
-      "notionEnv": "NOTION_BANNER_DATA_SOURCE_ID",
-      "saveImage": true,
-      "materialId": null,
-      "authorProfileUrl": null,
-      "searchTerm": null,
-      "metadata": {
-        "width": 540,
-        "height": 300,
-        "alt": "早割キャンペーン_540 x 300のバナーデザイン"
-      }
-    },
-    {
-      "id": "BN-0012",
-      "status": "candidate",
-      "mediaType": "Banner",
-      "sourceKey": "banner",
-      "title": "スキンケア商品_1040 x 1040のバナーデザイン",
-      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/09/f52d83f52496aa007674e7a35870e4e8.jpg.webp",
-      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/09/f52d83f52496aa007674e7a35870e4e8.jpg.webp",
-      "landingUrl": null,
-      "sourceName": "バナー広場",
-      "sourceUrl": "https://banner-hiroba.com/",
-      "sourceDetailUrl": "https://banner-hiroba.com/archives/64697",
-      "library": "Banner_Research_Library",
-      "notionEnv": "NOTION_BANNER_DATA_SOURCE_ID",
-      "saveImage": true,
-      "materialId": null,
-      "authorProfileUrl": null,
-      "searchTerm": null,
-      "metadata": {
-        "width": 1040,
-        "height": 1040,
-        "alt": "スキンケア商品_1040 x 1040のバナーデザイン"
-      }
-    },
-    {
-      "id": "BN-0013",
-      "status": "candidate",
-      "mediaType": "Banner",
-      "sourceKey": "banner",
-      "title": "プレミアム美容家電_600 x 500のバナーデザイン",
-      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/34efa231508a7bc4345b9c7392c822dc.jpg.webp",
-      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/34efa231508a7bc4345b9c7392c822dc.jpg.webp",
-      "landingUrl": null,
-      "sourceName": "バナー広場",
-      "sourceUrl": "https://banner-hiroba.com/",
-      "sourceDetailUrl": "https://banner-hiroba.com/archives/64693",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64683",
       "library": "Banner_Research_Library",
       "notionEnv": "NOTION_BANNER_DATA_SOURCE_ID",
       "saveImage": true,
@@ -71,21 +23,23 @@
       "metadata": {
         "width": 600,
         "height": 500,
-        "alt": "プレミアム美容家電_600 x 500のバナーデザイン"
+        "alt": "資産形成オンライン学習_600 x 500のバナーデザイン",
+        "subtype": null,
+        "subtypeLabel": null
       }
     },
     {
-      "id": "BN-0014",
+      "id": "BN-0017",
       "status": "candidate",
       "mediaType": "Banner",
       "sourceKey": "banner",
-      "title": "SALE_500 x 500のバナーデザイン",
-      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/SALE.jpg.webp",
-      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/SALE.jpg.webp",
+      "title": "サマーセール_500 x 500のバナーデザイン",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/2ab0323eb6cb040ce3f1180b6bf9aa42.jpg.webp",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/2ab0323eb6cb040ce3f1180b6bf9aa42.jpg.webp",
       "landingUrl": null,
       "sourceName": "バナー広場",
       "sourceUrl": "https://banner-hiroba.com/",
-      "sourceDetailUrl": "https://banner-hiroba.com/archives/64689",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64680",
       "library": "Banner_Research_Library",
       "notionEnv": "NOTION_BANNER_DATA_SOURCE_ID",
       "saveImage": true,
@@ -95,21 +49,75 @@
       "metadata": {
         "width": 500,
         "height": 500,
-        "alt": "SALE_500 x 500のバナーデザイン"
+        "alt": "サマーセール_500 x 500のバナーデザイン",
+        "subtype": null,
+        "subtypeLabel": null
       }
     },
     {
-      "id": "BN-0015",
+      "id": "BN-0018",
       "status": "candidate",
       "mediaType": "Banner",
       "sourceKey": "banner",
-      "title": "新食感グミ_300 x 300のバナーデザイン",
-      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/dcab88449c048d7ef367938012e143b5.jpg.webp",
-      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/dcab88449c048d7ef367938012e143b5.jpg.webp",
+      "title": "ハウスクリーニング_600 x 500のバナーデザイン",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/b94636a5c4a5b9add4aef8fbdaee5b41.jpg.webp",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/b94636a5c4a5b9add4aef8fbdaee5b41.jpg.webp",
       "landingUrl": null,
       "sourceName": "バナー広場",
       "sourceUrl": "https://banner-hiroba.com/",
-      "sourceDetailUrl": "https://banner-hiroba.com/archives/64686",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64677",
+      "library": "Banner_Research_Library",
+      "notionEnv": "NOTION_BANNER_DATA_SOURCE_ID",
+      "saveImage": true,
+      "materialId": null,
+      "authorProfileUrl": null,
+      "searchTerm": null,
+      "metadata": {
+        "width": 600,
+        "height": 500,
+        "alt": "ハウスクリーニング_600 x 500のバナーデザイン",
+        "subtype": null,
+        "subtypeLabel": null
+      }
+    },
+    {
+      "id": "BN-0019",
+      "status": "candidate",
+      "mediaType": "Banner",
+      "sourceKey": "banner",
+      "title": "ナイトプール_1024 x 768のバナーデザイン",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/ca2ef429a81c045362247bb7e1eabcb4.jpg.webp",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/ca2ef429a81c045362247bb7e1eabcb4.jpg.webp",
+      "landingUrl": null,
+      "sourceName": "バナー広場",
+      "sourceUrl": "https://banner-hiroba.com/",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64674",
+      "library": "Banner_Research_Library",
+      "notionEnv": "NOTION_BANNER_DATA_SOURCE_ID",
+      "saveImage": true,
+      "materialId": null,
+      "authorProfileUrl": null,
+      "searchTerm": null,
+      "metadata": {
+        "width": 1024,
+        "height": 768,
+        "alt": "ナイトプール_1024 x 768のバナーデザイン",
+        "subtype": null,
+        "subtypeLabel": null
+      }
+    },
+    {
+      "id": "BN-0020",
+      "status": "candidate",
+      "mediaType": "Banner",
+      "sourceKey": "banner",
+      "title": "中古トラック買取_300 x 250のバナーデザイン",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/b875a19444096d04caf546ad2dce44d5.jpg.webp",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/b875a19444096d04caf546ad2dce44d5.jpg.webp",
+      "landingUrl": null,
+      "sourceName": "バナー広場",
+      "sourceUrl": "https://banner-hiroba.com/",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64671",
       "library": "Banner_Research_Library",
       "notionEnv": "NOTION_BANNER_DATA_SOURCE_ID",
       "saveImage": true,
@@ -118,22 +126,24 @@
       "searchTerm": null,
       "metadata": {
         "width": 300,
-        "height": 300,
-        "alt": "新食感グミ_300 x 300のバナーデザイン"
+        "height": 250,
+        "alt": "中古トラック買取_300 x 250のバナーデザイン",
+        "subtype": null,
+        "subtypeLabel": null
       }
     },
     {
-      "id": "WB-0005",
+      "id": "WB-0007",
       "status": "candidate",
       "mediaType": "Web",
       "sourceKey": "web",
-      "title": "日東紅茶100周年特設サイト | NITTOH 100 PICNIC",
-      "captureUrl": "https://100th.nittoh-tea.com/",
-      "imageUrl": "https://sankoudesign.com/wp-content/uploads/nittohtea100th_t-400x350.jpg",
+      "title": "株式会社大興製作所",
+      "captureUrl": "https://www.daico.co.jp/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/daico_t-400x350.jpg",
       "landingUrl": null,
       "sourceName": "SANKOU!",
       "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/nittohtea100th/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/daico/",
       "library": "Web_Research_Library",
       "notionEnv": "NOTION_WEB_DATA_SOURCE_ID",
       "saveImage": true,
@@ -143,21 +153,23 @@
       "metadata": {
         "width": 400,
         "height": 350,
-        "alt": "日東紅茶100周年特設サイト | NITTOH 100 PICNIC"
+        "alt": "株式会社大興製作所",
+        "subtype": null,
+        "subtypeLabel": null
       }
     },
     {
-      "id": "WB-0006",
+      "id": "WB-0008",
       "status": "candidate",
       "mediaType": "Web",
       "sourceKey": "web",
-      "title": "YOMA inc.（余間）",
-      "captureUrl": "https://yoma.inc/",
-      "imageUrl": "https://sankoudesign.com/wp-content/uploads/yoma_t-400x350.jpg",
+      "title": "MyPrecca® – プレコンセプションケアアプリ – produced by カネカ",
+      "captureUrl": "https://www.kaneka-womens-healthcare.com/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/myprecca_t-400x350.jpg",
       "landingUrl": null,
       "sourceName": "SANKOU!",
       "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/yoma/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/myprecca/",
       "library": "Web_Research_Library",
       "notionEnv": "NOTION_WEB_DATA_SOURCE_ID",
       "saveImage": true,
@@ -167,21 +179,23 @@
       "metadata": {
         "width": 400,
         "height": 350,
-        "alt": "YOMA inc.（余間）"
+        "alt": "MyPrecca® – プレコンセプションケアアプリ – produced by カネカ",
+        "subtype": null,
+        "subtypeLabel": null
       }
     },
     {
-      "id": "GR-0011",
+      "id": "GR-0016",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "黄色と赤色が目立つBBQプランチラシ\nのチラシテンプレート",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fc33a9aa0254de00ab65188c564ba4bcb%2Fc33a9aa0254de00ab65188c564ba4bcb-400.webp&w=828&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fc33a9aa0254de00ab65188c564ba4bcb%2Fc33a9aa0254de00ab65188c564ba4bcb-400.webp&w=828&q=75",
+      "title": "夏季休業のお知らせ",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F603d086d315b5b18d1406c58ed730e44%2F603d086d315b5b18d1406c58ed730e44-400.webp&w=828&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F603d086d315b5b18d1406c58ed730e44%2F603d086d315b5b18d1406c58ed730e44-400.webp&w=828&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/flyer",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30458",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30426",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -191,21 +205,23 @@
       "metadata": {
         "width": 283,
         "height": 400,
-        "alt": "黄色と赤色が目立つBBQプランチラシ\n, チラシ, チラシテンプレート"
+        "alt": "夏季休業のお知らせ, チラシ, チラシテンプレート",
+        "subtype": "flyer",
+        "subtypeLabel": "チラシ・フライヤー"
       }
     },
     {
-      "id": "GR-0012",
+      "id": "GR-0017",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "期間限定お知らせのチラシテンプレート",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F5f5ea3add1faebed567c8493e04d7c38%2F5f5ea3add1faebed567c8493e04d7c38-400.webp&w=828&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F5f5ea3add1faebed567c8493e04d7c38%2F5f5ea3add1faebed567c8493e04d7c38-400.webp&w=828&q=75",
+      "title": "夏の新メニュー紹介ポスター",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F3dc5d17e26fa6506aa5333390699e367%2F3dc5d17e26fa6506aa5333390699e367-400.webp&w=828&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F3dc5d17e26fa6506aa5333390699e367%2F3dc5d17e26fa6506aa5333390699e367-400.webp&w=828&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
-      "sourceUrl": "https://www.design-ac.net/free-template/flyer",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30451",
+      "sourceUrl": "https://www.design-ac.net/free-template/poster",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30814",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -215,21 +231,23 @@
       "metadata": {
         "width": 283,
         "height": 400,
-        "alt": "期間限定お知らせ, チラシ, チラシテンプレート"
+        "alt": "夏の新メニュー紹介ポスター, ポスター, ポスターテンプレート",
+        "subtype": "poster",
+        "subtypeLabel": "ポスター"
       }
     },
     {
-      "id": "GR-0013",
+      "id": "GR-0018",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "夏祭りイベントチラシ_子供向けのチラシテンプレート",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F3add25c8b667fb518baa6718ba4034bb%2F3add25c8b667fb518baa6718ba4034bb-400.webp&w=828&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F3add25c8b667fb518baa6718ba4034bb%2F3add25c8b667fb518baa6718ba4034bb-400.webp&w=828&q=75",
+      "title": "お茶会の写真を使った文化体験のバナー",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F35f60e406e2995b56bfa2572770d29a1%2F35f60e406e2995b56bfa2572770d29a1-400.webp&w=640&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F35f60e406e2995b56bfa2572770d29a1%2F35f60e406e2995b56bfa2572770d29a1-400.webp&w=640&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
-      "sourceUrl": "https://www.design-ac.net/free-template/flyer",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30445",
+      "sourceUrl": "https://www.design-ac.net/free-template/banner",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-23674",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -237,23 +255,25 @@
       "authorProfileUrl": null,
       "searchTerm": null,
       "metadata": {
-        "width": 283,
-        "height": 400,
-        "alt": "夏祭りイベントチラシ_子供向け, チラシ, チラシテンプレート"
+        "width": 156,
+        "height": 104,
+        "alt": "お茶会の写真を使った文化体験のバナー, バナー, バナーテンプレート",
+        "subtype": "social",
+        "subtypeLabel": "SNS投稿・Web広告"
       }
     },
     {
-      "id": "GR-0014",
+      "id": "GR-0019",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "夏祭りのイベントチラシのチラシテンプレート",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F808bcf3f0517457fd54a806c1d10cc69%2F808bcf3f0517457fd54a806c1d10cc69-400.webp&w=828&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F808bcf3f0517457fd54a806c1d10cc69%2F808bcf3f0517457fd54a806c1d10cc69-400.webp&w=828&q=75",
+      "title": "クジラのイラストの子ども向け名刺",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F0b47e38e3e4e31af1c61ece84fb0e5de%2F0b47e38e3e4e31af1c61ece84fb0e5de-400.webp&w=384&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F0b47e38e3e4e31af1c61ece84fb0e5de%2F0b47e38e3e4e31af1c61ece84fb0e5de-400.webp&w=384&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
-      "sourceUrl": "https://www.design-ac.net/free-template/flyer",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30444",
+      "sourceUrl": "https://www.design-ac.net/free-template/business-card",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-23221",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -261,23 +281,25 @@
       "authorProfileUrl": null,
       "searchTerm": null,
       "metadata": {
-        "width": 283,
-        "height": 400,
-        "alt": "夏祭りのイベントチラシ, チラシ, チラシテンプレート"
+        "width": 384,
+        "height": 232,
+        "alt": "クジラのイラストの子ども向け名刺, 名刺, 名刺テンプレート",
+        "subtype": "business-card",
+        "subtypeLabel": "名刺・ショップカード"
       }
     },
     {
-      "id": "GR-0015",
+      "id": "GR-0020",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "夏のセールチラシのチラシテンプレート",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F49510ead1a5bb776171b68794dfcdf14%2F49510ead1a5bb776171b68794dfcdf14-400.webp&w=828&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F49510ead1a5bb776171b68794dfcdf14%2F49510ead1a5bb776171b68794dfcdf14-400.webp&w=828&q=75",
+      "title": "Add new",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/f3ba9f4f96327d95185c0a8a7e40b6e1/f3ba9f4f96327d95185c0a8a7e40b6e1-400.webp",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/f3ba9f4f96327d95185c0a8a7e40b6e1/f3ba9f4f96327d95185c0a8a7e40b6e1-400.webp",
       "landingUrl": null,
       "sourceName": "デザインAC",
-      "sourceUrl": "https://www.design-ac.net/free-template/flyer",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30428",
+      "sourceUrl": "https://www.design-ac.net/free-template/logo",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-950",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -285,143 +307,25 @@
       "authorProfileUrl": null,
       "searchTerm": null,
       "metadata": {
-        "width": 283,
+        "width": 400,
         "height": 400,
-        "alt": "夏のセールチラシ, チラシ, チラシテンプレート"
+        "alt": "Add new",
+        "subtype": "logo",
+        "subtypeLabel": "ロゴ・VI/CI"
       }
     },
     {
-      "id": "PT-0011",
-      "status": "candidate",
-      "mediaType": "Parts",
-      "sourceKey": "parts",
-      "title": "Parts. reference",
-      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/07/mafin_00004.png",
-      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/07/mafin_00004.png",
-      "landingUrl": null,
-      "sourceName": "Parts.",
-      "sourceUrl": "https://partsdesign.net/",
-      "sourceDetailUrl": "https://partsdesign.net/archives/7101",
-      "library": "Parts_Research_Library",
-      "notionEnv": "NOTION_PARTS_DATA_SOURCE_ID",
-      "saveImage": true,
-      "materialId": null,
-      "authorProfileUrl": null,
-      "searchTerm": null,
-      "metadata": {
-        "width": 1499,
-        "height": 762,
-        "alt": null
-      }
-    },
-    {
-      "id": "PT-0012",
-      "status": "candidate",
-      "mediaType": "Parts",
-      "sourceKey": "parts",
-      "title": "Parts. reference",
-      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/07/daikure_00003.png",
-      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/07/daikure_00003.png",
-      "landingUrl": null,
-      "sourceName": "Parts.",
-      "sourceUrl": "https://partsdesign.net/",
-      "sourceDetailUrl": "https://partsdesign.net/archives/7082",
-      "library": "Parts_Research_Library",
-      "notionEnv": "NOTION_PARTS_DATA_SOURCE_ID",
-      "saveImage": true,
-      "materialId": null,
-      "authorProfileUrl": null,
-      "searchTerm": null,
-      "metadata": {
-        "width": 1522,
-        "height": 541,
-        "alt": null
-      }
-    },
-    {
-      "id": "PT-0013",
-      "status": "candidate",
-      "mediaType": "Parts",
-      "sourceKey": "parts",
-      "title": "Parts. reference",
-      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/07/nobel_00001.png",
-      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/07/nobel_00001.png",
-      "landingUrl": null,
-      "sourceName": "Parts.",
-      "sourceUrl": "https://partsdesign.net/",
-      "sourceDetailUrl": "https://partsdesign.net/archives/7065",
-      "library": "Parts_Research_Library",
-      "notionEnv": "NOTION_PARTS_DATA_SOURCE_ID",
-      "saveImage": true,
-      "materialId": null,
-      "authorProfileUrl": null,
-      "searchTerm": null,
-      "metadata": {
-        "width": 1509,
-        "height": 1177,
-        "alt": null
-      }
-    },
-    {
-      "id": "PT-0014",
-      "status": "candidate",
-      "mediaType": "Parts",
-      "sourceKey": "parts",
-      "title": "Parts. reference",
-      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/06/diggle_00001.png",
-      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/06/diggle_00001.png",
-      "landingUrl": null,
-      "sourceName": "Parts.",
-      "sourceUrl": "https://partsdesign.net/",
-      "sourceDetailUrl": "https://partsdesign.net/archives/7050",
-      "library": "Parts_Research_Library",
-      "notionEnv": "NOTION_PARTS_DATA_SOURCE_ID",
-      "saveImage": true,
-      "materialId": null,
-      "authorProfileUrl": null,
-      "searchTerm": null,
-      "metadata": {
-        "width": 1642,
-        "height": 618,
-        "alt": null
-      }
-    },
-    {
-      "id": "PT-0015",
-      "status": "candidate",
-      "mediaType": "Parts",
-      "sourceKey": "parts",
-      "title": "Parts. reference",
-      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/06/ocl-ai_00002.png",
-      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/06/ocl-ai_00002.png",
-      "landingUrl": null,
-      "sourceName": "Parts.",
-      "sourceUrl": "https://partsdesign.net/",
-      "sourceDetailUrl": "https://partsdesign.net/archives/7034",
-      "library": "Parts_Research_Library",
-      "notionEnv": "NOTION_PARTS_DATA_SOURCE_ID",
-      "saveImage": true,
-      "materialId": null,
-      "authorProfileUrl": null,
-      "searchTerm": null,
-      "metadata": {
-        "width": 1391,
-        "height": 762,
-        "alt": null
-      }
-    },
-    {
-      "id": "CV-0009",
+      "id": "CV-0014",
       "status": "candidate",
       "mediaType": "Canva",
       "sourceKey": "canva",
-      "title": "Black Scrapbook Illustration Book Review Instagram Post",
-      "captureUrl": "https://template.canva.com/EAGn8DQ7_iw/1/0/320w-2Atz_FmgR-Y.jpg",
-      "imageUrl": "https://template.canva.com/EAGn8DQ7_iw/1/0/320w-2Atz_FmgR-Y.jpg",
+      "title": "Pink & Purple Modern July Bookings Appointment Available Announcement Instagram Post",
+      "captureUrl": "https://template.canva.com/EAHKB0DNKcc/1/0/320w-8LkkSk2g2RY.jpg",
+      "imageUrl": "https://template.canva.com/EAHKB0DNKcc/1/0/320w-8LkkSk2g2RY.jpg",
       "landingUrl": null,
       "sourceName": "Canva",
       "sourceUrl": "https://www.canva.com/templates/search/instagram-posts/",
-      "sourceDetailUrl": "https://www.canva.com/templates/EAGn8DQ7_iw-black-scrapbook-illustration-book-review-instagram-post/",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAHKB0DNKcc-pink-purple-modern-july-bookings-appointment-available-announcement-instagram-post/",
       "library": "Canva_Research_Library",
       "notionEnv": "NOTION_CANVA_DATA_SOURCE_ID",
       "saveImage": true,
@@ -431,21 +335,23 @@
       "metadata": {
         "width": 299,
         "height": 374,
-        "alt": "Black Scrapbook Illustration Book Review Instagram Post"
+        "alt": "Pink & Purple Modern July Bookings Appointment Available Announcement Instagram Post",
+        "subtype": null,
+        "subtypeLabel": null
       }
     },
     {
-      "id": "CV-0010",
+      "id": "CV-0015",
       "status": "candidate",
       "mediaType": "Canva",
       "sourceKey": "canva",
-      "title": "Black and White Polaroid Style Birthday Instagram Post",
-      "captureUrl": "https://template.canva.com/EAGn_aoYjKs/1/0/320w-MQ5nwnHdgls.jpg",
-      "imageUrl": "https://template.canva.com/EAGn_aoYjKs/1/0/320w-MQ5nwnHdgls.jpg",
+      "title": "Red Modern Fashion Collage Instagram Post",
+      "captureUrl": "https://template.canva.com/EAHDeHdymIo/1/0/320w-eGX8iTlYCiI.jpg",
+      "imageUrl": "https://template.canva.com/EAHDeHdymIo/1/0/320w-eGX8iTlYCiI.jpg",
       "landingUrl": null,
       "sourceName": "Canva",
       "sourceUrl": "https://www.canva.com/templates/search/instagram-posts/",
-      "sourceDetailUrl": "https://www.canva.com/templates/EAGn_aoYjKs-black-and-white-polaroid-style-birthday-instagram-post/",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAHDeHdymIo-red-modern-fashion-collage-instagram-post/",
       "library": "Canva_Research_Library",
       "notionEnv": "NOTION_CANVA_DATA_SOURCE_ID",
       "saveImage": true,
@@ -455,21 +361,23 @@
       "metadata": {
         "width": 299,
         "height": 374,
-        "alt": "Black and White Polaroid Style Birthday Instagram Post"
+        "alt": "Red Modern Fashion Collage Instagram Post",
+        "subtype": null,
+        "subtypeLabel": null
       }
     },
     {
-      "id": "CV-0011",
+      "id": "CV-0016",
       "status": "candidate",
       "mediaType": "Canva",
       "sourceKey": "canva",
-      "title": "Black White Simple Quote Instagram Post",
-      "captureUrl": "https://template.canva.com/EAE3p5JEeqQ/1/0/320w-69RZ4uLFQlg.jpg",
-      "imageUrl": "https://template.canva.com/EAE3p5JEeqQ/1/0/320w-69RZ4uLFQlg.jpg",
+      "title": "Burgundy Modern Selfie Instagram Post",
+      "captureUrl": "https://template.canva.com/EAHFlxGyS5M/1/0/320w-H7tWs9MiRec.jpg",
+      "imageUrl": "https://template.canva.com/EAHFlxGyS5M/1/0/320w-H7tWs9MiRec.jpg",
       "landingUrl": null,
       "sourceName": "Canva",
       "sourceUrl": "https://www.canva.com/templates/search/instagram-posts/",
-      "sourceDetailUrl": "https://www.canva.com/templates/EAE3p5JEeqQ-black-white-simple-quote-instagram-post/",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAHFlxGyS5M-burgundy-modern-selfie-instagram-post/",
       "library": "Canva_Research_Library",
       "notionEnv": "NOTION_CANVA_DATA_SOURCE_ID",
       "saveImage": true,
@@ -479,21 +387,23 @@
       "metadata": {
         "width": 299,
         "height": 374,
-        "alt": "Black White Simple Quote Instagram Post"
+        "alt": "Burgundy Modern Selfie Instagram Post",
+        "subtype": null,
+        "subtypeLabel": null
       }
     },
     {
-      "id": "CV-0012",
+      "id": "CV-0017",
       "status": "candidate",
       "mediaType": "Canva",
       "sourceKey": "canva",
-      "title": "Yellow Black and White Modern Bold Weekly Meeting Instagram Post",
-      "captureUrl": "https://template.canva.com/EAHKRghfyNg/2/0/320w-k_gzg2yOS0w.jpg",
-      "imageUrl": "https://template.canva.com/EAHKRghfyNg/2/0/320w-k_gzg2yOS0w.jpg",
+      "title": "Beige Minimalist Fashion Moodboard Instagram Post",
+      "captureUrl": "https://template.canva.com/EAG90BjoTFs/1/0/320w-xlx58I67HxM.jpg",
+      "imageUrl": "https://template.canva.com/EAG90BjoTFs/1/0/320w-xlx58I67HxM.jpg",
       "landingUrl": null,
       "sourceName": "Canva",
       "sourceUrl": "https://www.canva.com/templates/search/instagram-posts/",
-      "sourceDetailUrl": "https://www.canva.com/templates/EAHKRghfyNg-yellow-black-and-white-modern-bold-weekly-meeting-instagram-post/",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAG90BjoTFs-beige-minimalist-fashion-moodboard-instagram-post/",
       "library": "Canva_Research_Library",
       "notionEnv": "NOTION_CANVA_DATA_SOURCE_ID",
       "saveImage": true,
@@ -503,21 +413,23 @@
       "metadata": {
         "width": 299,
         "height": 374,
-        "alt": "Yellow Black and White Modern Bold Weekly Meeting Instagram Post"
+        "alt": "Beige Minimalist Fashion Moodboard Instagram Post",
+        "subtype": null,
+        "subtypeLabel": null
       }
     },
     {
-      "id": "CV-0013",
+      "id": "CV-0018",
       "status": "candidate",
       "mediaType": "Canva",
       "sourceKey": "canva",
-      "title": "Green Minimal Photo Grid Gallery New Album Interface Fashion Instagram Post",
-      "captureUrl": "https://template.canva.com/EAHDeIxAEz8/1/0/320w-OSf33QJvvyE.jpg",
-      "imageUrl": "https://template.canva.com/EAHDeIxAEz8/1/0/320w-OSf33QJvvyE.jpg",
+      "title": "Red and White Simple Special Sales Instagram Post",
+      "captureUrl": "https://template.canva.com/EAG7TcEWOgw/1/0/320w-5eXUOiLteDw.jpg",
+      "imageUrl": "https://template.canva.com/EAG7TcEWOgw/1/0/320w-5eXUOiLteDw.jpg",
       "landingUrl": null,
       "sourceName": "Canva",
       "sourceUrl": "https://www.canva.com/templates/search/instagram-posts/",
-      "sourceDetailUrl": "https://www.canva.com/templates/EAHDeIxAEz8-green-minimal-photo-grid-gallery-new-album-interface-fashion-instagram-post/",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAG7TcEWOgw-red-and-white-simple-special-sales-instagram-post/",
       "library": "Canva_Research_Library",
       "notionEnv": "NOTION_CANVA_DATA_SOURCE_ID",
       "saveImage": true,
@@ -527,85 +439,9 @@
       "metadata": {
         "width": 299,
         "height": 374,
-        "alt": "Green Minimal Photo Grid Gallery New Album Interface Fashion Instagram Post"
-      }
-    },
-    {
-      "id": "PAT-0004",
-      "status": "candidate",
-      "mediaType": "Pattern",
-      "sourceKey": "patterns",
-      "title": "PCとSPで主要情報の優先順位を維持する",
-      "captureUrl": null,
-      "imageUrl": null,
-      "landingUrl": null,
-      "sourceName": "日次収集から抽出",
-      "sourceUrl": null,
-      "sourceDetailUrl": null,
-      "library": "Pattern_Research_Library",
-      "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
-      "saveImage": false,
-      "materialId": "PAT-0004",
-      "authorProfileUrl": null,
-      "searchTerm": null,
-      "metadata": {
-        "collectionMode": "derived_pattern",
-        "title": "PCとSPで主要情報の優先順位を維持する",
-        "condition": true,
-        "patternType": "情報設計",
-        "targetMedia": [
-          "Web",
-          "LP"
-        ],
-        "rule": "画面幅が変わっても、主見出し・主要ベネフィット・CTAの順序と意味を維持する。",
-        "cautions": "単なる縮小ではなく、SPでの折り返し・CTA位置・画像トリミングを確認する。",
-        "evidenceIds": [
-          "WB-0005",
-          "WB-0006"
-        ]
-      }
-    },
-    {
-      "id": "PAT-0005",
-      "status": "candidate",
-      "mediaType": "Pattern",
-      "sourceKey": "patterns",
-      "title": "反復グリッドで複数素材の視線リズムを作る",
-      "captureUrl": null,
-      "imageUrl": null,
-      "landingUrl": null,
-      "sourceName": "日次収集から抽出",
-      "sourceUrl": null,
-      "sourceDetailUrl": null,
-      "library": "Pattern_Research_Library",
-      "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
-      "saveImage": false,
-      "materialId": "PAT-0005",
-      "authorProfileUrl": null,
-      "searchTerm": null,
-      "metadata": {
-        "collectionMode": "derived_pattern",
-        "title": "反復グリッドで複数素材の視線リズムを作る",
-        "condition": true,
-        "patternType": "構成",
-        "targetMedia": [
-          "Graphic",
-          "Parts"
-        ],
-        "rule": "複数の写真や情報を同じグリッド単位で反復し、サイズ差で主従を作る。",
-        "cautions": "素材数を増やしすぎず、色温度と余白量を揃えて散漫さを防ぐ。",
-        "evidenceIds": [
-          "GR-0011",
-          "GR-0012",
-          "GR-0013",
-          "GR-0014",
-          "GR-0015",
-          "CV-0009",
-          "CV-0010",
-          "CV-0011",
-          "CV-0012",
-          "CV-0013"
-        ]
+        "alt": "Red and White Simple Special Sales Instagram Post",
+        "subtype": null,
+        "subtypeLabel": null
       }
     }
   ],
@@ -614,7 +450,7 @@
       "key": "banner",
       "sourceName": "バナー広場",
       "status": "collected",
-      "found": 48,
+      "found": 28,
       "accepted": 5,
       "reason": null,
       "diagnostic": null
@@ -633,7 +469,43 @@
       "sourceName": "デザインAC",
       "status": "collected",
       "found": 70,
-      "accepted": 5,
+      "accepted": 1,
+      "reason": null,
+      "diagnostic": null
+    },
+    {
+      "key": "graphic",
+      "sourceName": "デザインAC",
+      "status": "collected",
+      "found": 70,
+      "accepted": 1,
+      "reason": null,
+      "diagnostic": null
+    },
+    {
+      "key": "graphic",
+      "sourceName": "デザインAC",
+      "status": "collected",
+      "found": 70,
+      "accepted": 1,
+      "reason": null,
+      "diagnostic": null
+    },
+    {
+      "key": "graphic",
+      "sourceName": "デザインAC",
+      "status": "collected",
+      "found": 70,
+      "accepted": 1,
+      "reason": null,
+      "diagnostic": null
+    },
+    {
+      "key": "graphic",
+      "sourceName": "デザインAC",
+      "status": "collected",
+      "found": 59,
+      "accepted": 1,
       "reason": null,
       "diagnostic": null
     },
@@ -642,7 +514,7 @@
       "sourceName": "Parts.",
       "status": "collected",
       "found": 15,
-      "accepted": 5,
+      "accepted": 0,
       "reason": null,
       "diagnostic": null
     },
@@ -665,7 +537,7 @@
       "diagnostic": {
         "finalUrl": "https://www.ac-illust.com/main/search_result.php?word=%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9",
         "title": "ERROR: The request could not be satisfied",
-        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: 0AbB9KXnBTIbg8M5YhXOZ4eIMeOHVhzgCi1axaZBEGFhR",
+        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: hI-KVfciWKCh3B33WWdyXg6VdJLcplIE59HABAP6rGjzO",
         "figureCount": 0,
         "imageCount": 0
       }
@@ -680,19 +552,10 @@
       "diagnostic": {
         "finalUrl": "https://www.photo-ac.com/main/search?q=%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9",
         "title": "ERROR: The request could not be satisfied",
-        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: v6op-_7NR1nSXx5lDehtVSHKVGpWNInuTZX4GD3Qw5ANI",
+        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: t2ZuElkvxK-cLVK7tmvtCZGeEqKeTxxD7_fthaDH5N7As",
         "figureCount": 0,
         "imageCount": 0
       }
-    },
-    {
-      "key": "patterns",
-      "sourceName": "日次収集から抽出",
-      "status": "collected",
-      "found": 2,
-      "accepted": 2,
-      "reason": null,
-      "diagnostic": null
     }
   ]
 }

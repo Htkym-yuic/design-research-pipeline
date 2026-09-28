@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T03:30:12.887Z",
+  "updatedAt": "2026-09-28T16:25:14.230Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -172,6 +172,66 @@
       "reservedAt": "2026-09-28T03:30:12.887Z"
     },
     {
+      "id": "BN-0016",
+      "title": "資産形成オンライン学習_600 x 500のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/bec42064a52591cdcec3616266b72121.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64683",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/bec42064a52591cdcec3616266b72121.jpg.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-28T16:25:14.230Z"
+    },
+    {
+      "id": "BN-0017",
+      "title": "サマーセール_500 x 500のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/2ab0323eb6cb040ce3f1180b6bf9aa42.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64680",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/2ab0323eb6cb040ce3f1180b6bf9aa42.jpg.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-28T16:25:14.230Z"
+    },
+    {
+      "id": "BN-0018",
+      "title": "ハウスクリーニング_600 x 500のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/b94636a5c4a5b9add4aef8fbdaee5b41.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64677",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/b94636a5c4a5b9add4aef8fbdaee5b41.jpg.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-28T16:25:14.230Z"
+    },
+    {
+      "id": "BN-0019",
+      "title": "ナイトプール_1024 x 768のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/ca2ef429a81c045362247bb7e1eabcb4.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64674",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/ca2ef429a81c045362247bb7e1eabcb4.jpg.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-28T16:25:14.230Z"
+    },
+    {
+      "id": "BN-0020",
+      "title": "中古トラック買取_300 x 250のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/b875a19444096d04caf546ad2dce44d5.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64671",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/b875a19444096d04caf546ad2dce44d5.jpg.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-28T16:25:14.230Z"
+    },
+    {
       "id": "CV-0001",
       "title": "Beige Aesthetic Photo Collage Portrait Instagram Post",
       "mediaType": "Canva",
@@ -321,6 +381,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-09-28T03:30:12.887Z"
+    },
+    {
+      "id": "CV-0014",
+      "title": "Pink & Purple Modern July Bookings Appointment Available Announcement Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAHKB0DNKcc/1/0/320w-8LkkSk2g2RY.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAHKB0DNKcc-pink-purple-modern-july-bookings-appointment-available-announcement-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAHKB0DNKcc/1/0/320w-8LkkSk2g2RY.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-28T16:25:14.230Z"
+    },
+    {
+      "id": "CV-0015",
+      "title": "Red Modern Fashion Collage Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAHDeHdymIo/1/0/320w-eGX8iTlYCiI.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAHDeHdymIo-red-modern-fashion-collage-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAHDeHdymIo/1/0/320w-eGX8iTlYCiI.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-28T16:25:14.230Z"
+    },
+    {
+      "id": "CV-0016",
+      "title": "Burgundy Modern Selfie Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAHFlxGyS5M/1/0/320w-H7tWs9MiRec.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAHFlxGyS5M-burgundy-modern-selfie-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAHFlxGyS5M/1/0/320w-H7tWs9MiRec.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-28T16:25:14.230Z"
+    },
+    {
+      "id": "CV-0017",
+      "title": "Beige Minimalist Fashion Moodboard Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAG90BjoTFs/1/0/320w-xlx58I67HxM.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAG90BjoTFs-beige-minimalist-fashion-moodboard-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAG90BjoTFs/1/0/320w-xlx58I67HxM.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-28T16:25:14.230Z"
+    },
+    {
+      "id": "CV-0018",
+      "title": "Red and White Simple Special Sales Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAG7TcEWOgw/1/0/320w-5eXUOiLteDw.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAG7TcEWOgw-red-and-white-simple-special-sales-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAG7TcEWOgw/1/0/320w-5eXUOiLteDw.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-28T16:25:14.230Z"
     },
     {
       "id": "GR-0001",
@@ -491,6 +611,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-09-28T03:30:12.887Z"
+    },
+    {
+      "id": "GR-0016",
+      "title": "夏季休業のお知らせ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F603d086d315b5b18d1406c58ed730e44%2F603d086d315b5b18d1406c58ed730e44-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30426",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F603d086d315b5b18d1406c58ed730e44%2F603d086d315b5b18d1406c58ed730e44-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-28T16:25:14.230Z"
+    },
+    {
+      "id": "GR-0017",
+      "title": "夏の新メニュー紹介ポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F3dc5d17e26fa6506aa5333390699e367%2F3dc5d17e26fa6506aa5333390699e367-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30814",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F3dc5d17e26fa6506aa5333390699e367%2F3dc5d17e26fa6506aa5333390699e367-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-28T16:25:14.230Z"
+    },
+    {
+      "id": "GR-0018",
+      "title": "お茶会の写真を使った文化体験のバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F35f60e406e2995b56bfa2572770d29a1%2F35f60e406e2995b56bfa2572770d29a1-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-23674",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F35f60e406e2995b56bfa2572770d29a1%2F35f60e406e2995b56bfa2572770d29a1-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-28T16:25:14.230Z"
+    },
+    {
+      "id": "GR-0019",
+      "title": "クジラのイラストの子ども向け名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F0b47e38e3e4e31af1c61ece84fb0e5de%2F0b47e38e3e4e31af1c61ece84fb0e5de-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-23221",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F0b47e38e3e4e31af1c61ece84fb0e5de%2F0b47e38e3e4e31af1c61ece84fb0e5de-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-28T16:25:14.230Z"
+    },
+    {
+      "id": "GR-0020",
+      "title": "Add new",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/f3ba9f4f96327d95185c0a8a7e40b6e1/f3ba9f4f96327d95185c0a8a7e40b6e1-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-950",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/f3ba9f4f96327d95185c0a8a7e40b6e1/f3ba9f4f96327d95185c0a8a7e40b6e1-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-28T16:25:14.230Z"
     },
     {
       "id": "ILAC-0001",
@@ -831,6 +1011,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-09-28T03:30:12.887Z"
+    },
+    {
+      "id": "WB-0007",
+      "title": "株式会社大興製作所",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.daico.co.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/daico/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/daico_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-28T16:25:14.230Z"
+    },
+    {
+      "id": "WB-0008",
+      "title": "MyPrecca® – プレコンセプションケアアプリ – produced by カネカ",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.kaneka-womens-healthcare.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/myprecca/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/myprecca_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-28T16:25:14.230Z"
     }
   ]
 }
