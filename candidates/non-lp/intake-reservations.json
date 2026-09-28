@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T16:25:14.230Z",
+  "updatedAt": "2026-09-28T16:30:09.729Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -773,6 +773,126 @@
       "authorProfileUrl": "https://www.photo-ac.com/profile/26655007",
       "searchTerm": "ビジネス",
       "reservedAt": "2026-09-28T03:10:39Z"
+    },
+    {
+      "id": "PHAC-0004",
+      "title": "会議中の男女 ビジネス",
+      "mediaType": "Asset",
+      "sourceName": "写真AC",
+      "captureUrl": "https://www.photo-ac.com/main/detail/5083657",
+      "sourceDetailUrl": "https://www.photo-ac.com/main/detail/5083657",
+      "imageUrl": "https://thumb.photo-ac.com/cd/cd3a9f6f43cdb1e96c8346869e8a8772_t.jpeg",
+      "materialId": "5083657",
+      "authorProfileUrl": "https://www.photo-ac.com/profile/43626",
+      "reservedAt": "2026-09-28T16:30:09.729Z"
+    },
+    {
+      "id": "PHAC-0005",
+      "title": "オフィスビルの廊下に並ぶビジネスマン ビジネス",
+      "mediaType": "Asset",
+      "sourceName": "写真AC",
+      "captureUrl": "https://www.photo-ac.com/main/detail/34967124",
+      "sourceDetailUrl": "https://www.photo-ac.com/main/detail/34967124",
+      "imageUrl": "https://thumb.photo-ac.com/db/db35cd9270fabca213ec98c85496a738_t.jpeg",
+      "materialId": "34967124",
+      "authorProfileUrl": "https://www.photo-ac.com/profile/638920",
+      "reservedAt": "2026-09-28T16:30:09.729Z"
+    },
+    {
+      "id": "PHAC-0006",
+      "title": "悩む",
+      "mediaType": "Asset",
+      "sourceName": "写真AC",
+      "captureUrl": "https://www.photo-ac.com/main/detail/35133353",
+      "sourceDetailUrl": "https://www.photo-ac.com/main/detail/35133353",
+      "imageUrl": "https://thumb.photo-ac.com/2a/2a24077ca81189edfb429a43d9c69294_t.jpeg",
+      "materialId": "35133353",
+      "authorProfileUrl": "https://www.photo-ac.com/profile/638920",
+      "reservedAt": "2026-09-28T16:30:09.729Z"
+    },
+    {
+      "id": "PHAC-0007",
+      "title": "会社でコーヒを飲む笑顔のビジネスウーマン ビジネス",
+      "mediaType": "Asset",
+      "sourceName": "写真AC",
+      "captureUrl": "https://www.photo-ac.com/main/detail/34825544",
+      "sourceDetailUrl": "https://www.photo-ac.com/main/detail/34825544",
+      "imageUrl": "https://thumb.photo-ac.com/f3/f37f01ade27be8ab144b925cc3a3e128_t.jpeg",
+      "materialId": "34825544",
+      "authorProfileUrl": "https://www.photo-ac.com/profile/638920",
+      "reservedAt": "2026-09-28T16:30:09.729Z"
+    },
+    {
+      "id": "PHAC-0008",
+      "title": "青空の下で名古屋市栄の景観を俯瞰撮影2 都市景観",
+      "mediaType": "Asset",
+      "sourceName": "写真AC",
+      "captureUrl": "https://www.photo-ac.com/main/detail/35105872",
+      "sourceDetailUrl": "https://www.photo-ac.com/main/detail/35105872",
+      "imageUrl": "https://thumb.photo-ac.com/1a/1a036e86912f2c90dd8a33ed5534fb09_t.jpeg",
+      "materialId": "35105872",
+      "authorProfileUrl": "https://www.photo-ac.com/profile/27690743",
+      "reservedAt": "2026-09-28T16:30:09.729Z"
+    },
+    {
+      "id": "PHAC-0009",
+      "title": "青空の下で名古屋市栄の景観を俯瞰撮影1 ビジネス",
+      "mediaType": "Asset",
+      "sourceName": "写真AC",
+      "captureUrl": "https://www.photo-ac.com/main/detail/35105871",
+      "sourceDetailUrl": "https://www.photo-ac.com/main/detail/35105871",
+      "imageUrl": "https://thumb.photo-ac.com/96/968f6d6c50a752ba9fef0efe13c21bbc_t.jpeg",
+      "materialId": "35105871",
+      "authorProfileUrl": "https://www.photo-ac.com/profile/27690743",
+      "reservedAt": "2026-09-28T16:30:09.729Z"
+    },
+    {
+      "id": "PHAC-0010",
+      "title": "オフィスでパソコンを使うビジネスウーマン ビジネスウーマン",
+      "mediaType": "Asset",
+      "sourceName": "写真AC",
+      "captureUrl": "https://www.photo-ac.com/main/detail/35133324",
+      "sourceDetailUrl": "https://www.photo-ac.com/main/detail/35133324",
+      "imageUrl": "https://thumb.photo-ac.com/c6/c6fa8392197f505074d8f4b3bd392935_t.jpeg",
+      "materialId": "35133324",
+      "authorProfileUrl": "https://www.photo-ac.com/profile/638920",
+      "reservedAt": "2026-09-28T16:30:09.729Z"
+    },
+    {
+      "id": "PHAC-0011",
+      "title": "会社でコーヒを飲みながら談笑する男女 ビジネス",
+      "mediaType": "Asset",
+      "sourceName": "写真AC",
+      "captureUrl": "https://www.photo-ac.com/main/detail/34967121",
+      "sourceDetailUrl": "https://www.photo-ac.com/main/detail/34967121",
+      "imageUrl": "https://thumb.photo-ac.com/97/97e2302bddebc1c4ab0ad21b547dfd1b_t.jpeg",
+      "materialId": "34967121",
+      "authorProfileUrl": "https://www.photo-ac.com/profile/638920",
+      "reservedAt": "2026-09-28T16:30:09.729Z"
+    },
+    {
+      "id": "PHAC-0012",
+      "title": "男女3人のビジネスチームワークイメージ ビジネス",
+      "mediaType": "Asset",
+      "sourceName": "写真AC",
+      "captureUrl": "https://www.photo-ac.com/main/detail/35311357",
+      "sourceDetailUrl": "https://www.photo-ac.com/main/detail/35311357",
+      "imageUrl": "https://thumb.photo-ac.com/c9/c9b754b072c3db87c4b95f7f30af903b_t.jpeg",
+      "materialId": "35311357",
+      "authorProfileUrl": "https://www.photo-ac.com/profile/23801261",
+      "reservedAt": "2026-09-28T16:30:09.729Z"
+    },
+    {
+      "id": "PHAC-0013",
+      "title": "オフィスにいるビジネスマンと秘書の女性 ビジネス",
+      "mediaType": "Asset",
+      "sourceName": "写真AC",
+      "captureUrl": "https://www.photo-ac.com/main/detail/34825543",
+      "sourceDetailUrl": "https://www.photo-ac.com/main/detail/34825543",
+      "imageUrl": "https://thumb.photo-ac.com/83/83bd82446010f3568a5e2748e2dfdfe1_t.jpeg",
+      "materialId": "34825543",
+      "authorProfileUrl": "https://www.photo-ac.com/profile/638920",
+      "reservedAt": "2026-09-28T16:30:09.729Z"
     },
     {
       "id": "PT-0001",
