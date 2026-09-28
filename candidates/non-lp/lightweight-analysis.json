@@ -432,6 +432,222 @@
       "reviewPoints": "採用時にユーザーが契約条件を確認し、手動ダウンロードする。",
       "deepDivePriority": "中",
       "generatedAt": "2026-09-28T03:10:39Z"
+    },
+    "BN-0011": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "バナー広場から収集したBanner参考。早割キャンペーン_540 x 300のバナーデザイン。",
+      "visualSummary": "暖色・黄橙系。540×300の掲載画像を基準に確認。",
+      "usefulPoints": "遷移先URLを取得できず、バナー単体で保留",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:30:46.560Z"
+    },
+    "BN-0012": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "バナー広場から収集したBanner参考。スキンケア商品_1040 x 1040のバナーデザイン。",
+      "visualSummary": "明色・白基調。1040×1040の掲載画像を基準に確認。",
+      "usefulPoints": "遷移先URLを取得できず、バナー単体で保留",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:30:46.612Z"
+    },
+    "BN-0013": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "バナー広場から収集したBanner参考。プレミアム美容家電_600 x 500のバナーデザイン。",
+      "visualSummary": "ニュートラル。600×500の掲載画像を基準に確認。",
+      "usefulPoints": "遷移先URLを取得できず、バナー単体で保留",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:30:46.636Z"
+    },
+    "BN-0014": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "バナー広場から収集したBanner参考。SALE_500 x 500のバナーデザイン。",
+      "visualSummary": "暖色・赤桃系。500×500の掲載画像を基準に確認。",
+      "usefulPoints": "遷移先URLを取得できず、バナー単体で保留",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:30:46.657Z"
+    },
+    "BN-0015": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "バナー広場から収集したBanner参考。新食感グミ_300 x 300のバナーデザイン。",
+      "visualSummary": "暖色・黄橙系。300×300の掲載画像を基準に確認。",
+      "usefulPoints": "遷移先URLを取得できず、バナー単体で保留",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:30:46.670Z"
+    },
+    "WB-0005": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。日東紅茶100周年特設サイト | NITTOH 100 PICNIC。",
+      "visualSummary": "暖色・黄橙系。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:30:46.686Z"
+    },
+    "WB-0006": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。YOMA inc.（余間）。",
+      "visualSummary": "暖色・黄橙系。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:30:46.704Z"
+    },
+    "GR-0011": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したGraphic参考。黄色と赤色が目立つBBQプランチラシ\nのチラシテンプレート。",
+      "visualSummary": "暖色・黄橙系。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:30:46.730Z"
+    },
+    "GR-0012": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したGraphic参考。期間限定お知らせのチラシテンプレート。",
+      "visualSummary": "ニュートラル。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:30:46.756Z"
+    },
+    "GR-0013": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したGraphic参考。夏祭りイベントチラシ_子供向けのチラシテンプレート。",
+      "visualSummary": "明色・白基調。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:30:46.773Z"
+    },
+    "GR-0014": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したGraphic参考。夏祭りのイベントチラシのチラシテンプレート。",
+      "visualSummary": "寒色・青紫系。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:30:46.788Z"
+    },
+    "GR-0015": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したGraphic参考。夏のセールチラシのチラシテンプレート。",
+      "visualSummary": "ニュートラル。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:30:46.803Z"
+    },
+    "PT-0011": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。Parts. reference。",
+      "visualSummary": "暖色・黄橙系。1499×762の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:30:46.840Z"
+    },
+    "PT-0012": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。Parts. reference。",
+      "visualSummary": "寒色・青紫系。1522×541の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:30:46.870Z"
+    },
+    "PT-0013": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。Parts. reference。",
+      "visualSummary": "暖色・赤桃系。1509×1177の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:30:46.921Z"
+    },
+    "PT-0014": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。Parts. reference。",
+      "visualSummary": "明色・白基調。1642×618の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:30:46.949Z"
+    },
+    "PT-0015": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。Parts. reference。",
+      "visualSummary": "寒色・青紫系。1391×762の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:30:46.987Z"
+    },
+    "CV-0009": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。Black Scrapbook Illustration Book Review Instagram Post。",
+      "visualSummary": "ニュートラル。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:30:47.003Z"
+    },
+    "CV-0010": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。Black and White Polaroid Style Birthday Instagram Post。",
+      "visualSummary": "ニュートラル。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:30:47.018Z"
+    },
+    "CV-0011": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。Black White Simple Quote Instagram Post。",
+      "visualSummary": "暗色・黒基調。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:30:47.033Z"
+    },
+    "CV-0012": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。Yellow Black and White Modern Bold Weekly Meeting Instagram Post。",
+      "visualSummary": "明色・白基調。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:30:47.048Z"
+    },
+    "CV-0013": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。Green Minimal Photo Grid Gallery New Album Interface Fashion Instagram Post。",
+      "visualSummary": "ニュートラル。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:30:47.063Z"
+    },
+    "PAT-0004": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出から収集したPattern参考。PCとSPで主要情報の優先順位を維持する。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "画面幅が変わっても、主見出し・主要ベネフィット・CTAの順序と意味を維持する。 根拠候補: WB-0005, WB-0006",
+      "reviewPoints": "単なる縮小ではなく、SPでの折り返し・CTA位置・画像トリミングを確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:30:47.063Z"
+    },
+    "PAT-0005": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出から収集したPattern参考。反復グリッドで複数素材の視線リズムを作る。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "複数の写真や情報を同じグリッド単位で反復し、サイズ差で主従を作る。 根拠候補: GR-0011, GR-0012, GR-0013, GR-0014, GR-0015, CV-0009, CV-0010, CV-0011, CV-0012, CV-0013",
+      "reviewPoints": "素材数を増やしすぎず、色温度と余白量を揃えて散漫さを防ぐ。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-09-28T03:30:47.063Z"
     }
   }
 }

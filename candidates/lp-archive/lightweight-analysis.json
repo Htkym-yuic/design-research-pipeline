@@ -151,6 +151,51 @@
         "PC/SP比較"
       ],
       "generatedAt": "2026-09-27T20:00:04.444Z"
+    },
+    "LP-0231": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "スターバックスコーヒージャパン株式会社のキッチン・バス用品に関するLP。ピカチュウ ハニークリーム ラテの訴求と画面構成を日次候補として収集した。",
+      "mainAppeal": "ピカチュウ ハニークリーム ラテの主要価値を伝え、次の行動へつなげる構成",
+      "fvImpression": "マンガ・イラストとして掲載された事例。PC/SPのFV画像を確認でき、画面の主調色は黄・橙系、ニュートラルカラー中心。",
+      "roughStructure": "hero candidate → problem candidate → features candidate → proof candidate → service candidate → cta candidate の順で分割確認。週末レビューで実際の役割名を確定する。",
+      "tasteAndColor": "マンガ・イラスト。主調色の自動判定は黄・橙系、ニュートラルカラー中心。",
+      "usefulPoints": "PC/SPのFVと全体構成を比較でき、同業種の情報優先順位とレスポンシブ差の検討材料になる。",
+      "reviewPoints": "これは日次の自動一次分析。コピー、CTA、証拠、セクション役割の意味判断は週末の詳細レビューで再確認する。",
+      "deepDivePriority": "中。週末レビューでCBS既存ナレッジとの差分と不足領域を確認して優先度を確定する。",
+      "industryTags": [
+        "キッチン・バス用品"
+      ],
+      "colorTags": [
+        "黄・橙系",
+        "ニュートラルカラー中心"
+      ],
+      "layoutTags": [
+        "長尺LP",
+        "PC/SP比較"
+      ],
+      "generatedAt": "2026-09-28T03:28:11.745Z"
+    },
+    "LP-0232": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "UHA味覚糖のスナック・ガム・あめ・グミに関するLP。ぷっちょ × Aぇ! groupの訴求と画面構成を日次候補として収集した。",
+      "mainAppeal": "ぷっちょ × Aぇ! groupの主要価値を伝え、次の行動へつなげる構成",
+      "fvImpression": "かっこいい系として掲載された事例。PC/SPのFV画像を確認でき、画面の主調色はニュートラルカラー中心。",
+      "roughStructure": "hero candidate → problem candidate → features candidate → proof candidate の順で分割確認。週末レビューで実際の役割名を確定する。",
+      "tasteAndColor": "かっこいい系。主調色の自動判定はニュートラルカラー中心。",
+      "usefulPoints": "PC/SPのFVと全体構成を比較でき、同業種の情報優先順位とレスポンシブ差の検討材料になる。",
+      "reviewPoints": "これは日次の自動一次分析。コピー、CTA、証拠、セクション役割の意味判断は週末の詳細レビューで再確認する。",
+      "deepDivePriority": "中。週末レビューでCBS既存ナレッジとの差分と不足領域を確認して優先度を確定する。",
+      "industryTags": [
+        "スナック・ガム・あめ・グミ"
+      ],
+      "colorTags": [
+        "ニュートラルカラー中心"
+      ],
+      "layoutTags": [
+        "長尺LP",
+        "PC/SP比較"
+      ],
+      "generatedAt": "2026-09-28T03:28:11.827Z"
     }
   }
 }
