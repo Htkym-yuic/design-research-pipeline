@@ -196,6 +196,52 @@
         "PC/SP比較"
       ],
       "generatedAt": "2026-09-28T03:28:11.827Z"
+    },
+    "LP-0233": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "株式会社オーガランドの美容食品・美容ドリンク・サプリメントに関するLP。白玉姫の訴求と画面構成を日次候補として収集した。",
+      "selectionReason": "LPアーカイブの新規候補で、既存ID・URLとの重複確認を通過したため。美容食品・美容ドリンク・サプリメント・キレイ系の事例として分類でき、PC/SPのファーストビューと全体構成を比較できるため。週末レビューで既存ナレッジとの差分や再利用可能な構造を評価する材料になるため。",
+      "mainAppeal": "白玉姫の主要価値を伝え、次の行動へつなげる構成",
+      "fvImpression": "キレイ系として掲載された事例。PC/SPのFV画像を確認でき、画面の主調色は黄・橙系。",
+      "roughStructure": "hero candidate → problem candidate → features candidate → proof candidate → service candidate → cta candidate の順で分割確認。週末レビューで実際の役割名を確定する。",
+      "tasteAndColor": "キレイ系。主調色の自動判定は黄・橙系。",
+      "usefulPoints": "PC/SPのFVと全体構成を比較でき、同業種の情報優先順位とレスポンシブ差の検討材料になる。",
+      "reviewPoints": "これは日次の自動一次分析。コピー、CTA、証拠、セクション役割の意味判断は週末の詳細レビューで再確認する。",
+      "deepDivePriority": "中。週末レビューでCBS既存ナレッジとの差分と不足領域を確認して優先度を確定する。",
+      "industryTags": [
+        "美容食品・美容ドリンク・サプリメント"
+      ],
+      "colorTags": [
+        "黄・橙系"
+      ],
+      "layoutTags": [
+        "長尺LP",
+        "PC/SP比較"
+      ],
+      "generatedAt": "2026-09-28T16:22:21.542Z"
+    },
+    "LP-0234": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "愛眼株式会社の眼鏡・サングラスに関するLP。ロープライスセットの訴求と画面構成を日次候補として収集した。",
+      "selectionReason": "LPアーカイブの新規候補で、既存ID・URLとの重複確認を通過したため。眼鏡・サングラス・シンプル系の事例として分類でき、PC/SPのファーストビューと全体構成を比較できるため。週末レビューで既存ナレッジとの差分や再利用可能な構造を評価する材料になるため。",
+      "mainAppeal": "ロープライスセットの主要価値を伝え、次の行動へつなげる構成",
+      "fvImpression": "シンプル系として掲載された事例。PC/SPのFV画像を確認でき、画面の主調色はニュートラルカラー中心。",
+      "roughStructure": "hero candidate → problem candidate → features candidate → proof candidate → service candidate → cta candidate の順で分割確認。週末レビューで実際の役割名を確定する。",
+      "tasteAndColor": "シンプル系。主調色の自動判定はニュートラルカラー中心。",
+      "usefulPoints": "PC/SPのFVと全体構成を比較でき、同業種の情報優先順位とレスポンシブ差の検討材料になる。",
+      "reviewPoints": "これは日次の自動一次分析。コピー、CTA、証拠、セクション役割の意味判断は週末の詳細レビューで再確認する。",
+      "deepDivePriority": "中。週末レビューでCBS既存ナレッジとの差分と不足領域を確認して優先度を確定する。",
+      "industryTags": [
+        "眼鏡・サングラス"
+      ],
+      "colorTags": [
+        "ニュートラルカラー中心"
+      ],
+      "layoutTags": [
+        "長尺LP",
+        "PC/SP比較"
+      ],
+      "generatedAt": "2026-09-28T16:22:21.680Z"
     }
   }
 }
