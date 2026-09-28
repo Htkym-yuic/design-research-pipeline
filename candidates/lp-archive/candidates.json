@@ -1,76 +1,83 @@
 {
-  "extractedAt": "2026-09-27T19:56:21.472Z",
+  "extractedAt": "2026-09-28T03:26:15.293Z",
   "sourceUrl": "https://rdlp.jp/lp-archive/",
   "sourceName": "LPアーカイブ",
   "mediaType": "LP",
   "requestedLimit": 2,
   "scannedLimit": 40,
   "candidateCount": 2,
-  "skippedDuplicateCount": 13,
-  "idStart": "LP-0229",
-  "idEnd": "LP-0230",
+  "skippedDuplicateCount": 15,
+  "idStart": "LP-0231",
+  "idEnd": "LP-0232",
   "candidates": [
     {
-      "id": "LP-0229",
+      "id": "LP-0231",
       "status": "candidate",
       "mediaType": "LP",
-      "title": "FAIRLUCENT",
-      "captureUrl": "https://www.menard.co.jp/fairlucent/",
+      "title": "ピカチュウ ハニークリーム ラテ",
+      "captureUrl": "https://www.starbucks.co.jp/cafe/pokemon/?nid=wh_00",
       "captureMode": "target_site",
       "sourceType": "Reference Site",
       "sourceName": "LPアーカイブ",
       "sourceUrl": "https://rdlp.jp/lp-archive/",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229243",
-      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103515/200x400.jpg",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229241",
+      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103512/200x400.jpg",
       "metadata": {
-        "lpArchivePostId": "229243",
-        "company": "MENARD",
-        "category": "コスメ・化粧品・コンタクトレンズ",
-        "tasteTag": "シンプル系",
+        "lpArchivePostId": "229241",
+        "company": "スターバックスコーヒージャパン株式会社",
+        "category": "キッチン・バス用品",
+        "tasteTag": "マンガ・イラスト",
         "favoriteCount": "0",
-        "thumbnailAlt": "FAIRLUCENTのLPデザイン（コスメ・化粧品・コンタクトレンズ／ブルー系／シンプル系）PC版"
+        "thumbnailAlt": "ピカチュウ ハニークリーム ラテのLPデザイン（キッチン・バス用品／ベージュ系／マンガ・イラスト系）PC版"
       },
       "archiveAssets": {
         "pcImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103515/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103512/full_1.jpg",
+          "https://rdlp.jp/image/lp-archive/103512/full_2.jpg"
         ],
         "spImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103516/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103513/full_1.jpg",
+          "https://rdlp.jp/image/lp-archive/103513/full_2.jpg"
         ],
         "allImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103515/full.jpg",
-          "https://rdlp.jp/image/lp-archive/103516/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103512/full_1.jpg",
+          "https://rdlp.jp/image/lp-archive/103512/full_2.jpg",
+          "https://rdlp.jp/image/lp-archive/103513/full_1.jpg",
+          "https://rdlp.jp/image/lp-archive/103513/full_2.jpg"
         ]
       },
       "notes": "LPアーカイブ一覧から自動抽出した候補。採用前に人が確認する。"
     },
     {
-      "id": "LP-0230",
+      "id": "LP-0232",
       "status": "candidate",
       "mediaType": "LP",
-      "title": "ポケモンカードゲーム事業",
-      "captureUrl": "https://www.creatures.co.jp/",
+      "title": "ぷっちょ × Aぇ! group",
+      "captureUrl": "https://puccho.jp/aegroup/",
       "captureMode": "target_site",
       "sourceType": "Reference Site",
       "sourceName": "LPアーカイブ",
       "sourceUrl": "https://rdlp.jp/lp-archive/",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229242",
-      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103514/200x400.jpg",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229240",
+      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103510/200x400.jpg",
       "metadata": {
-        "lpArchivePostId": "229242",
-        "company": "株式会社クリーチャーズ",
-        "category": "企業・会社・お店",
-        "tasteTag": "シンプル系",
+        "lpArchivePostId": "229240",
+        "company": "UHA味覚糖",
+        "category": "スナック・ガム・あめ・グミ",
+        "tasteTag": "かっこいい系",
         "favoriteCount": "0",
-        "thumbnailAlt": "ポケモンカードゲーム事業のLPデザイン（企業・会社・お店／ホワイト系／シンプル系）PC版"
+        "thumbnailAlt": "ぷっちょ × Aぇ! groupのLPデザイン（スナック・ガム・あめ・グミ／ブラック系／かっこいい系）PC版"
       },
       "archiveAssets": {
         "pcImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103514/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103510/full.jpg"
         ],
-        "spImageUrls": [],
+        "spImageUrls": [
+          "https://rdlp.jp/image/lp-archive/103511/full.jpg"
+        ],
         "allImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103514/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103510/full.jpg",
+          "https://rdlp.jp/image/lp-archive/103511/full.jpg"
         ]
       },
       "notes": "LPアーカイブ一覧から自動抽出した候補。採用前に人が確認する。"
@@ -98,7 +105,7 @@
         "duplicateOf": "LP-0227",
         "field": "captureUrl",
         "value": "https://www.mod.go.jp/gsdf/jieikanbosyu/",
-        "reason": "existing candidate captureUrl"
+        "reason": "previously skipped duplicate captureUrl"
       }
     },
     {
@@ -206,7 +213,7 @@
         "duplicateOf": "LP-0228",
         "field": "captureUrl",
         "value": "https://www.sports-create.com/gotenyama/jrtennis/",
-        "reason": "existing candidate captureUrl"
+        "reason": "previously skipped duplicate captureUrl"
       }
     },
     {
@@ -218,7 +225,7 @@
         "duplicateOf": "LP-0225",
         "field": "captureUrl",
         "value": "https://rec-tennis.com/school/shinyurigaoka/campaign/goldenkids",
-        "reason": "intake reservation captureUrl"
+        "reason": "previously skipped duplicate captureUrl"
       }
     },
     {
@@ -230,7 +237,31 @@
         "duplicateOf": "LP-0226",
         "field": "captureUrl",
         "value": "https://www.dennys.jp/menu/half-parfait/grapes/",
-        "reason": "intake reservation captureUrl"
+        "reason": "previously skipped duplicate captureUrl"
+      }
+    },
+    {
+      "title": "FAIRLUCENT",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229243",
+      "captureUrl": "https://www.menard.co.jp/fairlucent/",
+      "lpArchivePostId": "229243",
+      "duplicate": {
+        "duplicateOf": "LP-0229",
+        "field": "captureUrl",
+        "value": "https://www.menard.co.jp/fairlucent/",
+        "reason": "existing candidate captureUrl"
+      }
+    },
+    {
+      "title": "ポケモンカードゲーム事業",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229242",
+      "captureUrl": "https://www.creatures.co.jp/",
+      "lpArchivePostId": "229242",
+      "duplicate": {
+        "duplicateOf": "LP-0230",
+        "field": "captureUrl",
+        "value": "https://www.creatures.co.jp/",
+        "reason": "existing candidate captureUrl"
       }
     }
   ]

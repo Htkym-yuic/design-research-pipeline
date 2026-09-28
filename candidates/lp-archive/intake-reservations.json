@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T19:56:21.472Z",
+  "updatedAt": "2026-09-28T03:26:15.293Z",
   "mediaType": "LP",
   "sourceName": "LPアーカイブ",
   "notes": [
@@ -158,7 +158,25 @@
       "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229242",
       "lpArchivePostId": "229242",
       "reservedAt": "2026-09-27T19:56:21.472Z"
+    },
+    {
+      "id": "LP-0231",
+      "title": "ピカチュウ ハニークリーム ラテ",
+      "status": "reserved_daily_intake",
+      "captureUrl": "https://www.starbucks.co.jp/cafe/pokemon/?nid=wh_00",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229241",
+      "lpArchivePostId": "229241",
+      "reservedAt": "2026-09-28T03:26:15.293Z"
+    },
+    {
+      "id": "LP-0232",
+      "title": "ぷっちょ × Aぇ! group",
+      "status": "reserved_daily_intake",
+      "captureUrl": "https://puccho.jp/aegroup/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229240",
+      "lpArchivePostId": "229240",
+      "reservedAt": "2026-09-28T03:26:15.293Z"
     }
   ],
-  "nextLpId": "LP-0231"
+  "nextLpId": "LP-0233"
 }
