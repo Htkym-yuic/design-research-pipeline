@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T19:59:27.427Z",
+  "updatedAt": "2026-09-29T16:23:20.020Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -232,6 +232,66 @@
       "reservedAt": "2026-09-28T16:25:14.230Z"
     },
     {
+      "id": "BN-0021",
+      "title": "大型犬オフ会_720 x 377のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/14e7279f91c58cb30a071a3f9ab03d0e.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64668",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/14e7279f91c58cb30a071a3f9ab03d0e.jpg.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
+      "id": "BN-0022",
+      "title": "クレンジング_600 x 500のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/fe67edf3dd93b47729785e1a97f214e2.png.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64665",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/fe67edf3dd93b47729785e1a97f214e2.png.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
+      "id": "BN-0023",
+      "title": "ナチュラルスキンケア_600 x 500のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/3f1ff33677bcc0bf48e8a2cf2de3334f.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64653",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/3f1ff33677bcc0bf48e8a2cf2de3334f.jpg.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
+      "id": "BN-0024",
+      "title": "ピッチイベント_1300 x 731のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/8207498793c7f196da9608f7b2433bdb.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64656",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/8207498793c7f196da9608f7b2433bdb.jpg.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
+      "id": "BN-0025",
+      "title": "中華まん_300 x 300のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/7c89adfad423b66573cd4479196f79c6.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64650",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/7c89adfad423b66573cd4479196f79c6.jpg.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
       "id": "CV-0001",
       "title": "Beige Aesthetic Photo Collage Portrait Instagram Post",
       "mediaType": "Canva",
@@ -441,6 +501,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-09-28T16:25:14.230Z"
+    },
+    {
+      "id": "CV-0019",
+      "title": "Beige Minimalist Collage Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAFJIw1pwPg/1/0/320w-wnLlU6fvy9s.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAFJIw1pwPg-beige-minimalist-collage-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAFJIw1pwPg/1/0/320w-wnLlU6fvy9s.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
+      "id": "CV-0020",
+      "title": "Pink Minimalist Happy October Month Motivational Quote Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAG0FZDy_kE/1/0/320w-I2MVqp3PgDQ.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAG0FZDy_kE-pink-minimalist-happy-october-month-motivational-quote-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAG0FZDy_kE/1/0/320w-I2MVqp3PgDQ.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
+      "id": "CV-0021",
+      "title": "Sky Blue and Pastel Modern Nature Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAHCicpTS6Q/1/0/320w-gRSL9_XFmtA.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAHCicpTS6Q-sky-blue-and-pastel-modern-nature-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAHCicpTS6Q/1/0/320w-gRSL9_XFmtA.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
+      "id": "CV-0022",
+      "title": "Brown and Beige Vintage Aesthetic Photo Collage Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAGyl2lCMYI/1/0/320w-Zkm89CSJ7NI.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAGyl2lCMYI-brown-and-beige-vintage-aesthetic-photo-collage-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAGyl2lCMYI/1/0/320w-Zkm89CSJ7NI.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
+      "id": "CV-0023",
+      "title": "Neutral Minimalist Lighthouse and Nature Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAGdU_S2Me8/3/0/320w-s8DFx_CJfks.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAGdU_S2Me8-neutral-minimalist-lighthouse-and-nature-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAGdU_S2Me8/3/0/320w-s8DFx_CJfks.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-29T16:23:20.020Z"
     },
     {
       "id": "GR-0001",
@@ -673,6 +793,66 @@
       "reservedAt": "2026-09-28T16:25:14.230Z"
     },
     {
+      "id": "GR-0021",
+      "title": "熱中症対策チラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1c2b18ec50e08481d00b4b79faa41293%2F1c2b18ec50e08481d00b4b79faa41293-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30424",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1c2b18ec50e08481d00b4b79faa41293%2F1c2b18ec50e08481d00b4b79faa41293-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
+      "id": "GR-0022",
+      "title": "牛串",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F43ef5b2575b13250e2b44d71d989140a%2F43ef5b2575b13250e2b44d71d989140a-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30812",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F43ef5b2575b13250e2b44d71d989140a%2F43ef5b2575b13250e2b44d71d989140a-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
+      "id": "GR-0023",
+      "title": "ベージュ背景に日焼け止めを塗る女性の写真のバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F19e33dc5e068e3affadffb050037b1a5%2F19e33dc5e068e3affadffb050037b1a5-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20512",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F19e33dc5e068e3affadffb050037b1a5%2F19e33dc5e068e3affadffb050037b1a5-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
+      "id": "GR-0024",
+      "title": "子供達のイラストが描かれた保育士名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Faf136fb30cf6cbf312beed3256bb92e9%2Faf136fb30cf6cbf312beed3256bb92e9-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-5661",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Faf136fb30cf6cbf312beed3256bb92e9%2Faf136fb30cf6cbf312beed3256bb92e9-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
+      "id": "GR-0025",
+      "title": "オレンジと緑の抽象的なロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/586d60c624ce2d0c962d57ed3f600279/586d60c624ce2d0c962d57ed3f600279-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3100",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/586d60c624ce2d0c962d57ed3f600279/586d60c624ce2d0c962d57ed3f600279-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
       "id": "ILAC-0001",
       "title": "DX デジタルトランスフォーメーション 人物",
       "mediaType": "Asset",
@@ -866,6 +1046,30 @@
       "materialId": "PAT-0006",
       "authorProfileUrl": null,
       "reservedAt": "2026-09-28T19:59:27.427Z"
+    },
+    {
+      "id": "PAT-0007",
+      "title": "熱中症対策チラシに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1c2b18ec50e08481d00b4b79faa41293%2F1c2b18ec50e08481d00b4b79faa41293-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30424",
+      "imageUrl": null,
+      "materialId": "PAT-0007",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
+      "id": "PAT-0008",
+      "title": "Beige Minimalist Collage Instagram Postに見る反復可能なテンプレート構造",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Canva）",
+      "captureUrl": "https://template.canva.com/EAFJIw1pwPg/1/0/320w-wnLlU6fvy9s.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAFJIw1pwPg-beige-minimalist-collage-instagram-post/",
+      "imageUrl": null,
+      "materialId": "PAT-0008",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-29T16:23:20.020Z"
     },
     {
       "id": "PHAC-0001",
@@ -1257,6 +1461,66 @@
       "reservedAt": "2026-09-28T19:59:27.427Z"
     },
     {
+      "id": "PT-0021",
+      "title": "クラプロ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/05/cra-pro_00006.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6951",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/05/cra-pro_00006.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
+      "id": "PT-0022",
+      "title": "しごとの窓口+",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/05/shigoto-madoguchi_00003.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6935",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/05/shigoto-madoguchi_00003.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
+      "id": "PT-0023",
+      "title": "株式会社ケーズホールディングス",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/05/ksdenki_00007.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6917",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/05/ksdenki_00007.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
+      "id": "PT-0024",
+      "title": "learningBOX(ラーニングボックス)",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/05/learningbox_00014.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6906",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/05/learningbox_00014.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
+      "id": "PT-0025",
+      "title": "クレライフ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/05/kurelife_00010.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6888",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/05/kurelife_00010.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -1347,6 +1611,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-09-28T16:25:14.230Z"
+    },
+    {
+      "id": "WB-0009",
+      "title": "五◯祭 GOENSAI | デザインスタジオ･エル 50周年記念サイト",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://50th.designstudio-l.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/designstudiol-50th/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/designstudiol50th_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
+      "id": "WB-0010",
+      "title": "シンプルフォーム株式会社",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.simpleform.co.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/simpleform/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/simpleform_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-29T16:23:20.020Z"
     }
   ]
 }
