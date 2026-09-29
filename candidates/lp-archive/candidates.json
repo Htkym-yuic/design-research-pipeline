@@ -1,117 +1,87 @@
 {
-  "extractedAt": "2026-09-28T16:19:13.158Z",
+  "extractedAt": "2026-09-29T16:18:33.867Z",
   "sourceUrl": "https://rdlp.jp/lp-archive/",
   "sourceName": "LPアーカイブ",
   "mediaType": "LP",
   "requestedLimit": 2,
   "scannedLimit": 40,
   "candidateCount": 2,
-  "skippedDuplicateCount": 17,
-  "idStart": "LP-0233",
-  "idEnd": "LP-0234",
+  "skippedDuplicateCount": 3,
+  "idStart": "LP-0235",
+  "idEnd": "LP-0236",
   "candidates": [
     {
-      "id": "LP-0233",
+      "id": "LP-0235",
       "status": "candidate",
       "mediaType": "LP",
-      "title": "白玉姫",
-      "captureUrl": "https://item.rakuten.co.jp/oga/sth_12/",
+      "title": "TVer採用サイト",
+      "captureUrl": "https://recruit.tver.co.jp/",
       "captureMode": "target_site",
       "sourceType": "Reference Site",
       "sourceName": "LPアーカイブ",
       "sourceUrl": "https://rdlp.jp/lp-archive/",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/227366",
-      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/100090/200x400.jpg",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229269",
+      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103557/200x400.jpg",
       "metadata": {
-        "lpArchivePostId": "227366",
-        "company": "株式会社オーガランド",
-        "category": "美容食品・美容ドリンク・サプリメント",
-        "tasteTag": "キレイ系",
-        "favoriteCount": "43",
-        "thumbnailAlt": "白玉姫のLPデザイン（美容食品・美容ドリンク・サプリメント／パープル系／キレイ系）PC版"
+        "lpArchivePostId": "229269",
+        "company": "株式会社TVer",
+        "category": "中途採用",
+        "tasteTag": "信頼・安心系",
+        "favoriteCount": "0",
+        "thumbnailAlt": "TVer採用サイトのLPデザイン（中途採用／ブルー系／信頼・安心系）PC版"
       },
       "archiveAssets": {
         "pcImageUrls": [
-          "https://rdlp.jp/image/lp-archive/100090/full_1.jpg",
-          "https://rdlp.jp/image/lp-archive/100090/full_2.jpg"
+          "https://rdlp.jp/image/lp-archive/103557/full.jpg"
         ],
-        "spImageUrls": [],
+        "spImageUrls": [
+          "https://rdlp.jp/image/lp-archive/103558/full.jpg"
+        ],
         "allImageUrls": [
-          "https://rdlp.jp/image/lp-archive/100090/full_1.jpg",
-          "https://rdlp.jp/image/lp-archive/100090/full_2.jpg"
+          "https://rdlp.jp/image/lp-archive/103557/full.jpg",
+          "https://rdlp.jp/image/lp-archive/103558/full.jpg"
         ]
       },
       "notes": "LPアーカイブ一覧から自動抽出した候補。採用前に人が確認する。"
     },
     {
-      "id": "LP-0234",
+      "id": "LP-0236",
       "status": "candidate",
       "mediaType": "LP",
-      "title": "ロープライスセット",
-      "captureUrl": "https://www.aigan.co.jp/feature/set_megane/",
+      "title": "エリクシール ブライトニング化粧水",
+      "captureUrl": "https://www.shiseido.co.jp/elixir/promotion/brightening-lotion-emulsion/",
       "captureMode": "target_site",
       "sourceType": "Reference Site",
       "sourceName": "LPアーカイブ",
       "sourceUrl": "https://rdlp.jp/lp-archive/",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/227485",
-      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/100301/200x400.jpg",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229267",
+      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103554/200x400.jpg",
       "metadata": {
-        "lpArchivePostId": "227485",
-        "company": "愛眼株式会社",
-        "category": "眼鏡・サングラス",
-        "tasteTag": "シンプル系",
-        "favoriteCount": "32",
-        "thumbnailAlt": "ロープライスセットのLPデザイン（眼鏡・サングラス／カラフル系／シンプル系）PC版"
+        "lpArchivePostId": "229267",
+        "company": "株式会社資生堂",
+        "category": "スキンケア・ボディケア・ヘアケア",
+        "tasteTag": "キレイ系",
+        "favoriteCount": "0",
+        "thumbnailAlt": "エリクシール ブライトニング化粧水のLPデザイン（スキンケア・ボディケア・ヘアケア／ピンク系／キレイ系）PC版"
       },
       "archiveAssets": {
         "pcImageUrls": [
-          "https://rdlp.jp/image/lp-archive/100301/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103554/full.jpg"
         ],
-        "spImageUrls": [],
+        "spImageUrls": [
+          "https://rdlp.jp/image/lp-archive/103555/full_1.jpg",
+          "https://rdlp.jp/image/lp-archive/103555/full_2.jpg"
+        ],
         "allImageUrls": [
-          "https://rdlp.jp/image/lp-archive/100301/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103554/full.jpg",
+          "https://rdlp.jp/image/lp-archive/103555/full_1.jpg",
+          "https://rdlp.jp/image/lp-archive/103555/full_2.jpg"
         ]
       },
       "notes": "LPアーカイブ一覧から自動抽出した候補。採用前に人が確認する。"
     }
   ],
   "skippedCandidates": [
-    {
-      "title": "生活本舗",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229263",
-      "captureUrl": "https://seikatsuhonpo.com/ihinseiri/",
-      "lpArchivePostId": "229263",
-      "duplicate": {
-        "duplicateOf": "LP-0215",
-        "field": "captureUrl",
-        "value": "https://seikatsuhonpo.com/ihinseiri/",
-        "reason": "previously skipped duplicate captureUrl"
-      }
-    },
-    {
-      "title": "自衛官募集",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229262",
-      "captureUrl": "https://www.mod.go.jp/gsdf/jieikanbosyu/",
-      "lpArchivePostId": "229262",
-      "duplicate": {
-        "duplicateOf": "LP-0227",
-        "field": "captureUrl",
-        "value": "https://www.mod.go.jp/gsdf/jieikanbosyu/",
-        "reason": "previously skipped duplicate captureUrl"
-      }
-    },
-    {
-      "title": "Awarefy",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229261",
-      "captureUrl": "https://www.awarefy.com/app",
-      "lpArchivePostId": "229261",
-      "duplicate": {
-        "duplicateOf": "LP-0214",
-        "field": "captureUrl",
-        "value": "https://www.awarefy.com/app",
-        "reason": "previously skipped duplicate captureUrl"
-      }
-    },
     {
       "title": "秋をあそびつくそうSunshine City",
       "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229259",
@@ -121,30 +91,6 @@
         "duplicateOf": "LP-0222",
         "field": "captureUrl",
         "value": "https://sunshinecity.jp/file/official/autumn/",
-        "reason": "previously skipped duplicate captureUrl"
-      }
-    },
-    {
-      "title": "QuizKnock10周年プロジェクト",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229258",
-      "captureUrl": "https://10th.quizknock.com/",
-      "lpArchivePostId": "229258",
-      "duplicate": {
-        "duplicateOf": "LP-0216",
-        "field": "captureUrl",
-        "value": "https://10th.quizknock.com/",
-        "reason": "previously skipped duplicate captureUrl"
-      }
-    },
-    {
-      "title": "ここだけのミルチグッズで100周年をお祝いしよう！",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229257",
-      "captureUrl": "https://www.felissimo.co.jp/collect/mchoco_fsc?tid=sbn_fc_MEIJICHOCOLATE2609_L",
-      "lpArchivePostId": "229257",
-      "duplicate": {
-        "duplicateOf": "LP-0217",
-        "field": "captureUrl",
-        "value": "https://www.felissimo.co.jp/collect/mchoco_fsc?tid=sbn_fc_MEIJICHOCOLATE2609_L",
         "reason": "previously skipped duplicate captureUrl"
       }
     },
@@ -170,114 +116,6 @@
         "field": "captureUrl",
         "value": "https://www.kaneka-womens-healthcare.com/",
         "reason": "previously skipped duplicate captureUrl"
-      }
-    },
-    {
-      "title": "premal",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229253",
-      "captureUrl": "https://sfc.jp/ie/lineup/premal/",
-      "lpArchivePostId": "229253",
-      "duplicate": {
-        "duplicateOf": "LP-0220",
-        "field": "captureUrl",
-        "value": "https://sfc.jp/ie/lineup/premal/",
-        "reason": "previously skipped duplicate captureUrl"
-      }
-    },
-    {
-      "title": "色彩学園",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229249",
-      "captureUrl": "https://www.aft.or.jp/shikisaigakuen2023/",
-      "lpArchivePostId": "229249",
-      "duplicate": {
-        "duplicateOf": "LP-0221",
-        "field": "captureUrl",
-        "value": "https://www.aft.or.jp/shikisaigakuen2023/",
-        "reason": "previously skipped duplicate captureUrl"
-      }
-    },
-    {
-      "title": "LOCOKウェルネスガーデン品川御殿⼭テニススクール",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229247",
-      "captureUrl": "https://www.sports-create.com/gotenyama/jrtennis/",
-      "lpArchivePostId": "229247",
-      "duplicate": {
-        "duplicateOf": "LP-0228",
-        "field": "captureUrl",
-        "value": "https://www.sports-create.com/gotenyama/jrtennis/",
-        "reason": "previously skipped duplicate captureUrl"
-      }
-    },
-    {
-      "title": "レックインドアテニススクール新百合ヶ丘",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229246",
-      "captureUrl": "https://rec-tennis.com/school/shinyurigaoka/campaign/goldenkids",
-      "lpArchivePostId": "229246",
-      "duplicate": {
-        "duplicateOf": "LP-0225",
-        "field": "captureUrl",
-        "value": "https://rec-tennis.com/school/shinyurigaoka/campaign/goldenkids",
-        "reason": "previously skipped duplicate captureUrl"
-      }
-    },
-    {
-      "title": "まっぷたつ？パフェ",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229244",
-      "captureUrl": "https://www.dennys.jp/menu/half-parfait/grapes/",
-      "lpArchivePostId": "229244",
-      "duplicate": {
-        "duplicateOf": "LP-0226",
-        "field": "captureUrl",
-        "value": "https://www.dennys.jp/menu/half-parfait/grapes/",
-        "reason": "previously skipped duplicate captureUrl"
-      }
-    },
-    {
-      "title": "FAIRLUCENT",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229243",
-      "captureUrl": "https://www.menard.co.jp/fairlucent/",
-      "lpArchivePostId": "229243",
-      "duplicate": {
-        "duplicateOf": "LP-0229",
-        "field": "captureUrl",
-        "value": "https://www.menard.co.jp/fairlucent/",
-        "reason": "previously skipped duplicate captureUrl"
-      }
-    },
-    {
-      "title": "ポケモンカードゲーム事業",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229242",
-      "captureUrl": "https://www.creatures.co.jp/",
-      "lpArchivePostId": "229242",
-      "duplicate": {
-        "duplicateOf": "LP-0230",
-        "field": "captureUrl",
-        "value": "https://www.creatures.co.jp/",
-        "reason": "previously skipped duplicate captureUrl"
-      }
-    },
-    {
-      "title": "ピカチュウ ハニークリーム ラテ",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229241",
-      "captureUrl": "https://www.starbucks.co.jp/cafe/pokemon/?nid=wh_00",
-      "lpArchivePostId": "229241",
-      "duplicate": {
-        "duplicateOf": "LP-0231",
-        "field": "captureUrl",
-        "value": "https://www.starbucks.co.jp/cafe/pokemon/?nid=wh_00",
-        "reason": "existing candidate captureUrl"
-      }
-    },
-    {
-      "title": "ぷっちょ × Aぇ! group",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229240",
-      "captureUrl": "https://puccho.jp/aegroup/",
-      "lpArchivePostId": "229240",
-      "duplicate": {
-        "duplicateOf": "LP-0232",
-        "field": "captureUrl",
-        "value": "https://puccho.jp/aegroup/",
-        "reason": "existing candidate captureUrl"
       }
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T16:19:13.158Z",
+  "updatedAt": "2026-09-29T16:18:33.867Z",
   "mediaType": "LP",
   "sourceName": "LPアーカイブ",
   "notes": [
@@ -194,7 +194,25 @@
       "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/227485",
       "lpArchivePostId": "227485",
       "reservedAt": "2026-09-28T16:19:13.158Z"
+    },
+    {
+      "id": "LP-0235",
+      "title": "TVer採用サイト",
+      "status": "reserved_daily_intake",
+      "captureUrl": "https://recruit.tver.co.jp/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229269",
+      "lpArchivePostId": "229269",
+      "reservedAt": "2026-09-29T16:18:33.867Z"
+    },
+    {
+      "id": "LP-0236",
+      "title": "エリクシール ブライトニング化粧水",
+      "status": "reserved_daily_intake",
+      "captureUrl": "https://www.shiseido.co.jp/elixir/promotion/brightening-lotion-emulsion/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229267",
+      "lpArchivePostId": "229267",
+      "reservedAt": "2026-09-29T16:18:33.867Z"
     }
   ],
-  "nextLpId": "LP-0235"
+  "nextLpId": "LP-0237"
 }
