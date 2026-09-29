@@ -242,6 +242,52 @@
         "PC/SP比較"
       ],
       "generatedAt": "2026-09-28T16:22:21.680Z"
+    },
+    "LP-0235": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "株式会社TVerの中途採用に関するLP。TVer採用サイトの訴求と画面構成を日次候補として収集した。",
+      "selectionReason": "LPアーカイブの新規候補で、既存ID・URLとの重複確認を通過したため。中途採用・信頼・安心系の事例として分類でき、PC/SPのファーストビューと全体構成を比較できるため。週末レビューで既存ナレッジとの差分や再利用可能な構造を評価する材料になるため。",
+      "mainAppeal": "TVer採用サイトの主要価値を伝え、次の行動へつなげる構成",
+      "fvImpression": "信頼・安心系として掲載された事例。PC/SPのFV画像を確認でき、画面の主調色はニュートラルカラー中心。",
+      "roughStructure": "hero candidate → problem candidate → features candidate → proof candidate → service candidate → cta candidate の順で分割確認。週末レビューで実際の役割名を確定する。",
+      "tasteAndColor": "信頼・安心系。主調色の自動判定はニュートラルカラー中心。",
+      "usefulPoints": "PC/SPのFVと全体構成を比較でき、同業種の情報優先順位とレスポンシブ差の検討材料になる。",
+      "reviewPoints": "これは日次の自動一次分析。コピー、CTA、証拠、セクション役割の意味判断は週末の詳細レビューで再確認する。",
+      "deepDivePriority": "中。週末レビューでCBS既存ナレッジとの差分と不足領域を確認して優先度を確定する。",
+      "industryTags": [
+        "中途採用"
+      ],
+      "colorTags": [
+        "ニュートラルカラー中心"
+      ],
+      "layoutTags": [
+        "長尺LP",
+        "PC/SP比較"
+      ],
+      "generatedAt": "2026-09-29T16:20:22.121Z"
+    },
+    "LP-0236": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "株式会社資生堂のスキンケア・ボディケア・ヘアケアに関するLP。エリクシール ブライトニング化粧水の訴求と画面構成を日次候補として収集した。",
+      "selectionReason": "LPアーカイブの新規候補で、既存ID・URLとの重複確認を通過したため。スキンケア・ボディケア・ヘアケア・キレイ系の事例として分類でき、PC/SPのファーストビューと全体構成を比較できるため。週末レビューで既存ナレッジとの差分や再利用可能な構造を評価する材料になるため。",
+      "mainAppeal": "エリクシール ブライトニング化粧水の主要価値を伝え、次の行動へつなげる構成",
+      "fvImpression": "キレイ系として掲載された事例。PC/SPのFV画像を確認でき、画面の主調色はニュートラルカラー中心。",
+      "roughStructure": "hero candidate → problem candidate → features candidate → proof candidate → service candidate → cta candidate の順で分割確認。週末レビューで実際の役割名を確定する。",
+      "tasteAndColor": "キレイ系。主調色の自動判定はニュートラルカラー中心。",
+      "usefulPoints": "PC/SPのFVと全体構成を比較でき、同業種の情報優先順位とレスポンシブ差の検討材料になる。",
+      "reviewPoints": "これは日次の自動一次分析。コピー、CTA、証拠、セクション役割の意味判断は週末の詳細レビューで再確認する。",
+      "deepDivePriority": "中。週末レビューでCBS既存ナレッジとの差分と不足領域を確認して優先度を確定する。",
+      "industryTags": [
+        "スキンケア・ボディケア・ヘアケア"
+      ],
+      "colorTags": [
+        "ニュートラルカラー中心"
+      ],
+      "layoutTags": [
+        "長尺LP",
+        "PC/SP比較"
+      ],
+      "generatedAt": "2026-09-29T16:20:22.193Z"
     }
   }
 }
