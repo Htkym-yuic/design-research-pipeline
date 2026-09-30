@@ -288,6 +288,53 @@
         "PC/SP比較"
       ],
       "generatedAt": "2026-09-29T16:20:22.193Z"
+    },
+    "LP-0237": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "BLUEDGE合同会社の企業・会社・お店に関するLP。物流の訴求と画面構成を日次候補として収集した。",
+      "selectionReason": "LPアーカイブの新規候補で、既存ID・URLとの重複確認を通過したため。企業・会社・お店・シンプル系の事例として分類でき、PC/SPのファーストビューと全体構成を比較できるため。週末レビューで既存ナレッジとの差分や再利用可能な構造を評価する材料になるため。",
+      "mainAppeal": "物流の主要価値を伝え、次の行動へつなげる構成",
+      "fvImpression": "シンプル系として掲載された事例。PC/SPのFV画像を確認でき、画面の主調色は青・紫系。",
+      "roughStructure": "hero candidate → problem candidate → features candidate → proof candidate → service candidate の順で分割確認。週末レビューで実際の役割名を確定する。",
+      "tasteAndColor": "シンプル系。主調色の自動判定は青・紫系。",
+      "usefulPoints": "PC/SPのFVと全体構成を比較でき、同業種の情報優先順位とレスポンシブ差の検討材料になる。",
+      "reviewPoints": "これは日次の自動一次分析。コピー、CTA、証拠、セクション役割の意味判断は週末の詳細レビューで再確認する。",
+      "deepDivePriority": "中。週末レビューでCBS既存ナレッジとの差分と不足領域を確認して優先度を確定する。",
+      "industryTags": [
+        "企業・会社・お店"
+      ],
+      "colorTags": [
+        "青・紫系"
+      ],
+      "layoutTags": [
+        "長尺LP",
+        "PC/SP比較"
+      ],
+      "generatedAt": "2026-09-30T16:21:48.544Z"
+    },
+    "LP-0238": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "よしどめ歯科グループの病院・整体・マッサージに関するLP。口腔崩壊外来の訴求と画面構成を日次候補として収集した。",
+      "selectionReason": "LPアーカイブの新規候補で、既存ID・URLとの重複確認を通過したため。病院・整体・マッサージ・爽やか系の事例として分類でき、PC/SPのファーストビューと全体構成を比較できるため。週末レビューで既存ナレッジとの差分や再利用可能な構造を評価する材料になるため。",
+      "mainAppeal": "口腔崩壊外来の主要価値を伝え、次の行動へつなげる構成",
+      "fvImpression": "爽やか系として掲載された事例。PC/SPのFV画像を確認でき、画面の主調色は青・紫系、ニュートラルカラー中心。",
+      "roughStructure": "hero candidate → problem candidate → features candidate → proof candidate → service candidate → cta candidate の順で分割確認。週末レビューで実際の役割名を確定する。",
+      "tasteAndColor": "爽やか系。主調色の自動判定は青・紫系、ニュートラルカラー中心。",
+      "usefulPoints": "PC/SPのFVと全体構成を比較でき、同業種の情報優先順位とレスポンシブ差の検討材料になる。",
+      "reviewPoints": "これは日次の自動一次分析。コピー、CTA、証拠、セクション役割の意味判断は週末の詳細レビューで再確認する。",
+      "deepDivePriority": "中。週末レビューでCBS既存ナレッジとの差分と不足領域を確認して優先度を確定する。",
+      "industryTags": [
+        "病院・整体・マッサージ"
+      ],
+      "colorTags": [
+        "青・紫系",
+        "ニュートラルカラー中心"
+      ],
+      "layoutTags": [
+        "長尺LP",
+        "PC/SP比較"
+      ],
+      "generatedAt": "2026-09-30T16:21:48.629Z"
     }
   }
 }
