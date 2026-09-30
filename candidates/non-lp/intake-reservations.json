@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T16:27:13.011Z",
+  "updatedAt": "2026-09-30T16:24:59.672Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -292,6 +292,66 @@
       "reservedAt": "2026-09-29T16:23:20.020Z"
     },
     {
+      "id": "BN-0026",
+      "title": "韓国式ピラティス_600 x 500のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/80a6fbc40d0b449d2687ddfbfd9bf6bf.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64647",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/80a6fbc40d0b449d2687ddfbfd9bf6bf.jpg.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-30T16:24:59.672Z"
+    },
+    {
+      "id": "BN-0027",
+      "title": "カレーフェス_1000 x 562のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/9efa213226784516f0cc03c6ddd2f643.jpeg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64643",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/9efa213226784516f0cc03c6ddd2f643.jpeg.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-30T16:24:59.672Z"
+    },
+    {
+      "id": "BN-0028",
+      "title": "生き物調査_580 x 580のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/cb83992d7bad7f41e401214e7226fd3e.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64640",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/cb83992d7bad7f41e401214e7226fd3e.jpg.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-30T16:24:59.672Z"
+    },
+    {
+      "id": "BN-0029",
+      "title": "ウォーターサーバー_600 x 500のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/e857300b80226dc832954c06fd0840ce.gif",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64637",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/e857300b80226dc832954c06fd0840ce.gif",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-30T16:24:59.672Z"
+    },
+    {
+      "id": "BN-0030",
+      "title": "敬老の日_940 x 510のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/e5bee87bc90f97b7f78bd2ff50981c59.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64633",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/e5bee87bc90f97b7f78bd2ff50981c59.jpg.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-30T16:24:59.672Z"
+    },
+    {
       "id": "CV-0001",
       "title": "Beige Aesthetic Photo Collage Portrait Instagram Post",
       "mediaType": "Canva",
@@ -561,6 +621,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
+      "id": "CV-0024",
+      "title": "Beige Handwriting Notebook Mockup Free Guide Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAG7pDwqXkc/1/0/320w-ZZ599kK0M_g.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAG7pDwqXkc-beige-handwriting-notebook-mockup-free-guide-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAG7pDwqXkc/1/0/320w-ZZ599kK0M_g.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-30T16:24:59.672Z"
+    },
+    {
+      "id": "CV-0025",
+      "title": "White and Grey Minimal Social Media Photo Dump Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAHJZD5OYkc/1/0/320w-88wL6RdNCUs.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAHJZD5OYkc-white-and-grey-minimal-social-media-photo-dump-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAHJZD5OYkc/1/0/320w-88wL6RdNCUs.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-30T16:24:59.672Z"
+    },
+    {
+      "id": "CV-0026",
+      "title": "Black Minimalist Simple Travel Inspiration Photo Collage Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAGTRafpOOc/2/0/320w-LZE2945APoM.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAGTRafpOOc-black-minimalist-simple-travel-inspiration-photo-collage-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAGTRafpOOc/2/0/320w-LZE2945APoM.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-30T16:24:59.672Z"
+    },
+    {
+      "id": "CV-0027",
+      "title": "Dark Moody Poetry Quote Instagram Post With Collage",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAG91TlXVCI/1/0/320w-63bHRfwb5Js.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAG91TlXVCI-dark-moody-poetry-quote-instagram-post-with-collage/",
+      "imageUrl": "https://template.canva.com/EAG91TlXVCI/1/0/320w-63bHRfwb5Js.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-30T16:24:59.672Z"
+    },
+    {
+      "id": "CV-0028",
+      "title": "Brown Minimal Camera Interface Fashion Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAHDeEAJMOc/1/0/320w--jQ4wPrtE50.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAHDeEAJMOc-brown-minimal-camera-interface-fashion-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAHDeEAJMOc/1/0/320w--jQ4wPrtE50.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-30T16:24:59.672Z"
     },
     {
       "id": "GR-0001",
@@ -851,6 +971,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
+      "id": "GR-0026",
+      "title": "サマーセール（爽やかイエロー）",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fbbd4548c4b39972d10f9fa3ba45cb142%2Fbbd4548c4b39972d10f9fa3ba45cb142-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30346",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fbbd4548c4b39972d10f9fa3ba45cb142%2Fbbd4548c4b39972d10f9fa3ba45cb142-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-30T16:24:59.672Z"
+    },
+    {
+      "id": "GR-0027",
+      "title": "ひと涼み・水分補給案内",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F98bae8f2a3ef52afd52ce24e5f6db029%2F98bae8f2a3ef52afd52ce24e5f6db029-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30785",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F98bae8f2a3ef52afd52ce24e5f6db029%2F98bae8f2a3ef52afd52ce24e5f6db029-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-30T16:24:59.672Z"
+    },
+    {
+      "id": "GR-0028",
+      "title": "ベージュ背景に正方形の写真フレームのシンプルな日焼け止めのバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Ff68a05f67e4f1f6287b018efde9d7c11%2Ff68a05f67e4f1f6287b018efde9d7c11-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20511",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Ff68a05f67e4f1f6287b018efde9d7c11%2Ff68a05f67e4f1f6287b018efde9d7c11-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-30T16:24:59.672Z"
+    },
+    {
+      "id": "GR-0029",
+      "title": "淡いピンクのシンプルなデザイナー名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fcada5199f130caf1f61cc30acf9fb90b%2Fcada5199f130caf1f61cc30acf9fb90b-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-30838",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fcada5199f130caf1f61cc30acf9fb90b%2Fcada5199f130caf1f61cc30acf9fb90b-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-30T16:24:59.672Z"
+    },
+    {
+      "id": "GR-0030",
+      "title": "六角形のロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/9f5d33f00403b203d288feed55ab4c11/9f5d33f00403b203d288feed55ab4c11-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3095",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/9f5d33f00403b203d288feed55ab4c11/9f5d33f00403b203d288feed55ab4c11-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-30T16:24:59.672Z"
     },
     {
       "id": "ILAC-0001",
@@ -1190,6 +1370,30 @@
       "materialId": "PAT-0008",
       "authorProfileUrl": null,
       "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
+      "id": "PAT-0009",
+      "title": "Beige Handwriting Notebook Mockup Free Guide Instagram Postに見る反復可能なテンプレート構造",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Canva）",
+      "captureUrl": "https://template.canva.com/EAG7pDwqXkc/1/0/320w-ZZ599kK0M_g.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAG7pDwqXkc-beige-handwriting-notebook-mockup-free-guide-instagram-post/",
+      "imageUrl": null,
+      "materialId": "PAT-0009",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-30T16:24:59.672Z"
+    },
+    {
+      "id": "PAT-0010",
+      "title": "人生に、選択肢という自由を。ヴェゼル株式会社に見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://vessel-for.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/vessel/",
+      "imageUrl": null,
+      "materialId": "PAT-0010",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-30T16:24:59.672Z"
     },
     {
       "id": "PHAC-0001",
@@ -1761,6 +1965,66 @@
       "reservedAt": "2026-09-29T16:23:20.020Z"
     },
     {
+      "id": "PT-0026",
+      "title": "Liny（リニー）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/04/line-sm_00022.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6873",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/04/line-sm_00022.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-30T16:24:59.672Z"
+    },
+    {
+      "id": "PT-0027",
+      "title": "ソロトリマガジン",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/04/solotori_00004.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6849",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/04/solotori_00004.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-30T16:24:59.672Z"
+    },
+    {
+      "id": "PT-0028",
+      "title": "【公式】ごま油のかどや製油",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/04/kadoya_00011.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6807",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/04/kadoya_00011.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-30T16:24:59.672Z"
+    },
+    {
+      "id": "PT-0029",
+      "title": "YOOR（ユア）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/04/yoor_00010.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6792",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/04/yoor_00010.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-30T16:24:59.672Z"
+    },
+    {
+      "id": "PT-0030",
+      "title": "Zキャリア AI面接官",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/04/zcareer_00003.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6779",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/04/zcareer_00003.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-30T16:24:59.672Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -1875,6 +2139,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-09-29T16:23:20.020Z"
+    },
+    {
+      "id": "WB-0011",
+      "title": "人生に、選択肢という自由を。ヴェゼル株式会社",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://vessel-for.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/vessel/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/vessel_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-30T16:24:59.672Z"
+    },
+    {
+      "id": "WB-0012",
+      "title": "【公式】Amprem | 濃縮浸透シャンプー",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://amprem.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/amprem/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/amprem_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-09-30T16:24:59.672Z"
     }
   ]
 }
