@@ -1,87 +1,106 @@
 {
-  "extractedAt": "2026-09-29T16:18:33.867Z",
+  "extractedAt": "2026-09-30T16:19:58.963Z",
   "sourceUrl": "https://rdlp.jp/lp-archive/",
   "sourceName": "LPアーカイブ",
   "mediaType": "LP",
   "requestedLimit": 2,
   "scannedLimit": 40,
   "candidateCount": 2,
-  "skippedDuplicateCount": 3,
-  "idStart": "LP-0235",
-  "idEnd": "LP-0236",
+  "skippedDuplicateCount": 5,
+  "idStart": "LP-0237",
+  "idEnd": "LP-0238",
   "candidates": [
     {
-      "id": "LP-0235",
+      "id": "LP-0237",
       "status": "candidate",
       "mediaType": "LP",
-      "title": "TVer採用サイト",
-      "captureUrl": "https://recruit.tver.co.jp/",
+      "title": "物流",
+      "captureUrl": "https://www.bluedge.co.jp/",
       "captureMode": "target_site",
       "sourceType": "Reference Site",
       "sourceName": "LPアーカイブ",
       "sourceUrl": "https://rdlp.jp/lp-archive/",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229269",
-      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103557/200x400.jpg",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229266",
+      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103553/200x400.jpg",
       "metadata": {
-        "lpArchivePostId": "229269",
-        "company": "株式会社TVer",
-        "category": "中途採用",
-        "tasteTag": "信頼・安心系",
-        "favoriteCount": "0",
-        "thumbnailAlt": "TVer採用サイトのLPデザイン（中途採用／ブルー系／信頼・安心系）PC版"
+        "lpArchivePostId": "229266",
+        "company": "BLUEDGE合同会社",
+        "category": "企業・会社・お店",
+        "tasteTag": "シンプル系",
+        "favoriteCount": "1",
+        "thumbnailAlt": "物流のLPデザイン（企業・会社・お店／ブルー系／シンプル系）PC版"
       },
       "archiveAssets": {
         "pcImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103557/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103553/full.jpg"
         ],
-        "spImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103558/full.jpg"
-        ],
+        "spImageUrls": [],
         "allImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103557/full.jpg",
-          "https://rdlp.jp/image/lp-archive/103558/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103553/full.jpg"
         ]
       },
       "notes": "LPアーカイブ一覧から自動抽出した候補。採用前に人が確認する。"
     },
     {
-      "id": "LP-0236",
+      "id": "LP-0238",
       "status": "candidate",
       "mediaType": "LP",
-      "title": "エリクシール ブライトニング化粧水",
-      "captureUrl": "https://www.shiseido.co.jp/elixir/promotion/brightening-lotion-emulsion/",
+      "title": "口腔崩壊外来",
+      "captureUrl": "https://next.houkai.jp/",
       "captureMode": "target_site",
       "sourceType": "Reference Site",
       "sourceName": "LPアーカイブ",
       "sourceUrl": "https://rdlp.jp/lp-archive/",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229267",
-      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103554/200x400.jpg",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229276",
+      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103571/200x400.jpg",
       "metadata": {
-        "lpArchivePostId": "229267",
-        "company": "株式会社資生堂",
-        "category": "スキンケア・ボディケア・ヘアケア",
-        "tasteTag": "キレイ系",
+        "lpArchivePostId": "229276",
+        "company": "よしどめ歯科グループ",
+        "category": "病院・整体・マッサージ",
+        "tasteTag": "爽やか系",
         "favoriteCount": "0",
-        "thumbnailAlt": "エリクシール ブライトニング化粧水のLPデザイン（スキンケア・ボディケア・ヘアケア／ピンク系／キレイ系）PC版"
+        "thumbnailAlt": "口腔崩壊外来のLPデザイン（病院・整体・マッサージ／ブルー系／爽やか系）PC版"
       },
       "archiveAssets": {
         "pcImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103554/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103571/full.jpg"
         ],
         "spImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103555/full_1.jpg",
-          "https://rdlp.jp/image/lp-archive/103555/full_2.jpg"
+          "https://rdlp.jp/image/lp-archive/103572/full.jpg"
         ],
         "allImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103554/full.jpg",
-          "https://rdlp.jp/image/lp-archive/103555/full_1.jpg",
-          "https://rdlp.jp/image/lp-archive/103555/full_2.jpg"
+          "https://rdlp.jp/image/lp-archive/103571/full.jpg",
+          "https://rdlp.jp/image/lp-archive/103572/full.jpg"
         ]
       },
       "notes": "LPアーカイブ一覧から自動抽出した候補。採用前に人が確認する。"
     }
   ],
   "skippedCandidates": [
+    {
+      "title": "TVer採用サイト",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229269",
+      "captureUrl": "https://recruit.tver.co.jp/",
+      "lpArchivePostId": "229269",
+      "duplicate": {
+        "duplicateOf": "LP-0235",
+        "field": "captureUrl",
+        "value": "https://recruit.tver.co.jp/",
+        "reason": "existing candidate captureUrl"
+      }
+    },
+    {
+      "title": "Awarefy",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229261",
+      "captureUrl": "https://www.awarefy.com/app",
+      "lpArchivePostId": "229261",
+      "duplicate": {
+        "duplicateOf": "LP-0214",
+        "field": "captureUrl",
+        "value": "https://www.awarefy.com/app",
+        "reason": "intake reservation captureUrl"
+      }
+    },
     {
       "title": "秋をあそびつくそうSunshine City",
       "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229259",

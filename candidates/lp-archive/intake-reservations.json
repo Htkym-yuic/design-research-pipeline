@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T16:18:33.867Z",
+  "updatedAt": "2026-09-30T16:19:58.963Z",
   "mediaType": "LP",
   "sourceName": "LPアーカイブ",
   "notes": [
@@ -212,7 +212,25 @@
       "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229267",
       "lpArchivePostId": "229267",
       "reservedAt": "2026-09-29T16:18:33.867Z"
+    },
+    {
+      "id": "LP-0237",
+      "title": "物流",
+      "status": "reserved_daily_intake",
+      "captureUrl": "https://www.bluedge.co.jp/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229266",
+      "lpArchivePostId": "229266",
+      "reservedAt": "2026-09-30T16:19:58.963Z"
+    },
+    {
+      "id": "LP-0238",
+      "title": "口腔崩壊外来",
+      "status": "reserved_daily_intake",
+      "captureUrl": "https://next.houkai.jp/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229276",
+      "lpArchivePostId": "229276",
+      "reservedAt": "2026-09-30T16:19:58.963Z"
     }
   ],
-  "nextLpId": "LP-0237"
+  "nextLpId": "LP-0239"
 }

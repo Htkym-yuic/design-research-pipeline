@@ -1,14 +1,14 @@
 {
   "lp": {
     "prefix": "LP",
-    "existingMax": 236,
-    "nextNumber": 237,
+    "existingMax": 238,
+    "nextNumber": 239,
     "digits": 4,
     "sourceOfTruth": "Notion 01｜LPリサーチライブラリー + Dropbox/GitHub intake reservations",
     "lastReservation": {
-      "reservedAt": "2026-09-29T16:18:33.867Z",
-      "idStart": "LP-0235",
-      "idEnd": "LP-0236",
+      "reservedAt": "2026-09-30T16:19:58.963Z",
+      "idStart": "LP-0237",
+      "idEnd": "LP-0238",
       "candidateCount": 2,
       "sourceName": "LPアーカイブ",
       "outputPath": "candidates/lp-archive/candidates.json"
