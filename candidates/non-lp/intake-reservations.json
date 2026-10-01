@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T16:29:33.708Z",
+  "updatedAt": "2026-10-01T16:25:35.244Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -352,6 +352,66 @@
       "reservedAt": "2026-09-30T16:24:59.672Z"
     },
     {
+      "id": "BN-0031",
+      "title": "話し方トレーニングサービス_600 x 500のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/b096aa29473f4929ee0b0c72250e0d26.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64630",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/b096aa29473f4929ee0b0c72250e0d26.jpg.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-01T16:25:35.244Z"
+    },
+    {
+      "id": "BN-0032",
+      "title": "防災セット_1000 x 420のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/043a05750e4dd19c951d7ad030a0358f.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64627",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/043a05750e4dd19c951d7ad030a0358f.jpg.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-01T16:25:35.244Z"
+    },
+    {
+      "id": "BN-0033",
+      "title": "豚饅頭_1040 x 1040のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/79855b17da21fc094034ad409166cc09.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64623",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/79855b17da21fc094034ad409166cc09.jpg.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-01T16:25:35.244Z"
+    },
+    {
+      "id": "BN-0034",
+      "title": "オーガニック歯磨き粉_600 x 500のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/13ce22a2b8f62bdc9e9549cad6259a4d.png.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64620",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/13ce22a2b8f62bdc9e9549cad6259a4d.png.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-01T16:25:35.244Z"
+    },
+    {
+      "id": "BN-0035",
+      "title": "元気めし_840 x 260のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/7a80dbe6c2e4fd1550565f89795aa242.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64617",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/7a80dbe6c2e4fd1550565f89795aa242.jpg.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-01T16:25:35.244Z"
+    },
+    {
       "id": "CV-0001",
       "title": "Beige Aesthetic Photo Collage Portrait Instagram Post",
       "mediaType": "Canva",
@@ -681,6 +741,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-09-30T16:24:59.672Z"
+    },
+    {
+      "id": "CV-0029",
+      "title": "Maroon Beige and Black Modern Illustrated Lifestyle Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAG_xM34GX0/1/0/320w-B4Q-Vajvsvs.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAG_xM34GX0-maroon-beige-and-black-modern-illustrated-lifestyle-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAG_xM34GX0/1/0/320w-B4Q-Vajvsvs.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-01T16:25:35.244Z"
+    },
+    {
+      "id": "CV-0030",
+      "title": "Beige Neutral Polaroid Collage Happy Birthday Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAGukbmI6EI/1/0/320w-tjTBNbJn8MA.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAGukbmI6EI-beige-neutral-polaroid-collage-happy-birthday-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAGukbmI6EI/1/0/320w-tjTBNbJn8MA.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-01T16:25:35.244Z"
+    },
+    {
+      "id": "CV-0031",
+      "title": "Black White Minimalist Typographic Blogging Tips Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAGpKEYT1Io/1/0/320w-HvgyY3h8lpk.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAGpKEYT1Io-black-white-minimalist-typographic-blogging-tips-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAGpKEYT1Io/1/0/320w-HvgyY3h8lpk.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-01T16:25:35.244Z"
+    },
+    {
+      "id": "CV-0032",
+      "title": "Black White Minimalist Inspirational Summer Photo Collage Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAGmZhsXtZs/1/0/320w-g9WEJlBd_Lk.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAGmZhsXtZs-black-white-minimalist-inspirational-summer-photo-collage-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAGmZhsXtZs/1/0/320w-g9WEJlBd_Lk.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-01T16:25:35.244Z"
+    },
+    {
+      "id": "CV-0033",
+      "title": "Burgundy Minimalist Quote Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAG_x-on8MA/2/0/320w-Qsr2ZJPCqaw.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAG_x-on8MA-burgundy-minimalist-quote-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAG_x-on8MA/2/0/320w-Qsr2ZJPCqaw.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-01T16:25:35.244Z"
     },
     {
       "id": "GR-0001",
@@ -1031,6 +1151,54 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-09-30T16:24:59.672Z"
+    },
+    {
+      "id": "GR-0031",
+      "title": "お盆営業のお知らせ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Ffe40a4b686bf074b24e0258e07212ab4%2Ffe40a4b686bf074b24e0258e07212ab4-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30735",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Ffe40a4b686bf074b24e0258e07212ab4%2Ffe40a4b686bf074b24e0258e07212ab4-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-01T16:25:35.244Z"
+    },
+    {
+      "id": "GR-0032",
+      "title": "グレージュ背景のシンプルでスタイリッシュな日焼け止めのバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fc7df6fe446db3313dd07c685ce7116e0%2Fc7df6fe446db3313dd07c685ce7116e0-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20509",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fc7df6fe446db3313dd07c685ce7116e0%2Fc7df6fe446db3313dd07c685ce7116e0-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-01T16:25:35.244Z"
+    },
+    {
+      "id": "GR-0033",
+      "title": "グレー基調のミニマルな縦型デザイナー名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F2f4eab4ec55fba245e08f628dafcb9fa%2F2f4eab4ec55fba245e08f628dafcb9fa-400.webp&w=256&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-30837",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F2f4eab4ec55fba245e08f628dafcb9fa%2F2f4eab4ec55fba245e08f628dafcb9fa-400.webp&w=256&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-01T16:25:35.244Z"
+    },
+    {
+      "id": "GR-0034",
+      "title": "六角形のロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/52a3170dcb02e982555b318de1a1f896/52a3170dcb02e982555b318de1a1f896-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3090",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/52a3170dcb02e982555b318de1a1f896/52a3170dcb02e982555b318de1a1f896-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-01T16:25:35.244Z"
     },
     {
       "id": "ILAC-0001",
@@ -1514,6 +1682,30 @@
       "materialId": "PAT-0010",
       "authorProfileUrl": null,
       "reservedAt": "2026-09-30T16:24:59.672Z"
+    },
+    {
+      "id": "PAT-0011",
+      "title": "美和野らぐ個展｢心憎｣公式サイトに見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://www.rag-sinzo.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/sinzo/",
+      "imageUrl": null,
+      "materialId": "PAT-0011",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-01T16:25:35.244Z"
+    },
+    {
+      "id": "PAT-0012",
+      "title": "HERP Trust（ハープトラスト）に見るセクション内の役割集約",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Parts.）",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/04/herptrust_00009.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6764",
+      "imageUrl": null,
+      "materialId": "PAT-0012",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-01T16:25:35.244Z"
     },
     {
       "id": "PHAC-0001",
@@ -2265,6 +2457,66 @@
       "reservedAt": "2026-09-30T16:24:59.672Z"
     },
     {
+      "id": "PT-0031",
+      "title": "HERP Trust（ハープトラスト）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/04/herptrust_00009.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6764",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/04/herptrust_00009.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-01T16:25:35.244Z"
+    },
+    {
+      "id": "PT-0032",
+      "title": "レジュメイト",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/04/resume-mate_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6751",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/04/resume-mate_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-01T16:25:35.244Z"
+    },
+    {
+      "id": "PT-0033",
+      "title": "mcframe X",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/04/mcframe_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6742",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/04/mcframe_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-01T16:25:35.244Z"
+    },
+    {
+      "id": "PT-0034",
+      "title": "ビザスク",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/04/visasq_00006.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6728",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/04/visasq_00006.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-01T16:25:35.244Z"
+    },
+    {
+      "id": "PT-0035",
+      "title": "TANOMU",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/04/tanomu_00010.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6712",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/04/tanomu_00010.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-01T16:25:35.244Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -2403,6 +2655,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-09-30T16:24:59.672Z"
+    },
+    {
+      "id": "WB-0013",
+      "title": "美和野らぐ個展｢心憎｣公式サイト",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.rag-sinzo.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/sinzo/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/sinzo_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-01T16:25:35.244Z"
+    },
+    {
+      "id": "WB-0014",
+      "title": "大妻女子大学 受験生サイト",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.owu-style.otsuma.ac.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/owustyle/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/owustyle_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-01T16:25:35.244Z"
     }
   ]
 }
