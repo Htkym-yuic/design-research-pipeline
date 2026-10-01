@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T16:19:58.963Z",
+  "updatedAt": "2026-10-01T16:19:16.319Z",
   "mediaType": "LP",
   "sourceName": "LPアーカイブ",
   "notes": [
@@ -230,7 +230,25 @@
       "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229276",
       "lpArchivePostId": "229276",
       "reservedAt": "2026-09-30T16:19:58.963Z"
+    },
+    {
+      "id": "LP-0239",
+      "title": "MANY PEOPLE採用サイト",
+      "status": "reserved_daily_intake",
+      "captureUrl": "https://www.manypeople-k.com/recruit/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229274",
+      "lpArchivePostId": "229274",
+      "reservedAt": "2026-10-01T16:19:16.319Z"
+    },
+    {
+      "id": "LP-0240",
+      "title": "ステューピッド・ネバー・ダイズ",
+      "status": "reserved_daily_intake",
+      "captureUrl": "https://stupidneverdies.sega.com/ja/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229285",
+      "lpArchivePostId": "229285",
+      "reservedAt": "2026-10-01T16:19:16.319Z"
     }
   ],
-  "nextLpId": "LP-0239"
+  "nextLpId": "LP-0241"
 }

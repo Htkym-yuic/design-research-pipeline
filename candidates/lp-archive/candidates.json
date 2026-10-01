@@ -1,76 +1,83 @@
 {
-  "extractedAt": "2026-09-30T16:19:58.963Z",
+  "extractedAt": "2026-10-01T16:19:16.319Z",
   "sourceUrl": "https://rdlp.jp/lp-archive/",
   "sourceName": "LPアーカイブ",
   "mediaType": "LP",
   "requestedLimit": 2,
   "scannedLimit": 40,
   "candidateCount": 2,
-  "skippedDuplicateCount": 5,
-  "idStart": "LP-0237",
-  "idEnd": "LP-0238",
+  "skippedDuplicateCount": 7,
+  "idStart": "LP-0239",
+  "idEnd": "LP-0240",
   "candidates": [
     {
-      "id": "LP-0237",
+      "id": "LP-0239",
       "status": "candidate",
       "mediaType": "LP",
-      "title": "物流",
-      "captureUrl": "https://www.bluedge.co.jp/",
+      "title": "MANY PEOPLE採用サイト",
+      "captureUrl": "https://www.manypeople-k.com/recruit/",
       "captureMode": "target_site",
       "sourceType": "Reference Site",
       "sourceName": "LPアーカイブ",
       "sourceUrl": "https://rdlp.jp/lp-archive/",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229266",
-      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103553/200x400.jpg",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229274",
+      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103567/200x400.jpg",
       "metadata": {
-        "lpArchivePostId": "229266",
-        "company": "BLUEDGE合同会社",
-        "category": "企業・会社・お店",
+        "lpArchivePostId": "229274",
+        "company": "MANY PEOPLE株式会社",
+        "category": "中途採用",
         "tasteTag": "シンプル系",
         "favoriteCount": "1",
-        "thumbnailAlt": "物流のLPデザイン（企業・会社・お店／ブルー系／シンプル系）PC版"
+        "thumbnailAlt": "MANY PEOPLE採用サイトのLPデザイン（中途採用／オレンジ系／シンプル系）PC版"
       },
       "archiveAssets": {
         "pcImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103553/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103567/full.jpg.webp"
         ],
-        "spImageUrls": [],
+        "spImageUrls": [
+          "https://rdlp.jp/image/lp-archive/103568/full_1.jpg.webp",
+          "https://rdlp.jp/image/lp-archive/103568/full_2.jpg.webp"
+        ],
         "allImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103553/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103567/full.jpg.webp",
+          "https://rdlp.jp/image/lp-archive/103568/full_1.jpg.webp",
+          "https://rdlp.jp/image/lp-archive/103568/full_2.jpg.webp"
         ]
       },
       "notes": "LPアーカイブ一覧から自動抽出した候補。採用前に人が確認する。"
     },
     {
-      "id": "LP-0238",
+      "id": "LP-0240",
       "status": "candidate",
       "mediaType": "LP",
-      "title": "口腔崩壊外来",
-      "captureUrl": "https://next.houkai.jp/",
+      "title": "ステューピッド・ネバー・ダイズ",
+      "captureUrl": "https://stupidneverdies.sega.com/ja/",
       "captureMode": "target_site",
       "sourceType": "Reference Site",
       "sourceName": "LPアーカイブ",
       "sourceUrl": "https://rdlp.jp/lp-archive/",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229276",
-      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103571/200x400.jpg",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229285",
+      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103591/200x400.jpg",
       "metadata": {
-        "lpArchivePostId": "229276",
-        "company": "よしどめ歯科グループ",
-        "category": "病院・整体・マッサージ",
-        "tasteTag": "爽やか系",
+        "lpArchivePostId": "229285",
+        "company": "株式会社GPTRACK50",
+        "category": "ゲームソフト・機器",
+        "tasteTag": "マンガ・イラスト",
         "favoriteCount": "0",
-        "thumbnailAlt": "口腔崩壊外来のLPデザイン（病院・整体・マッサージ／ブルー系／爽やか系）PC版"
+        "thumbnailAlt": "ステューピッド・ネバー・ダイズのLPデザイン（ゲームソフト・機器／カラフル系／マンガ・イラスト系）PC版"
       },
       "archiveAssets": {
         "pcImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103571/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103591/full.jpg.webp"
         ],
         "spImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103572/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103592/full_1.jpg.webp",
+          "https://rdlp.jp/image/lp-archive/103592/full_2.jpg.webp"
         ],
         "allImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103571/full.jpg",
-          "https://rdlp.jp/image/lp-archive/103572/full.jpg"
+          "https://rdlp.jp/image/lp-archive/103591/full.jpg.webp",
+          "https://rdlp.jp/image/lp-archive/103592/full_1.jpg.webp",
+          "https://rdlp.jp/image/lp-archive/103592/full_2.jpg.webp"
         ]
       },
       "notes": "LPアーカイブ一覧から自動抽出した候補。採用前に人が確認する。"
@@ -86,7 +93,7 @@
         "duplicateOf": "LP-0235",
         "field": "captureUrl",
         "value": "https://recruit.tver.co.jp/",
-        "reason": "existing candidate captureUrl"
+        "reason": "previously skipped duplicate captureUrl"
       }
     },
     {
@@ -98,7 +105,31 @@
         "duplicateOf": "LP-0214",
         "field": "captureUrl",
         "value": "https://www.awarefy.com/app",
-        "reason": "intake reservation captureUrl"
+        "reason": "previously skipped duplicate captureUrl"
+      }
+    },
+    {
+      "title": "口腔崩壊外来",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229276",
+      "captureUrl": "https://next.houkai.jp/",
+      "lpArchivePostId": "229276",
+      "duplicate": {
+        "duplicateOf": "LP-0238",
+        "field": "captureUrl",
+        "value": "https://next.houkai.jp/",
+        "reason": "existing candidate captureUrl"
+      }
+    },
+    {
+      "title": "物流",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229266",
+      "captureUrl": "https://www.bluedge.co.jp/",
+      "lpArchivePostId": "229266",
+      "duplicate": {
+        "duplicateOf": "LP-0237",
+        "field": "captureUrl",
+        "value": "https://www.bluedge.co.jp/",
+        "reason": "existing candidate captureUrl"
       }
     },
     {
