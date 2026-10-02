@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T16:29:35.666Z",
+  "updatedAt": "2026-10-02T16:25:47.224Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -412,6 +412,42 @@
       "reservedAt": "2026-10-01T16:25:35.244Z"
     },
     {
+      "id": "BN-0036",
+      "title": "建設転職_600 x 500のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/89a757f11f1ff5b1205bf763021e91da.png.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64614",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/89a757f11f1ff5b1205bf763021e91da.png.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-02T16:25:47.224Z"
+    },
+    {
+      "id": "BN-0037",
+      "title": "遊び放題パス_1024 x 575のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/a578b02c3bd5b45f3ca7867f038e2b41.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64611",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/a578b02c3bd5b45f3ca7867f038e2b41.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-02T16:25:47.224Z"
+    },
+    {
+      "id": "BN-0038",
+      "title": "車検サービス_600 x 500のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/e8a1e373229207eeb74029ee5bc753b3.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64607",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/e8a1e373229207eeb74029ee5bc753b3.jpg.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-02T16:25:47.224Z"
+    },
+    {
       "id": "CV-0001",
       "title": "Beige Aesthetic Photo Collage Portrait Instagram Post",
       "mediaType": "Canva",
@@ -801,6 +837,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-01T16:25:35.244Z"
+    },
+    {
+      "id": "CV-0034",
+      "title": "Neutral Modern Photo Gallery Lifestyle Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAHPR6ZbR1c/1/0/320w-0QeRn5jPs6s.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAHPR6ZbR1c-neutral-modern-photo-gallery-lifestyle-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAHPR6ZbR1c/1/0/320w-0QeRn5jPs6s.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-02T16:25:47.224Z"
+    },
+    {
+      "id": "CV-0035",
+      "title": "White and Beige Torn Paper Aesthetic Photo Collage Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAGxXk0qsyE/1/0/320w-YJPJ1u5lMoE.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAGxXk0qsyE-white-and-beige-torn-paper-aesthetic-photo-collage-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAGxXk0qsyE/1/0/320w-YJPJ1u5lMoE.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-02T16:25:47.224Z"
+    },
+    {
+      "id": "CV-0036",
+      "title": "Black and White Modern Fashion Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAG8CFVxgiM/1/0/320w-kgkFgm6jmW8.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAG8CFVxgiM-black-and-white-modern-fashion-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAG8CFVxgiM/1/0/320w-kgkFgm6jmW8.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-02T16:25:47.224Z"
+    },
+    {
+      "id": "CV-0037",
+      "title": "Black White and Green Minimalist Simple Fashion Photo Collage Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAG_HK3rThE/2/0/320w-sqm_H7laiWE.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAG_HK3rThE-black-white-and-green-minimalist-simple-fashion-photo-collage-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAG_HK3rThE/2/0/320w-sqm_H7laiWE.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-02T16:25:47.224Z"
+    },
+    {
+      "id": "CV-0038",
+      "title": "Minimalist Beauty Photo Collage Instagram Portrait Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAGKnifKAVI/1/0/320w-EvHn9MKYemk.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAGKnifKAVI-minimalist-beauty-photo-collage-instagram-portrait-post/",
+      "imageUrl": "https://template.canva.com/EAGKnifKAVI/1/0/320w-EvHn9MKYemk.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-02T16:25:47.224Z"
     },
     {
       "id": "GR-0001",
@@ -1199,6 +1295,54 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-01T16:25:35.244Z"
+    },
+    {
+      "id": "GR-0035",
+      "title": "夏の花火大会のチラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Ff045abd7b849a0aded98f7d22c920ba3%2Ff045abd7b849a0aded98f7d22c920ba3-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30344",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Ff045abd7b849a0aded98f7d22c920ba3%2Ff045abd7b849a0aded98f7d22c920ba3-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-02T16:25:47.224Z"
+    },
+    {
+      "id": "GR-0036",
+      "title": "赤い背景の白抜き文字が目立つバレンタインバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F1aed18419a00917841f95e7432843a8b%2F1aed18419a00917841f95e7432843a8b-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20322",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F1aed18419a00917841f95e7432843a8b%2F1aed18419a00917841f95e7432843a8b-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-02T16:25:47.224Z"
+    },
+    {
+      "id": "GR-0037",
+      "title": "水面モチーフの爽やかなデザイナー名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F3e66f2f570606ccdf2f99ddf05567b68%2F3e66f2f570606ccdf2f99ddf05567b68-400.webp&w=256&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-30836",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F3e66f2f570606ccdf2f99ddf05567b68%2F3e66f2f570606ccdf2f99ddf05567b68-400.webp&w=256&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-02T16:25:47.224Z"
+    },
+    {
+      "id": "GR-0038",
+      "title": "直線と曲線の組み合わせのロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/fe2b6a780e40799b7530a674ef1c4002/fe2b6a780e40799b7530a674ef1c4002-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3083",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/fe2b6a780e40799b7530a674ef1c4002/fe2b6a780e40799b7530a674ef1c4002-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-02T16:25:47.224Z"
     },
     {
       "id": "ILAC-0001",
@@ -1826,6 +1970,30 @@
       "materialId": "PAT-0012",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-01T16:25:35.244Z"
+    },
+    {
+      "id": "PAT-0013",
+      "title": "HRogチャートに見るセクション内の役割集約",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Parts.）",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/04/chart_02.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6696",
+      "imageUrl": null,
+      "materialId": "PAT-0013",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-02T16:25:47.224Z"
+    },
+    {
+      "id": "PAT-0014",
+      "title": "夏の花火大会のチラシに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Ff045abd7b849a0aded98f7d22c920ba3%2Ff045abd7b849a0aded98f7d22c920ba3-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30344",
+      "imageUrl": null,
+      "materialId": "PAT-0014",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-02T16:25:47.224Z"
     },
     {
       "id": "PHAC-0001",
@@ -2757,6 +2925,66 @@
       "reservedAt": "2026-10-01T16:25:35.244Z"
     },
     {
+      "id": "PT-0036",
+      "title": "HRogチャート",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/04/chart_02.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6696",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/04/chart_02.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-02T16:25:47.224Z"
+    },
+    {
+      "id": "PT-0037",
+      "title": "Vakel by LARGO",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/04/vakel_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6671",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/04/vakel_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-02T16:25:47.224Z"
+    },
+    {
+      "id": "PT-0038",
+      "title": "ソーシャルPLUS",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/04/socialplus_00007.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6669",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/04/socialplus_00007.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-02T16:25:47.224Z"
+    },
+    {
+      "id": "PT-0039",
+      "title": "Chromateach（クロマティーチ）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/03/nisshodenkiseigyo_01.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6651",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/03/nisshodenkiseigyo_01.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-02T16:25:47.224Z"
+    },
+    {
+      "id": "PT-0040",
+      "title": "ヨリソイ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/03/yado-riki_01.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6638",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/03/yado-riki_01.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-02T16:25:47.224Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -2919,6 +3147,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-01T16:25:35.244Z"
+    },
+    {
+      "id": "WB-0015",
+      "title": "採用サイト | 越前信用金庫",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.shinkin.co.jp/echishin/recruit/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/echishin-recruit/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/echishinrecruit_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-02T16:25:47.224Z"
+    },
+    {
+      "id": "WB-0016",
+      "title": "越前信用金庫 えちしん",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.shinkin.co.jp/echishin/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/echishin/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/echishin_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-02T16:25:47.224Z"
     }
   ]
 }
