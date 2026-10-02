@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T16:19:16.319Z",
+  "updatedAt": "2026-10-02T16:19:52.058Z",
   "mediaType": "LP",
   "sourceName": "LPアーカイブ",
   "notes": [
@@ -248,7 +248,25 @@
       "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229285",
       "lpArchivePostId": "229285",
       "reservedAt": "2026-10-01T16:19:16.319Z"
+    },
+    {
+      "id": "LP-0241",
+      "title": "アートを巡る下呂温泉の旅",
+      "status": "reserved_daily_intake",
+      "captureUrl": "https://travel.rakuten.co.jp/movement/gifu/202608_gero/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229272",
+      "lpArchivePostId": "229272",
+      "reservedAt": "2026-10-02T16:19:52.058Z"
+    },
+    {
+      "id": "LP-0242",
+      "title": "type",
+      "status": "reserved_daily_intake",
+      "captureUrl": "https://type.jp/s/campaign92/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229293",
+      "lpArchivePostId": "229293",
+      "reservedAt": "2026-10-02T16:19:52.058Z"
     }
   ],
-  "nextLpId": "LP-0241"
+  "nextLpId": "LP-0243"
 }

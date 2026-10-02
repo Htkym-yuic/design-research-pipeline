@@ -1,101 +1,87 @@
 {
-  "extractedAt": "2026-10-01T16:19:16.319Z",
+  "extractedAt": "2026-10-02T16:19:52.058Z",
   "sourceUrl": "https://rdlp.jp/lp-archive/",
   "sourceName": "LPアーカイブ",
   "mediaType": "LP",
   "requestedLimit": 2,
   "scannedLimit": 40,
   "candidateCount": 2,
-  "skippedDuplicateCount": 7,
-  "idStart": "LP-0239",
-  "idEnd": "LP-0240",
+  "skippedDuplicateCount": 9,
+  "idStart": "LP-0241",
+  "idEnd": "LP-0242",
   "candidates": [
     {
-      "id": "LP-0239",
+      "id": "LP-0241",
       "status": "candidate",
       "mediaType": "LP",
-      "title": "MANY PEOPLE採用サイト",
-      "captureUrl": "https://www.manypeople-k.com/recruit/",
+      "title": "アートを巡る下呂温泉の旅",
+      "captureUrl": "https://travel.rakuten.co.jp/movement/gifu/202608_gero/",
       "captureMode": "target_site",
       "sourceType": "Reference Site",
       "sourceName": "LPアーカイブ",
       "sourceUrl": "https://rdlp.jp/lp-archive/",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229274",
-      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103567/200x400.jpg",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229272",
+      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103563/200x400.jpg",
       "metadata": {
-        "lpArchivePostId": "229274",
-        "company": "MANY PEOPLE株式会社",
-        "category": "中途採用",
+        "lpArchivePostId": "229272",
+        "company": "一般社団法人下呂温泉観光協会",
+        "category": "国内旅行・海外旅行",
         "tasteTag": "シンプル系",
         "favoriteCount": "1",
-        "thumbnailAlt": "MANY PEOPLE採用サイトのLPデザイン（中途採用／オレンジ系／シンプル系）PC版"
+        "thumbnailAlt": "アートを巡る下呂温泉の旅のLPデザイン（国内旅行・海外旅行／グリーン系／シンプル系）PC版"
       },
       "archiveAssets": {
         "pcImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103567/full.jpg.webp"
+          "https://rdlp.jp/image/lp-archive/103563/full.jpg.webp"
         ],
         "spImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103568/full_1.jpg.webp",
-          "https://rdlp.jp/image/lp-archive/103568/full_2.jpg.webp"
+          "https://rdlp.jp/image/lp-archive/103564/full_1.jpg.webp",
+          "https://rdlp.jp/image/lp-archive/103564/full_2.jpg.webp"
         ],
         "allImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103567/full.jpg.webp",
-          "https://rdlp.jp/image/lp-archive/103568/full_1.jpg.webp",
-          "https://rdlp.jp/image/lp-archive/103568/full_2.jpg.webp"
+          "https://rdlp.jp/image/lp-archive/103563/full.jpg.webp",
+          "https://rdlp.jp/image/lp-archive/103564/full_1.jpg.webp",
+          "https://rdlp.jp/image/lp-archive/103564/full_2.jpg.webp"
         ]
       },
       "notes": "LPアーカイブ一覧から自動抽出した候補。採用前に人が確認する。"
     },
     {
-      "id": "LP-0240",
+      "id": "LP-0242",
       "status": "candidate",
       "mediaType": "LP",
-      "title": "ステューピッド・ネバー・ダイズ",
-      "captureUrl": "https://stupidneverdies.sega.com/ja/",
+      "title": "type",
+      "captureUrl": "https://type.jp/s/campaign92/",
       "captureMode": "target_site",
       "sourceType": "Reference Site",
       "sourceName": "LPアーカイブ",
       "sourceUrl": "https://rdlp.jp/lp-archive/",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229285",
-      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103591/200x400.jpg",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229293",
+      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103608/200x400.jpg",
       "metadata": {
-        "lpArchivePostId": "229285",
-        "company": "株式会社GPTRACK50",
-        "category": "ゲームソフト・機器",
+        "lpArchivePostId": "229293",
+        "company": "株式会社キャリアデザインセンター",
+        "category": "中途採用",
         "tasteTag": "マンガ・イラスト",
         "favoriteCount": "0",
-        "thumbnailAlt": "ステューピッド・ネバー・ダイズのLPデザイン（ゲームソフト・機器／カラフル系／マンガ・イラスト系）PC版"
+        "thumbnailAlt": "typeのLPデザイン（中途採用／イエロー系／マンガ・イラスト系）PC版"
       },
       "archiveAssets": {
         "pcImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103591/full.jpg.webp"
+          "https://rdlp.jp/image/lp-archive/103608/full.jpg.webp"
         ],
         "spImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103592/full_1.jpg.webp",
-          "https://rdlp.jp/image/lp-archive/103592/full_2.jpg.webp"
+          "https://rdlp.jp/image/lp-archive/103609/full.jpg.webp"
         ],
         "allImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103591/full.jpg.webp",
-          "https://rdlp.jp/image/lp-archive/103592/full_1.jpg.webp",
-          "https://rdlp.jp/image/lp-archive/103592/full_2.jpg.webp"
+          "https://rdlp.jp/image/lp-archive/103608/full.jpg.webp",
+          "https://rdlp.jp/image/lp-archive/103609/full.jpg.webp"
         ]
       },
       "notes": "LPアーカイブ一覧から自動抽出した候補。採用前に人が確認する。"
     }
   ],
   "skippedCandidates": [
-    {
-      "title": "TVer採用サイト",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229269",
-      "captureUrl": "https://recruit.tver.co.jp/",
-      "lpArchivePostId": "229269",
-      "duplicate": {
-        "duplicateOf": "LP-0235",
-        "field": "captureUrl",
-        "value": "https://recruit.tver.co.jp/",
-        "reason": "previously skipped duplicate captureUrl"
-      }
-    },
     {
       "title": "Awarefy",
       "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229261",
@@ -109,6 +95,54 @@
       }
     },
     {
+      "title": "MANY PEOPLE採用サイト",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229274",
+      "captureUrl": "https://www.manypeople-k.com/recruit/",
+      "lpArchivePostId": "229274",
+      "duplicate": {
+        "duplicateOf": "LP-0239",
+        "field": "captureUrl",
+        "value": "https://www.manypeople-k.com/recruit/",
+        "reason": "existing candidate captureUrl"
+      }
+    },
+    {
+      "title": "TVer採用サイト",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229269",
+      "captureUrl": "https://recruit.tver.co.jp/",
+      "lpArchivePostId": "229269",
+      "duplicate": {
+        "duplicateOf": "LP-0235",
+        "field": "captureUrl",
+        "value": "https://recruit.tver.co.jp/",
+        "reason": "previously skipped duplicate captureUrl"
+      }
+    },
+    {
+      "title": "タンブルウィード オールスター THE LAST",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229256",
+      "captureUrl": "https://rdlp.jp/archives/otherdesign/lp/229256",
+      "lpArchivePostId": "229256",
+      "duplicate": {
+        "duplicateOf": "LP-0218",
+        "field": "captureUrl",
+        "value": "https://rdlp.jp/archives/otherdesign/lp/229256",
+        "reason": "previously skipped duplicate sourceDetailUrl"
+      }
+    },
+    {
+      "title": "ステューピッド・ネバー・ダイズ",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229285",
+      "captureUrl": "https://stupidneverdies.sega.com/ja/",
+      "lpArchivePostId": "229285",
+      "duplicate": {
+        "duplicateOf": "LP-0240",
+        "field": "captureUrl",
+        "value": "https://stupidneverdies.sega.com/ja/",
+        "reason": "existing candidate captureUrl"
+      }
+    },
+    {
       "title": "口腔崩壊外来",
       "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229276",
       "captureUrl": "https://next.houkai.jp/",
@@ -117,7 +151,7 @@
         "duplicateOf": "LP-0238",
         "field": "captureUrl",
         "value": "https://next.houkai.jp/",
-        "reason": "existing candidate captureUrl"
+        "reason": "previously skipped duplicate captureUrl"
       }
     },
     {
@@ -129,7 +163,7 @@
         "duplicateOf": "LP-0237",
         "field": "captureUrl",
         "value": "https://www.bluedge.co.jp/",
-        "reason": "existing candidate captureUrl"
+        "reason": "previously skipped duplicate captureUrl"
       }
     },
     {
@@ -141,18 +175,6 @@
         "duplicateOf": "LP-0222",
         "field": "captureUrl",
         "value": "https://sunshinecity.jp/file/official/autumn/",
-        "reason": "previously skipped duplicate captureUrl"
-      }
-    },
-    {
-      "title": "タンブルウィード オールスター THE LAST",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229256",
-      "captureUrl": "https://cont.tumbleweed.jp/allstar26/",
-      "lpArchivePostId": "229256",
-      "duplicate": {
-        "duplicateOf": "LP-0218",
-        "field": "captureUrl",
-        "value": "https://cont.tumbleweed.jp/allstar26/",
         "reason": "previously skipped duplicate captureUrl"
       }
     },
