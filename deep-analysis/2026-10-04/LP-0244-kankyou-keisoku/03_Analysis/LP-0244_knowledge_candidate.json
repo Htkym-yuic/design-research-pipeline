@@ -1,0 +1,216 @@
+{
+  "id": "LP-0244",
+  "mediaType": "LP",
+  "media_type": "LP",
+  "title": "環境計測株式会社 コーポレートサイト",
+  "brand": "環境計測株式会社",
+  "captureUrl": "https://www.kankyou-keisoku.co.jp/",
+  "sourceUrl": "https://rdlp.jp/lp-archive/",
+  "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229295",
+  "industry_tags": [
+    "環境調査・計測・保守"
+  ],
+  "product_tags": [
+    "LP",
+    "環境計測、環境保全、デジタル・AI/IoTソリューション"
+  ],
+  "color_tags": [
+    "#FFFFFF",
+    "#EAF9F7",
+    "#1D5C64",
+    "#22B8B5",
+    "#8FEA59",
+    "#00CBE5",
+    "#C8ECE8"
+  ],
+  "layout_tags": [
+    "カタログ型",
+    "PC/SP比較",
+    "詳細分析済み"
+  ],
+  "primary_appeal": "環境計測から保守、デジタル、AI/IoTまでを一社で支える専門性と実績",
+  "controlled_vocabulary": {
+    "appealPrimary": "resultProof",
+    "proofTypes": [
+      "caseStudy",
+      "achievementNumber"
+    ],
+    "offerTypes": [],
+    "ctaTypes": [
+      "contact",
+      "phoneCall"
+    ],
+    "persuasionSequence": [
+      "つかみ",
+      "ブランド思想",
+      "特徴・スペック",
+      "バリエーション選択",
+      "証拠",
+      "権威づけ",
+      "行動喚起",
+      "クロージング"
+    ],
+    "layoutArchetype": "gridCatalog"
+  },
+  "funnel_structure": [
+    {
+      "step": 1,
+      "role": "ファーストビュー",
+      "pattern": "人々の暮らしと地球の未来のために",
+      "description": "複雑な環境事業を親しみやすく提示"
+    },
+    {
+      "step": 2,
+      "role": "お知らせ",
+      "pattern": "お知らせ",
+      "description": "更新性と企業活動を示す"
+    },
+    {
+      "step": 3,
+      "role": "使命・サービス概要",
+      "pattern": "健康と明るい未来を創造する環境保全のスペシャリスト",
+      "description": "理念からサービス理解へ橋渡しする"
+    },
+    {
+      "step": 4,
+      "role": "サービス・目的別検索",
+      "pattern": "サービス／目的からサービスを探す",
+      "description": "専門サービスを画像と目的の二経路で探せる"
+    },
+    {
+      "step": 5,
+      "role": "事例・実績",
+      "pattern": "事例・実績",
+      "description": "抽象的サービスを具体例で証拠化する"
+    },
+    {
+      "step": 6,
+      "role": "企業情報・採用",
+      "pattern": "企業情報／Recruit",
+      "description": "発注者と求職者の二対象へ信頼を補強"
+    },
+    {
+      "step": 7,
+      "role": "問い合わせ・フッター",
+      "pattern": "サービスに関するご質問やご依頼は",
+      "description": "相談方法を二択で提示する"
+    }
+  ],
+  "section_patterns": [
+    {
+      "id": "C01",
+      "source_section": "S01",
+      "name": "街のアイソメ図FV",
+      "role": "FV/brand",
+      "reusable_structure": "複雑なB2B事業を一枚で俯瞰させる型",
+      "replace_required": [
+        "企業ロゴ",
+        "街イラスト",
+        "固有コピー",
+        "動画"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C02",
+      "source_section": "S04",
+      "name": "サービス写真4カード",
+      "role": "service cards",
+      "reusable_structure": "専門サービスを視覚的に分類する型",
+      "replace_required": [
+        "作業写真",
+        "サービス名",
+        "固有説明"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C03",
+      "source_section": "S04",
+      "name": "目的別アイコン検索",
+      "role": "navigation",
+      "reusable_structure": "ユーザー課題から専門サービスへ案内する型",
+      "replace_required": [
+        "アイコン",
+        "目的語",
+        "リンク先"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C04",
+      "source_section": "S07",
+      "name": "フォーム・電話二択CTA",
+      "role": "CTA",
+      "reusable_structure": "B2B相談方法を明快に分岐する型",
+      "replace_required": [
+        "電話番号",
+        "会社名",
+        "背景写真"
+      ],
+      "rights_status": "reference_only"
+    }
+  ],
+  "reusable_principles": [
+    "抽象的な環境事業を街のアイソメ図で直感化する",
+    "サービス起点と目的起点の二つの検索導線を用意する",
+    "事例、企業情報、採用、問い合わせまでコーポレート用途を一画面に収める"
+  ],
+  "improvement_priorities": [
+    {
+      "priority": "P0",
+      "issue": "専門性の証拠",
+      "change": "対応年数、資格、案件数、対応地域をFV直下へ追加",
+      "metric": "問い合わせ適合率"
+    },
+    {
+      "priority": "P1",
+      "issue": "サービス比較",
+      "change": "課題、成果物、期間、対象施設の比較表を追加",
+      "metric": "詳細遷移率"
+    },
+    {
+      "priority": "P2",
+      "issue": "事例の具体性",
+      "change": "課題、手法、結果をカード内に追加",
+      "metric": "事例閲覧率"
+    }
+  ],
+  "rights_excluded": [
+    "ロゴ",
+    "人物・施設・商品写真",
+    "固有イラスト",
+    "固有コピー",
+    "実績数値",
+    "価格・保証条件"
+  ],
+  "unconfirmed": [
+    "元metadata.jsonの撮影環境",
+    "DOM・リンク・フォーム動作",
+    "細字条件",
+    "素材ライセンス"
+  ],
+  "asset_status": {
+    "pc_full": {
+      "width": 1210,
+      "height": 7654,
+      "status": "verified"
+    },
+    "sp_full": {
+      "width": 375,
+      "height": 7419,
+      "status": "verified"
+    },
+    "section_slices": {
+      "count": 14,
+      "status": "verified"
+    },
+    "repository_crosscheck": "passed_with_0_warnings"
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "knowledge_path": "knowledge/lp/LP-0244.json",
+    "generated_at": "2026-10-04",
+    "actual_cbs_import": "not_synced"
+  }
+}

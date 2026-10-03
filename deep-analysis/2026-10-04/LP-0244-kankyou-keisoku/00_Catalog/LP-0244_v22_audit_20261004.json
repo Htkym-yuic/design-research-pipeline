@@ -1,0 +1,56 @@
+{
+  "lp_id": "LP-0244",
+  "analysis_version": "v2.2",
+  "run_id": "RUN-20261004-WEEKLY-DEEP-LP-0244",
+  "checked_at": "2026-10-04",
+  "selected_for_deep_analysis": true,
+  "source": {
+    "official_url": "https://www.kankyou-keisoku.co.jp/",
+    "archive_detail_url": "https://rdlp.jp/archives/otherdesign/lp/229295",
+    "original_metadata_status": "empty",
+    "failure_reason": "metadata_json_empty"
+  },
+  "assets": {
+    "pc_full": {
+      "width": 1210,
+      "height": 7654,
+      "verified": true
+    },
+    "sp_full": {
+      "width": 375,
+      "height": 7419,
+      "verified": true
+    },
+    "section_slices_pc": 7,
+    "section_slices_sp": 7,
+    "notion_images": 6
+  },
+  "validation": {
+    "chapters_1_to_29": "Yes",
+    "section_fields": "Yes",
+    "chapter_3_pixel_ranges": "Yes",
+    "chapter_5_and_18_sequence": "Yes",
+    "chapter_18_archetype": "Yes",
+    "chapter_12_and_20_role_hex": "Yes",
+    "chapter_19_transfer_cases": "Yes",
+    "chapter_26_pixel_ranges": "Yes",
+    "chapter_15_and_26_candidate_parity": "Yes",
+    "chapter_1_cv_label": "Yes",
+    "chapter_6_awareness_label": "Yes",
+    "chapter_5_appeal_label": "Yes",
+    "chapter_26_range_sanity": "Yes",
+    "repository_crosscheck": "passed_with_0_warnings",
+    "knowledge_candidate": "passed_with_0_warnings"
+  },
+  "notion": {
+    "chapter_count": 29,
+    "image_count": 6,
+    "table_blocks_present": true,
+    "status": "verified"
+  },
+  "cbs": {
+    "candidate_json_generated": true,
+    "production_sync": "not_synced",
+    "approval_required": true
+  }
+}

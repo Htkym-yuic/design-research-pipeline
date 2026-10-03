@@ -4,3 +4,9 @@ playwright-report/
 test-results/
 .env
 .DS_Store
+
+# Generated LP imagery is stored in Dropbox; keep only analysis and audit data in Git.
+deep-analysis/**/01_Normal_Images/
+deep-analysis/**/02_Notion_Images/
+deep-analysis/**/pc_sections/
+deep-analysis/**/sp_sections/

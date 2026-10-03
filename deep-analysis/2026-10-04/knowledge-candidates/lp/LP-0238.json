@@ -1,0 +1,237 @@
+{
+  "id": "LP-0238",
+  "mediaType": "LP",
+  "media_type": "LP",
+  "title": "口腔崩壊外来 NEXT",
+  "brand": "よしどめ歯科グループ",
+  "captureUrl": "https://next.houkai.jp/",
+  "sourceUrl": "https://rdlp.jp/lp-archive/",
+  "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229276",
+  "industry_tags": [
+    "歯科医療・口腔ケア"
+  ],
+  "product_tags": [
+    "LP",
+    "口腔崩壊を包括的に診る歯科外来"
+  ],
+  "color_tags": [
+    "#FFFFFF",
+    "#EAF7FC",
+    "#465568",
+    "#43B8D6",
+    "#F2D548",
+    "#006FBE",
+    "#BBDDEA"
+  ],
+  "layout_tags": [
+    "長尺",
+    "PC/SP比較",
+    "詳細分析済み"
+  ],
+  "primary_appeal": "AIと専門チームによる包括診断で、痛みだけでなく生活の再建まで伴走する",
+  "controlled_vocabulary": {
+    "appealPrimary": "supportService",
+    "proofTypes": [
+      "expertEndorsement",
+      "caseStudy"
+    ],
+    "offerTypes": [
+      "freeDiagnosis"
+    ],
+    "ctaTypes": [
+      "bookReservation",
+      "contact"
+    ],
+    "persuasionSequence": [
+      "つかみ",
+      "共感",
+      "問題提起",
+      "解決策の提示",
+      "仕組み・根拠",
+      "特徴・スペック",
+      "権威づけ",
+      "使用証拠",
+      "反論処理",
+      "よくある質問",
+      "オファー",
+      "行動喚起",
+      "クロージング"
+    ],
+    "layoutArchetype": "longFormScroll"
+  },
+  "funnel_structure": [
+    {
+      "step": 1,
+      "role": "ファーストビュー",
+      "pattern": "今ある痛みから、10年後の未来を診る。",
+      "description": "不安を未来志向へ転換する"
+    },
+    {
+      "step": 2,
+      "role": "悩み・放置理由への共感",
+      "pattern": "こんな悩みはありませんか？",
+      "description": "恥や不安を言語化し相談の許可を与える"
+    },
+    {
+      "step": 3,
+      "role": "口腔崩壊外来の定義",
+      "pattern": "痛みを治すから、口の未来を診る。",
+      "description": "単発治療でない価値を定義する"
+    },
+    {
+      "step": 4,
+      "role": "診断・治療アプローチ",
+      "pattern": "トータルプロデュースで口の未来を支える",
+      "description": "複雑な医療を段階化して理解させる"
+    },
+    {
+      "step": 5,
+      "role": "AIと専門チーム",
+      "pattern": "AIについて／専門家チーム",
+      "description": "技術と人の両輪で信頼を作る"
+    },
+    {
+      "step": 6,
+      "role": "グループ実績・連携",
+      "pattern": "患者さんにとって、何が最善かを考える",
+      "description": "継続治療を支える規模を示す"
+    },
+    {
+      "step": 7,
+      "role": "治療内容と費用理解",
+      "pattern": "治療の流れ／診療内容",
+      "description": "受診後の見通しを作る"
+    },
+    {
+      "step": 8,
+      "role": "FAQ・不安解消",
+      "pattern": "よくあるご質問",
+      "description": "費用・痛み・期間の反論を処理する"
+    },
+    {
+      "step": 9,
+      "role": "未来訴求・予約・医院一覧",
+      "pattern": "痛いを治すから、口の未来を診る。",
+      "description": "希望を再提示して予約へ着地する"
+    }
+  ],
+  "section_patterns": [
+    {
+      "id": "C01",
+      "source_section": "S01",
+      "name": "未来訴求型の医療FV",
+      "role": "FV/empathy",
+      "reusable_structure": "不安を責めず未来へ向ける医療訴求として有用",
+      "replace_required": [
+        "人物写真",
+        "医療表現",
+        "ブランド",
+        "固有コピー"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C02",
+      "source_section": "S02",
+      "name": "悩み・心理障壁カード",
+      "role": "problem/empathy",
+      "reusable_structure": "症状と受診障壁を同時に可視化できる",
+      "replace_required": [
+        "人物写真",
+        "症状文言",
+        "固有アイコン"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C03",
+      "source_section": "S05",
+      "name": "AI＋専門家チーム説明",
+      "role": "mechanism/authority",
+      "reusable_structure": "技術と人的支援の両輪を説明する型",
+      "replace_required": [
+        "医師写真",
+        "AI名称",
+        "実績",
+        "固有図版"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C04",
+      "source_section": "S09",
+      "name": "希望訴求から予約へのクロージング",
+      "role": "closing/CTA",
+      "reusable_structure": "感情から実務行動へ移す構造が有用",
+      "replace_required": [
+        "人物写真",
+        "医院名",
+        "電話",
+        "フォーム項目"
+      ],
+      "rights_status": "reference_only"
+    }
+  ],
+  "reusable_principles": [
+    "痛み・恥・費用など複合的な障壁へ段階的に答える",
+    "AIと専門家チームを対立させず補完関係で示す",
+    "節ごとに相談CTAを反復し長尺でも出口を失わせない"
+  ],
+  "improvement_priorities": [
+    {
+      "priority": "P0",
+      "issue": "医療根拠と適用範囲",
+      "change": "一次資料、対象症例、限界、監修者を近接表示",
+      "metric": "相談後の適合率"
+    },
+    {
+      "priority": "P0",
+      "issue": "費用・期間の見通し",
+      "change": "症状別の目安、保険/自費、段階別期間を表で提示",
+      "metric": "フォーム開始率"
+    },
+    {
+      "priority": "P1",
+      "issue": "長尺CTAの整理",
+      "change": "章末CTAを目的別に統合し固定CTAを補助化",
+      "metric": "完読率"
+    }
+  ],
+  "rights_excluded": [
+    "ロゴ",
+    "人物・施設・商品写真",
+    "固有イラスト",
+    "固有コピー",
+    "実績数値",
+    "価格・保証条件"
+  ],
+  "unconfirmed": [
+    "元metadata.jsonの撮影環境",
+    "DOM・リンク・フォーム動作",
+    "細字条件",
+    "素材ライセンス"
+  ],
+  "asset_status": {
+    "pc_full": {
+      "width": 1200,
+      "height": 15687,
+      "status": "verified"
+    },
+    "sp_full": {
+      "width": 375,
+      "height": 14565,
+      "status": "verified"
+    },
+    "section_slices": {
+      "count": 18,
+      "status": "verified"
+    },
+    "repository_crosscheck": "passed_with_0_warnings"
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "knowledge_path": "knowledge/lp/LP-0238.json",
+    "generated_at": "2026-10-04",
+    "actual_cbs_import": "not_synced"
+  }
+}

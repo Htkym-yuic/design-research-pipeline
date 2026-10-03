@@ -1,0 +1,208 @@
+{
+  "id": "LP-0234",
+  "mediaType": "LP",
+  "media_type": "LP",
+  "title": "愛眼 ロープライスセット",
+  "brand": "愛眼株式会社",
+  "captureUrl": "https://www.aigan.co.jp/feature/set_megane/",
+  "sourceUrl": "https://rdlp.jp/lp-archive/",
+  "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/227485",
+  "industry_tags": [
+    "眼鏡・サングラス小売"
+  ],
+  "product_tags": [
+    "LP",
+    "レンズ付きデザイン眼鏡 5,900円（税込）から"
+  ],
+  "color_tags": [
+    "#FFFFFF",
+    "#BDEAF5",
+    "#171717",
+    "#1C4F83",
+    "#F3A17D",
+    "#FFF06A",
+    "#E5E9ED"
+  ],
+  "layout_tags": [
+    "ストーリー型",
+    "PC/SP比較",
+    "詳細分析済み"
+  ],
+  "primary_appeal": "レンズ付き5,900円からという明快な価格で、複数デザインを気軽に選べる",
+  "controlled_vocabulary": {
+    "appealPrimary": "price",
+    "proofTypes": [],
+    "offerTypes": [],
+    "ctaTypes": [
+      "buyNow",
+      "visitStore"
+    ],
+    "persuasionSequence": [
+      "つかみ",
+      "対象の明示",
+      "価格・条件",
+      "利用シーン",
+      "特徴・スペック",
+      "保証",
+      "行動喚起",
+      "クロージング"
+    ],
+    "layoutArchetype": "storyNarrative"
+  },
+  "funnel_structure": [
+    {
+      "step": 1,
+      "role": "ファーストビュー・価格提示",
+      "pattern": "今日の気分でメガネを変える 自分を変える",
+      "description": "低価格とファッション性を同時に認知させる"
+    },
+    {
+      "step": 2,
+      "role": "選び方の問いかけ",
+      "pattern": "今日はどのメガネ？ 気分で変える新しいがたへ",
+      "description": "自分事化してスタイル選択へ移す"
+    },
+    {
+      "step": 3,
+      "role": "スタイル提案01・02",
+      "pattern": "今日はおしゃれに／スマートをアピール",
+      "description": "用途別に似合い方を具体化する"
+    },
+    {
+      "step": 4,
+      "role": "スタイル提案03・04",
+      "pattern": "今日はキュートに／クールなあなたに",
+      "description": "選択肢の幅を証拠化する"
+    },
+    {
+      "step": 5,
+      "role": "サポート・3つの安心保証",
+      "pattern": "サポートも充実！ 3つの安心保証",
+      "description": "低価格への品質不安を保証で解消する"
+    },
+    {
+      "step": 6,
+      "role": "店舗・オンライン導線とフッター",
+      "pattern": "店舗検索／ONLINE SHOP",
+      "description": "閲覧目的に応じて購入経路を分岐する"
+    }
+  ],
+  "section_patterns": [
+    {
+      "id": "C01",
+      "source_section": "S01",
+      "name": "人物4象限＋価格のFV",
+      "role": "FV/price",
+      "reusable_structure": "商品選択肢と価格を一度に伝える",
+      "replace_required": [
+        "人物写真",
+        "ブランド",
+        "価格",
+        "固有コピー"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C02",
+      "source_section": "S03-S04",
+      "name": "4スタイルの人物ペアカード",
+      "role": "use-case cards",
+      "reusable_structure": "利用シーン別の商品提案へ転用しやすい",
+      "replace_required": [
+        "人物写真",
+        "商品名",
+        "固有説明"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C03",
+      "source_section": "S05",
+      "name": "3つの保証比較カード",
+      "role": "guarantee",
+      "reusable_structure": "低価格商品の不安解消構造として有用",
+      "replace_required": [
+        "保証名称",
+        "期間",
+        "固有条件",
+        "スタッフ写真"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C04",
+      "source_section": "S06",
+      "name": "店舗・EC二択CTA",
+      "role": "CTA",
+      "reusable_structure": "オフラインとオンラインの分岐を簡潔に示す",
+      "replace_required": [
+        "店舗名",
+        "ボタン文言",
+        "ブランド表示"
+      ],
+      "rights_status": "reference_only"
+    }
+  ],
+  "reusable_principles": [
+    "価格を一画面で理解できる",
+    "人物と色面で四つのスタイルを記憶させる",
+    "低価格への不安を保証で後段処理する"
+  ],
+  "improvement_priorities": [
+    {
+      "priority": "P0",
+      "issue": "価格条件の可読性",
+      "change": "レンズ条件、追加料金、対象フレームを価格直下に要約",
+      "metric": "価格詳細クリック率"
+    },
+    {
+      "priority": "P1",
+      "issue": "商品探索導線",
+      "change": "各スタイルに代表フレームと商品一覧CTAを追加",
+      "metric": "商品一覧遷移率"
+    },
+    {
+      "priority": "P2",
+      "issue": "SP固定UIの重なり",
+      "change": "スクロール方向に応じて縮小・退避",
+      "metric": "スクロール完了率"
+    }
+  ],
+  "rights_excluded": [
+    "ロゴ",
+    "人物・施設・商品写真",
+    "固有イラスト",
+    "固有コピー",
+    "実績数値",
+    "価格・保証条件"
+  ],
+  "unconfirmed": [
+    "元metadata.jsonの撮影環境",
+    "DOM・リンク・フォーム動作",
+    "細字条件",
+    "素材ライセンス"
+  ],
+  "asset_status": {
+    "pc_full": {
+      "width": 1200,
+      "height": 7937,
+      "status": "verified"
+    },
+    "sp_full": {
+      "width": 375,
+      "height": 4450,
+      "status": "verified"
+    },
+    "section_slices": {
+      "count": 12,
+      "status": "verified"
+    },
+    "repository_crosscheck": "passed_with_0_warnings"
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "knowledge_path": "knowledge/lp/LP-0234.json",
+    "generated_at": "2026-10-04",
+    "actual_cbs_import": "not_synced"
+  }
+}

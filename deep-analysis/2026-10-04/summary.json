@@ -1,0 +1,39 @@
+{
+  "runId": "RUN-20261004-WEEKLY-DEEP-SELECTED",
+  "generatedAt": "2026-10-03T20:38:54.843Z",
+  "selected": [
+    {
+      "id": "LP-0234",
+      "title": "ロープライスセット",
+      "folder": "deep-analysis/2026-10-04/LP-0234-aigan",
+      "analysis": "deep-analysis/2026-10-04/LP-0234-aigan/03_Analysis/LP-0234_full_analysis_v22_20261004.md",
+      "audit": "deep-analysis/2026-10-04/LP-0234-aigan/00_Catalog/LP-0234_v22_audit_20261004.json",
+      "knowledgeCandidate": "deep-analysis/2026-10-04/knowledge-candidates/lp/LP-0234.json",
+      "pcSha256": "034584fd61c04e721f6968e04f10d99119cd87f3c87b17274bfd493f32cd1926",
+      "spSha256": "017c0a2b51ef142550aab9856fc2772cc0d11117145e19ede33d3ffdc11938e0",
+      "sectionCount": 6
+    },
+    {
+      "id": "LP-0238",
+      "title": "口腔崩壊外来",
+      "folder": "deep-analysis/2026-10-04/LP-0238-next",
+      "analysis": "deep-analysis/2026-10-04/LP-0238-next/03_Analysis/LP-0238_full_analysis_v22_20261004.md",
+      "audit": "deep-analysis/2026-10-04/LP-0238-next/00_Catalog/LP-0238_v22_audit_20261004.json",
+      "knowledgeCandidate": "deep-analysis/2026-10-04/knowledge-candidates/lp/LP-0238.json",
+      "pcSha256": "3b8a2d383637cc1e7db11badaa3894c3f61eba94f58ddeea062fd92c206fe059",
+      "spSha256": "7fd3775f59d80d6e9f839b5ac436179f73931ce3c8a6f2a1792fc58992dbb88b",
+      "sectionCount": 9
+    },
+    {
+      "id": "LP-0244",
+      "title": "環境計測株式会社",
+      "folder": "deep-analysis/2026-10-04/LP-0244-kankyou-keisoku",
+      "analysis": "deep-analysis/2026-10-04/LP-0244-kankyou-keisoku/03_Analysis/LP-0244_full_analysis_v22_20261004.md",
+      "audit": "deep-analysis/2026-10-04/LP-0244-kankyou-keisoku/00_Catalog/LP-0244_v22_audit_20261004.json",
+      "knowledgeCandidate": "deep-analysis/2026-10-04/knowledge-candidates/lp/LP-0244.json",
+      "pcSha256": "9bb612de2577ebf5f9edba0fcd1ac3dccfb794f8fae4656a6a6ce1a3f1c14ba6",
+      "spSha256": "3fc68266fb9fda08db0bdbc9c2a60c1522b375993f7c318f139dd7474f7449fc",
+      "sectionCount": 7
+    }
+  ]
+}
