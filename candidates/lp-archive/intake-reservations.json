@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T16:19:52.058Z",
+  "updatedAt": "2026-10-03T16:18:52.726Z",
   "mediaType": "LP",
   "sourceName": "LPアーカイブ",
   "notes": [
@@ -266,7 +266,25 @@
       "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229293",
       "lpArchivePostId": "229293",
       "reservedAt": "2026-10-02T16:19:52.058Z"
+    },
+    {
+      "id": "LP-0243",
+      "title": "コムキャリ",
+      "status": "reserved_daily_intake",
+      "captureUrl": "https://www.jt-tsushin.jp/agent",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229291",
+      "lpArchivePostId": "229291",
+      "reservedAt": "2026-10-03T16:18:52.726Z"
+    },
+    {
+      "id": "LP-0244",
+      "title": "環境計測株式会社",
+      "status": "reserved_daily_intake",
+      "captureUrl": "https://www.kankyou-keisoku.co.jp/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229295",
+      "lpArchivePostId": "229295",
+      "reservedAt": "2026-10-03T16:18:52.726Z"
     }
   ],
-  "nextLpId": "LP-0243"
+  "nextLpId": "LP-0245"
 }

@@ -1,99 +1,85 @@
 {
-  "extractedAt": "2026-10-02T16:19:52.058Z",
+  "extractedAt": "2026-10-03T16:18:52.726Z",
   "sourceUrl": "https://rdlp.jp/lp-archive/",
   "sourceName": "LPアーカイブ",
   "mediaType": "LP",
   "requestedLimit": 2,
   "scannedLimit": 40,
   "candidateCount": 2,
-  "skippedDuplicateCount": 9,
-  "idStart": "LP-0241",
-  "idEnd": "LP-0242",
+  "skippedDuplicateCount": 6,
+  "idStart": "LP-0243",
+  "idEnd": "LP-0244",
   "candidates": [
     {
-      "id": "LP-0241",
+      "id": "LP-0243",
       "status": "candidate",
       "mediaType": "LP",
-      "title": "アートを巡る下呂温泉の旅",
-      "captureUrl": "https://travel.rakuten.co.jp/movement/gifu/202608_gero/",
+      "title": "コムキャリ",
+      "captureUrl": "https://www.jt-tsushin.jp/agent",
       "captureMode": "target_site",
       "sourceType": "Reference Site",
       "sourceName": "LPアーカイブ",
       "sourceUrl": "https://rdlp.jp/lp-archive/",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229272",
-      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103563/200x400.jpg",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229291",
+      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103605/200x400.jpg",
       "metadata": {
-        "lpArchivePostId": "229272",
-        "company": "一般社団法人下呂温泉観光協会",
-        "category": "国内旅行・海外旅行",
-        "tasteTag": "シンプル系",
+        "lpArchivePostId": "229291",
+        "company": "イシン株式会社",
+        "category": "中途採用",
+        "tasteTag": "にぎやか系",
         "favoriteCount": "1",
-        "thumbnailAlt": "アートを巡る下呂温泉の旅のLPデザイン（国内旅行・海外旅行／グリーン系／シンプル系）PC版"
+        "thumbnailAlt": "コムキャリのLPデザイン（中途採用／グリーン系／にぎやか系）PC版"
       },
       "archiveAssets": {
         "pcImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103563/full.jpg.webp"
+          "https://rdlp.jp/image/lp-archive/103605/full.jpg.webp"
         ],
         "spImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103564/full_1.jpg.webp",
-          "https://rdlp.jp/image/lp-archive/103564/full_2.jpg.webp"
+          "https://rdlp.jp/image/lp-archive/103606/full.jpg.webp"
         ],
         "allImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103563/full.jpg.webp",
-          "https://rdlp.jp/image/lp-archive/103564/full_1.jpg.webp",
-          "https://rdlp.jp/image/lp-archive/103564/full_2.jpg.webp"
+          "https://rdlp.jp/image/lp-archive/103605/full.jpg.webp",
+          "https://rdlp.jp/image/lp-archive/103606/full.jpg.webp"
         ]
       },
       "notes": "LPアーカイブ一覧から自動抽出した候補。採用前に人が確認する。"
     },
     {
-      "id": "LP-0242",
+      "id": "LP-0244",
       "status": "candidate",
       "mediaType": "LP",
-      "title": "type",
-      "captureUrl": "https://type.jp/s/campaign92/",
+      "title": "環境計測株式会社",
+      "captureUrl": "https://www.kankyou-keisoku.co.jp/",
       "captureMode": "target_site",
       "sourceType": "Reference Site",
       "sourceName": "LPアーカイブ",
       "sourceUrl": "https://rdlp.jp/lp-archive/",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229293",
-      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103608/200x400.jpg",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229295",
+      "thumbnailUrl": "https://rdlp.jp/image/lp-archive/103612/200x400.jpg",
       "metadata": {
-        "lpArchivePostId": "229293",
-        "company": "株式会社キャリアデザインセンター",
-        "category": "中途採用",
-        "tasteTag": "マンガ・イラスト",
+        "lpArchivePostId": "229295",
+        "company": "環境計測株式会社",
+        "category": "企業・会社・お店",
+        "tasteTag": "信頼・安心系",
         "favoriteCount": "0",
-        "thumbnailAlt": "typeのLPデザイン（中途採用／イエロー系／マンガ・イラスト系）PC版"
+        "thumbnailAlt": "環境計測株式会社のLPデザイン（企業・会社・お店／グリーン系／信頼・安心系）PC版"
       },
       "archiveAssets": {
         "pcImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103608/full.jpg.webp"
+          "https://rdlp.jp/image/lp-archive/103612/full.jpg.webp"
         ],
         "spImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103609/full.jpg.webp"
+          "https://rdlp.jp/image/lp-archive/103613/full.jpg.webp"
         ],
         "allImageUrls": [
-          "https://rdlp.jp/image/lp-archive/103608/full.jpg.webp",
-          "https://rdlp.jp/image/lp-archive/103609/full.jpg.webp"
+          "https://rdlp.jp/image/lp-archive/103612/full.jpg.webp",
+          "https://rdlp.jp/image/lp-archive/103613/full.jpg.webp"
         ]
       },
       "notes": "LPアーカイブ一覧から自動抽出した候補。採用前に人が確認する。"
     }
   ],
   "skippedCandidates": [
-    {
-      "title": "Awarefy",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229261",
-      "captureUrl": "https://www.awarefy.com/app",
-      "lpArchivePostId": "229261",
-      "duplicate": {
-        "duplicateOf": "LP-0214",
-        "field": "captureUrl",
-        "value": "https://www.awarefy.com/app",
-        "reason": "previously skipped duplicate captureUrl"
-      }
-    },
     {
       "title": "MANY PEOPLE採用サイト",
       "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229274",
@@ -103,7 +89,7 @@
         "duplicateOf": "LP-0239",
         "field": "captureUrl",
         "value": "https://www.manypeople-k.com/recruit/",
-        "reason": "existing candidate captureUrl"
+        "reason": "previously skipped duplicate captureUrl"
       }
     },
     {
@@ -119,18 +105,6 @@
       }
     },
     {
-      "title": "タンブルウィード オールスター THE LAST",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229256",
-      "captureUrl": "https://rdlp.jp/archives/otherdesign/lp/229256",
-      "lpArchivePostId": "229256",
-      "duplicate": {
-        "duplicateOf": "LP-0218",
-        "field": "captureUrl",
-        "value": "https://rdlp.jp/archives/otherdesign/lp/229256",
-        "reason": "previously skipped duplicate sourceDetailUrl"
-      }
-    },
-    {
       "title": "ステューピッド・ネバー・ダイズ",
       "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229285",
       "captureUrl": "https://stupidneverdies.sega.com/ja/",
@@ -139,7 +113,7 @@
         "duplicateOf": "LP-0240",
         "field": "captureUrl",
         "value": "https://stupidneverdies.sega.com/ja/",
-        "reason": "existing candidate captureUrl"
+        "reason": "previously skipped duplicate captureUrl"
       }
     },
     {
@@ -155,6 +129,18 @@
       }
     },
     {
+      "title": "アートを巡る下呂温泉の旅",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229272",
+      "captureUrl": "https://travel.rakuten.co.jp/movement/gifu/202608_gero/",
+      "lpArchivePostId": "229272",
+      "duplicate": {
+        "duplicateOf": "LP-0241",
+        "field": "captureUrl",
+        "value": "https://travel.rakuten.co.jp/movement/gifu/202608_gero/",
+        "reason": "existing candidate captureUrl"
+      }
+    },
+    {
       "title": "物流",
       "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229266",
       "captureUrl": "https://www.bluedge.co.jp/",
@@ -163,30 +149,6 @@
         "duplicateOf": "LP-0237",
         "field": "captureUrl",
         "value": "https://www.bluedge.co.jp/",
-        "reason": "previously skipped duplicate captureUrl"
-      }
-    },
-    {
-      "title": "秋をあそびつくそうSunshine City",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229259",
-      "captureUrl": "https://sunshinecity.jp/file/official/autumn/",
-      "lpArchivePostId": "229259",
-      "duplicate": {
-        "duplicateOf": "LP-0222",
-        "field": "captureUrl",
-        "value": "https://sunshinecity.jp/file/official/autumn/",
-        "reason": "previously skipped duplicate captureUrl"
-      }
-    },
-    {
-      "title": "マイプレッカ",
-      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229255",
-      "captureUrl": "https://www.kaneka-womens-healthcare.com/",
-      "lpArchivePostId": "229255",
-      "duplicate": {
-        "duplicateOf": "LP-0219",
-        "field": "captureUrl",
-        "value": "https://www.kaneka-womens-healthcare.com/",
         "reason": "previously skipped duplicate captureUrl"
       }
     }
