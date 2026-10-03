@@ -1,0 +1,42 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "PT-0001",
+  "media_type": "PT",
+  "title": "キヤッセ羽生「貸施設」紹介スライド",
+  "source": {
+    "source_name": "Parts.",
+    "source_detail_url": "https://partsdesign.net/archives/7254",
+    "official_url": "https://kiyasse.jp/",
+    "capture_url": "https://partsdesign.net/wp-content/uploads/2026/09/kiyasse_00004.png"
+  },
+  "analysis": {
+    "summary": "具体用途、実写空間、利用者イラストを左右二分割で統合した施設紹介スライド。",
+    "score": { "visual": 18, "clarity": 18, "originality": 13, "reusability": 19, "learning": 10, "evidence": 8, "total": 86 },
+    "units": ["パーツ全体", "見出し", "主要要素", "補助要素", "操作・CTA", "前後セクションとの接続"],
+    "strengths": [
+      "カテゴリ、用途、空間、利用者像を一画面で理解できる",
+      "実写とイラストの役割分担で安心感と親しみを両立する",
+      "固定レイアウトへカテゴリ情報を差し替えやすい"
+    ],
+    "improvements": [
+      "料金・予約方法への明示的CTAを追加する",
+      "料金、定員、設備の比較情報を追加する",
+      "SPでは見出し、写真、用途、CTAの順に再構成する"
+    ]
+  },
+  "reusable_patterns": [
+    { "id": "C01", "name": "施設用途＋実写の二分割Section", "rights_status": "reference_only" },
+    { "id": "C02", "name": "実写＋利用者イラストの役割分担", "rights_status": "reference_only" },
+    { "id": "C03", "name": "カテゴリ色付きページネーション", "rights_status": "reference_only" }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": ["施設写真", "人物イラスト", "固有コピー", "固有配色", "ロゴ"]
+  },
+  "unconfirmed": ["元ページ全体における位置", "SP表示", "スライダーの操作挙動", "料金・予約導線", "素材ライセンス"],
+  "evidence": {
+    "files": ["01_Normal_Images/PT-0001_reference.png", "02_Notion_Images/PT-0001_reference_notion.jpg"],
+    "original_dimensions": "1409x765"
+  },
+  "cbs_sync": { "status": "candidate_pending_user_approval", "production_sync": "not_synced" }
+}

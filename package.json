@@ -19,6 +19,7 @@
     "daily:mark": "node scripts/mark-daily-run.mjs",
     "knowledge:validate-lp": "node scripts/validate-lp-knowledge.mjs",
     "knowledge:validate-non-lp": "node scripts/validate-non-lp-deep-analysis.mjs",
+    "knowledge:validate-non-lp-json": "node scripts/validate-non-lp-knowledge.mjs",
     "knowledge:crosscheck-lp": "node scripts/crosscheck-lp-assets.mjs",
     "check:env": "node scripts/lib/check-env.mjs",
     "lint:syntax": "node scripts/lib/check-syntax.mjs",

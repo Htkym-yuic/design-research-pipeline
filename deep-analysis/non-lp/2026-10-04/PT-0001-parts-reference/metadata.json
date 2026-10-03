@@ -1,0 +1,21 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "PT-0001",
+  "media_type": "PT",
+  "asset_type": "Parts",
+  "title": "キヤッセ羽生「貸施設」紹介スライド",
+  "source_name": "Parts.",
+  "source_detail_url": "https://partsdesign.net/archives/7254",
+  "capture_url": "https://partsdesign.net/wp-content/uploads/2026/09/kiyasse_00004.png",
+  "official_url": "https://kiyasse.jp/",
+  "original_width": 1409,
+  "original_height": 765,
+  "analysis_status": "completed_and_validated",
+  "analysis_score": 86,
+  "notion_status": "synced_and_verified",
+  "notion_page_url": "https://app.notion.com/p/3e824d4fa6718149b6d1d5cc0fa5074c",
+  "dropbox_status": "synced_and_verified",
+  "dropbox_path": "/design/Design_Research_Library/Parts_Research_Library/99_Needs_Review/selected/PT-0001-kiyasse-hanyu",
+  "cbs_status": "candidate_pending_user_approval",
+  "generated_at": "2026-10-04T06:10:00+09:00"
+}
