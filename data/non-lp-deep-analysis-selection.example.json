@@ -1,0 +1,14 @@
+{
+  "schema_version": "drs-deep-selection-1.0",
+  "runDate": "YYYY-MM-DD",
+  "selected": [
+    {
+      "id": "BN-0001",
+      "reason": "週末レビューで詳細分析対象に選定した理由"
+    },
+    {
+      "id": "WB-0001",
+      "reason": "既存ナレッジに不足するサイト構成を補えるため"
+    }
+  ]
+}

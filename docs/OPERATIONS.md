@@ -200,9 +200,22 @@ LP以外は以下のVariableで保存先と件数を管理する。
 - 写真AC・イラストACはGitHubホストランナーのIPにCloudFront 403を返す場合がある。その場合は`blocked`として報告し、同じ収集コードをローカルMacで実行する。アクセス制限の迂回は行わない。
 - Parts.はトップページだけでなく過去ページも走査し、予約済みURLを除外して新規候補を探す。当日の実例から、根拠ID付きのデザイン原則・パターンを最大`DAILY_PATTERN_LIMIT`件生成する。
 
+### 週末の非LP詳細分析
+
+LP以外は docs/NON_LP_DEEP_ANALYSIS_SPEC.md の drs-deep-1.0 を使用する。LPと同じ29章構成を固定し、
+媒体別の画像枠・Unit・重点評価だけを切り替える。週末レビューで選定したIDだけを
+data/non-lp-deep-analysis-selection.json に記入し、次を実行する。
+
+~~~bash
+npm run analyze:non-lp:selected:deep -- --selection data/non-lp-deep-analysis-selection.json
+~~~
+
+生成直後はテンプレートであり、画像理解と実測を終えていない。完成報告の前に
+npm run knowledge:validate-non-lp -- --input "<Markdown>" --mode analysis を通す。
+
 ### 現時点でまだ自動化していないこと
 
 - Creative Brief Studio AIへの同期（`npm run knowledge:apply`等）は対象外。Notionへの軽量分析ページ登録までがこのワークフローの範囲。
-- LP-0180・LP-0215と同じ29項目の詳細分析（週末レビューで人が選んだ候補のみ、別途手動で実施する）。
+- 画像理解を伴う詳細分析本文の自動確定。非LPは29章テンプレートと検証処理まで自動化し、週末レビューで選んだ候補だけを画像確認して完成させる。
 - 画像理解を伴う最終的な意味判断。日次は自動一次分析までとし、コピー、正確な訴求分類、パーツ境界、原則の妥当性は週末レビューで確認する。
 - DropboxやNotion内の既存資産の移動・削除。

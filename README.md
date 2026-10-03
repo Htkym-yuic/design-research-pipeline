@@ -56,16 +56,17 @@ Creative Brief Studio AIとは分離して運用する、デザインリサー�
 
 ## 定期実行
 
-`.github/workflows/design-research-daily.yml` が、GitHub Actions上で毎日01:30 JSTに自動実行されます（`workflow_dispatch`での手動実行も可能）。Macを起動する必要はありません。
+`.github/workflows/design-research-daily.yml` が、GitHub Actions上で毎日00:37 JSTに自動実行されます。00:52 JSTは未完了時の予備便です（`workflow_dispatch`での手動実行も可能）。通常媒体ではMacを起動する必要はありません。
 
 夜中に収集とラフ分析を進め、朝4:00〜4:30頃までに確認できる状態を目指します。
 
-現在自動化されているのはLPのみです。日次で以下を行います。
+日次ではLPと非LPの収集・軽量分析を行います。
 
 1. LPアーカイブから新規候補を抽出する（`data/id-counters.json` で採番）
 2. 抽出した候補をPC/SPで撮影する
 3. Dropboxの `99_Needs_Review/<日付>/daily-intake-<開始ID>-<終了ID>/` へ正本画像・Notion用軽量画像を保存する
 4. Notionの「01｜LPリサーチライブラリー」へ軽量分析ページを新規作成・更新する
+5. バナー、Web、グラフィック、パーツ、Canva、デザイン原則、素材メタ情報を媒体別ライブラリへ登録する
 
 詳細な設定手順（必要なGitHub Secrets / Variables、DRY_RUNモードの使い方等）は [`docs/OPERATIONS.md`](docs/OPERATIONS.md) の「自動化（GitHub Actions）」を参照してください。
 
@@ -73,7 +74,10 @@ Creative Brief Studio AIとは分離して運用する、デザインリサー�
 
 LPアーカイブは、一覧ページそのものではなく、一覧から個別LP候補を抽出します。候補は `candidates/lp-archive/candidates.json` に出力します。LP候補IDは `data/id-counters.json` で管理し、日次実行では抽出後に次回開始番号を進めて重複を防ぎます。既存候補や同期済みナレッジと同じURLが出た場合は、その候補をスキップして次の未登録候補を繰り上げます。
 
-バナー・Web・グラフィック・パーツ・パターンの自動収集、および Creative Brief Studio AI への同期は、まだこのワークフローには含まれていません（`docs/OPERATIONS.md` の「現時点でまだ自動化していないこと」を参照）。
+週末はレビューで選んだ上位候補だけを詳細分析します。LPはv2.2、非LPは
+[`docs/NON_LP_DEEP_ANALYSIS_SPEC.md`](docs/NON_LP_DEEP_ANALYSIS_SPEC.md) の
+`drs-deep-1.0`を使い、どちらも第1章から第29章の固定構成で管理します。
+Creative Brief Studio AIへの本番同期は自動実行せず、検証とユーザー確認後に行います。
 
 ## 公開範囲
 

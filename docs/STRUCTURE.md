@@ -10,6 +10,9 @@
 | Graphic | `GR-0001` |
 | Parts | `PT-0001` |
 | Patterns | `PAT-0001` |
+| Web App / UI | `UI-0001` |
+| Canva | `CV-0001` |
+| Asset | `ASSET-0001` / `PHAC-0001` / `ILAC-0001` 等 |
 
 ## GitHub内の保存先
 
@@ -20,6 +23,9 @@ knowledge/web/
 knowledge/graphic/
 knowledge/parts/
 knowledge/patterns/
+knowledge/ui/
+knowledge/canva/
+knowledge/assets/
 ```
 
 Creative Brief Studio AIへ渡す同期用データは、以下にまとめます。
