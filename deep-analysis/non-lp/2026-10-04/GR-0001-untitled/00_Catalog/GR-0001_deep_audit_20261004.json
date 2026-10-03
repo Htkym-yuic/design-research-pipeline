@@ -1,0 +1,30 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "GR-0001",
+  "mode": "analysis",
+  "selected_for_deep_analysis": true,
+  "selection_reason": "実務で頻出する休業告知を、季節装飾と期間情報の強弱で整理した再利用性の高いチラシであるため",
+  "checks": {
+    "first_line": "Yes",
+    "chapters": "Yes",
+    "unit_headings": "Yes",
+    "unit_fields": "Yes",
+    "image_slots": "Yes",
+    "image_evidence": "Yes",
+    "candidate_parity": "Yes",
+    "rights": "Yes",
+    "unknowns": "Yes",
+    "sources": "Yes",
+    "run_record": "Yes",
+    "analysis_complete": "Yes"
+  },
+  "notion": {
+    "status": "synced_and_verified",
+    "page_url": "https://app.notion.com/p/3e824d4fa67181fc9661dd8b1bbc0c4b"
+  },
+  "dropbox": {
+    "status": "synced_and_verified",
+    "path": "/design/Design_Research_Library/Graphic_Research_Library/99_Needs_Review/selected/GR-0001-summer-closure-notice"
+  },
+  "cbs": "not_synced_user_approval_required"
+}

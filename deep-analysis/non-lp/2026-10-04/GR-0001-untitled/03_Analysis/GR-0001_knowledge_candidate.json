@@ -1,0 +1,134 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "GR-0001",
+  "media_type": "GR",
+  "title": "夏季休業のお知らせチラシ",
+  "source": {
+    "source_name": "デザインAC",
+    "source_detail_url": "https://www.design-ac.net/free-template/flyer-template-30656",
+    "capture_url": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F2f721be794492934b1daa77ea1be5bc5%2F2f721be794492934b1daa77ea1be5bc5-400.webp&w=828&q=75",
+    "official_url": null
+  },
+  "analysis": {
+    "summary": "季節モチーフを上下へ限定し、中央の業務情報を邪魔しない。 見出し、説明、期間、発行者の4階層が明確で、店舗告知へ転用しやすい。 小さなテンプレート画像でも内容を判別でき、実務用告知の基本型として保存価値がある。",
+    "score": {
+      "visual": 16,
+      "clarity": 18,
+      "originality": 9,
+      "reusability": 19,
+      "learning": 12,
+      "evidence": 8,
+      "total": 82
+    },
+    "units": [
+      {
+        "name": "作品全体",
+        "role": "夏季休業期間を親しみある季節表現で通知する。",
+        "reuse": "季節装飾＋業務告知＋期間表示。",
+        "evidence": "GR-0001_reference.png。"
+      },
+      {
+        "name": "タイトル・見出し",
+        "role": "告知内容を一文で確定する。",
+        "reuse": "季節色を使った一行見出し。",
+        "evidence": "原画像上部。"
+      },
+      {
+        "name": "本文・補足",
+        "role": "休業理由と理解依頼を補足する。",
+        "reuse": "理由＋期間導入＋理解依頼の短文。",
+        "evidence": "原画像中央。"
+      },
+      {
+        "name": "写真・イラスト",
+        "role": "夏季の季節感と親しみを作る。",
+        "reuse": "装飾を端へ限定するフレーム原則。",
+        "evidence": "原画像上下。"
+      },
+      {
+        "name": "装飾・背景",
+        "role": "情報領域を確保し装飾を分離する。",
+        "reuse": "中央白場＋端部装飾。",
+        "evidence": "原画像全体。"
+      },
+      {
+        "name": "ロゴ・発行情報",
+        "role": "告知主体を示す。",
+        "reuse": "最下部の発行者名領域。",
+        "evidence": "原画像下部。"
+      }
+    ]
+  },
+  "strengths": [
+    "用件と期間が明快",
+    "季節装飾が情報を邪魔しない",
+    "店舗掲示へ転用しやすい"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "再開情報不足",
+      "evidence": "休業終了日のみ",
+      "fix": "営業再開日時を明記",
+      "effect": "来店誤認を削減",
+      "metric": "休業問い合わせ件数"
+    },
+    {
+      "priority": "P1",
+      "issue": "連絡導線不足",
+      "evidence": "URL・QRなし",
+      "fix": "最新情報ページのQRを追加",
+      "effect": "変更時の案内を集約",
+      "metric": "QR流入数"
+    },
+    {
+      "priority": "P2",
+      "issue": "小面本文可読性",
+      "evidence": "本文が小さい",
+      "fix": "SNS版では本文を短縮",
+      "effect": "スマホ可読性向上",
+      "metric": "5秒読解テスト"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "季節フレーム型休業告知",
+      "keep": "中央白場、上下装飾、期間表示",
+      "replace": "装飾、日付、発行者、色"
+    },
+    {
+      "id": "C02",
+      "name": "期間二点表示",
+      "keep": "左右の日付と中央矢印",
+      "replace": "日付、曜日、色"
+    },
+    {
+      "id": "C03",
+      "name": "端部装飾・中央情報白場",
+      "keep": "装飾を上下端へ限定",
+      "replace": "季節モチーフ、色"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "ひまわりイラスト、院名、固有文章、テンプレート固有の文字組み",
+    "reusable": "情報階層、中央白場、上下装飾、期間の二点表示"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/GR-0001_reference.png",
+      "../02_Notion_Images/GR-0001_reference_notion.jpg",
+      "https://www.design-ac.net/free-template/flyer-template-30656"
+    ],
+    "unknowns": [
+      "enlarged_typography_capture_missing",
+      "print_mockup_missing",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

@@ -25,6 +25,9 @@ required("reusable_patterns", record.reusable_patterns);
 required("rights.status", record.rights?.status);
 required("evidence.files", record.evidence?.files);
 required("cbs_sync.status", record.cbs_sync?.status);
+if (Array.isArray(record.evidence?.files)) {
+  record.evidence.files.forEach((file, index) => required(`evidence.files[${index}]`, file));
+}
 const type = String(record.media_type || inferType(record.id)).toUpperCase();
 const profile = config.types[type];
 if (!profile) issues.push(`unsupported media_type: ${type}`);

@@ -1,0 +1,134 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "CV-0007",
+  "media_type": "CV",
+  "title": "Neutral Modern Interior Design Instagram Post",
+  "source": {
+    "source_name": "Canva",
+    "source_detail_url": "https://www.canva.com/templates/EAHCE6b6QWw-neutral-modern-interior-design-instagram-post/",
+    "capture_url": "https://template.canva.com/EAHCE6b6QWw/1/0/320w-LbtRcy2gAHo.jpg",
+    "official_url": null
+  },
+  "analysis": {
+    "summary": "接写3枚と室内全景1枚を組み合わせ、素材感から空間像へ理解を広げる。 ベージュ、白、緑、黒の抑制した色域が4写真を一つのブランドトーンへまとめる。 住宅、家具、ホテル、サロンのSNS投稿やムードボードへ量産転用しやすい。",
+    "score": {
+      "visual": 17,
+      "clarity": 16,
+      "originality": 9,
+      "reusability": 19,
+      "learning": 12,
+      "evidence": 8,
+      "total": 81
+    },
+    "units": [
+      {
+        "name": "テンプレート全体",
+        "role": "4枚の写真から統一したインテリア世界観を作る。",
+        "reuse": "3接写＋1全景の4分割ムードグリッド。",
+        "evidence": "CV-0007_reference.png。"
+      },
+      {
+        "name": "主画像",
+        "role": "接写で示した素材を実際の空間へ統合する。",
+        "reuse": "最後に全景を置く編集順序。",
+        "evidence": "原画像右下。"
+      },
+      {
+        "name": "タイトル",
+        "role": "写真だけでテイストを伝えるため明示タイトルを省略。",
+        "reuse": "文字なし投稿と、必要時の小ロゴ追加余地。",
+        "evidence": "原画像全体。"
+      },
+      {
+        "name": "補足情報",
+        "role": "素材・生活・全景の写真関係が補足機能を担う。",
+        "reuse": "質感・小物・商品・全景の編集セット。",
+        "evidence": "左上・右上・左下セル。"
+      },
+      {
+        "name": "装飾",
+        "role": "異なる写真を分離しながら同一投稿へまとめる。",
+        "reuse": "均一ガターによる写真整理。",
+        "evidence": "原画像セル境界。"
+      },
+      {
+        "name": "差し替え可能領域",
+        "role": "案件ごとの素材へ置換して同じ世界観構造を再利用する。",
+        "reuse": "写真役割を指定した差し替えテンプレート。",
+        "evidence": "4セル構造。"
+      }
+    ]
+  },
+  "strengths": [
+    "差し替えが容易",
+    "接写と全景の物語がある",
+    "色調統一でブランド感を作れる"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "ブランド主体不明",
+      "evidence": "文字・ロゴなし",
+      "fix": "小さなブランド名またはカテゴリ名を追加",
+      "effect": "保存後も出所を識別",
+      "metric": "ブランド想起率"
+    },
+    {
+      "priority": "P1",
+      "issue": "写真色差リスク",
+      "evidence": "4素材を並置",
+      "fix": "共通プリセットと露出基準を定義",
+      "effect": "統一感維持",
+      "metric": "色差・レビュー評価"
+    },
+    {
+      "priority": "P2",
+      "issue": "行動接続なし",
+      "evidence": "CTAなし",
+      "fix": "カルーセル後続かキャプションへ導線を置く",
+      "effect": "世界観から詳細へ誘導",
+      "metric": "プロフィール遷移率"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "3接写＋1全景グリッド",
+      "keep": "2×2、接写3、全景1",
+      "replace": "全写真、色調"
+    },
+    {
+      "id": "C02",
+      "name": "均一白ガター",
+      "keep": "均一幅の白線",
+      "replace": "線幅、背景色"
+    },
+    {
+      "id": "C03",
+      "name": "低彩度素材統一",
+      "keep": "色域・光・質感基準",
+      "replace": "写真、商品、空間"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "Canvaテンプレート写真、人物、室内写真、固有クロップ",
+    "reusable": "2×2グリッド、接写と全景の役割分担、均一ガター、色調統一原則"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/CV-0007_reference.png",
+      "../02_Notion_Images/CV-0007_reference_notion.jpg",
+      "https://www.canva.com/templates/EAHCE6b6QWw-neutral-modern-interior-design-instagram-post/"
+    ],
+    "unknowns": [
+      "editable_canvas_unavailable",
+      "alternate_ratio_missing",
+      "template_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0004",
+  "media_type": "WB",
+  "title": "売れるお店をつくる、店舗運営プラットフォーム STORES",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://sankoudesign.com/web/stores/",
+    "capture_url": "https://stores.fun/",
+    "official_url": "https://stores.fun/"
+  },
+  "analysis": {
+    "summary": "『STORESで売れるお店をつくる』という一文で複数プロダクトを事業成果へ束ねている。 無料開始と無料資料の二つのCTAを並べ、即時利用と情報収集の両方を受け止める。 店舗写真、サービスカード、料金、事例、FAQを段階配置し、B2B/SaaSサイトへ転用価値が高い。",
+    "score": {
+      "visual": 18,
+      "clarity": 19,
+      "originality": 12,
+      "reusability": 19,
+      "learning": 14,
+      "evidence": 10,
+      "total": 92
+    },
+    "units": [
+      {
+        "name": "ファーストビュー",
+        "role": "店舗運営の成果とサービス範囲を定義する。",
+        "reuse": "成果見出し＋対象機能列挙＋二段CTA＋顧客写真。",
+        "evidence": "PC/SP First View再撮影画像。"
+      },
+      {
+        "name": "ナビゲーション",
+        "role": "サービス、事例、料金、情報、サポートへ分類案内する。",
+        "reuse": "新規検討ナビ＋サポート・ログインの分離。",
+        "evidence": "PC/SP First View。"
+      },
+      {
+        "name": "主要コンテンツ",
+        "role": "課題に応じて複数製品を選べることを説明する。",
+        "reuse": "課題説明＋製品カード＋組み合わせ提案。",
+        "evidence": "PC/SP Full Page。"
+      },
+      {
+        "name": "証拠・事例",
+        "role": "実店舗での利用場面と成果を具体化する。",
+        "reuse": "顧客写真＋利用場面カード＋成果コピー。",
+        "evidence": "PC Full Page再撮影。"
+      },
+      {
+        "name": "問い合わせ・コンバージョン",
+        "role": "無料開始、資料閲覧、相談の異なる温度を受け止める。",
+        "reuse": "主CTA＋資料CTA＋相談CTAの三層構造。",
+        "evidence": "PC/SP FV、Full Page。"
+      },
+      {
+        "name": "フッター",
+        "role": "サービス群、企業情報、サポートへの網羅的導線を提供する。",
+        "reuse": "製品群・用途・企業・支援の列分け。",
+        "evidence": "PC Full Page下部。"
+      }
+    ]
+  },
+  "strengths": [
+    "成果中心のブランドメッセージ",
+    "検討段階別CTA",
+    "複数サービスの統合説明",
+    "PC/SPで優先順位を維持"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "製品選択負荷",
+      "evidence": "複数サービスを一度に提示",
+      "fix": "業種・課題別の簡易診断をFV直下に追加",
+      "effect": "適切な導線へ短縮",
+      "metric": "サービス詳細到達率"
+    },
+    {
+      "priority": "P1",
+      "issue": "長尺離脱",
+      "evidence": "多数の説明Section",
+      "fix": "ページ内目次と要約比較表を追加",
+      "effect": "探索効率向上",
+      "metric": "中盤到達率"
+    },
+    {
+      "priority": "P2",
+      "issue": "告知競合",
+      "evidence": "黄色帯と更新告知カード",
+      "fix": "キャンペーン優先度を期間と訪問者属性で制御",
+      "effect": "主訴求への集中",
+      "metric": "主CTAクリック率"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "成果見出し＋機能列挙FV",
+      "keep": "成果見出し、機能列挙、二段CTA",
+      "replace": "ブランド、写真、機能名、色"
+    },
+    {
+      "id": "C02",
+      "name": "検討段階別CTA三層",
+      "keep": "主CTA、資料CTA、相談CTAの役割",
+      "replace": "文言、色、遷移先"
+    },
+    {
+      "id": "C03",
+      "name": "サービス組み合わせカード",
+      "keep": "課題見出し、カード、画面証拠",
+      "replace": "機能、UI画像、写真"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "STORESロゴ、人物写真、UI画面、顧客事例、固有コピー、キャンペーン情報",
+    "reusable": "成果中心の情報順序、CTA階層、カード分類、PC/SPの優先順位設計"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/WB-0004_SITE_PC_full.png",
+      "../01_Normal_Images/WB-0004_SITE_PC_first_view.png",
+      "../01_Normal_Images/WB-0004_SITE_SP_full.png",
+      "../01_Normal_Images/WB-0004_SITE_SP_first_view.png",
+      "https://stores.fun/"
+    ],
+    "unknowns": [
+      "section_index_not_generated",
+      "interactive_states_unverified",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

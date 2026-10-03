@@ -1,0 +1,30 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "CV-0007",
+  "mode": "analysis",
+  "selected_for_deep_analysis": true,
+  "selection_reason": "4分割写真グリッドだけでインテリアの色・素材・生活感を統一し、差し替え量産しやすいため",
+  "checks": {
+    "first_line": "Yes",
+    "chapters": "Yes",
+    "unit_headings": "Yes",
+    "unit_fields": "Yes",
+    "image_slots": "Yes",
+    "image_evidence": "Yes",
+    "candidate_parity": "Yes",
+    "rights": "Yes",
+    "unknowns": "Yes",
+    "sources": "Yes",
+    "run_record": "Yes",
+    "analysis_complete": "Yes"
+  },
+  "notion": {
+    "status": "synced_and_verified",
+    "page_url": "https://app.notion.com/p/3e824d4fa671819bb405cd8a2d663284"
+  },
+  "dropbox": {
+    "status": "synced_and_verified",
+    "path": "/design/Design_Research_Library/Canva_Research_Library/99_Needs_Review/selected/CV-0007-neutral-modern-interior"
+  },
+  "cbs": "not_synced_user_approval_required"
+}

@@ -1,0 +1,128 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "BN-0021",
+  "media_type": "BN",
+  "title": "室内初開催・最大級 大型犬オフ会",
+  "source": {
+    "source_name": "バナー広場",
+    "source_detail_url": "https://banner-hiroba.com/archives/64668",
+    "capture_url": "https://banner-hiroba.com/wp-content/uploads/2025/08/14e7279f91c58cb30a071a3f9ab03d0e.jpg.webp",
+    "official_url": null
+  },
+  "analysis": {
+    "summary": "大型犬の集合写真そのものを証拠として用い、対象者とイベント内容を瞬時に理解させる。 黒・水色・白の高コントラストで『最大級』『大型犬オフ会』『無料』の順を明確にしている。 イベント広告、ペット関連コミュニティ、参加募集クリエイティブへ構造転用しやすい。",
+    "score": {
+      "visual": 18,
+      "clarity": 18,
+      "originality": 13,
+      "reusability": 18,
+      "learning": 12,
+      "evidence": 7,
+      "total": 86
+    },
+    "units": [
+      {
+        "name": "バナー全体",
+        "role": "対象、規模、名称、日時、価格を一画面で伝える。",
+        "reuse": "対象写真で中央コピーを囲むイベント募集型。",
+        "evidence": "BN-0021_reference.pngの全体目視と720×377px実測。"
+      },
+      {
+        "name": "主要コピー",
+        "role": "規模とイベント名を短い語で伝える。",
+        "reuse": "前提コピー＋最大訴求＋カテゴリ名の三段構造。",
+        "evidence": "原画像中央コピー。"
+      },
+      {
+        "name": "商品・人物・図版",
+        "role": "大型犬イベントであることを視覚証明する。",
+        "reuse": "複数人物・商品写真で中心メッセージを囲む構成。",
+        "evidence": "原画像左右領域。"
+      },
+      {
+        "name": "オファー・CTA",
+        "role": "開催日と費用障壁を処理する。",
+        "reuse": "日付大数字＋無料・割引バッジ。",
+        "evidence": "原画像下部。"
+      },
+      {
+        "name": "遷移先との接続",
+        "role": "申込条件と会場情報へ接続する想定。",
+        "reuse": "広告から同一見出し・犬写真・日付へ接続する原則。",
+        "evidence": "予約台帳のlandingUrlがnull。"
+      }
+    ]
+  },
+  "strengths": [
+    "対象者が明確",
+    "主要情報が5秒以内に読める",
+    "写真とコピーが相互補強"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "申込導線不明",
+      "evidence": "CTA・URLを確認できない",
+      "fix": "『詳細・申込はこちら』と遷移先を明確化",
+      "effect": "参加行動の迷いを減らす",
+      "metric": "クリック率"
+    },
+    {
+      "priority": "P1",
+      "issue": "会場情報不足",
+      "evidence": "会場名・地域がない",
+      "fix": "会場名または地域ラベルを追加",
+      "effect": "参加可能性を判断しやすい",
+      "metric": "遷移後離脱率"
+    },
+    {
+      "priority": "P2",
+      "issue": "縮小時の密度",
+      "evidence": "6頭と多段文字",
+      "fix": "小面では犬数を減らし日付を簡略化",
+      "effect": "小サイズ可読性向上",
+      "metric": "視認テスト正答率"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "対象写真囲み型イベント告知",
+      "keep": "中央コピーと左右写真の囲み",
+      "replace": "写真、イベント名、色"
+    },
+    {
+      "id": "C02",
+      "name": "黒丸連結の最大訴求",
+      "keep": "一文字単位の黒丸と白抜き",
+      "replace": "文言、形、色"
+    },
+    {
+      "id": "C03",
+      "name": "日付＋無料バッジ",
+      "keep": "大数字日付と円形オファー",
+      "replace": "日時、価格、色"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "犬写真、イベント名、ロゴ、固有コピー、開催情報",
+    "reusable": "中央集中構図、写真の囲み、情報順序、日付とオファーの役割分担"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/BN-0021_reference.png",
+      "../02_Notion_Images/BN-0021_reference_notion.jpg",
+      "https://banner-hiroba.com/archives/64668"
+    ],
+    "unknowns": [
+      "landing_url_missing",
+      "responsive_ad_variant_missing",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

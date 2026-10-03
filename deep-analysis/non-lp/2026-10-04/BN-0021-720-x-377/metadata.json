@@ -1,0 +1,19 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "BN-0021",
+  "media_type": "BN",
+  "asset_type": "Banner",
+  "title": "室内初開催・最大級 大型犬オフ会",
+  "source_name": "バナー広場",
+  "source_detail_url": "https://banner-hiroba.com/archives/64668",
+  "capture_url": "https://banner-hiroba.com/wp-content/uploads/2025/08/14e7279f91c58cb30a071a3f9ab03d0e.jpg.webp",
+  "official_url": null,
+  "analysis_status": "completed_and_validated",
+  "analysis_score": 86,
+  "notion_status": "synced_and_verified",
+  "notion_page_url": "https://app.notion.com/p/3ea24d4fa671816fbc81c12fdd1be01b",
+  "dropbox_status": "synced_and_verified",
+  "dropbox_path": "/design/Design_Research_Library/Banner_Research_Library/99_Needs_Review/selected/BN-0021-large-dog-meetup",
+  "cbs_status": "candidate_pending_user_approval",
+  "generated_at": "2026-10-04T06:30:00+09:00"
+}

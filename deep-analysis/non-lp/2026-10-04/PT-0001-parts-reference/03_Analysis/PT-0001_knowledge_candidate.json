@@ -38,5 +38,5 @@
     "files": ["01_Normal_Images/PT-0001_reference.png", "02_Notion_Images/PT-0001_reference_notion.jpg"],
     "original_dimensions": "1409x765"
   },
-  "cbs_sync": { "status": "candidate_pending_user_approval", "production_sync": "not_synced" }
+  "cbs_sync": { "status": "adopted_pending_cbs_integration", "production_sync": "not_synced" }
 }

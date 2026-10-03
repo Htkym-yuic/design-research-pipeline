@@ -1,0 +1,19 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "GR-0001",
+  "media_type": "GR",
+  "asset_type": "Graphic",
+  "title": "夏季休業のお知らせチラシ",
+  "source_name": "デザインAC",
+  "source_detail_url": "https://www.design-ac.net/free-template/flyer-template-30656",
+  "capture_url": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F2f721be794492934b1daa77ea1be5bc5%2F2f721be794492934b1daa77ea1be5bc5-400.webp&w=828&q=75",
+  "official_url": null,
+  "analysis_status": "completed_and_validated",
+  "analysis_score": 82,
+  "notion_status": "synced_and_verified",
+  "notion_page_url": "https://app.notion.com/p/3e824d4fa67181fc9661dd8b1bbc0c4b",
+  "dropbox_status": "synced_and_verified",
+  "dropbox_path": "/design/Design_Research_Library/Graphic_Research_Library/99_Needs_Review/selected/GR-0001-summer-closure-notice",
+  "cbs_status": "candidate_pending_user_approval",
+  "generated_at": "2026-10-04T06:30:00+09:00"
+}
