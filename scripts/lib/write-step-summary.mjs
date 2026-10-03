@@ -25,7 +25,12 @@ const lines = ["# LP日次収集 実行結果", ""];
 
 if (captureSummary) {
   const failedCaptures = captureSummary.results.filter((r) => r.status !== "captured");
-  lines.push(`## 撮影`, `- 対象: ${captureSummary.candidateCount}件`, `- 失敗: ${failedCaptures.length}件`);
+  lines.push(
+    `## 撮影`,
+    `- 対象: ${captureSummary.candidateCount}件`,
+    `- 脳内実装図: ${(captureSummary.implementationResults || []).length}件`,
+    `- 失敗: ${failedCaptures.length}件`,
+  );
   for (const item of failedCaptures) {
     lines.push(`  - ⚠ ${item.id}（${item.device}）: ${item.error || "unknown error"}`);
   }
@@ -71,7 +76,13 @@ if (nonLpCapture) {
   const byMedia = {};
   for (const item of nonLpCapture.results || []) byMedia[item.mediaType] = (byMedia[item.mediaType] || 0) + 1;
   const failed = (nonLpCapture.results || []).filter((item) => item.status !== "captured");
-  lines.push("## 収集・撮影", `- 対象: ${nonLpCapture.candidateCount}件`, `- 媒体別: ${Object.entries(byMedia).map(([key, count]) => `${key} ${count}件`).join(" / ") || "0件"}`, `- 失敗・要確認: ${failed.length}件`);
+  lines.push(
+    "## 収集・撮影",
+    `- 対象: ${nonLpCapture.candidateCount}件`,
+    `- 媒体別: ${Object.entries(byMedia).map(([key, count]) => `${key} ${count}件`).join(" / ") || "0件"}`,
+    `- 脳内実装図: ${(nonLpCapture.implementationResults || []).length}件`,
+    `- 失敗・要確認: ${failed.length}件`,
+  );
   for (const item of failed) lines.push(`  - ⚠ ${item.id}: ${item.error || "unknown error"}`);
   lines.push("");
   const unavailable = (nonLpCandidates?.sourceResults || []).filter((item) => item.status !== "collected" || item.accepted === 0);

@@ -17,6 +17,7 @@
     "analyze:non-lp:selected:deep": "node scripts/generate-selected-non-lp-deep-analysis.mjs",
     "analyze:non-lp:render:completed": "node scripts/render-completed-non-lp-analysis.mjs",
     "blueprint:elementor": "node scripts/generate-elementor-blueprint.mjs",
+    "blueprint:daily": "node scripts/generate-daily-implementation-blueprints.mjs",
     "daily:check": "node scripts/check-daily-run.mjs",
     "intake:audit": "node scripts/audit-intake-state.mjs",
     "daily:mark": "node scripts/mark-daily-run.mjs",

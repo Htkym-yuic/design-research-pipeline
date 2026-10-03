@@ -184,9 +184,19 @@ LP以外は以下のVariableで保存先と件数を管理する。
 7. `npm run notion:register:lp` — Notionへ軽量分析とPC/SPのFV・全体画像を新規作成・更新する
 
 日次のNotion登録では、軽量分析を週末まで保留しない。概要、FV印象、構成、テイスト・配色、参考点、要確認点、詳細分析候補度を短く記録し、PC/SPそれぞれのファーストビューと全体確認画像を掲載する。週末へ回すのは29項目の詳細分析とCBS同期である。
-8. `npm run collect:non-lp`以降で、バナー・Web・グラフィック・パーツ・Canva・素材候補を収集、撮影、軽量分析、Dropbox/Notion登録する。新規パーツ候補は05へ登録し、旧パーツ514件は99配下の再分析待ちDBで保管する
-9. `npm run report:daily:summary` — GitHub ActionsのStep SummaryへLP・非LPの結果（失敗があればその内容）を出力する
-10. 候補・撮影結果・Dropboxアップロード結果・Notion登録結果をGitHub Artifactとして保存する（`if-no-files-found: warn` のため、途中で失敗しても直前までの結果は残る）
+8. `npm run blueprint:daily -- --scope lp` — LPごとに注釈入り脳内実装図、Notion用JPEG、標準Elementor作成手順、構造JSONを生成する
+9. `npm run collect:non-lp`以降で、バナー・Web・グラフィック・パーツ・Canva・素材候補を収集、撮影、軽量分析する。新規パーツ候補は05へ登録し、旧パーツ514件は99配下の再分析待ちDBで保管する
+10. `npm run blueprint:daily -- --scope non-lp` — 視覚対象に媒体別の脳内実装図と手順書を生成する。素材メタ情報と抽象Patternは直接実装対象から除外する
+11. Dropboxでは正本PNG、Notion用JPEG、`03_Implementation_Blueprint`のMarkdown/JSONを保存し、Notionへ軽量JPEGと一次設計の説明を掲載する
+12. `npm run report:daily:summary` — GitHub ActionsのStep SummaryへLP・非LP・脳内実装図の結果（失敗があればその内容）を出力する
+13. 候補・撮影結果・Dropboxアップロード結果・Notion登録結果をGitHub Artifactとして保存する（`if-no-files-found: warn` のため、途中で失敗しても直前までの結果は残る）
+
+### 日次脳内実装と詳細分析の役割分担
+
+- 日次: 画像から読み取れる意味単位を赤枠で示し、標準ElementorのContainer / Widget、PC/SPの基本方針、作成順を一次設計として記録する。
+- 詳細分析: 日次図を捨てずに、実際の境界、寸法、レイアウト、レスポンシブ、動作、権利条件を検証して確定版へ更新する。
+- 日次で推測した値は「推奨値」「仮説」と明記する。取得できない値を実測値として扱わない。
+- Atomic Elementsは補助案、CSSは標準機能で再現できない場合のみ使用する。
 
 候補1件の処理に失敗しても、他の候補の処理は継続する（各スクリプト内で候補単位にtry/catchしている）。
 

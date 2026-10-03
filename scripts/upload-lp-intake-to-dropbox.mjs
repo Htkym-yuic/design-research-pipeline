@@ -83,9 +83,10 @@ const byCandidate = new Map();
 for (const result of summary.results) {
   if (result.status !== "captured") continue;
   if (!byCandidate.has(result.id)) {
-    byCandidate.set(result.id, { id: result.id, title: result.title, captureUrl: result.captureUrl, devices: [] });
+    byCandidate.set(result.id, { id: result.id, title: result.title, captureUrl: result.captureUrl, devices: [], implementation: null });
   }
   byCandidate.get(result.id).devices.push(result);
+  if (result.implementation) byCandidate.get(result.id).implementation = result.implementation;
 }
 
 const candidateIds = [...byCandidate.keys()].sort();
@@ -136,12 +137,23 @@ for (const candidate of byCandidate.values()) {
 
     filesToUpload.push(
       { local: path.join(deviceCandidateDir, "metadata.json"), remote: `${candidateDropboxPath}/metadata.json`, skipIfMissing: true },
-      { local: screenshots.fullPage, remote: `${normalDir}/${path.basename(screenshots.fullPage)}` },
-      { local: screenshots.firstView, remote: `${normalDir}/${path.basename(screenshots.firstView)}` },
-      { local: screenshots.sectionIndex, remote: `${normalDir}/${path.basename(screenshots.sectionIndex)}` },
-      { local: screenshots.sectionPreview, remote: `${normalDir}/${path.basename(screenshots.sectionPreview)}` },
-      { local: screenshots.notionFirstView, remote: `${notionDir}/${path.basename(screenshots.notionFirstView)}` },
-      { local: screenshots.notionSections, remote: `${notionDir}/${path.basename(screenshots.notionSections)}` },
+      ...[
+        [screenshots.fullPage, normalDir],
+        [screenshots.firstView, normalDir],
+        [screenshots.sectionIndex, normalDir],
+        [screenshots.sectionPreview, normalDir],
+        [screenshots.notionFirstView, notionDir],
+        [screenshots.notionSections, notionDir],
+      ].filter(([local]) => local).map(([local, remoteDir]) => ({ local, remote: `${remoteDir}/${path.basename(local)}` })),
+    );
+  }
+
+  if (candidate.implementation) {
+    filesToUpload.push(
+      { local: candidate.implementation.pngPath, remote: `${normalDir}/${path.basename(candidate.implementation.pngPath)}` },
+      { local: candidate.implementation.notionPath, remote: `${notionDir}/${path.basename(candidate.implementation.notionPath)}` },
+      { local: candidate.implementation.markdownPath, remote: `${candidateDropboxPath}/03_Implementation_Blueprint/${path.basename(candidate.implementation.markdownPath)}` },
+      { local: candidate.implementation.jsonPath, remote: `${candidateDropboxPath}/03_Implementation_Blueprint/${path.basename(candidate.implementation.jsonPath)}` },
     );
   }
 
@@ -159,6 +171,7 @@ for (const candidate of byCandidate.values()) {
     try {
       await ensureFolder(normalDir);
       await ensureFolder(notionDir);
+      if (candidate.implementation) await ensureFolder(`${candidateDropboxPath}/03_Implementation_Blueprint`);
 
       for (const file of uniqueFiles) {
         try {

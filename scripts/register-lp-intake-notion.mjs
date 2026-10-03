@@ -138,6 +138,16 @@ for (const dropboxCandidate of dropboxResult.candidates) {
     paragraphBlock(`Dropbox正本パス: ${dropboxCandidate.dropboxPath || "（未アップロード）"}`),
   );
 
+  const implementation = analysis?.implementationBlueprint || captureById.get(candidate.id)?.pc?.implementation || captureById.get(candidate.id)?.sp?.implementation;
+  if (implementation) {
+    bodyBlocks.push(
+      headingBlock("Elementor脳内実装・日次一次設計"),
+      paragraphBlock("標準ElementorのContainer、見出し、テキスト、画像、ボタンを中心にした一次設計です。Atomic Elementsは補助案、CSSは原則不使用です。"),
+      paragraphBlock("赤枠は実装上の意味単位です。日次段階では画像からの仮説を含むため、詳細分析時に境界、数値、PC/SP差を再確認します。"),
+      paragraphBlock(`作成手順書: ${path.basename(implementation.markdownPath)}`),
+    );
+  }
+
   if (dryRun) {
     results.push({ id: candidate.id, status: "dry_run", properties, bodyBlockCount: bodyBlocks.length });
     console.log(`[DRY_RUN] ${candidate.id}: Notion登録予定（プロパティ${Object.keys(properties).length}件）`);
@@ -156,6 +166,11 @@ for (const dropboxCandidate of dropboxResult.candidates) {
       bodyBlocks.push(headingBlock(label));
       const fileUploadId = await uploadFileForNotion(filePath);
       bodyBlocks.push(imageUploadBlock(fileUploadId, `${candidate.id} ${label}`));
+    }
+    if (implementation?.notionPath) {
+      bodyBlocks.push(headingBlock("脳内実装図"));
+      const fileUploadId = await uploadFileForNotion(implementation.notionPath);
+      bodyBlocks.push(imageUploadBlock(fileUploadId, `${candidate.id} Elementor脳内実装図`));
     }
     bodyBlocks.push(paragraphBlock("画像はNotion用軽量版です。正本画像と個別画像はDropboxに保管しています。"));
 

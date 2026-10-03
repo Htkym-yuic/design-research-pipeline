@@ -15,7 +15,7 @@ const results = [];
 
 function collectPaths(value, paths = []) {
   if (!value) return paths;
-  if (typeof value === "string" && /\.(png|jpe?g|json)$/i.test(value)) paths.push(value);
+  if (typeof value === "string" && /\.(png|jpe?g|json|md)$/i.test(value)) paths.push(value);
   else if (Array.isArray(value)) value.forEach((item) => collectPaths(item, paths));
   else if (typeof value === "object") Object.values(value).forEach((item) => collectPaths(item, paths));
   return paths;

@@ -83,6 +83,7 @@ function databaseRows(profile) {
 function buildMarkdown({ item, analysis, profile, type, runDate }) {
   const sourceDetail = placeholder(item.sourceDetailUrl || item.captureUrl);
   const title = placeholder(item.title);
+  const implementation = analysis.implementationBlueprint || {};
   return `## 1. 基本情報
 
 | 項目 | 内容 |
@@ -280,6 +281,21 @@ ${databaseRows(profile)}
 | ID | 候補名 | 位置・状態 | 再利用種別 | 推奨ファイル名 | 除外する固有要素 | 再現・切り出し注意 |
 |---|---|---|---|---|---|---|
 | C01 | [章15と一致] | [要実測] | [要分析] | ${item.id}_C01-[short-name].png | [要分析] | 意味単位を途中で切らない |
+
+### Elementor脳内実装
+
+| 成果物 | 日次一次設計 | 詳細分析での更新 |
+|---|---|---|
+| 注釈入りPNG | ${placeholder(implementation.pngPath, "[要設定: 日次PNG]")} | 境界とラベルを実測して確定 |
+| Notion用JPEG | ${placeholder(implementation.notionPath, "[要設定: 日次JPEG]")} | 確定図へ差し替え |
+| 作成手順Markdown | ${placeholder(implementation.markdownPath, "[要設定: 日次手順書]")} | 実際のContainer/Widget/PC-SP設定へ更新 |
+| 構造JSON | ${placeholder(implementation.jsonPath, "[要設定: 日次JSON]")} | 未確認値を実測値またはfailure_reasonへ更新 |
+
+- 標準ElementorのContainer、見出し、テキスト、画像、ボタンを優先する。
+- Atomic Elementsは標準構造が過度に複雑になる場合だけ補助案として記録する。
+- CSSは標準機能で再現できない理由、対象クラス、CSSなしの代替案を説明できる場合だけ採用する。
+- PC、タブレット、SPそれぞれのDirection、Width、Gap、Padding、順序、表示/非表示を確認する。
+- 日次図の「仮説」「推奨値」を実測値として扱わない。
 
 ## 27. 返却・後工程依頼文
 

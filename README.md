@@ -67,6 +67,10 @@ Creative Brief Studio AIとは分離して運用する、デザインリサー�
 3. Dropboxの `99_Needs_Review/<日付>/daily-intake-<開始ID>-<終了ID>/` へ正本画像・Notion用軽量画像を保存する
 4. Notionの「01｜LPリサーチライブラリー」へ軽量分析ページを新規作成・更新する
 5. バナー、Web、グラフィック、パーツ、Canva、デザイン原則、素材メタ情報を媒体別ライブラリへ登録する
+6. LP・Web・バナー・UI・グラフィック・パーツ・Canvaに、注釈入りの「脳内実装図」と標準Elementor中心の作成手順を生成する
+
+脳内実装は日次の一次設計と週末詳細分析の二段階です。日次は画像から確認できる範囲を仮説付きで図解し、
+詳細分析では29章構成を変えずに実測・PC/SP差・実装条件を再確認して確定版へ更新します。
 
 詳細な設定手順（必要なGitHub Secrets / Variables、DRY_RUNモードの使い方等）は [`docs/OPERATIONS.md`](docs/OPERATIONS.md) の「自動化（GitHub Actions）」を参照してください。
 

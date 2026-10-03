@@ -86,6 +86,30 @@ config/non-lp-deep-analysis-templates.json を正本とする。
 - 素材探索は素材自体を再配布せず、許可されたプレビューとメタ情報を証拠にする。
 - 画像がない枠は古い画像で埋めず、failure_reasonを書く。
 
+## Elementor脳内実装ルール
+
+LP、Web、バナー、UI、グラフィック、パーツ、Canvaの視覚対象は、詳細分析本文の章構成を変えず、
+第7章・第11章・第20章・第26章に実装分解を反映する。別添成果物は次の4点を正本とする。
+
+1. 高精細の注釈入りPNG
+2. Notion掲載用の軽量JPEG
+3. 標準Elementor中心の作成手順Markdown
+4. コンテナ階層・PC/SP設定・未確認事項を持つJSON
+
+日次は `elementor-daily-blueprint-1.0` の一次設計として自動生成する。赤枠の境界、コンテナ名、
+推奨値には画像からの仮説を含むため、詳細分析時に実画像、DOM、実装環境で再確認し、確定版へ更新する。
+既存の29章は増減・並べ替えをしない。
+
+実装の優先順位は次のとおり。
+
+1. Elementor標準Container / 標準Widget
+2. Elementor Pro標準Widget
+3. Atomic Elements
+4. 最小限のカスタムCSS
+
+素材探索と抽象Patternは直接の画面実装対象でないため、脳内実装図を必須にしない。Patternは根拠となった
+LP / Web / Banner / Parts側の実装図へ関連付ける。
+
 ## 実行方法
 
 1件のテンプレートを作る。
@@ -126,4 +150,5 @@ npm run knowledge:validate-non-lp -- --input "<Markdown>" --mode analysis
 - URL、画像、寸法、状態などの根拠が第23章と第25章にある。
 - 権利区分と除外対象が明記されている。
 - Notionには媒体別の画像枠と29章本文を同じ順序で反映する。
+- 第26章と別添の脳内実装図・手順書・JSONが一致し、標準Elementorでの再現手順が記載されている。
 - CBS同期候補JSONは詳細分析完了後に生成し、本番同期はユーザー確認後に行う。

@@ -161,6 +161,10 @@ jobs:
         if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_lp != 'false'
         run: npm run analyze:lp:light
 
+      - name: Generate LP Elementor brain implementation
+        if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_lp != 'false'
+        run: npm run blueprint:daily -- --scope lp
+
       - name: Upload LP to Dropbox
         if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_lp != 'false'
         run: npm run dropbox:upload:lp
@@ -196,6 +200,10 @@ jobs:
       - name: Generate non-LP lightweight analysis
         if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_non_lp != 'false'
         run: npm run analyze:non-lp:light
+
+      - name: Generate non-LP implementation blueprints
+        if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_non_lp != 'false'
+        run: npm run blueprint:daily -- --scope non-lp
 
       - name: Upload non-LP to Dropbox
         if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_non_lp != 'false'

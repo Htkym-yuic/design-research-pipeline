@@ -151,6 +151,15 @@ for (const item of summary.results || []) {
       paragraphBlock(`Dropbox正本パス: ${upload?.dropboxPath || "メタ情報のみ"}`)
     ];
 
+    const implementation = analysis.implementationBlueprint || item.files?.implementation;
+    if (implementation) {
+      blocks.push(
+        headingBlock("Elementor脳内実装・日次一次設計"),
+        paragraphBlock("標準Elementorを優先した一次実装案です。Atomic Elementsは補助、CSSは原則不使用とし、詳細分析時に設定値と境界を確定します。"),
+        paragraphBlock(`作成手順書: ${implementation.markdownPath?.split("/").at(-1) || "Dropboxの03_Implementation_Blueprintを参照"}`),
+      );
+    }
+
     const page = await createPage(dataSourceId, properties, blocks);
     if (item.saveImage && item.files?.reference?.notionPath) {
       const fileId = await uploadFileForNotion(item.files.reference.notionPath);
@@ -163,6 +172,10 @@ for (const item of summary.results || []) {
       if (!filePath) continue;
       const fileId = await uploadFileForNotion(filePath);
       await appendBlockChildren(page.id, [headingBlock(label), imageUploadBlock(fileId, label)]);
+    }
+    if (implementation?.notionPath) {
+      const fileId = await uploadFileForNotion(implementation.notionPath);
+      await appendBlockChildren(page.id, [headingBlock("脳内実装図"), imageUploadBlock(fileId, `${item.id} Elementor脳内実装図`)]);
     }
     results.push({ id: item.id, status: "created", pageId: page.id });
   } catch (error) {
