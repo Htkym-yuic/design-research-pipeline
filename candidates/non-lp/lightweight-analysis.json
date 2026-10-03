@@ -2798,6 +2798,246 @@
       "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
       "deepDivePriority": "中",
       "generatedAt": "2026-10-02T16:30:43.333Z"
+    },
+    "BN-0039": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "バナー広場から収集したBanner参考。空旅_384 x 216のバナーデザイン。",
+      "selectionReason": "バナー広場の新規候補として重複確認を通過。バナー単体の訴求・文字量・配色を確認できるため。",
+      "visualSummary": "寒色・青紫系。384×216の掲載画像を基準に確認。",
+      "usefulPoints": "遷移先URLを取得できず、バナー単体で保留",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-03T16:25:10.025Z"
+    },
+    "BN-0040": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "バナー広場から収集したBanner参考。夏ギフト_667 x 316のバナーデザイン。",
+      "selectionReason": "バナー広場の新規候補として重複確認を通過。バナー単体の訴求・文字量・配色を確認できるため。",
+      "visualSummary": "ニュートラル。667×316の掲載画像を基準に確認。",
+      "usefulPoints": "遷移先URLを取得できず、バナー単体で保留",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-03T16:25:10.037Z"
+    },
+    "BN-0041": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "バナー広場から収集したBanner参考。クラウド型電子契約サービス_600 x 500のバナーデザイン。",
+      "selectionReason": "バナー広場の新規候補として重複確認を通過。バナー単体の訴求・文字量・配色を確認できるため。",
+      "visualSummary": "ニュートラル。600×500の掲載画像を基準に確認。",
+      "usefulPoints": "遷移先URLを取得できず、バナー単体で保留",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-03T16:25:10.052Z"
+    },
+    "BN-0042": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "バナー広場から収集したBanner参考。軽貨物ドライバー募集_600 x 500のバナーデザイン。",
+      "selectionReason": "バナー広場の新規候補として重複確認を通過。バナー単体の訴求・文字量・配色を確認できるため。",
+      "visualSummary": "暖色・黄橙系。600×500の掲載画像を基準に確認。",
+      "usefulPoints": "遷移先URLを取得できず、バナー単体で保留",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-03T16:25:10.068Z"
+    },
+    "BN-0043": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "バナー広場から収集したBanner参考。FINAL SALL_1080 x 1080のバナーデザイン。",
+      "selectionReason": "バナー広場の新規候補として重複確認を通過。バナー単体の訴求・文字量・配色を確認できるため。",
+      "visualSummary": "暖色・赤桃系。1080×1080の掲載画像を基準に確認。",
+      "usefulPoints": "遷移先URLを取得できず、バナー単体で保留",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-03T16:25:10.102Z"
+    },
+    "WB-0017": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。A Bite Coffee。",
+      "selectionReason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+      "visualSummary": "暖色・黄橙系。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-03T16:25:10.113Z"
+    },
+    "WB-0018": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。みんなの銀行（スマホ銀行） | デジタルバンクで価値あるつながりを。",
+      "selectionReason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+      "visualSummary": "明色・白基調。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.minna-no-ginko.com/\", waiting until \"domcontentloaded\"\n",
+      "deepDivePriority": "要確認",
+      "generatedAt": "2026-10-03T16:25:10.123Z"
+    },
+    "GR-0039": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したチラシ・フライヤー参考。臨時休業のお知らせ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-03T16:25:10.133Z"
+    },
+    "GR-0040": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したポスター参考。夏祭りポスター。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "ニュートラル。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-03T16:25:10.143Z"
+    },
+    "GR-0041": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したSNS投稿・Web広告参考。半透明楕円のシンプルな夏旅行向けバナー。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "寒色・青紫系。156×81の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-03T16:25:10.152Z"
+    },
+    "GR-0042": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集した名刺・ショップカード参考。淡いピンクのやわらかなデザイナー名刺。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。384×232の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-03T16:25:10.160Z"
+    },
+    "GR-0043": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したロゴ・VI/CI参考。赤と黒の直線的なロゴ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。400×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-03T16:25:10.170Z"
+    },
+    "PT-0041": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。オフィスステーション。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "明色・白基調。1530×748の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-03T16:25:10.191Z"
+    },
+    "PT-0042": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。SEARCH WRITE(サーチライト)。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "明色・白基調。1501×812の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-03T16:25:10.214Z"
+    },
+    "PT-0043": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。COZUCHI。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "ニュートラル。1509×574の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-03T16:25:10.232Z"
+    },
+    "PT-0044": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。Golfcart Vision。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "ニュートラル。1419×596の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-03T16:25:10.251Z"
+    },
+    "PT-0045": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。花王株式会社。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "明色・白基調。1495×608の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-03T16:25:10.269Z"
+    },
+    "CV-0039": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。Gray Minimalist Photo COllage Portrait Instagram Post。",
+      "selectionReason": "Canvaの新規候補として重複確認を通過。テンプレート化しやすい構成、文字組み、配色、情報階層の型を確認できるため。",
+      "visualSummary": "ニュートラル。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-03T16:25:10.279Z"
+    },
+    "CV-0040": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。Neutral Aesthetic Instagram Portrait Post。",
+      "selectionReason": "Canvaの新規候補として重複確認を通過。テンプレート化しやすい構成、文字組み、配色、情報階層の型を確認できるため。",
+      "visualSummary": "暖色・黄橙系。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-03T16:25:10.290Z"
+    },
+    "CV-0041": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。Beige and Brown Scrapbook Fashion Photo Collage Instagram Post。",
+      "selectionReason": "Canvaの新規候補として重複確認を通過。テンプレート化しやすい構成、文字組み、配色、情報階層の型を確認できるため。",
+      "visualSummary": "ニュートラル。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-03T16:25:10.300Z"
+    },
+    "CV-0042": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。White and Brown Simple Minimalist Aesthetic Photo Collage Instagram Post。",
+      "selectionReason": "Canvaの新規候補として重複確認を通過。テンプレート化しやすい構成、文字組み、配色、情報階層の型を確認できるため。",
+      "visualSummary": "ニュートラル。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-03T16:25:10.309Z"
+    },
+    "CV-0043": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。Minimalist Happy Birthday Instagram Post。",
+      "selectionReason": "Canvaの新規候補として重複確認を通過。テンプレート化しやすい構成、文字組み、配色、情報階層の型を確認できるため。",
+      "visualSummary": "ニュートラル。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-03T16:25:10.319Z"
+    },
+    "PAT-0015": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（デザインAC）から収集したPattern参考。臨時休業のお知らせに見る文字組みと視線誘導。",
+      "selectionReason": "日次収集から抽出（デザインAC）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "主見出し・補足・画像・行動情報のサイズ差と配置から、最初に読ませる情報を明確にする。 根拠候補: GR-0039",
+      "reviewPoints": "素材そのものではなく、情報階層と余白の考え方だけを転用する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-03T16:25:10.319Z"
+    },
+    "PAT-0016": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（Canva）から収集したPattern参考。Gray Minimalist Photo COllage Portrait Instagram Postに見る反復可能なテンプレート構造。",
+      "selectionReason": "日次収集から抽出（Canva）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "画像枠・見出し・補足情報の位置を固定し、素材を差し替えても情報階層が崩れない構造を作る。 根拠候補: CV-0039",
+      "reviewPoints": "テンプレートの複製ではなく、グリッド・余白・主従関係のみを参考にする。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-03T16:25:10.319Z"
     }
   }
 }

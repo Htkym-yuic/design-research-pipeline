@@ -429,6 +429,52 @@
         "PC/SP比較"
       ],
       "generatedAt": "2026-10-02T16:22:03.077Z"
+    },
+    "LP-0243": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イシン株式会社の中途採用に関するLP。コムキャリの訴求と画面構成を日次候補として収集した。",
+      "selectionReason": "LPアーカイブの新規候補で、既存ID・URLとの重複確認を通過したため。中途採用・にぎやか系の事例として分類でき、PC/SPのファーストビューと全体構成を比較できるため。週末レビューで既存ナレッジとの差分や再利用可能な構造を評価する材料になるため。",
+      "mainAppeal": "コムキャリの主要価値を伝え、次の行動へつなげる構成",
+      "fvImpression": "にぎやか系として掲載された事例。PC/SPのFV画像を確認でき、画面の主調色は緑・青緑系。",
+      "roughStructure": "hero candidate → problem candidate → features candidate → proof candidate → service candidate → cta candidate の順で分割確認。週末レビューで実際の役割名を確定する。",
+      "tasteAndColor": "にぎやか系。主調色の自動判定は緑・青緑系。",
+      "usefulPoints": "PC/SPのFVと全体構成を比較でき、同業種の情報優先順位とレスポンシブ差の検討材料になる。",
+      "reviewPoints": "これは日次の自動一次分析。コピー、CTA、証拠、セクション役割の意味判断は週末の詳細レビューで再確認する。",
+      "deepDivePriority": "中。週末レビューでCBS既存ナレッジとの差分と不足領域を確認して優先度を確定する。",
+      "industryTags": [
+        "中途採用"
+      ],
+      "colorTags": [
+        "緑・青緑系"
+      ],
+      "layoutTags": [
+        "長尺LP",
+        "PC/SP比較"
+      ],
+      "generatedAt": "2026-10-03T16:20:47.058Z"
+    },
+    "LP-0244": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "環境計測株式会社の企業・会社・お店に関するLP。環境計測株式会社の訴求と画面構成を日次候補として収集した。",
+      "selectionReason": "LPアーカイブの新規候補で、既存ID・URLとの重複確認を通過したため。企業・会社・お店・信頼・安心系の事例として分類でき、PC/SPのファーストビューと全体構成を比較できるため。週末レビューで既存ナレッジとの差分や再利用可能な構造を評価する材料になるため。",
+      "mainAppeal": "環境計測株式会社の主要価値を伝え、次の行動へつなげる構成",
+      "fvImpression": "信頼・安心系として掲載された事例。PC/SPのFV画像を確認でき、画面の主調色は緑・青緑系。",
+      "roughStructure": "hero candidate → problem candidate → features candidate → proof candidate → service candidate → cta candidate の順で分割確認。週末レビューで実際の役割名を確定する。",
+      "tasteAndColor": "信頼・安心系。主調色の自動判定は緑・青緑系。",
+      "usefulPoints": "PC/SPのFVと全体構成を比較でき、同業種の情報優先順位とレスポンシブ差の検討材料になる。",
+      "reviewPoints": "これは日次の自動一次分析。コピー、CTA、証拠、セクション役割の意味判断は週末の詳細レビューで再確認する。",
+      "deepDivePriority": "中。週末レビューでCBS既存ナレッジとの差分と不足領域を確認して優先度を確定する。",
+      "industryTags": [
+        "企業・会社・お店"
+      ],
+      "colorTags": [
+        "緑・青緑系"
+      ],
+      "layoutTags": [
+        "長尺LP",
+        "PC/SP比較"
+      ],
+      "generatedAt": "2026-10-03T16:20:47.114Z"
     }
   }
 }
