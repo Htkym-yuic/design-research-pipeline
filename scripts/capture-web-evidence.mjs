@@ -27,6 +27,45 @@ async function warmLazyContent(page) {
   await page.waitForTimeout(800);
 }
 
+async function dismissObstructions(page) {
+  const dismissed = [];
+  const closeNames = /閉じる|close|dismiss/i;
+  const closeControls = page.getByRole("button", { name: closeNames });
+  for (let index = 0; index < await closeControls.count(); index += 1) {
+    const control = closeControls.nth(index);
+    if (!await control.isVisible().catch(() => false)) continue;
+    await control.click({ timeout: 2000 }).catch(() => {});
+    dismissed.push("named-close-control");
+  }
+
+  const removed = await page.evaluate(() => {
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+    const campaignPattern = /Amazon|ギフトカード|40,?000円|4万円/i;
+    const candidates = [...document.querySelectorAll("body *")].filter((element) => {
+      const style = getComputedStyle(element);
+      const rect = element.getBoundingClientRect();
+      const text = element.textContent || "";
+      const mediaText = [...element.querySelectorAll("img")]
+        .map((image) => `${image.alt || ""} ${image.src || ""}`)
+        .join(" ");
+      const isFloating = style.position === "fixed" || style.position === "absolute";
+      const isLowerOverlay = rect.x > viewportWidth * 0.2 && rect.y > viewportHeight * 0.35;
+      const isOverlaySize = rect.width >= 180 && rect.width <= viewportWidth * 0.9
+        && rect.height >= 80 && rect.height <= viewportHeight * 0.65;
+      return isFloating && isLowerOverlay && isOverlaySize
+        && campaignPattern.test(`${text} ${mediaText}`);
+    });
+
+    const roots = candidates.filter((candidate) => !candidates.some((other) => other !== candidate && other.contains(candidate)));
+    roots.forEach((element) => element.remove());
+    return roots.length;
+  });
+  if (removed > 0) dismissed.push(`campaign-overlay:${removed}`);
+  await page.waitForTimeout(500);
+  return dismissed;
+}
+
 async function capture(browser, { url, id, output, label, viewport, isMobile }) {
   const context = await browser.newContext({
     viewport,
@@ -39,6 +78,7 @@ async function capture(browser, { url, id, output, label, viewport, isMobile }) 
   await page.goto(url, { waitUntil: "domcontentloaded", timeout: 90000 });
   await page.waitForTimeout(4000);
   await warmLazyContent(page);
+  const dismissed = await dismissObstructions(page);
   const firstView = path.join(output, `${id}_SITE_${label}_first_view.png`);
   const fullPage = path.join(output, `${id}_SITE_${label}_full.png`);
   await page.screenshot({ path: firstView });
@@ -46,7 +86,7 @@ async function capture(browser, { url, id, output, label, viewport, isMobile }) 
   const finalUrl = page.url();
   const title = await page.title();
   await context.close();
-  return { label, firstView, fullPage, finalUrl, title };
+  return { label, firstView, fullPage, finalUrl, title, dismissed };
 }
 
 const args = parseArgs(process.argv.slice(2));

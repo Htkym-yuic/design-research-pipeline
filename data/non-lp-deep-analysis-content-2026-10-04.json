@@ -81,6 +81,9 @@
       "analysisDate": "2026-10-04",
       "cbsStatus": "未同期・ユーザー確認待ち",
       "sync": {"notionStatus":"synced_and_verified","notionPageUrl":"https://app.notion.com/p/3e824d4fa6718186a95cdef8851a6a2d","dropboxStatus":"synced_and_verified","dropboxPath":"/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/selected/WB-0004-stores"},
+      "captureCleanup": {"status":"clean_overlay_removed_pc_sp","topAnnouncementRetained":true},
+      "implementationBlueprint": {"status":"completed_and_synced","platform":"WordPress Elementor","sections":11,"path":"04_Implementation_Blueprint/WB-0004_elementor_blueprint.md","diagram":"04_Implementation_Blueprint/WB-0004_elementor_brain_implementation.png","notionDiagram":"04_Implementation_Blueprint/WB-0004_elementor_brain_implementation_notion.jpg"},
+      "history": ["capture-clean: PC/SPの固定キャンペーンポップアップを除去して再撮影。上部告知バーは構造要素として保持。","implementation-blueprint: WordPress／Elementor向け脳内実装図とコンテナ設計書を追加。"],
       "outputRoot": "deep-analysis/non-lp/2026-10-04/WB-0004-stores",
       "selectionReason": "店舗事業者向けの複数サービスを一つの成長物語と比較可能な料金導線へ統合しているため",
       "images": [

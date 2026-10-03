@@ -1,0 +1,27 @@
+{
+  "input": "deep-analysis/non-lp/2026-10-04/WB-0004-stores/01_Normal_Images/WB-0004_SITE_PC_full.png",
+  "output": "deep-analysis/non-lp/2026-10-04/WB-0004-stores/04_Implementation_Blueprint/WB-0004_elementor_brain_implementation.png",
+  "notionOutput": "deep-analysis/non-lp/2026-10-04/WB-0004-stores/04_Implementation_Blueprint/WB-0004_elementor_brain_implementation_notion.jpg",
+  "railWidth": 620,
+  "sections": [
+    {"y":0,"height":113,"label":"00｜告知バー＋グローバルヘッダー","color":"#d7263d","lines":["親Container: 縦","告知Inner＋Header Inner","Image/Site Logo・Nav Menu・Buttons","HeaderはSticky、告知は通常フロー"]},
+    {"y":113,"height":1238,"label":"01｜Hero／ファーストビュー","color":"#d7263d","lines":["親Container: 縦・中央揃え","News Carousel／Heading／Text","Button×2を横並び","ImageまたはVideoを全幅配置","SP: ボタン縦積み・画像縦長"]},
+    {"y":1351,"height":1244,"label":"02｜サービス一覧","color":"#ef6c00","lines":["Section Container＋見出しInner","Loop Gridまたは子Container反復","Icon/Image／Heading／Text／Button","PC 2〜3列、SP 1列"]},
+    {"y":2595,"height":976,"label":"03｜おまかせスタート","color":"#ef6c00","lines":["2カラム親Container","左: Heading／Text／Button","右: Image・UIモック","SP: テキスト→画像の縦積み"]},
+    {"y":3571,"height":1106,"label":"04｜料金プラン","color":"#00875a","lines":["Section見出し＋Pricing Grid","料金カードを子Container化","Heading／Price／List／Button","おすすめカードのみAccent"]},
+    {"y":4677,"height":990,"label":"05｜導入事例","color":"#00875a","lines":["Section＋Carousel Container","Image／Quote／Company／Button","Swiper系CarouselまたはLoop Carousel","SPは1カード表示"]},
+    {"y":5667,"height":1339,"label":"06｜資料ダウンロード","color":"#005bd8","lines":["見出し＋資料カードGrid","Image／Heading／Text／Button","Loop Grid＋Popup/Form連携","業種タグで分類可能"]},
+    {"y":7006,"height":942,"label":"07｜お知らせ","color":"#005bd8","lines":["見出し＋投稿一覧","Loop Grid／Posts Widget","Date／Category／Title／Link","SPも一覧順を維持"]},
+    {"y":7948,"height":782,"label":"08｜FAQ・相談導線","color":"#6554c0","lines":["2カラム親Container","左: 見出し・相談Text・Button","右: Accordion Widget","SP: 見出し→Accordion"]},
+    {"y":8730,"height":482,"label":"09｜最終CTA","color":"#6554c0","lines":["全幅Accent Container","Heading／実績Text／Button×2","主CTAと副CTAを分離","SPは縦積み"]},
+    {"y":9212,"height":1154,"label":"10｜注記＋フッター","color":"#6b778c","lines":["注記Text Container","Footer Link Grid","Site Logo／Icon List／Nav Menu","PC多列、SP Accordion化も可"]}
+  ],
+  "details": [
+    {"x":0,"y":0,"width":1440,"height":48,"label":"告知Container＋Button","labelWidth":300},
+    {"x":0,"y":48,"width":1440,"height":65,"label":"Header Inner Container","labelWidth":310},
+    {"x":430,"y":155,"width":580,"height":80,"label":"News Carousel","labelWidth":220},
+    {"x":330,"y":250,"width":780,"height":235,"label":"Heading＋Text","labelWidth":220},
+    {"x":530,"y":490,"width":380,"height":80,"label":"Button Row","labelWidth":190},
+    {"x":80,"y":585,"width":1280,"height":750,"label":"Hero Image／Video","labelWidth":260}
+  ]
+}

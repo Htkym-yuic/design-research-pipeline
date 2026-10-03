@@ -198,7 +198,7 @@ ${item.id}はdrs-deep-1.0の29章詳細分析、画像証拠、再利用候補�
 
 ## 29. 更新履歴
 
-- ${item.analysisDate} drs-deep-1.0: ${item.label}の初回詳細分析を完成。
+- ${item.analysisDate} drs-deep-1.0: ${item.label}の初回詳細分析を完成。${item.history?.length ? `\n${item.history.map((entry) => `- ${item.analysisDate} ${entry}`).join("\n")}` : ""}
 `;
 }
 
@@ -241,6 +241,11 @@ for (const item of input.items) {
     title: item.title, source_name: item.sourceName, source_detail_url: item.sourceDetailUrl,
     capture_url: item.captureUrl, official_url: item.officialUrl || null, analysis_status: "completed_and_validated",
     analysis_score: total, notion_status: item.sync?.notionStatus || "pending_sync",
+    ...(item.captureCleanup ? { capture_status: item.captureCleanup.status } : {}),
+    ...(item.implementationBlueprint ? {
+      implementation_blueprint_status: item.implementationBlueprint.status,
+      implementation_blueprint_path: item.implementationBlueprint.path
+    } : {}),
     ...(item.sync?.notionPageUrl ? { notion_page_url: item.sync.notionPageUrl } : {}),
     dropbox_status: item.sync?.dropboxStatus || "pending_sync",
     ...(item.sync?.dropboxPath ? { dropbox_path: item.sync.dropboxPath } : {}),
@@ -250,6 +255,8 @@ for (const item of input.items) {
     schema_version: "drs-deep-1.0", id: item.id, mode: "analysis", selected_for_deep_analysis: true,
     selection_reason: item.selectionReason,
     checks: { first_line: "Yes", chapters: "Yes", unit_headings: "Yes", unit_fields: "Yes", image_slots: "Yes", image_evidence: "Yes", candidate_parity: "Yes", rights: "Yes", unknowns: "Yes", sources: "Yes", run_record: "Yes", analysis_complete: "Yes" },
+    ...(item.captureCleanup ? { capture_cleanup: item.captureCleanup } : {}),
+    ...(item.implementationBlueprint ? { implementation_blueprint: item.implementationBlueprint } : {}),
     notion: item.sync?.notionPageUrl
       ? { status: item.sync.notionStatus, page_url: item.sync.notionPageUrl }
       : "pending_sync",
