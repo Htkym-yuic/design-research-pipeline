@@ -64,18 +64,18 @@
   },
   "illustrationAc": {
     "prefix": "ILAC",
-    "existingMax": 53,
-    "nextNumber": 54,
+    "existingMax": 63,
+    "nextNumber": 64,
     "digits": 4,
     "sourceOfTruth": "Notion 08｜素材探索ナレッジ",
-    "lastReservationAt": "2026-10-02T16:29:28.057Z"
+    "lastReservationAt": "2026-10-03T16:27:58.734Z"
   },
   "photoAc": {
     "prefix": "PHAC",
-    "existingMax": 53,
-    "nextNumber": 54,
+    "existingMax": 63,
+    "nextNumber": 64,
     "digits": 4,
     "sourceOfTruth": "Notion 08｜素材探索ナレッジ",
-    "lastReservationAt": "2026-10-02T16:29:28.057Z"
+    "lastReservationAt": "2026-10-03T16:27:58.734Z"
   }
 }
