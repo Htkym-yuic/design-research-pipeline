@@ -72,6 +72,8 @@ const summaryPath = getArg("summary") || process.env.LP_CAPTURE_SUMMARY_FILE || 
 const dropboxRoot = process.env.DROPBOX_DESIGN_ROOT || "/design/Design_Research_Library";
 const intakeDate = process.env.LP_INTAKE_DATE || todayJst();
 const dryRun = isDryRun();
+const outputDir = path.dirname(summaryPath);
+const outputPath = path.join(outputDir, "dropbox-upload-result.json");
 
 const summaryRaw = await fs.readFile(summaryPath, "utf8").catch((error) => {
   throw new Error(`撮影結果のsummary.jsonを読み込めません（${summaryPath}）: ${error.message}`);
@@ -91,7 +93,22 @@ for (const result of summary.results) {
 
 const candidateIds = [...byCandidate.keys()].sort();
 if (candidateIds.length === 0) {
+  await fs.writeFile(
+    outputPath,
+    JSON.stringify(
+      {
+        uploadedAt: new Date().toISOString(),
+        dryRun,
+        intakeDate,
+        intakeBasePath: null,
+        candidates: [],
+      },
+      null,
+      2,
+    ) + "\n",
+  );
   console.log("アップロード対象の候補がありません（撮影に成功した候補が0件）。");
+  console.log(`空のDropboxアップロード結果を出力しました: ${outputPath}`);
   process.exit(0);
 }
 
@@ -197,8 +214,6 @@ for (const candidate of byCandidate.values()) {
   uploadResults.push(candidateResult);
 }
 
-const outputDir = path.dirname(summaryPath);
-const outputPath = path.join(outputDir, "dropbox-upload-result.json");
 const output = {
   uploadedAt: new Date().toISOString(),
   dryRun,
