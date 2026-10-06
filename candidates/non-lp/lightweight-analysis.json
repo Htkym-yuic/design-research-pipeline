@@ -3574,6 +3574,206 @@
       "reviewPoints": "切り出し範囲が広すぎないか、前後セクションへの依存がないかを確認する。",
       "deepDivePriority": "中",
       "generatedAt": "2026-10-06T10:22:39.707Z"
+    },
+    "ILAC-0064": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。デジタルネットワーク。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。476×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 22047036 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:29:36.759Z"
+    },
+    "ILAC-0065": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。サイバー壁紙（ヨコ）。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。483×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 820438 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:29:36.759Z"
+    },
+    "ILAC-0066": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。青のウェーブ。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。476×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 22345764 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:29:36.759Z"
+    },
+    "ILAC-0067": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。ポリゴン　背景透過　幾何学模様　モザイク。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。615×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 2371264 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:29:36.759Z"
+    },
+    "ILAC-0068": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。Wi-Fi。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。340×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 94775 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:29:36.759Z"
+    },
+    "ILAC-0069": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。サイバー壁紙（タテ）。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。240×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 820435 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:29:36.759Z"
+    },
+    "ILAC-0070": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。青系の図形テクスチャとウェーブ。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。476×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 22261549 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:29:36.759Z"
+    },
+    "ILAC-0071": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。紫系のウェーブ 。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。476×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 22345756 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:29:36.759Z"
+    },
+    "ILAC-0072": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。サイバー背景　数字　テクノロジー　AI。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。476×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 26136784 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:29:36.759Z"
+    },
+    "ILAC-0073": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。緑系の図形テクスチャとウェーブ。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。476×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 22261561 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:29:36.759Z"
+    },
+    "PHAC-0064": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。ビジネスマンとスマホとネットワーク スマホ。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。511×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 34772954 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:29:36.759Z"
+    },
+    "PHAC-0065": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。デジタルな地球とＡＩネットワーク通信網 ネットワーク。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。481×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 25961643 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:29:36.759Z"
+    },
+    "PHAC-0066": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。世界につながるネットワークビジネス網 ネットワーク。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。1031×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 25946599 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:29:36.759Z"
+    },
+    "PHAC-0067": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。AIのサポートや進化のイメージ ai。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。511×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 34967156 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:29:36.759Z"
+    },
+    "PHAC-0068": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。AI　アイコン 脳。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。481×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 2826332 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:29:36.759Z"
+    },
+    "PHAC-0069": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。テクノロジー都市化計画 テクノロジ。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。508×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 26057781 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:29:36.759Z"
+    },
+    "PHAC-0070": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。都市風景と抽象イメージ 街並み。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。508×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 25409858 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:29:36.759Z"
+    },
+    "PHAC-0071": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。テクノロジー都市化計画 ビジネス。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。508×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 26049585 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:29:36.759Z"
+    },
+    "PHAC-0072": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。デジタルな地球とPCでネットワーク通信 ネットワーク。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。481×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 25961645 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:29:36.759Z"
+    },
+    "PHAC-0073": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。電波望遠鏡とオーロラ オーロラ。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。511×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 27131822 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:29:36.759Z"
     }
   }
 }
