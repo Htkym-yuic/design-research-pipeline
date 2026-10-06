@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T10:28:14.167Z",
+  "updatedAt": "2026-10-06T16:22:50.464Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -530,6 +530,42 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-06T10:20:42.772Z"
+    },
+    {
+      "id": "BN-0046",
+      "title": "肉肉肉_1300 x 1300のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/9353ac2342ab4d9645fb240ac898c23d.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64586",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/9353ac2342ab4d9645fb240ac898c23d.jpg.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T16:22:50.464Z"
+    },
+    {
+      "id": "BN-0047",
+      "title": "AI副業_600 x 500のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/07/121dc761ddc864960bf6dcec1bd5b761.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64576",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/07/121dc761ddc864960bf6dcec1bd5b761.jpg.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T16:22:50.464Z"
+    },
+    {
+      "id": "BN-0048",
+      "title": "太陽光発電蓄電池_600 x 500のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/07/7fd81de67ec4ea99b7da3372757894ec-1.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64573",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/07/7fd81de67ec4ea99b7da3372757894ec-1.jpg.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T16:22:50.464Z"
     },
     {
       "id": "CV-0001",
@@ -1657,6 +1693,66 @@
       "reservedAt": "2026-10-06T10:20:42.772Z"
     },
     {
+      "id": "GR-0049",
+      "title": "夏の交流会ポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F113e494e62f5794ae8f03cfc1bad18b6%2F113e494e62f5794ae8f03cfc1bad18b6-400.webp&w=1200&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30152",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F113e494e62f5794ae8f03cfc1bad18b6%2F113e494e62f5794ae8f03cfc1bad18b6-400.webp&w=1200&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T16:22:50.464Z"
+    },
+    {
+      "id": "GR-0050",
+      "title": "シンプル夏季休業のお知らせA4ポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fbd5d112df0436f853eae779bcebc18c1%2Fbd5d112df0436f853eae779bcebc18c1-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30614",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fbd5d112df0436f853eae779bcebc18c1%2Fbd5d112df0436f853eae779bcebc18c1-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T16:22:50.464Z"
+    },
+    {
+      "id": "GR-0051",
+      "title": "写真がいっぱいの夏旅行向けバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F8ff878ae96d3d2573a4fca8d7f61e417%2F8ff878ae96d3d2573a4fca8d7f61e417-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20145",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F8ff878ae96d3d2573a4fca8d7f61e417%2F8ff878ae96d3d2573a4fca8d7f61e417-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T16:22:50.464Z"
+    },
+    {
+      "id": "GR-0052",
+      "title": "透明感のあるブルーのデザイナー名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fb4ecf9f4b99caac0210c34f0cb83d138%2Fb4ecf9f4b99caac0210c34f0cb83d138-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-30834",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fb4ecf9f4b99caac0210c34f0cb83d138%2Fb4ecf9f4b99caac0210c34f0cb83d138-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T16:22:50.464Z"
+    },
+    {
+      "id": "GR-0053",
+      "title": "水滴のようなロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/fd67722aac0fec05ccd1e62a22669a54/fd67722aac0fec05ccd1e62a22669a54-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3071",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/fd67722aac0fec05ccd1e62a22669a54/fd67722aac0fec05ccd1e62a22669a54-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T16:22:50.464Z"
+    },
+    {
       "id": "ILAC-0001",
       "title": "DX デジタルトランスフォーメーション 人物",
       "mediaType": "Asset",
@@ -2714,6 +2810,30 @@
       "materialId": "PAT-0018",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-06T10:20:42.772Z"
+    },
+    {
+      "id": "PAT-0019",
+      "title": "We-Being Project | KOKUYOに見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://we-being.net/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/webeing/",
+      "imageUrl": null,
+      "materialId": "PAT-0019",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T16:22:50.464Z"
+    },
+    {
+      "id": "PAT-0020",
+      "title": "Pittaに見るセクション内の役割集約",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Parts.）",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/09/pitta_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6463",
+      "imageUrl": null,
+      "materialId": "PAT-0020",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T16:22:50.464Z"
     },
     {
       "id": "PHAC-0001",
@@ -4185,6 +4305,66 @@
       "reservedAt": "2026-10-06T10:20:42.772Z"
     },
     {
+      "id": "PT-0051",
+      "title": "Pitta",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/09/pitta_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6463",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/09/pitta_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T16:22:50.464Z"
+    },
+    {
+      "id": "PT-0052",
+      "title": "ヨミダス",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/09/database.yomiuri_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6456",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/09/database.yomiuri_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T16:22:50.464Z"
+    },
+    {
+      "id": "PT-0053",
+      "title": "LITEVIEW Team",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/08/liteview_00003.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6448",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/08/liteview_00003.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T16:22:50.464Z"
+    },
+    {
+      "id": "PT-0054",
+      "title": "ourly",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/07/ourly_00003.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6437",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/07/ourly_00003.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T16:22:50.464Z"
+    },
+    {
+      "id": "PT-0055",
+      "title": "株式会社 明治",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/07/meiji_00003.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6420",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/07/meiji_00003.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T16:22:50.464Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -4419,6 +4599,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-06T10:20:42.772Z"
+    },
+    {
+      "id": "WB-0021",
+      "title": "We-Being Project | KOKUYO",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://we-being.net/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/webeing/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/webeing_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T16:22:50.464Z"
+    },
+    {
+      "id": "WB-0022",
+      "title": "OPEN RISE",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://open-rise.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/openrise/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/openrise_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T16:22:50.464Z"
     }
   ]
 }
