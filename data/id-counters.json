@@ -16,51 +16,51 @@
   },
   "banner": {
     "prefix": "BN",
-    "existingMax": 43,
-    "nextNumber": 44,
-    "digits": 4,
-    "sourceOfTruth": "Notion 02｜バナーリサーチライブラリー",
-    "lastReservationAt": "2026-10-03T16:24:30.492Z"
-  },
-  "web": {
-    "prefix": "WB",
-    "existingMax": 18,
-    "nextNumber": 19,
-    "digits": 4,
-    "sourceOfTruth": "Notion 03｜Webサイトリサーチライブラリー",
-    "lastReservationAt": "2026-10-03T16:24:30.492Z"
-  },
-  "graphic": {
-    "prefix": "GR",
-    "existingMax": 43,
-    "nextNumber": 44,
-    "digits": 4,
-    "sourceOfTruth": "Notion 04｜グラフィックデザインリサーチライブラリー",
-    "lastReservationAt": "2026-10-03T16:24:30.492Z"
-  },
-  "parts": {
-    "prefix": "PT",
     "existingMax": 45,
     "nextNumber": 46,
     "digits": 4,
+    "sourceOfTruth": "Notion 02｜バナーリサーチライブラリー",
+    "lastReservationAt": "2026-10-06T10:20:42.773Z"
+  },
+  "web": {
+    "prefix": "WB",
+    "existingMax": 20,
+    "nextNumber": 21,
+    "digits": 4,
+    "sourceOfTruth": "Notion 03｜Webサイトリサーチライブラリー",
+    "lastReservationAt": "2026-10-06T10:20:42.773Z"
+  },
+  "graphic": {
+    "prefix": "GR",
+    "existingMax": 48,
+    "nextNumber": 49,
+    "digits": 4,
+    "sourceOfTruth": "Notion 04｜グラフィックデザインリサーチライブラリー",
+    "lastReservationAt": "2026-10-06T10:20:42.773Z"
+  },
+  "parts": {
+    "prefix": "PT",
+    "existingMax": 50,
+    "nextNumber": 51,
+    "digits": 4,
     "sourceOfTruth": "Notion 05｜デザインパーツライブラリ",
-    "lastReservationAt": "2026-10-03T16:24:30.492Z"
+    "lastReservationAt": "2026-10-06T10:20:42.773Z"
   },
   "patterns": {
     "prefix": "PAT",
-    "existingMax": 16,
-    "nextNumber": 17,
+    "existingMax": 18,
+    "nextNumber": 19,
     "digits": 4,
     "sourceOfTruth": "Notion 06｜デザイン原則・パターン",
-    "lastReservationAt": "2026-10-03T16:24:30.492Z"
+    "lastReservationAt": "2026-10-06T10:20:42.772Z"
   },
   "canva": {
     "prefix": "CV",
-    "existingMax": 43,
-    "nextNumber": 44,
+    "existingMax": 47,
+    "nextNumber": 48,
     "digits": 4,
     "sourceOfTruth": "Notion 07｜Canvaリサーチライブラリー",
-    "lastReservationAt": "2026-10-03T16:24:30.492Z"
+    "lastReservationAt": "2026-10-06T10:20:42.773Z"
   },
   "illustrationAc": {
     "prefix": "ILAC",

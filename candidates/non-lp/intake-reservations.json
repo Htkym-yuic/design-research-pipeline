@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T16:27:58.733Z",
+  "updatedAt": "2026-10-06T10:20:42.772Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -506,6 +506,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-03T16:24:30.492Z"
+    },
+    {
+      "id": "BN-0044",
+      "title": "脂肪対策サプリメント_250 x 250のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/3573fb5928503d19148994c1d63fe4b4.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64583",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/3573fb5928503d19148994c1d63fe4b4.jpg.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T10:20:42.772Z"
+    },
+    {
+      "id": "BN-0045",
+      "title": "社労士業界専門の転職エージェント_600 x 500のバナーデザイン",
+      "mediaType": "Banner",
+      "sourceName": "バナー広場",
+      "captureUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/53d5c10da79ea3bc3b97e413ca928882.jpg.webp",
+      "sourceDetailUrl": "https://banner-hiroba.com/archives/64580",
+      "imageUrl": "https://banner-hiroba.com/wp-content/uploads/2025/08/53d5c10da79ea3bc3b97e413ca928882.jpg.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T10:20:42.772Z"
     },
     {
       "id": "CV-0001",
@@ -1019,6 +1043,54 @@
       "reservedAt": "2026-10-03T16:24:30.492Z"
     },
     {
+      "id": "CV-0044",
+      "title": "Aesthetic Fashion Photography Brand Photo Collage Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAGF_yfg7qQ/2/0/320w-eEAbCyRNRXk.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAGF_yfg7qQ-aesthetic-fashion-photography-brand-photo-collage-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAGF_yfg7qQ/2/0/320w-eEAbCyRNRXk.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T10:20:42.772Z"
+    },
+    {
+      "id": "CV-0045",
+      "title": "Beige Watercolor Sunday Brunch Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAG4TPkBj08/1/0/320w-DziTvwcbO0I.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAG4TPkBj08-beige-watercolor-sunday-brunch-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAG4TPkBj08/1/0/320w-DziTvwcbO0I.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T10:20:42.772Z"
+    },
+    {
+      "id": "CV-0046",
+      "title": "Beige Black Simple Small Business Christmas Sale Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAG2GZ2kFGk/1/0/320w-8vD7RRk-b7o.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAG2GZ2kFGk-beige-black-simple-small-business-christmas-sale-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAG2GZ2kFGk/1/0/320w-8vD7RRk-b7o.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T10:20:42.772Z"
+    },
+    {
+      "id": "CV-0047",
+      "title": "Black Grey Vintage Aesthetic Happy Birthday Polaroid Photo Collage Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAFK5kr9pRc/2/0/320w-3Tt8wDCUQH4.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAFK5kr9pRc-black-grey-vintage-aesthetic-happy-birthday-polaroid-photo-collage-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAFK5kr9pRc/2/0/320w-3Tt8wDCUQH4.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T10:20:42.772Z"
+    },
+    {
       "id": "GR-0001",
       "title": "夏季休業のお知らせチラシのチラシテンプレート",
       "mediaType": "Graphic",
@@ -1523,6 +1595,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-03T16:24:30.492Z"
+    },
+    {
+      "id": "GR-0044",
+      "title": "８月のぬりえ（花火と夏風景）",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1cff3241dc5e340c64a0a75bdf894098%2F1cff3241dc5e340c64a0a75bdf894098-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30221",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1cff3241dc5e340c64a0a75bdf894098%2F1cff3241dc5e340c64a0a75bdf894098-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T10:20:42.772Z"
+    },
+    {
+      "id": "GR-0045",
+      "title": "夏季休暇のお知らせ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fb2ba9c2b04bd73d7b2a81d8f7bb3e2ad%2Fb2ba9c2b04bd73d7b2a81d8f7bb3e2ad-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30619",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fb2ba9c2b04bd73d7b2a81d8f7bb3e2ad%2Fb2ba9c2b04bd73d7b2a81d8f7bb3e2ad-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T10:20:42.772Z"
+    },
+    {
+      "id": "GR-0046",
+      "title": "白半透明で覆われた夏旅行向けバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F7abba82e8a23697fdefeb12c730de861%2F7abba82e8a23697fdefeb12c730de861-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20146",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F7abba82e8a23697fdefeb12c730de861%2F7abba82e8a23697fdefeb12c730de861-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T10:20:42.772Z"
+    },
+    {
+      "id": "GR-0047",
+      "title": "名刺テンプレート31543",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F417e77a6af8bf0e493aadd0fe111eafa%2F417e77a6af8bf0e493aadd0fe111eafa-400.webp&w=256&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-31543",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F417e77a6af8bf0e493aadd0fe111eafa%2F417e77a6af8bf0e493aadd0fe111eafa-400.webp&w=256&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T10:20:42.772Z"
+    },
+    {
+      "id": "GR-0048",
+      "title": "水滴のようなロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/abfa7aea31168ee4c73866d8ce929e13/abfa7aea31168ee4c73866d8ce929e13-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3075",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/abfa7aea31168ee4c73866d8ce929e13/abfa7aea31168ee4c73866d8ce929e13-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T10:20:42.772Z"
     },
     {
       "id": "ILAC-0001",
@@ -2438,6 +2570,30 @@
       "materialId": "PAT-0016",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-03T16:24:30.492Z"
+    },
+    {
+      "id": "PAT-0017",
+      "title": "Goodpatch | デザインの力を証明するに見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://goodpatch.com/ja",
+      "sourceDetailUrl": "https://sankoudesign.com/web/goodpatch/",
+      "imageUrl": null,
+      "materialId": "PAT-0017",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T10:20:42.772Z"
+    },
+    {
+      "id": "PAT-0018",
+      "title": "寺田倉庫の法人向け宅配型トランクルームに見るセクション内の役割集約",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Parts.）",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/11/minikura_00009.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6538",
+      "imageUrl": null,
+      "materialId": "PAT-0018",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T10:20:42.772Z"
     },
     {
       "id": "PHAC-0001",
@@ -3729,6 +3885,66 @@
       "reservedAt": "2026-10-03T16:24:30.492Z"
     },
     {
+      "id": "PT-0046",
+      "title": "寺田倉庫の法人向け宅配型トランクルーム",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/11/minikura_00009.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6538",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/11/minikura_00009.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T10:20:42.772Z"
+    },
+    {
+      "id": "PT-0047",
+      "title": "EC-CUBE",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/11/ec-cube_00008.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6527",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/11/ec-cube_00008.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T10:20:42.772Z"
+    },
+    {
+      "id": "PT-0048",
+      "title": "株式会社マジックハット",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/11/magichat_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6508",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/11/magichat_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T10:20:42.772Z"
+    },
+    {
+      "id": "PT-0049",
+      "title": "invox電子帳簿保存",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/10/invox_00013.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6494",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/10/invox_00013.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T10:20:42.772Z"
+    },
+    {
+      "id": "PT-0050",
+      "title": "Safie（セーフィー）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/09/safie_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6477",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/09/safie_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T10:20:42.772Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -3939,6 +4155,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-03T16:24:30.492Z"
+    },
+    {
+      "id": "WB-0019",
+      "title": "Goodpatch | デザインの力を証明する",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://goodpatch.com/ja",
+      "sourceDetailUrl": "https://sankoudesign.com/web/goodpatch/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/goodpatch02_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T10:20:42.772Z"
+    },
+    {
+      "id": "WB-0020",
+      "title": "Charge",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://goodpatch.com/15th",
+      "sourceDetailUrl": "https://sankoudesign.com/web/goodpatch-15th/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/goodpatch15th_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-06T10:20:42.772Z"
     }
   ]
 }
