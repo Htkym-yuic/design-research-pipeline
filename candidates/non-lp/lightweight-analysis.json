@@ -3238,6 +3238,342 @@
       "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
       "deepDivePriority": "中",
       "generatedAt": "2026-10-03T16:29:22.259Z"
+    },
+    "BN-0044": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "バナー広場から収集したBanner参考。脂肪対策サプリメント_250 x 250のバナーデザイン。",
+      "selectionReason": "バナー広場の新規候補として重複確認を通過。バナー単体の訴求・文字量・配色を確認できるため。",
+      "visualSummary": "暖色・黄橙系。250×250の掲載画像を基準に確認。",
+      "usefulPoints": "遷移先URLを取得できず、バナー単体で保留",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:22:39.247Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/BN-0044-250-x-250/03_Implementation_Blueprint/BN-0044_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/BN-0044-250-x-250/03_Implementation_Blueprint/BN-0044_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/BN-0044-250-x-250/03_Implementation_Blueprint/BN-0044_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/BN-0044-250-x-250/03_Implementation_Blueprint/BN-0044_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "BN-0045": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "バナー広場から収集したBanner参考。社労士業界専門の転職エージェント_600 x 500のバナーデザイン。",
+      "selectionReason": "バナー広場の新規候補として重複確認を通過。バナー単体の訴求・文字量・配色を確認できるため。",
+      "visualSummary": "緑・青緑系。600×500の掲載画像を基準に確認。",
+      "usefulPoints": "遷移先URLを取得できず、バナー単体で保留",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:22:39.282Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/BN-0045-600-x-500/03_Implementation_Blueprint/BN-0045_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/BN-0045-600-x-500/03_Implementation_Blueprint/BN-0045_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/BN-0045-600-x-500/03_Implementation_Blueprint/BN-0045_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/BN-0045-600-x-500/03_Implementation_Blueprint/BN-0045_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "WB-0019": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。Goodpatch | デザインの力を証明する。",
+      "selectionReason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+      "visualSummary": "寒色・青紫系。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "page.screenshot: Timeout 30000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n  - fonts loaded\n",
+      "deepDivePriority": "要確認",
+      "generatedAt": "2026-10-06T10:22:39.308Z"
+    },
+    "WB-0020": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。Charge。",
+      "selectionReason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+      "visualSummary": "寒色・青紫系。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:22:39.332Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/WB-0020-charge/03_Implementation_Blueprint/WB-0020_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/WB-0020-charge/03_Implementation_Blueprint/WB-0020_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/WB-0020-charge/03_Implementation_Blueprint/WB-0020_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/WB-0020-charge/03_Implementation_Blueprint/WB-0020_elementor_implementation_guide.md",
+        "sections": 8,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0044": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したチラシ・フライヤー参考。８月のぬりえ（花火と夏風景）。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:22:39.367Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0044-untitled/03_Implementation_Blueprint/GR-0044_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0044-untitled/03_Implementation_Blueprint/GR-0044_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0044-untitled/03_Implementation_Blueprint/GR-0044_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0044-untitled/03_Implementation_Blueprint/GR-0044_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0045": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したポスター参考。夏季休暇のお知らせ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "寒色・青紫系。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:22:39.389Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0045-untitled/03_Implementation_Blueprint/GR-0045_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0045-untitled/03_Implementation_Blueprint/GR-0045_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0045-untitled/03_Implementation_Blueprint/GR-0045_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0045-untitled/03_Implementation_Blueprint/GR-0045_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0046": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したSNS投稿・Web広告参考。白半透明で覆われた夏旅行向けバナー。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "ニュートラル。156×81の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:22:39.409Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0046-untitled/03_Implementation_Blueprint/GR-0046_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0046-untitled/03_Implementation_Blueprint/GR-0046_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0046-untitled/03_Implementation_Blueprint/GR-0046_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0046-untitled/03_Implementation_Blueprint/GR-0046_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0047": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集した名刺・ショップカード参考。名刺テンプレート31543。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。242×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:22:39.430Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0047-31543/03_Implementation_Blueprint/GR-0047_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0047-31543/03_Implementation_Blueprint/GR-0047_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0047-31543/03_Implementation_Blueprint/GR-0047_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0047-31543/03_Implementation_Blueprint/GR-0047_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0048": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したロゴ・VI/CI参考。水滴のようなロゴ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。400×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:22:39.447Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0048-untitled/03_Implementation_Blueprint/GR-0048_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0048-untitled/03_Implementation_Blueprint/GR-0048_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0048-untitled/03_Implementation_Blueprint/GR-0048_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0048-untitled/03_Implementation_Blueprint/GR-0048_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0046": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。寺田倉庫の法人向け宅配型トランクルーム。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "ニュートラル。1447×425の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:22:39.473Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0046-untitled/03_Implementation_Blueprint/PT-0046_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0046-untitled/03_Implementation_Blueprint/PT-0046_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0046-untitled/03_Implementation_Blueprint/PT-0046_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0046-untitled/03_Implementation_Blueprint/PT-0046_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0047": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。EC-CUBE。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "暖色・黄橙系。1557×679の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:22:39.508Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0047-ec-cube/03_Implementation_Blueprint/PT-0047_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0047-ec-cube/03_Implementation_Blueprint/PT-0047_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0047-ec-cube/03_Implementation_Blueprint/PT-0047_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0047-ec-cube/03_Implementation_Blueprint/PT-0047_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0048": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。株式会社マジックハット。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "ニュートラル。1605×918の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:22:39.553Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0048-untitled/03_Implementation_Blueprint/PT-0048_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0048-untitled/03_Implementation_Blueprint/PT-0048_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0048-untitled/03_Implementation_Blueprint/PT-0048_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0048-untitled/03_Implementation_Blueprint/PT-0048_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0049": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。invox電子帳簿保存。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "明色・白基調。1518×926の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:22:39.598Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0049-invox/03_Implementation_Blueprint/PT-0049_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0049-invox/03_Implementation_Blueprint/PT-0049_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0049-invox/03_Implementation_Blueprint/PT-0049_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0049-invox/03_Implementation_Blueprint/PT-0049_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0050": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。Safie（セーフィー）。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "ニュートラル。1536×878の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:22:39.640Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0050-safie/03_Implementation_Blueprint/PT-0050_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0050-safie/03_Implementation_Blueprint/PT-0050_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0050-safie/03_Implementation_Blueprint/PT-0050_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0050-safie/03_Implementation_Blueprint/PT-0050_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "CV-0044": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。Aesthetic Fashion Photography Brand Photo Collage Instagram Post。",
+      "selectionReason": "Canvaの新規候補として重複確認を通過。テンプレート化しやすい構成、文字組み、配色、情報階層の型を確認できるため。",
+      "visualSummary": "暖色・黄橙系。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:22:39.656Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/CV-0044-aesthetic-fashion-photography-brand-photo-collage-instagram-post/03_Implementation_Blueprint/CV-0044_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/CV-0044-aesthetic-fashion-photography-brand-photo-collage-instagram-post/03_Implementation_Blueprint/CV-0044_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/CV-0044-aesthetic-fashion-photography-brand-photo-collage-instagram-post/03_Implementation_Blueprint/CV-0044_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/CV-0044-aesthetic-fashion-photography-brand-photo-collage-instagram-post/03_Implementation_Blueprint/CV-0044_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "CV-0045": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。Beige Watercolor Sunday Brunch Instagram Post。",
+      "selectionReason": "Canvaの新規候補として重複確認を通過。テンプレート化しやすい構成、文字組み、配色、情報階層の型を確認できるため。",
+      "visualSummary": "明色・白基調。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:22:39.673Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/CV-0045-beige-watercolor-sunday-brunch-instagram-post/03_Implementation_Blueprint/CV-0045_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/CV-0045-beige-watercolor-sunday-brunch-instagram-post/03_Implementation_Blueprint/CV-0045_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/CV-0045-beige-watercolor-sunday-brunch-instagram-post/03_Implementation_Blueprint/CV-0045_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/CV-0045-beige-watercolor-sunday-brunch-instagram-post/03_Implementation_Blueprint/CV-0045_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "CV-0046": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。Beige Black Simple Small Business Christmas Sale Instagram Post。",
+      "selectionReason": "Canvaの新規候補として重複確認を通過。テンプレート化しやすい構成、文字組み、配色、情報階層の型を確認できるため。",
+      "visualSummary": "明色・白基調。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:22:39.689Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/CV-0046-beige-black-simple-small-business-christmas-sale-instagram-post/03_Implementation_Blueprint/CV-0046_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/CV-0046-beige-black-simple-small-business-christmas-sale-instagram-post/03_Implementation_Blueprint/CV-0046_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/CV-0046-beige-black-simple-small-business-christmas-sale-instagram-post/03_Implementation_Blueprint/CV-0046_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/CV-0046-beige-black-simple-small-business-christmas-sale-instagram-post/03_Implementation_Blueprint/CV-0046_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "CV-0047": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。Black Grey Vintage Aesthetic Happy Birthday Polaroid Photo Collage Instagram Post。",
+      "selectionReason": "Canvaの新規候補として重複確認を通過。テンプレート化しやすい構成、文字組み、配色、情報階層の型を確認できるため。",
+      "visualSummary": "ニュートラル。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:22:39.707Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/CV-0047-black-grey-vintage-aesthetic-happy-birthday-polaroid-photo-collage-instagram-post/03_Implementation_Blueprint/CV-0047_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/CV-0047-black-grey-vintage-aesthetic-happy-birthday-polaroid-photo-collage-instagram-post/03_Implementation_Blueprint/CV-0047_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/CV-0047-black-grey-vintage-aesthetic-happy-birthday-polaroid-photo-collage-instagram-post/03_Implementation_Blueprint/CV-0047_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/CV-0047-black-grey-vintage-aesthetic-happy-birthday-polaroid-photo-collage-instagram-post/03_Implementation_Blueprint/CV-0047_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PAT-0017": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（SANKOU!）から収集したPattern参考。Goodpatch | デザインの力を証明するに見るPC・SPの情報優先順位。",
+      "selectionReason": "日次収集から抽出（SANKOU!）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "画面幅が変わっても、主見出し・主要ベネフィット・CTAの意味と順序を維持する。 根拠候補: WB-0019",
+      "reviewPoints": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:22:39.707Z"
+    },
+    "PAT-0018": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（Parts.）から収集したPattern参考。寺田倉庫の法人向け宅配型トランクルームに見るセクション内の役割集約。",
+      "selectionReason": "日次収集から抽出（Parts.）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "一つのセクション内で見出し・説明・証拠・行動導線の役割を整理し、他案件へ転用可能な単位として捉える。 根拠候補: PT-0046",
+      "reviewPoints": "切り出し範囲が広すぎないか、前後セクションへの依存がないかを確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-06T10:22:39.707Z"
     }
   }
 }
