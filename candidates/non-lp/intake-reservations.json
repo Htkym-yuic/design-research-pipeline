@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T16:28:23.670Z",
+  "updatedAt": "2026-10-07T16:22:28.034Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -1127,6 +1127,18 @@
       "reservedAt": "2026-10-06T10:20:42.772Z"
     },
     {
+      "id": "CV-0048",
+      "title": "Clean Vintage Photo Collage Fall Fashion Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAGNGx3ieT4/2/0/320w-Y-yK86dEt28.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAGNGx3ieT4-clean-vintage-photo-collage-fall-fashion-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAGNGx3ieT4/2/0/320w-Y-yK86dEt28.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-07T16:22:28.034Z"
+    },
+    {
       "id": "GR-0001",
       "title": "夏季休業のお知らせチラシのチラシテンプレート",
       "mediaType": "Graphic",
@@ -1751,6 +1763,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-06T16:22:50.464Z"
+    },
+    {
+      "id": "GR-0054",
+      "title": "ローストビーフ写真の夏のお中元ギフトチラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F5378c0b13fbc89a88656895823cde7ab%2F5378c0b13fbc89a88656895823cde7ab-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30065",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F5378c0b13fbc89a88656895823cde7ab%2F5378c0b13fbc89a88656895823cde7ab-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-07T16:22:28.034Z"
+    },
+    {
+      "id": "GR-0055",
+      "title": "夏季休業のお知らせ（ひまわり_横）",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F93d1787d2e0c7b034531a531c211ea86%2F93d1787d2e0c7b034531a531c211ea86-400.webp&w=1200&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30588",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F93d1787d2e0c7b034531a531c211ea86%2F93d1787d2e0c7b034531a531c211ea86-400.webp&w=1200&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-07T16:22:28.034Z"
+    },
+    {
+      "id": "GR-0056",
+      "title": "エアメール風のおしゃれな夏旅行向けバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F8c17ecc5ef213437c44bf84b5f1e54c6%2F8c17ecc5ef213437c44bf84b5f1e54c6-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20144",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F8c17ecc5ef213437c44bf84b5f1e54c6%2F8c17ecc5ef213437c44bf84b5f1e54c6-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-07T16:22:28.034Z"
+    },
+    {
+      "id": "GR-0057",
+      "title": "きらめく背景の上品なスタイリスト名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F5dcdd577a4538def0890aedd4540db19%2F5dcdd577a4538def0890aedd4540db19-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-30554",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F5dcdd577a4538def0890aedd4540db19%2F5dcdd577a4538def0890aedd4540db19-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-07T16:22:28.034Z"
+    },
+    {
+      "id": "GR-0058",
+      "title": "直線と曲線の組み合わせの青系のロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/ec137c231330d19d3ecba12792987ca7/ec137c231330d19d3ecba12792987ca7-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3067",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/ec137c231330d19d3ecba12792987ca7/ec137c231330d19d3ecba12792987ca7-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-07T16:22:28.034Z"
     },
     {
       "id": "ILAC-0001",
@@ -2954,6 +3026,30 @@
       "materialId": "PAT-0020",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-06T16:22:50.464Z"
+    },
+    {
+      "id": "PAT-0021",
+      "title": "ローストビーフ写真の夏のお中元ギフトチラシに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F5378c0b13fbc89a88656895823cde7ab%2F5378c0b13fbc89a88656895823cde7ab-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30065",
+      "imageUrl": null,
+      "materialId": "PAT-0021",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-07T16:22:28.034Z"
+    },
+    {
+      "id": "PAT-0022",
+      "title": "Clean Vintage Photo Collage Fall Fashion Instagram Postに見る反復可能なテンプレート構造",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Canva）",
+      "captureUrl": "https://template.canva.com/EAGNGx3ieT4/2/0/320w-Y-yK86dEt28.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAGNGx3ieT4-clean-vintage-photo-collage-fall-fashion-instagram-post/",
+      "imageUrl": null,
+      "materialId": "PAT-0022",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-07T16:22:28.034Z"
     },
     {
       "id": "PHAC-0001",
@@ -4605,6 +4701,66 @@
       "reservedAt": "2026-10-06T16:22:50.464Z"
     },
     {
+      "id": "PT-0056",
+      "title": "Dr.Tel（ドクターテル）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/07/dr-tel_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6408",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/07/dr-tel_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-07T16:22:28.034Z"
+    },
+    {
+      "id": "PT-0057",
+      "title": "富士すばるランド",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/07/subaruland_00007.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6395",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/07/subaruland_00007.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-07T16:22:28.034Z"
+    },
+    {
+      "id": "PT-0058",
+      "title": "新R25 Business",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/07/business-r25_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6383",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/07/business-r25_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-07T16:22:28.034Z"
+    },
+    {
+      "id": "PT-0059",
+      "title": "シューマツワーカー",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/06/shuuumatu_00005.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6371",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/06/shuuumatu_00005.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-07T16:22:28.034Z"
+    },
+    {
+      "id": "PT-0060",
+      "title": "WhatYa",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/06/whatya_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6357",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/06/whatya_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-07T16:22:28.034Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -4863,6 +5019,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-06T16:22:50.464Z"
+    },
+    {
+      "id": "WB-0023",
+      "title": "エヌ･エス･エル",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.nsl-jp.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/nsl/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/nsl_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-07T16:22:28.034Z"
+    },
+    {
+      "id": "WB-0024",
+      "title": "Hello Beauty & Mag.",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://mag.hello-beauty-wellness.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/hellobeautyandmag/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/hellobeautyandmag_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-07T16:22:28.034Z"
     }
   ]
 }
