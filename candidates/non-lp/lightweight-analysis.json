@@ -4518,6 +4518,206 @@
       "reviewPoints": "テンプレートの複製ではなく、グリッド・余白・主従関係のみを参考にする。",
       "deepDivePriority": "中",
       "generatedAt": "2026-10-07T16:22:55.436Z"
+    },
+    "ILAC-0084": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。人工知能。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。340×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 1095709 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-07T16:28:16.953Z"
+    },
+    "ILAC-0085": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。デジタルテクノロジー背景。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。481×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 23225800 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-07T16:28:16.953Z"
+    },
+    "ILAC-0086": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。人工知能_セット02-02。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。479×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 1424655 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-07T16:28:16.953Z"
+    },
+    "ILAC-0087": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。アイソメトリック_AI01。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。340×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 1829720 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-07T16:28:16.953Z"
+    },
+    "ILAC-0088": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。0と1のデジタルプログラミング青い光背景。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。513×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 2614390 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-07T16:28:16.953Z"
+    },
+    "ILAC-0089": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。人工知能　イメージ。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。454×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 1174232 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-07T16:28:16.953Z"
+    },
+    "ILAC-0090": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。AIとテクノロジーイメージ背景。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。481×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 23133118 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-07T16:28:16.953Z"
+    },
+    "ILAC-0091": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。神秘的な人間の身体　イメージ。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。241×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 2665905 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-07T16:28:16.953Z"
+    },
+    "ILAC-0092": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。人工知能。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。340×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 1040520 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-07T16:28:16.953Z"
+    },
+    "ILAC-0093": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。AIロボットと手をとりあうサラリーマン。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。649×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 22988281 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-07T16:28:16.953Z"
+    },
+    "PHAC-0084": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。晴れた朝の青空と丸ビル 丸ビル。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。454×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 35196636 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-07T16:28:16.953Z"
+    },
+    "PHAC-0085": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。バックを持って歩くスーツ姿の若い女性 ビジネスウーマン。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。511×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 35133351 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-07T16:28:16.953Z"
+    },
+    "PHAC-0086": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。会議中の男女の手元 会議。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。511×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 5083635 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-07T16:28:16.953Z"
+    },
+    "PHAC-0087": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。病院で診察・相談を受ける医師の男性と患者 医者。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。511×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 35238416 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-07T16:28:16.953Z"
+    },
+    "PHAC-0088": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。会議。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。511×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 34966990 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-07T16:28:16.953Z"
+    },
+    "PHAC-0089": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。男女3人のビジネスチームワークイメージ ビジネス。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。511×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 35311346 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-07T16:28:16.953Z"
+    },
+    "PHAC-0090": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。青空の下で名古屋市栄の景観を俯瞰撮影3 都市景観。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。508×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 35105873 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-07T16:28:16.953Z"
+    },
+    "PHAC-0091": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。ノートパソコンを持つ若いアジア人女性 ビジネス。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。511×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 35133308 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-07T16:28:16.953Z"
+    },
+    "PHAC-0092": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。男女3人のビジネスチームワークイメージ ビジネス。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。511×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 35302541 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-07T16:28:16.953Z"
+    },
+    "PHAC-0093": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。青空に映えるビジネスビルを見上げて ビジネスビル。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。511×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 34494570 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-07T16:28:16.953Z"
     }
   }
 }
