@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T16:26:58.543Z",
+  "updatedAt": "2026-10-08T16:22:04.523Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -1139,6 +1139,18 @@
       "reservedAt": "2026-10-07T16:22:28.034Z"
     },
     {
+      "id": "CV-0049",
+      "title": "Yellow Modern Today's Dump Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAG6nclwiHI/1/0/320w-HWhLm3TGiWE.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAG6nclwiHI-yellow-modern-today-s-dump-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAG6nclwiHI/1/0/320w-HWhLm3TGiWE.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-08T16:22:04.523Z"
+    },
+    {
       "id": "GR-0001",
       "title": "夏季休業のお知らせチラシのチラシテンプレート",
       "mediaType": "Graphic",
@@ -1823,6 +1835,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-07T16:22:28.034Z"
+    },
+    {
+      "id": "GR-0059",
+      "title": "商品写真を並べた夏のお中元ギフトチラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F2dd333be395fd9d0a69ed33fdab4d78f%2F2dd333be395fd9d0a69ed33fdab4d78f-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30064",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F2dd333be395fd9d0a69ed33fdab4d78f%2F2dd333be395fd9d0a69ed33fdab4d78f-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-08T16:22:04.523Z"
+    },
+    {
+      "id": "GR-0060",
+      "title": "夏季休業のお知らせ（ひまわり）",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1a673ea43558db918fb67cce20c768d1%2F1a673ea43558db918fb67cce20c768d1-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30582",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1a673ea43558db918fb67cce20c768d1%2F1a673ea43558db918fb67cce20c768d1-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-08T16:22:04.523Z"
+    },
+    {
+      "id": "GR-0061",
+      "title": "シンプルな夏旅行向けバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F60bc1b7860dd2c6cb6f0e0491fa174cd%2F60bc1b7860dd2c6cb6f0e0491fa174cd-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20143",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F60bc1b7860dd2c6cb6f0e0491fa174cd%2F60bc1b7860dd2c6cb6f0e0491fa174cd-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-08T16:22:04.523Z"
+    },
+    {
+      "id": "GR-0062",
+      "title": "名刺テンプレート31542",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F5802c6661f72bb1846f860e6c2d4b178%2F5802c6661f72bb1846f860e6c2d4b178-400.webp&w=256&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-31542",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F5802c6661f72bb1846f860e6c2d4b178%2F5802c6661f72bb1846f860e6c2d4b178-400.webp&w=256&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-08T16:22:04.523Z"
+    },
+    {
+      "id": "GR-0063",
+      "title": "金色の不動産のロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/f02173fd1b1d0df503286aa1c5315f58/f02173fd1b1d0df503286aa1c5315f58-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3063",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/f02173fd1b1d0df503286aa1c5315f58/f02173fd1b1d0df503286aa1c5315f58-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-08T16:22:04.523Z"
     },
     {
       "id": "ILAC-0001",
@@ -3170,6 +3242,30 @@
       "materialId": "PAT-0022",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-07T16:22:28.034Z"
+    },
+    {
+      "id": "PAT-0023",
+      "title": "Yellow Modern Today's Dump Instagram Postに見る反復可能なテンプレート構造",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Canva）",
+      "captureUrl": "https://template.canva.com/EAG6nclwiHI/1/0/320w-HWhLm3TGiWE.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAG6nclwiHI-yellow-modern-today-s-dump-instagram-post/",
+      "imageUrl": null,
+      "materialId": "PAT-0023",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-08T16:22:04.523Z"
+    },
+    {
+      "id": "PAT-0024",
+      "title": "ANA大阪空港株式会社に見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://www.ana-osaap.co.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/anaosakaairport/",
+      "imageUrl": null,
+      "materialId": "PAT-0024",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-08T16:22:04.523Z"
     },
     {
       "id": "PHAC-0001",
@@ -5001,6 +5097,66 @@
       "reservedAt": "2026-10-07T16:22:28.034Z"
     },
     {
+      "id": "PT-0061",
+      "title": "Airペイ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/06/airpay_00007.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6343",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/06/airpay_00007.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-08T16:22:04.523Z"
+    },
+    {
+      "id": "PT-0062",
+      "title": "株式会社ハイポネックスジャパン",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/06/hyponex_00005.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6327",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/06/hyponex_00005.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-08T16:22:04.523Z"
+    },
+    {
+      "id": "PT-0063",
+      "title": "dfplus.io",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/06/dfplus_00005.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6314",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/06/dfplus_00005.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-08T16:22:04.523Z"
+    },
+    {
+      "id": "PT-0064",
+      "title": "イークラウド",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/06/ecrowd_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6296",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/06/ecrowd_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-08T16:22:04.523Z"
+    },
+    {
+      "id": "PT-0065",
+      "title": "Meltwater",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/05/meltwater_00004.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6287",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/05/meltwater_00004.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-08T16:22:04.523Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -5283,6 +5439,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-07T16:22:28.034Z"
+    },
+    {
+      "id": "WB-0025",
+      "title": "ANA大阪空港株式会社",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.ana-osaap.co.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/anaosakaairport/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/anaosaap_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-08T16:22:04.523Z"
+    },
+    {
+      "id": "WB-0026",
+      "title": "生理の悩み 相談しようプロジェクト | ツムラ",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.tsumura.co.jp/seirino-nayami/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/tsumura-seirinonayami/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/seirinonayami_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-08T16:22:04.523Z"
     }
   ]
 }
