@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T16:26:36.341Z",
+  "updatedAt": "2026-10-09T16:21:38.228Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -1151,6 +1151,18 @@
       "reservedAt": "2026-10-08T16:22:04.523Z"
     },
     {
+      "id": "CV-0050",
+      "title": "Green Modern August Bookings Appointment Available Announcement Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAHLtegQAcE/1/0/320w-RIAGtmahpFg.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAHLtegQAcE-green-modern-august-bookings-appointment-available-announcement-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAHLtegQAcE/1/0/320w-RIAGtmahpFg.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-09T16:21:38.228Z"
+    },
+    {
       "id": "GR-0001",
       "title": "夏季休業のお知らせチラシのチラシテンプレート",
       "mediaType": "Graphic",
@@ -1895,6 +1907,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-08T16:22:04.523Z"
+    },
+    {
+      "id": "GR-0064",
+      "title": "商品一覧入り夏のお中元ギフトチラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fb11e7acca0921f7faffaaf03448a784b%2Fb11e7acca0921f7faffaaf03448a784b-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30063",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fb11e7acca0921f7faffaaf03448a784b%2Fb11e7acca0921f7faffaaf03448a784b-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-09T16:21:38.228Z"
+    },
+    {
+      "id": "GR-0065",
+      "title": "和風店内ポップ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fdf8d94e09ccf4588668333d22874c234%2Fdf8d94e09ccf4588668333d22874c234-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30580",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fdf8d94e09ccf4588668333d22874c234%2Fdf8d94e09ccf4588668333d22874c234-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-09T16:21:38.228Z"
+    },
+    {
+      "id": "GR-0066",
+      "title": "ドット柄背景のおしゃれな夏季休暇向けバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fdadff9cbdceeb2315907ab17ebd6ca9f%2Fdadff9cbdceeb2315907ab17ebd6ca9f-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20137",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fdadff9cbdceeb2315907ab17ebd6ca9f%2Fdadff9cbdceeb2315907ab17ebd6ca9f-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-09T16:21:38.228Z"
+    },
+    {
+      "id": "GR-0067",
+      "title": "名刺テンプレート31541",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F9c61a3b0568391062efa93823b06c459%2F9c61a3b0568391062efa93823b06c459-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-31541",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F9c61a3b0568391062efa93823b06c459%2F9c61a3b0568391062efa93823b06c459-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-09T16:21:38.228Z"
+    },
+    {
+      "id": "GR-0068",
+      "title": "金色の「D」のロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/3695307d4e342a2aa93526a0b658984b/3695307d4e342a2aa93526a0b658984b-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3059",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/3695307d4e342a2aa93526a0b658984b/3695307d4e342a2aa93526a0b658984b-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-09T16:21:38.228Z"
     },
     {
       "id": "ILAC-0001",
@@ -3386,6 +3458,30 @@
       "materialId": "PAT-0024",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-08T16:22:04.523Z"
+    },
+    {
+      "id": "PAT-0025",
+      "title": "ブランディングデザイン事務所 tanukieに見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://tanukie.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/tanukie/",
+      "imageUrl": null,
+      "materialId": "PAT-0025",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-09T16:21:38.228Z"
+    },
+    {
+      "id": "PAT-0026",
+      "title": "PRONIアイミツに見るセクション内の役割集約",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Parts.）",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/05/imitsu_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6271",
+      "imageUrl": null,
+      "materialId": "PAT-0026",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-09T16:21:38.228Z"
     },
     {
       "id": "PHAC-0001",
@@ -5397,6 +5493,66 @@
       "reservedAt": "2026-10-08T16:22:04.523Z"
     },
     {
+      "id": "PT-0066",
+      "title": "PRONIアイミツ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/05/imitsu_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6271",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/05/imitsu_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-09T16:21:38.228Z"
+    },
+    {
+      "id": "PT-0067",
+      "title": "ファイトリッチ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/05/phytorich_00003.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6257",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/05/phytorich_00003.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-09T16:21:38.228Z"
+    },
+    {
+      "id": "PT-0068",
+      "title": "shouin+（ショウインプラス）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/05/shouin_00006.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6241",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/05/shouin_00006.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-09T16:21:38.228Z"
+    },
+    {
+      "id": "PT-0069",
+      "title": "三井のカーシェアーズ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/05/carshares_00003.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6220",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/05/carshares_00003.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-09T16:21:38.228Z"
+    },
+    {
+      "id": "PT-0070",
+      "title": "Manageboard",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/05/manageboard_00004.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6203",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/05/manageboard_00004.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-09T16:21:38.228Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -5703,6 +5859,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-08T16:22:04.523Z"
+    },
+    {
+      "id": "WB-0027",
+      "title": "ブランディングデザイン事務所 tanukie",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://tanukie.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/tanukie/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/tanukie02_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-09T16:21:38.228Z"
+    },
+    {
+      "id": "WB-0028",
+      "title": "nome [静岡茶ブランド]",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://isnome.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/nome/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/nome_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-09T16:21:38.228Z"
     }
   ]
 }
