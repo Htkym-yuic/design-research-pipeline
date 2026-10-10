@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T16:29:06.240Z",
+  "updatedAt": "2026-10-10T21:15:11.591Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -1163,6 +1163,18 @@
       "reservedAt": "2026-10-09T16:21:38.228Z"
     },
     {
+      "id": "CV-0051",
+      "title": "Green Neutral Minimalist Simple Scrapbook Photo Frame Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAGynSl4_xc/1/0/320w-F24cazei_84.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAGynSl4_xc-green-neutral-minimalist-simple-scrapbook-photo-frame-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAGynSl4_xc/1/0/320w-F24cazei_84.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-10T21:15:11.591Z"
+    },
+    {
       "id": "GR-0001",
       "title": "夏季休業のお知らせチラシのチラシテンプレート",
       "mediaType": "Graphic",
@@ -1967,6 +1979,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-09T16:21:38.228Z"
+    },
+    {
+      "id": "GR-0069",
+      "title": "浴衣写真の夏のお中元ギフトチラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fe6320aef7b08b2cf6d5a70b71526a20f%2Fe6320aef7b08b2cf6d5a70b71526a20f-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30062",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fe6320aef7b08b2cf6d5a70b71526a20f%2Fe6320aef7b08b2cf6d5a70b71526a20f-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-10T21:15:11.591Z"
+    },
+    {
+      "id": "GR-0070",
+      "title": "焼き鳥",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fc22cbda1f16de152d002dba80f1d7844%2Fc22cbda1f16de152d002dba80f1d7844-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30496",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fc22cbda1f16de152d002dba80f1d7844%2Fc22cbda1f16de152d002dba80f1d7844-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-10T21:15:11.591Z"
+    },
+    {
+      "id": "GR-0071",
+      "title": "子供向けのイラストがいっぱいの夏季休暇向けバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Ffebac8f7427d4a2b955409283c588cf6%2Ffebac8f7427d4a2b955409283c588cf6-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20136",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Ffebac8f7427d4a2b955409283c588cf6%2Ffebac8f7427d4a2b955409283c588cf6-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-10T21:15:11.591Z"
+    },
+    {
+      "id": "GR-0072",
+      "title": "タータンチェックが印象的なデザイナー名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F5c05e46ec475e01e77c95bcc0de0141c%2F5c05e46ec475e01e77c95bcc0de0141c-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-31540",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F5c05e46ec475e01e77c95bcc0de0141c%2F5c05e46ec475e01e77c95bcc0de0141c-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-10T21:15:11.591Z"
+    },
+    {
+      "id": "GR-0073",
+      "title": "金色の多角形と直線の組合わせのロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/5c1d76c85182976a9063ed746348c797/5c1d76c85182976a9063ed746348c797-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3027",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/5c1d76c85182976a9063ed746348c797/5c1d76c85182976a9063ed746348c797-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-10T21:15:11.591Z"
     },
     {
       "id": "ILAC-0001",
@@ -3602,6 +3674,30 @@
       "materialId": "PAT-0026",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-09T16:21:38.228Z"
+    },
+    {
+      "id": "PAT-0027",
+      "title": "re:shine（リシャイン）に見るセクション内の役割集約",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Parts.）",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/05/re-shine_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6184",
+      "imageUrl": null,
+      "materialId": "PAT-0027",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-10T21:15:11.591Z"
+    },
+    {
+      "id": "PAT-0028",
+      "title": "浴衣写真の夏のお中元ギフトチラシに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fe6320aef7b08b2cf6d5a70b71526a20f%2Fe6320aef7b08b2cf6d5a70b71526a20f-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30062",
+      "imageUrl": null,
+      "materialId": "PAT-0028",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-10T21:15:11.591Z"
     },
     {
       "id": "PHAC-0001",
@@ -5793,6 +5889,66 @@
       "reservedAt": "2026-10-09T16:21:38.228Z"
     },
     {
+      "id": "PT-0071",
+      "title": "re:shine（リシャイン）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/05/re-shine_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6184",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/05/re-shine_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-10T21:15:11.591Z"
+    },
+    {
+      "id": "PT-0072",
+      "title": "まるごと人事",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/05/marugotoinc_00004.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6177",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/05/marugotoinc_00004.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-10T21:15:11.591Z"
+    },
+    {
+      "id": "PT-0073",
+      "title": "back check(バックチェック)",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/05/backcheck_00003.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6159",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/05/backcheck_00003.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-10T21:15:11.591Z"
+    },
+    {
+      "id": "PT-0074",
+      "title": "LOGOLABO（ロゴラボ）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/04/logo-labo_00007.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6148",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/04/logo-labo_00007.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-10T21:15:11.591Z"
+    },
+    {
+      "id": "PT-0075",
+      "title": "アイテムトラッカー",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/04/itemtracker_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6131",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/04/itemtracker_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-10T21:15:11.591Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -6123,6 +6279,18 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-09T16:21:38.228Z"
+    },
+    {
+      "id": "WB-0029",
+      "title": "MENARD BEAUTY LAND | スキンケアのメナード化粧品",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.menard.co.jp/howtocare/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/menardhowtocare/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/menardhowtocare_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-10T21:15:11.591Z"
     }
   ]
 }
