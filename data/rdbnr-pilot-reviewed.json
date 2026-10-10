@@ -1,0 +1,150 @@
+{
+  "schema_version": "drs-1.0",
+  "run": {
+    "run_id": "2026-10-10_BN_02",
+    "collected_at": "2026-10-10",
+    "collected_by": "ChatGPT",
+    "category": "BN",
+    "source_site": "RDBNR（バナーアーカイブ）",
+    "source_url": "https://rdbnr.jp/archive/",
+    "target_count": 1,
+    "collected_count": 1,
+    "dedup_excluded": 0,
+    "notes": "2026-10-10スカウト再評価データからBN-0001を抽出した検証用シード。新たに実画像を確認したものではない。元の8件再評価JSONの選定理由・スコアを変更せず継承。"
+  },
+  "items": [
+    {
+      "asset_id": "BN-0001",
+      "asset_type": "BN",
+      "title": "キットカット 味くらべキャンペーン",
+      "brand": "KitKat",
+      "origin_url": "https://kitkat.nestle.jp/?utm_source=%7B%7Bsite_source_name%7D%7D&utm_medium=paid_social&utm_campaign=Kurabe2026-NC009312_CONF_NEST_KIT_ACOR_ENC&utm_term=kurabe-4-5-banner&utm_source_platform=%7B%7Bplacement%7D%7D&utm_content=%7B%7Bsite_source_name%7D%7D_paid_social_Kurabe2026-NC009312_CONF_NEST_KIT_ACOR_ENC_kurabe-4-5-banner_%7B%7Bplacement%7D%7D",
+      "source_detail_url": "https://rdbnr.jp/archive/190670/",
+      "source_archive_url": "https://rdbnr.jp/archive/",
+      "creator": "未確認",
+      "category_meta": {
+        "size": "未確認",
+        "media": "Meta",
+        "purpose": "味くらべキャンペーン告知（登録広告テキストからの区分）",
+        "industry": "スナック菓子・ガム・あめ",
+        "has_landing_url": true,
+        "registered_at": "2026-10-06",
+        "ad_text": "キットカット 味くらべキャンペーン",
+        "site_taste": "レッド 春 夏 秋 冬 ブラウン キュート＆ポップ エネルギッシュ ダイナミック 写真",
+        "design_explanation_summary": "赤とブラウンの左右二分割背景、中央の白い吹き出し、対称的な商品像、散らした小片、太字ゴシックの階層化を解説。CTAの位置は「ある場合」の提案であり現物確認ではない。",
+        "design_explanation_source": "RDBNR公開詳細ページのAI生成解説（実画像との突合は未実施）"
+      },
+      "tags": {
+        "color": [
+          "レッド",
+          "ブラウン",
+          "ホワイト"
+        ],
+        "taste": [
+          "キュート＆ポップ",
+          "エネルギッシュ",
+          "ダイナミック",
+          "写真"
+        ],
+        "layout": [
+          "左右二分割",
+          "中央の白い吹き出し",
+          "商品ビジュアルの対称配置"
+        ],
+        "copy": [
+          "比較訴求",
+          "キャンペーン告知"
+        ],
+        "purpose": [
+          "参加促進",
+          "商品認知"
+        ],
+        "industry": [
+          "食品",
+          "菓子"
+        ]
+      },
+      "view": {
+        "pc_sp": "n/a",
+        "capture_method": "thumb",
+        "login_required": false,
+        "paid_required": false
+      },
+      "rights": {
+        "rights_status": "rights_excluded",
+        "image_saved": false,
+        "distribution_allowed": false,
+        "third_party": true
+      },
+      "storage": {
+        "provider": "dropbox",
+        "path": "",
+        "image_saved": false
+      },
+      "before_after": {
+        "before": {
+          "url": "",
+          "image_url": "",
+          "storage_path": "",
+          "note": ""
+        },
+        "after": {
+          "url": "",
+          "image_url": "",
+          "storage_path": "",
+          "note": ""
+        }
+      },
+      "source_ids": [],
+      "evidence": {
+        "robots_note": "事前承認済みのRDBNRのみを確認。個別詳細ページから登録メタ情報を取得し、デザイン構成は同ページのAI生成解説を要約。実画像の独立目視・画像保存は行っていない。",
+        "retrieved_urls": [
+          "https://rdbnr.jp/archive/",
+          "https://rdbnr.jp/archive/190670/"
+        ],
+        "checked_at": "2026-10-10"
+      },
+      "selection": {
+        "trigger": "赤とブラウンで分かれる左右二分割と、中央に置かれた白い吹き出しの組み合わせ（RDBNRのAI解説）。",
+        "point": "左右に比較対象の商品像を割り当て、中心で共通メッセージを受け止める構造。",
+        "why_this": "二択の見せ方と情報を集約する領域の設計が、商品比較の広告に転用可能であるため。",
+        "expected_use": "飲料の味比較や料金プランの二択広告で、左右の色面と中央の共通見出しという構造だけを転用する。",
+        "rejection_reason": ""
+      },
+      "scout": {
+        "score": {
+          "visual": 4,
+          "clarity": 5,
+          "originality": 4,
+          "reusability": 5,
+          "learning": 4,
+          "diversity": 2,
+          "total": 24
+        },
+        "rank": "A",
+        "save_reason": "左右色面の対照と中央の共通メッセージという比較設計を学べる。独立した画像確認ができていないため、見た目の完成度は満点としない。",
+        "reference_points": [
+          "赤／ブラウンの左右分割",
+          "白い中央吹き出し",
+          "対称配置の商品像",
+          "破片・チップの散布",
+          "太字ゴシックの文字階層"
+        ],
+        "transfer_ideas": [
+          "異なるサービスプランを左右で比較し、中央の独立した領域に主訴求を置く。"
+        ]
+      },
+      "unconfirmed": [
+        "category_meta.size",
+        "creator",
+        "実画像の独立目視確認（色／レイアウト／コピー／視覚構成の照合）",
+        "バナー現物内の正確なコピーとCTAの文言",
+        "バナーの実寸および版違い",
+        "元URLの現在の到達性（外部ソース未確認）",
+        "既存ライブラリとの重複照合（外部台帳未照合）"
+      ],
+      "output_candidate": true,
+      "deep_analysis_candidate": true
+    }
+  ]
+}
