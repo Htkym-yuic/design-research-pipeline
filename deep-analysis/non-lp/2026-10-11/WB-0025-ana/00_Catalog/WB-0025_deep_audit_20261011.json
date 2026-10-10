@@ -1,0 +1,15 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0025",
+  "mode": "template",
+  "checks": {
+    "chapters": "pending_validation",
+    "unit_fields": "pending_analysis",
+    "image_slots": "pending_analysis",
+    "evidence": "pending_analysis",
+    "candidate_parity": "pending_analysis",
+    "rights": "pending_analysis"
+  },
+  "notion": "not_synced",
+  "cbs": "not_synced"
+}

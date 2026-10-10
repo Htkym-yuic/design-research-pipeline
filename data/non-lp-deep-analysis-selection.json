@@ -1,63 +1,54 @@
 {
   "schema_version": "drs-deep-selection-1.0",
-  "runDate": "2026-10-04",
+  "runDate": "2026-10-11",
   "weeklyTop3": [
     {
-      "id": "LP-0238",
-      "status": "completed_before_this_run",
-      "reason": "医療領域で、共感、専門性、FAQ、予約導線までの説得構造が豊富"
-    },
-    {
-      "id": "LP-0244",
-      "status": "completed_before_this_run",
-      "reason": "B2Bサービスの整理、目的別検索、実績、問い合わせ導線を学習できる"
-    },
-    {
-      "id": "PT-0001",
+      "id": "WB-0025",
       "status": "selected_for_non_lp_deep_analysis",
-      "reason": "写真、説明文、親しみのあるイラストを一画面で統合した施設紹介パーツで、地域施設・公共施設・家族向けサービスへ転用しやすい"
+      "reason": "空港運営会社として、企業理念、事業紹介、社員証言、採用導線を一つのブランドストーリーへ統合している"
     },
     {
-      "id": "BN-0021",
+      "id": "WB-0026",
       "status": "selected_for_non_lp_deep_analysis",
-      "reason": "大型犬オフ会という対象の明確なイベント広告で、コミュニティ訴求と参加情報の整理を分析できる"
+      "reason": "女性の健康課題を、共感、データ、セルフチェック、相談先、専門家情報の順に整理している"
     },
     {
-      "id": "WB-0004",
+      "id": "WB-0028",
       "status": "selected_for_non_lp_deep_analysis",
-      "reason": "店舗運営プラットフォームの情報設計と複数サービスの統合導線を分析できる"
-    },
-    {
-      "id": "GR-0001",
-      "status": "selected_for_non_lp_deep_analysis",
-      "reason": "休業告知という実務頻度の高いチラシで、日付・期間・補足情報の優先順位を分析できる"
-    },
-    {
-      "id": "CV-0007",
-      "status": "selected_for_non_lp_deep_analysis",
-      "reason": "インテリア写真を用いたSNS投稿テンプレートとして、画像配置・余白・文字組みの量産性を分析できる"
+      "reason": "静岡茶ブランドの思想を、強い余白、商品写真、短いコピー、EC導線で表現している"
     }
   ],
   "selected": [
     {
-      "id": "PT-0001",
-      "reason": "台帳、画像、参考元URLが一致し、非LP29章テンプレートの初回完成検証に適している"
+      "id": "WB-0025",
+      "type": "WB",
+      "title": "ANA大阪空港株式会社",
+      "source": "SANKOU!",
+      "url": "https://www.ana-osaap.co.jp/",
+      "reason": "PC/SP画像と実装一次設計が揃い、B2B企業・採用サイトの情報設計を学習できる"
     },
     {
-      "id": "BN-0021",
-      "reason": "2026-09-30保存分で台帳と画像の一致を確認後に詳細分析する"
+      "id": "WB-0026",
+      "type": "WB",
+      "title": "生理の悩み 相談しようプロジェクト | ツムラ",
+      "source": "SANKOU!",
+      "url": "https://www.tsumura.co.jp/seirino-nayami/",
+      "reason": "PC/SP画像が揃い、センシティブな課題の共感形成と相談行動への導線を分析できる"
     },
     {
-      "id": "WB-0004",
-      "reason": "誤保存画像をSTORESの再撮影結果へ置換して詳細分析する"
-    },
+      "id": "WB-0028",
+      "type": "WB",
+      "title": "nome [静岡茶ブランド]",
+      "source": "SANKOU!",
+      "url": "https://isnome.com/",
+      "reason": "PC/SP画像が揃い、ブランド世界観と商品購入導線の両立を分析できる"
+    }
+  ],
+  "excluded": [
     {
-      "id": "GR-0001",
-      "reason": "2026-09-28保存分で台帳と画像の一致を確認後に詳細分析する"
-    },
-    {
-      "id": "CV-0007",
-      "reason": "台帳と画像が一致し、Canva媒体テンプレートの完成検証に適している"
+      "id": "WB-0029",
+      "status": "recapture_required",
+      "reason": "PC Full PageがAccess Denied画面で、実サイトの証拠として使用できない"
     }
   ]
 }
