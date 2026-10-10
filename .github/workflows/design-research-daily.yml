@@ -108,29 +108,29 @@ jobs:
         run: npm run daily:check
 
       - name: Setup Node.js
-        if: steps.guard.outputs.skip != 'true'
+        if: steps.guard.outputs.skip_lp != 'true' || steps.guard.outputs.skip_non_lp != 'true'
         uses: actions/setup-node@v4
         with:
           node-version: "24"
 
       - name: Install dependencies
-        if: steps.guard.outputs.skip != 'true'
+        if: steps.guard.outputs.skip_lp != 'true' || steps.guard.outputs.skip_non_lp != 'true'
         run: npm ci
 
       - name: Check required Secrets / Variables
-        if: steps.guard.outputs.skip != 'true'
+        if: steps.guard.outputs.skip_lp != 'true' || steps.guard.outputs.skip_non_lp != 'true'
         run: npm run check:env
 
       - name: Audit numbering and intake configuration
-        if: steps.guard.outputs.skip != 'true'
+        if: steps.guard.outputs.skip_lp != 'true' || steps.guard.outputs.skip_non_lp != 'true'
         run: npm run intake:audit
 
       - name: Install browser
-        if: steps.guard.outputs.skip != 'true'
+        if: steps.guard.outputs.skip_lp != 'true' || steps.guard.outputs.skip_non_lp != 'true'
         run: npx playwright install --with-deps chromium
 
       - name: Extract LP Archive candidates
-        if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_lp != 'false' && (github.event_name == 'schedule' || github.event.inputs.refresh_candidates != 'false')
+        if: steps.guard.outputs.skip_lp != 'true' && github.event.inputs.run_lp != 'false' && (github.event_name == 'schedule' || github.event.inputs.refresh_candidates != 'false')
         env:
           CANDIDATE_LIMIT: ${{ env.DAILY_LP_LIMIT }}
           CANDIDATE_SCAN_LIMIT: ${{ vars.LP_CANDIDATE_SCAN_LIMIT || '40' }}
@@ -138,7 +138,7 @@ jobs:
         run: npm run extract:lp:test
 
       - name: Commit candidate reservation
-        if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_lp != 'false' && env.DRY_RUN != 'true' && (github.event_name == 'schedule' || github.event.inputs.refresh_candidates != 'false')
+        if: steps.guard.outputs.skip_lp != 'true' && github.event.inputs.run_lp != 'false' && env.DRY_RUN != 'true' && (github.event_name == 'schedule' || github.event.inputs.refresh_candidates != 'false')
         run: |
           if git diff --quiet -- candidates/lp-archive/candidates.json candidates/lp-archive/intake-reservations.json data/id-counters.json; then
             echo "No candidate reservation changes."
@@ -151,37 +151,37 @@ jobs:
           git push
 
       - name: Capture LP candidate screenshots
-        if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_lp != 'false'
+        if: steps.guard.outputs.skip_lp != 'true' && github.event.inputs.run_lp != 'false'
         env:
           LP_CANDIDATE_LIMIT: ${{ env.DAILY_LP_LIMIT }}
           LP_SECTION_LIMIT: "6"
         run: npm run capture:lp:candidates
 
       - name: Generate LP lightweight analysis
-        if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_lp != 'false'
+        if: steps.guard.outputs.skip_lp != 'true' && github.event.inputs.run_lp != 'false'
         run: npm run analyze:lp:light
 
       - name: Generate LP Elementor brain implementation
-        if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_lp != 'false'
+        if: steps.guard.outputs.skip_lp != 'true' && github.event.inputs.run_lp != 'false'
         run: npm run blueprint:daily -- --scope lp
 
       - name: Upload LP to Dropbox
-        if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_lp != 'false'
+        if: steps.guard.outputs.skip_lp != 'true' && github.event.inputs.run_lp != 'false'
         run: npm run dropbox:upload:lp
 
       - name: Register LP to Notion
-        if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_lp != 'false'
+        if: steps.guard.outputs.skip_lp != 'true' && github.event.inputs.run_lp != 'false'
         run: npm run notion:register:lp
 
       - name: Collect non-LP candidates
-        if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_non_lp != 'false' && (github.event_name == 'schedule' || github.event.inputs.refresh_candidates != 'false')
+        if: steps.guard.outputs.skip_non_lp != 'true' && github.event.inputs.run_non_lp != 'false' && (github.event_name == 'schedule' || github.event.inputs.refresh_candidates != 'false')
         env:
           RESERVE_NON_LP_IDS: ${{ env.DRY_RUN == 'true' && 'false' || 'true' }}
           NON_LP_SOURCE_FILTER: ${{ github.event.inputs.non_lp_source_filter || '' }}
         run: npm run collect:non-lp
 
       - name: Commit non-LP candidate reservations
-        if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_non_lp != 'false' && env.DRY_RUN != 'true' && (github.event_name == 'schedule' || github.event.inputs.refresh_candidates != 'false')
+        if: steps.guard.outputs.skip_non_lp != 'true' && github.event.inputs.run_non_lp != 'false' && env.DRY_RUN != 'true' && (github.event_name == 'schedule' || github.event.inputs.refresh_candidates != 'false')
         run: |
           if git diff --quiet -- candidates/non-lp/candidates.json candidates/non-lp/intake-reservations.json data/id-counters.json; then
             echo "No non-LP candidate reservation changes."
@@ -194,31 +194,34 @@ jobs:
           git push
 
       - name: Capture non-LP candidates
-        if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_non_lp != 'false'
+        if: steps.guard.outputs.skip_non_lp != 'true' && github.event.inputs.run_non_lp != 'false'
         run: npm run capture:non-lp
 
       - name: Generate non-LP lightweight analysis
-        if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_non_lp != 'false'
+        if: steps.guard.outputs.skip_non_lp != 'true' && github.event.inputs.run_non_lp != 'false'
         run: npm run analyze:non-lp:light
 
       - name: Generate non-LP implementation blueprints
-        if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_non_lp != 'false'
+        if: steps.guard.outputs.skip_non_lp != 'true' && github.event.inputs.run_non_lp != 'false'
         run: npm run blueprint:daily -- --scope non-lp
 
       - name: Upload non-LP to Dropbox
-        if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_non_lp != 'false'
+        if: steps.guard.outputs.skip_non_lp != 'true' && github.event.inputs.run_non_lp != 'false'
         run: npm run dropbox:upload:non-lp
 
       - name: Register non-LP to Notion
-        if: steps.guard.outputs.skip != 'true' && github.event.inputs.run_non_lp != 'false'
+        if: steps.guard.outputs.skip_non_lp != 'true' && github.event.inputs.run_non_lp != 'false'
         run: npm run notion:register:non-lp
 
       - name: Write daily step summary
-        if: always() && steps.guard.outputs.skip != 'true'
+        if: always() && (steps.guard.outputs.skip_lp != 'true' || steps.guard.outputs.skip_non_lp != 'true')
         run: npm run report:daily:summary
 
       - name: Mark successful daily intake
-        if: success() && steps.guard.outputs.skip != 'true' && env.DRY_RUN != 'true'
+        if: success() && (steps.guard.outputs.skip_lp != 'true' || steps.guard.outputs.skip_non_lp != 'true') && env.DRY_RUN != 'true'
+        env:
+          MARK_LP: ${{ steps.guard.outputs.skip_lp != 'true' && github.event.inputs.run_lp != 'false' }}
+          MARK_NON_LP: ${{ steps.guard.outputs.skip_non_lp != 'true' && github.event.inputs.run_non_lp != 'false' }}
         run: |
           npm run daily:mark
           git config user.name "github-actions[bot]"

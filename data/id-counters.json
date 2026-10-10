@@ -16,11 +16,11 @@
   },
   "banner": {
     "prefix": "BN",
-    "existingMax": 48,
-    "nextNumber": 49,
+    "existingMax": 8,
+    "nextNumber": 9,
     "digits": 4,
     "sourceOfTruth": "Notion 02｜バナーリサーチライブラリー",
-    "lastReservationAt": "2026-10-06T16:22:50.465Z"
+    "lastReservationAt": "2026-10-10T00:00:00.000Z"
   },
   "web": {
     "prefix": "WB",
