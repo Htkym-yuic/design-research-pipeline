@@ -16,8 +16,8 @@
   },
   "banner": {
     "prefix": "BN",
-    "existingMax": 8,
-    "nextNumber": 9,
+    "existingMax": 48,
+    "nextNumber": 49,
     "digits": 4,
     "sourceOfTruth": "Notion 02｜バナーリサーチライブラリー",
     "lastReservationAt": "2026-10-10T00:00:00.000Z"
