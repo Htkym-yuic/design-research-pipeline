@@ -1,0 +1,43 @@
+{
+  "id": "ILAC-0122",
+  "mediaType": "Asset",
+  "title": "おばあさん おばあさん",
+  "source": {
+    "captureUrl": "https://www.ac-illust.com/main/detail.php?id=87482",
+    "sourceUrl": "https://www.ac-illust.com/main/search_result.php?mode=cate&cid=1&cword=%E3%83%93%E3%82%B8%E3%82%B9",
+    "sourceDetailUrl": "https://www.ac-illust.com/main/detail.php?id=87482",
+    "notionUrl": "https://app.notion.com/3f524d4fa671819499f8f40739b37d81",
+    "dropboxPath": "/design/Design_Research_Library/Asset_Research_Library/99_Needs_Review/2026-10-11/daily-intake/ILAC-0122"
+  },
+  "tags": {
+    "industry": ["介護", "高齢者ポートレート"],
+    "color": [],
+    "layout": [],
+    "copy": []
+  },
+  "primary_appeal": null,
+  "reusable_principles": [],
+  "rights_excluded": [
+    "素材本体（画像ファイル）の保存・再配布。利用時はイラストACのライセンス条件に従うこと。"
+  ],
+  "material_usage": {
+    "materialId": "87482",
+    "searchTerm": "介護",
+    "altKeywords": ["おばあさん", "女性", "年配", "老人", "おばあちゃん", "めがね", "介護", "人物", "婦人", "お年寄り"],
+    "suggestedUseCases": [
+      "利用者本人を表す単体ポートレートとして、介護施設・サービス紹介のアイキャッチに使える",
+      "特定の年齢層・人物像を明示したい箇所（お客様の声セクションのアイコン等）に向く",
+      "汎用的な「高齢女性」表現のため、業種を問わず流用可能"
+    ],
+    "authorProfileUrl": "https://www.ac-illust.com/main/profile.php?id=acworks&area=1"
+  },
+  "analysis_notes": {
+    "completion_status": "reviewed_as_material_reference",
+    "analyzed_by": "claude-code",
+    "analyzed_at": "2026-10-11",
+    "notes": "この候補は素材検索結果のメタ情報（alt/検索語）であり、実物のレイアウト・配色・視線誘導等の構造分析は対象外。検索語・用途適合性のみを記録する。"
+  },
+  "cbs_sync": {
+    "status": "not_yet_synced"
+  }
+}

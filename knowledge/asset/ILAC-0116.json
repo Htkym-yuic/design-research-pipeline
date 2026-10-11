@@ -1,0 +1,43 @@
+{
+  "id": "ILAC-0116",
+  "mediaType": "Asset",
+  "title": "ハートを持つ女性 ハート",
+  "source": {
+    "captureUrl": "https://www.ac-illust.com/main/detail.php?id=22457750",
+    "sourceUrl": "https://www.ac-illust.com/main/search_result.php?mode=cate&cid=1&cword=%E3%83%93%E3%82%B8%E3%82%B9",
+    "sourceDetailUrl": "https://www.ac-illust.com/main/detail.php?id=22457750",
+    "notionUrl": "https://app.notion.com/3f524d4fa67181f6af81e1a0cc26e413",
+    "dropboxPath": "/design/Design_Research_Library/Asset_Research_Library/99_Needs_Review/2026-10-11/daily-intake/ILAC-0116"
+  },
+  "tags": {
+    "industry": ["恋愛", "ギフト", "汎用"],
+    "color": [],
+    "layout": [],
+    "copy": []
+  },
+  "primary_appeal": null,
+  "reusable_principles": [],
+  "rights_excluded": [
+    "素材本体（画像ファイル）の保存・再配布。利用時はイラストACのライセンス条件に従うこと。"
+  ],
+  "material_usage": {
+    "materialId": "22457750",
+    "searchTerm": "介護",
+    "altKeywords": ["ハートを持つ女性", "ハート", "女性", "女", "女の子", "バレンタイン", "プレゼント", "好き", "恋愛", "告白", "感謝"],
+    "suggestedUseCases": [
+      "感謝・プレゼント訴求セクションの補助イラスト（業種を問わず使える汎用性）",
+      "「ハート」のモチーフのみ使いたい場合のアイキャッチ素材",
+      "検索語は「介護」だが内容は恋愛・感謝系のため、介護文脈に転用する場合は見出しコピーとの整合性に注意"
+    ],
+    "authorProfileUrl": "https://www.ac-illust.com/main/profile.php?id=yF93rd85&area=1"
+  },
+  "analysis_notes": {
+    "completion_status": "reviewed_as_material_reference",
+    "analyzed_by": "claude-code",
+    "analyzed_at": "2026-10-11",
+    "notes": "この候補は素材検索結果のメタ情報（alt/検索語）であり、実物のレイアウト・配色・視線誘導等の構造分析は対象外。検索語・用途適合性のみを記録する。"
+  },
+  "cbs_sync": {
+    "status": "not_yet_synced"
+  }
+}

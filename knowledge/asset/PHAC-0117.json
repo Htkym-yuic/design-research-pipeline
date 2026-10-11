@@ -1,0 +1,43 @@
+{
+  "id": "PHAC-0117",
+  "mediaType": "Asset",
+  "title": "笑顔の高齢者女性と介護士 訪問介護",
+  "source": {
+    "captureUrl": "https://www.photo-ac.com/main/detail/23261174",
+    "sourceUrl": "https://www.photo-ac.com/",
+    "sourceDetailUrl": "https://www.photo-ac.com/main/detail/23261174",
+    "notionUrl": "https://app.notion.com/3f524d4fa6718171a860e136a25ac030",
+    "dropboxPath": "/design/Design_Research_Library/Asset_Research_Library/99_Needs_Review/2026-10-11/daily-intake/PHAC-0117"
+  },
+  "tags": {
+    "industry": ["介護", "訪問介護", "在宅介護"],
+    "color": [],
+    "layout": [],
+    "copy": []
+  },
+  "primary_appeal": null,
+  "reusable_principles": [],
+  "rights_excluded": [
+    "素材本体（画像ファイル）の保存・再配布。利用時は写真ACのライセンス条件（プラン確認含む）に従うこと。"
+  ],
+  "material_usage": {
+    "materialId": "23261174",
+    "searchTerm": "介護",
+    "altKeywords": ["笑顔の高齢者女性と介護士", "訪問介護", "在宅介護", "介護"],
+    "suggestedUseCases": [
+      "訪問介護・在宅介護サービスのメインビジュアル。「笑顔」訴求のため安心感を出したいセクションに最適",
+      "施設型でなく在宅型サービスを明示したい場合に有用な写真",
+      "お客様満足度・安心感を訴求するトップビジュアルの候補"
+    ],
+    "authorProfileUrl": "https://www.photo-ac.com/profile/638920"
+  },
+  "analysis_notes": {
+    "completion_status": "reviewed_as_material_reference",
+    "analyzed_by": "claude-code",
+    "analyzed_at": "2026-10-11",
+    "notes": "この候補は素材検索結果のメタ情報（alt/検索語）であり、実物のレイアウト・配色・視線誘導等の構造分析は対象外。検索語・用途適合性のみを記録する。"
+  },
+  "cbs_sync": {
+    "status": "not_yet_synced"
+  }
+}
