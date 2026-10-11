@@ -25,7 +25,7 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   scout-collect:
@@ -59,6 +59,24 @@ jobs:
           else
             node scripts/scout/index.mjs --fingerprint="$FP" --count-only
           fi
+
+      # 自動コミットの方針: total_count（規模の目安）とサンプルCSVは、解釈を伴わない
+      # 機械的な数値・生データなので直接コミットする（daily-intakeの候補予約と同じ扱い）。
+      # 一方、docs/scout/scan-log.mdへの観察文（「選んだ候補」等の判断）は対象外。
+      # 新規性ゲート（scan-config.md）の判断が要るため、Claudeが内容を読んで
+      # 手動で追記する運用のまま変えない。
+      - name: Commit count-history and sample drafts (mechanical data only)
+        run: |
+          if [ -z "$(git status --porcelain -- docs/scout/count-history.csv docs/scout/drafts/)" ]; then
+            echo "No mechanical scout data changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/scout/count-history.csv docs/scout/drafts/
+          git commit -m "Record weekly Scout count-history and sample drafts" || exit 0
+          git pull --rebase origin main
+          git push
 
       - name: Upload drafts/CSV artifact
         uses: actions/upload-artifact@v4

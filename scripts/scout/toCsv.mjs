@@ -34,3 +34,14 @@ export function toCsv(rows) {
   }
   return lines.join("\n") + "\n";
 }
+
+// 件数トレンド（total_count）の履歴。サンプリング結果（解釈が要るドラフト）とは
+// 別に、実行ごとの生数値だけを機械的に積み上げる。数値のみなので、解釈を伴う
+// scan-log.mdへの追記（Claudeの判断が要る）とは異なり、ワークフローから直接
+// 自動コミットしてよい。
+export const COUNT_HISTORY_HEADER = "date,fingerprint,total_count";
+
+/** 件数トレンドCSVの1行（ヘッダーなし） */
+export function countHistoryRow({ date, fingerprint, count }) {
+  return [date, fingerprint, count].join(",");
+}

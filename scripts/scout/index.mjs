@@ -11,12 +11,14 @@
 //   node scripts/scout/index.mjs --fingerprint=.storybook --count-only
 //
 // OpenAI/Anthropic APIは一切呼ばない。GITHUB_TOKENのみを使う。
-import { writeFileSync, mkdirSync } from "node:fs";
+import { writeFileSync, appendFileSync, existsSync, mkdirSync } from "node:fs";
 import { dirname } from "node:path";
 import { fingerprintSpec } from "./fingerprints.mjs";
 import { searchCount, searchRepos, firstCommitDate } from "./github-client.mjs";
-import { rowFrom, toCsv } from "./toCsv.mjs";
+import { rowFrom, toCsv, COUNT_HISTORY_HEADER, countHistoryRow } from "./toCsv.mjs";
 import { formatCi } from "./stats.mjs";
+
+const COUNT_HISTORY_PATH = "docs/scout/count-history.csv";
 
 function parseArgs(argv) {
   const args = { fingerprint: null, sample: 30, out: null, countOnly: false };
@@ -59,10 +61,14 @@ async function main() {
   // --- 規模: directionalなtotal_countの目安（揮発性が高いことを明示する） ---
   console.log("規模 — GitHub `search/code` のtotal_count（再現可能だが揮発性が高いconservativeな");
   console.log("floor値。リポジトリ数ではなくインデックス済みファイル数であることに注意）:");
+  const runDate = today();
+  mkdirSync(dirname(COUNT_HISTORY_PATH), { recursive: true });
+  if (!existsSync(COUNT_HISTORY_PATH)) writeFileSync(COUNT_HISTORY_PATH, `${COUNT_HISTORY_HEADER}\n`);
   for (const fp of fingerprints) {
     const { query } = fingerprintSpec(fp);
     const count = await searchCount(query);
     console.log(`  ${fp.padEnd(20)} ${count.toLocaleString("en-US")}`);
+    appendFileSync(COUNT_HISTORY_PATH, `${countHistoryRow({ date: runDate, fingerprint: fp, count })}\n`);
   }
   if (args.countOnly) return;
 
