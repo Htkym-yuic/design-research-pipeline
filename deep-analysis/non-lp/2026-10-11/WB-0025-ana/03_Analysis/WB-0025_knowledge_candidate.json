@@ -1,0 +1,138 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0025",
+  "media_type": "WB",
+  "title": "ANA大阪空港株式会社",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://www.ana-osaap.co.jp/",
+    "capture_url": "https://www.ana-osaap.co.jp/",
+    "official_url": "https://www.ana-osaap.co.jp/"
+  },
+  "analysis": {
+    "summary": "企業理念『私たちの想いが、世界を動かす』を動画ヒーローで提示したのち、事業内容（6区分の業務）、社員インタビュー、キャリア情報、採用CTAへと一方向に積み上げる構成。実写の現場写真・人物写真を多用し、インフラ企業の専門性を身近に見せている。定量的な実績訴求は確認できず、信頼形成は人物の実在感に依存している。",
+    "score": {
+      "visual": 14,
+      "clarity": 16,
+      "originality": 10,
+      "reusability": 16,
+      "learning": 12,
+      "evidence": 4,
+      "total": 72
+    },
+    "units": [
+      {
+        "name": "ファーストビュー",
+        "role": "企業理念（ブランドメッセージ）を最初に印象づける。",
+        "reuse": "2行見出し＋英語サブコピー＋現場動画の全幅ヒーロー構成。",
+        "evidence": "PC/SP First View画像。"
+      },
+      {
+        "name": "ナビゲーション",
+        "role": "会社理解と採用・キャリアへの導線を提供する。",
+        "reuse": "テキストナビ＋採用情報のみ強調ボタンという優先順位付け。",
+        "evidence": "PC First View画像上部。"
+      },
+      {
+        "name": "主要コンテンツ",
+        "role": "理念の補足説明、事業内容、社員紹介を順に伝える。",
+        "reuse": "セクションごとの背景色切り替え＋個別CTAの反復パターン。",
+        "evidence": "PC Full Page中盤。"
+      },
+      {
+        "name": "証拠・事例",
+        "role": "実在の社員・現場を見せて信頼感を補強する。",
+        "reuse": "円形トリミング人物写真＋大型スローガンタイポグラフィのコラージュ。",
+        "evidence": "PC Full Pageの写真ギャラリー帯（テキストは縮小画像のため一部未判読）。"
+      },
+      {
+        "name": "問い合わせ・コンバージョン",
+        "role": "採用エントリーおよび詳細ページへの遷移を複数箇所で受け止める。",
+        "reuse": "常設ナビCTA＋ページ終盤の大型CTAバナーの二段構え。",
+        "evidence": "ナビゲーション、PC Full Page終盤。"
+      },
+      {
+        "name": "フッター",
+        "role": "会社情報の提示と全カテゴリーへの網羅的導線。",
+        "reuse": "会社情報ブロック＋マルチカラムのサイトマップ型リンク。",
+        "evidence": "PC Full Page最下部。"
+      }
+    ]
+  },
+  "strengths": [
+    "理念→事業→人→採用という一貫した情報順序",
+    "セクション背景色の切り替えによる現在地の分かりやすさ",
+    "実写の人物・現場写真によるインフラ企業の親しみやすさ"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "定量的な信頼材料が無い",
+      "evidence": "ABOUT US・事業紹介セクションに数値実績の提示が見当たらない",
+      "fix": "便数・利用者数・社員数等の数値ブロックをABOUT US直下に追加",
+      "effect": "企業規模・実績への信頼感向上",
+      "metric": "採用ページ到達率"
+    },
+    {
+      "priority": "P1",
+      "issue": "採用検討者向けの具体情報（待遇等）がFVから遠い",
+      "evidence": "FV・中盤セクションに給与・待遇の言及が無い",
+      "fix": "FVまたはナビに募集要項への直接導線を追加",
+      "effect": "採用情報への到達までの離脱減少",
+      "metric": "採用情報ページ到達率"
+    },
+    {
+      "priority": "P2",
+      "issue": "ギャラリー帯のテキストが縮小表示で読みにくい",
+      "evidence": "縮小画像での目視時に判読困難な箇所があった（原寸は未確認）",
+      "fix": "原寸での可読性を確認し、必要ならサイズ・コントラストを調整",
+      "effect": "視認性向上",
+      "metric": "該当セクションの滞在時間（要計測）"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "理念訴求ヒーロー",
+      "keep": "2行見出し、英語サブコピー併記、全幅動画背景",
+      "replace": "ブランド、コピー文言、動画素材"
+    },
+    {
+      "id": "C02",
+      "name": "セクション背景色の切り替え",
+      "keep": "紺／白／水色のセクション単位配色切り替えでの区切り",
+      "replace": "配色自体（業種・ブランドに応じて変更）"
+    },
+    {
+      "id": "C03",
+      "name": "番号付き事業リスト",
+      "keep": "01〜06の番号付き業務分類＋個別CTA",
+      "replace": "業務名、CTA文言"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "ANAロゴ、社員の顔写真・氏名、固有の業務写真、固有コピー文言、スローガン",
+    "reusable": "理念訴求型ヒーローの構成、セクション単位の配色切り替え、番号付き事業紹介リスト、二段構えのCTA設計"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/WB-0025_SITE_PC_full.png",
+      "../01_Normal_Images/WB-0025_SITE_PC_first_view.png",
+      "../01_Normal_Images/WB-0025_SITE_SP_full.png",
+      "../01_Normal_Images/WB-0025_SITE_SP_first_view.png",
+      "https://www.ana-osaap.co.jp/"
+    ],
+    "unknowns": [
+      "color_hex_not_pixel_measured",
+      "gallery_band_text_partially_illegible_in_scaled_image",
+      "sp_hamburger_menu_contents_unverified",
+      "post_click_destination_unverified",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}
