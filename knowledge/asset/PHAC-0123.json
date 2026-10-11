@@ -1,0 +1,43 @@
+{
+  "id": "PHAC-0123",
+  "mediaType": "Asset",
+  "title": "リハビリでをするシニアと作業療法士 リハビリ",
+  "source": {
+    "captureUrl": "https://www.photo-ac.com/main/detail/35053824",
+    "sourceUrl": "https://www.photo-ac.com/",
+    "sourceDetailUrl": "https://www.photo-ac.com/main/detail/35053824",
+    "notionUrl": "https://app.notion.com/3f524d4fa67181e48b88d6f1da4ca2b8",
+    "dropboxPath": "/design/Design_Research_Library/Asset_Research_Library/99_Needs_Review/2026-10-11/daily-intake/PHAC-0123"
+  },
+  "tags": {
+    "industry": ["介護", "リハビリ", "医療"],
+    "color": [],
+    "layout": [],
+    "copy": []
+  },
+  "primary_appeal": null,
+  "reusable_principles": [],
+  "rights_excluded": [
+    "素材本体（画像ファイル）の保存・再配布。利用時は写真ACのライセンス条件（プラン確認含む）に従うこと。"
+  ],
+  "material_usage": {
+    "materialId": "35053824",
+    "searchTerm": "介護",
+    "altKeywords": ["リハビリでをするシニアと作業療法士", "リハビリ", "リハビリ施設", "リハビリグッズ"],
+    "suggestedUseCases": [
+      "PHAC-0114/PHAC-0120と同系統（リハビリ施設シリーズ）の別カット。複数カットを組み合わせてストーリー性のあるセクションを作る際に有用",
+      "リハビリグッズの使用シーンを描いているため、用具・器具を見せたい場面に向く",
+      "作業療法士という専門職を明示する人物写真として利用可能"
+    ],
+    "authorProfileUrl": "https://www.photo-ac.com/profile/638920"
+  },
+  "analysis_notes": {
+    "completion_status": "reviewed_as_material_reference",
+    "analyzed_by": "claude-code",
+    "analyzed_at": "2026-10-11",
+    "notes": "この候補は素材検索結果のメタ情報（alt/検索語）であり、実物のレイアウト・配色・視線誘導等の構造分析は対象外。検索語・用途適合性のみを記録する。"
+  },
+  "cbs_sync": {
+    "status": "not_yet_synced"
+  }
+}

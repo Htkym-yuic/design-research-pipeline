@@ -1,0 +1,43 @@
+{
+  "id": "ILAC-0118",
+  "mediaType": "Asset",
+  "title": "ボランティア ボランティア",
+  "source": {
+    "captureUrl": "https://www.ac-illust.com/main/detail.php?id=22677208",
+    "sourceUrl": "https://www.ac-illust.com/main/search_result.php?mode=cate&cid=1&cword=%E3%83%93%E3%82%B8%E3%82%B9",
+    "sourceDetailUrl": "https://www.ac-illust.com/main/detail.php?id=22677208",
+    "notionUrl": "https://app.notion.com/3f524d4fa6718106acbace1895066040",
+    "dropboxPath": "/design/Design_Research_Library/Asset_Research_Library/99_Needs_Review/2026-10-11/daily-intake/ILAC-0118"
+  },
+  "tags": {
+    "industry": ["介護", "福祉", "ボランティア"],
+    "color": [],
+    "layout": [],
+    "copy": []
+  },
+  "primary_appeal": null,
+  "reusable_principles": [],
+  "rights_excluded": [
+    "素材本体（画像ファイル）の保存・再配布。利用時はイラストACのライセンス条件に従うこと。"
+  ],
+  "material_usage": {
+    "materialId": "22677208",
+    "searchTerm": "介護",
+    "altKeywords": ["ボランティア", "チャリティ", "お年寄り", "介護", "老人", "老人ホーム", "介助", "ふれあい", "ペットセラピー", "障害者"],
+    "suggestedUseCases": [
+      "老人ホーム・福祉施設のボランティア募集/地域連携セクションの補助イラスト",
+      "「ふれあい」「ペットセラピー」等幅広い福祉文脈に転用可能な汎用イラスト",
+      "直接のCTA画像ではなく、信頼形成セクションの補助として利用が妥当"
+    ],
+    "authorProfileUrl": "https://www.ac-illust.com/main/profile.php?id=acworks&area=1"
+  },
+  "analysis_notes": {
+    "completion_status": "reviewed_as_material_reference",
+    "analyzed_by": "claude-code",
+    "analyzed_at": "2026-10-11",
+    "notes": "この候補は素材検索結果のメタ情報（alt/検索語）であり、実物のレイアウト・配色・視線誘導等の構造分析は対象外。検索語・用途適合性のみを記録する。"
+  },
+  "cbs_sync": {
+    "status": "not_yet_synced"
+  }
+}

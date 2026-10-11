@@ -1,0 +1,43 @@
+{
+  "id": "PHAC-0118",
+  "mediaType": "Asset",
+  "title": "在宅介護で食事をするシニアの女性 食事",
+  "source": {
+    "captureUrl": "https://www.photo-ac.com/main/detail/35059540",
+    "sourceUrl": "https://www.photo-ac.com/",
+    "sourceDetailUrl": "https://www.photo-ac.com/main/detail/35059540",
+    "notionUrl": "https://app.notion.com/3f524d4fa67181269db8c33ccb9fa8f8",
+    "dropboxPath": "/design/Design_Research_Library/Asset_Research_Library/99_Needs_Review/2026-10-11/daily-intake/PHAC-0118"
+  },
+  "tags": {
+    "industry": ["介護", "在宅介護", "介護食"],
+    "color": [],
+    "layout": [],
+    "copy": []
+  },
+  "primary_appeal": null,
+  "reusable_principles": [],
+  "rights_excluded": [
+    "素材本体（画像ファイル）の保存・再配布。利用時は写真ACのライセンス条件（プラン確認含む）に従うこと。"
+  ],
+  "material_usage": {
+    "materialId": "35059540",
+    "searchTerm": "介護",
+    "altKeywords": ["在宅介護で食事をするシニアの女性", "食事", "介護", "介護食"],
+    "suggestedUseCases": [
+      "介護食・食事支援サービスを訴求するLPのメインビジュアル",
+      "在宅介護の日常シーンを描いた素材として、サービス紹介セクションの導入部に向く",
+      "食事という具体的シーンのため、食事系サービス（配食・介護食開発等）に特化して使う方が訴求力が高い"
+    ],
+    "authorProfileUrl": "https://www.photo-ac.com/profile/26655007"
+  },
+  "analysis_notes": {
+    "completion_status": "reviewed_as_material_reference",
+    "analyzed_by": "claude-code",
+    "analyzed_at": "2026-10-11",
+    "notes": "この候補は素材検索結果のメタ情報（alt/検索語）であり、実物のレイアウト・配色・視線誘導等の構造分析は対象外。検索語・用途適合性のみを記録する。他のPHAC候補と著者が異なる点に留意。"
+  },
+  "cbs_sync": {
+    "status": "not_yet_synced"
+  }
+}

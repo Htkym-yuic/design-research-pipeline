@@ -1,0 +1,43 @@
+{
+  "id": "ILAC-0120",
+  "mediaType": "Asset",
+  "title": "少し先の未来たち ai",
+  "source": {
+    "captureUrl": "https://www.ac-illust.com/main/detail.php?id=2017685",
+    "sourceUrl": "https://www.ac-illust.com/main/search_result.php?mode=cate&cid=1&cword=%E3%83%93%E3%82%B8%E3%82%B9",
+    "sourceDetailUrl": "https://www.ac-illust.com/main/detail.php?id=2017685",
+    "notionUrl": "https://app.notion.com/3f524d4fa6718164bc25d277485cb4a9",
+    "dropboxPath": "/design/Design_Research_Library/Asset_Research_Library/99_Needs_Review/2026-10-11/daily-intake/ILAC-0120"
+  },
+  "tags": {
+    "industry": ["テクノロジー", "リモート・デジタル", "汎用"],
+    "color": [],
+    "layout": [],
+    "copy": []
+  },
+  "primary_appeal": null,
+  "reusable_principles": [],
+  "rights_excluded": [
+    "素材本体（画像ファイル）の保存・再配布。利用時はイラストACのライセンス条件に従うこと。"
+  ],
+  "material_usage": {
+    "materialId": "2017685",
+    "searchTerm": "介護",
+    "altKeywords": ["少し先の未来たち", "オンライン", "インターネット", "リモート", "未来", "将来", "デジタル", "バーチャル", "遠隔", "テクノロジー"],
+    "suggestedUseCases": [
+      "オンライン診療・リモート見守りサービスなど「遠隔×介護」の文脈で使えば訴求と一致する",
+      "単体では介護特化のイラストではないため、使う際は見出しコピーで文脈を補う必要がある",
+      "DX・テクノロジー訴求セクションの汎用アイキャッチとしても転用可能"
+    ],
+    "authorProfileUrl": "https://www.ac-illust.com/main/profile.php?id=PIlgWyOv&area=1"
+  },
+  "analysis_notes": {
+    "completion_status": "reviewed_as_material_reference",
+    "analyzed_by": "claude-code",
+    "analyzed_at": "2026-10-11",
+    "notes": "検索語は「介護」だが内容はリモート・デジタル・未来感のイラストで、介護文脈との直接的な結びつきは薄い。転用時は要注意として記録。"
+  },
+  "cbs_sync": {
+    "status": "not_yet_synced"
+  }
+}

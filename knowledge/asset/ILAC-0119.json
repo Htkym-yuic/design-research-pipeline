@@ -1,0 +1,43 @@
+{
+  "id": "ILAC-0119",
+  "mediaType": "Asset",
+  "title": "介護するロボット ai",
+  "source": {
+    "captureUrl": "https://www.ac-illust.com/main/detail.php?id=22644968",
+    "sourceUrl": "https://www.ac-illust.com/main/search_result.php?mode=cate&cid=1&cword=%E3%83%93%E3%82%B8%E3%82%B9",
+    "sourceDetailUrl": "https://www.ac-illust.com/main/detail.php?id=22644968",
+    "notionUrl": "https://app.notion.com/3f524d4fa6718117aba4d3e355f121e8",
+    "dropboxPath": "/design/Design_Research_Library/Asset_Research_Library/99_Needs_Review/2026-10-11/daily-intake/ILAC-0119"
+  },
+  "tags": {
+    "industry": ["介護", "介護テック", "AI・ロボット"],
+    "color": [],
+    "layout": [],
+    "copy": []
+  },
+  "primary_appeal": null,
+  "reusable_principles": [],
+  "rights_excluded": [
+    "素材本体（画像ファイル）の保存・再配布。利用時はイラストACのライセンス条件に従うこと。"
+  ],
+  "material_usage": {
+    "materialId": "22644968",
+    "searchTerm": "介護",
+    "altKeywords": ["介護するロボット", "ロボット", "介護", "シニア", "介護ロボット", "祖母", "人工知能", "老人", "機械", "福祉"],
+    "suggestedUseCases": [
+      "ILAC-0117（介護ロボット ai）と同系統のバリエーション。訴求セクションでA/Bテスト用の差し替え素材として使える",
+      "介護テック系LPのメインビジュアル候補",
+      "福祉施設向け技術導入提案資料の補助イラスト"
+    ],
+    "authorProfileUrl": "https://www.ac-illust.com/main/profile.php?id=3ZJQb1SJ&area=1"
+  },
+  "analysis_notes": {
+    "completion_status": "reviewed_as_material_reference",
+    "analyzed_by": "claude-code",
+    "analyzed_at": "2026-10-11",
+    "notes": "この候補は素材検索結果のメタ情報（alt/検索語）であり、実物のレイアウト・配色・視線誘導等の構造分析は対象外。検索語・用途適合性のみを記録する。ILAC-0117との重複気味な系統である点も参考情報として残す。"
+  },
+  "cbs_sync": {
+    "status": "not_yet_synced"
+  }
+}
