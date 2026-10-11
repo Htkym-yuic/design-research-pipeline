@@ -12,8 +12,14 @@
 import { requireEnv } from "../lib/env.mjs";
 
 const API_BASE = "https://api.github.com";
-const SEARCH_MIN_INTERVAL_MS = 6500; // ~9 req/min。code-searchの上限(10/min)の下を保つ
-const RATE_LIMIT_BACKOFF_MS = 60_000;
+// 【2026-10-11修正】実際にGitHub Actions上で動かしたところ、ドキュメント上の
+// code-search上限（10/min）より厳しいsecondary rate limitに、間隔6.5秒・2回連続の
+// リクエストだけで到達することを確認した（GITHUB_TOKENのsearch APIクォータは
+// 想定より厳しいらしい）。間隔を広げ、リトライも1回限りではなく、サーバーが返す
+// 「try again in Xs」またはRetry-Afterヘッダーに従って複数回まで粘るようにした。
+const SEARCH_MIN_INTERVAL_MS = 10_000; // ~6 req/min。想定より厳しいレート制限への安全マージン
+const RATE_LIMIT_BACKOFF_MS = 60_000; // Retry-After等が取得できない場合のフォールバック
+const MAX_RATE_LIMIT_RETRIES = 4;
 
 let lastSearchAt = 0;
 
@@ -36,33 +42,36 @@ function authHeaders() {
   };
 }
 
+/** レスポンスから待機すべき秒数を読み取る（Retry-Afterヘッダー優先、無ければ本文の"try again in Xs"を解析） */
+function parseRetryAfterMs(response, bodyText) {
+  const header = response.headers.get("retry-after");
+  if (header && !Number.isNaN(Number(header))) return Number(header) * 1000;
+  const match = bodyText.match(/try again in ([\d.]+)s/i);
+  if (match) return Math.ceil(Number(match[1])) * 1000;
+  return RATE_LIMIT_BACKOFF_MS;
+}
+
 async function githubFetch(path, { search = false } = {}) {
   if (search) await throttleSearch();
 
-  const response = await fetch(`${API_BASE}${path}`, { headers: authHeaders() });
+  for (let attempt = 0; attempt <= MAX_RATE_LIMIT_RETRIES; attempt += 1) {
+    const response = await fetch(`${API_BASE}${path}`, { headers: authHeaders() });
+    if (response.ok) return response.json();
 
-  if (response.status === 403 || response.status === 429) {
     const text = await response.text().catch(() => "");
-    if (/rate limit/i.test(text) || response.status === 429) {
-      console.error(`  ・レート制限に到達。${RATE_LIMIT_BACKOFF_MS / 1000}秒待機してリトライします...`);
-      await sleep(RATE_LIMIT_BACKOFF_MS);
-      lastSearchAt = Date.now();
-      const retry = await fetch(`${API_BASE}${path}`, { headers: authHeaders() });
-      if (!retry.ok) {
-        const retryText = await retry.text().catch(() => "");
-        throw new Error(`GitHub APIエラー（${retry.status} ${path}）: ${retryText}`);
-      }
-      return retry.json();
+    const isRateLimit = response.status === 429 || (response.status === 403 && /rate limit|try again/i.test(text));
+    if (!isRateLimit || attempt === MAX_RATE_LIMIT_RETRIES) {
+      throw new Error(`GitHub APIエラー（${response.status} ${path}）: ${text}`);
     }
-    throw new Error(`GitHub APIエラー（${response.status} ${path}）: ${text}`);
+
+    const waitMs = parseRetryAfterMs(response, text);
+    console.error(`  ・レート制限に到達。${Math.ceil(waitMs / 1000)}秒待機してリトライします（${attempt + 1}/${MAX_RATE_LIMIT_RETRIES}）...`);
+    await sleep(waitMs);
+    lastSearchAt = Date.now();
   }
 
-  if (!response.ok) {
-    const text = await response.text().catch(() => "");
-    throw new Error(`GitHub APIエラー（${response.status} ${path}）: ${text}`);
-  }
-
-  return response.json();
+  // ここには到達しない（ループ内で必ずreturn/throwする）
+  throw new Error(`GitHub APIエラー: リトライ上限に到達しました（${path}）`);
 }
 
 /**

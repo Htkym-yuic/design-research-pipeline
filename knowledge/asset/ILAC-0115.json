@@ -1,0 +1,43 @@
+{
+  "id": "ILAC-0115",
+  "mediaType": "Asset",
+  "title": "手03",
+  "source": {
+    "captureUrl": "https://www.ac-illust.com/main/detail.php?id=1360153",
+    "sourceUrl": "https://www.ac-illust.com/main/search_result.php?mode=cate&cid=1&cword=%E3%83%93%E3%82%B8%E3%82%B9",
+    "sourceDetailUrl": "https://www.ac-illust.com/main/detail.php?id=1360153",
+    "notionUrl": "https://app.notion.com/p/3f524d4fa6718112b161c18cf76ad743",
+    "dropboxPath": "/design/Design_Research_Library/Asset_Research_Library/99_Needs_Review/2026-10-11/daily-intake/ILAC-0115"
+  },
+  "tags": {
+    "industry": ["介護", "医療", "家族・親子"],
+    "color": [],
+    "layout": [],
+    "copy": []
+  },
+  "primary_appeal": null,
+  "reusable_principles": [],
+  "rights_excluded": [
+    "素材本体（画像ファイル）の保存・再配布。利用時はイラストACのライセンス条件に従うこと。"
+  ],
+  "material_usage": {
+    "materialId": "1360153",
+    "searchTerm": "介護",
+    "altKeywords": ["手", "ハート", "バレンタイン", "愛情", "親子", "ライン", "恋人", "介護", "運命の糸", "手を取り合う"],
+    "suggestedUseCases": [
+      "介護・医療系LPの「安心・寄り添い」を表す抽象アイコン的ビジュアル",
+      "特定の人物を描かない分、業種を問わず使いやすい（親子・恋人・介護のいずれの文脈にも転用可）",
+      "見出し直下の小さなアイコンや、信頼形成セクションの補助に向く。メインビジュアルとしては訴求力が弱い"
+    ],
+    "authorProfileUrl": "https://www.ac-illust.com/main/profile.php?id=zrigk9ha&area=1"
+  },
+  "analysis_notes": {
+    "completion_status": "reviewed_as_material_reference",
+    "analyzed_by": "claude-code",
+    "analyzed_at": "2026-10-11",
+    "notes": "この候補は素材検索結果のメタ情報（alt/検索語）であり、実物のレイアウト・配色・視線誘導等の構造分析は対象外。検索語・用途適合性のみを記録する。"
+  },
+  "cbs_sync": {
+    "status": "not_yet_synced"
+  }
+}
