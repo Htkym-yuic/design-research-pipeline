@@ -1,15 +1,30 @@
 {
   "schema_version": "drs-deep-1.0",
   "id": "WB-0026",
-  "mode": "template",
+  "mode": "analysis",
+  "selected_for_deep_analysis": true,
+  "selection_reason": "共感、実態データ、セルフチェック、相談先、専門家情報を段階配置し、センシティブな健康課題を恐怖訴求に偏らず相談行動へ接続する構造を学べるため",
   "checks": {
-    "chapters": "pending_validation",
-    "unit_fields": "pending_analysis",
-    "image_slots": "pending_analysis",
-    "evidence": "pending_analysis",
-    "candidate_parity": "pending_analysis",
-    "rights": "pending_analysis"
+    "first_line": "Yes",
+    "chapters": "Yes",
+    "unit_headings": "Yes",
+    "unit_fields": "Yes",
+    "image_slots": "Yes",
+    "image_evidence": "Yes",
+    "candidate_parity": "Yes",
+    "rights": "Yes",
+    "unknowns": "Yes",
+    "sources": "Yes",
+    "run_record": "Yes",
+    "analysis_complete": "Yes"
   },
-  "notion": "not_synced",
-  "cbs": "not_synced"
+  "notion": {
+    "status": "synced_and_verified",
+    "page_url": "https://app.notion.com/p/3f324d4fa6718137ab4aeda07293fa75"
+  },
+  "dropbox": {
+    "status": "synced_and_verified",
+    "path": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/selected/WB-0026-untitled"
+  },
+  "cbs": "not_synced_user_approval_required"
 }
