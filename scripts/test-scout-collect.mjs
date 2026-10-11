@@ -7,7 +7,7 @@
 // (scripts/test-research-collect.mjs)。classifyFrontend関連のテストは、
 // このリポジトリではis_frontend列自体を落としたため対象外。
 import assert from "node:assert/strict";
-import { quarterOf, toCsv, rowFrom, CSV_HEADER } from "./scout/toCsv.mjs";
+import { quarterOf, toCsv, rowFrom, CSV_HEADER, countHistoryRow, COUNT_HISTORY_HEADER } from "./scout/toCsv.mjs";
 import { wilson95, formatCi } from "./scout/stats.mjs";
 import { fingerprintSpec, FINGERPRINTS } from "./scout/fingerprints.mjs";
 
@@ -72,5 +72,14 @@ assert.equal(formatCi(63, 278), "23% (95% CI 18-28%, n=278)");
 ok("formatCiが期待どおりの文字列を返す");
 assert.equal(formatCi(0, 0), "0% (95% CI 0-100%, n=0)");
 ok("formatCiがn=0でも0除算せずに動く");
+
+// --- countHistoryRow ---------------------------------------------------------
+assert.equal(COUNT_HISTORY_HEADER, "date,fingerprint,total_count");
+ok("件数履歴CSVのヘッダーが仕様どおり");
+assert.equal(
+  countHistoryRow({ date: "2026-10-18", fingerprint: "tailwind.config.js", count: 1277952 }),
+  "2026-10-18,tailwind.config.js,1277952",
+);
+ok("countHistoryRow: 日付・指紋・件数が仕様どおりの順で並ぶ");
 
 console.log(`\n✅ scout-collect: ${passed}件のアサーションに成功`);
