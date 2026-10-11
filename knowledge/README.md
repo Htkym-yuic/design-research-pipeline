@@ -59,7 +59,17 @@ Claude Code等でJSON化してここへ置く想定。
 | `banner/` `web/` `graphic/` `parts/` `canva/` | `design-research-daily.yml` | 空（候補はNotionに登録済みだが、CBS向けJSON化は未着手） |
 | `patterns/` | 日次の機械的テンプレート抽出（AI判断なし） | 空 |
 | `logo/` `business-card/` `poster/` `flyer/` | デザインAC経由でグラフィックとして収集中（`graphic/`内の`subtype`で区別）。専用ディレクトリは将来の分離先として用意 | 空 |
-| `trends/` | 自動収集元なし（将来GitHub検索等を追加する場合の置き場） | 空 |
+| `trends/` | `docs/scout/` のDesign Research Scout（GitHub code search、週次） | 空（ドラフトのレビュー・反映待ち） |
+| `ai-design/` | `docs/scout/` のDesign Research Scout（AI制作ツール関連の指紋を追加した場合） | 空 |
 | `note-ideas/` | 自動収集元なし（ChatGPT/Claudeとの対話から手動で追記） | 空 |
 
 空ディレクトリは `.gitkeep` でGit管理している。
+
+## Design Research Scout（`docs/scout/`）との関係
+
+`trends/` と `ai-design/` は、`docs/scout/`配下のDesign Research Scout
+（`imsaif/design-with-claude`のresearch-scoutブランチから移植）が見つけた候補の
+反映先。Scout自身はここへ直接書き込まない（`docs/scout/drafts/`と
+`docs/scout/scan-log.md`にしか書き込まない設計）。ドラフトを人がレビューし、
+採用すると判断したものだけを、ここの共通の型に沿ってJSON化する。詳しくは
+[`docs/scout/AGENT.md`](../docs/scout/AGENT.md)を参照。

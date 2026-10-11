@@ -1,0 +1,68 @@
+name: Research Scout Weekly
+
+on:
+  workflow_dispatch:
+    inputs:
+      fingerprint:
+        description: "調査する指紋（カンマ区切り）。空欄はscripts/scout/fingerprints.mjsの全件"
+        type: string
+        default: ""
+      sample:
+        description: "指紋ごとに抽出するリポジトリ数"
+        type: string
+        default: "30"
+      count_only:
+        description: "true=規模の目安のみ表示し、サンプリングしない"
+        type: choice
+        options: ["false", "true"]
+        default: "true"
+  schedule:
+    # 週1回、月曜 00:00 JST（日曜 15:00 UTC）。daily-intakeとは別のconcurrency group。
+    - cron: "0 15 * * 0"
+
+concurrency:
+  group: research-scout-weekly
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  scout-collect:
+    name: Design Research Scout collector (draft-only, no LLM API)
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Run pure-function unit tests
+        run: npm run scout:test
+
+      - name: Collect (count-only or sample, per inputs)
+        run: |
+          FP="${{ github.event.inputs.fingerprint }}"
+          SAMPLE="${{ github.event.inputs.sample }}"
+          COUNT_ONLY="${{ github.event.inputs.count_only }}"
+          if [ -z "$FP" ]; then
+            FP="tailwind.config.js,tailwind.config.ts,design-tokens.json,figma.config.js,.storybook"
+          fi
+          if [ -z "$SAMPLE" ]; then SAMPLE="30"; fi
+          if [ "$COUNT_ONLY" = "false" ]; then
+            node scripts/scout/index.mjs --fingerprint="$FP" --sample="$SAMPLE"
+          else
+            node scripts/scout/index.mjs --fingerprint="$FP" --count-only
+          fi
+
+      - name: Upload drafts/CSV artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: research-scout-drafts
+          path: docs/scout/drafts/
+          if-no-files-found: ignore

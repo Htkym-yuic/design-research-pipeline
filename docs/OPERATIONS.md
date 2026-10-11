@@ -280,3 +280,63 @@ note記事ネタの候補は `outputs/note-drafts/` に置く。使い方は
 - 画像理解を伴う詳細分析本文の自動確定。非LPは29章テンプレートと検証処理まで自動化し、週末レビューで選んだ候補だけを画像確認して完成させる。
 - 画像理解を伴う最終的な意味判断。日次は自動一次分析までとし、コピー、正確な訴求分類、パーツ境界、原則の妥当性は週末レビューで確認する。
 - DropboxやNotion内の既存資産の移動・削除。
+
+## Design Research Scout（GitHub公開コードからのトレンド調査）
+
+`imsaif/design-with-claude` の `research-scout` ブランチにあった調査エージェント設計を、
+`docs/scout/` と `scripts/scout/` へ draft-only の独立モジュールとして移植したもの。
+LP/バナー等の収集（Dropbox・Notionへの一次資料保存）とは別の、**GitHub公開コード上の
+デザイン制作ツール採用傾向**を調べる仕組み。
+
+### 役割
+
+- 対象: Tailwind・Storybook・design-tokens.json・Figma連携ツールチェーン等の指紋
+  （`scripts/scout/fingerprints.mjs`。暫定の指紋セットで見直し前提）。
+- 書き込み先: `docs/scout/drafts/` と `docs/scout/scan-log.md` だけ。`knowledge/`への
+  反映は人（Claude Codeを含む）がドラフトをレビューした後の別工程。
+- 使うAPI: GitHub REST APIのみ（`GITHUB_TOKEN`）。OpenAI/Anthropic APIは呼ばない。
+- 数字の扱い: Wilson 95%信頼区間 or directional floorラベル必須。裸の数字は書かない
+  （`docs/scout/DRAFT-TEMPLATE.md`）。
+
+### コマンド
+
+```bash
+npm run scout:test                                             # 純粋関数のユニットテスト
+npm run scout:collect -- --fingerprint=tailwind.config.js --count-only
+npm run scout:collect -- --fingerprint=tailwind.config.js,.storybook --sample=60
+```
+
+いずれもネットワーク呼び出しは`GITHUB_TOKEN`を使ったGitHub REST APIのみ。
+ローカル実行時は`GITHUB_TOKEN`（Personal Access Token等）を環境変数に設定する。
+GitHub Actions実行時は自動発行される`secrets.GITHUB_TOKEN`を使うため、追加のSecrets登録は不要。
+
+### 未検証事項（このPRの時点）
+
+- このサンドボックス環境には実際のGitHub REST APIを叩けるトークンが無く、
+  `scripts/scout/index.mjs`のネットワーク経路（`github-client.mjs`）はライブでは
+  未検証。純粋関数（`toCsv.mjs`/`stats.mjs`/`fingerprints.mjs`）は`npm run scout:test`で
+  検証済み。クエリ構文自体は別ツール経由のGitHub code search APIで実際に妥当な件数
+  （`tailwind.config.js`で約128万件、`.storybook/main`で約2.9万件、2026-10-11時点）が
+  返ることを確認済み。
+- `figma.config.js`の`filename:`クエリは完全一致ではなく類似ファイル名も混ざることを
+  確認済み（`docs/scout/scan-config.md`に記載）。実運用前に指紋の精度を見直すこと。
+
+### `research-scout-weekly.yml`
+
+`workflow_dispatch`（指紋・サンプル数・count-onlyを指定可）に加えて、週1回
+（月曜00:00 JST）のスケジュール実行を持つ。`daily-intake`とはconcurrency groupを分離。
+現時点では`docs/scout/drafts/`への変更をArtifactとしてアップロードするのみで、
+mainへの自動コミットは行っていない（必要なら別途判断）。
+
+## Creative Brief Studio AI向けエクスポート（`exports/creative-brief-studio-ai/`）
+
+`knowledge/**/*.json`（媒体を問わず全件）から、CBS側が検索に使う軽量インデックスを
+生成する。
+
+```bash
+npm run cbs:export
+```
+
+`exports/creative-brief-studio-ai/manifest.json`（件数・媒体一覧等のメタ情報）と
+`index.json`（id・mediaType・title・tags・summary・knowledgePathの軽量配列）を生成する。
+**CBS本体への本番同期はここでは行わない。** 生成までがこのコマンドの範囲。
