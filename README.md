@@ -40,8 +40,11 @@ Creative Brief Studio AIとは分離して運用する、デザインリサー�
 .
 ├── .github/workflows/
 ├── candidates/
+│   └── analysis-queue/       # ChatGPT/Claudeへ渡す分析待ちキュー（媒体別）
 ├── data/
 ├── docs/
+│   └── scout/                # Design Research Scout（GitHub公開コードの調査）
+│       └── drafts/
 ├── exports/
 │   └── creative-brief-studio-ai/
 ├── knowledge/
@@ -50,8 +53,20 @@ Creative Brief Studio AIとは分離して運用する、デザインリサー�
 │   ├── web/
 │   ├── graphic/
 │   ├── parts/
-│   └── patterns/
+│   ├── patterns/
+│   ├── canva/
+│   ├── logo/
+│   ├── business-card/
+│   ├── poster/
+│   ├── flyer/
+│   ├── trends/
+│   ├── ai-design/
+│   └── note-ideas/
+├── outputs/
+│   ├── analysis-requests/    # ChatGPT/Claude貼り付け用のMarkdown
+│   └── note-drafts/          # note記事のネタ案
 └── scripts/
+    └── scout/                # Design Research Scoutのコレクター
 ```
 
 ## 定期実行

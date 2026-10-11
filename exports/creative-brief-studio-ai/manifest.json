@@ -1,0 +1,10 @@
+{
+  "generatedAt": "2026-10-11T09:32:07.989Z",
+  "itemCount": 1,
+  "skippedCount": 0,
+  "mediaTypes": [
+    "LP"
+  ],
+  "source": "design-research-pipeline/knowledge/",
+  "note": "このmanifest/indexはCBS側が検索に使う軽量インデックス。本番同期（CBS本体への反映）は別工程で、ユーザー確認後に行う。"
+}
