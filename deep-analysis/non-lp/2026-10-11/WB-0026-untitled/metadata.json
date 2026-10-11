@@ -67,9 +67,11 @@
       "status": "generated_daily_provisional"
     }
   },
-  "capture_status": "not_found_in_local_capture_summary",
-  "analysis_status": "template_generated_pending_visual_analysis",
-  "notion_status": "not_synced",
-  "cbs_status": "not_synced",
-  "generated_at": "2026-10-10T21:32:55.956Z"
+  "capture_status": "found_in_dropbox_master",
+  "analysis_status": "completed_and_validated",
+  "analysis_score": 78,
+  "notion_status": "pending_sync",
+  "cbs_status": "candidate_pending_user_approval",
+  "generated_at": "2026-10-10T21:32:55.956Z",
+  "analyzed_at": "2026-10-11"
 }
