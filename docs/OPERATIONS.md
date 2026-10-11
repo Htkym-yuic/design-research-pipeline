@@ -223,6 +223,57 @@ npm run analyze:non-lp:selected:deep -- --selection data/non-lp-deep-analysis-se
 生成直後はテンプレートであり、画像理解と実測を終えていない。完成報告の前に
 npm run knowledge:validate-non-lp -- --input "<Markdown>" --mode analysis を通す。
 
+## APIなし半自動運用（分析待ちキュー）
+
+LP以外の領域（バナー・Web・グラフィック・パーツ・Canva・素材探索・note記事ネタ等）を、
+OpenAI/Anthropic APIの常時利用を前提にせず、ChatGPT/Claudeの通常プラン範囲で半自動的に
+分析していくための仕組み。GitHub Actionsでは**収集・整理・分析待ち化まで**を行い、
+深い分析・CBS用ナレッジ本文の作成・Note記事案の作成はChatGPT/Claude/Claude Codeへ渡す。
+
+### 全体の流れ
+
+1. GitHub Actions（既存の`collect:non-lp`等）で候補を収集する（変更なし）
+2. `npm run queue:build` — `candidates/non-lp/candidates.json` と
+   `candidates/non-lp/lightweight-analysis.json` を媒体別に整理し、
+   `candidates/analysis-queue/<日付>/<媒体>.json` へ出力する
+3. `npm run queue:request` — 上記キューから、ChatGPT/Claudeに貼り付ける分析依頼Markdownを
+   `outputs/analysis-requests/<日付>-design-research-request.md` へ生成する
+4. 生成されたMarkdownをChatGPT（またはClaude）に貼り付けて分析してもらう
+5. 分析結果をレビューする
+6. Claude Codeに「このMarkdownと回答を渡すので `knowledge/<媒体>/<ID>.json` へ反映して」と依頼する
+7. 変更はPRで確認する（mainへの直接pushはしない）
+8. Creative Brief Studio AIへの反映は、別途ユーザー確認後に行う（本番同期の自動化は対象外）
+
+### コマンド
+
+```bash
+npm run queue:build                 # 当日分のキューを作成（candidates/analysis-queue/<today>/）
+npm run queue:build -- --date 2026-10-11   # 日付を指定して作成
+npm run queue:request               # 当日分の分析依頼Markdownを生成
+npm run queue:request -- --date 2026-10-11 # 日付を指定して生成
+```
+
+いずれもAPIキーを一切使わず、既存のcandidates.json/lightweight-analysis.jsonを読み込むだけの
+ローカル処理（ネットワーク通信なし）。Secrets/Variablesが未設定でも動作する。
+
+### 対象範囲とknowledge/の置き場
+
+`knowledge/` 配下に媒体別の置き場を用意している（`banner/` `web/` `graphic/` `parts/` `canva/`
+`patterns/` に加え、`logo/` `business-card/` `poster/` `flyer/` `trends/` `note-ideas/`）。
+共通の型と現状は [`knowledge/README.md`](../knowledge/README.md) を参照。
+
+note記事ネタの候補は `outputs/note-drafts/` に置く。使い方は
+[`outputs/note-drafts/README.md`](../outputs/note-drafts/README.md) を参照。
+
+### 既存フローへの影響
+
+このキュー構築・分析依頼Markdown生成は、既存のLP日次フロー
+（`.github/workflows/design-research-daily.yml`、`capture-lp-candidates.mjs`、
+`register-lp-intake-notion.mjs`、`upload-lp-intake-to-dropbox.mjs`、`knowledge/lp/`）には
+一切変更・依存しない。既存の非LP収集（`collect-non-lp-candidates.mjs` 等）が出力する
+`candidates/non-lp/candidates.json` / `lightweight-analysis.json` を**読み込むだけ**で、
+書き込みや上書きは行わない。
+
 ### 現時点でまだ自動化していないこと
 
 - Creative Brief Studio AIへの同期（`npm run knowledge:apply`等）は対象外。Notionへの軽量分析ページ登録までがこのワークフローの範囲。
