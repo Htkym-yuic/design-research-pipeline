@@ -1,0 +1,138 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0028",
+  "media_type": "WB",
+  "title": "nome［静岡茶ブランド］",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://isnome.com/",
+    "capture_url": "https://isnome.com/",
+    "official_url": "https://isnome.com/"
+  },
+  "analysis": {
+    "summary": "単一商品（静岡産煎茶のティーバッグ）のD2Cブランドサイト。機能訴求や証拠コンテンツ（レビュー・実績数値）をほぼ排除し、強い余白、1画面1要素の編集的レイアウト、詩的な日英併記コピー、2枚の雰囲気写真のみでブランド体験を伝える。WB-0025・WB-0026とは対照的に、情報を増やすのではなく減らすことで差別化している。",
+    "score": {
+      "visual": 17,
+      "clarity": 14,
+      "originality": 17,
+      "reusability": 15,
+      "learning": 13,
+      "evidence": 2,
+      "total": 78
+    },
+    "units": [
+      {
+        "name": "ファーストビュー",
+        "role": "商品の存在とブランドの世界観を同時に提示する。",
+        "reuse": "余白＋中央配置の商品写真＋背景に薄く重ねたロゴタイプ。",
+        "evidence": "PC/SP First View画像。"
+      },
+      {
+        "name": "ナビゲーション",
+        "role": "カート・アカウントへのアクセスとメニュー展開の導線を提供する。",
+        "reuse": "Cart・Account・ハンバーガーメニューのみの極小ヘッダー。",
+        "evidence": "PC First View画像右上（展開後の中身は未確認）。"
+      },
+      {
+        "name": "主要コンテンツ",
+        "role": "最小限のコピーと2枚の編集的写真でブランド体験を伝える。",
+        "reuse": "1画面1要素＋大きな余白＋詩的な短文コピー（日英併記）の反復パターン。",
+        "evidence": "PC/SP Full Page中盤（PC/SPでコピー文言が異なる箇所あり）。"
+      },
+      {
+        "name": "証拠・事例",
+        "role": "該当なし。レビュー・実績数値・認証等の証拠要素は確認できなかった。",
+        "reuse": "「証拠を見せない」という設計判断自体が、プレミアム・感性訴求ブランドでの参考になる。",
+        "evidence": "PC Full Page全域を目視したが該当セクションなし。"
+      },
+      {
+        "name": "問い合わせ・コンバージョン",
+        "role": "購入・ブランド理解・継続接点（ニュースレター）の3種の行動を受け止める。",
+        "reuse": "ブラケット「[ ]」で囲んだテキストリンク型CTA表現、Shop Now/What is nomeの2択への絞り込み。",
+        "evidence": "PC Full Page中盤〜終盤。"
+      },
+      {
+        "name": "フッター",
+        "role": "法的情報の提示とブランドロゴの最終的な印象づけ。",
+        "reuse": "巨大ロゴタイプ＋小さな法的リンク列という構成。",
+        "evidence": "PC Full Page最下部。"
+      }
+    ]
+  },
+  "strengths": [
+    "情報を極限まで削ぎ落としブランドの高級感・余韻を強く印象づけている",
+    "日英併記の詩的コピーが国際的・洗練されたトーンを作っている",
+    "単一商品・単一CTAに絞った構成で意思決定の迷いを最小化している"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "証拠要素が皆無で購入への後押しが弱い",
+      "evidence": "レビュー・実績・産地認証等が確認できなかった",
+      "fix": "簡潔なお客様の声や産地・生産者情報を1セクション追加",
+      "effect": "初見ユーザーの購入への心理的後押し向上",
+      "metric": "Shop Nowクリック率"
+    },
+    {
+      "priority": "P1",
+      "issue": "商品の機能的な特徴説明が不足",
+      "evidence": "味・淹れ方・産地の具体的説明がFVの短いコピー以外にほぼ無い",
+      "fix": "What is nomeまたはFV直下に簡潔な説明を追加",
+      "effect": "比較検討層の離脱防止",
+      "metric": "What is nomeページ到達率・滞在時間"
+    },
+    {
+      "priority": "P2",
+      "issue": "PC/SPでコピーが異なる理由が不明",
+      "evidence": "中盤の詩的コピーがPC「いつもの思考が、少しずれる。」SP「知らない味に、出会う。」で異なる",
+      "fix": "意図的な出し分けであれば統一するか意図を明示する",
+      "effect": "ブランド一貫性の向上",
+      "metric": "該当なし（デザイン判断の確認が先）"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "余白＋商品写真のミニマルFV",
+      "keep": "余白、中央配置の商品写真、背景に薄く重ねたロゴタイプ",
+      "replace": "商品写真、ロゴ、コピー"
+    },
+    {
+      "id": "C02",
+      "name": "1画面1要素の編集的ブランド体験セクション",
+      "keep": "大きな余白＋詩的な短文コピー（日英併記）＋全幅写真の反復",
+      "replace": "写真、コピー文言"
+    },
+    {
+      "id": "C03",
+      "name": "テキストリンク型CTA「[ ]」表現",
+      "keep": "角丸ボタンでなくブラケットで囲んだテキストリンクのCTA表現",
+      "replace": "CTA文言"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "商品写真、風景写真、ロゴ・ロゴタイプ、固有コピー文言（日英とも）",
+    "reusable": "余白重視のミニマルFV構成、1画面1要素の編集的レイアウト、ブラケット型CTA表現"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/WB-0028_SITE_PC_full.png",
+      "../01_Normal_Images/WB-0028_SITE_PC_first_view.png",
+      "../01_Normal_Images/WB-0028_SITE_SP_full.png",
+      "../01_Normal_Images/WB-0028_SITE_SP_first_view.png",
+      "https://isnome.com/"
+    ],
+    "unknowns": [
+      "color_hex_not_pixel_measured",
+      "pc_sp_copy_variance_cause_unverified",
+      "hamburger_menu_contents_unverified",
+      "post_purchase_flow_unverified",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

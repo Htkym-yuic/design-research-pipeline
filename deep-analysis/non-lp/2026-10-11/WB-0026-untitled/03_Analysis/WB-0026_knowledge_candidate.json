@@ -1,0 +1,139 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0026",
+  "media_type": "WB",
+  "title": "生理の悩み 相談しようプロジェクト｜ツムラ",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://www.tsumura.co.jp/seirino-nayami/",
+    "capture_url": "https://www.tsumura.co.jp/seirino-nayami/",
+    "official_url": "https://www.tsumura.co.jp/seirino-nayami/"
+  },
+  "analysis": {
+    "summary": "月経の不調という相談しにくいテーマを、キャラクターイラストと柔らかい配色で心理的ハードルを下げつつ、統計データ・症状チェック・医師メッセージ動画・医療機関紹介で段階的に自分事化と信頼形成を行う構成。単一の強いCTAではなく、受診・相談・セルフチェック・情報収集という複数の緩やかな行動選択肢を分散配置している。",
+    "score": {
+      "visual": 16,
+      "clarity": 15,
+      "originality": 14,
+      "reusability": 17,
+      "learning": 13,
+      "evidence": 3,
+      "total": 78
+    },
+    "units": [
+      {
+        "name": "ファーストビュー",
+        "role": "サイトの性質を柔らかいトーンで提示し、心理的ハードルを下げる。",
+        "reuse": "波型装飾＋キャラクターイラスト＋柔らかい配色のヒーロー構成。",
+        "evidence": "PC/SP First View画像。"
+      },
+      {
+        "name": "ナビゲーション",
+        "role": "最小限のナビで、スクロール主導のコンテンツ消費へ誘導する。",
+        "reuse": "ナビを最小化し1ページ完結型で読ませる設計。",
+        "evidence": "PC First View画像右上（ハンバーガーメニュー展開後は未確認）。"
+      },
+      {
+        "name": "主要コンテンツ",
+        "role": "気づき（統計）→自己理解（症状・チェック）→行動喚起を段階的に提示する。",
+        "reuse": "統計データ→症状タグ→チェックリスト→診断ツール→専門家メッセージの段階構成。",
+        "evidence": "PC Full Page中盤〜後半（文字が縮小表示のため一部詳細未確認）。"
+      },
+      {
+        "name": "証拠・事例",
+        "role": "統計データと医師の存在で医学的信頼性を補強する。",
+        "reuse": "統計データ（共感形成）＋専門家メッセージ（信頼形成）の二段構え。",
+        "evidence": "PC Full Pageの統計セクション・医師メッセージセクション（出典表記・動画本編は未確認）。"
+      },
+      {
+        "name": "問い合わせ・コンバージョン",
+        "role": "受診・相談・セルフチェック・情報収集という複数の行動を受け止める。",
+        "reuse": "悩みの深さに応じた複数CTAの並立、セクション末ごとの個別CTA配置。",
+        "evidence": "PC Full Page各セクション末、終盤バナー。"
+      },
+      {
+        "name": "フッター",
+        "role": "各セクションへのリンクと運営企業の存在を示す。",
+        "reuse": "個別リンク→SNSアイコン→運営企業ロゴの階層構成。",
+        "evidence": "PC Full Page最下部。"
+      }
+    ]
+  },
+  "strengths": [
+    "キャラクターイラストと柔らかい配色でセンシティブなテーマへの心理的ハードルを下げている",
+    "統計データ・医師メッセージ・医療機関紹介という複数種の証拠で信頼性を担保",
+    "単一の強いCTAでなく悩みの深さに応じた複数の緩やかな行動選択肢を用意"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "ページが長大でナビが最小限",
+      "evidence": "PC Full Pageが12,035pxあり、ナビはハンバーガーメニューのみ",
+      "fix": "ページ内アンカー付き目次セクションをFV直下に追加",
+      "effect": "目的のコンテンツへの到達速度向上",
+      "metric": "各セクションへのスクロール到達率"
+    },
+    {
+      "priority": "P1",
+      "issue": "統計データの出典が不明瞭",
+      "evidence": "縮小画像では円グラフの出典表記が未判読",
+      "fix": "統計グラフ直下に出典・調査概要を明記",
+      "effect": "データへの信頼性向上",
+      "metric": "該当セクションの滞在時間（要計測）"
+    },
+    {
+      "priority": "P2",
+      "issue": "CTAの種類が多く優先順位が不明瞭",
+      "evidence": "5種類以上のCTA文言が並立している",
+      "fix": "ユーザーの検討段階別にCTAの視覚的優先度を差別化",
+      "effect": "行動喚起の効果向上",
+      "metric": "各CTAのクリック率（要計測）"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "キャラクター起用による心理的ハードル低減FV",
+      "keep": "波型装飾＋キャラクターイラスト＋柔らかい配色のFV構成",
+      "replace": "キャラクター、ブランド、コピー文言"
+    },
+    {
+      "id": "C02",
+      "name": "統計データによる気づき形成セクション",
+      "keep": "円グラフ＋「あたりまえ問題」というコピーの型",
+      "replace": "統計数値、テーマ"
+    },
+    {
+      "id": "C03",
+      "name": "段階的CTA分散配置",
+      "keep": "悩みの深さに応じた複数CTA（受診／相談／診断／情報収集）の並立",
+      "replace": "CTA文言、遷移先"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "キャラクターイラスト（コラボ契約詳細不明）、統計データの出典・数値、医師の肖像・氏名・発言内容、固有コピー、ロゴ",
+    "reusable": "波型装飾＋キャラクターによる心理的ハードル低減の型、統計による気づき形成の型、段階的・複数CTA分散配置の設計"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/WB-0026_SITE_PC_full.png",
+      "../01_Normal_Images/WB-0026_SITE_PC_first_view.png",
+      "../01_Normal_Images/WB-0026_SITE_SP_full.png",
+      "../01_Normal_Images/WB-0026_SITE_SP_first_view.png",
+      "https://www.tsumura.co.jp/seirino-nayami/"
+    ],
+    "unknowns": [
+      "color_hex_not_pixel_measured",
+      "statistics_source_citation_illegible_in_scaled_image",
+      "hamburger_menu_contents_unverified",
+      "tab_toggle_interaction_state_unverified",
+      "post_click_destination_unverified",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}
