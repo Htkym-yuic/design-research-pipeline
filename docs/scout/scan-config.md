@@ -18,12 +18,13 @@
 **この指紋セットは暫定。** 実際に収集してみてノイズが多い・的外れだと分かった場合は、
 指紋を入れ替える・増やすことを優先する（無理に今の指紋で結論を出さない）。
 
-**既知の不確実性（2026-10-11、GitHub code searchで実クエリ確認済み）:**
-`filename:figma.config.js`は完全一致ではなく、`figma.config.json`のような類似ファイル名も
-結果に混ざって返ってくることを確認した。この指紋で件数を確定させる前に、実際の
-検索結果を人が目視確認し、`.js`と`.json`を別の指紋として分けるか、クエリ自体を
-見直す必要がある。`tailwind.config.js`・`.storybook/main`は実クエリで妥当な件数
-（それぞれ約128万件・約2.9万件、2026-10-11時点）が返ることを確認済み。
+**修正済みの不確実性（2026-10-11、GitHub code searchで実クエリ確認済み）:**
+`filename:figma.config.js`単体では完全一致ではなく、`figma.config.json`のような
+類似ファイル名も結果に混ざることを確認した（434件）。`extension:js`を併用すると
+15件（すべて完全一致の`figma.config.js`）に絞れることを確認し、
+`scripts/scout/fingerprints.mjs`の全指紋に`extension:`修飾子を追加済み。
+`tailwind.config.js`は`extension:js`の有無で件数が変わらないことも確認済み
+（約128万件、2026-10-11時点。`.storybook/main`は約2.9万件）。
 
 ## 測る価値のある軸
 

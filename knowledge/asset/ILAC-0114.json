@@ -1,0 +1,43 @@
+{
+  "id": "ILAC-0114",
+  "mediaType": "Asset",
+  "title": "ボランティア活動 ボランティア",
+  "source": {
+    "captureUrl": "https://www.ac-illust.com/main/detail.php?id=22104090",
+    "sourceUrl": "https://www.ac-illust.com/main/search_result.php?mode=cate&cid=1&cword=%E3%83%93%E3%82%B8%E3%82%B9",
+    "sourceDetailUrl": "https://www.ac-illust.com/main/detail.php?id=22104090",
+    "notionUrl": "https://app.notion.com/p/3f524d4fa6718108b840c19fc1cfe471",
+    "dropboxPath": "/design/Design_Research_Library/Asset_Research_Library/99_Needs_Review/2026-10-11/daily-intake/ILAC-0114"
+  },
+  "tags": {
+    "industry": ["介護", "福祉", "ボランティア"],
+    "color": [],
+    "layout": [],
+    "copy": []
+  },
+  "primary_appeal": null,
+  "reusable_principles": [],
+  "rights_excluded": [
+    "素材本体（画像ファイル）の保存・再配布。利用時はイラストACのライセンス条件に従うこと。"
+  ],
+  "material_usage": {
+    "materialId": "22104090",
+    "searchTerm": "介護",
+    "altKeywords": ["介助", "介護", "サポート", "助ける", "掃除", "車椅子", "ゴミ", "ほうき", "植物"],
+    "suggestedUseCases": [
+      "介護・福祉サービスのLP/チラシで「支援する側の人物」を表すアイキャッチ",
+      "ボランティア募集・地域活動系の訴求での補助ビジュアル",
+      "直接のCTA画像ではなく、信頼形成セクションの補助イラストとしての利用が妥当"
+    ],
+    "authorProfileUrl": "https://www.ac-illust.com/main/profile.php?id=acworks&area=1"
+  },
+  "analysis_notes": {
+    "completion_status": "reviewed_as_material_reference",
+    "analyzed_by": "claude-code",
+    "analyzed_at": "2026-10-11",
+    "notes": "この候補は素材検索結果のメタ情報（alt/検索語）であり、実物のレイアウト・配色・視線誘導等の構造分析は対象外。検索語・用途適合性のみを記録する。"
+  },
+  "cbs_sync": {
+    "status": "not_yet_synced"
+  }
+}
