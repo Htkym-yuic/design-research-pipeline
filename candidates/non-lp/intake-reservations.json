@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T21:26:03.962Z",
+  "updatedAt": "2026-10-11T19:48:24.358Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -2041,6 +2041,66 @@
       "reservedAt": "2026-10-10T21:15:11.591Z"
     },
     {
+      "id": "GR-0074",
+      "title": "チラシテンプレート29860",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Ff7260cd9989b78f29df832fe99421273%2Ff7260cd9989b78f29df832fe99421273-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29860",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Ff7260cd9989b78f29df832fe99421273%2Ff7260cd9989b78f29df832fe99421273-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-11T19:48:24.358Z"
+    },
+    {
+      "id": "GR-0075",
+      "title": "夏季休業のお知らせ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9d42ff5765f8ab2b084b98a8ba34cc82%2F9d42ff5765f8ab2b084b98a8ba34cc82-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30488",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9d42ff5765f8ab2b084b98a8ba34cc82%2F9d42ff5765f8ab2b084b98a8ba34cc82-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-11T19:48:24.358Z"
+    },
+    {
+      "id": "GR-0076",
+      "title": "入道雲が爽やかな夏季休暇向けバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fd97ae5b52cb8cc77e6b91ad425acd5fe%2Fd97ae5b52cb8cc77e6b91ad425acd5fe-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20135",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fd97ae5b52cb8cc77e6b91ad425acd5fe%2Fd97ae5b52cb8cc77e6b91ad425acd5fe-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-11T19:48:24.358Z"
+    },
+    {
+      "id": "GR-0077",
+      "title": "チェック柄を使ったレトロなデザイナー名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F193fb59fea62d7a8ecf30cc13d45f283%2F193fb59fea62d7a8ecf30cc13d45f283-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-31539",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F193fb59fea62d7a8ecf30cc13d45f283%2F193fb59fea62d7a8ecf30cc13d45f283-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-11T19:48:24.358Z"
+    },
+    {
+      "id": "GR-0078",
+      "title": "金色の3つのひし形のロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/4712ec715aa7d726d14492604bfc12ee/4712ec715aa7d726d14492604bfc12ee-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3023",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/4712ec715aa7d726d14492604bfc12ee/4712ec715aa7d726d14492604bfc12ee-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-11T19:48:24.358Z"
+    },
+    {
       "id": "ILAC-0001",
       "title": "DX デジタルトランスフォーメーション 人物",
       "mediaType": "Asset",
@@ -3818,6 +3878,30 @@
       "materialId": "PAT-0028",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-10T21:15:11.591Z"
+    },
+    {
+      "id": "PAT-0029",
+      "title": "MAXHUBに見るセクション内の役割集約",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Parts.）",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/04/officecom_maxhub_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6122",
+      "imageUrl": null,
+      "materialId": "PAT-0029",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-11T19:48:24.358Z"
+    },
+    {
+      "id": "PAT-0030",
+      "title": "チラシテンプレート29860に見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Ff7260cd9989b78f29df832fe99421273%2Ff7260cd9989b78f29df832fe99421273-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29860",
+      "imageUrl": null,
+      "materialId": "PAT-0030",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-11T19:48:24.358Z"
     },
     {
       "id": "PHAC-0001",
@@ -6187,6 +6271,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-10T21:15:11.591Z"
+    },
+    {
+      "id": "PT-0076",
+      "title": "MAXHUB",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/04/officecom_maxhub_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6122",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/04/officecom_maxhub_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-11T19:48:24.358Z"
+    },
+    {
+      "id": "PT-0077",
+      "title": "NewsPicks 法人プラン",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/03/bizpremium_newspicks_00008.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6109",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/03/bizpremium_newspicks_00008.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-11T19:48:24.358Z"
+    },
+    {
+      "id": "PT-0078",
+      "title": "Weblio英会話",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/03/eikaiwa_weblio_00004.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6096",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/03/eikaiwa_weblio_00004.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-11T19:48:24.358Z"
+    },
+    {
+      "id": "PT-0079",
+      "title": "コラボス",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/03/collabos_00006.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6082",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/03/collabos_00006.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-11T19:48:24.358Z"
+    },
+    {
+      "id": "PT-0080",
+      "title": "ブラストエンジン（blastengine）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/03/blastengine_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6063",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/03/blastengine_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-11T19:48:24.358Z"
     },
     {
       "id": "WB-0001",
