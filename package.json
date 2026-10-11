@@ -31,7 +31,9 @@
     "dropbox:upload:non-lp": "node scripts/upload-non-lp-to-dropbox.mjs",
     "notion:register:lp": "node scripts/register-lp-intake-notion.mjs",
     "notion:register:non-lp": "node scripts/register-non-lp-notion.mjs",
-    "report:daily:summary": "node scripts/lib/write-step-summary.mjs"
+    "report:daily:summary": "node scripts/lib/write-step-summary.mjs",
+    "queue:build": "node scripts/build-analysis-queue.mjs",
+    "queue:request": "node scripts/generate-analysis-request.mjs"
   },
   "dependencies": {
     "playwright": "^1.55.0",

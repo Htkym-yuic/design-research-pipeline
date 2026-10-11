@@ -1,0 +1,57 @@
+name: Research Analysis Queue
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "対象日（JST, YYYY-MM-DD）。空欄は実行日の当日"
+        type: string
+        default: ""
+
+concurrency:
+  group: research-analysis-queue
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  build-queue:
+    name: Build analysis queue + request markdown (API-free)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      # queue:build / queue:request は候補JSONを読むだけの純粋なローカル処理で、
+      # playwright/sharp 等の依存は使わないため、npm ci（Playwrightのブラウザ取得を含む）は行わない。
+
+      - name: Build analysis queue
+        run: |
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            npm run queue:build -- --date "${{ github.event.inputs.date }}"
+          else
+            npm run queue:build
+          fi
+
+      - name: Generate analysis request markdown
+        run: |
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            npm run queue:request -- --date "${{ github.event.inputs.date }}"
+          else
+            npm run queue:request
+          fi
+
+      - name: Upload analysis queue + request artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: research-analysis-queue
+          path: |
+            candidates/analysis-queue/
+            outputs/analysis-requests/
+          if-no-files-found: warn
