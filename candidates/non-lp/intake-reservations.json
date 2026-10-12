@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T19:51:17.901Z",
+  "updatedAt": "2026-10-12T16:22:18.566Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -2101,6 +2101,66 @@
       "reservedAt": "2026-10-11T19:48:24.358Z"
     },
     {
+      "id": "GR-0079",
+      "title": "チラシテンプレート29859",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fdd6dc16105733e6eeb3e46dfecb21ec9%2Fdd6dc16105733e6eeb3e46dfecb21ec9-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29859",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fdd6dc16105733e6eeb3e46dfecb21ec9%2Fdd6dc16105733e6eeb3e46dfecb21ec9-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-12T16:22:18.566Z"
+    },
+    {
+      "id": "GR-0080",
+      "title": "無料休憩所",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fcf7c3d132fe3b28e783d497c51beb22d%2Fcf7c3d132fe3b28e783d497c51beb22d-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30483",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fcf7c3d132fe3b28e783d497c51beb22d%2Fcf7c3d132fe3b28e783d497c51beb22d-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-12T16:22:18.566Z"
+    },
+    {
+      "id": "GR-0081",
+      "title": "線画でヤシの木と雲が描かれた夏季休暇向けバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F5c20c6bfa349b2fc881f9b109096ca71%2F5c20c6bfa349b2fc881f9b109096ca71-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20134",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F5c20c6bfa349b2fc881f9b109096ca71%2F5c20c6bfa349b2fc881f9b109096ca71-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-12T16:22:18.566Z"
+    },
+    {
+      "id": "GR-0082",
+      "title": "淡い背景のミニマルなスタイリスト名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fc4daafc2f9e34b93c3b90c6f6d6e99d9%2Fc4daafc2f9e34b93c3b90c6f6d6e99d9-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-30553",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fc4daafc2f9e34b93c3b90c6f6d6e99d9%2Fc4daafc2f9e34b93c3b90c6f6d6e99d9-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-12T16:22:18.566Z"
+    },
+    {
+      "id": "GR-0083",
+      "title": "三色の抽象的なロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/55ec3d872b0e55ee17c7dfca1fb61407/55ec3d872b0e55ee17c7dfca1fb61407-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3019",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/55ec3d872b0e55ee17c7dfca1fb61407/55ec3d872b0e55ee17c7dfca1fb61407-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-12T16:22:18.566Z"
+    },
+    {
       "id": "ILAC-0001",
       "title": "DX デジタルトランスフォーメーション 人物",
       "mediaType": "Asset",
@@ -4022,6 +4082,30 @@
       "materialId": "PAT-0030",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-11T19:48:24.358Z"
+    },
+    {
+      "id": "PAT-0031",
+      "title": "スタイレム株式会社に見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://stylem.co.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/stylem/",
+      "imageUrl": null,
+      "materialId": "PAT-0031",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-12T16:22:18.566Z"
+    },
+    {
+      "id": "PAT-0032",
+      "title": "京セラが考えるスマートシティ アメーバタウンに見るセクション内の役割集約",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Parts.）",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/03/kyocera_smartcity_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6045",
+      "imageUrl": null,
+      "materialId": "PAT-0032",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-12T16:22:18.566Z"
     },
     {
       "id": "PHAC-0001",
@@ -6573,6 +6657,66 @@
       "reservedAt": "2026-10-11T19:48:24.358Z"
     },
     {
+      "id": "PT-0081",
+      "title": "京セラが考えるスマートシティ アメーバタウン",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/03/kyocera_smartcity_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6045",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/03/kyocera_smartcity_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-12T16:22:18.566Z"
+    },
+    {
+      "id": "PT-0082",
+      "title": "スピーダ(Speeda)",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/03/speeda_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6033",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/03/speeda_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-12T16:22:18.566Z"
+    },
+    {
+      "id": "PT-0083",
+      "title": "特許AIを活用した事業支援AIQ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/03/moribus_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6018",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/03/moribus_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-12T16:22:18.566Z"
+    },
+    {
+      "id": "PT-0084",
+      "title": "カクトク",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/03/kakutoku_00004.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/6004",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/03/kakutoku_00004.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-12T16:22:18.566Z"
+    },
+    {
+      "id": "PT-0085",
+      "title": "OKWAVE Plus",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/03/okwaveplus_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5987",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/03/okwaveplus_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-12T16:22:18.566Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -6915,6 +7059,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-10T21:15:11.591Z"
+    },
+    {
+      "id": "WB-0030",
+      "title": "スタイレム株式会社",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://stylem.co.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/stylem/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/stylem_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-12T16:22:18.566Z"
+    },
+    {
+      "id": "WB-0031",
+      "title": "新卒採用情報 | KDDI Biz Edge株式会社",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://recruit.kddi-bizedge.com/newgrads/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/kddibizedge-newgrads/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/kddibizedgenewgrads_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-12T16:22:18.566Z"
     }
   ]
 }
