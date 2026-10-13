@@ -1,0 +1,30 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0030",
+  "mode": "analysis",
+  "selected_for_deep_analysis": true,
+  "selection_reason": "160年の沿革をタイムラインナビ＋年代別カルーセルで整理し、4事業を均等に見せる番号リスト構造を持つため、老舗企業・複数事業企業のコーポレートサイト設計を学べる",
+  "checks": {
+    "first_line": "Yes",
+    "chapters": "Yes",
+    "unit_headings": "Yes",
+    "unit_fields": "Yes",
+    "image_slots": "Yes",
+    "image_evidence": "Yes",
+    "candidate_parity": "Yes",
+    "rights": "Yes",
+    "unknowns": "Yes",
+    "sources": "Yes",
+    "run_record": "Yes",
+    "analysis_complete": "Yes"
+  },
+  "notion": {
+    "status": "pending_user_review",
+    "page_url": null
+  },
+  "dropbox": {
+    "status": "pending_user_approval",
+    "path": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/selected/WB-0030-untitled"
+  },
+  "cbs": "not_synced_user_approval_required"
+}
