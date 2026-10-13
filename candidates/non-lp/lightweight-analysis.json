@@ -6898,6 +6898,242 @@
       "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
       "deepDivePriority": "中",
       "generatedAt": "2026-10-12T19:39:21.340Z"
+    },
+    "WB-0032": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。山龢【公式】。",
+      "selectionReason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+      "visualSummary": "暗色・黒基調。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-13T16:27:35.930Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/WB-0032-untitled/03_Implementation_Blueprint/WB-0032_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/WB-0032-untitled/03_Implementation_Blueprint/WB-0032_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/WB-0032-untitled/03_Implementation_Blueprint/WB-0032_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/WB-0032-untitled/03_Implementation_Blueprint/WB-0032_elementor_implementation_guide.md",
+        "sections": 8,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "WB-0033": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。ふくしま LiNK NAVi | 企業がふくしまと出会うためのナビゲーション。",
+      "selectionReason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+      "visualSummary": "ニュートラル。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-13T16:27:35.938Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/WB-0033-link-navi/03_Implementation_Blueprint/WB-0033_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/WB-0033-link-navi/03_Implementation_Blueprint/WB-0033_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/WB-0033-link-navi/03_Implementation_Blueprint/WB-0033_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/WB-0033-link-navi/03_Implementation_Blueprint/WB-0033_elementor_implementation_guide.md",
+        "sections": 8,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0084": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したチラシ・フライヤー参考。チラシテンプレート29858。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "暖色・黄橙系。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-13T16:27:35.946Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0084-29858/03_Implementation_Blueprint/GR-0084_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0084-29858/03_Implementation_Blueprint/GR-0084_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0084-29858/03_Implementation_Blueprint/GR-0084_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0084-29858/03_Implementation_Blueprint/GR-0084_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0085": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したポスター参考。浜辺とヨットの夏季休業のお知らせポスター。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-13T16:27:35.955Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0085-untitled/03_Implementation_Blueprint/GR-0085_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0085-untitled/03_Implementation_Blueprint/GR-0085_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0085-untitled/03_Implementation_Blueprint/GR-0085_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0085-untitled/03_Implementation_Blueprint/GR-0085_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0086": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したSNS投稿・Web広告参考。水面背景の涼し気な夏季休暇の案内バナー。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "寒色・青紫系。156×104の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-13T16:27:35.963Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0086-untitled/03_Implementation_Blueprint/GR-0086_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0086-untitled/03_Implementation_Blueprint/GR-0086_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0086-untitled/03_Implementation_Blueprint/GR-0086_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0086-untitled/03_Implementation_Blueprint/GR-0086_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0087": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集した名刺・ショップカード参考。花束を持つ上品なスタイリスト名刺。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "ニュートラル。384×232の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-13T16:27:35.971Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0087-untitled/03_Implementation_Blueprint/GR-0087_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0087-untitled/03_Implementation_Blueprint/GR-0087_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0087-untitled/03_Implementation_Blueprint/GR-0087_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0087-untitled/03_Implementation_Blueprint/GR-0087_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0088": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したロゴ・VI/CI参考。紫とピンクの正方形のロゴ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。400×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-13T16:27:35.981Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0088-untitled/03_Implementation_Blueprint/GR-0088_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0088-untitled/03_Implementation_Blueprint/GR-0088_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0088-untitled/03_Implementation_Blueprint/GR-0088_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0088-untitled/03_Implementation_Blueprint/GR-0088_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0086": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。SBI日本少額短期保険 株式会社。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "寒色・青紫系。1487×939の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-13T16:27:36.007Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0086-sbi/03_Implementation_Blueprint/PT-0086_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0086-sbi/03_Implementation_Blueprint/PT-0086_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0086-sbi/03_Implementation_Blueprint/PT-0086_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0086-sbi/03_Implementation_Blueprint/PT-0086_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0087": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。タナベコンサルティングが提供するエンゲージメント向上のための専門サイト。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "ニュートラル。1423×595の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-13T16:27:36.027Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0087-untitled/03_Implementation_Blueprint/PT-0087_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0087-untitled/03_Implementation_Blueprint/PT-0087_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0087-untitled/03_Implementation_Blueprint/PT-0087_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0087-untitled/03_Implementation_Blueprint/PT-0087_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0088": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。キャリレコ。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "寒色・青紫系。1346×953の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-13T16:27:36.054Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0088-untitled/03_Implementation_Blueprint/PT-0088_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0088-untitled/03_Implementation_Blueprint/PT-0088_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0088-untitled/03_Implementation_Blueprint/PT-0088_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0088-untitled/03_Implementation_Blueprint/PT-0088_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0089": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。チームスピリット。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "寒色・青紫系。3024×1136の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-13T16:27:36.072Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0089-untitled/03_Implementation_Blueprint/PT-0089_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0089-untitled/03_Implementation_Blueprint/PT-0089_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0089-untitled/03_Implementation_Blueprint/PT-0089_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0089-untitled/03_Implementation_Blueprint/PT-0089_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0090": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。コクヨ。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "緑・青緑系。1349×437の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-13T16:27:36.089Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0090-untitled/03_Implementation_Blueprint/PT-0090_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0090-untitled/03_Implementation_Blueprint/PT-0090_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0090-untitled/03_Implementation_Blueprint/PT-0090_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0090-untitled/03_Implementation_Blueprint/PT-0090_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PAT-0033": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（Parts.）から収集したPattern参考。SBI日本少額短期保険 株式会社に見るセクション内の役割集約。",
+      "selectionReason": "日次収集から抽出（Parts.）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "一つのセクション内で見出し・説明・証拠・行動導線の役割を整理し、他案件へ転用可能な単位として捉える。 根拠候補: PT-0086",
+      "reviewPoints": "切り出し範囲が広すぎないか、前後セクションへの依存がないかを確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-13T16:27:36.089Z"
+    },
+    "PAT-0034": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（デザインAC）から収集したPattern参考。チラシテンプレート29858に見る文字組みと視線誘導。",
+      "selectionReason": "日次収集から抽出（デザインAC）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "主見出し・補足・画像・行動情報のサイズ差と配置から、最初に読ませる情報を明確にする。 根拠候補: GR-0084",
+      "reviewPoints": "素材そのものではなく、情報階層と余白の考え方だけを転用する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-13T16:27:36.089Z"
     }
   }
 }
