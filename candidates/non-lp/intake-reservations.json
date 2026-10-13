@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-12T18:34:50.087Z",
+  "updatedAt": "2026-10-13T16:26:56.793Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -2161,6 +2161,66 @@
       "reservedAt": "2026-10-12T16:22:18.566Z"
     },
     {
+      "id": "GR-0084",
+      "title": "チラシテンプレート29858",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F000b77f056ae3f0725c336de73d831ef%2F000b77f056ae3f0725c336de73d831ef-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29858",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F000b77f056ae3f0725c336de73d831ef%2F000b77f056ae3f0725c336de73d831ef-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-13T16:26:56.793Z"
+    },
+    {
+      "id": "GR-0085",
+      "title": "浜辺とヨットの夏季休業のお知らせポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1bdfe8450cd0ac3612bf1ac3a3e9744d%2F1bdfe8450cd0ac3612bf1ac3a3e9744d-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30226",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1bdfe8450cd0ac3612bf1ac3a3e9744d%2F1bdfe8450cd0ac3612bf1ac3a3e9744d-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-13T16:26:56.793Z"
+    },
+    {
+      "id": "GR-0086",
+      "title": "水面背景の涼し気な夏季休暇の案内バナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F319b828cef2c582dab720e760148a73b%2F319b828cef2c582dab720e760148a73b-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20132",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F319b828cef2c582dab720e760148a73b%2F319b828cef2c582dab720e760148a73b-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-13T16:26:56.793Z"
+    },
+    {
+      "id": "GR-0087",
+      "title": "花束を持つ上品なスタイリスト名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F336fb1855f86e32c3603444ccfa87896%2F336fb1855f86e32c3603444ccfa87896-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-30552",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F336fb1855f86e32c3603444ccfa87896%2F336fb1855f86e32c3603444ccfa87896-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-13T16:26:56.793Z"
+    },
+    {
+      "id": "GR-0088",
+      "title": "紫とピンクの正方形のロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/65bf87f38e5330073312d2d63e133a7f/65bf87f38e5330073312d2d63e133a7f-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3011",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/65bf87f38e5330073312d2d63e133a7f/65bf87f38e5330073312d2d63e133a7f-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-13T16:26:56.793Z"
+    },
+    {
       "id": "ILAC-0001",
       "title": "DX デジタルトランスフォーメーション 人物",
       "mediaType": "Asset",
@@ -4226,6 +4286,30 @@
       "materialId": "PAT-0032",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-12T16:22:18.566Z"
+    },
+    {
+      "id": "PAT-0033",
+      "title": "SBI日本少額短期保険 株式会社に見るセクション内の役割集約",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Parts.）",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/10/n-ssi_00016.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/7275",
+      "imageUrl": null,
+      "materialId": "PAT-0033",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-13T16:26:56.793Z"
+    },
+    {
+      "id": "PAT-0034",
+      "title": "チラシテンプレート29858に見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F000b77f056ae3f0725c336de73d831ef%2F000b77f056ae3f0725c336de73d831ef-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29858",
+      "imageUrl": null,
+      "materialId": "PAT-0034",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-13T16:26:56.793Z"
     },
     {
       "id": "PHAC-0001",
@@ -6957,6 +7041,66 @@
       "reservedAt": "2026-10-12T16:22:18.566Z"
     },
     {
+      "id": "PT-0086",
+      "title": "SBI日本少額短期保険 株式会社",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/10/n-ssi_00016.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/7275",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/10/n-ssi_00016.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-13T16:26:56.793Z"
+    },
+    {
+      "id": "PT-0087",
+      "title": "タナベコンサルティングが提供するエンゲージメント向上のための専門サイト",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/03/tcg_engagement_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5972",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/03/tcg_engagement_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-13T16:26:56.793Z"
+    },
+    {
+      "id": "PT-0088",
+      "title": "キャリレコ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/03/career-log_00006.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5956",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/03/career-log_00006.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-13T16:26:56.793Z"
+    },
+    {
+      "id": "PT-0089",
+      "title": "チームスピリット",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/03/teamspirit_00003.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5939",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/03/teamspirit_00003.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-13T16:26:56.793Z"
+    },
+    {
+      "id": "PT-0090",
+      "title": "コクヨ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/03/kokuyo_00003.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5915",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/03/kokuyo_00003.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-13T16:26:56.793Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -7323,6 +7467,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-12T16:22:18.566Z"
+    },
+    {
+      "id": "WB-0032",
+      "title": "山龢【公式】",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://atami-sanga.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/sanga/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/sanga_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-13T16:26:56.793Z"
+    },
+    {
+      "id": "WB-0033",
+      "title": "ふくしま LiNK NAVi | 企業がふくしまと出会うためのナビゲーション",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://linknavi.fukushima.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/fukushimalinknavi/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/fukushimalinknavi_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-13T16:26:56.793Z"
     }
   ]
 }
