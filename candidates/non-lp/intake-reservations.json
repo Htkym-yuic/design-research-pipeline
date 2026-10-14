@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13T19:37:54.291Z",
+  "updatedAt": "2026-10-14T16:27:10.435Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -1175,6 +1175,18 @@
       "reservedAt": "2026-10-10T21:15:11.591Z"
     },
     {
+      "id": "CV-0052",
+      "title": "Black and White Simple Photo Collage App Interface Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAGpEaWnbe0/2/0/320w--iNdWPeGvnE.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAGpEaWnbe0-black-and-white-simple-photo-collage-app-interface-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAGpEaWnbe0/2/0/320w--iNdWPeGvnE.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-14T16:27:10.435Z"
+    },
+    {
       "id": "GR-0001",
       "title": "夏季休業のお知らせチラシのチラシテンプレート",
       "mediaType": "Graphic",
@@ -2219,6 +2231,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-13T16:26:56.793Z"
+    },
+    {
+      "id": "GR-0089",
+      "title": "サマーパーティフライヤー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Ff8a25fc9b9764a5b90c3a026944297e5%2Ff8a25fc9b9764a5b90c3a026944297e5-400.webp&w=1200&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29648",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Ff8a25fc9b9764a5b90c3a026944297e5%2Ff8a25fc9b9764a5b90c3a026944297e5-400.webp&w=1200&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-14T16:27:10.435Z"
+    },
+    {
+      "id": "GR-0090",
+      "title": "夏季休暇のお知らせ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fa840471e89b7750cef2560058f8583b2%2Fa840471e89b7750cef2560058f8583b2-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30432",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fa840471e89b7750cef2560058f8583b2%2Fa840471e89b7750cef2560058f8583b2-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-14T16:27:10.435Z"
+    },
+    {
+      "id": "GR-0091",
+      "title": "上下にワンポイントの入った夏季休暇の案内バナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F059697673a63e1f4a1713b22fdcdbc15%2F059697673a63e1f4a1713b22fdcdbc15-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20131",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F059697673a63e1f4a1713b22fdcdbc15%2F059697673a63e1f4a1713b22fdcdbc15-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-14T16:27:10.435Z"
+    },
+    {
+      "id": "GR-0092",
+      "title": "写真入りのナチュラルなスタイリスト名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F6a102dff62b7a1f3ef3be9fbf2472ffe%2F6a102dff62b7a1f3ef3be9fbf2472ffe-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-30551",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F6a102dff62b7a1f3ef3be9fbf2472ffe%2F6a102dff62b7a1f3ef3be9fbf2472ffe-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-14T16:27:10.435Z"
+    },
+    {
+      "id": "GR-0093",
+      "title": "丸みを帯びた抽象的なロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/a3398abd58901e6ac31e666f098f37dd/a3398abd58901e6ac31e666f098f37dd-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3015",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/a3398abd58901e6ac31e666f098f37dd/a3398abd58901e6ac31e666f098f37dd-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-14T16:27:10.435Z"
     },
     {
       "id": "ILAC-0001",
@@ -4430,6 +4502,30 @@
       "materialId": "PAT-0034",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-13T16:26:56.793Z"
+    },
+    {
+      "id": "PAT-0035",
+      "title": "Black and White Simple Photo Collage App Interface Instagram Postに見る反復可能なテンプレート構造",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Canva）",
+      "captureUrl": "https://template.canva.com/EAGpEaWnbe0/2/0/320w--iNdWPeGvnE.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAGpEaWnbe0-black-and-white-simple-photo-collage-app-interface-instagram-post/",
+      "imageUrl": null,
+      "materialId": "PAT-0035",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-14T16:27:10.435Z"
+    },
+    {
+      "id": "PAT-0036",
+      "title": "赤城乳業株式会社に見るセクション内の役割集約",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Parts.）",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/03/akagi_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5905",
+      "imageUrl": null,
+      "materialId": "PAT-0036",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-14T16:27:10.435Z"
     },
     {
       "id": "PHAC-0001",
@@ -7339,6 +7435,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-13T16:26:56.793Z"
+    },
+    {
+      "id": "PT-0091",
+      "title": "赤城乳業株式会社",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/03/akagi_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5905",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/03/akagi_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-14T16:27:10.435Z"
+    },
+    {
+      "id": "PT-0092",
+      "title": "AUTORO（オートロ）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/03/autoro_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5897",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/03/autoro_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-14T16:27:10.435Z"
+    },
+    {
+      "id": "PT-0093",
+      "title": "ランドセルのフィットちゃん",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/03/fit-chan_00004.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5867",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/03/fit-chan_00004.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-14T16:27:10.435Z"
+    },
+    {
+      "id": "PT-0094",
+      "title": "Ｊストリーム",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/03/jstream_00006.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5851",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/03/jstream_00006.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-14T16:27:10.435Z"
+    },
+    {
+      "id": "PT-0095",
+      "title": "ワークスタイリング",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/03/workstyling_00003.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5831",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/03/workstyling_00003.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-14T16:27:10.435Z"
     },
     {
       "id": "WB-0001",
