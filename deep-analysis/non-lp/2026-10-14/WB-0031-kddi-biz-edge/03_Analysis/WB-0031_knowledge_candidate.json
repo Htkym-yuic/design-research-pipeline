@@ -1,0 +1,138 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0031",
+  "media_type": "WB",
+  "title": "新卒採用情報｜KDDI Biz Edge株式会社",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://sankoudesign.com/web/kddibizedge-newgrads/",
+    "capture_url": "https://recruit.kddi-bizedge.com/newgrads/",
+    "official_url": "https://recruit.kddi-bizedge.com/newgrads/"
+  },
+  "analysis": {
+    "summary": "KDDI Biz Edge株式会社（設立15年、はじめての新卒採用）の新卒採用サイト。「岐路に立っている」という読者への呼びかけと企業自身の転機を重ね合わせるマニフェストコピーを核に、About/People/Growth/Recruitの4カテゴリすべてを同一のリスト型カードコンポーネントで統一して提示する。ENTRYという単一コンバージョンをヘッダー常駐・ファーストビュー・最終CTAの3箇所でピンク色に統一して反復し、応募への導線を一貫させている。",
+    "score": {
+      "visual": 15,
+      "clarity": 17,
+      "originality": 10,
+      "reusability": 17,
+      "learning": 12,
+      "evidence": 8,
+      "total": 79
+    },
+    "units": [
+      {
+        "name": "ファーストビュー",
+        "role": "「はじめての新卒採用」という企業の転機を、社員3名の写真とタグラインで印象づける。",
+        "reuse": "複数人物写真を矢印コネクターで結び、CTAボタンのみ別色にするファーストビュー。",
+        "evidence": "PC/SP First View画像。"
+      },
+      {
+        "name": "ナビゲーション",
+        "role": "4カテゴリへの一次導線と、唯一のコンバージョンであるENTRYへの常時アクセスを両立する。",
+        "reuse": "唯一のCTAだけを異なる色で視覚的に分離し、ヘッダーに常時表示する設計。",
+        "evidence": "PC First View、SP First View。サブメニュー展開内容は未確認。"
+      },
+      {
+        "name": "主要コンテンツ",
+        "role": "会社理解・社員紹介・成長環境・募集要項の4種の情報を同一パターンのカードで提示する。",
+        "reuse": "アイコンまたは写真＋タイトル＋説明＋矢印アイコンの統一カードコンポーネントを複数カテゴリで反復使用する情報設計。",
+        "evidence": "PC Full Page y≒800-7500。「数字で見るKDDI Biz Edge」の数値は未描画。"
+      },
+      {
+        "name": "証拠・事例",
+        "role": "実在の社員3名の声を通じて、働く実像と企業文化を裏付ける。",
+        "reuse": "社員ごとに異なる背景色＋一言コピー＋対応色の矢印アイコンという社員紹介カードパターン。",
+        "evidence": "PC Full Page y≒4500-4800付近。全社員数・他職種の有無は未確認。"
+      },
+      {
+        "name": "問い合わせ・コンバージョン",
+        "role": "サイト全体の情報収集を終えた訪問者に対し、最終的な応募行動（ENTRY）を促す。",
+        "reuse": "カラフルなリボン背景＋中央大型CTA＋歓迎メッセージという最終CTAセクション。",
+        "evidence": "PC Full Page y≒7500-7980。応募フォームの実際の体験は未確認。"
+      },
+      {
+        "name": "フッター",
+        "role": "サイトマップとしてのリンク集約、ブランドロゴの最終再掲、タグラインの反復。",
+        "reuse": "ブランド情報＋外部リンク＋4列リンクグリッド＋タグライン再掲というフッター構成。",
+        "evidence": "PC Full Page最下部。SPでの表示形式は未確認。"
+      }
+    ]
+  },
+  "strengths": [
+    "「設立以来はじめての新卒採用」という企業固有の転機を、読者自身の「岐路」と重ね合わせるコピーが説得力を持つ",
+    "About/People/Growth/Recruitの4カテゴリすべてを同一のカードコンポーネントで統一し、情報量が多くても迷いにくい",
+    "ENTRYボタンの色（ピンク）を一貫させ、ヘッダー・ファーストビュー・最終セクションの3箇所で反復している"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "「数字で見るKDDI Biz Edge」の数値が表示されていない",
+      "evidence": "PC Full Page該当カードが空白のグレーボックスのまま",
+      "fix": "カウントアップアニメーションにフォールバック（JS無効時やアニメーション未発火時は即座に数値表示）を実装する",
+      "effect": "低速回線・JS制限環境での情報視認性向上",
+      "metric": "空白表示の発生率（自動監視等）"
+    },
+    {
+      "priority": "P1",
+      "issue": "社員紹介が3名のみで職種の多様性が見えない",
+      "evidence": "Peopleセクションで確認できた社員は全員「アカウントセールス」職",
+      "fix": "他職種の社員も追加し、職種フィルターを設ける",
+      "effect": "応募検討者が自分に近い立場の社員を見つけやすくなる",
+      "metric": "社員紹介一覧ページの滞在時間・遷移率"
+    },
+    {
+      "priority": "P2",
+      "issue": "募集要項の実務情報（給与・勤務地等）がトップページで確認できない",
+      "evidence": "章9オファー欄が該当なし",
+      "fix": "募集要項カードの説明文に、給与レンジ等の要点を1行追加する",
+      "effect": "検討初期段階での離脱防止",
+      "metric": "募集要項ページ到達率"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "矢印コネクター付き複数人物ファーストビュー",
+      "keep": "対角線上に配置した複数写真＋矢印コネクター＋色分けCTAボタン",
+      "replace": "写真、コピー文言"
+    },
+    {
+      "id": "C02",
+      "name": "統一カードコンポーネントの多カテゴリ反復",
+      "keep": "アイコンまたは写真＋タイトル＋説明＋矢印アイコンの共通カード形式を複数カテゴリで反復",
+      "replace": "カテゴリ名、写真、説明文"
+    },
+    {
+      "id": "C03",
+      "name": "色分け社員紹介カード",
+      "keep": "社員ごとに異なる背景色＋一言コピー＋対応色の矢印アイコン",
+      "replace": "氏名、写真、コピー、背景色"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "ロゴ、社員写真、代表メッセージ本文、固有コピー、オフィス写真、会社名・固有ページ名称",
+    "reusable": "矢印コネクター付きファーストビュー構造、統一カードコンポーネントの多カテゴリ反復、色分け社員紹介カード、最終CTAのリボン背景構成"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/WB-0031_SITE_PC_full.png",
+      "../01_Normal_Images/WB-0031_SITE_PC_first_view.png",
+      "../01_Normal_Images/WB-0031_SITE_SP_full.png",
+      "../01_Normal_Images/WB-0031_SITE_SP_first_view.png",
+      "https://recruit.kddi-bizedge.com/newgrads/"
+    ],
+    "unknowns": [
+      "counter_animation_not_rendered_in_capture",
+      "navigation_targets_unverified",
+      "people_roster_not_fully_verified",
+      "color_hex_not_pixel_measured",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

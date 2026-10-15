@@ -1,0 +1,19 @@
+{
+  "input": "deep-analysis/non-lp/2026-10-14/WB-0031-kddi-biz-edge/01_Normal_Images/WB-0031_SITE_PC_full.png",
+  "output": "deep-analysis/non-lp/2026-10-14/WB-0031-kddi-biz-edge/04_Implementation_Blueprint/WB-0031_elementor_brain_implementation.png",
+  "notionOutput": "deep-analysis/non-lp/2026-10-14/WB-0031-kddi-biz-edge/04_Implementation_Blueprint/WB-0031_elementor_brain_implementation_notion.jpg",
+  "railWidth": 640,
+  "sections": [
+    {"y":0,"height":800,"label":"00｜ヘッダー＋ファーストビュー","color":"#005bd8","lines":["親Container: 横・両端揃え","Logo／Nav Menu(4)／ENTRY Button(Pink)","写真3枚＋矢印Connector＋Heading"]},
+    {"y":800,"height":1700,"label":"01｜マニフェストコピー","color":"#d7263d","lines":["Text Block（長文コピー、複数段落）","右にImage×2"]},
+    {"y":2500,"height":2000,"label":"02｜About","color":"#ef6c00","lines":["Top Message Card: Image／Text／Button(View More)","2×2 Grid Card: Icon／Image／Heading／Text"]},
+    {"y":4500,"height":700,"label":"03｜People","color":"#ef6c00","lines":["3-Column Card（社員ごとに背景色が異なる）","Image／役職＋氏名／一言コピー／矢印Icon","Button(View All)"]},
+    {"y":5200,"height":1700,"label":"04｜パノラマ写真＋Growth","color":"#00875a","lines":["3分割全幅Image Strip","Growth Heading／Text","3-Row List Card: Image／Heading／Text／矢印Icon"]},
+    {"y":6900,"height":600,"label":"05｜Recruit","color":"#00875a","lines":["全幅Image","Recruit Heading／Text","3-Row List Card: Icon／Heading／Text／矢印Icon","Button(View All)"]},
+    {"y":7500,"height":480,"label":"06｜最終ENTRY CTA","color":"#6554c0","lines":["カラフルなRibbon背景Container","Heading／Button(ENTRY、大型)／Text"]},
+    {"y":7980,"height":652,"label":"07｜フッター","color":"#6554c0","lines":["Logo／SNS・外部Link","4列Link Grid（About/People/Growth/Recruit）","タグライン再掲(大型Text)／Copyright"]}
+  ],
+  "details": [
+    {"x":120,"y":3700,"width":430,"height":200,"label":"数値未描画（カウントアップ未発火）","labelWidth":380}
+  ]
+}
