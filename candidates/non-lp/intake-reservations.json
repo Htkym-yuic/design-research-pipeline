@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14T16:31:03.367Z",
+  "updatedAt": "2026-10-15T16:19:35.445Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -1187,6 +1187,18 @@
       "reservedAt": "2026-10-14T16:27:10.435Z"
     },
     {
+      "id": "CV-0053",
+      "title": "Brown Modern September Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAFKaXKTtdo/1/0/320w--WM7PSnAlj0.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAFKaXKTtdo-brown-modern-september-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAFKaXKTtdo/1/0/320w--WM7PSnAlj0.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-15T16:19:35.445Z"
+    },
+    {
       "id": "GR-0001",
       "title": "夏季休業のお知らせチラシのチラシテンプレート",
       "mediaType": "Graphic",
@@ -2291,6 +2303,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-14T16:27:10.435Z"
+    },
+    {
+      "id": "GR-0094",
+      "title": "さわやかな観光まちづくり講演会チラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F0016be45b7273263b4b51ffa49b3e9a0%2F0016be45b7273263b4b51ffa49b3e9a0-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29127",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F0016be45b7273263b4b51ffa49b3e9a0%2F0016be45b7273263b4b51ffa49b3e9a0-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-15T16:19:35.445Z"
+    },
+    {
+      "id": "GR-0095",
+      "title": "イベント案内テンプレート",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fd7c18d8afa7032c32eff33433b4d3ad1%2Fd7c18d8afa7032c32eff33433b4d3ad1-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30431",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fd7c18d8afa7032c32eff33433b4d3ad1%2Fd7c18d8afa7032c32eff33433b4d3ad1-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-15T16:19:35.445Z"
+    },
+    {
+      "id": "GR-0096",
+      "title": "水色のにじみの夏季休暇の案内バナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fc7913427d052c04292d7781873759607%2Fc7913427d052c04292d7781873759607-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20130",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fc7913427d052c04292d7781873759607%2Fc7913427d052c04292d7781873759607-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-15T16:19:35.445Z"
+    },
+    {
+      "id": "GR-0097",
+      "title": "水色のシンプルなスタイリスト名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F3dbe2aaec0f828d3e981defc111aec85%2F3dbe2aaec0f828d3e981defc111aec85-400.webp&w=256&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-30550",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F3dbe2aaec0f828d3e981defc111aec85%2F3dbe2aaec0f828d3e981defc111aec85-400.webp&w=256&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-15T16:19:35.445Z"
+    },
+    {
+      "id": "GR-0098",
+      "title": "三角形の不動産ロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/cf5df8a103557114d88813ca577c4892/cf5df8a103557114d88813ca577c4892-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3006",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/cf5df8a103557114d88813ca577c4892/cf5df8a103557114d88813ca577c4892-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-15T16:19:35.445Z"
     },
     {
       "id": "ILAC-0001",
@@ -4646,6 +4718,30 @@
       "materialId": "PAT-0036",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-14T16:27:10.435Z"
+    },
+    {
+      "id": "PAT-0037",
+      "title": "スマート・アワード・ブラザーズに見るセクション内の役割集約",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Parts.）",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/03/smbr_00004.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5815",
+      "imageUrl": null,
+      "materialId": "PAT-0037",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-15T16:19:35.445Z"
+    },
+    {
+      "id": "PAT-0038",
+      "title": "さわやかな観光まちづくり講演会チラシに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F0016be45b7273263b4b51ffa49b3e9a0%2F0016be45b7273263b4b51ffa49b3e9a0-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29127",
+      "imageUrl": null,
+      "materialId": "PAT-0038",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-15T16:19:35.445Z"
     },
     {
       "id": "PHAC-0001",
@@ -7735,6 +7831,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-14T16:27:10.435Z"
+    },
+    {
+      "id": "PT-0096",
+      "title": "スマート・アワード・ブラザーズ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/03/smbr_00004.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5815",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/03/smbr_00004.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-15T16:19:35.445Z"
+    },
+    {
+      "id": "PT-0097",
+      "title": "TimeCrowd（タイムクラウド）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/02/timecrowd_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5803",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/02/timecrowd_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-15T16:19:35.445Z"
+    },
+    {
+      "id": "PT-0098",
+      "title": "hubflow",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/02/hubflow_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5788",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/02/hubflow_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-15T16:19:35.445Z"
+    },
+    {
+      "id": "PT-0099",
+      "title": "AnyCampaign",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/02/anycampaign_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5774",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/02/anycampaign_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-15T16:19:35.445Z"
+    },
+    {
+      "id": "PT-0100",
+      "title": "マキトルくん",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/02/makitori_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5761",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/02/makitori_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-15T16:19:35.445Z"
     },
     {
       "id": "WB-0001",
