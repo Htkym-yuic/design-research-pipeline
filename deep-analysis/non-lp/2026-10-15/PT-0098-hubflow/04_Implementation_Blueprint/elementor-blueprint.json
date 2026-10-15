@@ -1,0 +1,15 @@
+{
+  "input": "deep-analysis/non-lp/2026-10-15/PT-0098-hubflow/01_Normal_Images/PT-0098_reference.png",
+  "output": "deep-analysis/non-lp/2026-10-15/PT-0098-hubflow/04_Implementation_Blueprint/PT-0098_elementor_brain_implementation.png",
+  "notionOutput": "deep-analysis/non-lp/2026-10-15/PT-0098-hubflow/04_Implementation_Blueprint/PT-0098_elementor_brain_implementation_notion.jpg",
+  "railWidth": 620,
+  "sections": [
+    {"y":0,"height":782,"label":"01｜課題提起コピー×CTAペア×モック Hero全体","color":"#005bd8","lines":["親Container: Row（PC）／Column（SP）","幅: 左57%・右43%の非対称2カラム","背景全幅に有機曲線装飾（低コントラスト）","左ColumnにHeading/Text/Button×2","右ColumnにProduct Mock Image","SP: 左→右の順で縦積みへ変更"]}
+  ],
+  "details": [
+    {"x":90,"y":90,"width":500,"height":200,"label":"見出し：理想像の大見出し","labelWidth":260},
+    {"x":90,"y":300,"width":560,"height":130,"label":"リード文：課題言及コピー","labelWidth":240},
+    {"x":96,"y":450,"width":582,"height":118,"label":"CTAペア：お問い合わせ／無料で試してみる","labelWidth":320},
+    {"x":820,"y":100,"width":550,"height":500,"label":"プロダクトモック（ノートPC＋ダッシュボードUI）","labelWidth":300}
+  ]
+}

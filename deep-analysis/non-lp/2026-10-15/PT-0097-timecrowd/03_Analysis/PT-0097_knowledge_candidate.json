@@ -1,0 +1,49 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "PT-0097",
+  "media_type": "PT",
+  "title": "TimeCrowd（タイムクラウド） ピッチコピー×リード獲得フォーム Hero",
+  "source": {
+    "source_name": "Parts.",
+    "source_detail_url": "https://partsdesign.net/archives/5803",
+    "official_url": null,
+    "capture_url": "https://partsdesign.net/wp-content/uploads/2025/02/timecrowd_00001.png"
+  },
+  "analysis": {
+    "summary": "工数管理SaaS「TimeCrowd」の価値提案と実績バッジを左に、資料請求フォームを右に配置した左右非対称Hero。サービス理解とリード獲得を1画面で完結させる。",
+    "score": { "visual": 17, "clarity": 17, "originality": 10, "reusability": 18, "learning": 12, "evidence": 7, "total": 81 },
+    "units": ["パーツ全体", "見出し", "主要要素", "補助要素", "操作・CTA", "前後セクションとの接続"],
+    "strengths": [
+      "サービス理解からリード獲得までを1画面・1アクションで完結させている",
+      "定量実績3点とUIスクリーンショットで訴求の抽象度と具体度のバランスを取っている",
+      "フォームが業界・部署・役職までプルダウンで取得し商談化に必要な属性情報を収集している"
+    ],
+    "improvements": [
+      "フォーム項目が8つとやや多く入力負荷が高い可能性がある",
+      "資料請求以外の行動選択肢（デモ予約等）が画面内にない",
+      "SPでの表示順・操作性が未検証"
+    ]
+  },
+  "reusable_patterns": [
+    { "id": "C01", "name": "ピッチコピー＋プロダクトモック＋フォームの左右非対称Hero", "rights_status": "reference_only" },
+    { "id": "C02", "name": "定量実績3点の縦積みバッジ", "rights_status": "reference_only" },
+    { "id": "C03", "name": "属性取得つきBtoB資料請求フォーム", "rights_status": "reference_only" }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": ["サービス名", "ロゴタイプ", "実績数値", "ダッシュボードUIのスクリーンショット内容", "固有配色", "バッジ意匠"]
+  },
+  "unconfirmed": ["元ページ全体における位置", "SP表示", "フォーム・UI操作挙動", "公式サイトURL・実在性", "配色の厳密な数値", "素材・UI画像ライセンス"],
+  "evidence": {
+    "files": ["01_Normal_Images/PT-0097_reference.png"],
+    "original_dimensions": "1410x744"
+  },
+  "cbs_sync": { "status": "candidate_pending_user_approval", "production_sync": "not_synced" },
+  "implementation_blueprint": {
+    "status": "reviewed_pending_dropbox_sync",
+    "path": "deep-analysis/non-lp/2026-10-15/PT-0097-timecrowd/04_Implementation_Blueprint/PT-0097_elementor_implementation.json",
+    "diagram": "deep-analysis/non-lp/2026-10-15/PT-0097-timecrowd/04_Implementation_Blueprint/PT-0097_elementor_brain_implementation.png",
+    "notionDiagram": "deep-analysis/non-lp/2026-10-15/PT-0097-timecrowd/04_Implementation_Blueprint/PT-0097_elementor_brain_implementation_notion.jpg",
+    "guide": "deep-analysis/non-lp/2026-10-15/PT-0097-timecrowd/04_Implementation_Blueprint/PT-0097_elementor_blueprint.md"
+  }
+}
