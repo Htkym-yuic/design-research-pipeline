@@ -1,0 +1,59 @@
+name: RDBNR BN Pilot (read-only)
+
+# This is a copied / isolated pilot. The existing design-research-daily workflow is unchanged.
+# No schedule until metadata, rights and Notion policies have passed review.
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/rdbnr-banner-pilot.yml'
+      - 'scripts/rdbnr-pilot*.mjs'
+      - 'scripts/validate-bn-deep-28.mjs'
+      - 'scripts/test-bn-deep-28.mjs'
+      - 'data/rdbnr-pilot-reviewed.json'
+      - 'docs/RDBNR_PILOT.md'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: '読み取りとアーティファクト生成のみ（常にtrue）'
+        type: choice
+        required: true
+        options: ['true']
+        default: 'true'
+
+permissions:
+  contents: read
+concurrency:
+  group: rdbnr-banner-pilot-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  verify-and-collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Syntax and offline fixture checks
+        run: |
+          node --check scripts/rdbnr-pilot.mjs
+          node --check scripts/rdbnr-pilot-core.mjs
+          node --check scripts/validate-bn-deep-28.mjs
+          node --test scripts/test-rdbnr-pilot.mjs scripts/test-bn-deep-28.mjs
+      - name: Install isolated headless browser
+        if: github.event_name == 'workflow_dispatch'
+        run: npx playwright install --with-deps chromium
+      - name: Verify one RDBNR source (no images, no writes)
+        if: github.event_name == 'workflow_dispatch' && inputs.dry_run == 'true'
+        run: node scripts/rdbnr-pilot.mjs
+      - name: Upload safe metadata-only report
+        if: always() && github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v4
+        with:
+          name: rdbnr-bn0001-metadata-pilot
+          path: artifacts/rdbnr-pilot/
+          retention-days: 7
+          if-no-files-found: warn
