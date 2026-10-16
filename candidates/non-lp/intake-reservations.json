@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-15T16:23:06.791Z",
+  "updatedAt": "2026-10-16T16:43:33.132Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -2363,6 +2363,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-15T16:19:35.445Z"
+    },
+    {
+      "id": "GR-0099",
+      "title": "チョコバナナ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F192861fabfd488cd9cbef4c3f1bd69e9%2F192861fabfd488cd9cbef4c3f1bd69e9-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-28084",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F192861fabfd488cd9cbef4c3f1bd69e9%2F192861fabfd488cd9cbef4c3f1bd69e9-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-16T16:43:33.132Z"
+    },
+    {
+      "id": "GR-0100",
+      "title": "夏のセールポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F7e54d47e5ec0847069c67a25bc566d10%2F7e54d47e5ec0847069c67a25bc566d10-400.webp&w=1200&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30406",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F7e54d47e5ec0847069c67a25bc566d10%2F7e54d47e5ec0847069c67a25bc566d10-400.webp&w=1200&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-16T16:43:33.132Z"
+    },
+    {
+      "id": "GR-0101",
+      "title": "金魚と打ち上げ花火が描かれた夏季休暇の案内バナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F01abc864bf01887addc49b48211f9edd%2F01abc864bf01887addc49b48211f9edd-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20129",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F01abc864bf01887addc49b48211f9edd%2F01abc864bf01887addc49b48211f9edd-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-16T16:43:33.132Z"
+    },
+    {
+      "id": "GR-0102",
+      "title": "ハートフレームのかわいい犬のペット名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F5048c8bc54d1b9b8e273eaa19ce8ea33%2F5048c8bc54d1b9b8e273eaa19ce8ea33-400.webp&w=256&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-30323",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F5048c8bc54d1b9b8e273eaa19ce8ea33%2F5048c8bc54d1b9b8e273eaa19ce8ea33-400.webp&w=256&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-16T16:43:33.132Z"
+    },
+    {
+      "id": "GR-0103",
+      "title": "フクロウのロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/204abf96f068711a80e09386589fee75/204abf96f068711a80e09386589fee75-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3109",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/204abf96f068711a80e09386589fee75/204abf96f068711a80e09386589fee75-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-16T16:43:33.132Z"
     },
     {
       "id": "ILAC-0001",
@@ -4862,6 +4922,30 @@
       "materialId": "PAT-0038",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-15T16:19:35.445Z"
+    },
+    {
+      "id": "PAT-0039",
+      "title": "クリエイティブサーベイに見るセクション内の役割集約",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Parts.）",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/01/creativesurvey_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5744",
+      "imageUrl": null,
+      "materialId": "PAT-0039",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-16T16:43:33.132Z"
+    },
+    {
+      "id": "PAT-0040",
+      "title": "チョコバナナに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F192861fabfd488cd9cbef4c3f1bd69e9%2F192861fabfd488cd9cbef4c3f1bd69e9-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-28084",
+      "imageUrl": null,
+      "materialId": "PAT-0040",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-16T16:43:33.132Z"
     },
     {
       "id": "PHAC-0001",
@@ -8133,6 +8217,66 @@
       "reservedAt": "2026-10-15T16:19:35.445Z"
     },
     {
+      "id": "PT-0101",
+      "title": "クリエイティブサーベイ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/01/creativesurvey_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5744",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/01/creativesurvey_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-16T16:43:33.132Z"
+    },
+    {
+      "id": "PT-0102",
+      "title": "バイセル",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2025/01/buysell_00006.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5730",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2025/01/buysell_00006.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-16T16:43:33.132Z"
+    },
+    {
+      "id": "PT-0103",
+      "title": "TXP Medical株式会社",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2024/12/txpmedical_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5699",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2024/12/txpmedical_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-16T16:43:33.132Z"
+    },
+    {
+      "id": "PT-0104",
+      "title": "SPICE&HERB GARDEN MUSEUM",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2024/12/sbfoodsfarm_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5685",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2024/12/sbfoodsfarm_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-16T16:43:33.132Z"
+    },
+    {
+      "id": "PT-0105",
+      "title": "JTB法人サービス",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2024/11/jtbbusiness_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5676",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2024/11/jtbbusiness_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-16T16:43:33.132Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -8523,6 +8667,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-13T16:26:56.793Z"
+    },
+    {
+      "id": "WB-0034",
+      "title": "UNION TEC | 人類に意義ある空間を",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.union-tec.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/uniontec/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/uniontec_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-16T16:43:33.132Z"
+    },
+    {
+      "id": "WB-0035",
+      "title": "株式会社サンヴィレッジ",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://sunvillage-co-ltd.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/sunvillage/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/sunvillage_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-16T16:43:33.132Z"
     }
   ]
 }
