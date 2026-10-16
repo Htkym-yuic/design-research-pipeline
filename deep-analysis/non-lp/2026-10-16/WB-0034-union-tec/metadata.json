@@ -1,0 +1,28 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0034",
+  "media_type": "WB",
+  "asset_type": "Web",
+  "title": "UNION TEC | 人類に意義ある空間を",
+  "source_name": "SANKOU!",
+  "source_detail_url": "https://sankoudesign.com/web/uniontec/",
+  "capture_url": "https://www.union-tec.jp/",
+  "official_url": "https://www.union-tec.jp/",
+  "analysis_status": "completed_and_validated",
+  "analysis_score": 73,
+  "notion_status": "synced_and_verified",
+  "notion_page_url": "https://app.notion.com/p/3fb24d4fa6718176a793c08a21fc46a1",
+  "capture_status": "partial_lazy_content_unrendered",
+  "implementationBlueprint": {
+    "status": "reviewed_pending_dropbox_sync",
+    "platform": "WordPress Elementor",
+    "sections": 9,
+    "path": "04_Implementation_Blueprint/WB-0034_elementor_blueprint.md",
+    "diagram": "04_Implementation_Blueprint/WB-0034_elementor_brain_implementation.png",
+    "notionDiagram": "04_Implementation_Blueprint/WB-0034_elementor_brain_implementation_notion.jpg"
+  },
+  "dropbox_status": "not_synced_pending_user_approval",
+  "dropbox_path": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-10-17/daily-intake/WB-0034",
+  "cbs_status": "candidate_pending_user_approval",
+  "generated_at": "2026-10-16T17:10:00+09:00"
+}

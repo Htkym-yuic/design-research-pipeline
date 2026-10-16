@@ -1,0 +1,112 @@
+{
+  "input": "deep-analysis/non-lp/2026-10-16/WB-0034-union-tec/01_Normal_Images/WB-0034_SITE_PC_full.png",
+  "output": "deep-analysis/non-lp/2026-10-16/WB-0034-union-tec/04_Implementation_Blueprint/WB-0034_elementor_brain_implementation.png",
+  "notionOutput": "deep-analysis/non-lp/2026-10-16/WB-0034-union-tec/04_Implementation_Blueprint/WB-0034_elementor_brain_implementation_notion.jpg",
+  "railWidth": 640,
+  "sections": [
+    {
+      "y": 0,
+      "height": 88,
+      "label": "01 Header / Global Nav",
+      "color": "#ff3b30",
+      "lines": [
+        "Site Logo／言語切替(Ja・En)",
+        "検討系ナビ2列／採用・更新系ナビ2列",
+        "Contact(塗りピル)／Menu"
+      ]
+    },
+    {
+      "y": 88,
+      "height": 940,
+      "label": "02 Hero(FV)",
+      "color": "#ff9500",
+      "lines": [
+        "背景ワードマーク「UNION TEC」",
+        "楕円マスク写真(施工現場/プロダクト)",
+        "分割見出し「人類に意義ある空間を」",
+        "リード文＋Scroll誘導",
+        "注: PC/SP FirstViewは遷移途中で撮影。reference.pngで完成形補完"
+      ]
+    },
+    {
+      "y": 1028,
+      "height": 600,
+      "label": "03 Philosophy Statement",
+      "color": "#ffcc00",
+      "lines": [
+        "理念文3段落(空間は箱ではない～)",
+        "中央寄せテキストブロック"
+      ]
+    },
+    {
+      "y": 1628,
+      "height": 1401,
+      "label": "04 Capability",
+      "color": "#34c759",
+      "lines": [
+        "見出し「Capability／ユニオンテックの強み」",
+        "Discover moreボタン",
+        "未確認: 下部が白紙(遅延読み込み未反映)"
+      ]
+    },
+    {
+      "y": 3029,
+      "height": 980,
+      "label": "05 Service",
+      "color": "#30b0c7",
+      "lines": [
+        "見出し「Service／事業展開」＋説明文",
+        "ぼかし写真背景＋白文字",
+        "4項目: Spatial Design/Planning&Engineering/",
+        "Construction Management/Digital&Technical Services",
+        "Discover moreボタン"
+      ]
+    },
+    {
+      "y": 4980,
+      "height": 670,
+      "label": "06 Featured Projects",
+      "color": "#5856d6",
+      "lines": [
+        "見出し「Featured Projects」＋矢印ナビ",
+        "業態ラベル(Shop/Office/Hotel)付き事例カード",
+        "大判写真＋案件名"
+      ]
+    },
+    {
+      "y": 5650,
+      "height": 990,
+      "label": "07 News",
+      "color": "#af52de",
+      "lines": [
+        "見出し「News／お知らせ」＋カテゴリタブ",
+        "サムネイル＋見出し＋日付＋カテゴリタグ ×4",
+        "View Allボタン"
+      ]
+    },
+    {
+      "y": 8300,
+      "height": 750,
+      "label": "08 Recruit",
+      "color": "#ff2d55",
+      "lines": [
+        "Discover moreボタン",
+        "白黒ポートレート写真(楕円マスク)",
+        "注: 直前(y≈6640-8300)は白紙領域(未読み込み)"
+      ]
+    },
+    {
+      "y": 9050,
+      "height": 905,
+      "label": "09 Footer",
+      "color": "#8e8e93",
+      "lines": [
+        "大型ワードマーク「UNION TEC」＋タグライン再掲",
+        "拠点情報(東京/大阪/ダナン/ブルックリン)",
+        "ナビ再掲／SNSリンク／認定ロゴ列",
+        "個人情報保護方針／Contact／著作権"
+      ]
+    }
+  ],
+  "details": []
+}
