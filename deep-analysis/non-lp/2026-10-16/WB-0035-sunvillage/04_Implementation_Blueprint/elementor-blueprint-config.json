@@ -1,0 +1,86 @@
+{
+  "input": "deep-analysis/non-lp/2026-10-16/WB-0035-sunvillage/01_Normal_Images/WB-0035_SITE_PC_full.png",
+  "output": "deep-analysis/non-lp/2026-10-16/WB-0035-sunvillage/04_Implementation_Blueprint/WB-0035_elementor_brain_implementation.png",
+  "notionOutput": "deep-analysis/non-lp/2026-10-16/WB-0035-sunvillage/04_Implementation_Blueprint/WB-0035_elementor_brain_implementation_notion.jpg",
+  "railWidth": 640,
+  "sections": [
+    {
+      "y": 0,
+      "height": 90,
+      "label": "01 Header / Global Nav",
+      "color": "#ff3b30",
+      "lines": [
+        "ロゴ(菱形アイコン＋Sun Village)",
+        "Road to 2030/私たちの役割/事業領域▾/会社情報▾",
+        "プレスリリース/お知らせ／お問合せボタン"
+      ]
+    },
+    {
+      "y": 90,
+      "height": 2976,
+      "label": "02 Hero(FV)",
+      "color": "#ff9500",
+      "lines": [
+        "抽象3Dビジュアル(ガラス/蓄電池セル)",
+        "大型見出し「しなやかに、力強い電力を。」",
+        "Road to 2030 小カード(右下)",
+        "注: PC Full/FirstViewはビジュアル未読み込み。",
+        "SP First View・reference.pngで完成形を確認"
+      ]
+    },
+    {
+      "y": 3066,
+      "height": 1697,
+      "label": "03 Press Release",
+      "color": "#ffcc00",
+      "lines": [
+        "見出し「PRESS RELEASE／プレスリリース」",
+        "成長戦略カード「Road to 2030」",
+        "日付/タグ/Pick upリボン/カルーセル矢印",
+        "本文: 再エネ供給力2GW・蓄電池400MW・売上1000億円"
+      ]
+    },
+    {
+      "y": 6128,
+      "height": 1840,
+      "label": "04 Business Areas (つくる/整える/届ける)",
+      "color": "#34c759",
+      "lines": [
+        "(01)EPC Business『つくる』見出し＋説明文＋詳しく見る",
+        "(02)Aggregation『整える』見出し＋説明文＋詳しく見る",
+        "(03)Energy Supply『届ける』見出し＋説明文＋詳しく見る",
+        "各ブロック左側に画像枠(撮影時点で空白)"
+      ]
+    },
+    {
+      "y": 10420,
+      "height": 777,
+      "label": "05 Footer",
+      "color": "#8e8e93",
+      "lines": [
+        "会社名/東京本部住所/TEL",
+        "ナビ3群(事業理解/会社情報/更新系)",
+        "CTAカード「私たちの役割」",
+        "タグライン再掲／著作権"
+      ]
+    }
+  ],
+  "details": [
+    {
+      "x": 20,
+      "y": 4763,
+      "width": 1160,
+      "height": 1365,
+      "label": "未読み込み領域(要再検証)",
+      "labelWidth": 360
+    },
+    {
+      "x": 20,
+      "y": 7968,
+      "width": 1160,
+      "height": 2452,
+      "label": "未読み込み領域(要再検証)",
+      "labelWidth": 360
+    }
+  ]
+}
