@@ -72,10 +72,10 @@
   },
   "photoAc": {
     "prefix": "PHAC",
-    "existingMax": 183,
-    "nextNumber": 184,
+    "existingMax": 193,
+    "nextNumber": 194,
     "digits": 4,
     "sourceOfTruth": "Notion 08｜素材探索ナレッジ",
-    "lastReservationAt": "2026-10-16T20:51:43.201Z"
+    "lastReservationAt": "2026-10-17T18:44:21.127Z"
   }
 }

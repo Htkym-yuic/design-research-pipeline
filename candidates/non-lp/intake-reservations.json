@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T16:31:39.153Z",
+  "updatedAt": "2026-10-17T18:44:21.125Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -7469,6 +7469,126 @@
       "materialId": "35236180",
       "authorProfileUrl": "https://www.photo-ac.com/profile/23801261",
       "reservedAt": "2026-10-16T20:51:43.201Z"
+    },
+    {
+      "id": "PHAC-0184",
+      "title": "犬・ペットと遊ぶ家族・ファミリー 家族",
+      "mediaType": "Asset",
+      "sourceName": "写真AC",
+      "captureUrl": "https://www.photo-ac.com/main/detail/35112713",
+      "sourceDetailUrl": "https://www.photo-ac.com/main/detail/35112713",
+      "imageUrl": "https://thumb.photo-ac.com/49/49ee42944b4ed69e0f503ff5b151e4cf_t.jpeg",
+      "materialId": "35112713",
+      "authorProfileUrl": "https://www.photo-ac.com/profile/638920",
+      "reservedAt": "2026-10-17T18:44:21.125Z"
+    },
+    {
+      "id": "PHAC-0185",
+      "title": "バーベキュー・キャンプ飯を食べる家族 キャンプ",
+      "mediaType": "Asset",
+      "sourceName": "写真AC",
+      "captureUrl": "https://www.photo-ac.com/main/detail/26882613",
+      "sourceDetailUrl": "https://www.photo-ac.com/main/detail/26882613",
+      "imageUrl": "https://thumb.photo-ac.com/27/2742e5cb5f9329472c776995d64fdaa0_t.jpeg",
+      "materialId": "26882613",
+      "authorProfileUrl": "https://www.photo-ac.com/profile/638920",
+      "reservedAt": "2026-10-17T18:44:21.125Z"
+    },
+    {
+      "id": "PHAC-0186",
+      "title": "新築のマイホームを建てた夫婦・家族 マイホーム",
+      "mediaType": "Asset",
+      "sourceName": "写真AC",
+      "captureUrl": "https://www.photo-ac.com/main/detail/35100738",
+      "sourceDetailUrl": "https://www.photo-ac.com/main/detail/35100738",
+      "imageUrl": "https://thumb.photo-ac.com/00/009edf205e89d6196c2cd064859bcf49_t.jpeg",
+      "materialId": "35100738",
+      "authorProfileUrl": "https://www.photo-ac.com/profile/638920",
+      "reservedAt": "2026-10-17T18:44:21.125Z"
+    },
+    {
+      "id": "PHAC-0187",
+      "title": "家で子供を抱っこする若い夫婦",
+      "mediaType": "Asset",
+      "sourceName": "写真AC",
+      "captureUrl": "https://www.photo-ac.com/main/detail/35275567",
+      "sourceDetailUrl": "https://www.photo-ac.com/main/detail/35275567",
+      "imageUrl": "https://thumb.photo-ac.com/ef/ef7aabd2175f7ab327537cba13f0942f_t.jpeg",
+      "materialId": "35275567",
+      "authorProfileUrl": "https://www.photo-ac.com/profile/638920",
+      "reservedAt": "2026-10-17T18:44:21.125Z"
+    },
+    {
+      "id": "PHAC-0188",
+      "title": "祖父母と楽しく喋る制服姿の女の子　 孫",
+      "mediaType": "Asset",
+      "sourceName": "写真AC",
+      "captureUrl": "https://www.photo-ac.com/main/detail/35108997",
+      "sourceDetailUrl": "https://www.photo-ac.com/main/detail/35108997",
+      "imageUrl": "https://thumb.photo-ac.com/5b/5b49ec8c4b84eb98a7834aee063c4c5e_t.jpeg",
+      "materialId": "35108997",
+      "authorProfileUrl": "https://www.photo-ac.com/profile/638920",
+      "reservedAt": "2026-10-17T18:44:21.125Z"
+    },
+    {
+      "id": "PHAC-0189",
+      "title": "食卓につく三世代ファミリー3 家族",
+      "mediaType": "Asset",
+      "sourceName": "写真AC",
+      "captureUrl": "https://www.photo-ac.com/main/detail/23337085",
+      "sourceDetailUrl": "https://www.photo-ac.com/main/detail/23337085",
+      "imageUrl": "https://thumb.photo-ac.com/39/39ad9d26f0c10899894bdcf242aafb63_t.jpeg",
+      "materialId": "23337085",
+      "authorProfileUrl": "https://www.photo-ac.com/profile/43626",
+      "reservedAt": "2026-10-17T18:44:21.125Z"
+    },
+    {
+      "id": "PHAC-0190",
+      "title": "覗き込む親子 人物",
+      "mediaType": "Asset",
+      "sourceName": "写真AC",
+      "captureUrl": "https://www.photo-ac.com/main/detail/35362152",
+      "sourceDetailUrl": "https://www.photo-ac.com/main/detail/35362152",
+      "imageUrl": "https://thumb.photo-ac.com/3d/3d0f7535a25cea4f48eaf6457df417af_t.jpeg",
+      "materialId": "35362152",
+      "authorProfileUrl": "https://www.photo-ac.com/profile/27021104",
+      "reservedAt": "2026-10-17T18:44:21.125Z"
+    },
+    {
+      "id": "PHAC-0191",
+      "title": "ドライブ・家族旅行・車で旅行に来た家族 ドライブ",
+      "mediaType": "Asset",
+      "sourceName": "写真AC",
+      "captureUrl": "https://www.photo-ac.com/main/detail/35058606",
+      "sourceDetailUrl": "https://www.photo-ac.com/main/detail/35058606",
+      "imageUrl": "https://thumb.photo-ac.com/3e/3eec478a9492ef6d41d35cc5b9018451_t.jpeg",
+      "materialId": "35058606",
+      "authorProfileUrl": "https://www.photo-ac.com/profile/638920",
+      "reservedAt": "2026-10-17T18:44:21.125Z"
+    },
+    {
+      "id": "PHAC-0192",
+      "title": "ソファに座り赤ちゃんを抱っこする若い家族 ファミリー",
+      "mediaType": "Asset",
+      "sourceName": "写真AC",
+      "captureUrl": "https://www.photo-ac.com/main/detail/34936453",
+      "sourceDetailUrl": "https://www.photo-ac.com/main/detail/34936453",
+      "imageUrl": "https://thumb.photo-ac.com/60/60f0d637c5cee17144690aa72a91ec71_t.jpeg",
+      "materialId": "34936453",
+      "authorProfileUrl": "https://www.photo-ac.com/profile/638920",
+      "reservedAt": "2026-10-17T18:44:21.125Z"
+    },
+    {
+      "id": "PHAC-0193",
+      "title": "公園・キャンプ場でチェアリングする親子 チェアリング",
+      "mediaType": "Asset",
+      "sourceName": "写真AC",
+      "captureUrl": "https://www.photo-ac.com/main/detail/35058591",
+      "sourceDetailUrl": "https://www.photo-ac.com/main/detail/35058591",
+      "imageUrl": "https://thumb.photo-ac.com/ce/ce94ccb240cb34cbdab2e5216bd6d1db_t.jpeg",
+      "materialId": "35058591",
+      "authorProfileUrl": "https://www.photo-ac.com/profile/638920",
+      "reservedAt": "2026-10-17T18:44:21.125Z"
     },
     {
       "id": "PT-0001",
