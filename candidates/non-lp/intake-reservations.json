@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T20:51:43.201Z",
+  "updatedAt": "2026-10-17T16:26:23.697Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -2423,6 +2423,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-16T16:43:33.132Z"
+    },
+    {
+      "id": "GR-0104",
+      "title": "春のバラ展ポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fc4dcd9b87501e35717534f5136856ed6%2Fc4dcd9b87501e35717534f5136856ed6-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-27902",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fc4dcd9b87501e35717534f5136856ed6%2Fc4dcd9b87501e35717534f5136856ed6-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-17T16:26:23.697Z"
+    },
+    {
+      "id": "GR-0105",
+      "title": "焼きそば",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1068472b10f7cf6e95c296df9a06fe77%2F1068472b10f7cf6e95c296df9a06fe77-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30340",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1068472b10f7cf6e95c296df9a06fe77%2F1068472b10f7cf6e95c296df9a06fe77-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-17T16:26:23.697Z"
+    },
+    {
+      "id": "GR-0106",
+      "title": "南国風のおしゃれな夏季休暇の案内バナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F7a134053aa150c0e7f129187ba87cb8d%2F7a134053aa150c0e7f129187ba87cb8d-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20128",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F7a134053aa150c0e7f129187ba87cb8d%2F7a134053aa150c0e7f129187ba87cb8d-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-17T16:26:23.697Z"
+    },
+    {
+      "id": "GR-0107",
+      "title": "青灰色の落ち着いた猫のペット名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F2dd2cdd3cef88c46b6d5dd785800e240%2F2dd2cdd3cef88c46b6d5dd785800e240-400.webp&w=256&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-30322",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F2dd2cdd3cef88c46b6d5dd785800e240%2F2dd2cdd3cef88c46b6d5dd785800e240-400.webp&w=256&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-17T16:26:23.697Z"
+    },
+    {
+      "id": "GR-0108",
+      "title": "オレンジと緑の抽象的なロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/a6f2299c387b8c655186cf36f262f89d/a6f2299c387b8c655186cf36f262f89d-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3099",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/a6f2299c387b8c655186cf36f262f89d/a6f2299c387b8c655186cf36f262f89d-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-17T16:26:23.697Z"
     },
     {
       "id": "ILAC-0001",
@@ -5066,6 +5126,30 @@
       "materialId": "PAT-0040",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-16T16:43:33.132Z"
+    },
+    {
+      "id": "PAT-0041",
+      "title": "春のバラ展ポスターに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fc4dcd9b87501e35717534f5136856ed6%2Fc4dcd9b87501e35717534f5136856ed6-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-27902",
+      "imageUrl": null,
+      "materialId": "PAT-0041",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-17T16:26:23.697Z"
+    },
+    {
+      "id": "PAT-0042",
+      "title": "株式会社極東電視台に見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://www.far-eastern.co.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/thefareasterntventertainment/",
+      "imageUrl": null,
+      "materialId": "PAT-0042",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-17T16:26:23.697Z"
     },
     {
       "id": "PHAC-0001",
@@ -8517,6 +8601,66 @@
       "reservedAt": "2026-10-16T16:43:33.132Z"
     },
     {
+      "id": "PT-0106",
+      "title": "ほけんの窓口",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2024/10/hokennomadoguchi_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5657",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2024/10/hokennomadoguchi_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-17T16:26:23.697Z"
+    },
+    {
+      "id": "PT-0107",
+      "title": "toiroフリーランス",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2024/10/toirofreelance_00008.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5646",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2024/10/toirofreelance_00008.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-17T16:26:23.697Z"
+    },
+    {
+      "id": "PT-0108",
+      "title": "日産のサブスク NISSAN ClickMobi（クリックモビ）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2024/10/clickmobi_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5632",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2024/10/clickmobi_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-17T16:26:23.697Z"
+    },
+    {
+      "id": "PT-0109",
+      "title": "スクリレ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2024/09/sukurire_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5620",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2024/09/sukurire_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-17T16:26:23.697Z"
+    },
+    {
+      "id": "PT-0110",
+      "title": "ソーシャルインテリア",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2024/09/socialinterior_00003.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5603",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2024/09/socialinterior_00003.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-17T16:26:23.697Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -8931,6 +9075,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-16T16:43:33.132Z"
+    },
+    {
+      "id": "WB-0036",
+      "title": "株式会社極東電視台",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.far-eastern.co.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/thefareasterntventertainment/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/thefareasterntventertainment_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-17T16:26:23.697Z"
+    },
+    {
+      "id": "WB-0037",
+      "title": "馬路村森林組合 | 馬路の森で、 自然とはたらく。",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://umaji-shinrin.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/umajishinrin/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/umajishinrin_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-17T16:26:23.697Z"
     }
   ]
 }
