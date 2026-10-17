@@ -1,0 +1,99 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0033",
+  "media_type": "WB",
+  "title": "ふくしま LiNK NAVi | 企業がふくしまと出会うためのナビゲーション",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://linknavi.fukushima.jp/",
+    "capture_url": "https://linknavi.fukushima.jp/"
+  },
+  "analysis": {
+    "summary": "企業と福島の接点づくりを、サロン、情報探索、段階別アプローチ、FAQ・問い合わせへ整理した地域共創サイト。写真、イラスト、色分けされた4段階が、抽象的な地域連携を具体的な次行動へ変えている。",
+    "score": {
+      "total": 84
+    },
+    "units": [
+      {
+        "name": "ファーストビュー",
+        "role": "企業と福島の出会いを一文で定義",
+        "reuse": "左右非対称の写真コラージュ",
+        "evidence": "WB-0033_SITE_PC_full.png"
+      },
+      {
+        "name": "ナビゲーション",
+        "role": "ロゴ、主要案内、問い合わせ",
+        "reuse": "水平ヘッダー",
+        "evidence": "WB-0033_SITE_PC_full.png"
+      },
+      {
+        "name": "主要コンテンツ",
+        "role": "サロン、地域の魅力、4段階の支援内容",
+        "reuse": "全幅帯とカードの反復",
+        "evidence": "WB-0033_SITE_PC_full.png"
+      },
+      {
+        "name": "証拠・事例",
+        "role": "参加企業ロゴ、人数等の数値、活動写真",
+        "reuse": "白カード内に数値とロゴ列",
+        "evidence": "WB-0033_SITE_PC_full.png"
+      },
+      {
+        "name": "問い合わせ・コンバージョン",
+        "role": "サロン参加、資料・相談、CONTACT",
+        "reuse": "青カードと濃色カード",
+        "evidence": "WB-0033_SITE_PC_full.png"
+      },
+      {
+        "name": "フッター",
+        "role": "運営情報、サイトリンク、問い合わせ",
+        "reuse": "橙の全幅フッター",
+        "evidence": "WB-0033_SITE_PC_full.png"
+      }
+    ]
+  },
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "4段階の共創導線"
+    },
+    {
+      "id": "C02",
+      "name": "数値と企業ロゴの信頼カード"
+    },
+    {
+      "id": "C03",
+      "name": "相談目的別CTAカード"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": [
+      "ロゴ",
+      "人物写真",
+      "固有コピー"
+    ],
+    "reusable": [
+      "構成",
+      "余白",
+      "情報順序"
+    ]
+  },
+  "evidence": {
+    "files": [
+      "WB-0033_SITE_PC_full.png",
+      "WB-0033_SITE_PC_first_view.png",
+      "WB-0033_SITE_SP_full.png",
+      "WB-0033_SITE_SP_first_view.png"
+    ],
+    "unknowns": [
+      "section_index_not_generated_separately",
+      "interaction_state_not_captured",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

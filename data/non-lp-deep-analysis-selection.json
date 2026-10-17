@@ -1,54 +1,48 @@
 {
   "schema_version": "drs-deep-selection-1.0",
-  "runDate": "2026-10-11",
+  "runDate": "2026-10-18",
   "weeklyTop3": [
     {
-      "id": "WB-0025",
+      "id": "WB-0033",
       "status": "selected_for_non_lp_deep_analysis",
-      "reason": "空港運営会社として、企業理念、事業紹介、社員証言、採用導線を一つのブランドストーリーへ統合している"
+      "reason": "地域企業支援を、共感・地域理解・4段階の参加導線へ整理した情報設計が、B2B・自治体案件へ転用しやすい"
     },
     {
-      "id": "WB-0026",
+      "id": "WB-0036",
       "status": "selected_for_non_lp_deep_analysis",
-      "reason": "女性の健康課題を、共感、データ、セルフチェック、相談先、専門家情報の順に整理している"
+      "reason": "番組実績を主役にしながら、会社理解・海外展開・制作体制・採用へ接続する強いエンタメ企業サイトである"
     },
     {
-      "id": "WB-0028",
+      "id": "WB-0037",
       "status": "selected_for_non_lp_deep_analysis",
-      "reason": "静岡茶ブランドの思想を、強い余白、商品写真、短いコピー、EC導線で表現している"
+      "reason": "地域性、仕事理解、人物紹介、採用CTAを一貫した自然モチーフで統合し、地域採用サイトの学習価値が高い"
     }
   ],
   "selected": [
     {
-      "id": "WB-0025",
+      "id": "WB-0033",
       "type": "WB",
-      "title": "ANA大阪空港株式会社",
+      "title": "ふくしま LiNK NAVi | 企業がふくしまと出会うためのナビゲーション",
       "source": "SANKOU!",
-      "url": "https://www.ana-osaap.co.jp/",
-      "reason": "PC/SP画像と実装一次設計が揃い、B2B企業・採用サイトの情報設計を学習できる"
+      "url": "https://linknavi.fukushima.jp/",
+      "reason": "PC/SP画像と実装一次設計が揃い、地域企業支援の情報設計と段階的な参加導線を学習できる"
     },
     {
-      "id": "WB-0026",
+      "id": "WB-0036",
       "type": "WB",
-      "title": "生理の悩み 相談しようプロジェクト | ツムラ",
+      "title": "株式会社極東電視台",
       "source": "SANKOU!",
-      "url": "https://www.tsumura.co.jp/seirino-nayami/",
-      "reason": "PC/SP画像が揃い、センシティブな課題の共感形成と相談行動への導線を分析できる"
+      "url": "https://www.far-eastern.co.jp/",
+      "reason": "PC/SP画像が揃い、実績訴求・会社理解・採用導線を一つの世界観で統合する方法を分析できる"
     },
     {
-      "id": "WB-0028",
+      "id": "WB-0037",
       "type": "WB",
-      "title": "nome [静岡茶ブランド]",
+      "title": "馬路村森林組合 | 馬路の森で、自然とはたらく。",
       "source": "SANKOU!",
-      "url": "https://isnome.com/",
-      "reason": "PC/SP画像が揃い、ブランド世界観と商品購入導線の両立を分析できる"
+      "url": "https://umaji-shinrin.com/",
+      "reason": "PC/SP画像が揃い、地域性・仕事理解・人物紹介・採用導線の統合を分析できる"
     }
   ],
-  "excluded": [
-    {
-      "id": "WB-0029",
-      "status": "recapture_required",
-      "reason": "PC Full PageがAccess Denied画面で、実サイトの証拠として使用できない"
-    }
-  ]
+  "excluded": []
 }

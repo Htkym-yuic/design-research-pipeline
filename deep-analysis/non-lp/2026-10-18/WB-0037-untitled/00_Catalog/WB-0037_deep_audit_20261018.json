@@ -1,0 +1,18 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0037",
+  "mode": "analysis",
+  "selected_for_deep_analysis": true,
+  "selection_reason": "地域性、仕事理解、人物紹介、採用CTAを一貫した自然モチーフで統合し、地域採用サイトの学習価値が高い。",
+  "checks": {
+    "chapters": "Yes",
+    "unit_fields": "Yes",
+    "image_slots": "Yes",
+    "image_evidence": "Yes",
+    "candidate_parity": "Yes",
+    "rights": "Yes",
+    "unknowns": "Yes",
+    "sources": "Yes",
+    "analysis_complete": "Yes"
+  }
+}

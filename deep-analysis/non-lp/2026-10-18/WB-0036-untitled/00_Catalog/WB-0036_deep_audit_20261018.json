@@ -1,0 +1,18 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0036",
+  "mode": "analysis",
+  "selected_for_deep_analysis": true,
+  "selection_reason": "番組実績を主役にしながら、会社理解・海外展開・制作体制・採用へ接続する強いエンタメ企業サイトである。",
+  "checks": {
+    "chapters": "Yes",
+    "unit_fields": "Yes",
+    "image_slots": "Yes",
+    "image_evidence": "Yes",
+    "candidate_parity": "Yes",
+    "rights": "Yes",
+    "unknowns": "Yes",
+    "sources": "Yes",
+    "analysis_complete": "Yes"
+  }
+}

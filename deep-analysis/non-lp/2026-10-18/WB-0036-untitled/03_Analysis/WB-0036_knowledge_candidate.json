@@ -1,0 +1,99 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0036",
+  "media_type": "WB",
+  "title": "株式会社極東電視台",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://www.far-eastern.co.jp/",
+    "capture_url": "https://www.far-eastern.co.jp/"
+  },
+  "analysis": {
+    "summary": "著名番組のキービジュアルを最初の証拠にし、PICK UP、会社思想、海外展開、制作現場、実績、採用へ流す制作会社サイト。海と空を連想させる青い世界観が長いページ全体を一貫させる。",
+    "score": {
+      "total": 88
+    },
+    "units": [
+      {
+        "name": "ファーストビュー",
+        "role": "代表番組、ロゴ、主要メニュー",
+        "reuse": "大型番組画像を中央配置",
+        "evidence": "WB-0036_SITE_PC_full.png"
+      },
+      {
+        "name": "ナビゲーション",
+        "role": "会社、制作実績、採用、問い合わせ",
+        "reuse": "横並び＋強調ボタン",
+        "evidence": "WB-0036_SITE_PC_full.png"
+      },
+      {
+        "name": "主要コンテンツ",
+        "role": "PICK UP、会社紹介、海外展開、制作工程",
+        "reuse": "カルーセルと全幅帯の反復",
+        "evidence": "WB-0036_SITE_PC_full.png"
+      },
+      {
+        "name": "証拠・事例",
+        "role": "番組実績、制作現場、スタッフブログ",
+        "reuse": "横スクロール実績群",
+        "evidence": "WB-0036_SITE_PC_full.png"
+      },
+      {
+        "name": "問い合わせ・コンバージョン",
+        "role": "採用情報、問い合わせ",
+        "reuse": "暗色背景に2カード",
+        "evidence": "WB-0036_SITE_PC_full.png"
+      },
+      {
+        "name": "フッター",
+        "role": "会社情報、事業、制作実績、採用、SNS",
+        "reuse": "宇宙背景の多列フッター",
+        "evidence": "WB-0036_SITE_PC_full.png"
+      }
+    ]
+  },
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "実績主役型ヒーロー"
+    },
+    {
+      "id": "C02",
+      "name": "制作工程の人物カルーセル"
+    },
+    {
+      "id": "C03",
+      "name": "発注・採用の二分CTA"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": [
+      "ロゴ",
+      "人物写真",
+      "固有コピー"
+    ],
+    "reusable": [
+      "構成",
+      "余白",
+      "情報順序"
+    ]
+  },
+  "evidence": {
+    "files": [
+      "WB-0036_SITE_PC_full.png",
+      "WB-0036_SITE_PC_first_view.png",
+      "WB-0036_SITE_SP_full.png",
+      "WB-0036_SITE_SP_first_view.png"
+    ],
+    "unknowns": [
+      "section_index_not_generated_separately",
+      "interaction_state_not_captured",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

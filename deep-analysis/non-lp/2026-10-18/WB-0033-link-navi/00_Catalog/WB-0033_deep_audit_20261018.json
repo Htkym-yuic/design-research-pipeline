@@ -1,0 +1,18 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0033",
+  "mode": "analysis",
+  "selected_for_deep_analysis": true,
+  "selection_reason": "地域企業支援を、共感・地域理解・4段階の参加導線へ整理した情報設計が、B2B・自治体案件へ転用しやすい。",
+  "checks": {
+    "chapters": "Yes",
+    "unit_fields": "Yes",
+    "image_slots": "Yes",
+    "image_evidence": "Yes",
+    "candidate_parity": "Yes",
+    "rights": "Yes",
+    "unknowns": "Yes",
+    "sources": "Yes",
+    "analysis_complete": "Yes"
+  }
+}

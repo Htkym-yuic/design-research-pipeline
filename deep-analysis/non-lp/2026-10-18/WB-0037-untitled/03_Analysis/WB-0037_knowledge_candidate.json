@@ -1,0 +1,99 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0037",
+  "media_type": "WB",
+  "title": "馬路村森林組合 | 馬路の森で、自然とはたらく。",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://umaji-shinrin.com/",
+    "capture_url": "https://umaji-shinrin.com/"
+  },
+  "analysis": {
+    "summary": "森と人をともに育てるという理念を、現場写真、地図、仕事紹介、職種別人物紹介、採用情報へ落とし込む地域採用サイト。深緑と生成り、山の稜線、動物シルエットが一貫し、土地固有の空気と応募判断を両立する。",
+    "score": {
+      "total": 91
+    },
+    "units": [
+      {
+        "name": "ファーストビュー",
+        "role": "現場写真、理念コピー、ナビ",
+        "reuse": "人物写真を大きく全幅配置",
+        "evidence": "WB-0037_SITE_PC_full.png"
+      },
+      {
+        "name": "ナビゲーション",
+        "role": "森、仕事、人、採用、問い合わせ",
+        "reuse": "細い水平ヘッダー",
+        "evidence": "WB-0037_SITE_PC_full.png"
+      },
+      {
+        "name": "主要コンテンツ",
+        "role": "森の説明、地図、組合の仕事、職種別人物",
+        "reuse": "生成りと緑の波形帯を交互配置",
+        "evidence": "WB-0037_SITE_PC_full.png"
+      },
+      {
+        "name": "証拠・事例",
+        "role": "現場写真、職種別職員、70周年、Instagram",
+        "reuse": "人物カードと写真グリッド",
+        "evidence": "WB-0037_SITE_PC_full.png"
+      },
+      {
+        "name": "問い合わせ・コンバージョン",
+        "role": "採用情報、メール、電話",
+        "reuse": "緑背景に白い連絡カード",
+        "evidence": "WB-0037_SITE_PC_full.png"
+      },
+      {
+        "name": "フッター",
+        "role": "組合情報、主要リンク、SNS",
+        "reuse": "濃緑の全幅フッター",
+        "evidence": "WB-0037_SITE_PC_full.png"
+      }
+    ]
+  },
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "理念コピーと現場写真のヒーロー"
+    },
+    {
+      "id": "C02",
+      "name": "波形境界による森の物語構成"
+    },
+    {
+      "id": "C03",
+      "name": "職種別人物紹介から採用への接続"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": [
+      "ロゴ",
+      "人物写真",
+      "固有コピー"
+    ],
+    "reusable": [
+      "構成",
+      "余白",
+      "情報順序"
+    ]
+  },
+  "evidence": {
+    "files": [
+      "WB-0037_SITE_PC_full.png",
+      "WB-0037_SITE_PC_first_view.png",
+      "WB-0037_SITE_SP_full.png",
+      "WB-0037_SITE_SP_first_view.png"
+    ],
+    "unknowns": [
+      "section_index_not_generated_separately",
+      "interaction_state_not_captured",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}
