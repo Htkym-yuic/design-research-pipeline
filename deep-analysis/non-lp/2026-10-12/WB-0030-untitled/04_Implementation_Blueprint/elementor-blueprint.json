@@ -1,0 +1,19 @@
+{
+  "input": "deep-analysis/non-lp/2026-10-12/WB-0030-untitled/01_Normal_Images/WB-0030_SITE_PC_full.png",
+  "output": "deep-analysis/non-lp/2026-10-12/WB-0030-untitled/04_Implementation_Blueprint/WB-0030_elementor_brain_implementation.png",
+  "notionOutput": "deep-analysis/non-lp/2026-10-12/WB-0030-untitled/04_Implementation_Blueprint/WB-0030_elementor_brain_implementation_notion.jpg",
+  "railWidth": 620,
+  "sections": [
+    {"y":0,"height":80,"label":"00｜グローバルヘッダー","color":"#005bd8","lines":["親Container: 横・両端揃え","左: Logo（About STYLEMへリンク）","右: Nav Menu(4)＋区切り線＋外部リンク(2)＋言語トグル＋ハンバーガー","SP: Logo＋言語トグル＋ハンバーガーのみ（Sticky要実測）"]},
+    {"y":80,"height":540,"label":"01｜Hero／ファーストビュー","color":"#d7263d","lines":["親Container: 縦","Heading(2行)／Text(タグライン)","背景装飾: 多色ラインイラスト(SVGまたは画像)","SP: 見出し折り返し変更、イラスト圧縮"]},
+    {"y":620,"height":1565,"label":"02｜アイデンティティ導入","color":"#d7263d","lines":["Section Container＋非対称Image Grid(3枚)","Heading／Text／Button(About STYLEM)","Cookie同意バナーはこのSection上に重なるPopup/Notice Widget（別レイヤー）","SP: Image Gridをインターロック型マソンリーに再配置"]},
+    {"y":2185,"height":1555,"label":"03｜History（沿革）","color":"#ef6c00","lines":["全幅Dark Background Container","背景: 巨大アウトラインText(装飾)","Label／Heading／Text／横スクロール風Timeline Nav(9項目)","年代別詳細: Image×4(白黒)＋Text＋次年代サークルプレビュー","Button(Our History)"]},
+    {"y":3740,"height":1540,"label":"04｜Business（事業紹介）","color":"#ef6c00","lines":["2カラム親Container","左: Sticky Image（事業ごとに差し替え想定）","右: Heading(Business)／Text／Loop(4): 連番+Heading+Label+Text+矢印Icon","区切り線をLoop Item間に挿入","Button(Our Business)","SP: 2カラム→Column化、各カードにInline Image"]},
+    {"y":5280,"height":1220,"label":"05｜Sustainability","color":"#00875a","lines":["Section Container","Heading／Text／Button(Our Sustainability)","非対称Image Grid(3枚)","SP: Column化、画像サイズ調整"]},
+    {"y":6500,"height":900,"label":"06｜News","color":"#00875a","lines":["Heading(News)＋区切り線","Loop Grid(3件表示): Image／Date／Category Badge／Heading／矢印Icon","行間Divider","Button(Our News)"]},
+    {"y":7400,"height":998,"label":"07｜フッター＋問い合わせCTA","color":"#6554c0","lines":["Dark Background Container","4列Link Nav（About/Business/Sustainability/News）","右列: Outline Button×3(Fabric Store/Recruit/Contact Us)","大型Logo＋タグライン再掲","最下段: Copyright＋法的リンク(横並び)"]}
+  ],
+  "details": [
+    {"x":55,"y":790,"width":1090,"height":110,"label":"Cookie同意バナー(Popup Widget)","labelWidth":280}
+  ]
+}
