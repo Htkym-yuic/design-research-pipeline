@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T18:44:21.125Z",
+  "updatedAt": "2026-10-18T16:25:57.110Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -2483,6 +2483,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-17T16:26:23.697Z"
+    },
+    {
+      "id": "GR-0109",
+      "title": "キャンプ体験チラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F7648be64c535d9bc64f10fb0a5b6cafe%2F7648be64c535d9bc64f10fb0a5b6cafe-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-27824",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F7648be64c535d9bc64f10fb0a5b6cafe%2F7648be64c535d9bc64f10fb0a5b6cafe-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-18T16:25:57.110Z"
+    },
+    {
+      "id": "GR-0110",
+      "title": "サマーセールポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1bc2ae3b645f2329a10b56a0a7c312c9%2F1bc2ae3b645f2329a10b56a0a7c312c9-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30335",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1bc2ae3b645f2329a10b56a0a7c312c9%2F1bc2ae3b645f2329a10b56a0a7c312c9-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-18T16:25:57.110Z"
+    },
+    {
+      "id": "GR-0111",
+      "title": "三角フレームのおしゃれな夏ギフトバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fee195e68722a8fe228eefc58b62fc5ef%2Fee195e68722a8fe228eefc58b62fc5ef-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20092",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fee195e68722a8fe228eefc58b62fc5ef%2Fee195e68722a8fe228eefc58b62fc5ef-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-18T16:25:57.110Z"
+    },
+    {
+      "id": "GR-0112",
+      "title": "コーギー写真のかわいいペット名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fd0ef776135ef1649ce823ee0da77dac2%2Fd0ef776135ef1649ce823ee0da77dac2-400.webp&w=256&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-30321",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fd0ef776135ef1649ce823ee0da77dac2%2Fd0ef776135ef1649ce823ee0da77dac2-400.webp&w=256&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-18T16:25:57.110Z"
+    },
+    {
+      "id": "GR-0113",
+      "title": "六角形のロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/c60fab6a33803c23832e1f4485876bb3/c60fab6a33803c23832e1f4485876bb3-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3094",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/c60fab6a33803c23832e1f4485876bb3/c60fab6a33803c23832e1f4485876bb3-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-18T16:25:57.110Z"
     },
     {
       "id": "ILAC-0001",
@@ -5270,6 +5330,30 @@
       "materialId": "PAT-0042",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-17T16:26:23.697Z"
+    },
+    {
+      "id": "PAT-0043",
+      "title": "SHIJIMA ATAMI | 都会の喧騒から離れたホテルに見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://shijima-atami.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/shijimaatami/",
+      "imageUrl": null,
+      "materialId": "PAT-0043",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-18T16:25:57.110Z"
+    },
+    {
+      "id": "PAT-0044",
+      "title": "公益財団法人 日本ライフセービング協会（JLA）に見るセクション内の役割集約",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Parts.）",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2024/08/jlalifesaving_00004.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5587",
+      "imageUrl": null,
+      "materialId": "PAT-0044",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-18T16:25:57.110Z"
     },
     {
       "id": "PHAC-0001",
@@ -8901,6 +8985,66 @@
       "reservedAt": "2026-10-17T16:26:23.697Z"
     },
     {
+      "id": "PT-0111",
+      "title": "公益財団法人 日本ライフセービング協会（JLA）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2024/08/jlalifesaving_00004.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5587",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2024/08/jlalifesaving_00004.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-18T16:25:57.110Z"
+    },
+    {
+      "id": "PT-0112",
+      "title": "TOBU MALL",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2024/08/tobumall_00006.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5576",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2024/08/tobumall_00006.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-18T16:25:57.110Z"
+    },
+    {
+      "id": "PT-0113",
+      "title": "ヨリソル",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2024/08/yorisoar_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5566",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2024/08/yorisoar_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-18T16:25:57.110Z"
+    },
+    {
+      "id": "PT-0114",
+      "title": "Square（スクエア）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2024/08/squareup_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5554",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2024/08/squareup_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-18T16:25:57.110Z"
+    },
+    {
+      "id": "PT-0115",
+      "title": "TYPE FOOD（タイプフード）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2024/08/typefood_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5523",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2024/08/typefood_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-18T16:25:57.110Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -9339,6 +9483,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-17T16:26:23.697Z"
+    },
+    {
+      "id": "WB-0038",
+      "title": "SHIJIMA ATAMI | 都会の喧騒から離れたホテル",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://shijima-atami.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/shijimaatami/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/shijimaatami_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-18T16:25:57.110Z"
+    },
+    {
+      "id": "WB-0039",
+      "title": "採用情報 | 株式会社kubell（旧 Chatwork株式会社）",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://career.kubell.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/kubellcareer/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/kubellcareer_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-18T16:25:57.110Z"
     }
   ]
 }
