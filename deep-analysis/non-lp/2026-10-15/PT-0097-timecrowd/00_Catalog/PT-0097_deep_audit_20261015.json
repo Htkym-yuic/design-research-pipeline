@@ -1,0 +1,39 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "PT-0097",
+  "mode": "analysis",
+  "selected_for_deep_analysis": true,
+  "selection_reason": "学びの多さ（情報設計・配色・文字組み）の観点から、サービス訴求とリード獲得フォームを1画面で完結させる構造を持つ候補として選定",
+  "checks": {
+    "first_line": "Yes",
+    "chapters": "Yes",
+    "unit_headings": "Yes",
+    "unit_fields": "Yes",
+    "image_slots": "Yes",
+    "image_evidence": "Yes",
+    "candidate_parity": "Yes",
+    "rights": "Yes",
+    "unknowns": "Yes",
+    "sources": "Yes",
+    "run_record": "Yes",
+    "analysis_complete": "Yes"
+  },
+  "assets": {
+    "reference": { "width": 1410, "height": 744, "verified": true },
+    "notion_reference": { "verified": false, "failure_reason": "notion_jpg_not_recopied_to_git" },
+    "responsive_capture": { "verified": false, "failure_reason": "responsive_capture_missing" }
+  },
+  "notion": {
+    "status": "pending_sync",
+    "page_url": null,
+    "image_embedded": false,
+    "properties_verified": false
+  },
+  "dropbox": {
+    "status": "source_confirmed_not_promoted",
+    "path": "/design/Design_Research_Library/Parts_Research_Library/99_Needs_Review/2026-10-16/daily-intake/PT-0097",
+    "required_files_verified": true,
+    "note": "日次収集時のDropbox格納フォルダを本セッションでMCP経由により一覧・ダウンロードして実地確認した。99_Needs_Review配下からの正本昇格（コピー・移動）は本ルーチンでは実施しない。"
+  },
+  "cbs": "candidate_pending_user_approval"
+}

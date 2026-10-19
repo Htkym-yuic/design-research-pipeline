@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "elementor-daily-blueprint-1.0",
+  "analysisLevel": "deep_analysis_confirmed",
+  "id": "PT-0098",
+  "type": "PT",
+  "title": "hubflow 課題提起コピー×プロダクトモック Hero",
+  "sourceUrl": "https://partsdesign.net/wp-content/uploads/2025/02/hubflow_00002.png",
+  "generatedAt": "2026-10-15T16:19:43.216Z",
+  "confirmedAt": "2026-10-15",
+  "sourceImage": "deep-analysis/non-lp/2026-10-15/PT-0098-hubflow/01_Normal_Images/PT-0098_reference.png",
+  "originalDimensions": { "width": 1370, "height": 782 },
+  "atomicElementsPolicy": "標準Elementorを優先。Atomic Elementsは標準機能で管理しにくい場合だけ補助案として使用。",
+  "cssPolicy": "原則CSSなし。ElementorのContainer、Gap、Padding、幅、レスポンシブ設定を優先。背景の有機曲線装飾のみ、Elementor標準機能で再現しにくい場合は背景画像またはSVGで代替する。",
+  "caution": "29章詳細分析による確定版。目視・ピクセルサンプリングで確認できた範囲の寸法・配色を反映しているが、実機（ブラウザ上のDOM・実サイト）での再確認は未実施。",
+  "sections": [
+    {
+      "name": "01_hero",
+      "label": "01｜パーツ全体（課題提起コピー×CTAペア×モック）",
+      "confidence": "確認済み（画像実測）",
+      "parent": "Page_Root",
+      "boundingBox": { "x": 0, "y": 0, "width": 1370, "height": 782 },
+      "children": [
+        "01_01_LeftColumn",
+        "01_02_RightColumn_Mock",
+        "01_03_BackgroundDecoration"
+      ],
+      "direction": "Row（PC） / Column（SP、未検証の推奨値）",
+      "standardWidgets": ["コンテナ", "見出し", "テキストエディター", "ボタン", "画像"],
+      "desktop": {
+        "contentWidth": "Full Width（左右非対称2カラム）",
+        "leftColumnWidth": "57%（実測 約780/1370px）",
+        "rightColumnWidth": "43%（実測 約590/1370px）",
+        "gap": "明示的なGapは未実測"
+      },
+      "mobile": {
+        "direction": "Column（未検証の推奨値）",
+        "order": "見出し→リード文→CTAペア→プロダクトモックの順を推奨（未検証）",
+        "width": "100%"
+      }
+    },
+    {
+      "name": "01_01_LeftColumn",
+      "label": "左Column｜見出し・リード文・CTAペア",
+      "confidence": "確認済み（画像実測）",
+      "parent": "01_hero",
+      "children": ["Heading", "LeadText", "CtaRow"],
+      "elements": [
+        { "name": "Heading", "boundingBox": { "x": 90, "y": 90, "width": 500, "height": 200 }, "widget": "見出し", "note": "「未来の業務体験、今ここに DX化の先へ」の3行見出し" },
+        { "name": "LeadText", "boundingBox": { "x": 90, "y": 300, "width": 560, "height": 130 }, "widget": "テキストエディター", "note": "課題提起文。SaaS導入後の活用課題への言及" },
+        { "name": "CtaRow", "boundingBox": { "x": 96, "y": 450, "width": 582, "height": 118 }, "widget": "ボタン×2（Row配置）", "note": "左: 「お問い合わせ」アウトライン、右: 「無料で試してみる」グラデーション塗り。同形・同サイズ" }
+      ]
+    },
+    {
+      "name": "01_02_RightColumn_Mock",
+      "label": "右Column｜プロダクトモック",
+      "confidence": "確認済み（画像実測、一部は黒ベゼル検出による概算）",
+      "parent": "01_hero",
+      "boundingBox": { "x": 820, "y": 100, "width": 550, "height": 500 },
+      "children": ["DeviceMockImage"],
+      "elements": [
+        { "name": "DeviceMockImage", "widget": "画像（ノートPC上にダッシュボードUIを合成したモック）", "note": "左サイドナビ、指標タイル3つ、棒グラフを含む管理画面相当のUI" }
+      ]
+    },
+    {
+      "name": "01_03_BackgroundDecoration",
+      "label": "背景｜有機曲線装飾",
+      "confidence": "目視確認のみ（形状パス未実測）",
+      "parent": "01_hero",
+      "children": [],
+      "elements": [
+        { "name": "WaveBackground", "widget": "背景画像またはSVG（Elementor標準のBackground Overlayで代替可）", "note": "低彩度・低コントラストの曲線を画面全幅に敷く。CSSでの再現が必要な場合のみAtomic Elements/最小限CSSを検討" }
+      ]
+    }
+  ],
+  "unconfirmed": [
+    "SPでのカラム折返し順序・CTA配置（横並び維持か縦積みか）",
+    "右下アイコン（チャットウィジェット疑い）の機能・SP表示有無",
+    "正確なカラーコード・グラデーション角度（代表点サンプリングによる概算値のみ）",
+    "元ページ全体における本パーツの掲載位置",
+    "背景有機曲線の正確な形状パス"
+  ]
+}

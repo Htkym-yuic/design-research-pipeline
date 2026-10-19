@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "elementor-daily-blueprint-1.0",
+  "analysisLevel": "deep_analysis_confirmed",
+  "id": "PT-0097",
+  "type": "PT",
+  "title": "TimeCrowd（タイムクラウド） ピッチコピー×リード獲得フォーム Hero",
+  "sourceUrl": "https://partsdesign.net/wp-content/uploads/2025/02/timecrowd_00001.png",
+  "generatedAt": "2026-10-15T16:19:43.002Z",
+  "confirmedAt": "2026-10-15",
+  "sourceImage": "deep-analysis/non-lp/2026-10-15/PT-0097-timecrowd/01_Normal_Images/PT-0097_reference.png",
+  "originalDimensions": { "width": 1410, "height": 744 },
+  "atomicElementsPolicy": "標準Elementorを優先。Atomic Elementsは標準機能で管理しにくい場合だけ補助案として使用。",
+  "cssPolicy": "原則CSSなし。ElementorのContainer、Gap、Padding、幅、レスポンシブ設定を優先。",
+  "caution": "29章詳細分析による確定版。目視・ピクセルサンプリングで確認できた範囲の寸法・配色を反映しているが、実機（ブラウザ上のDOM・実サイト）での再確認は未実施。",
+  "sections": [
+    {
+      "name": "01_hero",
+      "label": "01｜パーツ全体（ピッチコピー×モック×バッジ×フォーム）",
+      "confidence": "確認済み（画像実測）",
+      "parent": "Page_Root",
+      "boundingBox": { "x": 0, "y": 0, "width": 1410, "height": 744 },
+      "children": [
+        "01_01_LeftColumn",
+        "01_02_RightColumn_Form"
+      ],
+      "direction": "Row（PC） / Column（SP、未検証の推奨値）",
+      "standardWidgets": ["コンテナ", "見出し", "テキストエディター", "画像", "アイコンリスト", "フォーム", "ボタン"],
+      "desktop": {
+        "contentWidth": "Full Width（左右非対称2カラム）",
+        "leftColumnWidth": "63.5%（実測 約896/1410px）",
+        "rightColumnWidth": "36.5%（実測 約514/1410px）",
+        "gap": "明示的なGapは未実測。目視では左右カラムが隣接"
+      },
+      "mobile": {
+        "direction": "Column（未検証の推奨値）",
+        "order": "見出し→プロダクトモック→実績バッジ→資料請求フォームの順を推奨（未検証）",
+        "width": "100%"
+      }
+    },
+    {
+      "name": "01_01_LeftColumn",
+      "label": "左Column｜見出し・モック・バッジ",
+      "confidence": "確認済み（画像実測）",
+      "parent": "01_hero",
+      "children": ["Heading", "SubText", "ProductMockImage", "TrustBadgeIconList"],
+      "elements": [
+        { "name": "Heading", "boundingBox": { "x": 210, "y": 30, "width": 650, "height": 320 }, "widget": "見出し＋テキストエディター", "note": "文脈見出し＋サービス名（最大サイズ）＋読み仮名＋サブコピーの4段" },
+        { "name": "ProductMockImage", "boundingBox": { "x": 130, "y": 355, "width": 540, "height": 361 }, "widget": "画像（PC＋スマホの合成モック）", "note": "ダッシュボードUIスクリーンショットを合成した画像素材として扱う" },
+        { "name": "TrustBadgeIconList", "boundingBox": { "x": 610, "y": 335, "width": 215, "height": 225 }, "widget": "アイコンリストまたはLoop Grid 3件", "note": "導入社数／累計ユーザー数／累計記録時間の3指標を縦積み" }
+      ]
+    },
+    {
+      "name": "01_02_RightColumn_Form",
+      "label": "右Column｜資料請求フォームCard",
+      "confidence": "確認済み（画像実測）",
+      "parent": "01_hero",
+      "boundingBox": { "x": 896, "y": 20, "width": 500, "height": 710 },
+      "children": ["FormHeading", "FormFields", "SubmitButton", "ResetLink"],
+      "elements": [
+        { "name": "FormHeading", "widget": "見出し", "note": "「資料請求はこちらから」" },
+        { "name": "FormFields", "widget": "フォームWidget（会社／姓／名／メール／電話番号／業界セレクト／部署セレクト／役職セレクト／コメント の8項目）", "note": "姓・名、部署・役職は2カラム横並び" },
+        { "name": "SubmitButton", "widget": "ボタン", "note": "「送信する」。背景は本文背景と同系の緑青" },
+        { "name": "ResetLink", "widget": "テキストリンク", "note": "「リセットする」" }
+      ]
+    }
+  ],
+  "unconfirmed": [
+    "SPでのカラム折返し順序・Gap値",
+    "フォーム送信後の遷移・バリデーション仕様",
+    "正確なカラーコード（代表点サンプリングによる概算値のみ）",
+    "元ページ全体における本パーツの掲載位置"
+  ]
+}
