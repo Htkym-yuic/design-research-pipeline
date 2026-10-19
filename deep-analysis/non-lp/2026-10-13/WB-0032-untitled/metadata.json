@@ -1,0 +1,78 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0032",
+  "media_type": "WB",
+  "asset_type": "Web",
+  "title": "山龢【公式】",
+  "source_name": "SANKOU!",
+  "source_detail_url": "https://sankoudesign.com/web/sanga/",
+  "capture_url": "https://atami-sanga.jp/",
+  "landing_url": null,
+  "profile": {
+    "label": "Webサイト",
+    "assetType": "Web",
+    "idPattern": "^WB-[0-9]{4}$",
+    "analysisUnits": [
+      "ファーストビュー",
+      "ナビゲーション",
+      "主要コンテンツ",
+      "証拠・事例",
+      "問い合わせ・コンバージョン",
+      "フッター"
+    ],
+    "imageSlots": [
+      "PC Full Page",
+      "PC First View",
+      "PC Section一覧",
+      "SP Full Page",
+      "SP First View",
+      "SP Section一覧"
+    ],
+    "focus": [
+      "サイト目的",
+      "情報設計",
+      "ナビゲーション",
+      "サービス導線",
+      "コンテンツ分類",
+      "信頼形成",
+      "PC/SP構造変化",
+      "問い合わせ導線"
+    ],
+    "databaseFields": [
+      "サイト種別",
+      "業種",
+      "ページ規模",
+      "主要CV",
+      "PC/SP",
+      "クレジット",
+      "構成タイプ",
+      "詳細分析状態"
+    ]
+  },
+  "lightweight_analysis": {
+    "analysisMode": "automated_daily_first_pass",
+    "overview": "SANKOU!から収集したWeb参考。山龢【公式】。",
+    "selectionReason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+    "visualSummary": "暗色・黒基調。400×350の掲載画像を基準に確認。",
+    "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+    "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+    "deepDivePriority": "中",
+    "generatedAt": "2026-10-13T16:27:35.930Z",
+    "implementationBlueprint": {
+      "status": "reviewed_pending_dropbox_sync",
+      "platform": "WordPress Elementor",
+      "sections": 8,
+      "path": "04_Implementation_Blueprint/WB-0032_elementor_blueprint.md",
+      "configPath": "04_Implementation_Blueprint/elementor-blueprint.json",
+      "diagram": "04_Implementation_Blueprint/WB-0032_elementor_brain_implementation.png",
+      "notionDiagram": "04_Implementation_Blueprint/WB-0032_elementor_brain_implementation_notion.jpg"
+    }
+  },
+  "capture_status": "captured_pc_sp_full_and_first_view_partial_blank_regions",
+  "analysis_status": "completed",
+  "analysis_score": 78,
+  "notion_status": "not_synced",
+  "cbs_status": "not_synced_user_approval_required",
+  "analyzed_at": "2026-10-13T17:30:00.000Z",
+  "generated_at": "2026-10-13T17:02:33.455Z"
+}

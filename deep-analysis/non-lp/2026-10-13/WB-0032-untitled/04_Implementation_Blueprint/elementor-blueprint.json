@@ -1,0 +1,19 @@
+{
+  "input": "deep-analysis/non-lp/2026-10-13/WB-0032-untitled/01_Normal_Images/WB-0032_SITE_PC_full.png",
+  "output": "deep-analysis/non-lp/2026-10-13/WB-0032-untitled/04_Implementation_Blueprint/WB-0032_elementor_brain_implementation.png",
+  "notionOutput": "deep-analysis/non-lp/2026-10-13/WB-0032-untitled/04_Implementation_Blueprint/WB-0032_elementor_brain_implementation_notion.jpg",
+  "railWidth": 640,
+  "sections": [
+    {"y":0,"height":900,"label":"00｜グローバルヘッダー","color":"#005bd8","lines":["親Container: 横・両端揃え","左: Logo（筆文字）／右: Hamburger","右端: ご予約CTA(縦固定、全区間重畳)"]},
+    {"y":900,"height":3600,"label":"01｜ブランド導入(split-screen)","color":"#d7263d","lines":["画面左右2分割Container","左: 明るい客室写真／右: 暗い客室写真","中央: ロゴ＋対比見出し(カルーセル想定)","由来コピー＋Scrollインジケーター","※この区間の一部はキャプチャで空白化(failure_reason参照)"]},
+    {"y":4500,"height":4500,"label":"02｜黒背景・情緒訴求三連ブロック","color":"#ef6c00","lines":["全幅Dark Background Container ×3反復","右寄せ大型Heading／左寄せText","背景写真はキャプチャ時に一部空白(SPで代替確認)","相模湾／光と色／完全な静寂の3テーマ"]},
+    {"y":9000,"height":4500,"label":"03｜客室紹介＋客室特徴","color":"#ef6c00","lines":["Text＋特別室Card＋「客室一覧を見る」Button","全室露天風呂Image＋Heading／Text","2カラムまたは縦積みContainer","※区間内に空白キャプチャを含む"]},
+    {"y":13500,"height":3500,"label":"04｜食事＋お知らせ＋全館貸切(前半)","color":"#00875a","lines":["食事Text＋Button","お知らせLoop Grid(4件)＋Divider＋「一覧を見る」","全館貸切Text開始＋玄関Image"]},
+    {"y":17000,"height":1000,"label":"05｜Instagramフィード","color":"#00875a","lines":["Image Grid(4枚)","「Instagramを見る」外部Link Button"]},
+    {"y":18000,"height":1500,"label":"06｜アクセス","color":"#6554c0","lines":["List(東京/名古屋からのアクセス)","「アクセス情報を見る」Button","下部でDark Backgroundへグラデーション遷移"]},
+    {"y":19500,"height":883,"label":"07｜ご予約＋フッター","color":"#6554c0","lines":["Dark Background Container","Heading(ご予約)＋電話Button＋予約Button並列","チェックイン/アウト表記","Logo＋所在地＋縦書き風Link列(8項目)＋Legal Row"]}
+  ],
+  "details": [
+    {"x":20,"y":1950,"width":1160,"height":400,"label":"キャプチャ時に空白だった区間の一例","labelWidth":420}
+  ]
+}
