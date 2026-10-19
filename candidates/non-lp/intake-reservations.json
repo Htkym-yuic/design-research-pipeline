@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T16:31:10.512Z",
+  "updatedAt": "2026-10-19T16:25:44.797Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -2543,6 +2543,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-18T16:25:57.110Z"
+    },
+    {
+      "id": "GR-0114",
+      "title": "キャンプ体験チラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F11ceed32b2772041947b25b92ccd8016%2F11ceed32b2772041947b25b92ccd8016-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-27823",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F11ceed32b2772041947b25b92ccd8016%2F11ceed32b2772041947b25b92ccd8016-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-19T16:25:44.797Z"
+    },
+    {
+      "id": "GR-0115",
+      "title": "焼きそば",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F689fd484a05d9f6e8fd2087214174039%2F689fd484a05d9f6e8fd2087214174039-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30334",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F689fd484a05d9f6e8fd2087214174039%2F689fd484a05d9f6e8fd2087214174039-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-19T16:25:44.797Z"
+    },
+    {
+      "id": "GR-0116",
+      "title": "青のリボン結びがかわいい夏ギフトバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F374876eb2323222e2297318e5f949a6e%2F374876eb2323222e2297318e5f949a6e-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20091",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F374876eb2323222e2297318e5f949a6e%2F374876eb2323222e2297318e5f949a6e-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-19T16:25:44.797Z"
+    },
+    {
+      "id": "GR-0117",
+      "title": "犬と飼い主の写真入りペット名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F3a5e28a2ce9c14fc4697ef1c2875594c%2F3a5e28a2ce9c14fc4697ef1c2875594c-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-30320",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F3a5e28a2ce9c14fc4697ef1c2875594c%2F3a5e28a2ce9c14fc4697ef1c2875594c-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-19T16:25:44.797Z"
+    },
+    {
+      "id": "GR-0118",
+      "title": "直線と曲線の組み合わせのロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/e02cd407b0217c1c1f477be90ffc8d04/e02cd407b0217c1c1f477be90ffc8d04-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3087",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/e02cd407b0217c1c1f477be90ffc8d04/e02cd407b0217c1c1f477be90ffc8d04-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-19T16:25:44.797Z"
     },
     {
       "id": "ILAC-0001",
@@ -5474,6 +5534,30 @@
       "materialId": "PAT-0044",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-18T16:25:57.110Z"
+    },
+    {
+      "id": "PAT-0045",
+      "title": "クエステトラに見るセクション内の役割集約",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Parts.）",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2024/07/questetra_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5521",
+      "imageUrl": null,
+      "materialId": "PAT-0045",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-19T16:25:44.797Z"
+    },
+    {
+      "id": "PAT-0046",
+      "title": "キャンプ体験チラシに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F11ceed32b2772041947b25b92ccd8016%2F11ceed32b2772041947b25b92ccd8016-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-27823",
+      "imageUrl": null,
+      "materialId": "PAT-0046",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-19T16:25:44.797Z"
     },
     {
       "id": "PHAC-0001",
@@ -9285,6 +9369,66 @@
       "reservedAt": "2026-10-18T16:25:57.110Z"
     },
     {
+      "id": "PT-0116",
+      "title": "クエステトラ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2024/07/questetra_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5521",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2024/07/questetra_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-19T16:25:44.797Z"
+    },
+    {
+      "id": "PT-0117",
+      "title": "ブリヂストンの子ども用自転車月額定額レンタルサービス「エシクル」",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2024/07/ethicle_00007.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5507",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2024/07/ethicle_00007.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-19T16:25:44.797Z"
+    },
+    {
+      "id": "PT-0118",
+      "title": "Housii（ハウシー）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2024/07/housii_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5495",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2024/07/housii_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-19T16:25:44.797Z"
+    },
+    {
+      "id": "PT-0119",
+      "title": "コワークストレージ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2024/07/coworkstorage_00003.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5485",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2024/07/coworkstorage_00003.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-19T16:25:44.797Z"
+    },
+    {
+      "id": "PT-0120",
+      "title": "TēPs (テープス)",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2024/05/teps_00003.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5468",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2024/05/teps_00003.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-19T16:25:44.797Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -9747,6 +9891,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-18T16:25:57.110Z"
+    },
+    {
+      "id": "WB-0040",
+      "title": "Asobica",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://asobica.co.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/asobica/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/asobica_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-19T16:25:44.797Z"
+    },
+    {
+      "id": "WB-0041",
+      "title": "GTN採用サイト | 境界線を越える挑戦へ",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.gtn.co.jp/recruit",
+      "sourceDetailUrl": "https://sankoudesign.com/web/gtn-recruit/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/gtnrecruit_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-19T16:25:44.797Z"
     }
   ]
 }
