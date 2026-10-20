@@ -9942,6 +9942,206 @@
       "reviewPoints": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
       "deepDivePriority": "中",
       "generatedAt": "2026-10-20T16:33:14.945Z"
+    },
+    "ILAC-0204": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。街並みや暮らしイメージの円形フレーム①緑 街並み。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。482×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 27951947 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-20T17:11:41.205Z"
+    },
+    "ILAC-0205": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。エコな街並み円形フレーム③黒と線画 街並み。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。714×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 27954648 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-20T17:11:41.205Z"
+    },
+    "ILAC-0206": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。エコな街並み円形フレーム②黒と線画 街並み。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。714×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 27954646 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-20T17:11:41.205Z"
+    },
+    "ILAC-0207": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。街並みや暮らしイメージの円形フレーム①黒 街並み。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。482×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 27951945 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-20T17:11:41.205Z"
+    },
+    "ILAC-0208": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。エコな街並み円形フレーム①黒と線画 街並み。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。714×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 27954642 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-20T17:11:41.205Z"
+    },
+    "ILAC-0209": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。街並みや暮らしイメージの円形フレーム②黒 街並み。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。482×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 27951952 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-20T17:11:41.205Z"
+    },
+    "ILAC-0210": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。地域のネットワーク 地球。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。340×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 271747 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-20T17:11:41.205Z"
+    },
+    "ILAC-0211": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。緑のマップの素材イラスト 地図。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。477×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 1971037 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-20T17:11:41.205Z"
+    },
+    "ILAC-0212": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。飾りの素材077 街並 家。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。481×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 694295 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-20T17:11:41.205Z"
+    },
+    "ILAC-0213": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "イラストACから収集したAsset参考。緑の街 都会。",
+      "selectionReason": "イラストACの新規候補として重複確認を通過。素材IDと検索語を残し、イラストACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。240×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 1090505 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-20T17:11:41.205Z"
+    },
+    "PHAC-0204": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。アルバニアの田舎の風景6 遺跡。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。511×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 35460174 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-20T17:11:41.205Z"
+    },
+    "PHAC-0205": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。アルバニアの田舎の風景5 遺跡。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。510×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 35460172 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-20T17:11:41.205Z"
+    },
+    "PHAC-0206": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。地方の河川沿いに続く堤防道路 地方。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。453×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 35428933 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-20T17:11:41.205Z"
+    },
+    "PHAC-0207": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。公園の遊具 公園。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。454×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 35410915 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-20T17:11:41.205Z"
+    },
+    "PHAC-0208": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。青空が広がる地方の河口風景 河口。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。454×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 35428936 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-20T17:11:41.205Z"
+    },
+    "PHAC-0209": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。松林が広がる桂浜の海岸風景 桂浜。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。454×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 35296655 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-20T17:11:41.205Z"
+    },
+    "PHAC-0210": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。中部天竜駅の駅舎 中部天竜駅全景。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。557×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 35173529 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-20T17:11:41.205Z"
+    },
+    "PHAC-0211": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。北海道旅行！夕日に染まる登別の山肌が壮大 北海道。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。511×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 35341227 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-20T17:11:41.205Z"
+    },
+    "PHAC-0212": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。田園地帯の農道と水路が続く日本の田舎風景 田園風景。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。454×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 35431680 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-20T17:11:41.205Z"
+    },
+    "PHAC-0213": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "写真ACから収集したAsset参考。【岐阜県】岐阜市・岐阜城からの展望 岐阜市。",
+      "selectionReason": "写真ACの新規候補として重複確認を通過。素材IDと検索語を残し、写真ACで将来の制作条件に合う素材を手動選定しやすくするため。",
+      "visualSummary": "メタ情報のみ。454×340の掲載画像を基準に確認。",
+      "usefulPoints": "素材ID 35310743 と素材ページURLを手動素材選定に利用可能。素材本体の保存・再配布は行わない",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-20T17:11:41.205Z"
     }
   }
 }
