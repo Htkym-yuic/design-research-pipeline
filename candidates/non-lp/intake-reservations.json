@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19T16:25:44.797Z",
+  "updatedAt": "2026-10-20T16:32:12.667Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -2603,6 +2603,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-19T16:25:44.797Z"
+    },
+    {
+      "id": "GR-0119",
+      "title": "輪投げ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F75750c3b1016bd4ec0ac689433b40c72%2F75750c3b1016bd4ec0ac689433b40c72-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-26332",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F75750c3b1016bd4ec0ac689433b40c72%2F75750c3b1016bd4ec0ac689433b40c72-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-20T16:32:12.667Z"
+    },
+    {
+      "id": "GR-0120",
+      "title": "ふりふりポテト",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1c8eb52be5ff1249bc5101e89794fa6d%2F1c8eb52be5ff1249bc5101e89794fa6d-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30264",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1c8eb52be5ff1249bc5101e89794fa6d%2F1c8eb52be5ff1249bc5101e89794fa6d-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-20T16:32:12.667Z"
+    },
+    {
+      "id": "GR-0121",
+      "title": "水色の爽やかな夏ギフトバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F1bac38d22cd5af2fbbe8d62c237c3793%2F1bac38d22cd5af2fbbe8d62c237c3793-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20090",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F1bac38d22cd5af2fbbe8d62c237c3793%2F1bac38d22cd5af2fbbe8d62c237c3793-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-20T16:32:12.667Z"
+    },
+    {
+      "id": "GR-0122",
+      "title": "白猫写真のやわらかいペット名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F95122ba95e3edec7dc3e5c01ab0553d9%2F95122ba95e3edec7dc3e5c01ab0553d9-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-30319",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F95122ba95e3edec7dc3e5c01ab0553d9%2F95122ba95e3edec7dc3e5c01ab0553d9-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-20T16:32:12.667Z"
+    },
+    {
+      "id": "GR-0123",
+      "title": "直線と曲線の組み合わせのロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/63e2a5198e8c5519ebee1cc8f1cd7061/63e2a5198e8c5519ebee1cc8f1cd7061-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3082",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/63e2a5198e8c5519ebee1cc8f1cd7061/63e2a5198e8c5519ebee1cc8f1cd7061-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-20T16:32:12.667Z"
     },
     {
       "id": "ILAC-0001",
@@ -5558,6 +5618,30 @@
       "materialId": "PAT-0046",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-19T16:25:44.797Z"
+    },
+    {
+      "id": "PAT-0047",
+      "title": "輪投げに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F75750c3b1016bd4ec0ac689433b40c72%2F75750c3b1016bd4ec0ac689433b40c72-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-26332",
+      "imageUrl": null,
+      "materialId": "PAT-0047",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-20T16:32:12.667Z"
+    },
+    {
+      "id": "PAT-0048",
+      "title": "株式会社サン防災に見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://sunbousai.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/sunbousai/",
+      "imageUrl": null,
+      "materialId": "PAT-0048",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-20T16:32:12.667Z"
     },
     {
       "id": "PHAC-0001",
@@ -9429,6 +9513,66 @@
       "reservedAt": "2026-10-19T16:25:44.797Z"
     },
     {
+      "id": "PT-0121",
+      "title": "30min.（サーティーミニッツ）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2024/05/30min_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5452",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2024/05/30min_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-20T16:32:12.667Z"
+    },
+    {
+      "id": "PT-0122",
+      "title": "echoes (エコーズ)",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2024/02/echoes_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5437",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2024/02/echoes_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-20T16:32:12.667Z"
+    },
+    {
+      "id": "PT-0123",
+      "title": "CrowdCare",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/10/crowdcare_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5418",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2023/10/crowdcare_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-20T16:32:12.667Z"
+    },
+    {
+      "id": "PT-0124",
+      "title": "ホームプロ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/10/homepro_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5403",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2023/10/homepro_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-20T16:32:12.667Z"
+    },
+    {
+      "id": "PT-0125",
+      "title": "KENKEYファイナンス",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/10/kenkeyfinance_00006.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5387",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2023/10/kenkeyfinance_00006.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-20T16:32:12.667Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -9915,6 +10059,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-19T16:25:44.797Z"
+    },
+    {
+      "id": "WB-0042",
+      "title": "株式会社サン防災",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://sunbousai.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/sunbousai/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/sunbousai_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-20T16:32:12.667Z"
+    },
+    {
+      "id": "WB-0043",
+      "title": "Will Style Inc.",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://willstyle.co.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/willstyle/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/willstyle02_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-20T16:32:12.667Z"
     }
   ]
 }
