@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T17:10:22.934Z",
+  "updatedAt": "2026-10-21T16:20:34.440Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -2663,6 +2663,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-20T16:32:12.667Z"
+    },
+    {
+      "id": "GR-0124",
+      "title": "夏期講習チラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1b7f185777b63365c4f70d2359a2ab02%2F1b7f185777b63365c4f70d2359a2ab02-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-26263",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1b7f185777b63365c4f70d2359a2ab02%2F1b7f185777b63365c4f70d2359a2ab02-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-21T16:20:34.440Z"
+    },
+    {
+      "id": "GR-0125",
+      "title": "唐揚げ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F638b63c8198b01ff6521e48f8cff203b%2F638b63c8198b01ff6521e48f8cff203b-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30265",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F638b63c8198b01ff6521e48f8cff203b%2F638b63c8198b01ff6521e48f8cff203b-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-21T16:20:34.440Z"
+    },
+    {
+      "id": "GR-0126",
+      "title": "青の和柄のおしゃれな夏ギフトバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fc6078abe67d6219db63c38f9c54222f7%2Fc6078abe67d6219db63c38f9c54222f7-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20089",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fc6078abe67d6219db63c38f9c54222f7%2Fc6078abe67d6219db63c38f9c54222f7-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-21T16:20:34.440Z"
+    },
+    {
+      "id": "GR-0127",
+      "title": "ピンク色の丸写真ペット名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fbd6800fa4d5656d0f78279108f0c7005%2Fbd6800fa4d5656d0f78279108f0c7005-400.webp&w=256&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-30122",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fbd6800fa4d5656d0f78279108f0c7005%2Fbd6800fa4d5656d0f78279108f0c7005-400.webp&w=256&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-21T16:20:34.440Z"
+    },
+    {
+      "id": "GR-0128",
+      "title": "赤と黒の直線的なロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/ebd61164d5c9ee39c8902711cd115cdb/ebd61164d5c9ee39c8902711cd115cdb-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3078",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/ebd61164d5c9ee39c8902711cd115cdb/ebd61164d5c9ee39c8902711cd115cdb-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-21T16:20:34.440Z"
     },
     {
       "id": "ILAC-0001",
@@ -5762,6 +5822,30 @@
       "materialId": "PAT-0048",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-20T16:32:12.667Z"
+    },
+    {
+      "id": "PAT-0049",
+      "title": "八王子糖尿病内科クリニックに見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://hachioji-dm.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/hachiojidiabetesclinic/",
+      "imageUrl": null,
+      "materialId": "PAT-0049",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-21T16:20:34.440Z"
+    },
+    {
+      "id": "PAT-0050",
+      "title": "攻撃遮断くんに見るセクション内の役割集約",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Parts.）",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/10/shadankun_00007.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5375",
+      "imageUrl": null,
+      "materialId": "PAT-0050",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-21T16:20:34.440Z"
     },
     {
       "id": "PHAC-0001",
@@ -9813,6 +9897,66 @@
       "reservedAt": "2026-10-20T16:32:12.667Z"
     },
     {
+      "id": "PT-0126",
+      "title": "攻撃遮断くん",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/10/shadankun_00007.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5375",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2023/10/shadankun_00007.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-21T16:20:34.440Z"
+    },
+    {
+      "id": "PT-0127",
+      "title": "ペイトナー請求書",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/10/paytner_00006.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5362",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2023/10/paytner_00006.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-21T16:20:34.440Z"
+    },
+    {
+      "id": "PT-0128",
+      "title": "CERVN（サーブン）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/10/cervn_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5336",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2023/10/cervn_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-21T16:20:34.440Z"
+    },
+    {
+      "id": "PT-0129",
+      "title": "USENの配膳ロボット",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/10/usenrobot_00004.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5333",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2023/10/usenrobot_00004.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-21T16:20:34.440Z"
+    },
+    {
+      "id": "PT-0130",
+      "title": "サブスクペイ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/08/robotpayment_00003.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5309",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2023/08/robotpayment_00003.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-21T16:20:34.440Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -10323,6 +10467,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-20T16:32:12.667Z"
+    },
+    {
+      "id": "WB-0044",
+      "title": "八王子糖尿病内科クリニック",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://hachioji-dm.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/hachiojidiabetesclinic/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/hachiojidiabetesclinic_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-21T16:20:34.440Z"
+    },
+    {
+      "id": "WB-0045",
+      "title": "あの貞子の髪もスルッと | 瞬感ヘアスムージング SURUtto 公式",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://surutto-official.jp/sadako-campaign/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/suruttosadako/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/suruttosadako_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-21T16:20:34.440Z"
     }
   ]
 }
