@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T16:20:34.440Z",
+  "updatedAt": "2026-10-22T16:37:39.592Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -2723,6 +2723,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-21T16:20:34.440Z"
+    },
+    {
+      "id": "GR-0129",
+      "title": "ハロウィンイベント",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F102e956e1bce0403eb12096614ebce26%2F102e956e1bce0403eb12096614ebce26-400.webp&w=1200&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-31569",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F102e956e1bce0403eb12096614ebce26%2F102e956e1bce0403eb12096614ebce26-400.webp&w=1200&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-22T16:37:39.592Z"
+    },
+    {
+      "id": "GR-0130",
+      "title": "年末年始休業のお知らせ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1beab53619c3872a795d7a42277f92a7%2F1beab53619c3872a795d7a42277f92a7-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-32017",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1beab53619c3872a795d7a42277f92a7%2F1beab53619c3872a795d7a42277f92a7-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-22T16:37:39.592Z"
+    },
+    {
+      "id": "GR-0131",
+      "title": "紫背景にハロウィンイラストのアイテム特集バナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F03d7b4ddfbad3bf0e984e1c376b77ef8%2F03d7b4ddfbad3bf0e984e1c376b77ef8-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-23940",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F03d7b4ddfbad3bf0e984e1c376b77ef8%2F03d7b4ddfbad3bf0e984e1c376b77ef8-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-22T16:37:39.592Z"
+    },
+    {
+      "id": "GR-0132",
+      "title": "クマと秋の味覚のイラストの子ども向け名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F7ef8fc659da15804677c4d30a2b7c1db%2F7ef8fc659da15804677c4d30a2b7c1db-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-23224",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F7ef8fc659da15804677c4d30a2b7c1db%2F7ef8fc659da15804677c4d30a2b7c1db-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-22T16:37:39.592Z"
+    },
+    {
+      "id": "GR-0133",
+      "title": "3つのひし形の組み合わせのロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/fc027b1e3e592a2abc05c5dcd4d182d9/fc027b1e3e592a2abc05c5dcd4d182d9-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3001",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/fc027b1e3e592a2abc05c5dcd4d182d9/fc027b1e3e592a2abc05c5dcd4d182d9-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-22T16:37:39.592Z"
     },
     {
       "id": "ILAC-0001",
@@ -5846,6 +5906,30 @@
       "materialId": "PAT-0050",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-21T16:20:34.440Z"
+    },
+    {
+      "id": "PAT-0051",
+      "title": "ハロウィンイベントに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F102e956e1bce0403eb12096614ebce26%2F102e956e1bce0403eb12096614ebce26-400.webp&w=1200&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-31569",
+      "imageUrl": null,
+      "materialId": "PAT-0051",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-22T16:37:39.592Z"
+    },
+    {
+      "id": "PAT-0052",
+      "title": "desknet’s NEO（デスクネッツ ネオ）に見るセクション内の役割集約",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Parts.）",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/08/desknets_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5300",
+      "imageUrl": null,
+      "materialId": "PAT-0052",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-22T16:37:39.592Z"
     },
     {
       "id": "PHAC-0001",
@@ -9955,6 +10039,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-21T16:20:34.440Z"
+    },
+    {
+      "id": "PT-0131",
+      "title": "desknet’s NEO（デスクネッツ ネオ）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/08/desknets_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5300",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2023/08/desknets_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-22T16:37:39.592Z"
+    },
+    {
+      "id": "PT-0132",
+      "title": "Questant",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/07/questant_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5265",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2023/07/questant_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-22T16:37:39.592Z"
+    },
+    {
+      "id": "PT-0133",
+      "title": "ことら送金",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/07/cotra_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5262",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2023/07/cotra_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-22T16:37:39.592Z"
+    },
+    {
+      "id": "PT-0134",
+      "title": "パルシステム神奈川",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/07/palsystem-kanagawa_00016.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5235",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2023/07/palsystem-kanagawa_00016.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-22T16:37:39.592Z"
+    },
+    {
+      "id": "PT-0135",
+      "title": "GoodLine",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/05/good-line_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5232",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2023/05/good-line_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-22T16:37:39.592Z"
     },
     {
       "id": "WB-0001",
