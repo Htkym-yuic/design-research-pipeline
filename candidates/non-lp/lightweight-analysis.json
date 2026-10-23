@@ -10778,6 +10778,206 @@
       "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
       "deepDivePriority": "中",
       "generatedAt": "2026-10-22T20:10:52.614Z"
+    },
+    "GR-0134": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したチラシ・フライヤー参考。おばけのハロウィンパーティーチラシ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "暖色・黄橙系。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-23T16:26:54.767Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0134-untitled/03_Implementation_Blueprint/GR-0134_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0134-untitled/03_Implementation_Blueprint/GR-0134_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0134-untitled/03_Implementation_Blueprint/GR-0134_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0134-untitled/03_Implementation_Blueprint/GR-0134_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0135": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したポスター参考。秋の味覚フェアポスター。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "暖色・黄橙系。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-23T16:26:54.782Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0135-untitled/03_Implementation_Blueprint/GR-0135_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0135-untitled/03_Implementation_Blueprint/GR-0135_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0135-untitled/03_Implementation_Blueprint/GR-0135_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0135-untitled/03_Implementation_Blueprint/GR-0135_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0136": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したSNS投稿・Web広告参考。オレンジ色文字でかわいいハロウィン仮装まつりバナー。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "暖色・黄橙系。156×81の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-23T16:26:54.796Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0136-untitled/03_Implementation_Blueprint/GR-0136_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0136-untitled/03_Implementation_Blueprint/GR-0136_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0136-untitled/03_Implementation_Blueprint/GR-0136_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0136-untitled/03_Implementation_Blueprint/GR-0136_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0137": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集した名刺・ショップカード参考。パーソナルトレーナーの名刺。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "ニュートラル。384×232の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-23T16:26:54.809Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0137-untitled/03_Implementation_Blueprint/GR-0137_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0137-untitled/03_Implementation_Blueprint/GR-0137_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0137-untitled/03_Implementation_Blueprint/GR-0137_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0137-untitled/03_Implementation_Blueprint/GR-0137_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0138": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したロゴ・VI/CI参考。水滴のようなロゴ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。400×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-23T16:26:54.825Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0138-untitled/03_Implementation_Blueprint/GR-0138_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0138-untitled/03_Implementation_Blueprint/GR-0138_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0138-untitled/03_Implementation_Blueprint/GR-0138_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0138-untitled/03_Implementation_Blueprint/GR-0138_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0136": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。enpay（エンペイ）。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "寒色・青紫系。1365×558の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-23T16:26:54.856Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0136-enpay/03_Implementation_Blueprint/PT-0136_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0136-enpay/03_Implementation_Blueprint/PT-0136_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0136-enpay/03_Implementation_Blueprint/PT-0136_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0136-enpay/03_Implementation_Blueprint/PT-0136_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0137": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。commmune(コミューン)。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "明色・白基調。1365×886の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-23T16:26:54.900Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0137-commmune/03_Implementation_Blueprint/PT-0137_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0137-commmune/03_Implementation_Blueprint/PT-0137_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0137-commmune/03_Implementation_Blueprint/PT-0137_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0137-commmune/03_Implementation_Blueprint/PT-0137_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0138": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。IVRy（アイブリー）。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "緑・青緑系。1396×906の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-23T16:26:54.943Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0138-ivry/03_Implementation_Blueprint/PT-0138_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0138-ivry/03_Implementation_Blueprint/PT-0138_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0138-ivry/03_Implementation_Blueprint/PT-0138_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0138-ivry/03_Implementation_Blueprint/PT-0138_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0139": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。ケンコーマヨネーズ 商品サイト。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "明色・白基調。1427×551の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-23T16:26:54.974Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0139-untitled/03_Implementation_Blueprint/PT-0139_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0139-untitled/03_Implementation_Blueprint/PT-0139_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0139-untitled/03_Implementation_Blueprint/PT-0139_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0139-untitled/03_Implementation_Blueprint/PT-0139_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0140": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。Payn（ペイン）。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "寒色・青紫系。1349×674の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-23T16:26:55.009Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0140-payn/03_Implementation_Blueprint/PT-0140_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0140-payn/03_Implementation_Blueprint/PT-0140_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0140-payn/03_Implementation_Blueprint/PT-0140_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0140-payn/03_Implementation_Blueprint/PT-0140_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PAT-0053": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（Parts.）から収集したPattern参考。enpay（エンペイ）に見るセクション内の役割集約。",
+      "selectionReason": "日次収集から抽出（Parts.）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "一つのセクション内で見出し・説明・証拠・行動導線の役割を整理し、他案件へ転用可能な単位として捉える。 根拠候補: PT-0136",
+      "reviewPoints": "切り出し範囲が広すぎないか、前後セクションへの依存がないかを確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-23T16:26:55.009Z"
+    },
+    "PAT-0054": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（デザインAC）から収集したPattern参考。おばけのハロウィンパーティーチラシに見る文字組みと視線誘導。",
+      "selectionReason": "日次収集から抽出（デザインAC）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "主見出し・補足・画像・行動情報のサイズ差と配置から、最初に読ませる情報を明確にする。 根拠候補: GR-0134",
+      "reviewPoints": "素材そのものではなく、情報階層と余白の考え方だけを転用する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-23T16:26:55.009Z"
     }
   }
 }
