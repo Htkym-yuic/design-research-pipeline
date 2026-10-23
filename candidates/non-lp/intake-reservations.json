@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-22T19:59:13.621Z",
+  "updatedAt": "2026-10-23T16:26:48.147Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -2783,6 +2783,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-22T16:37:39.592Z"
+    },
+    {
+      "id": "GR-0134",
+      "title": "おばけのハロウィンパーティーチラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F4a2ebb3bdc99fae8705c6ff63e755ab8%2F4a2ebb3bdc99fae8705c6ff63e755ab8-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-31567",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F4a2ebb3bdc99fae8705c6ff63e755ab8%2F4a2ebb3bdc99fae8705c6ff63e755ab8-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-23T16:26:48.147Z"
+    },
+    {
+      "id": "GR-0135",
+      "title": "秋の味覚フェアポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F8902e20f71f9f944029fb9f9f03dafc1%2F8902e20f71f9f944029fb9f9f03dafc1-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-32016",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F8902e20f71f9f944029fb9f9f03dafc1%2F8902e20f71f9f944029fb9f9f03dafc1-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-23T16:26:48.147Z"
+    },
+    {
+      "id": "GR-0136",
+      "title": "オレンジ色文字でかわいいハロウィン仮装まつりバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F97a656486981273a1a40db2fb8ef38df%2F97a656486981273a1a40db2fb8ef38df-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-23939",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F97a656486981273a1a40db2fb8ef38df%2F97a656486981273a1a40db2fb8ef38df-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-23T16:26:48.147Z"
+    },
+    {
+      "id": "GR-0137",
+      "title": "パーソナルトレーナーの名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fcaaabfc026e106d9bca68a13897f5a43%2Fcaaabfc026e106d9bca68a13897f5a43-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-5485",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fcaaabfc026e106d9bca68a13897f5a43%2Fcaaabfc026e106d9bca68a13897f5a43-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-23T16:26:48.147Z"
+    },
+    {
+      "id": "GR-0138",
+      "title": "水滴のようなロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/dbcc7a38f5fd3c769077004bd56b96bd/dbcc7a38f5fd3c769077004bd56b96bd-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3074",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/dbcc7a38f5fd3c769077004bd56b96bd/dbcc7a38f5fd3c769077004bd56b96bd-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-23T16:26:48.147Z"
     },
     {
       "id": "ILAC-0001",
@@ -6050,6 +6110,30 @@
       "materialId": "PAT-0052",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-22T16:37:39.592Z"
+    },
+    {
+      "id": "PAT-0053",
+      "title": "enpay（エンペイ）に見るセクション内の役割集約",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Parts.）",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/04/enpay_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5215",
+      "imageUrl": null,
+      "materialId": "PAT-0053",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-23T16:26:48.147Z"
+    },
+    {
+      "id": "PAT-0054",
+      "title": "おばけのハロウィンパーティーチラシに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F4a2ebb3bdc99fae8705c6ff63e755ab8%2F4a2ebb3bdc99fae8705c6ff63e755ab8-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-31567",
+      "imageUrl": null,
+      "materialId": "PAT-0054",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-23T16:26:48.147Z"
     },
     {
       "id": "PHAC-0001",
@@ -10339,6 +10423,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-22T16:37:39.592Z"
+    },
+    {
+      "id": "PT-0136",
+      "title": "enpay（エンペイ）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/04/enpay_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5215",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2023/04/enpay_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-23T16:26:48.147Z"
+    },
+    {
+      "id": "PT-0137",
+      "title": "commmune(コミューン)",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/04/commmune_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5197",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2023/04/commmune_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-23T16:26:48.147Z"
+    },
+    {
+      "id": "PT-0138",
+      "title": "IVRy（アイブリー）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/03/ivry_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5181",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2023/03/ivry_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-23T16:26:48.147Z"
+    },
+    {
+      "id": "PT-0139",
+      "title": "ケンコーマヨネーズ 商品サイト",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/03/kenkomayo_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5164",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2023/03/kenkomayo_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-23T16:26:48.147Z"
+    },
+    {
+      "id": "PT-0140",
+      "title": "Payn（ペイン）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/02/payn_00004.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5153",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2023/02/payn_00004.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-23T16:26:48.147Z"
     },
     {
       "id": "WB-0001",
