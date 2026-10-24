@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T17:14:52.087Z",
+  "updatedAt": "2026-10-24T18:26:32.953Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -1197,6 +1197,18 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-15T16:19:35.445Z"
+    },
+    {
+      "id": "CV-0054",
+      "title": "Black and Pink Scrapbook  Birthday Photo Collage  Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAHKdrvIZko/1/0/320w-m9JqJ2kxelg.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAHKdrvIZko-black-and-pink-scrapbook-birthday-photo-collage-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAHKdrvIZko/1/0/320w-m9JqJ2kxelg.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-24T18:26:32.953Z"
     },
     {
       "id": "GR-0001",
@@ -2843,6 +2855,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-23T16:26:48.147Z"
+    },
+    {
+      "id": "GR-0139",
+      "title": "秋の読書フェア告知チラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fea87eaec76a67e452c4b461f2174bc79%2Fea87eaec76a67e452c4b461f2174bc79-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-31227",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fea87eaec76a67e452c4b461f2174bc79%2Fea87eaec76a67e452c4b461f2174bc79-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-24T18:26:32.953Z"
+    },
+    {
+      "id": "GR-0140",
+      "title": "忘新年会ポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F28f9c6a3a155783f986bf317ab5773fa%2F28f9c6a3a155783f986bf317ab5773fa-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-31552",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F28f9c6a3a155783f986bf317ab5773fa%2F28f9c6a3a155783f986bf317ab5773fa-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-24T18:26:32.953Z"
+    },
+    {
+      "id": "GR-0141",
+      "title": "不気味なジャックオーランタンのスイーツフェアバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F9470080479ed9f16353f827a3229d368%2F9470080479ed9f16353f827a3229d368-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-23938",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F9470080479ed9f16353f827a3229d368%2F9470080479ed9f16353f827a3229d368-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-24T18:26:32.953Z"
+    },
+    {
+      "id": "GR-0142",
+      "title": "ダンベルが描かれた名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F381a2fdd8c395c5357220dfdb40025b6%2F381a2fdd8c395c5357220dfdb40025b6-400.webp&w=256&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-5326",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F381a2fdd8c395c5357220dfdb40025b6%2F381a2fdd8c395c5357220dfdb40025b6-400.webp&w=256&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-24T18:26:32.953Z"
+    },
+    {
+      "id": "GR-0143",
+      "title": "直線と曲線の組み合わせの青系のロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/47224bc4cff4c088af1cb13f464a5831/47224bc4cff4c088af1cb13f464a5831-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3070",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/47224bc4cff4c088af1cb13f464a5831/47224bc4cff4c088af1cb13f464a5831-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-24T18:26:32.953Z"
     },
     {
       "id": "ILAC-0001",
@@ -6254,6 +6326,30 @@
       "materialId": "PAT-0054",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-23T16:26:48.147Z"
+    },
+    {
+      "id": "PAT-0055",
+      "title": "ココグルメに見るセクション内の役割集約",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Parts.）",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/02/coco-gourmet_00007.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5140",
+      "imageUrl": null,
+      "materialId": "PAT-0055",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-24T18:26:32.953Z"
+    },
+    {
+      "id": "PAT-0056",
+      "title": "秋の読書フェア告知チラシに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fea87eaec76a67e452c4b461f2174bc79%2Fea87eaec76a67e452c4b461f2174bc79-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-31227",
+      "imageUrl": null,
+      "materialId": "PAT-0056",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-24T18:26:32.953Z"
     },
     {
       "id": "PHAC-0001",
@@ -10723,6 +10819,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-23T16:26:48.147Z"
+    },
+    {
+      "id": "PT-0141",
+      "title": "ココグルメ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/02/coco-gourmet_00007.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5140",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2023/02/coco-gourmet_00007.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-24T18:26:32.953Z"
+    },
+    {
+      "id": "PT-0142",
+      "title": "スペースマーケット",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/01/spacemarket_00007.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5118",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2023/01/spacemarket_00007.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-24T18:26:32.953Z"
+    },
+    {
+      "id": "PT-0143",
+      "title": "デジコ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2023/01/digi-co_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5093",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2023/01/digi-co_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-24T18:26:32.953Z"
+    },
+    {
+      "id": "PT-0144",
+      "title": "ONLYSTORY（オンリーストーリー）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/12/onlystory_00003.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5066",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/12/onlystory_00003.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-24T18:26:32.953Z"
+    },
+    {
+      "id": "PT-0145",
+      "title": "ASHIATO(アシアト) by エン・ジャパン",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/12/ashiatohr_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5034",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/12/ashiatohr_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-24T18:26:32.953Z"
     },
     {
       "id": "WB-0001",
