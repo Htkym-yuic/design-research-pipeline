@@ -1,0 +1,28 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0041",
+  "mode": "analysis",
+  "selected_for_deep_analysis": true,
+  "selection_reason": "多国籍事業の理念を人物写真、職種別採用、事業理解、カルチャー、動画・記事証拠へ展開し、複数採用区分を一つの物語へ統合している",
+  "checks": {
+    "first_line": "Yes",
+    "chapters": "Yes",
+    "unit_headings": "Yes",
+    "unit_fields": "Yes",
+    "image_slots": "Yes",
+    "image_evidence": "Yes",
+    "candidate_parity": "Yes",
+    "rights": "Yes",
+    "unknowns": "Yes",
+    "sources": "Yes",
+    "run_record": "Yes",
+    "analysis_complete": "Yes"
+  },
+  "implementation_blueprint": {
+    "status": "daily_provisional_confirmed",
+    "path": "../03_Implementation_Blueprint/WB-0041_elementor_brain_implementation.png"
+  },
+  "notion": "pending_sync",
+  "dropbox": "pending_sync",
+  "cbs": "not_synced_user_approval_required"
+}

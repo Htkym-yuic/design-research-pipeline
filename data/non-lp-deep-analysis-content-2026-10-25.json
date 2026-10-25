@@ -1,0 +1,263 @@
+{
+  "schema_version": "drs-deep-content-1.0",
+  "generatedAt": "2026-10-25T13:05:00.000Z",
+  "items": [
+    {
+      "id": "WB-0038",
+      "type": "WB",
+      "assetType": "Web",
+      "label": "Webサイト",
+      "title": "SHIJIMA ATAMI | 都会の喧騒から離れたホテル",
+      "sourceName": "SANKOU!",
+      "sourceDetailUrl": "https://sankoudesign.com/web/shijimaatami/",
+      "captureUrl": "https://shijima-atami.com/",
+      "officialUrl": "https://shijima-atami.com/",
+      "collectedAt": "2026-10-19",
+      "analysisDate": "2026-10-25",
+      "cbsStatus": "未同期・ユーザー確認待ち",
+      "outputRoot": "deep-analysis/non-lp/2026-10-25/WB-0038-shijima-atami",
+      "selectionReason": "予約判断に必要な日程・客室・食・周辺体験を、極端に広い余白と大判写真で静かな滞在物語へ統合しており、高級宿泊施設の情報設計として転用価値が高い",
+      "images": [
+        {"slot":"PC Full Page","path":"../01_Normal_Images/WB-0038_SITE_PC_full.png","status":"1200×10088px、目視確認済み"},
+        {"slot":"PC First View","path":"../01_Normal_Images/WB-0038_SITE_PC_first_view.png","status":"1200×900px、ローディングロゴ表示を確認"},
+        {"slot":"PC Section一覧","path":"failure_reason: section_index_not_generated_separately","status":"PC Full Pageで代替"},
+        {"slot":"SP Full Page","path":"../01_Normal_Images/WB-0038_SITE_SP_full.png","status":"375×9213px、目視確認済み"},
+        {"slot":"SP First View","path":"../01_Normal_Images/WB-0038_SITE_SP_first_view.png","status":"375×812px、ローディングロゴ表示を確認"},
+        {"slot":"SP Section一覧","path":"failure_reason: section_index_not_generated_separately","status":"SP Full Pageで代替"}
+      ],
+      "map": [
+        "PC 1200×10088px、SP 375×9213px。極端に長い余白を含む縦長構成。",
+        "ローディングロゴ → 予約条件・コンセプト → 自然体験 → 食 → 客室 → 館内・周辺案内 → アクセス・予約の順。",
+        "写真同士を密集させず、余白を滞在時間の静けさとして使う。",
+        "First Viewはローディング状態のため、主要メッセージ評価はFull Page上部を正本証拠とする。"
+      ],
+      "summary": [
+        "熱海の宿泊施設を、設備一覧ではなく静けさ・自然・食・客室の体験順で見せるブランドサイト。",
+        "ベージュ系の広い余白と大判写真を交互に置き、スクロール速度を落として高価格帯の滞在期待を形成している。",
+        "予約導線を上部と終盤に置きつつ、本文では売り込みを抑え、写真証拠によって検討を進める。"
+      ],
+      "audience": [
+        "想定ターゲット: 都市部から静かな温泉滞在を求める夫婦・カップル・少人数旅行者。",
+        "利用文脈: 宿泊先比較、記念日旅行、食と客室の品質確認。",
+        "認知段階: categoryAwareからproductAware。",
+        "主な障壁: 価格に見合う体験か、客室・食・立地が希望に合うか、予約条件が分かるか。"
+      ],
+      "flow": [
+        "ロゴと予約情報でブランドと実用情報を提示する。",
+        "苔むした自然写真で喧騒から離れる体験を視覚化する。",
+        "料理写真で滞在価値を具体化する。",
+        "客室写真を横並びで比較可能にする。",
+        "館内・周辺・アクセス情報を経て予約導線へ着地する。"
+      ],
+      "visualFlow": "中央の小さなロゴから予約情報へ進み、広い余白の後に自然・料理・客室の大判写真が順に現れる。情報密度の低さそのものが静かなブランド体験を作る。",
+      "units": [
+        {"name":"ファーストビュー","position":"ページ最上部。","role":"ブランドロゴと静かな待機時間で世界観への切り替えを作る。","observed":"白背景中央のロゴ。PC/SPともローディング状態が撮影されている。","layout":"画面中央に小さなロゴだけを置く単一焦点。","hierarchy":"ロゴ以外を排除し、ブランド認知を最優先。","style":"白、黒、ベージュ、細身の欧文ロゴ。","mediumEvaluation":"没入感は高いが、静止画証拠では訴求と予約導線を評価しにくい。","contribution":"日常画面から宿の世界観へ心理的に切り替える。","evidence":"WB-0038_SITE_PC_first_view.png、SP first view。","reuse":"ローディングをブランド体験に変える単一焦点構成。","rights":"ロゴはrights_excluded。単一焦点と余白原則のみreference_only。","confidence":"中。ローディング後のFVは未取得。"},
+        {"name":"ナビゲーション","position":"Full Page上部と予約情報帯。","role":"宿泊条件、客室、食、アクセス、予約への入口を提供する。","observed":"日付・人数等の予約条件と簡潔なリンク群。","layout":"細い水平帯でコンテンツを邪魔しない。","hierarchy":"世界観より弱く、必要時だけ見つけられる強度。","style":"淡色背景、細い文字、低彩度ボタン。","mediumEvaluation":"高級宿サイトで売り込み感を抑えながら実用導線を維持する。","contribution":"閲覧者を予約可能性の確認へ接続する。","evidence":"WB-0038_SITE_PC_full.png上部。","reuse":"世界観を壊さない低コントラスト予約帯。","rights":"固有メニュー名と予約仕様はrights_excluded。","confidence":"高。"},
+        {"name":"主要コンテンツ","position":"中盤全体。","role":"自然、食、客室、館内の順に滞在価値を説明する。","observed":"苔の森、料理、客室、館内写真と短い説明。","layout":"全幅写真と片寄せ写真を大きな余白で分離。","hierarchy":"写真を主役、文章を補助とし、章間の余白を強く取る。","style":"生成り背景、自然色、細い明朝・欧文。","mediumEvaluation":"写真品質が高い宿泊施設に適した編集的構成。","contribution":"設備スペックを感情的な宿泊期待へ翻訳する。","evidence":"PC/SP Full Page目視。","reuse":"体験順の写真編集と余白による章分け。","rights":"施設写真、料理写真、固有コピーはrights_excluded。","confidence":"高。"},
+        {"name":"証拠・事例","position":"自然・料理・客室各章。","role":"実際の環境と提供物を視覚証拠として示す。","observed":"自然の接写、料理の盛り付け、複数客室、館内写真。","layout":"大判1枚と複数比較写真を目的に応じて切り替える。","hierarchy":"象徴写真で感情を作り、客室群で比較情報を補う。","style":"自然光、低彩度、余白多めの写真トリミング。","mediumEvaluation":"レビュー文章に頼らず、実物品質を直接示す。","contribution":"高価格帯宿泊の不確実性を下げる。","evidence":"PC/SP Full Pageの写真群。","reuse":"象徴写真＋比較写真の二段証拠。","rights":"全写真はrights_excluded。構成のみreference_only。","confidence":"高。"},
+        {"name":"問い合わせ・コンバージョン","position":"上部予約帯と終盤。","role":"日程・人数確認から予約へ進める。","observed":"予約条件入力、詳細・アクセス、予約ボタン。","layout":"上部は細い機能帯、終盤は情報を読んだ後の明示CTA。","hierarchy":"本文中は控えめ、検討完了地点で強める。","style":"濃紺または低彩度色の小型ボタン。","mediumEvaluation":"ブランド没入を保ちながら予約機能を確保する。","contribution":"興味を空室確認・予約へ変換する。","evidence":"PC Full Page上部・下部。","reuse":"没入型ページの二地点予約CTA。","rights":"予約システム固有UIはrights_excluded。","confidence":"中高。"},
+        {"name":"フッター","position":"最下部。","role":"施設情報、連絡先、アクセス、規約を集約する。","observed":"ロゴ、住所、電話、リンク群、予約導線。","layout":"余白を残した多列の低密度フッター。","hierarchy":"施設連絡先を先に、補助リンクを後に配置。","style":"生成り背景、濃色文字、控えめなボタン。","mediumEvaluation":"静かなブランドトーンを最後まで維持する。","contribution":"信頼確認と再訪経路を提供する。","evidence":"PC/SP Full Page最下部。","reuse":"施設情報中心の低密度フッター。","rights":"ロゴ、住所、固有情報はrights_excluded。","confidence":"高。"}
+      ],
+      "copy": [
+        "コピー量を抑え、写真と短い章見出しで体験を想像させる。",
+        "予約条件はブランドコピーから分離し、実用情報として扱う。",
+        "価格・限定オファーを前面に出さず、滞在品質を主訴求にする。",
+        "CTAは空室確認・予約を中心に、館内・アクセス詳細を補助導線とする。"
+      ],
+      "trust": [
+        "客室、料理、自然、館内の実写が品質証拠になる。",
+        "住所・電話・予約条件を明示し、実在性を補強する。",
+        "口コミ・第三者評価は画面上で確認できず、比較検討の社会的証明は弱い。"
+      ],
+      "variants": [
+        "PCは大判写真を左右へ振り、SPは縦積みに変換する。",
+        "PC 1200×10088px、SP 375×9213px。写真順序は概ね維持。",
+        "PC/SP First Viewはローディング状態のため、ローディング後の構造差はfailure_reasonとして残す。"
+      ],
+      "visualStyle": [
+        "生成り・白・濃紺を基調に、自然・料理・室内写真の色を主役にする。",
+        "書体は細い明朝・欧文を中心にし、余白と小さな文字で静けさを演出する。",
+        "写真は全幅、片寄せ、横並びを章の役割で切り替える。",
+        "装飾を増やさず、余白と写真比率で高級感を作る。"
+      ],
+      "strengths": ["余白がブランド体験として機能する", "自然・食・客室の証拠順が明快", "PC/SPで写真の優先順位を維持する"],
+      "weaknesses": ["First Viewがローディング状態で主要訴求を確認できない", "余白が長く情報探索に時間がかかる", "価格・口コミ・比較材料が弱い"],
+      "opportunities": ["ローディング後FVを再取得して訴求を確定できる", "客室比較と予約条件へのショートカットを強化できる"],
+      "improvements": [
+        {"priority":"P0","issue":"FV証拠不足","evidence":"PC/SPともローディングロゴのみ","fix":"待機後のFVを再撮影し、主要コピー・CTAを台帳化","effect":"訴求と予約導線を正確に評価","metric":"再撮影完了・FV要素一致"},
+        {"priority":"P1","issue":"長尺で現在地を失いやすい","evidence":"章間の余白が非常に大きい","fix":"客室・食・アクセスの控えめなページ内ナビを追加","effect":"探索時間を短縮","metric":"予約情報到達率"},
+        {"priority":"P2","issue":"比較材料不足","evidence":"口コミ・評価・価格要約が画面で弱い","fix":"終盤に客室比較と第三者評価を控えめに追加","effect":"予約前の不安を軽減","metric":"空室検索開始率"}
+      ],
+      "candidates": [
+        {"id":"C01","name":"余白主導の宿泊体験ストーリー","unit":"Unit 03","kind":"story layout","value":"写真品質を生かして高級感を作れる","keep":"体験順、広い余白、写真の大小差","replace":"写真、コピー、色、施設情報","position":"Full Page中盤","slug":"quiet-stay-story","exclude":"施設写真、ロゴ、固有コピー","instruction":"余白を単なる空白にせず章の切り替えとして使う"},
+        {"id":"C02","name":"自然・食・客室の三段証拠","unit":"Unit 04","kind":"evidence sequence","value":"宿泊価値を感情と比較の両面から証明できる","keep":"象徴写真から比較写真への順序","replace":"自然、料理、客室写真","position":"中盤全体","slug":"hospitality-evidence-sequence","exclude":"全写真と施設固有情報","instruction":"各写真に一つの判断役割を持たせる"},
+        {"id":"C03","name":"低密度予約CTA","unit":"Unit 05","kind":"conversion system","value":"世界観を壊さず予約導線を保てる","keep":"上部機能帯と終盤CTAの二地点配置","replace":"予約項目、色、遷移先","position":"上部・終盤","slug":"quiet-booking-cta","exclude":"予約システム固有UI","instruction":"CTAのコントラストは確保しつつ装飾を抑える"}
+      ],
+      "rightsExcluded": "SHIJIMA ATAMIのロゴ、施設・料理・自然写真、固有コピー、予約UI",
+      "referenceOnly": "体験順、余白設計、写真比率、予約CTAの配置原則",
+      "unknowns": [
+        {"target":"ローディング後First View","reason":"post_loading_first_view_missing","impact":"主要訴求とCTAを確定できない","alternative":"PC/SP Full Page上部","next":"待機時間を延ばして再撮影"},
+        {"target":"動的状態","reason":"interaction_state_not_captured","impact":"写真遷移・予約UI操作を評価できない","alternative":"静止画","next":"操作録画と状態別撮影"},
+        {"target":"権利","reason":"asset_license_unverified","impact":"固有素材を再利用できない","alternative":"構造のみ参照","next":"制作クレジットと利用条件を確認"}
+      ],
+      "profileRows": [["サイト目的","高級宿泊体験の理解と予約","Full Page"],["情報設計","自然→食→客室→館内→予約","PC/SP Full Page"],["ナビゲーション","控えめな予約・詳細導線","上部・終盤"],["信頼形成","実写による体験証拠","写真群"],["PC/SP構造変化","横配置から縦積みへ","PC/SP比較"],["詳細分析状態","完成・再撮影課題あり","29章本文"]],
+      "transfers": [["高級旅館","余白と体験順","写真・施設情報","料金・温泉情報","写真品質が低い場合"],["ウェルネス施設","静けさ→施術→空間→予約","宿泊写真","施術根拠・スタッフ","即時価格訴求が必要な場合"],["高級レストラン","自然→料理→空間→予約","客室情報","コース・シェフ","回転率重視の場合"]],
+      "tokens": [["背景","生成り・白","長尺の静かな章区切り"],["本文","濃紺・黒","細字でも十分なコントラスト"],["写真","自然光・低彩度","実物品質を証明"],["余白","非常に大きい","高級感と閲覧速度調整"],["CTA","低彩度の濃色","予約地点だけ明確化"]],
+      "scores": {"visual":19,"clarity":16,"originality":14,"reusability":17,"learning":13,"evidence":8},
+      "scoreDecision": "詳細分析・保存対象。高級宿泊施設の写真編集と余白設計の好例だが、ローディング後FVは再取得が必要。",
+      "databaseRows": [["サイト種別","宿泊施設・ブランドサイト"],["業種","ホテル・観光"],["ページ規模","長尺"],["主要CV","空室確認・予約"],["PC/SP","両方確認済み"],["構成タイプ","体験ストーリー型"],["詳細分析状態","完成・FV再取得待ち"]],
+      "evidence": [["../01_Normal_Images/WB-0038_SITE_PC_full.png","PC Full Page","1200×10088px","目視済み"],["../01_Normal_Images/WB-0038_SITE_PC_first_view.png","PC FV","1200×900px","ローディング状態"],["../01_Normal_Images/WB-0038_SITE_SP_full.png","SP Full Page","375×9213px","目視済み"],["../01_Normal_Images/WB-0038_SITE_SP_first_view.png","SP FV","375×812px","ローディング状態"],["https://shijima-atami.com/","公式URL","到達確認","台帳一致"]],
+      "sources": ["https://sankoudesign.com/web/shijimaatami/", "https://shijima-atami.com/", "https://sankoudesign.com/"],
+      "implementationBlueprint": {"status":"daily_provisional_confirmed","path":"../03_Implementation_Blueprint/WB-0038_elementor_brain_implementation.png"}
+    },
+    {
+      "id": "WB-0041",
+      "type": "WB",
+      "assetType": "Web",
+      "label": "Webサイト",
+      "title": "GTN採用サイト | 境界線を越える挑戦へ",
+      "sourceName": "SANKOU!",
+      "sourceDetailUrl": "https://sankoudesign.com/web/gtn-recruit/",
+      "captureUrl": "https://www.gtn.co.jp/recruit",
+      "officialUrl": "https://www.gtn.co.jp/recruit",
+      "collectedAt": "2026-10-20",
+      "analysisDate": "2026-10-25",
+      "cbsStatus": "未同期・ユーザー確認待ち",
+      "outputRoot": "deep-analysis/non-lp/2026-10-25/WB-0041-gtn-recruit",
+      "selectionReason": "多国籍事業の理念を人物写真、職種別採用、事業理解、カルチャー、動画・記事証拠へ展開し、複数採用区分を一つの物語へ統合している",
+      "images": [
+        {"slot":"PC Full Page","path":"../01_Normal_Images/WB-0041_SITE_PC_full.png","status":"1270×12024px、目視確認済み"},
+        {"slot":"PC First View","path":"../01_Normal_Images/WB-0041_SITE_PC_first_view.png","status":"1200×900px、目視確認済み"},
+        {"slot":"PC Section一覧","path":"failure_reason: section_index_not_generated_separately","status":"PC Full Pageで代替"},
+        {"slot":"SP Full Page","path":"../01_Normal_Images/WB-0041_SITE_SP_full.png","status":"439×15679px、目視確認済み"},
+        {"slot":"SP First View","path":"../01_Normal_Images/WB-0041_SITE_SP_first_view.png","status":"375×812px、目視確認済み"},
+        {"slot":"SP Section一覧","path":"failure_reason: section_index_not_generated_separately","status":"SP Full Pageで代替"}
+      ],
+      "map": [
+        "PC 1270×12024px、SP 439×15679px。",
+        "理念FV → 採用区分 → 会社・事業 → 職種 → カルチャー → イベント → 動画・記事 → 募集CTA。",
+        "赤・白・黒の強いコントラストと人物写真を全章で反復する。",
+        "新卒・キャリア・アルバイトを早期に分岐し、後半で共通の企業理解へ戻す。"
+      ],
+      "summary": [
+        "外国人生活支援を行う企業の採用サイトで、境界線を越えるという理念を人物中心のビジュアルと赤いグラフィックで一貫させる。",
+        "採用区分、事業、職種、カルチャー、イベント、動画・記事を段階的に見せ、理念共感から応募判断までを支える。",
+        "実在社員と大量のコンテンツ証拠により、抽象的なグローバル理念を具体的な働き方へ変換している。"
+      ],
+      "audience": ["想定ターゲット: 新卒、キャリア、アルバイトの求職者、グローバル事業に関心のある人。","利用文脈: 企業研究、職種比較、カルチャー確認、応募。","認知段階: problemAwareからproductAware。","主な障壁: 事業の複雑さ、職種の違い、自分が活躍できるか。"],
+      "flow": ["人物写真と理念コピーで共感を作る。","3つの採用区分へ早期分岐する。","会社と事業の全体像を説明する。","職種別人物・仕事内容で自己適合を判断させる。","カルチャー、イベント、動画・記事で実在性を補強する。","募集職種と応募CTAへ着地する。"],
+      "visualFlow": "大判人物写真と白い理念コピーから赤い曲線帯へ視線を落とし、白背景の説明章、赤い職種カード、暗色のコンテンツライブラリを経て募集CTAへ進む。",
+      "units": [
+        {"name":"ファーストビュー","position":"最上部。","role":"グローバル事業の理念と働く人物像を同時提示する。","observed":"社員2名の会話写真、境界線をなくそうという大型コピー、赤い円・曲線。","layout":"全幅写真に大きな白文字とヘッダーを重ねる。","hierarchy":"人物→理念コピー→採用メニュー。","style":"赤、白、黒、実写、太いゴシック。","mediumEvaluation":"採用サイトで会社説明より価値観を先に届ける。","contribution":"理念共感と自己投影を作る。","evidence":"WB-0041_SITE_PC_first_view.png、SP first view。","reuse":"人物会話写真＋理念コピー＋採用区分ナビ。","rights":"人物写真、ロゴ、固有コピーはrights_excluded。","confidence":"高。"},
+        {"name":"ナビゲーション","position":"上端。","role":"会社・事業・環境と採用区分を分離して案内する。","observed":"日本語切替、企業理解リンク、新卒・キャリア・アルバイト、エントリー。","layout":"白い横長ナビと右上の赤い行動ボタン。","hierarchy":"採用区分を濃色ボタン、エントリーを赤で最優先。","style":"白地、黒文字、赤アクセント。","mediumEvaluation":"対象別の入口が多い採用サイトで迷いを減らす。","contribution":"自分向け情報と応募へ短く接続する。","evidence":"PC First View上部。","reuse":"共通理解ナビ＋対象別採用タブ＋主CTA。","rights":"ロゴ・固有メニュー名はrights_excluded。","confidence":"高。"},
+        {"name":"主要コンテンツ","position":"中盤。","role":"会社、事業、職種、カルチャーを順に理解させる。","observed":"ABOUT US、BUSINESS、職種カード、CULTURE、EVENTS。","layout":"全幅帯、左右交互カード、3列職種、写真カードを反復。","hierarchy":"英字大見出し→日本語要約→写真・カード→詳細CTA。","style":"白・薄灰、赤、黒、角丸カード。","mediumEvaluation":"長尺でも章名と色の反復で現在地を保つ。","contribution":"理念を仕事内容と制度へ具体化する。","evidence":"PC/SP Full Page。","reuse":"理念→事業→職種→文化の採用情報骨格。","rights":"社員写真、固有事業説明はrights_excluded。","confidence":"高。"},
+        {"name":"証拠・事例","position":"全体。","role":"実在社員、イベント、動画、記事で文化と仕事を証明する。","observed":"人物写真、インタビュー、イベントカード、YouTube、記事サムネイル。","layout":"人物カード、イベント3列、暗色ライブラリ内のサムネイル群。","hierarchy":"顔とタイトルを先に、説明とリンクを後に読む。","style":"多色写真を赤・白・黒のフレームで統一。","mediumEvaluation":"採用候補者が複数の証拠形式から理解できる。","contribution":"文化・仕事内容への不安を下げる。","evidence":"PC Full Page中盤以降。","reuse":"社員・イベント・動画・記事の多層証拠。","rights":"全人物・動画サムネイル・記事画像はrights_excluded。","confidence":"高。"},
+        {"name":"問い合わせ・コンバージョン","position":"上部、職種章、最下部。","role":"新卒・キャリア・アルバイトの募集情報と応募へ接続する。","observed":"採用区分ボタン、職種詳細CTA、JOBS帯、エントリー。","layout":"対象別ボタンを反復し、終盤に大きな募集帯を置く。","hierarchy":"対象選択→仕事内容確認→募集一覧→応募。","style":"赤い面、白文字、黒い補助ボタン。","mediumEvaluation":"複数採用区分でも行動を混同しにくい。","contribution":"自己適合の確認後に応募へ着地させる。","evidence":"PC/SP Full Page。","reuse":"対象別採用ファネルと反復CTA。","rights":"募集文言・企業固有条件はrights_excluded。","confidence":"高。"},
+        {"name":"フッター","position":"最下部。","role":"企業・採用リンク、SNS、認証情報を集約する。","observed":"赤背景、白ロゴ、複数リンク列、SNS、認証マーク。","layout":"赤い全幅面にリンクを多列配置。","hierarchy":"ロゴと主要カテゴリを先に、補助情報を下段へ。","style":"赤、白、細い罫線。","mediumEvaluation":"強いブランド色で応募体験を締める。","contribution":"再訪と企業信頼を支える。","evidence":"PC Full Page最下部。","reuse":"採用カテゴリ別多列フッター。","rights":"ロゴ、認証マーク、固有リンクはrights_excluded。","confidence":"高。"}
+      ],
+      "copy": ["理念コピーは行動を促す宣言型で、事業の社会的役割と採用メッセージを兼ねる。","章見出しは英字と日本語補足を組み合わせ、スキャンしやすい。","職種・イベント・記事は具体名で選択を促す。","CTAは採用区分ごとに分離し、最終的に募集職種・エントリーへ集約する。"],
+      "trust": ["社員の顔と仕事内容、イベント、動画・記事が実在性を作る。","複数事業・拠点・認証情報が企業規模を補強する。","募集条件の要約がFV付近にないため、条件重視の候補者には探索負荷が残る。"],
+      "variants": ["PCは横並びカードと左右交互の写真帯、SPは縦積みで順序を維持する。","PC 1270×12024px、SP 439×15679px。","SPではナビを圧縮し、人物写真・見出し・CTAを一列化する。"],
+      "visualStyle": ["鮮やかな赤をブランド軸に、白・黒・薄灰で情報量を整理する。","太いゴシック見出しと大判英字章名で勢いを作る。","人物写真を主役にし、赤い円・曲線で国境や接続の概念を反復する。","暗色ライブラリで動画・記事群を一つの情報領域にまとめる。"],
+      "strengths": ["理念と人物が一体化したFV", "採用区分と職種の分岐が明確", "社員・イベント・動画・記事の証拠が厚い"],
+      "weaknesses": ["情報量が多く長尺", "採用条件への直達性が弱い", "赤い強調が多くCTA優先度が競合しやすい"],
+      "opportunities": ["希望職種・雇用形態の簡易診断を追加できる", "募集条件と選考フローを上部で要約できる"],
+      "improvements": [
+        {"priority":"P0","issue":"募集条件への到達が遅い","evidence":"理念・事業・文化章が長い","fix":"採用区分別に勤務地・職種・雇用形態の要約をFV直下へ追加","effect":"応募可能性を早期判断","metric":"募集要項到達率"},
+        {"priority":"P1","issue":"長尺で現在地を失う","evidence":"多数の章とコンテンツ群","fix":"採用区分に連動した追従目次を追加","effect":"回遊性向上","metric":"中盤離脱率"},
+        {"priority":"P2","issue":"赤CTAの競合","evidence":"赤い面とボタンを全体で反復","fix":"閲覧CTAと応募CTAで色・形を分ける","effect":"主行動の識別向上","metric":"応募CTAクリック率"}
+      ],
+      "candidates": [
+        {"id":"C01","name":"人物会話型理念ヒーロー","unit":"Unit 01","kind":"hero","value":"抽象理念を働く人物へ結びつけられる","keep":"人物関係、理念コピー、対象別ナビ","replace":"写真、コピー、色、ロゴ","position":"FV全体","slug":"people-mission-hero","exclude":"人物写真、ロゴ、固有コピー","instruction":"人物の視線とコピー領域を競合させない"},
+        {"id":"C02","name":"採用区分別三段ファネル","unit":"Unit 02・05","kind":"conversion system","value":"複数雇用形態を混同せず案内できる","keep":"対象選択、職種確認、応募の三段階","replace":"区分名、条件、遷移先","position":"上部から終盤","slug":"recruitment-segment-funnel","exclude":"募集条件・企業固有文言","instruction":"選択した区分をページ内で維持する"},
+        {"id":"C03","name":"採用証拠ライブラリ","unit":"Unit 04","kind":"evidence library","value":"文化と仕事を複数形式で証明できる","keep":"社員、イベント、動画、記事の分類","replace":"全サムネイル、人物、タイトル","position":"中盤以降","slug":"recruitment-proof-library","exclude":"人物・動画・記事素材","instruction":"各証拠の判断目的を明記する"}
+      ],
+      "rightsExcluded": "GTNロゴ、社員写真、動画・記事サムネイル、固有コピー、募集情報",
+      "referenceOnly": "理念から応募までの情報順、採用区分分岐、証拠形式の組み合わせ",
+      "unknowns": [
+        {"target":"Section一覧画像","reason":"section_index_not_generated_separately","impact":"境界のピクセル実測不可","alternative":"PC/SP Full Page","next":"必要時にSection画像生成"},
+        {"target":"動画・メニュー状態","reason":"interaction_state_not_captured","impact":"再生・展開操作を評価不可","alternative":"静止画","next":"操作録画と状態別撮影"},
+        {"target":"権利","reason":"asset_license_unverified","impact":"人物・動画素材を再利用不可","alternative":"構造のみ参照","next":"制作クレジットと利用条件確認"}
+      ],
+      "profileRows": [["サイト目的","企業理解と採用応募","FV・JOBS"],["情報設計","理念→区分→事業→職種→文化→証拠→応募","Full Page"],["ナビゲーション","企業理解と対象別採用を分離","Header"],["信頼形成","人物・イベント・動画・記事","Unit 04"],["PC/SP構造変化","横組みから縦積みへ","PC/SP比較"],["詳細分析状態","完成・検証済み","29章本文"]],
+      "transfers": [["グローバルSaaS採用","理念→職種→文化→応募","人物・事業名","技術・制度証拠","少人数採用の場合"],["多店舗企業採用","雇用形態別分岐","グローバル表現","勤務地・店舗検索","単一職種の場合"],["NPO採用","社会使命と人物証拠","企業事業","活動成果・参加条件","即時ボランティア募集のみの場合"]],
+      "tokens": [["背景","白・薄灰・黒","章の役割で切替"],["主色","鮮やかな赤","理念・応募・強調に限定"],["本文","黒・濃灰","長文可読性"],["写真","人物中心の実写","仕事と文化の証拠"],["形状","円・曲線・角丸カード","接続と多様性の反復"]],
+      "scores": {"visual":19,"clarity":18,"originality":13,"reusability":19,"learning":14,"evidence":10},
+      "scoreDecision": "詳細分析・保存対象。複数採用区分と多層証拠を統合する採用サイトとして今週最上位。",
+      "databaseRows": [["サイト種別","採用サイト"],["業種","生活支援・グローバルサービス"],["ページ規模","長尺"],["主要CV","募集職種確認・エントリー"],["PC/SP","両方確認済み"],["構成タイプ","理念共感型採用ファネル"],["詳細分析状態","完成・検証済み"]],
+      "evidence": [["../01_Normal_Images/WB-0041_SITE_PC_full.png","PC Full Page","1270×12024px","目視済み"],["../01_Normal_Images/WB-0041_SITE_PC_first_view.png","PC FV","1200×900px","目視済み"],["../01_Normal_Images/WB-0041_SITE_SP_full.png","SP Full Page","439×15679px","目視済み"],["../01_Normal_Images/WB-0041_SITE_SP_first_view.png","SP FV","375×812px","目視済み"],["https://www.gtn.co.jp/recruit","公式URL","到達確認","台帳一致"]],
+      "sources": ["https://sankoudesign.com/web/gtn-recruit/", "https://www.gtn.co.jp/recruit", "https://sankoudesign.com/"],
+      "implementationBlueprint": {"status":"daily_provisional_confirmed","path":"../03_Implementation_Blueprint/WB-0041_elementor_brain_implementation.png"}
+    },
+    {
+      "id": "WB-0044",
+      "type": "WB",
+      "assetType": "Web",
+      "label": "Webサイト",
+      "title": "八王子糖尿病内科クリニック",
+      "sourceName": "SANKOU!",
+      "sourceDetailUrl": "https://sankoudesign.com/web/hachiojidiabetesclinic/",
+      "captureUrl": "https://hachioji-dm.com/",
+      "officialUrl": "https://hachioji-dm.com/",
+      "collectedAt": "2026-10-22",
+      "analysisDate": "2026-10-25",
+      "cbsStatus": "未同期・ユーザー確認待ち",
+      "outputRoot": "deep-analysis/non-lp/2026-10-25/WB-0044-hachioji-diabetes-clinic",
+      "selectionReason": "医療機関に必要な専門性、診療内容、疾患理解、受診フロー、診療時間、電話・アクセスを、親しみやすい図解と明確な実用導線で統合している",
+      "images": [
+        {"slot":"PC Full Page","path":"../01_Normal_Images/WB-0044_SITE_PC_full.png","status":"1200×7228px、目視確認済み"},
+        {"slot":"PC First View","path":"../01_Normal_Images/WB-0044_SITE_PC_first_view.png","status":"1200×900px、目視確認済み"},
+        {"slot":"PC Section一覧","path":"failure_reason: section_index_not_generated_separately","status":"PC Full Pageで代替"},
+        {"slot":"SP Full Page","path":"../01_Normal_Images/WB-0044_SITE_SP_full.png","status":"375×9293px、目視確認済み"},
+        {"slot":"SP First View","path":"../01_Normal_Images/WB-0044_SITE_SP_first_view.png","status":"375×812px、目視確認済み"},
+        {"slot":"SP Section一覧","path":"failure_reason: section_index_not_generated_separately","status":"SP Full Pageで代替"}
+      ],
+      "map": ["PC 1200×7228px、SP 375×9293px。","受付写真＋診療時間・アクセス・電話 → お知らせ → 診療内容 → 糖尿病理解 → 診療フロー → 診療時間・カレンダー → 連絡先。","黄・青・緑の院内グラフィックをサイト全体へ展開する。","電話番号と診療時間を複数地点で確認できる。"],
+      "summary": ["糖尿病専門クリニックのサイトで、明るい院内写真を入口に、診療内容、疾患理解、受診フロー、診療時間を順に説明する。","人物イラストと黄色い工程カードで専門情報を平易にし、電話・時間・アクセスを視覚的に分離する。","医療の信頼性と受診時の実務情報を一ページ内で両立している。"],
+      "audience": ["想定ターゲット: 糖尿病・生活習慣病の受診を検討する患者と家族、紹介元医療機関。","利用文脈: 症状・診療内容確認、初診準備、診療日確認、電話問い合わせ。","認知段階: problemAwareからproductAware。","主な障壁: 専門性への不安、受診手順、診療日、アクセス。"],
+      "flow": ["院内写真と専門医表記で安心・専門性を提示する。","電話・診療時間・アクセスをFV内で即確認させる。","診療内容を人体図解で一覧化する。","糖尿病の仕組みを段階図で理解させる。","受診フローを4ステップで具体化する。","診療時間・カレンダー・連絡先へ着地する。"],
+      "visualFlow": "ロゴと院内写真から下部固定風の電話・診療時間帯へ視線を集め、お知らせ、人体図、病態図、黄色い4ステップ、濃灰の診療カレンダーへ進む。",
+      "units": [
+        {"name":"ファーストビュー","position":"最上部。","role":"清潔な院内環境、専門性、電話・診療時間・アクセスを即時提示する。","observed":"受付写真、医院名、専門医表記、診療時間・アクセス・電話の浮遊パネル。","layout":"上部ヘッダー＋大判院内写真＋下中央の連絡パネル。","hierarchy":"院内写真→医院名→電話番号→診療時間・アクセス。","style":"白、木目、緑、黄、青、角丸。","mediumEvaluation":"医療サイトで安心感と緊急実用情報を同時に出す。","contribution":"受診先としての信頼と連絡行動を作る。","evidence":"WB-0044_SITE_PC_first_view.png、SP first view。","reuse":"実在空間写真＋連絡三要素のFV。","rights":"院内写真、ロゴ、電話番号はrights_excluded。","confidence":"高。"},
+        {"name":"ナビゲーション","position":"上端。","role":"クリニック紹介、診療内容、疾患理解、フロー、FAQへ案内する。","observed":"二列リンク群、採用・募集の補助ボタン。","layout":"ロゴ左、情報リンク中央、資格・補助CTA右。","hierarchy":"患者向け主要リンクを中央にまとめる。","style":"白地、濃灰文字、細い枠線。","mediumEvaluation":"情報量の多い医療サイトでも主要目的を分類できる。","contribution":"症状理解から来院情報へ短く接続する。","evidence":"PC First View上部。","reuse":"医療情報分類型ヘッダー。","rights":"資格表記・固有リンクはrights_excluded。","confidence":"高。"},
+        {"name":"主要コンテンツ","position":"中盤。","role":"診療内容、糖尿病の仕組み、受診フローを理解させる。","observed":"人体イラスト、症状・診療項目、脳・血管・人物の病態図、4工程カード。","layout":"中央図解＋左右説明、横並び因果図、4列ステップ。","hierarchy":"章見出し→図解→短文→詳細ボタン。","style":"白、黄、青、緑、フラットイラスト。","mediumEvaluation":"専門情報を視覚化し、読解負荷を下げる。","contribution":"自分の症状と受診手順を理解させる。","evidence":"PC/SP Full Page。","reuse":"中央図解と段階説明を組み合わせる医療教育構成。","rights":"図版・医療文章はrights_excluded。","confidence":"高。"},
+        {"name":"証拠・事例","position":"上部・下部。","role":"専門資格、院内環境、診療時間、カレンダーで実在性と運用情報を示す。","observed":"専門医表記、受付写真、診療表、月間カレンダー、住所・電話。","layout":"資格はヘッダー、実用証拠は濃灰の大型情報面。","hierarchy":"専門性→受診可能日→連絡先。","style":"白・木目と濃灰面の対比。","mediumEvaluation":"症例写真に頼らず、資格と運用透明性で信頼を作る。","contribution":"受診不安と空振り来院を減らす。","evidence":"PC Full Page上部・終盤。","reuse":"資格証拠＋運用証拠の二層構成。","rights":"資格名称、院内写真、住所はrights_excluded。","confidence":"高。"},
+        {"name":"問い合わせ・コンバージョン","position":"FV下部と終盤。","role":"電話問い合わせ、診療時間確認、アクセス確認へ接続する。","observed":"大きな電話番号、診療時間、アクセス、カレンダー。","layout":"FVでは一体型パネル、終盤では大型情報面とフッターカード。","hierarchy":"電話を最大、時間・アクセスを補助。","style":"白い角丸パネル、濃灰面、黄・青の状態色。","mediumEvaluation":"予約フォームがなくても電話受診導線が明確。","contribution":"閲覧を問い合わせ・来院準備へ変換する。","evidence":"PC/SP Full Page。","reuse":"電話中心の医療コンバージョン体系。","rights":"電話番号・住所・診療日データはrights_excluded。","confidence":"高。"},
+        {"name":"フッター","position":"最下部。","role":"医院情報、連絡先、リンク、診療案内を再確認させる。","observed":"ロゴ、住所、電話、診療案内、リンク。","layout":"左にロゴ・電話、右に説明・リンク。","hierarchy":"医院名と電話を先に、補足情報を後に読む。","style":"白背景、黄青ロゴ、濃灰文字。","mediumEvaluation":"医療機関の法定・実務情報を整理する。","contribution":"最終確認と再訪を支える。","evidence":"PC/SP Full Page最下部。","reuse":"連絡先主役の医療フッター。","rights":"ロゴ、住所、電話はrights_excluded。","confidence":"高。"}
+      ],
+      "copy": ["見出しは診療内容、糖尿病について、診療の流れなど説明型で迷いを減らす。","専門用語は図解と短文へ分割する。","オファーではなく、専門性・診療可能領域・受診手順を価値として示す。","CTAは電話、時間、アクセス、詳細閲覧。"],
+      "trust": ["専門医資格と院内写真が専門性・実在性を示す。","診療時間表とカレンダーが運用透明性を作る。","症例・患者の声は見当たらず、プライバシー配慮と引き換えに社会的証明は弱い。"],
+      "variants": ["PCは人体図を中央に左右説明、SPは説明を縦積みにする。","PC 1200×7228px、SP 375×9293px。","SPでは電話・診療時間を画面幅に合わせて積み、図解の順序を維持する。"],
+      "visualStyle": ["白と明るい木目を基調に、黄・青・緑を案内色として使う。","丸い花形ロゴと人体イラストで専門医療の硬さを下げる。","濃灰の診療情報面で実用情報を明確に区切る。","見出しは太いゴシック、本文は小さめでも余白を確保する。"],
+      "strengths": ["医療専門性と親しみの両立", "電話・時間・アクセスが即時確認できる", "疾患理解と受診フローの図解が明快"],
+      "weaknesses": ["FVに患者ベネフィットの言語化が少ない", "電話中心でWeb予約導線がない", "長い診療情報を小さな文字で読む箇所がある"],
+      "opportunities": ["初診準備チェックリストを追加できる", "診療内容別の相談入口やWeb仮予約を検討できる"],
+      "improvements": [
+        {"priority":"P0","issue":"初診準備の情報が分散","evidence":"診療内容・フロー・時間が別章","fix":"保険証・紹介状・検査・所要時間の初診チェックをCTA前に追加","effect":"電話問い合わせと来院不備を削減","metric":"初診関連問い合わせ件数"},
+        {"priority":"P1","issue":"電話のみの行動導線","evidence":"主要CTAが電話番号","fix":"対応可能ならWeb問い合わせ・仮予約を併設","effect":"診療時間外の離脱を減らす","metric":"時間外問い合わせ数"},
+        {"priority":"P2","issue":"小文字の診療表","evidence":"濃灰面に情報が集中","fix":"曜日・休診を色と余白で再整理しSP専用表を用意","effect":"誤読を減らす","metric":"診療時間ページ滞在・電話確認数"}
+      ],
+      "candidates": [
+        {"id":"C01","name":"院内写真＋連絡三要素FV","unit":"Unit 01・05","kind":"medical hero","value":"安心感と来院実務を同時に提示できる","keep":"空間写真、電話、時間、アクセスの役割分担","replace":"写真、番号、色、ロゴ","position":"FV全体","slug":"clinic-contact-hero","exclude":"院内写真、ロゴ、電話番号","instruction":"連絡パネルが写真の重要部を隠さないよう配置する"},
+        {"id":"C02","name":"中央人体図＋左右診療項目","unit":"Unit 03","kind":"medical information","value":"複数診療領域を身体との関係で理解できる","keep":"中央図解、左右分類、詳細リンク","replace":"図版、診療項目、説明","position":"診療内容章","slug":"body-service-map","exclude":"人体イラスト、医療文章","instruction":"項目数を左右で均衡させSPでは意味順に並べる"},
+        {"id":"C03","name":"黄色4ステップ受診フロー","unit":"Unit 03","kind":"process","value":"初診の不安を段階化して下げられる","keep":"番号、アイコン、短文、矢印","replace":"工程、色、アイコン","position":"診療フロー章","slug":"clinic-visit-flow","exclude":"固有図版・文章","instruction":"各ステップの必要物と所要時間を追加できる余白を残す"}
+      ],
+      "rightsExcluded": "医院ロゴ、院内写真、人体・病態イラスト、専門資格表記、固有医療文章、電話・住所",
+      "referenceOnly": "医療情報の分類、図解配置、受診フロー、電話・時間・アクセスの役割分担",
+      "unknowns": [
+        {"target":"Section一覧画像","reason":"section_index_not_generated_separately","impact":"境界のピクセル実測不可","alternative":"PC/SP Full Page","next":"必要時にSection画像生成"},
+        {"target":"アクセシビリティ","reason":"keyboard_and_screen_reader_unverified","impact":"医療情報の操作性を断定不可","alternative":"静止画と見た目","next":"キーボード・見出し構造・代替テキスト確認"},
+        {"target":"権利・医療表現","reason":"asset_license_and_medical_review_unverified","impact":"図版・文章を再利用不可","alternative":"構造のみ参照","next":"素材権利と医療監修を確認"}
+      ],
+      "profileRows": [["サイト目的","疾患理解・受診準備・問い合わせ","全体構成"],["情報設計","安心→診療→疾患→フロー→時間→連絡","Full Page"],["ナビゲーション","患者目的別分類","Header"],["信頼形成","専門資格・院内写真・運用情報","Unit 04"],["PC/SP構造変化","中央図解から縦積みへ","PC/SP比較"],["詳細分析状態","完成・検証済み","29章本文"]],
+      "transfers": [["歯科医院","空間写真＋診療項目＋来院フロー","糖尿病情報","治療別情報・予約","緊急診療中心の場合"],["健診センター","検査図解＋4ステップ","院内写真","コース比較・所要時間","完全オンラインの場合"],["介護相談窓口","安心写真＋支援内容＋相談フロー","医療図解","対象条件・費用","即時購入型の場合"]],
+      "tokens": [["背景","白・明るい木目","清潔感と安心"],["案内色","黄・青・緑","状態・分類へ一貫適用"],["実用面","濃灰","診療時間・カレンダーの区切り"],["形状","角丸・円形","医療の硬さを下げる"],["CTA","白パネル＋濃文字","電話・時間・アクセスを明確化"]],
+      "scores": {"visual":18,"clarity":20,"originality":11,"reusability":20,"learning":15,"evidence":10},
+      "scoreDecision": "詳細分析・保存対象。医療サイトの信頼形成、疾患教育、受診実務を統合する汎用性の高い事例。",
+      "databaseRows": [["サイト種別","医療機関サイト"],["業種","糖尿病内科・クリニック"],["ページ規模","長尺"],["主要CV","電話問い合わせ・来院"],["PC/SP","両方確認済み"],["構成タイプ","医療教育・受診支援型"],["詳細分析状態","完成・検証済み"]],
+      "evidence": [["../01_Normal_Images/WB-0044_SITE_PC_full.png","PC Full Page","1200×7228px","目視済み"],["../01_Normal_Images/WB-0044_SITE_PC_first_view.png","PC FV","1200×900px","目視済み"],["../01_Normal_Images/WB-0044_SITE_SP_full.png","SP Full Page","375×9293px","目視済み"],["../01_Normal_Images/WB-0044_SITE_SP_first_view.png","SP FV","375×812px","目視済み"],["https://hachioji-dm.com/","公式URL","到達確認","台帳一致"]],
+      "sources": ["https://sankoudesign.com/web/hachiojidiabetesclinic/", "https://hachioji-dm.com/", "https://sankoudesign.com/"],
+      "implementationBlueprint": {"status":"daily_provisional_confirmed","path":"../03_Implementation_Blueprint/WB-0044_elementor_brain_implementation.png"}
+    }
+  ]
+}

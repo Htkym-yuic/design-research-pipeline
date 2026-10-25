@@ -1,47 +1,47 @@
 {
   "schema_version": "drs-deep-selection-1.0",
-  "runDate": "2026-10-18",
+  "runDate": "2026-10-25",
   "weeklyTop3": [
     {
-      "id": "WB-0033",
+      "id": "WB-0041",
       "status": "selected_for_non_lp_deep_analysis",
-      "reason": "地域企業支援を、共感・地域理解・4段階の参加導線へ整理した情報設計が、B2B・自治体案件へ転用しやすい"
+      "reason": "多国籍事業の理念を人物、職種、文化、多層証拠へ展開し、複数採用区分を一つの物語へ統合している"
     },
     {
-      "id": "WB-0036",
+      "id": "WB-0044",
       "status": "selected_for_non_lp_deep_analysis",
-      "reason": "番組実績を主役にしながら、会社理解・海外展開・制作体制・採用へ接続する強いエンタメ企業サイトである"
+      "reason": "医療の専門性、疾患理解、受診フロー、診療時間、連絡導線を親しみやすい図解で統合している"
     },
     {
-      "id": "WB-0037",
+      "id": "WB-0038",
       "status": "selected_for_non_lp_deep_analysis",
-      "reason": "地域性、仕事理解、人物紹介、採用CTAを一貫した自然モチーフで統合し、地域採用サイトの学習価値が高い"
+      "reason": "自然、食、客室、予約を広い余白と写真編集で静かな滞在物語へ統合している"
     }
   ],
   "selected": [
     {
-      "id": "WB-0033",
+      "id": "WB-0041",
       "type": "WB",
-      "title": "ふくしま LiNK NAVi | 企業がふくしまと出会うためのナビゲーション",
+      "title": "GTN採用サイト | 境界線を越える挑戦へ",
       "source": "SANKOU!",
-      "url": "https://linknavi.fukushima.jp/",
-      "reason": "PC/SP画像と実装一次設計が揃い、地域企業支援の情報設計と段階的な参加導線を学習できる"
+      "url": "https://www.gtn.co.jp/recruit",
+      "reason": "PC/SP画像と実装一次設計が揃い、理念から複数採用区分、職種、文化、応募までを分析できる"
     },
     {
-      "id": "WB-0036",
+      "id": "WB-0044",
       "type": "WB",
-      "title": "株式会社極東電視台",
+      "title": "八王子糖尿病内科クリニック",
       "source": "SANKOU!",
-      "url": "https://www.far-eastern.co.jp/",
-      "reason": "PC/SP画像が揃い、実績訴求・会社理解・採用導線を一つの世界観で統合する方法を分析できる"
+      "url": "https://hachioji-dm.com/",
+      "reason": "PC/SP画像が揃い、医療の信頼形成、疾患教育、受診フロー、電話・時間・アクセスを分析できる"
     },
     {
-      "id": "WB-0037",
+      "id": "WB-0038",
       "type": "WB",
-      "title": "馬路村森林組合 | 馬路の森で、自然とはたらく。",
+      "title": "SHIJIMA ATAMI | 都会の喧騒から離れたホテル",
       "source": "SANKOU!",
-      "url": "https://umaji-shinrin.com/",
-      "reason": "PC/SP画像が揃い、地域性・仕事理解・人物紹介・採用導線の統合を分析できる"
+      "url": "https://shijima-atami.com/",
+      "reason": "PC/SP画像が揃い、写真編集、余白設計、自然・食・客室・予約の体験順を分析できる"
     }
   ],
   "excluded": []

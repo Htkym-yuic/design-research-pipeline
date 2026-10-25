@@ -1,0 +1,19 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0041",
+  "media_type": "WB",
+  "asset_type": "Web",
+  "title": "GTN採用サイト | 境界線を越える挑戦へ",
+  "source_name": "SANKOU!",
+  "source_detail_url": "https://sankoudesign.com/web/gtn-recruit/",
+  "capture_url": "https://www.gtn.co.jp/recruit",
+  "official_url": "https://www.gtn.co.jp/recruit",
+  "analysis_status": "completed_and_validated",
+  "analysis_score": 93,
+  "notion_status": "pending_sync",
+  "implementation_blueprint_status": "daily_provisional_confirmed",
+  "implementation_blueprint_path": "../03_Implementation_Blueprint/WB-0041_elementor_brain_implementation.png",
+  "dropbox_status": "pending_sync",
+  "cbs_status": "candidate_pending_user_approval",
+  "generated_at": "2026-10-25T13:05:00.000Z"
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0044",
+  "mode": "analysis",
+  "selected_for_deep_analysis": true,
+  "selection_reason": "医療機関に必要な専門性、診療内容、疾患理解、受診フロー、診療時間、電話・アクセスを、親しみやすい図解と明確な実用導線で統合している",
+  "checks": {
+    "first_line": "Yes",
+    "chapters": "Yes",
+    "unit_headings": "Yes",
+    "unit_fields": "Yes",
+    "image_slots": "Yes",
+    "image_evidence": "Yes",
+    "candidate_parity": "Yes",
+    "rights": "Yes",
+    "unknowns": "Yes",
+    "sources": "Yes",
+    "run_record": "Yes",
+    "analysis_complete": "Yes"
+  },
+  "implementation_blueprint": {
+    "status": "daily_provisional_confirmed",
+    "path": "../03_Implementation_Blueprint/WB-0044_elementor_brain_implementation.png"
+  },
+  "notion": "pending_sync",
+  "dropbox": "pending_sync",
+  "cbs": "not_synced_user_approval_required"
+}

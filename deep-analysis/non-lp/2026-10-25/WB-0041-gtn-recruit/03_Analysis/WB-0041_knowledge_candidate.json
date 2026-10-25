@@ -1,0 +1,136 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0041",
+  "media_type": "WB",
+  "title": "GTN採用サイト | 境界線を越える挑戦へ",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://sankoudesign.com/web/gtn-recruit/",
+    "capture_url": "https://www.gtn.co.jp/recruit",
+    "official_url": "https://www.gtn.co.jp/recruit"
+  },
+  "analysis": {
+    "summary": "外国人生活支援を行う企業の採用サイトで、境界線を越えるという理念を人物中心のビジュアルと赤いグラフィックで一貫させる。 採用区分、事業、職種、カルチャー、イベント、動画・記事を段階的に見せ、理念共感から応募判断までを支える。 実在社員と大量のコンテンツ証拠により、抽象的なグローバル理念を具体的な働き方へ変換している。",
+    "score": {
+      "visual": 19,
+      "clarity": 18,
+      "originality": 13,
+      "reusability": 19,
+      "learning": 14,
+      "evidence": 10,
+      "total": 93
+    },
+    "units": [
+      {
+        "name": "ファーストビュー",
+        "role": "グローバル事業の理念と働く人物像を同時提示する。",
+        "reuse": "人物会話写真＋理念コピー＋採用区分ナビ。",
+        "evidence": "WB-0041_SITE_PC_first_view.png、SP first view。"
+      },
+      {
+        "name": "ナビゲーション",
+        "role": "会社・事業・環境と採用区分を分離して案内する。",
+        "reuse": "共通理解ナビ＋対象別採用タブ＋主CTA。",
+        "evidence": "PC First View上部。"
+      },
+      {
+        "name": "主要コンテンツ",
+        "role": "会社、事業、職種、カルチャーを順に理解させる。",
+        "reuse": "理念→事業→職種→文化の採用情報骨格。",
+        "evidence": "PC/SP Full Page。"
+      },
+      {
+        "name": "証拠・事例",
+        "role": "実在社員、イベント、動画、記事で文化と仕事を証明する。",
+        "reuse": "社員・イベント・動画・記事の多層証拠。",
+        "evidence": "PC Full Page中盤以降。"
+      },
+      {
+        "name": "問い合わせ・コンバージョン",
+        "role": "新卒・キャリア・アルバイトの募集情報と応募へ接続する。",
+        "reuse": "対象別採用ファネルと反復CTA。",
+        "evidence": "PC/SP Full Page。"
+      },
+      {
+        "name": "フッター",
+        "role": "企業・採用リンク、SNS、認証情報を集約する。",
+        "reuse": "採用カテゴリ別多列フッター。",
+        "evidence": "PC Full Page最下部。"
+      }
+    ]
+  },
+  "strengths": [
+    "理念と人物が一体化したFV",
+    "採用区分と職種の分岐が明確",
+    "社員・イベント・動画・記事の証拠が厚い"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "募集条件への到達が遅い",
+      "evidence": "理念・事業・文化章が長い",
+      "fix": "採用区分別に勤務地・職種・雇用形態の要約をFV直下へ追加",
+      "effect": "応募可能性を早期判断",
+      "metric": "募集要項到達率"
+    },
+    {
+      "priority": "P1",
+      "issue": "長尺で現在地を失う",
+      "evidence": "多数の章とコンテンツ群",
+      "fix": "採用区分に連動した追従目次を追加",
+      "effect": "回遊性向上",
+      "metric": "中盤離脱率"
+    },
+    {
+      "priority": "P2",
+      "issue": "赤CTAの競合",
+      "evidence": "赤い面とボタンを全体で反復",
+      "fix": "閲覧CTAと応募CTAで色・形を分ける",
+      "effect": "主行動の識別向上",
+      "metric": "応募CTAクリック率"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "人物会話型理念ヒーロー",
+      "keep": "人物関係、理念コピー、対象別ナビ",
+      "replace": "写真、コピー、色、ロゴ"
+    },
+    {
+      "id": "C02",
+      "name": "採用区分別三段ファネル",
+      "keep": "対象選択、職種確認、応募の三段階",
+      "replace": "区分名、条件、遷移先"
+    },
+    {
+      "id": "C03",
+      "name": "採用証拠ライブラリ",
+      "keep": "社員、イベント、動画、記事の分類",
+      "replace": "全サムネイル、人物、タイトル"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "GTNロゴ、社員写真、動画・記事サムネイル、固有コピー、募集情報",
+    "reusable": "理念から応募までの情報順、採用区分分岐、証拠形式の組み合わせ"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/WB-0041_SITE_PC_full.png",
+      "../01_Normal_Images/WB-0041_SITE_PC_first_view.png",
+      "../01_Normal_Images/WB-0041_SITE_SP_full.png",
+      "../01_Normal_Images/WB-0041_SITE_SP_first_view.png",
+      "https://www.gtn.co.jp/recruit"
+    ],
+    "unknowns": [
+      "section_index_not_generated_separately",
+      "interaction_state_not_captured",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

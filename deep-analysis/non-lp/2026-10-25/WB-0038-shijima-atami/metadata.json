@@ -1,0 +1,19 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0038",
+  "media_type": "WB",
+  "asset_type": "Web",
+  "title": "SHIJIMA ATAMI | 都会の喧騒から離れたホテル",
+  "source_name": "SANKOU!",
+  "source_detail_url": "https://sankoudesign.com/web/shijimaatami/",
+  "capture_url": "https://shijima-atami.com/",
+  "official_url": "https://shijima-atami.com/",
+  "analysis_status": "completed_and_validated",
+  "analysis_score": 87,
+  "notion_status": "pending_sync",
+  "implementation_blueprint_status": "daily_provisional_confirmed",
+  "implementation_blueprint_path": "../03_Implementation_Blueprint/WB-0038_elementor_brain_implementation.png",
+  "dropbox_status": "pending_sync",
+  "cbs_status": "candidate_pending_user_approval",
+  "generated_at": "2026-10-25T13:05:00.000Z"
+}

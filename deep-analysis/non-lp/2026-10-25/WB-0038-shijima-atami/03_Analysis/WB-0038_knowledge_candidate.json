@@ -1,0 +1,136 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0038",
+  "media_type": "WB",
+  "title": "SHIJIMA ATAMI | 都会の喧騒から離れたホテル",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://sankoudesign.com/web/shijimaatami/",
+    "capture_url": "https://shijima-atami.com/",
+    "official_url": "https://shijima-atami.com/"
+  },
+  "analysis": {
+    "summary": "熱海の宿泊施設を、設備一覧ではなく静けさ・自然・食・客室の体験順で見せるブランドサイト。 ベージュ系の広い余白と大判写真を交互に置き、スクロール速度を落として高価格帯の滞在期待を形成している。 予約導線を上部と終盤に置きつつ、本文では売り込みを抑え、写真証拠によって検討を進める。",
+    "score": {
+      "visual": 19,
+      "clarity": 16,
+      "originality": 14,
+      "reusability": 17,
+      "learning": 13,
+      "evidence": 8,
+      "total": 87
+    },
+    "units": [
+      {
+        "name": "ファーストビュー",
+        "role": "ブランドロゴと静かな待機時間で世界観への切り替えを作る。",
+        "reuse": "ローディングをブランド体験に変える単一焦点構成。",
+        "evidence": "WB-0038_SITE_PC_first_view.png、SP first view。"
+      },
+      {
+        "name": "ナビゲーション",
+        "role": "宿泊条件、客室、食、アクセス、予約への入口を提供する。",
+        "reuse": "世界観を壊さない低コントラスト予約帯。",
+        "evidence": "WB-0038_SITE_PC_full.png上部。"
+      },
+      {
+        "name": "主要コンテンツ",
+        "role": "自然、食、客室、館内の順に滞在価値を説明する。",
+        "reuse": "体験順の写真編集と余白による章分け。",
+        "evidence": "PC/SP Full Page目視。"
+      },
+      {
+        "name": "証拠・事例",
+        "role": "実際の環境と提供物を視覚証拠として示す。",
+        "reuse": "象徴写真＋比較写真の二段証拠。",
+        "evidence": "PC/SP Full Pageの写真群。"
+      },
+      {
+        "name": "問い合わせ・コンバージョン",
+        "role": "日程・人数確認から予約へ進める。",
+        "reuse": "没入型ページの二地点予約CTA。",
+        "evidence": "PC Full Page上部・下部。"
+      },
+      {
+        "name": "フッター",
+        "role": "施設情報、連絡先、アクセス、規約を集約する。",
+        "reuse": "施設情報中心の低密度フッター。",
+        "evidence": "PC/SP Full Page最下部。"
+      }
+    ]
+  },
+  "strengths": [
+    "余白がブランド体験として機能する",
+    "自然・食・客室の証拠順が明快",
+    "PC/SPで写真の優先順位を維持する"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "FV証拠不足",
+      "evidence": "PC/SPともローディングロゴのみ",
+      "fix": "待機後のFVを再撮影し、主要コピー・CTAを台帳化",
+      "effect": "訴求と予約導線を正確に評価",
+      "metric": "再撮影完了・FV要素一致"
+    },
+    {
+      "priority": "P1",
+      "issue": "長尺で現在地を失いやすい",
+      "evidence": "章間の余白が非常に大きい",
+      "fix": "客室・食・アクセスの控えめなページ内ナビを追加",
+      "effect": "探索時間を短縮",
+      "metric": "予約情報到達率"
+    },
+    {
+      "priority": "P2",
+      "issue": "比較材料不足",
+      "evidence": "口コミ・評価・価格要約が画面で弱い",
+      "fix": "終盤に客室比較と第三者評価を控えめに追加",
+      "effect": "予約前の不安を軽減",
+      "metric": "空室検索開始率"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "余白主導の宿泊体験ストーリー",
+      "keep": "体験順、広い余白、写真の大小差",
+      "replace": "写真、コピー、色、施設情報"
+    },
+    {
+      "id": "C02",
+      "name": "自然・食・客室の三段証拠",
+      "keep": "象徴写真から比較写真への順序",
+      "replace": "自然、料理、客室写真"
+    },
+    {
+      "id": "C03",
+      "name": "低密度予約CTA",
+      "keep": "上部機能帯と終盤CTAの二地点配置",
+      "replace": "予約項目、色、遷移先"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "SHIJIMA ATAMIのロゴ、施設・料理・自然写真、固有コピー、予約UI",
+    "reusable": "体験順、余白設計、写真比率、予約CTAの配置原則"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/WB-0038_SITE_PC_full.png",
+      "../01_Normal_Images/WB-0038_SITE_PC_first_view.png",
+      "../01_Normal_Images/WB-0038_SITE_SP_full.png",
+      "../01_Normal_Images/WB-0038_SITE_SP_first_view.png",
+      "https://shijima-atami.com/"
+    ],
+    "unknowns": [
+      "post_loading_first_view_missing",
+      "interaction_state_not_captured",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

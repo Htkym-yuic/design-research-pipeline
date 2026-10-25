@@ -1,0 +1,136 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0044",
+  "media_type": "WB",
+  "title": "八王子糖尿病内科クリニック",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://sankoudesign.com/web/hachiojidiabetesclinic/",
+    "capture_url": "https://hachioji-dm.com/",
+    "official_url": "https://hachioji-dm.com/"
+  },
+  "analysis": {
+    "summary": "糖尿病専門クリニックのサイトで、明るい院内写真を入口に、診療内容、疾患理解、受診フロー、診療時間を順に説明する。 人物イラストと黄色い工程カードで専門情報を平易にし、電話・時間・アクセスを視覚的に分離する。 医療の信頼性と受診時の実務情報を一ページ内で両立している。",
+    "score": {
+      "visual": 18,
+      "clarity": 20,
+      "originality": 11,
+      "reusability": 20,
+      "learning": 15,
+      "evidence": 10,
+      "total": 94
+    },
+    "units": [
+      {
+        "name": "ファーストビュー",
+        "role": "清潔な院内環境、専門性、電話・診療時間・アクセスを即時提示する。",
+        "reuse": "実在空間写真＋連絡三要素のFV。",
+        "evidence": "WB-0044_SITE_PC_first_view.png、SP first view。"
+      },
+      {
+        "name": "ナビゲーション",
+        "role": "クリニック紹介、診療内容、疾患理解、フロー、FAQへ案内する。",
+        "reuse": "医療情報分類型ヘッダー。",
+        "evidence": "PC First View上部。"
+      },
+      {
+        "name": "主要コンテンツ",
+        "role": "診療内容、糖尿病の仕組み、受診フローを理解させる。",
+        "reuse": "中央図解と段階説明を組み合わせる医療教育構成。",
+        "evidence": "PC/SP Full Page。"
+      },
+      {
+        "name": "証拠・事例",
+        "role": "専門資格、院内環境、診療時間、カレンダーで実在性と運用情報を示す。",
+        "reuse": "資格証拠＋運用証拠の二層構成。",
+        "evidence": "PC Full Page上部・終盤。"
+      },
+      {
+        "name": "問い合わせ・コンバージョン",
+        "role": "電話問い合わせ、診療時間確認、アクセス確認へ接続する。",
+        "reuse": "電話中心の医療コンバージョン体系。",
+        "evidence": "PC/SP Full Page。"
+      },
+      {
+        "name": "フッター",
+        "role": "医院情報、連絡先、リンク、診療案内を再確認させる。",
+        "reuse": "連絡先主役の医療フッター。",
+        "evidence": "PC/SP Full Page最下部。"
+      }
+    ]
+  },
+  "strengths": [
+    "医療専門性と親しみの両立",
+    "電話・時間・アクセスが即時確認できる",
+    "疾患理解と受診フローの図解が明快"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "初診準備の情報が分散",
+      "evidence": "診療内容・フロー・時間が別章",
+      "fix": "保険証・紹介状・検査・所要時間の初診チェックをCTA前に追加",
+      "effect": "電話問い合わせと来院不備を削減",
+      "metric": "初診関連問い合わせ件数"
+    },
+    {
+      "priority": "P1",
+      "issue": "電話のみの行動導線",
+      "evidence": "主要CTAが電話番号",
+      "fix": "対応可能ならWeb問い合わせ・仮予約を併設",
+      "effect": "診療時間外の離脱を減らす",
+      "metric": "時間外問い合わせ数"
+    },
+    {
+      "priority": "P2",
+      "issue": "小文字の診療表",
+      "evidence": "濃灰面に情報が集中",
+      "fix": "曜日・休診を色と余白で再整理しSP専用表を用意",
+      "effect": "誤読を減らす",
+      "metric": "診療時間ページ滞在・電話確認数"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "院内写真＋連絡三要素FV",
+      "keep": "空間写真、電話、時間、アクセスの役割分担",
+      "replace": "写真、番号、色、ロゴ"
+    },
+    {
+      "id": "C02",
+      "name": "中央人体図＋左右診療項目",
+      "keep": "中央図解、左右分類、詳細リンク",
+      "replace": "図版、診療項目、説明"
+    },
+    {
+      "id": "C03",
+      "name": "黄色4ステップ受診フロー",
+      "keep": "番号、アイコン、短文、矢印",
+      "replace": "工程、色、アイコン"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "医院ロゴ、院内写真、人体・病態イラスト、専門資格表記、固有医療文章、電話・住所",
+    "reusable": "医療情報の分類、図解配置、受診フロー、電話・時間・アクセスの役割分担"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/WB-0044_SITE_PC_full.png",
+      "../01_Normal_Images/WB-0044_SITE_PC_first_view.png",
+      "../01_Normal_Images/WB-0044_SITE_SP_full.png",
+      "../01_Normal_Images/WB-0044_SITE_SP_first_view.png",
+      "https://hachioji-dm.com/"
+    ],
+    "unknowns": [
+      "section_index_not_generated_separately",
+      "keyboard_and_screen_reader_unverified",
+      "asset_license_and_medical_review_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

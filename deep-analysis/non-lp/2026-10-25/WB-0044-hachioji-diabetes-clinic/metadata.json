@@ -1,0 +1,19 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0044",
+  "media_type": "WB",
+  "asset_type": "Web",
+  "title": "八王子糖尿病内科クリニック",
+  "source_name": "SANKOU!",
+  "source_detail_url": "https://sankoudesign.com/web/hachiojidiabetesclinic/",
+  "capture_url": "https://hachioji-dm.com/",
+  "official_url": "https://hachioji-dm.com/",
+  "analysis_status": "completed_and_validated",
+  "analysis_score": 94,
+  "notion_status": "pending_sync",
+  "implementation_blueprint_status": "daily_provisional_confirmed",
+  "implementation_blueprint_path": "../03_Implementation_Blueprint/WB-0044_elementor_brain_implementation.png",
+  "dropbox_status": "pending_sync",
+  "cbs_status": "candidate_pending_user_approval",
+  "generated_at": "2026-10-25T13:05:00.000Z"
+}

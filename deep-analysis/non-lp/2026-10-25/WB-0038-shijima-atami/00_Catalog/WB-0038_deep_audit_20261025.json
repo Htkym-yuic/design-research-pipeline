@@ -1,0 +1,28 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0038",
+  "mode": "analysis",
+  "selected_for_deep_analysis": true,
+  "selection_reason": "予約判断に必要な日程・客室・食・周辺体験を、極端に広い余白と大判写真で静かな滞在物語へ統合しており、高級宿泊施設の情報設計として転用価値が高い",
+  "checks": {
+    "first_line": "Yes",
+    "chapters": "Yes",
+    "unit_headings": "Yes",
+    "unit_fields": "Yes",
+    "image_slots": "Yes",
+    "image_evidence": "Yes",
+    "candidate_parity": "Yes",
+    "rights": "Yes",
+    "unknowns": "Yes",
+    "sources": "Yes",
+    "run_record": "Yes",
+    "analysis_complete": "Yes"
+  },
+  "implementation_blueprint": {
+    "status": "daily_provisional_confirmed",
+    "path": "../03_Implementation_Blueprint/WB-0038_elementor_brain_implementation.png"
+  },
+  "notion": "pending_sync",
+  "dropbox": "pending_sync",
+  "cbs": "not_synced_user_approval_required"
+}
