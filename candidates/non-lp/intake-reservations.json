@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T12:49:02.728Z",
+  "updatedAt": "2026-10-25T16:24:24.456Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -2915,6 +2915,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-24T18:26:32.953Z"
+    },
+    {
+      "id": "GR-0144",
+      "title": "ハロウィンイベント告知チラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fbc09e457407b39ed4a7f9729722c59fc%2Fbc09e457407b39ed4a7f9729722c59fc-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-31496",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fbc09e457407b39ed4a7f9729722c59fc%2Fbc09e457407b39ed4a7f9729722c59fc-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-25T16:24:24.456Z"
+    },
+    {
+      "id": "GR-0145",
+      "title": "ハロウィンフェア",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F5696c46e6dcca03c1bb2e051cb2e1cb9%2F5696c46e6dcca03c1bb2e051cb2e1cb9-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-31465",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F5696c46e6dcca03c1bb2e051cb2e1cb9%2F5696c46e6dcca03c1bb2e051cb2e1cb9-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-25T16:24:24.456Z"
+    },
+    {
+      "id": "GR-0146",
+      "title": "不気味なハロウィンイラストが並ぶオレンジ色のバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F0cd5b84708108289874bec94800ebafb%2F0cd5b84708108289874bec94800ebafb-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-23937",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F0cd5b84708108289874bec94800ebafb%2F0cd5b84708108289874bec94800ebafb-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-25T16:24:24.456Z"
+    },
+    {
+      "id": "GR-0147",
+      "title": "茶色背景の猫写真ペット名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F64025a8345c9da986f934f5d0cf8017a%2F64025a8345c9da986f934f5d0cf8017a-400.webp&w=256&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-30121",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F64025a8345c9da986f934f5d0cf8017a%2F64025a8345c9da986f934f5d0cf8017a-400.webp&w=256&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-25T16:24:24.456Z"
+    },
+    {
+      "id": "GR-0148",
+      "title": "金色の不動産のロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/4fbb59af340fc8b608e74169b9237433/4fbb59af340fc8b608e74169b9237433-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3066",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/4fbb59af340fc8b608e74169b9237433/4fbb59af340fc8b608e74169b9237433-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-25T16:24:24.456Z"
     },
     {
       "id": "ILAC-0001",
@@ -6470,6 +6530,30 @@
       "materialId": "PAT-0056",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-24T18:26:32.953Z"
+    },
+    {
+      "id": "PAT-0057",
+      "title": "My Assistant（マイアシスタント）に見るセクション内の役割集約",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Parts.）",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/11/myas_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5018",
+      "imageUrl": null,
+      "materialId": "PAT-0057",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-25T16:24:24.456Z"
+    },
+    {
+      "id": "PAT-0058",
+      "title": "ハロウィンイベント告知チラシに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fbc09e457407b39ed4a7f9729722c59fc%2Fbc09e457407b39ed4a7f9729722c59fc-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-31496",
+      "imageUrl": null,
+      "materialId": "PAT-0058",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-25T16:24:24.456Z"
     },
     {
       "id": "PHAC-0001",
@@ -11121,6 +11205,66 @@
       "reservedAt": "2026-10-24T18:26:32.953Z"
     },
     {
+      "id": "PT-0146",
+      "title": "My Assistant（マイアシスタント）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/11/myas_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5018",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/11/myas_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-25T16:24:24.456Z"
+    },
+    {
+      "id": "PT-0147",
+      "title": "おいしいきのこはホクト",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/11/hokto-kinoko_00010.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/5007",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/11/hokto-kinoko_00010.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-25T16:24:24.456Z"
+    },
+    {
+      "id": "PT-0148",
+      "title": "キオモノ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/11/kiomono_00006.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4991",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/11/kiomono_00006.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-25T16:24:24.456Z"
+    },
+    {
+      "id": "PT-0149",
+      "title": "キリン ホームタップ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/11/hometap_00003.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4986",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/11/hometap_00003.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-25T16:24:24.456Z"
+    },
+    {
+      "id": "PT-0150",
+      "title": "株式会社Blanket",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/11/blan-ket_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4957",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/11/blan-ket_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-25T16:24:24.456Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -11655,6 +11799,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-21T16:20:34.440Z"
+    },
+    {
+      "id": "WB-0046",
+      "title": "Tanica | 毎日、発酵食を。ヨーグルトメーカーのタニカ。",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://tanica.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/tanica/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/tanica_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-25T16:24:24.456Z"
+    },
+    {
+      "id": "WB-0047",
+      "title": "Tanica Press | 発酵･タニカに関することを発信中",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://press.tanica.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/tanicapress/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/tanicapress_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-25T16:24:24.456Z"
     }
   ]
 }
