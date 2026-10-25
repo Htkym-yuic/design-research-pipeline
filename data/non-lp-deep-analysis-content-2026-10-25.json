@@ -16,6 +16,15 @@
       "analysisDate": "2026-10-25",
       "cbsStatus": "未同期・ユーザー確認待ち",
       "outputRoot": "deep-analysis/non-lp/2026-10-25/WB-0038-shijima-atami",
+      "sync": {
+        "analysisStatus": "completed_and_validated",
+        "notionStatus": "synced_and_verified",
+        "notionPageUrl": "https://app.notion.com/p/3fd24d4fa6718132ab8ff536aa34a859",
+        "dropboxStatus": "synced_and_verified",
+        "dropboxPath": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/selected/WB-0038-shijima-atami",
+        "knowledgeJsonStatus": "validated_with_zero_warnings",
+        "cbsProductionStatus": "not_applied_user_confirmation_required"
+      },
       "selectionReason": "予約判断に必要な日程・客室・食・周辺体験を、極端に広い余白と大判写真で静かな滞在物語へ統合しており、高級宿泊施設の情報設計として転用価値が高い",
       "images": [
         {"slot":"PC Full Page","path":"../01_Normal_Images/WB-0038_SITE_PC_full.png","status":"1200×10088px、目視確認済み"},
@@ -124,6 +133,15 @@
       "analysisDate": "2026-10-25",
       "cbsStatus": "未同期・ユーザー確認待ち",
       "outputRoot": "deep-analysis/non-lp/2026-10-25/WB-0041-gtn-recruit",
+      "sync": {
+        "analysisStatus": "completed_and_validated",
+        "notionStatus": "synced_and_verified",
+        "notionPageUrl": "https://app.notion.com/p/3fe24d4fa67181eeb1e2f134b0cbc413",
+        "dropboxStatus": "synced_and_verified",
+        "dropboxPath": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/selected/WB-0041-gtn-recruit",
+        "knowledgeJsonStatus": "validated_with_zero_warnings",
+        "cbsProductionStatus": "not_applied_user_confirmation_required"
+      },
       "selectionReason": "多国籍事業の理念を人物写真、職種別採用、事業理解、カルチャー、動画・記事証拠へ展開し、複数採用区分を一つの物語へ統合している",
       "images": [
         {"slot":"PC Full Page","path":"../01_Normal_Images/WB-0041_SITE_PC_full.png","status":"1270×12024px、目視確認済み"},
@@ -203,6 +221,15 @@
       "analysisDate": "2026-10-25",
       "cbsStatus": "未同期・ユーザー確認待ち",
       "outputRoot": "deep-analysis/non-lp/2026-10-25/WB-0044-hachioji-diabetes-clinic",
+      "sync": {
+        "analysisStatus": "completed_and_validated",
+        "notionStatus": "synced_and_verified",
+        "notionPageUrl": "https://app.notion.com/p/40024d4fa671815584c1eb1da2ab8126",
+        "dropboxStatus": "synced_and_verified",
+        "dropboxPath": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/selected/WB-0044-hachioji-diabetes-clinic",
+        "knowledgeJsonStatus": "validated_with_zero_warnings",
+        "cbsProductionStatus": "not_applied_user_confirmation_required"
+      },
       "selectionReason": "医療機関に必要な専門性、診療内容、疾患理解、受診フロー、診療時間、電話・アクセスを、親しみやすい図解と明確な実用導線で統合している",
       "images": [
         {"slot":"PC Full Page","path":"../01_Normal_Images/WB-0044_SITE_PC_full.png","status":"1200×7228px、目視確認済み"},

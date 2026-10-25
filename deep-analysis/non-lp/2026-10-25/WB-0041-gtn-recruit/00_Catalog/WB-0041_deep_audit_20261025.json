@@ -22,7 +22,13 @@
     "status": "daily_provisional_confirmed",
     "path": "../03_Implementation_Blueprint/WB-0041_elementor_brain_implementation.png"
   },
-  "notion": "pending_sync",
-  "dropbox": "pending_sync",
+  "notion": {
+    "status": "synced_and_verified",
+    "page_url": "https://app.notion.com/p/3fe24d4fa67181eeb1e2f134b0cbc413"
+  },
+  "dropbox": {
+    "status": "synced_and_verified",
+    "path": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/selected/WB-0041-gtn-recruit"
+  },
   "cbs": "not_synced_user_approval_required"
 }

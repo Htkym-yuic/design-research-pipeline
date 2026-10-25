@@ -22,7 +22,13 @@
     "status": "daily_provisional_confirmed",
     "path": "../03_Implementation_Blueprint/WB-0038_elementor_brain_implementation.png"
   },
-  "notion": "pending_sync",
-  "dropbox": "pending_sync",
+  "notion": {
+    "status": "synced_and_verified",
+    "page_url": "https://app.notion.com/p/3fd24d4fa6718132ab8ff536aa34a859"
+  },
+  "dropbox": {
+    "status": "synced_and_verified",
+    "path": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/selected/WB-0038-shijima-atami"
+  },
   "cbs": "not_synced_user_approval_required"
 }

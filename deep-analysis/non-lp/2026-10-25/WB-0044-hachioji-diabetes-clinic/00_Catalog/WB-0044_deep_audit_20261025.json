@@ -22,7 +22,13 @@
     "status": "daily_provisional_confirmed",
     "path": "../03_Implementation_Blueprint/WB-0044_elementor_brain_implementation.png"
   },
-  "notion": "pending_sync",
-  "dropbox": "pending_sync",
+  "notion": {
+    "status": "synced_and_verified",
+    "page_url": "https://app.notion.com/p/40024d4fa671815584c1eb1da2ab8126"
+  },
+  "dropbox": {
+    "status": "synced_and_verified",
+    "path": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/selected/WB-0044-hachioji-diabetes-clinic"
+  },
   "cbs": "not_synced_user_approval_required"
 }
