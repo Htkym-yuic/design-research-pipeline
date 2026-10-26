@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T16:24:24.456Z",
+  "updatedAt": "2026-10-26T16:28:44.216Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -2975,6 +2975,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-25T16:24:24.456Z"
+    },
+    {
+      "id": "GR-0149",
+      "title": "新春入会特典を訴求するフィットネスキャンペーンチラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fa0370b36bebef3da848c2c9884d445b8%2Fa0370b36bebef3da848c2c9884d445b8-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-31544",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fa0370b36bebef3da848c2c9884d445b8%2Fa0370b36bebef3da848c2c9884d445b8-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-26T16:28:44.216Z"
+    },
+    {
+      "id": "GR-0150",
+      "title": "秋のポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1d800c066e9137300fe7b00f8f2a2a34%2F1d800c066e9137300fe7b00f8f2a2a34-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-31440",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1d800c066e9137300fe7b00f8f2a2a34%2F1d800c066e9137300fe7b00f8f2a2a34-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-26T16:28:44.216Z"
+    },
+    {
+      "id": "GR-0151",
+      "title": "不気味に飛ぶコウモリと白抜き文字のハロウィンバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F88d424ff4db1d2046cf165087922cd15%2F88d424ff4db1d2046cf165087922cd15-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-23936",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F88d424ff4db1d2046cf165087922cd15%2F88d424ff4db1d2046cf165087922cd15-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-26T16:28:44.216Z"
+    },
+    {
+      "id": "GR-0152",
+      "title": "楕円写真入りの犬ペット名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F2a9e6e798ba9ca98771c55eef3e5d543%2F2a9e6e798ba9ca98771c55eef3e5d543-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-30120",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F2a9e6e798ba9ca98771c55eef3e5d543%2F2a9e6e798ba9ca98771c55eef3e5d543-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-26T16:28:44.216Z"
+    },
+    {
+      "id": "GR-0153",
+      "title": "金色の不動産のロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/cfe2f2685e720ac836462b20b146da36/cfe2f2685e720ac836462b20b146da36-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3062",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/cfe2f2685e720ac836462b20b146da36/cfe2f2685e720ac836462b20b146da36-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-26T16:28:44.216Z"
     },
     {
       "id": "ILAC-0001",
@@ -6554,6 +6614,30 @@
       "materialId": "PAT-0058",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-25T16:24:24.456Z"
+    },
+    {
+      "id": "PAT-0059",
+      "title": "新春入会特典を訴求するフィットネスキャンペーンチラシに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fa0370b36bebef3da848c2c9884d445b8%2Fa0370b36bebef3da848c2c9884d445b8-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-31544",
+      "imageUrl": null,
+      "materialId": "PAT-0059",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-26T16:28:44.216Z"
+    },
+    {
+      "id": "PAT-0060",
+      "title": "doda PRESENTS: B.LEAGUE仕事図鑑 | B.LEAGUEで、はたらくに見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://dodasports.doda.jp/bleague/shigotozukan/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/dodasport-bleague-shigotozukans/",
+      "imageUrl": null,
+      "materialId": "PAT-0060",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-26T16:28:44.216Z"
     },
     {
       "id": "PHAC-0001",
@@ -11265,6 +11349,66 @@
       "reservedAt": "2026-10-25T16:24:24.456Z"
     },
     {
+      "id": "PT-0151",
+      "title": "つながる薬局",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/11/pharmacy_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4942",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/11/pharmacy_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-26T16:28:44.216Z"
+    },
+    {
+      "id": "PT-0152",
+      "title": "Entry Pocket(エントリーポケット)",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/10/entrypocket_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4939",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/10/entrypocket_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-26T16:28:44.216Z"
+    },
+    {
+      "id": "PT-0153",
+      "title": "パーチェスワン",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/10/purchaseone_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4926",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/10/purchaseone_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-26T16:28:44.216Z"
+    },
+    {
+      "id": "PT-0154",
+      "title": "クリプタクト",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/10/cryptact_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4909",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/10/cryptact_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-26T16:28:44.216Z"
+    },
+    {
+      "id": "PT-0155",
+      "title": "O:der Platform（オーダープラットフォーム）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/10/oderapp_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4891",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/10/oderapp_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-26T16:28:44.216Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -11823,6 +11967,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-25T16:24:24.456Z"
+    },
+    {
+      "id": "WB-0048",
+      "title": "doda PRESENTS: B.LEAGUE仕事図鑑 | B.LEAGUEで、はたらく",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://dodasports.doda.jp/bleague/shigotozukan/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/dodasport-bleague-shigotozukans/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/dodasportbleagueshigotozukans_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-26T16:28:44.216Z"
+    },
+    {
+      "id": "WB-0049",
+      "title": "KUTSUSHITAYA × FUDGE.jp SPECIAL SNAP | この秋は、レトロな靴下が気分でして。 | 靴下屋公式通販 Tabio オンラインストア",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://tabio.com/blogs/features/friendsnap2026",
+      "sourceDetailUrl": "https://sankoudesign.com/web/kutsushitayafudgejp-specialsnap/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/kutsushitayafudgejpspecialsnap_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-26T16:28:44.216Z"
     }
   ]
 }
