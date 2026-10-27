@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T16:28:44.216Z",
+  "updatedAt": "2026-10-27T16:47:11.839Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -1209,6 +1209,18 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-24T18:26:32.953Z"
+    },
+    {
+      "id": "CV-0055",
+      "title": "Modern Aesthetic Photo Collage Of Memories With Friends Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAGQqrtKKLo/1/0/320w-YOWEF89Fl6k.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAGQqrtKKLo-modern-aesthetic-photo-collage-of-memories-with-friends-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAGQqrtKKLo/1/0/320w-YOWEF89Fl6k.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-27T16:47:11.839Z"
     },
     {
       "id": "GR-0001",
@@ -3035,6 +3047,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-26T16:28:44.216Z"
+    },
+    {
+      "id": "GR-0154",
+      "title": "１１月のぬりえ（秋の植物）",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9e6a9c9f755133fceef761186ac4b8e9%2F9e6a9c9f755133fceef761186ac4b8e9-400.webp&w=1200&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-32063",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9e6a9c9f755133fceef761186ac4b8e9%2F9e6a9c9f755133fceef761186ac4b8e9-400.webp&w=1200&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-27T16:47:11.839Z"
+    },
+    {
+      "id": "GR-0155",
+      "title": "秋まつりポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Ffd318d8363812f333ace824c3e7479c3%2Ffd318d8363812f333ace824c3e7479c3-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30907",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Ffd318d8363812f333ace824c3e7479c3%2Ffd318d8363812f333ace824c3e7479c3-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-27T16:47:11.839Z"
+    },
+    {
+      "id": "GR-0156",
+      "title": "かわいいハロウィンイラストのハロウィンパーティバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F26e2c089c8f2bf68b8e0ae4c3358444b%2F26e2c089c8f2bf68b8e0ae4c3358444b-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-23935",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F26e2c089c8f2bf68b8e0ae4c3358444b%2F26e2c089c8f2bf68b8e0ae4c3358444b-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-27T16:47:11.839Z"
+    },
+    {
+      "id": "GR-0157",
+      "title": "ツートンカラーの犬写真ペット名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F138e970c6301e7134ea9a31577557851%2F138e970c6301e7134ea9a31577557851-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-30119",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F138e970c6301e7134ea9a31577557851%2F138e970c6301e7134ea9a31577557851-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-27T16:47:11.839Z"
+    },
+    {
+      "id": "GR-0158",
+      "title": "金色の「O」のロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/ac3cddf8ab4da8b027303bb8257682a1/ac3cddf8ab4da8b027303bb8257682a1-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3058",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/ac3cddf8ab4da8b027303bb8257682a1/ac3cddf8ab4da8b027303bb8257682a1-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-27T16:47:11.839Z"
     },
     {
       "id": "ILAC-0001",
@@ -6638,6 +6710,30 @@
       "materialId": "PAT-0060",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-26T16:28:44.216Z"
+    },
+    {
+      "id": "PAT-0061",
+      "title": "１１月のぬりえ（秋の植物）に見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9e6a9c9f755133fceef761186ac4b8e9%2F9e6a9c9f755133fceef761186ac4b8e9-400.webp&w=1200&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-32063",
+      "imageUrl": null,
+      "materialId": "PAT-0061",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-27T16:47:11.839Z"
+    },
+    {
+      "id": "PAT-0062",
+      "title": "Modern Aesthetic Photo Collage Of Memories With Friends Instagram Postに見る反復可能なテンプレート構造",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Canva）",
+      "captureUrl": "https://template.canva.com/EAGQqrtKKLo/1/0/320w-YOWEF89Fl6k.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAGQqrtKKLo-modern-aesthetic-photo-collage-of-memories-with-friends-instagram-post/",
+      "imageUrl": null,
+      "materialId": "PAT-0062",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-27T16:47:11.839Z"
     },
     {
       "id": "PHAC-0001",
@@ -11409,6 +11505,66 @@
       "reservedAt": "2026-10-26T16:28:44.216Z"
     },
     {
+      "id": "PT-0156",
+      "title": "Gather",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/09/gather_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4877",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/09/gather_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-27T16:47:11.839Z"
+    },
+    {
+      "id": "PT-0157",
+      "title": "サプリスタンダード",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/09/sapuri-standard_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4860",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/09/sapuri-standard_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-27T16:47:11.839Z"
+    },
+    {
+      "id": "PT-0158",
+      "title": "Kakeai（カケアイ）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/08/kakeai_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4847",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/08/kakeai_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-27T16:47:11.839Z"
+    },
+    {
+      "id": "PT-0159",
+      "title": "Profiee Teams（プロフィー・チームズ）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/08/profieeteams_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4832",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/08/profieeteams_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-27T16:47:11.839Z"
+    },
+    {
+      "id": "PT-0160",
+      "title": "クラウドログ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/08/crowdlog_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4812",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/08/crowdlog_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-27T16:47:11.839Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -11991,6 +12147,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-26T16:28:44.216Z"
+    },
+    {
+      "id": "WB-0050",
+      "title": "社会福祉法人 芳梅会",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.houbaikai.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/houbaikai/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/houbaikai_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-27T16:47:11.839Z"
+    },
+    {
+      "id": "WB-0051",
+      "title": "MOV KURAMAE",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://mov-kuramae.kokuyo.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/movkuramae/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/movkuramae_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-27T16:47:11.839Z"
     }
   ]
 }
