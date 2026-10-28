@@ -1,0 +1,139 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0032",
+  "media_type": "WB",
+  "title": "山龢（さんが）",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://sankoudesign.com/web/sanga/",
+    "capture_url": "https://atami-sanga.jp/",
+    "official_url": "https://atami-sanga.jp/"
+  },
+  "analysis": {
+    "summary": "静岡県熱海市網代にある全8室の高級旅館「山龢」のブランド訴求兼予約サイト。ブランド名の由来（相反するものが調和する「究極に充実した状態」）をsplit-screen画像とタイポグラフィでそのまま視覚化し、黒背景の情緒訴求ブロックと明背景の機能紹介ブロックを交互配置して立地・客室・食事・プライバシーを訴求する。常駐の「ご予約・空室確認」ボタンに全体を収束させる単一CV設計。スクロール連動演出への依存度が高く、本分析のPC Full Pageキャプチャでも複数区間が描画されず、SP/First Viewでの補完が必要だった。",
+    "score": {
+      "visual": 18,
+      "clarity": 15,
+      "originality": 13,
+      "reusability": 15,
+      "learning": 12,
+      "evidence": 5,
+      "total": 78
+    },
+    "units": [
+      {
+        "name": "ファーストビュー",
+        "role": "ブランド名「山龢」の世界観（相反するものの調和）をsplit-screen画像とコピーで即座に印象づける。",
+        "reuse": "対比ペア（日常/非日常、人/自然等）をsplit-screen画像とタイポグラフィで表現し、カルーセルで複数パターンを切り替える手法。",
+        "evidence": "PC/SP First View画像。カルーセル文言の違いはFull Page該当区間との比較による推測。"
+      },
+      {
+        "name": "ナビゲーション",
+        "role": "ハンバーガーメニューでの回遊と、常駐の予約CTAへの即時アクセスを両立する。",
+        "reuse": "唯一の最優先CTAだけを常時固定表示し、他のナビゲーションは最小化する設計。",
+        "evidence": "PC First View（右端ボタン）、SP Full Page（下部固定バー）。メニュー展開内容は未確認。"
+      },
+      {
+        "name": "主要コンテンツ",
+        "role": "立地・客室・食事・プライバシーという4価値を、黒背景の詩的コピーと実写真の交互配置で伝える。",
+        "reuse": "黒背景の情緒訴求ブロック（三連、対比表現）と明背景の機能紹介ブロックを交互配置する構成。",
+        "evidence": "PC Full Page y≒4500-17000。複数区間がキャプチャ時に空白だったためSP Full Pageで補完。"
+      },
+      {
+        "name": "証拠・事例",
+        "role": "最新のプラン・リニューアル情報を提示し、施設の活発な運営を示す。",
+        "reuse": "日付＋カテゴリタグ＋見出し＋一覧リンクのシンプルなお知らせリストパターン。",
+        "evidence": "PC Full Page y≒15000-16000。個別記事への遷移先は未確認。"
+      },
+      {
+        "name": "問い合わせ・コンバージョン",
+        "role": "電話予約とオンライン予約（空室確認）の2経路を最終的に提示する。",
+        "reuse": "電話予約とオンライン予約を並列提示し、チェックイン/アウト時間を併記する最終CTAセクション。",
+        "evidence": "PC Full Page最下部付近。オンライン予約フォームの実際の体験は未確認。"
+      },
+      {
+        "name": "フッター",
+        "role": "サイトマップとしてのリンク集約、所在地・連絡先の明示、ブランドロゴの最終再掲。",
+        "reuse": "ブランド情報＋所在地＋リンク列＋法的情報というフッター構成、縦書き風リンク列の和風意匠。",
+        "evidence": "PC Full Page最下部。SPでの表示形式は未確認。"
+      }
+    ]
+  },
+  "strengths": [
+    "ブランド名の由来（対比の調和）をsplit-screen画像という形式に落とし込み、コンセプトと表現手法が一致している",
+    "「全8室」「全館貸切」「誰にも会わない」という希少性・プライバシー訴求を複数のセクションで異なる角度から反復している",
+    "黒背景の情緒訴求と明背景の機能紹介を交互配置するリズムが長いページでも単調さを感じさせない"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "スクロール連動演出が環境によって正しく描画されないリスク",
+      "evidence": "本分析のPC Full Pageキャプチャで複数区間が白・黒の空白になった",
+      "fix": "フェードイン演出にフォールバック（JS無効時やスクロール未検知時は即座に表示）を実装する",
+      "effect": "低速回線・JS制限環境でのコンテンツ視認性向上",
+      "metric": "空白区間の発生率（自動キャプチャ監視等）"
+    },
+    {
+      "priority": "P1",
+      "issue": "客室料金がページ内で確認できない",
+      "evidence": "Full Page全域を目視したが価格表示箇所なし",
+      "fix": "大まかな価格レンジだけでもファーストビューまたは客室紹介部に追加する",
+      "effect": "予算に合わない離脱の早期化、合う層の検討促進",
+      "metric": "客室一覧ページ到達率、予約ボタンクリック率"
+    },
+    {
+      "priority": "P2",
+      "issue": "split-screenの対比ペアの意図が伝わりにくい",
+      "evidence": "日常/非日常、人/自然等、複数パターンの切り替えが確認されたが説明が無い",
+      "fix": "カルーセルに簡単な注釈を添える",
+      "effect": "ブランドコンセプトの理解促進",
+      "metric": "ページ滞在時間、由来説明部までのスクロール到達率"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "対比split-screenファーストビュー",
+      "keep": "画面左右分割＋中央ロゴ＋対比見出し＋由来コピーの組み合わせ",
+      "replace": "対比のテーマ、画像、コピー文言"
+    },
+    {
+      "id": "C02",
+      "name": "黒背景・情緒訴求三連ブロック",
+      "keep": "黒背景＋右寄せ大型見出し＋左寄せ本文の非対称配置を3回反復",
+      "replace": "見出し・本文・背景写真"
+    },
+    {
+      "id": "C03",
+      "name": "電話/オンライン並列予約CTA＋常駐予約ボタン",
+      "keep": "常時固定の予約ボタン＋フッター直前の電話/オンライン並列CTA＋チェックイン/アウト時間併記",
+      "replace": "電話番号、ボタン文言、時間"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "ロゴ、客室写真、料理写真、庭園・玄関写真、固有コピー文言、施設名・住所・電話番号",
+    "reusable": "split-screen構造、黒背景三連ブロックの配置原則、予約CTAの常駐設計、情緒訴求と機能紹介の交互配置"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/WB-0032_SITE_PC_full.png",
+      "../01_Normal_Images/WB-0032_SITE_PC_first_view.png",
+      "../01_Normal_Images/WB-0032_SITE_SP_full.png",
+      "../01_Normal_Images/WB-0032_SITE_SP_first_view.png",
+      "https://atami-sanga.jp/"
+    ],
+    "unknowns": [
+      "scroll_triggered_animation_not_rendered_in_capture",
+      "carousel_interaction_unverified",
+      "pricing_not_displayed_on_page",
+      "color_hex_not_pixel_measured",
+      "navigation_targets_unverified",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}
