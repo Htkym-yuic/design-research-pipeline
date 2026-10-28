@@ -1,0 +1,15 @@
+{
+  "input": "deep-analysis/non-lp/2026-10-15/PT-0097-timecrowd/01_Normal_Images/PT-0097_reference.png",
+  "output": "deep-analysis/non-lp/2026-10-15/PT-0097-timecrowd/04_Implementation_Blueprint/PT-0097_elementor_brain_implementation.png",
+  "notionOutput": "deep-analysis/non-lp/2026-10-15/PT-0097-timecrowd/04_Implementation_Blueprint/PT-0097_elementor_brain_implementation_notion.jpg",
+  "railWidth": 620,
+  "sections": [
+    {"y":0,"height":744,"label":"01｜ピッチコピー×モック×バッジ×フォーム Hero全体","color":"#0f8f76","lines":["親Container: Row（PC）／Column（SP）","幅: 左63.5%・右36.5%の非対称2カラム","左Column直下にHeading/Text/Image/Icon List","右Columnに資料請求Form Widget","SP: 左→右の順で縦積みへ変更"]}
+  ],
+  "details": [
+    {"x":210,"y":30,"width":650,"height":320,"label":"見出し：文脈＋サービス名＋サブコピー","labelWidth":280},
+    {"x":130,"y":355,"width":540,"height":361,"label":"プロダクトモック（PC＋スマホ）","labelWidth":260},
+    {"x":610,"y":335,"width":215,"height":225,"label":"実績バッジ×3（縦積み）","labelWidth":220},
+    {"x":896,"y":20,"width":500,"height":710,"label":"資料請求フォームCard（8項目＋送信/リセット）","labelWidth":300}
+  ]
+}

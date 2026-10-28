@@ -1,0 +1,49 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "PT-0098",
+  "media_type": "PT",
+  "title": "hubflow 課題提起コピー×プロダクトモック Hero",
+  "source": {
+    "source_name": "Parts.",
+    "source_detail_url": "https://partsdesign.net/archives/5788",
+    "official_url": null,
+    "capture_url": "https://partsdesign.net/wp-content/uploads/2025/02/hubflow_00002.png"
+  },
+  "analysis": {
+    "summary": "「SaaSを導入したが使いこなせていない」という課題提起コピーと、プライマリ／セカンダリCTAペア、ダッシュボードUIモックを組み合わせた左右非対称Hero。",
+    "score": { "visual": 18, "clarity": 17, "originality": 12, "reusability": 18, "learning": 12, "evidence": 7, "total": 84 },
+    "units": ["パーツ全体", "見出し", "主要要素", "補助要素", "操作・CTA", "前後セクションとの接続"],
+    "strengths": [
+      "理想像の提示と具体的な課題への言及を同一ブロックで両立させている",
+      "プライマリ／セカンダリCTAを同形・同サイズで並べ色のコントラストだけで優先度を伝えている",
+      "実際の管理画面相当のUIモックで抽象的な価値提案を具体化している"
+    ],
+    "improvements": [
+      "社会的証明（導入実績・ユーザー数等）がHero内に見当たらない",
+      "無料トライアルの条件が明示されていない",
+      "SPでの表示順・チャットウィジェットの挙動が未検証"
+    ]
+  },
+  "reusable_patterns": [
+    { "id": "C01", "name": "課題提起コピー＋プロダクトモックの左右非対称Hero", "rights_status": "reference_only" },
+    { "id": "C02", "name": "プライマリ／セカンダリCTAペア", "rights_status": "reference_only" },
+    { "id": "C03", "name": "有機曲線背景による余白演出", "rights_status": "reference_only" }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": ["サービス名", "ロゴ", "固有コピー", "ダッシュボードUIの具体的な項目名・数値・配色", "固有グラデーション値"]
+  },
+  "unconfirmed": ["元ページ全体における位置", "SP表示", "チャットウィジェット・CTA操作挙動", "公式サイトURL・実在性", "配色・装飾形状の厳密な数値", "右下アイコンの詳細", "素材・UI画像ライセンス"],
+  "evidence": {
+    "files": ["01_Normal_Images/PT-0098_reference.png"],
+    "original_dimensions": "1370x782"
+  },
+  "cbs_sync": { "status": "candidate_pending_user_approval", "production_sync": "not_synced" },
+  "implementation_blueprint": {
+    "status": "reviewed_pending_dropbox_sync",
+    "path": "deep-analysis/non-lp/2026-10-15/PT-0098-hubflow/04_Implementation_Blueprint/PT-0098_elementor_implementation.json",
+    "diagram": "deep-analysis/non-lp/2026-10-15/PT-0098-hubflow/04_Implementation_Blueprint/PT-0098_elementor_brain_implementation.png",
+    "notionDiagram": "deep-analysis/non-lp/2026-10-15/PT-0098-hubflow/04_Implementation_Blueprint/PT-0098_elementor_brain_implementation_notion.jpg",
+    "guide": "deep-analysis/non-lp/2026-10-15/PT-0098-hubflow/04_Implementation_Blueprint/PT-0098_elementor_blueprint.md"
+  }
+}
