@@ -49,8 +49,11 @@ async function capturePage(browser, url, directory, id, label, fullPage = true) 
       outputs[`${viewport.key.toLowerCase()}NotionFirstView`] = notionFirstView;
       if (fullPage) {
         const full = path.join(directory, `${id}_${label}_${viewport.key}_full.png`);
+        const notionFull = path.join(directory, `${id}_${label}_${viewport.key}_full_notion.jpg`);
         await page.screenshot({ path: full, fullPage: true, timeout: 30000 });
+        await sharp(full, { limitInputPixels: false }).resize({ width: viewport.key === "PC" ? 900 : 375, withoutEnlargement: true }).jpeg({ quality: 72, mozjpeg: true }).toFile(notionFull);
         outputs[`${viewport.key.toLowerCase()}Full`] = full;
+        outputs[`${viewport.key.toLowerCase()}NotionFull`] = notionFull;
       }
       outputs[`${viewport.key.toLowerCase()}FinalUrl`] = page.url();
     } finally {
