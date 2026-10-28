@@ -1,0 +1,138 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0030",
+  "media_type": "WB",
+  "title": "スタイレム株式会社",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://sankoudesign.com/web/stylem/",
+    "capture_url": "https://stylem.co.jp/",
+    "official_url": "https://stylem.co.jp/"
+  },
+  "analysis": {
+    "summary": "1864年創業の繊維専門商社スタイレムのコーポレートサイト。創業年を軸にしたブランドコピー、タイムラインナビ＋年代別カルーセルによる160年沿革の表現、01-04の番号付き事業リスト、明暗セクションの交互配置を組み合わせ、老舗でありながら革新志向であることを多面的に裏付ける構成。CTAが8種あり優先順位が視覚的に均質化されている点、Cookieバナーがファーストビューに重なる点が弱点。",
+    "score": {
+      "visual": 15,
+      "clarity": 16,
+      "originality": 11,
+      "reusability": 17,
+      "learning": 12,
+      "evidence": 6,
+      "total": 77
+    },
+    "units": [
+      {
+        "name": "ファーストビュー",
+        "role": "創業年「1864」とブランドコピーを同時提示し、伝統と革新の両立を数秒で伝える。",
+        "reuse": "創業年の大きな数字表示＋ブランドコピー＋業種を象徴する抽象イラストの組み合わせ。",
+        "evidence": "PC/SP First View画像。"
+      },
+      {
+        "name": "ナビゲーション",
+        "role": "4大カテゴリと外部サービス（Fabric Store/Recruit）への一次導線を提供する。",
+        "reuse": "主要カテゴリ横並び＋区切り線＋外部サービスリンク＋言語トグル＋メニューアイコンのヘッダー構成。",
+        "evidence": "PC/SP First View画像（SPはハンバーガーメニュー展開内容は未確認）。"
+      },
+      {
+        "name": "主要コンテンツ",
+        "role": "沿革・事業・サステナビリティの3観点から企業ブランドを裏付ける最大セクション。",
+        "reuse": "タイムラインナビ＋年代別カルーセル、01-04番号付き事業リスト、非対称3枚グリッドの反復パターン。",
+        "evidence": "PC/SP Full Page中盤（y≒900-6950）。インタラクション挙動は未確認。"
+      },
+      {
+        "name": "証拠・事例",
+        "role": "直近のプレスリリース・お知らせを時系列提示し企業活動の継続性を裏付ける。",
+        "reuse": "サムネイル＋日付＋カテゴリタグ＋見出し＋矢印のニュースリスト行パターン。",
+        "evidence": "PC Full Page（y≒6950-7430）。個別記事への遷移先URLは未確認。"
+      },
+      {
+        "name": "問い合わせ・コンバージョン",
+        "role": "Fabric Store／Recruit／Contact Usという3種の行動喚起をフッター内に独立配置する。",
+        "reuse": "目的別アウトラインボタンをフッター内に独立配置する手法。",
+        "evidence": "PC Full Page（y≒7640-7850）。Contact Usフォームの実際の項目は未確認。"
+      },
+      {
+        "name": "フッター",
+        "role": "サイトマップとしての網羅的リンク集約とブランドロゴの最終再掲。",
+        "reuse": "ヘッダーと対応した列構成＋大型ロゴ再掲＋著作権/法的リンクの三層構造。",
+        "evidence": "PC Full Page最下部。SPでの列折り返し方は未確認。"
+      }
+    ]
+  },
+  "strengths": [
+    "160年の歴史をタイムラインナビ＋年代別カルーセルで消化しやすく構造化している",
+    "4事業を番号リストで均等な重みで提示し単一事業への偏りを感じさせない",
+    "創業年「1864」の反復提示とHistoryセクションの巨大な袋文字背景に独自性がある"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "CTAが8種類あり優先順位が視覚的に均質化されている",
+      "evidence": "ヘッダー・各セクション・フッターに計8種のCTAが同等の重みで配置",
+      "fix": "訪問者属性別に主CTAを1つに絞るか、ヘッダーにContact Usを追加し常時視認可能にする",
+      "effect": "主要CVへの到達率向上",
+      "metric": "Contact Us/Recruitクリック率"
+    },
+    {
+      "priority": "P1",
+      "issue": "Cookie同意バナーがファーストビュー直下に重なる",
+      "evidence": "PC First View画像でバナーが見出し本文の一部に被っている",
+      "fix": "バナーをページ下部固定または非モーダル型に変更する",
+      "effect": "初見時の情報視認性向上",
+      "metric": "ファーストビュー離脱率"
+    },
+    {
+      "priority": "P2",
+      "issue": "Businessセクションの各事業項目に個別の問い合わせ導線が無い",
+      "evidence": "01-04番号リストに矢印アイコンのみで個別CTAが無い",
+      "fix": "各事業カードの遷移先に事業専用の問い合わせCTAを設置する",
+      "effect": "事業別リード獲得の精度向上",
+      "metric": "事業別詳細ページでのCV率"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "創業年訴求ファーストビュー",
+      "keep": "創業年の大きな数字表示＋ブランドコピー＋業種を象徴する抽象イラストの組み合わせ",
+      "replace": "創業年、コピー文言、イラストモチーフ"
+    },
+    {
+      "id": "C02",
+      "name": "タイムラインナビ＋年代別カルーセル",
+      "keep": "横並び年代ナビ＋選択年代の詳細（写真＋本文）＋次年代プレビュー",
+      "replace": "年代、写真、本文"
+    },
+    {
+      "id": "C03",
+      "name": "01-04番号付き事業リスト",
+      "keep": "連番＋和文/英文ラベル＋一行コピー＋矢印リンク＋区切り線の反復構造",
+      "replace": "事業名、コピー、写真"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "ロゴ、歴史写真・事業写真・ニュース写真、固有イラスト（糸束モチーフ）、固有コピー、協業先名称、サステナビリティ固有プログラム名",
+    "reusable": "タイムラインUI、番号リスト、非対称グリッド、明暗セクション交互配置の構成原則"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/WB-0030_SITE_PC_full.png",
+      "../01_Normal_Images/WB-0030_SITE_PC_first_view.png",
+      "../01_Normal_Images/WB-0030_SITE_SP_full.png",
+      "../01_Normal_Images/WB-0030_SITE_SP_first_view.png",
+      "https://stylem.co.jp/"
+    ],
+    "unknowns": [
+      "color_hex_not_pixel_measured",
+      "hamburger_menu_contents_unverified",
+      "timeline_interaction_unverified",
+      "post_click_flow_unverified",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}
