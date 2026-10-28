@@ -12322,6 +12322,106 @@
       "reviewPoints": "テンプレートの複製ではなく、グリッド・余白・主従関係のみを参考にする。",
       "deepDivePriority": "中",
       "generatedAt": "2026-10-27T16:47:52.710Z"
+    },
+    "GR-0159": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したチラシ・フライヤー参考。忘年会のお知らせチラシ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "暖色・黄橙系。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-28T16:36:24.229Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0159-untitled/03_Implementation_Blueprint/GR-0159_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0159-untitled/03_Implementation_Blueprint/GR-0159_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0159-untitled/03_Implementation_Blueprint/GR-0159_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0159-untitled/03_Implementation_Blueprint/GR-0159_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0160": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したポスター参考。秋の収穫祭ポスター。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "暖色・黄橙系。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-28T16:36:24.243Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0160-untitled/03_Implementation_Blueprint/GR-0160_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0160-untitled/03_Implementation_Blueprint/GR-0160_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0160-untitled/03_Implementation_Blueprint/GR-0160_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0160-untitled/03_Implementation_Blueprint/GR-0160_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0161": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したSNS投稿・Web広告参考。中央にオレンジ文字のかわいいハロウィンバナー。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "暖色・赤桃系。156×81の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-28T16:36:24.256Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0161-untitled/03_Implementation_Blueprint/GR-0161_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0161-untitled/03_Implementation_Blueprint/GR-0161_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0161-untitled/03_Implementation_Blueprint/GR-0161_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0161-untitled/03_Implementation_Blueprint/GR-0161_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0162": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集した名刺・ショップカード参考。水色背景の犬写真ペット名刺。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "ニュートラル。384×232の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-28T16:36:24.269Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0162-untitled/03_Implementation_Blueprint/GR-0162_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0162-untitled/03_Implementation_Blueprint/GR-0162_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0162-untitled/03_Implementation_Blueprint/GR-0162_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0162-untitled/03_Implementation_Blueprint/GR-0162_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0163": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したロゴ・VI/CI参考。金色の太い線と細い線の組み合わせのロゴ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "暗色・黒基調。400×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-28T16:36:24.284Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0163-untitled/03_Implementation_Blueprint/GR-0163_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0163-untitled/03_Implementation_Blueprint/GR-0163_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0163-untitled/03_Implementation_Blueprint/GR-0163_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0163-untitled/03_Implementation_Blueprint/GR-0163_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PAT-0063": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（デザインAC）から収集したPattern参考。忘年会のお知らせチラシに見る文字組みと視線誘導。",
+      "selectionReason": "日次収集から抽出（デザインAC）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "主見出し・補足・画像・行動情報のサイズ差と配置から、最初に読ませる情報を明確にする。 根拠候補: GR-0159",
+      "reviewPoints": "素材そのものではなく、情報階層と余白の考え方だけを転用する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-28T16:36:24.284Z"
     }
   }
 }
