@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T19:10:05.079Z",
+  "updatedAt": "2026-10-29T18:56:02.637Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -3167,6 +3167,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-28T16:36:21.767Z"
+    },
+    {
+      "id": "GR-0164",
+      "title": "ハロウィンフェスタポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fe641199f48d9cc5ca6fecd839ade2c78%2Fe641199f48d9cc5ca6fecd839ade2c78-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-31528",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fe641199f48d9cc5ca6fecd839ade2c78%2Fe641199f48d9cc5ca6fecd839ade2c78-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-29T18:56:02.637Z"
+    },
+    {
+      "id": "GR-0165",
+      "title": "秋の新メニュー紹介ポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F93a2dd61b346b6b3ade318a92076a1bf%2F93a2dd61b346b6b3ade318a92076a1bf-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30840",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F93a2dd61b346b6b3ade318a92076a1bf%2F93a2dd61b346b6b3ade318a92076a1bf-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-29T18:56:02.637Z"
+    },
+    {
+      "id": "GR-0166",
+      "title": "かわいいキャラクターのポップなハロウィンバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F7a3438a7e773292bf48ff2f0136ba74f%2F7a3438a7e773292bf48ff2f0136ba74f-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-23933",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F7a3438a7e773292bf48ff2f0136ba74f%2F7a3438a7e773292bf48ff2f0136ba74f-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-29T18:56:02.637Z"
+    },
+    {
+      "id": "GR-0167",
+      "title": "ビジュアル配置のクリエイティブデザイナー名刺デザイン",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F981ac06223c889ee58d3d38d312f3ed3%2F981ac06223c889ee58d3d38d312f3ed3-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29917",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F981ac06223c889ee58d3d38d312f3ed3%2F981ac06223c889ee58d3d38d312f3ed3-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-29T18:56:02.637Z"
+    },
+    {
+      "id": "GR-0168",
+      "title": "三色の抽象的なロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/e68f02ce1bfbf855f74bddd0a640482b/e68f02ce1bfbf855f74bddd0a640482b-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3022",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/e68f02ce1bfbf855f74bddd0a640482b/e68f02ce1bfbf855f74bddd0a640482b-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-29T18:56:02.637Z"
     },
     {
       "id": "ILAC-0001",
@@ -6926,6 +6986,30 @@
       "materialId": "PAT-0063",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-28T16:36:21.767Z"
+    },
+    {
+      "id": "PAT-0064",
+      "title": "ハロウィンフェスタポスターに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fe641199f48d9cc5ca6fecd839ade2c78%2Fe641199f48d9cc5ca6fecd839ade2c78-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-31528",
+      "imageUrl": null,
+      "materialId": "PAT-0064",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-29T18:56:02.637Z"
+    },
+    {
+      "id": "PAT-0065",
+      "title": "iDID Day 2026に見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://day2026.idid.team/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/ididday2026/",
+      "imageUrl": null,
+      "materialId": "PAT-0065",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-29T18:56:02.637Z"
     },
     {
       "id": "PHAC-0001",
@@ -11877,6 +11961,66 @@
       "reservedAt": "2026-10-27T16:47:11.839Z"
     },
     {
+      "id": "PT-0161",
+      "title": "uniiリサーチ（ユニーリサーチ）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/08/unii_00005.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4773",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/08/unii_00005.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-29T18:56:02.637Z"
+    },
+    {
+      "id": "PT-0162",
+      "title": "株式会社ミクシィ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/08/mixi_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4796",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/08/mixi_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-29T18:56:02.637Z"
+    },
+    {
+      "id": "PT-0163",
+      "title": "Colla（コラ）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/08/colla_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4755",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/08/colla_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-29T18:56:02.637Z"
+    },
+    {
+      "id": "PT-0164",
+      "title": "ビートラスト",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/08/beatrust_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4733",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/08/beatrust_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-29T18:56:02.637Z"
+    },
+    {
+      "id": "PT-0165",
+      "title": "Yappli Lite（ヤプリ ライト）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/07/yapplilite_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4717",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/07/yapplilite_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-29T18:56:02.637Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -12483,6 +12627,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-27T16:47:11.839Z"
+    },
+    {
+      "id": "WB-0052",
+      "title": "iDID Day 2026",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://day2026.idid.team/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/ididday2026/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/ididday2026_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-29T18:56:02.637Z"
+    },
+    {
+      "id": "WB-0053",
+      "title": "投資がはじめての方へ | マネックス証券",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://info.monex.co.jp/introduction/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/monex-introduction/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/monexintroduction_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-29T18:56:02.637Z"
     }
   ]
 }
