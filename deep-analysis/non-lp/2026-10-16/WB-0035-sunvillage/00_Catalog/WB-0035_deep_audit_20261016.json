@@ -1,0 +1,45 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0035",
+  "mode": "analysis",
+  "selected_for_deep_analysis": true,
+  "selection_reason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べる複数セクション構成のWebサイトのため",
+  "checks": {
+    "first_line": "Yes",
+    "chapters": "Yes",
+    "unit_headings": "Yes",
+    "unit_fields": "Yes",
+    "image_slots": "Yes",
+    "image_evidence": "Yes",
+    "candidate_parity": "Yes",
+    "rights": "Yes",
+    "unknowns": "Yes",
+    "sources": "Yes",
+    "run_record": "Yes",
+    "analysis_complete": "Yes"
+  },
+  "capture_cleanup": {
+    "status": "partial_lazy_content_unrendered",
+    "notes": "PC Full Page/First Viewでヒーロービジュアルが未読み込み。プレスリリース〜フッター間に2箇所の長い未読み込み区間あり。SP First View・reference.pngで完成状態を補完確認。"
+  },
+  "implementation_blueprint": {
+    "status": "reviewed_pending_dropbox_sync",
+    "platform": "WordPress Elementor",
+    "sections": 5,
+    "path": "04_Implementation_Blueprint/WB-0035_elementor_blueprint.md",
+    "diagram": "04_Implementation_Blueprint/WB-0035_elementor_brain_implementation.png",
+    "notionDiagram": "04_Implementation_Blueprint/WB-0035_elementor_brain_implementation_notion.jpg",
+    "note": "日次収集時の仮説版(screenshots/non-lp-candidates/WB-0035-untitled/03_Implementation_Blueprint/)を、29章分析で確定した実際のSection境界に基づき確定版として再生成した。Dropbox正本への昇格はまだ行っていない。"
+  },
+  "notion": {
+    "status": "synced_and_verified",
+    "page_url": "https://app.notion.com/p/3fb24d4fa67181cc86c5e6e6051b05fb",
+    "updated": ["properties(ステータス/サイト種別/主要目的/主要CV/主要CTA/総合評価/権利区分/GitHubナレッジパス/ナレッジ化ステータス/最終確認日)", "詳細分析サマリーブロック追記"]
+  },
+  "dropbox": {
+    "status": "not_synced_pending_user_approval",
+    "path": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-10-17/daily-intake/WB-0035",
+    "note": "正本昇格・新規書き込みは本ルーチンでは実施しない方針のため未実施。"
+  },
+  "cbs": "not_synced_user_approval_required"
+}
