@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T19:40:13.122Z",
+  "updatedAt": "2026-10-30T20:12:49.970Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -3227,6 +3227,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-29T18:56:02.637Z"
+    },
+    {
+      "id": "GR-0169",
+      "title": "ハロウィンマルシェチラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fa980065c25a15584b0d4c6db4ccb71a2%2Fa980065c25a15584b0d4c6db4ccb71a2-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-31466",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fa980065c25a15584b0d4c6db4ccb71a2%2Fa980065c25a15584b0d4c6db4ccb71a2-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-30T20:12:49.970Z"
+    },
+    {
+      "id": "GR-0170",
+      "title": "秋のイメージの休業日のおしらせ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fa9705fcb6a702d5a4c91dba36d55a7dc%2Fa9705fcb6a702d5a4c91dba36d55a7dc-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30813",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fa9705fcb6a702d5a4c91dba36d55a7dc%2Fa9705fcb6a702d5a4c91dba36d55a7dc-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-30T20:12:49.970Z"
+    },
+    {
+      "id": "GR-0171",
+      "title": "オレンジ色背景にコウモリイラストのハロウィンバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F26f29894b379b4e0c5c1f00be75e858f%2F26f29894b379b4e0c5c1f00be75e858f-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-23932",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F26f29894b379b4e0c5c1f00be75e858f%2F26f29894b379b4e0c5c1f00be75e858f-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-30T20:12:49.970Z"
+    },
+    {
+      "id": "GR-0172",
+      "title": "和文英字併記のシンプルデザイナー名刺デザイン",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F3aa95c6826a66d76aca02138031f10fb%2F3aa95c6826a66d76aca02138031f10fb-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29916",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F3aa95c6826a66d76aca02138031f10fb%2F3aa95c6826a66d76aca02138031f10fb-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-30T20:12:49.970Z"
+    },
+    {
+      "id": "GR-0173",
+      "title": "丸みを帯びた抽象的なロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/69bd30e9735995c551ab78460106a0af/69bd30e9735995c551ab78460106a0af-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3018",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/69bd30e9735995c551ab78460106a0af/69bd30e9735995c551ab78460106a0af-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-30T20:12:49.970Z"
     },
     {
       "id": "ILAC-0001",
@@ -7130,6 +7190,30 @@
       "materialId": "PAT-0065",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-29T18:56:02.637Z"
+    },
+    {
+      "id": "PAT-0066",
+      "title": "PERSOL MIRAIZ – 納得の“はたらく未来”支援サービスに見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://miraiz-persol.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/persolmiraiz/",
+      "imageUrl": null,
+      "materialId": "PAT-0066",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-30T20:12:49.970Z"
+    },
+    {
+      "id": "PAT-0067",
+      "title": "ミヂカナ株式会社に見るセクション内の役割集約",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Parts.）",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/07/mijikana_00007.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4711",
+      "imageUrl": null,
+      "materialId": "PAT-0067",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-30T20:12:49.970Z"
     },
     {
       "id": "PHAC-0001",
@@ -12261,6 +12345,66 @@
       "reservedAt": "2026-10-29T18:56:02.637Z"
     },
     {
+      "id": "PT-0166",
+      "title": "ミヂカナ株式会社",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/07/mijikana_00007.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4711",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/07/mijikana_00007.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-30T20:12:49.970Z"
+    },
+    {
+      "id": "PT-0167",
+      "title": "Catchy(キャッチー)",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/07/catchy_00005.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4696",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/07/catchy_00005.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-30T20:12:49.970Z"
+    },
+    {
+      "id": "PT-0168",
+      "title": "すこやかプラス",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/07/Sukoyaka_Plus_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4690",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/07/Sukoyaka_Plus_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-30T20:12:49.970Z"
+    },
+    {
+      "id": "PT-0169",
+      "title": "しまうまプリント",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/06/shimauma_00010.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4668",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/06/shimauma_00010.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-30T20:12:49.970Z"
+    },
+    {
+      "id": "PT-0170",
+      "title": "調整アポ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/06/chouseiapo_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4653",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/06/chouseiapo_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-30T20:12:49.970Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -12891,6 +13035,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-29T18:56:02.637Z"
+    },
+    {
+      "id": "WB-0054",
+      "title": "PERSOL MIRAIZ – 納得の“はたらく未来”支援サービス",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://miraiz-persol.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/persolmiraiz/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/persolmiraiz_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-30T20:12:49.970Z"
+    },
+    {
+      "id": "WB-0055",
+      "title": "THE MIM | オンラインストア",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://m-i-m.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/themim/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/themim_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-30T20:12:49.970Z"
     }
   ]
 }
