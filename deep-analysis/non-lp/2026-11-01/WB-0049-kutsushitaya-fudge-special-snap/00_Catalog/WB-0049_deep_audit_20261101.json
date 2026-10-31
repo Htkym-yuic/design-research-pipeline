@@ -1,0 +1,30 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0049",
+  "mode": "analysis",
+  "selected_for_deep_analysis": true,
+  "selection_reason": "商品一覧を先に置かず、スタイリング人物、靴下の接写、商品バリエーション、購入CTAを1つのLOOKごとに反復する編集型EC構造が、ファッション・雑貨の文脈販売へ転用しやすい。",
+  "checks": {
+    "first_line": "Yes",
+    "chapters": "Yes",
+    "unit_headings": "Yes",
+    "unit_fields": "Yes",
+    "image_slots": "Yes",
+    "image_evidence": "Yes",
+    "candidate_parity": "Yes",
+    "rights": "Yes",
+    "unknowns": "Yes",
+    "sources": "Yes",
+    "run_record": "Yes",
+    "analysis_complete": "Yes"
+  },
+  "notion": {
+    "status": "synced_and_verified",
+    "page_url": "https://app.notion.com/p/40524d4fa67181a68e93fb41bd1ba1b1"
+  },
+  "dropbox": {
+    "status": "synced_and_verified",
+    "path": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/selected/WB-0049-kutsushitaya-fudge-special-snap"
+  },
+  "cbs": "not_synced_user_approval_required"
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0052",
+  "mode": "analysis",
+  "selected_for_deep_analysis": true,
+  "selection_reason": "強いイラストFVから、趣旨、登壇者、会場証拠、概要、チケット、FAQ、関連イベント、スポンサーへ順に落とし込むため、カンファレンスやセミナーの募集設計として再利用価値が高い。",
+  "checks": {
+    "first_line": "Yes",
+    "chapters": "Yes",
+    "unit_headings": "Yes",
+    "unit_fields": "Yes",
+    "image_slots": "Yes",
+    "image_evidence": "Yes",
+    "candidate_parity": "Yes",
+    "rights": "Yes",
+    "unknowns": "Yes",
+    "sources": "Yes",
+    "run_record": "Yes",
+    "analysis_complete": "Yes"
+  },
+  "notion": {
+    "status": "synced_and_verified",
+    "page_url": "https://app.notion.com/p/40824d4fa6718159b2cdf044b4cb1023"
+  },
+  "dropbox": {
+    "status": "synced_and_verified",
+    "path": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/selected/WB-0052-idid-day-2026"
+  },
+  "cbs": "not_synced_user_approval_required"
+}

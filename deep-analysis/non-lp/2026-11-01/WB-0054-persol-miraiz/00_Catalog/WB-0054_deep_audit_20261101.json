@@ -1,0 +1,30 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0054",
+  "mode": "analysis",
+  "selected_for_deep_analysis": true,
+  "selection_reason": "抽象的なキャリア不安を共感コピーで受け止め、目的の異なる2サービスへ分岐し、成果数値、利用者の声、記事、FAQ、外部相談先へ段階的に接続するため、無形サービスのCV設計として学習価値が高い。",
+  "checks": {
+    "first_line": "Yes",
+    "chapters": "Yes",
+    "unit_headings": "Yes",
+    "unit_fields": "Yes",
+    "image_slots": "Yes",
+    "image_evidence": "Yes",
+    "candidate_parity": "Yes",
+    "rights": "Yes",
+    "unknowns": "Yes",
+    "sources": "Yes",
+    "run_record": "Yes",
+    "analysis_complete": "Yes"
+  },
+  "notion": {
+    "status": "synced_and_verified",
+    "page_url": "https://app.notion.com/p/40924d4fa671818aa98cdd5ba8f58ff6"
+  },
+  "dropbox": {
+    "status": "synced_and_verified",
+    "path": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/selected/WB-0054-persol-miraiz"
+  },
+  "cbs": "not_synced_user_approval_required"
+}

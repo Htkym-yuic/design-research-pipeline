@@ -1,0 +1,135 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0052",
+  "media_type": "WB",
+  "title": "iDID Day 2026",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://sankoudesign.com/web/ididday2026/",
+    "capture_url": "https://day2026.idid.team/",
+    "official_url": "https://day2026.idid.team/"
+  },
+  "analysis": {
+    "summary": "デジタルクリエイティブ領域のイベントを、街のようなイラストFVと硬質な情報ブロックで両立させたイベントサイト。 登壇者カード、会場写真、開催概要、2種のチケット、FAQを順に配置し、興味喚起から参加判断までを一ページで完結させる。 PCの余白と左右分散、SPの単列化を使い分けながら、番号付き章見出しで長尺の現在地を保つ。",
+    "score": {
+      "visual": 18,
+      "clarity": 18,
+      "originality": 14,
+      "reusability": 19,
+      "learning": 15,
+      "evidence": 10,
+      "total": 94
+    },
+    "units": [
+      {
+        "name": "ファーストビュー",
+        "role": "イベント名、テーマ、街型イラスト、開催情報",
+        "reuse": "横長イラストを全幅配置し下端に情報帯とロゴ→イラスト内の活動→開催日への役割分担",
+        "evidence": "WB-0052_SITE_PC_full.pngおよびWB-0052_SITE_SP_full.pngの目視確認"
+      },
+      {
+        "name": "挨拶・趣旨",
+        "role": "開催の背景、iDIDの説明、対象領域",
+        "reuse": "左に大見出し、右に本文、下に日付補足と見出しから説明文へ水平移動の役割分担",
+        "evidence": "WB-0052_SITE_PC_full.pngおよびWB-0052_SITE_SP_full.pngの目視確認"
+      },
+      {
+        "name": "登壇者",
+        "role": "顔写真、氏名、肩書、所属",
+        "reuse": "PCは横一列、SPは2列カードと色別カードと顔写真で比較の役割分担",
+        "evidence": "WB-0052_SITE_PC_full.pngおよびWB-0052_SITE_SP_full.pngの目視確認"
+      },
+      {
+        "name": "会場・概要",
+        "role": "会場写真、協力組織、日時、場所、アクセス",
+        "reuse": "写真帯の後にロゴグリッドと表と感情的証拠から実用情報へ移行の役割分担",
+        "evidence": "WB-0052_SITE_PC_full.pngおよびWB-0052_SITE_SP_full.pngの目視確認"
+      },
+      {
+        "name": "チケット・FAQ",
+        "role": "Making・Thinking等の種別、価格・条件、申込、質問",
+        "reuse": "左見出し・右詳細、FAQはアコーディオンと種別→条件→申込→不安解消の役割分担",
+        "evidence": "WB-0052_SITE_PC_full.pngおよびWB-0052_SITE_SP_full.pngの目視確認"
+      },
+      {
+        "name": "関連イベント・スポンサー",
+        "role": "関連企画カード、法人案内、スポンサー一覧",
+        "reuse": "茶色の関連企画帯の後にロゴグリッドと次の回遊と主催基盤を最後に提示の役割分担",
+        "evidence": "WB-0052_SITE_PC_full.pngおよびWB-0052_SITE_SP_full.pngの目視確認"
+      }
+    ]
+  },
+  "strengths": [
+    "感情的FVと実用情報の明確な役割分担",
+    "登壇者・会場・スポンサーの多層証拠",
+    "チケット比較からFAQへの自然な順序"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "登壇者と内容の対応が弱い",
+      "evidence": "人物カードとプログラムが離れている",
+      "fix": "人物カードにテーマ・時刻・詳細アンカーを追加",
+      "effect": "参加動機を具体化",
+      "metric": "登壇者カードCTR"
+    },
+    {
+      "priority": "P1",
+      "issue": "チケット種別の比較負荷",
+      "evidence": "縦並びの文章中心",
+      "fix": "対象・含まれる体験・価格・定員を比較表化",
+      "effect": "選択時間を短縮",
+      "metric": "購入開始率"
+    },
+    {
+      "priority": "P2",
+      "issue": "長尺で申込み導線が遠い",
+      "evidence": "申込は下部中心",
+      "fix": "PC/SPに固定チケットCTAを追加",
+      "effect": "機会損失を低減",
+      "metric": "固定CTA利用率"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "街型イラストのイベントFV",
+      "keep": "情報順、役割分担、余白・反復構造",
+      "replace": "ロゴ、人物・商品写真、固有コピー、ブランド色"
+    },
+    {
+      "id": "C02",
+      "name": "色分け登壇者カード一覧",
+      "keep": "情報順、役割分担、余白・反復構造",
+      "replace": "ロゴ、人物・商品写真、固有コピー、ブランド色"
+    },
+    {
+      "id": "C03",
+      "name": "チケット比較からFAQへの導線",
+      "keep": "情報順、役割分担、余白・反復構造",
+      "replace": "ロゴ、人物・商品写真、固有コピー、ブランド色"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "ロゴ、人物・商品写真、イベントイラスト、固有コピー、企業ロゴ",
+    "reusable": "構成、余白、情報順序、CTAの役割、色分け原則"
+  },
+  "evidence": {
+    "files": [
+      "https://day2026.idid.team/",
+      "WB-0052_SITE_PC_full.png",
+      "WB-0052_SITE_SP_full.png",
+      "WB-0052_elementor_brain_implementation.png"
+    ],
+    "unknowns": [
+      "section_index_not_generated_separately",
+      "interaction_state_not_captured",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

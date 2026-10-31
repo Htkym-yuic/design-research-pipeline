@@ -1,48 +1,64 @@
 {
   "schema_version": "drs-deep-selection-1.0",
-  "runDate": "2026-10-25",
+  "runDate": "2026-11-01",
   "weeklyTop3": [
     {
-      "id": "WB-0041",
+      "id": "WB-0049",
       "status": "selected_for_non_lp_deep_analysis",
-      "reason": "多国籍事業の理念を人物、職種、文化、多層証拠へ展開し、複数採用区分を一つの物語へ統合している"
+      "reason": "商品一覧を先に置かず、スタイリング人物、靴下の接写、商品バリエーション、購入CTAを1つのLOOKごとに反復する編集型EC構造が、ファッション・雑貨の文脈販売へ転用しやすい。"
     },
     {
-      "id": "WB-0044",
+      "id": "WB-0052",
       "status": "selected_for_non_lp_deep_analysis",
-      "reason": "医療の専門性、疾患理解、受診フロー、診療時間、連絡導線を親しみやすい図解で統合している"
+      "reason": "強いイラストFVから、趣旨、登壇者、会場証拠、概要、チケット、FAQ、関連イベント、スポンサーへ順に落とし込むため、カンファレンスやセミナーの募集設計として再利用価値が高い。"
     },
     {
-      "id": "WB-0038",
+      "id": "WB-0054",
       "status": "selected_for_non_lp_deep_analysis",
-      "reason": "自然、食、客室、予約を広い余白と写真編集で静かな滞在物語へ統合している"
+      "reason": "抽象的なキャリア不安を共感コピーで受け止め、目的の異なる2サービスへ分岐し、成果数値、利用者の声、記事、FAQ、外部相談先へ段階的に接続するため、無形サービスのCV設計として学習価値が高い。"
     }
   ],
   "selected": [
     {
-      "id": "WB-0041",
+      "id": "WB-0049",
       "type": "WB",
-      "title": "GTN採用サイト | 境界線を越える挑戦へ",
+      "title": "KUTSUSHITAYA × FUDGE.jp SPECIAL SNAP｜この秋は、レトロな靴下が気分でして。",
       "source": "SANKOU!",
-      "url": "https://www.gtn.co.jp/recruit",
-      "reason": "PC/SP画像と実装一次設計が揃い、理念から複数採用区分、職種、文化、応募までを分析できる"
+      "url": "https://tabio.com/blogs/features/friendsnap2026",
+      "reason": "商品一覧を先に置かず、スタイリング人物、靴下の接写、商品バリエーション、購入CTAを1つのLOOKごとに反復する編集型EC構造が、ファッション・雑貨の文脈販売へ転用しやすい。 PC/SP画像とElementor一次設計が揃っている。"
     },
     {
-      "id": "WB-0044",
+      "id": "WB-0052",
       "type": "WB",
-      "title": "八王子糖尿病内科クリニック",
+      "title": "iDID Day 2026",
       "source": "SANKOU!",
-      "url": "https://hachioji-dm.com/",
-      "reason": "PC/SP画像が揃い、医療の信頼形成、疾患教育、受診フロー、電話・時間・アクセスを分析できる"
+      "url": "https://day2026.idid.team/",
+      "reason": "強いイラストFVから、趣旨、登壇者、会場証拠、概要、チケット、FAQ、関連イベント、スポンサーへ順に落とし込むため、カンファレンスやセミナーの募集設計として再利用価値が高い。 PC/SP画像とElementor一次設計が揃っている。"
     },
     {
-      "id": "WB-0038",
+      "id": "WB-0054",
       "type": "WB",
-      "title": "SHIJIMA ATAMI | 都会の喧騒から離れたホテル",
+      "title": "PERSOL MIRAIZ｜納得の“はたらく未来”支援サービス",
       "source": "SANKOU!",
-      "url": "https://shijima-atami.com/",
-      "reason": "PC/SP画像が揃い、写真編集、余白設計、自然・食・客室・予約の体験順を分析できる"
+      "url": "https://miraiz-persol.jp/",
+      "reason": "抽象的なキャリア不安を共感コピーで受け止め、目的の異なる2サービスへ分岐し、成果数値、利用者の声、記事、FAQ、外部相談先へ段階的に接続するため、無形サービスのCV設計として学習価値が高い。 PC/SP画像とElementor一次設計が揃っている。"
     }
   ],
-  "excluded": []
+  "excluded": [
+    {
+      "id": "WB-0048",
+      "status": "recapture_wait",
+      "reason": "First Viewが黒い読み込み状態"
+    },
+    {
+      "id": "WB-0053",
+      "status": "recapture_wait",
+      "reason": "Access Denied画面"
+    },
+    {
+      "id": "WB-0056",
+      "status": "recapture_wait",
+      "reason": "大きなモーダルが画面を遮蔽"
+    }
+  ]
 }

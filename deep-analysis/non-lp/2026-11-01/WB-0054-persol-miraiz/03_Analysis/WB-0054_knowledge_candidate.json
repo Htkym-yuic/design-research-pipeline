@@ -1,0 +1,135 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0054",
+  "media_type": "WB",
+  "title": "PERSOL MIRAIZ｜納得の“はたらく未来”支援サービス",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://sankoudesign.com/web/persolmiraiz/",
+    "capture_url": "https://miraiz-persol.jp/",
+    "official_url": "https://miraiz-persol.jp/"
+  },
+  "analysis": {
+    "summary": "働く未来への迷いを、自己理解イベントとキャリア相談という2つの支援サービスへ分けて解消するサービスサイト。 FV直後に『はたらくの中に、自分らしさの納得を。』と問題を言語化し、ピンクと緑の2カードで入口を選ばせる。 開催実績、満足度、利用者の声、記事、FAQを重ね、最後に外部相談窓口と企業ブランドへ接続する。",
+    "score": {
+      "visual": 19,
+      "clarity": 19,
+      "originality": 13,
+      "reusability": 20,
+      "learning": 15,
+      "evidence": 10,
+      "total": 96
+    },
+    "units": [
+      {
+        "name": "ファーストビュー",
+        "role": "人物、巨大コピー、2つの主要CTA、ロゴ",
+        "reuse": "人物を中央寄せし、青い文字と線を大きく重ねるとコピー→人物→ピンク・緑CTAの役割分担",
+        "evidence": "WB-0054_SITE_PC_full.pngおよびWB-0054_SITE_SP_full.pngの目視確認"
+      },
+      {
+        "name": "価値提案",
+        "role": "自分らしさと納得に関する説明、複数人物写真",
+        "reuse": "左右本文と円形人物列と大見出し→説明→多様な人物の役割分担",
+        "evidence": "WB-0054_SITE_PC_full.pngおよびWB-0054_SITE_SP_full.pngの目視確認"
+      },
+      {
+        "name": "サービス分岐",
+        "role": "MIRAIZ HUBとCAREER COACHの概要・対象・CTA",
+        "reuse": "ピンクと緑の2カードを左右並列、SPは縦積みと悩み別ラベル→説明→CTAの役割分担",
+        "evidence": "WB-0054_SITE_PC_full.pngおよびWB-0054_SITE_SP_full.pngの目視確認"
+      },
+      {
+        "name": "MIRAIZ HUB",
+        "role": "イベント説明、開催数値、会場写真、利用者の声",
+        "reuse": "淡桃の大面に写真グリッドと数値カードと概要→数値証拠→現場写真→声の役割分担",
+        "evidence": "WB-0054_SITE_PC_full.pngおよびWB-0054_SITE_SP_full.pngの目視確認"
+      },
+      {
+        "name": "CAREER COACH",
+        "role": "相談内容、無料・時間・回数、写真、利用者の声",
+        "reuse": "淡緑の大面に条件カードと写真グリッドと価値→条件→相談場面→声の役割分担",
+        "evidence": "WB-0054_SITE_PC_full.pngおよびWB-0054_SITE_SP_full.pngの目視確認"
+      },
+      {
+        "name": "記事・FAQ・クロージング",
+        "role": "記事カード、よくある質問、ブランド宣言、相談窓口、企業情報",
+        "reuse": "白背景のカード群から淡青の宣言、最後にフッターと学習→反論処理→理念再提示→行動の役割分担",
+        "evidence": "WB-0054_SITE_PC_full.pngおよびWB-0054_SITE_SP_full.pngの目視確認"
+      }
+    ]
+  },
+  "strengths": [
+    "課題共感から2サービス分岐への短い導線",
+    "色分けと同型カードによる比較容易性",
+    "数値・写真・声・FAQの多層証拠"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "2サービスの適合判断が自己申告に依存",
+      "evidence": "分岐カードは説明中心",
+      "fix": "3問程度の悩み診断と推奨入口を追加",
+      "effect": "誤選択と離脱を減らす",
+      "metric": "診断完了率・推奨CTA率"
+    },
+    {
+      "priority": "P1",
+      "issue": "利用者の声が横流れで比較しにくい",
+      "evidence": "複数カードが画面外へ続く",
+      "fix": "悩み・年代タグと停止可能な一覧を追加",
+      "effect": "自分に近い証拠を発見",
+      "metric": "声カード詳細率"
+    },
+    {
+      "priority": "P2",
+      "issue": "終盤の行動が分散",
+      "evidence": "記事・FAQ・外部相談・各サービスが併存",
+      "fix": "最後に2サービスCTAを再集約し外部相談を補助化",
+      "effect": "主要CVを明確化",
+      "metric": "最終CTA転換率"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "共感コピーと人物の課題喚起FV",
+      "keep": "情報順、役割分担、余白・反復構造",
+      "replace": "ロゴ、人物・商品写真、固有コピー、ブランド色"
+    },
+    {
+      "id": "C02",
+      "name": "同型・色分けされた2サービス分岐",
+      "keep": "情報順、役割分担、余白・反復構造",
+      "replace": "ロゴ、人物・商品写真、固有コピー、ブランド色"
+    },
+    {
+      "id": "C03",
+      "name": "数値・現場写真・利用者の声の証拠階層",
+      "keep": "情報順、役割分担、余白・反復構造",
+      "replace": "ロゴ、人物・商品写真、固有コピー、ブランド色"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "ロゴ、人物・商品写真、イベントイラスト、固有コピー、企業ロゴ",
+    "reusable": "構成、余白、情報順序、CTAの役割、色分け原則"
+  },
+  "evidence": {
+    "files": [
+      "https://miraiz-persol.jp/",
+      "WB-0054_SITE_PC_full.png",
+      "WB-0054_SITE_SP_full.png",
+      "WB-0054_elementor_brain_implementation.png"
+    ],
+    "unknowns": [
+      "section_index_not_generated_separately",
+      "interaction_state_not_captured",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

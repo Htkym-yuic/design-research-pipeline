@@ -1,0 +1,135 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0049",
+  "media_type": "WB",
+  "title": "KUTSUSHITAYA × FUDGE.jp SPECIAL SNAP｜この秋は、レトロな靴下が気分でして。",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://sankoudesign.com/web/kutsushitayafudgejp-specialsnap/",
+    "capture_url": "https://tabio.com/blogs/features/friendsnap2026",
+    "official_url": "https://tabio.com/blogs/features/friendsnap2026"
+  },
+  "analysis": {
+    "summary": "靴下を単品で並べず、FUDGEらしい人物スナップとレトロな生活場面の中で商品価値を伝える編集型EC特集。 3つのSNAPが、全幅の導入写真、スタイリング写真、足元接写、色柄バリエーション、BUY NOWの順を反復し、閲覧と購入を自然につなぐ。 余白の大きい淡い背景とコラージュ配置により、長尺でもカタログではなく雑誌を読む感覚を維持している。",
+    "score": {
+      "visual": 19,
+      "clarity": 17,
+      "originality": 14,
+      "reusability": 18,
+      "learning": 14,
+      "evidence": 10,
+      "total": 92
+    },
+    "units": [
+      {
+        "name": "ファーストビュー",
+        "role": "コラボ名、季節テーマ、3人のスタイリング人物",
+        "reuse": "3分割の濃色背景に人物を切り抜き配置と大きな企画名から人物、靴下へ視線が落ちるの役割分担",
+        "evidence": "WB-0049_SITE_PC_full.pngおよびWB-0049_SITE_SP_full.pngの目視確認"
+      },
+      {
+        "name": "企画説明・モデル紹介",
+        "role": "短いイントロ、靴下モチーフ、3人のプロフィール",
+        "reuse": "細い本文と小さな円形プロフィールを中央配置と余白の後に説明と人物の順で企画前提を理解させるの役割分担",
+        "evidence": "WB-0049_SITE_PC_full.pngおよびWB-0049_SITE_SP_full.pngの目視確認"
+      },
+      {
+        "name": "SNAP 01",
+        "role": "全身、室内写真、足元、商品色柄、購入CTA",
+        "reuse": "全幅導入帯の後に左右非対称コラージュと人物全体→足元→商品単体→CTAの役割分担",
+        "evidence": "WB-0049_SITE_PC_full.pngおよびWB-0049_SITE_SP_full.pngの目視確認"
+      },
+      {
+        "name": "SNAP 02",
+        "role": "生活場面、円形接写、靴と靴下の組合せ、商品列",
+        "reuse": "矩形写真と円形写真を重ねた見開き風と場面写真から局所接写へズームするの役割分担",
+        "evidence": "WB-0049_SITE_PC_full.pngおよびWB-0049_SITE_SP_full.pngの目視確認"
+      },
+      {
+        "name": "SNAP 03",
+        "role": "濃緑の導入帯、人物、椅子の生活場面、商品列",
+        "reuse": "強い導入帯と余白の大きいコラージュと色面→人物→足元→商品→CTAの役割分担",
+        "evidence": "WB-0049_SITE_PC_full.pngおよびWB-0049_SITE_SP_full.pngの目視確認"
+      },
+      {
+        "name": "クロージング",
+        "role": "集合スナップ、制作・出演情報",
+        "reuse": "人物を中央に集め、クレジットを小さく整理と購入訴求を終えた後に企画の余韻と出典を提示の役割分担",
+        "evidence": "WB-0049_SITE_PC_full.pngおよびWB-0049_SITE_SP_full.pngの目視確認"
+      }
+    ]
+  },
+  "strengths": [
+    "着用文脈から商品へ分解する反復構造",
+    "雑誌的な長尺編集と購入CTAの両立",
+    "PC/SPで物語順を維持"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "長尺で商品位置を見失う",
+      "evidence": "PC 18592px・SP 20907px",
+      "fix": "SNAP 01〜03の追従アンカーと商品一覧へ戻る導線を追加",
+      "effect": "商品再発見を短縮",
+      "metric": "商品クリック率・スクロール深度"
+    },
+    {
+      "priority": "P1",
+      "issue": "BUY NOWが対象商品を特定しにくい",
+      "evidence": "複数商品列の後に同一文言",
+      "fix": "商品名・価格帯・色数をCTA付近へ追加",
+      "effect": "遷移前の判断を強化",
+      "metric": "CTA到達後遷移率"
+    },
+    {
+      "priority": "P2",
+      "issue": "商品比較が章をまたぐ",
+      "evidence": "各SNAPが独立して長い",
+      "fix": "末尾に全商品比較グリッドを追加",
+      "effect": "比較離脱を削減",
+      "metric": "比較セクション利用率"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "人物・足元・商品列の三段編集",
+      "keep": "情報順、役割分担、余白・反復構造",
+      "replace": "ロゴ、人物・商品写真、固有コピー、ブランド色"
+    },
+    {
+      "id": "C02",
+      "name": "濃色導入帯と余白コラージュ",
+      "keep": "情報順、役割分担、余白・反復構造",
+      "replace": "ロゴ、人物・商品写真、固有コピー、ブランド色"
+    },
+    {
+      "id": "C03",
+      "name": "文脈理解後の楕円購入CTA",
+      "keep": "情報順、役割分担、余白・反復構造",
+      "replace": "ロゴ、人物・商品写真、固有コピー、ブランド色"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "ロゴ、人物・商品写真、イベントイラスト、固有コピー、企業ロゴ",
+    "reusable": "構成、余白、情報順序、CTAの役割、色分け原則"
+  },
+  "evidence": {
+    "files": [
+      "https://tabio.com/blogs/features/friendsnap2026",
+      "WB-0049_SITE_PC_full.png",
+      "WB-0049_SITE_SP_full.png",
+      "WB-0049_elementor_brain_implementation.png"
+    ],
+    "unknowns": [
+      "section_index_not_generated_separately",
+      "interaction_state_not_captured",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}
