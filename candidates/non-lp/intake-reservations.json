@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T21:54:00.873Z",
+  "updatedAt": "2026-10-31T16:29:52.674Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -3287,6 +3287,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-30T20:12:49.970Z"
+    },
+    {
+      "id": "GR-0174",
+      "title": "ハロウィンチラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F553a671d982401d6823724a515e23ebd%2F553a671d982401d6823724a515e23ebd-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-31459",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F553a671d982401d6823724a515e23ebd%2F553a671d982401d6823724a515e23ebd-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-31T16:29:52.674Z"
+    },
+    {
+      "id": "GR-0175",
+      "title": "マルシェポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F99e451b3789efc1b65397c0f0429addf%2F99e451b3789efc1b65397c0f0429addf-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30796",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F99e451b3789efc1b65397c0f0429addf%2F99e451b3789efc1b65397c0f0429addf-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-31T16:29:52.674Z"
+    },
+    {
+      "id": "GR-0176",
+      "title": "オレンジ色と黄色の斜線背景のハロウィンセールバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F8477a71d0eb3a0e8290c61fcae8d7eb1%2F8477a71d0eb3a0e8290c61fcae8d7eb1-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-23931",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F8477a71d0eb3a0e8290c61fcae8d7eb1%2F8477a71d0eb3a0e8290c61fcae8d7eb1-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-31T16:29:52.674Z"
+    },
+    {
+      "id": "GR-0177",
+      "title": "ナチュラルカラーのデザイナー名刺デザイン",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F55695c0bc1bb57b2520b5ce33018ea58%2F55695c0bc1bb57b2520b5ce33018ea58-400.webp&w=256&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29915",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F55695c0bc1bb57b2520b5ce33018ea58%2F55695c0bc1bb57b2520b5ce33018ea58-400.webp&w=256&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-31T16:29:52.674Z"
+    },
+    {
+      "id": "GR-0178",
+      "title": "紫とピンクの正方形のロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/09490463f7df4b55eda7f9b28309557f/09490463f7df4b55eda7f9b28309557f-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3014",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/09490463f7df4b55eda7f9b28309557f/09490463f7df4b55eda7f9b28309557f-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-31T16:29:52.674Z"
     },
     {
       "id": "ILAC-0001",
@@ -7334,6 +7394,30 @@
       "materialId": "PAT-0067",
       "authorProfileUrl": null,
       "reservedAt": "2026-10-30T20:12:49.970Z"
+    },
+    {
+      "id": "PAT-0068",
+      "title": "あと払いペイディに見るセクション内の役割集約",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Parts.）",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/06/paidy_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4641",
+      "imageUrl": null,
+      "materialId": "PAT-0068",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-31T16:29:52.674Z"
+    },
+    {
+      "id": "PAT-0069",
+      "title": "ハロウィンチラシに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F553a671d982401d6823724a515e23ebd%2F553a671d982401d6823724a515e23ebd-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-31459",
+      "imageUrl": null,
+      "materialId": "PAT-0069",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-31T16:29:52.674Z"
     },
     {
       "id": "PHAC-0001",
@@ -12645,6 +12729,66 @@
       "reservedAt": "2026-10-30T20:12:49.970Z"
     },
     {
+      "id": "PT-0171",
+      "title": "あと払いペイディ",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/06/paidy_00001.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4641",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/06/paidy_00001.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-31T16:29:52.674Z"
+    },
+    {
+      "id": "PT-0172",
+      "title": "TOKIUM（トキウム）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/06/tokium_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4623",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/06/tokium_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-31T16:29:52.674Z"
+    },
+    {
+      "id": "PT-0173",
+      "title": "でんさいネット",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/06/densai_00004.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4602",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/06/densai_00004.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-31T16:29:52.674Z"
+    },
+    {
+      "id": "PT-0174",
+      "title": "ヤマトホールディングス株式会社",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/06/yamato-hd_00007.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4590",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/06/yamato-hd_00007.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-31T16:29:52.674Z"
+    },
+    {
+      "id": "PT-0175",
+      "title": "OPTEMO",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2022/05/optemo_00006.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/4575",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2022/05/optemo_00006.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-31T16:29:52.674Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -13299,6 +13443,18 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-10-30T20:12:49.970Z"
+    },
+    {
+      "id": "WB-0056",
+      "title": "新卒採用サイト | 前のタクシーを追ってくれ | 三和交通",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://freshers.sanwakoutsu.co.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/sanwakoutsufreshers/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/sanwakoutsufreshers_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-10-31T16:29:52.674Z"
     }
   ]
 }
