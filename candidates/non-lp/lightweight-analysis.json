@@ -13494,6 +13494,224 @@
       "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
       "deepDivePriority": "中",
       "generatedAt": "2026-10-30T21:55:08.579Z"
+    },
+    "WB-0056": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。新卒採用サイト | 前のタクシーを追ってくれ | 三和交通。",
+      "selectionReason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+      "visualSummary": "暖色・黄橙系。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-31T16:30:23.145Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/WB-0056-untitled/03_Implementation_Blueprint/WB-0056_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/WB-0056-untitled/03_Implementation_Blueprint/WB-0056_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/WB-0056-untitled/03_Implementation_Blueprint/WB-0056_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/WB-0056-untitled/03_Implementation_Blueprint/WB-0056_elementor_implementation_guide.md",
+        "sections": 8,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0174": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したチラシ・フライヤー参考。ハロウィンチラシ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "寒色・青紫系。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-31T16:30:23.156Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0174-untitled/03_Implementation_Blueprint/GR-0174_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0174-untitled/03_Implementation_Blueprint/GR-0174_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0174-untitled/03_Implementation_Blueprint/GR-0174_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0174-untitled/03_Implementation_Blueprint/GR-0174_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0175": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したポスター参考。マルシェポスター。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "暖色・黄橙系。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-31T16:30:23.167Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0175-untitled/03_Implementation_Blueprint/GR-0175_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0175-untitled/03_Implementation_Blueprint/GR-0175_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0175-untitled/03_Implementation_Blueprint/GR-0175_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0175-untitled/03_Implementation_Blueprint/GR-0175_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0176": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したSNS投稿・Web広告参考。オレンジ色と黄色の斜線背景のハロウィンセールバナー。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "暖色・黄橙系。156×81の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-31T16:30:23.176Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0176-untitled/03_Implementation_Blueprint/GR-0176_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0176-untitled/03_Implementation_Blueprint/GR-0176_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0176-untitled/03_Implementation_Blueprint/GR-0176_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0176-untitled/03_Implementation_Blueprint/GR-0176_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0177": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集した名刺・ショップカード参考。ナチュラルカラーのデザイナー名刺デザイン。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "ニュートラル。242×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-31T16:30:23.185Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0177-untitled/03_Implementation_Blueprint/GR-0177_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0177-untitled/03_Implementation_Blueprint/GR-0177_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0177-untitled/03_Implementation_Blueprint/GR-0177_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0177-untitled/03_Implementation_Blueprint/GR-0177_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0178": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したロゴ・VI/CI参考。紫とピンクの正方形のロゴ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。400×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-31T16:30:23.197Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0178-untitled/03_Implementation_Blueprint/GR-0178_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0178-untitled/03_Implementation_Blueprint/GR-0178_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0178-untitled/03_Implementation_Blueprint/GR-0178_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0178-untitled/03_Implementation_Blueprint/GR-0178_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0171": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。あと払いペイディ。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "ニュートラル。1338×586の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-31T16:30:23.223Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0171-untitled/03_Implementation_Blueprint/PT-0171_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0171-untitled/03_Implementation_Blueprint/PT-0171_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0171-untitled/03_Implementation_Blueprint/PT-0171_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0171-untitled/03_Implementation_Blueprint/PT-0171_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0172": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。TOKIUM（トキウム）。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "寒色・青紫系。1419×581の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-31T16:30:23.247Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0172-tokium/03_Implementation_Blueprint/PT-0172_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0172-tokium/03_Implementation_Blueprint/PT-0172_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0172-tokium/03_Implementation_Blueprint/PT-0172_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0172-tokium/03_Implementation_Blueprint/PT-0172_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0173": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。でんさいネット。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "寒色・青紫系。1430×340の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-31T16:30:23.263Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0173-untitled/03_Implementation_Blueprint/PT-0173_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0173-untitled/03_Implementation_Blueprint/PT-0173_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0173-untitled/03_Implementation_Blueprint/PT-0173_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0173-untitled/03_Implementation_Blueprint/PT-0173_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0174": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。ヤマトホールディングス株式会社。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "明色・白基調。1433×762の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-31T16:30:23.292Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0174-untitled/03_Implementation_Blueprint/PT-0174_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0174-untitled/03_Implementation_Blueprint/PT-0174_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0174-untitled/03_Implementation_Blueprint/PT-0174_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0174-untitled/03_Implementation_Blueprint/PT-0174_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0175": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。OPTEMO。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "寒色・青紫系。1428×547の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-31T16:30:23.314Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0175-optemo/03_Implementation_Blueprint/PT-0175_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0175-optemo/03_Implementation_Blueprint/PT-0175_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0175-optemo/03_Implementation_Blueprint/PT-0175_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0175-optemo/03_Implementation_Blueprint/PT-0175_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PAT-0068": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（Parts.）から収集したPattern参考。あと払いペイディに見るセクション内の役割集約。",
+      "selectionReason": "日次収集から抽出（Parts.）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "一つのセクション内で見出し・説明・証拠・行動導線の役割を整理し、他案件へ転用可能な単位として捉える。 根拠候補: PT-0171",
+      "reviewPoints": "切り出し範囲が広すぎないか、前後セクションへの依存がないかを確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-31T16:30:23.314Z"
+    },
+    "PAT-0069": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（デザインAC）から収集したPattern参考。ハロウィンチラシに見る文字組みと視線誘導。",
+      "selectionReason": "日次収集から抽出（デザインAC）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "主見出し・補足・画像・行動情報のサイズ差と配置から、最初に読ませる情報を明確にする。 根拠候補: GR-0174",
+      "reviewPoints": "素材そのものではなく、情報階層と余白の考え方だけを転用する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-10-31T16:30:23.314Z"
     }
   }
 }
