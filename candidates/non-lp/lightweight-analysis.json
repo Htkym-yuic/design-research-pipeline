@@ -13912,6 +13912,278 @@
       "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
       "deepDivePriority": "中",
       "generatedAt": "2026-10-31T16:58:00.591Z"
+    },
+    "WB-0057": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。Patmos | Wahr。",
+      "selectionReason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+      "visualSummary": "暗色・黒基調。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-01T19:46:50.053Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/WB-0057-patmos-wahr/03_Implementation_Blueprint/WB-0057_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/WB-0057-patmos-wahr/03_Implementation_Blueprint/WB-0057_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/WB-0057-patmos-wahr/03_Implementation_Blueprint/WB-0057_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/WB-0057-patmos-wahr/03_Implementation_Blueprint/WB-0057_elementor_implementation_guide.md",
+        "sections": 8,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "WB-0058": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。LIGHT THE WAY 10th Anniversary Website | LIGHT THE WAY Inc.。",
+      "selectionReason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+      "visualSummary": "ニュートラル。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-01T19:46:50.069Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/WB-0058-light-the-way-10th-anniversary-website-light-the-way-inc/03_Implementation_Blueprint/WB-0058_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/WB-0058-light-the-way-10th-anniversary-website-light-the-way-inc/03_Implementation_Blueprint/WB-0058_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/WB-0058-light-the-way-10th-anniversary-website-light-the-way-inc/03_Implementation_Blueprint/WB-0058_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/WB-0058-light-the-way-10th-anniversary-website-light-the-way-inc/03_Implementation_Blueprint/WB-0058_elementor_implementation_guide.md",
+        "sections": 8,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0179": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したチラシ・フライヤー参考。スポーツの推しを応援する推し活記念日チラシ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "ニュートラル。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-01T19:46:50.084Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0179-untitled/03_Implementation_Blueprint/GR-0179_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0179-untitled/03_Implementation_Blueprint/GR-0179_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0179-untitled/03_Implementation_Blueprint/GR-0179_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0179-untitled/03_Implementation_Blueprint/GR-0179_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0180": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したポスター参考。シルバーウィーク休業のお知らせ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。400×283の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-01T19:46:50.098Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0180-untitled/03_Implementation_Blueprint/GR-0180_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0180-untitled/03_Implementation_Blueprint/GR-0180_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0180-untitled/03_Implementation_Blueprint/GR-0180_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0180-untitled/03_Implementation_Blueprint/GR-0180_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0181": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したSNS投稿・Web広告参考。ガイドブックを持った女性が鳥居の前にいる写真のバナー。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "暖色・黄橙系。156×104の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-01T19:46:50.112Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0181-untitled/03_Implementation_Blueprint/GR-0181_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0181-untitled/03_Implementation_Blueprint/GR-0181_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0181-untitled/03_Implementation_Blueprint/GR-0181_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0181-untitled/03_Implementation_Blueprint/GR-0181_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0182": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集した名刺・ショップカード参考。ダークトーンのミニマルデザイナー名刺デザイン。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "ニュートラル。242×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-01T19:46:50.125Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0182-untitled/03_Implementation_Blueprint/GR-0182_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0182-untitled/03_Implementation_Blueprint/GR-0182_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0182-untitled/03_Implementation_Blueprint/GR-0182_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0182-untitled/03_Implementation_Blueprint/GR-0182_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0183": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したロゴ・VI/CI参考。紫とピンクの正方形のロゴ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。400×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-01T19:46:50.140Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0183-untitled/03_Implementation_Blueprint/GR-0183_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0183-untitled/03_Implementation_Blueprint/GR-0183_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0183-untitled/03_Implementation_Blueprint/GR-0183_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0183-untitled/03_Implementation_Blueprint/GR-0183_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0176": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。tebiki（テビキ）。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "ニュートラル。1428×1139の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-01T19:46:50.192Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0176-tebiki/03_Implementation_Blueprint/PT-0176_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0176-tebiki/03_Implementation_Blueprint/PT-0176_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0176-tebiki/03_Implementation_Blueprint/PT-0176_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0176-tebiki/03_Implementation_Blueprint/PT-0176_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0177": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。社会保険労務士法人キャリア・アドバイザリー。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "明色・白基調。1413×770の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-01T19:46:50.234Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0177-untitled/03_Implementation_Blueprint/PT-0177_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0177-untitled/03_Implementation_Blueprint/PT-0177_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0177-untitled/03_Implementation_Blueprint/PT-0177_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0177-untitled/03_Implementation_Blueprint/PT-0177_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0178": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。産経オンライン英会話Plus。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "暗色・黒基調。1493×672の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-01T19:46:50.266Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0178-plus/03_Implementation_Blueprint/PT-0178_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0178-plus/03_Implementation_Blueprint/PT-0178_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0178-plus/03_Implementation_Blueprint/PT-0178_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0178-plus/03_Implementation_Blueprint/PT-0178_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0179": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。Cognigy（コグニジー）。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "明色・白基調。1425×818の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-01T19:46:50.307Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0179-cognigy/03_Implementation_Blueprint/PT-0179_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0179-cognigy/03_Implementation_Blueprint/PT-0179_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0179-cognigy/03_Implementation_Blueprint/PT-0179_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0179-cognigy/03_Implementation_Blueprint/PT-0179_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PT-0180": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Parts.から収集したParts参考。メルカリびより。",
+      "selectionReason": "Parts.の新規候補として重複確認を通過。セクションまたはUI部品として切り出し、他案件へ転用できる構造かを検討できるため。",
+      "visualSummary": "明色・白基調。1428×1254の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-01T19:46:50.359Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/PT-0180-untitled/03_Implementation_Blueprint/PT-0180_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/PT-0180-untitled/03_Implementation_Blueprint/PT-0180_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/PT-0180-untitled/03_Implementation_Blueprint/PT-0180_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/PT-0180-untitled/03_Implementation_Blueprint/PT-0180_elementor_implementation_guide.md",
+        "sections": 3,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "CV-0056": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。White Blue and Yellow Simple Minimal Scrapbook Photo Collage Instagram Post。",
+      "selectionReason": "Canvaの新規候補として重複確認を通過。テンプレート化しやすい構成、文字組み、配色、情報階層の型を確認できるため。",
+      "visualSummary": "ニュートラル。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-01T19:46:50.373Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/CV-0056-white-blue-and-yellow-simple-minimal-scrapbook-photo-collage-instagram-post/03_Implementation_Blueprint/CV-0056_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/CV-0056-white-blue-and-yellow-simple-minimal-scrapbook-photo-collage-instagram-post/03_Implementation_Blueprint/CV-0056_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/CV-0056-white-blue-and-yellow-simple-minimal-scrapbook-photo-collage-instagram-post/03_Implementation_Blueprint/CV-0056_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/CV-0056-white-blue-and-yellow-simple-minimal-scrapbook-photo-collage-instagram-post/03_Implementation_Blueprint/CV-0056_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "CV-0057": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。Red and White Modern Missing Person Instagram Post。",
+      "selectionReason": "Canvaの新規候補として重複確認を通過。テンプレート化しやすい構成、文字組み、配色、情報階層の型を確認できるため。",
+      "visualSummary": "ニュートラル。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-01T19:46:50.389Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/CV-0057-red-and-white-modern-missing-person-instagram-post/03_Implementation_Blueprint/CV-0057_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/CV-0057-red-and-white-modern-missing-person-instagram-post/03_Implementation_Blueprint/CV-0057_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/CV-0057-red-and-white-modern-missing-person-instagram-post/03_Implementation_Blueprint/CV-0057_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/CV-0057-red-and-white-modern-missing-person-instagram-post/03_Implementation_Blueprint/CV-0057_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PAT-0070": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（Canva）から収集したPattern参考。White Blue and Yellow Simple Minimal Scrapbook Photo Collage Instagramに見る反復可能なテンプレート構造。",
+      "selectionReason": "日次収集から抽出（Canva）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "画像枠・見出し・補足情報の位置を固定し、素材を差し替えても情報階層が崩れない構造を作る。 根拠候補: CV-0056",
+      "reviewPoints": "テンプレートの複製ではなく、グリッド・余白・主従関係のみを参考にする。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-01T19:46:50.389Z"
+    },
+    "PAT-0071": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（SANKOU!）から収集したPattern参考。Patmos | Wahrに見るPC・SPの情報優先順位。",
+      "selectionReason": "日次収集から抽出（SANKOU!）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "画面幅が変わっても、主見出し・主要ベネフィット・CTAの意味と順序を維持する。 根拠候補: WB-0057",
+      "reviewPoints": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-01T19:46:50.389Z"
     }
   }
 }
