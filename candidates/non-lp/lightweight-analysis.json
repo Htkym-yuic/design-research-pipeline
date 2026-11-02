@@ -14184,6 +14184,170 @@
       "reviewPoints": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
       "deepDivePriority": "中",
       "generatedAt": "2026-11-01T19:46:50.389Z"
+    },
+    "WB-0059": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。日日花 | 泉佐野･日根神社近くの古民家カフェと写真館。",
+      "selectionReason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+      "visualSummary": "ニュートラル。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-02T23:19:00.098Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/WB-0059-untitled/03_Implementation_Blueprint/WB-0059_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/WB-0059-untitled/03_Implementation_Blueprint/WB-0059_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/WB-0059-untitled/03_Implementation_Blueprint/WB-0059_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/WB-0059-untitled/03_Implementation_Blueprint/WB-0059_elementor_implementation_guide.md",
+        "sections": 8,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "WB-0060": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。株式会社スリーエイ･システム。",
+      "selectionReason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+      "visualSummary": "ニュートラル。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-02T23:19:00.107Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/WB-0060-untitled/03_Implementation_Blueprint/WB-0060_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/WB-0060-untitled/03_Implementation_Blueprint/WB-0060_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/WB-0060-untitled/03_Implementation_Blueprint/WB-0060_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/WB-0060-untitled/03_Implementation_Blueprint/WB-0060_elementor_implementation_guide.md",
+        "sections": 8,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0184": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したチラシ・フライヤー参考。Ⅰ０月のぬりえ（ハロウィン）。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。400×283の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-02T23:19:00.116Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0184-untitled/03_Implementation_Blueprint/GR-0184_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0184-untitled/03_Implementation_Blueprint/GR-0184_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0184-untitled/03_Implementation_Blueprint/GR-0184_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0184-untitled/03_Implementation_Blueprint/GR-0184_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0185": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したポスター参考。シルバーウィーク休業の縦長ポスター。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-02T23:19:00.124Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0185-untitled/03_Implementation_Blueprint/GR-0185_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0185-untitled/03_Implementation_Blueprint/GR-0185_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0185-untitled/03_Implementation_Blueprint/GR-0185_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0185-untitled/03_Implementation_Blueprint/GR-0185_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0186": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したSNS投稿・Web広告参考。スノーボードをしている写真を全面に使ったバナー。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "寒色・青紫系。156×104の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-02T23:19:00.132Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0186-untitled/03_Implementation_Blueprint/GR-0186_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0186-untitled/03_Implementation_Blueprint/GR-0186_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0186-untitled/03_Implementation_Blueprint/GR-0186_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0186-untitled/03_Implementation_Blueprint/GR-0186_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0187": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集した名刺・ショップカード参考。シンプル配色のデザイナー名刺デザイン。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。242×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-02T23:19:00.139Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0187-untitled/03_Implementation_Blueprint/GR-0187_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0187-untitled/03_Implementation_Blueprint/GR-0187_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0187-untitled/03_Implementation_Blueprint/GR-0187_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0187-untitled/03_Implementation_Blueprint/GR-0187_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0188": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したロゴ・VI/CI参考。三角形の不動産ロゴ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。400×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-02T23:19:00.148Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0188-untitled/03_Implementation_Blueprint/GR-0188_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0188-untitled/03_Implementation_Blueprint/GR-0188_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0188-untitled/03_Implementation_Blueprint/GR-0188_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0188-untitled/03_Implementation_Blueprint/GR-0188_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "CV-0058": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。Orange Sky Blue and Navy Blue Bold Daylight Saving Time Ends Publication Instagram Post。",
+      "selectionReason": "Canvaの新規候補として重複確認を通過。テンプレート化しやすい構成、文字組み、配色、情報階層の型を確認できるため。",
+      "visualSummary": "ニュートラル。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-02T23:19:00.158Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/CV-0058-orange-sky-blue-and-navy-blue-bold-daylight-saving-time-ends-publication-instagram-post/03_Implementation_Blueprint/CV-0058_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/CV-0058-orange-sky-blue-and-navy-blue-bold-daylight-saving-time-ends-publication-instagram-post/03_Implementation_Blueprint/CV-0058_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/CV-0058-orange-sky-blue-and-navy-blue-bold-daylight-saving-time-ends-publication-instagram-post/03_Implementation_Blueprint/CV-0058_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/CV-0058-orange-sky-blue-and-navy-blue-bold-daylight-saving-time-ends-publication-instagram-post/03_Implementation_Blueprint/CV-0058_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PAT-0072": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（SANKOU!）から収集したPattern参考。日日花 | 泉佐野･日根神社近くの古民家カフェと写真館に見るPC・SPの情報優先順位。",
+      "selectionReason": "日次収集から抽出（SANKOU!）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "画面幅が変わっても、主見出し・主要ベネフィット・CTAの意味と順序を維持する。 根拠候補: WB-0059",
+      "reviewPoints": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-02T23:19:00.158Z"
+    },
+    "PAT-0073": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（デザインAC）から収集したPattern参考。Ⅰ０月のぬりえ（ハロウィン）に見る文字組みと視線誘導。",
+      "selectionReason": "日次収集から抽出（デザインAC）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "主見出し・補足・画像・行動情報のサイズ差と配置から、最初に読ませる情報を明確にする。 根拠候補: GR-0184",
+      "reviewPoints": "素材そのものではなく、情報階層と余白の考え方だけを転用する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-02T23:19:00.158Z"
     }
   }
 }

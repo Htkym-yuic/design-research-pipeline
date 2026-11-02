@@ -1,12 +1,12 @@
 {
   "lp": {
-    "lastSuccessfulDateJst": "2026-11-02",
-    "completedAt": "2026-11-01T19:50:06.635Z",
-    "runId": "41342748490"
+    "lastSuccessfulDateJst": "2026-11-03",
+    "completedAt": "2026-11-02T23:21:00.537Z",
+    "runId": "41543483110"
   },
   "nonLp": {
-    "lastSuccessfulDateJst": "2026-11-02",
-    "completedAt": "2026-11-01T19:50:06.635Z",
-    "runId": "41342748490"
+    "lastSuccessfulDateJst": "2026-11-03",
+    "completedAt": "2026-11-02T23:21:00.537Z",
+    "runId": "41543483110"
   }
 }
