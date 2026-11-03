@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T23:18:27.606Z",
+  "updatedAt": "2026-11-03T16:26:38.288Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -3503,6 +3503,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-02T23:18:27.606Z"
+    },
+    {
+      "id": "GR-0189",
+      "title": "９月おたより｜Ａ４・ヨコ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Ff5c4fba2d09cb57240ec396ee5388f03%2Ff5c4fba2d09cb57240ec396ee5388f03-400.webp&w=1200&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-32147",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Ff5c4fba2d09cb57240ec396ee5388f03%2Ff5c4fba2d09cb57240ec396ee5388f03-400.webp&w=1200&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-03T16:26:38.288Z"
+    },
+    {
+      "id": "GR-0190",
+      "title": "パンフェスポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F484f7a1e7375ce0c7ad236ce383314d7%2F484f7a1e7375ce0c7ad236ce383314d7-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30716",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F484f7a1e7375ce0c7ad236ce383314d7%2F484f7a1e7375ce0c7ad236ce383314d7-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-03T16:26:38.288Z"
+    },
+    {
+      "id": "GR-0191",
+      "title": "緑色の背景に紅葉や植物のイラストを使った英語でセールを伝えるバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fdb084bbffb410a91e46e21ad8f9e9abe%2Fdb084bbffb410a91e46e21ad8f9e9abe-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20522",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fdb084bbffb410a91e46e21ad8f9e9abe%2Fdb084bbffb410a91e46e21ad8f9e9abe-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-03T16:26:38.288Z"
+    },
+    {
+      "id": "GR-0192",
+      "title": "名刺テンプレート32192",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F2ca0ddf4a3a5ca01af1655537f248ae9%2F2ca0ddf4a3a5ca01af1655537f248ae9-400.webp&w=256&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-32192",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F2ca0ddf4a3a5ca01af1655537f248ae9%2F2ca0ddf4a3a5ca01af1655537f248ae9-400.webp&w=256&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-03T16:26:38.288Z"
+    },
+    {
+      "id": "GR-0193",
+      "title": "3つのひし形の組み合わせのロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/1a3b3bdfea6efea6aeb637da8437ed4e/1a3b3bdfea6efea6aeb637da8437ed4e-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3000",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/1a3b3bdfea6efea6aeb637da8437ed4e/1a3b3bdfea6efea6aeb637da8437ed4e-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-03T16:26:38.288Z"
     },
     {
       "id": "ILAC-0001",
@@ -7742,6 +7802,30 @@
       "materialId": "PAT-0073",
       "authorProfileUrl": null,
       "reservedAt": "2026-11-02T23:18:27.606Z"
+    },
+    {
+      "id": "PAT-0074",
+      "title": "Aconnect（エーコネクト）に見るセクション内の役割集約",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Parts.）",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/11/aconnect_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/7305",
+      "imageUrl": null,
+      "materialId": "PAT-0074",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-03T16:26:38.288Z"
+    },
+    {
+      "id": "PAT-0075",
+      "title": "９月おたより｜Ａ４・ヨコに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Ff5c4fba2d09cb57240ec396ee5388f03%2Ff5c4fba2d09cb57240ec396ee5388f03-400.webp&w=1200&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-32147",
+      "imageUrl": null,
+      "materialId": "PAT-0075",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-03T16:26:38.288Z"
     },
     {
       "id": "PHAC-0001",
@@ -13293,6 +13377,30 @@
       "reservedAt": "2026-11-01T19:45:55.987Z"
     },
     {
+      "id": "PT-0181",
+      "title": "Aconnect（エーコネクト）",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/11/aconnect_00002.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/7305",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/11/aconnect_00002.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-03T16:26:38.288Z"
+    },
+    {
+      "id": "PT-0182",
+      "title": "AdFlow",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/11/adflow_00004.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/7286",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/11/adflow_00004.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-03T16:26:38.288Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -14007,6 +14115,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-02T23:18:27.606Z"
+    },
+    {
+      "id": "WB-0061",
+      "title": "株式会社SmartHR 採用サイト",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://recruit.smarthr.co.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/smarthr-recruit/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/smarthrrecruit02_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-03T16:26:38.288Z"
+    },
+    {
+      "id": "WB-0062",
+      "title": "EAST 64 Films",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.east64films.com/ja/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/east64films/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/east64films_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-03T16:26:38.288Z"
     }
   ]
 }
