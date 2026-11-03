@@ -150,11 +150,8 @@ const knownIndex = await buildKnownLpIndex(outputPath);
 const browser = await chromium.launch();
 const page = await browser.newPage({ locale: "ja-JP" });
 
-try {
-  await page.goto(sourceUrl, { waitUntil: "domcontentloaded", timeout: 30000 });
-  await page.waitForLoadState("networkidle", { timeout: 5000 }).catch(() => {});
-
-  const listingCandidates = await page.$$eval(
+async function extractListing(page) {
+  return page.$$eval(
     ".lp-card.lp-show-wrap",
     (cards, { limit, baseUrl }) =>
       cards.slice(0, limit).map((card) => {
@@ -180,6 +177,30 @@ try {
       }),
     { limit: candidateScanLimit, baseUrl: sourceUrl }
   );
+}
+
+let listingDiagnostic = null;
+
+try {
+  await page.goto(sourceUrl, { waitUntil: "domcontentloaded", timeout: 30000 });
+  await page.waitForLoadState("networkidle", { timeout: 5000 }).catch(() => {});
+
+  let listingCandidates = await extractListing(page);
+  if (listingCandidates.length === 0) {
+    await page.reload({ waitUntil: "domcontentloaded", timeout: 30000 });
+    await page.waitForTimeout(6000);
+    listingCandidates = await extractListing(page);
+  }
+  if (listingCandidates.length === 0) {
+    listingDiagnostic = await page.evaluate(() => ({
+      finalUrl: location.href,
+      title: document.title,
+      bodyPreview: document.body?.innerText?.replace(/\s+/g, " ").slice(0, 500) || "",
+      lpCardCount: document.querySelectorAll(".lp-card").length,
+      lpCardShowWrapCount: document.querySelectorAll(".lp-card.lp-show-wrap").length
+    }));
+    console.warn(`LPアーカイブ diagnostic: ${JSON.stringify(listingDiagnostic)}`);
+  }
 
   const candidates = [];
   const skippedCandidates = [];
@@ -284,6 +305,7 @@ try {
     scannedLimit: candidateScanLimit,
     candidateCount: candidates.length,
     skippedDuplicateCount: skippedCandidates.length,
+    diagnostic: listingDiagnostic,
     idStart: formatId(idCounters.lp.prefix, nextLpNumber, idCounters.lp.digits),
     idEnd:
       candidates.length > 0
