@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T16:26:38.288Z",
+  "updatedAt": "2026-11-04T16:18:28.472Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -3563,6 +3563,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-03T16:26:38.288Z"
+    },
+    {
+      "id": "GR-0194",
+      "title": "１１月おたより｜Ａ４・ヨコ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fdb8366c32ca2743b12b9e4556569e370%2Fdb8366c32ca2743b12b9e4556569e370-400.webp&w=1200&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-32145",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fdb8366c32ca2743b12b9e4556569e370%2Fdb8366c32ca2743b12b9e4556569e370-400.webp&w=1200&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-04T16:18:28.472Z"
+    },
+    {
+      "id": "GR-0195",
+      "title": "写真入りキッズ体操教室の無料体験会ポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F08bf922c35018352def5b141108d4c48%2F08bf922c35018352def5b141108d4c48-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30283",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F08bf922c35018352def5b141108d4c48%2F08bf922c35018352def5b141108d4c48-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-04T16:18:28.472Z"
+    },
+    {
+      "id": "GR-0196",
+      "title": "ドングリのイラストを使って中央に大きくセールと描いたバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F299e5bf67980ddbc79e5179015d60d76%2F299e5bf67980ddbc79e5179015d60d76-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20521",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F299e5bf67980ddbc79e5179015d60d76%2F299e5bf67980ddbc79e5179015d60d76-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-04T16:18:28.472Z"
+    },
+    {
+      "id": "GR-0197",
+      "title": "名刺テンプレート32191",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F3d259755dc6b1c4403c5b7f1b4b21181%2F3d259755dc6b1c4403c5b7f1b4b21181-400.webp&w=256&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-32191",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F3d259755dc6b1c4403c5b7f1b4b21181%2F3d259755dc6b1c4403c5b7f1b4b21181-400.webp&w=256&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-04T16:18:28.472Z"
+    },
+    {
+      "id": "GR-0198",
+      "title": "フクロウのロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/8bd1be70f7807001b0d561c3c2163beb/8bd1be70f7807001b0d561c3c2163beb-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3105",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/8bd1be70f7807001b0d561c3c2163beb/8bd1be70f7807001b0d561c3c2163beb-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-04T16:18:28.472Z"
     },
     {
       "id": "ILAC-0001",
@@ -7826,6 +7886,30 @@
       "materialId": "PAT-0075",
       "authorProfileUrl": null,
       "reservedAt": "2026-11-03T16:26:38.288Z"
+    },
+    {
+      "id": "PAT-0076",
+      "title": "Tonami & Ayano | Wedding Invitationに見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://wedding.tonami-komuro.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/komuro-wedding/",
+      "imageUrl": null,
+      "materialId": "PAT-0076",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-04T16:18:28.472Z"
+    },
+    {
+      "id": "PAT-0077",
+      "title": "１１月おたより｜Ａ４・ヨコに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fdb8366c32ca2743b12b9e4556569e370%2Fdb8366c32ca2743b12b9e4556569e370-400.webp&w=1200&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-32145",
+      "imageUrl": null,
+      "materialId": "PAT-0077",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-04T16:18:28.472Z"
     },
     {
       "id": "PHAC-0001",
@@ -14139,6 +14223,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-03T16:26:38.288Z"
+    },
+    {
+      "id": "WB-0063",
+      "title": "Tonami & Ayano | Wedding Invitation",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://wedding.tonami-komuro.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/komuro-wedding/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/komurowedding_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-04T16:18:28.472Z"
+    },
+    {
+      "id": "WB-0064",
+      "title": "Wedding Invitation | Yuri & Tomoro",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://wedding.s-tmro.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/sugawara-wedding/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/sugawarawedding_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-04T16:18:28.472Z"
     }
   ]
 }
