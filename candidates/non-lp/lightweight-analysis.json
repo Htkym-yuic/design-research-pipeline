@@ -14676,6 +14676,144 @@
       "reviewPoints": "素材そのものではなく、情報階層と余白の考え方だけを転用する。",
       "deepDivePriority": "中",
       "generatedAt": "2026-11-04T16:19:34.943Z"
+    },
+    "WB-0065": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。GRAN BURGER。",
+      "selectionReason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+      "visualSummary": "暖色・黄橙系。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-05T21:40:09.955Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/WB-0065-gran-burger/03_Implementation_Blueprint/WB-0065_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/WB-0065-gran-burger/03_Implementation_Blueprint/WB-0065_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/WB-0065-gran-burger/03_Implementation_Blueprint/WB-0065_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/WB-0065-gran-burger/03_Implementation_Blueprint/WB-0065_elementor_implementation_guide.md",
+        "sections": 8,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "WB-0066": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。Ondo Collective。",
+      "selectionReason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+      "visualSummary": "緑・青緑系。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "page.screenshot: Timeout 30000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n  - fonts loaded\n",
+      "deepDivePriority": "要確認",
+      "generatedAt": "2026-11-05T21:40:09.971Z"
+    },
+    "GR-0199": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したチラシ・フライヤー参考。１１月おたより｜Ａ４・タテ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-05T21:40:09.986Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0199-untitled/03_Implementation_Blueprint/GR-0199_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0199-untitled/03_Implementation_Blueprint/GR-0199_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0199-untitled/03_Implementation_Blueprint/GR-0199_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0199-untitled/03_Implementation_Blueprint/GR-0199_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0200": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したポスター参考。歓迎会のお知らせポスター。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-05T21:40:10.001Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0200-untitled/03_Implementation_Blueprint/GR-0200_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0200-untitled/03_Implementation_Blueprint/GR-0200_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0200-untitled/03_Implementation_Blueprint/GR-0200_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0200-untitled/03_Implementation_Blueprint/GR-0200_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0201": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したSNS投稿・Web広告参考。写真を使ったくすみカラーのバナー。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "暖色・黄橙系。156×104の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-05T21:40:10.015Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0201-untitled/03_Implementation_Blueprint/GR-0201_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0201-untitled/03_Implementation_Blueprint/GR-0201_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0201-untitled/03_Implementation_Blueprint/GR-0201_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0201-untitled/03_Implementation_Blueprint/GR-0201_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0202": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集した名刺・ショップカード参考。名刺テンプレート32190。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。384×232の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-05T21:40:10.028Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0202-32190/03_Implementation_Blueprint/GR-0202_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0202-32190/03_Implementation_Blueprint/GR-0202_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0202-32190/03_Implementation_Blueprint/GR-0202_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0202-32190/03_Implementation_Blueprint/GR-0202_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0203": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したロゴ・VI/CI参考。オレンジと緑の抽象的なロゴ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "暗色・黒基調。400×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-05T21:40:10.045Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0203-untitled/03_Implementation_Blueprint/GR-0203_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0203-untitled/03_Implementation_Blueprint/GR-0203_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0203-untitled/03_Implementation_Blueprint/GR-0203_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0203-untitled/03_Implementation_Blueprint/GR-0203_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PAT-0078": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（デザインAC）から収集したPattern参考。１１月おたより｜Ａ４・タテに見る文字組みと視線誘導。",
+      "selectionReason": "日次収集から抽出（デザインAC）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "主見出し・補足・画像・行動情報のサイズ差と配置から、最初に読ませる情報を明確にする。 根拠候補: GR-0199",
+      "reviewPoints": "素材そのものではなく、情報階層と余白の考え方だけを転用する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-05T21:40:10.045Z"
+    },
+    "PAT-0079": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（SANKOU!）から収集したPattern参考。GRAN BURGERに見るPC・SPの情報優先順位。",
+      "selectionReason": "日次収集から抽出（SANKOU!）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "画面幅が変わっても、主見出し・主要ベネフィット・CTAの意味と順序を維持する。 根拠候補: WB-0065",
+      "reviewPoints": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-05T21:40:10.045Z"
     }
   }
 }
