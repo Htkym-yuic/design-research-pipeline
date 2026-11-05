@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T16:18:28.472Z",
+  "updatedAt": "2026-11-05T21:39:02.706Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -3623,6 +3623,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-04T16:18:28.472Z"
+    },
+    {
+      "id": "GR-0199",
+      "title": "１１月おたより｜Ａ４・タテ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F7bd06b5f942cb9546f438cbda39aec97%2F7bd06b5f942cb9546f438cbda39aec97-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-32144",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F7bd06b5f942cb9546f438cbda39aec97%2F7bd06b5f942cb9546f438cbda39aec97-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-05T21:39:02.706Z"
+    },
+    {
+      "id": "GR-0200",
+      "title": "歓迎会のお知らせポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fddfb06033d0c0c44d1b7d03146f312cc%2Fddfb06033d0c0c44d1b7d03146f312cc-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-29577",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fddfb06033d0c0c44d1b7d03146f312cc%2Fddfb06033d0c0c44d1b7d03146f312cc-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-05T21:39:02.706Z"
+    },
+    {
+      "id": "GR-0201",
+      "title": "写真を使ったくすみカラーのバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F5bdd9cc8f4e84d75665a2facee053050%2F5bdd9cc8f4e84d75665a2facee053050-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20520",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F5bdd9cc8f4e84d75665a2facee053050%2F5bdd9cc8f4e84d75665a2facee053050-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-05T21:39:02.706Z"
+    },
+    {
+      "id": "GR-0202",
+      "title": "名刺テンプレート32190",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F205107076ed02838be68153ae3225ecb%2F205107076ed02838be68153ae3225ecb-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-32190",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F205107076ed02838be68153ae3225ecb%2F205107076ed02838be68153ae3225ecb-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-05T21:39:02.706Z"
+    },
+    {
+      "id": "GR-0203",
+      "title": "オレンジと緑の抽象的なロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/84dc4e977d9ef44e0ccbb047695fc784/84dc4e977d9ef44e0ccbb047695fc784-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3098",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/84dc4e977d9ef44e0ccbb047695fc784/84dc4e977d9ef44e0ccbb047695fc784-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-05T21:39:02.706Z"
     },
     {
       "id": "ILAC-0001",
@@ -7910,6 +7970,30 @@
       "materialId": "PAT-0077",
       "authorProfileUrl": null,
       "reservedAt": "2026-11-04T16:18:28.472Z"
+    },
+    {
+      "id": "PAT-0078",
+      "title": "１１月おたより｜Ａ４・タテに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F7bd06b5f942cb9546f438cbda39aec97%2F7bd06b5f942cb9546f438cbda39aec97-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-32144",
+      "imageUrl": null,
+      "materialId": "PAT-0078",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-05T21:39:02.706Z"
+    },
+    {
+      "id": "PAT-0079",
+      "title": "GRAN BURGERに見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://gran-burger.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/granburger/",
+      "imageUrl": null,
+      "materialId": "PAT-0079",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-05T21:39:02.706Z"
     },
     {
       "id": "PHAC-0001",
@@ -14247,6 +14331,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-04T16:18:28.472Z"
+    },
+    {
+      "id": "WB-0065",
+      "title": "GRAN BURGER",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://gran-burger.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/granburger/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/granburger_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-05T21:39:02.706Z"
+    },
+    {
+      "id": "WB-0066",
+      "title": "Ondo Collective",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://ondocollective.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/ondocollective/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/ondocollective_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-05T21:39:02.706Z"
     }
   ]
 }

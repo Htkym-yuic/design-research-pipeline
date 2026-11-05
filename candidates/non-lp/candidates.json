@@ -1,19 +1,19 @@
 {
-  "collectedAt": "2026-11-04T16:18:28.472Z",
+  "collectedAt": "2026-11-05T21:39:02.706Z",
   "candidateCount": 9,
   "candidates": [
     {
-      "id": "WB-0063",
+      "id": "WB-0065",
       "status": "candidate",
       "mediaType": "Web",
       "sourceKey": "web",
-      "title": "Tonami & Ayano | Wedding Invitation",
-      "captureUrl": "https://wedding.tonami-komuro.com/",
-      "imageUrl": "https://sankoudesign.com/wp-content/uploads/komurowedding_t-400x350.jpg",
+      "title": "GRAN BURGER",
+      "captureUrl": "https://gran-burger.com/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/granburger_t-400x350.jpg",
       "landingUrl": null,
       "sourceName": "SANKOU!",
       "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/komuro-wedding/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/granburger/",
       "library": "Web_Research_Library",
       "notionEnv": "NOTION_WEB_DATA_SOURCE_ID",
       "saveImage": true,
@@ -23,23 +23,23 @@
       "metadata": {
         "width": 400,
         "height": 350,
-        "alt": "Tonami & Ayano | Wedding Invitation",
+        "alt": "GRAN BURGER",
         "subtype": null,
         "subtypeLabel": null
       }
     },
     {
-      "id": "WB-0064",
+      "id": "WB-0066",
       "status": "candidate",
       "mediaType": "Web",
       "sourceKey": "web",
-      "title": "Wedding Invitation | Yuri & Tomoro",
-      "captureUrl": "https://wedding.s-tmro.com/",
-      "imageUrl": "https://sankoudesign.com/wp-content/uploads/sugawarawedding_t-400x350.jpg",
+      "title": "Ondo Collective",
+      "captureUrl": "https://ondocollective.jp/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/ondocollective_t-400x350.jpg",
       "landingUrl": null,
       "sourceName": "SANKOU!",
       "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/sugawara-wedding/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/ondocollective/",
       "library": "Web_Research_Library",
       "notionEnv": "NOTION_WEB_DATA_SOURCE_ID",
       "saveImage": true,
@@ -49,49 +49,23 @@
       "metadata": {
         "width": 400,
         "height": 350,
-        "alt": "Wedding Invitation | Yuri & Tomoro",
+        "alt": "Ondo Collective",
         "subtype": null,
         "subtypeLabel": null
       }
     },
     {
-      "id": "GR-0194",
+      "id": "GR-0199",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "１１月おたより｜Ａ４・ヨコ",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fdb8366c32ca2743b12b9e4556569e370%2Fdb8366c32ca2743b12b9e4556569e370-400.webp&w=1200&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fdb8366c32ca2743b12b9e4556569e370%2Fdb8366c32ca2743b12b9e4556569e370-400.webp&w=1200&q=75",
+      "title": "１１月おたより｜Ａ４・タテ",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F7bd06b5f942cb9546f438cbda39aec97%2F7bd06b5f942cb9546f438cbda39aec97-400.webp&w=828&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F7bd06b5f942cb9546f438cbda39aec97%2F7bd06b5f942cb9546f438cbda39aec97-400.webp&w=828&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/flyer",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-32145",
-      "library": "Graphic_Research_Library",
-      "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
-      "saveImage": true,
-      "materialId": null,
-      "authorProfileUrl": null,
-      "searchTerm": null,
-      "metadata": {
-        "width": 400,
-        "height": 283,
-        "alt": "１１月おたより｜Ａ４・ヨコ, チラシ, チラシテンプレート",
-        "subtype": "flyer",
-        "subtypeLabel": "チラシ・フライヤー"
-      }
-    },
-    {
-      "id": "GR-0195",
-      "status": "candidate",
-      "mediaType": "Graphic",
-      "sourceKey": "graphic",
-      "title": "写真入りキッズ体操教室の無料体験会ポスター",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F08bf922c35018352def5b141108d4c48%2F08bf922c35018352def5b141108d4c48-400.webp&w=828&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F08bf922c35018352def5b141108d4c48%2F08bf922c35018352def5b141108d4c48-400.webp&w=828&q=75",
-      "landingUrl": null,
-      "sourceName": "デザインAC",
-      "sourceUrl": "https://www.design-ac.net/free-template/poster",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-30283",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-32144",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -101,23 +75,49 @@
       "metadata": {
         "width": 283,
         "height": 400,
-        "alt": "写真入りキッズ体操教室の無料体験会ポスター\n, ポスター, ポスターテンプレート",
+        "alt": "１１月おたより｜Ａ４・タテ, チラシ, チラシテンプレート",
+        "subtype": "flyer",
+        "subtypeLabel": "チラシ・フライヤー"
+      }
+    },
+    {
+      "id": "GR-0200",
+      "status": "candidate",
+      "mediaType": "Graphic",
+      "sourceKey": "graphic",
+      "title": "歓迎会のお知らせポスター",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fddfb06033d0c0c44d1b7d03146f312cc%2Fddfb06033d0c0c44d1b7d03146f312cc-400.webp&w=828&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fddfb06033d0c0c44d1b7d03146f312cc%2Fddfb06033d0c0c44d1b7d03146f312cc-400.webp&w=828&q=75",
+      "landingUrl": null,
+      "sourceName": "デザインAC",
+      "sourceUrl": "https://www.design-ac.net/free-template/poster",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-29577",
+      "library": "Graphic_Research_Library",
+      "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
+      "saveImage": true,
+      "materialId": null,
+      "authorProfileUrl": null,
+      "searchTerm": null,
+      "metadata": {
+        "width": 283,
+        "height": 400,
+        "alt": "歓迎会のお知らせポスター, ポスター, ポスターテンプレート",
         "subtype": "poster",
         "subtypeLabel": "ポスター"
       }
     },
     {
-      "id": "GR-0196",
+      "id": "GR-0201",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "ドングリのイラストを使って中央に大きくセールと描いたバナー",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F299e5bf67980ddbc79e5179015d60d76%2F299e5bf67980ddbc79e5179015d60d76-400.webp&w=640&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F299e5bf67980ddbc79e5179015d60d76%2F299e5bf67980ddbc79e5179015d60d76-400.webp&w=640&q=75",
+      "title": "写真を使ったくすみカラーのバナー",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F5bdd9cc8f4e84d75665a2facee053050%2F5bdd9cc8f4e84d75665a2facee053050-400.webp&w=640&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F5bdd9cc8f4e84d75665a2facee053050%2F5bdd9cc8f4e84d75665a2facee053050-400.webp&w=640&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/banner",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20521",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20520",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -127,23 +127,23 @@
       "metadata": {
         "width": 156,
         "height": 104,
-        "alt": "ドングリのイラストを使って中央に大きくセールと描いたバナー, バナー, バナーテンプレート",
+        "alt": "写真を使ったくすみカラーのバナー, バナー, バナーテンプレート",
         "subtype": "social",
         "subtypeLabel": "SNS投稿・Web広告"
       }
     },
     {
-      "id": "GR-0197",
+      "id": "GR-0202",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "名刺テンプレート32191",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F3d259755dc6b1c4403c5b7f1b4b21181%2F3d259755dc6b1c4403c5b7f1b4b21181-400.webp&w=256&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F3d259755dc6b1c4403c5b7f1b4b21181%2F3d259755dc6b1c4403c5b7f1b4b21181-400.webp&w=256&q=75",
+      "title": "名刺テンプレート32190",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F205107076ed02838be68153ae3225ecb%2F205107076ed02838be68153ae3225ecb-400.webp&w=384&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F205107076ed02838be68153ae3225ecb%2F205107076ed02838be68153ae3225ecb-400.webp&w=384&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/business-card",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-32191",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-32190",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -151,25 +151,25 @@
       "authorProfileUrl": null,
       "searchTerm": null,
       "metadata": {
-        "width": 242,
-        "height": 400,
-        "alt": "名刺テンプレート32191, 名刺, 名刺テンプレート",
+        "width": 384,
+        "height": 232,
+        "alt": "名刺テンプレート32190, 名刺, 名刺テンプレート",
         "subtype": "business-card",
         "subtypeLabel": "名刺・ショップカード"
       }
     },
     {
-      "id": "GR-0198",
+      "id": "GR-0203",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "フクロウのロゴ",
-      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/8bd1be70f7807001b0d561c3c2163beb/8bd1be70f7807001b0d561c3c2163beb-400.webp",
-      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/8bd1be70f7807001b0d561c3c2163beb/8bd1be70f7807001b0d561c3c2163beb-400.webp",
+      "title": "オレンジと緑の抽象的なロゴ",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/84dc4e977d9ef44e0ccbb047695fc784/84dc4e977d9ef44e0ccbb047695fc784-400.webp",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/84dc4e977d9ef44e0ccbb047695fc784/84dc4e977d9ef44e0ccbb047695fc784-400.webp",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/logo",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3105",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3098",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -179,59 +179,27 @@
       "metadata": {
         "width": 400,
         "height": 400,
-        "alt": "フクロウのロゴ, ロゴ, ロゴテンプレート",
+        "alt": "オレンジと緑の抽象的なロゴ, ロゴ, ロゴテンプレート",
         "subtype": "logo",
         "subtypeLabel": "ロゴ・VI/CI"
       }
     },
     {
-      "id": "PAT-0076",
+      "id": "PAT-0078",
       "status": "candidate",
       "mediaType": "Pattern",
       "sourceKey": "patterns",
-      "title": "Tonami & Ayano | Wedding Invitationに見るPC・SPの情報優先順位",
-      "captureUrl": "https://wedding.tonami-komuro.com/",
-      "imageUrl": null,
-      "landingUrl": null,
-      "sourceName": "日次収集から抽出（SANKOU!）",
-      "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/komuro-wedding/",
-      "library": "Pattern_Research_Library",
-      "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
-      "saveImage": false,
-      "materialId": "PAT-0076",
-      "authorProfileUrl": null,
-      "searchTerm": null,
-      "metadata": {
-        "collectionMode": "derived_pattern",
-        "patternType": "情報設計",
-        "targetMedia": [
-          "Web",
-          "LP"
-        ],
-        "rule": "画面幅が変わっても、主見出し・主要ベネフィット・CTAの意味と順序を維持する。",
-        "cautions": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
-        "evidenceIds": [
-          "WB-0063"
-        ]
-      }
-    },
-    {
-      "id": "PAT-0077",
-      "status": "candidate",
-      "mediaType": "Pattern",
-      "sourceKey": "patterns",
-      "title": "１１月おたより｜Ａ４・ヨコに見る文字組みと視線誘導",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fdb8366c32ca2743b12b9e4556569e370%2Fdb8366c32ca2743b12b9e4556569e370-400.webp&w=1200&q=75",
+      "title": "１１月おたより｜Ａ４・タテに見る文字組みと視線誘導",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F7bd06b5f942cb9546f438cbda39aec97%2F7bd06b5f942cb9546f438cbda39aec97-400.webp&w=828&q=75",
       "imageUrl": null,
       "landingUrl": null,
       "sourceName": "日次収集から抽出（デザインAC）",
       "sourceUrl": "https://www.design-ac.net/free-template/flyer",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-32145",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-32144",
       "library": "Pattern_Research_Library",
       "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
       "saveImage": false,
-      "materialId": "PAT-0077",
+      "materialId": "PAT-0078",
       "authorProfileUrl": null,
       "searchTerm": null,
       "metadata": {
@@ -244,7 +212,39 @@
         "rule": "主見出し・補足・画像・行動情報のサイズ差と配置から、最初に読ませる情報を明確にする。",
         "cautions": "素材そのものではなく、情報階層と余白の考え方だけを転用する。",
         "evidenceIds": [
-          "GR-0194"
+          "GR-0199"
+        ]
+      }
+    },
+    {
+      "id": "PAT-0079",
+      "status": "candidate",
+      "mediaType": "Pattern",
+      "sourceKey": "patterns",
+      "title": "GRAN BURGERに見るPC・SPの情報優先順位",
+      "captureUrl": "https://gran-burger.com/",
+      "imageUrl": null,
+      "landingUrl": null,
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "sourceUrl": "https://sankoudesign.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/granburger/",
+      "library": "Pattern_Research_Library",
+      "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
+      "saveImage": false,
+      "materialId": "PAT-0079",
+      "authorProfileUrl": null,
+      "searchTerm": null,
+      "metadata": {
+        "collectionMode": "derived_pattern",
+        "patternType": "情報設計",
+        "targetMedia": [
+          "Web",
+          "LP"
+        ],
+        "rule": "画面幅が変わっても、主見出し・主要ベネフィット・CTAの意味と順序を維持する。",
+        "cautions": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
+        "evidenceIds": [
+          "WB-0065"
         ]
       }
     }
@@ -339,9 +339,9 @@
       "accepted": 0,
       "reason": "取得元がGitHubホストランナーからのアクセスを拒否しました。ローカル収集ルートで再実行してください。",
       "diagnostic": {
-        "finalUrl": "https://www.ac-illust.com/main/search_result.php?word=%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9",
+        "finalUrl": "https://www.ac-illust.com/main/search_result.php?word=%E7%BE%8E%E5%AE%B9",
         "title": "ERROR: The request could not be satisfied",
-        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: M0VkwNRhC8CEit0VBEMnjSXQBI_VxpBAZJdFOpX5NZgjZ",
+        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: _5n0rMkfISSFqDAt8x6fbq3ERh9FRKz61jpGljP518nOu",
         "figureCount": 0,
         "imageCount": 0
       }
@@ -354,9 +354,9 @@
       "accepted": 0,
       "reason": "取得元がGitHubホストランナーからのアクセスを拒否しました。ローカル収集ルートで再実行してください。",
       "diagnostic": {
-        "finalUrl": "https://www.photo-ac.com/main/search?q=%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9",
+        "finalUrl": "https://www.photo-ac.com/main/search?q=%E7%BE%8E%E5%AE%B9",
         "title": "ERROR: The request could not be satisfied",
-        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: x-jvXtOnzqBiF4VcUybjhIOqPB46KoAA_GqRgwHsJYHc8",
+        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: QpHxx4Oou-ZdqOjHWKFxjtI-0jgK_cOtEripXAu3F4rpI",
         "figureCount": 0,
         "imageCount": 0
       }
