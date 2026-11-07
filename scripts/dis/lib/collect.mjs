@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 
 const UA = "design-research-pipeline-dis/1.0 (public-pages-only)";
 
-function abs(href, base) { try { return new URL(href, base).toString(); } catch { return null; } }
+function abs(href, base) { if (!href || !String(href).trim()) return null; try { return new URL(href, base).toString(); } catch { return null; } }
 function meta(html, prop) {
   const m = html.match(new RegExp(`<meta[^>]+(?:property|name)=["']${prop}["'][^>]*content=["']([^"']+)["']`, "i")) ||
     html.match(new RegExp(`<meta[^>]+content=["']([^"']+)["'][^>]*(?:property|name)=["']${prop}["']`, "i"));
@@ -79,10 +79,22 @@ export function outboundHosts(html, pageUrl) {
   return out;
 }
 
+/** og:imageが無い詳細ページ用: 本文中のimgから、ロゴ・アイコン・小サムネイルを除いて最初の画像を選ぶ。 */
+export function pickBannerImage(html, pageUrl) {
+  const bad = /(logo|icon|avatar|favicon|sprite|blank|pixel|spacer|loading|\b(?:thumb|thumbnail)\b|-\d{2,3}x\d{2,3}\.)/i;
+  for (const m of html.matchAll(/<img\b[^>]*>/gi)) {
+    const src = abs(attr(m[0], "data-src") || attr(m[0], "data-lazy-src") || attr(m[0], "src"), pageUrl);
+    if (!src || /^data:/i.test(src) || !/\.(png|jpe?g|webp|gif)(\?|$)/i.test(src) || bad.test(src)) continue;
+    return src;
+  }
+  return null;
+}
+
 /** 詳細ページから title / 画像 / 実ページURL(outbound) を抽出。excludeHosts＝サイト共通部分（一覧ページにも出る外部ホスト）は実ページ扱いにしない。 */
 export function parseDetail(html, detailUrl, { excludeHosts = new Set() } = {}) {
   const title = meta(html, "og:title") || html.match(/<title>([^<]+)/i)?.[1]?.trim() || null;
-  const image = abs(meta(html, "og:image") || "", detailUrl);
+  const og = abs(meta(html, "og:image"), detailUrl);
+  const image = (og && og !== detailUrl ? og : null) || pickBannerImage(html, detailUrl);
   const host = new URL(detailUrl).hostname;
   const outbound = [...html.matchAll(/<a\b[^>]*href=["'](https?:\/\/[^"']+)["'][^>]*>/gi)]
     .map((m) => m[1]).filter((u) => { try { const h = new URL(u).hostname; return h !== host && !SOCIAL.test(h) && !excludeHosts.has(h) && !isSponsoredUrl(u); } catch { return false; } });

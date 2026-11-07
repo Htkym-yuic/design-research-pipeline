@@ -9,7 +9,7 @@ import { selectOne, interleaveBySource, tieHash } from "./lib/select.mjs";
 import { writesAllowed } from "./lib/write-guard.mjs";
 import { emptyAnalysis, validateAnalysis, AXES } from "./lib/analysis-schema.mjs";
 import { idempotencyKey } from "./lib/ledger.mjs";
-import { extractDetailLinks, parseDetail, collectFromSource, extractRdlpCards, parseRdlpDetail, cleanTitle, outboundHosts, looksLikeNonWork, isSponsoredUrl } from "./lib/collect.mjs";
+import { extractDetailLinks, parseDetail, collectFromSource, extractRdlpCards, parseRdlpDetail, cleanTitle, outboundHosts, looksLikeNonWork, isSponsoredUrl, pickBannerImage } from "./lib/collect.mjs";
 import { loadConfig } from "./lib/config.mjs";
 import { dropboxFolder, buildNotionProps, chunkText, buildNotionBlocks, markdownToBlocks } from "./lib/adapters.mjs";
 
@@ -353,4 +353,13 @@ test("downloadBanner: 中身で形式判定（拡張子が違ってもOK）／�
   const tmp2 = await fs.mkdtemp(path.join(os.tmpdir(), "dis-bn2-"));
   await assert.rejects(downloadBanner("https://x.example/b.png", tmp2, mk(Buffer.from("<html>blocked</html>"), "text/html")), /画像として読めない/);
   await assert.rejects(fs.access(path.join(tmp2, "01_Original/banner.png"))); // 保存されない
+});
+
+test("parseDetail/pickBannerImage: og:imageが無いときページ自身を画像にしない／ロゴ等を除いて本文画像を選ぶ", () => {
+  const page = "https://s.example/banner_1/";
+  const d = parseDetail('<meta property="og:title" content="T"><img src="/img/logo.png"><img src="/wp-content/uploads/2026/11/ad.png">', page);
+  assert.equal(d.image, "https://s.example/wp-content/uploads/2026/11/ad.png");
+  assert.equal(parseDetail('<meta property="og:title" content="T">', page).image, null); // 以前はページ自身のURLになっていた
+  assert.equal(parseDetail('<meta property="og:image" content="' + page + '">', page).image, null); // og:imageがページ自身でも画像にしない
+  assert.equal(pickBannerImage('<img src="/a-150x150.jpg"><img data-src="/real.webp">', page), "https://s.example/real.webp");
 });

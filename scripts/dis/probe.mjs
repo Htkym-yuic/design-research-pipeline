@@ -7,7 +7,7 @@
 import { parseArgs } from "node:util";
 import { fileURLToPath } from "node:url";
 import { loadConfig } from "./lib/config.mjs";
-import { fetchGetter, extractDetailLinks } from "./lib/collect.mjs";
+import { fetchGetter, extractDetailLinks, pickBannerImage } from "./lib/collect.mjs";
 
 /** 内部リンクのパスを「先頭2階層＋*」に集約して件数と例を返す。 */
 export function summarizeListLinks(html, listUrl, topN = 8) {
@@ -60,6 +60,9 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     if (!r.ok) continue;
     console.log(`   title: ${(r.text.match(/<title>([^<]*)/i)?.[1] || "").trim().slice(0, 60)}`);
     console.log(`   og:image: ${/property=["']og:image["']/i.test(r.text) ? "あり" : "なし"}`);
+    const imgs = [...r.text.matchAll(/<img\b[^>]*>/gi)].slice(0, 12).map((m) => { const t = m[0]; const g = (n) => t.match(new RegExp(`${n}=["']([^"']*)["']`, "i"))?.[1] || ""; return `${(g("data-src") || g("src")).replace(/^https?:\/\/[^/]+/, "").slice(0, 70)} ${g("width")}x${g("height")}`; });
+    console.log(`   画像(先頭${imgs.length}件): ${imgs.join(" ; ")}`);
+    console.log(`   採用される画像: ${pickBannerImage(r.text, u) || "なし"}`);
     for (const o of summarizeOutbound(r.text, u)) console.log(`   外部リンク: ${o.host}  文字「${o.text}」 class「${o.class}」 ${o.query}`);
   }
 }
