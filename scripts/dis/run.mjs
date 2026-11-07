@@ -15,6 +15,7 @@ import { collectFromSource, loadFixture } from "./lib/collect.mjs";
 import { emptyAnalysis, validateAnalysis, analysisToMarkdown } from "./lib/analysis-schema.mjs";
 import { idempotencyKey, loadLedger, saveLedger, findEntry, upsertEntry } from "./lib/ledger.mjs";
 import { writesAllowed } from "./lib/write-guard.mjs";
+import { buildContactSheet, applyLearning } from "./lib/review.mjs";
 import { dropboxFolder, planDropboxFiles, writeDropbox, writeNotion, buildNotionBlocks, DEFAULT_PROPERTY_MAP } from "./lib/adapters.mjs";
 
 const { values: args } = parseArgs({
@@ -31,8 +32,9 @@ const { values: args } = parseArgs({
   },
 });
 
-const STAGES = ["collect", "select", "capture", "template", "validate", "publish"];
-const stages = args.stage === "all" ? STAGES : args.stage.split(",");
+const STAGES = ["collect", "select", "review", "rescore", "capture", "template", "validate", "publish"];
+const DEFAULT_STAGES = STAGES.filter((s) => !["review", "rescore"].includes(s));
+const stages = args.stage === "all" ? DEFAULT_STAGES : args.stage.split(",");
 const medias = args.media.split(",").map((s) => s.trim()).filter(Boolean);
 for (const s of stages) if (!STAGES.includes(s)) throw new Error(`不明なstage: ${s}`);
 for (const m of medias) if (!MEDIA_KEYS.includes(m)) throw new Error(`不明なmedia: ${m}`);
@@ -65,6 +67,7 @@ async function runMedia(media) {
         candidates = [];
         const isKnown = (u) => known.check({ sourceDetailUrl: u }, { windowDays: cfg.dedupeWindowDays, today: args.date }).duplicate;
         for (const s of cfg.sources.filter((x) => x.media === media)) {
+          if (s.enabled === false) { skippedSources.push({ sourceKey: s.key, sourceName: s.name, reason: `無効化中: ${s.disabledReason || "理由未記載"}` }); continue; }
           if (s.termsStatus !== "known") { skippedSources.push({ sourceKey: s.key, sourceName: s.name, reason: "利用条件未確認のため取得せず" }); continue; }
           const got = await collectFromSource(s, { isKnown });
           candidates.push(...got);
@@ -93,6 +96,36 @@ async function runMedia(media) {
       await wj(out, { date: args.date, disId, selected: sel, evaluated: res.evaluated, fetchFailures: failures.map((f) => ({ sourceKey: f.sourceKey, sourceDetailUrl: f.sourceDetailUrl, error: f.fetchError })), skippedReason: res.skippedReason ?? null, usableCount: usable.length });
       r.stages.select = sel ? `selected ${sel.brand} (score ${sel.score})` : `SKIP: ${res.skippedReason}`;
     }
+  }
+
+  if (stages.includes("review")) {
+    const sel0 = await readJson(`${d}/selection.json`, null);
+    if (!sel0) throw new Error("selection.json がありません（先に collect,select）");
+    const items = sel0.evaluated.filter((e) => e.inComparison).map((e, i) => ({ no: i + 1, brand: e.brand, sourceKey: e.sourceKey, sourceDetailUrl: e.sourceDetailUrl, pageUrl: e.pageUrl, imageUrl: e.imageUrl || null, score: e.score, originUnresolved: !!e.originUnresolved }));
+    const sheet = await buildContactSheet(items, `${d}/review/contact_sheet.jpg`);
+    await wj(`${d}/review/review.json`, { date: args.date, media, items: items.map((it, i) => ({ ...it, image: sheet[i].image })), howTo: "contact_sheet.jpg を見て、各候補の学習価値(0〜1)と理由を learning.json に書き、--stage rescore を実行する" });
+    r.stages.review = `${items.length}件 → review/contact_sheet.jpg`;
+  }
+
+  if (stages.includes("rescore")) {
+    const learning = await readJson(`${d}/learning.json`, null);
+    if (!learning) throw new Error("learning.json がありません");
+    const cur = await readJson(`${d}/selection.json`, null);
+    if (cur?.selected && findEntry(ledger, idempotencyKey(media, cur.selected.pageUrl))) throw new Error("公開済みのため再選定できません");
+    const cdata = await readJson(`${d}/candidates.json`);
+    const review = await readJson(`${d}/review/review.json`, { items: [] });
+    const { applied, errors } = applyLearning(cdata.candidates, learning, review.items);
+    if (errors.length) throw new Error(`learning.json に誤り: ${errors.join(" / ")}`);
+    await wj(`${d}/candidates.json`, cdata);
+    const valid = cdata.candidates.filter((c) => !c.fetchError);
+    const failures = cdata.candidates.filter((c) => c.fetchError);
+    const res = selectOne([...interleaveBySource(valid, args.date), ...failures], {
+      tieSeed: args.date, weights: cfg.scoring.weights, minScore: cfg.minScoreToSelect, maxCandidates: cfg.maxCandidatesPerMedia,
+      dupCheck: (c) => known.check(c, { windowDays: cfg.dedupeWindowDays, today: args.date }),
+    });
+    const sel = res.selected && { ...res.selected, disId };
+    await wj(`${d}/selection.json`, { date: args.date, disId, selected: sel, evaluated: res.evaluated, fetchFailures: failures.map((f) => ({ sourceKey: f.sourceKey, sourceDetailUrl: f.sourceDetailUrl, error: f.fetchError })), skippedReason: res.skippedReason ?? null, rescoredAt: new Date().toISOString(), reviewApplied: applied });
+    r.stages.rescore = sel ? `${applied}件反映 → 選定: ${sel.brand}（${sel.reviewReason ? "理由: " + sel.reviewReason : "評価なし"}）` : `${applied}件反映 → SKIP: ${res.skippedReason}`;
   }
 
   const selection = await readJson(`${d}/selection.json`, null);

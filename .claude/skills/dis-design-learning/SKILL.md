@@ -20,7 +20,11 @@ description: DIS（Design Intelligence System）日次学習。LP・バナー・
 2. 候補収集〜選定: `npm run dis:run -- --stage collect,select [--media lp,banner,web]`
    - 参照元は `config/dis-daily.json`。`termsStatus` が `known` でない参照元は取得されない。規約を確認できたものだけ `known` にする（変更はユーザー確認）。
    - 各媒体で最大5候補を比較。`outputs/dis/<日付>/<媒体>/selection.json` に全候補のスコアと除外理由が残る。
-   - `signals.learningValue` は機械的に判定できないので、候補を実際に見て Claude が `candidates.json` で更新してから選定する。
+   - `signals.learningValue` は機械的に判定できない。**撮影の前に、候補を見て評価する**（次の「学習価値の比較」）。
+2b. 学習価値の比較（撮影の前）:
+   - `--stage review` で、比較対象5件のサムネイルを番号つきの一覧画像にまとめる（`outputs/dis/<日付>/<媒体>/review/contact_sheet.jpg`、`review.json`）。ローカル保存のみ。
+   - 一覧画像をClaudeに見せ、`references/learning-value-rubric.md` の観点で 0〜1 で評価して、`learning.json`（`{"items":[{"no":1,"learningValue":0.8,"reason":"…"}]}`）を作る。理由は必須。
+   - `--stage rescore` で評価を反映して選定をやり直す。公開済み（台帳に記録済み）の媒体は再選定できない。
 3. 撮影: `--stage capture --capture`（LP/Web=PC/SP全体、バナー=公開画像1枚）。
 4. 分析: `--stage template` で `analysis.json` の雛形を生成し、画像を確認して**全Section/Unit・9軸（根拠・確信度・未確認事項必須）・注釈・最優先1件／優先／改善アイデア・Canva／Photoshop／Elementor再現手順**を埋め `status: "complete"` にする。詳細は `references/analysis-pack.md`。
 5. 検証: `--stage validate`（不合格なら公開しない）。

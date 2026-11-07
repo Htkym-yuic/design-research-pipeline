@@ -149,7 +149,9 @@
       "termsStatus": "known",
       "notes": "既存の日次処理（non-lp-sources.json の web）も同サイトを使用。重複除外必須。",
       "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
-      "detailPathRegex": "^/web/[^/]+/?$"
+      "detailPathRegex": "^/web/[^/]+/?$",
+      "enabled": false,
+      "disabledReason": "個別ページが403（Macからも）。自動取得を拒否している可能性。回避しない。 再有効化: enabled を true に（URL・規約確認後）。"
     },
     {
       "key": "io3000",
@@ -229,7 +231,9 @@
       "detailPathIncludes": "/",
       "termsStatus": "known",
       "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
-      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。"
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。",
+      "enabled": false,
+      "disabledReason": "接続失敗。正しいURLが未確認。 再有効化: enabled を true に（URL・規約確認後）。"
     },
     {
       "key": "awwwards",
@@ -249,7 +253,9 @@
       "detailPathIncludes": "/sites/",
       "termsStatus": "known",
       "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
-      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。"
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。",
+      "enabled": false,
+      "disabledReason": "一覧が403。回避しない。 再有効化: enabled を true に（URL・規約確認後）。"
     },
     {
       "key": "siteinspire",
@@ -259,7 +265,9 @@
       "detailPathIncludes": "/websites/",
       "termsStatus": "known",
       "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
-      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。"
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。",
+      "enabled": false,
+      "disabledReason": "HTTP 429（アクセス過多）。回避しない。 再有効化: enabled を true に（URL・規約確認後）。"
     },
     {
       "key": "landbook",
@@ -269,7 +277,9 @@
       "detailPathIncludes": "/websites/",
       "termsStatus": "known",
       "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
-      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。"
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。",
+      "enabled": false,
+      "disabledReason": "一覧が403。回避しない。 再有効化: enabled を true に（URL・規約確認後）。"
     },
     {
       "key": "onepagelove",
@@ -299,7 +309,9 @@
       "detailPathIncludes": "/",
       "termsStatus": "known",
       "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
-      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。"
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。",
+      "enabled": false,
+      "disabledReason": "robots.txtで禁止。 再有効化: enabled を true に（URL・規約確認後）。"
     },
     {
       "key": "banner-hiroba",
@@ -342,7 +354,9 @@
       "detailPathIncludes": "/",
       "termsStatus": "known",
       "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
-      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。"
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。",
+      "enabled": false,
+      "disabledReason": "接続失敗。正しいURLが未確認。 再有効化: enabled を true に（URL・規約確認後）。"
     }
   ],
   "originTracingSources": {

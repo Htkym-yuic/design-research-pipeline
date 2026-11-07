@@ -397,3 +397,62 @@ test("config: バナー・Webの登録先の列マップが、実在する列名
   assert.equal(cfg.media.banner.notion.fileProp, "バナー画像");
   assert.equal(cfg.media.banner.notion.propertyMap["掲載元URL"], "detailUrl");
 });
+
+test("config: 取得できない参照元は enabled:false と理由つきで無効化されている", async () => {
+  const cfg = await loadConfig();
+  const off = cfg.sources.filter((s) => s.enabled === false).map((s) => s.key).sort();
+  assert.deepEqual(off, ["banner-library", "banner-matome", "cssda", "gdweb", "landbook", "sankou-web", "siteinspire"]);
+  assert.ok(cfg.sources.filter((s) => s.enabled === false).every((s) => s.disabledReason));
+});
+
+test("buildContactSheet: 番号付き一覧画像を作り、画像が取れない候補は空欄＋理由", async () => {
+  const { buildContactSheet } = await import("./lib/review.mjs");
+  const sharp = (await import("sharp")).default;
+  const png = await sharp({ create: { width: 400, height: 300, channels: 3, background: "#09f" } }).png().toBuffer();
+  const fetchImpl = async (u) => u.endsWith("ok.png")
+    ? { ok: true, status: 200, arrayBuffer: async () => png.buffer.slice(png.byteOffset, png.byteOffset + png.byteLength) }
+    : u.endsWith("html") ? { ok: true, status: 200, arrayBuffer: async () => Buffer.from("<html>").buffer } : { ok: false, status: 404 };
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-rev-"));
+  const out = path.join(tmp, "sheet.jpg");
+  const res = await buildContactSheet([{ imageUrl: "https://a.example/ok.png" }, { imageUrl: "https://a.example/missing.png" }, { imageUrl: "https://a.example/html" }, { imageUrl: null }], out, { fetchImpl });
+  assert.deepEqual(res.map((r) => r.image), ["あり", "なし（HTTP 404）", "なし（画像として読めない）", "なし（画像URLなし）"]);
+  const meta = await sharp(out).metadata();
+  assert.equal(meta.width, 10 + 3 * 370); // 3列
+  assert.equal(meta.height, 10 + 2 * 250); // 4件＝2行
+});
+
+test("applyLearning: 番号・pageUrlで反映し、範囲外・理由なし・未知の候補は拒否", async () => {
+  const { applyLearning } = await import("./lib/review.mjs");
+  const cands = [{ pageUrl: "https://a.example/", signals: { learningValue: 0.5 } }, { pageUrl: "https://b.example/", signals: { learningValue: 0.5 } }];
+  const review = [{ no: 1, pageUrl: "https://a.example/" }, { no: 2, pageUrl: "https://b.example/" }];
+  const r = applyLearning(cands, { items: [{ no: 1, learningValue: 0.9, reason: "構成が明快" }, { pageUrl: "https://b.example/", learningValue: 0.2, reason: "既存と似る" }] }, review);
+  assert.equal(r.applied, 2); assert.deepEqual(r.errors, []);
+  assert.deepEqual([cands[0].signals.learningValue, cands[1].signals.learningValue, cands[0].reviewReason], [0.9, 0.2, "構成が明快"]);
+  const bad = applyLearning(cands, { items: [{ no: 1, learningValue: 1.5, reason: "x" }, { no: 2, learningValue: 0.5, reason: "" }, { no: 9, learningValue: 0.5, reason: "x" }] }, review);
+  assert.equal(bad.applied, 0); assert.equal(bad.errors.length, 3);
+});
+
+test("E2E: review→learning.json→rescore で学習価値の高い候補に選定が切り替わる（公開済みは拒否）", async () => {
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-resc-"));
+  const sig = { learningValue: 0.5, freshness: 0.7, originalSource: 1, assetsAvailable: 0.3, rightsClarity: 0.5 };
+  const mk = (n) => ({ media: "web", sourceKey: `s${n}`, sourceName: "S", termsStatus: "known", brand: `W${n}`, pageUrl: `https://w${n}.example/`, sourceDetailUrl: `https://d.example/${n}`, signals: { ...sig } });
+  await fs.writeFile(path.join(tmp, "fx.json"), JSON.stringify({ lp: [], banner: [], web: [1, 2, 3, 4].map(mk) }));
+  const run = (extra) => spawnSync(process.execPath, [path.join(here, "run.mjs"), "--fixture", path.join(tmp, "fx.json"), "--out", path.join(tmp, "out"), "--ledger", path.join(tmp, "l.json"), "--date", "2026-11-07", "--media", "web", ...extra], { env: { ...process.env, DRY_RUN: "true" }, encoding: "utf8" });
+  let r = run(["--stage", "collect,select,review"]);
+  assert.equal(r.status, 0, r.stderr);
+  const dir = path.join(tmp, "out/2026-11-07/web");
+  const review = JSON.parse(await fs.readFile(path.join(dir, "review/review.json"), "utf8"));
+  assert.equal(review.items.length, 4);
+  await fs.access(path.join(dir, "review/contact_sheet.jpg"));
+  const before = JSON.parse(await fs.readFile(path.join(dir, "selection.json"), "utf8")).selected.brand;
+  const target = review.items.find((i) => i.brand !== before); // 現在の選定とは別の候補を高評価にする
+  await fs.writeFile(path.join(dir, "learning.json"), JSON.stringify({ items: [{ no: target.no, learningValue: 1, reason: "構成が最も明快" }] }));
+  r = run(["--stage", "rescore"]);
+  assert.equal(r.status, 0, r.stderr);
+  const after = JSON.parse(await fs.readFile(path.join(dir, "selection.json"), "utf8"));
+  assert.equal(after.selected.brand, target.brand);
+  assert.equal(after.selected.reviewReason, "構成が最も明快");
+  // 誤ったlearning.jsonは拒否
+  await fs.writeFile(path.join(dir, "learning.json"), JSON.stringify({ items: [{ no: 1, learningValue: 2, reason: "x" }] }));
+  assert.notEqual(run(["--stage", "rescore"]).status, 0);
+});

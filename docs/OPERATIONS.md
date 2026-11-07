@@ -355,3 +355,9 @@ npm run cbs:export
 npm run dis:test
 npm run dis:run -- --stage collect,select,template --fixture scripts/dis/fixtures/sample-candidates.json
 ```
+
+### DIS: 学習価値の比較と参照元の有効化
+
+- 撮影の前に `--stage review` で、比較する5候補のサムネイルを番号つきの一覧画像（`review/contact_sheet.jpg`）にまとめ、評価を `learning.json` に書き、`--stage rescore` で選定に反映する。基準は `.claude/skills/dis-design-learning/references/learning-value-rubric.md`。
+- 取得に失敗し続ける参照元は、`config/dis-daily.json` で `enabled: false` と `disabledReason` を付けて止める（SANKOU!、CSS Design Awards、Land-book、SiteInspire、BANNER LIBRARY、Banner Matome、GDWEB）。URLや規約を確認できたら `enabled` を外す。
+- 構造の確認は `npm run dis:probe -- --source <key>`。
