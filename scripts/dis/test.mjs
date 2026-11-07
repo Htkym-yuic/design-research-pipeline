@@ -11,7 +11,7 @@ import { emptyAnalysis, validateAnalysis, AXES } from "./lib/analysis-schema.mjs
 import { idempotencyKey } from "./lib/ledger.mjs";
 import { extractDetailLinks, parseDetail, collectFromSource, extractRdlpCards, parseRdlpDetail, cleanTitle, outboundHosts, looksLikeNonWork, isSponsoredUrl, pickBannerImage } from "./lib/collect.mjs";
 import { loadConfig } from "./lib/config.mjs";
-import { dropboxFolder, buildNotionProps, chunkText, buildNotionBlocks, markdownToBlocks } from "./lib/adapters.mjs";
+import { dropboxFolder, buildNotionProps, chunkText, buildNotionBlocks, markdownToBlocks, DEFAULT_PROPERTY_MAP, resolveSpec } from "./lib/adapters.mjs";
 
 const here = path.dirname(new URL(import.meta.url).pathname);
 
@@ -102,7 +102,7 @@ test("config: ユーザー承認済み(LPアーカイブ)以外はtermsStatus!=k
 });
 
 test("buildNotionProps: スキーマにあるプロパティだけ設定", () => {
-  const props = buildNotionProps({ "タイトル": { type: "title" }, "参考URL": { type: "url" } }, { disId: "D", brand: "B", pageUrl: "https://a.example/", date: "2026-11-07", summary: "s" });
+  const props = buildNotionProps({ "タイトル": { type: "title" }, "参考URL": { type: "url" } }, { disId: "D", title: "D B", brand: "B", pageUrl: "https://a.example/", date: "2026-11-07", summary: "s" });
   assert.deepEqual(Object.keys(props).sort(), ["タイトル", "参考URL"]);
 });
 
@@ -362,4 +362,38 @@ test("parseDetail/pickBannerImage: og:imageが無いときページ自身を画�
   assert.equal(parseDetail('<meta property="og:title" content="T">', page).image, null); // 以前はページ自身のURLになっていた
   assert.equal(parseDetail('<meta property="og:image" content="' + page + '">', page).image, null); // og:imageがページ自身でも画像にしない
   assert.equal(pickBannerImage('<img src="/a-150x150.jpg"><img data-src="/real.webp">', page), "https://s.example/real.webp");
+});
+
+test("buildNotionProps: 列の型に合わせて組み立て、無い列・型違い・選択肢にない値は省く（理由を残す）", () => {
+  const schema = {
+    "タイトル": { type: "title" }, "公式サイトURL": { type: "url" }, "ドメイン": { type: "rich_text" },
+    "参照元": { type: "select", select: { options: [{ name: "その他" }] } },
+    "PC/SP": { type: "multi_select", multi_select: { options: [{ name: "PC" }, { name: "SP" }] } },
+    "権利区分": { type: "multi_select", multi_select: { options: [{ name: "reference_only" }] } },
+    "バナー画像": { type: "files" },
+    "ステータス": { type: "select", select: { options: [{ name: "候補" }] } },
+  };
+  const map = { "タイトル": "title", "公式サイトURL": "pageUrl", "ドメイン": "domain", "参照元": "=その他", "PC/SP": ["PC", "SP"], "権利区分": ["reference_only", "unknown_x"], "ステータス": "=レビュー待ち", "存在しない列": "title", "バナー画像": "title" };
+  const skipped = [];
+  const p = buildNotionProps(schema, { title: "T", pageUrl: "https://a.example/", domain: "a.example" }, map, {}, skipped);
+  assert.deepEqual(Object.keys(p).sort(), ["PC/SP", "ドメイン", "タイトル", "公式サイトURL", "参照元", "権利区分"].sort());
+  assert.deepEqual(p["PC/SP"].multi_select.map((x) => x.name), ["PC", "SP"]);
+  assert.deepEqual(p["権利区分"].multi_select.map((x) => x.name), ["reference_only"]); // 選択肢にない値は省く
+  assert.ok(skipped.some((s) => s.col === "存在しない列") && skipped.some((s) => s.col === "ステータス") && skipped.some((s) => s.col === "バナー画像"));
+  assert.equal(resolveSpec("=x", {}), "x");
+});
+
+test("buildNotionProps: analysis.notionProps（extra）も列の型・選択肢で検証される", () => {
+  const schema = { "タイトル": { type: "title" }, "主要CTA": { type: "rich_text" }, "構成タイプ": { type: "multi_select", multi_select: { options: [{ name: "サービス理解型" }] } } };
+  const p = buildNotionProps(schema, { title: "T" }, { "タイトル": "title" }, { "主要CTA": "Send", "構成タイプ": ["サービス理解型", "なし"] });
+  assert.equal(p["主要CTA"].rich_text[0].text.content, "Send");
+  assert.deepEqual(p["構成タイプ"].multi_select.map((x) => x.name), ["サービス理解型"]);
+});
+
+test("config: バナー・Webの登録先の列マップが、実在する列名を使っている", async () => {
+  const cfg = await loadConfig();
+  assert.equal(cfg.media.web.notion.propertyMap["公式サイトURL"], "pageUrl");
+  assert.deepEqual(cfg.media.web.notion.urlProps, ["公式サイトURL"]);
+  assert.equal(cfg.media.banner.notion.fileProp, "バナー画像");
+  assert.equal(cfg.media.banner.notion.propertyMap["掲載元URL"], "detailUrl");
 });

@@ -33,7 +33,30 @@
       "notion": {
         "collection": "collection://01516eed-b32f-464e-bbdf-68bf9e7b87f9",
         "envVar": "NOTION_BANNER_DATA_SOURCE_ID",
-        "libraryName": "02｜バナーリサーチライブラリー"
+        "libraryName": "02｜バナーリサーチライブラリー",
+        "urlProps": [
+          "参考URL",
+          "掲載元URL"
+        ],
+        "fileProp": "バナー画像",
+        "propertyMap": {
+          "タイトル": "title",
+          "ブランド": "brand",
+          "参考URL": "pageUrl",
+          "掲載元URL": "detailUrl",
+          "取得元サイト": "sourceName",
+          "出典": "sourceLine",
+          "取得日": "date",
+          "登録日": "date",
+          "Dropbox正本パス": "dropboxFolder",
+          "Dropbox保存先": "dropboxFolder",
+          "メイン訴求": "summary",
+          "バナー画像URL": "imageUrl",
+          "進捗メモ": "=DIS日次学習で自動登録（要レビュー）",
+          "権利区分": "=rights_unknown",
+          "資産区分": "=新規調査",
+          "状態": "=要確認"
+        }
       }
     },
     "web": {
@@ -44,7 +67,32 @@
       "notion": {
         "collection": "collection://72c6fadb-ee7b-4721-a04c-e5a73126c09f",
         "envVar": "NOTION_WEB_DATA_SOURCE_ID",
-        "libraryName": "03｜Webサイトリサーチライブラリー"
+        "libraryName": "03｜Webサイトリサーチライブラリー",
+        "urlProps": [
+          "公式サイトURL"
+        ],
+        "propertyMap": {
+          "タイトル": "title",
+          "公式サイトURL": "pageUrl",
+          "参照元": "=その他",
+          "ドメイン": "domain",
+          "正規化URL": "normalizedUrl",
+          "重複判定キー": "key",
+          "初回登録日": "date",
+          "最終確認日": "date",
+          "Dropbox正本パス": "dropboxFolder",
+          "PC/SP": [
+            "PC",
+            "SP"
+          ],
+          "スクショ状態": "=撮影済み",
+          "スクショ用途": "=本人非公開分析のみ",
+          "プレビュー方針": "=内部分析用スクショ",
+          "権利区分": [
+            "reference_only"
+          ],
+          "ステータス": "=レビュー待ち"
+        }
       }
     }
   },

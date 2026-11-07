@@ -9,13 +9,13 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { parseArgs } from "node:util";
 import { loadConfig, jstDate, readJson, MEDIA_KEYS, REPO_ROOT } from "./lib/config.mjs";
-import { buildKnownIndex } from "./lib/dedupe.mjs";
+import { buildKnownIndex, normalizeUrl } from "./lib/dedupe.mjs";
 import { selectOne, interleaveBySource } from "./lib/select.mjs";
 import { collectFromSource, loadFixture } from "./lib/collect.mjs";
 import { emptyAnalysis, validateAnalysis, analysisToMarkdown } from "./lib/analysis-schema.mjs";
 import { idempotencyKey, loadLedger, saveLedger, findEntry, upsertEntry } from "./lib/ledger.mjs";
 import { writesAllowed } from "./lib/write-guard.mjs";
-import { dropboxFolder, planDropboxFiles, writeDropbox, writeNotion, buildNotionProps, buildNotionBlocks } from "./lib/adapters.mjs";
+import { dropboxFolder, planDropboxFiles, writeDropbox, writeNotion, buildNotionBlocks, DEFAULT_PROPERTY_MAP } from "./lib/adapters.mjs";
 
 const { values: args } = parseArgs({
   options: {
@@ -135,8 +135,13 @@ async function runMedia(media) {
     generated.push({ local: `${d}/metadata.json`, rel: "metadata.json" });
     const captured = (await readJson(`${d}/files.json`, [])) ;
     const plan = planDropboxFiles([...captured, ...generated], folder);
-    const notionValues = { disId, brand: sel.brand, pageUrl: sel.pageUrl, sourceName: sel.sourceName, sourceDetailUrl: sel.sourceDetailUrl, date: args.date, dropboxFolder: folder, summary: analysis.summary };
-    const result = { dryRun: !writeOk, key, dropboxFolder: folder, dropboxPlan: plan.map((p) => p.remote), notion: { library: cfg.media[media].notion.libraryName, collection: cfg.media[media].notion.collection, title: `${disId} ${sel.brand}` } };
+    const host = (u) => { try { return new URL(u).hostname; } catch { return ""; } };
+    const brand = analysis.brand || sel.brand;
+    const notionValues = { disId, brand, title: `${disId} ${brand}`, pageUrl: sel.pageUrl, detailUrl: sel.sourceDetailUrl, sourceName: sel.sourceName, sourceLine: `${sel.sourceName} ${sel.sourceDetailUrl}`, date: args.date, dropboxFolder: folder, summary: analysis.summary, imageUrl: sel.imageUrl, domain: host(sel.pageUrl), normalizedUrl: normalizeUrl(sel.pageUrl), key };
+    const origin = captured.find((c) => /^01_Original\/banner\./.test(c.rel));
+    const mime = { jpg: "image/jpeg", png: "image/png", webp: "image/webp", gif: "image/gif" };
+    const attachFile = origin ? { path: origin.local, name: path.basename(origin.local), contentType: mime[origin.rel.split(".").pop()] || "application/octet-stream" } : null;
+    const result = { dryRun: !writeOk, key, dropboxFolder: folder, dropboxPlan: plan.map((p) => p.remote), notion: { library: cfg.media[media].notion.libraryName, collection: cfg.media[media].notion.collection, title: notionValues.title, plannedProperties: Object.keys({ ...(cfg.media[media].notion.propertyMap || DEFAULT_PROPERTY_MAP), ...(analysis.notionProps || {}) }), attachment: attachFile ? `${attachFile.name}（${cfg.media[media].notion.fileProp || "列なし"}）` : null } };
     if (captured.length === 0) result.warning = "撮影/画像ファイルなし（--capture 未実施）。本番前に必須。";
     if (writeOk) {
       if (captured.length === 0) throw new Error("正本画像がありません（capture未実施）");
@@ -147,7 +152,7 @@ async function runMedia(media) {
         if (result.dropbox.status !== "created") throw new Error(`Dropbox: ${result.dropbox.status}`);
       } else result.dropbox = { status: "skipped_already_done" };
       if (entry?.notion?.status !== "created") {
-        result.notionResult = await writeNotion({ cfg, media, values: notionValues, blocks: buildNotionBlocks(analysis, await fs.readFile(`${d}/analysis.md`, "utf8")), opts: { apply: args.apply } });
+        result.notionResult = await writeNotion({ cfg, media, values: notionValues, blocks: buildNotionBlocks(analysis, await fs.readFile(`${d}/analysis.md`, "utf8")), opts: { apply: args.apply }, extraProps: analysis.notionProps || {}, attachFile });
         upsertEntry(ledger, { ...base, notion: result.notionResult }); await saveLedger(ledger, ledgerFile);
       } else result.notionResult = { status: "skipped_already_done" };
     }

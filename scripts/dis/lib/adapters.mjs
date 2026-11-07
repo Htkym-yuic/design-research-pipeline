@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { assertWritesAllowed } from "./write-guard.mjs";
 import { requireEnv } from "../../lib/env.mjs";
-import { appendBlockChildren, createPage, findPageByUrl, getDataSource, buildPropertyByType, headingBlock, paragraphBlock } from "../../lib/notion-client.mjs";
+import { appendBlockChildren, createPage, findPageByUrl, getDataSource, buildPropertyByType, headingBlock, paragraphBlock, uploadFileForNotion } from "../../lib/notion-client.mjs";
 import { ensureFolder, pathExists, uploadFileNoOverwrite } from "../../lib/dropbox-client.mjs";
 
 /** Dropbox保存先。99_Needs_Review/<日付>/dis-daily/<DIS-ID>/ （新規フォルダーのみ） */
@@ -34,23 +34,46 @@ export async function writeDropbox({ folder, plan, opts, ledgerDone = false }) {
   return { status: "created", folder, uploaded };
 }
 
-/** Notion登録用プロパティ。実スキーマにある名前・型だけ設定する（無いものは黙って省く）。 */
-export function buildNotionProps(schema, v) {
+/** 既定の対応表（LPライブラリー向け）。他の媒体は config.media.<m>.notion.propertyMap で上書きする。値の指定: 値のキー名 / "=リテラル" / 配列（リテラル）。 */
+export const DEFAULT_PROPERTY_MAP = {
+  "タイトル": "title", "ブランド": "brand", "参考URL": "pageUrl", "出典": "sourceLine", "取得日": "date",
+  "Dropbox正本パス": "dropboxFolder", "メイン訴求": "summary", "進捗メモ": "=DIS日次学習で自動登録（要レビュー）",
+};
+
+export function resolveSpec(spec, v) {
+  if (Array.isArray(spec)) return spec;
+  if (typeof spec !== "string") return undefined;
+  return spec.startsWith("=") ? spec.slice(1) : v[spec];
+}
+
+const optionNames = (prop) => (prop?.[prop.type]?.options || []).map((o) => o.name);
+
+/**
+ * Notion登録用プロパティを、実際の列の型に合わせて組み立てる。
+ * 無い列・対応しない型・選択肢にない値は、黙って省く（既存の列や選択肢は変更しない）。
+ * 戻り値の skipped に、省いた列と理由を残す。
+ */
+export function buildNotionProps(schema, v, map = DEFAULT_PROPERTY_MAP, extra = {}, skipped = []) {
   const out = {};
-  const want = [
-    [["タイトル", "名前", "Name"], "title", `${v.disId} ${v.brand}`],
-    [["ブランド"], "rich_text", v.brand],
-    [["参考URL", "URL"], "url", v.pageUrl],
-    [["出典"], "rich_text", `${v.sourceName} ${v.sourceDetailUrl}`],
-    [["取得日"], "date", v.date],
-    [["Dropbox正本パス"], "rich_text", v.dropboxFolder],
-    [["メイン訴求"], "rich_text", v.summary],
-    [["進捗メモ"], "rich_text", "DIS日次学習で自動登録（要レビュー）"],
-  ];
-  for (const [names, type, value] of want) {
-    if (!value) continue;
-    const name = names.find((n) => schema[n] && (schema[n].type === type));
-    if (name) out[name] = buildPropertyByType(type, value);
+  for (const [col, spec] of Object.entries({ ...map, ...Object.fromEntries(Object.entries(extra).map(([k, val]) => [k, Array.isArray(val) ? val : `=${val}`])) })) {
+    const prop = schema[col];
+    if (!prop) { skipped.push({ col, reason: "列なし" }); continue; }
+    const value = resolveSpec(spec, v);
+    if (value === undefined || value === null || value === "" || (Array.isArray(value) && !value.length)) continue;
+    const type = prop.type;
+    if (!["title", "rich_text", "url", "date", "select", "multi_select", "status", "checkbox"].includes(type)) { skipped.push({ col, reason: `未対応の型 ${type}` }); continue; }
+    if (["select", "status", "multi_select"].includes(type)) {
+      const names = optionNames(prop);
+      const vals = Array.isArray(value) ? value : [value];
+      const ok = vals.filter((x) => names.includes(String(x)));
+      if (ok.length !== vals.length) skipped.push({ col, reason: `選択肢にない値: ${vals.filter((x) => !ok.includes(x)).join(",")}` });
+      if (!ok.length) continue;
+      out[col] = buildPropertyByType(type, type === "multi_select" ? ok : ok[0]);
+      continue;
+    }
+    const text = Array.isArray(value) ? value.join(", ") : value;
+    const maxLen = type === "rich_text" || type === "title" ? 1900 : 2000;
+    out[col] = buildPropertyByType(type, String(text).slice(0, maxLen));
   }
   return out;
 }
@@ -102,19 +125,32 @@ export function buildNotionBlocks(a, markdown) {
   return markdownToBlocks(markdown);
 }
 
-/** Notion作成専用アダプター。既存ページは編集せず、同一URLが既にあれば作成をスキップ。 */
-export async function writeNotion({ cfg, media, values, blocks, opts }) {
+/** Notion作成専用アダプター。既存ページは編集せず、同じURLのページが既にあれば作成をスキップ。 */
+export async function writeNotion({ cfg, media, values, blocks, opts, extraProps = {}, attachFile = null }) {
   assertWritesAllowed(opts);
   requireEnv("NOTION_TOKEN");
-  const dsId = requireEnv(cfg.media[media].notion.envVar);
+  const ncfg = cfg.media[media].notion;
+  const dsId = requireEnv(ncfg.envVar);
   const schema = (await getDataSource(dsId)).properties || {};
-  const urlProp = ["参考URL", "URL"].find((n) => schema[n]?.type === "url");
-  if (urlProp) {
-    const found = await findPageByUrl(dsId, urlProp, values.pageUrl);
-    if (found) return { status: "skipped_exists", pageId: found.id ?? found };
+  for (const col of ncfg.urlProps || ["参考URL", "URL"]) {
+    if (schema[col]?.type !== "url") continue;
+    for (const u of [values.pageUrl, values.detailUrl].filter(Boolean)) {
+      const found = await findPageByUrl(dsId, col, u);
+      if (found) return { status: "skipped_exists", pageId: found.id ?? found, matchedBy: `${col}=${u}` };
+    }
+  }
+  const skipped = [];
+  const props = buildNotionProps(schema, values, ncfg.propertyMap || DEFAULT_PROPERTY_MAP, extraProps, skipped);
+  let attachment = null;
+  if (attachFile && ncfg.fileProp && schema[ncfg.fileProp]?.type === "files") {
+    try {
+      const id = await uploadFileForNotion(attachFile.path, attachFile.contentType);
+      props[ncfg.fileProp] = { files: [{ name: attachFile.name, type: "file_upload", file_upload: { id } }] };
+      attachment = "attached";
+    } catch (e) { attachment = `failed: ${e.message}`; }
   }
   // 1リクエスト100ブロックまで。新規ページ作成後、残りは同じ新規ページへ追記する（既存ページは触らない）。
-  const page = await createPage(dsId, buildNotionProps(schema, values), blocks.slice(0, 95));
+  const page = await createPage(dsId, props, blocks.slice(0, 95));
   for (let i = 95; i < blocks.length; i += 95) await appendBlockChildren(page.id, blocks.slice(i, i + 95));
-  return { status: "created", pageId: page.id, url: page.url, blocks: blocks.length };
+  return { status: "created", pageId: page.id, url: page.url, blocks: blocks.length, skippedProps: skipped, attachment };
 }
