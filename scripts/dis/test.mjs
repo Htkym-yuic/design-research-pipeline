@@ -90,9 +90,9 @@ test("collect: 一覧から詳細リンク抽出・詳細パース", () => {
   assert.deepEqual([d.title, d.image, d.pageUrl], ["T", "https://s.example/i.png", "https://real.example/"]);
 });
 
-test("config: 全sourceが既定でtermsStatus!=known（規約確認前は取得しない）／Notion collectionが仕様どおり", async () => {
+test("config: ユーザー承認済み(LPアーカイブ)以外はtermsStatus!=known／Notion collectionが仕様どおり", async () => {
   const cfg = await loadConfig();
-  assert.ok(cfg.sources.every((s) => s.termsStatus === "unknown"));
+  assert.deepEqual(cfg.sources.filter((s) => s.termsStatus === "known").map((s) => s.key), ["rdlp"]);
   assert.equal(cfg.media.lp.notion.collection, "collection://39624d4f-a671-8094-ba0c-000b11fefbd0");
   assert.equal(cfg.media.banner.notion.collection, "collection://01516eed-b32f-464e-bbdf-68bf9e7b87f9");
   assert.equal(cfg.media.web.notion.collection, "collection://72c6fadb-ee7b-4721-a04c-e5a73126c09f");
