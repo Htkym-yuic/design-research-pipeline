@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { assertWritesAllowed } from "./write-guard.mjs";
 import { requireEnv } from "../../lib/env.mjs";
-import { createPage, findPageByUrl, getDataSource, buildPropertyByType, headingBlock, paragraphBlock } from "../../lib/notion-client.mjs";
+import { appendBlockChildren, createPage, findPageByUrl, getDataSource, buildPropertyByType, headingBlock, paragraphBlock } from "../../lib/notion-client.mjs";
 import { ensureFolder, pathExists, uploadFileNoOverwrite } from "../../lib/dropbox-client.mjs";
 
 /** Dropbox保存先。99_Needs_Review/<日付>/dis-daily/<DIS-ID>/ （新規フォルダーのみ） */
@@ -55,10 +55,24 @@ export function buildNotionProps(schema, v) {
   return out;
 }
 
+/** Notionのrich_textは1要素2000文字まで。行単位で1900文字以内に分割する（切り捨てない）。 */
+export function chunkText(text, max = 1900) {
+  const out = [];
+  let cur = "";
+  const push = () => { if (cur.trim()) out.push(cur.trimEnd()); cur = ""; };
+  for (let line of String(text).split("\n")) {
+    while (line.length > max) { push(); out.push(line.slice(0, max)); line = line.slice(max); }
+    if (cur.length + line.length + 1 > max) push();
+    cur += line + "\n";
+  }
+  push();
+  return out;
+}
+
 export function buildNotionBlocks(a, markdownSections) {
   const blocks = [headingBlock("概要", 2), paragraphBlock(a.summary), headingBlock("選定理由", 2), paragraphBlock(a.selectionReason)];
-  for (const [title, text] of markdownSections) blocks.push(headingBlock(title, 2), paragraphBlock(text.slice(0, 1900)));
-  return blocks.slice(0, 95);
+  for (const [title, text] of markdownSections) blocks.push(headingBlock(title, 2), ...chunkText(text).map(paragraphBlock));
+  return blocks;
 }
 
 /** Notion作成専用アダプター。既存ページは編集せず、同一URLが既にあれば作成をスキップ。 */
@@ -72,6 +86,8 @@ export async function writeNotion({ cfg, media, values, blocks, opts }) {
     const found = await findPageByUrl(dsId, urlProp, values.pageUrl);
     if (found) return { status: "skipped_exists", pageId: found.id ?? found };
   }
-  const page = await createPage(dsId, buildNotionProps(schema, values), blocks);
-  return { status: "created", pageId: page.id, url: page.url };
+  // 1リクエスト100ブロックまで。新規ページ作成後、残りは同じ新規ページへ追記する（既存ページは触らない）。
+  const page = await createPage(dsId, buildNotionProps(schema, values), blocks.slice(0, 95));
+  for (let i = 95; i < blocks.length; i += 95) await appendBlockChildren(page.id, blocks.slice(i, i + 95));
+  return { status: "created", pageId: page.id, url: page.url, blocks: blocks.length };
 }

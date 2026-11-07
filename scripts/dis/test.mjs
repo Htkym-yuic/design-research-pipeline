@@ -11,7 +11,7 @@ import { emptyAnalysis, validateAnalysis, AXES } from "./lib/analysis-schema.mjs
 import { idempotencyKey } from "./lib/ledger.mjs";
 import { extractDetailLinks, parseDetail, collectFromSource, extractRdlpCards, parseRdlpDetail } from "./lib/collect.mjs";
 import { loadConfig } from "./lib/config.mjs";
-import { dropboxFolder, buildNotionProps } from "./lib/adapters.mjs";
+import { dropboxFolder, buildNotionProps, chunkText, buildNotionBlocks } from "./lib/adapters.mjs";
 
 const here = path.dirname(new URL(import.meta.url).pathname);
 
@@ -161,4 +161,17 @@ test("collectFromSource: getterで403は回避せずfetchError、成功時は候
   const ok = { robots: async () => true, get: async (u) => ({ ok: true, status: 200, text: pages[u] }) };
   const r2 = await collectFromSource(src, { getter: ok });
   assert.deepEqual([r2[0].brand, r2[0].pageUrl], ["A LP", "https://real.example/lp"]);
+});
+
+test("chunkText: 全文を落とさず1900文字以内に分割／長い1行も分割", () => {
+  const text = Array.from({ length: 400 }, (_, i) => `行${i} ${"あ".repeat(40)}`).join("\n") + "\n" + "い".repeat(5000);
+  const chunks = chunkText(text);
+  assert.ok(chunks.every((c) => c.length <= 1900));
+  assert.equal(chunks.join("\n").replace(/\n/g, "").length, text.replace(/\n/g, "").length);
+});
+
+test("buildNotionBlocks: 長い分析も全て含む", () => {
+  const blocks = buildNotionBlocks({ summary: "s", selectionReason: "r" }, [["分析", "x".repeat(11000)]]);
+  const total = blocks.filter((b) => b.type === "paragraph").map((b) => b.paragraph.rich_text[0].text.content).join("").length;
+  assert.equal(total, 2 + 11000);
 });
