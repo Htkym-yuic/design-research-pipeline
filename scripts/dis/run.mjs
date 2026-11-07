@@ -58,18 +58,20 @@ async function runMedia(media) {
     if (await readJson(out, null)) { r.stages.collect = "reused"; }
     else {
       let candidates;
+      const skippedSources = [];
+      const sourceReports = [];
       if (fixture) candidates = fixture[media] || [];
       else {
         candidates = [];
-        var skippedSources = [];
-        var sourceReports = [];
-        const srcs = cfg.sources.filter((s) => s.media === media);
-        for (const s of srcs) {
+        const isKnown = (u) => known.check({ sourceDetailUrl: u }, { windowDays: cfg.dedupeWindowDays, today: args.date }).duplicate;
+        for (const s of cfg.sources.filter((x) => x.media === media)) {
           if (s.termsStatus !== "known") { skippedSources.push({ sourceKey: s.key, sourceName: s.name, reason: "利用条件未確認のため取得せず" }); continue; }
-          candidates.push(...(await collectFromSource(s)));
+          const got = await collectFromSource(s, { isKnown });
+          candidates.push(...got);
+          sourceReports.push(got.report);
         }
       }
-      await wj(out, { collectedAt: new Date().toISOString(), candidates, skippedSources: typeof skippedSources === "undefined" ? [] : skippedSources, sourceReports: typeof sourceReports === "undefined" ? [] : sourceReports });
+      await wj(out, { collectedAt: new Date().toISOString(), candidates, skippedSources, sourceReports });
       r.stages.collect = `${candidates.length} candidates`;
     }
   }

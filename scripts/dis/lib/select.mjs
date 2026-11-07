@@ -16,8 +16,7 @@ export function scoreCandidate(c, weights) {
  * @returns {{selected: object|null, evaluated: object[], skippedReason?: string}}
  */
 export function selectOne(candidates, { weights, minScore, maxCandidates = 5, dupCheck, tieSeed = "" }) {
-  const pool = candidates.slice(0, maxCandidates);
-  const evaluated = pool.map((c) => {
+  const evaluated = candidates.map((c) => {
     const dup = dupCheck(c);
     const { score, parts } = scoreCandidate(c, weights);
     const blockers = [];
@@ -25,14 +24,18 @@ export function selectOne(candidates, { weights, minScore, maxCandidates = 5, du
     if (c.termsStatus !== "known") blockers.push("参照元の利用条件が未確認");
     if (!c.pageUrl) blockers.push("実ページURL未取得");
     if (c.fetchError) blockers.push(`取得不可: ${c.fetchError}`);
-    return { ...c, score, scoreParts: parts, duplicate: dup, blockers };
+    return { ...c, score, scoreParts: parts, duplicate: dup, blockers, inComparison: false };
   });
-  const eligible = evaluated.filter((e) => e.blockers.length === 0 && e.score >= minScore).sort((a, b) => b.score - a.score || tieHash(tieSeed, a.pageUrl) - tieHash(tieSeed, b.pageUrl));
-  if (eligible.length === 0) {
-    const reason = evaluated.length === 0 ? "候補なし" : evaluated.every((e) => e.blockers.length) ? "全候補が除外条件に該当" : `最高スコアが閾値${minScore}未満`;
+  // 比較するのは「除外条件に該当しない候補」の先頭 maxCandidates 件（重複や取得失敗で枠を消費しない）
+  const eligible = evaluated.filter((e) => e.blockers.length === 0);
+  for (const e of eligible.slice(0, maxCandidates)) e.inComparison = true;
+  const compared = eligible.slice(0, maxCandidates).filter((e) => e.score >= minScore)
+    .sort((a, b) => b.score - a.score || tieHash(tieSeed, a.pageUrl) - tieHash(tieSeed, b.pageUrl));
+  if (compared.length === 0) {
+    const reason = evaluated.length === 0 ? "候補なし" : eligible.length === 0 ? "全候補が除外条件に該当" : `最高スコアが閾値${minScore}未満`;
     return { selected: null, evaluated, skippedReason: reason };
   }
-  return { selected: eligible[0], evaluated };
+  return { selected: compared[0], evaluated };
 }
 
 /** 参照元ごとに順番に1件ずつ取り出して並べ替える（先頭の参照元に偏らないようにする）。 */

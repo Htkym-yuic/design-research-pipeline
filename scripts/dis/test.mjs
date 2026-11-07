@@ -9,7 +9,7 @@ import { selectOne, interleaveBySource, tieHash } from "./lib/select.mjs";
 import { writesAllowed } from "./lib/write-guard.mjs";
 import { emptyAnalysis, validateAnalysis, AXES } from "./lib/analysis-schema.mjs";
 import { idempotencyKey } from "./lib/ledger.mjs";
-import { extractDetailLinks, parseDetail, collectFromSource, extractRdlpCards, parseRdlpDetail, cleanTitle } from "./lib/collect.mjs";
+import { extractDetailLinks, parseDetail, collectFromSource, extractRdlpCards, parseRdlpDetail, cleanTitle, outboundHosts } from "./lib/collect.mjs";
 import { loadConfig } from "./lib/config.mjs";
 import { dropboxFolder, buildNotionProps, chunkText, buildNotionBlocks, markdownToBlocks } from "./lib/adapters.mjs";
 
@@ -41,7 +41,7 @@ test("selectOne: 規約不明・重複・取得不可を除外し最高スコア
 test("selectOne: 最大5候補のみ比較", () => {
   const cands = Array.from({ length: 8 }, (_, i) => ({ brand: `b${i}`, pageUrl: `https://b${i}.example/`, termsStatus: "known", signals: { a: i === 7 ? 1 : 0.7 } }));
   const res = selectOne(cands, { weights: { a: 100 }, minScore: 1, maxCandidates: 5, dupCheck: () => ({ duplicate: false }) });
-  assert.equal(res.evaluated.length, 5);
+  assert.equal(res.evaluated.filter((e) => e.inComparison).length, 5);
   assert.notEqual(res.selected.brand, "b7");
 });
 
@@ -237,7 +237,7 @@ test("run: 取得失敗は枠を消費せず、fetchFailuresに記録される",
   assert.equal(r.status, 0, r.stderr);
   const sel = JSON.parse(await fs.readFile(path.join(tmp, "out/2026-11-07/web/selection.json"), "utf8"));
   assert.equal(sel.fetchFailures.length, 1);
-  assert.equal(sel.evaluated.filter((e) => !e.fetchError).length, 5);
+  assert.equal(sel.evaluated.filter((e) => e.inComparison).length, 5);
   assert.ok(sel.selected);
 });
 
@@ -266,4 +266,37 @@ test("collectFromSource: 詳細リンク0件は理由つきでreportに残る", 
   const out = await collectFromSource(src, { getter: { robots: async () => true, get: async () => ({ ok: true, status: 200, text: "<html></html>" }) } });
   assert.equal(out.length, 0);
   assert.match(out.report.error, /URL形式/);
+});
+
+test("selectOne: 重複・取得失敗は比較枠を消費せず、その後ろの有効候補が5件まで比較される", () => {
+  const mk = (i, extra = {}) => ({ brand: `b${i}`, pageUrl: `https://b${i}.example/`, termsStatus: "known", signals: { a: i === 7 ? 1 : 0.7 }, ...extra });
+  const cands = [mk(0), mk(1), mk(2), mk(3, { fetchError: "403" }), mk(4), mk(5), mk(6), mk(7), mk(8)];
+  const res = selectOne(cands, { weights: { a: 100 }, minScore: 1, maxCandidates: 5, dupCheck: (c) => ({ duplicate: ["b0", "b1"].includes(c.brand), reason: "url", of: "X" }) });
+  assert.deepEqual(res.evaluated.filter((e) => e.inComparison).map((e) => e.brand), ["b2", "b4", "b5", "b6", "b7"]);
+  assert.equal(res.selected.brand, "b7");
+});
+
+test("collect: サイト共通の外部リンク（一覧にも出るホスト／複数ページに共通）を実ページURLにしない", async () => {
+  const src = { media: "web", key: "k", name: "K", termsStatus: "known", listUrl: "https://s.example/", detailPathIncludes: "/w/" };
+  const chrome = '<a href="https://operator.example/">op</a>';
+  const pages = {
+    "https://s.example/": '<a href="/w/a/">a</a><a href="/w/b/">b</a><a href="/w/c/">c</a>' + chrome,
+    "https://s.example/w/a/": '<meta property="og:title" content="A">' + chrome + '<a href="https://real-a.example/">go</a>',
+    "https://s.example/w/b/": '<meta property="og:title" content="B">' + chrome + '<a href="https://shared.example/">x</a>',
+    "https://s.example/w/c/": '<meta property="og:title" content="C">' + chrome + '<a href="https://shared.example/">x</a>',
+  };
+  const getter = { robots: async () => true, get: async (u) => ({ ok: !!pages[u], status: pages[u] ? 200 : 404, text: pages[u] || "" }) };
+  const out = await collectFromSource(src, { getter, detailLimit: 3 });
+  assert.deepEqual(out.map((c) => c.pageUrl), ["https://real-a.example/", null, null]);
+  assert.ok(outboundHosts(pages["https://s.example/"], "https://s.example/").has("operator.example"));
+});
+
+test("collect(banner): 共通リンクを外した後、画像があれば掲載元ページを実ページにして原典未確認と記録", async () => {
+  const src = { media: "banner", key: "k", name: "K", termsStatus: "known", listUrl: "https://s.example/", detailPathIncludes: "/b/" };
+  const pages = { "https://s.example/": '<a href="/b/1/">1</a><a href="/b/2/">2</a>',
+    "https://s.example/b/1/": '<meta property="og:title" content="B1"><meta property="og:image" content="/1.png"><a href="https://ops.example/">o</a>',
+    "https://s.example/b/2/": '<meta property="og:title" content="B2"><meta property="og:image" content="/2.png"><a href="https://ops.example/">o</a>' };
+  const getter = { robots: async () => true, get: async (u) => ({ ok: !!pages[u], status: 200, text: pages[u] || "" }) };
+  const out = await collectFromSource(src, { getter, detailLimit: 2 });
+  assert.ok(out.every((c) => c.originUnresolved && c.pageUrl === c.sourceDetailUrl));
 });

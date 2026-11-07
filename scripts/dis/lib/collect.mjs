@@ -50,13 +50,25 @@ export function extractDetailLinks(html, source, limit = 8) {
   return out;
 }
 
-/** 詳細ページから title / 画像 / 実ページURL(outbound) を抽出。 */
-export function parseDetail(html, detailUrl) {
+const SOCIAL = /(twitter|x\.com|facebook|instagram|line\.me|google|pinterest|youtube|hatena|tiktok|note\.com|apple\.com|play\.google)/i;
+
+/** ページ内の外部リンクのホスト一覧（同一ホスト・SNS除く）。 */
+export function outboundHosts(html, pageUrl) {
+  const host = new URL(pageUrl).hostname;
+  const out = new Set();
+  for (const m of html.matchAll(/<a\b[^>]*href=["'](https?:\/\/[^"']+)["'][^>]*>/gi)) {
+    try { const h = new URL(m[1]).hostname; if (h !== host && !SOCIAL.test(h)) out.add(h); } catch { /* 無視 */ }
+  }
+  return out;
+}
+
+/** 詳細ページから title / 画像 / 実ページURL(outbound) を抽出。excludeHosts＝サイト共通部分（一覧ページにも出る外部ホスト）は実ページ扱いにしない。 */
+export function parseDetail(html, detailUrl, { excludeHosts = new Set() } = {}) {
   const title = meta(html, "og:title") || html.match(/<title>([^<]+)/i)?.[1]?.trim() || null;
   const image = abs(meta(html, "og:image") || "", detailUrl);
   const host = new URL(detailUrl).hostname;
   const outbound = [...html.matchAll(/<a\b[^>]*href=["'](https?:\/\/[^"']+)["'][^>]*>/gi)]
-    .map((m) => m[1]).filter((u) => { try { return new URL(u).hostname !== host && !/(twitter|facebook|instagram|line\.me|google|pinterest|youtube|hatena)\./.test(u); } catch { return false; } });
+    .map((m) => m[1]).filter((u) => { try { const h = new URL(u).hostname; return h !== host && !SOCIAL.test(h) && !excludeHosts.has(h); } catch { return false; } });
   return { title, image, pageUrl: outbound[0] || null };
 }
 
@@ -124,6 +136,7 @@ export async function collectFromSource(source, { getter = fetchGetter(), detail
     const res = await getter.get(source.listUrl);
     if (!res.ok) { report.error = `HTTP ${res.status}`; return done([{ ...base, fetchError: `HTTP ${res.status}（回避しない）` }]); }
     const rdlp = source.parser === "rdlp";
+    const chromeHosts = outboundHosts(res.text, source.listUrl); // 一覧ページにも出る外部ホスト＝ヘッダー・フッター・広告など
     const all = rdlp ? extractRdlpCards(res.text, source.listUrl, scanLimit) : extractDetailLinks(res.text, source, scanLimit).map((url) => ({ url }));
     report.linksFound = all.length;
     const fresh = all.filter((c) => !isKnown(c.url));
@@ -136,14 +149,21 @@ export async function collectFromSource(source, { getter = fetchGetter(), detail
       try {
         const r = await getter.get(detailUrl);
         if (!r.ok) { results.push({ ...base, sourceDetailUrl: detailUrl, fetchError: `HTTP ${r.status}` }); continue; }
-        const d = rdlp ? parseRdlpDetail(r.text, detailUrl) : parseDetail(r.text, detailUrl);
+        const d = rdlp ? parseRdlpDetail(r.text, detailUrl) : parseDetail(r.text, detailUrl, { excludeHosts: rdlp ? new Set() : chromeHosts });
         const title = cleanTitle(card.title || d.title);
         const cand = { ...base, sourceDetailUrl: detailUrl, brand: cleanTitle(card.company || title), title, archivePostId: card.postId ?? null, pageUrl: d.pageUrl, imageUrl: d.image };
-        // バナーは原典URLが無い掲載サイトが多い。画像があれば掲載元ページを実ページ扱いにし、原典未確認と明記する。
-        if (source.media === "banner" && !cand.pageUrl && cand.imageUrl) { cand.pageUrl = detailUrl; cand.originUnresolved = true; }
-        cand.signals = heuristicSignals({ ...d, pageUrl: cand.originUnresolved ? null : cand.pageUrl });
+        cand.signals = heuristicSignals(d);
         results.push(cand); report.fetched++;
       } catch (e) { results.push({ ...base, sourceDetailUrl: detailUrl, fetchError: e.message }); }
+    }
+    // 同じ参照元の複数の詳細ページに共通する外部ホストは、各作品の実ページではなくサイト共通のリンクとみなして外す
+    const hostCount = new Map();
+    for (const c of results) if (c.pageUrl) { const h = new URL(c.pageUrl).hostname; hostCount.set(h, (hostCount.get(h) || 0) + 1); }
+    for (const c of results) {
+      if (c.pageUrl && hostCount.get(new URL(c.pageUrl).hostname) >= 2 && results.filter((x) => x.pageUrl).length >= 2) { c.pageUrl = null; c.pageUrlDropped = "共通リンクのため除外"; }
+      // バナーは原典URLが無い掲載サイトが多い。画像があれば掲載元ページを実ページ扱いにし、原典未確認と明記する。
+      if (source.media === "banner" && !c.pageUrl && c.imageUrl && !c.fetchError) { c.pageUrl = c.sourceDetailUrl; c.originUnresolved = true; }
+      if (!c.fetchError) c.signals = heuristicSignals({ pageUrl: c.originUnresolved ? null : c.pageUrl, image: c.imageUrl });
     }
     return done(results);
   } catch (e) {
