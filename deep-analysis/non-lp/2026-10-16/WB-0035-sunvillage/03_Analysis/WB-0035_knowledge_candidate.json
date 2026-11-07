@@ -1,0 +1,139 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0035",
+  "media_type": "WB",
+  "title": "株式会社サンヴィレッジ",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://sankoudesign.com/web/sunvillage/",
+    "capture_url": "https://sunvillage-co-ltd.com/",
+    "official_url": "https://sunvillage-co-ltd.com/"
+  },
+  "analysis": {
+    "summary": "「しなやかに、力強い電力を。」という対句コピーと抽象的な3Dビジュアルで再生可能エネルギー企業としての先進性を印象づけている。 中長期成長戦略「Road to 2030」（再エネ供給力2GW・蓄電池400MW・売上1,000億円）を数値で提示し、事業領域を つくる／整える／届ける の3本柱で説明する。 3群分類のフッターナビゲーションが事業理解・会社情報・更新系情報を整理している。",
+    "score": {
+      "visual": 17,
+      "clarity": 17,
+      "originality": 12,
+      "reusability": 17,
+      "learning": 11,
+      "evidence": 7,
+      "total": 81
+    },
+    "units": [
+      {
+        "name": "ファーストビュー",
+        "role": "再生可能エネルギー企業としての先進性・柔軟性を印象づける。",
+        "reuse": "抽象3Dビジュアル＋対句見出し＋成長戦略カードへの誘導。",
+        "evidence": "SP First View、reference.png。PC Full Page/First Viewはヒーロービジュアル未読み込み。"
+      },
+      {
+        "name": "ナビゲーション",
+        "role": "成長戦略・役割・事業領域・会社情報・プレスリリース・お知らせへ分類案内する。",
+        "reuse": "成長戦略を先頭に置くナビ順序＋常設お問合せボタン。",
+        "evidence": "PC/SP First View、PC/SP Full Page冒頭。"
+      },
+      {
+        "name": "主要コンテンツ",
+        "role": "企業の成長戦略を数値で裏付け、事業領域3本柱を順序立てて説明する。",
+        "reuse": "成長戦略カード（数値実績＋タグ＋日付）＋バリューチェーン順の3本柱（英語ラベル＋和語動詞見出し＋説明文＋CTA）。",
+        "evidence": "PC Full Page（y≈3066〜7968px付近）、SP Full Page該当区間。"
+      },
+      {
+        "name": "証拠・事例",
+        "role": "成長戦略の数値目標を根拠として企業の将来性を裏付ける。",
+        "reuse": "成長戦略・数値目標を単一カードでカルーセル表示する構成。",
+        "evidence": "PC Full Page（y≈3066〜4763px付近）、SP Full Page該当区間。"
+      },
+      {
+        "name": "問い合わせ・コンバージョン",
+        "role": "提携・問い合わせ検討者を問い合わせへ、企業理解を深めたい層を『私たちの役割』へ誘導する。",
+        "reuse": "ヘッダー常設お問合せボタン＋フッター上部の企業理解コンテンツ誘導カードの二段構え。",
+        "evidence": "PC/SP First View、PC/SP Full Page末尾。"
+      },
+      {
+        "name": "フッター",
+        "role": "会社情報・各種ナビゲーション・ブランドメッセージの再掲により信頼性を補強する。",
+        "reuse": "会社基本情報＋3群ナビゲーション＋企業理解CTAカード＋タグライン再掲＋著作権の順構成。",
+        "evidence": "PC Full Page末尾（y≈10420〜11197px）、SP Full Page末尾。"
+      }
+    ]
+  },
+  "strengths": [
+    "対句コピーによる企業ポジショニングの明確化",
+    "成長戦略の定量目標による信頼形成",
+    "バリューチェーン順の事業領域3本柱という分かりやすい構造",
+    "英語ラベルと和語動詞見出しの併用による専門性と平易さの両立"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "顧客事例・導入実績の不足（確認範囲内）",
+      "evidence": "成長戦略カード以外に事例コンテンツが見当たらない",
+      "fix": "導入実績・提携先ロゴ・数値実績を事業領域3本柱に追加",
+      "effect": "提携検討者への説得力向上",
+      "metric": "お問合せ到達率"
+    },
+    {
+      "priority": "P1",
+      "issue": "専門用語の説明不足",
+      "evidence": "EPC・Aggregation等の英語ラベルに平易な補足が少ない",
+      "fix": "各事業領域に一文程度の平易な補足説明を追加",
+      "effect": "非専門家の理解促進",
+      "metric": "事業領域ページ到達率"
+    },
+    {
+      "priority": "P2",
+      "issue": "ヒーロービジュアルの表示安定性（要再検証）",
+      "evidence": "PC Full Pageでヒーロービジュアルが未読み込みだった",
+      "fix": "遅延読み込みの改善、または初期表示の確実化",
+      "effect": "初見訪問者への印象の安定化",
+      "metric": "直帰率"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "対句コピー＋抽象3Dビジュアルヒーロー",
+      "keep": "対句見出し、抽象3Dビジュアル、成長戦略カードへの誘導",
+      "replace": "コピー文言、ビジュアル素材、ブランド名"
+    },
+    {
+      "id": "C02",
+      "name": "成長戦略カード＋バリューチェーン3本柱",
+      "keep": "数値目標カード、英語ラベル＋和語動詞見出しの3本柱構成",
+      "replace": "数値、事業名、説明文"
+    },
+    {
+      "id": "C03",
+      "name": "3群分類フッターナビゲーション",
+      "keep": "3群への分類方法、CTAカード＋タグライン再掲の順序",
+      "replace": "社名、住所、ナビ項目名"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "Sun Villageロゴ、抽象3Dビジュアル、固有コピー文言、成長戦略の数値・名称、住所・電話番号",
+    "reusable": "対句コピー＋抽象ビジュアルのヒーロー構造、成長戦略カード＋バリューチェーン3本柱の事業領域説明構成、3群分類のフッターナビゲーション構造"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/WB-0035_SITE_PC_full.png",
+      "../01_Normal_Images/WB-0035_SITE_PC_first_view.png",
+      "../01_Normal_Images/WB-0035_SITE_SP_full.png",
+      "../01_Normal_Images/WB-0035_SITE_SP_first_view.png",
+      "../01_Normal_Images/WB-0035_reference.png",
+      "https://sunvillage-co-ltd.com/"
+    ],
+    "unknowns": [
+      "section_index_not_generated",
+      "lazy_content_not_rendered",
+      "interactive_states_unverified",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}
