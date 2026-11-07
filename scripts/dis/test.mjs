@@ -339,3 +339,18 @@ test("looksLikeNonWork: 運営者メッセージ・規約系ページも作品�
   for (const bad of ["運営者の想い| Webデザインギャラリー・参考サイト集・アワード", "利用規約", "広告掲載について"]) assert.equal(looksLikeNonWork(bad, { name: "MUUUUU.ORG" }, ""), true, bad);
   assert.equal(looksLikeNonWork("Baseline Design", { name: "I/O 3000" }, ""), false);
 });
+
+test("downloadBanner: 中身で形式判定（拡張子が違ってもOK）／画像でないデータは保存せず理由つきで失敗", async () => {
+  const { downloadBanner, sniffImage } = await import("./lib/capture.mjs");
+  const sharp = (await import("sharp")).default;
+  const webp = await sharp({ create: { width: 50, height: 30, channels: 3, background: "#09f" } }).webp().toBuffer();
+  const mk = (buf, type) => async () => ({ ok: true, status: 200, headers: { get: () => type }, arrayBuffer: async () => buf.buffer.slice(buf.byteOffset, buf.byteOffset + buf.byteLength) });
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-bn-"));
+  assert.equal(sniffImage(webp), "webp");
+  const files = await downloadBanner("https://x.example/banner.png", tmp, mk(webp, "image/webp")); // 拡張子はpngだが中身はwebp
+  assert.equal(files[0].rel, "01_Original/banner.webp");
+  await fs.access(path.join(tmp, "02_Preview/banner_preview.jpg"));
+  const tmp2 = await fs.mkdtemp(path.join(os.tmpdir(), "dis-bn2-"));
+  await assert.rejects(downloadBanner("https://x.example/b.png", tmp2, mk(Buffer.from("<html>blocked</html>"), "text/html")), /画像として読めない/);
+  await assert.rejects(fs.access(path.join(tmp2, "01_Original/banner.png"))); // 保存されない
+});

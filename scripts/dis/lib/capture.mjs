@@ -69,18 +69,29 @@ export async function captureFullPage(url, outDir) {
   return files;
 }
 
-/** バナー: 公開されている画像1枚のみ取得（ギャラリー一括DLなし）。 */
+/** 先頭バイトから画像形式を判定する（拡張子や Content-Type を信用しない）。 */
+export function sniffImage(buf) {
+  if (buf.length >= 8 && buf.subarray(0, 8).equals(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]))) return "png";
+  if (buf.length >= 3 && buf[0] === 0xff && buf[1] === 0xd8 && buf[2] === 0xff) return "jpg";
+  if (buf.length >= 12 && buf.subarray(0, 4).toString() === "RIFF" && buf.subarray(8, 12).toString() === "WEBP") return "webp";
+  if (buf.length >= 6 && /^GIF8[79]a$/.test(buf.subarray(0, 6).toString())) return "gif";
+  return null;
+}
+
+/** バナー: 公開されている画像1枚のみ取得（ギャラリー一括DLなし）。画像と確認できなければ保存せずに理由つきで失敗する。 */
 export async function downloadBanner(imageUrl, outDir, fetchImpl = fetch) {
-  await fs.mkdir(path.join(outDir, "01_Original"), { recursive: true });
-  await fs.mkdir(path.join(outDir, "02_Preview"), { recursive: true });
   const res = await fetchImpl(imageUrl, { headers: { "User-Agent": "design-research-pipeline-dis/1.0 (public-pages-only)" } });
-  if (!res.ok) throw new Error(`画像取得失敗 HTTP ${res.status}`);
+  if (!res.ok) throw new Error(`画像取得失敗 HTTP ${res.status}（回避しない）: ${imageUrl}`);
   const buf = Buffer.from(await res.arrayBuffer());
   if (buf.length > MAX_IMAGE_BYTES) throw new Error("画像サイズ上限超過");
-  const ext = (new URL(imageUrl).pathname.match(/\.(png|jpe?g|webp|gif)$/i)?.[1] || "png").toLowerCase();
+  const ext = sniffImage(buf);
+  if (!ext) throw new Error(`画像として読めないデータです（content-type: ${res.headers.get("content-type") || "不明"}, ${buf.length}バイト）。ホットリンク防止等の可能性があり、回避しません: ${imageUrl}`);
+  await fs.mkdir(path.join(outDir, "01_Original"), { recursive: true });
+  await fs.mkdir(path.join(outDir, "02_Preview"), { recursive: true });
   const orig = path.join(outDir, "01_Original", `banner.${ext}`);
   await fs.writeFile(orig, buf);
   const prev = path.join(outDir, "02_Preview", "banner_preview.jpg");
-  await previews(orig, prev);
+  try { await previews(orig, prev); }
+  catch (e) { throw new Error(`プレビュー生成に失敗（形式: ${ext}）: ${e.message}`); }
   return [{ local: orig, rel: `01_Original/banner.${ext}` }, { local: prev, rel: "02_Preview/banner_preview.jpg" }];
 }
