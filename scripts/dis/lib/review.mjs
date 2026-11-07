@@ -2,6 +2,11 @@ import path from "node:path";
 import fs from "node:fs/promises";
 import { sniffImage } from "./capture.mjs";
 
+/** 画像の縦横比に応じた切り出し方。縦長（ページ全体のサムネイル）は上端＝ファーストビューを使い、それ以外は全体が入るように余白つきで縮小する。 */
+export function tileFit({ width, height }) {
+  return height / width > 1.5 ? { fit: "cover", position: "north" } : { fit: "contain", background: "#e8e8e8" };
+}
+
 const UA = "design-research-pipeline-dis/1.0 (public-pages-only)";
 
 /**
@@ -24,7 +29,10 @@ export async function buildContactSheet(items, outFile, { fetchImpl = fetch, col
           const buf = Buffer.from(await res.arrayBuffer());
           if (buf.length > maxBytes) note = "サイズ上限超過";
           else if (!sniffImage(buf)) note = "画像として読めない";
-          else tile = await sharp(buf).resize(cell.w, cell.h, { fit: "cover" }).jpeg({ quality: 80 }).toBuffer();
+          else {
+            const meta = await sharp(buf).metadata();
+            tile = await sharp(buf).resize(cell.w, cell.h, tileFit(meta)).jpeg({ quality: 80 }).toBuffer();
+          }
         }
       } catch (e) { note = e.message; }
     } else note = "画像URLなし";

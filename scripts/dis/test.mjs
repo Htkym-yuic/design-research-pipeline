@@ -504,3 +504,19 @@ test("シェルスクリプト: 変数の直後に日本語を置かない（mac
     assert.deepEqual(bad, [], `${f}: ${JSON.stringify(bad)}`);
   }
 });
+
+test("tileFit: 縦長は上端(north)を切り出し、横長・通常は全体を余白つきで収める（バナーの中央切り抜きを防ぐ）", async () => {
+  const { tileFit } = await import("./lib/review.mjs");
+  assert.deepEqual(tileFit({ width: 400, height: 3000 }), { fit: "cover", position: "north" });
+  assert.equal(tileFit({ width: 728, height: 90 }).fit, "contain"); // 横長バナー
+  assert.equal(tileFit({ width: 300, height: 250 }).fit, "contain");
+  const sharp = (await import("sharp")).default;
+  const { buildContactSheet } = await import("./lib/review.mjs");
+  // 縦長: 上100pxが赤、残りが青 → 切り出し後の左上付近（バッジの外）は赤であること
+  const tall = await sharp({ create: { width: 200, height: 1000, channels: 3, background: "#00f" } }).composite([{ input: await sharp({ create: { width: 200, height: 100, channels: 3, background: "#f00" } }).png().toBuffer(), left: 0, top: 0 }]).png().toBuffer();
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-fit-"));
+  const out = path.join(tmp, "s.jpg");
+  await buildContactSheet([{ imageUrl: "https://x/tall" }], out, { fetchImpl: async () => ({ ok: true, status: 200, arrayBuffer: async () => tall.buffer.slice(tall.byteOffset, tall.byteOffset + tall.byteLength) }) });
+  const { data } = await sharp(out).extract({ left: 10 + 180, top: 10 + 10, width: 1, height: 1 }).raw().toBuffer({ resolveWithObject: true });
+  assert.ok(data[0] > 180 && data[2] < 80, `RGB=${[...data]}`); // 赤
+});
