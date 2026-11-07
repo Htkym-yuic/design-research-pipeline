@@ -48,20 +48,36 @@ export async function buildContactSheet(items, outFile, { fetchImpl = fetch, col
   return results;
 }
 
-/** learning.json（{items:[{no|pageUrl, learningValue, reason}]}）を候補へ反映する。0〜1の範囲外・未知の候補は拒否する。 */
+export const CRITERIA_KEYS = ["clarity", "uniqueness", "reproducibility", "practicality", "materials", "sourcing"];
+
+/** review.json に添える、機械的に決められる2項目（資料の十分さ・出典の健全さ）の目安。人が上書きしてよい。 */
+export function suggestCriteria(c, media) {
+  const sourcing = c.pageUrl && !c.originUnresolved && c.termsStatus === "known" ? 3 : c.originUnresolved && c.imageUrl ? 1 : c.pageUrl ? 2 : 0;
+  const materials = media === "banner" ? (c.imageUrl ? 3 : 0) : c.pageUrl ? 3 : 1;
+  return { materials, sourcing };
+}
+
+/**
+ * learning.json（{items:[{no|pageUrl, criteria:{clarity,…各0〜3の整数}, reason}]}）を候補へ反映する。
+ * 合計（最大18）を reviewTotal に、合計/18 を signals.learningValue に入れる。欠け・範囲外・理由なし・未知の候補は拒否する。
+ */
 export function applyLearning(candidates, learning, reviewItems = []) {
   const errors = [];
   const byNo = new Map(reviewItems.map((r) => [r.no, r.pageUrl]));
   const byUrl = new Map(candidates.map((c) => [c.pageUrl, c]));
   let applied = 0;
   for (const it of learning?.items || []) {
-    const url = it.pageUrl || byNo.get(it.no);
-    const c = byUrl.get(url);
-    if (!c) { errors.push(`候補が見つからない: ${it.no ?? it.pageUrl}`); continue; }
-    const v = Number(it.learningValue);
-    if (!(v >= 0 && v <= 1)) { errors.push(`learningValueは0〜1: ${it.no ?? it.pageUrl}`); continue; }
-    if (!String(it.reason || "").trim()) { errors.push(`理由(reason)が必須: ${it.no ?? it.pageUrl}`); continue; }
-    c.signals = { ...(c.signals || {}), learningValue: v };
+    const label = it.no ?? it.pageUrl;
+    const c = byUrl.get(it.pageUrl || byNo.get(it.no));
+    if (!c) { errors.push(`候補が見つからない: ${label}`); continue; }
+    const crit = it.criteria || {};
+    const bad = CRITERIA_KEYS.filter((k) => !(Number.isInteger(crit[k]) && crit[k] >= 0 && crit[k] <= 3));
+    if (bad.length) { errors.push(`criteria は ${CRITERIA_KEYS.join("/")} の6項目すべてが0〜3の整数: ${label}（不正: ${bad.join(",")}）`); continue; }
+    if (!String(it.reason || "").trim()) { errors.push(`理由(reason)が必須: ${label}`); continue; }
+    const total = CRITERIA_KEYS.reduce((n, k) => n + crit[k], 0);
+    c.reviewCriteria = Object.fromEntries(CRITERIA_KEYS.map((k) => [k, crit[k]]));
+    c.reviewTotal = total;
+    c.signals = { ...(c.signals || {}), learningValue: total / 18 };
     c.reviewReason = String(it.reason).trim();
     applied++;
   }

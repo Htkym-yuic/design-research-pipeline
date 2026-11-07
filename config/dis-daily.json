@@ -372,5 +372,43 @@
       "assetsAvailable": 15,
       "rightsClarity": 15
     }
-  }
+  },
+  "selection": {
+    "passScore": 13,
+    "maxScore": 18,
+    "_comment": "原本の「選定基準13/18点以上」。6項目×0〜3点。人の評価は learning.json の criteria に書く。materials・sourcing は review.json の suggested を目安にする。",
+    "criteria": [
+      {
+        "key": "clarity",
+        "label": "構成の明快さ",
+        "hint": "情報の優先順位が一目で分かる（0=不明/1=弱い/2=良い/3=非常に明快）"
+      },
+      {
+        "key": "uniqueness",
+        "label": "独自性・再発見性",
+        "hint": "既存ライブラリー・過去登録にない型や技法（0=重複的/3=新しい発見）"
+      },
+      {
+        "key": "reproducibility",
+        "label": "再現可能性",
+        "hint": "Canva/Photoshop/Elementorで構造を応用できる（0=専用素材に依存/3=容易）"
+      },
+      {
+        "key": "practicality",
+        "label": "実務との近さ",
+        "hint": "中小の事業・店舗・採用・EC・キャンペーンなど、案件で使う場面に近い（0=遠い/3=近い）"
+      },
+      {
+        "key": "materials",
+        "label": "資料の十分さ",
+        "hint": "PC/SP・実寸の撮影が可能で、全体が確認できる（0=不可/3=十分）"
+      },
+      {
+        "key": "sourcing",
+        "label": "出典・取得の健全さ",
+        "hint": "実ページ/原典が明確で、公開ページから通常の方法で取得できた（0=不明/3=明確）"
+      }
+    ]
+  },
+  "termsPolicy": "利用者判断（2026-11-08）: 参照元の利用条件は確認しない。保存物は個人の学習用・非公開で、展開しない。ただし robots.txt は尊重し、アクセス制限（403・429・Bot対策）は回避しない。公開・共有する場合は、先に規約を確認する。"
 }

@@ -187,6 +187,21 @@ test("E2E(ドライラン): フィクスチャで選定→テンプレ→検証�
   r = run(["--stage", "validate,publish", "--media", "lp"]);
   assert.equal(JSON.parse(r.stdout).media.lp.stages.publish, "blocked: analysis not complete");
   await fs.writeFile(path.join(tmp, "out/2026-11-07/lp/annotations.json"), JSON.stringify(completeAnnotations(a)));
+  // 選定基準（13/18点）が未判定のままでは公開できない
+  r = run(["--stage", "validate,publish", "--media", "lp"]);
+  assert.match(JSON.parse(r.stdout).media.lp.stages.publish, /選定基準13\/18点が未判定/);
+  // 評価: 12点（基準未達）→ スキップ、18点 → 選定されて公開計画へ
+  assert.equal(run(["--stage", "review", "--media", "lp"]).status, 0);
+  const lpDir = path.join(tmp, "out/2026-11-07/lp");
+  const rv = JSON.parse(await fs.readFile(path.join(lpDir, "review/review.json"), "utf8"));
+  const mine = rv.items.find((i) => i.pageUrl === sel.selected.pageUrl);
+  await fs.writeFile(path.join(lpDir, "learning.json"), JSON.stringify({ items: [{ no: mine.no, criteria: crit(2), reason: "総合的に良い" }] }));
+  r = run(["--stage", "rescore", "--media", "lp"]);
+  assert.equal(JSON.parse(r.stdout).media.lp.status, "skipped"); // 基準未達はその媒体だけスキップ
+  assert.match(JSON.parse(r.stdout).media.lp.stages.rescore, /基準未達/);
+  await fs.writeFile(path.join(lpDir, "learning.json"), JSON.stringify({ items: [{ no: mine.no, criteria: crit(3), reason: "非常に明快" }] }));
+  r = run(["--stage", "rescore", "--media", "lp"]);
+  assert.match(JSON.parse(r.stdout).media.lp.stages.rescore, /18\/18点/);
   r = run(["--stage", "validate,publish", "--media", "lp"]);
   assert.equal(r.status, 0, r.stderr);
   const pub = JSON.parse(await fs.readFile(path.join(tmp, "out/2026-11-07/lp/publish-result.json"), "utf8"));
@@ -480,15 +495,34 @@ test("buildContactSheet: 番号付き一覧画像を作り、画像が取れな�
   assert.equal(meta.height, 10 + 2 * 250); // 4件＝2行
 });
 
-test("applyLearning: 番号・pageUrlで反映し、範囲外・理由なし・未知の候補は拒否", async () => {
+const crit = (n) => ({ clarity: n, uniqueness: n, reproducibility: n, practicality: n, materials: n, sourcing: n });
+test("applyLearning: 6項目×0〜3点の合計を反映し、欠け・範囲外・理由なし・未知の候補は拒否", async () => {
   const { applyLearning } = await import("./lib/review.mjs");
   const cands = [{ pageUrl: "https://a.example/", signals: { learningValue: 0.5 } }, { pageUrl: "https://b.example/", signals: { learningValue: 0.5 } }];
   const review = [{ no: 1, pageUrl: "https://a.example/" }, { no: 2, pageUrl: "https://b.example/" }];
-  const r = applyLearning(cands, { items: [{ no: 1, learningValue: 0.9, reason: "構成が明快" }, { pageUrl: "https://b.example/", learningValue: 0.2, reason: "既存と似る" }] }, review);
+  const r = applyLearning(cands, { items: [{ no: 1, criteria: { ...crit(2), clarity: 3 }, reason: "構成が明快" }, { pageUrl: "https://b.example/", criteria: crit(1), reason: "既存と似る" }] }, review);
   assert.equal(r.applied, 2); assert.deepEqual(r.errors, []);
-  assert.deepEqual([cands[0].signals.learningValue, cands[1].signals.learningValue, cands[0].reviewReason], [0.9, 0.2, "構成が明快"]);
-  const bad = applyLearning(cands, { items: [{ no: 1, learningValue: 1.5, reason: "x" }, { no: 2, learningValue: 0.5, reason: "" }, { no: 9, learningValue: 0.5, reason: "x" }] }, review);
-  assert.equal(bad.applied, 0); assert.equal(bad.errors.length, 3);
+  assert.deepEqual([cands[0].reviewTotal, cands[1].reviewTotal, cands[0].reviewReason], [13, 6, "構成が明快"]);
+  assert.equal(cands[0].signals.learningValue, 13 / 18);
+  const bad = applyLearning(cands, { items: [{ no: 1, criteria: { ...crit(2), clarity: 4 }, reason: "x" }, { no: 2, criteria: crit(2), reason: "" }, { no: 9, criteria: crit(2), reason: "x" }, { no: 1, criteria: { clarity: 2 }, reason: "x" }, { no: 2, learningValue: 0.9, reason: "x" }] }, review);
+  assert.equal(bad.applied, 0); assert.equal(bad.errors.length, 5);
+});
+
+test("suggestCriteria: 資料の十分さ・出典の健全さの目安", async () => {
+  const { suggestCriteria } = await import("./lib/review.mjs");
+  assert.deepEqual(suggestCriteria({ pageUrl: "https://a/", termsStatus: "known" }, "web"), { materials: 3, sourcing: 3 });
+  assert.deepEqual(suggestCriteria({ pageUrl: "https://d/", originUnresolved: true, imageUrl: "https://i/", termsStatus: "known" }, "banner"), { materials: 3, sourcing: 1 });
+  assert.deepEqual(suggestCriteria({ pageUrl: "https://d/", originUnresolved: true }, "banner"), { materials: 0, sourcing: 2 });
+});
+
+test("selectOne: 選定基準13/18点。評価済みで基準未達は選ばれず、reviewedOnlyでは評価なしも対象外（基準未達でスキップ）", () => {
+  const w = { learningValue: 40 };
+  const mk = (n, total) => ({ brand: `b${n}`, pageUrl: `https://b${n}.example/`, termsStatus: "known", signals: { learningValue: 0.5 }, ...(total == null ? {} : { reviewReason: "評価", reviewTotal: total }) });
+  const common = { weights: w, minScore: 0, passScore: 13, dupCheck: () => ({ duplicate: false }) };
+  assert.equal(selectOne([mk(1, 12), mk(2, 13), mk(3, 16)], common).selected.brand, "b3");
+  assert.equal(selectOne([mk(1, 12), mk(2, 12)], { ...common, reviewedOnly: true }).selected, null);
+  assert.match(selectOne([mk(1, 12), mk(2, null)], { ...common, reviewedOnly: true }).skippedReason, /基準未達/);
+  assert.equal(selectOne([mk(1, 13), mk(2, null)], { ...common, reviewedOnly: true }).selected.brand, "b1");
 });
 
 test("E2E: review→learning.json→rescore で学習価値の高い候補に選定が切り替わる（公開済みは拒否）", async () => {
@@ -505,14 +539,15 @@ test("E2E: review→learning.json→rescore で学習価値の高い候補に選
   await fs.access(path.join(dir, "review/contact_sheet.jpg"));
   const before = JSON.parse(await fs.readFile(path.join(dir, "selection.json"), "utf8")).selected.brand;
   const target = review.items.find((i) => i.brand !== before); // 現在の選定とは別の候補を高評価にする
-  await fs.writeFile(path.join(dir, "learning.json"), JSON.stringify({ items: [{ no: target.no, learningValue: 1, reason: "構成が最も明快" }] }));
+  await fs.writeFile(path.join(dir, "learning.json"), JSON.stringify({ items: [{ no: target.no, criteria: crit(3), reason: "構成が最も明快" }] }));
   r = run(["--stage", "rescore"]);
   assert.equal(r.status, 0, r.stderr);
   const after = JSON.parse(await fs.readFile(path.join(dir, "selection.json"), "utf8"));
   assert.equal(after.selected.brand, target.brand);
   assert.equal(after.selected.reviewReason, "構成が最も明快");
+  assert.equal(after.selected.reviewTotal, 18);
   // 誤ったlearning.jsonは拒否
-  await fs.writeFile(path.join(dir, "learning.json"), JSON.stringify({ items: [{ no: 1, learningValue: 2, reason: "x" }] }));
+  await fs.writeFile(path.join(dir, "learning.json"), JSON.stringify({ items: [{ no: 1, learningValue: 2, reason: "x" }] })); // criteria なしは拒否
   assert.notEqual(run(["--stage", "rescore"]).status, 0);
 });
 

@@ -17,7 +17,7 @@ import { emptyAnnotations, validateAnnotations } from "./lib/annotations.mjs";
 import { buildTextIndex } from "./lib/text-index.mjs";
 import { idempotencyKey, loadLedger, saveLedger, findEntry, upsertEntry } from "./lib/ledger.mjs";
 import { writesAllowed } from "./lib/write-guard.mjs";
-import { buildContactSheet, applyLearning } from "./lib/review.mjs";
+import { buildContactSheet, applyLearning, suggestCriteria } from "./lib/review.mjs";
 import { dropboxFolder, planDropboxFiles, writeDropbox, writeNotion, buildNotionBlocks, DEFAULT_PROPERTY_MAP } from "./lib/adapters.mjs";
 
 const { values: args } = parseArgs({
@@ -103,9 +103,9 @@ async function runMedia(media) {
   if (stages.includes("review")) {
     const sel0 = await readJson(`${d}/selection.json`, null);
     if (!sel0) throw new Error("selection.json がありません（先に collect,select）");
-    const items = sel0.evaluated.filter((e) => e.inComparison).map((e, i) => ({ no: i + 1, brand: e.brand, sourceKey: e.sourceKey, sourceDetailUrl: e.sourceDetailUrl, pageUrl: e.pageUrl, imageUrl: e.imageUrl || null, score: e.score, originUnresolved: !!e.originUnresolved }));
+    const items = sel0.evaluated.filter((e) => e.inComparison).map((e, i) => ({ no: i + 1, brand: e.brand, sourceKey: e.sourceKey, sourceDetailUrl: e.sourceDetailUrl, pageUrl: e.pageUrl, imageUrl: e.imageUrl || null, score: e.score, originUnresolved: !!e.originUnresolved, suggested: suggestCriteria(e, media) }));
     const sheet = await buildContactSheet(items, `${d}/review/contact_sheet.jpg`);
-    await wj(`${d}/review/review.json`, { date: args.date, media, items: items.map((it, i) => ({ ...it, image: sheet[i].image })), howTo: "contact_sheet.jpg を見て、各候補の学習価値(0〜1)と理由を learning.json に書き、--stage rescore を実行する" });
+    await wj(`${d}/review/review.json`, { date: args.date, media, items: items.map((it, i) => ({ ...it, image: sheet[i].image })), selection: { passScore: cfg.selection.passScore, maxScore: cfg.selection.maxScore, criteria: cfg.selection.criteria }, howTo: "contact_sheet.jpg を見て、各候補を6項目×0〜3点で評価し、criteria と reason を learning.json に書き、--stage rescore を実行する（合計13/18点以上が選定基準）。suggested（資料の十分さ・出典の健全さ）は目安" });
     r.stages.review = `${items.length}件 → review/contact_sheet.jpg`;
   }
 
@@ -123,11 +123,12 @@ async function runMedia(media) {
     const failures = cdata.candidates.filter((c) => c.fetchError);
     const res = selectOne([...interleaveBySource(valid, args.date), ...failures], {
       tieSeed: args.date, weights: cfg.scoring.weights, minScore: cfg.minScoreToSelect, maxCandidates: cfg.maxCandidatesPerMedia,
+      passScore: cfg.selection.passScore, reviewedOnly: true,
       dupCheck: (c) => known.check(c, { windowDays: cfg.dedupeWindowDays, today: args.date }),
     });
     const sel = res.selected && { ...res.selected, disId };
     await wj(`${d}/selection.json`, { date: args.date, disId, selected: sel, evaluated: res.evaluated, fetchFailures: failures.map((f) => ({ sourceKey: f.sourceKey, sourceDetailUrl: f.sourceDetailUrl, error: f.fetchError })), skippedReason: res.skippedReason ?? null, rescoredAt: new Date().toISOString(), reviewApplied: applied });
-    r.stages.rescore = sel ? `${applied}件反映 → 選定: ${sel.brand}（${sel.reviewReason ? "理由: " + sel.reviewReason : "評価なし"}）` : `${applied}件反映 → SKIP: ${res.skippedReason}`;
+    r.stages.rescore = sel ? `${applied}件反映 → 選定: ${sel.brand}（${sel.reviewTotal}/${cfg.selection.maxScore}点。理由: ${sel.reviewReason}）` : `${applied}件反映 → SKIP: ${res.skippedReason}`;
   }
 
   const selection = await readJson(`${d}/selection.json`, null);
@@ -180,6 +181,7 @@ async function runMedia(media) {
   }
 
   if (stages.includes("publish")) {
+    if (!(sel.reviewTotal >= cfg.selection.passScore)) { r.stages.publish = `blocked: 選定基準${cfg.selection.passScore}/${cfg.selection.maxScore}点が未判定または未達（review→learning.json→rescore を実行）`; return; }
     const entry = findEntry(ledger, key);
     const folder = dropboxFolder(cfg, media, args.date, disId);
     const generated = [{ local: `${d}/analysis.json`, rel: "03_Analysis/analysis.json" }, { local: `${d}/analysis.md`, rel: "03_Analysis/analysis.md" }, { local: `${d}/annotations.json`, rel: "03_Analysis/annotations.json" }, { local: `${d}/text-index.json`, rel: "03_Analysis/text-index.json" }];

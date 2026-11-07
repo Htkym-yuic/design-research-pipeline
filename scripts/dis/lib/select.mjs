@@ -15,7 +15,7 @@ export function scoreCandidate(c, weights) {
  * 候補から1件を選ぶ。除外理由を全候補に残す（選定理由の透明性）。
  * @returns {{selected: object|null, evaluated: object[], skippedReason?: string}}
  */
-export function selectOne(candidates, { weights, minScore, maxCandidates = 5, dupCheck, tieSeed = "" }) {
+export function selectOne(candidates, { weights, minScore, maxCandidates = 5, dupCheck, tieSeed = "", passScore = null, reviewedOnly = false }) {
   const evaluated = candidates.map((c) => {
     const dup = dupCheck(c);
     const { score, parts } = scoreCandidate(c, weights);
@@ -29,13 +29,15 @@ export function selectOne(candidates, { weights, minScore, maxCandidates = 5, du
   // 比較するのは「除外条件に該当しない候補」の先頭 maxCandidates 件（重複や取得失敗で枠を消費しない）
   const eligible = evaluated.filter((e) => e.blockers.length === 0);
   for (const e of eligible.slice(0, maxCandidates)) e.inComparison = true;
-  // 人が評価した候補（reviewReasonあり）は、評価の高い順に選ぶ。同点のときだけ機械的なスコア、さらに日替わりの乱数で決める。
-  // 評価済みの候補は足切りの閾値を免除する（除外条件には従う）。評価がない候補は、評価済みより後に回す。
-  const rank = (c) => (c.reviewReason ? Number(c.signals?.learningValue ?? 0) : -1);
-  const compared = eligible.slice(0, maxCandidates).filter((c) => c.reviewReason || c.score >= minScore)
-    .sort((a, b) => rank(b) - rank(a) || b.score - a.score || tieHash(tieSeed, a.pageUrl) - tieHash(tieSeed, b.pageUrl));
+  // 人が評価した候補（reviewReasonあり）は、評価の合計点が高い順に選ぶ。同点のときだけ機械的なスコア、さらに日替わりの乱数で決める。
+  // 評価済みの候補は、選定基準（passScore。原本は13/18点）以上でなければ選ばれない。足切りの閾値（minScore）は免除する。
+  // reviewedOnly=true（rescore）のときは、評価済みだけを対象にし、基準を満たす候補がなければ「基準未達」でスキップする。
+  const total = (c) => (c.reviewReason ? Number(c.reviewTotal ?? Math.round(Number(c.signals?.learningValue ?? 0) * 18)) : -1);
+  const passes = (c) => (c.reviewReason ? passScore == null || total(c) >= passScore : !reviewedOnly && c.score >= minScore);
+  const compared = eligible.slice(0, maxCandidates).filter(passes)
+    .sort((a, b) => total(b) - total(a) || b.score - a.score || tieHash(tieSeed, a.pageUrl) - tieHash(tieSeed, b.pageUrl));
   if (compared.length === 0) {
-    const reason = evaluated.length === 0 ? "候補なし" : eligible.length === 0 ? "全候補が除外条件に該当" : `最高スコアが閾値${minScore}未満`;
+    const reason = evaluated.length === 0 ? "候補なし" : eligible.length === 0 ? "全候補が除外条件に該当" : reviewedOnly ? `選定基準${passScore}/18点以上の候補なし（基準未達）` : `最高スコアが閾値${minScore}未満`;
     return { selected: null, evaluated, skippedReason: reason };
   }
   return { selected: compared[0], evaluated };
