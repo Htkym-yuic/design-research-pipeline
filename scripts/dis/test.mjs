@@ -458,7 +458,7 @@ test("E2E: review→learning.json→rescore で学習価値の高い候補に選
 });
 
 test("collect: 候補の画像が参照元自身のog:imageと同じなら、サイト共通の画像として作品扱いしない", async () => {
-  const src = { media: "web", key: "k", name: "K", termsStatus: "known", listUrl: "https://s.example/", detailPathIncludes: "/w/" };
+  const src = { media: "web", key: "k", name: "Gallery Site", termsStatus: "known", listUrl: "https://s.example/", detailPathIncludes: "/w/" };
   const pages = {
     "https://s.example/": '<meta property="og:image" content="/site-ogp.png"><a href="/w/about/">a</a><a href="/w/work1/">w</a>',
     "https://s.example/w/about/": '<meta property="og:title" content="Our mission story"><meta property="og:image" content="/site-ogp.png"><a href="https://x.example/">x</a>',
