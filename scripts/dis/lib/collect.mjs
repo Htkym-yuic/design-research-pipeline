@@ -50,6 +50,23 @@ export function extractDetailLinks(html, source, limit = 8) {
   return out;
 }
 
+const NAV_TITLE = /(一覧|コレクション|Collection|Design Sets|All Web Designs|Interviews|裏側|お問い合わせ|ご依頼|ご相談|について|ポータル|ガイド|サイトマップ|ランキング|ニュース|制作会社|Articles|Inspiration$|About|Contact|Privacy)/i;
+
+/** 個別の作品ではなさそうなページ（トップ・一覧・問い合わせ・サイト名だけのタイトル）かどうか。ヒューリスティック。 */
+export function looksLikeNonWork(title, source, siteTitle = "") {
+  const t = String(title || "").trim();
+  if (!t) return true;
+  if (siteTitle && t === siteTitle) return true;
+  if (NAV_TITLE.test(t)) return true;
+  if (t.toLowerCase().includes(String(source.name).toLowerCase()) && !/\s[-–—]\s/.test(t)) return true;
+  return false;
+}
+
+/** 広告・提携と見られるURL（ref=・utm_ 付き）を実ページ候補から外す。 */
+export function isSponsoredUrl(u) {
+  try { const q = new URL(u).searchParams; return [...q.keys()].some((k) => /^(ref|utm_.*|aff.*|affiliate|partner)$/i.test(k)); } catch { return false; }
+}
+
 const SOCIAL = /(twitter|x\.com|facebook|instagram|line\.me|google|pinterest|youtube|hatena|tiktok|note\.com|apple\.com|play\.google)/i;
 
 /** ページ内の外部リンクのホスト一覧（同一ホスト・SNS除く）。 */
@@ -68,8 +85,8 @@ export function parseDetail(html, detailUrl, { excludeHosts = new Set() } = {}) 
   const image = abs(meta(html, "og:image") || "", detailUrl);
   const host = new URL(detailUrl).hostname;
   const outbound = [...html.matchAll(/<a\b[^>]*href=["'](https?:\/\/[^"']+)["'][^>]*>/gi)]
-    .map((m) => m[1]).filter((u) => { try { const h = new URL(u).hostname; return h !== host && !SOCIAL.test(h) && !excludeHosts.has(h); } catch { return false; } });
-  return { title, image, pageUrl: outbound[0] || null };
+    .map((m) => m[1]).filter((u) => { try { const h = new URL(u).hostname; return h !== host && !SOCIAL.test(h) && !excludeHosts.has(h) && !isSponsoredUrl(u); } catch { return false; } });
+  return { title, image, pageUrl: outbound[0] || null, outbound };
 }
 
 /** HTMLエンティティを戻し、「｜サイト名」などの後ろを落とす。 */
@@ -136,7 +153,7 @@ export async function collectFromSource(source, { getter = fetchGetter(), detail
     const res = await getter.get(source.listUrl);
     if (!res.ok) { report.error = `HTTP ${res.status}`; return done([{ ...base, fetchError: `HTTP ${res.status}（回避しない）` }]); }
     const rdlp = source.parser === "rdlp";
-    const chromeHosts = outboundHosts(res.text, source.listUrl); // 一覧ページにも出る外部ホスト＝ヘッダー・フッター・広告など
+    const siteTitle = cleanTitle(meta(res.text, "og:title") || res.text.match(/<title>([^<]+)/i)?.[1] || "");
     const all = rdlp ? extractRdlpCards(res.text, source.listUrl, scanLimit) : extractDetailLinks(res.text, source, scanLimit).map((url) => ({ url }));
     report.linksFound = all.length;
     const fresh = all.filter((c) => !isKnown(c.url));
@@ -149,21 +166,28 @@ export async function collectFromSource(source, { getter = fetchGetter(), detail
       try {
         const r = await getter.get(detailUrl);
         if (!r.ok) { results.push({ ...base, sourceDetailUrl: detailUrl, fetchError: `HTTP ${r.status}` }); continue; }
-        const d = rdlp ? parseRdlpDetail(r.text, detailUrl) : parseDetail(r.text, detailUrl, { excludeHosts: rdlp ? new Set() : chromeHosts });
+        const d = rdlp ? parseRdlpDetail(r.text, detailUrl) : parseDetail(r.text, detailUrl);
         const title = cleanTitle(card.title || d.title);
-        const cand = { ...base, sourceDetailUrl: detailUrl, brand: cleanTitle(card.company || title), title, archivePostId: card.postId ?? null, pageUrl: d.pageUrl, imageUrl: d.image };
+        if (!rdlp && looksLikeNonWork(title, source, siteTitle)) { report.skippedNonWork = (report.skippedNonWork || 0) + 1; continue; }
+        const cand = { ...base, sourceDetailUrl: detailUrl, brand: cleanTitle(card.company || title), title, archivePostId: card.postId ?? null, pageUrl: d.pageUrl, imageUrl: d.image, _outbound: d.outbound || (d.pageUrl ? [d.pageUrl] : []) };
         cand.signals = heuristicSignals(d);
         results.push(cand); report.fetched++;
       } catch (e) { results.push({ ...base, sourceDetailUrl: detailUrl, fetchError: e.message }); }
     }
-    // 同じ参照元の複数の詳細ページに共通する外部ホストは、各作品の実ページではなくサイト共通のリンクとみなして外す
-    const hostCount = new Map();
-    for (const c of results) if (c.pageUrl) { const h = new URL(c.pageUrl).hostname; hostCount.set(h, (hostCount.get(h) || 0) + 1); }
-    for (const c of results) {
-      if (c.pageUrl && hostCount.get(new URL(c.pageUrl).hostname) >= 2 && results.filter((x) => x.pageUrl).length >= 2) { c.pageUrl = null; c.pageUrlDropped = "共通リンクのため除外"; }
+    // 複数の詳細ページに共通する外部ホスト＝サイト共通のリンク（運営元・広告など）を外し、残りの最初のリンクを実ページとする
+    const works = results.filter((c) => !c.fetchError);
+    const hostPages = new Map();
+    for (const c of works) for (const h of new Set((c._outbound || []).map((u) => { try { return new URL(u).hostname; } catch { return ""; } }))) hostPages.set(h, (hostPages.get(h) || 0) + 1);
+    for (const c of works) {
+      if (works.length >= 2) {
+        const keep = (c._outbound || []).filter((u) => { try { return hostPages.get(new URL(u).hostname) < 2; } catch { return false; } });
+        if (c.pageUrl && keep[0] !== c.pageUrl) c.pageUrlDropped = c.pageUrl;
+        c.pageUrl = keep[0] || null;
+      }
+      delete c._outbound;
       // バナーは原典URLが無い掲載サイトが多い。画像があれば掲載元ページを実ページ扱いにし、原典未確認と明記する。
-      if (source.media === "banner" && !c.pageUrl && c.imageUrl && !c.fetchError) { c.pageUrl = c.sourceDetailUrl; c.originUnresolved = true; }
-      if (!c.fetchError) c.signals = heuristicSignals({ pageUrl: c.originUnresolved ? null : c.pageUrl, image: c.imageUrl });
+      if (source.media === "banner" && !c.pageUrl && c.imageUrl) { c.pageUrl = c.sourceDetailUrl; c.originUnresolved = true; }
+      c.signals = heuristicSignals({ pageUrl: c.originUnresolved ? null : c.pageUrl, image: c.imageUrl });
     }
     return done(results);
   } catch (e) {

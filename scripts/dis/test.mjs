@@ -9,7 +9,7 @@ import { selectOne, interleaveBySource, tieHash } from "./lib/select.mjs";
 import { writesAllowed } from "./lib/write-guard.mjs";
 import { emptyAnalysis, validateAnalysis, AXES } from "./lib/analysis-schema.mjs";
 import { idempotencyKey } from "./lib/ledger.mjs";
-import { extractDetailLinks, parseDetail, collectFromSource, extractRdlpCards, parseRdlpDetail, cleanTitle, outboundHosts } from "./lib/collect.mjs";
+import { extractDetailLinks, parseDetail, collectFromSource, extractRdlpCards, parseRdlpDetail, cleanTitle, outboundHosts, looksLikeNonWork, isSponsoredUrl } from "./lib/collect.mjs";
 import { loadConfig } from "./lib/config.mjs";
 import { dropboxFolder, buildNotionProps, chunkText, buildNotionBlocks, markdownToBlocks } from "./lib/adapters.mjs";
 
@@ -119,7 +119,7 @@ test("E2E(ドライラン): フィクスチャで選定→テンプレ→検証�
   assert.match(s.media.lp.stages.select, /Alpha Dental LP/);
   assert.equal(s.media.banner.stages.select.startsWith("selected"), true);
   assert.equal(s.media.web.status, "skipped"); // 低スコアのみ→スキップ
-  assert.equal(s.media.web.reason, "最高スコアが閾値55未満");
+  assert.match(s.media.web.reason, /^最高スコアが閾値\d+未満$/);
   assert.equal(s.media.lp.stages.validate.ok, false); // テンプレのまま
 
   const sel = JSON.parse(await fs.readFile(path.join(tmp, "out/2026-11-07/lp/selection.json"), "utf8"));
@@ -287,7 +287,7 @@ test("collect: サイト共通の外部リンク（一覧にも出るホスト�
   };
   const getter = { robots: async () => true, get: async (u) => ({ ok: !!pages[u], status: pages[u] ? 200 : 404, text: pages[u] || "" }) };
   const out = await collectFromSource(src, { getter, detailLimit: 3 });
-  assert.deepEqual(out.map((c) => c.pageUrl), ["https://real-a.example/", null, null]);
+  assert.deepEqual(out.map((c) => c.pageUrl), ["https://real-a.example/", null, null]); // 共通のoperator/sharedは外れ、Aは実サイトが残る
   assert.ok(outboundHosts(pages["https://s.example/"], "https://s.example/").has("operator.example"));
 });
 
@@ -299,4 +299,28 @@ test("collect(banner): 共通リンクを外した後、画像があれば掲載
   const getter = { robots: async () => true, get: async (u) => ({ ok: !!pages[u], status: 200, text: pages[u] || "" }) };
   const out = await collectFromSource(src, { getter, detailLimit: 2 });
   assert.ok(out.every((c) => c.originUnresolved && c.pageUrl === c.sourceDetailUrl));
+});
+
+test("looksLikeNonWork: トップ・一覧・問い合わせ・サイト名だけのタイトルは作品ではない", () => {
+  const src = { name: "KASOU" };
+  for (const bad of ["Webデザイン一覧（All Web Designs）", "Webサイト制作のご依頼・ご相談", "Webデザインを「探す」ならKASOU", "One Page Website Inspiration", "掲載制作会社一覧"]) assert.equal(looksLikeNonWork(bad, src, ""), true, bad);
+  assert.equal(looksLikeNonWork("イケサイ WEBデザイナーのポータルサイト", { name: "IKESAI" }, ""), true);
+  assert.equal(looksLikeNonWork("Home", { name: "X" }, "Home"), true);
+  for (const good of ["Baseline Design", "MOGUTA", "Justin Jefferson - Awwwards SOTD", "FREDRIK ONLINE STORE"]) assert.equal(looksLikeNonWork(good, { name: "Awwwards" }, "Awwwards"), false, good);
+});
+
+test("isSponsoredUrl: ref= / utm_ 付きは広告・提携とみなす", () => {
+  assert.equal(isSponsoredUrl("https://www.moving.parts/?ref=lapaninja"), true);
+  assert.equal(isSponsoredUrl("https://a.example/?utm_source=x"), true);
+  assert.equal(isSponsoredUrl("https://a.example/page?id=3"), false);
+});
+
+test("probe: 内部リンクのパターン集約と外部リンクの要約", async () => {
+  const { summarizeListLinks, summarizeOutbound } = await import("./probe.mjs");
+  const html = '<a href="/works/a/">1</a><a href="/works/b/">2</a><a href="/works/c/">3</a><a href="/about/">x</a><a href="https://other.example/">o</a>';
+  const g = summarizeListLinks(html, "https://s.example/");
+  assert.equal(g[0].pattern, "/works/*/");
+  assert.equal(g[0].count, 3);
+  const o = summarizeOutbound('<a class="visit" href="https://real.example/x?ref=a"><span>Visit site</span></a><a href="/in">i</a>', "https://s.example/w/1/");
+  assert.deepEqual([o[0].host, o[0].text, o[0].class, o[0].query], ["real.example", "Visit site", "visit", "query付き"]);
 });

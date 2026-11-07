@@ -5,7 +5,7 @@
   "maxCandidatesPerMedia": 5,
   "selectedPerMedia": 1,
   "dedupeWindowDays": 180,
-  "minScoreToSelect": 55,
+  "minScoreToSelect": 50,
   "idPrefix": "DIS",
   "dropbox": {
     "rootEnv": "DROPBOX_DESIGN_ROOT",
