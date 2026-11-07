@@ -245,6 +245,7 @@ test("cleanTitle: エンティティ復元と「｜サイト名」除去", () =>
   assert.equal(cleanTitle("Baseline Design | I/O 3000 | Webデザインギャラリー"), "Baseline Design");
   assert.equal(cleanTitle("おせち先行予約販売_400 x 400 | バナー広場 | まとめ"), "おせち先行予約販売_400 x 400");
   assert.equal(cleanTitle("A &amp; B"), "A & B");
+  assert.equal(cleanTitle("SONYのバナー｜Bannnner.com"), "SONYのバナー"); // 全角バーは前後に空白がなくても区切る
 });
 
 test("collectFromSource: 既知URLは詳細取得前に除外して次を使う／バナーは原典なしでも画像があれば候補／reportを返す", async () => {
@@ -323,4 +324,13 @@ test("probe: 内部リンクのパターン集約と外部リンクの要約", a
   assert.equal(g[0].count, 3);
   const o = summarizeOutbound('<a class="visit" href="https://real.example/x?ref=a"><span>Visit site</span></a><a href="/in">i</a>', "https://s.example/w/1/");
   assert.deepEqual([o[0].host, o[0].text, o[0].class, o[0].query], ["real.example", "Visit site", "visit", "query付き"]);
+});
+
+test("collect: 言語トップ(/en/)や自サイト名入りのリンクは候補にしない", async () => {
+  assert.deepEqual(extractDetailLinks('<a href="/en/">en</a><a href="/archives/1/">x</a>', { listUrl: "https://s.example/", detailPathIncludes: "/" }), ["https://s.example/archives/1/"]);
+  assert.equal(looksLikeNonWork("Blue Landing Pages: 1179 Design Examples", { name: "Lapa Ninja" }, ""), true);
+  const src = { media: "web", key: "lapaninja", name: "Lapa Ninja", termsStatus: "known", listUrl: "https://s.example/", detailPathIncludes: "/p/" };
+  const pages = { "https://s.example/": '<a href="/p/a/">a</a>', "https://s.example/p/a/": '<meta property="og:title" content="Real Work"><a href="https://try.webflow.com/lapaninja">ad</a><a href="https://real.example/">go</a>' };
+  const out = await collectFromSource(src, { getter: { robots: async () => true, get: async (u) => ({ ok: !!pages[u], status: 200, text: pages[u] || "" }) } });
+  assert.equal(out[0].pageUrl, "https://real.example/");
 });

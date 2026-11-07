@@ -27,7 +27,7 @@ export async function robotsAllows(url, fetchImpl = fetch) {
 }
 
 /** 一覧ページから詳細URL候補を抽出（公開ページのみ・1ソース1リクエスト＋詳細は最大N件）。 */
-const NAV_WORDS = /^\/(about|contact|privacy|policy|terms|rules|faq|news|info|company|search|login|signup|register|feed|rss|sitemap|tag|tags|category|categories|author|page|archive|archives\/?$|ranking|submit|advertise|ad)(\/|$)/i;
+const NAV_WORDS = /^\/(en|ja|zh|cn|ko|fr|de|about|contact|privacy|policy|terms|rules|faq|news|info|company|search|login|signup|register|feed|rss|sitemap|tag|tags|category|categories|author|page|archive|archives\/?$|ranking|submit|advertise|ad)(\/|$)/i;
 
 /** 一覧ページから詳細URL候補を抽出。detailPathRegex があればそれを優先（精度が高い）。無ければ detailPathIncludes ＋ ナビ/カテゴリ除外。 */
 export function extractDetailLinks(html, source, limit = 8) {
@@ -50,7 +50,7 @@ export function extractDetailLinks(html, source, limit = 8) {
   return out;
 }
 
-const NAV_TITLE = /(一覧|コレクション|Collection|Design Sets|All Web Designs|Interviews|裏側|お問い合わせ|ご依頼|ご相談|について|ポータル|ガイド|サイトマップ|ランキング|ニュース|制作会社|Articles|Inspiration$|About|Contact|Privacy)/i;
+const NAV_TITLE = /(一覧|コレクション|Collection|Design Sets|All Web Designs|Interviews|裏側|お問い合わせ|ご依頼|ご相談|について|ポータル|ガイド|サイトマップ|ランキング|ニュース|制作会社|Articles|Inspiration$|About|Contact|Privacy|Design Examples|Examples$)/i;
 
 /** 個別の作品ではなさそうなページ（トップ・一覧・問い合わせ・サイト名だけのタイトル）かどうか。ヒューリスティック。 */
 export function looksLikeNonWork(title, source, siteTitle = "") {
@@ -93,7 +93,7 @@ export function parseDetail(html, detailUrl, { excludeHosts = new Set() } = {}) 
 export function cleanTitle(t) {
   if (!t) return t;
   const dec = String(t).replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#0?39;/g, "'").replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)));
-  const first = dec.split(/\s+[|｜]\s+/)[0].trim();
+  const first = dec.split(/\s*｜\s*|\s+\|\s+/)[0].trim();
   return first || dec.trim();
 }
 
@@ -169,6 +169,9 @@ export async function collectFromSource(source, { getter = fetchGetter(), detail
         const d = rdlp ? parseRdlpDetail(r.text, detailUrl) : parseDetail(r.text, detailUrl);
         const title = cleanTitle(card.title || d.title);
         if (!rdlp && looksLikeNonWork(title, source, siteTitle)) { report.skippedNonWork = (report.skippedNonWork || 0) + 1; continue; }
+        const srcTokens = [source.key.replace(/-.*/, ""), String(source.name).replace(/\s+/g, "")].map((x) => x.toLowerCase()).filter((x) => x.length >= 5);
+        const own = (u) => srcTokens.some((tok) => u.toLowerCase().includes(tok));
+        if (d.outbound) { d.outbound = d.outbound.filter((u) => !own(u)); d.pageUrl = d.outbound[0] || null; }
         const cand = { ...base, sourceDetailUrl: detailUrl, brand: cleanTitle(card.company || title), title, archivePostId: card.postId ?? null, pageUrl: d.pageUrl, imageUrl: d.image, _outbound: d.outbound || (d.pageUrl ? [d.pageUrl] : []) };
         cand.signals = heuristicSignals(d);
         results.push(cand); report.fetched++;

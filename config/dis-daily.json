@@ -272,7 +272,8 @@
       "detailPathIncludes": "/",
       "termsStatus": "known",
       "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
-      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。"
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。",
+      "detailPathRegex": "^/archives/\\d+/?$"
     },
     {
       "key": "bannnner",
@@ -282,7 +283,8 @@
       "detailPathIncludes": "/",
       "termsStatus": "known",
       "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
-      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。"
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。",
+      "detailPathRegex": "^/banner_\\d+/?$"
     },
     {
       "key": "banner-matome",
