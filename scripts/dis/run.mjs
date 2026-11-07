@@ -10,7 +10,7 @@ import path from "node:path";
 import { parseArgs } from "node:util";
 import { loadConfig, jstDate, readJson, MEDIA_KEYS, REPO_ROOT } from "./lib/config.mjs";
 import { buildKnownIndex } from "./lib/dedupe.mjs";
-import { selectOne } from "./lib/select.mjs";
+import { selectOne, interleaveBySource } from "./lib/select.mjs";
 import { collectFromSource, loadFixture } from "./lib/collect.mjs";
 import { emptyAnalysis, validateAnalysis, analysisToMarkdown } from "./lib/analysis-schema.mjs";
 import { idempotencyKey, loadLedger, saveLedger, findEntry, upsertEntry } from "./lib/ledger.mjs";
@@ -79,7 +79,8 @@ async function runMedia(media) {
     else {
       const { candidates } = await readJson(`${d}/candidates.json`);
       const usable = candidates.filter((c) => !c.fetchError || c.pageUrl);
-      const res = selectOne(candidates, {
+      const res = selectOne(interleaveBySource(candidates), {
+        tieSeed: args.date,
         weights: cfg.scoring.weights, minScore: cfg.minScoreToSelect, maxCandidates: cfg.maxCandidatesPerMedia,
         dupCheck: (c) => known.check(c, { windowDays: cfg.dedupeWindowDays, today: args.date }),
       });

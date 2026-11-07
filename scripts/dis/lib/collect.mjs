@@ -27,15 +27,22 @@ export async function robotsAllows(url, fetchImpl = fetch) {
 }
 
 /** 一覧ページから詳細URL候補を抽出（公開ページのみ・1ソース1リクエスト＋詳細は最大N件）。 */
+const NAV_WORDS = /^\/(about|contact|privacy|policy|terms|rules|faq|news|info|company|search|login|signup|register|feed|rss|sitemap|tag|tags|category|categories|author|page|archive|archives\/?$|ranking|submit|advertise|ad)(\/|$)/i;
+
+/** 一覧ページから詳細URL候補を抽出。detailPathRegex があればそれを優先（精度が高い）。無ければ detailPathIncludes ＋ ナビ/カテゴリ除外。 */
 export function extractDetailLinks(html, source, limit = 8) {
   const seen = new Set();
   const out = [];
   const origin = new URL(source.listUrl).origin;
+  const listPath = new URL(source.listUrl).pathname;
+  const re = source.detailPathRegex ? new RegExp(source.detailPathRegex) : null;
   for (const m of html.matchAll(/<a\b[^>]*href=["']([^"'#]+)["'][^>]*>/gi)) {
     const url = abs(m[1], source.listUrl);
     if (!url || !url.startsWith(origin)) continue;
     const p = new URL(url).pathname;
-    if (!p.includes(source.detailPathIncludes) || p === new URL(source.listUrl).pathname || /\.(jpg|png|gif|svg|css|js)$/i.test(p) || /\/(page|tag|category|author)\//.test(p)) continue;
+    if (p === listPath || p === "/" || /\.(jpg|jpeg|png|gif|svg|webp|css|js|pdf)$/i.test(p)) continue;
+    if (re) { if (!re.test(p)) continue; }
+    else if (!p.includes(source.detailPathIncludes) || NAV_WORDS.test(p) || /\/(page|tag|category|author)\//.test(p)) continue;
     if (seen.has(url)) continue;
     seen.add(url); out.push(url);
     if (out.length >= limit) break;

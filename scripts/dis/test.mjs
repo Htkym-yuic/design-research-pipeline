@@ -5,7 +5,7 @@ import os from "node:os";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { normalizeUrl, brandKey, KnownIndex } from "./lib/dedupe.mjs";
-import { selectOne } from "./lib/select.mjs";
+import { selectOne, interleaveBySource, tieHash } from "./lib/select.mjs";
 import { writesAllowed } from "./lib/write-guard.mjs";
 import { emptyAnalysis, validateAnalysis, AXES } from "./lib/analysis-schema.mjs";
 import { idempotencyKey } from "./lib/ledger.mjs";
@@ -92,7 +92,9 @@ test("collect: 一覧から詳細リンク抽出・詳細パース", () => {
 
 test("config: ユーザー承認済み(LPアーカイブ)以外はtermsStatus!=known／Notion collectionが仕様どおり", async () => {
   const cfg = await loadConfig();
-  assert.deepEqual(cfg.sources.filter((s) => s.termsStatus === "known").map((s) => s.key), ["rdlp"]);
+  assert.deepEqual(cfg.sources.filter((s) => s.termsStatus === "known").map((s) => s.key).sort(), ["banner-hiroba", "banner-library", "banner-matome", "bannnner", "io3000", "muuuuu", "rdlp", "retrobanner", "s5-style", "sankou-web", "wdc-web"]);
+  assert.ok(cfg.sources.filter((s) => s.termsStatus === "known").every((s) => s.termsApproval));
+  assert.ok(cfg.sources.filter((s) => s.termsStatus !== "known").every((s) => ["sankou-lp", "lp-advance", "wdc-lp", "lp-kanji"].includes(s.key) || cfg.media[s.media]));
   assert.equal(cfg.media.lp.notion.collection, "collection://39624d4f-a671-8094-ba0c-000b11fefbd0");
   assert.equal(cfg.media.banner.notion.collection, "collection://01516eed-b32f-464e-bbdf-68bf9e7b87f9");
   assert.equal(cfg.media.web.notion.collection, "collection://72c6fadb-ee7b-4721-a04c-e5a73126c09f");
@@ -190,4 +192,25 @@ test("buildNotionBlocks: 実際の分析Markdownを全て変換できる", async
   assert.ok(b.length > 50);
   assert.ok(b.some((x) => x.type === "heading_2"));
   assert.ok(!b.some((x) => /^#{1,3} /.test(x[x.type].rich_text[0].text.content)));
+});
+
+test("extractDetailLinks: detailPathRegexでカテゴリ・ナビを除外", () => {
+  const html = '<a href="/web/a/">a</a><a href="/web/">idx</a><a href="/category/lp/">c</a><a href="/about/">ab</a><a href="/web/b/">b</a>';
+  assert.deepEqual(extractDetailLinks(html, { listUrl: "https://s.example/", detailPathRegex: "^/web/[^/]+/?$", detailPathIncludes: "/web/" }), ["https://s.example/web/a/", "https://s.example/web/b/"]);
+  assert.deepEqual(extractDetailLinks('<a href="/about/">x</a><a href="/news/">n</a><a href="/works/z/">z</a>', { listUrl: "https://s.example/", detailPathIncludes: "/" }), ["https://s.example/works/z/"]);
+});
+
+test("interleaveBySource: 参照元を交互に並べ、5件枠が1つの参照元に偏らない", () => {
+  const mk = (k, n) => Array.from({ length: n }, (_, i) => ({ sourceKey: k, pageUrl: `https://${k}${i}.example/` }));
+  const out = interleaveBySource([...mk("a", 3), ...mk("b", 3), ...mk("c", 3)]);
+  assert.deepEqual(out.slice(0, 5).map((c) => c.sourceKey), ["a", "b", "c", "a", "b"]);
+});
+
+test("selectOne: 同点は日付で決定的にばらける（同じ日は同じ結果）", () => {
+  const cands = Array.from({ length: 5 }, (_, i) => ({ brand: `b${i}`, pageUrl: `https://b${i}.example/`, termsStatus: "known", signals: { a: 0.7 } }));
+  const run = (seed) => selectOne(cands, { weights: { a: 100 }, minScore: 1, dupCheck: () => ({ duplicate: false }), tieSeed: seed }).selected.brand;
+  assert.equal(run("2026-11-07"), run("2026-11-07"));
+  const days = new Set(Array.from({ length: 10 }, (_, i) => run(`2026-11-${10 + i}`)));
+  assert.ok(days.size > 1);
+  assert.equal(tieHash("x", "y"), tieHash("x", "y"));
 });

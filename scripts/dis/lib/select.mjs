@@ -15,7 +15,7 @@ export function scoreCandidate(c, weights) {
  * 候補から1件を選ぶ。除外理由を全候補に残す（選定理由の透明性）。
  * @returns {{selected: object|null, evaluated: object[], skippedReason?: string}}
  */
-export function selectOne(candidates, { weights, minScore, maxCandidates = 5, dupCheck }) {
+export function selectOne(candidates, { weights, minScore, maxCandidates = 5, dupCheck, tieSeed = "" }) {
   const pool = candidates.slice(0, maxCandidates);
   const evaluated = pool.map((c) => {
     const dup = dupCheck(c);
@@ -27,10 +27,31 @@ export function selectOne(candidates, { weights, minScore, maxCandidates = 5, du
     if (c.fetchError) blockers.push(`取得不可: ${c.fetchError}`);
     return { ...c, score, scoreParts: parts, duplicate: dup, blockers };
   });
-  const eligible = evaluated.filter((e) => e.blockers.length === 0 && e.score >= minScore).sort((a, b) => b.score - a.score);
+  const eligible = evaluated.filter((e) => e.blockers.length === 0 && e.score >= minScore).sort((a, b) => b.score - a.score || tieHash(tieSeed, a.pageUrl) - tieHash(tieSeed, b.pageUrl));
   if (eligible.length === 0) {
     const reason = evaluated.length === 0 ? "候補なし" : evaluated.every((e) => e.blockers.length) ? "全候補が除外条件に該当" : `最高スコアが閾値${minScore}未満`;
     return { selected: null, evaluated, skippedReason: reason };
   }
   return { selected: eligible[0], evaluated };
+}
+
+/** 参照元ごとに順番に1件ずつ取り出して並べ替える（先頭の参照元に偏らないようにする）。 */
+export function interleaveBySource(candidates) {
+  const groups = new Map();
+  for (const c of candidates) {
+    const k = c.sourceKey || "?";
+    if (!groups.has(k)) groups.set(k, []);
+    groups.get(k).push(c);
+  }
+  const lists = [...groups.values()];
+  const out = [];
+  for (let i = 0; lists.some((l) => i < l.length); i++) for (const l of lists) if (i < l.length) out.push(l[i]);
+  return out;
+}
+
+/** 決定的な疑似乱数（日付＋URL）。同点のとき日替わりで参照元が偏らないようにする。 */
+export function tieHash(seed, text) {
+  let h = 2166136261;
+  for (const ch of `${seed}|${text}`) { h ^= ch.codePointAt(0); h = Math.imul(h, 16777619) >>> 0; }
+  return h;
 }
