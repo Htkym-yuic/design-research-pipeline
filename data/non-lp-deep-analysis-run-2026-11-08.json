@@ -1,0 +1,32 @@
+{
+  "schema_version": "drs-weekly-run-1.0",
+  "run_date": "2026-11-08",
+  "collection_summary": {
+    "total": 73,
+    "WB": 14,
+    "GR": 35,
+    "PT": 7,
+    "CV": 3,
+    "PAT": 14,
+    "LP": 0,
+    "BN": 0,
+    "UI": 0,
+    "ILAC": 0,
+    "PHAC": 0,
+    "Canva": 3
+  },
+  "selected": [
+    {"id":"WB-0061","analysis":"completed","markdown_validation_warnings":0,"knowledge_json":"validated","dropbox_files":16,"notion":"verified","cbs_production_sync":"not_applied"},
+    {"id":"WB-0067","analysis":"completed","markdown_validation_warnings":0,"knowledge_json":"validated","dropbox_files":16,"notion":"verified","cbs_production_sync":"not_applied"},
+    {"id":"WB-0070","analysis":"completed","markdown_validation_warnings":0,"knowledge_json":"validated","dropbox_files":16,"notion":"verified","cbs_production_sync":"not_applied"}
+  ],
+  "recapture_wait": [
+    {"id":"WB-0066","reason":"screenshot_timeout"}
+  ],
+  "gaps": [
+    "AC系はGitHub-hosted runnerで403となり、週内のMac補完は未実行",
+    "PTは直近5日連続0件",
+    "LP・BN・UIは新規0件"
+  ],
+  "cbs_production_sync": "not_applied_user_confirmation_required"
+}

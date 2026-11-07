@@ -1,0 +1,135 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0070",
+  "media_type": "WB",
+  "title": "桜井歯科医院",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://sankoudesign.com/web/sakuraidental/",
+    "capture_url": "https://www.dental-sakurai.com/",
+    "official_url": "https://www.dental-sakurai.com/"
+  },
+  "analysis": {
+    "summary": "『歯と長くつきあう場所。』を中心に、治療の即時訴求より継続的な関係と安心を伝える歯科医院サイト。 理念、特徴、診療内容、2院のアクセス、ニュース、連絡先を大きな余白と実写写真で順に提示する。 縦組み風の見出し、細い罫線、落ち着いた写真により、医療の緊張を抑えながら専門性を保つ。",
+    "score": {
+      "visual": 18,
+      "clarity": 19,
+      "originality": 12,
+      "reusability": 19,
+      "learning": 15,
+      "evidence": 10,
+      "total": 93
+    },
+    "units": [
+      {
+        "name": "ファーストビュー",
+        "role": "主コピー、院内・人物写真、ロゴ、ナビ",
+        "reuse": "余白の大きい白地にコピーと写真を分離とコピー→写真→下方向の役割分担",
+        "evidence": "WB-0070_SITE_PC_full.png / WB-0070_SITE_SP_full.pngを目視確認"
+      },
+      {
+        "name": "ナビゲーション",
+        "role": "医院紹介、特徴、診療、アクセス、連絡",
+        "reuse": "細い文字の簡潔な横並びと探索項目を均等に提示の役割分担",
+        "evidence": "WB-0070_SITE_PC_full.png / WB-0070_SITE_SP_full.pngを目視確認"
+      },
+      {
+        "name": "主要コンテンツ",
+        "role": "理念、医院の特徴、院内写真",
+        "reuse": "見出し・本文・大写真を交互に配置と理念→特徴番号→写真証拠の役割分担",
+        "evidence": "WB-0070_SITE_PC_full.png / WB-0070_SITE_SP_full.pngを目視確認"
+      },
+      {
+        "name": "証拠・事例",
+        "role": "診療内容、設備・対応、医院写真",
+        "reuse": "罫線付きメニューと写真とカテゴリ→説明→詳細入口の役割分担",
+        "evidence": "WB-0070_SITE_PC_full.png / WB-0070_SITE_SP_full.pngを目視確認"
+      },
+      {
+        "name": "問い合わせ・コンバージョン",
+        "role": "2院アクセス、電話・連絡先、ニュース",
+        "reuse": "院ごとの情報ブロックと連絡導線と医院選択→場所→連絡の役割分担",
+        "evidence": "WB-0070_SITE_PC_full.png / WB-0070_SITE_SP_full.pngを目視確認"
+      },
+      {
+        "name": "フッター",
+        "role": "医院情報、関連リンク、コピーライト",
+        "reuse": "余白のあるリンク・情報群と連絡後の再確認の役割分担",
+        "evidence": "WB-0070_SITE_PC_full.png / WB-0070_SITE_SP_full.pngを目視確認"
+      }
+    ]
+  },
+  "strengths": [
+    "安心を先に作る非販促的FV",
+    "理念から診療・アクセスへの自然な順序",
+    "PC/SPで余白と章順を維持"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "初診行動が見つけにくい",
+      "evidence": "静かなデザインで予約・電話が埋もれる",
+      "fix": "ヘッダーとSP下部に予約・電話CTAを固定",
+      "effect": "来院意欲を行動へ接続",
+      "metric": "予約開始率・電話タップ率"
+    },
+    {
+      "priority": "P1",
+      "issue": "症状から診療内容を探しにくい",
+      "evidence": "診療科目中心の整理",
+      "fix": "症状別入口と対応診療の対応表を追加",
+      "effect": "医療知識が少ない人の探索を短縮",
+      "metric": "症状入口利用率"
+    },
+    {
+      "priority": "P2",
+      "issue": "専門性の証拠が遅い",
+      "evidence": "理念・空間写真が先行",
+      "fix": "担当医、資格、衛生・設備の要約を特徴内に追加",
+      "effect": "安心を根拠で補強",
+      "metric": "医師紹介閲覧率"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "余白と写真の安心型FV",
+      "keep": "情報順、役割、余白、反復構造",
+      "replace": "ロゴ、人物・院内写真、固有コピー、ブランド色"
+    },
+    {
+      "id": "C02",
+      "name": "番号付き特徴の編集レイアウト",
+      "keep": "情報順、役割、余白、反復構造",
+      "replace": "ロゴ、人物・院内写真、固有コピー、ブランド色"
+    },
+    {
+      "id": "C03",
+      "name": "2院アクセス比較ブロック",
+      "keep": "情報順、役割、余白、反復構造",
+      "replace": "ロゴ、人物・院内写真、固有コピー、ブランド色"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "ロゴ、人物・院内写真、固有コピー、企業固有数値",
+    "reusable": "構成、余白、情報順、カード・証拠・CTAの役割"
+  },
+  "evidence": {
+    "files": [
+      "https://www.dental-sakurai.com/",
+      "WB-0070_SITE_PC_full.png",
+      "WB-0070_SITE_SP_full.png",
+      "WB-0070_elementor_brain_implementation.png"
+    ],
+    "unknowns": [
+      "section_index_not_generated_separately",
+      "interaction_state_not_captured",
+      "license_and_update_date_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

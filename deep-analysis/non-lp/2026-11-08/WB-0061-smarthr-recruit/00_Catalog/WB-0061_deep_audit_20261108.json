@@ -1,0 +1,38 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0061",
+  "mode": "analysis",
+  "selected_for_deep_analysis": true,
+  "selection_reason": "社会課題を起点に、会社の現在地、未来、数値証拠、イベント・メディアへ進む採用ストーリーが明快で、採用LPや企業サイトへ転用できる説得構造が最も強い。",
+  "checks": {
+    "first_line": "Yes",
+    "chapters": "Yes",
+    "unit_headings": "Yes",
+    "unit_fields": "Yes",
+    "image_slots": "Yes",
+    "image_evidence": "Yes",
+    "candidate_parity": "Yes",
+    "rights": "Yes",
+    "unknowns": "Yes",
+    "sources": "Yes",
+    "run_record": "Yes",
+    "analysis_complete": "Yes",
+    "section_coverage": "Yes",
+    "dis_9_axis": "Yes",
+    "elementor_blueprint": "Yes"
+  },
+  "section_coverage": {
+    "required": 6,
+    "analyzed": 6,
+    "missing": []
+  },
+  "notion": {
+    "status": "pending_weekly_sync",
+    "page_url": "https://app.notion.com/p/40d24d4fa67181d8843cd58065ef6b10"
+  },
+  "dropbox": {
+    "status": "pending_weekly_sync",
+    "path": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/selected/WB-0061-smarthr-recruit"
+  },
+  "cbs": "not_synced_user_approval_required"
+}

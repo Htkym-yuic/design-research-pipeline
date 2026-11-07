@@ -1,0 +1,100 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0067",
+  "media_type": "WB",
+  "asset_type": "Web",
+  "title": "Kyoshin Digital Academy",
+  "source_name": "SANKOU!",
+  "source_detail_url": "https://sankoudesign.com/web/kyoshindigitalacademy/",
+  "capture_url": "https://digital-academy.kyoshin.co.jp/",
+  "official_url": "https://digital-academy.kyoshin.co.jp/",
+  "analysis_status": "completed_and_validated",
+  "analysis_score": 92,
+  "notion_status": "pending_weekly_sync",
+  "notion_page_url": "https://app.notion.com/p/41024d4fa67181459c24eaf6d33bd290",
+  "dropbox_status": "pending_weekly_sync",
+  "dropbox_path": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/selected/WB-0067-kyoshin-digital-academy",
+  "analysis_version": "drs-deep-1.0+dis-1.0",
+  "source_analysis_ref": "candidates/non-lp/lightweight-analysis.json#analyses.WB-0067",
+  "section_coverage": {
+    "required": 6,
+    "analyzed": 6,
+    "missing": []
+  },
+  "dis_scores": [
+    {
+      "axis": "purpose_fit",
+      "score": 4,
+      "evidence": "組織理解と採用接点に集中",
+      "scope": "全ページ",
+      "confidence": "高",
+      "unknowns": "外部応募後"
+    },
+    {
+      "axis": "information_hierarchy",
+      "score": 4,
+      "evidence": "Vision→組織→人物→記事",
+      "scope": "PC/SP",
+      "confidence": "高",
+      "unknowns": "動的ナビ"
+    },
+    {
+      "axis": "visual_flow",
+      "score": 4,
+      "evidence": "黒白の面切替とカード反復",
+      "scope": "静止画",
+      "confidence": "高",
+      "unknowns": "モーション"
+    },
+    {
+      "axis": "message_copy",
+      "score": 4,
+      "evidence": "Digital HumanでDX人材像を定義",
+      "scope": "主要コピー",
+      "confidence": "高",
+      "unknowns": "ブランド定義原文"
+    },
+    {
+      "axis": "trust_safety",
+      "score": 3,
+      "evidence": "人物と外部記事はあるが成果数値が弱い",
+      "scope": "公開画面",
+      "confidence": "中",
+      "unknowns": "採用条件"
+    },
+    {
+      "axis": "color_legibility",
+      "score": 4,
+      "evidence": "暗色と白字、白Sectionで可読性確保",
+      "scope": "主要Section",
+      "confidence": "高",
+      "unknowns": "実測"
+    },
+    {
+      "axis": "layout_spacing",
+      "score": 4,
+      "evidence": "短尺と大余白で章を整理",
+      "scope": "PC/SP",
+      "confidence": "高",
+      "unknowns": "CSS実測"
+    },
+    {
+      "axis": "visual_brand",
+      "score": 5,
+      "evidence": "黒紫・巨大英字が強い識別性",
+      "scope": "全体",
+      "confidence": "高",
+      "unknowns": "ブランド規定"
+    },
+    {
+      "axis": "implementation_reuse",
+      "score": 4,
+      "evidence": "標準Containerとカードで大半を再現",
+      "scope": "主要Section",
+      "confidence": "高",
+      "unknowns": "3D・発光表現"
+    }
+  ],
+  "cbs_status": "candidate_pending_user_approval",
+  "generated_at": "2026-11-08T01:30:00.000+09:00"
+}

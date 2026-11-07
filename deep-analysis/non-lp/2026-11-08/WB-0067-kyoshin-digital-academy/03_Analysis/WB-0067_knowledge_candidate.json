@@ -1,0 +1,135 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0067",
+  "media_type": "WB",
+  "title": "Kyoshin Digital Academy",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://sankoudesign.com/web/kyoshindigitalacademy/",
+    "capture_url": "https://digital-academy.kyoshin.co.jp/",
+    "official_url": "https://digital-academy.kyoshin.co.jp/"
+  },
+  "analysis": {
+    "summary": "教育企業のDX部門を、技術一覧ではなく『Digital Human』という人物像で表現する組織・採用サイト。 DX Vision、Organization、How We Work、Interview、Wantedlyの順で、思想から実態、人物、外部接点へ進む。 黒地と紫の発光表現、巨大英字、カードの横方向リズムで、教育業界に先端性を付与する。",
+    "score": {
+      "visual": 19,
+      "clarity": 17,
+      "originality": 15,
+      "reusability": 18,
+      "learning": 14,
+      "evidence": 9,
+      "total": 92
+    },
+    "units": [
+      {
+        "name": "ファーストビュー",
+        "role": "Digital Human、ロゴ、抽象ビジュアル、ナビ",
+        "reuse": "黒背景に巨大英字と紫の発光形状と英字→人物像の短文→下方向の役割分担",
+        "evidence": "WB-0067_SITE_PC_full.png / WB-0067_SITE_SP_full.pngを目視確認"
+      },
+      {
+        "name": "ナビゲーション",
+        "role": "Vision、About、Interview、外部採用導線",
+        "reuse": "最小限の横並びと内容探索と外部遷移を分離の役割分担",
+        "evidence": "WB-0067_SITE_PC_full.png / WB-0067_SITE_SP_full.pngを目視確認"
+      },
+      {
+        "name": "主要コンテンツ",
+        "role": "DX Vision、Organization、How We Work",
+        "reuse": "大見出しと2枚の情報カードと思想→組織→働き方の役割分担",
+        "evidence": "WB-0067_SITE_PC_full.png / WB-0067_SITE_SP_full.pngを目視確認"
+      },
+      {
+        "name": "証拠・事例",
+        "role": "社員インタビュー、顔写真、役割",
+        "reuse": "人物カードを反復と顔→肩書→記事入口の役割分担",
+        "evidence": "WB-0067_SITE_PC_full.png / WB-0067_SITE_SP_full.pngを目視確認"
+      },
+      {
+        "name": "問い合わせ・コンバージョン",
+        "role": "Wantedly記事、採用外部リンク",
+        "reuse": "記事カードと外部CTAと記事→外部プロフィール・募集の役割分担",
+        "evidence": "WB-0067_SITE_PC_full.png / WB-0067_SITE_SP_full.pngを目視確認"
+      },
+      {
+        "name": "フッター",
+        "role": "企業・関連リンク、コピーライト",
+        "reuse": "黒背景の簡潔なリンク群と外部情報→企業基盤の役割分担",
+        "evidence": "WB-0067_SITE_PC_full.png / WB-0067_SITE_SP_full.pngを目視確認"
+      }
+    ]
+  },
+  "strengths": [
+    "教育とDXを結ぶ独自ブランド",
+    "短尺で思想から人物まで到達",
+    "暗色ブランドと白地説明の切替"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "募集判断情報が不足",
+      "evidence": "人物・記事はあるが職種条件が薄い",
+      "fix": "職種、役割、勤務地、働き方の要約を追加",
+      "effect": "外部遷移前の適合判断を支援",
+      "metric": "採用媒体遷移後応募率"
+    },
+    {
+      "priority": "P1",
+      "issue": "DXの成果が抽象的",
+      "evidence": "Visionと組織説明中心",
+      "fix": "教育現場のBefore/After事例を1〜2件追加",
+      "effect": "事業価値の信頼を強化",
+      "metric": "事例閲覧率"
+    },
+    {
+      "priority": "P2",
+      "issue": "暗色カードの連続で章差が弱い",
+      "evidence": "Interviewと記事が類似カード",
+      "fix": "人物と記事で比率・背景を変える",
+      "effect": "走査性を改善",
+      "metric": "下段スクロール深度"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "暗色Digital Human FV",
+      "keep": "情報順、役割、余白、反復構造",
+      "replace": "ロゴ、人物・院内写真、固有コピー、ブランド色"
+    },
+    {
+      "id": "C02",
+      "name": "Organization・How We Workの2カード",
+      "keep": "情報順、役割、余白、反復構造",
+      "replace": "ロゴ、人物・院内写真、固有コピー、ブランド色"
+    },
+    {
+      "id": "C03",
+      "name": "人物から外部記事へ進む採用導線",
+      "keep": "情報順、役割、余白、反復構造",
+      "replace": "ロゴ、人物・院内写真、固有コピー、ブランド色"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "ロゴ、人物・院内写真、固有コピー、企業固有数値",
+    "reusable": "構成、余白、情報順、カード・証拠・CTAの役割"
+  },
+  "evidence": {
+    "files": [
+      "https://digital-academy.kyoshin.co.jp/",
+      "WB-0067_SITE_PC_full.png",
+      "WB-0067_SITE_SP_full.png",
+      "WB-0067_elementor_brain_implementation.png"
+    ],
+    "unknowns": [
+      "section_index_not_generated_separately",
+      "interaction_state_not_captured",
+      "license_and_update_date_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

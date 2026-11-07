@@ -1,0 +1,82 @@
+{
+  "schema_version": "elementor-blueprint-1.1",
+  "status": "weekly_deep_analysis_confirmed",
+  "id": "WB-0070",
+  "analysis_date": "2026-11-08",
+  "principles": {
+    "standard_elementor_first": true,
+    "atomic_elements": "optional_only",
+    "css": "標準Elementorを優先。縦書きを厳密に再現する場合だけwriting-modeを最小限使用し、未習熟時は横組みで代替する。"
+  },
+  "sections": [
+    {
+      "name": "HeaderHero",
+      "container": "page > hero > hero-inner",
+      "widgets": "Site Logo / Nav Menu / Heading / Image / Text",
+      "desktop": "2列、最小高720、余白大",
+      "mobile": "画像→コピーまたはコピー→画像の単列",
+      "notes": "縦書きは可能なら通常横組みで代替"
+    },
+    {
+      "name": "Philosophy",
+      "container": "section > inner > copy",
+      "widgets": "Heading / Text Editor / Image",
+      "desktop": "本文と写真の2列",
+      "mobile": "単列",
+      "notes": "標準Typographyで再現"
+    },
+    {
+      "name": "FeaturesEditorial",
+      "container": "section > inner > feature-list > feature",
+      "widgets": "Heading / Text / Image / Divider",
+      "desktop": "交互2列、番号表示",
+      "mobile": "画像→番号→見出し→本文",
+      "notes": "奇偶反転はSPで解除"
+    },
+    {
+      "name": "TreatmentMenu",
+      "container": "section > inner > treatment-list",
+      "widgets": "Accordion / Heading / Text / Icon List",
+      "desktop": "2列または全幅Accordion",
+      "mobile": "1列Accordion",
+      "notes": "標準Accordionを優先"
+    },
+    {
+      "name": "Access",
+      "container": "section > inner > clinic-grid > clinic",
+      "widgets": "Heading / Text / Google Maps / Icon List / Button",
+      "desktop": "2院を2列比較",
+      "mobile": "院ごとに縦積み",
+      "notes": "電話はtelリンク、地図は標準Widget"
+    },
+    {
+      "name": "NewsContactFooter",
+      "container": "section > news + contact + footer",
+      "widgets": "Loop Grid / Heading / Text / Button / Nav Menu",
+      "desktop": "ニュース3列、連絡帯、リンク群",
+      "mobile": "すべて1列",
+      "notes": "予約CTAは標準Buttonで固定案"
+    }
+  ],
+  "pc_sp": {
+    "desktop": "横並び・大余白・原画像の章順",
+    "mobile": "意味順を維持して単列化。タップ対象は44px以上を推奨"
+  },
+  "unconfirmed": [
+    {
+      "target": "Section一覧",
+      "reason": "section_index_not_generated_separately",
+      "next": "必要時にSection画像を生成"
+    },
+    {
+      "target": "動的状態",
+      "reason": "interaction_state_not_captured",
+      "next": "実サイト操作で確認"
+    },
+    {
+      "target": "権利・実績時点",
+      "reason": "license_and_update_date_unverified",
+      "next": "原典と権利者を確認"
+    }
+  ]
+}

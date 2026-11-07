@@ -1,0 +1,135 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0061",
+  "media_type": "WB",
+  "title": "株式会社SmartHR 採用サイト",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://sankoudesign.com/web/smarthr-recruit/",
+    "capture_url": "https://recruit.smarthr.co.jp/",
+    "official_url": "https://recruit.smarthr.co.jp/"
+  },
+  "analysis": {
+    "summary": "『社会変革を、仕事にしよう。』を核に、候補者を求人票ではなく社会課題と企業の挑戦へ招く採用サイト。 課題カード、Company Deck、未来像、Facts、イベント・メディアの順で、共感から企業理解、証拠、接点形成へ進む。 水色から桃色のグラデーションと大きな文字を反復し、採用情報の硬さを抑えつつ、変革志向を一貫して示す。",
+    "score": {
+      "visual": 19,
+      "clarity": 19,
+      "originality": 13,
+      "reusability": 20,
+      "learning": 15,
+      "evidence": 10,
+      "total": 96
+    },
+    "units": [
+      {
+        "name": "ファーストビュー",
+        "role": "採用メッセージ、人物、企業ロゴ、主要ナビ",
+        "reuse": "全幅グラデーション上に大見出しと人物を重ねると大見出し→人物→ナビの役割分担",
+        "evidence": "WB-0061_SITE_PC_full.png / WB-0061_SITE_SP_full.pngを目視確認"
+      },
+      {
+        "name": "ナビゲーション",
+        "role": "企業理解・仕事・人・採用情報への入口",
+        "reuse": "簡潔な横並びと行動リンクと情報探索と応募行動を分離の役割分担",
+        "evidence": "WB-0061_SITE_PC_full.png / WB-0061_SITE_SP_full.pngを目視確認"
+      },
+      {
+        "name": "主要コンテンツ",
+        "role": "社会課題、Company Deck、未来像",
+        "reuse": "カード反復と大きな資料・写真面を交互配置と課題→会社→未来の因果順の役割分担",
+        "evidence": "WB-0061_SITE_PC_full.png / WB-0061_SITE_SP_full.pngを目視確認"
+      },
+      {
+        "name": "証拠・事例",
+        "role": "Facts、利用規模、組織・事業の数値",
+        "reuse": "大きな数字をグリッドで一覧化と数値→補足ラベル→関連説明の役割分担",
+        "evidence": "WB-0061_SITE_PC_full.png / WB-0061_SITE_SP_full.pngを目視確認"
+      },
+      {
+        "name": "問い合わせ・コンバージョン",
+        "role": "イベント、メディア、採用接点",
+        "reuse": "カード一覧と明確なリンクと参加・読む・採用情報の低摩擦順の役割分担",
+        "evidence": "WB-0061_SITE_PC_full.png / WB-0061_SITE_SP_full.pngを目視確認"
+      },
+      {
+        "name": "フッター",
+        "role": "採用メッセージ再掲、各種リンク、企業情報",
+        "reuse": "大きなコピー面の後に整理されたリンク群と理念再確認→探索リンクの役割分担",
+        "evidence": "WB-0061_SITE_PC_full.png / WB-0061_SITE_SP_full.pngを目視確認"
+      }
+    ]
+  },
+  "strengths": [
+    "社会課題から企業証拠へ進む採用ストーリー",
+    "大見出しと数値の情報階層",
+    "応募前接点の多様さ"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "職種探索への接続が遅い",
+      "evidence": "ブランド理解が先行し具体的求人が遠い",
+      "fix": "課題カード直後に職種別入口を追加",
+      "effect": "共感から求人探索への離脱を抑制",
+      "metric": "職種一覧到達率"
+    },
+    {
+      "priority": "P1",
+      "issue": "Factsの意味が瞬時に判別しにくい",
+      "evidence": "大数字は強いが定義が小さい",
+      "fix": "単位・更新日・意味を数字直下へ固定",
+      "effect": "証拠の解釈精度を上げる",
+      "metric": "Facts滞在・採用情報CTR"
+    },
+    {
+      "priority": "P2",
+      "issue": "応募前接点から採用導線が分散",
+      "evidence": "イベントと記事が別カード群",
+      "fix": "各カードに関連職種・採用情報リンクを追加",
+      "effect": "関心を応募検討へ接続",
+      "metric": "記事後採用ページ遷移率"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "社会課題カードから会社理解への接続",
+      "keep": "情報順、役割、余白、反復構造",
+      "replace": "ロゴ、人物・院内写真、固有コピー、ブランド色"
+    },
+    {
+      "id": "C02",
+      "name": "大数字のFactsグリッド",
+      "keep": "情報順、役割、余白、反復構造",
+      "replace": "ロゴ、人物・院内写真、固有コピー、ブランド色"
+    },
+    {
+      "id": "C03",
+      "name": "イベント・メディアの低摩擦CTA",
+      "keep": "情報順、役割、余白、反復構造",
+      "replace": "ロゴ、人物・院内写真、固有コピー、ブランド色"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "ロゴ、人物・院内写真、固有コピー、企業固有数値",
+    "reusable": "構成、余白、情報順、カード・証拠・CTAの役割"
+  },
+  "evidence": {
+    "files": [
+      "https://recruit.smarthr.co.jp/",
+      "WB-0061_SITE_PC_full.png",
+      "WB-0061_SITE_SP_full.png",
+      "WB-0061_elementor_brain_implementation.png"
+    ],
+    "unknowns": [
+      "section_index_not_generated_separately",
+      "interaction_state_not_captured",
+      "license_and_update_date_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

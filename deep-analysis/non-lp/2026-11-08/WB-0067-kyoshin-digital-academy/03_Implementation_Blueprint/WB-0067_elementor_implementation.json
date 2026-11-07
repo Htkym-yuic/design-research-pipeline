@@ -1,0 +1,82 @@
+{
+  "schema_version": "elementor-blueprint-1.1",
+  "status": "weekly_deep_analysis_confirmed",
+  "id": "WB-0067",
+  "analysis_date": "2026-11-08",
+  "principles": {
+    "standard_elementor_first": true,
+    "atomic_elements": "optional_only",
+    "css": "標準Elementorを優先し、背景グラデーションも標準設定で作る。標準機能で成立しない動き・特殊文字組みだけ最小限のCSSを別記録する。"
+  },
+  "sections": [
+    {
+      "name": "HeaderHero",
+      "container": "page > hero > hero-inner",
+      "widgets": "Site Logo / Nav Menu / Heading / Text / Image",
+      "desktop": "最小高760、黒背景、文字と抽象画像を重ねる",
+      "mobile": "縦積み、英字サイズ縮小",
+      "notes": "発光は画像素材、CSS filterは使わない"
+    },
+    {
+      "name": "DXVision",
+      "container": "section > inner > copy",
+      "widgets": "Heading / Text Editor / Image",
+      "desktop": "左右2列、大余白",
+      "mobile": "画像→見出し→本文",
+      "notes": "標準Gapで再現"
+    },
+    {
+      "name": "AboutUsCards",
+      "container": "section > inner > two-card",
+      "widgets": "Heading / Icon Box / Text / Button",
+      "desktop": "2列カード",
+      "mobile": "1列",
+      "notes": "OrganizationとHow We Workを別Container"
+    },
+    {
+      "name": "InterviewCards",
+      "container": "section > inner > people-grid",
+      "widgets": "Loop Grid / Image / Heading / Text",
+      "desktop": "3列",
+      "mobile": "1列または2列",
+      "notes": "CMSならLoop Item化"
+    },
+    {
+      "name": "WantedlyCards",
+      "container": "section > inner > article-grid",
+      "widgets": "Loop Grid / Image / Heading / Button",
+      "desktop": "3列",
+      "mobile": "1列",
+      "notes": "外部リンクを明記"
+    },
+    {
+      "name": "Footer",
+      "container": "footer > inner",
+      "widgets": "Nav Menu / Icon List / Text",
+      "desktop": "横並び",
+      "mobile": "縦積み",
+      "notes": "標準Widgetのみ"
+    }
+  ],
+  "pc_sp": {
+    "desktop": "横並び・大余白・原画像の章順",
+    "mobile": "意味順を維持して単列化。タップ対象は44px以上を推奨"
+  },
+  "unconfirmed": [
+    {
+      "target": "Section一覧",
+      "reason": "section_index_not_generated_separately",
+      "next": "必要時にSection画像を生成"
+    },
+    {
+      "target": "動的状態",
+      "reason": "interaction_state_not_captured",
+      "next": "実サイト操作で確認"
+    },
+    {
+      "target": "権利・実績時点",
+      "reason": "license_and_update_date_unverified",
+      "next": "原典と権利者を確認"
+    }
+  ]
+}

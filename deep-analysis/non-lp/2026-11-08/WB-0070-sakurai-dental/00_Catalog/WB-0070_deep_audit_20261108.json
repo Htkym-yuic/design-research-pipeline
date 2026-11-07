@@ -1,0 +1,38 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0070",
+  "mode": "analysis",
+  "selected_for_deep_analysis": true,
+  "selection_reason": "医療サイトで強い販促を避け、理念、医院の特徴、診療内容、2院のアクセス、ニュース、連絡先を静かな編集デザインで整理しており、信頼優先のサービス設計を補える。",
+  "checks": {
+    "first_line": "Yes",
+    "chapters": "Yes",
+    "unit_headings": "Yes",
+    "unit_fields": "Yes",
+    "image_slots": "Yes",
+    "image_evidence": "Yes",
+    "candidate_parity": "Yes",
+    "rights": "Yes",
+    "unknowns": "Yes",
+    "sources": "Yes",
+    "run_record": "Yes",
+    "analysis_complete": "Yes",
+    "section_coverage": "Yes",
+    "dis_9_axis": "Yes",
+    "elementor_blueprint": "Yes"
+  },
+  "section_coverage": {
+    "required": 6,
+    "analyzed": 6,
+    "missing": []
+  },
+  "notion": {
+    "status": "pending_weekly_sync",
+    "page_url": "https://app.notion.com/p/41124d4fa6718166b96bcee50de10699"
+  },
+  "dropbox": {
+    "status": "pending_weekly_sync",
+    "path": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/selected/WB-0070-sakurai-dental"
+  },
+  "cbs": "not_synced_user_approval_required"
+}

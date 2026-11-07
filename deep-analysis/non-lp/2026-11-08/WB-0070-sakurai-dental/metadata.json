@@ -1,0 +1,100 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0070",
+  "media_type": "WB",
+  "asset_type": "Web",
+  "title": "桜井歯科医院",
+  "source_name": "SANKOU!",
+  "source_detail_url": "https://sankoudesign.com/web/sakuraidental/",
+  "capture_url": "https://www.dental-sakurai.com/",
+  "official_url": "https://www.dental-sakurai.com/",
+  "analysis_status": "completed_and_validated",
+  "analysis_score": 93,
+  "notion_status": "pending_weekly_sync",
+  "notion_page_url": "https://app.notion.com/p/41124d4fa6718166b96bcee50de10699",
+  "dropbox_status": "pending_weekly_sync",
+  "dropbox_path": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/selected/WB-0070-sakurai-dental",
+  "analysis_version": "drs-deep-1.0+dis-1.0",
+  "source_analysis_ref": "candidates/non-lp/lightweight-analysis.json#analyses.WB-0070",
+  "section_coverage": {
+    "required": 6,
+    "analyzed": 6,
+    "missing": []
+  },
+  "dis_scores": [
+    {
+      "axis": "purpose_fit",
+      "score": 5,
+      "evidence": "安心・診療確認・来院情報に集中",
+      "scope": "全ページ",
+      "confidence": "高",
+      "unknowns": "予約後"
+    },
+    {
+      "axis": "information_hierarchy",
+      "score": 5,
+      "evidence": "理念→特徴→診療→アクセス",
+      "scope": "PC/SP",
+      "confidence": "高",
+      "unknowns": "動的メニュー"
+    },
+    {
+      "axis": "visual_flow",
+      "score": 4,
+      "evidence": "余白・写真・罫線で静かな流れ",
+      "scope": "静止画",
+      "confidence": "高",
+      "unknowns": "モーション"
+    },
+    {
+      "axis": "message_copy",
+      "score": 5,
+      "evidence": "継続関係を短い主コピーで表現",
+      "scope": "主要コピー",
+      "confidence": "高",
+      "unknowns": "患者調査"
+    },
+    {
+      "axis": "trust_safety",
+      "score": 4,
+      "evidence": "院内・診療・アクセスは十分、資格証拠は要確認",
+      "scope": "公開画面",
+      "confidence": "中",
+      "unknowns": "資格・料金"
+    },
+    {
+      "axis": "color_legibility",
+      "score": 5,
+      "evidence": "白地と黒文字の高い可読性",
+      "scope": "主要Section",
+      "confidence": "高",
+      "unknowns": "実測"
+    },
+    {
+      "axis": "layout_spacing",
+      "score": 5,
+      "evidence": "余白が医療の緊張を緩和",
+      "scope": "PC/SP",
+      "confidence": "高",
+      "unknowns": "CSS実測"
+    },
+    {
+      "axis": "visual_brand",
+      "score": 4,
+      "evidence": "縦組み風見出しと静かな写真で識別",
+      "scope": "全体",
+      "confidence": "高",
+      "unknowns": "ブランド規定"
+    },
+    {
+      "axis": "implementation_reuse",
+      "score": 5,
+      "evidence": "標準Widgetでほぼ再現可能",
+      "scope": "主要Section",
+      "confidence": "高",
+      "unknowns": "縦書き表現"
+    }
+  ],
+  "cbs_status": "candidate_pending_user_approval",
+  "generated_at": "2026-11-08T01:30:00.000+09:00"
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0061",
+  "media_type": "WB",
+  "asset_type": "Web",
+  "title": "株式会社SmartHR 採用サイト",
+  "source_name": "SANKOU!",
+  "source_detail_url": "https://sankoudesign.com/web/smarthr-recruit/",
+  "capture_url": "https://recruit.smarthr.co.jp/",
+  "official_url": "https://recruit.smarthr.co.jp/",
+  "analysis_status": "completed_and_validated",
+  "analysis_score": 96,
+  "notion_status": "pending_weekly_sync",
+  "notion_page_url": "https://app.notion.com/p/40d24d4fa67181d8843cd58065ef6b10",
+  "dropbox_status": "pending_weekly_sync",
+  "dropbox_path": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/selected/WB-0061-smarthr-recruit",
+  "analysis_version": "drs-deep-1.0+dis-1.0",
+  "source_analysis_ref": "candidates/non-lp/lightweight-analysis.json#analyses.WB-0061",
+  "section_coverage": {
+    "required": 6,
+    "analyzed": 6,
+    "missing": []
+  },
+  "dis_scores": [
+    {
+      "axis": "purpose_fit",
+      "score": 5,
+      "evidence": "採用目的と社会変革メッセージが一貫",
+      "scope": "全ページ",
+      "confidence": "高",
+      "unknowns": "応募フォーム以降"
+    },
+    {
+      "axis": "information_hierarchy",
+      "score": 5,
+      "evidence": "課題→会社→未来→Facts→接点の順序",
+      "scope": "PC/SP全体",
+      "confidence": "高",
+      "unknowns": "動的メニュー"
+    },
+    {
+      "axis": "visual_flow",
+      "score": 4,
+      "evidence": "大見出し・カード・数字でリズムを形成",
+      "scope": "PC/SP静止画",
+      "confidence": "高",
+      "unknowns": "アニメーション"
+    },
+    {
+      "axis": "message_copy",
+      "score": 5,
+      "evidence": "仕事と社会変革を直結する主コピー",
+      "scope": "主要コピー",
+      "confidence": "高",
+      "unknowns": "A/B結果"
+    },
+    {
+      "axis": "trust_safety",
+      "score": 4,
+      "evidence": "Deck・数値・写真・記事の多層証拠",
+      "scope": "公開画面",
+      "confidence": "中",
+      "unknowns": "数値更新日"
+    },
+    {
+      "axis": "color_legibility",
+      "score": 4,
+      "evidence": "淡色面と濃色文字で可読性を維持",
+      "scope": "主要Section",
+      "confidence": "高",
+      "unknowns": "コントラスト実測"
+    },
+    {
+      "axis": "layout_spacing",
+      "score": 4,
+      "evidence": "大余白とカード反復が長尺を整理",
+      "scope": "PC/SP",
+      "confidence": "高",
+      "unknowns": "CSS実測"
+    },
+    {
+      "axis": "visual_brand",
+      "score": 5,
+      "evidence": "グラデーションと太字が採用ブランドを統一",
+      "scope": "全体",
+      "confidence": "高",
+      "unknowns": "ブランド規定"
+    },
+    {
+      "axis": "implementation_reuse",
+      "score": 5,
+      "evidence": "カード・Facts・記事一覧が標準Widgetで再現可能",
+      "scope": "主要Section",
+      "confidence": "高",
+      "unknowns": "動的CMS配線"
+    }
+  ],
+  "cbs_status": "candidate_pending_user_approval",
+  "generated_at": "2026-11-08T01:30:00.000+09:00"
+}

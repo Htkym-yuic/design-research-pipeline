@@ -1,64 +1,71 @@
 {
   "schema_version": "drs-deep-selection-1.0",
-  "runDate": "2026-11-01",
+  "runDate": "2026-11-08",
   "weeklyTop3": [
     {
-      "id": "WB-0049",
+      "id": "WB-0061",
       "status": "selected_for_non_lp_deep_analysis",
-      "reason": "商品一覧を先に置かず、スタイリング人物、靴下の接写、商品バリエーション、購入CTAを1つのLOOKごとに反復する編集型EC構造が、ファッション・雑貨の文脈販売へ転用しやすい。"
+      "reason": "社会課題を起点に、会社の現在地、未来、数値証拠、イベント・メディアへ進む採用ストーリーが明快で、採用LPや企業サイトへ転用できる説得構造が最も強い。"
     },
     {
-      "id": "WB-0052",
+      "id": "WB-0067",
       "status": "selected_for_non_lp_deep_analysis",
-      "reason": "強いイラストFVから、趣旨、登壇者、会場証拠、概要、チケット、FAQ、関連イベント、スポンサーへ順に落とし込むため、カンファレンスやセミナーの募集設計として再利用価値が高い。"
+      "reason": "教育企業のDX組織を、Digital Humanという思想、組織・働き方、社員インタビュー、外部記事へ短いページで接続し、採用と企業変革を同時に伝える構造が希少。"
     },
     {
-      "id": "WB-0054",
+      "id": "WB-0070",
       "status": "selected_for_non_lp_deep_analysis",
-      "reason": "抽象的なキャリア不安を共感コピーで受け止め、目的の異なる2サービスへ分岐し、成果数値、利用者の声、記事、FAQ、外部相談先へ段階的に接続するため、無形サービスのCV設計として学習価値が高い。"
+      "reason": "医療サイトで強い販促を避け、理念、医院の特徴、診療内容、2院のアクセス、ニュース、連絡先を静かな編集デザインで整理しており、信頼優先のサービス設計を補える。"
     }
   ],
   "selected": [
     {
-      "id": "WB-0049",
+      "id": "WB-0061",
       "type": "WB",
-      "title": "KUTSUSHITAYA × FUDGE.jp SPECIAL SNAP｜この秋は、レトロな靴下が気分でして。",
+      "title": "株式会社SmartHR 採用サイト",
       "source": "SANKOU!",
-      "url": "https://tabio.com/blogs/features/friendsnap2026",
-      "reason": "商品一覧を先に置かず、スタイリング人物、靴下の接写、商品バリエーション、購入CTAを1つのLOOKごとに反復する編集型EC構造が、ファッション・雑貨の文脈販売へ転用しやすい。 PC/SP画像とElementor一次設計が揃っている。"
+      "url": "https://recruit.smarthr.co.jp/",
+      "reason": "社会課題を起点に、会社の現在地、未来、数値証拠、イベント・メディアへ進む採用ストーリーが明快で、採用LPや企業サイトへ転用できる説得構造が最も強い。 PC/SP画像と日次脳内実装が揃っている。"
     },
     {
-      "id": "WB-0052",
+      "id": "WB-0067",
       "type": "WB",
-      "title": "iDID Day 2026",
+      "title": "Kyoshin Digital Academy",
       "source": "SANKOU!",
-      "url": "https://day2026.idid.team/",
-      "reason": "強いイラストFVから、趣旨、登壇者、会場証拠、概要、チケット、FAQ、関連イベント、スポンサーへ順に落とし込むため、カンファレンスやセミナーの募集設計として再利用価値が高い。 PC/SP画像とElementor一次設計が揃っている。"
+      "url": "https://digital-academy.kyoshin.co.jp/",
+      "reason": "教育企業のDX組織を、Digital Humanという思想、組織・働き方、社員インタビュー、外部記事へ短いページで接続し、採用と企業変革を同時に伝える構造が希少。 PC/SP画像と日次脳内実装が揃っている。"
     },
     {
-      "id": "WB-0054",
+      "id": "WB-0070",
       "type": "WB",
-      "title": "PERSOL MIRAIZ｜納得の“はたらく未来”支援サービス",
+      "title": "桜井歯科医院",
       "source": "SANKOU!",
-      "url": "https://miraiz-persol.jp/",
-      "reason": "抽象的なキャリア不安を共感コピーで受け止め、目的の異なる2サービスへ分岐し、成果数値、利用者の声、記事、FAQ、外部相談先へ段階的に接続するため、無形サービスのCV設計として学習価値が高い。 PC/SP画像とElementor一次設計が揃っている。"
+      "url": "https://www.dental-sakurai.com/",
+      "reason": "医療サイトで強い販促を避け、理念、医院の特徴、診療内容、2院のアクセス、ニュース、連絡先を静かな編集デザインで整理しており、信頼優先のサービス設計を補える。 PC/SP画像と日次脳内実装が揃っている。"
+    }
+  ],
+  "next": [
+    {
+      "id": "WB-0068",
+      "status": "next_candidate",
+      "reason": "ファッションECの編集型ビジュアル"
+    },
+    {
+      "id": "WB-0069",
+      "status": "next_candidate",
+      "reason": "採用・企業サイトの情報設計"
+    },
+    {
+      "id": "WB-0065",
+      "status": "next_candidate",
+      "reason": "飲食・店舗ブランドの実務転用"
     }
   ],
   "excluded": [
     {
-      "id": "WB-0048",
+      "id": "WB-0066",
       "status": "recapture_wait",
-      "reason": "First Viewが黒い読み込み状態"
-    },
-    {
-      "id": "WB-0053",
-      "status": "recapture_wait",
-      "reason": "Access Denied画面"
-    },
-    {
-      "id": "WB-0056",
-      "status": "recapture_wait",
-      "reason": "大きなモーダルが画面を遮蔽"
+      "reason": "スクリーンショット取得タイムアウト"
     }
   ]
 }

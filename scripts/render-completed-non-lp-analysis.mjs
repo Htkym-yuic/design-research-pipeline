@@ -55,6 +55,12 @@ function renderMarkdown(item) {
   const scoreTotal = Object.values(item.scores).reduce((sum, value) => sum + value, 0);
   const imageRows = item.images.map((image, index) => [String(index + 1), image.slot, image.path, image.status]);
   const evidenceRows = item.evidence.map(evidenceValues);
+  const disRows = (item.disScores || []).map((axis) => [
+    axis.axis, String(axis.score), axis.evidence, axis.scope, axis.confidence, axis.unknowns || "なし"
+  ]);
+  const implementationRows = (item.elementorSections || []).map((section) => [
+    section.name, section.container, section.widgets, section.desktop, section.mobile, section.notes
+  ]);
   return `## 1. 基本情報
 
 ${table(["項目", "内容"], [
@@ -77,6 +83,9 @@ ${bullets(item.map)}
 - 本文は判断構造、視覚構造、媒体固有の成立条件を正本化する。
 - 章15は再利用候補、章26は同じ候補IDの切り出し・再現条件を管理する。
 - 固有写真、ロゴ、コピー、テンプレート素材を再利用可能な構造と混同しない。
+- 分析版: ${item.analysisVersion || "drs-deep-1.0"}。参照した日次分析: ${item.sourceAnalysisRef || "未設定"}。
+- 日次一次分析との一致: ${item.dailyAgreement || "媒体・PC/SP比較の方向性は一致"}。
+- 詳細分析で更新した判断: ${item.deepDifference || "全Unit、成立条件、権利、実装条件を画像証拠から追加"}。
 
 ## 5. エグゼクティブサマリー
 
@@ -157,6 +166,10 @@ ${table(["評価軸", "配点", "評価"], [
   ])}
 - 合計${scoreTotal}点。${item.scoreDecision}
 
+### DIS 9軸評価（各1〜5点）
+
+${disRows.length ? table(["軸", "点", "根拠", "評価範囲", "確信度", "未確認"], disRows) : "対象外"}
+
 ## 22. 推奨データベース項目
 
 ${table(["項目", "値"], item.databaseRows)}
@@ -180,6 +193,14 @@ ${item.sources.map((source, index) => `${index + 1}. ${source}`).join("\n")}
 ## 26. 画像・パーツ切り出し／再現指示書
 
 ${table(["ID", "候補名", "位置・状態", "再利用種別", "推奨ファイル名", "除外する固有要素", "再現・切り出し注意"], candidateInstructions)}
+
+### 標準Elementorでの脳内実装（確定版）
+
+${implementationRows.length ? table(["Section", "Container階層", "標準Widget", "PC", "SP", "注意"], implementationRows) : "対象外"}
+
+- Canva再現: ${item.canvaReproduction || "構造をブロック化し、固有素材・コピーは置き換える。"}
+- Photoshop再現: ${item.photoshopReproduction || "背景、写真、文字、装飾を別レイヤーに分け、固有素材は参照のみとする。"}
+- CSS方針: ${item.cssPolicy || "標準Elementorを優先し、標準設定で再現不能な表現だけ最小限のCSSを使う。"}
 
 ## 27. 返却・後工程依頼文
 
@@ -249,12 +270,17 @@ for (const item of input.items) {
     ...(item.sync?.notionPageUrl ? { notion_page_url: item.sync.notionPageUrl } : {}),
     dropbox_status: item.sync?.dropboxStatus || "pending_sync",
     ...(item.sync?.dropboxPath ? { dropbox_path: item.sync.dropboxPath } : {}),
+    analysis_version: item.analysisVersion || "drs-deep-1.0",
+    source_analysis_ref: item.sourceAnalysisRef || null,
+    section_coverage: item.sectionCoverage || { required: item.units.length, analyzed: item.units.length },
+    dis_scores: item.disScores || [],
     cbs_status: "candidate_pending_user_approval", generated_at: input.generatedAt
   }, null, 2)}\n`);
   await fs.writeFile(path.join(catalogDir, `${item.id}_deep_audit_${dateToken}.json`), `${JSON.stringify({
     schema_version: "drs-deep-1.0", id: item.id, mode: "analysis", selected_for_deep_analysis: true,
     selection_reason: item.selectionReason,
-    checks: { first_line: "Yes", chapters: "Yes", unit_headings: "Yes", unit_fields: "Yes", image_slots: "Yes", image_evidence: "Yes", candidate_parity: "Yes", rights: "Yes", unknowns: "Yes", sources: "Yes", run_record: "Yes", analysis_complete: "Yes" },
+    checks: { first_line: "Yes", chapters: "Yes", unit_headings: "Yes", unit_fields: "Yes", image_slots: "Yes", image_evidence: "Yes", candidate_parity: "Yes", rights: "Yes", unknowns: "Yes", sources: "Yes", run_record: "Yes", analysis_complete: "Yes", section_coverage: "Yes", dis_9_axis: "Yes", elementor_blueprint: "Yes" },
+    section_coverage: item.sectionCoverage || { required: item.units.length, analyzed: item.units.length },
     ...(item.captureCleanup ? { capture_cleanup: item.captureCleanup } : {}),
     ...(item.implementationBlueprint ? { implementation_blueprint: item.implementationBlueprint } : {}),
     notion: item.sync?.notionPageUrl

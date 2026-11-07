@@ -1,0 +1,38 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0067",
+  "mode": "analysis",
+  "selected_for_deep_analysis": true,
+  "selection_reason": "教育企業のDX組織を、Digital Humanという思想、組織・働き方、社員インタビュー、外部記事へ短いページで接続し、採用と企業変革を同時に伝える構造が希少。",
+  "checks": {
+    "first_line": "Yes",
+    "chapters": "Yes",
+    "unit_headings": "Yes",
+    "unit_fields": "Yes",
+    "image_slots": "Yes",
+    "image_evidence": "Yes",
+    "candidate_parity": "Yes",
+    "rights": "Yes",
+    "unknowns": "Yes",
+    "sources": "Yes",
+    "run_record": "Yes",
+    "analysis_complete": "Yes",
+    "section_coverage": "Yes",
+    "dis_9_axis": "Yes",
+    "elementor_blueprint": "Yes"
+  },
+  "section_coverage": {
+    "required": 6,
+    "analyzed": 6,
+    "missing": []
+  },
+  "notion": {
+    "status": "pending_weekly_sync",
+    "page_url": "https://app.notion.com/p/41024d4fa67181459c24eaf6d33bd290"
+  },
+  "dropbox": {
+    "status": "pending_weekly_sync",
+    "path": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/selected/WB-0067-kyoshin-digital-academy"
+  },
+  "cbs": "not_synced_user_approval_required"
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "elementor-blueprint-1.1",
+  "status": "weekly_deep_analysis_confirmed",
+  "id": "WB-0061",
+  "analysis_date": "2026-11-08",
+  "principles": {
+    "standard_elementor_first": true,
+    "atomic_elements": "optional_only",
+    "css": "標準Elementorを優先し、背景グラデーションも標準設定で作る。標準機能で成立しない動き・特殊文字組みだけ最小限のCSSを別記録する。"
+  },
+  "sections": [
+    {
+      "name": "HeaderHero",
+      "container": "page > hero(full width) > hero-inner(row)",
+      "widgets": "Site Logo / Nav Menu / Heading / Image / Button",
+      "desktop": "最小高720、左右2列、背景グラデーション",
+      "mobile": "縦積み、人物を見出し下、ナビはMenu Toggle",
+      "notes": "人物と固有コピーは差替え"
+    },
+    {
+      "name": "IssuesAccordion",
+      "container": "section > inner > issue-grid",
+      "widgets": "Heading / Text Editor / Icon Box または Accordion",
+      "desktop": "4カードの2〜4列",
+      "mobile": "1列またはAccordion",
+      "notes": "標準Border・Radius・Gapで再現"
+    },
+    {
+      "name": "CompanyDeckFuture",
+      "container": "section > inner > media-copy",
+      "widgets": "Heading / Image / Text Editor / Button",
+      "desktop": "資料モックと本文の2列",
+      "mobile": "画像→本文→ボタン",
+      "notes": "重なりは負Marginを使い過ぎない"
+    },
+    {
+      "name": "FactsGrid",
+      "container": "section > inner > facts-grid > fact-card",
+      "widgets": "Heading / Counter / Text Editor",
+      "desktop": "3列グリッド",
+      "mobile": "1〜2列",
+      "notes": "単位はCounter外のTextで管理"
+    },
+    {
+      "name": "EventsMedia",
+      "container": "section > inner > card-grid",
+      "widgets": "Loop Grid / Image / Heading / Text / Button",
+      "desktop": "3列カード",
+      "mobile": "1列または横スクロールなし",
+      "notes": "CMS利用時はLoop Grid"
+    },
+    {
+      "name": "FooterHero",
+      "container": "footer > message > links",
+      "widgets": "Heading / Nav Menu / Icon List / Text",
+      "desktop": "大コピー後にリンク群",
+      "mobile": "縦積み・中央寄せ",
+      "notes": "CSSなしで順序を維持"
+    }
+  ],
+  "pc_sp": {
+    "desktop": "横並び・大余白・原画像の章順",
+    "mobile": "意味順を維持して単列化。タップ対象は44px以上を推奨"
+  },
+  "unconfirmed": [
+    {
+      "target": "Section一覧",
+      "reason": "section_index_not_generated_separately",
+      "next": "必要時にSection画像を生成"
+    },
+    {
+      "target": "動的状態",
+      "reason": "interaction_state_not_captured",
+      "next": "実サイト操作で確認"
+    },
+    {
+      "target": "権利・実績時点",
+      "reason": "license_and_update_date_unverified",
+      "next": "原典と権利者を確認"
+    }
+  ]
+}
