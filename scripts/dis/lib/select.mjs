@@ -36,14 +36,15 @@ export function selectOne(candidates, { weights, minScore, maxCandidates = 5, du
 }
 
 /** 参照元ごとに順番に1件ずつ取り出して並べ替える（先頭の参照元に偏らないようにする）。 */
-export function interleaveBySource(candidates) {
+export function interleaveBySource(candidates, seed = "") {
   const groups = new Map();
   for (const c of candidates) {
     const k = c.sourceKey || "?";
     if (!groups.has(k)) groups.set(k, []);
     groups.get(k).push(c);
   }
-  const lists = [...groups.values()];
+  // 参照元の並び順を日替わりで回す（参照元が多い媒体でも、5候補の枠に毎日異なる参照元が入る）
+  const lists = [...groups.entries()].sort((a, b) => tieHash(seed, a[0]) - tieHash(seed, b[0])).map(([, v]) => v);
   const out = [];
   for (let i = 0; lists.some((l) => i < l.length); i++) for (const l of lists) if (i < l.length) out.push(l[i]);
   return out;

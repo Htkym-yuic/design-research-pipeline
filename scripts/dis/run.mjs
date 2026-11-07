@@ -79,13 +79,15 @@ async function runMedia(media) {
     else {
       const { candidates } = await readJson(`${d}/candidates.json`);
       const usable = candidates.filter((c) => !c.fetchError || c.pageUrl);
-      const res = selectOne(interleaveBySource(candidates), {
+      const valid = candidates.filter((c) => !c.fetchError);
+      const failures = candidates.filter((c) => c.fetchError);
+      const res = selectOne([...interleaveBySource(valid, args.date), ...failures], {
         tieSeed: args.date,
         weights: cfg.scoring.weights, minScore: cfg.minScoreToSelect, maxCandidates: cfg.maxCandidatesPerMedia,
         dupCheck: (c) => known.check(c, { windowDays: cfg.dedupeWindowDays, today: args.date }),
       });
       const sel = res.selected && { ...res.selected, disId };
-      await wj(out, { date: args.date, disId, selected: sel, evaluated: res.evaluated, skippedReason: res.skippedReason ?? null, usableCount: usable.length });
+      await wj(out, { date: args.date, disId, selected: sel, evaluated: res.evaluated, fetchFailures: failures.map((f) => ({ sourceKey: f.sourceKey, sourceDetailUrl: f.sourceDetailUrl, error: f.fetchError })), skippedReason: res.skippedReason ?? null, usableCount: usable.length });
       r.stages.select = sel ? `selected ${sel.brand} (score ${sel.score})` : `SKIP: ${res.skippedReason}`;
     }
   }

@@ -149,7 +149,9 @@
       "name": "81-web",
       "listUrl": "https://81-web.com/",
       "detailPathIncludes": "/",
-      "termsStatus": "unknown"
+      "termsStatus": "known",
+      "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。"
     },
     {
       "key": "ikesai",
@@ -157,7 +159,9 @@
       "name": "IKESAI",
       "listUrl": "https://ikesai.com/",
       "detailPathIncludes": "/",
-      "termsStatus": "unknown"
+      "termsStatus": "known",
+      "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。"
     },
     {
       "key": "kasou",
@@ -165,7 +169,9 @@
       "name": "KASOU",
       "listUrl": "https://kasou.jp/",
       "detailPathIncludes": "/",
-      "termsStatus": "unknown"
+      "termsStatus": "known",
+      "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。"
     },
     {
       "key": "gdweb",
@@ -173,7 +179,9 @@
       "name": "GDWEB DESIGN AWARDS",
       "listUrl": "https://gdweb.design/",
       "detailPathIncludes": "/",
-      "termsStatus": "unknown"
+      "termsStatus": "known",
+      "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。"
     },
     {
       "key": "awwwards",
@@ -181,7 +189,9 @@
       "name": "Awwwards",
       "listUrl": "https://www.awwwards.com/websites/",
       "detailPathIncludes": "/sites/",
-      "termsStatus": "unknown"
+      "termsStatus": "known",
+      "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。"
     },
     {
       "key": "cssda",
@@ -189,7 +199,9 @@
       "name": "CSS Design Awards",
       "listUrl": "https://www.cssdesignawards.com/",
       "detailPathIncludes": "/sites/",
-      "termsStatus": "unknown"
+      "termsStatus": "known",
+      "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。"
     },
     {
       "key": "siteinspire",
@@ -197,7 +209,9 @@
       "name": "SiteInspire",
       "listUrl": "https://www.siteinspire.com/",
       "detailPathIncludes": "/websites/",
-      "termsStatus": "unknown"
+      "termsStatus": "known",
+      "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。"
     },
     {
       "key": "landbook",
@@ -205,7 +219,9 @@
       "name": "Land-book",
       "listUrl": "https://land-book.com/",
       "detailPathIncludes": "/websites/",
-      "termsStatus": "unknown"
+      "termsStatus": "known",
+      "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。"
     },
     {
       "key": "onepagelove",
@@ -213,7 +229,9 @@
       "name": "One Page Love",
       "listUrl": "https://onepagelove.com/",
       "detailPathIncludes": "/",
-      "termsStatus": "unknown"
+      "termsStatus": "known",
+      "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。"
     },
     {
       "key": "lapaninja",
@@ -221,7 +239,9 @@
       "name": "Lapa Ninja",
       "listUrl": "https://www.lapaninja.com/",
       "detailPathIncludes": "/",
-      "termsStatus": "unknown"
+      "termsStatus": "known",
+      "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。"
     },
     {
       "key": "banner-library",

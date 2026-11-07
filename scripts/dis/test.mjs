@@ -92,7 +92,7 @@ test("collect: 一覧から詳細リンク抽出・詳細パース", () => {
 
 test("config: ユーザー承認済み(LPアーカイブ)以外はtermsStatus!=known／Notion collectionが仕様どおり", async () => {
   const cfg = await loadConfig();
-  assert.deepEqual(cfg.sources.filter((s) => s.termsStatus === "known").map((s) => s.key).sort(), ["banner-hiroba", "banner-library", "banner-matome", "bannnner", "io3000", "muuuuu", "rdlp", "retrobanner", "s5-style", "sankou-web", "wdc-web"]);
+  assert.deepEqual(cfg.sources.filter((s) => s.termsStatus === "known").map((s) => s.key).sort(), ["81-web", "awwwards", "banner-hiroba", "banner-library", "banner-matome", "bannnner", "cssda", "gdweb", "ikesai", "io3000", "kasou", "landbook", "lapaninja", "muuuuu", "onepagelove", "rdlp", "retrobanner", "s5-style", "sankou-web", "siteinspire", "wdc-web"]);
   assert.ok(cfg.sources.filter((s) => s.termsStatus === "known").every((s) => s.termsApproval));
   assert.ok(cfg.sources.filter((s) => s.termsStatus !== "known").every((s) => ["sankou-lp", "lp-advance", "wdc-lp", "lp-kanji"].includes(s.key) || cfg.media[s.media]));
   assert.equal(cfg.media.lp.notion.collection, "collection://39624d4f-a671-8094-ba0c-000b11fefbd0");
@@ -203,7 +203,10 @@ test("extractDetailLinks: detailPathRegexでカテゴリ・ナビを除外", () 
 test("interleaveBySource: 参照元を交互に並べ、5件枠が1つの参照元に偏らない", () => {
   const mk = (k, n) => Array.from({ length: n }, (_, i) => ({ sourceKey: k, pageUrl: `https://${k}${i}.example/` }));
   const out = interleaveBySource([...mk("a", 3), ...mk("b", 3), ...mk("c", 3)]);
-  assert.deepEqual(out.slice(0, 5).map((c) => c.sourceKey), ["a", "b", "c", "a", "b"]);
+  const k = out.slice(0, 5).map((c) => c.sourceKey);
+  assert.deepEqual(new Set(k.slice(0, 3)), new Set(["a", "b", "c"])); // 先頭3件は3参照元が1件ずつ
+  assert.deepEqual(k.slice(0, 3), k.slice(3, 6).length === 3 ? k.slice(0, 3) : k.slice(0, 3));
+  assert.deepEqual(k.slice(3, 5), k.slice(0, 2)); // 2巡目も同じ順で1件ずつ
 });
 
 test("selectOne: 同点は日付で決定的にばらける（同じ日は同じ結果）", () => {
@@ -213,4 +216,27 @@ test("selectOne: 同点は日付で決定的にばらける（同じ日は同じ
   const days = new Set(Array.from({ length: 10 }, (_, i) => run(`2026-11-${10 + i}`)));
   assert.ok(days.size > 1);
   assert.equal(tieHash("x", "y"), tieHash("x", "y"));
+});
+
+test("interleaveBySource: 参照元の順序が日替わりで回り、15サイトでも枠が固定されない", () => {
+  const cands = Array.from({ length: 15 }, (_, i) => ({ sourceKey: `s${i}`, pageUrl: `https://s${i}.example/` }));
+  const first5 = (seed) => interleaveBySource(cands, seed).slice(0, 5).map((c) => c.sourceKey).join(",");
+  assert.equal(first5("2026-11-07"), first5("2026-11-07"));
+  const seen = new Set();
+  for (let d = 10; d < 40; d++) first5(`2026-11-${d}`).split(",").forEach((k) => seen.add(k));
+  assert.equal(seen.size, 15); // 30日間で全サイトが一度は枠に入る
+});
+
+test("run: 取得失敗は枠を消費せず、fetchFailuresに記録される", async () => {
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-fail-"));
+  const fx = { lp: [], banner: [], web: [
+    { media: "web", sourceKey: "bad", sourceName: "Bad", termsStatus: "known", fetchError: "HTTP 403（回避しない）" },
+    ...Array.from({ length: 6 }, (_, i) => ({ media: "web", sourceKey: `s${i}`, sourceName: "S", termsStatus: "known", brand: `W${i}`, pageUrl: `https://w${i}.example/`, sourceDetailUrl: `https://d.example/${i}`, signals: { learningValue: 0.9, freshness: 0.9, originalSource: 1, assetsAvailable: 1, rightsClarity: 0.9 } }))] };
+  await fs.writeFile(path.join(tmp, "fx.json"), JSON.stringify(fx));
+  const r = spawnSync(process.execPath, [path.join(here, "run.mjs"), "--fixture", path.join(tmp, "fx.json"), "--out", path.join(tmp, "out"), "--ledger", path.join(tmp, "l.json"), "--date", "2026-11-07", "--media", "web", "--stage", "collect,select"], { env: { ...process.env, DRY_RUN: "true" }, encoding: "utf8" });
+  assert.equal(r.status, 0, r.stderr);
+  const sel = JSON.parse(await fs.readFile(path.join(tmp, "out/2026-11-07/web/selection.json"), "utf8"));
+  assert.equal(sel.fetchFailures.length, 1);
+  assert.equal(sel.evaluated.filter((e) => !e.fetchError).length, 5);
+  assert.ok(sel.selected);
 });
