@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "dis-annotation-1.0",
+  "analysisRef": "DIS-WB-20261108",
+  "method": "目測の概算。PC画像（バナーは原画像）を基準に、Unitの位置を、画像の上下の範囲で示した。SPの注釈は未付与",
+  "annotations": [
+    {
+      "id": "N1",
+      "unitId": "U1",
+      "image": "pc_01.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.15
+      },
+      "label": "お知らせバー＋ヘッダー",
+      "evidence": "PC pc_01 最上部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N2",
+      "unitId": "U2",
+      "image": "pc_01.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "ヒーロー",
+      "evidence": "pc_01 上部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N3",
+      "unitId": "U3",
+      "image": "pc_01.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.3,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "カテゴリのストリップ",
+      "evidence": "pc_01 中段 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N4",
+      "unitId": "U4",
+      "image": "pc_01.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.6,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "流れる標語",
+      "evidence": "pc_01 下部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N5",
+      "unitId": "U5",
+      "image": "pc_01.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.6,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "商品の紹介（Jelly tote）",
+      "evidence": "pc_01 下部〜pc_03 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N6",
+      "unitId": "U6",
+      "image": "pc_04.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "バナーのスライダー",
+      "evidence": "pc_04 上部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N7",
+      "unitId": "U7",
+      "image": "pc_04.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.3,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "商品の紹介（キャップ・スウェット）と大きな漢字",
+      "evidence": "pc_04 中段〜pc_05 上部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N8",
+      "unitId": "U8",
+      "image": "pc_05.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.3,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "GIFTの帯",
+      "evidence": "pc_05 中段 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N9",
+      "unitId": "U9",
+      "image": "pc_05.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.6,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "商品の紹介（Anything tote）",
+      "evidence": "pc_05 下部〜pc_06 上部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N10",
+      "unitId": "U10",
+      "image": "pc_06.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.6,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "カテゴリのカルーセル",
+      "evidence": "pc_06 下部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N11",
+      "unitId": "U11",
+      "image": "pc_07.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "label": "フッター",
+      "evidence": "pc_07 の観察（目測の位置）",
+      "confidence": "low"
+    }
+  ]
+}

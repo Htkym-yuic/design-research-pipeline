@@ -706,3 +706,31 @@ test("toNotionJpeg: 約720px幅（拡大しない）・5MB未満", async () => {
   assert.equal((await sharp(path.join(tmp, "b.jpg")).metadata()).width, 375);
   assert.ok((await fs.stat(path.join(tmp, "a.jpg"))).size < 5 * 1024 * 1024);
 });
+
+test("migrate v1→v2: 登録済み6件が、原本の9軸・注釈・検証を満たす形に移行できる（旧分析は変更しない）", async () => {
+  const { migrate, bboxFromRef } = await import("./migrate-v1-to-v2.mjs");
+  const root = path.resolve(here, "../..");
+  const overlays = JSON.parse(await fs.readFile(path.join(here, "migration/overlays.json"), "utf8"));
+  assert.equal(Object.keys(overlays).length, 6);
+  for (const [id, ov] of Object.entries(overlays)) {
+    const date = id.endsWith("20261107") ? "2026-11-07" : "2026-11-08";
+    const v1 = JSON.parse(await fs.readFile(path.join(root, "candidates/dis", date, `${id}.analysis.json`), "utf8"));
+    const before = JSON.stringify(v1);
+    const { v2, annotations } = migrate(v1, ov, { now: new Date("2026-11-09T00:00:00Z") });
+    assert.deepEqual(validateAnalysis(v2).errors, [], id);
+    assert.deepEqual(validateAnnotations(annotations, v2).errors, [], id);
+    assert.equal(JSON.stringify(v1), before); // 旧分析は変更しない
+    assert.equal(v2.units.length, v1.units.length);
+    assert.deepEqual(v2.axes.map((x) => x.key), AXIS_KEYS);
+    assert.ok(v2.axes.every((x) => x.score <= 5));
+    // 統合した「配色・可読性」は、旧2軸の平均の切り捨て
+    const o = (n) => v1.axes.find((x) => x.axis === n).score;
+    assert.equal(v2.axes.find((x) => x.key === "color_legibility").score, Math.floor((o("配色") + o("タイポグラフィ")) / 2));
+    // 保存済みの出力が、最新の移行結果と一致している
+    const saved = JSON.parse(await fs.readFile(path.join(root, "candidates/dis", date, `${id}.v2.analysis.json`), "utf8"));
+    assert.deepEqual(saved.axes, v2.axes);
+  }
+  assert.deepEqual(bboxFromRef("pc_02 下部〜pc_03 上部"), { image: "pc_02.jpg", bbox: { x: 0, y: 0.6, w: 1, h: 0.4 } });
+  assert.deepEqual(bboxFromRef("PC pc_01 最上部／SP sp_01 最上部").bbox, { x: 0, y: 0, w: 1, h: 0.15 });
+  assert.equal(bboxFromRef("PC 後半（ピンクのパネル）"), null);
+});

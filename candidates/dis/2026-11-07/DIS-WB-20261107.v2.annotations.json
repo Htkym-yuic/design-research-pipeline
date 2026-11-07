@@ -1,0 +1,203 @@
+{
+  "schemaVersion": "dis-annotation-1.0",
+  "analysisRef": "DIS-WB-20261107",
+  "method": "目測の概算。PC画像（バナーは原画像）を基準に、Unitの位置を、画像の上下の範囲で示した。SPの注釈は未付与",
+  "annotations": [
+    {
+      "id": "N1",
+      "unitId": "U1",
+      "image": "pc_01.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.15
+      },
+      "label": "ナビゲーション",
+      "evidence": "pc_01 最上部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N2",
+      "unitId": "U2",
+      "image": "pc_01.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "ファーストビュー（ワードマーク）",
+      "evidence": "pc_01 上部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N3",
+      "unitId": "U3",
+      "image": "pc_01.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.3,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "価値提案＋説明",
+      "evidence": "pc_01 中段 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N4",
+      "unitId": "U4",
+      "image": "pc_01.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.3,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "取引先ロゴ帯",
+      "evidence": "pc_01 中段〜下段 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N5",
+      "unitId": "U5",
+      "image": "pc_01.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.6,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "作例ビジュアル（2枚）",
+      "evidence": "pc_01 下段 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N6",
+      "unitId": "U6",
+      "image": "pc_01.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.85,
+        "w": 1,
+        "h": 0.15
+      },
+      "label": "見出し「Systems are our thing, but people are the point.」",
+      "evidence": "pc_01 最下部〜pc_02 上部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N7",
+      "unitId": "U7",
+      "image": "pc_02.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "Services（サービス一覧）",
+      "evidence": "pc_02 上部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N8",
+      "unitId": "U8",
+      "image": "pc_02.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.3,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "顧客の声",
+      "evidence": "pc_02 中段 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N9",
+      "unitId": "U9",
+      "image": "pc_02.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.6,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "チーム紹介の導入",
+      "evidence": "pc_02 下部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N10",
+      "unitId": "U10",
+      "image": "pc_03.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "Our team",
+      "evidence": "pc_03 上部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N11",
+      "unitId": "U11",
+      "image": "pc_03.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.3,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "実績数値",
+      "evidence": "pc_03 中段 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N12",
+      "unitId": "U12",
+      "image": "pc_03.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.6,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "Notes on design systems／Latest posts",
+      "evidence": "pc_03 下部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N13",
+      "unitId": "U13",
+      "image": "pc_04.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "問い合わせ（Let’s work together）",
+      "evidence": "pc_04 上部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N14",
+      "unitId": "U14",
+      "image": "pc_04.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.6,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "フッター",
+      "evidence": "pc_04 下部 の観察（目測の位置）",
+      "confidence": "low"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "dis-annotation-1.0",
+  "analysisRef": "DIS-BN-20261107",
+  "method": "目測の概算。PC画像（バナーは原画像）を基準に、Unitの位置を、画像の上下の範囲で示した。SPの注釈は未付与",
+  "annotations": [
+    {
+      "id": "N1",
+      "unitId": "U1",
+      "image": "banner.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "label": "キービジュアル",
+      "evidence": "全面 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N2",
+      "unitId": "U2",
+      "image": "banner.jpg",
+      "bbox": {
+        "x": 0.02,
+        "y": 0.05,
+        "w": 0.13,
+        "h": 0.45
+      },
+      "label": "キャッチコピー",
+      "evidence": "左上（縦書き） の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N3",
+      "unitId": "U3",
+      "image": "banner.jpg",
+      "bbox": {
+        "x": 0.72,
+        "y": 0.02,
+        "w": 0.26,
+        "h": 0.1
+      },
+      "label": "発売元ロゴ",
+      "evidence": "右上 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N4",
+      "unitId": "U4",
+      "image": "banner.jpg",
+      "bbox": {
+        "x": 0.1,
+        "y": 0.62,
+        "w": 0.45,
+        "h": 0.2
+      },
+      "label": "タイトルロゴ",
+      "evidence": "左下〜中央下 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N5",
+      "unitId": "U5",
+      "image": "banner.jpg",
+      "bbox": {
+        "x": 0.03,
+        "y": 0.84,
+        "w": 0.28,
+        "h": 0.12
+      },
+      "label": "CTAバッジ「体験版配信中」",
+      "evidence": "左下 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N6",
+      "unitId": "U6",
+      "image": "banner.jpg",
+      "bbox": {
+        "x": 0.6,
+        "y": 0.84,
+        "w": 0.38,
+        "h": 0.12
+      },
+      "label": "対応プラットフォーム",
+      "evidence": "右下 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N7",
+      "unitId": "U7",
+      "image": "banner.jpg",
+      "bbox": {
+        "x": 0.2,
+        "y": 0.96,
+        "w": 0.6,
+        "h": 0.03
+      },
+      "label": "著作権表記",
+      "evidence": "最下部 の観察（目測の位置）",
+      "confidence": "low"
+    }
+  ]
+}

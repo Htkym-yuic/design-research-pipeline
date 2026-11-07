@@ -1,0 +1,589 @@
+{
+  "schemaVersion": "dis-2.0",
+  "analysisVersion": "2.0",
+  "sourceAnalysisRef": "DIS-WB-20261107 分析v1（dis-1.0・旧9軸）。登録済みの 03_Analysis/analysis.json",
+  "status": "complete",
+  "reviewState": "未レビュー",
+  "generatedAt": "2026-11-07T22:22:04.380Z",
+  "media": "web",
+  "disId": "DIS-WB-20261107",
+  "pageUrl": "https://www.baselinedesign.com/",
+  "brand": "Baseline Design",
+  "sourceImageRefs": [
+    "01_Original/pc_full.png",
+    "01_Original/sp_full.png",
+    "02_Preview/sections/pc_01.jpg〜pc_04.jpg",
+    "02_Preview/sections/sp_01.jpg〜sp_05.jpg"
+  ],
+  "summary": "デザインシステムの支援・研修を提供する小規模チームの英語コーポレートサイト（ページ下部に「Made by hand in Framer」の表記）。PCでは巨大なセリフ体のワードマークで始め、SPでは価値提案の見出しを主役にし、取引先ロゴ→サービス→顧客の声→チーム→実績数値→記事→問い合わせの順に、単色基調で縦に積む。PC・SPともに最初からフッターまで画像で確認済み。",
+  "selectionReason": "複数参照元の候補（スコア同点）のうち、日付で決定的に選ばれた1件（I/O 3000掲載）。学習価値の比較は未実施。参考にできる点: 文字だけで階層を作る、装飾の少ない構成。",
+  "sectionCoverage": {
+    "sourceUnitCount": 14,
+    "analyzedUnitCount": 14
+  },
+  "units": [
+    {
+      "id": "U1",
+      "name": "ナビゲーション",
+      "sectionRef": "pc_01 最上部",
+      "role": "主要ページへの最小限の入口",
+      "observation": "右上に小さな文字のリンク4つ（Consulting／Individual & Team Training／Posts／Say hello）。「—」で最後のリンクを区切っている。",
+      "evidence": "pc_01 最上部 の画像で確認できる内容（観察欄のとおり）",
+      "confidence": "medium",
+      "reuseStructure": "ロゴなし・右上に小さなリンク",
+      "mustReplace": [
+        "リンクの名称"
+      ],
+      "unknowns": [
+        {
+          "item": "実寸・色・フォントの数値",
+          "impact": "再現時は目測で代用することになる",
+          "nextCheck": "実機またはデザインツールで計測する"
+        },
+        {
+          "item": "リンク先・開閉やスクロールなどの動き",
+          "impact": "導線・操作性の評価が静止画の範囲に限られる",
+          "nextCheck": "実機でクリック・スクロールして確認する"
+        }
+      ],
+      "annotation": "ロゴは置かず、リンクだけを控えめに配置。ワードマークを主役にするための省略。 【SP】ナビは「Say hello」「Links」の2つに減り、左上に小さなワードマーク「Baseline」が入る（PCはナビ4つでロゴなし）。"
+    },
+    {
+      "id": "U2",
+      "name": "ファーストビュー（ワードマーク）",
+      "sectionRef": "pc_01 上部",
+      "role": "ブランド名そのものを視覚要素にする",
+      "observation": "画面幅いっぱいの巨大な太いセリフ体「Baseline」。濃い黒文字、オフホワイト背景。",
+      "evidence": "pc_01 上部 の画像で確認できる内容（観察欄のとおり）",
+      "confidence": "medium",
+      "reuseStructure": "画面幅いっぱいのワードマーク",
+      "mustReplace": [
+        "ワードマークの書体",
+        "名称"
+      ],
+      "unknowns": [
+        {
+          "item": "実寸・色・フォントの数値",
+          "impact": "再現時は目測で代用することになる",
+          "nextCheck": "実機またはデザインツールで計測する"
+        }
+      ],
+      "annotation": "ブランド名そのものがビジュアル。画像や装飾を使わず、文字の大きさで印象を作る。 【SP】FVに巨大ワードマークはなく、価値提案の見出し（太いサンセリフ、5行）が最上部の主役になる。ワードマークはフッターで大きく使われる。"
+    },
+    {
+      "id": "U3",
+      "name": "価値提案＋説明",
+      "sectionRef": "pc_01 中段",
+      "role": "何をする会社かを示し、行動へ誘う",
+      "observation": "左に太いサンセリフの3行コピー「Systems, strategy, and training for teams building what comes next.」と、下線付きのテキストリンク「Start a project」。右にセリフ体の本文2段落。",
+      "evidence": "pc_01 中段 の画像で確認できる内容（観察欄のとおり）",
+      "confidence": "medium",
+      "reuseStructure": "左に要点見出し、右に補足の2カラム＋下線リンク",
+      "mustReplace": [
+        "コピー"
+      ],
+      "unknowns": [
+        {
+          "item": "実寸・色・フォントの数値",
+          "impact": "再現時は目測で代用することになる",
+          "nextCheck": "実機またはデザインツールで計測する"
+        },
+        {
+          "item": "リンク先・開閉やスクロールなどの動き",
+          "impact": "導線・操作性の評価が静止画の範囲に限られる",
+          "nextCheck": "実機でクリック・スクロールして確認する"
+        }
+      ],
+      "annotation": "2カラム。左が要点（見出し）、右が補足（本文）。行動導線は小さな下線リンク1つのみ。 【SP】見出し→下線リンク「Start a project」→本文2段落の1カラム縦積み。リンクは見出しの直下に移動。"
+    },
+    {
+      "id": "U4",
+      "name": "取引先ロゴ帯",
+      "sectionRef": "pc_01 中段〜下段",
+      "role": "取引先ロゴで信頼を示す",
+      "observation": "グレー一色のロゴを横一列に並べた帯（「CNN」など文字が読めるものを含む）。左右の端が薄くフェードしている。横に流れる動きがあるかは静止画では不明。",
+      "evidence": "pc_01 中段〜下段 の画像で確認できる内容（観察欄のとおり）",
+      "confidence": "low",
+      "reuseStructure": "グレー単色のロゴ帯（端はフェード）",
+      "mustReplace": [
+        "取引先ロゴ"
+      ],
+      "unknowns": [
+        {
+          "item": "実寸・色・フォントの数値",
+          "impact": "再現時は目測で代用することになる",
+          "nextCheck": "実機またはデザインツールで計測する"
+        }
+      ],
+      "annotation": "ロゴを単色にして揃え、信頼性を示す。フェードで端を処理している。 【SP】ロゴは4個（グレー）のみ見え、横に流れる帯の続きは画面外。"
+    },
+    {
+      "id": "U5",
+      "name": "作例ビジュアル（2枚）",
+      "sectionRef": "pc_01 下段",
+      "role": "制作現場の雰囲気を切り抜きで見せる",
+      "observation": "同じ高さの2枚の画像を横並び。左は緑の帯と暗色の角丸の中に大きなセリフ体の「Cont…」（途中で切れる）と、青い選択枠・斜線の模様（デザインツールの画面に見える）。右は黒地に薄紫の文字の一部（ベクターの制御点が見える）。どちらも枠からはみ出して切れている。",
+      "evidence": "pc_01 下段 の画像で確認できる内容（観察欄のとおり）",
+      "confidence": "low",
+      "reuseStructure": "同じ高さの2枚を横並び・はみ出し",
+      "mustReplace": [
+        "作例の画像"
+      ],
+      "unknowns": [
+        {
+          "item": "実寸・色・フォントの数値",
+          "impact": "再現時は目測で代用することになる",
+          "nextCheck": "実機またはデザインツールで計測する"
+        }
+      ],
+      "annotation": "デザインシステムの制作現場を、画面の一部の切り抜きで見せる。 【SP】2枚の作例は同じ高さで横並びのまま、さらに端で切れる。"
+    },
+    {
+      "id": "U6",
+      "name": "見出し「Systems are our thing, but people are the point.」",
+      "sectionRef": "pc_01 最下部〜pc_02 上部",
+      "role": "セクションを区切り、姿勢を示す",
+      "observation": "太いサンセリフの2行見出しと、続く本文（チームの状況に応じた依頼の混ぜ方の説明）。",
+      "evidence": "pc_01 最下部〜pc_02 上部 の画像で確認できる内容（観察欄のとおり）",
+      "confidence": "medium",
+      "reuseStructure": "罫線＋大きな見出し＋本文",
+      "mustReplace": [
+        "見出し",
+        "本文"
+      ],
+      "unknowns": [
+        {
+          "item": "実寸・色・フォントの数値",
+          "impact": "再現時は目測で代用することになる",
+          "nextCheck": "実機またはデザインツールで計測する"
+        }
+      ],
+      "annotation": "セクションの区切りは、細い罫線と余白、見出しの大きさだけで作る。"
+    },
+    {
+      "id": "U7",
+      "name": "Services（サービス一覧）",
+      "sectionRef": "pc_02 上部",
+      "role": "提供サービスを分類して列挙する",
+      "observation": "見出し「Services」、左に説明文、右に3つの小見出し（Systems／Strategy／Training）ごとに6項目のリスト（Audits、Architecture、Tokens…／System strategy、Brand + product…／Design tooling、System training…）。「training」「consulting」「schedule a quick call」の下線リンクと、Figma公式パートナーの注記（小さなアイコン付き）。",
+      "evidence": "pc_02 上部 の画像で確認できる内容（観察欄のとおり）",
+      "confidence": "medium",
+      "reuseStructure": "3分類×6項目の箇条書き＋下線リンク",
+      "mustReplace": [
+        "サービス名"
+      ],
+      "unknowns": [
+        {
+          "item": "実寸・色・フォントの数値",
+          "impact": "再現時は目測で代用することになる",
+          "nextCheck": "実機またはデザインツールで計測する"
+        },
+        {
+          "item": "リンク先・開閉やスクロールなどの動き",
+          "impact": "導線・操作性の評価が静止画の範囲に限られる",
+          "nextCheck": "実機でクリック・スクロールして確認する"
+        }
+      ],
+      "annotation": "サービスを18項目の箇条書きで並べ、グレーの小見出しで3分類にする。ボタンは使わず、テキストリンクのみ。 【SP】3つのリストは縦積み（Systems→Strategy→Training）。Figmaパートナーの注記が、説明文の下に移る。"
+    },
+    {
+      "id": "U8",
+      "name": "顧客の声",
+      "sectionRef": "pc_02 中段",
+      "role": "第三者の声で信頼を高める",
+      "observation": "黒い背景の横長ブロック。左上に「The Athletic」のロゴ、白い本文の引用（一文が青緑の蛍光マーカー風に強調）。右に小さな顔写真、氏名、肩書き。",
+      "evidence": "pc_02 中段 の画像で確認できる内容（観察欄のとおり）",
+      "confidence": "medium",
+      "reuseStructure": "黒い面＋ロゴ＋引用＋一文のハイライト＋顔写真・肩書",
+      "mustReplace": [
+        "引用文",
+        "ロゴ",
+        "人物"
+      ],
+      "unknowns": [
+        {
+          "item": "実寸・色・フォントの数値",
+          "impact": "再現時は目測で代用することになる",
+          "nextCheck": "実機またはデザインツールで計測する"
+        }
+      ],
+      "annotation": "ページ内で唯一の黒い面。引用の要点だけをハイライトして読ませる。 【SP】黒いブロックはそのまま全幅。顔写真と氏名が、引用の下に来る（PCは右）。"
+    },
+    {
+      "id": "U9",
+      "name": "チーム紹介の導入",
+      "sectionRef": "pc_02 下部",
+      "role": "小規模であることを強みとして述べる",
+      "observation": "見出し「We keep the team small. Not the thinking.」と、小規模なチームである旨の本文。",
+      "evidence": "pc_02 下部 の画像で確認できる内容（観察欄のとおり）",
+      "confidence": "medium",
+      "reuseStructure": "大見出し＋短い本文",
+      "mustReplace": [
+        "文面"
+      ],
+      "unknowns": [
+        {
+          "item": "実寸・色・フォントの数値",
+          "impact": "再現時は目測で代用することになる",
+          "nextCheck": "実機またはデザインツールで計測する"
+        }
+      ],
+      "annotation": "小さいことを強みとして述べている。"
+    },
+    {
+      "id": "U10",
+      "name": "Our team",
+      "sectionRef": "pc_03 上部",
+      "role": "人を信頼の根拠として見せる",
+      "observation": "左に見出しと説明文、下線リンク「Send us a note」。右に正方形の顔写真付きで4人（氏名・肩書き）が縦に並ぶ。人の間は細い罫線で区切る。",
+      "evidence": "pc_03 上部 の画像で確認できる内容（観察欄のとおり）",
+      "confidence": "medium",
+      "reuseStructure": "左に見出し、右に写真つきの縦リスト",
+      "mustReplace": [
+        "人物写真",
+        "氏名",
+        "肩書"
+      ],
+      "unknowns": [
+        {
+          "item": "実寸・色・フォントの数値",
+          "impact": "再現時は目測で代用することになる",
+          "nextCheck": "実機またはデザインツールで計測する"
+        }
+      ],
+      "annotation": "人物を写真と肩書きで見せ、取引先ではなく「人」を信頼の根拠にしている。 【SP】メンバー4人は、写真・氏名・肩書きの縦リストのまま、1カラム。"
+    },
+    {
+      "id": "U11",
+      "name": "実績数値",
+      "sectionRef": "pc_03 中段",
+      "role": "数字で実績を示す",
+      "observation": "薄いグレーの4つのカードを横並び。大きな数字（1,500+／750+／10+／3,200+、「+」は青緑）と、一行の説明（trainings led since 2020 等）。",
+      "evidence": "pc_03 中段 の画像で確認できる内容（観察欄のとおり）",
+      "confidence": "medium",
+      "reuseStructure": "4つのカード（大きな数字＋1行の説明）",
+      "mustReplace": [
+        "数値",
+        "説明"
+      ],
+      "unknowns": [
+        {
+          "item": "実寸・色・フォントの数値",
+          "impact": "再現時は目測で代用することになる",
+          "nextCheck": "実機またはデザインツールで計測する"
+        }
+      ],
+      "annotation": "数字を大きく、説明を小さくして、読み取りやすくしている。強調色は青緑のみ。 【SP】4つのカードは縦積み。説明文がPCと異なる（PC「people taught in our courses」、SP「live course participants」）。"
+    },
+    {
+      "id": "U12",
+      "name": "Notes on design systems／Latest posts",
+      "sectionRef": "pc_03 下部",
+      "role": "発信内容で専門性を示す",
+      "observation": "大見出し、説明、「Latest posts」の小見出しと「View all posts」リンク。右に黒いサムネイル付きの記事3件（見出し・1行の説明）。",
+      "evidence": "pc_03 下部 の画像で確認できる内容（観察欄のとおり）",
+      "confidence": "medium",
+      "reuseStructure": "見出し＋サムネイル付きの記事リスト",
+      "mustReplace": [
+        "記事",
+        "画像"
+      ],
+      "unknowns": [
+        {
+          "item": "実寸・色・フォントの数値",
+          "impact": "再現時は目測で代用することになる",
+          "nextCheck": "実機またはデザインツールで計測する"
+        },
+        {
+          "item": "リンク先・開閉やスクロールなどの動き",
+          "impact": "導線・操作性の評価が静止画の範囲に限られる",
+          "nextCheck": "実機でクリック・スクロールして確認する"
+        }
+      ],
+      "annotation": "記事は縦リストで、サムネイルは黒基調に統一。 【SP】記事3件はサムネイルなしの、見出し＋1行の説明のみ（PCは黒いサムネイルあり）。"
+    },
+    {
+      "id": "U13",
+      "name": "問い合わせ（Let’s work together）",
+      "sectionRef": "pc_04 上部",
+      "role": "最終的な行動（問い合わせ）を受ける",
+      "observation": "大見出し、説明、「Send us a note」とメールアドレス。右にフォーム（Name、Email、自由記述、黒い「Send」ボタン）。",
+      "evidence": "pc_04 上部 の画像で確認できる内容（観察欄のとおり）",
+      "confidence": "medium",
+      "reuseStructure": "左に説明、右にフォーム＋黒い送信ボタン",
+      "mustReplace": [
+        "文面",
+        "連絡先"
+      ],
+      "unknowns": [
+        {
+          "item": "実寸・色・フォントの数値",
+          "impact": "再現時は目測で代用することになる",
+          "nextCheck": "実機またはデザインツールで計測する"
+        },
+        {
+          "item": "リンク先・開閉やスクロールなどの動き",
+          "impact": "導線・操作性の評価が静止画の範囲に限られる",
+          "nextCheck": "実機でクリック・スクロールして確認する"
+        }
+      ],
+      "annotation": "ページ内で最も目立つボタンが、この送信ボタン。 【SP】本文が、PCより長い文面（「whether you’re partway through a stalled rollout…」を含む）。フォームは全幅で縦積み。"
+    },
+    {
+      "id": "U14",
+      "name": "フッター",
+      "sectionRef": "pc_04 下部",
+      "role": "リンクを整理し、ブランドで締める",
+      "observation": "黒い背景。Services・Companyのリンク2列、ニュースレター案内「Subscribe to the newsletter →」。下に、白抜きの巨大な「Baseline」ワードマーク。著作権表記と「Made by hand in Framer」。",
+      "evidence": "pc_04 下部 の画像で確認できる内容（観察欄のとおり）",
+      "confidence": "medium",
+      "reuseStructure": "リンク列＋巨大なワードマーク",
+      "mustReplace": [
+        "リンク",
+        "ワードマーク"
+      ],
+      "unknowns": [
+        {
+          "item": "実寸・色・フォントの数値",
+          "impact": "再現時は目測で代用することになる",
+          "nextCheck": "実機またはデザインツールで計測する"
+        }
+      ],
+      "annotation": "FVのワードマークと対にして、ページを閉じている。 【SP】リンク2列＋ニュースレター案内＋全幅の白抜きワードマーク。"
+    }
+  ],
+  "axes": [
+    {
+      "key": "purpose_fit",
+      "label": "目的適合",
+      "score": 4,
+      "scope": "PC pc_01〜04・SP sp_01〜05（全体）",
+      "evidence": "デザインシステムの支援・研修への問い合わせ獲得という目的に対し、価値提案→信頼の材料（ロゴ・声・実績）→サービス→問い合わせの順で整理している（U3、U8、U13）。",
+      "confidence": "medium",
+      "unverified": "問い合わせの実績・コンバージョン率は未確認。"
+    },
+    {
+      "key": "information_hierarchy",
+      "label": "情報優先順位",
+      "score": 4,
+      "scope": "PC pc_01〜04・SP sp_01〜05（全体）",
+      "evidence": "FVで何をする会社かを提示し、取引先ロゴ→サービス→顧客の声→チーム→実績→記事→問い合わせの順に信頼を積み上げる（pc_01〜04）。 SPでもセクションの順序は同じで、1カラムの縦積みになる（sp_01〜05）。",
+      "confidence": "medium",
+      "unverified": "ナビのリンク先は未確認。"
+    },
+    {
+      "key": "visual_flow",
+      "label": "視線誘導",
+      "score": 4,
+      "scope": "PC pc_01〜04・SP sp_01〜05（全体）",
+      "evidence": "巨大なワードマークで最初に目が止まり、以降は見出しの大きさと罫線で順に読ませる。黒い顧客の声が中盤の目印（pc_01、pc_02）。 SPは巨大なワードマークが省かれ、太い見出しが主役になる（sp_01）。 導線（旧「CTA・導線」の所見）: FVの「Start a project」は小さな下線リンクで控えめ。目立つボタンはページ末尾の黒い「Send」のみ（pc_01、pc_04）。控えめさは意図と見られるが、行動喚起としては弱い。 SPでは、「Start a project」が見出しの直下に来て到達しやすくなる。送信ボタンは全幅で、高さは画像上で約50px（目測、sp_05）。",
+      "confidence": "low",
+      "unverified": "実際の視線の動きは未計測。／リンク先、ボタンの動作、ナビの中身は未確認。"
+    },
+    {
+      "key": "message_copy",
+      "label": "訴求・コピー",
+      "score": 4,
+      "scope": "PC pc_01〜04・SP sp_01〜05（全体）",
+      "evidence": "「Systems, strategy, and training for teams building what comes next.」で提供価値を3要素で伝え、各見出しで姿勢を示す。英語のみで、日本語の訴求はない（U3、U6）。",
+      "confidence": "medium",
+      "unverified": "SPとPCで一部の文面が異なる理由は未確認。"
+    },
+    {
+      "key": "trust_safety",
+      "label": "信頼・安心",
+      "score": 4,
+      "scope": "PC pc_01〜04・SP sp_01〜05（全体）",
+      "evidence": "取引先ロゴ、導入企業の担当者の声、4つの実績数値、チーム写真、Figma公式パートナーの記載（pc_01〜03）。",
+      "confidence": "medium",
+      "unverified": "数値の根拠・出典は確認できない。顧客の声の事実関係は未確認。"
+    },
+    {
+      "key": "color_legibility",
+      "label": "配色・可読性",
+      "score": 4,
+      "scope": "PC pc_01〜04・SP sp_01〜05（全体）",
+      "evidence": "配色: オフホワイトと黒を基調に、強調色は青緑（数字の「+」、引用のハイライト）に絞っている。作例ビジュアルにだけ淡い緑・紫を使う（pc_01、pc_02、pc_03）。 タイポグラフィ: 高コントラストなセリフ体のワードマーク、太いサンセリフの見出し、セリフ体の本文を組み合わせ、文字だけで階層を作っている（pc_01〜04）。 SPでも見出しは太いサンセリフ、本文はセリフ体で、本文の文字は大きめ（sp_01）。",
+      "confidence": "medium",
+      "unverified": "色の数値（HEX）は未計測。コントラスト比は未計測。／フォント名・サイズ・行間の実測値は未確認。"
+    },
+    {
+      "key": "layout_spacing",
+      "label": "レイアウト・余白",
+      "score": 4,
+      "scope": "PC pc_01〜04・SP sp_01〜05（全体）",
+      "evidence": "2カラムの左右の揃えと余白が一貫し、セクション間は罫線で区切る。内容が多くても詰まって見えない（pc_02、pc_03）。 SPはすべて1カラムで、2カラム部分を縦に積み、カード（実績）も縦積み（sp_03〜04）。",
+      "confidence": "medium",
+      "unverified": "ブレークポイントの切り替え位置は未確認。"
+    },
+    {
+      "key": "visual_brand",
+      "label": "ビジュアル・ブランド",
+      "score": 5,
+      "scope": "PC pc_01〜04・SP sp_01〜05（全体）",
+      "evidence": "FVとフッターで同じワードマークを使い、文字・色・罫線の使い方がページ全体で一貫している（pc_01、pc_04）。 SPでも、ワードマークをフッターで大きく使い、色・文字の使い方が一貫している（sp_05）。",
+      "confidence": "medium",
+      "unverified": "下層ページとの一貫性は未確認。"
+    },
+    {
+      "key": "implementation_reuse",
+      "label": "実装・転用性",
+      "score": 3,
+      "scope": "PC pc_01〜04・SP sp_01〜05（全体）",
+      "evidence": "構造は単純で、標準のContainerとWidgetで構成しやすい。一方、巨大なワードマークの書体、ロゴ帯の動き、作例ビジュアルの制作には、専用の素材や調整が必要（pc_01）。",
+      "confidence": "low",
+      "unverified": "アニメーション（ロゴ帯の動きなど）は静止画から判断できず未確認。サイトはFramerで制作とのこと。"
+    }
+  ],
+  "improvements": {
+    "top": [
+      {
+        "issue": "FVの行動導線（Start a project）が小さな下線リンクで弱い",
+        "evidence": "U3のリンクは文字だけで、目立つボタンはページ末尾の送信ボタンのみ",
+        "change": "目立つボタンを併用し、控えめなリンクとA/Bで比較する",
+        "expected": "問い合わせ数が増える",
+        "metric": "Start a projectのクリック率・フォーム送信率"
+      }
+    ],
+    "priority": [
+      {
+        "issue": "英語のみで、日本の顧客には届きにくい可能性",
+        "evidence": "コピーは英語のみ（U3、U6）",
+        "change": "日本語の要約を併記する案を検討する",
+        "expected": "日本市場での理解が進む",
+        "metric": "日本からの問い合わせ率"
+      },
+      {
+        "issue": "顧客の声・実績数字の根拠が不明",
+        "evidence": "U8・U11に出典・時期の表記がない",
+        "change": "出典・時期を小さく併記する",
+        "expected": "信頼性が上がる",
+        "metric": "離脱率・問い合わせ率"
+      }
+    ],
+    "ideas": [
+      {
+        "issue": "PCとSPで一部の文面が異なり、意図が不明",
+        "evidence": "実績の説明・問い合わせ文が異なる",
+        "change": "出し分けの意図を確認し、運用ルールを決める",
+        "expected": "文面の一貫性が保たれる",
+        "metric": "文面差異の件数"
+      }
+    ]
+  },
+  "reproduction": {
+    "Canva": {
+      "structureSteps": [
+        "幅1440pxのカスタムサイズで、FVのワードマーク・2カラムの説明・ロゴ帯・作例2枚を縦に並べて作る（Webデザインのモックとして）。",
+        "ワードマークは自社のセリフ体で、画面幅いっぱいに配置する。",
+        "実績数値のカードは同じ四角形を4つ複製して、数字と説明だけを変える。"
+      ],
+      "replaceSteps": [
+        "固有素材（リンクの名称・ワードマークの書体・名称・コピー・取引先ロゴ・作例の画像・見出し・本文 など）は、自社の素材に差し替える",
+        "色・書体は、自社ブランドの設定（ブランドキット）に置き換える"
+      ]
+    },
+    "Photoshop": {
+      "structureSteps": [
+        "幅1440pxのアートボードで、グリッド（左右の余白と2カラム）を先に引く。",
+        "セクションごとにレイヤーグループを作り、見出し・本文・罫線を同じ位置の基準に揃える。",
+        "顧客の声は黒い長方形に白文字を置き、強調する一文にだけ背景色を付ける。"
+      ],
+      "replaceSteps": [
+        "固有素材（リンクの名称・ワードマークの書体・名称・コピー・取引先ロゴ・作例の画像・見出し・本文 など）は、自社の素材に差し替える",
+        "素材はスマートオブジェクトにして、差し替えを容易にする"
+      ]
+    },
+    "Elementor": {
+      "structureSteps": [
+        "全体を標準のContainerで縦に積み、最大幅を約1200px前後にして中央に置く（数値は推奨値で、原本の実測ではない）。",
+        "2カラムのセクションは、Containerを横並び（Flex）にし、左に見出し、右に本文のウィジェットを置く。",
+        "実績数値の4カードは、同じ構造のContainerを4つ複製して、数字だけを変える。",
+        "問い合わせは標準のFormウィジェット（Elementor Proの場合）または他のフォームを使う。"
+      ],
+      "replaceSteps": [
+        "固有素材（リンクの名称・ワードマークの書体・名称・コピー・取引先ロゴ・作例の画像・見出し・本文 など）は、自社の素材に差し替える",
+        "画像・文面はウィジェットの設定で差し替え、色・書体はグローバル設定にまとめる"
+      ]
+    }
+  },
+  "reuse": {
+    "reusableStructures": [
+      "巨大なワードマークだけで成立するFV",
+      "文字だけで階層を作る3階層（見出し・本文・小見出し）",
+      "取引先ロゴ→サービス→声→実績の順に信頼を積む構成"
+    ],
+    "mustReplaceElements": [
+      "リンクの名称",
+      "ワードマークの書体",
+      "名称",
+      "コピー",
+      "取引先ロゴ",
+      "作例の画像",
+      "見出し",
+      "本文",
+      "サービス名",
+      "引用文",
+      "ロゴ",
+      "人物",
+      "文面",
+      "人物写真"
+    ]
+  },
+  "rights": {
+    "unverified": [
+      "サイトの利用条件・転載可否は未確認",
+      "掲載写真には人物（チームメンバー、顧客の担当者）が写っている。写真・氏名は転用不可",
+      "PC（4枚）・SP（5枚）とも、ページの先頭からフッターの著作権表記まで確認。分割した画像のつなぎ目の欠けは未検証",
+      "寸法・色の数値・フォント名・アニメーション・リンク先は静止画からは未確認（PCは縮小画像のため実測値ではない）",
+      "PCとSPで、一部の文面が異なる（実績の説明、問い合わせ文）。原因（ビューポート別の出し分け、更新、A/Bテスト等）は未確認"
+    ],
+    "noReuse": [
+      "ロゴ",
+      "人物",
+      "写真",
+      "コピー",
+      "価格",
+      "実績値",
+      "取引先ロゴ",
+      "顧客の声の文面・氏名"
+    ]
+  },
+  "existingAnalysisComparison": {
+    "existing": true,
+    "note": "登録済みの分析v1との比較",
+    "matches": [
+      "v1と同じUnit構成（14件）と観察を引き継いだ",
+      "v1の評価（点数・根拠・確信度）を、対応する新しい軸へ引き継いだ"
+    ],
+    "differences": [
+      "9軸を原本の定義に組み替えた。旧「タイポグラフィ」と「配色」は「配色・可読性」に統合し、旧「CTA・導線」は「視線誘導」の所見と、新設の「目的適合」「訴求・コピー」に分けて反映した",
+      "旧「情報設計」「信頼性・根拠」「ブランド一貫性」「再現性」は、「情報優先順位」「信頼・安心」「ビジュアル・ブランド」「実装・転用性」に対応させた"
+    ],
+    "additions": [
+      "目的適合・訴求・コピーの評価を追加",
+      "各Unitの役割・再利用構造・差替必須要素を追加",
+      "PC/SPの違いの記録を維持",
+      "注釈（座標）を追加"
+    ]
+  },
+  "externalSync": {
+    "cbs": "未同期（DISはCBSへ同期しない）",
+    "notion": "v1は登録済み。v2は未反映（既存ページは更新しない）",
+    "dropbox": "v1は保存済み。v2は新規ファイルとして追加予定"
+  },
+  "notionProps": {
+    "サイト種別": "コーポレート",
+    "主要目的": "デザインシステムの支援・研修サービスへの問い合わせ獲得",
+    "主要CTA": "Start a project（テキストリンク）／問い合わせフォームの「Send」ボタン",
+    "主要CV": "問い合わせ（フォーム送信）",
+    "構成タイプ": [
+      "サービス理解型"
+    ],
+    "配色タグ": [
+      "ホワイト",
+      "ブラック"
+    ],
+    "運営者": "Baseline Design, LLC（フッターの著作権表記より）"
+  }
+}

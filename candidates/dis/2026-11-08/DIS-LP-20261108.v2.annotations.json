@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "dis-annotation-1.0",
+  "analysisRef": "DIS-LP-20261108",
+  "method": "目測の概算。PC画像（バナーは原画像）を基準に、Unitの位置を、画像の上下の範囲で示した。SPの注釈は未付与",
+  "annotations": [
+    {
+      "id": "N1",
+      "unitId": "U1",
+      "image": "pc_01.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.15
+      },
+      "label": "ヘッダー（注意喚起）",
+      "evidence": "PC pc_01 最上部／SP sp_01 最上部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N2",
+      "unitId": "U2",
+      "image": "pc_01.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "label": "ファーストビュー（キービジュアル＋要約）",
+      "evidence": "pc_01／sp_01 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N3",
+      "unitId": "U3",
+      "image": "pc_01.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.6,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "キャンペーン概要",
+      "evidence": "pc_01 下部〜pc_02 上部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N4",
+      "unitId": "U4",
+      "image": "pc_02.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "label": "賞品",
+      "evidence": "pc_02 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N5",
+      "unitId": "U5",
+      "image": "pc_02.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.6,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "応募方法",
+      "evidence": "pc_02 下部〜pc_03 上部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N6",
+      "unitId": "U6",
+      "image": "pc_03.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.6,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "応募条件（ラインナップ・規約）",
+      "evidence": "pc_03 下部〜pc_04 上部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N7",
+      "unitId": "U7",
+      "image": "pc_04.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.3,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "ムービー",
+      "evidence": "pc_04 中段 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N8",
+      "unitId": "U8",
+      "image": "pc_04.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.6,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "ブランドサイトへの導線",
+      "evidence": "pc_04 下部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N9",
+      "unitId": "U9",
+      "image": "pc_05.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "label": "フッター",
+      "evidence": "pc_05／sp_04 最下部 の観察（目測の位置）",
+      "confidence": "low"
+    }
+  ]
+}

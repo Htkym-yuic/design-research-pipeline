@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "dis-annotation-1.0",
+  "analysisRef": "DIS-BN-20261108",
+  "method": "目測の概算。PC画像（バナーは原画像）を基準に、Unitの位置を、画像の上下の範囲で示した。SPの注釈は未付与",
+  "annotations": [
+    {
+      "id": "N1",
+      "unitId": "U1",
+      "image": "banner.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.05,
+        "w": 0.3,
+        "h": 0.9
+      },
+      "label": "AIアシスタントのUI＋人物",
+      "evidence": "左端 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N2",
+      "unitId": "U2",
+      "image": "banner.jpg",
+      "bbox": {
+        "x": 0.3,
+        "y": 0.2,
+        "w": 0.34,
+        "h": 0.6
+      },
+      "label": "便益コピー",
+      "evidence": "中央 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N3",
+      "unitId": "U3",
+      "image": "banner.jpg",
+      "bbox": {
+        "x": 0.63,
+        "y": 0.3,
+        "w": 0.2,
+        "h": 0.4
+      },
+      "label": "CTAボタン",
+      "evidence": "中央右 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N4",
+      "unitId": "U4",
+      "image": "banner.jpg",
+      "bbox": {
+        "x": 0.84,
+        "y": 0.25,
+        "w": 0.15,
+        "h": 0.5
+      },
+      "label": "製品ロゴ",
+      "evidence": "右端 の観察（目測の位置）",
+      "confidence": "low"
+    }
+  ]
+}

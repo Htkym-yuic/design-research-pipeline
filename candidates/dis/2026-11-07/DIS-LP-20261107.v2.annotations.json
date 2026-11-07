@@ -1,0 +1,371 @@
+{
+  "schemaVersion": "dis-annotation-1.0",
+  "analysisRef": "DIS-LP-20261107",
+  "method": "目測の概算。PC画像（バナーは原画像）を基準に、Unitの位置を、画像の上下の範囲で示した。SPの注釈は未付与",
+  "annotations": [
+    {
+      "id": "N1",
+      "unitId": "U1",
+      "image": "pc_01.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "ファーストビュー（ヒーロー）",
+      "evidence": "pc_01 上部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N2",
+      "unitId": "U2",
+      "image": "pc_01.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.3,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "NEWS（お知らせ）",
+      "evidence": "pc_01 中段 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N3",
+      "unitId": "U3",
+      "image": "pc_01.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.6,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "SNS誘導バンド",
+      "evidence": "pc_01 下部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N4",
+      "unitId": "U4",
+      "image": "pc_01.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.85,
+        "w": 1,
+        "h": 0.15
+      },
+      "label": "ABOUT（イベント概要）",
+      "evidence": "pc_01 最下部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N5",
+      "unitId": "U5",
+      "image": "pc_02.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "コンテンツ一覧タイル",
+      "evidence": "pc_02 上部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N6",
+      "unitId": "U6",
+      "image": "pc_02.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.6,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "観光協会PRブース",
+      "evidence": "pc_02 下部〜pc_03 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N7",
+      "unitId": "U7",
+      "image": "pc_04.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "足湯体験",
+      "evidence": "pc_04 上部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N8",
+      "unitId": "U8",
+      "image": "pc_04.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.6,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "溶岩ウォーク",
+      "evidence": "pc_04 下部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N9",
+      "unitId": "U9",
+      "image": "pc_05.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "label": "TOKYO SYUKAKUSAI KITCHEN",
+      "evidence": "pc_05 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N10",
+      "unitId": "U10",
+      "image": "pc_06.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "TOKYO SYUKAKUSAI BAR",
+      "evidence": "pc_06 上部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N11",
+      "unitId": "U11",
+      "image": "pc_06.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.6,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "TOKYO SYUKAKUSAI SOUP",
+      "evidence": "pc_06 下部〜pc_07 上部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N12",
+      "unitId": "U12",
+      "image": "pc_07.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.6,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "TOKYO SYUKAKUSAI FOOD（特別メニュー）",
+      "evidence": "pc_07 下部〜pc_08 上部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N13",
+      "unitId": "U13",
+      "image": "pc_08.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "復刻メニュー（カルーセル）",
+      "evidence": "pc_08 上部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N14",
+      "unitId": "U14",
+      "image": "pc_08.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.3,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "TOKYO周穫祭 Select Shop",
+      "evidence": "pc_08 中段 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N15",
+      "unitId": "U15",
+      "image": "pc_08.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.6,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "360°VR体験",
+      "evidence": "pc_08 下部〜pc_09 上部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N16",
+      "unitId": "U16",
+      "image": "pc_09.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.3,
+        "w": 1,
+        "h": 0.4
+      },
+      "label": "アーカイブ映像",
+      "evidence": "pc_09 中段〜下部 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N17",
+      "unitId": "U17",
+      "image": "pc_10.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.3,
+        "w": 1,
+        "h": 0.7
+      },
+      "label": "ワークショップ",
+      "evidence": "PC 後半（ピンクのパネル）／SP 後半 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N18",
+      "unitId": "U18",
+      "image": "pc_11.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.45,
+        "w": 1,
+        "h": 0.5
+      },
+      "label": "参加方法フロー（ワークショップ）",
+      "evidence": "PC ワークショップ下部／SP 同 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N19",
+      "unitId": "U19",
+      "image": "pc_12.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.07,
+        "w": 1,
+        "h": 0.83
+      },
+      "label": "実演コーナー",
+      "evidence": "PC 後半（薄紫のパネル）／SP 末尾に冒頭のみ の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N20",
+      "unitId": "U20",
+      "image": "pc_13.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.05,
+        "w": 1,
+        "h": 0.95
+      },
+      "label": "TOKYO周遊スタンプラリー",
+      "evidence": "PC 後半（薄いオレンジのパネル） の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N21",
+      "unitId": "U21",
+      "image": "pc_14.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.08,
+        "w": 1,
+        "h": 0.42
+      },
+      "label": "TOKYO周穫祭 AI旅診断",
+      "evidence": "PC 後半（青のグラデーションのパネル） の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N22",
+      "unitId": "U22",
+      "image": "pc_14.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.52,
+        "w": 1,
+        "h": 0.48
+      },
+      "label": "被災地応援ブース",
+      "evidence": "PC 後半（ピンクのパネル） の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N23",
+      "unitId": "U23",
+      "image": "pc_15.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "label": "昨年の様子（2025）",
+      "evidence": "PC pc_15〜／SP 後半 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N24",
+      "unitId": "U24",
+      "image": "pc_17.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.5
+      },
+      "label": "公式SNS",
+      "evidence": "PC pc_17／SP 後半 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N25",
+      "unitId": "U25",
+      "image": "pc_17.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0.5,
+        "w": 1,
+        "h": 0.5
+      },
+      "label": "ACCESS",
+      "evidence": "PC pc_17〜18／SP 後半 の観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N26",
+      "unitId": "U26",
+      "image": "pc_19.jpg",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "label": "フッター",
+      "evidence": "PC pc_18／SP 末尾 の観察（目測の位置）",
+      "confidence": "low"
+    }
+  ]
+}
