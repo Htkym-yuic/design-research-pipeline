@@ -153,6 +153,13 @@ async function runMedia(media) {
   let analysis = null;
   if (stages.includes("validate") || stages.includes("publish")) {
     analysis = await readJson(`${d}/analysis.json`, null);
+    if (analysis) {
+      // 選定結果を正とする: ID・実ページURLは常に選定から。brand が "AUTO" のときだけ選定のブランド名を使う。
+      analysis.disId = disId;
+      analysis.pageUrl = sel.pageUrl;
+      if (!analysis.brand || analysis.brand === "AUTO") analysis.brand = sel.brand;
+      await wj(`${d}/analysis.json`, analysis);
+    }
     const v = analysis ? validateAnalysis(analysis) : { ok: false, errors: ["analysis.json なし"] };
     r.stages.validate = v.ok ? "ok" : { ok: false, errors: v.errors };
     if (v.ok) await fs.writeFile(`${d}/analysis.md`, analysisToMarkdown(analysis));

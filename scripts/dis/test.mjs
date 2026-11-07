@@ -534,3 +534,18 @@ test("selectOne: 評価済みの候補は、機械的なスコアが低くても
   // 重複は、評価が高くても除外
   assert.equal(selectOne([mk(5, 1, 1, true)], { weights: w, minScore: 0, dupCheck: () => ({ duplicate: true, reason: "url", of: "X" }) }).selected, null);
 });
+
+test("validate: 分析のdisId・pageUrlは選定結果で上書きされ、brand=AUTOは選定のブランド名になる", async () => {
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-auto-"));
+  const sig = { learningValue: 0.9, freshness: 0.9, originalSource: 1, assetsAvailable: 1, rightsClarity: 0.9 };
+  await fs.writeFile(path.join(tmp, "fx.json"), JSON.stringify({ lp: [], banner: [], web: [{ media: "web", sourceKey: "s", sourceName: "S", termsStatus: "known", brand: "Real Brand", pageUrl: "https://real.example/", sourceDetailUrl: "https://d.example/1", signals: sig }] }));
+  const run = (extra) => spawnSync(process.execPath, [path.join(here, "run.mjs"), "--fixture", path.join(tmp, "fx.json"), "--out", path.join(tmp, "out"), "--ledger", path.join(tmp, "l.json"), "--date", "2026-11-09", "--media", "web", ...extra], { env: { ...process.env, DRY_RUN: "true" }, encoding: "utf8" });
+  assert.equal(run(["--stage", "collect,select"]).status, 0);
+  const a = completeAnalysis(); a.media = "web"; a.disId = "WRONG"; a.pageUrl = "https://wrong.example/"; a.brand = "AUTO";
+  const f = path.join(tmp, "out/2026-11-09/web/analysis.json");
+  await fs.writeFile(f, JSON.stringify(a));
+  const r = run(["--stage", "validate"]);
+  assert.equal(r.status, 0, r.stderr);
+  const after = JSON.parse(await fs.readFile(f, "utf8"));
+  assert.deepEqual([after.disId, after.pageUrl, after.brand], ["DIS-WB-20261109", "https://real.example/", "Real Brand"]);
+});
