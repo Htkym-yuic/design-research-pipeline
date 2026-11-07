@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T16:23:40.857Z",
+  "updatedAt": "2026-11-07T16:23:51.267Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -3743,6 +3743,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-06T16:23:40.857Z"
+    },
+    {
+      "id": "GR-0209",
+      "title": "秋の森で親子デイキャンプのチラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F506272c2fcfda0d018048c8137029401%2F506272c2fcfda0d018048c8137029401-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30861",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F506272c2fcfda0d018048c8137029401%2F506272c2fcfda0d018048c8137029401-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-07T16:23:51.267Z"
+    },
+    {
+      "id": "GR-0210",
+      "title": "親睦会のお知らせ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fe8c6ee3d86708121d8156adb2048188e%2Fe8c6ee3d86708121d8156adb2048188e-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-29341",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fe8c6ee3d86708121d8156adb2048188e%2Fe8c6ee3d86708121d8156adb2048188e-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-07T16:23:51.267Z"
+    },
+    {
+      "id": "GR-0211",
+      "title": "ハンドメイド雑貨写真を使ったバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F8fe517c2316eb08d7b5be4cf6783f717%2F8fe517c2316eb08d7b5be4cf6783f717-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20518",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F8fe517c2316eb08d7b5be4cf6783f717%2F8fe517c2316eb08d7b5be4cf6783f717-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-07T16:23:51.267Z"
+    },
+    {
+      "id": "GR-0212",
+      "title": "名刺テンプレート32188",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F80917fd8332d9d28215b0cbbdb8ce7bf%2F80917fd8332d9d28215b0cbbdb8ce7bf-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-32188",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F80917fd8332d9d28215b0cbbdb8ce7bf%2F80917fd8332d9d28215b0cbbdb8ce7bf-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-07T16:23:51.267Z"
+    },
+    {
+      "id": "GR-0213",
+      "title": "直線と曲線の組み合わせのロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/ff9a7df4b095cec621dee62aac89702e/ff9a7df4b095cec621dee62aac89702e-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3086",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/ff9a7df4b095cec621dee62aac89702e/ff9a7df4b095cec621dee62aac89702e-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-07T16:23:51.267Z"
     },
     {
       "id": "ILAC-0001",
@@ -8078,6 +8138,30 @@
       "materialId": "PAT-0081",
       "authorProfileUrl": null,
       "reservedAt": "2026-11-06T16:23:40.857Z"
+    },
+    {
+      "id": "PAT-0082",
+      "title": "秋の森で親子デイキャンプのチラシに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F506272c2fcfda0d018048c8137029401%2F506272c2fcfda0d018048c8137029401-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30861",
+      "imageUrl": null,
+      "materialId": "PAT-0082",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-07T16:23:51.267Z"
+    },
+    {
+      "id": "PAT-0083",
+      "title": "ウォンテッドリー株式会社に見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://wantedlyinc.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/wantedly/",
+      "imageUrl": null,
+      "materialId": "PAT-0083",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-07T16:23:51.267Z"
     },
     {
       "id": "PHAC-0001",
@@ -14463,6 +14547,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-06T16:23:40.857Z"
+    },
+    {
+      "id": "WB-0069",
+      "title": "ウォンテッドリー株式会社",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://wantedlyinc.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/wantedly/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/wantedly_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-07T16:23:51.267Z"
+    },
+    {
+      "id": "WB-0070",
+      "title": "桜井歯科医院",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.dental-sakurai.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/sakuraidental/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/sakuraidental_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-07T16:23:51.267Z"
     }
   ]
 }

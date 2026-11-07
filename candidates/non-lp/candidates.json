@@ -1,19 +1,19 @@
 {
-  "collectedAt": "2026-11-06T16:23:40.857Z",
+  "collectedAt": "2026-11-07T16:23:51.267Z",
   "candidateCount": 9,
   "candidates": [
     {
-      "id": "WB-0067",
+      "id": "WB-0069",
       "status": "candidate",
       "mediaType": "Web",
       "sourceKey": "web",
-      "title": "Kyoshin Digital Academy",
-      "captureUrl": "https://digital-academy.kyoshin.co.jp/",
-      "imageUrl": "https://sankoudesign.com/wp-content/uploads/digitalacademykyoshin_t-400x350.jpg",
+      "title": "ウォンテッドリー株式会社",
+      "captureUrl": "https://wantedlyinc.com/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/wantedly_t-400x350.jpg",
       "landingUrl": null,
       "sourceName": "SANKOU!",
       "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/kyoshindigitalacademy/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/wantedly/",
       "library": "Web_Research_Library",
       "notionEnv": "NOTION_WEB_DATA_SOURCE_ID",
       "saveImage": true,
@@ -23,23 +23,23 @@
       "metadata": {
         "width": 400,
         "height": 350,
-        "alt": "Kyoshin Digital Academy",
+        "alt": "ウォンテッドリー株式会社",
         "subtype": null,
         "subtypeLabel": null
       }
     },
     {
-      "id": "WB-0068",
+      "id": "WB-0070",
       "status": "candidate",
       "mediaType": "Web",
       "sourceKey": "web",
-      "title": "DAILY LUXE ‘THE FOX KNIT SERIES’ 長く愛したくなるニット。 | グローバルワーク",
-      "captureUrl": "https://www.globalwork.jp/women/foxknit/2026autumn",
-      "imageUrl": "https://sankoudesign.com/wp-content/uploads/globalworkfoxknit2026autumn_t-400x350.jpg",
+      "title": "桜井歯科医院",
+      "captureUrl": "https://www.dental-sakurai.com/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/sakuraidental_t-400x350.jpg",
       "landingUrl": null,
       "sourceName": "SANKOU!",
       "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/globalwork-foxknit2026autumn/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/sakuraidental/",
       "library": "Web_Research_Library",
       "notionEnv": "NOTION_WEB_DATA_SOURCE_ID",
       "saveImage": true,
@@ -49,23 +49,23 @@
       "metadata": {
         "width": 400,
         "height": 350,
-        "alt": "DAILY LUXE ‘THE FOX KNIT SERIES’ 長く愛したくなるニット。 | グローバルワーク",
+        "alt": "桜井歯科医院",
         "subtype": null,
         "subtypeLabel": null
       }
     },
     {
-      "id": "GR-0204",
+      "id": "GR-0209",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "９月おたより｜Ａ４・タテ",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F66d1d0ce35841f6eded26940f008496d%2F66d1d0ce35841f6eded26940f008496d-400.webp&w=828&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F66d1d0ce35841f6eded26940f008496d%2F66d1d0ce35841f6eded26940f008496d-400.webp&w=828&q=75",
+      "title": "秋の森で親子デイキャンプのチラシ",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F506272c2fcfda0d018048c8137029401%2F506272c2fcfda0d018048c8137029401-400.webp&w=828&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F506272c2fcfda0d018048c8137029401%2F506272c2fcfda0d018048c8137029401-400.webp&w=828&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/flyer",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-32142",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30861",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -75,23 +75,23 @@
       "metadata": {
         "width": 283,
         "height": 400,
-        "alt": "９月おたより｜Ａ４・タテ, チラシ, チラシテンプレート",
+        "alt": "秋の森で親子デイキャンプのチラシ, チラシ, チラシテンプレート",
         "subtype": "flyer",
         "subtypeLabel": "チラシ・フライヤー"
       }
     },
     {
-      "id": "GR-0205",
+      "id": "GR-0210",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "ポスター／健康ウォーキング",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F293090bfae6fb80937e978ce17f5f368%2F293090bfae6fb80937e978ce17f5f368-400.webp&w=828&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F293090bfae6fb80937e978ce17f5f368%2F293090bfae6fb80937e978ce17f5f368-400.webp&w=828&q=75",
+      "title": "親睦会のお知らせ",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fe8c6ee3d86708121d8156adb2048188e%2Fe8c6ee3d86708121d8156adb2048188e-400.webp&w=828&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fe8c6ee3d86708121d8156adb2048188e%2Fe8c6ee3d86708121d8156adb2048188e-400.webp&w=828&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/poster",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-29243",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-29341",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -101,23 +101,23 @@
       "metadata": {
         "width": 283,
         "height": 400,
-        "alt": "ポスター／健康ウォーキング, ポスター, ポスターテンプレート",
+        "alt": "親睦会のお知らせ, ポスター, ポスターテンプレート",
         "subtype": "poster",
         "subtypeLabel": "ポスター"
       }
     },
     {
-      "id": "GR-0206",
+      "id": "GR-0211",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "紅葉のイラストをたくさん使ったセールのバナー",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fe77ed929686a49cd296c896a5d8004c2%2Fe77ed929686a49cd296c896a5d8004c2-400.webp&w=640&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fe77ed929686a49cd296c896a5d8004c2%2Fe77ed929686a49cd296c896a5d8004c2-400.webp&w=640&q=75",
+      "title": "ハンドメイド雑貨写真を使ったバナー",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F8fe517c2316eb08d7b5be4cf6783f717%2F8fe517c2316eb08d7b5be4cf6783f717-400.webp&w=640&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F8fe517c2316eb08d7b5be4cf6783f717%2F8fe517c2316eb08d7b5be4cf6783f717-400.webp&w=640&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/banner",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20519",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-20518",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -127,23 +127,23 @@
       "metadata": {
         "width": 156,
         "height": 104,
-        "alt": "紅葉のイラストをたくさん使ったセールのバナー, バナー, バナーテンプレート",
+        "alt": "ハンドメイド雑貨写真を使ったバナー, バナー, バナーテンプレート",
         "subtype": "social",
         "subtypeLabel": "SNS投稿・Web広告"
       }
     },
     {
-      "id": "GR-0207",
+      "id": "GR-0212",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "名刺テンプレート32189",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F5f1fcb66c9f26362a79d9934fcd9d356%2F5f1fcb66c9f26362a79d9934fcd9d356-400.webp&w=384&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F5f1fcb66c9f26362a79d9934fcd9d356%2F5f1fcb66c9f26362a79d9934fcd9d356-400.webp&w=384&q=75",
+      "title": "名刺テンプレート32188",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F80917fd8332d9d28215b0cbbdb8ce7bf%2F80917fd8332d9d28215b0cbbdb8ce7bf-400.webp&w=384&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F80917fd8332d9d28215b0cbbdb8ce7bf%2F80917fd8332d9d28215b0cbbdb8ce7bf-400.webp&w=384&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/business-card",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-32189",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-32188",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -153,23 +153,23 @@
       "metadata": {
         "width": 384,
         "height": 232,
-        "alt": "名刺テンプレート32189, 名刺, 名刺テンプレート",
+        "alt": "名刺テンプレート32188, 名刺, 名刺テンプレート",
         "subtype": "business-card",
         "subtypeLabel": "名刺・ショップカード"
       }
     },
     {
-      "id": "GR-0208",
+      "id": "GR-0213",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "六角形の組み合わせのロゴ",
-      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/c53f1f1b7287dce5255a454bff6dab2b/c53f1f1b7287dce5255a454bff6dab2b-400.webp",
-      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/c53f1f1b7287dce5255a454bff6dab2b/c53f1f1b7287dce5255a454bff6dab2b-400.webp",
+      "title": "直線と曲線の組み合わせのロゴ",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/ff9a7df4b095cec621dee62aac89702e/ff9a7df4b095cec621dee62aac89702e-400.webp",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/ff9a7df4b095cec621dee62aac89702e/ff9a7df4b095cec621dee62aac89702e-400.webp",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/logo",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3093",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3086",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -179,59 +179,27 @@
       "metadata": {
         "width": 400,
         "height": 400,
-        "alt": "六角形の組み合わせのロゴ, ロゴ, ロゴテンプレート",
+        "alt": "直線と曲線の組み合わせのロゴ, ロゴ, ロゴテンプレート",
         "subtype": "logo",
         "subtypeLabel": "ロゴ・VI/CI"
       }
     },
     {
-      "id": "PAT-0080",
+      "id": "PAT-0082",
       "status": "candidate",
       "mediaType": "Pattern",
       "sourceKey": "patterns",
-      "title": "Kyoshin Digital Academyに見るPC・SPの情報優先順位",
-      "captureUrl": "https://digital-academy.kyoshin.co.jp/",
-      "imageUrl": null,
-      "landingUrl": null,
-      "sourceName": "日次収集から抽出（SANKOU!）",
-      "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/kyoshindigitalacademy/",
-      "library": "Pattern_Research_Library",
-      "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
-      "saveImage": false,
-      "materialId": "PAT-0080",
-      "authorProfileUrl": null,
-      "searchTerm": null,
-      "metadata": {
-        "collectionMode": "derived_pattern",
-        "patternType": "情報設計",
-        "targetMedia": [
-          "Web",
-          "LP"
-        ],
-        "rule": "画面幅が変わっても、主見出し・主要ベネフィット・CTAの意味と順序を維持する。",
-        "cautions": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
-        "evidenceIds": [
-          "WB-0067"
-        ]
-      }
-    },
-    {
-      "id": "PAT-0081",
-      "status": "candidate",
-      "mediaType": "Pattern",
-      "sourceKey": "patterns",
-      "title": "９月おたより｜Ａ４・タテに見る文字組みと視線誘導",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F66d1d0ce35841f6eded26940f008496d%2F66d1d0ce35841f6eded26940f008496d-400.webp&w=828&q=75",
+      "title": "秋の森で親子デイキャンプのチラシに見る文字組みと視線誘導",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F506272c2fcfda0d018048c8137029401%2F506272c2fcfda0d018048c8137029401-400.webp&w=828&q=75",
       "imageUrl": null,
       "landingUrl": null,
       "sourceName": "日次収集から抽出（デザインAC）",
       "sourceUrl": "https://www.design-ac.net/free-template/flyer",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-32142",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30861",
       "library": "Pattern_Research_Library",
       "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
       "saveImage": false,
-      "materialId": "PAT-0081",
+      "materialId": "PAT-0082",
       "authorProfileUrl": null,
       "searchTerm": null,
       "metadata": {
@@ -244,7 +212,39 @@
         "rule": "主見出し・補足・画像・行動情報のサイズ差と配置から、最初に読ませる情報を明確にする。",
         "cautions": "素材そのものではなく、情報階層と余白の考え方だけを転用する。",
         "evidenceIds": [
-          "GR-0204"
+          "GR-0209"
+        ]
+      }
+    },
+    {
+      "id": "PAT-0083",
+      "status": "candidate",
+      "mediaType": "Pattern",
+      "sourceKey": "patterns",
+      "title": "ウォンテッドリー株式会社に見るPC・SPの情報優先順位",
+      "captureUrl": "https://wantedlyinc.com/",
+      "imageUrl": null,
+      "landingUrl": null,
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "sourceUrl": "https://sankoudesign.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/wantedly/",
+      "library": "Pattern_Research_Library",
+      "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
+      "saveImage": false,
+      "materialId": "PAT-0083",
+      "authorProfileUrl": null,
+      "searchTerm": null,
+      "metadata": {
+        "collectionMode": "derived_pattern",
+        "patternType": "情報設計",
+        "targetMedia": [
+          "Web",
+          "LP"
+        ],
+        "rule": "画面幅が変わっても、主見出し・主要ベネフィット・CTAの意味と順序を維持する。",
+        "cautions": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
+        "evidenceIds": [
+          "WB-0069"
         ]
       }
     }
@@ -308,7 +308,7 @@
       "key": "graphic",
       "sourceName": "デザインAC",
       "status": "collected",
-      "found": 63,
+      "found": 65,
       "accepted": 1,
       "reason": null,
       "diagnostic": null
@@ -326,7 +326,7 @@
       "key": "canva",
       "sourceName": "Canva",
       "status": "collected",
-      "found": 41,
+      "found": 40,
       "accepted": 0,
       "reason": null,
       "diagnostic": null
@@ -339,9 +339,9 @@
       "accepted": 0,
       "reason": "取得元がGitHubホストランナーからのアクセスを拒否しました。ローカル収集ルートで再実行してください。",
       "diagnostic": {
-        "finalUrl": "https://www.ac-illust.com/main/search_result.php?word=%E5%8C%BB%E7%99%82",
+        "finalUrl": "https://www.ac-illust.com/main/search_result.php?word=%E4%BB%8B%E8%AD%B7",
         "title": "ERROR: The request could not be satisfied",
-        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: surCDCPyFON0ATzwMfxFVC0_nDHMoIX6JWmHDuLzpr4FF",
+        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: tFCTqSyKTB-AvCkdA7GP76Zlaf3nqcCRH1y18w0ykD6E5",
         "figureCount": 0,
         "imageCount": 0
       }
@@ -354,9 +354,9 @@
       "accepted": 0,
       "reason": "取得元がGitHubホストランナーからのアクセスを拒否しました。ローカル収集ルートで再実行してください。",
       "diagnostic": {
-        "finalUrl": "https://www.photo-ac.com/main/search?q=%E5%8C%BB%E7%99%82",
+        "finalUrl": "https://www.photo-ac.com/main/search?q=%E4%BB%8B%E8%AD%B7",
         "title": "ERROR: The request could not be satisfied",
-        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: 7K2_ytn0_NuZxORhMA0JjyljtANifYsEOHsUCLLzkjiIX",
+        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: jI_DcS1b0UNGPldN3GfX3D4OPH7IquK9EuFAKqBBGUe1U",
         "figureCount": 0,
         "imageCount": 0
       }
