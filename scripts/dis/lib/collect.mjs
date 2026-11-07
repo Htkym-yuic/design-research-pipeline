@@ -165,6 +165,7 @@ export async function collectFromSource(source, { getter = fetchGetter(), detail
     const res = await getter.get(source.listUrl);
     if (!res.ok) { report.error = `HTTP ${res.status}`; return done([{ ...base, fetchError: `HTTP ${res.status}（回避しない）` }]); }
     const rdlp = source.parser === "rdlp";
+    const siteImage = abs(meta(res.text, "og:image"), source.listUrl); // 参照元自身の画像（OGP）
     const siteTitle = cleanTitle(meta(res.text, "og:title") || res.text.match(/<title>([^<]+)/i)?.[1] || "");
     const all = rdlp ? extractRdlpCards(res.text, source.listUrl, scanLimit) : extractDetailLinks(res.text, source, scanLimit).map((url) => ({ url }));
     report.linksFound = all.length;
@@ -180,6 +181,7 @@ export async function collectFromSource(source, { getter = fetchGetter(), detail
         if (!r.ok) { results.push({ ...base, sourceDetailUrl: detailUrl, fetchError: `HTTP ${r.status}` }); continue; }
         const d = rdlp ? parseRdlpDetail(r.text, detailUrl) : parseDetail(r.text, detailUrl);
         const title = cleanTitle(card.title || d.title);
+        if (!rdlp && d.image && siteImage && d.image === siteImage) { report.skippedNonWork = (report.skippedNonWork || 0) + 1; continue; } // サイト共通の画像＝作品ページではない
         if (!rdlp && looksLikeNonWork(title, source, siteTitle)) { report.skippedNonWork = (report.skippedNonWork || 0) + 1; continue; }
         const srcTokens = [source.key.replace(/-.*/, ""), String(source.name).replace(/\s+/g, "")].map((x) => x.toLowerCase()).filter((x) => x.length >= 5);
         const own = (u) => srcTokens.some((tok) => u.toLowerCase().includes(tok));

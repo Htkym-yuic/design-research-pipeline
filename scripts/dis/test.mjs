@@ -456,3 +456,16 @@ test("E2E: review→learning.json→rescore で学習価値の高い候補に選
   await fs.writeFile(path.join(dir, "learning.json"), JSON.stringify({ items: [{ no: 1, learningValue: 2, reason: "x" }] }));
   assert.notEqual(run(["--stage", "rescore"]).status, 0);
 });
+
+test("collect: 候補の画像が参照元自身のog:imageと同じなら、サイト共通の画像として作品扱いしない", async () => {
+  const src = { media: "web", key: "k", name: "K", termsStatus: "known", listUrl: "https://s.example/", detailPathIncludes: "/w/" };
+  const pages = {
+    "https://s.example/": '<meta property="og:image" content="/site-ogp.png"><a href="/w/about/">a</a><a href="/w/work1/">w</a>',
+    "https://s.example/w/about/": '<meta property="og:title" content="Our mission story"><meta property="og:image" content="/site-ogp.png"><a href="https://x.example/">x</a>',
+    "https://s.example/w/work1/": '<meta property="og:title" content="Work One"><meta property="og:image" content="/work1.png"><a href="https://work1.example/">go</a>',
+  };
+  const getter = { robots: async () => true, get: async (u) => ({ ok: !!pages[u], status: pages[u] ? 200 : 404, text: pages[u] || "" }) };
+  const out = await collectFromSource(src, { getter });
+  assert.deepEqual(out.map((c) => c.brand), ["Work One"]);
+  assert.equal(out.report.skippedNonWork, 1);
+});
