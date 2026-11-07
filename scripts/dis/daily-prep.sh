@@ -32,7 +32,7 @@ STATUS=0
 {
   echo "== DIS準備 $(TZ=Asia/Tokyo date '+%F %T %Z')  repo=$REPO"
   if ! command -v node >/dev/null 2>&1; then
-    echo "node が見つかりません（PATH=$PATH）"
+    echo "node が見つかりません（PATH=${PATH}）"
     exit 127
   fi
   CMD="${DIS_RUN_CMD:-npm run -s dis:run -- --stage collect,select,review}"
@@ -42,11 +42,11 @@ STATUS=0
 echo "== 終了コード $STATUS" >>"$LOG"
 
 if [ "$STATUS" -ne 0 ]; then
-  notify "準備に失敗しました（コード $STATUS）。ログ: outputs/dis/logs/prep-$DATE_JST.log" "DIS 日次学習"
+  notify "準備に失敗しました（コード ${STATUS}）。ログ: outputs/dis/logs/prep-$DATE_JST.log" "DIS 日次学習"
   exit "$STATUS"
 fi
 
 SUMMARY="$(node "$REPO/scripts/dis/prep-summary.mjs" "$REPO/outputs/dis" "$DATE_JST" 2>>"$LOG")"
 echo "== 結果: $SUMMARY" >>"$LOG"
-notify "$SUMMARY。一覧画像をチャットへ" "DIS 日次学習の準備完了"
+notify "${SUMMARY}。一覧画像をチャットへ" "DIS 日次学習の準備完了"
 exit 0

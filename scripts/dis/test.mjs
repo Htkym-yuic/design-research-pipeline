@@ -496,3 +496,11 @@ test("daily-prep.sh: 書き込み系の環境変数を外し(DRY_RUN=true)、ロ
   assert.match(await fs.readFile(logFile, "utf8"), /終了コード 7/);
   await fs.rm(logFile, { force: true });
 });
+
+test("シェルスクリプト: 変数の直後に日本語を置かない（macOSのBash 3.2は日本語を変数名に含めてしまう）", async () => {
+  for (const f of ["daily-prep.sh", "install-schedule.sh"]) {
+    const src = await fs.readFile(path.join(here, f), "utf8");
+    const bad = src.split("\n").map((l, i) => [i + 1, l]).filter(([, l]) => /\$[A-Za-z_][A-Za-z0-9_]*[^\x00-\x7F]/.test(l.replace(/\$\{[^}]*\}/g, "")));
+    assert.deepEqual(bad, [], `${f}: ${JSON.stringify(bad)}`);
+  }
+});
