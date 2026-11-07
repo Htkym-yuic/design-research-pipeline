@@ -1,0 +1,173 @@
+{
+  "_comment": "合成フィクスチャ。実在サイトではない（.example）。ドライラン/テスト専用。",
+  "lp": [
+    {
+      "media": "lp",
+      "sourceKey": "fixture",
+      "sourceName": "FIXTURE(合成データ)",
+      "termsStatus": "known",
+      "brand": "Alpha Dental LP",
+      "title": "Alpha Dental LP",
+      "pageUrl": "https://alpha-dental.example/lp",
+      "sourceDetailUrl": "https://fixture.example/lp/alpha",
+      "imageUrl": "https://alpha-dental.example/lp/og.png",
+      "signals": {
+        "learningValue": 0.9,
+        "freshness": 0.8,
+        "originalSource": 1,
+        "assetsAvailable": 1,
+        "rightsClarity": 0.8
+      }
+    },
+    {
+      "media": "lp",
+      "sourceKey": "fixture",
+      "sourceName": "FIXTURE(合成データ)",
+      "termsStatus": "known",
+      "brand": "Beta Fitness LP",
+      "title": "Beta Fitness LP",
+      "pageUrl": "https://beta-fit.example/lp",
+      "sourceDetailUrl": "https://fixture.example/lp/beta",
+      "imageUrl": "https://beta-fit.example/lp/og.png",
+      "signals": {
+        "learningValue": 0.6,
+        "freshness": 0.6,
+        "originalSource": 1,
+        "assetsAvailable": 1,
+        "rightsClarity": 0.6
+      }
+    },
+    {
+      "media": "lp",
+      "sourceKey": "fixture",
+      "sourceName": "FIXTURE(合成データ)",
+      "termsStatus": "known",
+      "brand": "Dup Brand LP",
+      "title": "Dup Brand LP",
+      "pageUrl": "https://dup.example/lp",
+      "sourceDetailUrl": "https://fixture.example/lp/dup",
+      "imageUrl": "https://dup.example/lp/og.png",
+      "signals": {
+        "learningValue": 0.9,
+        "freshness": 0.8,
+        "originalSource": 1,
+        "assetsAvailable": 1,
+        "rightsClarity": 0.8
+      }
+    },
+    {
+      "media": "lp",
+      "sourceKey": "fixture",
+      "sourceName": "FIXTURE(合成データ)",
+      "termsStatus": "unknown",
+      "brand": "Unknown Terms LP",
+      "title": "Unknown Terms LP",
+      "pageUrl": "https://u.example/lp",
+      "sourceDetailUrl": "https://other.example/lp/u",
+      "imageUrl": "https://u.example/lp/og.png",
+      "signals": {
+        "learningValue": 0.9,
+        "freshness": 0.8,
+        "originalSource": 1,
+        "assetsAvailable": 1,
+        "rightsClarity": 0.8
+      }
+    },
+    {
+      "media": "lp",
+      "sourceKey": "fixture",
+      "sourceName": "FIXTURE(合成データ)",
+      "termsStatus": "known",
+      "brand": "Low Value LP",
+      "title": "Low Value LP",
+      "pageUrl": "https://low.example/lp",
+      "sourceDetailUrl": "https://fixture.example/lp/low",
+      "imageUrl": "https://low.example/lp/og.png",
+      "signals": {
+        "learningValue": 0.2,
+        "freshness": 0.3,
+        "originalSource": 0,
+        "assetsAvailable": 0.3,
+        "rightsClarity": 0.3
+      }
+    }
+  ],
+  "banner": [
+    {
+      "media": "banner",
+      "sourceKey": "fixture",
+      "sourceName": "FIXTURE(合成データ)",
+      "termsStatus": "known",
+      "brand": "Gamma Sale Banner",
+      "title": "Gamma Sale Banner",
+      "pageUrl": "https://gamma.example/campaign",
+      "sourceDetailUrl": "https://fixture.example/banner/gamma",
+      "imageUrl": "https://gamma.example/campaign/og.png",
+      "signals": {
+        "learningValue": 0.9,
+        "freshness": 0.8,
+        "originalSource": 1,
+        "assetsAvailable": 1,
+        "rightsClarity": 0.8
+      },
+      "sizeLabel": "1200x628"
+    },
+    {
+      "media": "banner",
+      "sourceKey": "fixture",
+      "sourceName": "FIXTURE(合成データ)",
+      "termsStatus": "known",
+      "brand": "Blocked Banner",
+      "title": "Blocked Banner",
+      "pageUrl": "https://blocked.example/b",
+      "sourceDetailUrl": "https://fixture.example/banner/blocked",
+      "imageUrl": "https://blocked.example/b/og.png",
+      "signals": {
+        "learningValue": 0.9,
+        "freshness": 0.8,
+        "originalSource": 1,
+        "assetsAvailable": 1,
+        "rightsClarity": 0.8
+      },
+      "fetchError": "HTTP 403（回避しない）"
+    }
+  ],
+  "web": [
+    {
+      "media": "web",
+      "sourceKey": "fixture",
+      "sourceName": "FIXTURE(合成データ)",
+      "termsStatus": "known",
+      "brand": "Delta Studio",
+      "title": "Delta Studio",
+      "pageUrl": "https://delta.example/",
+      "sourceDetailUrl": "https://fixture.example/web/delta",
+      "imageUrl": "https://delta.example//og.png",
+      "signals": {
+        "learningValue": 0.2,
+        "freshness": 0.3,
+        "originalSource": 0,
+        "assetsAvailable": 0.3,
+        "rightsClarity": 0.3
+      }
+    },
+    {
+      "media": "web",
+      "sourceKey": "fixture",
+      "sourceName": "FIXTURE(合成データ)",
+      "termsStatus": "known",
+      "brand": "Epsilon Lab",
+      "title": "Epsilon Lab",
+      "pageUrl": "https://epsilon.example/",
+      "sourceDetailUrl": "https://fixture.example/web/eps",
+      "imageUrl": "https://epsilon.example//og.png",
+      "signals": {
+        "learningValue": 0.3,
+        "freshness": 0.3,
+        "originalSource": 1,
+        "assetsAvailable": 0.3,
+        "rightsClarity": 0.3
+      }
+    }
+  ]
+}

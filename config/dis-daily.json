@@ -1,0 +1,75 @@
+{
+  "_comment": "DIS日次学習ワークフローの設定。既存の日次パイプライン（design-research-daily.yml）とは独立。sources[].termsStatus が 'known' 以外の参照元は候補化しない（規約不明はスキップ）。参照元の規約確認後に 'known' へ変更すること。",
+  "version": "1.0.0",
+  "timezone": "Asia/Tokyo",
+  "maxCandidatesPerMedia": 5,
+  "selectedPerMedia": 1,
+  "dedupeWindowDays": 180,
+  "minScoreToSelect": 55,
+  "idPrefix": "DIS",
+  "dropbox": {
+    "rootEnv": "DROPBOX_DESIGN_ROOT",
+    "defaultRoot": "/design/Design_Research_Library",
+    "reviewFolder": "99_Needs_Review",
+    "subFolder": "dis-daily"
+  },
+  "media": {
+    "lp": {
+      "label": "LP",
+      "idCode": "LP",
+      "library": "LP_Research_Library",
+      "capture": "fullpage-pc-sp",
+      "notion": { "collection": "collection://39624d4f-a671-8094-ba0c-000b11fefbd0", "envVar": "NOTION_LP_DATA_SOURCE_ID", "libraryName": "01｜LPリサーチライブラリー" }
+    },
+    "banner": {
+      "label": "バナー",
+      "idCode": "BN",
+      "library": "Banner_Research_Library",
+      "capture": "public-image",
+      "notion": { "collection": "collection://01516eed-b32f-464e-bbdf-68bf9e7b87f9", "envVar": "NOTION_BANNER_DATA_SOURCE_ID", "libraryName": "02｜バナーリサーチライブラリー" }
+    },
+    "web": {
+      "label": "Webサイト",
+      "idCode": "WB",
+      "library": "Web_Research_Library",
+      "capture": "fullpage-pc-sp",
+      "notion": { "collection": "collection://72c6fadb-ee7b-4721-a04c-e5a73126c09f", "envVar": "NOTION_WEB_DATA_SOURCE_ID", "libraryName": "03｜Webサイトリサーチライブラリー" }
+    }
+  },
+  "sources": [
+    { "key": "rdlp", "media": "lp", "name": "LPアーカイブ", "listUrl": "https://rdlp.jp/lp-archive/", "detailPathIncludes": "/lp-archive/", "termsStatus": "unknown", "notes": "listing取得にはBot判定で403になる場合あり。回避しない。" },
+    { "key": "lp-advance", "media": "lp", "name": "LP advance", "listUrl": "https://lp-web.com/", "detailPathIncludes": "/lp/", "termsStatus": "unknown" },
+    { "key": "wdc-lp", "media": "lp", "name": "Web Design Clip [L]", "listUrl": "https://lp.webdesignclip.com/", "detailPathIncludes": "/", "termsStatus": "unknown" },
+    { "key": "sankou-lp", "media": "lp", "name": "SANKOU!", "listUrl": "https://sankoudesign.com/", "detailPathIncludes": "/lp/", "termsStatus": "unknown" },
+    { "key": "lp-kanji", "media": "lp", "name": "LP幹事", "listUrl": "https://lp-kanji.com/", "detailPathIncludes": "/", "termsStatus": "unknown" },
+
+    { "key": "sankou-web", "media": "web", "name": "SANKOU!", "listUrl": "https://sankoudesign.com/", "detailPathIncludes": "/web/", "termsStatus": "unknown", "notes": "既存の日次処理（non-lp-sources.json の web）も同サイトを使用。重複除外必須。" },
+    { "key": "io3000", "media": "web", "name": "I/O 3000", "listUrl": "https://io3000.com/", "detailPathIncludes": "/", "termsStatus": "unknown" },
+    { "key": "wdc-web", "media": "web", "name": "Web Design Clip", "listUrl": "https://webdesignclip.com/", "detailPathIncludes": "/", "termsStatus": "unknown" },
+    { "key": "s5-style", "media": "web", "name": "S5-Style", "listUrl": "https://s5-style.com/", "detailPathIncludes": "/", "termsStatus": "unknown" },
+    { "key": "muuuuu", "media": "web", "name": "MUUUUU.ORG", "listUrl": "https://muuuuu.org/", "detailPathIncludes": "/", "termsStatus": "unknown" },
+    { "key": "81-web", "media": "web", "name": "81-web", "listUrl": "https://81-web.com/", "detailPathIncludes": "/", "termsStatus": "unknown" },
+    { "key": "ikesai", "media": "web", "name": "IKESAI", "listUrl": "https://ikesai.com/", "detailPathIncludes": "/", "termsStatus": "unknown" },
+    { "key": "kasou", "media": "web", "name": "KASOU", "listUrl": "https://kasou.jp/", "detailPathIncludes": "/", "termsStatus": "unknown" },
+    { "key": "gdweb", "media": "web", "name": "GDWEB DESIGN AWARDS", "listUrl": "https://gdweb.design/", "detailPathIncludes": "/", "termsStatus": "unknown" },
+    { "key": "awwwards", "media": "web", "name": "Awwwards", "listUrl": "https://www.awwwards.com/websites/", "detailPathIncludes": "/sites/", "termsStatus": "unknown" },
+    { "key": "cssda", "media": "web", "name": "CSS Design Awards", "listUrl": "https://www.cssdesignawards.com/", "detailPathIncludes": "/sites/", "termsStatus": "unknown" },
+    { "key": "siteinspire", "media": "web", "name": "SiteInspire", "listUrl": "https://www.siteinspire.com/", "detailPathIncludes": "/websites/", "termsStatus": "unknown" },
+    { "key": "landbook", "media": "web", "name": "Land-book", "listUrl": "https://land-book.com/", "detailPathIncludes": "/websites/", "termsStatus": "unknown" },
+    { "key": "onepagelove", "media": "web", "name": "One Page Love", "listUrl": "https://onepagelove.com/", "detailPathIncludes": "/", "termsStatus": "unknown" },
+    { "key": "lapaninja", "media": "web", "name": "Lapa Ninja", "listUrl": "https://www.lapaninja.com/", "detailPathIncludes": "/", "termsStatus": "unknown" },
+
+    { "key": "banner-library", "media": "banner", "name": "BANNER LIBRARY", "listUrl": "https://bannerlibrary.com/", "detailPathIncludes": "/", "termsStatus": "unknown" },
+    { "key": "banner-hiroba", "media": "banner", "name": "バナー広場", "listUrl": "https://banner-hiroba.com/", "detailPathIncludes": "/archives/", "termsStatus": "unknown", "notes": "既存の日次処理も同サイトを使用。重複除外必須。" },
+    { "key": "retrobanner", "media": "banner", "name": "retrobanner", "listUrl": "https://retrobanner.com/", "detailPathIncludes": "/", "termsStatus": "unknown" },
+    { "key": "bannnner", "media": "banner", "name": "Bannnner.com", "listUrl": "https://bannnner.com/", "detailPathIncludes": "/", "termsStatus": "unknown" },
+    { "key": "banner-matome", "media": "banner", "name": "Banner Matome", "listUrl": "https://banner-matome.com/", "detailPathIncludes": "/", "termsStatus": "unknown" }
+  ],
+  "originTracingSources": {
+    "_comment": "原典追跡が必須の参照元（候補化せず、原典URLが取れた場合のみ採用）。",
+    "banner": ["Meta広告ライブラリ", "Google Ads Transparency Center", "TikTok Creative Center", "Behance", "Dribbble", "Pinterest"]
+  },
+  "scoring": {
+    "weights": { "learningValue": 40, "freshness": 15, "originalSource": 15, "assetsAvailable": 15, "rightsClarity": 15 }
+  }
+}

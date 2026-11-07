@@ -256,3 +256,12 @@ export function imageUploadBlock(fileUploadId, caption = "") {
     },
   };
 }
+
+/** urlプロパティが完全一致するページを1件探す（読み取りのみ。DIS重複確認用）。 */
+export async function findPageByUrl(dataSourceId, propertyName, url) {
+  const result = await notionFetch(`/data_sources/${dataSourceId}/query`, {
+    method: "POST",
+    body: JSON.stringify({ filter: { property: propertyName, url: { equals: String(url) } }, page_size: 1 }),
+  });
+  return result.results?.[0] || null;
+}

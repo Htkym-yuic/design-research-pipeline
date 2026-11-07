@@ -340,3 +340,18 @@ npm run cbs:export
 `exports/creative-brief-studio-ai/manifest.json`（件数・媒体一覧等のメタ情報）と
 `index.json`（id・mediaType・title・tags・summary・knowledgePathの軽量配列）を生成する。
 **CBS本体への本番同期はここでは行わない。** 生成までがこのコマンドの範囲。
+
+
+## DIS日次学習（LP・バナー・Web 各1件）
+
+既存の日次パイプライン（`design-research-daily.yml`）とは別機能。設定は `config/dis-daily.json`、実装は `scripts/dis/`、手順は `.claude/skills/dis-design-learning/`。
+
+- 既定はドライラン。外部書込みは `--apply` + `DIS_ENABLE_WRITES=true` + `DRY_RUN=false` が全て必要。
+- 分析（画像理解）はClaude Codeが行うため、GitHub Actionsの定期実行には載せていない。
+- 台帳 `data/dis-ledger.json` は本番書込み時のみ更新。成果物は `outputs/dis/`（Git管理外）。
+- 参照元の `termsStatus` は初期値すべて `unknown`（取得しない）。規約確認後に `known` へ変更する。
+
+```bash
+npm run dis:test
+npm run dis:run -- --stage collect,select,template --fixture scripts/dis/fixtures/sample-candidates.json
+```

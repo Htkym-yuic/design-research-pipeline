@@ -133,3 +133,36 @@ export async function ensureFolder(dropboxPath) {
   const text = JSON.stringify(data);
   throw new Error(`Dropboxフォルダ作成に失敗しました（${response.status}） path=${dropboxPath}: ${text}`);
 }
+
+/** 指定パスが存在するか（読み取りのみ）。DIS: 新規フォルダー作成前の衝突確認に使用。 */
+export async function pathExists(dropboxPath) {
+  const accessToken = await getAccessToken();
+  const response = await fetch("https://api.dropboxapi.com/2/files/get_metadata", {
+    method: "POST",
+    headers: { Authorization: `Bearer ${accessToken}`, "Content-Type": "application/json" },
+    body: JSON.stringify({ path: dropboxPath }),
+  });
+  if (response.ok) return true;
+  const data = await response.json().catch(() => ({}));
+  if (data?.error_summary?.startsWith("path/not_found")) return false;
+  throw new Error(`Dropbox存在確認に失敗しました（${response.status}） path=${dropboxPath}: ${JSON.stringify(data)}`);
+}
+
+/** 上書きしないアップロード（mode: add, autorename: false → 既存と衝突したらエラー）。 */
+export async function uploadFileNoOverwrite(dropboxPath, fileBuffer) {
+  const accessToken = await getAccessToken();
+  const response = await fetch(UPLOAD_URL, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${accessToken}`,
+      "Content-Type": "application/octet-stream",
+      "Dropbox-API-Arg": JSON.stringify({ path: dropboxPath, mode: "add", autorename: false, mute: true }),
+    },
+    body: fileBuffer,
+  });
+  if (!response.ok) {
+    const text = await response.text().catch(() => "");
+    throw new Error(`Dropbox新規アップロードに失敗しました（${response.status}） path=${dropboxPath}: ${text}`);
+  }
+  return response.json();
+}

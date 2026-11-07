@@ -36,7 +36,9 @@
     "queue:request": "node scripts/generate-analysis-request.mjs",
     "scout:collect": "node scripts/scout/index.mjs",
     "scout:test": "node scripts/test-scout-collect.mjs",
-    "cbs:export": "node scripts/export-creative-brief-studio-ai.mjs"
+    "cbs:export": "node scripts/export-creative-brief-studio-ai.mjs",
+    "dis:run": "node scripts/dis/run.mjs",
+    "dis:test": "node --test scripts/dis/test.mjs"
   },
   "dependencies": {
     "playwright": "^1.55.0",

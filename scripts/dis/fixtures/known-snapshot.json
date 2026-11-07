@@ -1,0 +1,1 @@
+{ "_comment": "合成のNotionスナップショット（重複判定テスト用）", "pages": [ { "id": "FIXTURE-0001", "url": "https://dup.example/lp", "brand": "Dup Brand LP", "capturedAt": "2026-10-01", "media": "lp" } ] }
