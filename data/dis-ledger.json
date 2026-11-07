@@ -133,6 +133,114 @@
         "skippedProps": [],
         "attachment": null
       }
+    },
+    {
+      "key": "lp:calbee.co.jp/39cp2026",
+      "disId": "DIS-LP-20261108",
+      "media": "lp",
+      "pageUrl": "https://www.calbee.co.jp/39cp2026/",
+      "brand": "カルビー株式会社",
+      "date": "2026-11-08",
+      "dropbox": {
+        "status": "created",
+        "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-LP-20261108",
+        "uploaded": [
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-LP-20261108/01_Original/pc_full.png",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-LP-20261108/02_Preview/pc_preview.jpg",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-LP-20261108/02_Preview/sections/pc_01.jpg",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-LP-20261108/02_Preview/sections/pc_02.jpg",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-LP-20261108/02_Preview/sections/pc_03.jpg",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-LP-20261108/02_Preview/sections/pc_04.jpg",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-LP-20261108/02_Preview/sections/pc_05.jpg",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-LP-20261108/01_Original/sp_full.png",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-LP-20261108/02_Preview/sp_preview.jpg",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-LP-20261108/02_Preview/sections/sp_01.jpg",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-LP-20261108/02_Preview/sections/sp_02.jpg",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-LP-20261108/02_Preview/sections/sp_03.jpg",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-LP-20261108/02_Preview/sections/sp_04.jpg",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-LP-20261108/03_Analysis/analysis.json",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-LP-20261108/03_Analysis/analysis.md",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-LP-20261108/metadata.json"
+        ]
+      },
+      "notion": {
+        "status": "created",
+        "pageId": "41124d4f-a671-817b-9938-d0d93033839b",
+        "url": "https://app.notion.com/p/DIS-LP-20261108-miino-39-41124d4fa671817b9938d0d93033839b",
+        "blocks": 84,
+        "skippedProps": [],
+        "attachment": null
+      }
+    },
+    {
+      "key": "banner:retrobanner.net/archives/15113",
+      "disId": "DIS-BN-20261108",
+      "media": "banner",
+      "pageUrl": "https://retrobanner.net/archives/15113",
+      "brand": "『PDFをパッと要約、仕事の効率アップ Adobe Acrobat』のバナーデザイン - Retro Banners - バナーデザインギャラリー",
+      "date": "2026-11-08",
+      "dropbox": {
+        "status": "created",
+        "folder": "/design/Design_Research_Library/Banner_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-BN-20261108",
+        "uploaded": [
+          "/design/Design_Research_Library/Banner_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-BN-20261108/01_Original/banner.jpg",
+          "/design/Design_Research_Library/Banner_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-BN-20261108/02_Preview/banner_preview.jpg",
+          "/design/Design_Research_Library/Banner_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-BN-20261108/03_Analysis/analysis.json",
+          "/design/Design_Research_Library/Banner_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-BN-20261108/03_Analysis/analysis.md",
+          "/design/Design_Research_Library/Banner_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-BN-20261108/metadata.json"
+        ]
+      },
+      "notion": {
+        "status": "created",
+        "pageId": "41124d4f-a671-812a-ba53-e5ed0627f196",
+        "url": "https://app.notion.com/p/DIS-BN-20261108-Adobe-Acrobat-AI-41124d4fa671812aba53e5ed0627f196",
+        "blocks": 60,
+        "skippedProps": [],
+        "attachment": "attached"
+      }
+    },
+    {
+      "key": "web:ffpfredrik.com/ja-jp",
+      "disId": "DIS-WB-20261108",
+      "media": "web",
+      "pageUrl": "https://ffpfredrik.com/ja-jp",
+      "brand": "FREDRIK ONLINE STORE",
+      "date": "2026-11-08",
+      "dropbox": {
+        "status": "created",
+        "folder": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-WB-20261108",
+        "uploaded": [
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-WB-20261108/01_Original/pc_full.png",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-WB-20261108/02_Preview/pc_preview.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-WB-20261108/02_Preview/sections/pc_01.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-WB-20261108/02_Preview/sections/pc_02.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-WB-20261108/02_Preview/sections/pc_03.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-WB-20261108/02_Preview/sections/pc_04.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-WB-20261108/02_Preview/sections/pc_05.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-WB-20261108/02_Preview/sections/pc_06.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-WB-20261108/02_Preview/sections/pc_07.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-WB-20261108/01_Original/sp_full.png",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-WB-20261108/02_Preview/sp_preview.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-WB-20261108/02_Preview/sections/sp_01.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-WB-20261108/02_Preview/sections/sp_02.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-WB-20261108/02_Preview/sections/sp_03.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-WB-20261108/02_Preview/sections/sp_04.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-WB-20261108/02_Preview/sections/sp_05.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-WB-20261108/02_Preview/sections/sp_06.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-WB-20261108/02_Preview/sections/sp_07.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-WB-20261108/03_Analysis/analysis.json",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-WB-20261108/03_Analysis/analysis.md",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-WB-20261108/metadata.json"
+        ]
+      },
+      "notion": {
+        "status": "created",
+        "pageId": "41124d4f-a671-8155-84da-ce6b96c8c855",
+        "url": "https://app.notion.com/p/DIS-WB-20261108-FREDRIK-by-FREDRIK-PACKERS-41124d4fa671815584dace6b96c8c855",
+        "blocks": 93,
+        "skippedProps": [],
+        "attachment": null
+      }
     }
   ]
 }
