@@ -9,7 +9,7 @@ import { selectOne } from "./lib/select.mjs";
 import { writesAllowed } from "./lib/write-guard.mjs";
 import { emptyAnalysis, validateAnalysis, AXES } from "./lib/analysis-schema.mjs";
 import { idempotencyKey } from "./lib/ledger.mjs";
-import { extractDetailLinks, parseDetail } from "./lib/collect.mjs";
+import { extractDetailLinks, parseDetail, collectFromSource, extractRdlpCards, parseRdlpDetail } from "./lib/collect.mjs";
 import { loadConfig } from "./lib/config.mjs";
 import { dropboxFolder, buildNotionProps } from "./lib/adapters.mjs";
 
@@ -141,4 +141,24 @@ test("E2E(ドライラン): フィクスチャで選定→テンプレ→検証�
   // 再実行で選定結果が再利用される（冪等）
   r = run(["--stage", "collect,select", "--media", "lp"]);
   assert.equal(JSON.parse(r.stdout).media.lp.stages.select, "reused");
+});
+
+test("rdlp: カード/詳細パース（カテゴリ一覧は拾わない）", async () => {
+  const list = '<a href="/lp-archive/taste/beige/">ベージュ系のLPデザイン3,682件</a><div class="lp-card lp-show-wrap"><div class="lp-card-img"><a href="/lp-archive/foo-lp/"><img src="/t.jpg" alt="Foo"></a></div><div class="lp-card-label"><a href="/lp-archive/foo-lp/">Foo LPタイトル</a></div><span class="company">Foo社</span><input name="post_id" value="123"></div>';
+  const cards = extractRdlpCards(list, "https://rdlp.jp/lp-archive/");
+  assert.deepEqual(cards.map((c) => [c.url, c.title, c.postId, c.company]), [["https://rdlp.jp/lp-archive/foo-lp/", "Foo LPタイトル", "123", "Foo社"]]);
+  const d = parseRdlpDetail('<a class="url_check" href="https://foo.example/lp"><img src="/pc.png"></a>', "https://rdlp.jp/lp-archive/foo-lp/");
+  assert.deepEqual([d.pageUrl, d.image], ["https://foo.example/lp", "https://rdlp.jp/pc.png"]);
+  assert.equal((await loadConfig()).sources.find((x) => x.key === "rdlp").parser, "rdlp");
+});
+
+test("collectFromSource: getterで403は回避せずfetchError、成功時は候補化", async () => {
+  const src = { media: "lp", key: "k", name: "K", termsStatus: "known", listUrl: "https://s.example/", detailPathIncludes: "/lp/" };
+  const blocked = { robots: async () => true, get: async () => ({ ok: false, status: 403, text: "" }) };
+  const r1 = await collectFromSource(src, { getter: blocked });
+  assert.match(r1[0].fetchError, /403/);
+  const pages = { "https://s.example/": '<a href="/lp/a/">a</a>', "https://s.example/lp/a/": '<meta property="og:title" content="A LP"><a href="https://real.example/lp">x</a>' };
+  const ok = { robots: async () => true, get: async (u) => ({ ok: true, status: 200, text: pages[u] }) };
+  const r2 = await collectFromSource(src, { getter: ok });
+  assert.deepEqual([r2[0].brand, r2[0].pageUrl], ["A LP", "https://real.example/lp"]);
 });

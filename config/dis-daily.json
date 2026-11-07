@@ -37,7 +37,7 @@
     }
   },
   "sources": [
-    { "key": "rdlp", "media": "lp", "name": "LPアーカイブ", "listUrl": "https://rdlp.jp/lp-archive/", "detailPathIncludes": "/lp-archive/", "termsStatus": "known", "notes": "listing取得にはBot判定で403になる場合あり。回避しない。" },
+    { "key": "rdlp", "media": "lp", "name": "LPアーカイブ", "listUrl": "https://rdlp.jp/lp-archive/", "detailPathIncludes": "/lp-archive/", "parser": "rdlp", "termsStatus": "known", "notes": "listing取得にはBot判定で403になる場合あり。回避しない。" },
     { "key": "lp-advance", "media": "lp", "name": "LP advance", "listUrl": "https://lp-web.com/", "detailPathIncludes": "/lp/", "termsStatus": "unknown" },
     { "key": "wdc-lp", "media": "lp", "name": "Web Design Clip [L]", "listUrl": "https://lp.webdesignclip.com/", "detailPathIncludes": "/", "termsStatus": "unknown" },
     { "key": "sankou-lp", "media": "lp", "name": "SANKOU!", "listUrl": "https://sankoudesign.com/", "detailPathIncludes": "/lp/", "termsStatus": "unknown" },

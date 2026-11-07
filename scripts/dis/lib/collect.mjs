@@ -53,21 +53,66 @@ export function parseDetail(html, detailUrl) {
   return { title, image, pageUrl: outbound[0] || null };
 }
 
-/** ライブ収集。fetchImpl を差し替えればテスト可能。失敗は fetchError に格納して継続。 */
-export async function collectFromSource(source, { fetchImpl = fetch, detailLimit = 3 } = {}) {
+const attr = (tag, name) => tag.match(new RegExp(`${name}=["']([^"']*)["']`, "i"))?.[1] ?? null;
+const stripTags = (h) => h.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+
+/** LPアーカイブ一覧: .lp-card.lp-show-wrap のカードだけを対象に、個別ページURL・タイトル・投稿IDを取る（カテゴリ/タグ一覧は対象外）。 */
+export function extractRdlpCards(html, listUrl, limit = 8) {
+  const chunks = html.split(/(?=<[^>]+class=["'][^"']*\blp-card\b[^"']*\blp-show-wrap\b)/).slice(1);
+  const out = [];
+  for (const chunk of chunks) {
+    const block = chunk.slice(0, 4000);
+    const anchor = block.match(/lp-card-(?:img|label)[^>]*>\s*<a\b[^>]*>/i)?.[0] || block.match(/<a\b[^>]*href=[^>]*>/i)?.[0];
+    const url = anchor ? abs(attr(anchor, "href"), listUrl) : null;
+    if (!url) continue;
+    const label = block.match(/lp-card-label[^>]*>([\s\S]*?)<\/div>/i)?.[1];
+    const title = (label && stripTags(label)) || attr(block.match(/<img\b[^>]*>/i)?.[0] || "", "alt") || null;
+    const postId = block.match(/<input[^>]*name=["']post_id["'][^>]*>/i);
+    const company = stripTags(block.match(/class=["']company["'][^>]*>([\s\S]*?)<\//i)?.[1] || "") || null;
+    out.push({ url, title, postId: postId ? attr(postId[0], "value") : null, company });
+    if (out.length >= limit) break;
+  }
+  return [...new Map(out.map((o) => [o.url, o])).values()];
+}
+
+/** LPアーカイブ詳細: a.url_check の href が実LPのURL。 */
+export function parseRdlpDetail(html, detailUrl) {
+  const anchors = [...html.matchAll(/<a\b[^>]*>/gi)].map((m) => m[0]).filter((t) => /class=["'][^"']*\burl_check\b/i.test(t));
+  const pageUrl = anchors.map((t) => abs(attr(t, "href"), detailUrl)).find(Boolean) || null;
+  const firstImg = html.match(/class=["'][^"']*url_check[^"']*["'][^>]*>\s*<img\b[^>]*>/i)?.[0].match(/<img\b[^>]*>/i)?.[0];
+  const image = abs((firstImg && attr(firstImg, "src")) || meta(html, "og:image") || "", detailUrl);
+  return { title: meta(html, "og:title"), image, pageUrl };
+}
+
+/** 通常のfetchによるページ取得。{ok,status,text}。403等はそのまま失敗扱い（回避しない）。 */
+export function fetchGetter(fetchImpl = fetch) {
+  return {
+    async get(url) {
+      const r = await fetchImpl(url, { headers: { "User-Agent": UA } });
+      return { ok: r.ok, status: r.status, text: r.ok ? await r.text() : "" };
+    },
+    robots: (url) => robotsAllows(url, fetchImpl),
+  };
+}
+
+/** ライブ収集。getter を差し替えればテスト可能。失敗は fetchError に格納して継続。 */
+export async function collectFromSource(source, { getter = fetchGetter(), detailLimit = 3 } = {}) {
   const base = { media: source.media, sourceKey: source.key, sourceName: source.name, termsStatus: source.termsStatus };
   try {
-    if (!(await robotsAllows(source.listUrl, fetchImpl))) return [{ ...base, fetchError: "robots.txtで禁止" }];
-    const res = await fetchImpl(source.listUrl, { headers: { "User-Agent": UA } });
+    if (!(await getter.robots(source.listUrl))) return [{ ...base, fetchError: "robots.txtで禁止" }];
+    const res = await getter.get(source.listUrl);
     if (!res.ok) return [{ ...base, fetchError: `HTTP ${res.status}（回避しない）` }];
-    const links = extractDetailLinks(await res.text(), source, detailLimit);
+    const rdlp = source.parser === "rdlp";
+    const cards = rdlp ? extractRdlpCards(res.text, source.listUrl, detailLimit) : extractDetailLinks(res.text, source, detailLimit).map((url) => ({ url }));
     const results = [];
-    for (const detailUrl of links) {
+    for (const card of cards) {
+      const detailUrl = card.url;
       try {
-        const r = await fetchImpl(detailUrl, { headers: { "User-Agent": UA } });
+        const r = await getter.get(detailUrl);
         if (!r.ok) { results.push({ ...base, sourceDetailUrl: detailUrl, fetchError: `HTTP ${r.status}` }); continue; }
-        const d = parseDetail(await r.text(), detailUrl);
-        results.push({ ...base, sourceDetailUrl: detailUrl, brand: d.title, title: d.title, pageUrl: d.pageUrl, imageUrl: d.image, signals: heuristicSignals(d) });
+        const d = rdlp ? parseRdlpDetail(r.text, detailUrl) : parseDetail(r.text, detailUrl);
+        const title = card.title || d.title;
+        results.push({ ...base, sourceDetailUrl: detailUrl, brand: card.company || title, title, archivePostId: card.postId ?? null, pageUrl: d.pageUrl, imageUrl: d.image, signals: heuristicSignals(d) });
       } catch (e) { results.push({ ...base, sourceDetailUrl: detailUrl, fetchError: e.message }); }
     }
     return results;
