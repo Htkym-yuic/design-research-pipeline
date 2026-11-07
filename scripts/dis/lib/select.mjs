@@ -29,8 +29,11 @@ export function selectOne(candidates, { weights, minScore, maxCandidates = 5, du
   // 比較するのは「除外条件に該当しない候補」の先頭 maxCandidates 件（重複や取得失敗で枠を消費しない）
   const eligible = evaluated.filter((e) => e.blockers.length === 0);
   for (const e of eligible.slice(0, maxCandidates)) e.inComparison = true;
-  const compared = eligible.slice(0, maxCandidates).filter((e) => e.score >= minScore)
-    .sort((a, b) => b.score - a.score || tieHash(tieSeed, a.pageUrl) - tieHash(tieSeed, b.pageUrl));
+  // 人が評価した候補（reviewReasonあり）は、評価の高い順に選ぶ。同点のときだけ機械的なスコア、さらに日替わりの乱数で決める。
+  // 評価済みの候補は足切りの閾値を免除する（除外条件には従う）。評価がない候補は、評価済みより後に回す。
+  const rank = (c) => (c.reviewReason ? Number(c.signals?.learningValue ?? 0) : -1);
+  const compared = eligible.slice(0, maxCandidates).filter((c) => c.reviewReason || c.score >= minScore)
+    .sort((a, b) => rank(b) - rank(a) || b.score - a.score || tieHash(tieSeed, a.pageUrl) - tieHash(tieSeed, b.pageUrl));
   if (compared.length === 0) {
     const reason = evaluated.length === 0 ? "候補なし" : eligible.length === 0 ? "全候補が除外条件に該当" : `最高スコアが閾値${minScore}未満`;
     return { selected: null, evaluated, skippedReason: reason };

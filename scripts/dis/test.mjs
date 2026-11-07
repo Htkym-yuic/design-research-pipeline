@@ -520,3 +520,17 @@ test("tileFit: 縦長は上端(north)を切り出し、横長・通常は全体�
   const { data } = await sharp(out).extract({ left: 10 + 180, top: 10 + 10, width: 1, height: 1 }).raw().toBuffer({ resolveWithObject: true });
   assert.ok(data[0] > 180 && data[2] < 80, `RGB=${[...data]}`); // 赤
 });
+
+test("selectOne: 評価済みの候補は、機械的なスコアが低くても評価の高い順に選ばれ、閾値も免除される", () => {
+  const w = { learningValue: 40, assetsAvailable: 15, freshness: 15 };
+  const mk = (n, lv, assets, reviewed) => ({ brand: `b${n}`, pageUrl: `https://b${n}.example/`, termsStatus: "known", signals: { learningValue: lv, assetsAvailable: assets, freshness: 0.7 }, ...(reviewed ? { reviewReason: "評価" } : {}) });
+  // b1: 評価0.8だが画像なし(スコア低)、b2: 評価0.7で画像あり(スコア高)
+  const res = selectOne([mk(2, 0.7, 1, true), mk(1, 0.8, 0.3, true), mk(3, 0.5, 1, false)], { weights: w, minScore: 60, dupCheck: () => ({ duplicate: false }) });
+  assert.equal(res.selected.brand, "b1");
+  const b1 = res.evaluated.find((e) => e.brand === "b1");
+  assert.ok(b1.score < 60); // 閾値未満でも評価済みなので選ばれる
+  // 評価のない候補しかなければ、従来どおり閾値で足切り
+  assert.equal(selectOne([mk(4, 0.5, 0.3, false)], { weights: w, minScore: 60, dupCheck: () => ({ duplicate: false }) }).selected, null);
+  // 重複は、評価が高くても除外
+  assert.equal(selectOne([mk(5, 1, 1, true)], { weights: w, minScore: 0, dupCheck: () => ({ duplicate: true, reason: "url", of: "X" }) }).selected, null);
+});
