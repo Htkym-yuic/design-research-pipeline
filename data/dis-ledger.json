@@ -68,6 +68,71 @@
         "pageId": "41124d4f-a671-8187-ae4a-dccd5c4dccdd",
         "url": "https://app.notion.com/p/DIS-LP-20261107-TOKYO-2026-41124d4fa6718187ae4adccd5c4dccdd"
       }
+    },
+    {
+      "key": "banner:bannnner.com/banner_9195",
+      "disId": "DIS-BN-20261107",
+      "media": "banner",
+      "pageUrl": "https://bannnner.com/banner_9195/",
+      "brand": "スクウェア・エニックスが贈る完全新作シミュレーションRPG THE DIOFIELD CHRONICLEのバナー",
+      "date": "2026-11-07",
+      "dropbox": {
+        "status": "created",
+        "folder": "/design/Design_Research_Library/Banner_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-BN-20261107",
+        "uploaded": [
+          "/design/Design_Research_Library/Banner_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-BN-20261107/01_Original/banner.jpg",
+          "/design/Design_Research_Library/Banner_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-BN-20261107/02_Preview/banner_preview.jpg",
+          "/design/Design_Research_Library/Banner_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-BN-20261107/03_Analysis/analysis.json",
+          "/design/Design_Research_Library/Banner_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-BN-20261107/03_Analysis/analysis.md",
+          "/design/Design_Research_Library/Banner_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-BN-20261107/metadata.json"
+        ]
+      },
+      "notion": {
+        "status": "created",
+        "pageId": "41124d4f-a671-8133-bce9-d9f3babc8985",
+        "url": "https://app.notion.com/p/DIS-BN-20261107-THE-DIOFIELD-CHRONICLE-41124d4fa6718133bce9d9f3babc8985",
+        "blocks": 72,
+        "skippedProps": [],
+        "attachment": "attached"
+      }
+    },
+    {
+      "key": "web:baselinedesign.com",
+      "disId": "DIS-WB-20261107",
+      "media": "web",
+      "pageUrl": "https://www.baselinedesign.com/",
+      "brand": "Baseline Design",
+      "date": "2026-11-07",
+      "dropbox": {
+        "status": "created",
+        "folder": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-WB-20261107",
+        "uploaded": [
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-WB-20261107/01_Original/pc_full.png",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-WB-20261107/02_Preview/pc_preview.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-WB-20261107/02_Preview/sections/pc_01.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-WB-20261107/02_Preview/sections/pc_02.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-WB-20261107/02_Preview/sections/pc_03.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-WB-20261107/02_Preview/sections/pc_04.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-WB-20261107/01_Original/sp_full.png",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-WB-20261107/02_Preview/sp_preview.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-WB-20261107/02_Preview/sections/sp_01.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-WB-20261107/02_Preview/sections/sp_02.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-WB-20261107/02_Preview/sections/sp_03.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-WB-20261107/02_Preview/sections/sp_04.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-WB-20261107/02_Preview/sections/sp_05.jpg",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-WB-20261107/03_Analysis/analysis.json",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-WB-20261107/03_Analysis/analysis.md",
+          "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-WB-20261107/metadata.json"
+        ]
+      },
+      "notion": {
+        "status": "created",
+        "pageId": "41124d4f-a671-8165-a6ee-fec4b037a8f0",
+        "url": "https://app.notion.com/p/DIS-WB-20261107-Baseline-Design-41124d4fa6718165a6eefec4b037a8f0",
+        "blocks": 105,
+        "skippedProps": [],
+        "attachment": null
+      }
     }
   ]
 }
