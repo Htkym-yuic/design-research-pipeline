@@ -11,7 +11,7 @@ import { emptyAnalysis, validateAnalysis, AXES } from "./lib/analysis-schema.mjs
 import { idempotencyKey } from "./lib/ledger.mjs";
 import { extractDetailLinks, parseDetail, collectFromSource, extractRdlpCards, parseRdlpDetail } from "./lib/collect.mjs";
 import { loadConfig } from "./lib/config.mjs";
-import { dropboxFolder, buildNotionProps, chunkText, buildNotionBlocks } from "./lib/adapters.mjs";
+import { dropboxFolder, buildNotionProps, chunkText, buildNotionBlocks, markdownToBlocks } from "./lib/adapters.mjs";
 
 const here = path.dirname(new URL(import.meta.url).pathname);
 
@@ -170,8 +170,24 @@ test("chunkText: 全文を落とさず1900文字以内に分割／長い1行も�
   assert.equal(chunks.join("\n").replace(/\n/g, "").length, text.replace(/\n/g, "").length);
 });
 
-test("buildNotionBlocks: 長い分析も全て含む", () => {
-  const blocks = buildNotionBlocks({ summary: "s", selectionReason: "r" }, [["分析", "x".repeat(11000)]]);
-  const total = blocks.filter((b) => b.type === "paragraph").map((b) => b.paragraph.rich_text[0].text.content).join("").length;
-  assert.equal(total, 2 + 11000);
+test("markdownToBlocks: 見出し・箇条書き・番号・表を変換し、全文を落とさない", () => {
+  const md = ["# タイトル", "", "## 概要", "本文", "", "- 項目A", "1. 手順1", "| 軸 | 評価 | 確信度 | 根拠 | 未確認 |", "|---|---|---|---|---|", "| 配色 | 4 | medium | 根拠**太字** | なし |", "**最優先**: やること", "x".repeat(4000)].join("\n");
+  const b = markdownToBlocks(md);
+  const types = b.map((x) => x.type);
+  assert.ok(!types.includes("heading_1")); // 先頭H1は省く
+  assert.deepEqual(types.slice(0, 5), ["heading_2", "paragraph", "bulleted_list_item", "numbered_list_item", "bulleted_list_item"]);
+  const text = b.map((x) => x[x.type].rich_text[0].text.content).join("\n");
+  assert.ok(text.includes("配色（評価 4 ／ 確信度 medium）根拠: 根拠太字 ／ 未確認: なし"));
+  assert.ok(!text.includes("**"));
+  assert.equal(b.filter((x) => x.type === "paragraph").map((x) => x.paragraph.rich_text[0].text.content).join("").replace("本文", "").replace("最優先: やること", "").length, 4000);
+  assert.ok(b.every((x) => x[x.type].rich_text[0].text.content.length <= 1900));
+});
+
+test("buildNotionBlocks: 実際の分析Markdownを全て変換できる", async () => {
+  const a = JSON.parse(await fs.readFile(path.join(here, "../../candidates/dis/2026-11-07/DIS-LP-20261107.analysis.json"), "utf8"));
+  const { analysisToMarkdown } = await import("./lib/analysis-schema.mjs");
+  const b = buildNotionBlocks(a, analysisToMarkdown(a));
+  assert.ok(b.length > 50);
+  assert.ok(b.some((x) => x.type === "heading_2"));
+  assert.ok(!b.some((x) => /^#{1,3} /.test(x[x.type].rich_text[0].text.content)));
 });

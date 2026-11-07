@@ -141,7 +141,7 @@ async function runMedia(media) {
         if (result.dropbox.status !== "created") throw new Error(`Dropbox: ${result.dropbox.status}`);
       } else result.dropbox = { status: "skipped_already_done" };
       if (entry?.notion?.status !== "created") {
-        result.notionResult = await writeNotion({ cfg, media, values: notionValues, blocks: buildNotionBlocks(analysis, [["分析（全文）", await fs.readFile(`${d}/analysis.md`, "utf8")]]), opts: { apply: args.apply } });
+        result.notionResult = await writeNotion({ cfg, media, values: notionValues, blocks: buildNotionBlocks(analysis, await fs.readFile(`${d}/analysis.md`, "utf8")), opts: { apply: args.apply } });
         upsertEntry(ledger, { ...base, notion: result.notionResult }); await saveLedger(ledger, ledgerFile);
       } else result.notionResult = { status: "skipped_already_done" };
     }

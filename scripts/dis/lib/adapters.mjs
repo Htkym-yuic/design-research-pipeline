@@ -69,10 +69,37 @@ export function chunkText(text, max = 1900) {
   return out;
 }
 
-export function buildNotionBlocks(a, markdownSections) {
-  const blocks = [headingBlock("概要", 2), paragraphBlock(a.summary), headingBlock("選定理由", 2), paragraphBlock(a.selectionReason)];
-  for (const [title, text] of markdownSections) blocks.push(headingBlock(title, 2), ...chunkText(text).map(paragraphBlock));
+const rt = (text) => [{ type: "text", text: { content: text } }];
+const plain = (t) => t.replace(/\*\*(.+?)\*\*/g, "$1").trim();
+const block = (type, text) => ({ object: "block", type, [type]: { rich_text: rt(text) } });
+
+/** 分析のMarkdownをNotionブロックへ変換（見出し・箇条書き・番号リスト・表→箇条書き）。長文は1900文字で分割し、切り捨てない。 */
+export function markdownToBlocks(md) {
+  const blocks = [];
+  const push = (type, text) => { for (const c of chunkText(text)) blocks.push(block(type, c)); };
+  let skippedTitle = false;
+  for (const raw of String(md).split("\n")) {
+    const line = raw.trimEnd();
+    if (!line.trim()) continue;
+    let m;
+    if ((m = line.match(/^(#{1,3})\s+(.*)$/))) {
+      if (m[1].length === 1 && !skippedTitle) { skippedTitle = true; continue; } // ページ名と重複するため先頭H1は省く
+      push(`heading_${Math.min(m[1].length + (m[1].length === 1 ? 1 : 0), 3)}`, plain(m[2]));
+    } else if ((m = line.match(/^\s*[-*]\s+(.*)$/))) push("bulleted_list_item", plain(m[1]));
+    else if ((m = line.match(/^\s*\d+\.\s+(.*)$/))) push("numbered_list_item", plain(m[1]));
+    else if (line.startsWith("|")) {
+      const cells = line.split("|").slice(1, -1).map((c) => plain(c));
+      if (cells.every((c) => /^-+$/.test(c))) continue; // 区切り行
+      if (cells[0] === "軸") continue; // 表見出し行
+      const [axis, score, conf, evidence, unverified] = cells;
+      push("bulleted_list_item", `${axis}（評価 ${score} ／ 確信度 ${conf}）根拠: ${evidence} ／ 未確認: ${unverified}`);
+    } else push("paragraph", plain(line));
+  }
   return blocks;
+}
+
+export function buildNotionBlocks(a, markdown) {
+  return markdownToBlocks(markdown);
 }
 
 /** Notion作成専用アダプター。既存ページは編集せず、同一URLが既にあれば作成をスキップ。 */
