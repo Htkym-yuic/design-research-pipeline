@@ -101,6 +101,7 @@ async function runMedia(media) {
       const files = cfg.media[media].capture === "public-image" ? await downloadBanner(sel.imageUrl, `${d}/files`) : await captureFullPage(sel.pageUrl, `${d}/files`);
       await wj(`${d}/files.json`, files);
       r.stages.capture = `${files.length} files`;
+      if (files.warnings?.length) { r.stages.capture += ` / WARNING: ${files.warnings.join("; ")}`; r.warnings = files.warnings; }
     }
   }
 

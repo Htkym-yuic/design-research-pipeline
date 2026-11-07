@@ -21,7 +21,7 @@ export async function scrollThrough(page, { step = 500, pauseMs = 150, maxSteps 
 }
 
 /** 縦長の全体画像を読める高さに切り分ける（分析用）。 */
-export async function sliceTall(src, outDir, prefix, { sliceHeight = 1600, maxSlices = 14, width = 1000 } = {}) {
+export async function sliceTall(src, outDir, prefix, { sliceHeight = 1600, maxSlices = 40, width = 1000 } = {}) {
   const { default: sharp } = await import("sharp");
   const meta = await sharp(src, { limitInputPixels: false }).metadata();
   const files = [];
@@ -43,6 +43,8 @@ export async function captureFullPage(url, outDir) {
   await fs.mkdir(path.join(outDir, "02_Preview"), { recursive: true });
   const browser = await chromium.launch();
   const files = [];
+  const warnings = [];
+  files.warnings = warnings;
   try {
     for (const [name, viewport, mobile] of [["pc", { width: 1440, height: 900 }, false], ["sp", { width: 390, height: 844 }, true]]) {
       const ctx = await browser.newContext({ viewport, isMobile: mobile, deviceScaleFactor: 1 });
@@ -60,7 +62,7 @@ export async function captureFullPage(url, outDir) {
       await fs.mkdir(secDir, { recursive: true });
       const sl = await sliceTall(orig, secDir, name);
       for (const f of sl.files) files.push({ local: path.join(secDir, f), rel: `02_Preview/sections/${f}` });
-      if (sl.total > sl.files.length) console.warn(`[capture] ${name}: ${sl.total}枚中${sl.files.length}枚のみ切り出し（上限）`);
+      if (sl.total > sl.files.length) warnings.push(`${name}: ${sl.total}枚中${sl.files.length}枚のみ切り出し（上限で切り捨て）`);
       await ctx.close();
     }
   } finally { await browser.close(); }
