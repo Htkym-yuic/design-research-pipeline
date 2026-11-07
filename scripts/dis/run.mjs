@@ -15,6 +15,7 @@ import { collectFromSource, loadFixture } from "./lib/collect.mjs";
 import { emptyAnalysis, validateAnalysis, analysisToMarkdown } from "./lib/analysis-schema.mjs";
 import { emptyAnnotations, validateAnnotations } from "./lib/annotations.mjs";
 import { buildTextIndex } from "./lib/text-index.mjs";
+import { checkAssetSet } from "./lib/asset-check.mjs";
 import { idempotencyKey, loadLedger, saveLedger, findEntry, upsertEntry } from "./lib/ledger.mjs";
 import { writesAllowed } from "./lib/write-guard.mjs";
 import { buildContactSheet, applyLearning, suggestCriteria } from "./lib/review.mjs";
@@ -140,9 +141,10 @@ async function runMedia(media) {
     if (!args.capture) r.stages.capture = "not requested (--capture 未指定)";
     else {
       const { captureFullPage, downloadBanner } = await import("./lib/capture.mjs");
-      const files = cfg.media[media].capture === "public-image" ? await downloadBanner(sel.imageUrl, `${d}/files`) : await captureFullPage(sel.pageUrl, `${d}/files`);
+      const files = cfg.media[media].capture === "public-image" ? await downloadBanner(sel.imageUrl, `${d}/files`) : await captureFullPage(sel.pageUrl, `${d}/files`, { id: disId });
       await wj(`${d}/files.json`, files);
-      r.stages.capture = `${files.length} files`;
+      const ac = await checkAssetSet(`${d}/files`, { id: disId, media });
+      r.stages.capture = `${files.length} files / 画像の揃い: ${ac.ok ? "OK" : "NG " + ac.errors.join("; ")}`;
       if (files.warnings?.length) { r.stages.capture += ` / WARNING: ${files.warnings.join("; ")}`; r.warnings = files.warnings; }
     }
   }
@@ -182,6 +184,8 @@ async function runMedia(media) {
 
   if (stages.includes("publish")) {
     if (!(sel.reviewTotal >= cfg.selection.passScore)) { r.stages.publish = `blocked: 選定基準${cfg.selection.passScore}/${cfg.selection.maxScore}点が未判定または未達（review→learning.json→rescore を実行）`; return; }
+    const ac = await checkAssetSet(`${d}/files`, { id: disId, media });
+    if (!ac.ok && (await readJson(`${d}/files.json`, [])).length) { r.stages.publish = `blocked: 画像の揃いが不足（${ac.errors.join("; ")}）`; return; }
     const entry = findEntry(ledger, key);
     const folder = dropboxFolder(cfg, media, args.date, disId);
     const generated = [{ local: `${d}/analysis.json`, rel: "03_Analysis/analysis.json" }, { local: `${d}/analysis.md`, rel: "03_Analysis/analysis.md" }, { local: `${d}/annotations.json`, rel: "03_Analysis/annotations.json" }, { local: `${d}/text-index.json`, rel: "03_Analysis/text-index.json" }];
@@ -193,7 +197,10 @@ async function runMedia(media) {
     const host = (u) => { try { return new URL(u).hostname; } catch { return ""; } };
     const brand = analysis.brand || sel.brand;
     const notionValues = { disId, brand, title: `${disId} ${brand}`, pageUrl: sel.pageUrl, detailUrl: sel.sourceDetailUrl, sourceName: sel.sourceName, sourceLine: `${sel.sourceName} ${sel.sourceDetailUrl}`, date: args.date, dropboxFolder: folder, summary: analysis.summary, imageUrl: sel.imageUrl, domain: host(sel.pageUrl), normalizedUrl: normalizeUrl(sel.pageUrl), key };
-    const origin = captured.find((c) => /^01_Original\/banner\./.test(c.rel));
+    const origin = captured.find((c) => /^01_Normal_Images\/banner\./.test(c.rel));
+    const order = ["PC_first_view", "PC_sections", "SP_first_view", "SP_sections"];
+    const caption = { PC_first_view: "PC ファーストビュー", PC_sections: "PC セクション一覧（番号は分割画像の順）", SP_first_view: "SP ファーストビュー", SP_sections: "SP セクション一覧（番号は分割画像の順）" };
+    const bodyImages = media === "banner" ? [] : order.map((k) => ({ k, c: captured.find((x) => x.rel === `02_Notion_Images/${disId}_${k}_notion.jpg`) })).filter((x) => x.c).map(({ k, c }) => ({ path: c.local, caption: caption[k] }));
     const mime = { jpg: "image/jpeg", png: "image/png", webp: "image/webp", gif: "image/gif" };
     const attachFile = origin ? { path: origin.local, name: path.basename(origin.local), contentType: mime[origin.rel.split(".").pop()] || "application/octet-stream" } : null;
     const result = { dryRun: !writeOk, key, dropboxFolder: folder, dropboxPlan: plan.map((p) => p.remote), notion: { library: cfg.media[media].notion.libraryName, collection: cfg.media[media].notion.collection, title: notionValues.title, plannedProperties: Object.keys({ ...(cfg.media[media].notion.propertyMap || DEFAULT_PROPERTY_MAP), ...(analysis.notionProps || {}) }), attachment: attachFile ? `${attachFile.name}（${cfg.media[media].notion.fileProp || "列なし"}）` : null } };
@@ -207,7 +214,7 @@ async function runMedia(media) {
         if (result.dropbox.status !== "created") throw new Error(`Dropbox: ${result.dropbox.status}`);
       } else result.dropbox = { status: "skipped_already_done" };
       if (entry?.notion?.status !== "created") {
-        result.notionResult = await writeNotion({ cfg, media, values: notionValues, blocks: buildNotionBlocks(analysis, await fs.readFile(`${d}/analysis.md`, "utf8")), opts: { apply: args.apply }, extraProps: analysis.notionProps || {}, attachFile });
+        result.notionResult = await writeNotion({ cfg, media, values: notionValues, blocks: buildNotionBlocks(analysis, await fs.readFile(`${d}/analysis.md`, "utf8")), opts: { apply: args.apply }, extraProps: analysis.notionProps || {}, attachFile, bodyImages });
         upsertEntry(ledger, { ...base, notion: result.notionResult }); await saveLedger(ledger, ledgerFile);
       } else result.notionResult = { status: "skipped_already_done" };
     }

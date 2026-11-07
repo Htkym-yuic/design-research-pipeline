@@ -422,11 +422,11 @@ test("downloadBanner: 中身で形式判定（拡張子が違ってもOK）／�
   const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-bn-"));
   assert.equal(sniffImage(webp), "webp");
   const files = await downloadBanner("https://x.example/banner.png", tmp, mk(webp, "image/webp")); // 拡張子はpngだが中身はwebp
-  assert.equal(files[0].rel, "01_Original/banner.webp");
-  await fs.access(path.join(tmp, "02_Preview/banner_preview.jpg"));
+  assert.equal(files[0].rel, "01_Normal_Images/banner.webp");
+  await fs.access(path.join(tmp, "02_Notion_Images/banner_notion.jpg"));
   const tmp2 = await fs.mkdtemp(path.join(os.tmpdir(), "dis-bn2-"));
   await assert.rejects(downloadBanner("https://x.example/b.png", tmp2, mk(Buffer.from("<html>blocked</html>"), "text/html")), /画像として読めない/);
-  await assert.rejects(fs.access(path.join(tmp2, "01_Original/banner.png"))); // 保存されない
+  await assert.rejects(fs.access(path.join(tmp2, "01_Normal_Images/banner.png"))); // 保存されない
 });
 
 test("parseDetail/pickBannerImage: og:imageが無いときページ自身を画像にしない／ロゴ等を除いて本文画像を選ぶ", () => {
@@ -656,4 +656,53 @@ test("config: 参照元URLは原本レジストリに一致（BANNER LIBRARY・B
 test("capture: SPの撮影幅は375px（原本のLP取り込み手順）", async () => {
   const src = await fs.readFile(path.join(here, "lib/capture.mjs"), "utf8");
   assert.ok(src.includes('["sp", { width: 375'));
+});
+
+test("captureFullPage + checkAssetSet: 原本の形（01_Normal_Images／02_Notion_Images、6＋4枚、幅・サイズ基準）で撮影でき、スマホ用設定のないページでもSPは375px幅になる", async () => {
+  const http = await import("node:http");
+  const { captureFullPage } = await import("./lib/capture.mjs");
+  const { checkAssetSet } = await import("./lib/asset-check.mjs");
+  const html = '<!doctype html><meta charset=utf-8><style>body{margin:0;font:40px sans-serif}section{height:1100px;display:flex;align-items:center;justify-content:center}</style>' + ["#e84", "#4a8", "#48e"].map((c, i) => `<section style="background:${c}">S${i}</section>`).join("");
+  const server = http.createServer((q, r) => { r.setHeader("content-type", "text/html; charset=utf-8"); r.end(html); });
+  await new Promise((res) => server.listen(0, "127.0.0.1", res));
+  try {
+    const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-cap-"));
+    const id = "DIS-WB-20261109";
+    const files = await captureFullPage(`http://127.0.0.1:${server.address().port}/`, tmp, { id });
+    const rels = files.map((f) => f.rel);
+    for (const k of ["PC_full", "PC_first_view", "PC_sections", "SP_full", "SP_first_view", "SP_sections"]) assert.ok(rels.includes(`01_Normal_Images/${id}_${k}.png`), k);
+    for (const k of ["PC_first_view", "PC_sections", "SP_first_view", "SP_sections"]) assert.ok(rels.includes(`02_Notion_Images/${id}_${k}_notion.jpg`), k);
+    assert.ok(rels.some((r) => /^01_Normal_Images\/sections\/pc_01\.jpg$/.test(r)) && rels.some((r) => /^01_Normal_Images\/sections\/sp_01\.jpg$/.test(r)));
+    assert.ok(files.warnings.some((w) => w.includes("再撮影"))); // スマホ用の設定がなく980px幅になったため
+    assert.deepEqual(await checkAssetSet(tmp, { id, media: "web" }), { ok: true, errors: [], warnings: [] });
+    await fs.rm(path.join(tmp, `01_Normal_Images/${id}_SP_first_view.png`)); // 欠けを検出できること
+    const ng = await checkAssetSet(tmp, { id, media: "web" });
+    assert.equal(ng.ok, false); assert.match(ng.errors[0], /SP_first_view/);
+  } finally { server.close(); }
+});
+
+test("checkAssetSet(banner): 原本とNotion用JPEGが必要", async () => {
+  const { checkAssetSet } = await import("./lib/asset-check.mjs");
+  const sharp = (await import("sharp")).default;
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-bn-chk-"));
+  assert.equal((await checkAssetSet(tmp, { id: "X", media: "banner" })).ok, false);
+  await fs.mkdir(path.join(tmp, "01_Normal_Images")); await fs.mkdir(path.join(tmp, "02_Notion_Images"));
+  const img = await sharp({ create: { width: 300, height: 250, channels: 3, background: "#f00" } });
+  await img.clone().png().toFile(path.join(tmp, "01_Normal_Images/banner.png"));
+  await img.clone().jpeg().toFile(path.join(tmp, "02_Notion_Images/banner_notion.jpg"));
+  assert.equal((await checkAssetSet(tmp, { id: "X", media: "banner" })).ok, true);
+});
+
+test("toNotionJpeg: 約720px幅（拡大しない）・5MB未満", async () => {
+  const { toNotionJpeg } = await import("./lib/capture.mjs");
+  const sharp = (await import("sharp")).default;
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-nj-"));
+  await sharp({ create: { width: 1440, height: 3000, channels: 3, background: "#369" } }).png().toFile(path.join(tmp, "a.png"));
+  await toNotionJpeg(path.join(tmp, "a.png"), path.join(tmp, "a.jpg"));
+  const m = await sharp(path.join(tmp, "a.jpg")).metadata();
+  assert.equal(m.width, 720);
+  await sharp({ create: { width: 375, height: 800, channels: 3, background: "#369" } }).png().toFile(path.join(tmp, "b.png"));
+  await toNotionJpeg(path.join(tmp, "b.png"), path.join(tmp, "b.jpg"));
+  assert.equal((await sharp(path.join(tmp, "b.jpg")).metadata()).width, 375);
+  assert.ok((await fs.stat(path.join(tmp, "a.jpg"))).size < 5 * 1024 * 1024);
 });

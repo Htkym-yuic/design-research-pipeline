@@ -3,11 +3,6 @@ import path from "node:path";
 
 const MAX_IMAGE_BYTES = 15 * 1024 * 1024;
 
-async function previews(src, dest) {
-  const { default: sharp } = await import("sharp");
-  await sharp(src, { limitInputPixels: false }).resize({ width: 1200, withoutEnlargement: true }).jpeg({ quality: 78 }).toFile(dest);
-}
-
 /** 通常の閲覧と同じく上から下までスクロールして遅延読み込み・スクロール連動表示を発火させ、先頭に戻る。 */
 export async function scrollThrough(page, { step = 500, pauseMs = 150, maxSteps = 200 } = {}) {
   for (let i = 0; i < maxSteps; i++) {
@@ -36,33 +31,87 @@ export async function sliceTall(src, outDir, prefix, { sliceHeight = 1600, maxSl
   return { files, total: Math.ceil(meta.height / sliceHeight), height: meta.height };
 }
 
-/** LP/Web: 公開ページをPC/SPで撮影（ログイン・課金壁・Bot対策の回避はしない）。 */
-export async function captureFullPage(url, outDir) {
+/** 分割画像を、番号つきで並べた「Section一覧」（ページ全体の地図）にまとめる。 */
+export async function buildSectionsMap(sliceFiles, outFile, { cols = 4, cellW = 300, gap = 10, minWidth = 640 } = {}) {
+  const { default: sharp } = await import("sharp");
+  const c = Math.min(cols, Math.max(1, sliceFiles.length));
+  const w = Math.max(cellW, Math.ceil((minWidth - gap) / c) - gap); // 枚数が少ないときは1枚を大きくして、全体の幅を確保する
+  const tiles = [];
+  for (const [i, f] of sliceFiles.entries()) {
+    const buf = await sharp(f).resize({ width: w }).jpeg({ quality: 80 }).toBuffer();
+    const meta = await sharp(buf).metadata();
+    const badge = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${meta.height}"><rect width="38" height="30" fill="#000"/><text x="19" y="22" font-size="19" text-anchor="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-weight="bold">${i + 1}</text></svg>`);
+    tiles.push({ input: await sharp(buf).composite([{ input: badge }]).jpeg({ quality: 80 }).toBuffer(), h: meta.height });
+  }
+  const rows = Math.ceil(tiles.length / c);
+  const rowH = Array.from({ length: rows }, (_, r) => Math.max(...tiles.slice(r * c, r * c + c).map((t) => t.h)));
+  const composites = tiles.map((t, i) => ({ input: t.input, left: gap + (i % c) * (w + gap), top: gap + rowH.slice(0, Math.floor(i / c)).reduce((n, h) => n + h + gap, 0) }));
+  await sharp({ create: { width: gap + c * (w + gap), height: gap + rowH.reduce((n, h) => n + h + gap, 0), channels: 3, background: "#ffffff" } }).composite(composites).png().toFile(outFile);
+}
+
+/** Notion用の軽量JPEG（約720px幅・5MB未満）。5MBを超える場合は画質を下げる。 */
+export async function toNotionJpeg(src, dest, { width = 720, maxBytes = 5 * 1024 * 1024 - 64 * 1024 } = {}) {
+  const { default: sharp } = await import("sharp");
+  for (let q = 82; q >= 40; q -= 12) {
+    const buf = await sharp(src, { limitInputPixels: false }).resize({ width, withoutEnlargement: true }).jpeg({ quality: q }).toBuffer();
+    if (buf.length <= maxBytes || q <= 40) { await fs.writeFile(dest, buf); return buf.length; }
+  }
+}
+
+/**
+ * LP/Web: 公開ページをPC/SPで撮影（ログイン・課金壁・Bot対策の回避はしない）。
+ * 原本のLP取り込みの形に合わせる:
+ *   01_Normal_Images/{id}_{PC|SP}_full.png / _first_view.png / _sections.png と、分割画像 sections/{pc|sp}_NN.jpg
+ *   02_Notion_Images/{id}_{PC|SP}_first_view_notion.jpg / _sections_notion.jpg（約720px・5MB未満）
+ */
+export async function captureFullPage(url, outDir, { id = "item" } = {}) {
   const { chromium } = await import("playwright");
-  await fs.mkdir(path.join(outDir, "01_Original"), { recursive: true });
-  await fs.mkdir(path.join(outDir, "02_Preview"), { recursive: true });
+  const { default: sharp } = await import("sharp");
+  const normal = path.join(outDir, "01_Normal_Images");
+  const notion = path.join(outDir, "02_Notion_Images");
+  const secDir = path.join(normal, "sections");
+  await fs.mkdir(secDir, { recursive: true });
+  await fs.mkdir(notion, { recursive: true });
   const browser = await chromium.launch();
   const files = [];
   const warnings = [];
   files.warnings = warnings;
+  const add = (local, rel) => files.push({ local, rel });
   try {
-    for (const [name, viewport, mobile] of [["pc", { width: 1440, height: 900 }, false], ["sp", { width: 375, height: 812 }, true]]) {
-      const ctx = await browser.newContext({ viewport, isMobile: mobile, deviceScaleFactor: 1 });
-      const page = await ctx.newPage();
-      const resp = await page.goto(url, { waitUntil: "load", timeout: 45000 });
-      if (!resp || resp.status() >= 400) throw new Error(`HTTP ${resp?.status()}（撮影中止・回避しない）`);
-      await page.waitForTimeout(1500);
-      await scrollThrough(page);
-      const orig = path.join(outDir, "01_Original", `${name}_full.png`);
-      await page.screenshot({ path: orig, fullPage: true });
-      const prev = path.join(outDir, "02_Preview", `${name}_preview.jpg`);
-      await previews(orig, prev);
-      files.push({ local: orig, rel: `01_Original/${name}_full.png` }, { local: prev, rel: `02_Preview/${name}_preview.jpg` });
-      const secDir = path.join(outDir, "02_Preview", "sections");
-      await fs.mkdir(secDir, { recursive: true });
-      const sl = await sliceTall(orig, secDir, name);
-      for (const f of sl.files) files.push({ local: path.join(secDir, f), rel: `02_Preview/sections/${f}` });
+    for (const [name, viewport, mobile, mapCols, cellW] of [["pc", { width: 1440, height: 900 }, false, 4, 300], ["sp", { width: 375, height: 812 }, true, 6, 150]]) {
+      const NAME = name.toUpperCase();
+      const full = path.join(normal, `${id}_${NAME}_full.png`);
+      let ctx;
+      // SPの全体画像が意図した幅（375px）より広がる場合（スマホ用の設定がないページなど）は、モバイル端末の模擬を外して再撮影する。
+      for (const asMobile of mobile ? [true, false] : [false]) {
+        ctx = await browser.newContext({ viewport, isMobile: asMobile, deviceScaleFactor: 1 });
+        const page = await ctx.newPage();
+        const resp = await page.goto(url, { waitUntil: "load", timeout: 45000 });
+        if (!resp || resp.status() >= 400) throw new Error(`HTTP ${resp?.status()}（撮影中止・回避しない）`);
+        await page.waitForTimeout(1500);
+        await scrollThrough(page);
+        await page.screenshot({ path: full, fullPage: true });
+        const w = (await sharp(full, { limitInputPixels: false }).metadata()).width;
+        if (!mobile || w <= 430) break;
+        warnings.push(`SPの全体画像が${w}pxに広がったため、モバイル端末の模擬を外して再撮影した`);
+        await ctx.close();
+      }
+      add(full, `01_Normal_Images/${id}_${NAME}_full.png`);
+      const meta = await sharp(full, { limitInputPixels: false }).metadata();
+      const fv = path.join(normal, `${id}_${NAME}_first_view.png`);
+      await sharp(full, { limitInputPixels: false }).extract({ left: 0, top: 0, width: meta.width, height: Math.min(viewport.height, meta.height) }).png().toFile(fv);
+      add(fv, `01_Normal_Images/${id}_${NAME}_first_view.png`);
+      const sl = await sliceTall(full, secDir, name);
+      for (const f of sl.files) add(path.join(secDir, f), `01_Normal_Images/sections/${f}`);
       if (sl.total > sl.files.length) warnings.push(`${name}: ${sl.total}枚中${sl.files.length}枚のみ切り出し（上限で切り捨て）`);
+      const map = path.join(normal, `${id}_${NAME}_sections.png`);
+      await buildSectionsMap(sl.files.map((f) => path.join(secDir, f)), map, { cols: mapCols, cellW });
+      add(map, `01_Normal_Images/${id}_${NAME}_sections.png`);
+      for (const kind of ["first_view", "sections"]) {
+        const dest = path.join(notion, `${id}_${NAME}_${kind}_notion.jpg`);
+        await toNotionJpeg(path.join(normal, `${id}_${NAME}_${kind}.png`), dest);
+        add(dest, `02_Notion_Images/${id}_${NAME}_${kind}_notion.jpg`);
+      }
       await ctx.close();
     }
   } finally { await browser.close(); }
@@ -86,12 +135,12 @@ export async function downloadBanner(imageUrl, outDir, fetchImpl = fetch) {
   if (buf.length > MAX_IMAGE_BYTES) throw new Error("画像サイズ上限超過");
   const ext = sniffImage(buf);
   if (!ext) throw new Error(`画像として読めないデータです（content-type: ${res.headers.get("content-type") || "不明"}, ${buf.length}バイト）。ホットリンク防止等の可能性があり、回避しません: ${imageUrl}`);
-  await fs.mkdir(path.join(outDir, "01_Original"), { recursive: true });
-  await fs.mkdir(path.join(outDir, "02_Preview"), { recursive: true });
-  const orig = path.join(outDir, "01_Original", `banner.${ext}`);
+  await fs.mkdir(path.join(outDir, "01_Normal_Images"), { recursive: true });
+  await fs.mkdir(path.join(outDir, "02_Notion_Images"), { recursive: true });
+  const orig = path.join(outDir, "01_Normal_Images", `banner.${ext}`);
   await fs.writeFile(orig, buf);
-  const prev = path.join(outDir, "02_Preview", "banner_preview.jpg");
-  try { await previews(orig, prev); }
-  catch (e) { throw new Error(`プレビュー生成に失敗（形式: ${ext}）: ${e.message}`); }
-  return [{ local: orig, rel: `01_Original/banner.${ext}` }, { local: prev, rel: "02_Preview/banner_preview.jpg" }];
+  const prev = path.join(outDir, "02_Notion_Images", "banner_notion.jpg");
+  try { await toNotionJpeg(orig, prev); }
+  catch (e) { throw new Error(`Notion用画像の生成に失敗（形式: ${ext}）: ${e.message}`); }
+  return [{ local: orig, rel: `01_Normal_Images/banner.${ext}` }, { local: prev, rel: "02_Notion_Images/banner_notion.jpg" }];
 }

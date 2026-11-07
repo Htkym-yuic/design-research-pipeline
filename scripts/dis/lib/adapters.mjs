@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { assertWritesAllowed } from "./write-guard.mjs";
 import { requireEnv } from "../../lib/env.mjs";
-import { appendBlockChildren, createPage, findPageByUrl, getDataSource, buildPropertyByType, headingBlock, paragraphBlock, uploadFileForNotion } from "../../lib/notion-client.mjs";
+import { appendBlockChildren, createPage, findPageByUrl, getDataSource, buildPropertyByType, headingBlock, paragraphBlock, uploadFileForNotion, imageUploadBlock } from "../../lib/notion-client.mjs";
 import { ensureFolder, pathExists, uploadFileNoOverwrite } from "../../lib/dropbox-client.mjs";
 
 /** Dropbox保存先。99_Needs_Review/<日付>/dis-daily/<DIS-ID>/ （新規フォルダーのみ） */
@@ -131,7 +131,7 @@ export function buildNotionBlocks(a, markdown) {
 }
 
 /** Notion作成専用アダプター。既存ページは編集せず、同じURLのページが既にあれば作成をスキップ。 */
-export async function writeNotion({ cfg, media, values, blocks, opts, extraProps = {}, attachFile = null }) {
+export async function writeNotion({ cfg, media, values, blocks, opts, extraProps = {}, attachFile = null, bodyImages = [] }) {
   assertWritesAllowed(opts);
   requireEnv("NOTION_TOKEN");
   const ncfg = cfg.media[media].notion;
@@ -154,8 +154,16 @@ export async function writeNotion({ cfg, media, values, blocks, opts, extraProps
       attachment = "attached";
     } catch (e) { attachment = `failed: ${e.message}`; }
   }
+  // 本文の軽量画像（PC・SPのファーストビューとセクション一覧）。失敗した画像は載せず、結果に記録する。
+  const imageBlocks = [];
+  const imageResults = [];
+  for (const img of bodyImages) {
+    try { imageBlocks.push(imageUploadBlock(await uploadFileForNotion(img.path, "image/jpeg"), img.caption)); imageResults.push("attached"); }
+    catch (e) { imageResults.push(`failed: ${e.message}`); }
+  }
+  if (imageBlocks.length) blocks = [headingBlock("画像（Notion用の軽量版。正本はDropbox）", 2), ...imageBlocks, ...blocks];
   // 1リクエスト100ブロックまで。新規ページ作成後、残りは同じ新規ページへ追記する（既存ページは触らない）。
   const page = await createPage(dsId, props, blocks.slice(0, 95));
   for (let i = 95; i < blocks.length; i += 95) await appendBlockChildren(page.id, blocks.slice(i, i + 95));
-  return { status: "created", pageId: page.id, url: page.url, blocks: blocks.length, skippedProps: skipped, attachment };
+  return { status: "created", pageId: page.id, url: page.url, blocks: blocks.length, skippedProps: skipped, attachment, bodyImages: imageResults };
 }

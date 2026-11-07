@@ -31,9 +31,20 @@ collect → select → **review**（比較用の一覧画像）→ **rescore**�
 
 `bash scripts/dis/install-schedule.sh` で、launchd に登録。収集・選定・一覧画像だけを自動で行い、書き込みはしない。`Documents` 配下では動かないため、ホーム直下のコピーで運用する。
 
-## 未対応・要判断（原本との差）
+## 保存形式（原本のLP取り込みの形）
 
-- ID体系（原本は `LP-0245` のような4桁の通し番号。現状は `DIS-LP-YYYYMMDD`）。
-- 選定基準13/18点（6項目×3点と推測。中身が未確認）。現状は人の評価（`learning.json`）を優先して選ぶ。
-- Dropboxの保存形式（原本は `01_Normal_Images/`・`02_Notion_Images/`）とNotion本文への軽量画像（約720px、5MB未満）。
-- 既存の `knowledge:validate-lp` / `knowledge:crosscheck-lp`（LPの6＋4枚の画像の揃いを要求）への適合。
+Dropbox: `<DROPBOX_DESIGN_ROOT>/<媒体Library>/99_Needs_Review/<日付>/dis-daily/<DIS-ID>/`
+- `metadata.json`
+- `01_Normal_Images/`: `<DIS-ID>_PC_full.png` / `_PC_first_view.png` / `_PC_sections.png` / `_SP_full.png` / `_SP_first_view.png` / `_SP_sections.png`、分割画像 `sections/pc_NN.jpg`・`sp_NN.jpg`（バナーは `banner.<ext>`）
+- `02_Notion_Images/`: `<DIS-ID>_{PC,SP}_{first_view,sections}_notion.jpg`（約720px幅・5MB未満。バナーは `banner_notion.jpg`）
+- `03_Analysis/`: `analysis.json`・`analysis.md`・`annotations.json`・`text-index.json`
+
+- 撮影は、SPを375px幅にする。スマホ用の設定がなく幅が広がるページは、モバイル端末の模擬を外して自動で再撮影する。
+- 画像の揃いは `lib/asset-check.mjs` で検査する（PC幅1000px以上、SP幅430px以下、セクション一覧は幅600px以上など）。既存の `crosscheck-lp` は、IDが `LP-0000` 形式であることを要求するため、`DIS-…` のIDには使えない。
+- Notionの本文には、LP・Webの4枚の軽量画像（PC・SPのファーストビューとセクション一覧）を載せる。バナーは「バナー画像」列に原本を添付する。
+- 2026-11-08以前に登録した6件は、旧形式（`01_Original`・`02_Preview`）のまま残す。
+
+## 利用者の判断（記録）
+
+- ID体系は `DIS-LP-YYYYMMDD` のまま（既存の `LP-0000` の通し番号とは別）。
+- 参照元の利用条件は確認しない（個人の学習用・非公開・展開しない）。robots.txtは尊重し、アクセス制限は回避しない。公開・共有する場合は、先に規約を確認する。

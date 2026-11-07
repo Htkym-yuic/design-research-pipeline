@@ -369,3 +369,8 @@ npm run dis:run -- --stage collect,select,template --fixture scripts/dis/fixture
 - 実行内容: `scripts/dis/daily-prep.sh`。ログは `outputs/dis/logs/prep-<日付>.log`。完了と失敗はmacOSの通知で知らせる。
 - 通知後の流れ: 一覧画像（`outputs/dis/<日付>/<媒体>/review/contact_sheet.jpg`）をチャットに添付 → 評価（`learning.json`）→ `--stage rescore,capture --capture` → 分析 → 検証 → 本番（`--apply`）。
 - 既存の日次パイプライン（GitHub Actions）とは独立している。
+
+### DIS: 選定基準・保存形式（原本に合わせた更新）
+
+- 選定は6項目×0〜3点＝18点満点で、13点以上が基準（`config/dis-daily.json` の `selection`）。基準は `.claude/skills/dis-design-learning/references/learning-value-rubric.md`。`review` → `learning.json` → `rescore` で決め、基準未達ならスキップ。公開（publish）は選定基準を満たした候補だけ。
+- Dropboxは `01_Normal_Images`・`02_Notion_Images`・`03_Analysis`。Notionの本文にはLP・Webで軽量画像4枚を載せる。詳細は `references/implementation-notes.md`。
