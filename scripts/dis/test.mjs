@@ -734,3 +734,23 @@ test("migrate v1→v2: 登録済み6件が、原本の9軸・注釈・検証を�
   assert.deepEqual(bboxFromRef("PC pc_01 最上部／SP sp_01 最上部").bbox, { x: 0, y: 0, w: 1, h: 0.15 });
   assert.equal(bboxFromRef("PC 後半（ピンクのパネル）"), null);
 });
+
+test("supplement: 台帳の実URL・IDで検証し、既存を触らず新規サブフォルダ向けの4ファイルを作る／書込みは三重ガード", async () => {
+  const { buildSupplement, SUBDIR } = await import("./supplement.mjs");
+  const root = path.resolve(here, "../..");
+  const ledger = JSON.parse(await fs.readFile(path.join(root, "data/dis-ledger.json"), "utf8"));
+  assert.ok(ledger.entries.length >= 6);
+  for (const e of ledger.entries) {
+    const base = path.join(root, "candidates/dis", e.date, e.disId);
+    const a = JSON.parse(await fs.readFile(`${base}.v2.analysis.json`, "utf8"));
+    const n = JSON.parse(await fs.readFile(`${base}.v2.annotations.json`, "utf8"));
+    const s = buildSupplement(e, a, n);
+    assert.deepEqual(s.errors, [], e.disId);
+    assert.equal(s.files.length, 4);
+    assert.equal(JSON.parse(s.files[0].body).pageUrl, e.pageUrl);
+    assert.ok(s.remoteDir.startsWith(e.dropbox.folder + "/") && s.remoteDir.endsWith(SUBDIR));
+    assert.ok(!e.dropbox.uploaded.some((u) => u.startsWith(s.remoteDir))); // 既存ファイルと衝突しない
+  }
+  const r = spawnSync("node", [path.join(here, "supplement.mjs"), "--apply"], { env: { ...process.env, DRY_RUN: "true", DIS_ENABLE_WRITES: "" }, encoding: "utf8" });
+  assert.match(r.stdout, /ドライラン/);
+});

@@ -40,7 +40,8 @@
     "dis:run": "node scripts/dis/run.mjs",
     "dis:test": "node --test scripts/dis/test.mjs",
     "dis:probe": "node scripts/dis/probe.mjs",
-    "dis:search": "node scripts/dis/search.mjs"
+    "dis:search": "node scripts/dis/search.mjs",
+    "dis:supplement": "node scripts/dis/supplement.mjs"
   },
   "dependencies": {
     "playwright": "^1.55.0",
