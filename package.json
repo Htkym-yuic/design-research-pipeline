@@ -40,6 +40,7 @@
     "dis:run": "node scripts/dis/run.mjs",
     "dis:test": "node --test scripts/dis/test.mjs",
     "dis:probe": "node scripts/dis/probe.mjs",
+    "dis:probe-all": "node scripts/dis/probe-all.mjs",
     "dis:search": "node scripts/dis/search.mjs",
     "dis:supplement": "node scripts/dis/supplement.mjs"
   },

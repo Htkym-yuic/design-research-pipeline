@@ -754,3 +754,17 @@ test("supplement: 台帳の実URL・IDで検証し、既存を触らず新規サ
   const r = spawnSync("node", [path.join(here, "supplement.mjs"), "--apply"], { env: { ...process.env, DRY_RUN: "true", DIS_ENABLE_WRITES: "" }, encoding: "utf8" });
   assert.match(r.stdout, /ドライラン/);
 });
+
+test("probe-all: 見える／要調整／見えない（403・robots禁止・通信エラー）を判定し、回避しない", async () => {
+  const { probeSource, formatTable } = await import("./probe-all.mjs");
+  const mk = (map, robots = true) => ({ robots: async () => robots, get: async (u) => { const r = map[u]; if (r instanceof Error) throw r; return r || { ok: false, status: 404, text: "" }; } });
+  const src = { key: "x", media: "web", listUrl: "https://ex.test/list/", detailPathRegex: "^/work/" };
+  const html = '<a href="/work/a1/">a</a><a href="/work/a2/">b</a>';
+  assert.equal((await probeSource(src, mk({ "https://ex.test/list/": { ok: true, status: 200, text: html }, "https://ex.test/work/a1/": { ok: true, status: 200, text: "x" } }))).verdict, "見える");
+  assert.equal((await probeSource(src, mk({ "https://ex.test/list/": { ok: true, status: 200, text: "<p>none</p>" } }))).verdict, "要調整");
+  const r403 = await probeSource(src, mk({ "https://ex.test/list/": { ok: false, status: 403, text: "" } }));
+  assert.equal(r403.verdict, "見えない"); assert.match(r403.note, /回避しない/);
+  assert.equal((await probeSource(src, mk({}, false))).note, "robots.txtで禁止");
+  assert.equal((await probeSource(src, mk({ "https://ex.test/list/": new Error("ECONNRESET") }))).verdict, "見えない");
+  assert.match(formatTable([{ key: "x", media: "web", enabled: true, listStatus: "OK", links: 2, detailStatus: "OK", verdict: "見える", note: "" }]), /見える/);
+});
