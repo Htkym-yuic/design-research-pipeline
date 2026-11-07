@@ -60,6 +60,14 @@ export function parseDetail(html, detailUrl) {
   return { title, image, pageUrl: outbound[0] || null };
 }
 
+/** HTMLエンティティを戻し、「｜サイト名」などの後ろを落とす。 */
+export function cleanTitle(t) {
+  if (!t) return t;
+  const dec = String(t).replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#0?39;/g, "'").replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)));
+  const first = dec.split(/\s+[|｜]\s+/)[0].trim();
+  return first || dec.trim();
+}
+
 const attr = (tag, name) => tag.match(new RegExp(`${name}=["']([^"']*)["']`, "i"))?.[1] ?? null;
 const stripTags = (h) => h.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
 
@@ -102,15 +110,26 @@ export function fetchGetter(fetchImpl = fetch) {
   };
 }
 
-/** ライブ収集。getter を差し替えればテスト可能。失敗は fetchError に格納して継続。 */
-export async function collectFromSource(source, { getter = fetchGetter(), detailLimit = 3 } = {}) {
+/**
+ * ライブ収集。getter を差し替えればテスト可能。失敗は fetchError に格納して継続。
+ * isKnown(url): 既知（重複）の詳細URLは、詳細ページを取得する前に除外して次の候補へ進む。
+ * 戻り値の配列には .report（参照元ごとの件数・理由）を付ける。
+ */
+export async function collectFromSource(source, { getter = fetchGetter(), detailLimit = 3, scanLimit = 20, isKnown = () => false } = {}) {
   const base = { media: source.media, sourceKey: source.key, sourceName: source.name, termsStatus: source.termsStatus };
+  const report = { sourceKey: source.key, linksFound: 0, skippedKnown: 0, fetched: 0, error: null };
+  const done = (arr) => Object.assign(arr, { report });
   try {
-    if (!(await getter.robots(source.listUrl))) return [{ ...base, fetchError: "robots.txtで禁止" }];
+    if (!(await getter.robots(source.listUrl))) { report.error = "robots.txtで禁止"; return done([{ ...base, fetchError: "robots.txtで禁止" }]); }
     const res = await getter.get(source.listUrl);
-    if (!res.ok) return [{ ...base, fetchError: `HTTP ${res.status}（回避しない）` }];
+    if (!res.ok) { report.error = `HTTP ${res.status}`; return done([{ ...base, fetchError: `HTTP ${res.status}（回避しない）` }]); }
     const rdlp = source.parser === "rdlp";
-    const cards = rdlp ? extractRdlpCards(res.text, source.listUrl, detailLimit) : extractDetailLinks(res.text, source, detailLimit).map((url) => ({ url }));
+    const all = rdlp ? extractRdlpCards(res.text, source.listUrl, scanLimit) : extractDetailLinks(res.text, source, scanLimit).map((url) => ({ url }));
+    report.linksFound = all.length;
+    const fresh = all.filter((c) => !isKnown(c.url));
+    report.skippedKnown = all.length - fresh.length;
+    const cards = fresh.slice(0, detailLimit);
+    if (all.length === 0) report.error = "詳細リンクを抽出できず（URL形式の確認が必要）";
     const results = [];
     for (const card of cards) {
       const detailUrl = card.url;
@@ -118,13 +137,18 @@ export async function collectFromSource(source, { getter = fetchGetter(), detail
         const r = await getter.get(detailUrl);
         if (!r.ok) { results.push({ ...base, sourceDetailUrl: detailUrl, fetchError: `HTTP ${r.status}` }); continue; }
         const d = rdlp ? parseRdlpDetail(r.text, detailUrl) : parseDetail(r.text, detailUrl);
-        const title = card.title || d.title;
-        results.push({ ...base, sourceDetailUrl: detailUrl, brand: card.company || title, title, archivePostId: card.postId ?? null, pageUrl: d.pageUrl, imageUrl: d.image, signals: heuristicSignals(d) });
+        const title = cleanTitle(card.title || d.title);
+        const cand = { ...base, sourceDetailUrl: detailUrl, brand: cleanTitle(card.company || title), title, archivePostId: card.postId ?? null, pageUrl: d.pageUrl, imageUrl: d.image };
+        // バナーは原典URLが無い掲載サイトが多い。画像があれば掲載元ページを実ページ扱いにし、原典未確認と明記する。
+        if (source.media === "banner" && !cand.pageUrl && cand.imageUrl) { cand.pageUrl = detailUrl; cand.originUnresolved = true; }
+        cand.signals = heuristicSignals({ ...d, pageUrl: cand.originUnresolved ? null : cand.pageUrl });
+        results.push(cand); report.fetched++;
       } catch (e) { results.push({ ...base, sourceDetailUrl: detailUrl, fetchError: e.message }); }
     }
-    return results;
+    return done(results);
   } catch (e) {
-    return [{ ...base, fetchError: e.message }];
+    report.error = e.message;
+    return done([{ ...base, fetchError: e.message }]);
   }
 }
 

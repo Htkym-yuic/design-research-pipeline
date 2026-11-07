@@ -62,13 +62,14 @@ async function runMedia(media) {
       else {
         candidates = [];
         var skippedSources = [];
+        var sourceReports = [];
         const srcs = cfg.sources.filter((s) => s.media === media);
         for (const s of srcs) {
           if (s.termsStatus !== "known") { skippedSources.push({ sourceKey: s.key, sourceName: s.name, reason: "利用条件未確認のため取得せず" }); continue; }
           candidates.push(...(await collectFromSource(s)));
         }
       }
-      await wj(out, { collectedAt: new Date().toISOString(), candidates, skippedSources: typeof skippedSources === "undefined" ? [] : skippedSources });
+      await wj(out, { collectedAt: new Date().toISOString(), candidates, skippedSources: typeof skippedSources === "undefined" ? [] : skippedSources, sourceReports: typeof sourceReports === "undefined" ? [] : sourceReports });
       r.stages.collect = `${candidates.length} candidates`;
     }
   }

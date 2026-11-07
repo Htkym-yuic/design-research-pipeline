@@ -9,7 +9,7 @@ import { selectOne, interleaveBySource, tieHash } from "./lib/select.mjs";
 import { writesAllowed } from "./lib/write-guard.mjs";
 import { emptyAnalysis, validateAnalysis, AXES } from "./lib/analysis-schema.mjs";
 import { idempotencyKey } from "./lib/ledger.mjs";
-import { extractDetailLinks, parseDetail, collectFromSource, extractRdlpCards, parseRdlpDetail } from "./lib/collect.mjs";
+import { extractDetailLinks, parseDetail, collectFromSource, extractRdlpCards, parseRdlpDetail, cleanTitle } from "./lib/collect.mjs";
 import { loadConfig } from "./lib/config.mjs";
 import { dropboxFolder, buildNotionProps, chunkText, buildNotionBlocks, markdownToBlocks } from "./lib/adapters.mjs";
 
@@ -239,4 +239,31 @@ test("run: 取得失敗は枠を消費せず、fetchFailuresに記録される",
   assert.equal(sel.fetchFailures.length, 1);
   assert.equal(sel.evaluated.filter((e) => !e.fetchError).length, 5);
   assert.ok(sel.selected);
+});
+
+test("cleanTitle: エンティティ復元と「｜サイト名」除去", () => {
+  assert.equal(cleanTitle("Baseline Design | I/O 3000 | Webデザインギャラリー"), "Baseline Design");
+  assert.equal(cleanTitle("おせち先行予約販売_400 x 400 | バナー広場 | まとめ"), "おせち先行予約販売_400 x 400");
+  assert.equal(cleanTitle("A &amp; B"), "A & B");
+});
+
+test("collectFromSource: 既知URLは詳細取得前に除外して次を使う／バナーは原典なしでも画像があれば候補／reportを返す", async () => {
+  const src = { media: "banner", key: "k", name: "K", termsStatus: "known", listUrl: "https://s.example/", detailPathIncludes: "/archives/" };
+  const pages = { "https://s.example/": ["a", "b", "c", "d"].map((x) => `<a href="/archives/${x}/">x</a>`).join("") };
+  for (const x of ["c", "d"]) pages[`https://s.example/archives/${x}/`] = `<meta property="og:title" content="Banner ${x} | K"><meta property="og:image" content="/i${x}.png">`;
+  const fetched = [];
+  const getter = { robots: async () => true, get: async (u) => { fetched.push(u); return { ok: true, status: 200, text: pages[u] || "" }; } };
+  const known = new Set(["https://s.example/archives/a/", "https://s.example/archives/b/"]);
+  const out = await collectFromSource(src, { getter, detailLimit: 2, isKnown: (u) => known.has(u) });
+  assert.deepEqual(out.map((c) => c.brand), ["Banner c", "Banner d"]);
+  assert.ok(!fetched.includes("https://s.example/archives/a/"));
+  assert.ok(out.every((c) => c.originUnresolved && c.pageUrl === c.sourceDetailUrl));
+  assert.deepEqual([out.report.linksFound, out.report.skippedKnown, out.report.fetched], [4, 2, 2]);
+});
+
+test("collectFromSource: 詳細リンク0件は理由つきでreportに残る", async () => {
+  const src = { media: "web", key: "k", name: "K", termsStatus: "known", listUrl: "https://s.example/", detailPathIncludes: "/x/" };
+  const out = await collectFromSource(src, { getter: { robots: async () => true, get: async () => ({ ok: true, status: 200, text: "<html></html>" }) } });
+  assert.equal(out.length, 0);
+  assert.match(out.report.error, /URL形式/);
 });
