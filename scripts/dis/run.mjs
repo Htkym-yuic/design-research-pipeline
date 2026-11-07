@@ -13,6 +13,8 @@ import { buildKnownIndex, normalizeUrl } from "./lib/dedupe.mjs";
 import { selectOne, interleaveBySource } from "./lib/select.mjs";
 import { collectFromSource, loadFixture } from "./lib/collect.mjs";
 import { emptyAnalysis, validateAnalysis, analysisToMarkdown } from "./lib/analysis-schema.mjs";
+import { emptyAnnotations, validateAnnotations } from "./lib/annotations.mjs";
+import { buildTextIndex } from "./lib/text-index.mjs";
 import { idempotencyKey, loadLedger, saveLedger, findEntry, upsertEntry } from "./lib/ledger.mjs";
 import { writesAllowed } from "./lib/write-guard.mjs";
 import { buildContactSheet, applyLearning } from "./lib/review.mjs";
@@ -146,8 +148,13 @@ async function runMedia(media) {
 
   if (stages.includes("template")) {
     const f = `${d}/analysis.json`;
-    if (await readJson(f, null)) r.stages.template = "exists (not overwritten)";
-    else { await wj(f, emptyAnalysis({ media, disId, pageUrl: sel.pageUrl, brand: sel.brand })); r.stages.template = "created"; }
+    const parts = [];
+    if (await readJson(f, null)) parts.push("analysis exists (not overwritten)");
+    else { await wj(f, emptyAnalysis({ media, disId, pageUrl: sel.pageUrl, brand: sel.brand })); parts.push("analysis created"); }
+    const fa = `${d}/annotations.json`;
+    if (await readJson(fa, null)) parts.push("annotations exists (not overwritten)");
+    else { await wj(fa, emptyAnnotations({ disId })); parts.push("annotations created"); }
+    r.stages.template = parts.join(" / ");
   }
 
   let analysis = null;
@@ -160,17 +167,23 @@ async function runMedia(media) {
       if (!analysis.brand || analysis.brand === "AUTO") analysis.brand = sel.brand;
       await wj(`${d}/analysis.json`, analysis);
     }
+    const annotations = analysis ? await readJson(`${d}/annotations.json`, null) : null;
     const v = analysis ? validateAnalysis(analysis) : { ok: false, errors: ["analysis.json なし"] };
-    r.stages.validate = v.ok ? "ok" : { ok: false, errors: v.errors };
-    if (v.ok) await fs.writeFile(`${d}/analysis.md`, analysisToMarkdown(analysis));
-    if (!v.ok && stages.includes("publish")) { r.stages.publish = "blocked: analysis not complete"; return; }
+    const va = analysis && v.ok ? (annotations ? validateAnnotations(annotations, analysis) : { ok: false, errors: ["annotations.json なし（注釈データが必要）"] }) : { ok: true, errors: [] };
+    const okAll = v.ok && va.ok;
+    r.stages.validate = okAll ? "ok" : { ok: false, errors: [...v.errors, ...va.errors.map((e) => `[注釈] ${e}`)] };
+    if (okAll) {
+      await fs.writeFile(`${d}/analysis.md`, analysisToMarkdown(analysis));
+      await wj(`${d}/text-index.json`, buildTextIndex(analysis));
+    }
+    if (!okAll && stages.includes("publish")) { r.stages.publish = "blocked: analysis not complete"; return; }
   }
 
   if (stages.includes("publish")) {
     const entry = findEntry(ledger, key);
     const folder = dropboxFolder(cfg, media, args.date, disId);
-    const generated = [{ local: `${d}/analysis.json`, rel: "03_Analysis/analysis.json" }, { local: `${d}/analysis.md`, rel: "03_Analysis/analysis.md" }];
-    const meta = { disId, media, date: args.date, pageUrl: sel.pageUrl, sourceName: sel.sourceName, sourceDetailUrl: sel.sourceDetailUrl, brand: sel.brand, selectionReason: analysis.selectionReason, rightsNotes: analysis.rightsNotes, score: sel.score };
+    const generated = [{ local: `${d}/analysis.json`, rel: "03_Analysis/analysis.json" }, { local: `${d}/analysis.md`, rel: "03_Analysis/analysis.md" }, { local: `${d}/annotations.json`, rel: "03_Analysis/annotations.json" }, { local: `${d}/text-index.json`, rel: "03_Analysis/text-index.json" }];
+    const meta = { disId, media, date: args.date, pageUrl: sel.pageUrl, sourceName: sel.sourceName, sourceDetailUrl: sel.sourceDetailUrl, brand: sel.brand, selectionReason: analysis.selectionReason, rights: analysis.rights, analysisVersion: analysis.analysisVersion, sourceAnalysisRef: analysis.sourceAnalysisRef, score: sel.score };
     await wj(`${d}/metadata.json`, meta);
     generated.push({ local: `${d}/metadata.json`, rel: "metadata.json" });
     const captured = (await readJson(`${d}/files.json`, [])) ;

@@ -207,11 +207,11 @@
       "key": "ikesai",
       "media": "web",
       "name": "IKESAI",
-      "listUrl": "https://ikesai.com/",
+      "listUrl": "https://www.ikesai.com/",
       "detailPathIncludes": "/",
       "termsStatus": "known",
       "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
-      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。"
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。 原本レジストリのURL。"
     },
     {
       "key": "kasou",
@@ -227,13 +227,11 @@
       "key": "gdweb",
       "media": "web",
       "name": "GDWEB DESIGN AWARDS",
-      "listUrl": "https://gdweb.design/",
+      "listUrl": "https://www.gdweb.co.jp/",
       "detailPathIncludes": "/",
       "termsStatus": "known",
       "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
-      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。",
-      "enabled": false,
-      "disabledReason": "接続失敗。正しいURLが未確認。 再有効化: enabled を true に（URL・規約確認後）。"
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。 原本レジストリのURL。以前の gdweb.design は誤り。"
     },
     {
       "key": "awwwards",
@@ -305,13 +303,11 @@
       "key": "banner-library",
       "media": "banner",
       "name": "BANNER LIBRARY",
-      "listUrl": "https://bannerlibrary.com/",
+      "listUrl": "https://design-library.jp/",
       "detailPathIncludes": "/",
       "termsStatus": "known",
       "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
-      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。",
-      "enabled": false,
-      "disabledReason": "robots.txtで禁止。 再有効化: enabled を true に（URL・規約確認後）。"
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。 原本レジストリのURL。以前の bannerlibrary.com は誤り。"
     },
     {
       "key": "banner-hiroba",
@@ -350,13 +346,11 @@
       "key": "banner-matome",
       "media": "banner",
       "name": "Banner Matome",
-      "listUrl": "https://banner-matome.com/",
+      "listUrl": "http://bannermatome.com/",
       "detailPathIncludes": "/",
       "termsStatus": "known",
       "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
-      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。",
-      "enabled": false,
-      "disabledReason": "接続失敗。正しいURLが未確認。 再有効化: enabled を true に（URL・規約確認後）。"
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。 原本レジストリのURL（利用前に公開状態を確認）。以前の banner-matome.com は誤り。"
     }
   ],
   "originTracingSources": {

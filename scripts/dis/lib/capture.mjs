@@ -46,7 +46,7 @@ export async function captureFullPage(url, outDir) {
   const warnings = [];
   files.warnings = warnings;
   try {
-    for (const [name, viewport, mobile] of [["pc", { width: 1440, height: 900 }, false], ["sp", { width: 390, height: 844 }, true]]) {
+    for (const [name, viewport, mobile] of [["pc", { width: 1440, height: 900 }, false], ["sp", { width: 375, height: 812 }, true]]) {
       const ctx = await browser.newContext({ viewport, isMobile: mobile, deviceScaleFactor: 1 });
       const page = await ctx.newPage();
       const resp = await page.goto(url, { waitUntil: "load", timeout: 45000 });

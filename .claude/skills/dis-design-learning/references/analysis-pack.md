@@ -1,14 +1,19 @@
-# DIS分析パック（schema `dis-1.0`）
+# DIS Analysis Pack の完了チェック
 
-検証コード: `scripts/dis/lib/analysis-schema.mjs`（`npm run dis:run -- --stage validate`）。
+分析パックには次を含める。
 
-必須:
-- `summary` / `selectionReason`（なぜ今日この1件か）
-- `units[]`: 全Section/Unit。`name` `observation` `annotation` 必須、`sectionRef`（位置）推奨
-- `axes[]`: 9軸ちょうど。`score`(1-5) `evidence` `confidence`(high|medium|low) `unverified` 必須（なければ「なし」）
-  - 情報設計 / 視線誘導 / タイポグラフィ / 配色 / 余白・レイアウト / CTA・導線 / 信頼性・根拠 / ブランド一貫性 / 再現性
-- `actions`: `top`=1件、`priority`≥1、`ideas`≥1
-- `reproduction`: Canva / Photoshop / Elementor 各≥1手順（Elementorは標準Container/Widget中心）
-- `rightsNotes`: 未確認事項と転用しない要素
-- 禁止: ロゴ・人物・写真・コピー・価格・実績値の転用フィールド
-- 画像から確認できないことは推測と明記。実測値として書かない。
+- ID、媒体、分析版、元分析参照、元画像参照、生成日時、レビュー状態
+- `sectionCoverage` と、全Section／全Unitの分析
+- 全9軸の点数または評価不能理由、根拠、対象範囲、確信度、未確認事項
+- 改善案の表示優先度、課題、根拠、変更、期待変化、確認指標
+- Canva／Photoshop／Elementorの再現手順
+- 再利用構造、差替必須要素、権利・未確認事項
+- 既存分析との一致、相違、追加発見
+
+完了前に確認する。
+
+1. `sourceUnitCount` と `analyzedUnitCount` が一致し、全Section／Unitがある。
+2. 9軸のどの点にも根拠と確信度がある。
+3. 未確認を事実扱いしていない。
+4. 再利用構造と固有素材が混ざっていない。
+5. 外部同期をしていない場合は、そのことを成果物に記録する。

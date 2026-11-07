@@ -114,8 +114,13 @@ export function markdownToBlocks(md) {
       const cells = line.split("|").slice(1, -1).map((c) => plain(c));
       if (cells.every((c) => /^-+$/.test(c))) continue; // 区切り行
       if (cells[0] === "軸") continue; // 表見出し行
-      const [axis, score, conf, evidence, unverified] = cells;
-      push("bulleted_list_item", `${axis}（評価 ${score} ／ 確信度 ${conf}）根拠: ${evidence} ／ 未確認: ${unverified}`);
+      if (cells.length >= 6) {
+        const [axis, score, conf, scope, evidence, unverified] = cells;
+        push("bulleted_list_item", `${axis}（評価 ${score} ／ 確信度 ${conf}）対象: ${scope} ／ 根拠: ${evidence} ／ 未確認: ${unverified}`);
+      } else {
+        const [axis, score, conf, evidence, unverified] = cells;
+        push("bulleted_list_item", `${axis}（評価 ${score} ／ 確信度 ${conf}）根拠: ${evidence} ／ 未確認: ${unverified}`);
+      }
     } else push("paragraph", plain(line));
   }
   return blocks;

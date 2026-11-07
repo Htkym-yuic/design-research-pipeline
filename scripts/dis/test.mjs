@@ -7,7 +7,9 @@ import { spawnSync } from "node:child_process";
 import { normalizeUrl, brandKey, KnownIndex } from "./lib/dedupe.mjs";
 import { selectOne, interleaveBySource, tieHash } from "./lib/select.mjs";
 import { writesAllowed } from "./lib/write-guard.mjs";
-import { emptyAnalysis, validateAnalysis, AXES } from "./lib/analysis-schema.mjs";
+import { emptyAnalysis, validateAnalysis, AXES, AXIS_KEYS, analysisToMarkdown } from "./lib/analysis-schema.mjs";
+import { emptyAnnotations, validateAnnotations } from "./lib/annotations.mjs";
+import { buildTextIndex, searchIndexes, tokenize } from "./lib/text-index.mjs";
 import { idempotencyKey } from "./lib/ledger.mjs";
 import { extractDetailLinks, parseDetail, collectFromSource, extractRdlpCards, parseRdlpDetail, cleanTitle, outboundHosts, looksLikeNonWork, isSponsoredUrl, pickBannerImage } from "./lib/collect.mjs";
 import { loadConfig } from "./lib/config.mjs";
@@ -55,27 +57,79 @@ test("writesAllowed: 3条件が揃うときのみ", () => {
   assert.equal(writesAllowed({ apply: true, env: {} }), false);
 });
 
+const imp = (n) => ({ issue: `課題${n}`, evidence: `根拠${n}`, change: `変更${n}`, expected: `期待${n}`, metric: `指標${n}` });
 function completeAnalysis() {
   const a = emptyAnalysis({ media: "lp", disId: "DIS-LP-20261107", pageUrl: "https://a.example/", brand: "A" });
-  a.status = "complete"; a.summary = "s"; a.selectionReason = "r";
-  a.units = [{ id: "U1", name: "FV", sectionRef: "0-900px", observation: "o", annotation: "n" }];
-  a.axes = AXES.map((axis) => ({ axis, score: 4, evidence: "e", confidence: "medium", unverified: "なし" }));
-  a.actions = { top: ["t"], priority: ["p"], ideas: ["i"] };
-  a.reproduction = { Canva: ["c"], Photoshop: ["p"], Elementor: ["e"] };
+  Object.assign(a, { status: "complete", summary: "s", selectionReason: "r", sourceImageRefs: ["pc_01.jpg"] });
+  a.units = [{ id: "U1", name: "FV", sectionRef: "pc_01", role: "訴求の提示", observation: "o", evidence: "e", confidence: "medium", reuseStructure: "見出し＋ボタン", mustReplace: ["写真"], unknowns: [{ item: "動き", impact: "低", nextCheck: "実機確認" }], annotation: "n" }];
+  a.sectionCoverage = { sourceUnitCount: 1, analyzedUnitCount: 1 };
+  a.axes = AXES.map((x) => ({ key: x.key, label: x.label, score: 4, scope: "全体", evidence: "e", confidence: "medium", unverified: "なし" }));
+  a.improvements = { top: [imp(1)], priority: [imp(2)], ideas: [imp(3)] };
+  a.reproduction = Object.fromEntries(["Canva", "Photoshop", "Elementor"].map((k) => [k, { structureSteps: ["構造"], replaceSteps: ["差替"] }]));
+  a.reuse = { reusableStructures: ["構造A"], mustReplaceElements: ["写真"] };
   return a;
+}
+function completeAnnotations(a) {
+  const n = emptyAnnotations(a);
+  n.annotations = a.units.map((u, i) => ({ id: `N${i + 1}`, unitId: u.id, image: "pc_01.jpg", bbox: { x: 0.1, y: 0.1, w: 0.5, h: 0.2 }, label: "見出し", evidence: "e", confidence: "low" }));
+  return n;
 }
 test("validateAnalysis: テンプレートは不合格、完成形は合格", () => {
   assert.equal(validateAnalysis(emptyAnalysis({ media: "lp", disId: "x", pageUrl: "u", brand: "b" })).ok, false);
   assert.deepEqual(validateAnalysis(completeAnalysis()).errors, []);
 });
-test("validateAnalysis: 根拠・確信度・未確認事項が欠けると不合格", () => {
-  const a = completeAnalysis(); a.axes[0].evidence = ""; a.axes[1].confidence = null; a.axes[2].unverified = "";
-  const { errors } = validateAnalysis(a);
-  assert.equal(errors.length, 3);
+test("9軸は原本の定義（目的適合・訴求・コピー など）", () => {
+  assert.deepEqual(AXIS_KEYS, ["purpose_fit", "information_hierarchy", "visual_flow", "message_copy", "trust_safety", "color_legibility", "layout_spacing", "visual_brand", "implementation_reuse"]);
+  assert.equal(AXES.find((x) => x.key === "purpose_fit").label, "目的適合");
 });
-test("validateAnalysis: 転用禁止フィールドを拒否", () => {
-  const a = completeAnalysis(); a.verbatimCopy = "x";
-  assert.equal(validateAnalysis(a).ok, false);
+test("validateAnalysis: 根拠・確信度・未確認事項・対象範囲が欠けると不合格", () => {
+  const a = completeAnalysis(); a.axes[0].evidence = ""; a.axes[1].confidence = null; a.axes[2].unverified = ""; a.axes[3].scope = "";
+  assert.equal(validateAnalysis(a).errors.length, 4);
+});
+test("validateAnalysis: score 0（評価不能）は理由が必須で、1〜5の範囲外・小数は拒否", () => {
+  const a = completeAnalysis(); a.axes[0].score = 0;
+  assert.equal(validateAnalysis(a).errors.length, 1);
+  a.axes[0].notEvaluableReason = "画像から判断できない";
+  assert.deepEqual(validateAnalysis(a).errors, []);
+  a.axes[1].score = 6; a.axes[2].score = 3.5;
+  assert.equal(validateAnalysis(a).errors.length, 2);
+});
+test("validateAnalysis: sectionCoverage（source＝analyzed＝units）が一致しないと不合格", () => {
+  const a = completeAnalysis(); a.sectionCoverage = { sourceUnitCount: 3, analyzedUnitCount: 1 };
+  assert.ok(validateAnalysis(a).errors.some((e) => e.includes("sectionCoverage")));
+});
+test("validateAnalysis: 改善案の5項目・再現手順の構造/差替・再利用構造・既存分析比較・外部同期の記録が必須", () => {
+  const a = completeAnalysis(); a.improvements.top[0].metric = ""; a.reproduction.Canva.replaceSteps = []; a.reuse.reusableStructures = []; a.existingAnalysisComparison = { existing: false }; a.externalSync.notion = "";
+  assert.equal(validateAnalysis(a).errors.length, 5);
+});
+test("validateAnalysis: 転用禁止・順位づけのフィールドを拒否／旧形式(dis-1.0)は公開不可", () => {
+  const a = completeAnalysis(); a.verbatimCopy = "x"; a.totalScore = 30;
+  assert.equal(validateAnalysis(a).errors.length, 2);
+  const r = validateAnalysis({ schemaVersion: "dis-1.0" });
+  assert.equal(r.ok, false); assert.match(r.errors[0], /旧形式/);
+});
+test("validateAnnotations: 座標は0〜1、全Unitに注釈、Unit/ID整合を検証", () => {
+  const a = completeAnalysis();
+  assert.deepEqual(validateAnnotations(completeAnnotations(a), a).errors, []);
+  const n = completeAnnotations(a); n.annotations[0].bbox = { x: 0.8, y: 0.1, w: 0.5, h: 0.2 };
+  assert.ok(validateAnnotations(n, a).errors.some((e) => e.includes("はみ出")));
+  const m = completeAnnotations(a); m.annotations = [];
+  assert.ok(validateAnnotations(m, a).errors.some((e) => e.includes("注釈がない")));
+  const k = completeAnnotations(a); k.analysisRef = "OTHER"; k.annotations[0].unitId = "U9";
+  assert.equal(validateAnnotations(k, a).errors.length, 3); // ID不一致・存在しないUnit・U1に注釈なし
+});
+test("text-index: 日本語・英語を含む索引を作り、自然言語の質問で近い分析を返す", () => {
+  const a1 = completeAnalysis(); a1.summary = "キャンペーンLP。応募方法を番号付きの手順で見せる"; a1.disId = "DIS-LP-1";
+  const a2 = completeAnalysis(); a2.summary = "ECサイト。大きな英語の見出しで商品を見せる"; a2.disId = "DIS-WB-1"; a2.media = "web";
+  const idx = [buildTextIndex(a1), buildTextIndex(a2)];
+  assert.ok(tokenize("応募方法").includes("応募") && tokenize("Design System").includes("design"));
+  assert.equal(searchIndexes(idx, "応募方法の手順")[0].id, "DIS-LP-1");
+  assert.equal(searchIndexes(idx, "商品 見出し")[0].id, "DIS-WB-1");
+  assert.deepEqual(searchIndexes(idx, "まったく無関係な語zzz").length, 0);
+});
+test("analysisToMarkdown(v2): 主要項目を含み、9軸の表は6列", () => {
+  const md = analysisToMarkdown(completeAnalysis());
+  for (const w of ["分析版: 2.0", "元分析参照", "外部同期", "再利用構造と差替必須要素", "既存分析との比較", "Section / Unit（1/1）", "| 軸 | 評価 | 確信度 | 対象範囲 | 根拠 | 未確認 |", "課題: 課題1 ／ 根拠: 根拠1", "固有素材の差替"]) assert.ok(md.includes(w), w);
 });
 
 test("idempotencyKey: 日付によらず同一URLは同一キー", () => {
@@ -129,11 +183,16 @@ test("E2E(ドライラン): フィクスチャで選定→テンプレ→検証�
   // 完成分析を置いて公開(ドライラン)
   const a = completeAnalysis(); a.disId = "DIS-LP-20261107"; a.pageUrl = sel.selected.pageUrl; a.brand = sel.selected.brand;
   await fs.writeFile(path.join(tmp, "out/2026-11-07/lp/analysis.json"), JSON.stringify(a));
+  // 注釈データがないと公開できない
+  r = run(["--stage", "validate,publish", "--media", "lp"]);
+  assert.equal(JSON.parse(r.stdout).media.lp.stages.publish, "blocked: analysis not complete");
+  await fs.writeFile(path.join(tmp, "out/2026-11-07/lp/annotations.json"), JSON.stringify(completeAnnotations(a)));
   r = run(["--stage", "validate,publish", "--media", "lp"]);
   assert.equal(r.status, 0, r.stderr);
   const pub = JSON.parse(await fs.readFile(path.join(tmp, "out/2026-11-07/lp/publish-result.json"), "utf8"));
   assert.equal(pub.dryRun, true);
   assert.ok(pub.dropboxFolder.includes("/99_Needs_Review/2026-11-07/dis-daily/DIS-LP-20261107"));
+  for (const f of ["03_Analysis/annotations.json", "03_Analysis/text-index.json", "03_Analysis/analysis.json", "03_Analysis/analysis.md"]) assert.ok(pub.dropboxPlan.some((p) => p.endsWith(f)), f);
   await assert.rejects(fs.access(ledger)); // 台帳は書かれない
 
   // --apply だけでは書込めない（DIS_ENABLE_WRITES/DRY_RUN不足）→ドライランのまま
@@ -401,7 +460,7 @@ test("config: バナー・Webの登録先の列マップが、実在する列名
 test("config: 取得できない参照元は enabled:false と理由つきで無効化されている", async () => {
   const cfg = await loadConfig();
   const off = cfg.sources.filter((s) => s.enabled === false).map((s) => s.key).sort();
-  assert.deepEqual(off, ["banner-library", "banner-matome", "cssda", "gdweb", "landbook", "sankou-web", "siteinspire"]);
+  assert.deepEqual(off, ["cssda", "landbook", "sankou-web", "siteinspire"]);
   assert.ok(cfg.sources.filter((s) => s.enabled === false).every((s) => s.disabledReason));
 });
 
@@ -548,4 +607,18 @@ test("validate: 分析のdisId・pageUrlは選定結果で上書きされ、bran
   assert.equal(r.status, 0, r.stderr);
   const after = JSON.parse(await fs.readFile(f, "utf8"));
   assert.deepEqual([after.disId, after.pageUrl, after.brand], ["DIS-WB-20261109", "https://real.example/", "Real Brand"]);
+});
+
+test("config: 参照元URLは原本レジストリに一致（BANNER LIBRARY・Banner Matome・GDWEB・IKESAI）", async () => {
+  const cfg = await loadConfig();
+  const url = (k) => cfg.sources.find((s) => s.key === k).listUrl;
+  assert.equal(url("banner-library"), "https://design-library.jp/");
+  assert.equal(url("banner-matome"), "http://bannermatome.com/");
+  assert.equal(url("gdweb"), "https://www.gdweb.co.jp/");
+  assert.equal(url("ikesai"), "https://www.ikesai.com/");
+});
+
+test("capture: SPの撮影幅は375px（原本のLP取り込み手順）", async () => {
+  const src = await fs.readFile(path.join(here, "lib/capture.mjs"), "utf8");
+  assert.ok(src.includes('["sp", { width: 375'));
 });
