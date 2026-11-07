@@ -334,3 +334,8 @@ test("collect: 言語トップ(/en/)や自サイト名入りのリンクは候�
   const out = await collectFromSource(src, { getter: { robots: async () => true, get: async (u) => ({ ok: !!pages[u], status: 200, text: pages[u] || "" }) } });
   assert.equal(out[0].pageUrl, "https://real.example/");
 });
+
+test("looksLikeNonWork: 運営者メッセージ・規約系ページも作品ではない", () => {
+  for (const bad of ["運営者の想い| Webデザインギャラリー・参考サイト集・アワード", "利用規約", "広告掲載について"]) assert.equal(looksLikeNonWork(bad, { name: "MUUUUU.ORG" }, ""), true, bad);
+  assert.equal(looksLikeNonWork("Baseline Design", { name: "I/O 3000" }, ""), false);
+});

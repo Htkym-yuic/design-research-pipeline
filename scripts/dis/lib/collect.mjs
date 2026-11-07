@@ -50,7 +50,7 @@ export function extractDetailLinks(html, source, limit = 8) {
   return out;
 }
 
-const NAV_TITLE = /(一覧|コレクション|Collection|Design Sets|All Web Designs|Interviews|裏側|お問い合わせ|ご依頼|ご相談|について|ポータル|ガイド|サイトマップ|ランキング|ニュース|制作会社|Articles|Inspiration$|About|Contact|Privacy|Design Examples|Examples$)/i;
+const NAV_TITLE = /(一覧|コレクション|Collection|Design Sets|All Web Designs|Interviews|裏側|お問い合わせ|ご依頼|ご相談|について|ポータル|ガイド|サイトマップ|ランキング|ニュース|制作会社|Articles|Inspiration$|About|Contact|Privacy|Design Examples|Examples$|運営者|想い|運営|プライバシー|利用規約|掲載について|広告掲載)/i;
 
 /** 個別の作品ではなさそうなページ（トップ・一覧・問い合わせ・サイト名だけのタイトル）かどうか。ヒューリスティック。 */
 export function looksLikeNonWork(title, source, siteTitle = "") {
