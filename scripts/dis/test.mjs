@@ -469,3 +469,30 @@ test("collect: 候補の画像が参照元自身のog:imageと同じなら、サ
   assert.deepEqual(out.map((c) => c.brand), ["Work One"]);
   assert.equal(out.report.skippedNonWork, 1);
 });
+
+test("prepSummary: 媒体ごとの件数・スキップ理由を1行にまとめる", async () => {
+  const { prepSummary } = await import("./prep-summary.mjs");
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-sum-"));
+  const put = async (m, files) => { for (const [f, data] of Object.entries(files)) { const p = path.join(tmp, "2026-11-08", m, f); await fs.mkdir(path.dirname(p), { recursive: true }); await fs.writeFile(p, JSON.stringify(data)); } };
+  await put("lp", { "selection.json": { selected: null, skippedReason: "候補なし" } });
+  await put("banner", { "selection.json": { selected: { brand: "B" } }, "review/review.json": { items: [1, 2, 3] } });
+  assert.equal(await prepSummary(tmp, "2026-11-08"), "LP スキップ（候補なし） / バナー 3件 / Web 未実行/失敗");
+});
+
+test("daily-prep.sh: 書き込み系の環境変数を外し(DRY_RUN=true)、ログを残し、失敗は非0で返す", async () => {
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-prep-"));
+  const repo = path.resolve(here, "../..");
+  const base = { ...process.env, DIS_NOTIFY: "0", DIS_ENABLE_WRITES: "true", DRY_RUN: "false" };
+  // 子プロセス側で環境を出力するコマンドに差し替え
+  const ok = spawnSync("bash", [path.join(here, "daily-prep.sh")], { env: { ...base, DIS_RUN_CMD: 'echo "W=${DIS_ENABLE_WRITES:-unset} D=$DRY_RUN"' }, encoding: "utf8" });
+  assert.equal(ok.status, 0, ok.stderr);
+  const date = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
+  const logFile = path.join(repo, "outputs/dis/logs", `prep-${date}.log`);
+  const log = await fs.readFile(logFile, "utf8");
+  assert.match(log, /W=unset D=true/);
+  assert.match(log, /終了コード 0/);
+  const ng = spawnSync("bash", [path.join(here, "daily-prep.sh")], { env: { ...base, DIS_RUN_CMD: "exit 7" }, encoding: "utf8" });
+  assert.equal(ng.status, 7);
+  assert.match(await fs.readFile(logFile, "utf8"), /終了コード 7/);
+  await fs.rm(logFile, { force: true });
+});

@@ -35,3 +35,6 @@ description: DIS（Design Intelligence System）日次学習。LP・バナー・
 - `references/analysis-pack.md` 分析の必須項目
 - `references/reference-source-registry.md` 参照元一覧
 - `references/daily-learning-workflow.md` 日次フローと冪等性・重複判定
+
+## 毎朝の準備の自動実行（任意）
+Macの launchd で、収集・選定・一覧画像の作成だけを毎朝実行できる（`bash scripts/dis/install-schedule.sh`）。書き込みは行わない。通知が来たら、一覧画像を見せて、手順2b以降を進める。

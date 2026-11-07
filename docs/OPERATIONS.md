@@ -361,3 +361,11 @@ npm run dis:run -- --stage collect,select,template --fixture scripts/dis/fixture
 - 撮影の前に `--stage review` で、比較する5候補のサムネイルを番号つきの一覧画像（`review/contact_sheet.jpg`）にまとめ、評価を `learning.json` に書き、`--stage rescore` で選定に反映する。基準は `.claude/skills/dis-design-learning/references/learning-value-rubric.md`。
 - 取得に失敗し続ける参照元は、`config/dis-daily.json` で `enabled: false` と `disabledReason` を付けて止める（SANKOU!、CSS Design Awards、Land-book、SiteInspire、BANNER LIBRARY、Banner Matome、GDWEB）。URLや規約を確認できたら `enabled` を外す。
 - 構造の確認は `npm run dis:probe -- --source <key>`。
+
+### DIS: 毎朝の「準備」の自動実行（Mac / launchd）
+
+- 自動化するのは準備だけ（収集→選定→比較用の一覧画像）。外部への書き込みと認証情報は使わない（`DRY_RUN=true`固定、`DIS_ENABLE_WRITES` は常に外す）。評価・撮影・分析・本番の書き込みは、通知後に人が行う。
+- 登録: `bash scripts/dis/install-schedule.sh [--hour 6] [--minute 0]` / 状態: `--status` / 解除: `--uninstall`
+- 実行内容: `scripts/dis/daily-prep.sh`。ログは `outputs/dis/logs/prep-<日付>.log`。完了と失敗はmacOSの通知で知らせる。
+- 通知後の流れ: 一覧画像（`outputs/dis/<日付>/<媒体>/review/contact_sheet.jpg`）をチャットに添付 → 評価（`learning.json`）→ `--stage rescore,capture --capture` → 分析 → 検証 → 本番（`--apply`）。
+- 既存の日次パイプライン（GitHub Actions）とは独立している。
