@@ -475,7 +475,9 @@ test("config: バナー・Webの登録先の列マップが、実在する列名
 test("config: 取得できない参照元は enabled:false と理由つきで無効化されている", async () => {
   const cfg = await loadConfig();
   const off = cfg.sources.filter((s) => s.enabled === false).map((s) => s.key).sort();
-  assert.deepEqual(off, ["cssda", "landbook", "sankou-web", "siteinspire"]);
+  assert.deepEqual(off, ["awwwards", "cssda", "landbook", "lapaninja", "lp-advance", "lp-kanji", "onepagelove", "sankou-lp", "sankou-web", "siteinspire", "wdc-lp"]);
+  // 運用方針: LPはrdlpのみ。Webは日本のサイトのみ（海外は無効）
+  assert.deepEqual(cfg.sources.filter((s) => s.enabled !== false && s.media === "lp").map((s) => s.key), ["rdlp"]);
   assert.ok(cfg.sources.filter((s) => s.enabled === false).every((s) => s.disabledReason));
 });
 

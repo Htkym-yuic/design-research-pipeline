@@ -114,7 +114,9 @@
       "name": "LP advance",
       "listUrl": "https://lp-web.com/",
       "detailPathIncludes": "/lp/",
-      "termsStatus": "unknown"
+      "termsStatus": "unknown",
+      "enabled": false,
+      "disabledReason": "運用方針により対象を限定（LPはrdlpのみ、Webは日本のサイトのみ）。取得自体は可能。再有効化: enabled を true に"
     },
     {
       "key": "wdc-lp",
@@ -122,7 +124,9 @@
       "name": "Web Design Clip [L]",
       "listUrl": "https://lp.webdesignclip.com/",
       "detailPathIncludes": "/",
-      "termsStatus": "unknown"
+      "termsStatus": "unknown",
+      "enabled": false,
+      "disabledReason": "運用方針により対象を限定（LPはrdlpのみ、Webは日本のサイトのみ）。取得自体は可能。再有効化: enabled を true に"
     },
     {
       "key": "sankou-lp",
@@ -130,7 +134,9 @@
       "name": "SANKOU!",
       "listUrl": "https://sankoudesign.com/",
       "detailPathIncludes": "/lp/",
-      "termsStatus": "unknown"
+      "termsStatus": "unknown",
+      "enabled": false,
+      "disabledReason": "運用方針により対象を限定（LPはrdlpのみ、Webは日本のサイトのみ）。取得自体は可能。再有効化: enabled を true に"
     },
     {
       "key": "lp-kanji",
@@ -138,7 +144,9 @@
       "name": "LP幹事",
       "listUrl": "https://lp-kanji.com/",
       "detailPathIncludes": "/",
-      "termsStatus": "unknown"
+      "termsStatus": "unknown",
+      "enabled": false,
+      "disabledReason": "運用方針により対象を限定（LPはrdlpのみ、Webは日本のサイトのみ）。取得自体は可能。再有効化: enabled を true に"
     },
     {
       "key": "sankou-web",
@@ -241,7 +249,9 @@
       "detailPathIncludes": "/sites/",
       "termsStatus": "known",
       "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
-      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。"
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。",
+      "enabled": false,
+      "disabledReason": "運用方針により対象を限定（LPはrdlpのみ、Webは日本のサイトのみ）。取得自体は可能。再有効化: enabled を true に"
     },
     {
       "key": "cssda",
@@ -287,7 +297,9 @@
       "detailPathIncludes": "/",
       "termsStatus": "known",
       "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
-      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。"
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。",
+      "enabled": false,
+      "disabledReason": "運用方針により対象を限定（LPはrdlpのみ、Webは日本のサイトのみ）。取得自体は可能。再有効化: enabled を true に"
     },
     {
       "key": "lapaninja",
@@ -297,7 +309,9 @@
       "detailPathIncludes": "/",
       "termsStatus": "known",
       "termsApproval": "利用者が使用を承認（2026-11-07 チャット）。個別の利用条件の確認は利用者の責任。取得時はrobots.txtを確認する。",
-      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。"
+      "notes": "個別ページのURL形式が未確認のため、汎用の抽出（ナビ・カテゴリ除外）を使う。Macで試して、必要なら detailPathRegex を設定する。BotブロックやCloudflare等で取得できない場合は回避せずスキップ。",
+      "enabled": false,
+      "disabledReason": "運用方針により対象を限定（LPはrdlpのみ、Webは日本のサイトのみ）。取得自体は可能。再有効化: enabled を true に"
     },
     {
       "key": "banner-library",
