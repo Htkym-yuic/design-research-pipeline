@@ -24,19 +24,19 @@
   },
   "web": {
     "prefix": "WB",
-    "existingMax": 70,
-    "nextNumber": 71,
+    "existingMax": 72,
+    "nextNumber": 73,
     "digits": 4,
     "sourceOfTruth": "Notion 03｜Webサイトリサーチライブラリー",
-    "lastReservationAt": "2026-11-07T16:23:51.268Z"
+    "lastReservationAt": "2026-11-08T19:07:40.357Z"
   },
   "graphic": {
     "prefix": "GR",
-    "existingMax": 213,
-    "nextNumber": 214,
+    "existingMax": 218,
+    "nextNumber": 219,
     "digits": 4,
     "sourceOfTruth": "Notion 04｜グラフィックデザインリサーチライブラリー",
-    "lastReservationAt": "2026-11-07T16:23:51.268Z"
+    "lastReservationAt": "2026-11-08T19:07:40.357Z"
   },
   "parts": {
     "prefix": "PT",
@@ -48,11 +48,11 @@
   },
   "patterns": {
     "prefix": "PAT",
-    "existingMax": 83,
-    "nextNumber": 84,
+    "existingMax": 85,
+    "nextNumber": 86,
     "digits": 4,
     "sourceOfTruth": "Notion 06｜デザイン原則・パターン",
-    "lastReservationAt": "2026-11-07T16:23:51.267Z"
+    "lastReservationAt": "2026-11-08T19:07:40.356Z"
   },
   "canva": {
     "prefix": "CV",

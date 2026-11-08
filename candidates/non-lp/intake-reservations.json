@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T16:23:51.267Z",
+  "updatedAt": "2026-11-08T19:07:40.356Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -3803,6 +3803,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-07T16:23:51.267Z"
+    },
+    {
+      "id": "GR-0214",
+      "title": "秋のイベント",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fdf5deede3a68f3b941f3ee44309d5a70%2Fdf5deede3a68f3b941f3ee44309d5a70-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30845",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fdf5deede3a68f3b941f3ee44309d5a70%2Fdf5deede3a68f3b941f3ee44309d5a70-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-08T19:07:40.356Z"
+    },
+    {
+      "id": "GR-0215",
+      "title": "冬季スポーツ応援POP",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fdc8451b402c9f051afc750573623d552%2Fdc8451b402c9f051afc750573623d552-400.webp&w=1200&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-29249",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fdc8451b402c9f051afc750573623d552%2Fdc8451b402c9f051afc750573623d552-400.webp&w=1200&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-08T19:07:40.356Z"
+    },
+    {
+      "id": "GR-0216",
+      "title": "桜並木の中人物が歩く春のイベント案内向けバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F39a948cbdf6a955207878ceae1591d27%2F39a948cbdf6a955207878ceae1591d27-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-19062",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F39a948cbdf6a955207878ceae1591d27%2F39a948cbdf6a955207878ceae1591d27-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-08T19:07:40.356Z"
+    },
+    {
+      "id": "GR-0217",
+      "title": "コーラルカラーのモダン雑貨店名刺デザイン",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F64c1c16ffa0e3a13a4cd9325e77a207f%2F64c1c16ffa0e3a13a4cd9325e77a207f-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29792",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F64c1c16ffa0e3a13a4cd9325e77a207f%2F64c1c16ffa0e3a13a4cd9325e77a207f-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-08T19:07:40.356Z"
+    },
+    {
+      "id": "GR-0218",
+      "title": "直線と曲線の組み合わせのロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/1459cc12a3202a8066944fbf67c3c30d/1459cc12a3202a8066944fbf67c3c30d-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3081",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/1459cc12a3202a8066944fbf67c3c30d/1459cc12a3202a8066944fbf67c3c30d-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-08T19:07:40.356Z"
     },
     {
       "id": "ILAC-0001",
@@ -8162,6 +8222,30 @@
       "materialId": "PAT-0083",
       "authorProfileUrl": null,
       "reservedAt": "2026-11-07T16:23:51.267Z"
+    },
+    {
+      "id": "PAT-0084",
+      "title": "ye_jjiに見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://yejji.net/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/yejji/",
+      "imageUrl": null,
+      "materialId": "PAT-0084",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-08T19:07:40.356Z"
+    },
+    {
+      "id": "PAT-0085",
+      "title": "秋のイベントに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fdf5deede3a68f3b941f3ee44309d5a70%2Fdf5deede3a68f3b941f3ee44309d5a70-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30845",
+      "imageUrl": null,
+      "materialId": "PAT-0085",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-08T19:07:40.356Z"
     },
     {
       "id": "PHAC-0001",
@@ -14571,6 +14655,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-07T16:23:51.267Z"
+    },
+    {
+      "id": "WB-0071",
+      "title": "ye_jji",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://yejji.net/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/yejji/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/yejji_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-08T19:07:40.356Z"
+    },
+    {
+      "id": "WB-0072",
+      "title": "feau",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://feau.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/feau/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/feau_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-08T19:07:40.356Z"
     }
   ]
 }
