@@ -83,6 +83,14 @@ DISは、既存のLP・バナー・Canva等の分析を消さずに、根拠付�
 6. 検証する: `DRY_RUN=true npm run dis:run -- --media <…> --url "<URL>" --stage validate`（撮影・分析と同じ `--url` を付ける）。
 7. 登録計画（ドライラン: `--stage validate,publish`）を見せ、ユーザーに「登録する／見送る」を確認する。「登録する」の返事があったときだけ、`--apply` ＋ `DIS_ENABLE_WRITES=true` ＋ `DRY_RUN=false` で書き込む。登録後は、台帳のコミットとプッシュを案内し、DropboxとNotionを読み取りで確認する。
 
+## Sectionごとの切り出し（意味のまとまりごと。機械的な分割は、そのまま残る）
+
+分析を書くとき、各Unitに次の2つを必ず付ける。
+- `roleType`: Sectionの種類。`FV`／`悩み提起`／`共感`／`解決策`／`ベネフィット`／`特徴`／`実績`／`比較`／`商品紹介`／`料金`／`流れ`／`FAQ`／`CTA`／`会社情報`／`ナビ`／`フッター`／`その他` のいずれか。LPをまたいだ比較・検索のため、一覧から選ぶ（役割の説明は、従来どおり `role` に自由に書く）。
+- `regions`: 全体画像の縦の範囲（0〜1の割合）。`{ "pc": { "y0": 0, "y1": 0.2 }, "sp": { "y0": 0, "y1": 0.15 } }`。PCとSPは、レイアウトが違うので、それぞれ別に見て決める。SPの画像がなければ、`sp` は `{ "y0": 0, "y1": 0 }`（未指定）にする。目測でよい（境界は、近くの余白に自動で吸着する）。
+
+分析と検証のあとで、`DRY_RUN=true npm run dis:run -- --media <媒体> [--url "<URL>"] --stage crop` を実行すると、案件フォルダの `files/01_Normal_Images/sections_by_unit/` に、`pc_01_FV.png`、`pc_02_悩み提起.png`、`sp_01_FV.png` のような名前で切り出される（番号はUnitの順）。登録時には、Dropboxにも新規ファイルとして入る。従来の機械的な分割（`sections/pc_01.jpg`）は、そのまま残る。旧形式の分析（`roleType` なし）は、検証を通るが、切り出しはできない。
+
 ## このリポジトリでの実装
 
 コマンド・ファイル構成・スキーマ（dis-2.0）・日次運用の手順は [実装メモ](references/implementation-notes.md) を読む。

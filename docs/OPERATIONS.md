@@ -441,3 +441,12 @@ outputs/dis/
 - 連番は媒体ごとに0001から。取りやめた番号は欠番のまま、再利用しない。
 - 登録済みの旧形式6件は、このフォルダ構成の対象外（`candidates/dis/` に残る）。
 - Dropbox の保存先は従来どおり `.../99_Needs_Review/<日付>/dis-daily/<ID>/`。
+
+### DIS: Sectionごとの切り出し（`--stage crop`）
+
+- 分析の各Unitに `roleType`（Sectionの種類）と `regions`（PC/SPそれぞれの、縦の範囲0〜1）を書くと、`--stage crop` で、全体画像を意味のまとまりごとに切り出す。
+- 出力: `files/01_Normal_Images/sections_by_unit/pc_01_FV.png`、`pc_02_悩み提起.png`、`sp_01_FV.png` など。`index.json` に、各ファイルのUnit・端末・切り出し位置（px）を記録する。登録時は、Dropboxの `01_Normal_Images/sections_by_unit/` に新規で入る。
+- 境界は、目測の位置の近く（全体の約3%以内）で、何も描かれていない横一列（余白）に自動で吸着する。見出しや画像を、途中で切らないため。隣り合うSectionは、隙間も重なりもなく切れる。
+- 従来の機械的な分割（`sections/pc_01.jpg` など、約1600pxごと）は、そのまま残る。
+- 種類の一覧: FV／悩み提起／共感／解決策／ベネフィット／特徴／実績／比較／商品紹介／料金／流れ／FAQ／CTA／会社情報／ナビ／フッター／その他。
+- 旧形式の分析（`roleType` なし。`DIS-LP-0001` など）は、検証は通るが、切り出しの対象外。

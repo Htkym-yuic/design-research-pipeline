@@ -984,3 +984,52 @@ test("外部同期: 登録の時点で、分析内の外部同期が「登録済
   assert.match(analysisToMarkdown(b), /Notion=登録済み（2026-11-10） ／ Dropbox=保存済み（2026-11-10）/);
   assert.notEqual(a.externalSync.notion, b.externalSync.notion); // 元は変更しない
 });
+
+test("crop: 意味ごと（Sectionの種類つきのファイル名）に切り出す。境界は余白に吸着し、機械的な分割（sections/）は残る", async () => {
+  const { cropSections, snapBoundary, rowVariance, ROLE_TYPES, SECTION_DIR } = await import("./lib/crop.mjs");
+  const sharp = (await import("sharp")).default;
+  // 400x1000: 0-300 赤の模様, 300-320 白(余白), 320-700 青の模様, 700-720 白, 720-1000 緑の模様
+  const W = 400, H = 1000;
+  const raw = Buffer.alloc(W * H * 3, 255);
+  const paint = (y0, y1, rgb) => { for (let y = y0; y < y1; y++) for (let x = 0; x < W; x++) { const stripe = (x + y) % 40 < 20; const i = (y * W + x) * 3; const c = stripe ? rgb : rgb.map((v) => v * 0.4); raw[i] = c[0]; raw[i + 1] = c[1]; raw[i + 2] = c[2]; } };
+  paint(0, 300, [220, 40, 40]); paint(320, 700, [40, 40, 220]); paint(720, 1000, [40, 200, 40]);
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-crop-"));
+  const normal = path.join(tmp, "files", "01_Normal_Images");
+  await fs.mkdir(path.join(normal, "sections"), { recursive: true });
+  await sharp(raw, { raw: { width: W, height: H, channels: 3 } }).png().toFile(path.join(normal, "DIS-LP-0009_PC_full.png"));
+  await fs.writeFile(path.join(normal, "sections", "pc_01.jpg"), "x"); // 既存の機械的な分割
+  // 目測の境界は、実際の余白（300〜320, 700〜720）から少しずれている（0.31 / 0.69）
+  const analysis = { units: [
+    { id: "U1", roleType: "FV", regions: { pc: { y0: 0, y1: 0.31 } } },
+    { id: "U2", roleType: "悩み提起", regions: { pc: { y0: 0.31, y1: 0.71 } } },
+    { id: "U3", roleType: "CTA", regions: { pc: { y0: 0.71, y1: 1 } } },
+    { id: "U4", roleType: "その他" }, // regions なし → 切り出さない
+  ] };
+  const { produced, warnings } = await cropSections(tmp, analysis, { id: "DIS-LP-0009" });
+  assert.deepEqual(produced.map((p) => path.basename(p.local)), ["pc_01_FV.png", "pc_02_悩み提起.png", "pc_03_CTA.png"]);
+  assert.deepEqual(warnings, []);
+  const h = await Promise.all(produced.map(async (p) => (await sharp(p.local).metadata()).height));
+  assert.equal(h.reduce((a, b) => a + b, 0), H); // 隙間も重なりもなく、全体を覆う
+  assert.ok(produced[0].y1 >= 295 && produced[0].y1 <= 325, `境界が余白に吸着: ${produced[0].y1}`); // 300〜320の余白付近
+  assert.ok(produced[1].y1 >= 695 && produced[1].y1 <= 725, `境界が余白に吸着: ${produced[1].y1}`);
+  assert.equal(produced[0].y1, produced[1].y0); // 隣り合うSectionの境界は、1つだけ
+  assert.equal(produced[0].rel, `01_Normal_Images/${SECTION_DIR}/pc_01_FV.png`);
+  assert.equal(await fs.readFile(path.join(normal, "sections", "pc_01.jpg"), "utf8"), "x"); // 機械的な分割は、そのまま残る
+  assert.ok(ROLE_TYPES.includes("FV") && ROLE_TYPES.includes("悩み提起") && ROLE_TYPES.includes("共感"));
+  const st = await rowVariance(path.join(normal, "DIS-LP-0009_PC_full.png"));
+  assert.equal(snapBoundary(0, st), 0); assert.equal(snapBoundary(1, st), H);
+});
+
+test("roleType・regions の検証: 旧形式（キーなし）は通り、キーがあるのに未選択・不正・範囲外はNG", async () => {
+  const base = completeAnalysis();
+  assert.equal(validateAnalysis(base).ok, true); // 旧形式（roleType なし）
+  const a = JSON.parse(JSON.stringify(base));
+  a.units[0].roleType = "";
+  assert.ok(validateAnalysis(a).errors.some((e) => /roleType/.test(e)));
+  a.units[0].roleType = "FV"; a.units[0].regions = { pc: { y0: 0, y1: 0.2 }, sp: { y0: 0, y1: 0 } };
+  assert.equal(validateAnalysis(a).ok, true);
+  a.units[0].regions = { pc: { y0: 0.5, y1: 0.2 } };
+  assert.ok(validateAnalysis(a).errors.some((e) => /regions\.pc/.test(e)));
+  const t = emptyAnalysis({ media: "lp", disId: "X", pageUrl: "u", brand: "b" });
+  assert.ok(validateAnalysis(t, { requireComplete: false }).errors.some((e) => /roleType/.test(e))); // テンプレートは未選択のため、記入が必要
+});

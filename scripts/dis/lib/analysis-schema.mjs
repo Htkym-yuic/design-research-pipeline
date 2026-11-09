@@ -14,6 +14,7 @@ export const AXES = [
   { key: "implementation_reuse", label: "実装・転用性" },
 ];
 export const AXIS_KEYS = AXES.map((a) => a.key);
+import { ROLE_TYPES } from "./crop.mjs";
 export const CONFIDENCE = ["high", "medium", "low"];
 export const TOOLS = ["Canva", "Photoshop", "Elementor"];
 export const REVIEW_STATES = ["未レビュー", "レビュー済み"];
@@ -36,7 +37,7 @@ export function emptyAnalysis({ media, disId, pageUrl, brand, captureSource, sel
     summary: "",
     selectionReason,
     sectionCoverage: { sourceUnitCount: 0, analyzedUnitCount: 0 },
-    units: [{ id: "U1", name: "", sectionRef: "", role: "", observation: "", evidence: "", confidence: null, reuseStructure: "", mustReplace: [], unknowns: [], annotation: "" }],
+    units: [{ id: "U1", name: "", sectionRef: "", roleType: "", regions: { pc: { y0: 0, y1: 0 }, sp: { y0: 0, y1: 0 } }, role: "", observation: "", evidence: "", confidence: null, reuseStructure: "", mustReplace: [], unknowns: [], annotation: "" }],
     axes: AXES.map((x) => ({ key: x.key, label: x.label, score: null, scope: "", evidence: "", confidence: null, unverified: "" })),
     improvements: { top: [blankImprovement()], priority: [], ideas: [] },
     reproduction: Object.fromEntries(TOOLS.map((t) => [t, { structureSteps: [], replaceSteps: [] }])),
@@ -70,6 +71,13 @@ export function validateAnalysis(a, { requireComplete = true } = {}) {
   units.forEach((u, i) => {
     for (const f of ["id", "name", "role", "observation", "evidence", "reuseStructure"]) if (!str(u?.[f])) err(`units[${i}].${f} が空`);
     if (!CONFIDENCE.includes(u?.confidence)) err(`units[${i}].confidence は ${CONFIDENCE.join("/")}`);
+    // Sectionの種類と切り出し範囲（旧形式の分析には無い。キーがある場合は、正しい値が必要）
+    if ("roleType" in (u || {}) && !ROLE_TYPES.includes(u.roleType)) err(`units[${i}].roleType は ${ROLE_TYPES.join("/")} のいずれか（未選択・不正: ${u.roleType || "空"}）`);
+    for (const dev of ["pc", "sp"]) {
+      const r = u?.regions?.[dev];
+      if (r === undefined || (r.y0 === 0 && r.y1 === 0)) continue; // その端末の画像がない・未指定
+      if (!(typeof r.y0 === "number" && typeof r.y1 === "number" && r.y0 >= 0 && r.y1 <= 1 && r.y0 < r.y1)) err(`units[${i}].regions.${dev} は 0<=y0<y1<=1`);
+    }
     if (!arr(u?.mustReplace)) err(`units[${i}].mustReplace（差替必須要素）は配列`);
     if (!arr(u?.unknowns)) err(`units[${i}].unknowns は配列`);
     else u.unknowns.forEach((k, j) => { for (const f of ["item", "impact", "nextCheck"]) if (!str(k?.[f])) err(`units[${i}].unknowns[${j}].${f} が空`); });

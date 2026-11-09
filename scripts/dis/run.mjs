@@ -41,8 +41,8 @@ const { values: args } = parseArgs({
   },
 });
 
-const STAGES = ["collect", "select", "review", "rescore", "capture", "template", "validate", "publish"];
-const DEFAULT_STAGES = STAGES.filter((s) => !["review", "rescore"].includes(s));
+const STAGES = ["collect", "select", "review", "rescore", "capture", "template", "validate", "crop", "publish"];
+const DEFAULT_STAGES = STAGES.filter((s) => !["review", "rescore", "crop"].includes(s));
 const stages = args.stage === "all" ? DEFAULT_STAGES : args.stage.split(",");
 const medias = args.media.split(",").map((s) => s.trim()).filter(Boolean);
 for (const s of stages) if (!STAGES.includes(s)) throw new Error(`不明なstage: ${s}`);
@@ -239,6 +239,20 @@ async function runMedia(media) {
       await wj(`${it}/text-index.json`, buildTextIndex(analysis));
     }
     if (!okAll && stages.includes("publish")) { r.stages.publish = "blocked: analysis not complete"; return; }
+  }
+
+  // Sectionごとの切り出し（分析の units[].regions と roleType から）。ファイル名: pc_01_FV.png など。files.json に追加し、登録時にDropboxへ入る。
+  if (stages.includes("crop")) {
+    if (!disId) { r.stages.crop = "blocked: IDが未採番です"; return; }
+    const a = await readJson(`${it}/analysis.json`, null);
+    if (!a || !(a.units || []).some((u) => u.regions)) { r.stages.crop = "skipped: 分析に units[].regions（切り出し範囲）がありません"; }
+    else {
+      const { cropSections, SECTION_DIR } = await import("./lib/crop.mjs");
+      const res = await cropSections(it, a, { id: disId });
+      const files = (await readJson(`${it}/files.json`, [])).filter((f) => !f.rel.startsWith(`01_Normal_Images/${SECTION_DIR}/`));
+      await wj(`${it}/files.json`, [...files, ...res.produced.map(({ local, rel }) => ({ local, rel }))]);
+      r.stages.crop = `${res.produced.length}枚を切り出し（${SECTION_DIR}/）${res.warnings.length ? ` / WARNING: ${res.warnings.join("; ")}` : ""}`;
+    }
   }
 
   if (stages.includes("publish")) {
