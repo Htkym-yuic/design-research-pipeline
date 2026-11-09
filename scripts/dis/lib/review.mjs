@@ -87,18 +87,18 @@ export function applyLearning(candidates, learning, reviewItems = []) {
 /** 手動指定の選定理由に入れる「良い点」の未記入マーカー。残っていると、検証が通らない。 */
 export const MANUAL_REASON_PLACEHOLDER = "良い点: （分析時に記入）";
 
-/** 実ページが取れず、アーカイブ掲載の画像で分析した場合の注記（選定理由の最後に付ける）。 */
-export const ARCHIVE_NOTE = "（注記: 実ページは取得できなかったため、LPアーカイブ掲載の画像のみを根拠とする）";
+/** 手動指定の注記（選定理由の最後に付ける）: 選定したのはユーザーであること、実ページが取れずアーカイブ画像で分析した場合はその旨。 */
+export const manualNote = (sel) => `（ユーザーが選定${sel?.captureMode === "archive" ? "。実ページは取得できなかったため、LPアーカイブ掲載の画像のみを根拠とする" : ""}）`;
 
 const CRITERIA_LABELS = { clarity: "構成の明快さ", uniqueness: "独自性・再発見性", reproducibility: "再現可能性", practicality: "実務との近さ", materials: "資料の十分さ", sourcing: "出典・取得の健全さ" };
 
 /**
  * 分析の「選定理由」の既定文。
- *  - 手動指定: 「ユーザーが選定した」＋「良い点: …」（良い点は分析時に記入。未記入のままでは検証が通らない）。実ページが取れずアーカイブ画像で分析した場合は、最後に注記を付ける
+ *  - 手動指定: 「良い点: …」（分析時に記入。未記入のままでは検証が通らない）を先頭に、最後に注記「（ユーザーが選定。…）」を付ける。実ページが取れずアーカイブ画像で分析した場合は、その旨も注記に入れる
  *  - 自動: 候補レビューで書いた「良い点」（reviewReason）と、6項目の点数をそのまま使う
  */
 export function defaultSelectionReason(sel) {
-  if (sel?.manual) return `ユーザーが選定した。${MANUAL_REASON_PLACEHOLDER}${sel.captureMode === "archive" ? ARCHIVE_NOTE : ""}`;
+  if (sel?.manual) return `${MANUAL_REASON_PLACEHOLDER}${manualNote(sel)}`;
   if (sel?.reviewReason) {
     const c = sel.reviewCriteria;
     const detail = c ? `（選定評価 ${sel.reviewTotal}/18: ${CRITERIA_KEYS.map((k) => `${CRITERIA_LABELS[k]} ${c[k]}`).join("・")}）` : "";
