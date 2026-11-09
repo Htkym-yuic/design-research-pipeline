@@ -3,7 +3,7 @@
  *   PC: full / first_view（幅1000px以上）、sections（幅600px以上）
  *   SP: full / first_view（幅430px以下）、sections（幅600px以上）
  *   Notion用JPEG: 4枚（PC・SPの first_view と sections）、幅720px以下、5MB未満
- * crosscheck-lp 自体は metadata.id が LP-0000 形式であることを要求するため、DISのID（DIS-LP-YYYYMMDD）には使えない。
+ * crosscheck-lp 自体は metadata.id が LP-0000 形式であることを要求するため、DISのID（DIS-LP-0001 など）には使えない。
  */
 import fs from "node:fs/promises";
 import path from "node:path";

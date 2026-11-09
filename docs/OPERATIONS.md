@@ -389,3 +389,11 @@ DRY_RUN=true npm run dis:run -- --media lp --url https://example.com/ --date 202
 - 出力先: `outputs/dis/<日付>/<lp|banner|web>/`（撮影画像は `.../files/`。撮影するには `--capture` が必要）。Dropbox・Notionへの書込みは、従来どおり `--apply` ＋ `DIS_ENABLE_WRITES=true` ＋ `DRY_RUN=false` のときだけ。
 - ログイン・課金壁・Bot対策・robots.txt禁止・403等は回避せず、理由を表示して止まる。
 - 同じ日付・媒体にすでに登録済みの場合は、`--date` で別の日付を指定する。
+
+### DIS: IDは媒体ごとの連番
+
+- 新規は `DIS-LP-0001`、`DIS-BN-0001`、`DIS-WB-0001`（媒体ごとに0001から）。登録済みの旧形式6件（`DIS-LP-20261107` など）は変更しない。
+- 採番のタイミング: 撮影（`--capture`）またはテンプレート作成の時点。選定しただけでは番号を使わない。採番後は `selection.json` に保存され、同じ候補を再実行しても番号は変わらない。
+- 番号 = 台帳の最大値 ＋ 作業中の予約（各日の selection.json の採番済みID）の最大値 ＋ 1。取りやめた分は欠番のままで、再利用しない。
+- 日付は、Dropboxの日付フォルダ・Notion・台帳で管理する。
+- 手動指定（`--url`）は、URLごとに作業フォルダ（`<media>-url-<8桁>`）が分かれる。撮影・分析・検証・登録の各コマンドにも、同じ `--url` を付けて実行する。

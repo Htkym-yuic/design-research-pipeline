@@ -19,6 +19,8 @@ import { checkAssetSet } from "./lib/asset-check.mjs";
 import { idempotencyKey, loadLedger, saveLedger, findEntry, upsertEntry } from "./lib/ledger.mjs";
 import { writesAllowed } from "./lib/write-guard.mjs";
 import { buildManualCandidate, selectManual } from "./lib/manual.mjs";
+import { createHash } from "node:crypto";
+import { formatDisId, nextSerial, reservedIdsFromOutputs } from "./lib/ids.mjs";
 import { buildContactSheet, applyLearning, suggestCriteria } from "./lib/review.mjs";
 import { dropboxFolder, planDropboxFiles, writeDropbox, writeNotion, buildNotionBlocks, DEFAULT_PROPERTY_MAP } from "./lib/adapters.mjs";
 
@@ -46,7 +48,9 @@ for (const m of medias) if (!MEDIA_KEYS.includes(m)) throw new Error(`不明なm
 if (args.url && medias.length !== 1) throw new Error("--url を使うときは --media を1つだけ指定してください（lp / banner / web）");
 
 const cfg = await loadConfig();
-const dir = (m) => path.join(args.out, args.date, m);
+// 手動指定（--url）は、URLごとに作業フォルダを分ける（同じ日・同じ媒体で複数件を扱える）。以降の段階も同じ --url を付けて実行する。
+const urlTag = args.url ? createHash("sha1").update(args.url).digest("hex").slice(0, 8) : null;
+const dir = (m) => path.join(args.out, args.date, urlTag ? `${m}-url-${urlTag}` : m);
 const wj = async (file, data) => { await fs.mkdir(path.dirname(file), { recursive: true }); await fs.writeFile(file, JSON.stringify(data, null, 2) + "\n"); };
 const writeOk = writesAllowed({ apply: args.apply });
 const ledgerFile = args.ledger || undefined;
@@ -59,7 +63,8 @@ const summary = { date: args.date, mode: writeOk ? "APPLY" : "DRY_RUN", media: {
 async function runMedia(media) {
   const d = dir(media);
   const r = (summary.media[media] = { status: "ok", stages: {} });
-  const disId = `${cfg.idPrefix}-${cfg.media[media].idCode}-${args.date.replaceAll("-", "")}`;
+  // 連番ID（DIS-LP-0001）は、撮影を始める時点で採番する。選定の段階では未採番（null）。
+  let disId = (await readJson(`${d}/selection.json`, null))?.selected?.disId ?? null;
 
   if (stages.includes("collect")) {
     const out = `${d}/candidates.json`;
@@ -96,14 +101,14 @@ async function runMedia(media) {
       const failures = candidates.filter((c) => c.fetchError);
       const dupCheck = (c) => known.check(c, { windowDays: cfg.dedupeWindowDays, today: args.date });
       const res = valid.length === 1 && valid[0].manual
-        ? selectManual(valid[0], { disId, dupCheck, ledgerEntries: ledger.entries })
+        ? selectManual(valid[0], { dupCheck })
         : selectOne([...interleaveBySource(valid, args.date), ...failures], {
           tieSeed: args.date,
           weights: cfg.scoring.weights, minScore: cfg.minScoreToSelect, maxCandidates: cfg.maxCandidatesPerMedia,
           dupCheck,
         });
-      const sel = res.selected && { ...res.selected, disId };
-      await wj(out, { date: args.date, disId, selected: sel, evaluated: res.evaluated, fetchFailures: failures.map((f) => ({ sourceKey: f.sourceKey, sourceDetailUrl: f.sourceDetailUrl, error: f.fetchError })), skippedReason: res.skippedReason ?? null, usableCount: usable.length });
+      const sel = res.selected && { ...res.selected, disId: null };
+      await wj(out, { date: args.date, disId: null, selected: sel, evaluated: res.evaluated, fetchFailures: failures.map((f) => ({ sourceKey: f.sourceKey, sourceDetailUrl: f.sourceDetailUrl, error: f.fetchError })), skippedReason: res.skippedReason ?? null, usableCount: usable.length });
       r.stages.select = sel ? `selected ${sel.brand} (score ${sel.score ?? "手動指定"})` : `SKIP: ${res.skippedReason}`;
     }
   }
@@ -134,8 +139,13 @@ async function runMedia(media) {
       passScore: cfg.selection.passScore, reviewedOnly: true,
       dupCheck: (c) => known.check(c, { windowDays: cfg.dedupeWindowDays, today: args.date }),
     });
-    const sel = res.selected && { ...res.selected, disId };
-    await wj(`${d}/selection.json`, { date: args.date, disId, selected: sel, evaluated: res.evaluated, fetchFailures: failures.map((f) => ({ sourceKey: f.sourceKey, sourceDetailUrl: f.sourceDetailUrl, error: f.fetchError })), skippedReason: res.skippedReason ?? null, rescoredAt: new Date().toISOString(), reviewApplied: applied });
+    // 同じ候補が選び直された場合に限り、採番済みのIDを引き継ぐ（別の候補に変わったらIDは外し、撮影時に採番し直す）
+    // 基準未達で一時的に未選定になっても、採番の記録（previousAssignment）は残す
+    const prev = cur?.selected?.disId ? { disId: cur.selected.disId, pageUrl: cur.selected.pageUrl } : cur?.previousAssignment || null;
+    const keepId = prev && res.selected?.pageUrl === prev.pageUrl ? prev.disId : null;
+    disId = keepId;
+    const sel = res.selected && { ...res.selected, disId: keepId };
+    await wj(`${d}/selection.json`, { date: args.date, disId: keepId, previousAssignment: keepId ? null : prev, selected: sel, evaluated: res.evaluated, fetchFailures: failures.map((f) => ({ sourceKey: f.sourceKey, sourceDetailUrl: f.sourceDetailUrl, error: f.fetchError })), skippedReason: res.skippedReason ?? null, rescoredAt: new Date().toISOString(), reviewApplied: applied });
     r.stages.rescore = sel ? `${applied}件反映 → 選定: ${sel.brand}（${sel.reviewTotal}/${cfg.selection.maxScore}点。理由: ${sel.reviewReason}）` : `${applied}件反映 → SKIP: ${res.skippedReason}`;
   }
 
@@ -144,9 +154,21 @@ async function runMedia(media) {
   const sel = selection.selected;
   const key = idempotencyKey(media, sel.pageUrl);
 
+  // 連番IDの採番（撮影またはテンプレート作成の時点。選定済みの1件に対して1回だけ。採番後は selection.json に保存して固定）
+  const ensureDisId = async () => {
+    if (disId) return;
+    const code = cfg.media[media].idCode;
+    const n = nextSerial({ ledgerEntries: ledger.entries, reservedIds: await reservedIdsFromOutputs(args.out, media), prefix: cfg.idPrefix, code });
+    disId = formatDisId(cfg.idPrefix, code, n);
+    sel.disId = disId;
+    await wj(`${d}/selection.json`, { ...selection, disId, selected: sel });
+    r.stages.disId = `採番: ${disId}`;
+  };
+
   if (stages.includes("capture")) {
     if (!args.capture) r.stages.capture = "not requested (--capture 未指定)";
     else {
+      await ensureDisId();
       const { captureFullPage, downloadBanner } = await import("./lib/capture.mjs");
       const files = cfg.media[media].capture === "public-image" ? await downloadBanner(sel.imageUrl, `${d}/files`) : await captureFullPage(sel.pageUrl, `${d}/files`, { id: disId });
       await wj(`${d}/files.json`, files);
@@ -157,6 +179,7 @@ async function runMedia(media) {
   }
 
   if (stages.includes("template")) {
+    await ensureDisId();
     const f = `${d}/analysis.json`;
     const parts = [];
     if (await readJson(f, null)) parts.push("analysis exists (not overwritten)");
@@ -169,6 +192,7 @@ async function runMedia(media) {
 
   let analysis = null;
   if (stages.includes("validate") || stages.includes("publish")) {
+    if (!disId) { r.stages.validate = "blocked: IDが未採番です（--stage capture --capture を先に実行）"; return; }
     analysis = await readJson(`${d}/analysis.json`, null);
     if (analysis) {
       // 選定結果を正とする: ID・実ページURLは常に選定から。brand が "AUTO" のときだけ選定のブランド名を使う。
@@ -190,6 +214,7 @@ async function runMedia(media) {
   }
 
   if (stages.includes("publish")) {
+    if (!disId) { r.stages.publish = "blocked: IDが未採番です（--stage capture --capture を先に実行）"; return; }
     if (!sel.manual && !(sel.reviewTotal >= cfg.selection.passScore)) { r.stages.publish = `blocked: 選定基準${cfg.selection.passScore}/${cfg.selection.maxScore}点が未判定または未達（review→learning.json→rescore を実行）`; return; }
     const ac = await checkAssetSet(`${d}/files`, { id: disId, media });
     if (!ac.ok && (await readJson(`${d}/files.json`, [])).length) { r.stages.publish = `blocked: 画像の揃いが不足（${ac.errors.join("; ")}）`; return; }

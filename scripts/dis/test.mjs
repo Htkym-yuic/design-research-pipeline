@@ -181,7 +181,7 @@ test("E2E(ドライラン): フィクスチャで選定→テンプレ→検証�
   assert.ok(sel.evaluated.find((e) => e.brand === "Unknown Terms LP").blockers.includes("参照元の利用条件が未確認"));
 
   // 完成分析を置いて公開(ドライラン)
-  const a = completeAnalysis(); a.disId = "DIS-LP-20261107"; a.pageUrl = sel.selected.pageUrl; a.brand = sel.selected.brand;
+  const a = completeAnalysis(); a.disId = "DIS-LP-0001"; a.pageUrl = sel.selected.pageUrl; a.brand = sel.selected.brand;
   await fs.writeFile(path.join(tmp, "out/2026-11-07/lp/analysis.json"), JSON.stringify(a));
   // 注釈データがないと公開できない
   r = run(["--stage", "validate,publish", "--media", "lp"]);
@@ -206,7 +206,7 @@ test("E2E(ドライラン): フィクスチャで選定→テンプレ→検証�
   assert.equal(r.status, 0, r.stderr);
   const pub = JSON.parse(await fs.readFile(path.join(tmp, "out/2026-11-07/lp/publish-result.json"), "utf8"));
   assert.equal(pub.dryRun, true);
-  assert.ok(pub.dropboxFolder.includes("/99_Needs_Review/2026-11-07/dis-daily/DIS-LP-20261107"));
+  assert.ok(pub.dropboxFolder.includes("/99_Needs_Review/2026-11-07/dis-daily/DIS-LP-0001"));
   for (const f of ["03_Analysis/annotations.json", "03_Analysis/text-index.json", "03_Analysis/analysis.json", "03_Analysis/analysis.md"]) assert.ok(pub.dropboxPlan.some((p) => p.endsWith(f)), f);
   await assert.rejects(fs.access(ledger)); // 台帳は書かれない
 
@@ -636,14 +636,14 @@ test("validate: 分析のdisId・pageUrlは選定結果で上書きされ、bran
   const sig = { learningValue: 0.9, freshness: 0.9, originalSource: 1, assetsAvailable: 1, rightsClarity: 0.9 };
   await fs.writeFile(path.join(tmp, "fx.json"), JSON.stringify({ lp: [], banner: [], web: [{ media: "web", sourceKey: "s", sourceName: "S", termsStatus: "known", brand: "Real Brand", pageUrl: "https://real.example/", sourceDetailUrl: "https://d.example/1", signals: sig }] }));
   const run = (extra) => spawnSync(process.execPath, [path.join(here, "run.mjs"), "--fixture", path.join(tmp, "fx.json"), "--out", path.join(tmp, "out"), "--ledger", path.join(tmp, "l.json"), "--date", "2026-11-09", "--media", "web", ...extra], { env: { ...process.env, DRY_RUN: "true" }, encoding: "utf8" });
-  assert.equal(run(["--stage", "collect,select"]).status, 0);
+  assert.equal(run(["--stage", "collect,select,template"]).status, 0); // 採番はテンプレート作成時
   const a = completeAnalysis(); a.media = "web"; a.disId = "WRONG"; a.pageUrl = "https://wrong.example/"; a.brand = "AUTO";
   const f = path.join(tmp, "out/2026-11-09/web/analysis.json");
   await fs.writeFile(f, JSON.stringify(a));
   const r = run(["--stage", "validate"]);
   assert.equal(r.status, 0, r.stderr);
   const after = JSON.parse(await fs.readFile(f, "utf8"));
-  assert.deepEqual([after.disId, after.pageUrl, after.brand], ["DIS-WB-20261109", "https://real.example/", "Real Brand"]);
+  assert.deepEqual([after.disId, after.pageUrl, after.brand], ["DIS-WB-0001", "https://real.example/", "Real Brand"]);
 });
 
 test("config: 参照元URLは原本レジストリに一致（BANNER LIBRARY・Banner Matome・GDWEB・IKESAI）", async () => {
@@ -782,8 +782,45 @@ test("manual: URL指定の候補を作り、重複・ID衝突だけ確認して�
   await assert.rejects(buildManualCandidate("ftp://ex.test/", "lp"), /http/);
   const b = await buildManualCandidate("https://ex.test/a/banner.png", "banner");
   assert.equal(b.imageUrl, "https://ex.test/a/banner.png");
-  const ok = selectManual(c, { disId: "DIS-LP-20261109", dupCheck: () => ({ duplicate: false }), ledgerEntries: [] });
-  assert.equal(ok.selected.disId, "DIS-LP-20261109"); assert.equal(ok.selected.manual, true);
-  assert.match(selectManual(c, { disId: "X", dupCheck: () => ({ duplicate: true, reason: "同一URL" }) }).skippedReason, /重複/);
-  assert.match(selectManual(c, { disId: "DIS-LP-20261109", dupCheck: () => ({ duplicate: false }), ledgerEntries: [{ disId: "DIS-LP-20261109" }] }).skippedReason, /--date/);
+  const ok = selectManual(c, { dupCheck: () => ({ duplicate: false }) });
+  assert.equal(ok.selected.disId, null); assert.equal(ok.selected.manual, true); // IDは撮影/テンプレート時に連番で採番
+  assert.match(selectManual(c, { dupCheck: () => ({ duplicate: true, reason: "同一URL" }) }).skippedReason, /重複/);
+});
+
+test("ids: 連番ID（媒体ごと0001から）。旧形式は連番に含めず、台帳と作業中の予約の最大値+1。欠番は再利用しない", async () => {
+  const { formatDisId, nextSerial, isSerialId, reservedIdsFromOutputs } = await import("./lib/ids.mjs");
+  assert.equal(formatDisId("DIS", "LP", 7), "DIS-LP-0007");
+  assert.throws(() => formatDisId("DIS", "LP", 0));
+  assert.equal(isSerialId("DIS-LP-0001", "DIS", "LP"), true);
+  assert.equal(isSerialId("DIS-LP-20261107", "DIS", "LP"), false);
+  const legacy = [{ disId: "DIS-LP-20261107" }, { disId: "DIS-BN-20261107" }];
+  assert.equal(nextSerial({ ledgerEntries: legacy, prefix: "DIS", code: "LP" }), 1);
+  assert.equal(nextSerial({ ledgerEntries: [...legacy, { disId: "DIS-LP-0003" }], prefix: "DIS", code: "LP" }), 4);
+  assert.equal(nextSerial({ ledgerEntries: [{ disId: "DIS-LP-0001" }], reservedIds: ["DIS-LP-0005"], prefix: "DIS", code: "LP" }), 6);
+  assert.equal(nextSerial({ ledgerEntries: [{ disId: "DIS-LP-0009" }], prefix: "DIS", code: "BN" }), 1); // 媒体ごと
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-ids-"));
+  await fs.mkdir(path.join(tmp, "2030-01-01/lp"), { recursive: true });
+  await fs.writeFile(path.join(tmp, "2030-01-01/lp/selection.json"), JSON.stringify({ selected: { disId: "DIS-LP-0002" } }));
+  assert.deepEqual(await reservedIdsFromOutputs(tmp, "lp"), ["DIS-LP-0002"]);
+  assert.deepEqual(await reservedIdsFromOutputs(tmp, "web"), []);
+});
+
+test("連番ID: 同じ日に手動指定（--url）を2件採番しても衝突せず、作業フォルダも分かれる", async () => {
+  const { formatDisId } = await import("./lib/ids.mjs");
+  assert.equal(formatDisId("DIS", "WB", 1), "DIS-WB-0001");
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-serial-"));
+  const ids = [];
+  const run = (url, stage, date = "2026-11-10") => spawnSync(process.execPath, [path.join(here, "run.mjs"), "--url", url, "--out", path.join(tmp, "out"), "--ledger", path.join(tmp, "l.json"), "--date", date, "--media", "banner", "--stage", stage], { env: { ...process.env, DRY_RUN: "true", DIS_ENABLE_WRITES: "" }, encoding: "utf8" });
+  for (const [u, date] of [["https://ex.test/a/1.png", "2026-11-10"], ["https://ex.test/a/2.png", "2026-11-10"], ["https://ex.test/a/3.png", "2026-11-11"]]) {
+    const r = run(u, "collect,select,template", date);
+    assert.equal(r.status, 0, r.stderr);
+    const dirs = (await fs.readdir(path.join(tmp, "out", date))).filter((x) => x.startsWith("banner-url-"));
+    const sels = await Promise.all(dirs.map(async (x) => JSON.parse(await fs.readFile(path.join(tmp, "out", date, x, "selection.json"), "utf8")).selected));
+    ids.push(sels.find((x) => x.pageUrl === u).disId);
+  }
+  assert.deepEqual(ids, ["DIS-BN-0001", "DIS-BN-0002", "DIS-BN-0003"]);
+  // 同じURLを再実行しても、番号は変わらない（採番は1回だけ）
+  const again = run("https://ex.test/a/1.png", "collect,select,template");
+  assert.equal(again.status, 0, again.stderr);
+  assert.equal(JSON.parse(again.stdout).media.banner.stages.disId, undefined);
 });

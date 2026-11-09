@@ -19,11 +19,10 @@ export async function buildManualCandidate(url, media, getter = fetchGetter()) {
   return { ...base, brand: title, title, imageUrl: d.image || null, signals: { learningValue: 0.5 } };
 }
 
-/** 手動指定の選定: 重複とIDの衝突だけを確認し、13/18基準・機械点の足切りは適用しない（人が選んだものとして扱う）。 */
-export function selectManual(cand, { disId, dupCheck, ledgerEntries = [] }) {
+/** 手動指定の選定: 重複だけを確認し、13/18基準・機械点の足切りは適用しない（人が選んだものとして扱う）。 */
+export function selectManual(cand, { dupCheck }) {
   const dup = dupCheck(cand);
   if (dup.duplicate) return { selected: null, evaluated: [{ ...cand, duplicate: dup, blockers: [`重複(${dup.reason}: ${dup.of ?? "?"})`], inComparison: true }], skippedReason: `重複のため登録しません（${dup.reason}）` };
-  if (ledgerEntries.some((e) => e.disId === disId)) return { selected: null, evaluated: [{ ...cand, blockers: ["ID衝突"], inComparison: true }], skippedReason: `${disId} は登録済みです。--date で別の日付を指定してください` };
-  const selected = { ...cand, disId, score: null, manual: true, reviewReason: "ユーザーが対象を指定（選定基準13/18点・機械的スコアの足切りは適用しない）", duplicate: dup, blockers: [], inComparison: true };
+  const selected = { ...cand, disId: null, score: null, manual: true, reviewReason: "ユーザーが対象を指定（選定基準13/18点・機械的スコアの足切りは適用しない）", duplicate: dup, blockers: [], inComparison: true };
   return { selected, evaluated: [selected] };
 }
