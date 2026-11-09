@@ -23,7 +23,8 @@
         "collection": "collection://39624d4f-a671-8094-ba0c-000b11fefbd0",
         "envVar": "NOTION_LP_DATA_SOURCE_ID",
         "libraryName": "01｜LPリサーチライブラリー"
-      }
+      },
+      "localFolder": "LP"
     },
     "banner": {
       "label": "バナー",
@@ -57,7 +58,8 @@
           "資産区分": "=新規調査",
           "状態": "=要確認"
         }
-      }
+      },
+      "localFolder": "バナー"
     },
     "web": {
       "label": "Webサイト",
@@ -93,7 +95,8 @@
           ],
           "ステータス": "=レビュー待ち"
         }
-      }
+      },
+      "localFolder": "ウェブ"
     }
   },
   "sources": [

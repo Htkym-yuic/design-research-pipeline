@@ -160,6 +160,13 @@ test("buildNotionProps: スキーマにあるプロパティだけ設定", () =>
   assert.deepEqual(Object.keys(props).sort(), ["タイトル", "参考URL"]);
 });
 
+/** 媒体別フォルダ（LP / バナー / ウェブ）の中の、最初の案件フォルダ（連番_日付_ブランド）。 */
+async function itemDirOf(tmp, folder) {
+  const base = path.join(tmp, "out", folder);
+  const n = (await fs.readdir(base)).filter((x) => /^\d{4}_/.test(x)).sort()[0];
+  return path.join(base, n);
+}
+
 test("E2E(ドライラン): フィクスチャで選定→テンプレ→検証→公開計画。外部書込み・台帳更新なし", async () => {
   const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-e2e-"));
   const ledger = path.join(tmp, "ledger.json");
@@ -182,11 +189,11 @@ test("E2E(ドライラン): フィクスチャで選定→テンプレ→検証�
 
   // 完成分析を置いて公開(ドライラン)
   const a = completeAnalysis(); a.disId = "DIS-LP-0001"; a.pageUrl = sel.selected.pageUrl; a.brand = sel.selected.brand;
-  await fs.writeFile(path.join(tmp, "out/2026-11-07/lp/analysis.json"), JSON.stringify(a));
+  await fs.writeFile(path.join(await itemDirOf(tmp, "LP"), "analysis.json"), JSON.stringify(a));
   // 注釈データがないと公開できない
   r = run(["--stage", "validate,publish", "--media", "lp"]);
   assert.equal(JSON.parse(r.stdout).media.lp.stages.publish, "blocked: analysis not complete");
-  await fs.writeFile(path.join(tmp, "out/2026-11-07/lp/annotations.json"), JSON.stringify(completeAnnotations(a)));
+  await fs.writeFile(path.join(await itemDirOf(tmp, "LP"), "annotations.json"), JSON.stringify(completeAnnotations(a)));
   // 選定基準（13/18点）が未判定のままでは公開できない
   r = run(["--stage", "validate,publish", "--media", "lp"]);
   assert.match(JSON.parse(r.stdout).media.lp.stages.publish, /選定基準13\/18点が未判定/);
@@ -204,7 +211,7 @@ test("E2E(ドライラン): フィクスチャで選定→テンプレ→検証�
   assert.match(JSON.parse(r.stdout).media.lp.stages.rescore, /18\/18点/);
   r = run(["--stage", "validate,publish", "--media", "lp"]);
   assert.equal(r.status, 0, r.stderr);
-  const pub = JSON.parse(await fs.readFile(path.join(tmp, "out/2026-11-07/lp/publish-result.json"), "utf8"));
+  const pub = JSON.parse(await fs.readFile(path.join(await itemDirOf(tmp, "LP"), "publish-result.json"), "utf8"));
   assert.equal(pub.dryRun, true);
   assert.ok(pub.dropboxFolder.includes("/99_Needs_Review/2026-11-07/dis-daily/DIS-LP-0001"));
   for (const f of ["03_Analysis/annotations.json", "03_Analysis/text-index.json", "03_Analysis/analysis.json", "03_Analysis/analysis.md"]) assert.ok(pub.dropboxPlan.some((p) => p.endsWith(f)), f);
@@ -638,7 +645,7 @@ test("validate: 分析のdisId・pageUrlは選定結果で上書きされ、bran
   const run = (extra) => spawnSync(process.execPath, [path.join(here, "run.mjs"), "--fixture", path.join(tmp, "fx.json"), "--out", path.join(tmp, "out"), "--ledger", path.join(tmp, "l.json"), "--date", "2026-11-09", "--media", "web", ...extra], { env: { ...process.env, DRY_RUN: "true" }, encoding: "utf8" });
   assert.equal(run(["--stage", "collect,select,template"]).status, 0); // 採番はテンプレート作成時
   const a = completeAnalysis(); a.media = "web"; a.disId = "WRONG"; a.pageUrl = "https://wrong.example/"; a.brand = "AUTO";
-  const f = path.join(tmp, "out/2026-11-09/web/analysis.json");
+  const f = path.join(await itemDirOf(tmp, "ウェブ"), "analysis.json");
   await fs.writeFile(f, JSON.stringify(a));
   const r = run(["--stage", "validate"]);
   assert.equal(r.status, 0, r.stderr);
@@ -879,4 +886,27 @@ test("url-capture.sh: 書込みを無効に固定し、媒体・URL・アーカ�
   assert.equal(fail.status, 7);
   const src = await fs.readFile(sh, "utf8");
   assert.ok(!/\$[A-Za-z_]+[^\x00-\x7F]/.test(src.replace(/\$\{[^}]*\}/g, "")), "bash 3.2: $VAR の直後に日本語を置かない（${VAR}を使う）");
+});
+
+test("library: 媒体別フォルダ(LP/バナー/ウェブ)に連番_日付_ブランドで並び、item.json・INDEX.mdで一覧できる。自動も手動も同じ連番", async () => {
+  const { itemFolderName, safeBrand, itemRelDir, writeIndex, reservedFromLibrary } = await import("./lib/library.mjs");
+  assert.equal(itemFolderName({ disId: "DIS-LP-0001", date: "2026-11-10", brand: "KAKEDASHIのLPデザイン" }), "0001_20261110_KAKEDASHIのLPデザイン");
+  assert.equal(safeBrand('A/B: C*?"<>|  D'), "A_B_C_D");
+  assert.equal(Array.from(safeBrand("あ".repeat(50))).length, 24);
+  assert.equal(safeBrand("///"), "untitled");
+  const cfg = await loadConfig();
+  assert.deepEqual(["lp", "banner", "web"].map((m) => cfg.media[m].localFolder), ["LP", "バナー", "ウェブ"]);
+  assert.equal(itemRelDir(cfg, "banner", { disId: "DIS-BN-0002", date: "2026-11-10", brand: "X" }), path.join("バナー", "0002_20261110_X"));
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-lib-"));
+  const mkItem = async (folder, name, item, extra = {}) => {
+    const d = path.join(tmp, folder, name); await fs.mkdir(d, { recursive: true });
+    await fs.writeFile(path.join(d, "item.json"), JSON.stringify(item));
+    for (const [f, c] of Object.entries(extra)) { await fs.mkdir(path.dirname(path.join(d, f)), { recursive: true }); await fs.writeFile(path.join(d, f), c); }
+  };
+  await mkItem("LP", "0001_20261110_A", { disId: "DIS-LP-0001", media: "lp", date: "2026-11-10", mode: "手動", brand: "A", pageUrl: "https://a/" }, { "files/x": "1", "analysis.md": "m" });
+  await mkItem("LP", "0002_20261110_B", { disId: "DIS-LP-0002", media: "lp", date: "2026-11-10", mode: "自動", brand: "B", pageUrl: "https://b/" });
+  assert.deepEqual(await reservedFromLibrary(tmp, cfg, "lp"), ["DIS-LP-0001", "DIS-LP-0002"]);
+  const rows = await writeIndex(tmp, cfg, { entries: [{ disId: "DIS-LP-0001" }] });
+  assert.deepEqual(rows.map((r) => [r.disId, r.status, r.mode]), [["DIS-LP-0001", "登録済み", "手動"], ["DIS-LP-0002", "未撮影", "自動"]]);
+  assert.match(await fs.readFile(path.join(tmp, "INDEX.md"), "utf8"), /DIS-LP-0002 \| 2026-11-10 \| lp \| 自動 \| B/);
 });

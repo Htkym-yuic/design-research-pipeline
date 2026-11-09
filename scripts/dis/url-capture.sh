@@ -80,7 +80,8 @@ if [ "$STATUS" -ne 0 ]; then
 fi
 
 # 結果のフォルダ（このURLの作業フォルダ）を開く
-OUT="$(ls -td "$REPO"/outputs/dis/"${DATE_JST}"/"${MEDIA}"-url-*/files 2>/dev/null | head -1)"
+case "$MEDIA" in lp) LIB="LP";; web) LIB="ウェブ";; banner) LIB="バナー";; esac
+OUT="$(ls -td "$REPO"/outputs/dis/"${LIB}"/*/files 2>/dev/null | head -1)"
 notify "撮影が完了しました。画像をチャットに添付してください" "DIS 撮影"
 if [ -n "$OUT" ]; then
   echo "== 画像の場所: ${OUT}"

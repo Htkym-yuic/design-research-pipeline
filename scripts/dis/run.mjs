@@ -21,6 +21,7 @@ import { writesAllowed } from "./lib/write-guard.mjs";
 import { buildManualCandidate, selectManual } from "./lib/manual.mjs";
 import { createHash } from "node:crypto";
 import { formatDisId, nextSerial, reservedIdsFromOutputs } from "./lib/ids.mjs";
+import { itemRelDir, reservedFromLibrary, writeIndex } from "./lib/library.mjs";
 import { buildContactSheet, applyLearning, suggestCriteria } from "./lib/review.mjs";
 import { dropboxFolder, planDropboxFiles, writeDropbox, writeNotion, buildNotionBlocks, DEFAULT_PROPERTY_MAP } from "./lib/adapters.mjs";
 
@@ -150,11 +151,11 @@ async function runMedia(media) {
     });
     // 同じ候補が選び直された場合に限り、採番済みのIDを引き継ぐ（別の候補に変わったらIDは外し、撮影時に採番し直す）
     // 基準未達で一時的に未選定になっても、採番の記録（previousAssignment）は残す
-    const prev = cur?.selected?.disId ? { disId: cur.selected.disId, pageUrl: cur.selected.pageUrl } : cur?.previousAssignment || null;
+    const prev = cur?.selected?.disId ? { disId: cur.selected.disId, pageUrl: cur.selected.pageUrl, itemDir: cur.itemDir } : cur?.previousAssignment || null;
     const keepId = prev && res.selected?.pageUrl === prev.pageUrl ? prev.disId : null;
     disId = keepId;
     const sel = res.selected && { ...res.selected, disId: keepId };
-    await wj(`${d}/selection.json`, { date: args.date, disId: keepId, previousAssignment: keepId ? null : prev, selected: sel, evaluated: res.evaluated, fetchFailures: failures.map((f) => ({ sourceKey: f.sourceKey, sourceDetailUrl: f.sourceDetailUrl, error: f.fetchError })), skippedReason: res.skippedReason ?? null, rescoredAt: new Date().toISOString(), reviewApplied: applied });
+    await wj(`${d}/selection.json`, { date: args.date, disId: keepId, itemDir: keepId ? prev.itemDir : undefined, previousAssignment: keepId ? null : prev, selected: sel, evaluated: res.evaluated, fetchFailures: failures.map((f) => ({ sourceKey: f.sourceKey, sourceDetailUrl: f.sourceDetailUrl, error: f.fetchError })), skippedReason: res.skippedReason ?? null, rescoredAt: new Date().toISOString(), reviewApplied: applied });
     r.stages.rescore = sel ? `${applied}件反映 → 選定: ${sel.brand}（${sel.reviewTotal}/${cfg.selection.maxScore}点。理由: ${sel.reviewReason}）` : `${applied}件反映 → SKIP: ${res.skippedReason}`;
   }
 
@@ -163,14 +164,27 @@ async function runMedia(media) {
   const sel = selection.selected;
   const key = idempotencyKey(media, sel.pageUrl);
 
+  // 案件フォルダ（媒体別フォルダ内に、連番で並べる）: outputs/dis/<LP|バナー|ウェブ>/0001_20261110_ブランド/ 。採番後に作成し、以降の撮影・分析・登録の成果物はここに置く。
+  let itemDir = selection.itemDir || null;
+  let it = itemDir ? path.join(args.out, itemDir) : null;
+  const setItemDir = async () => {
+    itemDir = itemRelDir(cfg, media, { disId, date: args.date, brand: sel.brand });
+    it = path.join(args.out, itemDir);
+    await fs.mkdir(it, { recursive: true });
+    await wj(`${it}/item.json`, { disId, media, date: args.date, mode: sel.manual ? "手動" : "自動", brand: sel.brand, pageUrl: sel.pageUrl, sourceDetailUrl: sel.sourceDetailUrl, sourceName: sel.sourceName, candidateDir: path.relative(args.out, d) });
+  };
+  if (disId && !it) await setItemDir(); // 旧版で採番済みの場合の補完
+
   // 連番IDの採番（撮影またはテンプレート作成の時点。選定済みの1件に対して1回だけ。採番後は selection.json に保存して固定）
   const ensureDisId = async () => {
     if (disId) return;
     const code = cfg.media[media].idCode;
-    const n = nextSerial({ ledgerEntries: ledger.entries, reservedIds: await reservedIdsFromOutputs(args.out, media), prefix: cfg.idPrefix, code });
+    const reserved = [...(await reservedIdsFromOutputs(args.out, media)), ...(await reservedFromLibrary(args.out, cfg, media))];
+    const n = nextSerial({ ledgerEntries: ledger.entries, reservedIds: reserved, prefix: cfg.idPrefix, code });
     disId = formatDisId(cfg.idPrefix, code, n);
     sel.disId = disId;
-    await wj(`${d}/selection.json`, { ...selection, disId, selected: sel });
+    await setItemDir();
+    await wj(`${d}/selection.json`, { ...selection, disId, itemDir, selected: sel });
     r.stages.disId = `採番: ${disId}`;
   };
 
@@ -180,11 +194,11 @@ async function runMedia(media) {
       await ensureDisId();
       const { captureFullPage, downloadBanner } = await import("./lib/capture.mjs");
       const { captureFromArchive } = await import("./lib/capture.mjs");
-      const files = cfg.media[media].capture === "public-image" ? await downloadBanner(sel.imageUrl, `${d}/files`)
-        : sel.captureMode === "archive" ? await captureFromArchive(sel.sourceDetailUrl, `${d}/files`, { id: disId })
-        : await captureFullPage(sel.pageUrl, `${d}/files`, { id: disId }).catch((e) => { throw new Error(sel.sourceKey === "rdlp" ? `${e.message}\n  ※実ページが開けない場合は、同じコマンドに --from-archive を付けると、アーカイブ掲載の画像で分析できます（作業フォルダを消してから）` : e.message); });
-      await wj(`${d}/files.json`, files);
-      const ac = await checkAssetSet(`${d}/files`, { id: disId, media, archive: sel.captureMode === "archive" });
+      const files = cfg.media[media].capture === "public-image" ? await downloadBanner(sel.imageUrl, `${it}/files`)
+        : sel.captureMode === "archive" ? await captureFromArchive(sel.sourceDetailUrl, `${it}/files`, { id: disId })
+        : await captureFullPage(sel.pageUrl, `${it}/files`, { id: disId }).catch((e) => { throw new Error(sel.sourceKey === "rdlp" ? `${e.message}\n  ※実ページが開けない場合は、同じコマンドに --from-archive を付けると、アーカイブ掲載の画像で分析できます（作業フォルダを消してから）` : e.message); });
+      await wj(`${it}/files.json`, files);
+      const ac = await checkAssetSet(`${it}/files`, { id: disId, media, archive: sel.captureMode === "archive" });
       r.stages.capture = `${files.length} files / 画像の揃い: ${ac.ok ? "OK" : "NG " + ac.errors.join("; ")}`;
       if (files.warnings?.length) { r.stages.capture += ` / WARNING: ${files.warnings.join("; ")}`; r.warnings = files.warnings; }
     }
@@ -192,11 +206,11 @@ async function runMedia(media) {
 
   if (stages.includes("template")) {
     await ensureDisId();
-    const f = `${d}/analysis.json`;
+    const f = `${it}/analysis.json`;
     const parts = [];
     if (await readJson(f, null)) parts.push("analysis exists (not overwritten)");
     else { await wj(f, emptyAnalysis({ media, disId, pageUrl: sel.pageUrl, brand: sel.brand, captureSource: sel.captureMode === "archive" ? "アーカイブ掲載の全体画像（実ページは未確認）" : undefined })); parts.push("analysis created"); }
-    const fa = `${d}/annotations.json`;
+    const fa = `${it}/annotations.json`;
     if (await readJson(fa, null)) parts.push("annotations exists (not overwritten)");
     else { await wj(fa, emptyAnnotations({ disId })); parts.push("annotations created"); }
     r.stages.template = parts.join(" / ");
@@ -205,22 +219,22 @@ async function runMedia(media) {
   let analysis = null;
   if (stages.includes("validate") || stages.includes("publish")) {
     if (!disId) { r.stages.validate = "blocked: IDが未採番です（--stage capture --capture を先に実行）"; return; }
-    analysis = await readJson(`${d}/analysis.json`, null);
+    analysis = await readJson(`${it}/analysis.json`, null);
     if (analysis) {
       // 選定結果を正とする: ID・実ページURLは常に選定から。brand が "AUTO" のときだけ選定のブランド名を使う。
       analysis.disId = disId;
       analysis.pageUrl = sel.pageUrl;
       if (!analysis.brand || analysis.brand === "AUTO") analysis.brand = sel.brand;
-      await wj(`${d}/analysis.json`, analysis);
+      await wj(`${it}/analysis.json`, analysis);
     }
-    const annotations = analysis ? await readJson(`${d}/annotations.json`, null) : null;
+    const annotations = analysis ? await readJson(`${it}/annotations.json`, null) : null;
     const v = analysis ? validateAnalysis(analysis) : { ok: false, errors: ["analysis.json なし"] };
     const va = analysis && v.ok ? (annotations ? validateAnnotations(annotations, analysis) : { ok: false, errors: ["annotations.json なし（注釈データが必要）"] }) : { ok: true, errors: [] };
     const okAll = v.ok && va.ok;
     r.stages.validate = okAll ? "ok" : { ok: false, errors: [...v.errors, ...va.errors.map((e) => `[注釈] ${e}`)] };
     if (okAll) {
-      await fs.writeFile(`${d}/analysis.md`, analysisToMarkdown(analysis));
-      await wj(`${d}/text-index.json`, buildTextIndex(analysis));
+      await fs.writeFile(`${it}/analysis.md`, analysisToMarkdown(analysis));
+      await wj(`${it}/text-index.json`, buildTextIndex(analysis));
     }
     if (!okAll && stages.includes("publish")) { r.stages.publish = "blocked: analysis not complete"; return; }
   }
@@ -228,15 +242,15 @@ async function runMedia(media) {
   if (stages.includes("publish")) {
     if (!disId) { r.stages.publish = "blocked: IDが未採番です（--stage capture --capture を先に実行）"; return; }
     if (!sel.manual && !(sel.reviewTotal >= cfg.selection.passScore)) { r.stages.publish = `blocked: 選定基準${cfg.selection.passScore}/${cfg.selection.maxScore}点が未判定または未達（review→learning.json→rescore を実行）`; return; }
-    const ac = await checkAssetSet(`${d}/files`, { id: disId, media, archive: sel.captureMode === "archive" });
-    if (!ac.ok && (await readJson(`${d}/files.json`, [])).length) { r.stages.publish = `blocked: 画像の揃いが不足（${ac.errors.join("; ")}）`; return; }
+    const ac = await checkAssetSet(`${it}/files`, { id: disId, media, archive: sel.captureMode === "archive" });
+    if (!ac.ok && (await readJson(`${it}/files.json`, [])).length) { r.stages.publish = `blocked: 画像の揃いが不足（${ac.errors.join("; ")}）`; return; }
     const entry = findEntry(ledger, key);
     const folder = dropboxFolder(cfg, media, args.date, disId);
-    const generated = [{ local: `${d}/analysis.json`, rel: "03_Analysis/analysis.json" }, { local: `${d}/analysis.md`, rel: "03_Analysis/analysis.md" }, { local: `${d}/annotations.json`, rel: "03_Analysis/annotations.json" }, { local: `${d}/text-index.json`, rel: "03_Analysis/text-index.json" }];
+    const generated = [{ local: `${it}/analysis.json`, rel: "03_Analysis/analysis.json" }, { local: `${it}/analysis.md`, rel: "03_Analysis/analysis.md" }, { local: `${it}/annotations.json`, rel: "03_Analysis/annotations.json" }, { local: `${it}/text-index.json`, rel: "03_Analysis/text-index.json" }];
     const meta = { disId, media, date: args.date, captureSource: sel.captureMode === "archive" ? "archive" : "live", pageUrl: sel.pageUrl, sourceName: sel.sourceName, sourceDetailUrl: sel.sourceDetailUrl, brand: sel.brand, selectionReason: analysis.selectionReason, rights: analysis.rights, analysisVersion: analysis.analysisVersion, sourceAnalysisRef: analysis.sourceAnalysisRef, score: sel.score };
-    await wj(`${d}/metadata.json`, meta);
-    generated.push({ local: `${d}/metadata.json`, rel: "metadata.json" });
-    const captured = (await readJson(`${d}/files.json`, [])) ;
+    await wj(`${it}/metadata.json`, meta);
+    generated.push({ local: `${it}/metadata.json`, rel: "metadata.json" });
+    const captured = (await readJson(`${it}/files.json`, [])) ;
     const plan = planDropboxFiles([...captured, ...generated], folder);
     const host = (u) => { try { return new URL(u).hostname; } catch { return ""; } };
     const brand = analysis.brand || sel.brand;
@@ -258,11 +272,11 @@ async function runMedia(media) {
         if (result.dropbox.status !== "created") throw new Error(`Dropbox: ${result.dropbox.status}`);
       } else result.dropbox = { status: "skipped_already_done" };
       if (entry?.notion?.status !== "created") {
-        result.notionResult = await writeNotion({ cfg, media, values: notionValues, blocks: buildNotionBlocks(analysis, await fs.readFile(`${d}/analysis.md`, "utf8")), opts: { apply: args.apply }, extraProps: analysis.notionProps || {}, attachFile, bodyImages });
+        result.notionResult = await writeNotion({ cfg, media, values: notionValues, blocks: buildNotionBlocks(analysis, await fs.readFile(`${it}/analysis.md`, "utf8")), opts: { apply: args.apply }, extraProps: analysis.notionProps || {}, attachFile, bodyImages });
         upsertEntry(ledger, { ...base, notion: result.notionResult }); await saveLedger(ledger, ledgerFile);
       } else result.notionResult = { status: "skipped_already_done" };
     }
-    await wj(`${d}/publish-result.json`, result);
+    await wj(`${it}/publish-result.json`, result);
     r.stages.publish = writeOk ? "applied" : "dry-run plan written";
   }
 }
@@ -272,5 +286,6 @@ for (const media of medias) {
   catch (e) { summary.media[media] = { ...(summary.media[media] || {}), status: "failed", error: e.message }; }
 }
 await wj(`${args.out}/${args.date}/summary.json`, summary);
+await writeIndex(args.out, cfg, ledger).catch(() => {});
 console.log(JSON.stringify(summary, null, 2));
 if (Object.values(summary.media).some((m) => m.status === "failed")) process.exitCode = 1;
