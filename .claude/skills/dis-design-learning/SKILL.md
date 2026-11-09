@@ -48,6 +48,21 @@ DISは、既存のLP・バナー・Canva等の分析を消さずに、根拠付�
 
 詳細な必須フィールドと完了チェックは [analysis-pack reference](references/analysis-pack.md) を読む。
 
+## URLを指定された場合の対話フロー（Macで動かすClaude Code）
+
+ユーザーが「このURLを分析したい」「LPを撮影して分析して」などと言ったら、次の順に進める。撮影はサイトに届く環境（ユーザーのMac）でのみ行う。クラウドのセッションではサイトに届かないため、撮影はせず、`bash scripts/dis/install-url-app.sh` で作るアプリ（または `scripts/dis/url-capture.sh`）の使用を案内し、画像の添付を依頼する。
+
+1. 質問する: 種類（LP / Web / バナー）と、対象のURL。LPアーカイブ（rdlp）の紹介ページのURLなら、実際のLPを撮影するか、アーカイブ掲載の画像（`--from-archive`。実ページが公開終了などで開けない場合）を使うかも聞く。
+2. 撮影する（外部書込みなし）:
+   `DRY_RUN=true npm run dis:run -- --media <lp|web|banner> --url "<URL>" [--from-archive] --stage collect,select,capture,template --capture`
+   - IDは媒体ごとの連番（`DIS-LP-0001`）が撮影時に採番される。
+   - 403・robots.txt禁止・ログイン壁・Bot対策は回避せず、理由を伝えて止まる。
+3. 結果を確認する: `disId`、`capture` の「画像の揃い」、警告（アーカイブ画像・幅など）。PCとSPの画像幅が同じ場合は、PC/SPではなく前半・後半の分割画像の疑いがあるため、画像を見て確認する。
+4. 画像を実際に読む: `outputs/dis/<日付>/<媒体>-url-<tag>/files/01_Normal_Images/` の全体画像と、`sections/` の分割画像を、全Sectionぶん読む。見えない箇所は推測せず、unknownsに残す。
+5. 分析を書く: 同じフォルダの `analysis.json`（dis-2.0）と `annotations.json` を埋める。アーカイブ画像の場合は `captureSource` を残し、動き・実際の文言・最新状態を未確認として扱い、確信度を下げる。
+6. 検証する: `DRY_RUN=true npm run dis:run -- --media <…> --url "<URL>" --stage validate`（撮影・分析と同じ `--url` を付ける）。
+7. 登録（Dropbox・Notion）は、ユーザーが本番実行を明示したときだけ。`--apply` ＋ `DIS_ENABLE_WRITES=true` ＋ `DRY_RUN=false` がそろったときのみ書き込まれる。
+
 ## このリポジトリでの実装
 
 コマンド・ファイル構成・スキーマ（dis-2.0）・日次運用の手順は [実装メモ](references/implementation-notes.md) を読む。
