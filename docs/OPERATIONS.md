@@ -374,3 +374,18 @@ npm run dis:run -- --stage collect,select,template --fixture scripts/dis/fixture
 
 - 選定は6項目×0〜3点＝18点満点で、13点以上が基準（`config/dis-daily.json` の `selection`）。基準は `.claude/skills/dis-design-learning/references/learning-value-rubric.md`。`review` → `learning.json` → `rescore` で決め、基準未達ならスキップ。公開（publish）は選定基準を満たした候補だけ。
 - Dropboxは `01_Normal_Images`・`02_Notion_Images`・`03_Analysis`。Notionの本文にはLP・Webで軽量画像4枚を載せる。詳細は `references/implementation-notes.md`。
+
+
+## DIS: URLを指定して詳細分析する（手動指定）
+
+候補の収集・選定を使わず、指定したURL1件を対象にする。`--media` は1つだけ（lp / banner / web）。
+
+```bash
+cd ~/design-research-pipeline-auto
+DRY_RUN=true npm run dis:run -- --media lp --url https://example.com/ --date 2026-11-09 --stage collect,select,capture,template
+```
+
+- 重複（登録済み・180日以内）とID衝突（同じ日付・媒体のDIS-IDが使用済み）だけを確認する。13/18の基準と機械的スコアの足切りは適用しない（人が選んだものとして扱い、selectionReasonに明記）。
+- 出力先: `outputs/dis/<日付>/<lp|banner|web>/`（撮影画像は `.../capture/`）。Dropbox・Notionへの書込みは、従来どおり `--apply` ＋ `DIS_ENABLE_WRITES=true` ＋ `DRY_RUN=false` のときだけ。
+- ログイン・課金壁・Bot対策・robots.txt禁止・403等は回避せず、理由を表示して止まる。
+- 同じ日付・媒体にすでに登録済みの場合は、`--date` で別の日付を指定する。

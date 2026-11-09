@@ -770,3 +770,20 @@ test("probe-all: 見える／要調整／見えない（403・robots禁止・通
   assert.equal((await probeSource(src, mk({ "https://ex.test/list/": new Error("ECONNRESET") }))).verdict, "見えない");
   assert.match(formatTable([{ key: "x", media: "web", enabled: true, listStatus: "OK", links: 2, detailStatus: "OK", verdict: "見える", note: "" }]), /見える/);
 });
+
+test("manual: URL指定の候補を作り、重複・ID衝突だけ確認して選定する（基準は免除・拒否は回避しない）", async () => {
+  const { buildManualCandidate, selectManual } = await import("./lib/manual.mjs");
+  const html = '<html><head><title>テストLP｜Site</title><meta property="og:title" content="テストLP"><meta property="og:image" content="/ogp.png"></head></html>';
+  const getter = (resp, robots = true) => ({ robots: async () => robots, get: async () => resp });
+  const c = await buildManualCandidate("https://ex.test/lp/", "lp", getter({ ok: true, status: 200, text: html }));
+  assert.equal(c.manual, true); assert.equal(c.pageUrl, "https://ex.test/lp/"); assert.equal(c.imageUrl, "https://ex.test/ogp.png"); assert.equal(c.brand, "テストLP");
+  await assert.rejects(buildManualCandidate("https://ex.test/", "lp", getter({ ok: false, status: 403, text: "" })), /回避しません/);
+  await assert.rejects(buildManualCandidate("https://ex.test/", "lp", getter(null, false)), /robots/);
+  await assert.rejects(buildManualCandidate("ftp://ex.test/", "lp"), /http/);
+  const b = await buildManualCandidate("https://ex.test/a/banner.png", "banner");
+  assert.equal(b.imageUrl, "https://ex.test/a/banner.png");
+  const ok = selectManual(c, { disId: "DIS-LP-20261109", dupCheck: () => ({ duplicate: false }), ledgerEntries: [] });
+  assert.equal(ok.selected.disId, "DIS-LP-20261109"); assert.equal(ok.selected.manual, true);
+  assert.match(selectManual(c, { disId: "X", dupCheck: () => ({ duplicate: true, reason: "同一URL" }) }).skippedReason, /重複/);
+  assert.match(selectManual(c, { disId: "DIS-LP-20261109", dupCheck: () => ({ duplicate: false }), ledgerEntries: [{ disId: "DIS-LP-20261109" }] }).skippedReason, /--date/);
+});

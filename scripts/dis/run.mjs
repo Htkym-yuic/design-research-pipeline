@@ -18,6 +18,7 @@ import { buildTextIndex } from "./lib/text-index.mjs";
 import { checkAssetSet } from "./lib/asset-check.mjs";
 import { idempotencyKey, loadLedger, saveLedger, findEntry, upsertEntry } from "./lib/ledger.mjs";
 import { writesAllowed } from "./lib/write-guard.mjs";
+import { buildManualCandidate, selectManual } from "./lib/manual.mjs";
 import { buildContactSheet, applyLearning, suggestCriteria } from "./lib/review.mjs";
 import { dropboxFolder, planDropboxFiles, writeDropbox, writeNotion, buildNotionBlocks, DEFAULT_PROPERTY_MAP } from "./lib/adapters.mjs";
 
@@ -27,6 +28,7 @@ const { values: args } = parseArgs({
     media: { type: "string", default: MEDIA_KEYS.join(",") },
     date: { type: "string", default: jstDate() },
     fixture: { type: "string" },
+    url: { type: "string" },
     out: { type: "string", default: `${REPO_ROOT}outputs/dis` },
     capture: { type: "boolean", default: false },
     apply: { type: "boolean", default: false },
@@ -41,6 +43,7 @@ const stages = args.stage === "all" ? DEFAULT_STAGES : args.stage.split(",");
 const medias = args.media.split(",").map((s) => s.trim()).filter(Boolean);
 for (const s of stages) if (!STAGES.includes(s)) throw new Error(`不明なstage: ${s}`);
 for (const m of medias) if (!MEDIA_KEYS.includes(m)) throw new Error(`不明なmedia: ${m}`);
+if (args.url && medias.length !== 1) throw new Error("--url を使うときは --media を1つだけ指定してください（lp / banner / web）");
 
 const cfg = await loadConfig();
 const dir = (m) => path.join(args.out, args.date, m);
@@ -65,7 +68,8 @@ async function runMedia(media) {
       let candidates;
       const skippedSources = [];
       const sourceReports = [];
-      if (fixture) candidates = fixture[media] || [];
+      if (args.url) candidates = [await buildManualCandidate(args.url, media)];
+      else if (fixture) candidates = fixture[media] || [];
       else {
         candidates = [];
         const isKnown = (u) => known.check({ sourceDetailUrl: u }, { windowDays: cfg.dedupeWindowDays, today: args.date }).duplicate;
@@ -90,14 +94,17 @@ async function runMedia(media) {
       const usable = candidates.filter((c) => !c.fetchError || c.pageUrl);
       const valid = candidates.filter((c) => !c.fetchError);
       const failures = candidates.filter((c) => c.fetchError);
-      const res = selectOne([...interleaveBySource(valid, args.date), ...failures], {
-        tieSeed: args.date,
-        weights: cfg.scoring.weights, minScore: cfg.minScoreToSelect, maxCandidates: cfg.maxCandidatesPerMedia,
-        dupCheck: (c) => known.check(c, { windowDays: cfg.dedupeWindowDays, today: args.date }),
-      });
+      const dupCheck = (c) => known.check(c, { windowDays: cfg.dedupeWindowDays, today: args.date });
+      const res = valid.length === 1 && valid[0].manual
+        ? selectManual(valid[0], { disId, dupCheck, ledgerEntries: ledger.entries })
+        : selectOne([...interleaveBySource(valid, args.date), ...failures], {
+          tieSeed: args.date,
+          weights: cfg.scoring.weights, minScore: cfg.minScoreToSelect, maxCandidates: cfg.maxCandidatesPerMedia,
+          dupCheck,
+        });
       const sel = res.selected && { ...res.selected, disId };
       await wj(out, { date: args.date, disId, selected: sel, evaluated: res.evaluated, fetchFailures: failures.map((f) => ({ sourceKey: f.sourceKey, sourceDetailUrl: f.sourceDetailUrl, error: f.fetchError })), skippedReason: res.skippedReason ?? null, usableCount: usable.length });
-      r.stages.select = sel ? `selected ${sel.brand} (score ${sel.score})` : `SKIP: ${res.skippedReason}`;
+      r.stages.select = sel ? `selected ${sel.brand} (score ${sel.score ?? "手動指定"})` : `SKIP: ${res.skippedReason}`;
     }
   }
 
@@ -183,7 +190,7 @@ async function runMedia(media) {
   }
 
   if (stages.includes("publish")) {
-    if (!(sel.reviewTotal >= cfg.selection.passScore)) { r.stages.publish = `blocked: 選定基準${cfg.selection.passScore}/${cfg.selection.maxScore}点が未判定または未達（review→learning.json→rescore を実行）`; return; }
+    if (!sel.manual && !(sel.reviewTotal >= cfg.selection.passScore)) { r.stages.publish = `blocked: 選定基準${cfg.selection.passScore}/${cfg.selection.maxScore}点が未判定または未達（review→learning.json→rescore を実行）`; return; }
     const ac = await checkAssetSet(`${d}/files`, { id: disId, media });
     if (!ac.ok && (await readJson(`${d}/files.json`, [])).length) { r.stages.publish = `blocked: 画像の揃いが不足（${ac.errors.join("; ")}）`; return; }
     const entry = findEntry(ledger, key);
