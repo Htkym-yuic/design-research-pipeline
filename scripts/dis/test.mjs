@@ -1063,3 +1063,20 @@ test("crop: 吸着は、近くに余白があるときだけ（上限px）。余
   assert.ok(Math.abs(hs[1] - 560) < 200, `CTA: ${hs[1]}（31pxのような極端な縮みがない）`);
   assert.equal(hs.reduce((a, b) => a + b, 0), H);
 });
+
+test("supplement-crops: 登録済み案件の既存フォルダに、sections_by_unit/ を新規で追加する計画を作る（既存は触らない・画像がなければ止まる）", async () => {
+  const { planCropUpload } = await import("./supplement-crops.mjs");
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-sc-"));
+  const dir = path.join(tmp, "files", "01_Normal_Images", "sections_by_unit");
+  await fs.mkdir(dir, { recursive: true });
+  await fs.writeFile(path.join(dir, "pc_01_FV.png"), "x"); await fs.writeFile(path.join(dir, "sp_01_FV.png"), "x"); await fs.writeFile(path.join(dir, "index.json"), "[]"); await fs.writeFile(path.join(dir, "memo.txt"), "no");
+  const entry = { disId: "DIS-LP-0002", dropbox: { folder: "/d/LP/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0002" } };
+  const plan = await planCropUpload({ entry, itemDir: tmp });
+  assert.equal(plan.remoteDir, "/d/LP/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0002/01_Normal_Images/sections_by_unit");
+  assert.deepEqual(plan.files.map((f) => path.basename(f.remote)), ["index.json", "pc_01_FV.png", "sp_01_FV.png"]); // memo.txt は対象外
+  assert.ok(plan.files.every((f) => f.remote.startsWith(plan.remoteDir + "/")));
+  await assert.rejects(planCropUpload({ entry: {}, itemDir: tmp }), /Dropboxの保存先/);
+  await assert.rejects(planCropUpload({ entry, itemDir: path.join(tmp, "none") }), /切り出し画像がありません/);
+  const r = spawnSync(process.execPath, [path.join(here, "supplement-crops.mjs"), "--id", "DIS-LP-9999"], { env: { ...process.env, DRY_RUN: "true", DIS_ENABLE_WRITES: "" }, encoding: "utf8" });
+  assert.notEqual(r.status, 0); assert.match(r.stderr, /台帳に DIS-LP-9999 がありません/);
+});

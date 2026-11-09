@@ -450,3 +450,14 @@ outputs/dis/
 - 従来の機械的な分割（`sections/pc_01.jpg` など、約1600pxごと）は、そのまま残る。
 - 種類の一覧: FV／悩み提起／共感／解決策／ベネフィット／特徴／実績／比較／商品紹介／料金／流れ／FAQ／CTA／会社情報／ナビ／フッター／その他。
 - 旧形式の分析（`roleType` なし。`DIS-LP-0001` など）は、検証は通るが、切り出しの対象外。
+
+### DIS: 登録済みの案件に、Sectionの切り出し画像を後から追加する（`dis:supplement-crops`）
+
+```bash
+npm run dis:supplement-crops -- --id DIS-LP-0002                 # ドライラン（追加先と件数の表示のみ）
+DIS_ENABLE_WRITES=true DRY_RUN=false npm run dis:supplement-crops -- --id DIS-LP-0002 --apply   # 本番（ユーザーが明示したときのみ）
+```
+
+- 追加先: `<案件のDropboxフォルダ>/01_Normal_Images/sections_by_unit/`（新規フォルダ。すでにある場合は、上書きせず中止）。既存のファイル・Notionは変更しない。
+- 追加が済むと、台帳の該当案件に `supplementCrops` が記録される（再実行はスキップ）。コミットとプッシュが必要。
+- 通常の登録（`publish`）は、登録済みの案件には使えない（保存先のフォルダがあると、上書きを避けて止まる）。

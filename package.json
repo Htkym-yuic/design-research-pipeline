@@ -43,7 +43,8 @@
     "dis:probe-all": "node scripts/dis/probe-all.mjs",
     "dis:search": "node scripts/dis/search.mjs",
     "dis:supplement": "node scripts/dis/supplement.mjs",
-    "dis:import-analysis": "node scripts/dis/import-analysis.mjs"
+    "dis:import-analysis": "node scripts/dis/import-analysis.mjs",
+    "dis:supplement-crops": "node scripts/dis/supplement-crops.mjs"
   },
   "dependencies": {
     "playwright": "^1.55.0",
