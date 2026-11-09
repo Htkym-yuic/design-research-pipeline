@@ -36,12 +36,15 @@ export async function checkAssetSet(dir, { id, media, archive = false }) {
     else await need(path.join(normal, ext), "バナー原本");
     await need(path.join(notion, "banner_notion.jpg"), "Notion用バナー画像", { maxBytes: NOTION_MAX });
   } else {
-    const rules = [["PC_full", { minWidth: 1000 }], ["PC_first_view", { minWidth: 1000 }], ["PC_sections", { minWidth: 600 }], ["SP_full", { maxWidth: 430 }], ["SP_first_view", { maxWidth: 430 }], ["SP_sections", { minWidth: 600 }]];
+    let rules = [["PC_full", { minWidth: 1000 }], ["PC_first_view", { minWidth: 1000 }], ["PC_sections", { minWidth: 600 }], ["SP_full", { maxWidth: 430 }], ["SP_first_view", { maxWidth: 430 }], ["SP_sections", { minWidth: 600 }]];
+    // アーカイブ画像が1枚だけ（PCのみ）の場合は、SPの項目は検査せず、警告にとどめる
+    const noSp = archive && !(await fs.stat(path.join(normal, `${id}_SP_full.png`)).catch(() => null));
+    if (noSp) { rules = rules.filter(([k]) => !k.startsWith("SP_")); warnings.push("アーカイブ画像が1枚のため、SPの画像はありません"); }
     for (const [k, rule] of rules) await need(path.join(normal, `${id}_${k}.png`), k, rule);
-    for (const k of ["PC_first_view", "PC_sections", "SP_first_view", "SP_sections"]) await need(path.join(notion, `${id}_${k}_notion.jpg`), `Notion用 ${k}`, { maxWidth: 720, maxBytes: NOTION_MAX });
+    for (const k of noSp ? ["PC_first_view", "PC_sections"] : ["PC_first_view", "PC_sections", "SP_first_view", "SP_sections"]) await need(path.join(notion, `${id}_${k}_notion.jpg`), `Notion用 ${k}`, { maxWidth: 720, maxBytes: NOTION_MAX });
     const secs = await fs.readdir(path.join(normal, "sections")).catch(() => []);
     if (!secs.some((f) => /^pc_\d+\.jpg$/.test(f))) errors.push("sections/ にPCの分割画像がない");
-    if (!secs.some((f) => /^sp_\d+\.jpg$/.test(f))) errors.push("sections/ にSPの分割画像がない");
+    if (!noSp && !secs.some((f) => /^sp_\d+\.jpg$/.test(f))) errors.push("sections/ にSPの分割画像がない");
   }
   return { ok: errors.length === 0, errors, warnings };
 }

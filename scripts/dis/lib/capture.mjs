@@ -125,11 +125,11 @@ async function deriveSet(full, { id, NAME, name, viewportH, normal, notion, secD
   }
 }
 
-/** アーカイブの紹介ページが載せている「自分の全体画像」（full_N）のURLを取り出す。関連作品のサムネイル等は対象外。 */
+/** アーカイブの紹介ページが載せている「自分の全体画像」（full_N）のURLを取り出す（full.jpg 1枚、または full_1・full_2…）。関連作品のサムネイル等は対象外。 */
 export function parseArchiveFullImages(html, pageUrl) {
-  const re = /(?:src|data-src)=["']([^"']*\/image\/lp-archive\/(\d+)\/full_(\d+)\.[a-z0-9.]+)["']/gi;
+  const re = /(?:src|data-src)=["']([^"']*\/image\/lp-archive\/(\d+)\/full(?:_(\d+))?\.[a-z0-9.]+)["']/gi;
   const found = [];
-  for (const m of html.matchAll(re)) { try { found.push({ url: new URL(m[1], pageUrl).href, postId: m[2], n: Number(m[3]) }); } catch { /* 無視 */ } }
+  for (const m of html.matchAll(re)) { try { found.push({ url: new URL(m[1], pageUrl).href, postId: m[2], n: Number(m[3] || 0) }); } catch { /* 無視 */ } }
   if (!found.length) return [];
   const own = found[0].postId; // 先頭の full_ が、この紹介ページ自身の画像
   return [...new Map(found.filter((f) => f.postId === own).sort((a, b) => a.n - b.n).map((f) => [f.url, f])).values()];
@@ -168,7 +168,7 @@ export async function captureFromArchive(detailUrl, outDir, { id = "item", fetch
   files.warnings = warnings;
   const add = (local, rel) => files.push({ local, rel });
   const plan = [["pc", decoded[0], 4, 300], ...(decoded[1] ? [["sp", decoded[1], 6, 150]] : [])];
-  if (!decoded[1]) warnings.push("全体画像が1枚だけのため、SPの画像がありません");
+  if (!decoded[1]) warnings.push("全体画像が1枚だけのため、PCとして扱う（PC/SPのどちらかは、画像を見て確認）。SPの画像はなし");
   for (const [name, d, mapCols, cellW] of plan) {
     const NAME = name.toUpperCase();
     const full = path.join(normal, `${id}_${NAME}_full.png`);

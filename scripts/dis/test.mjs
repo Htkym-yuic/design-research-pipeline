@@ -921,3 +921,21 @@ test("archive: 選定済みの案件を後からアーカイブ画像モード�
   assert.throws(() => applyArchiveMode({ sourceKey: "x" }, { fromArchive: true, media: "lp" }), /rdlp/);
   assert.throws(() => applyArchiveMode({ sourceKey: "rdlp" }, { fromArchive: true, media: "banner" }), /rdlp/);
 });
+
+test("archive: 番号なしの全体画像（full.jpg）1枚でも取り出せ、PCのみの一式を作る（SPなしは警告）", async () => {
+  const { parseArchiveFullImages, captureFromArchive } = await import("./lib/capture.mjs");
+  const sharp = (await import("sharp")).default;
+  const html = '<img src="/image/lp-archive/17012/full.jpg.webp"><img src="https://rdlp.jp/image/lp-archive/17064/200x400.jpg.webp">';
+  assert.deepEqual(parseArchiveFullImages(html, "https://rdlp.jp/archives/otherdesign/lp/16359").map((i) => i.url), ["https://rdlp.jp/image/lp-archive/17012/full.jpg.webp"]);
+  const png = await sharp({ create: { width: 900, height: 3000, channels: 3, background: "#39c" } }).png().toBuffer();
+  const fetchImpl = async (u) => u.includes("/lp/16359") ? { ok: true, status: 200, text: async () => html } : { ok: true, status: 200, arrayBuffer: async () => png.buffer.slice(png.byteOffset, png.byteOffset + png.byteLength) };
+  const out = await fs.mkdtemp(path.join(os.tmpdir(), "dis-arch1-"));
+  const files = await captureFromArchive("https://rdlp.jp/archives/otherdesign/lp/16359", out, { id: "DIS-LP-0001", fetchImpl });
+  assert.ok(files.some((f) => f.rel.endsWith("DIS-LP-0001_PC_full.png")));
+  assert.ok(!files.some((f) => f.rel.includes("_SP_")));
+  assert.ok(files.warnings.some((w) => /1枚だけ/.test(w)));
+  const { checkAssetSet } = await import("./lib/asset-check.mjs");
+  const ac = await checkAssetSet(out, { id: "DIS-LP-0001", media: "lp", archive: true });
+  assert.equal(ac.ok, true, ac.errors.join(";"));
+  assert.equal((await checkAssetSet(out, { id: "DIS-LP-0001", media: "lp" })).ok, false); // 通常撮影ではSPが必須
+});
