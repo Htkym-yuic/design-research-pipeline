@@ -12,7 +12,7 @@ import { loadConfig, jstDate, readJson, MEDIA_KEYS, REPO_ROOT } from "./lib/conf
 import { buildKnownIndex, normalizeUrl } from "./lib/dedupe.mjs";
 import { selectOne, interleaveBySource } from "./lib/select.mjs";
 import { collectFromSource, loadFixture } from "./lib/collect.mjs";
-import { emptyAnalysis, validateAnalysis, analysisToMarkdown } from "./lib/analysis-schema.mjs";
+import { emptyAnalysis, validateAnalysis, analysisToMarkdown, withRegisteredSync } from "./lib/analysis-schema.mjs";
 import { emptyAnnotations, validateAnnotations } from "./lib/annotations.mjs";
 import { buildTextIndex } from "./lib/text-index.mjs";
 import { checkAssetSet } from "./lib/asset-check.mjs";
@@ -247,6 +247,13 @@ async function runMedia(media) {
     const ac = await checkAssetSet(`${it}/files`, { id: disId, media, archive: sel.captureMode === "archive" });
     if (!ac.ok && (await readJson(`${it}/files.json`, [])).length) { r.stages.publish = `blocked: 画像の揃いが不足（${ac.errors.join("; ")}）`; return; }
     const entry = findEntry(ledger, key);
+    // 本番書込みの直前に、分析内の「外部同期」を実際の状態（登録済み・保存済み）に合わせる。Dropbox・Notionの本文には、これが入る。
+    if (writeOk && analysis && !(entry?.dropbox?.status === "created" && entry?.notion?.status === "created")) {
+      analysis = withRegisteredSync(analysis, args.date);
+      await wj(`${it}/analysis.json`, analysis);
+      await fs.writeFile(`${it}/analysis.md`, analysisToMarkdown(analysis));
+      await wj(`${it}/text-index.json`, buildTextIndex(analysis));
+    }
     const folder = dropboxFolder(cfg, media, args.date, disId);
     const generated = [{ local: `${it}/analysis.json`, rel: "03_Analysis/analysis.json" }, { local: `${it}/analysis.md`, rel: "03_Analysis/analysis.md" }, { local: `${it}/annotations.json`, rel: "03_Analysis/annotations.json" }, { local: `${it}/text-index.json`, rel: "03_Analysis/text-index.json" }];
     const meta = { disId, media, date: args.date, captureSource: sel.captureMode === "archive" ? "archive" : "live", pageUrl: sel.pageUrl, sourceName: sel.sourceName, sourceDetailUrl: sel.sourceDetailUrl, brand: sel.brand, selectionReason: analysis.selectionReason, rights: analysis.rights, analysisVersion: analysis.analysisVersion, sourceAnalysisRef: analysis.sourceAnalysisRef, score: sel.score };

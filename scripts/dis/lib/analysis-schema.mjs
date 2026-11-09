@@ -156,3 +156,8 @@ function analysisToMarkdownV1(a) {
   for (const t of TOOLS) L.push(`### ${t}`, ...(a.reproduction[t] || []).map((s, i) => `${i + 1}. ${s}`), "");
   return L.join("\n");
 }
+
+/** 登録（Dropbox・Notionへの書込み）の時点で、分析内の「外部同期」を実際の状態に合わせる。CBSは対象外のまま。 */
+export function withRegisteredSync(a, date) {
+  return { ...a, externalSync: { ...a.externalSync, notion: `登録済み（${date}）`, dropbox: `保存済み（${date}）` } };
+}

@@ -748,8 +748,9 @@ test("supplement: 台帳の実URL・IDで検証し、既存を触らず新規サ
   const { buildSupplement, SUBDIR } = await import("./supplement.mjs");
   const root = path.resolve(here, "../..");
   const ledger = JSON.parse(await fs.readFile(path.join(root, "data/dis-ledger.json"), "utf8"));
-  assert.ok(ledger.entries.length >= 6);
-  for (const e of ledger.entries) {
+  const legacy = ledger.entries.filter((e) => /-\d{8}$/.test(e.disId)); // v2ファイルがあるのは、旧形式（日付ID）の登録済み6件
+  assert.equal(legacy.length, 6);
+  for (const e of legacy) {
     const base = path.join(root, "candidates/dis", e.date, e.disId);
     const a = JSON.parse(await fs.readFile(`${base}.v2.analysis.json`, "utf8"));
     const n = JSON.parse(await fs.readFile(`${base}.v2.annotations.json`, "utf8"));
@@ -971,4 +972,15 @@ test("選定理由: 手動は「ユーザーが選定」、自動は候補レビ
   assert.match(auto, /見出しの型が明快で、再現しやすい（選定評価 15\/18: 構成の明快さ 3・独自性・再発見性 2・再現可能性 3/);
   assert.match(defaultSelectionReason({ score: 72 }), /機械的スコア 72\/100/);
   assert.equal(emptyAnalysis({ media: "lp", disId: "X", pageUrl: "u", brand: "b", selectionReason: "理由" }).selectionReason, "理由");
+});
+
+test("外部同期: 登録の時点で、分析内の外部同期が「登録済み・保存済み」になる（CBSは対象外のまま）", async () => {
+  const { withRegisteredSync, analysisToMarkdown } = await import("./lib/analysis-schema.mjs");
+  const a = completeAnalysis();
+  const b = withRegisteredSync(a, "2026-11-10");
+  assert.equal(b.externalSync.notion, "登録済み（2026-11-10）");
+  assert.equal(b.externalSync.dropbox, "保存済み（2026-11-10）");
+  assert.equal(b.externalSync.cbs, a.externalSync.cbs);
+  assert.match(analysisToMarkdown(b), /Notion=登録済み（2026-11-10） ／ Dropbox=保存済み（2026-11-10）/);
+  assert.notEqual(a.externalSync.notion, b.externalSync.notion); // 元は変更しない
 });
