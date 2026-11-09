@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T19:07:40.356Z",
+  "updatedAt": "2026-11-09T16:18:55.383Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -3863,6 +3863,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-08T19:07:40.356Z"
+    },
+    {
+      "id": "GR-0219",
+      "title": "忘年会のお知らせチラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F0962d3c02b4b7d9ce5f103b40eeabd06%2F0962d3c02b4b7d9ce5f103b40eeabd06-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-32204",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F0962d3c02b4b7d9ce5f103b40eeabd06%2F0962d3c02b4b7d9ce5f103b40eeabd06-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-09T16:18:55.383Z"
+    },
+    {
+      "id": "GR-0220",
+      "title": "忘年会のお知らせ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F0c857f2a1953fde33240a4369218e2a7%2F0c857f2a1953fde33240a4369218e2a7-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-28216",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F0c857f2a1953fde33240a4369218e2a7%2F0c857f2a1953fde33240a4369218e2a7-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-09T16:18:55.383Z"
+    },
+    {
+      "id": "GR-0221",
+      "title": "茶色とオレンジ色のシンプルなクーポンバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F094fc7194ee7c8f64906fea3d6d783ca%2F094fc7194ee7c8f64906fea3d6d783ca-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-17519",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F094fc7194ee7c8f64906fea3d6d783ca%2F094fc7194ee7c8f64906fea3d6d783ca-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-09T16:18:55.383Z"
+    },
+    {
+      "id": "GR-0222",
+      "title": "やわらか曲線フレームの雑貨店名刺デザイン",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F667d239c52411125a23e8d24ca149dd7%2F667d239c52411125a23e8d24ca149dd7-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29791",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F667d239c52411125a23e8d24ca149dd7%2F667d239c52411125a23e8d24ca149dd7-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-09T16:18:55.383Z"
+    },
+    {
+      "id": "GR-0223",
+      "title": "赤と黒の直線的なロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/52463ac1d1eb8c3a47c12654536d85db/52463ac1d1eb8c3a47c12654536d85db-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3077",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/52463ac1d1eb8c3a47c12654536d85db/52463ac1d1eb8c3a47c12654536d85db-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-09T16:18:55.383Z"
     },
     {
       "id": "ILAC-0001",
@@ -8246,6 +8306,18 @@
       "materialId": "PAT-0085",
       "authorProfileUrl": null,
       "reservedAt": "2026-11-08T19:07:40.356Z"
+    },
+    {
+      "id": "PAT-0086",
+      "title": "株式会社ツクルに見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://tsukuru-jp.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/tsukuru/",
+      "imageUrl": null,
+      "materialId": "PAT-0086",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-09T16:18:55.383Z"
     },
     {
       "id": "PHAC-0001",
@@ -14679,6 +14751,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-08T19:07:40.356Z"
+    },
+    {
+      "id": "WB-0073",
+      "title": "株式会社ツクル",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://tsukuru-jp.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/tsukuru/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/tsukuru_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-09T16:18:55.383Z"
+    },
+    {
+      "id": "WB-0074",
+      "title": "株式会社 川元工務店",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.kawamoto5610.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/kawamotokoumuten/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/kawamotokoumuten_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-09T16:18:55.383Z"
     }
   ]
 }
