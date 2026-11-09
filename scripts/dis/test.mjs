@@ -939,3 +939,21 @@ test("archive: 番号なしの全体画像（full.jpg）1枚でも取り出せ�
   assert.equal(ac.ok, true, ac.errors.join(";"));
   assert.equal((await checkAssetSet(out, { id: "DIS-LP-0001", media: "lp" })).ok, false); // 通常撮影ではSPが必須
 });
+
+test("import-analysis: 案件フォルダへ分析と注釈を取り込む。分析済みは上書きしない（--replaceのみ）", async () => {
+  const { importAnalysis } = await import("./import-analysis.mjs");
+  const root = path.resolve(here, "../..");
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-imp-"));
+  const item = path.join(tmp, "out", "LP", "0001_20261110_X");
+  await fs.mkdir(item, { recursive: true });
+  await fs.writeFile(path.join(item, "item.json"), JSON.stringify({ disId: "DIS-LP-0001" }));
+  await fs.writeFile(path.join(item, "analysis.json"), JSON.stringify({ status: "template" }));
+  const opts = { disId: "DIS-LP-0001", outDir: path.join(tmp, "out"), srcDir: path.join(root, "candidates/dis") };
+  const r = await importAnalysis(opts);
+  assert.equal(r.dir, item);
+  const a = JSON.parse(await fs.readFile(path.join(item, "analysis.json"), "utf8"));
+  assert.equal(a.status, "complete"); assert.equal(a.disId, "DIS-LP-0001"); assert.equal(a.sectionCoverage.analyzedUnitCount, 6);
+  await assert.rejects(importAnalysis(opts), /上書きしません/);
+  assert.ok((await importAnalysis({ ...opts, replace: true })).dir);
+  await assert.rejects(importAnalysis({ ...opts, disId: "DIS-LP-9999" }), /案件フォルダが見つかりません/);
+});

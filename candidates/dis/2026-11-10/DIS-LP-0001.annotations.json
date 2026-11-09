@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "dis-annotation-1.0",
+  "analysisRef": "DIS-LP-0001",
+  "method": "目測の概算（画像から読み取った位置。実測ではない）",
+  "annotations": [
+    {
+      "id": "N1",
+      "unitId": "U1",
+      "image": "DIS-LP-0001_PC_full.png",
+      "bbox": {
+        "x": 0.03,
+        "y": 0.005,
+        "w": 0.94,
+        "h": 0.19
+      },
+      "label": "PRODUCT（ブランド紹介・メイン写真）",
+      "evidence": "PC全体画像の該当セクションの観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N2",
+      "unitId": "U2",
+      "image": "DIS-LP-0001_PC_full.png",
+      "bbox": {
+        "x": 0.03,
+        "y": 0.2,
+        "w": 0.94,
+        "h": 0.12
+      },
+      "label": "商品ラインアップ（3種）",
+      "evidence": "PC全体画像の該当セクションの観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N3",
+      "unitId": "U3",
+      "image": "DIS-LP-0001_PC_full.png",
+      "bbox": {
+        "x": 0.03,
+        "y": 0.35,
+        "w": 0.94,
+        "h": 0.19
+      },
+      "label": "ORANGINA（主力商品の詳細とサイズ展開）",
+      "evidence": "PC全体画像の該当セクションの観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N4",
+      "unitId": "U4",
+      "image": "DIS-LP-0001_PC_full.png",
+      "bbox": {
+        "x": 0.03,
+        "y": 0.58,
+        "w": 0.94,
+        "h": 0.17
+      },
+      "label": "FEATURE（おいしさの特徴）",
+      "evidence": "PC全体画像の該当セクションの観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N5",
+      "unitId": "U5",
+      "image": "DIS-LP-0001_PC_full.png",
+      "bbox": {
+        "x": 0.03,
+        "y": 0.79,
+        "w": 0.94,
+        "h": 0.13
+      },
+      "label": "HISTORY（歴史の年表）",
+      "evidence": "PC全体画像の該当セクションの観察（目測の位置）",
+      "confidence": "low"
+    },
+    {
+      "id": "N6",
+      "unitId": "U6",
+      "image": "DIS-LP-0001_PC_full.png",
+      "bbox": {
+        "x": 0.03,
+        "y": 0.93,
+        "w": 0.94,
+        "h": 0.07
+      },
+      "label": "SHARE・外部リンク（フッター）",
+      "evidence": "PC全体画像の該当セクションの観察（目測の位置）",
+      "confidence": "low"
+    }
+  ]
+}
