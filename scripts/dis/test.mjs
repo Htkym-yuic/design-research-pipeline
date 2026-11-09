@@ -1080,3 +1080,12 @@ test("supplement-crops: 登録済み案件の既存フォルダに、sections_by
   const r = spawnSync(process.execPath, [path.join(here, "supplement-crops.mjs"), "--id", "DIS-LP-9999"], { env: { ...process.env, DRY_RUN: "true", DIS_ENABLE_WRITES: "" }, encoding: "utf8" });
   assert.notEqual(r.status, 0); assert.match(r.stderr, /台帳に DIS-LP-9999 がありません/);
 });
+
+test("dropbox-client: Dropbox-API-Arg は日本語のパスでもASCIIのみになり、元のJSONに戻る", async () => {
+  const { dropboxApiArg } = await import("../lib/dropbox-client.mjs");
+  const arg = { path: "/design/DIS-LP-0002/01_Normal_Images/sections_by_unit/pc_03_悩み提起.png", mode: "add", autorename: false, mute: true };
+  const h = dropboxApiArg(arg);
+  assert.ok(/^[\x20-\x7e]*$/.test(h), "ヘッダーにASCII以外が残っている");
+  assert.deepEqual(JSON.parse(h), arg);
+  assert.equal(dropboxApiArg({ path: "/a/b.png" }), JSON.stringify({ path: "/a/b.png" })); // ASCIIのみは、従来と同じ
+});

@@ -50,6 +50,14 @@ async function getAccessToken() {
 }
 
 /**
+ * Dropbox-API-Arg ヘッダー用のJSON。ヘッダーはASCIIのみのため、日本語など非ASCIIの文字を \uXXXX にエスケープする
+ * （Dropbox側では、エスケープ前と同じ文字列として解釈される）。
+ */
+export function dropboxApiArg(obj) {
+  return JSON.stringify(obj).replace(/[\u0080-\uffff]/g, (c) => "\\u" + c.charCodeAt(0).toString(16).padStart(4, "0"));
+}
+
+/**
  * Dropbox上に1ファイルをアップロードする（mode: overwrite）。
  * 150MBを超える大きいファイルは扱わない想定（スクリーンショット・JSON程度のみ）。
  *
@@ -59,7 +67,7 @@ async function getAccessToken() {
 export async function uploadFile(dropboxPath, fileBuffer) {
   const accessToken = await getAccessToken();
 
-  const apiArg = JSON.stringify({
+  const apiArg = dropboxApiArg({
     path: dropboxPath,
     mode: "overwrite",
     autorename: false,
@@ -156,7 +164,7 @@ export async function uploadFileNoOverwrite(dropboxPath, fileBuffer) {
     headers: {
       Authorization: `Bearer ${accessToken}`,
       "Content-Type": "application/octet-stream",
-      "Dropbox-API-Arg": JSON.stringify({ path: dropboxPath, mode: "add", autorename: false, mute: true }),
+      "Dropbox-API-Arg": dropboxApiArg({ path: dropboxPath, mode: "add", autorename: false, mute: true }),
     },
     body: fileBuffer,
   });

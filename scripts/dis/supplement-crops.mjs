@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * 登録済みの案件に、Sectionごとの切り出し画像（sections_by_unit/）を、新規ファイルとして追加する。
- * 既存のDropboxフォルダ・ファイル・Notionは変更しない。追加先 <案件フォルダ>/01_Normal_Images/sections_by_unit/ が、すでにある場合は何もせず中止する。
+ * 既存のDropboxフォルダ・ファイル・Notionは変更しない。追加先 <案件フォルダ>/01_Normal_Images/sections_by_unit/ に、すでにあるファイルは上書きせずスキップし、足りないファイルだけを追加する（途中で止まった場合の再実行用）。
  * 既定はドライラン。実書込みは --apply かつ DIS_ENABLE_WRITES=true かつ DRY_RUN=false のときだけ。
  *   node scripts/dis/supplement-crops.mjs --id DIS-LP-0002 [--apply]
  */
@@ -46,13 +46,16 @@ async function main() {
   assertWritesAllowed(opts);
   const { pathExists, ensureFolder, uploadFileNoOverwrite } = await import("../lib/dropbox-client.mjs");
   if (!(await pathExists(entry.dropbox.folder))) throw new Error("案件のDropboxフォルダが見つかりません（中止）");
-  if (await pathExists(plan.remoteDir)) throw new Error(`${SECTION_DIR} が、すでに存在します（上書きしないため中止）`);
   await ensureFolder(plan.remoteDir);
-  const uploaded = [];
-  for (const f of plan.files) { await uploadFileNoOverwrite(f.remote, await fs.readFile(f.local)); uploaded.push(f.remote); }
-  entry.supplementCrops = { status: "created", folder: plan.remoteDir, uploaded, at: new Date().toISOString() };
+  const uploaded = [], skipped = [];
+  for (const f of plan.files) {
+    if (await pathExists(f.remote)) { skipped.push(f.remote); continue; } // すでにあるファイルは、上書きしない
+    await uploadFileNoOverwrite(f.remote, await fs.readFile(f.local));
+    uploaded.push(f.remote);
+  }
+  entry.supplementCrops = { status: "created", folder: plan.remoteDir, uploaded, skippedExisting: skipped, at: new Date().toISOString() };
   await saveLedger(ledger);
-  console.log(`追加しました（${uploaded.length}ファイル）。台帳を更新したので、コミットとプッシュをお願いします`);
+  console.log(`追加しました（新規${uploaded.length}ファイル／すでにあるためスキップ${skipped.length}ファイル）。台帳を更新したので、コミットとプッシュをお願いします`);
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) await main().catch((e) => { console.error(e.message); process.exit(1); });
