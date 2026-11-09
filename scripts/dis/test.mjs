@@ -1033,3 +1033,33 @@ test("roleType・regions の検証: 旧形式（キーなし）は通り、キ�
   const t = emptyAnalysis({ media: "lp", disId: "X", pageUrl: "u", brand: "b" });
   assert.ok(validateAnalysis(t, { requireComplete: false }).errors.some((e) => /roleType/.test(e))); // テンプレートは未選択のため、記入が必要
 });
+
+test("crop: 吸着は、近くに余白があるときだけ（上限px）。余白がなければ目測の位置のまま（縦に長いページ・写真と帯の境目でも飛ばない）", async () => {
+  const { snapBoundary, rowVariance, cropSections, MAX_SNAP_PX } = await import("./lib/crop.mjs");
+  const sharp = (await import("sharp")).default;
+  // 幅300・高さ12000（縦に長いページ）。y=3000付近は、写真（模様）から紺の帯に変わる境目で、余白なし。余白の行は、y=3500〜3600にだけある（境界から500px離れている）
+  const W = 300, H = 12000;
+  const raw = Buffer.alloc(W * H * 3, 255);
+  const paint = (y0, y1, f) => { for (let y = y0; y < y1; y++) for (let x = 0; x < W; x++) { const c = f(x, y); const i = (y * W + x) * 3; raw[i] = c[0]; raw[i + 1] = c[1]; raw[i + 2] = c[2]; } };
+  paint(0, 3000, (x, y) => ((x * 7 + y * 3) % 50 < 25 ? [200, 120, 60] : [40, 90, 160])); // 写真（模様）
+  paint(3000, 3500, () => [20, 30, 110]); // 紺の帯（均一・色が一定）
+  paint(3600, H, (x, y) => ((x + y) % 40 < 20 ? [30, 160, 60] : [220, 220, 40]));
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-crop2-"));
+  const normal = path.join(tmp, "files", "01_Normal_Images");
+  await fs.mkdir(normal, { recursive: true });
+  await sharp(raw, { raw: { width: W, height: H, channels: 3 } }).png().toFile(path.join(normal, "DIS-LP-0008_PC_full.png"));
+  const st = await rowVariance(path.join(normal, "DIS-LP-0008_PC_full.png"));
+  // 写真と帯の境目（y=3000）付近: 余白の行（均一な行）が、上限より遠く（帯の中は均一だが、境目より下側）にある
+  const est = 2990 / H; // 目測は、境目の少し手前
+  const snapped = snapBoundary(est, st);
+  assert.ok(Math.abs(snapped - 2990) <= MAX_SNAP_PX + st.scale, `上限を超えて動いていない: ${snapped}`);
+  // 余白が全くない場所（写真の中）では、目測のまま
+  assert.equal(snapBoundary(1500 / H, st), 1500);
+  // 実際のSection切り出しでも、各Sectionの高さは目測と大きくずれない
+  const analysis = { units: [{ id: "U1", roleType: "FV", regions: { pc: { y0: 0, y1: 2990 / H } } }, { id: "U2", roleType: "CTA", regions: { pc: { y0: 2990 / H, y1: 3550 / H } } }, { id: "U3", roleType: "その他", regions: { pc: { y0: 3550 / H, y1: 1 } } }] };
+  const { produced } = await cropSections(tmp, analysis, { id: "DIS-LP-0008" });
+  const hs = produced.map((p) => p.y1 - p.y0);
+  assert.ok(Math.abs(hs[0] - 2990) < 150, `FV: ${hs[0]}`);
+  assert.ok(Math.abs(hs[1] - 560) < 200, `CTA: ${hs[1]}（31pxのような極端な縮みがない）`);
+  assert.equal(hs.reduce((a, b) => a + b, 0), H);
+});

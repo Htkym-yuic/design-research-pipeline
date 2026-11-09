@@ -9,8 +9,7 @@ export const SECTION_DIR = "sections_by_unit";
 const safe = (s) => String(s).replace(/[\\/:*?"<>|\s]+/g, "_");
 
 /**
- * 目測の境界（0〜1）の近くで、「何も描かれていない横一列（余白）」に吸着させる。
- * 見出しや画像を、途中で切らないため。行ごとの輝度のばらつきが小さい行を選び、同程度なら、元の位置に近い行を選ぶ。
+ * 行ごとの輝度のばらつき（余白の判定に使う）を計算する。
  */
 export async function rowVariance(file, { width = 240 } = {}) {
   const { default: sharp } = await import("sharp");
@@ -26,17 +25,28 @@ export async function rowVariance(file, { width = 240 } = {}) {
   return { rows, scale: meta.height / info.height, height: meta.height, width: meta.width };
 }
 
+/** 余白とみなす、行ごとの輝度のばらつきの上限（0〜255の輝度の分散）。写真や模様の行は、これより大きい。 */
+export const BLANK_VARIANCE = 12;
+/** 吸着で動かしてよい最大の距離（元画像のpx）。縦に長いページでも、遠くの余白へ飛ばないための上限。 */
+export const MAX_SNAP_PX = 90;
+
+/**
+ * 目測の境界の近くに、「余白とみなせる行」があるときだけ、そこへ寄せる。なければ、目測の位置のまま。
+ * 探す幅は、全体の windowFrac と MAX_SNAP_PX の小さいほう。余白どうしでは、元の位置に近い行を選ぶ。
+ */
 export function snapBoundary(est, { rows, scale, height }, windowFrac = 0.03) {
   if (est <= 0) return 0;
   if (est >= 1) return height;
   const center = Math.round((est * height) / scale);
-  const win = Math.max(3, Math.round((windowFrac * height) / scale));
-  let best = center, bestScore = Infinity;
+  const winPx = Math.min(windowFrac * height, MAX_SNAP_PX);
+  const win = Math.max(3, Math.round(winPx / scale));
+  let best = -1, bestDist = Infinity;
   for (let y = Math.max(1, center - win); y <= Math.min(rows.length - 1, center + win); y++) {
-    const score = rows[y] + Math.abs(y - center) * 0.5; // 余白（ばらつき小）を優先し、同程度なら近い行
-    if (score < bestScore) { bestScore = score; best = y; }
+    if (rows[y] > BLANK_VARIANCE) continue; // 余白ではない行は、候補にしない
+    const d = Math.abs(y - center);
+    if (d < bestDist) { bestDist = d; best = y; }
   }
-  return Math.min(height, Math.round(best * scale));
+  return best < 0 ? Math.min(height, Math.round(est * height)) : Math.min(height, Math.round(best * scale));
 }
 
 /** 分析の各Unitの regions（正規化した縦の範囲）で、全体画像をSectionごとに切り出す。pc/sp それぞれ、画像と範囲がある場合のみ。 */
