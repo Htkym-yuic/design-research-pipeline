@@ -957,3 +957,13 @@ test("import-analysis: 案件フォルダへ分析と注釈を取り込む。分
   assert.ok((await importAnalysis({ ...opts, replace: true })).dir);
   await assert.rejects(importAnalysis({ ...opts, disId: "DIS-LP-9999" }), /案件フォルダが見つかりません/);
 });
+
+test("選定理由: 手動は「ユーザーが選定」、自動は候補レビューの良い点＋6項目の点数が自動で入る。空のまま検証しても補われる", async () => {
+  const { defaultSelectionReason } = await import("./lib/review.mjs");
+  assert.equal(defaultSelectionReason({ manual: true }), "ユーザーが選定した。");
+  assert.match(defaultSelectionReason({ manual: true, captureMode: "archive" }), /アーカイブ掲載の画像のみ/);
+  const auto = defaultSelectionReason({ reviewReason: "見出しの型が明快で、再現しやすい", reviewTotal: 15, reviewCriteria: { clarity: 3, uniqueness: 2, reproducibility: 3, practicality: 3, materials: 2, sourcing: 2 } });
+  assert.match(auto, /見出しの型が明快で、再現しやすい（選定評価 15\/18: 構成の明快さ 3・独自性・再発見性 2・再現可能性 3/);
+  assert.match(defaultSelectionReason({ score: 72 }), /機械的スコア 72\/100/);
+  assert.equal(emptyAnalysis({ media: "lp", disId: "X", pageUrl: "u", brand: "b", selectionReason: "理由" }).selectionReason, "理由");
+});

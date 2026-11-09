@@ -83,3 +83,20 @@ export function applyLearning(candidates, learning, reviewItems = []) {
   }
   return { applied, errors };
 }
+
+const CRITERIA_LABELS = { clarity: "構成の明快さ", uniqueness: "独自性・再発見性", reproducibility: "再現可能性", practicality: "実務との近さ", materials: "資料の十分さ", sourcing: "出典・取得の健全さ" };
+
+/**
+ * 分析の「選定理由」の既定文。
+ *  - 手動指定: 「ユーザーが選定した」（実ページが取れずアーカイブ画像で分析した場合は、その旨を添える）
+ *  - 自動: 候補レビューで書いた「良い点」（reviewReason）と、6項目の点数をそのまま使う
+ */
+export function defaultSelectionReason(sel) {
+  if (sel?.manual) return `ユーザーが選定した。${sel.captureMode === "archive" ? "実ページは取得できなかったため、LPアーカイブ掲載の画像のみを根拠とする。" : ""}`;
+  if (sel?.reviewReason) {
+    const c = sel.reviewCriteria;
+    const detail = c ? `（選定評価 ${sel.reviewTotal}/18: ${CRITERIA_KEYS.map((k) => `${CRITERIA_LABELS[k]} ${c[k]}`).join("・")}）` : "";
+    return `${sel.reviewReason}${detail}`;
+  }
+  return `機械的スコア ${sel?.score ?? "不明"}/100 で選定（人による学習価値の評価は未実施）。`;
+}

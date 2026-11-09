@@ -22,7 +22,7 @@ const IMPROVEMENT_FIELDS = [["issue", "課題"], ["evidence", "根拠"], ["chang
 
 const blankImprovement = () => ({ issue: "", evidence: "", change: "", expected: "", metric: "" });
 
-export function emptyAnalysis({ media, disId, pageUrl, brand, captureSource }) {
+export function emptyAnalysis({ media, disId, pageUrl, brand, captureSource, selectionReason = "" }) {
   return {
     ...(captureSource ? { captureSource } : {}),
     schemaVersion: "dis-2.0",
@@ -34,7 +34,7 @@ export function emptyAnalysis({ media, disId, pageUrl, brand, captureSource }) {
     media, disId, pageUrl, brand,
     sourceImageRefs: [],
     summary: "",
-    selectionReason: "",
+    selectionReason,
     sectionCoverage: { sourceUnitCount: 0, analyzedUnitCount: 0 },
     units: [{ id: "U1", name: "", sectionRef: "", role: "", observation: "", evidence: "", confidence: null, reuseStructure: "", mustReplace: [], unknowns: [], annotation: "" }],
     axes: AXES.map((x) => ({ key: x.key, label: x.label, score: null, scope: "", evidence: "", confidence: null, unverified: "" })),

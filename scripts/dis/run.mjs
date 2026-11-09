@@ -22,7 +22,7 @@ import { buildManualCandidate, selectManual, applyArchiveMode } from "./lib/manu
 import { createHash } from "node:crypto";
 import { formatDisId, nextSerial, reservedIdsFromOutputs } from "./lib/ids.mjs";
 import { itemRelDir, reservedFromLibrary, writeIndex } from "./lib/library.mjs";
-import { buildContactSheet, applyLearning, suggestCriteria } from "./lib/review.mjs";
+import { buildContactSheet, applyLearning, suggestCriteria, defaultSelectionReason } from "./lib/review.mjs";
 import { dropboxFolder, planDropboxFiles, writeDropbox, writeNotion, buildNotionBlocks, DEFAULT_PROPERTY_MAP } from "./lib/adapters.mjs";
 
 const { values: args } = parseArgs({
@@ -210,7 +210,7 @@ async function runMedia(media) {
     const f = `${it}/analysis.json`;
     const parts = [];
     if (await readJson(f, null)) parts.push("analysis exists (not overwritten)");
-    else { await wj(f, emptyAnalysis({ media, disId, pageUrl: sel.pageUrl, brand: sel.brand, captureSource: sel.captureMode === "archive" ? "アーカイブ掲載の全体画像（実ページは未確認）" : undefined })); parts.push("analysis created"); }
+    else { await wj(f, emptyAnalysis({ media, disId, pageUrl: sel.pageUrl, brand: sel.brand, captureSource: sel.captureMode === "archive" ? "アーカイブ掲載の全体画像（実ページは未確認）" : undefined, selectionReason: defaultSelectionReason(sel) })); parts.push("analysis created"); }
     const fa = `${it}/annotations.json`;
     if (await readJson(fa, null)) parts.push("annotations exists (not overwritten)");
     else { await wj(fa, emptyAnnotations({ disId })); parts.push("annotations created"); }
@@ -224,6 +224,7 @@ async function runMedia(media) {
     if (analysis) {
       // 選定結果を正とする: ID・実ページURLは常に選定から。brand が "AUTO" のときだけ選定のブランド名を使う。
       analysis.disId = disId;
+      if (!String(analysis.selectionReason || "").trim()) analysis.selectionReason = defaultSelectionReason(sel); // 空なら、選定時の評価（自動）／ユーザー指定（手動）から自動で入れる
       analysis.pageUrl = sel.pageUrl;
       if (!analysis.brand || analysis.brand === "AUTO") analysis.brand = sel.brand;
       await wj(`${it}/analysis.json`, analysis);
