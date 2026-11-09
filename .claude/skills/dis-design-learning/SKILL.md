@@ -59,7 +59,7 @@ DISは、既存のLP・バナー・Canva等の分析を消さずに、根拠付�
    - 403・robots.txt禁止・ログイン壁・Bot対策は回避せず、理由を伝えて止まる。
 3. 結果を確認する: `disId`、`capture` の「画像の揃い」、警告（アーカイブ画像・幅など）。PCとSPの画像幅が同じ場合は、PC/SPではなく前半・後半の分割画像の疑いがあるため、画像を見て確認する。
 4. 画像を実際に読む: 案件フォルダ `outputs/dis/<LP|バナー|ウェブ>/<連番>_<日付>_<ブランド>/files/01_Normal_Images/`（一覧は `outputs/dis/INDEX.md`） の全体画像と、`sections/` の分割画像を、全Sectionぶん読む。見えない箇所は推測せず、unknownsに残す。
-5. 分析を書く: 案件フォルダの `analysis.json`（dis-2.0）と `annotations.json` を埋める。アーカイブ画像の場合は `captureSource` を残し、動き・実際の文言・最新状態を未確認として扱い、確信度を下げる。
+5. 分析を書く: 案件フォルダの `analysis.json`（dis-2.0）と `annotations.json` を埋める。手動指定の案件は、`selectionReason` の「良い点: （分析時に記入）」を、どこが良いかの具体的な文章に置き換える（未記入だと検証が通らない）。アーカイブ画像の場合は `captureSource` を残し、動き・実際の文言・最新状態を未確認として扱い、確信度を下げる。
 6. 検証する: `DRY_RUN=true npm run dis:run -- --media <…> --url "<URL>" --stage validate`（撮影・分析と同じ `--url` を付ける）。
 7. 登録（Dropbox・Notion）は、ユーザーが本番実行を明示したときだけ。`--apply` ＋ `DIS_ENABLE_WRITES=true` ＋ `DRY_RUN=false` がそろったときのみ書き込まれる。
 

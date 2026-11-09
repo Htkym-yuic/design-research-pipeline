@@ -960,8 +960,13 @@ test("import-analysis: 案件フォルダへ分析と注釈を取り込む。分
 
 test("選定理由: 手動は「ユーザーが選定」、自動は候補レビューの良い点＋6項目の点数が自動で入る。空のまま検証しても補われる", async () => {
   const { defaultSelectionReason } = await import("./lib/review.mjs");
-  assert.equal(defaultSelectionReason({ manual: true }), "ユーザーが選定した。");
-  assert.match(defaultSelectionReason({ manual: true, captureMode: "archive" }), /アーカイブ掲載の画像のみ/);
+  assert.equal(defaultSelectionReason({ manual: true }), "ユーザーが選定した。良い点: （分析時に記入）");
+  assert.match(defaultSelectionReason({ manual: true, captureMode: "archive" }), /アーカイブ掲載の画像のみを根拠とする。良い点: （分析時に記入）/);
+  // 「良い点」が未記入のままでは、検証が通らない
+  const base = completeAnalysis(); base.selectionReason = defaultSelectionReason({ manual: true });
+  assert.ok(validateAnalysis(base).errors.some((e) => /良い点/.test(e)));
+  base.selectionReason = "ユーザーが選定した。良い点: 見出しの型が統一され、再現しやすい。";
+  assert.equal(validateAnalysis(base).ok, true);
   const auto = defaultSelectionReason({ reviewReason: "見出しの型が明快で、再現しやすい", reviewTotal: 15, reviewCriteria: { clarity: 3, uniqueness: 2, reproducibility: 3, practicality: 3, materials: 2, sourcing: 2 } });
   assert.match(auto, /見出しの型が明快で、再現しやすい（選定評価 15\/18: 構成の明快さ 3・独自性・再発見性 2・再現可能性 3/);
   assert.match(defaultSelectionReason({ score: 72 }), /機械的スコア 72\/100/);

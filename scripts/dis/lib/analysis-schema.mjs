@@ -57,6 +57,7 @@ export function validateAnalysis(a, { requireComplete = true } = {}) {
   if (a?.schemaVersion !== "dis-2.0") err("schemaVersion は dis-2.0");
   if (requireComplete && a?.status !== "complete") err(`status が complete ではありません (${a?.status})`);
   for (const f of ["media", "disId", "pageUrl", "brand", "summary", "selectionReason", "analysisVersion", "sourceAnalysisRef"]) if (!str(a?.[f])) err(`${f} が空`);
+  if (String(a?.selectionReason || "").includes("（分析時に記入）")) err("selectionReason の「良い点: （分析時に記入）」が未記入です（どこが良いかを書く）");
   if (!REVIEW_STATES.includes(a?.reviewState)) err(`reviewState は ${REVIEW_STATES.join("/")}`);
   if (!(typeof a?.generatedAt === "string" && !Number.isNaN(Date.parse(a.generatedAt)))) err("generatedAt は日時（ISO形式）");
   if (!arr(a?.sourceImageRefs) || a.sourceImageRefs.length === 0 || !a.sourceImageRefs.every(str)) err("sourceImageRefs（元画像参照）が空");
