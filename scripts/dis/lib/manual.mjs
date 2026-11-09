@@ -37,3 +37,15 @@ export function selectManual(cand, { dupCheck }) {
   const selected = { ...cand, disId: null, score: null, manual: true, reviewReason: "ユーザーが対象を指定（選定基準13/18点・機械的スコアの足切りは適用しない）", duplicate: dup, blockers: [], inComparison: true };
   return { selected, evaluated: [selected] };
 }
+
+/**
+ * 選定済みの案件を、後から「アーカイブ掲載の画像で分析」に切り替える（実ページが403などで撮影できなかった場合）。
+ * rdlpの紹介ページ由来のLP/Webだけが対象。切り替えたら true を返す。
+ */
+export function applyArchiveMode(sel, { fromArchive, media }) {
+  if (!fromArchive) return false;
+  if (sel.sourceKey !== "rdlp" || media === "banner") throw new Error("--from-archive は、LPアーカイブ（rdlp）の紹介ページ由来のLP/Webだけで使えます");
+  if (sel.captureMode === "archive") return false;
+  sel.captureMode = "archive";
+  return true;
+}

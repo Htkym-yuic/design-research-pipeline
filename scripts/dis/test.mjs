@@ -910,3 +910,14 @@ test("library: 媒体別フォルダ(LP/バナー/ウェブ)に連番_日付_ブ
   assert.deepEqual(rows.map((r) => [r.disId, r.status, r.mode]), [["DIS-LP-0001", "登録済み", "手動"], ["DIS-LP-0002", "未撮影", "自動"]]);
   assert.match(await fs.readFile(path.join(tmp, "INDEX.md"), "utf8"), /DIS-LP-0002 \| 2026-11-10 \| lp \| 自動 \| B/);
 });
+
+test("archive: 選定済みの案件を後からアーカイブ画像モードに切り替えられる（rdlp由来のLP/Webのみ）", async () => {
+  const { applyArchiveMode } = await import("./lib/manual.mjs");
+  const sel = { sourceKey: "rdlp" };
+  assert.equal(applyArchiveMode(sel, { fromArchive: false, media: "lp" }), false);
+  assert.equal(applyArchiveMode(sel, { fromArchive: true, media: "lp" }), true);
+  assert.equal(sel.captureMode, "archive");
+  assert.equal(applyArchiveMode(sel, { fromArchive: true, media: "lp" }), false); // 切り替え済み
+  assert.throws(() => applyArchiveMode({ sourceKey: "x" }, { fromArchive: true, media: "lp" }), /rdlp/);
+  assert.throws(() => applyArchiveMode({ sourceKey: "rdlp" }, { fromArchive: true, media: "banner" }), /rdlp/);
+});

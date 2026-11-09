@@ -18,7 +18,7 @@ import { buildTextIndex } from "./lib/text-index.mjs";
 import { checkAssetSet } from "./lib/asset-check.mjs";
 import { idempotencyKey, loadLedger, saveLedger, findEntry, upsertEntry } from "./lib/ledger.mjs";
 import { writesAllowed } from "./lib/write-guard.mjs";
-import { buildManualCandidate, selectManual } from "./lib/manual.mjs";
+import { buildManualCandidate, selectManual, applyArchiveMode } from "./lib/manual.mjs";
 import { createHash } from "node:crypto";
 import { formatDisId, nextSerial, reservedIdsFromOutputs } from "./lib/ids.mjs";
 import { itemRelDir, reservedFromLibrary, writeIndex } from "./lib/library.mjs";
@@ -163,6 +163,7 @@ async function runMedia(media) {
   if (!selection?.selected) { r.status = "skipped"; r.reason = selection?.skippedReason ?? "未選定"; return; }
   const sel = selection.selected;
   const key = idempotencyKey(media, sel.pageUrl);
+  if (applyArchiveMode(sel, { fromArchive: args["from-archive"], media })) await wj(`${d}/selection.json`, { ...selection, selected: sel }); // 再実行時にも、アーカイブ画像モードへ切り替えられる
 
   // 案件フォルダ（媒体別フォルダ内に、連番で並べる）: outputs/dis/<LP|バナー|ウェブ>/0001_20261110_ブランド/ 。採番後に作成し、以降の撮影・分析・登録の成果物はここに置く。
   let itemDir = selection.itemDir || null;
