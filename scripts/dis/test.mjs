@@ -1089,3 +1089,27 @@ test("dropbox-client: Dropbox-API-Arg は日本語のパスでもASCIIのみに�
   assert.deepEqual(JSON.parse(h), arg);
   assert.equal(dropboxApiArg({ path: "/a/b.png" }), JSON.stringify({ path: "/a/b.png" })); // ASCIIのみは、従来と同じ
 });
+
+test("overview: Sectionごとの切り出しを、ラベルつき1枚の全体図にまとめる（PC優先・なければSP・切り出しがなければ作らない）", async () => {
+  const { buildUnitOverview, OVERVIEW_KEY } = await import("./lib/overview.mjs");
+  const sharp = (await import("sharp")).default;
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-overview-"));
+  const mk = async (name, w, h, rgb) => { const p = path.join(tmp, name); await sharp({ create: { width: w, height: h, channels: 3, background: rgb } }).png().toFile(p); return p; };
+  const produced = [
+    { unitId: "U1", device: "pc", local: await mk("pc_01.png", 1440, 900, "#cc3333") },
+    { unitId: "U1", device: "sp", local: await mk("sp_01.png", 375, 800, "#33cc33") }, // PCがあるので、使わない
+    { unitId: "U2", device: "sp", local: await mk("sp_02.png", 375, 1200, "#3333cc") }, // PCがない → SP
+    { unitId: "U3", device: "pc", local: await mk("pc_03.png", 1440, 3000, "#cccc33") }, // 縦に長い
+  ];
+  const analysis = { disId: "DIS-LP-0009", brand: "テスト", units: [{ id: "U1", roleType: "FV" }, { id: "U2", roleType: "共感" }, { id: "U3", roleType: "ベネフィット" }, { id: "U4", roleType: "CTA" }] };
+  const r = await buildUnitOverview(tmp, analysis, { id: "DIS-LP-0009", produced });
+  assert.equal(r.tiles, 3); // U4 は切り出しなし → 載せない
+  assert.equal(r.rel, `02_Notion_Images/DIS-LP-0009_${OVERVIEW_KEY}_notion.jpg`);
+  assert.equal(r.local, path.join(tmp, "files", "02_Notion_Images", `DIS-LP-0009_${OVERVIEW_KEY}_notion.jpg`));
+  const meta = await sharp(r.local).metadata();
+  assert.equal(meta.format, "jpeg");
+  assert.equal(meta.width, r.width);
+  assert.ok(r.bytes < 5 * 1024 * 1024, "Notionの上限（5MB）未満");
+  assert.ok(meta.height >= 340 * 3000 / 1440, "最も縦に長いSectionが、全体に入る");
+  assert.equal(await buildUnitOverview(tmp, analysis, { id: "DIS-LP-0009", produced: [] }), null);
+});

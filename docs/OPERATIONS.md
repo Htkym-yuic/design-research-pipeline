@@ -461,3 +461,10 @@ DIS_ENABLE_WRITES=true DRY_RUN=false npm run dis:supplement-crops -- --id DIS-LP
 - 追加先: `<案件のDropboxフォルダ>/01_Normal_Images/sections_by_unit/`（新規フォルダ。すでにある場合は、上書きせず中止）。既存のファイル・Notionは変更しない。
 - 追加が済むと、台帳の該当案件に `supplementCrops` が記録される（再実行はスキップ）。コミットとプッシュが必要。
 - 通常の登録（`publish`）は、登録済みの案件には使えない（保存先のフォルダがあると、上書きを避けて止まる）。
+
+### DIS: Notion本文の「Sectionごとの全体図」
+
+- `--stage crop` を実行すると、切り出し画像（`sections_by_unit/`）に加えて、ラベル（番号と種類）つきの全体図を1枚作る: `02_Notion_Images/<ID>_PC_units_notion.jpg`（例: `01 FV`、`02 共感`、`03 ベネフィット`）。
+- 各Unitは、PCの切り出しがあればPC、なければSP（ラベルに「（SP）」）。4列に積み、5MB未満のJPEGに収める。
+- 登録（`publish`）では、この全体図があれば、Notionの本文に載せる画像は、これ1枚だけ（Dropboxの `02_Notion_Images/` にも入る）。なければ（`roleType`・`regions` のない旧形式の案件）、従来の4枚（PC・SPのファーストビューとセクション一覧）。
+- 登録済みの案件のNotionページは、変更しない。

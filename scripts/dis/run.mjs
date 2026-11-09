@@ -249,9 +249,13 @@ async function runMedia(media) {
     else {
       const { cropSections, SECTION_DIR } = await import("./lib/crop.mjs");
       const res = await cropSections(it, a, { id: disId });
-      const files = (await readJson(`${it}/files.json`, [])).filter((f) => !f.rel.startsWith(`01_Normal_Images/${SECTION_DIR}/`));
-      await wj(`${it}/files.json`, [...files, ...res.produced.map(({ local, rel }) => ({ local, rel }))]);
-      r.stages.crop = `${res.produced.length}枚を切り出し（${SECTION_DIR}/）${res.warnings.length ? ` / WARNING: ${res.warnings.join("; ")}` : ""}`;
+      // Notion本文用の、Sectionごとの全体図（ラベルつき1枚）。切り出しが1枚もなければ作らない。
+      const { buildUnitOverview, OVERVIEW_KEY } = await import("./lib/overview.mjs");
+      const overview = await buildUnitOverview(it, a, { id: disId, produced: res.produced });
+      const overviewRel = `02_Notion_Images/${disId}_${OVERVIEW_KEY}_notion.jpg`;
+      const files = (await readJson(`${it}/files.json`, [])).filter((f) => !f.rel.startsWith(`01_Normal_Images/${SECTION_DIR}/`) && f.rel !== overviewRel);
+      await wj(`${it}/files.json`, [...files, ...res.produced.map(({ local, rel }) => ({ local, rel })), ...(overview ? [{ local: overview.local, rel: overview.rel }] : [])]);
+      r.stages.crop = `${res.produced.length}枚を切り出し（${SECTION_DIR}/）${overview ? ` / 全体図1枚（${overview.tiles}セクション・${Math.round(overview.bytes / 1024)}KB）` : ""}${res.warnings.length ? ` / WARNING: ${res.warnings.join("; ")}` : ""}`;
     }
   }
 
@@ -279,8 +283,10 @@ async function runMedia(media) {
     const brand = analysis.brand || sel.brand;
     const notionValues = { disId, brand, title: `${disId} ${brand}`, pageUrl: sel.pageUrl, detailUrl: sel.sourceDetailUrl, sourceName: sel.sourceName, sourceLine: `${sel.sourceName} ${sel.sourceDetailUrl}`, date: args.date, dropboxFolder: folder, summary: analysis.summary, imageUrl: sel.imageUrl, domain: host(sel.pageUrl), normalizedUrl: normalizeUrl(sel.pageUrl), key };
     const origin = captured.find((c) => /^01_Normal_Images\/banner\./.test(c.rel));
-    const order = ["PC_first_view", "PC_sections", "SP_first_view", "SP_sections"];
-    const caption = { PC_first_view: "PC ファーストビュー", PC_sections: "PC セクション一覧（番号は分割画像の順）", SP_first_view: "SP ファーストビュー", SP_sections: "SP セクション一覧（番号は分割画像の順）" };
+    // Sectionごとの全体図（--stage crop で作る）があれば、それ1枚だけを載せる。なければ（旧形式の案件）、従来の4枚。
+    const hasOverview = captured.some((x) => x.rel === `02_Notion_Images/${disId}_PC_units_notion.jpg`);
+    const order = hasOverview ? ["PC_units"] : ["PC_first_view", "PC_sections", "SP_first_view", "SP_sections"];
+    const caption = { PC_units: "セクション全体図（番号・種類は分析のUnit順。PC優先、なければSP）", PC_first_view: "PC ファーストビュー", PC_sections: "PC セクション一覧（番号は分割画像の順）", SP_first_view: "SP ファーストビュー", SP_sections: "SP セクション一覧（番号は分割画像の順）" };
     const bodyImages = media === "banner" ? [] : order.map((k) => ({ k, c: captured.find((x) => x.rel === `02_Notion_Images/${disId}_${k}_notion.jpg`) })).filter((x) => x.c).map(({ k, c }) => ({ path: c.local, caption: caption[k] }));
     const mime = { jpg: "image/jpeg", png: "image/png", webp: "image/webp", gif: "image/gif" };
     const attachFile = origin ? { path: origin.local, name: path.basename(origin.local), contentType: mime[origin.rel.split(".").pop()] || "application/octet-stream" } : null;
