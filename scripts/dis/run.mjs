@@ -31,6 +31,7 @@ const { values: args } = parseArgs({
     date: { type: "string", default: jstDate() },
     fixture: { type: "string" },
     url: { type: "string" },
+    "from-archive": { type: "boolean", default: false },
     out: { type: "string", default: `${REPO_ROOT}outputs/dis` },
     capture: { type: "boolean", default: false },
     apply: { type: "boolean", default: false },
@@ -45,6 +46,7 @@ const stages = args.stage === "all" ? DEFAULT_STAGES : args.stage.split(",");
 const medias = args.media.split(",").map((s) => s.trim()).filter(Boolean);
 for (const s of stages) if (!STAGES.includes(s)) throw new Error(`不明なstage: ${s}`);
 for (const m of medias) if (!MEDIA_KEYS.includes(m)) throw new Error(`不明なmedia: ${m}`);
+if (args["from-archive"] && !args.url) throw new Error("--from-archive は --url と一緒に指定します");
 if (args.url && medias.length !== 1) throw new Error("--url を使うときは --media を1つだけ指定してください（lp / banner / web）");
 
 const cfg = await loadConfig();
@@ -73,7 +75,14 @@ async function runMedia(media) {
       let candidates;
       const skippedSources = [];
       const sourceReports = [];
-      if (args.url) candidates = [await buildManualCandidate(args.url, media, undefined, cfg.sources)];
+      if (args.url) {
+        const mc = await buildManualCandidate(args.url, media, undefined, cfg.sources);
+        if (args["from-archive"]) {
+          if (mc.sourceKey !== "rdlp" || media === "banner") throw new Error("--from-archive は、LPアーカイブ（rdlp）の紹介ページのURLをLP/Webで指定したときだけ使えます");
+          mc.captureMode = "archive"; // 実ページではなく、アーカイブ掲載の全体画像で分析する
+        }
+        candidates = [mc];
+      }
       else if (fixture) candidates = fixture[media] || [];
       else {
         candidates = [];
@@ -170,9 +179,12 @@ async function runMedia(media) {
     else {
       await ensureDisId();
       const { captureFullPage, downloadBanner } = await import("./lib/capture.mjs");
-      const files = cfg.media[media].capture === "public-image" ? await downloadBanner(sel.imageUrl, `${d}/files`) : await captureFullPage(sel.pageUrl, `${d}/files`, { id: disId });
+      const { captureFromArchive } = await import("./lib/capture.mjs");
+      const files = cfg.media[media].capture === "public-image" ? await downloadBanner(sel.imageUrl, `${d}/files`)
+        : sel.captureMode === "archive" ? await captureFromArchive(sel.sourceDetailUrl, `${d}/files`, { id: disId })
+        : await captureFullPage(sel.pageUrl, `${d}/files`, { id: disId }).catch((e) => { throw new Error(sel.sourceKey === "rdlp" ? `${e.message}\n  ※実ページが開けない場合は、同じコマンドに --from-archive を付けると、アーカイブ掲載の画像で分析できます（作業フォルダを消してから）` : e.message); });
       await wj(`${d}/files.json`, files);
-      const ac = await checkAssetSet(`${d}/files`, { id: disId, media });
+      const ac = await checkAssetSet(`${d}/files`, { id: disId, media, archive: sel.captureMode === "archive" });
       r.stages.capture = `${files.length} files / 画像の揃い: ${ac.ok ? "OK" : "NG " + ac.errors.join("; ")}`;
       if (files.warnings?.length) { r.stages.capture += ` / WARNING: ${files.warnings.join("; ")}`; r.warnings = files.warnings; }
     }
@@ -183,7 +195,7 @@ async function runMedia(media) {
     const f = `${d}/analysis.json`;
     const parts = [];
     if (await readJson(f, null)) parts.push("analysis exists (not overwritten)");
-    else { await wj(f, emptyAnalysis({ media, disId, pageUrl: sel.pageUrl, brand: sel.brand })); parts.push("analysis created"); }
+    else { await wj(f, emptyAnalysis({ media, disId, pageUrl: sel.pageUrl, brand: sel.brand, captureSource: sel.captureMode === "archive" ? "アーカイブ掲載の全体画像（実ページは未確認）" : undefined })); parts.push("analysis created"); }
     const fa = `${d}/annotations.json`;
     if (await readJson(fa, null)) parts.push("annotations exists (not overwritten)");
     else { await wj(fa, emptyAnnotations({ disId })); parts.push("annotations created"); }
@@ -216,12 +228,12 @@ async function runMedia(media) {
   if (stages.includes("publish")) {
     if (!disId) { r.stages.publish = "blocked: IDが未採番です（--stage capture --capture を先に実行）"; return; }
     if (!sel.manual && !(sel.reviewTotal >= cfg.selection.passScore)) { r.stages.publish = `blocked: 選定基準${cfg.selection.passScore}/${cfg.selection.maxScore}点が未判定または未達（review→learning.json→rescore を実行）`; return; }
-    const ac = await checkAssetSet(`${d}/files`, { id: disId, media });
+    const ac = await checkAssetSet(`${d}/files`, { id: disId, media, archive: sel.captureMode === "archive" });
     if (!ac.ok && (await readJson(`${d}/files.json`, [])).length) { r.stages.publish = `blocked: 画像の揃いが不足（${ac.errors.join("; ")}）`; return; }
     const entry = findEntry(ledger, key);
     const folder = dropboxFolder(cfg, media, args.date, disId);
     const generated = [{ local: `${d}/analysis.json`, rel: "03_Analysis/analysis.json" }, { local: `${d}/analysis.md`, rel: "03_Analysis/analysis.md" }, { local: `${d}/annotations.json`, rel: "03_Analysis/annotations.json" }, { local: `${d}/text-index.json`, rel: "03_Analysis/text-index.json" }];
-    const meta = { disId, media, date: args.date, pageUrl: sel.pageUrl, sourceName: sel.sourceName, sourceDetailUrl: sel.sourceDetailUrl, brand: sel.brand, selectionReason: analysis.selectionReason, rights: analysis.rights, analysisVersion: analysis.analysisVersion, sourceAnalysisRef: analysis.sourceAnalysisRef, score: sel.score };
+    const meta = { disId, media, date: args.date, captureSource: sel.captureMode === "archive" ? "archive" : "live", pageUrl: sel.pageUrl, sourceName: sel.sourceName, sourceDetailUrl: sel.sourceDetailUrl, brand: sel.brand, selectionReason: analysis.selectionReason, rights: analysis.rights, analysisVersion: analysis.analysisVersion, sourceAnalysisRef: analysis.sourceAnalysisRef, score: sel.score };
     await wj(`${d}/metadata.json`, meta);
     generated.push({ local: `${d}/metadata.json`, rel: "metadata.json" });
     const captured = (await readJson(`${d}/files.json`, [])) ;

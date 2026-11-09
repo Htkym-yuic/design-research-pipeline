@@ -22,8 +22,9 @@ const IMPROVEMENT_FIELDS = [["issue", "課題"], ["evidence", "根拠"], ["chang
 
 const blankImprovement = () => ({ issue: "", evidence: "", change: "", expected: "", metric: "" });
 
-export function emptyAnalysis({ media, disId, pageUrl, brand }) {
+export function emptyAnalysis({ media, disId, pageUrl, brand, captureSource }) {
   return {
+    ...(captureSource ? { captureSource } : {}),
     schemaVersion: "dis-2.0",
     analysisVersion: "2.0",
     sourceAnalysisRef: "なし（新規調査）",
@@ -119,7 +120,7 @@ const imp = (it) => `課題: ${it.issue} ／ 根拠: ${it.evidence} ／ 変更: 
 export function analysisToMarkdown(a) {
   if (a.schemaVersion === "dis-1.0") return analysisToMarkdownV1(a);
   const L = [`# ${a.brand}（${a.disId}）`, "",
-    `- 媒体: ${a.media}`, `- ページ: ${a.pageUrl}`, `- 分析版: ${a.analysisVersion}（元分析参照: ${a.sourceAnalysisRef}）`, `- 生成日時: ${a.generatedAt}`, `- レビュー状態: ${a.reviewState}`,
+    `- 媒体: ${a.media}`, ...(a.captureSource ? [`- 画像の取得元: ${a.captureSource}`] : []), `- ページ: ${a.pageUrl}`, `- 分析版: ${a.analysisVersion}（元分析参照: ${a.sourceAnalysisRef}）`, `- 生成日時: ${a.generatedAt}`, `- レビュー状態: ${a.reviewState}`,
     `- 元画像参照: ${a.sourceImageRefs.join("、")}`, `- 外部同期: CBS=${a.externalSync.cbs} ／ Notion=${a.externalSync.notion} ／ Dropbox=${a.externalSync.dropbox}`, "",
     "## 概要", a.summary, "", "## 選定理由", a.selectionReason, "",
     "## 権利・未確認事項", ...a.rights.unverified.map((v) => `- 未確認: ${v}`), `- 転用しない: ${a.rights.noReuse.join("、")}`, "",

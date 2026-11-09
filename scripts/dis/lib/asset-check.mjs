@@ -15,7 +15,7 @@ async function inspect(file) {
   try { return { ...(await sharp(file, { limitInputPixels: false }).metadata()), bytes: (await fs.stat(file)).size }; } catch { return null; }
 }
 
-export async function checkAssetSet(dir, { id, media }) {
+export async function checkAssetSet(dir, { id, media, archive = false }) {
   const errors = [];
   const warnings = [];
   const normal = path.join(dir, "01_Normal_Images");
@@ -23,8 +23,10 @@ export async function checkAssetSet(dir, { id, media }) {
   const need = async (file, label, rule = {}) => {
     const m = await inspect(file);
     if (!m) { errors.push(`${label} がない、または画像として読めない（${path.relative(dir, file)}）`); return null; }
-    if (rule.minWidth && m.width < rule.minWidth) errors.push(`${label} の幅が${m.width}px（${rule.minWidth}px以上が必要）`);
-    if (rule.maxWidth && m.width > rule.maxWidth) errors.push(`${label} の幅が${m.width}px（${rule.maxWidth}px以下が必要）`);
+    // アーカイブ画像で作った場合、元画像の幅は選べないため、幅の基準は警告にとどめる（画像の有無・読めること・容量は従来どおり必須）
+    const widthIssue = archive ? (msg) => warnings.push(`${msg}（アーカイブ画像のため警告）`) : (msg) => errors.push(msg);
+    if (rule.minWidth && m.width < rule.minWidth) widthIssue(`${label} の幅が${m.width}px（${rule.minWidth}px以上が必要）`);
+    if (rule.maxWidth && m.width > rule.maxWidth) widthIssue(`${label} の幅が${m.width}px（${rule.maxWidth}px以下が必要）`);
     if (rule.maxBytes && m.bytes >= rule.maxBytes) errors.push(`${label} が${(m.bytes / 1048576).toFixed(1)}MB（5MB未満が必要）`);
     return m;
   };

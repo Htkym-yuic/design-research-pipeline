@@ -838,3 +838,28 @@ test("manual: まとめサイト（rdlp）の紹介ページが渡されたら�
   const direct = await buildManualCandidate("https://real.example/lp/", "lp", { robots: async () => true, get: async () => ({ ok: true, status: 200, text: "<title>X</title>" }) }, sources);
   assert.equal(direct.pageUrl, "https://real.example/lp/");
 });
+
+test("archive: 紹介ページの全体画像(full_N)だけを取り出し、PC/SPの一式を作る（関連作品のサムネイルは対象外・回避しない）", async () => {
+  const { parseArchiveFullImages, captureFromArchive } = await import("./lib/capture.mjs");
+  const sharp = (await import("sharp")).default;
+  const html = '<img src="/image/lp-archive/104201/full_1.jpg.webp"><img src="/image/lp-archive/104201/full_2.jpg.webp"><img src="https://rdlp.jp/image/lp-archive/104167/200x400.jpg.webp"><img src="/image/lp-archive/104167/full_1.jpg.webp">';
+  const imgs = parseArchiveFullImages(html, "https://rdlp.jp/archives/otherdesign/lp/229605");
+  assert.deepEqual(imgs.map((i) => i.url), ["https://rdlp.jp/image/lp-archive/104201/full_1.jpg.webp", "https://rdlp.jp/image/lp-archive/104201/full_2.jpg.webp"]);
+  assert.deepEqual(parseArchiveFullImages("<p>x</p>", "https://rdlp.jp/a/"), []);
+  const mk = async (w, h) => sharp({ create: { width: w, height: h, channels: 3, background: "#c33" } }).png().toBuffer();
+  const pc = await mk(1200, 4000), sp = await mk(750, 6000);
+  const fetchImpl = async (u) => {
+    if (u.endsWith("/229605")) return { ok: true, status: 200, text: async () => html };
+    const b = u.includes("full_1") ? pc : sp;
+    return { ok: true, status: 200, arrayBuffer: async () => b.buffer.slice(b.byteOffset, b.byteOffset + b.byteLength) };
+  };
+  const out = await fs.mkdtemp(path.join(os.tmpdir(), "dis-arch-"));
+  const files = await captureFromArchive("https://rdlp.jp/archives/otherdesign/lp/229605", out, { id: "DIS-LP-0001", fetchImpl });
+  assert.ok(files.some((f) => f.rel === "01_Normal_Images/DIS-LP-0001_PC_full.png") && files.some((f) => f.rel === "01_Normal_Images/DIS-LP-0001_SP_full.png"));
+  assert.ok(files.warnings.some((w) => /アーカイブ掲載の画像/.test(w)));
+  const { checkAssetSet } = await import("./lib/asset-check.mjs");
+  assert.equal((await checkAssetSet(out, { id: "DIS-LP-0001", media: "lp", archive: true })).ok, true);
+  assert.equal((await checkAssetSet(out, { id: "DIS-LP-0001", media: "lp" })).ok, false); // SPが750pxのため、通常の基準では不足（アーカイブ時のみ警告扱い）
+  const denied = async () => ({ ok: false, status: 403, text: async () => "" });
+  await assert.rejects(captureFromArchive("https://rdlp.jp/a/", out, { id: "X", fetchImpl: denied }), /回避しない/);
+});

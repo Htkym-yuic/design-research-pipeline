@@ -97,24 +97,86 @@ export async function captureFullPage(url, outDir, { id = "item" } = {}) {
         await ctx.close();
       }
       add(full, `01_Normal_Images/${id}_${NAME}_full.png`);
-      const meta = await sharp(full, { limitInputPixels: false }).metadata();
-      const fv = path.join(normal, `${id}_${NAME}_first_view.png`);
-      await sharp(full, { limitInputPixels: false }).extract({ left: 0, top: 0, width: meta.width, height: Math.min(viewport.height, meta.height) }).png().toFile(fv);
-      add(fv, `01_Normal_Images/${id}_${NAME}_first_view.png`);
-      const sl = await sliceTall(full, secDir, name);
-      for (const f of sl.files) add(path.join(secDir, f), `01_Normal_Images/sections/${f}`);
-      if (sl.total > sl.files.length) warnings.push(`${name}: ${sl.total}枚中${sl.files.length}枚のみ切り出し（上限で切り捨て）`);
-      const map = path.join(normal, `${id}_${NAME}_sections.png`);
-      await buildSectionsMap(sl.files.map((f) => path.join(secDir, f)), map, { cols: mapCols, cellW });
-      add(map, `01_Normal_Images/${id}_${NAME}_sections.png`);
-      for (const kind of ["first_view", "sections"]) {
-        const dest = path.join(notion, `${id}_${NAME}_${kind}_notion.jpg`);
-        await toNotionJpeg(path.join(normal, `${id}_${NAME}_${kind}.png`), dest);
-        add(dest, `02_Notion_Images/${id}_${NAME}_${kind}_notion.jpg`);
-      }
+      await deriveSet(full, { id, NAME, name, viewportH: viewport.height, normal, notion, secDir, mapCols, cellW, add, warnings });
       await ctx.close();
     }
   } finally { await browser.close(); }
+  return files;
+}
+
+
+/** 全体画像（{id}_{PC|SP}_full.png）から、first_view・分割画像・Section一覧・Notion用JPEGを作る（撮影とアーカイブ画像で共通）。 */
+async function deriveSet(full, { id, NAME, name, viewportH, normal, notion, secDir, mapCols, cellW, add, warnings }) {
+  const { default: sharp } = await import("sharp");
+  const meta = await sharp(full, { limitInputPixels: false }).metadata();
+  const fv = path.join(normal, `${id}_${NAME}_first_view.png`);
+  await sharp(full, { limitInputPixels: false }).extract({ left: 0, top: 0, width: meta.width, height: Math.min(viewportH, meta.height) }).png().toFile(fv);
+  add(fv, `01_Normal_Images/${id}_${NAME}_first_view.png`);
+  const sl = await sliceTall(full, secDir, name);
+  for (const f of sl.files) add(path.join(secDir, f), `01_Normal_Images/sections/${f}`);
+  if (sl.total > sl.files.length) warnings.push(`${name}: ${sl.total}枚中${sl.files.length}枚のみ切り出し（上限で切り捨て）`);
+  const map = path.join(normal, `${id}_${NAME}_sections.png`);
+  await buildSectionsMap(sl.files.map((f) => path.join(secDir, f)), map, { cols: mapCols, cellW });
+  add(map, `01_Normal_Images/${id}_${NAME}_sections.png`);
+  for (const kind of ["first_view", "sections"]) {
+    const dest = path.join(notion, `${id}_${NAME}_${kind}_notion.jpg`);
+    await toNotionJpeg(path.join(normal, `${id}_${NAME}_${kind}.png`), dest);
+    add(dest, `02_Notion_Images/${id}_${NAME}_${kind}_notion.jpg`);
+  }
+}
+
+/** アーカイブの紹介ページが載せている「自分の全体画像」（full_N）のURLを取り出す。関連作品のサムネイル等は対象外。 */
+export function parseArchiveFullImages(html, pageUrl) {
+  const re = /(?:src|data-src)=["']([^"']*\/image\/lp-archive\/(\d+)\/full_(\d+)\.[a-z0-9.]+)["']/gi;
+  const found = [];
+  for (const m of html.matchAll(re)) { try { found.push({ url: new URL(m[1], pageUrl).href, postId: m[2], n: Number(m[3]) }); } catch { /* 無視 */ } }
+  if (!found.length) return [];
+  const own = found[0].postId; // 先頭の full_ が、この紹介ページ自身の画像
+  return [...new Map(found.filter((f) => f.postId === own).sort((a, b) => a.n - b.n).map((f) => [f.url, f])).values()];
+}
+
+/**
+ * 実ページが開けない（公開終了・移転など）場合に、アーカイブが保存している全体画像で、撮影と同じファイル一式を作る。
+ * 1案件の画像だけを取得する（一括ダウンロードなし）。取得できない・画像として読めない場合は、回避せず理由つきで止まる。
+ * 幅の広い画像をPC、狭い画像をSPとして扱う。画像が1枚だけなら、PCのみ（SPは欠けるため、画像の揃いはNGになる）。
+ */
+export async function captureFromArchive(detailUrl, outDir, { id = "item", fetchImpl = fetch } = {}) {
+  const { default: sharp } = await import("sharp");
+  const UA = { "User-Agent": "design-research-pipeline-dis/1.0 (public-pages-only)" };
+  const page = await fetchImpl(detailUrl, { headers: UA });
+  if (!page.ok) throw new Error(`アーカイブの紹介ページを取得できません HTTP ${page.status}（回避しない）`);
+  const imgs = parseArchiveFullImages(await page.text(), detailUrl).slice(0, 2);
+  if (!imgs.length) throw new Error("アーカイブの紹介ページに、全体画像（full_N）が見つかりません");
+  const normal = path.join(outDir, "01_Normal_Images");
+  const notion = path.join(outDir, "02_Notion_Images");
+  const secDir = path.join(normal, "sections");
+  await fs.mkdir(secDir, { recursive: true });
+  await fs.mkdir(notion, { recursive: true });
+  const decoded = [];
+  for (const im of imgs) {
+    const r = await fetchImpl(im.url, { headers: { ...UA, Referer: detailUrl } });
+    if (!r.ok) throw new Error(`画像取得失敗 HTTP ${r.status}（回避しない）: ${im.url}`);
+    const buf = Buffer.from(await r.arrayBuffer());
+    if (buf.length > MAX_IMAGE_BYTES) throw new Error("画像サイズ上限超過");
+    let meta;
+    try { meta = await sharp(buf, { limitInputPixels: false }).metadata(); } catch { throw new Error(`画像として読めません: ${im.url}`); }
+    decoded.push({ buf, width: meta.width, url: im.url });
+  }
+  decoded.sort((a, b) => b.width - a.width);
+  const files = [];
+  const warnings = ["実ページではなく、アーカイブ掲載の画像から作成（実ページの動き・文言・最新状態は未確認）"];
+  files.warnings = warnings;
+  const add = (local, rel) => files.push({ local, rel });
+  const plan = [["pc", decoded[0], 4, 300], ...(decoded[1] ? [["sp", decoded[1], 6, 150]] : [])];
+  if (!decoded[1]) warnings.push("全体画像が1枚だけのため、SPの画像がありません");
+  for (const [name, d, mapCols, cellW] of plan) {
+    const NAME = name.toUpperCase();
+    const full = path.join(normal, `${id}_${NAME}_full.png`);
+    await sharp(d.buf, { limitInputPixels: false }).png().toFile(full);
+    add(full, `01_Normal_Images/${id}_${NAME}_full.png`);
+    warnings.push(`${NAME}: アーカイブ画像の幅は${d.width}px（${d.url}）`);
+    await deriveSet(full, { id, NAME, name, viewportH: name === "pc" ? 900 : 812, normal, notion, secDir, mapCols, cellW, add, warnings });
+  }
   return files;
 }
 

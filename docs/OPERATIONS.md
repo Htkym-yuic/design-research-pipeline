@@ -397,3 +397,17 @@ DRY_RUN=true npm run dis:run -- --media lp --url https://example.com/ --date 202
 - 番号 = 台帳の最大値 ＋ 作業中の予約（各日の selection.json の採番済みID）の最大値 ＋ 1。取りやめた分は欠番のままで、再利用しない。
 - 日付は、Dropboxの日付フォルダ・Notion・台帳で管理する。
 - 手動指定（`--url`）は、URLごとに作業フォルダ（`<media>-url-<8桁>`）が分かれる。撮影・分析・検証・登録の各コマンドにも、同じ `--url` を付けて実行する。
+
+### DIS: 実ページが開けない場合（アーカイブ掲載の画像で分析）
+
+LPアーカイブ（rdlp）の紹介ページのURLを `--url` に渡し、実ページが公開終了・移転などで撮影できない場合は `--from-archive` を付ける。
+
+```bash
+DRY_RUN=true npm run dis:run -- --media lp --url <rdlpの紹介ページURL> --from-archive --stage collect,select,capture,template --capture
+```
+
+- 紹介ページが載せている、その案件自身の全体画像（`full_N`。最大2枚）だけを取得する。関連作品のサムネイルは使わない。一括ダウンロードはしない。
+- 幅の広い画像をPC、狭い画像をSPとして扱い、通常の撮影と同じファイル一式（first_view・分割・Section一覧・Notion用JPEG）を作る。
+- 元画像の幅は選べないため、幅の基準は警告にとどめる。画像の有無・読めること・容量は必須。
+- 分析テンプレートには `captureSource`（アーカイブ掲載の画像・実ページは未確認）が入る。動き・実際の文言・最新状態は未確認として扱い、確信度を下げて記録する。
+- 取得できない（403等）場合は回避せず止まる。すでに通常撮影した作業フォルダは、消してからやり直す。
