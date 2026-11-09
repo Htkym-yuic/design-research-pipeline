@@ -307,6 +307,49 @@
         ],
         "at": "2026-11-07T22:28:36.650Z"
       }
+    },
+    {
+      "key": "lp:orangina.jp/product",
+      "disId": "DIS-LP-0001",
+      "media": "lp",
+      "pageUrl": "http://orangina.jp/product/",
+      "brand": "オランジーナのLPデザイン",
+      "date": "2026-11-10",
+      "dropbox": {
+        "status": "created",
+        "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0001",
+        "uploaded": [
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0001/01_Normal_Images/DIS-LP-0001_PC_full.png",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0001/01_Normal_Images/DIS-LP-0001_PC_first_view.png",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0001/01_Normal_Images/sections/pc_01.jpg",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0001/01_Normal_Images/sections/pc_02.jpg",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0001/01_Normal_Images/DIS-LP-0001_PC_sections.png",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0001/02_Notion_Images/DIS-LP-0001_PC_first_view_notion.jpg",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0001/02_Notion_Images/DIS-LP-0001_PC_sections_notion.jpg",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0001/03_Analysis/analysis.json",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0001/03_Analysis/analysis.md",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0001/03_Analysis/annotations.json",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0001/03_Analysis/text-index.json",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0001/metadata.json"
+        ]
+      },
+      "notion": {
+        "status": "created",
+        "pageId": "41324d4f-a671-812f-91ef-f92ae5cad34e",
+        "url": "https://app.notion.com/p/DIS-LP-0001-LP-41324d4fa671812f91eff92ae5cad34e",
+        "blocks": 139,
+        "skippedProps": [
+          {
+            "col": "業種タグ",
+            "reason": "選択肢にない値: 飲料"
+          }
+        ],
+        "attachment": null,
+        "bodyImages": [
+          "attached",
+          "attached"
+        ]
+      }
     }
   ]
 }
