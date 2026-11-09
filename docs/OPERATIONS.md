@@ -411,3 +411,16 @@ DRY_RUN=true npm run dis:run -- --media lp --url <rdlpの紹介ページURL> --f
 - 元画像の幅は選べないため、幅の基準は警告にとどめる。画像の有無・読めること・容量は必須。
 - 分析テンプレートには `captureSource`（アーカイブ掲載の画像・実ページは未確認）が入る。動き・実際の文言・最新状態は未確認として扱い、確信度を下げて記録する。
 - 取得できない（403等）場合は回避せず止まる。すでに通常撮影した作業フォルダは、消してからやり直す。
+
+### DIS: ターミナルに打たずにURLから撮影する（ダイアログ版）
+
+```bash
+cd ~/design-research-pipeline-auto && git pull origin claude/stoic-davinci-b2ek8x
+bash scripts/dis/install-url-app.sh     # デスクトップに「DIS URL撮影.app」を作る（削除は --remove）
+```
+
+- アプリをダブルクリック → 種類（LP / Webサイト / バナー）を選ぶ → URLを貼る → 撮影・テンプレート作成まで自動実行 → 完了したら画像のフォルダがFinderで開く。
+- LPアーカイブ（rdlp）の紹介ページURLのときだけ「実ページを撮影／アーカイブの画像を使う」を聞く。
+- 書込み（Dropbox・Notion）は一切しない（DRY_RUN固定）。ログは `outputs/dis/logs/url-<日時>.log`。
+- 画像をチャットに添付すると、分析以降をチャットで進める。
+- アプリを使わず、`bash scripts/dis/url-capture.sh` でも同じダイアログが出る。

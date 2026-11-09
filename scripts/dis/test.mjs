@@ -863,3 +863,20 @@ test("archive: 紹介ページの全体画像(full_N)だけを取り出し、PC/
   const denied = async () => ({ ok: false, status: 403, text: async () => "" });
   await assert.rejects(captureFromArchive("https://rdlp.jp/a/", out, { id: "X", fetchImpl: denied }), /回避しない/);
 });
+
+test("url-capture.sh: 書込みを無効に固定し、媒体・URL・アーカイブ指定からコマンドを組み立てる。不正な入力は実行しない", async () => {
+  const sh = path.join(here, "url-capture.sh");
+  const base = { ...process.env, DIS_NOTIFY: "0", DIS_NO_GUI: "1", DIS_NO_OPEN: "1", DIS_ENABLE_WRITES: "true", DRY_RUN: "false" };
+  const run = (env) => spawnSync("bash", [sh], { env: { ...base, ...env }, encoding: "utf8", input: "" });
+  const ok = run({ DIS_PRINT_ONLY: "1", DIS_MEDIA: "lp", DIS_URL: " https://rdlp.jp/archives/otherdesign/lp/229605 ", DIS_FROM_ARCHIVE: "1" });
+  assert.equal(ok.status, 0, ok.stderr + ok.stdout);
+  assert.match(ok.stdout, /--media lp --url "https:\/\/rdlp\.jp\/archives\/otherdesign\/lp\/229605" --from-archive --stage collect,select,capture,template --capture/);
+  const guard = run({ DIS_MEDIA: "web", DIS_URL: "https://ex.test/", DIS_RUN_CMD: 'echo "W=${DIS_ENABLE_WRITES:-unset} D=$DRY_RUN"' });
+  assert.match(guard.stdout, /W=unset D=true/);
+  assert.notEqual(run({ DIS_MEDIA: "lp", DIS_URL: "javascript:alert(1)" }).status, 0);
+  assert.notEqual(run({ DIS_MEDIA: "movie", DIS_URL: "https://ex.test/" }).status, 0);
+  const fail = run({ DIS_MEDIA: "lp", DIS_URL: "https://ex.test/", DIS_RUN_CMD: "exit 7" });
+  assert.equal(fail.status, 7);
+  const src = await fs.readFile(sh, "utf8");
+  assert.ok(!/\$[A-Za-z_]+[^\x00-\x7F]/.test(src.replace(/\$\{[^}]*\}/g, "")), "bash 3.2: $VAR の直後に日本語を置かない（${VAR}を使う）");
+});
