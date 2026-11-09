@@ -961,7 +961,7 @@ test("import-analysis: 案件フォルダへ分析と注釈を取り込む。分
 test("選定理由: 手動は「ユーザーが選定」、自動は候補レビューの良い点＋6項目の点数が自動で入る。空のまま検証しても補われる", async () => {
   const { defaultSelectionReason } = await import("./lib/review.mjs");
   assert.equal(defaultSelectionReason({ manual: true }), "ユーザーが選定した。良い点: （分析時に記入）");
-  assert.match(defaultSelectionReason({ manual: true, captureMode: "archive" }), /アーカイブ掲載の画像のみを根拠とする。良い点: （分析時に記入）/);
+  assert.match(defaultSelectionReason({ manual: true, captureMode: "archive" }), /^ユーザーが選定した。良い点: （分析時に記入）（注記: 実ページは取得できなかったため、LPアーカイブ掲載の画像のみを根拠とする）$/); // 注記は最後
   // 「良い点」が未記入のままでは、検証が通らない
   const base = completeAnalysis(); base.selectionReason = defaultSelectionReason({ manual: true });
   assert.ok(validateAnalysis(base).errors.some((e) => /良い点/.test(e)));
