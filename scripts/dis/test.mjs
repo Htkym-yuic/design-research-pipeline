@@ -824,3 +824,17 @@ test("連番ID: 同じ日に手動指定（--url）を2件採番しても衝突�
   assert.equal(again.status, 0, again.stderr);
   assert.equal(JSON.parse(again.stdout).media.banner.stages.disId, undefined);
 });
+
+test("manual: まとめサイト（rdlp）の紹介ページが渡されたら実LPのURLを対象にする。他のまとめサイトは実URLを求める", async () => {
+  const { buildManualCandidate } = await import("./lib/manual.mjs");
+  const sources = [{ key: "rdlp", name: "LPアーカイブ", listUrl: "https://rdlp.jp/lp-archive/", parser: "rdlp" }, { key: "wdc-lp", name: "WDC", listUrl: "https://lp.webdesignclip.com/" }];
+  const html = '<meta property="og:title" content="KAKEDASHIのLPデザイン"><a class="url_check" href="https://real.example/lp/"><img src="/t.jpg"></a>';
+  const getter = { robots: async () => true, get: async () => ({ ok: true, status: 200, text: html }) };
+  const c = await buildManualCandidate("https://rdlp.jp/archives/otherdesign/lp/229605", "lp", getter, sources);
+  assert.equal(c.pageUrl, "https://real.example/lp/"); assert.equal(c.sourceDetailUrl, "https://rdlp.jp/archives/otherdesign/lp/229605"); assert.equal(c.sourceKey, "rdlp");
+  await assert.rejects(buildManualCandidate("https://lp.webdesignclip.com/x/", "lp", getter, sources), /実際/);
+  const none = { robots: async () => true, get: async () => ({ ok: true, status: 200, text: "<p>x</p>" }) };
+  await assert.rejects(buildManualCandidate("https://rdlp.jp/archives/a/1", "lp", none, sources), /取り出せません/);
+  const direct = await buildManualCandidate("https://real.example/lp/", "lp", { robots: async () => true, get: async () => ({ ok: true, status: 200, text: "<title>X</title>" }) }, sources);
+  assert.equal(direct.pageUrl, "https://real.example/lp/");
+});

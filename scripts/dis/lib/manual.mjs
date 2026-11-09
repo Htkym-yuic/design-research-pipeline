@@ -1,9 +1,9 @@
-import { fetchGetter, parseDetail, cleanTitle } from "./collect.mjs";
+import { fetchGetter, parseDetail, parseRdlpDetail, cleanTitle } from "./collect.mjs";
 
 const IMAGE_EXT = /\.(png|jpe?g|webp|gif)(\?.*)?$/i;
 
 /** ユーザーがURLを指定した案件を、候補1件にする（公開ページのみ。robots.txt・403等は回避せず、理由を返して止める）。 */
-export async function buildManualCandidate(url, media, getter = fetchGetter()) {
+export async function buildManualCandidate(url, media, getter = fetchGetter(), sources = []) {
   let u;
   try { u = new URL(url); } catch { throw new Error(`URLとして読めません: ${url}`); }
   if (!/^https?:$/.test(u.protocol)) throw new Error("http(s)のURLのみ指定できます");
@@ -12,6 +12,17 @@ export async function buildManualCandidate(url, media, getter = fetchGetter()) {
     return { ...base, brand: decodeURIComponent(u.pathname.split("/").pop()), title: u.pathname.split("/").pop(), imageUrl: u.href, originUnresolved: true, signals: { learningValue: 0.5 } };
   }
   if (!(await getter.robots(u.href))) throw new Error("robots.txtで禁止されているため取得しません");
+  // 参照元（まとめサイト）の紹介ページが渡された場合は、そこから実ページのURLを取り出して、実ページを対象にする。
+  const agg = sources.find((x) => { try { return new URL(x.listUrl).hostname === u.hostname; } catch { return false; } });
+  if (agg && media !== "banner") {
+    if (agg.parser !== "rdlp") throw new Error(`${agg.name} の紹介ページが指定されました。実際の${media === "lp" ? "LP" : "サイト"}のURLを指定してください（紹介ページを撮影すると別物になるため）`);
+    const r = await getter.get(u.href);
+    if (!r.ok) throw new Error(`HTTP ${r.status}（回避しません）`);
+    const d = parseRdlpDetail(r.text, u.href);
+    if (!d.pageUrl) throw new Error("紹介ページから実際のLPのURLを取り出せませんでした。実際のLPのURLを指定してください");
+    const t = cleanTitle(d.title || "");
+    return { ...base, sourceKey: agg.key, sourceName: agg.name, sourceDetailUrl: u.href, pageUrl: d.pageUrl, brand: t || new URL(d.pageUrl).hostname, title: t, imageUrl: d.image || null, signals: { learningValue: 0.5 } };
+  }
   const res = await getter.get(u.href);
   if (!res.ok) throw new Error(`HTTP ${res.status}（回避しません。ブラウザで開ける場合は、画像・資料を別途ご用意ください）`);
   const d = parseDetail(res.text, u.href);

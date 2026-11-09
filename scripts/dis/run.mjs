@@ -73,7 +73,7 @@ async function runMedia(media) {
       let candidates;
       const skippedSources = [];
       const sourceReports = [];
-      if (args.url) candidates = [await buildManualCandidate(args.url, media)];
+      if (args.url) candidates = [await buildManualCandidate(args.url, media, undefined, cfg.sources)];
       else if (fixture) candidates = fixture[media] || [];
       else {
         candidates = [];
