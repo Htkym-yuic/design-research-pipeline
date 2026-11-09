@@ -1113,3 +1113,33 @@ test("overview: Sectionごとの切り出しを、ラベルつき1枚の全体�
   assert.ok(meta.height >= 340 * 3000 / 1440, "最も縦に長いSectionが、全体に入る");
   assert.equal(await buildUnitOverview(tmp, analysis, { id: "DIS-LP-0009", produced: [] }), null);
 });
+
+test("writeDropbox: 既存フォルダは中止／--resume のときだけ、すでにあるファイルをスキップして足りない分を追加（上書きしない）", async () => {
+  const { writeDropbox } = await import("./lib/adapters.mjs");
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-resume-"));
+  const f = async (n, t) => { const p = path.join(tmp, n); await fs.writeFile(p, t); return p; };
+  const plan = [{ local: await f("a.txt", "a"), remote: "/d/DIS/a.txt" }, { local: await f("b.txt", "b"), remote: "/d/DIS/sub/b.txt" }, { local: await f("c.txt", "c"), remote: "/d/DIS/sub/c.txt" }];
+  const mkDeps = (existing) => { const calls = { up: [], ens: [] }; return { calls, deps: { pathExists: async (p) => existing.has(p), ensureFolder: async (p) => { calls.ens.push(p); return true; }, uploadFileNoOverwrite: async (p) => { calls.up.push(p); return {}; } } }; };
+  const opts = { apply: true };
+  const env0 = { DIS_ENABLE_WRITES: process.env.DIS_ENABLE_WRITES, DRY_RUN: process.env.DRY_RUN };
+  process.env.DIS_ENABLE_WRITES = "true"; process.env.DRY_RUN = "false";
+  try {
+    const existing = new Set(["/d/DIS", "/d/DIS/a.txt"]);
+    // 既定: フォルダがあれば中止（何も書かない）
+    let m = mkDeps(existing);
+    assert.equal((await writeDropbox({ folder: "/d/DIS", plan, opts, deps: m.deps })).status, "aborted_folder_exists");
+    assert.deepEqual(m.calls.up, []);
+    // 再開: a.txt はスキップし、b・c だけ追加
+    m = mkDeps(existing);
+    const r = await writeDropbox({ folder: "/d/DIS", plan, opts, resume: true, deps: m.deps });
+    assert.equal(r.status, "created"); assert.equal(r.resumed, true);
+    assert.deepEqual(m.calls.up, ["/d/DIS/sub/b.txt", "/d/DIS/sub/c.txt"]);
+    assert.deepEqual(r.skippedExisting, ["/d/DIS/a.txt"]);
+    // 台帳で完了済みなら、何もしない
+    m = mkDeps(existing);
+    assert.equal((await writeDropbox({ folder: "/d/DIS", plan, opts, ledgerDone: true, resume: true, deps: m.deps })).status, "skipped_already_done");
+    assert.deepEqual(m.calls.up, []);
+  } finally {
+    for (const [k, v] of Object.entries(env0)) { if (v === undefined) delete process.env[k]; else process.env[k] = v; }
+  }
+});

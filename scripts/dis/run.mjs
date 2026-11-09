@@ -36,6 +36,7 @@ const { values: args } = parseArgs({
     out: { type: "string", default: `${REPO_ROOT}outputs/dis` },
     capture: { type: "boolean", default: false },
     apply: { type: "boolean", default: false },
+    resume: { type: "boolean", default: false }, // 途中で止まった登録の再開（Dropboxにすでにあるファイルはスキップし、足りない分だけ追加）
     ledger: { type: "string" },
     snapshot: { type: "string" },
   },
@@ -296,7 +297,7 @@ async function runMedia(media) {
       if (captured.length === 0) throw new Error("正本画像がありません（capture未実施）");
       const base = { key, disId, media, pageUrl: sel.pageUrl, brand: sel.brand, date: args.date };
       if (entry?.dropbox?.status !== "created") {
-        result.dropbox = await writeDropbox({ folder, plan, opts: { apply: args.apply }, ledgerDone: entry?.dropbox?.status === "created" });
+        result.dropbox = await writeDropbox({ folder, plan, opts: { apply: args.apply }, ledgerDone: entry?.dropbox?.status === "created", resume: args.resume });
         upsertEntry(ledger, { ...base, dropbox: result.dropbox }); await saveLedger(ledger, ledgerFile);
         if (result.dropbox.status !== "created") throw new Error(`Dropbox: ${result.dropbox.status}`);
       } else result.dropbox = { status: "skipped_already_done" };

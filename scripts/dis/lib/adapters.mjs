@@ -19,19 +19,24 @@ export function planDropboxFiles(files, folder) {
 /**
  * Dropbox作成専用アダプター。上書き・移動・削除は一切しない。
  * 既存フォルダーがあれば（自分の台帳完了分を除き）中止する。
+ * resume: true のときだけ、既存フォルダーでも続行する。すでにあるファイルはスキップし、足りないファイルだけを追加する
+ * （途中で止まった登録の再開用。上書きはしない）。
+ * deps: テスト用に、Dropboxのクライアント関数を差し替えられる。
  */
-export async function writeDropbox({ folder, plan, opts, ledgerDone = false }) {
+export async function writeDropbox({ folder, plan, opts, ledgerDone = false, resume = false, deps = {} }) {
   assertWritesAllowed(opts);
+  const { pathExists: exists = pathExists, ensureFolder: ensure = ensureFolder, uploadFileNoOverwrite: upload = uploadFileNoOverwrite } = deps;
   if (ledgerDone) return { status: "skipped_already_done", folder };
-  if (await pathExists(folder)) return { status: "aborted_folder_exists", folder };
-  await ensureFolder(folder);
-  const uploaded = [];
+  if (!resume && (await exists(folder))) return { status: "aborted_folder_exists", folder };
+  await ensure(folder);
+  const uploaded = [], skippedExisting = [];
   for (const p of plan) {
-    await ensureFolder(path.posix.dirname(p.remote));
-    await uploadFileNoOverwrite(p.remote, await fs.readFile(p.local));
+    if (resume && (await exists(p.remote))) { skippedExisting.push(p.remote); continue; } // すでにあるファイルは、上書きしない
+    await ensure(path.posix.dirname(p.remote));
+    await upload(p.remote, await fs.readFile(p.local));
     uploaded.push(p.remote);
   }
-  return { status: "created", folder, uploaded };
+  return { status: "created", folder, uploaded, ...(resume ? { resumed: true, skippedExisting } : {}) };
 }
 
 /** 既定の対応表（LPライブラリー向け）。他の媒体は config.media.<m>.notion.propertyMap で上書きする。値の指定: 値のキー名 / "=リテラル" / 配列（リテラル）。 */
