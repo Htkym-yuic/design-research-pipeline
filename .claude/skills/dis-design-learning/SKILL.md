@@ -48,7 +48,27 @@ DISは、既存のLP・バナー・Canva等の分析を消さずに、根拠付�
 
 詳細な必須フィールドと完了チェックは [analysis-pack reference](references/analysis-pack.md) を読む。
 
-## URLを指定された場合の対話フロー（Macで動かすClaude Code）
+## 入口: 「DISを進めたい」と言われたら、最初に聞く（Macで動かすClaude Code）
+
+最初に、次の2つを聞く（AskUserQuestion）。
+1. 進め方: **自動の候補から選ぶ**／**手動（URLを指定する）**
+2. 種類: LP／Web／バナー
+
+- 自動の候補から選ぶ → 下の「自動の候補から進める流れ」。
+- 手動（URL指定） → その後の「URLを指定された場合の対話フロー」。URL（LPアーカイブの紹介ページでもよい）も聞く。
+- 1案件につき1会話が目安（画像が重く、容量を使うため）。
+
+どちらの流れも、**最後の登録（Dropbox・Notionへの書込み）の直前に、必ずユーザーに確認する**（登録計画を見せ、「登録する／見送る」を聞く）。「はい」の返事があったときだけ、`--apply` ＋ `DIS_ENABLE_WRITES=true` ＋ `DRY_RUN=false` で実行する。確認なしの自動登録はしない。登録後は、台帳（`data/dis-ledger.json`）のコミットとプッシュを案内し、DropboxとNotionを読み取りで確認する。
+
+## 自動の候補から進める流れ
+
+1. 準備の確認: `outputs/dis/<日付>/<lp|banner|web>/review/contact_sheet.jpg` と `review.json` があるか。なければ `bash scripts/dis/daily-prep.sh`（書込みなし）を実行する。
+2. コンタクトシートを読む: 各候補を、`learning-value-rubric.md` の6項目（0〜3点）で採点し、**どこが良いか**を具体的に書いた `reason` を付ける。サムネイルだけで判断できない点は、控えめに採点し、撮影後に見直す。
+3. `outputs/dis/<日付>/<媒体>/learning.json` に `{ "items": [{ "no": 1, "criteria": {...6項目}, "reason": "…" }] }` を書き、`DRY_RUN=true npm run dis:run -- --media <媒体> --stage rescore` を実行する。13/18点以上の候補が選ばれる。基準未達ならスキップし、理由を伝える。
+4. 撮影とテンプレート: `DRY_RUN=true npm run dis:run -- --media <媒体> --stage capture,template --capture`。連番ID（`DIS-LP-0001` など）が採番され、案件フォルダ `outputs/dis/<LP|バナー|ウェブ>/<連番>_<日付>_<ブランド>/` ができる。
+5. 以降は、手動と同じ（画像を全Sectionぶん読む → `analysis.json`・`annotations.json` を案件フォルダに書く → 検証 → 登録計画 → ユーザーに確認 → 登録）。選定理由は、手順2・3の `reason` と6項目の点数が、自動で入る。
+
+## URLを指定された場合の対話フロー（手動。Macで動かすClaude Code）
 
 ユーザーが「このURLを分析したい」「LPを撮影して分析して」などと言ったら、次の順に進める。撮影はサイトに届く環境（ユーザーのMac）でのみ行う。クラウドのセッションではサイトに届かないため、撮影はせず、`bash scripts/dis/install-url-app.sh` で作るアプリ（または `scripts/dis/url-capture.sh`）の使用を案内し、画像の添付を依頼する。
 
@@ -61,7 +81,7 @@ DISは、既存のLP・バナー・Canva等の分析を消さずに、根拠付�
 4. 画像を実際に読む: 案件フォルダ `outputs/dis/<LP|バナー|ウェブ>/<連番>_<日付>_<ブランド>/files/01_Normal_Images/`（一覧は `outputs/dis/INDEX.md`） の全体画像と、`sections/` の分割画像を、全Sectionぶん読む。見えない箇所は推測せず、unknownsに残す。
 5. 分析を書く: 案件フォルダの `analysis.json`（dis-2.0）と `annotations.json` を埋める。手動指定の案件は、`selectionReason` の「良い点: （分析時に記入）」を、どこが良いかの具体的な文章に置き換える（未記入だと検証が通らない。最後の注記「（ユーザーが選定…）」は残す）。アーカイブ画像の場合は `captureSource` を残し、動き・実際の文言・最新状態を未確認として扱い、確信度を下げる。
 6. 検証する: `DRY_RUN=true npm run dis:run -- --media <…> --url "<URL>" --stage validate`（撮影・分析と同じ `--url` を付ける）。
-7. 登録（Dropbox・Notion）は、ユーザーが本番実行を明示したときだけ。`--apply` ＋ `DIS_ENABLE_WRITES=true` ＋ `DRY_RUN=false` がそろったときのみ書き込まれる。
+7. 登録計画（ドライラン: `--stage validate,publish`）を見せ、ユーザーに「登録する／見送る」を確認する。「登録する」の返事があったときだけ、`--apply` ＋ `DIS_ENABLE_WRITES=true` ＋ `DRY_RUN=false` で書き込む。登録後は、台帳のコミットとプッシュを案内し、DropboxとNotionを読み取りで確認する。
 
 ## このリポジトリでの実装
 
