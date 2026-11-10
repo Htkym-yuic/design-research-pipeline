@@ -1236,3 +1236,56 @@ test("supplement-overview: 登録済み案件に、全体図を新規追加す�
   const r = spawnSync(process.execPath, [path.join(here, "supplement-overview.mjs"), "--id", "DIS-LP-9999"], { env: { ...process.env, DRY_RUN: "true", DIS_ENABLE_WRITES: "" }, encoding: "utf8" });
   assert.notEqual(r.status, 0); // 台帳にない案件は止まる
 });
+
+test("cbs:export: インデックスにDISの層（9軸・Sectionの種類・再利用原則）が入り、Sectionの型の索引ができる。旧形式のナレッジも壊れない", async () => {
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-cbsx-"));
+  const k = path.join(tmp, "knowledge");
+  await fs.mkdir(path.join(k, "lp"), { recursive: true });
+  const dis = { id: "LP-0245", mediaType: "LP", title: "DISのLP", primary_appeal: "訴求", industry_tags: ["飲料"], section_patterns: [
+    { id: "C01", name: "ファーストビュー", role: "FV", reusable_structure: ["左テキスト＋右写真"], replace_required: ["写真"], rights_status: "reference_only" },
+    { id: "C02", name: "悩み", role: "悩み提起", reusable_structure: ["悩みを3つ並べる"], replace_required: ["文言"], rights_status: "reference_only" }],
+    reusable_principles: ["色面をずらす"], rights_excluded: ["ロゴ"], analysis_notes: { dis_analysis_ref: "DIS-LP-0001" },
+    dis_evaluation: { method: "DIS 9軸", axes: [{ key: "purpose_fit", label: "目的適合", score: 4, confidence: "medium" }] }, cbs_sync: { status: "draft_from_dis" } };
+  const legacy = { id: "LP-0215", mediaType: "LP", title: "旧", primary_appeal: "x", section_patterns: [{ id: "C01", name: "価格FV", role: "price_anxiety_reduction_hero", reusable_structure: ["a"], replace_required: ["b"] }] };
+  await fs.writeFile(path.join(k, "lp", "LP-0245.json"), JSON.stringify(dis));
+  await fs.writeFile(path.join(k, "lp", "LP-0215.json"), JSON.stringify(legacy));
+  await fs.writeFile(path.join(k, "lp", "plain.json"), JSON.stringify({ id: "X-1", title: "最小" }));
+  const out = path.join(tmp, "out");
+  const r = spawnSync(process.execPath, [path.join(here, "../export-creative-brief-studio-ai.mjs"), "--knowledge", k, "--out", out], { cwd: tmp, encoding: "utf8" });
+  assert.equal(r.status, 0, r.stderr);
+  const index = JSON.parse(await fs.readFile(path.join(out, "index.json"), "utf8"));
+  const d = index.items.find((i) => i.id === "LP-0245");
+  assert.equal(d.disId, "DIS-LP-0001"); assert.deepEqual(d.sectionTypes, ["FV", "悩み提起"]);
+  assert.equal(d.disEvaluation.axes[0].score, 4); assert.deepEqual(d.reusablePrinciples, ["色面をずらす"]); assert.equal(d.cbsSyncStatus, "draft_from_dis");
+  const oldItem = index.items.find((i) => i.id === "LP-0215");
+  assert.equal(oldItem.disId, null); assert.equal(oldItem.disEvaluation, null); assert.deepEqual(oldItem.sectionTypes, ["price_anxiety_reduction_hero"]);
+  assert.equal(index.items.find((i) => i.id === "X-1").sectionTypes.length, 0);
+  const sp = JSON.parse(await fs.readFile(path.join(out, "section-patterns.json"), "utf8"));
+  assert.deepEqual(sp.types.filter((t) => t.controlled).map((t) => t.type).sort(), ["FV", "悩み提起"]);
+  assert.equal(sp.types.find((t) => t.type === "FV").examples[0].id, "LP-0245");
+  assert.equal(sp.types.find((t) => t.type === "price_anxiety_reduction_hero").controlled, false);
+});
+
+test("cbs-draft: Web・バナーにも対応し、knowledge/<媒体>/ に新規のみ配置できる（IDなし・未確定・既存あり・未同期以外は不可）", async () => {
+  const { buildKnowledgeDraft, placeKnowledge, mediaOf, KNOWLEDGE_MEDIA } = await import("./cbs-draft.mjs");
+  assert.deepEqual(["DIS-LP-0001", "DIS-BN-0002", "DIS-WB-0003", "X"].map((i) => mediaOf(i)?.dir ?? null), ["lp", "banner", "web", null]);
+  const a = { brand: "サンプル", pageUrl: "https://ex.test/", summary: "要約。", units: [{ id: "U1", name: "FV", roleType: "FV", role: "つかみ", observation: "観察", reuseStructure: "左右2カラム", mustReplace: ["写真"], unknowns: [] }],
+    axes: [{ key: "purpose_fit", label: "目的適合", score: 4, confidence: "medium" }], reuse: { reusableStructures: ["色面"] }, rights: { noReuse: ["ロゴ"] } };
+  const wb = buildKnowledgeDraft({ a, item: { disId: "DIS-WB-0001", sourceDetailUrl: "https://ex.test/detail" }, rel: null, sizes: {}, tags: {}, dropboxFolder: null });
+  assert.equal(wb.id, "DIS-WB-0001"); assert.equal(wb.mediaType, "Web"); assert.equal(wb.cbs_sync.knowledge_path, "knowledge/web/DIS-WB-0001.json");
+  assert.equal(wb.funnel_structure, undefined); assert.equal(wb.asset_status, undefined); // LP専用の項目は入れない
+  assert.equal(wb.section_patterns[0].role, "FV"); assert.equal(wb.dis_evaluation.axes[0].score, 4); assert.equal(wb.primary_appeal, "要約。");
+  const repo = await fs.mkdtemp(path.join(os.tmpdir(), "dis-place-repo-"));
+  const rel = await placeKnowledge({ draft: wb, repo });
+  assert.equal(rel, path.join("knowledge", "web", "DIS-WB-0001.json"));
+  assert.equal(JSON.parse(await fs.readFile(path.join(repo, rel), "utf8")).cbs_sync.actual_cbs_import, "not_synced");
+  await assert.rejects(placeKnowledge({ draft: wb, repo }), /上書きしません/);
+  await assert.rejects(placeKnowledge({ draft: { ...wb, id: undefined }, repo }), /IDがありません/);
+  await assert.rejects(placeKnowledge({ draft: { ...wb, id: "DIS-WB-0009", cbs_sync: { status: "synced", actual_cbs_import: "done" } }, repo }), /下書き・未同期ではありません/);
+  const lp = buildKnowledgeDraft({ a, item: { disId: "DIS-LP-0001", sourceDetailUrl: "https://rdlp.jp/archives/otherdesign/lp/1" }, rel: { libraryId: "LP-0245" }, sizes: {}, tags: {}, dropboxFolder: null });
+  assert.equal(lp.id, "LP-0245"); assert.equal(KNOWLEDGE_MEDIA.LP.dir, "lp");
+  await assert.rejects(placeKnowledge({ draft: lp, repo }), /訴求・タグが未確定/); // LPは、28章で確定するまで配置しない
+  const lpOk = buildKnowledgeDraft({ a, item: { disId: "DIS-LP-0001", sourceDetailUrl: "https://rdlp.jp/archives/otherdesign/lp/1" }, rel: { libraryId: "LP-0245" }, sizes: {}, tags: { primary_appeal: "確定した訴求", industry_tags: ["飲料・お酒"] }, dropboxFolder: null });
+  assert.equal(await placeKnowledge({ draft: lpOk, repo }), path.join("knowledge", "lp", "LP-0245.json")); // 検証（LPナレッジ）を通って配置
+  await assert.rejects(placeKnowledge({ draft: { ...lpOk, id: "DIS-LP-0001" }, repo }), /LPナレッジの検証に失敗/); // LP-nnnn 形式でないIDは不可
+});

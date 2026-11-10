@@ -501,3 +501,14 @@ DIS_ENABLE_WRITES=true DRY_RUN=false npm run dis:supplement-crops -- --id DIS-LP
 - 各Unitは、PCの切り出しがあればPC、なければSP（ラベルに「（SP）」）。4列に積み、5MB未満のJPEGに収める。
 - 登録（`publish`）では、この全体図があれば、Notionの本文に載せる画像は、これ1枚だけ（Dropboxの `02_Notion_Images/` にも入る）。なければ（`roleType`・`regions` のない旧形式の案件）、従来の4枚（PC・SPのファーストビューとセクション一覧）。
 - 登録済みの案件のNotionページは、変更しない。
+
+### DIS と CBS のつながり（ナレッジ化 → インデックス → Sectionの型）
+
+流れ（外部への書込みはなし。CBS本体への実同期は、ユーザーが確認してから、別工程で行う）:
+
+1. **下書き**: `npm run dis:cbs-draft -- --id DIS-WB-0001 [--tags <タグのJSON>]`。LP・Web・バナーに対応。案件フォルダに `cbs-knowledge-draft.json` を作る（LPは28章の下書き `lp28-seed.md` も）。IDは、LPはライブラリー番号（`data/dis-relations.json`）、Web・バナーはDISのID。
+2. **配置**: 同じコマンドに `--place` を付けると、`knowledge/<lp|web|banner>/<ID>.json` に、新規のみ配置する（上書きしない）。配置の条件は、IDがある／訴求・タグが確定している（LPは `--tags` に `primary_appeal` などを書く）／検証を通る（LPは `knowledge:validate-lp`）／`cbs_sync` が下書き・未同期。
+3. **インデックス**: `npm run cbs:export` で、`exports/creative-brief-studio-ai/` を更新する。`index.json` の各件に、DISの層（`disId`・`disEvaluation`＝9軸の点数・`sectionTypes`・`sections`・`reusablePrinciples`・`rightsExcluded`・`cbsSyncStatus`）が入る。旧形式のナレッジ（`LP-0215`）は、そのまま扱える。
+4. **Sectionの型の索引**: 同じ `cbs:export` が、`section-patterns.json` を作る。Sectionの種類（FV・悩み提起・共感・解決策・ベネフィット・特徴・実績・比較・商品紹介・料金・流れ・FAQ・CTA・会社情報・ナビ・フッター・その他）ごとに、各ナレッジの該当Section（名前・再利用できる構造・差し替え必須の要素）を集める。`controlled=false` は、旧来の自由な役割名（例: `price_anxiety_reduction_hero`）。
+5. **評価点は混ぜない**: DISの9軸（各1〜5点）と、28章のヒューリスティック（/100）は、別の物差し。足したり平均したりしない。
+6. **未実施**: Notionの、LPライブラリーの既存ページとDISのページの関連付け（リレーション）・CBS同期状態の更新は、Notionの既存の設定・ページを変更するため、ユーザーの許可を得てから行う。
