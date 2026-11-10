@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T16:23:40.857Z",
+  "updatedAt": "2026-11-10T13:41:59.875Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -14463,6 +14463,58 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-06T16:23:40.857Z"
+    },
+    {
+      "id": "BN-0049",
+      "title": "スクウェア・エニックスが贈る完全新作シミュレーションRPG THE DIOFIELD CHRONICLEのバナー",
+      "mediaType": "Banner",
+      "sourceName": "DIS",
+      "status": "reserved_dis_link",
+      "captureUrl": "https://bannnner.com/banner_9195/",
+      "sourceDetailUrl": "https://bannnner.com/banner_9195/",
+      "imageUrl": null,
+      "materialId": null,
+      "linkedDisId": "DIS-BN-20261107",
+      "reservedAt": "2026-11-10T13:41:59.709Z"
+    },
+    {
+      "id": "BN-0050",
+      "title": "『PDFをパッと要約、仕事の効率アップ Adobe Acrobat』のバナーデザイン - Retro Banners - バナーデザインギャラリー",
+      "mediaType": "Banner",
+      "sourceName": "DIS",
+      "status": "reserved_dis_link",
+      "captureUrl": "https://retrobanner.net/archives/15113",
+      "sourceDetailUrl": "https://retrobanner.net/archives/15113",
+      "imageUrl": null,
+      "materialId": null,
+      "linkedDisId": "DIS-BN-20261108",
+      "reservedAt": "2026-11-10T13:41:59.763Z"
+    },
+    {
+      "id": "WB-0069",
+      "title": "Baseline Design",
+      "mediaType": "Web",
+      "sourceName": "DIS",
+      "status": "reserved_dis_link",
+      "captureUrl": "https://www.baselinedesign.com/",
+      "sourceDetailUrl": null,
+      "imageUrl": null,
+      "materialId": null,
+      "linkedDisId": "DIS-WB-20261107",
+      "reservedAt": "2026-11-10T13:41:59.819Z"
+    },
+    {
+      "id": "WB-0070",
+      "title": "FREDRIK ONLINE STORE",
+      "mediaType": "Web",
+      "sourceName": "DIS",
+      "status": "reserved_dis_link",
+      "captureUrl": "https://ffpfredrik.com/ja-jp",
+      "sourceDetailUrl": null,
+      "imageUrl": null,
+      "materialId": null,
+      "linkedDisId": "DIS-WB-20261108",
+      "reservedAt": "2026-11-10T13:41:59.875Z"
     }
   ]
 }

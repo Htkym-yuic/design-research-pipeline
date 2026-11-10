@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T08:03:08.000Z",
+  "updatedAt": "2026-11-10T13:41:59.652Z",
   "mediaType": "LP",
   "sourceName": "LPアーカイブ",
   "notes": [
@@ -315,7 +315,27 @@
       "lpArchivePostId": "229563",
       "linkedDisId": "DIS-LP-0003",
       "reservedAt": "2026-11-10T08:03:08.000Z"
+    },
+    {
+      "id": "LP-0248",
+      "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+      "status": "reserved_dis_link",
+      "captureUrl": "https://tokyo-syuukaku-sai.jp/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229551",
+      "lpArchivePostId": "229551",
+      "linkedDisId": "DIS-LP-20261107",
+      "reservedAt": "2026-11-10T13:41:59.610Z"
+    },
+    {
+      "id": "LP-0249",
+      "title": "カルビー株式会社",
+      "status": "reserved_dis_link",
+      "captureUrl": "https://www.calbee.co.jp/39cp2026/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229584",
+      "lpArchivePostId": "229584",
+      "linkedDisId": "DIS-LP-20261108",
+      "reservedAt": "2026-11-10T13:41:59.652Z"
     }
   ],
-  "nextLpId": "LP-0248"
+  "nextLpId": "LP-0250"
 }

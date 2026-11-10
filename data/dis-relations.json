@@ -23,7 +23,7 @@
       "disId": "DIS-LP-0001",
       "relation": "reserved_for_library",
       "libraryId": "LP-0245",
-      "libraryNotionPageId": null,
+      "libraryNotionPageId": "41424d4f-a671-8170-bc8c-d9a7cebd504e",
       "disNotionPageId": "41324d4f-a671-812f-91ef-f92ae5cad34e",
       "canonicalKey": "rdlp:16359",
       "primaryId": "LP-0245",
@@ -39,7 +39,8 @@
         "registeredAt": "2026-11-10",
         "dropboxFolder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/lp28-LP-0245/LP-0245-オランジーナ",
         "notionPageId": "41424d4f-a671-8170-bc8c-d9a7cebd504e"
-      }
+      },
+      "libraryPageNote": "2026-11-10: ライブラリーに「LP-0245｜オランジーナ｜LP分析」のページができた（DISの分析から28章化）。番号は確保時のまま。"
     },
     {
       "disId": "DIS-LP-0002",
@@ -64,6 +65,78 @@
       "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）。ライブラリー側の取り込み・28章の分析は未実施",
       "cbsPolicy": "ライブラリーに取り込み（28章の分析）が済んだら、LPの1件に、DISの層として付ける。DIS-LP単独では、CBSに載せない。",
       "establishedAt": "2026-11-10"
+    },
+    {
+      "disId": "DIS-LP-20261107",
+      "libraryNotionPageId": null,
+      "disNotionPageId": "41124d4f-a671-8187-ae4a-dccd5c4dccdd",
+      "canonicalKey": "rdlp:229551",
+      "establishedAt": "2026-11-10",
+      "relation": "reserved_for_library",
+      "libraryId": "LP-0248",
+      "primaryId": "LP-0248",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）。ライブラリー側の取り込み・28章の分析は未実施",
+      "cbsPolicy": "ライブラリーに取り込みが済んだら、1件に、DISの層として付ける。DIS単独では、CBSに載せない。"
+    },
+    {
+      "disId": "DIS-LP-20261108",
+      "libraryNotionPageId": null,
+      "disNotionPageId": "41124d4f-a671-817b-9938-d0d93033839b",
+      "canonicalKey": "rdlp:229584",
+      "establishedAt": "2026-11-10",
+      "relation": "reserved_for_library",
+      "libraryId": "LP-0249",
+      "primaryId": "LP-0249",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）。ライブラリー側の取り込み・28章の分析は未実施",
+      "cbsPolicy": "ライブラリーに取り込みが済んだら、1件に、DISの層として付ける。DIS単独では、CBSに載せない。"
+    },
+    {
+      "disId": "DIS-BN-20261107",
+      "libraryNotionPageId": null,
+      "disNotionPageId": "41124d4f-a671-8133-bce9-d9f3babc8985",
+      "canonicalKey": "banner:bannnner.com/banner_9195",
+      "establishedAt": "2026-11-10",
+      "relation": "reserved_for_library",
+      "libraryId": "BN-0049",
+      "primaryId": "BN-0049",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）。ライブラリー側の取り込み・28章の分析は未実施",
+      "cbsPolicy": "ライブラリーに取り込みが済んだら、1件に、DISの層として付ける。DIS単独では、CBSに載せない。"
+    },
+    {
+      "disId": "DIS-BN-20261108",
+      "libraryNotionPageId": null,
+      "disNotionPageId": "41124d4f-a671-812a-ba53-e5ed0627f196",
+      "canonicalKey": "banner:retrobanner.net/archives/15113",
+      "establishedAt": "2026-11-10",
+      "relation": "reserved_for_library",
+      "libraryId": "BN-0050",
+      "primaryId": "BN-0050",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）。ライブラリー側の取り込み・28章の分析は未実施",
+      "cbsPolicy": "ライブラリーに取り込みが済んだら、1件に、DISの層として付ける。DIS単独では、CBSに載せない。"
+    },
+    {
+      "disId": "DIS-WB-20261107",
+      "libraryNotionPageId": null,
+      "disNotionPageId": "41124d4f-a671-8165-a6ee-fec4b037a8f0",
+      "canonicalKey": "web:baselinedesign.com",
+      "establishedAt": "2026-11-10",
+      "relation": "reserved_for_library",
+      "libraryId": "WB-0069",
+      "primaryId": "WB-0069",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）。ライブラリー側の取り込み・28章の分析は未実施",
+      "cbsPolicy": "ライブラリーに取り込みが済んだら、1件に、DISの層として付ける。DIS単独では、CBSに載せない。"
+    },
+    {
+      "disId": "DIS-WB-20261108",
+      "libraryNotionPageId": null,
+      "disNotionPageId": "41124d4f-a671-8155-84da-ce6b96c8c855",
+      "canonicalKey": "web:ffpfredrik.com/ja-jp",
+      "establishedAt": "2026-11-10",
+      "relation": "reserved_for_library",
+      "libraryId": "WB-0070",
+      "primaryId": "WB-0070",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）。ライブラリー側の取り込み・28章の分析は未実施",
+      "cbsPolicy": "ライブラリーに取り込みが済んだら、1件に、DISの層として付ける。DIS単独では、CBSに載せない。"
     }
   ]
 }

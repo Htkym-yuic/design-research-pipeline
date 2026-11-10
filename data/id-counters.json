@@ -1,34 +1,34 @@
 {
   "lp": {
     "prefix": "LP",
-    "existingMax": 247,
-    "nextNumber": 248,
+    "existingMax": 249,
+    "nextNumber": 250,
     "digits": 4,
     "sourceOfTruth": "Notion 01｜LPリサーチライブラリー + Dropbox/GitHub intake reservations",
     "lastReservation": {
-      "reservedAt": "2026-11-10T08:03:08.000Z",
-      "idStart": "LP-0245",
-      "idEnd": "LP-0247",
-      "candidateCount": 3,
-      "sourceName": "DIS（旧番号のないDIS-LP-0001〜0003に、番号だけ確保）",
+      "reservedAt": "2026-11-10T13:41:59.652Z",
+      "idStart": "LP-0249",
+      "idEnd": "LP-0249",
+      "candidateCount": 1,
+      "sourceName": "DIS（DIS-LP-20261108に、番号だけ確保）",
       "outputPath": "data/dis-relations.json"
     }
   },
   "banner": {
     "prefix": "BN",
-    "existingMax": 48,
-    "nextNumber": 49,
+    "existingMax": 50,
+    "nextNumber": 51,
     "digits": 4,
     "sourceOfTruth": "Notion 02｜バナーリサーチライブラリー + archive + Dropbox/GitHub intake reservations (IDs are never reused)",
-    "lastReservationAt": "2026-10-11T00:00:00.000Z"
+    "lastReservationAt": "2026-11-10T13:41:59.763Z"
   },
   "web": {
     "prefix": "WB",
-    "existingMax": 68,
-    "nextNumber": 69,
+    "existingMax": 70,
+    "nextNumber": 71,
     "digits": 4,
     "sourceOfTruth": "Notion 03｜Webサイトリサーチライブラリー",
-    "lastReservationAt": "2026-11-06T16:23:40.857Z"
+    "lastReservationAt": "2026-11-10T13:41:59.875Z"
   },
   "graphic": {
     "prefix": "GR",
