@@ -29,7 +29,17 @@
       "primaryId": "LP-0245",
       "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）。ライブラリー側の取り込み・28章の分析は未実施",
       "cbsPolicy": "ライブラリーに取り込み（28章の分析）が済んだら、LPの1件に、DISの層として付ける。DIS-LP単独では、CBSに載せない。",
-      "establishedAt": "2026-11-10"
+      "establishedAt": "2026-11-10",
+      "lp28": {
+        "version": "v1.0",
+        "status": "registered",
+        "createdAt": "2026-11-10",
+        "note": "PCのみ。SP・実ページは未確認。Notion・Dropbox・CBSへは未登録・未同期",
+        "localPath": "outputs/dis/LP/0001_*/28ch/LP-0245_v1.0.md",
+        "registeredAt": "2026-11-10",
+        "dropboxFolder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/lp28-LP-0245/LP-0245-オランジーナ",
+        "notionPageId": "41424d4f-a671-8170-bc8c-d9a7cebd504e"
+      }
     },
     {
       "disId": "DIS-LP-0002",
