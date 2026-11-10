@@ -566,3 +566,16 @@ npm run dis:draft-legacy -- --id DIS-WB-20261107 --place    # knowledge/web/WB-0
 - 既存のページの、本文・画像・タイトル・他の項目は、変更しない。リレーション（列の追加）は、設定の変更が大きいため、必要になるまで見送る。
 - 注意（既存の食い違い）: Notionのバナーライブラリーには `BN-0001｜キットカット…` から `BN-0008` までのページがあるが、予約ファイル（`candidates/non-lp/intake-reservations.json`）の `BN-0001`〜 は別の案件（例: BN-0001＝おせち先行予約販売）を指している。LP・Webは一致している。バナーは、予約済みの番号をNotionへ登録する前に、突き合わせが必要。
 - Notionの検索（SQL）は、利用枠の上限に達することがある（約60分で回復）。確認は、ページを直接開く方法（fetch）でもできる。
+
+### DIS: Macの案件フォルダから、ナレッジを配置する（`dis:cbs-draft --place`）
+
+`DIS-LP-0001〜0003` のように、分析（`analysis.json`・`roleType`）が、Macの案件フォルダにあるものを、ナレッジ化する。
+
+```bash
+npm run dis:cbs-draft -- --id DIS-LP-0002 --appeal-from-summary --offer "<オファー>" --place
+```
+
+- タグは、分析の `notionProps`（Notionの既存の選択肢）から、自動で作る。`--tags <ファイル>` があれば、そちらが優先。
+- LPの訴求・オファーは、指定したときだけ入る。`--appeal "<訴求>"`（直接指定）または `--appeal-from-summary`（分析の要約の先頭を使う）、`--offer "<オファー>"`。LPは、訴求が未確定（「28章で確定」のまま）だと、`--place` はできない。
+- 前提: `data/dis-relations.json` に、ライブラリー番号の対応がある（`LP-0245〜0247`）。配置先は `knowledge/lp/LP-nnnn.json`（新規のみ。LPナレッジの検証を通る）。同じDISの、CBS未同期の下書きを置き換えるときは `--replace-draft`。
+- 配置したら、`knowledge/` の新しいファイルを、コミットしてプッシュする。そのあと、`npm run cbs:export` で、インデックスを更新する。
