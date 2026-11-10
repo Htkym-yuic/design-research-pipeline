@@ -72,9 +72,13 @@ DISは、既存のLP・バナー・Canva等の分析を消さずに、根拠付�
 
 ユーザーが「このURLを分析したい」「LPを撮影して分析して」などと言ったら、次の順に進める。撮影はサイトに届く環境（ユーザーのMac）でのみ行う。クラウドのセッションではサイトに届かないため、撮影はせず、`bash scripts/dis/install-url-app.sh` で作るアプリ（または `scripts/dis/url-capture.sh`）の使用を案内し、画像の添付を依頼する。
 
-1. 質問する: 種類（LP / Web / バナー）と、対象のURL。LPアーカイブ（rdlp）の紹介ページのURLなら、実際のLPを撮影するか、アーカイブ掲載の画像（`--from-archive`。実ページが公開終了などで開けない場合）を使うかも聞く。
+1. 質問する: 種類（LP / Web / バナー）と、対象のURL。LP・Webは、パソコン版とスマホ版でURLが異なるページがあるため、**URLを2回聞く**（①パソコン版のURL、②スマホ版のURL）。どちらも無い場合は、「なし」と答えるか、そのままEnter（空）でよい。答えの組み合わせで、次の3パターンに分けて撮影する。
+   - **両方ある**: `--url "<PC版>" --sp-url "<スマホ版>"`（同じURLなら `--sp-url` は省略してよい）。
+   - **PCだけある（スマホなし）**: `--url "<PC版>" --device pc`。SPは撮影せず、分析ではSPを未確認として扱う。
+   - **スマホだけある（PCなし）**: `--url "<スマホ版>" --device sp`。PCは撮影せず、分析ではPCを未確認として扱う。
+   `--device` は撮影の段階（capture）だけに付ける（`item.json` の `devices` に記録され、以降の段階で使われる）。`--sp-url` はSPの撮影だけに使い、`item.json` に `spUrl` として記録する。バナーは1つのURLのみ。LPアーカイブ（rdlp）の紹介ページのURLなら、実際のLPを撮影するか、アーカイブ掲載の画像（`--from-archive`。実ページが公開終了などで開けない場合）を使うかも聞く。
 2. 撮影する（外部書込みなし）:
-   `DRY_RUN=true npm run dis:run -- --media <lp|web|banner> --url "<URL>" [--from-archive] --stage collect,select,capture,template --capture`
+   `DRY_RUN=true npm run dis:run -- --media <lp|web|banner> --url "<URL>" [--sp-url "<スマホ版URL>"] [--device both|pc|sp] [--from-archive] --stage collect,select,capture,template --capture`
    - IDは媒体ごとの連番（`DIS-LP-0001`）が撮影時に採番される。
    - 403・robots.txt禁止・ログイン壁・Bot対策は回避せず、理由を伝えて止まる。
 3. 結果を確認する: `disId`、`capture` の「画像の揃い」、警告（アーカイブ画像・幅など）。PCとSPの画像幅が同じ場合は、PC/SPではなく前半・後半の分割画像の疑いがあるため、画像を見て確認する。

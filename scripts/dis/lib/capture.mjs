@@ -64,8 +64,8 @@ export async function toNotionJpeg(src, dest, { width = 720, maxBytes = 5 * 1024
  *   01_Normal_Images/{id}_{PC|SP}_full.png / _first_view.png / _sections.png と、分割画像 sections/{pc|sp}_NN.jpg
  *   02_Notion_Images/{id}_{PC|SP}_first_view_notion.jpg / _sections_notion.jpg（約720px・5MB未満）
  */
-export async function captureFullPage(url, outDir, { id = "item" } = {}) {
-  const { chromium } = await import("playwright");
+export async function captureFullPage(url, outDir, { id = "item", spUrl = null, targets = ["pc", "sp"] } = {}) {
+  const { chromium, devices } = await import("playwright");
   const { default: sharp } = await import("sharp");
   const normal = path.join(outDir, "01_Normal_Images");
   const notion = path.join(outDir, "02_Notion_Images");
@@ -79,21 +79,23 @@ export async function captureFullPage(url, outDir, { id = "item" } = {}) {
   const add = (local, rel) => files.push({ local, rel });
   try {
     for (const [name, viewport, mobile, mapCols, cellW] of [["pc", { width: 1440, height: 900 }, false, 4, 300], ["sp", { width: 375, height: 812 }, true, 6, 150]]) {
+      if (!targets.includes(name)) continue; // PCのみ／SPのみの案件では、片方を撮影しない
       const NAME = name.toUpperCase();
       const full = path.join(normal, `${id}_${NAME}_full.png`);
       let ctx;
-      // SPの全体画像が意図した幅（375px）より広がる場合（スマホ用の設定がないページなど）は、モバイル端末の模擬を外して再撮影する。
-      for (const asMobile of mobile ? [true, false] : [false]) {
-        ctx = await browser.newContext({ viewport, isMobile: asMobile, deviceScaleFactor: 1 });
+      // SPの全体画像が意図した幅（375px）より広がる場合（UAでPC版を返すページなど）は、スマホのUAを付けて、それでも広ければモバイル端末の模擬を外して再撮影する。
+      const attempts = mobile ? [{ asMobile: true }, { asMobile: true, ua: true }, { asMobile: false }] : [{ asMobile: false }];
+      for (const [i, at] of attempts.entries()) {
+        ctx = await browser.newContext({ viewport, isMobile: at.asMobile, deviceScaleFactor: 1, ...(at.ua ? { userAgent: devices["iPhone 13"].userAgent, hasTouch: true } : {}) });
         const page = await ctx.newPage();
-        const resp = await page.goto(url, { waitUntil: "load", timeout: 45000 });
+        const resp = await page.goto(mobile && spUrl ? spUrl : url, { waitUntil: "load", timeout: 45000 });
         if (!resp || resp.status() >= 400) throw new Error(`HTTP ${resp?.status()}（撮影中止・回避しない）`);
         await page.waitForTimeout(1500);
         await scrollThrough(page);
         await page.screenshot({ path: full, fullPage: true });
         const w = (await sharp(full, { limitInputPixels: false }).metadata()).width;
-        if (!mobile || w <= 430) break;
-        warnings.push(`SPの全体画像が${w}pxに広がったため、モバイル端末の模擬を外して再撮影した`);
+        if (!mobile || w <= 430 || i === attempts.length - 1) break;
+        warnings.push(`SPの全体画像が${w}pxに広がったため、${at.ua ? "モバイル端末の模擬を外して" : "スマホのUAを付けて"}再撮影した`);
         await ctx.close();
       }
       add(full, `01_Normal_Images/${id}_${NAME}_full.png`);

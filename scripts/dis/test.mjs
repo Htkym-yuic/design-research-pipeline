@@ -690,6 +690,36 @@ test("captureFullPage + checkAssetSet: 原本の形（01_Normal_Images／02_Noti
   } finally { server.close(); }
 });
 
+test("captureFullPage + checkAssetSet: PCのみ／SPのみ（devices）では、片方だけ撮影・検査し、SP専用URL（spUrl）はSPの撮影だけに使う", async () => {
+  const http = await import("node:http");
+  const { captureFullPage } = await import("./lib/capture.mjs");
+  const { checkAssetSet } = await import("./lib/asset-check.mjs");
+  const page = (t) => `<!doctype html><meta charset=utf-8><meta name=viewport content="width=device-width"><style>body{margin:0;font:40px sans-serif}section{height:1100px;display:flex;align-items:center;justify-content:center}</style>${["#e84", "#4a8", "#48e"].map((c) => `<section style="background:${c}">${t}</section>`).join("")}`;
+  const hits = [];
+  const server = http.createServer((q, r) => { hits.push(q.url); r.setHeader("content-type", "text/html; charset=utf-8"); r.end(page(q.url)); });
+  await new Promise((res) => server.listen(0, "127.0.0.1", res));
+  const base = `http://127.0.0.1:${server.address().port}`;
+  try {
+    const id = "DIS-WB-20261110";
+    const pcOnly = await fs.mkdtemp(path.join(os.tmpdir(), "dis-pc-"));
+    const f1 = await captureFullPage(`${base}/pc`, pcOnly, { id, targets: ["pc"] });
+    assert.ok(f1.every((f) => !/SP_|sp_/.test(f.rel)) && f1.some((f) => f.rel.includes("PC_full")));
+    assert.equal((await checkAssetSet(pcOnly, { id, media: "web", devices: ["pc"] })).ok, true);
+    assert.equal((await checkAssetSet(pcOnly, { id, media: "web" })).ok, false); // 両方が必要な通常の案件では不足
+
+    const spOnly = await fs.mkdtemp(path.join(os.tmpdir(), "dis-sp-"));
+    const f2 = await captureFullPage(`${base}/sp`, spOnly, { id, targets: ["sp"] });
+    assert.ok(f2.every((f) => !/PC_|pc_/.test(f.rel)) && f2.some((f) => f.rel.includes("SP_full")));
+    assert.equal((await checkAssetSet(spOnly, { id, media: "web", devices: ["sp"] })).ok, true);
+
+    hits.length = 0;
+    const both = await fs.mkdtemp(path.join(os.tmpdir(), "dis-both-"));
+    await captureFullPage(`${base}/pc`, both, { id, spUrl: `${base}/sp` });
+    assert.ok(hits.includes("/pc") && hits.includes("/sp")); // PCは/pc、SPは/sp
+    assert.equal((await checkAssetSet(both, { id, media: "web" })).ok, true);
+  } finally { server.close(); }
+});
+
 test("checkAssetSet(banner): 原本とNotion用JPEGが必要", async () => {
   const { checkAssetSet } = await import("./lib/asset-check.mjs");
   const sharp = (await import("sharp")).default;

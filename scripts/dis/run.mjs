@@ -32,6 +32,8 @@ const { values: args } = parseArgs({
     date: { type: "string", default: jstDate() },
     fixture: { type: "string" },
     url: { type: "string" },
+    device: { type: "string", default: "both" }, // both（PCとSP）／pc（PCのみ）／sp（SPのみ。--url にスマホ版のURL）
+    "sp-url": { type: "string" }, // スマホ版のURLがPC版と異なる場合だけ指定する（撮影のSPだけに使う）
     "from-archive": { type: "boolean", default: false },
     out: { type: "string", default: `${REPO_ROOT}outputs/dis` },
     capture: { type: "boolean", default: false },
@@ -49,6 +51,8 @@ const medias = args.media.split(",").map((s) => s.trim()).filter(Boolean);
 for (const s of stages) if (!STAGES.includes(s)) throw new Error(`不明なstage: ${s}`);
 for (const m of medias) if (!MEDIA_KEYS.includes(m)) throw new Error(`不明なmedia: ${m}`);
 if (args["from-archive"] && !args.url) throw new Error("--from-archive は --url と一緒に指定します");
+if (!["both", "pc", "sp"].includes(args.device)) throw new Error("--device は both / pc / sp のどれかです");
+if (args["sp-url"] && args.device === "pc") throw new Error("--sp-url は、PCのみ（--device pc）では使えません");
 if (args.url && medias.length !== 1) throw new Error("--url を使うときは --media を1つだけ指定してください（lp / banner / web）");
 
 const cfg = await loadConfig();
@@ -198,9 +202,10 @@ async function runMedia(media) {
       const { captureFromArchive } = await import("./lib/capture.mjs");
       const files = cfg.media[media].capture === "public-image" ? await downloadBanner(sel.imageUrl, `${it}/files`)
         : sel.captureMode === "archive" ? await captureFromArchive(sel.sourceDetailUrl, `${it}/files`, { id: disId })
-        : await captureFullPage(sel.pageUrl, `${it}/files`, { id: disId }).catch((e) => { throw new Error(sel.sourceKey === "rdlp" ? `${e.message}\n  ※実ページが開けない場合は、同じコマンドに --from-archive を付けると、アーカイブ掲載の画像で分析できます（作業フォルダを消してから）` : e.message); });
+        : await captureFullPage(sel.pageUrl, `${it}/files`, { id: disId, spUrl: args["sp-url"] || null, targets: args.device === "both" ? ["pc", "sp"] : [args.device] }).catch((e) => { throw new Error(sel.sourceKey === "rdlp" ? `${e.message}\n  ※実ページが開けない場合は、同じコマンドに --from-archive を付けると、アーカイブ掲載の画像で分析できます（作業フォルダを消してから）` : e.message); });
       await wj(`${it}/files.json`, files);
-      const ac = await checkAssetSet(`${it}/files`, { id: disId, media, archive: sel.captureMode === "archive" });
+      { const im = await readJson(`${it}/item.json`, {}); await wj(`${it}/item.json`, { ...im, devices: args.device === "both" ? ["pc", "sp"] : [args.device], ...(args["sp-url"] ? { spUrl: args["sp-url"] } : {}) }); }
+      const ac = await checkAssetSet(`${it}/files`, { id: disId, media, archive: sel.captureMode === "archive", devices: args.device === "both" ? ["pc", "sp"] : [args.device] });
       r.stages.capture = `${files.length} files / 画像の揃い: ${ac.ok ? "OK" : "NG " + ac.errors.join("; ")}`;
       if (files.warnings?.length) { r.stages.capture += ` / WARNING: ${files.warnings.join("; ")}`; r.warnings = files.warnings; }
     }
@@ -263,7 +268,7 @@ async function runMedia(media) {
   if (stages.includes("publish")) {
     if (!disId) { r.stages.publish = "blocked: IDが未採番です（--stage capture --capture を先に実行）"; return; }
     if (!sel.manual && !(sel.reviewTotal >= cfg.selection.passScore)) { r.stages.publish = `blocked: 選定基準${cfg.selection.passScore}/${cfg.selection.maxScore}点が未判定または未達（review→learning.json→rescore を実行）`; return; }
-    const ac = await checkAssetSet(`${it}/files`, { id: disId, media, archive: sel.captureMode === "archive" });
+    const ac = await checkAssetSet(`${it}/files`, { id: disId, media, archive: sel.captureMode === "archive", devices: (await readJson(`${it}/item.json`, {})).devices || ["pc", "sp"] });
     if (!ac.ok && (await readJson(`${it}/files.json`, [])).length) { r.stages.publish = `blocked: 画像の揃いが不足（${ac.errors.join("; ")}）`; return; }
     const entry = findEntry(ledger, key);
     // 本番書込みの直前に、分析内の「外部同期」を実際の状態（登録済み・保存済み）に合わせる。Dropbox・Notionの本文には、これが入る。

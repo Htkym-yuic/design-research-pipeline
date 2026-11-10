@@ -398,6 +398,20 @@ DRY_RUN=true npm run dis:run -- --media lp --url https://example.com/ --date 202
 - 日付は、Dropboxの日付フォルダ・Notion・台帳で管理する。
 - 手動指定（`--url`）は、URLごとに作業フォルダ（`<media>-url-<8桁>`）が分かれる。撮影・分析・検証・登録の各コマンドにも、同じ `--url` を付けて実行する。
 
+### DIS: PC版・スマホ版のURLが異なる場合／片方だけの場合（`--sp-url`・`--device`）
+
+LP・Webは、パソコン版とスマホ版でURLが異なることがある。対話では、PC版のURLとスマホ版のURLを2回聞き、無い場合は「なし」かそのままEnter（空）とする。答えに応じて、次の3パターンで撮影する（撮影の段階のみ。以降の段階には付けない）。
+
+| パターン | 撮影コマンド（`--stage collect,select,capture,template --capture` を付ける） |
+|---|---|
+| 両方ある | `--url <PC版> --sp-url <スマホ版>`（同じURLなら `--sp-url` は省略） |
+| PCだけ | `--url <PC版> --device pc` |
+| スマホだけ | `--url <スマホ版> --device sp` |
+
+- 案件の `item.json` に `devices`（`["pc","sp"]`／`["pc"]`／`["sp"]`）と、`--sp-url` を使った場合は `spUrl` が記録される。
+- `--device pc` / `sp` では、ないほうの画像の撮影と必須チェック（画像の揃い）を行わない。分析では、ないほうを未確認として扱い、`regions` を未指定（`{0,0}`）にする。Notionの全体図は、あるほう（PC優先、なければSP）で作る。
+- `--sp-url` を指定しない場合（両方）は、PC版のURLをスマホ幅で撮影する。幅が広がるときは、スマホのUA→模擬なしの順に再撮影する。
+
 ### DIS: 実ページが開けない場合（アーカイブ掲載の画像で分析）
 
 LPアーカイブ（rdlp）の紹介ページのURLを `--url` に渡し、実ページが公開終了・移転などで撮影できない場合は `--from-archive` を付ける。
