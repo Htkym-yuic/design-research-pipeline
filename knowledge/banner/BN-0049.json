@@ -1,0 +1,307 @@
+{
+  "id": "BN-0049",
+  "dis_ids": [
+    "DIS-BN-20261107"
+  ],
+  "mediaType": "Banner",
+  "media_type": "Banner",
+  "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
+  "brand": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
+  "industry_tags": [
+    "ゲーム"
+  ],
+  "product_tags": [
+    "ディスプレイ広告"
+  ],
+  "color_tags": [
+    "ネイビー",
+    "ターコイズ"
+  ],
+  "layout_tags": [
+    "縦書き",
+    "ポスター型"
+  ],
+  "copy_types": [],
+  "primary_appeal": "ゲームの新作を告知するディスプレイ広告バナー（見た目の比率は約6:5。画像の実寸は未計測）。キャラクターを円形に配したキービジュアルを全面に置き、縦書きのキャッチ、発売元ロゴ、対応機種、「体験版配信中」のバッジを周囲に配置している。",
+  "captureUrl": "https://bannnner.com/banner_9195/",
+  "sourceUrl": "https://bannnner.com/banner_9195/",
+  "sourceDetailUrl": "https://bannnner.com/banner_9195/",
+  "source": {
+    "captured_url": "https://bannnner.com/banner_9195/",
+    "reference_name": "Bannnner.com",
+    "reference_url": null,
+    "reference_detail_url": "https://bannnner.com/banner_9195/",
+    "notion_url": null,
+    "dis_notion_url": "https://app.notion.com/p/41124d4fa6718133bce9d9f3babc8985",
+    "dropbox_master_path": null,
+    "dis_dropbox_path": "/design/Design_Research_Library/Banner_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-BN-20261107",
+    "github_knowledge_path": "knowledge/banner/BN-0049.json",
+    "archive_post_id": "banner:bannnner.com/banner_9195"
+  },
+  "section_patterns": [
+    {
+      "id": "C01",
+      "source_section": "U1",
+      "name": "キービジュアル",
+      "role": "その他",
+      "reusable_structure": [
+        "全面のキービジュアルに、情報を周縁へ小さくまとめる構成"
+      ],
+      "replace_required": [
+        "キャラクターイラスト",
+        "背景"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C02",
+      "source_section": "U2",
+      "name": "キャッチコピー",
+      "role": "その他",
+      "reusable_structure": [
+        "暗い背景に白抜きの縦書きキャッチ"
+      ],
+      "replace_required": [
+        "コピーの文面",
+        "書体"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C03",
+      "source_section": "U3",
+      "name": "発売元ロゴ",
+      "role": "その他",
+      "reusable_structure": [
+        "角に固定した単色ロゴ"
+      ],
+      "replace_required": [
+        "ロゴ"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C04",
+      "source_section": "U4",
+      "name": "タイトルロゴ",
+      "role": "その他",
+      "reusable_structure": [
+        "キービジュアル下部の装飾ロゴ"
+      ],
+      "replace_required": [
+        "タイトルロゴ"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C05",
+      "source_section": "U5",
+      "name": "CTAバッジ「体験版配信中」",
+      "role": "CTA",
+      "reusable_structure": [
+        "縁取りつきのバッジ型CTA"
+      ],
+      "replace_required": [
+        "文言",
+        "色"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C06",
+      "source_section": "U6",
+      "name": "対応プラットフォーム",
+      "role": "その他",
+      "reusable_structure": [
+        "統一サイズの単色ロゴを2段"
+      ],
+      "replace_required": [
+        "機種ロゴ"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C07",
+      "source_section": "U7",
+      "name": "著作権表記",
+      "role": "その他",
+      "reusable_structure": [
+        "最下部の小さな著作権表記"
+      ],
+      "replace_required": [
+        "表記の文面"
+      ],
+      "rights_status": "reference_only"
+    }
+  ],
+  "reusable_principles": [
+    "全面のキービジュアルに、情報を周縁へ小さくまとめる構成",
+    "暗い背景に白抜きの縦書きキャッチ",
+    "縁取りつきのCTAバッジ1つに絞る"
+  ],
+  "visual_patterns": [
+    {
+      "name": "color_legibility",
+      "description": "配色: 暗い青緑〜紺を基調に、白文字と、紫の縁取りのバッジで、世界観を保ちつつ文字を読ませている（U1、U5）。 タイポグラフィ: キャッチは縦書きの明朝系で世界観に合う。体験版バッジは太字で読める。著作権・機種表記は非常に小さい（U2、U5、U7）。"
+    },
+    {
+      "name": "layout_spacing",
+      "description": "画面全体を絵で埋め、情報は上下左右の周縁に小さく置く。余白はほぼなく、情報は密（U1〜U7）。"
+    },
+    {
+      "name": "visual_brand",
+      "description": "色調・書体・ロゴの装飾が、ゲームの世界観で統一されている（U1、U2、U4）。"
+    }
+  ],
+  "rights_excluded": [
+    "ロゴ",
+    "人物",
+    "写真",
+    "コピー",
+    "価格",
+    "実績値",
+    "キャラクターイラスト",
+    "ゲームタイトル"
+  ],
+  "unverified_claims": [
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U7"
+    }
+  ],
+  "recommended_use_cases": [],
+  "analysis_notes": {
+    "completion_status": "dis_analysis_done",
+    "dis_analysis_ref": "DIS-BN-20261107",
+    "remaining_limits": [
+      "タグは、必要に応じて人が確認する（このファイルはDISからの下書き）",
+      "CBS本体への実同期は未実施"
+    ]
+  },
+  "dis_evaluation": {
+    "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+    "axes": [
+      {
+        "key": "purpose_fit",
+        "label": "目的適合",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "information_hierarchy",
+        "label": "情報優先順位",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_flow",
+        "label": "視線誘導",
+        "score": 4,
+        "confidence": "low"
+      },
+      {
+        "key": "message_copy",
+        "label": "訴求・コピー",
+        "score": 3,
+        "confidence": "low"
+      },
+      {
+        "key": "trust_safety",
+        "label": "信頼・安心",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "color_legibility",
+        "label": "配色・可読性",
+        "score": 3,
+        "confidence": "low"
+      },
+      {
+        "key": "layout_spacing",
+        "label": "レイアウト・余白",
+        "score": 3,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_brand",
+        "label": "ビジュアル・ブランド",
+        "score": 4,
+        "confidence": "low"
+      },
+      {
+        "key": "implementation_reuse",
+        "label": "実装・転用性",
+        "score": 2,
+        "confidence": "medium"
+      }
+    ],
+    "note": "28章の総合点（ヒューリスティック/100）とは別の物差し。足したり平均したりしない。"
+  },
+  "cbs_sync": {
+    "status": "draft_from_dis",
+    "knowledge_path": "knowledge/banner/BN-0049.json",
+    "exported_at": null,
+    "actual_cbs_import": "not_synced"
+  }
+}

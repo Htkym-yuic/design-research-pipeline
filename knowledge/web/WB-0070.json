@@ -1,0 +1,431 @@
+{
+  "id": "WB-0070",
+  "dis_ids": [
+    "DIS-WB-20261108"
+  ],
+  "mediaType": "Web",
+  "media_type": "Web",
+  "title": "FREDRIK（by FREDRIK PACKERS）",
+  "brand": "FREDRIK（by FREDRIK PACKERS）",
+  "industry_tags": [
+    "EC"
+  ],
+  "product_tags": [],
+  "color_tags": [
+    "ホワイト",
+    "ブラック"
+  ],
+  "layout_tags": [
+    "利用シーン型"
+  ],
+  "copy_types": [],
+  "primary_appeal": "折りたたみ式のバッグ・衣類を扱うブランドのオンラインストア（日英併記）。ファーストビューは、青い背景に、巾着型の商品とグラフィティ風の巨大なブランド名を散りばめ、直下にカテゴリ導線と流れる大きな標語を置く。以降は、商品写真・生活の写真・大きな英語の見出し（絵文字つき）を、非対称に配置した「編集的」な商品紹介が続き、最後にカテゴリのカルーセルとフッターで閉じる。PC・SPともに先頭からフッターまで画…",
+  "captureUrl": "https://ffpfredrik.com/ja-jp",
+  "sourceUrl": "https://ffpfredrik.com/ja-jp",
+  "sourceDetailUrl": "https://ffpfredrik.com/ja-jp",
+  "source": {
+    "captured_url": "https://ffpfredrik.com/ja-jp",
+    "reference_name": "DIS日次学習（自動収集）",
+    "reference_url": null,
+    "reference_detail_url": "https://ffpfredrik.com/ja-jp",
+    "notion_url": null,
+    "dis_notion_url": "https://app.notion.com/p/41124d4fa671815584dace6b96c8c855",
+    "dropbox_master_path": null,
+    "dis_dropbox_path": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-WB-20261108",
+    "github_knowledge_path": "knowledge/web/WB-0070.json",
+    "archive_post_id": "web:ffpfredrik.com/ja-jp"
+  },
+  "section_patterns": [
+    {
+      "id": "C01",
+      "source_section": "U1",
+      "name": "お知らせバー＋ヘッダー",
+      "role": "ナビ",
+      "reusable_structure": [
+        "細いお知らせバー＋日英2段のヘッダー"
+      ],
+      "replace_required": [
+        "お知らせ文",
+        "ラベル"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C02",
+      "source_section": "U2",
+      "name": "ヒーロー",
+      "role": "FV",
+      "reusable_structure": [
+        "巨大な繰り返しのワードマーク＋商品＋小さな最新情報の枠"
+      ],
+      "replace_required": [
+        "ワードマーク",
+        "商品画像"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C03",
+      "source_section": "U3",
+      "name": "カテゴリのストリップ",
+      "role": "ナビ",
+      "reusable_structure": [
+        "商品アイコン付きの横ストリップ"
+      ],
+      "replace_required": [
+        "カテゴリ名",
+        "アイコン"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C04",
+      "source_section": "U4",
+      "name": "流れる標語",
+      "role": "その他",
+      "reusable_structure": [
+        "画面幅いっぱいの太字の標語"
+      ],
+      "replace_required": [
+        "標語の文面"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C05",
+      "source_section": "U5",
+      "name": "商品の紹介（Jelly tote）",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "大きな見出し＋商品写真＋生活写真＋商品名・素材・価格"
+      ],
+      "replace_required": [
+        "商品",
+        "写真",
+        "価格"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C06",
+      "source_section": "U6",
+      "name": "バナーのスライダー",
+      "role": "その他",
+      "reusable_structure": [
+        "スライダーのタイル"
+      ],
+      "replace_required": [
+        "タイルの画像",
+        "文面"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C07",
+      "source_section": "U7",
+      "name": "商品の紹介（キャップ・スウェット）と大きな漢字",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "商品写真＋装飾写真の重なり＋巨大な漢字"
+      ],
+      "replace_required": [
+        "写真",
+        "漢字",
+        "文面"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C08",
+      "source_section": "U8",
+      "name": "GIFTの帯",
+      "role": "その他",
+      "reusable_structure": [
+        "縦の繰り返し文字＋イラスト＋リンク"
+      ],
+      "replace_required": [
+        "イラスト",
+        "文面"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C09",
+      "source_section": "U9",
+      "name": "商品の紹介（Anything tote）",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "見出し＋説明＋生活写真＋商品"
+      ],
+      "replace_required": [
+        "写真",
+        "商品",
+        "文面"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C10",
+      "source_section": "U10",
+      "name": "カテゴリのカルーセル",
+      "role": "ナビ",
+      "reusable_structure": [
+        "モデル写真のカルーセル"
+      ],
+      "replace_required": [
+        "モデル写真",
+        "カテゴリ名"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C11",
+      "source_section": "U11",
+      "name": "フッター",
+      "role": "フッター",
+      "reusable_structure": [
+        "リンク列＋巨大なワードマーク"
+      ],
+      "replace_required": [
+        "リンク",
+        "ワードマーク"
+      ],
+      "rights_status": "reference_only"
+    }
+  ],
+  "reusable_principles": [
+    "ブランド名の巨大な繰り返しワードマーク（ヒーローとフッター）",
+    "編集的で非対称な商品紹介のレイアウト",
+    "カテゴリ導線を3か所に置く"
+  ],
+  "visual_patterns": [
+    {
+      "name": "color_legibility",
+      "description": "配色: ヒーローは青と金色の高コントラスト。本体は明るい灰色の背景で、商品の色を引き立てる。オレンジのバナーと、赤い丸が差し色（pc_01、pc_04）。 タイポグラフィ: グラフィティ風のブランド名、幾何学的な太字のサンセリフ（見出し・標語）、巨大な漢字を併用。絵文字を見出しに使い、親しみを出している（pc_01、pc_02、pc_05）。"
+    },
+    {
+      "name": "layout_spacing",
+      "description": "余白が広く、写真・文字を非対称に配置し、重なりも使う。ページが長く、スクロールの量は多い（pc_02〜06）。 SPは1カラムに集約し、写真の左右へのずれと重なりは維持する。"
+    },
+    {
+      "name": "visual_brand",
+      "description": "ブランド名の巨大な繰り返し（ヒーローとフッター）、標語、絵文字つきの見出し、巾着の商品が、ページ全体で統一されている（pc_01、pc_07）。 一方、フッターの大きな文字がPCとSPで異なる（FREDRIK／FFP）。"
+    }
+  ],
+  "rights_excluded": [
+    "ロゴ",
+    "人物",
+    "写真",
+    "コピー",
+    "価格",
+    "実績値",
+    "商品名・商品画像",
+    "イラスト",
+    "第三者のブランド・商品の写真"
+  ],
+  "unverified_claims": [
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U8"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U9"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U10"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U10"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U11"
+    }
+  ],
+  "recommended_use_cases": [],
+  "analysis_notes": {
+    "completion_status": "dis_analysis_done",
+    "dis_analysis_ref": "DIS-WB-20261108",
+    "remaining_limits": [
+      "タグは、必要に応じて人が確認する（このファイルはDISからの下書き）",
+      "CBS本体への実同期は未実施"
+    ]
+  },
+  "dis_evaluation": {
+    "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+    "axes": [
+      {
+        "key": "purpose_fit",
+        "label": "目的適合",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "information_hierarchy",
+        "label": "情報優先順位",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_flow",
+        "label": "視線誘導",
+        "score": 4,
+        "confidence": "low"
+      },
+      {
+        "key": "message_copy",
+        "label": "訴求・コピー",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "trust_safety",
+        "label": "信頼・安心",
+        "score": 3,
+        "confidence": "low"
+      },
+      {
+        "key": "color_legibility",
+        "label": "配色・可読性",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "layout_spacing",
+        "label": "レイアウト・余白",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_brand",
+        "label": "ビジュアル・ブランド",
+        "score": 5,
+        "confidence": "medium"
+      },
+      {
+        "key": "implementation_reuse",
+        "label": "実装・転用性",
+        "score": 3,
+        "confidence": "low"
+      }
+    ],
+    "note": "28章の総合点（ヒューリスティック/100）とは別の物差し。足したり平均したりしない。"
+  },
+  "cbs_sync": {
+    "status": "draft_from_dis",
+    "knowledge_path": "knowledge/web/WB-0070.json",
+    "exported_at": null,
+    "actual_cbs_import": "not_synced"
+  }
+}

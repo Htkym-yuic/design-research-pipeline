@@ -1,0 +1,240 @@
+{
+  "id": "BN-0050",
+  "dis_ids": [
+    "DIS-BN-20261108"
+  ],
+  "mediaType": "Banner",
+  "media_type": "Banner",
+  "title": "Adobe Acrobat（AIアシスタント）",
+  "brand": "Adobe Acrobat（AIアシスタント）",
+  "industry_tags": [
+    "ソフトウェア"
+  ],
+  "product_tags": [
+    "ディスプレイ広告"
+  ],
+  "color_tags": [
+    "レッド",
+    "ブルー"
+  ],
+  "layout_tags": [],
+  "copy_types": [],
+  "primary_appeal": "PDFのAIアシスタント機能を訴求する横長のディスプレイ広告バナー（見た目の比率は約8:1。728×90のリーダーボード相当と見られるが、画像の実寸は未計測）。赤い背景に、左から、AI機能のUIと人物の写真、白い太字の便益コピー、青い無料開始ボタン、製品ロゴを一列に並べている。",
+  "captureUrl": "https://retrobanner.net/archives/15113",
+  "sourceUrl": "https://retrobanner.net/archives/15113",
+  "sourceDetailUrl": "https://retrobanner.net/archives/15113",
+  "source": {
+    "captured_url": "https://retrobanner.net/archives/15113",
+    "reference_name": "Retro Banners",
+    "reference_url": null,
+    "reference_detail_url": "https://retrobanner.net/archives/15113",
+    "notion_url": null,
+    "dis_notion_url": "https://app.notion.com/p/41124d4fa671812aba53e5ed0627f196",
+    "dropbox_master_path": null,
+    "dis_dropbox_path": "/design/Design_Research_Library/Banner_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-BN-20261108",
+    "github_knowledge_path": "knowledge/banner/BN-0050.json",
+    "archive_post_id": "banner:retrobanner.net/archives/15113"
+  },
+  "section_patterns": [
+    {
+      "id": "C01",
+      "source_section": "U1",
+      "name": "AIアシスタントのUI＋人物",
+      "role": "その他",
+      "reusable_structure": [
+        "UIカード＋人物写真を左に置く"
+      ],
+      "replace_required": [
+        "UI画像",
+        "人物写真"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C02",
+      "source_section": "U2",
+      "name": "便益コピー",
+      "role": "ベネフィット",
+      "reusable_structure": [
+        "白い太字2行のコピー"
+      ],
+      "replace_required": [
+        "文面"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C03",
+      "source_section": "U3",
+      "name": "CTAボタン",
+      "role": "CTA",
+      "reusable_structure": [
+        "補色に近い青のピル形ボタン"
+      ],
+      "replace_required": [
+        "文言",
+        "色"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C04",
+      "source_section": "U4",
+      "name": "製品ロゴ",
+      "role": "その他",
+      "reusable_structure": [
+        "右端に固定したロゴ"
+      ],
+      "replace_required": [
+        "ロゴ"
+      ],
+      "rights_status": "reference_only"
+    }
+  ],
+  "reusable_principles": [
+    "証拠→便益→CTA→ロゴの横一列",
+    "補色のピル形CTAを1つに絞る",
+    "2行以内の便益コピー"
+  ],
+  "visual_patterns": [
+    {
+      "name": "color_legibility",
+      "description": "配色: Adobeを想起させる赤を背景にし、白文字と、青いボタンで、役割を分けている（U2、U3）。 タイポグラフィ: コピーは、太いゴシック体で、2行に折り返して高さを確保。UI内の文字は非常に小さい（U1、U2）。"
+    },
+    {
+      "name": "layout_spacing",
+      "description": "細長い面に、4要素を横一列に収めている。余白は少ないが、要素の間隔は一定で、窮屈さは少ない（U1〜U4）。"
+    },
+    {
+      "name": "visual_brand",
+      "description": "Adobeのブランドカラー（赤）と、ロゴの扱いに沿っている。"
+    }
+  ],
+  "rights_excluded": [
+    "ロゴ",
+    "人物",
+    "写真",
+    "コピー",
+    "価格",
+    "実績値",
+    "製品のUI画像",
+    "製品ロゴ"
+  ],
+  "unverified_claims": [
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U4"
+    }
+  ],
+  "recommended_use_cases": [],
+  "analysis_notes": {
+    "completion_status": "dis_analysis_done",
+    "dis_analysis_ref": "DIS-BN-20261108",
+    "remaining_limits": [
+      "タグは、必要に応じて人が確認する（このファイルはDISからの下書き）",
+      "CBS本体への実同期は未実施"
+    ]
+  },
+  "dis_evaluation": {
+    "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+    "axes": [
+      {
+        "key": "purpose_fit",
+        "label": "目的適合",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "information_hierarchy",
+        "label": "情報優先順位",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_flow",
+        "label": "視線誘導",
+        "score": 4,
+        "confidence": "low"
+      },
+      {
+        "key": "message_copy",
+        "label": "訴求・コピー",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "trust_safety",
+        "label": "信頼・安心",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "color_legibility",
+        "label": "配色・可読性",
+        "score": 4,
+        "confidence": "low"
+      },
+      {
+        "key": "layout_spacing",
+        "label": "レイアウト・余白",
+        "score": 3,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_brand",
+        "label": "ビジュアル・ブランド",
+        "score": 5,
+        "confidence": "low"
+      },
+      {
+        "key": "implementation_reuse",
+        "label": "実装・転用性",
+        "score": 4,
+        "confidence": "medium"
+      }
+    ],
+    "note": "28章の総合点（ヒューリスティック/100）とは別の物差し。足したり平均したりしない。"
+  },
+  "cbs_sync": {
+    "status": "draft_from_dis",
+    "knowledge_path": "knowledge/banner/BN-0050.json",
+    "exported_at": null,
+    "actual_cbs_import": "not_synced"
+  }
+}

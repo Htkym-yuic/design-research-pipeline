@@ -1,0 +1,490 @@
+{
+  "id": "WB-0069",
+  "dis_ids": [
+    "DIS-WB-20261107"
+  ],
+  "mediaType": "Web",
+  "media_type": "Web",
+  "title": "Baseline Design",
+  "brand": "Baseline Design",
+  "industry_tags": [
+    "コーポレート"
+  ],
+  "product_tags": [],
+  "color_tags": [
+    "ホワイト",
+    "ブラック"
+  ],
+  "layout_tags": [
+    "サービス理解型"
+  ],
+  "copy_types": [],
+  "primary_appeal": "デザインシステムの支援・研修を提供する小規模チームの英語コーポレートサイト（ページ下部に「Made by hand in Framer」の表記）。PCでは巨大なセリフ体のワードマークで始め、SPでは価値提案の見出しを主役にし、取引先ロゴ→サービス→顧客の声→チーム→実績数値→記事→問い合わせの順に、単色基調で縦に積む。PC・SPともに最初からフッターまで画像で確認済み。",
+  "captureUrl": "https://www.baselinedesign.com/",
+  "sourceUrl": "https://www.baselinedesign.com/",
+  "sourceDetailUrl": "https://www.baselinedesign.com/",
+  "source": {
+    "captured_url": "https://www.baselinedesign.com/",
+    "reference_name": "DIS日次学習（自動収集）",
+    "reference_url": null,
+    "reference_detail_url": "https://www.baselinedesign.com/",
+    "notion_url": null,
+    "dis_notion_url": "https://app.notion.com/p/41124d4fa6718165a6eefec4b037a8f0",
+    "dropbox_master_path": null,
+    "dis_dropbox_path": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-WB-20261107",
+    "github_knowledge_path": "knowledge/web/WB-0069.json",
+    "archive_post_id": "web:baselinedesign.com"
+  },
+  "section_patterns": [
+    {
+      "id": "C01",
+      "source_section": "U1",
+      "name": "ナビゲーション",
+      "role": "ナビ",
+      "reusable_structure": [
+        "ロゴなし・右上に小さなリンク"
+      ],
+      "replace_required": [
+        "リンクの名称"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C02",
+      "source_section": "U2",
+      "name": "ファーストビュー（ワードマーク）",
+      "role": "FV",
+      "reusable_structure": [
+        "画面幅いっぱいのワードマーク"
+      ],
+      "replace_required": [
+        "ワードマークの書体",
+        "名称"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C03",
+      "source_section": "U3",
+      "name": "価値提案＋説明",
+      "role": "ベネフィット",
+      "reusable_structure": [
+        "左に要点見出し、右に補足の2カラム＋下線リンク"
+      ],
+      "replace_required": [
+        "コピー"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C04",
+      "source_section": "U4",
+      "name": "取引先ロゴ帯",
+      "role": "実績",
+      "reusable_structure": [
+        "グレー単色のロゴ帯（端はフェード）"
+      ],
+      "replace_required": [
+        "取引先ロゴ"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C05",
+      "source_section": "U5",
+      "name": "作例ビジュアル（2枚）",
+      "role": "その他",
+      "reusable_structure": [
+        "同じ高さの2枚を横並び・はみ出し"
+      ],
+      "replace_required": [
+        "作例の画像"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C06",
+      "source_section": "U6",
+      "name": "見出し「Systems are our thing, but people are the point.」",
+      "role": "その他",
+      "reusable_structure": [
+        "罫線＋大きな見出し＋本文"
+      ],
+      "replace_required": [
+        "見出し",
+        "本文"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C07",
+      "source_section": "U7",
+      "name": "Services（サービス一覧）",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "3分類×6項目の箇条書き＋下線リンク"
+      ],
+      "replace_required": [
+        "サービス名"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C08",
+      "source_section": "U8",
+      "name": "顧客の声",
+      "role": "実績",
+      "reusable_structure": [
+        "黒い面＋ロゴ＋引用＋一文のハイライト＋顔写真・肩書"
+      ],
+      "replace_required": [
+        "引用文",
+        "ロゴ",
+        "人物"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C09",
+      "source_section": "U9",
+      "name": "チーム紹介の導入",
+      "role": "会社情報",
+      "reusable_structure": [
+        "大見出し＋短い本文"
+      ],
+      "replace_required": [
+        "文面"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C10",
+      "source_section": "U10",
+      "name": "Our team",
+      "role": "会社情報",
+      "reusable_structure": [
+        "左に見出し、右に写真つきの縦リスト"
+      ],
+      "replace_required": [
+        "人物写真",
+        "氏名",
+        "肩書"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C11",
+      "source_section": "U11",
+      "name": "実績数値",
+      "role": "実績",
+      "reusable_structure": [
+        "4つのカード（大きな数字＋1行の説明）"
+      ],
+      "replace_required": [
+        "数値",
+        "説明"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C12",
+      "source_section": "U12",
+      "name": "Notes on design systems／Latest posts",
+      "role": "その他",
+      "reusable_structure": [
+        "見出し＋サムネイル付きの記事リスト"
+      ],
+      "replace_required": [
+        "記事",
+        "画像"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C13",
+      "source_section": "U13",
+      "name": "問い合わせ（Let’s work together）",
+      "role": "CTA",
+      "reusable_structure": [
+        "左に説明、右にフォーム＋黒い送信ボタン"
+      ],
+      "replace_required": [
+        "文面",
+        "連絡先"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C14",
+      "source_section": "U14",
+      "name": "フッター",
+      "role": "フッター",
+      "reusable_structure": [
+        "リンク列＋巨大なワードマーク"
+      ],
+      "replace_required": [
+        "リンク",
+        "ワードマーク"
+      ],
+      "rights_status": "reference_only"
+    }
+  ],
+  "reusable_principles": [
+    "巨大なワードマークだけで成立するFV",
+    "文字だけで階層を作る3階層（見出し・本文・小見出し）",
+    "取引先ロゴ→サービス→声→実績の順に信頼を積む構成"
+  ],
+  "visual_patterns": [
+    {
+      "name": "color_legibility",
+      "description": "配色: オフホワイトと黒を基調に、強調色は青緑（数字の「+」、引用のハイライト）に絞っている。作例ビジュアルにだけ淡い緑・紫を使う（pc_01、pc_02、pc_03）。 タイポグラフィ: 高コントラストなセリフ体のワードマーク、太いサンセリフの見出し、セリフ体の本文を組み合わせ、文字だけで階層を作っている（pc_01〜04）。 SPでも見出しは太いサンセリフ、本文はセリフ体で、本文の文字は大きめ…"
+    },
+    {
+      "name": "layout_spacing",
+      "description": "2カラムの左右の揃えと余白が一貫し、セクション間は罫線で区切る。内容が多くても詰まって見えない（pc_02、pc_03）。 SPはすべて1カラムで、2カラム部分を縦に積み、カード（実績）も縦積み（sp_03〜04）。"
+    },
+    {
+      "name": "visual_brand",
+      "description": "FVとフッターで同じワードマークを使い、文字・色・罫線の使い方がページ全体で一貫している（pc_01、pc_04）。 SPでも、ワードマークをフッターで大きく使い、色・文字の使い方が一貫している（sp_05）。"
+    }
+  ],
+  "rights_excluded": [
+    "ロゴ",
+    "人物",
+    "写真",
+    "コピー",
+    "価格",
+    "実績値",
+    "取引先ロゴ",
+    "顧客の声の文面・氏名"
+  ],
+  "unverified_claims": [
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U8"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U9"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U10"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U11"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U12"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U12"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U13"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U13"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U14"
+    }
+  ],
+  "recommended_use_cases": [],
+  "analysis_notes": {
+    "completion_status": "dis_analysis_done",
+    "dis_analysis_ref": "DIS-WB-20261107",
+    "remaining_limits": [
+      "タグは、必要に応じて人が確認する（このファイルはDISからの下書き）",
+      "CBS本体への実同期は未実施"
+    ]
+  },
+  "dis_evaluation": {
+    "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+    "axes": [
+      {
+        "key": "purpose_fit",
+        "label": "目的適合",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "information_hierarchy",
+        "label": "情報優先順位",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_flow",
+        "label": "視線誘導",
+        "score": 4,
+        "confidence": "low"
+      },
+      {
+        "key": "message_copy",
+        "label": "訴求・コピー",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "trust_safety",
+        "label": "信頼・安心",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "color_legibility",
+        "label": "配色・可読性",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "layout_spacing",
+        "label": "レイアウト・余白",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_brand",
+        "label": "ビジュアル・ブランド",
+        "score": 5,
+        "confidence": "medium"
+      },
+      {
+        "key": "implementation_reuse",
+        "label": "実装・転用性",
+        "score": 3,
+        "confidence": "low"
+      }
+    ],
+    "note": "28章の総合点（ヒューリスティック/100）とは別の物差し。足したり平均したりしない。"
+  },
+  "cbs_sync": {
+    "status": "draft_from_dis",
+    "knowledge_path": "knowledge/web/WB-0069.json",
+    "exported_at": null,
+    "actual_cbs_import": "not_synced"
+  }
+}

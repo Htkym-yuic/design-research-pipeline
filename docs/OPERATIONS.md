@@ -529,3 +529,18 @@ npm run dis:reserve-id -- --id DIS-WB-20261107 --reserve --apply
 - 更新するファイル: `data/dis-relations.json`（対応表。追記のみ）。`--reserve` のときは、加えて `data/id-counters.json`（`existingMax`・`nextNumber` を1つ進める）と、予約ファイル（LPは `candidates/lp-archive/intake-reservations.json`、バナー・Webは `candidates/non-lp/intake-reservations.json`）。
 - 既存の番号・既存の対応は変更しない。すでに対応表にあるDISのID、存在しない既存番号（`--same-as`）、形式の違う番号は拒否する。
 - 書込み後は、これらのファイルをコミットしてプッシュする。そのあと、`dis:cbs-draft` で下書きを作り、`--place` で `knowledge/` に配置する。
+
+### DIS: 旧形式（日付のID）の登録済み案件を、ナレッジ化する（`dis:draft-legacy`）
+
+最初に登録した6件（`DIS-LP-20261107` など）は、日付形式のIDで、v2分析（`candidates/dis/<日付>/<ID>.v2.analysis.json`）がある。Macの案件フォルダが無くても、v2分析・台帳・対応表から、CBS用ナレッジの下書きを作る。
+
+```bash
+npm run dis:draft-legacy -- --id DIS-WB-20261107            # 内容の表示のみ（書かない）
+npm run dis:draft-legacy -- --id DIS-WB-20261107 --place    # knowledge/web/WB-0069.json に新規配置（上書きしない）
+```
+
+- 前提: `dis:reserve-id` で、ライブラリー番号の対応がある（IDは、そのライブラリー番号）。
+- Sectionの種類は、`scripts/dis/migration/roletypes.json` を重ねる（元のv2分析は変えない）。バナーは、セクションではなく要素の構成のため、CTA・ベネフィット以外は「その他」。
+- タグは、v2分析の `notionProps`（サイト種別・配色・レイアウトなど）から作る。訴求（`primary_appeal`）は、DISの要約の先頭。
+- 配置済み: `BN-0049`・`BN-0050`・`WB-0069`・`WB-0070`。LP（`LP-0248`・`LP-0249`）は、28章で訴求・タグを確定してから配置する。
+- CBS本体への同期はしない（`cbs_sync` は下書き・未同期のまま）。インデックスの更新は `npm run cbs:export`。

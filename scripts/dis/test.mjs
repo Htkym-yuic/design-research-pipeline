@@ -1340,3 +1340,23 @@ test("reserve-library-id: ライブラリー番号の対応づけ（既存と同
   assert.equal(lpr.reserved.at(-1).id, "LP-0248"); assert.equal(lpr.nextLpId, "LP-0249");
   assert.equal((await r("data/dis-relations.json")).relations.at(-1).canonicalKey, "rdlp:229000");
 });
+
+test("draft-legacy-knowledge: 旧形式の登録済み4件（Web・バナー）から、ライブラリー番号のIDで下書きを作り、knowledge/へ新規配置できる", async () => {
+  const { draftLegacy, tagsFromNotionProps } = await import("./draft-legacy-knowledge.mjs");
+  const { placeKnowledge } = await import("./cbs-draft.mjs");
+  const { ROLE_TYPES } = await import("./lib/crop.mjs");
+  const expected = { "DIS-BN-20261107": ["BN-0049", "Banner", "banner"], "DIS-BN-20261108": ["BN-0050", "Banner", "banner"], "DIS-WB-20261107": ["WB-0069", "Web", "web"], "DIS-WB-20261108": ["WB-0070", "Web", "web"] };
+  const repo = await fs.mkdtemp(path.join(os.tmpdir(), "dis-legacy-"));
+  for (const [disId, [id, mediaType, dir]] of Object.entries(expected)) {
+    const { draft } = await draftLegacy({ disId });
+    assert.equal(draft.id, id); assert.equal(draft.mediaType, mediaType); assert.deepEqual(draft.dis_ids, [disId]);
+    assert.ok(draft.section_patterns.length >= 4 && draft.section_patterns.every((p) => ROLE_TYPES.includes(p.role)));
+    assert.equal(draft.dis_evaluation.axes.length, 9); assert.equal(draft.cbs_sync.actual_cbs_import, "not_synced");
+    assert.ok(draft.source.dis_dropbox_path && draft.source.dis_notion_url); // 台帳と対応表から、Dropbox・Notionの場所が入る
+    assert.equal(draft.captureUrl.startsWith("http"), true);
+    assert.equal(await placeKnowledge({ draft, repo }), path.join("knowledge", dir, `${id}.json`));
+  }
+  assert.deepEqual(tagsFromNotionProps({ "サイト種別": "EC", "配色タグ": ["ホワイト"], "構成タイプ": ["利用シーン型"] }).layout_tags, ["利用シーン型"]);
+  await assert.rejects(draftLegacy({ disId: "DIS-LP-0001" }), /v2分析が見つかりません/); // v2分析のない案件は対象外
+  await assert.rejects(draftLegacy({ disId: "DIS-WB-99999999" }), /台帳に/);
+});

@@ -46,6 +46,7 @@
     "dis:import-analysis": "node scripts/dis/import-analysis.mjs",
     "dis:supplement-crops": "node scripts/dis/supplement-crops.mjs",
     "dis:reserve-id": "node scripts/dis/reserve-library-id.mjs",
+    "dis:draft-legacy": "node scripts/dis/draft-legacy-knowledge.mjs",
     "dis:supplement-overview": "node scripts/dis/supplement-overview.mjs",
     "dis:cbs-draft": "node scripts/dis/cbs-draft.mjs",
     "dis:register-lp28": "node scripts/dis/register-lp28.mjs"
