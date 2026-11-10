@@ -1143,3 +1143,26 @@ test("writeDropbox: 既存フォルダは中止／--resume のときだけ、す
     for (const [k, v] of Object.entries(env0)) { if (v === undefined) delete process.env[k]; else process.env[k] = v; }
   }
 });
+
+test("supplement-overview: 登録済み案件に、全体図を新規追加する計画を作る（既存は触らない・全体図がなければ止まる）／Notionの挿入位置を見つける", async () => {
+  const { planOverviewUpload, findInsertPoint } = await import("./supplement-overview.mjs");
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-supov-"));
+  const dir = path.join(tmp, "files", "02_Notion_Images");
+  await fs.mkdir(dir, { recursive: true });
+  const entry = { disId: "DIS-LP-0002", dropbox: { folder: "/d/LP/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0002" }, notion: { pageId: "page-1" } };
+  await assert.rejects(() => planOverviewUpload({ entry, itemDir: tmp }), /全体図がありません/);
+  await fs.writeFile(path.join(dir, "DIS-LP-0002_PC_units_notion.jpg"), "x");
+  const plan = await planOverviewUpload({ entry, itemDir: tmp });
+  assert.equal(plan.remote, "/d/LP/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0002/02_Notion_Images/DIS-LP-0002_PC_units_notion.jpg");
+  assert.equal(plan.pageId, "page-1");
+  await assert.rejects(() => planOverviewUpload({ entry: { ...entry, dropbox: {} }, itemDir: tmp }), /Dropboxの保存先/);
+  await assert.rejects(() => planOverviewUpload({ entry: { ...entry, notion: {} }, itemDir: tmp }), /Notionのページ/);
+  const rt = (c) => ({ rich_text: [{ plain_text: c }] });
+  const h = { id: "h1", type: "heading_2", heading_2: rt("画像（Notion用の軽量版。正本はDropbox）") };
+  const img = (c) => ({ id: "i1", type: "image", image: { caption: [{ plain_text: c }] } });
+  assert.deepEqual(findInsertPoint([h, img("PC ファーストビュー")]), { headingId: "h1", exists: false });
+  assert.deepEqual(findInsertPoint([h, img("セクション全体図（番号…）"), img("PC ファーストビュー")]), { headingId: "h1", exists: true });
+  assert.deepEqual(findInsertPoint([{ id: "p", type: "paragraph", paragraph: rt("x") }]), { headingId: null, exists: false });
+  const r = spawnSync(process.execPath, [path.join(here, "supplement-overview.mjs"), "--id", "DIS-LP-9999"], { env: { ...process.env, DRY_RUN: "true", DIS_ENABLE_WRITES: "" }, encoding: "utf8" });
+  assert.notEqual(r.status, 0); // 台帳にない案件は止まる
+});

@@ -183,6 +183,27 @@ export async function appendBlockChildren(pageId, children) {
   });
 }
 
+/** ブロックの子を、すべて取得する（読み取りのみ）。 */
+export async function listBlockChildren(blockId) {
+  const out = [];
+  let cursor;
+  do {
+    const query = cursor ? `?start_cursor=${encodeURIComponent(cursor)}` : "";
+    const result = await notionFetch(`/blocks/${blockId}/children${query}`);
+    out.push(...(result.results || []));
+    cursor = result.has_more ? result.next_cursor : null;
+  } while (cursor);
+  return out;
+}
+
+/** 指定したブロックの直後に、子ブロックを挿入する（既存のブロックは変更しない）。 */
+export async function insertBlockChildrenAfter(parentId, children, afterBlockId) {
+  return notionFetch(`/blocks/${parentId}/children`, {
+    method: "PATCH",
+    body: JSON.stringify({ children, position: { type: "after_block", after_block: { id: afterBlockId } } }),
+  });
+}
+
 /** 20 MiB未満のローカルファイルをNotionへ直接アップロードする。 */
 export async function uploadFileForNotion(filePath, contentType = "image/jpeg") {
   const filename = path.basename(filePath);

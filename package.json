@@ -44,7 +44,8 @@
     "dis:search": "node scripts/dis/search.mjs",
     "dis:supplement": "node scripts/dis/supplement.mjs",
     "dis:import-analysis": "node scripts/dis/import-analysis.mjs",
-    "dis:supplement-crops": "node scripts/dis/supplement-crops.mjs"
+    "dis:supplement-crops": "node scripts/dis/supplement-crops.mjs",
+    "dis:supplement-overview": "node scripts/dis/supplement-overview.mjs"
   },
   "dependencies": {
     "playwright": "^1.55.0",
