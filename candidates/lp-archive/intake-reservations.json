@@ -1,11 +1,12 @@
 {
-  "updatedAt": "2026-10-03T16:18:52.726Z",
+  "updatedAt": "2026-11-10T08:03:08.000Z",
   "mediaType": "LP",
   "sourceName": "LPアーカイブ",
   "notes": [
     "Dropbox上の既存候補とCBS同期済みナレッジを突き合わせ、次回以降の新規LP候補はLP-0223から開始する。",
     "LP-0215は生活本舗のCBS同期済みIDとして固定する。",
-    "2026-09-26取得分のSunshine City候補は、ID重複回避のためLP-0215からLP-0222へ変更した。"
+    "2026-09-26取得分のSunshine City候補は、ID重複回避のためLP-0215からLP-0222へ変更した。",
+    "2026-11-10: DIS-LP-0001〜0003（ライブラリー未登録のLP）に、番号だけ確保（LP-0245〜0247）。LP-0004相当は、既存のLP-0001（ルミアグラス）と同一のため、新しい番号なし。"
   ],
   "reserved": [
     {
@@ -284,7 +285,37 @@
       "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229295",
       "lpArchivePostId": "229295",
       "reservedAt": "2026-10-03T16:18:52.726Z"
+    },
+    {
+      "id": "LP-0245",
+      "title": "オランジーナ",
+      "status": "reserved_dis_link",
+      "captureUrl": "http://orangina.jp/product/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/16359",
+      "lpArchivePostId": "16359",
+      "linkedDisId": "DIS-LP-0001",
+      "reservedAt": "2026-11-10T08:03:08.000Z"
+    },
+    {
+      "id": "LP-0246",
+      "title": "販促EXPO【大阪】",
+      "status": "reserved_dis_link",
+      "captureUrl": "https://www.marketing-week.jp/hub/ja-jp/lp/visit/osaka/spex.html",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229569",
+      "lpArchivePostId": "229569",
+      "linkedDisId": "DIS-LP-0002",
+      "reservedAt": "2026-11-10T08:03:08.000Z"
+    },
+    {
+      "id": "LP-0247",
+      "title": "宇治山田歯科医院",
+      "status": "reserved_dis_link",
+      "captureUrl": "https://www.ujiyamada.com/lp/rec/dh/",
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229563",
+      "lpArchivePostId": "229563",
+      "linkedDisId": "DIS-LP-0003",
+      "reservedAt": "2026-11-10T08:03:08.000Z"
     }
   ],
-  "nextLpId": "LP-0245"
+  "nextLpId": "LP-0248"
 }

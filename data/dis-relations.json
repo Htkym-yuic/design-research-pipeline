@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "dis-relations-1.0",
+  "note": "DISの分析（DIS-xx-nnnn）と、ライブラリーの番号（LP-nnnn）の対応。同じLPを指す場合は、ライブラリーのIDを主（CBSなどの鍵）とし、DISは追加の分析の層として扱う。既存のページ・ID・分析は変更しない。 relation: same_lp（ライブラリーに既存）／reserved_for_library（番号のみ確保。ライブラリー未登録）。",
+  "relations": [
+    {
+      "disId": "DIS-LP-0004",
+      "relation": "same_lp",
+      "libraryId": "LP-0001",
+      "libraryNotionPageId": "3d024d4f-a671-81b2-9000-c38f1b3a490b",
+      "disNotionPageId": "41424d4f-a671-815a-859e-d5290861c176",
+      "canonicalKey": "rdlp:200519",
+      "archiveImageIds": {
+        "pc": "7947",
+        "sp": "7948"
+      },
+      "primaryId": "LP-0001",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0001の1件に、DISの層として付ける。DIS-LP-0004を、独立したLPとして載せない。評価点（78/100と9軸）は混ぜず、方法を明記して分ける。",
+      "reconciliation": "03_Analysis/reconciliation_LP-0001.md",
+      "establishedAt": "2026-11-10"
+    },
+    {
+      "disId": "DIS-LP-0001",
+      "relation": "reserved_for_library",
+      "libraryId": "LP-0245",
+      "libraryNotionPageId": null,
+      "disNotionPageId": "41324d4f-a671-812f-91ef-f92ae5cad34e",
+      "canonicalKey": "rdlp:16359",
+      "primaryId": "LP-0245",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）。ライブラリー側の取り込み・28章の分析は未実施",
+      "cbsPolicy": "ライブラリーに取り込み（28章の分析）が済んだら、LPの1件に、DISの層として付ける。DIS-LP単独では、CBSに載せない。",
+      "establishedAt": "2026-11-10"
+    },
+    {
+      "disId": "DIS-LP-0002",
+      "relation": "reserved_for_library",
+      "libraryId": "LP-0246",
+      "libraryNotionPageId": null,
+      "disNotionPageId": "41324d4f-a671-81cd-9741-d12fdf8bfe1d",
+      "canonicalKey": "rdlp:229569",
+      "primaryId": "LP-0246",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）。ライブラリー側の取り込み・28章の分析は未実施",
+      "cbsPolicy": "ライブラリーに取り込み（28章の分析）が済んだら、LPの1件に、DISの層として付ける。DIS-LP単独では、CBSに載せない。",
+      "establishedAt": "2026-11-10"
+    },
+    {
+      "disId": "DIS-LP-0003",
+      "relation": "reserved_for_library",
+      "libraryId": "LP-0247",
+      "libraryNotionPageId": null,
+      "disNotionPageId": "41324d4f-a671-818f-ad48-fc3c24802d20",
+      "canonicalKey": "rdlp:229563",
+      "primaryId": "LP-0247",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）。ライブラリー側の取り込み・28章の分析は未実施",
+      "cbsPolicy": "ライブラリーに取り込み（28章の分析）が済んだら、LPの1件に、DISの層として付ける。DIS-LP単独では、CBSに載せない。",
+      "establishedAt": "2026-11-10"
+    }
+  ]
+}

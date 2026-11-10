@@ -1,17 +1,17 @@
 {
   "lp": {
     "prefix": "LP",
-    "existingMax": 244,
-    "nextNumber": 245,
+    "existingMax": 247,
+    "nextNumber": 248,
     "digits": 4,
     "sourceOfTruth": "Notion 01｜LPリサーチライブラリー + Dropbox/GitHub intake reservations",
     "lastReservation": {
-      "reservedAt": "2026-10-03T16:18:52.726Z",
-      "idStart": "LP-0243",
-      "idEnd": "LP-0244",
-      "candidateCount": 2,
-      "sourceName": "LPアーカイブ",
-      "outputPath": "candidates/lp-archive/candidates.json"
+      "reservedAt": "2026-11-10T08:03:08.000Z",
+      "idStart": "LP-0245",
+      "idEnd": "LP-0247",
+      "candidateCount": 3,
+      "sourceName": "DIS（旧番号のないDIS-LP-0001〜0003に、番号だけ確保）",
+      "outputPath": "data/dis-relations.json"
     }
   },
   "banner": {
