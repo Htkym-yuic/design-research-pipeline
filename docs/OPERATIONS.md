@@ -512,3 +512,20 @@ DIS_ENABLE_WRITES=true DRY_RUN=false npm run dis:supplement-crops -- --id DIS-LP
 4. **Sectionの型の索引**: 同じ `cbs:export` が、`section-patterns.json` を作る。Sectionの種類（FV・悩み提起・共感・解決策・ベネフィット・特徴・実績・比較・商品紹介・料金・流れ・FAQ・CTA・会社情報・ナビ・フッター・その他）ごとに、各ナレッジの該当Section（名前・再利用できる構造・差し替え必須の要素）を集める。`controlled=false` は、旧来の自由な役割名（例: `price_anxiety_reduction_hero`）。
 5. **評価点は混ぜない**: DISの9軸（各1〜5点）と、28章のヒューリスティック（/100）は、別の物差し。足したり平均したりしない。
 6. **未実施**: Notionの、LPライブラリーの既存ページとDISのページの関連付け（リレーション）・CBS同期状態の更新は、Notionの既存の設定・ページを変更するため、ユーザーの許可を得てから行う。
+
+### DIS: ライブラリー番号の確保・対応づけ（`dis:reserve-id`）
+
+DISの案件を、ライブラリーの番号（`LP-nnnn`／`BN-nnnn`／`WB-nnnn`）と対応づける。ローカルのファイルのみを更新する（Notion・Dropbox・CBSには書かない）。既定はドライラン。
+
+```bash
+# ライブラリーに同じ作品がすでにある（既存の番号を使う。新しい番号は取らない）
+npm run dis:reserve-id -- --id DIS-BN-20261107 --same-as BN-0012 [--library-page <NotionのページID>]
+# ライブラリー未登録（次の番号を確保する）
+npm run dis:reserve-id -- --id DIS-WB-20261107 --reserve [--source-url <掲載元の詳細ページ>]
+# 書込み（ドライランで内容を確認してから）
+npm run dis:reserve-id -- --id DIS-WB-20261107 --reserve --apply
+```
+
+- 更新するファイル: `data/dis-relations.json`（対応表。追記のみ）。`--reserve` のときは、加えて `data/id-counters.json`（`existingMax`・`nextNumber` を1つ進める）と、予約ファイル（LPは `candidates/lp-archive/intake-reservations.json`、バナー・Webは `candidates/non-lp/intake-reservations.json`）。
+- 既存の番号・既存の対応は変更しない。すでに対応表にあるDISのID、存在しない既存番号（`--same-as`）、形式の違う番号は拒否する。
+- 書込み後は、これらのファイルをコミットしてプッシュする。そのあと、`dis:cbs-draft` で下書きを作り、`--place` で `knowledge/` に配置する。

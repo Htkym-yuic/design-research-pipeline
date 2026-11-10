@@ -1293,3 +1293,50 @@ test("cbs-draft: Web・バナーにも対応し、knowledge/<媒体>/ に新規�
   assert.equal(await placeKnowledge({ draft: lpOk, repo }), path.join("knowledge", "lp", "LP-0245.json")); // 検証（LPナレッジ）を通って配置
   await assert.rejects(placeKnowledge({ draft: { ...lpOk, id: "DIS-LP-0001" }, repo }), /ライブラリー番号の形式ではありません/); // DISの番号は、主のIDにしない
 });
+
+test("reserve-library-id: ライブラリー番号の対応づけ（既存と同じ作品／次の番号を確保）。既定はドライラン。既存は変更せず追記のみ・重複や範囲外は拒否", async () => {
+  const sh = path.join(here, "reserve-library-id.mjs");
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), "dis-resv-"));
+  const w = async (p, o) => { await fs.mkdir(path.dirname(path.join(root, p)), { recursive: true }); await fs.writeFile(path.join(root, p), JSON.stringify(o, null, 2)); };
+  const r = async (p) => JSON.parse(await fs.readFile(path.join(root, p), "utf8"));
+  await w("data/dis-ledger.json", { entries: [{ disId: "DIS-WB-20261107", media: "web", pageUrl: "https://www.baselinedesign.com/", brand: "Baseline Design", notion: { pageId: "p-1" } }, { disId: "DIS-BN-20261107", media: "banner", pageUrl: "https://ex.test/ban", brand: "バナーA", notion: { pageId: "p-2" } }, { disId: "DIS-LP-20261107", media: "lp", pageUrl: "https://ex.test/lp/", brand: "LP A", notion: { pageId: "p-3" } }] });
+  await w("data/id-counters.json", { lp: { prefix: "LP", existingMax: 247, nextNumber: 248, digits: 4 }, banner: { prefix: "BN", existingMax: 48, nextNumber: 49, digits: 4 }, web: { prefix: "WB", existingMax: 68, nextNumber: 69, digits: 4 } });
+  await w("data/dis-relations.json", { schemaVersion: "dis-relations-1.0", relations: [{ disId: "DIS-LP-0001", libraryId: "LP-0245", relation: "reserved_for_library" }] });
+  await w("candidates/non-lp/intake-reservations.json", { updatedAt: "x", reserved: [{ id: "WB-0068" }] });
+  await w("candidates/lp-archive/intake-reservations.json", { updatedAt: "x", reserved: [{ id: "LP-0247" }], nextLpId: "LP-0248" });
+  const run = (...a) => spawnSync(process.execPath, [sh, "--root", root, ...a], { encoding: "utf8" });
+  // ドライラン: 何も書かない
+  const before = JSON.stringify([await r("data/id-counters.json"), await r("data/dis-relations.json")]);
+  let o = run("--id", "DIS-WB-20261107", "--reserve");
+  assert.equal(o.status, 0, o.stderr); assert.match(o.stdout, /ドライラン/); assert.match(o.stdout, /WB-0069/);
+  assert.equal(JSON.stringify([await r("data/id-counters.json"), await r("data/dis-relations.json")]), before);
+  // Web: 次の番号を確保
+  o = run("--id", "DIS-WB-20261107", "--reserve", "--apply");
+  assert.equal(o.status, 0, o.stderr);
+  let c = await r("data/id-counters.json");
+  assert.deepEqual([c.web.existingMax, c.web.nextNumber], [69, 70]); assert.equal(c.web.nextNumber, c.web.existingMax + 1);
+  assert.deepEqual([c.lp.nextNumber, c.banner.nextNumber], [248, 49]); // 他の媒体は変えない
+  let rel = await r("data/dis-relations.json");
+  assert.equal(rel.relations.length, 2); assert.equal(rel.relations[0].libraryId, "LP-0245"); // 既存の対応は変えない
+  const added = rel.relations[1];
+  assert.deepEqual([added.disId, added.libraryId, added.relation, added.disNotionPageId], ["DIS-WB-20261107", "WB-0069", "reserved_for_library", "p-1"]);
+  assert.equal((await r("candidates/non-lp/intake-reservations.json")).reserved.at(-1).id, "WB-0069");
+  assert.notEqual(run("--id", "DIS-WB-20261107", "--reserve", "--apply").status, 0); // 二重の対応は拒否
+  // バナー: 既存の番号と同じ作品
+  o = run("--id", "DIS-BN-20261107", "--same-as", "BN-0012", "--apply");
+  assert.equal(o.status, 0, o.stderr);
+  rel = await r("data/dis-relations.json");
+  assert.deepEqual([rel.relations[2].libraryId, rel.relations[2].relation], ["BN-0012", "same_work"]);
+  c = await r("data/id-counters.json"); assert.equal(c.banner.nextNumber, 49); // 既存番号を使うので、カウンターは進めない
+  // 範囲外・形式違いは拒否
+  assert.match(run("--id", "DIS-LP-20261107", "--same-as", "LP-0999", "--apply").stderr, /存在する番号ではありません/);
+  assert.match(run("--id", "DIS-LP-20261107", "--same-as", "WB-0001", "--apply").stderr, /LP-nnnn の形式/);
+  assert.match(run("--id", "DIS-LP-9999", "--reserve").stderr, /台帳に/);
+  assert.notEqual(run("--id", "DIS-LP-20261107").status, 0); // 方法の指定が必須
+  // LP: 予約ファイルとnextLpIdも更新
+  o = run("--id", "DIS-LP-20261107", "--reserve", "--source-url", "https://rdlp.jp/archives/otherdesign/lp/229000", "--apply");
+  assert.equal(o.status, 0, o.stderr);
+  const lpr = await r("candidates/lp-archive/intake-reservations.json");
+  assert.equal(lpr.reserved.at(-1).id, "LP-0248"); assert.equal(lpr.nextLpId, "LP-0249");
+  assert.equal((await r("data/dis-relations.json")).relations.at(-1).canonicalKey, "rdlp:229000");
+});
