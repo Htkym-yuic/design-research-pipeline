@@ -164,7 +164,7 @@ async function main() {
   const rel = relations.find((r) => r.disId === values.id) || null;
   if (!rel) console.error(`注意: ${values.id} は data/dis-relations.json にありません（ライブラリー番号が未定のため、id は空になります。番号を確保・対応づけてから、--place してください）`);
   // タグは、--tags のファイルが優先。なければ、分析の notionProps（Notionの既存の選択肢）から作る。訴求・オファーは、指定（--appeal／--appeal-from-summary／--offer）があるときだけ入れる。
-  const tags = { ...tagsFromNotionProps(a.notionProps), ...(values.tags ? await readJson(values.tags, {}) : {}) };
+  const tags = { ...tagsFromNotionProps(a.notionProps, /^DIS-(LP|BN|WB)-/.exec(values.id)?.[1] || null), ...(values.tags ? await readJson(values.tags, {}) : {}) };
   if (values.appeal) tags.primary_appeal = values.appeal;
   else if (values["appeal-from-summary"] && !tags.primary_appeal) tags.primary_appeal = short(a.summary, 200);
   if (values.offer) tags.offer = values.offer;

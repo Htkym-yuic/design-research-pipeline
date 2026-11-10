@@ -39,7 +39,7 @@ export async function draftLegacy({ disId, root = REPO }) {
   const sourceName = SOURCE_NAMES.find(([re]) => re.test(ledger.pageUrl))?.[1] || "DIS日次学習（自動収集）";
   // 訴求・オファー・タグ・掲載元URLの補足（あれば、分析から作った値より優先）
   const ov = (await readJson(f("scripts/dis/migration/knowledge-overrides.json")).catch(() => ({ overrides: {} }))).overrides[disId] || {};
-  const tags = { ...tagsFromNotionProps(a.notionProps), ...(ov.tags || {}), ...(ov.primary_appeal ? { primary_appeal: ov.primary_appeal } : {}), ...(ov.offer ? { offer: ov.offer } : {}) };
+  const tags = { ...tagsFromNotionProps(a.notionProps, /^DIS-(LP|BN|WB)-/.exec(disId)?.[1] || null), ...(ov.tags || {}), ...(ov.primary_appeal ? { primary_appeal: ov.primary_appeal } : {}), ...(ov.offer ? { offer: ov.offer } : {}) };
   const draft = buildKnowledgeDraft({ a, item: { disId, sourceName: ov.sourceDetailUrl ? "LPアーカイブ" : sourceName, sourceDetailUrl: ov.sourceDetailUrl || ledger.pageUrl }, rel, sizes: {}, tags, dropboxFolder: ledger.dropbox?.folder || null });
   return { draft, analysis: a };
 }

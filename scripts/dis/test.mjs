@@ -1419,6 +1419,6 @@ test("cbs-draft(CLI): notionPropsからタグを作り、--appeal-from-summary�
   r = run("--appeal-from-summary", "--offer", "テストの特典");
   assert.equal(r.status, 0, r.stderr);
   const draft = JSON.parse(await fs.readFile(path.join(dir, "cbs-knowledge-draft.json"), "utf8"));
-  assert.deepEqual([draft.industry_tags, draft.product_tags, draft.color_tags, draft.layout_tags, draft.copy_types], [["飲料・お酒"], ["物販"], ["ブルー"], ["長尺LP"], ["数字訴求"]]);
+  assert.deepEqual([draft.industry_tags, draft.product_tags, draft.color_tags, draft.layout_tags, draft.copy_types], [["飲料・お酒"], ["LP/物販"], ["ブルー"], ["長尺LP"], ["数字訴求"]]);
   assert.equal(draft.primary_appeal, "テストの要約。二文目。"); assert.equal(draft.offer, "テストの特典");
 });
