@@ -43,7 +43,7 @@
       "id": "C01",
       "source_section": "U1",
       "name": "キービジュアル",
-      "role": "その他",
+      "role": "キービジュアル",
       "reusable_structure": [
         "全面のキービジュアルに、情報を周縁へ小さくまとめる構成"
       ],
@@ -57,7 +57,7 @@
       "id": "C02",
       "source_section": "U2",
       "name": "キャッチコピー",
-      "role": "その他",
+      "role": "キャッチコピー",
       "reusable_structure": [
         "暗い背景に白抜きの縦書きキャッチ"
       ],
@@ -71,7 +71,7 @@
       "id": "C03",
       "source_section": "U3",
       "name": "発売元ロゴ",
-      "role": "その他",
+      "role": "ロゴ",
       "reusable_structure": [
         "角に固定した単色ロゴ"
       ],
@@ -84,7 +84,7 @@
       "id": "C04",
       "source_section": "U4",
       "name": "タイトルロゴ",
-      "role": "その他",
+      "role": "ロゴ",
       "reusable_structure": [
         "キービジュアル下部の装飾ロゴ"
       ],
@@ -111,7 +111,7 @@
       "id": "C06",
       "source_section": "U6",
       "name": "対応プラットフォーム",
-      "role": "その他",
+      "role": "注釈・権利",
       "reusable_structure": [
         "統一サイズの単色ロゴを2段"
       ],
@@ -124,7 +124,7 @@
       "id": "C07",
       "source_section": "U7",
       "name": "著作権表記",
-      "role": "その他",
+      "role": "注釈・権利",
       "reusable_structure": [
         "最下部の小さな著作権表記"
       ],

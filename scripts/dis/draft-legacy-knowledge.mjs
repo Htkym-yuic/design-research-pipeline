@@ -4,6 +4,7 @@
  * 案件フォルダ（Macのoutputs）が無くても、リポジトリ内の v2 分析（candidates/dis/）・台帳・対応表だけで作れる。ローカルのみ（外部書込みなし）。
  *   node scripts/dis/draft-legacy-knowledge.mjs --id DIS-WB-20261107 [--place]
  * 既定は、下書きの内容を表示するだけ（ファイルを書かない）。--place で knowledge/<媒体>/<番号>.json に新規配置（上書きしない）。
+ * 種類の割り当てを直したときは --place --replace-draft（同じDISの、CBS未同期の下書きだけ置き換える。手で作ったナレッジは対象外）。
  * ライブラリー番号は data/dis-relations.json（dis:reserve-id で確保）から引く。Section の種類は scripts/dis/migration/roletypes.json を重ねる。
  */
 import fs from "node:fs/promises";
@@ -52,11 +53,11 @@ export async function draftLegacy({ disId, root = REPO }) {
 }
 
 async function main() {
-  const { values } = parseArgs({ options: { id: { type: "string" }, place: { type: "boolean", default: false } } });
+  const { values } = parseArgs({ options: { id: { type: "string" }, place: { type: "boolean", default: false }, "replace-draft": { type: "boolean", default: false } } });
   if (!values.id) throw new Error("--id（例: DIS-WB-20261107）が必要です");
   const { draft } = await draftLegacy({ disId: values.id });
   console.log(JSON.stringify({ id: draft.id, mediaType: draft.mediaType, title: draft.title, dis_ids: draft.dis_ids, tags: { industry: draft.industry_tags, color: draft.color_tags, layout: draft.layout_tags }, primary_appeal: draft.primary_appeal, sections: draft.section_patterns.map((p) => `${p.id} ${p.role}｜${p.name}`), axes: draft.dis_evaluation.axes.map((x) => `${x.key}=${x.score}`).join(" "), cbs_sync: draft.cbs_sync }, null, 2));
-  if (values.place) console.log(`配置しました: ${await placeKnowledge({ draft })}（新規のみ・CBS本体への同期はなし）`);
+  if (values.place) console.log(`配置しました: ${await placeKnowledge({ draft, replaceDraft: values["replace-draft"] })}（${values["replace-draft"] ? "同じDISの未同期の下書きのみ置き換え" : "新規のみ"}・CBS本体への同期はなし）`);
   else console.log("配置するには --place を付けてください（knowledge/ に新規作成）");
 }
 

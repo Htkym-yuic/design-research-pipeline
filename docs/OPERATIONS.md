@@ -540,7 +540,14 @@ npm run dis:draft-legacy -- --id DIS-WB-20261107 --place    # knowledge/web/WB-0
 ```
 
 - 前提: `dis:reserve-id` で、ライブラリー番号の対応がある（IDは、そのライブラリー番号）。
-- Sectionの種類は、`scripts/dis/migration/roletypes.json` を重ねる（元のv2分析は変えない）。バナーは、セクションではなく要素の構成のため、CTA・ベネフィット以外は「その他」。
+- 種類は、`scripts/dis/migration/roletypes.json` を重ねる（元のv2分析は変えない）。LP・Webは Section の種類、バナーは要素の種類（キービジュアル・キャッチコピー・ロゴ・CTA など）。
+- 種類の割り当てを直したときは、`--place --replace-draft`。同じDISの、CBS未同期の下書きだけ置き換える（手で作ったナレッジ・同期済みのものは、決して上書きしない）。
 - タグは、v2分析の `notionProps`（サイト種別・配色・レイアウトなど）から作る。訴求（`primary_appeal`）は、DISの要約の先頭。
 - 配置済み: `BN-0049`・`BN-0050`・`WB-0069`・`WB-0070`。LP（`LP-0248`・`LP-0249`）は、28章で訴求・タグを確定してから配置する。
 - CBS本体への同期はしない（`cbs_sync` は下書き・未同期のまま）。インデックスの更新は `npm run cbs:export`。
+
+### DIS: 種類（roleType）の一覧
+
+- **LP・Web（Sectionの種類）**: FV／悩み提起／共感／解決策／ベネフィット／特徴／実績／比較／商品紹介／料金／流れ／FAQ／CTA／会社情報／ナビ／フッター／その他
+- **バナー（要素の種類）**: キービジュアル／人物・キャラ／商品画像／UI・証拠／キャッチコピー／補足コピー／ベネフィット／オファー／CTA／ロゴ／注釈・権利／背景・装飾／その他
+- 分析の検証は、媒体に応じた一覧で行う（バナーにFVは使えない。LP・Webにキービジュアルは使えない）。`cbs:export` の `section-patterns.json` は、どちらの一覧の種類も「決まった種類（controlled）」として扱う。

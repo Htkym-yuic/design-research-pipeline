@@ -14,7 +14,7 @@ export const AXES = [
   { key: "implementation_reuse", label: "実装・転用性" },
 ];
 export const AXIS_KEYS = AXES.map((a) => a.key);
-import { ROLE_TYPES } from "./crop.mjs";
+import { roleTypesFor } from "./crop.mjs";
 export const CONFIDENCE = ["high", "medium", "low"];
 export const TOOLS = ["Canva", "Photoshop", "Elementor"];
 export const REVIEW_STATES = ["未レビュー", "レビュー済み"];
@@ -72,7 +72,7 @@ export function validateAnalysis(a, { requireComplete = true } = {}) {
     for (const f of ["id", "name", "role", "observation", "evidence", "reuseStructure"]) if (!str(u?.[f])) err(`units[${i}].${f} が空`);
     if (!CONFIDENCE.includes(u?.confidence)) err(`units[${i}].confidence は ${CONFIDENCE.join("/")}`);
     // Sectionの種類と切り出し範囲（旧形式の分析には無い。キーがある場合は、正しい値が必要）
-    if ("roleType" in (u || {}) && !ROLE_TYPES.includes(u.roleType)) err(`units[${i}].roleType は ${ROLE_TYPES.join("/")} のいずれか（未選択・不正: ${u.roleType || "空"}）`);
+    if ("roleType" in (u || {}) && !roleTypesFor(a?.media).includes(u.roleType)) err(`units[${i}].roleType は ${roleTypesFor(a?.media).join("/")} のいずれか（未選択・不正: ${u.roleType || "空"}）`);
     for (const dev of ["pc", "sp"]) {
       const r = u?.regions?.[dev];
       if (r === undefined || (r.y0 === 0 && r.y1 === 0)) continue; // その端末の画像がない・未指定

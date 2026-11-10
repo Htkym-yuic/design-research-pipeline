@@ -121,7 +121,7 @@ export function buildLp28Seed({ a, item, rel, sizes, files, dropboxFolder }) {
  * 下書きを knowledge/<媒体>/<ID>.json に配置する（新規のみ・上書きしない）。CBS本体への同期はしない（cbs_sync は下書き・未同期のまま）。
  * 配置の条件: IDがある／訴求・タグが確定している（LPは「（28章の分析で確定）」のままでは不可）／検証を通る／同名のファイルがない。
  */
-export async function placeKnowledge({ draft, repo = REPO }) {
+export async function placeKnowledge({ draft, repo = REPO, replaceDraft = false }) {
   const media = Object.values(KNOWLEDGE_MEDIA).find((m) => m.mediaType === draft.mediaType);
   if (!media) throw new Error(`媒体が不明です: ${draft.mediaType}`);
   if (!draft.id) throw new Error("ライブラリー番号がありません。data/dis-relations.json に、DISの番号とライブラリー番号（LP-nnnn／BN-nnnn／WB-nnnn）の対応を追加してください");
@@ -129,7 +129,14 @@ export async function placeKnowledge({ draft, repo = REPO }) {
   if (String(draft.primary_appeal || "").startsWith("（28章")) throw new Error("訴求・タグが未確定です。--tags で primary_appeal・タグ（industry_tags など）を指定してください");
   const target = path.join(repo, "knowledge", media.dir, `${draft.id}.json`);
   const exists = await fs.access(target).then(() => true, () => false);
-  if (exists) throw new Error(`すでにあります（上書きしません）: knowledge/${media.dir}/${draft.id}.json`);
+  let overwrite = false;
+  if (exists) {
+    // 置き換えてよいのは、同じDISの下書きで、CBSへ未同期のままのファイルだけ（手で作ったナレッジ・同期済みのものは、決して上書きしない）
+    const cur = replaceDraft ? JSON.parse(await fs.readFile(target, "utf8").catch(() => "null")) : null;
+    const ok = cur && cur.cbs_sync?.status === "draft_from_dis" && cur.cbs_sync?.actual_cbs_import === "not_synced" && (cur.dis_ids || []).some((d) => (draft.dis_ids || []).includes(d));
+    if (!ok) throw new Error(`すでにあります（上書きしません）: knowledge/${media.dir}/${draft.id}.json`);
+    overwrite = true;
+  }
   const errors = [];
   for (const f of ["id", "mediaType", "title", "captureUrl", "sourceDetailUrl"]) if (!draft[f]) errors.push(`${f} が空`);
   if (draft.cbs_sync?.status !== "draft_from_dis" || draft.cbs_sync?.actual_cbs_import !== "not_synced") errors.push("cbs_sync が、下書き・未同期ではありません");
@@ -141,7 +148,7 @@ export async function placeKnowledge({ draft, repo = REPO }) {
   }
   if (errors.length) throw new Error(`配置できません: ${errors.join(" / ")}`);
   await fs.mkdir(path.dirname(target), { recursive: true });
-  await fs.writeFile(target, `${JSON.stringify(draft, null, 2)}\n`, { flag: "wx" });
+  await fs.writeFile(target, `${JSON.stringify(draft, null, 2)}\n`, { flag: overwrite ? "w" : "wx" });
   return path.relative(repo, target);
 }
 

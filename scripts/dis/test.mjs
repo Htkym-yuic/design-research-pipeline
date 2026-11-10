@@ -1344,13 +1344,13 @@ test("reserve-library-id: ライブラリー番号の対応づけ（既存と同
 test("draft-legacy-knowledge: 旧形式の登録済み4件（Web・バナー）から、ライブラリー番号のIDで下書きを作り、knowledge/へ新規配置できる", async () => {
   const { draftLegacy, tagsFromNotionProps } = await import("./draft-legacy-knowledge.mjs");
   const { placeKnowledge } = await import("./cbs-draft.mjs");
-  const { ROLE_TYPES } = await import("./lib/crop.mjs");
+  const { roleTypesFor } = await import("./lib/crop.mjs");
   const expected = { "DIS-BN-20261107": ["BN-0049", "Banner", "banner"], "DIS-BN-20261108": ["BN-0050", "Banner", "banner"], "DIS-WB-20261107": ["WB-0069", "Web", "web"], "DIS-WB-20261108": ["WB-0070", "Web", "web"] };
   const repo = await fs.mkdtemp(path.join(os.tmpdir(), "dis-legacy-"));
   for (const [disId, [id, mediaType, dir]] of Object.entries(expected)) {
     const { draft } = await draftLegacy({ disId });
     assert.equal(draft.id, id); assert.equal(draft.mediaType, mediaType); assert.deepEqual(draft.dis_ids, [disId]);
-    assert.ok(draft.section_patterns.length >= 4 && draft.section_patterns.every((p) => ROLE_TYPES.includes(p.role)));
+    assert.ok(draft.section_patterns.length >= 4 && draft.section_patterns.every((p) => roleTypesFor(dir === "banner" ? "banner" : "web").includes(p.role))); // 媒体ごとの種類の一覧に収まる
     assert.equal(draft.dis_evaluation.axes.length, 9); assert.equal(draft.cbs_sync.actual_cbs_import, "not_synced");
     assert.ok(draft.source.dis_dropbox_path && draft.source.dis_notion_url); // 台帳と対応表から、Dropbox・Notionの場所が入る
     assert.equal(draft.captureUrl.startsWith("http"), true);
@@ -1359,4 +1359,30 @@ test("draft-legacy-knowledge: 旧形式の登録済み4件（Web・バナー）�
   assert.deepEqual(tagsFromNotionProps({ "サイト種別": "EC", "配色タグ": ["ホワイト"], "構成タイプ": ["利用シーン型"] }).layout_tags, ["利用シーン型"]);
   await assert.rejects(draftLegacy({ disId: "DIS-LP-0001" }), /v2分析が見つかりません/); // v2分析のない案件は対象外
   await assert.rejects(draftLegacy({ disId: "DIS-WB-99999999" }), /台帳に/);
+});
+
+test("バナー要素の種類: バナーは要素の一覧、LP・Webは Section の一覧で検証される。同じDISの未同期の下書きだけ置き換えられる", async () => {
+  const { roleTypesFor, BANNER_ELEMENT_TYPES, SECTION_TYPES, ROLE_TYPES } = await import("./lib/crop.mjs");
+  const { placeKnowledge, buildKnowledgeDraft } = await import("./cbs-draft.mjs");
+  assert.ok(BANNER_ELEMENT_TYPES.includes("キービジュアル") && BANNER_ELEMENT_TYPES.includes("ロゴ") && BANNER_ELEMENT_TYPES.includes("CTA"));
+  assert.ok(!SECTION_TYPES.includes("キービジュアル") && !BANNER_ELEMENT_TYPES.includes("FV"));
+  assert.ok(ROLE_TYPES.includes("FV") && ROLE_TYPES.includes("ロゴ")); // 索引では、両方を「決まった種類」として扱う
+  assert.equal(roleTypesFor("banner"), BANNER_ELEMENT_TYPES);
+  const ba = completeAnalysis(); ba.media = "banner"; ba.units[0].roleType = "キービジュアル";
+  assert.equal(validateAnalysis(ba).ok, true);
+  ba.units[0].roleType = "FV"; // バナーに、セクションの種類は使えない
+  assert.ok(validateAnalysis(ba).errors.some((e) => /roleType/.test(e)));
+  const la = completeAnalysis(); la.media = "lp"; la.units[0].roleType = "ロゴ";
+  assert.ok(validateAnalysis(la).errors.some((e) => /roleType/.test(e)));
+  // 置き換え: 同じDISの未同期の下書きのみ
+  const a = { brand: "B", pageUrl: "https://ex.test/", summary: "要約", units: [{ id: "U1", name: "KV", roleType: "その他", role: "r", observation: "o", reuseStructure: "x", mustReplace: [], unknowns: [] }], axes: [], reuse: {}, rights: {} };
+  const mk = (rt, dis = "DIS-BN-1") => buildKnowledgeDraft({ a: { ...a, units: [{ ...a.units[0], roleType: rt }] }, item: { disId: dis, sourceDetailUrl: "https://ex.test/d" }, rel: { libraryId: "BN-0077" }, sizes: {}, tags: {}, dropboxFolder: null });
+  const repo = await fs.mkdtemp(path.join(os.tmpdir(), "dis-repl-"));
+  await placeKnowledge({ draft: mk("その他"), repo });
+  await assert.rejects(placeKnowledge({ draft: mk("キービジュアル"), repo }), /上書きしません/); // 既定は上書きしない
+  assert.equal(await placeKnowledge({ draft: mk("キービジュアル"), repo, replaceDraft: true }), path.join("knowledge", "banner", "BN-0077.json"));
+  assert.equal(JSON.parse(await fs.readFile(path.join(repo, "knowledge/banner/BN-0077.json"), "utf8")).section_patterns[0].role, "キービジュアル");
+  await assert.rejects(placeKnowledge({ draft: mk("ロゴ", "DIS-BN-2"), repo, replaceDraft: true }), /上書きしません/); // 別のDISは不可
+  const f = path.join(repo, "knowledge/banner/BN-0077.json"); const cur = JSON.parse(await fs.readFile(f, "utf8")); cur.cbs_sync = { status: "synced", actual_cbs_import: "done" }; await fs.writeFile(f, JSON.stringify(cur));
+  await assert.rejects(placeKnowledge({ draft: mk("ロゴ"), repo, replaceDraft: true }), /上書きしません/); // 同期済みは決して上書きしない
 });

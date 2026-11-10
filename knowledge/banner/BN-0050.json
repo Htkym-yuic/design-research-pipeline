@@ -40,7 +40,7 @@
       "id": "C01",
       "source_section": "U1",
       "name": "AIアシスタントのUI＋人物",
-      "role": "その他",
+      "role": "UI・証拠",
       "reusable_structure": [
         "UIカード＋人物写真を左に置く"
       ],
@@ -81,7 +81,7 @@
       "id": "C04",
       "source_section": "U4",
       "name": "製品ロゴ",
-      "role": "その他",
+      "role": "ロゴ",
       "reusable_structure": [
         "右端に固定したロゴ"
       ],

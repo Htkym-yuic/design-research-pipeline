@@ -1,127 +1,12 @@
 {
-  "generatedAt": "2026-11-10T13:47:39.414Z",
+  "generatedAt": "2026-11-10T13:50:28.147Z",
   "note": "Sectionの種類ごとに、各ナレッジの該当Section（名前・再利用できる構造・差し替え必須の要素）を集めた索引。controlled=true は、DISの種類の一覧（FV・悩み提起など）にある種類。",
   "types": [
     {
       "type": "その他",
       "controlled": true,
-      "count": 14,
+      "count": 6,
       "examples": [
-        {
-          "id": "BN-0049",
-          "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
-          "sectionId": "C01",
-          "sectionName": "キービジュアル",
-          "reusableStructure": [
-            "全面のキービジュアルに、情報を周縁へ小さくまとめる構成"
-          ],
-          "replaceRequired": [
-            "キャラクターイラスト",
-            "背景"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/banner/BN-0049.json"
-        },
-        {
-          "id": "BN-0049",
-          "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
-          "sectionId": "C02",
-          "sectionName": "キャッチコピー",
-          "reusableStructure": [
-            "暗い背景に白抜きの縦書きキャッチ"
-          ],
-          "replaceRequired": [
-            "コピーの文面",
-            "書体"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/banner/BN-0049.json"
-        },
-        {
-          "id": "BN-0049",
-          "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
-          "sectionId": "C03",
-          "sectionName": "発売元ロゴ",
-          "reusableStructure": [
-            "角に固定した単色ロゴ"
-          ],
-          "replaceRequired": [
-            "ロゴ"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/banner/BN-0049.json"
-        },
-        {
-          "id": "BN-0049",
-          "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
-          "sectionId": "C04",
-          "sectionName": "タイトルロゴ",
-          "reusableStructure": [
-            "キービジュアル下部の装飾ロゴ"
-          ],
-          "replaceRequired": [
-            "タイトルロゴ"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/banner/BN-0049.json"
-        },
-        {
-          "id": "BN-0049",
-          "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
-          "sectionId": "C06",
-          "sectionName": "対応プラットフォーム",
-          "reusableStructure": [
-            "統一サイズの単色ロゴを2段"
-          ],
-          "replaceRequired": [
-            "機種ロゴ"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/banner/BN-0049.json"
-        },
-        {
-          "id": "BN-0049",
-          "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
-          "sectionId": "C07",
-          "sectionName": "著作権表記",
-          "reusableStructure": [
-            "最下部の小さな著作権表記"
-          ],
-          "replaceRequired": [
-            "表記の文面"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/banner/BN-0049.json"
-        },
-        {
-          "id": "BN-0050",
-          "title": "Adobe Acrobat（AIアシスタント）",
-          "sectionId": "C01",
-          "sectionName": "AIアシスタントのUI＋人物",
-          "reusableStructure": [
-            "UIカード＋人物写真を左に置く"
-          ],
-          "replaceRequired": [
-            "UI画像",
-            "人物写真"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/banner/BN-0050.json"
-        },
-        {
-          "id": "BN-0050",
-          "title": "Adobe Acrobat（AIアシスタント）",
-          "sectionId": "C04",
-          "sectionName": "製品ロゴ",
-          "reusableStructure": [
-            "右端に固定したロゴ"
-          ],
-          "replaceRequired": [
-            "ロゴ"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/banner/BN-0050.json"
-        },
         {
           "id": "WB-0069",
           "title": "Baseline Design",
@@ -400,6 +285,55 @@
       ]
     },
     {
+      "type": "ロゴ",
+      "controlled": true,
+      "count": 3,
+      "examples": [
+        {
+          "id": "BN-0049",
+          "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
+          "sectionId": "C03",
+          "sectionName": "発売元ロゴ",
+          "reusableStructure": [
+            "角に固定した単色ロゴ"
+          ],
+          "replaceRequired": [
+            "ロゴ"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/banner/BN-0049.json"
+        },
+        {
+          "id": "BN-0049",
+          "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
+          "sectionId": "C04",
+          "sectionName": "タイトルロゴ",
+          "reusableStructure": [
+            "キービジュアル下部の装飾ロゴ"
+          ],
+          "replaceRequired": [
+            "タイトルロゴ"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/banner/BN-0049.json"
+        },
+        {
+          "id": "BN-0050",
+          "title": "Adobe Acrobat（AIアシスタント）",
+          "sectionId": "C04",
+          "sectionName": "製品ロゴ",
+          "reusableStructure": [
+            "右端に固定したロゴ"
+          ],
+          "replaceRequired": [
+            "ロゴ"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/banner/BN-0050.json"
+        }
+      ]
+    },
+    {
       "type": "実績",
       "controlled": true,
       "count": 3,
@@ -594,6 +528,107 @@
           ],
           "rightsStatus": "reference_only",
           "knowledgePath": "knowledge/web/WB-0069.json"
+        }
+      ]
+    },
+    {
+      "type": "注釈・権利",
+      "controlled": true,
+      "count": 2,
+      "examples": [
+        {
+          "id": "BN-0049",
+          "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
+          "sectionId": "C06",
+          "sectionName": "対応プラットフォーム",
+          "reusableStructure": [
+            "統一サイズの単色ロゴを2段"
+          ],
+          "replaceRequired": [
+            "機種ロゴ"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/banner/BN-0049.json"
+        },
+        {
+          "id": "BN-0049",
+          "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
+          "sectionId": "C07",
+          "sectionName": "著作権表記",
+          "reusableStructure": [
+            "最下部の小さな著作権表記"
+          ],
+          "replaceRequired": [
+            "表記の文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/banner/BN-0049.json"
+        }
+      ]
+    },
+    {
+      "type": "UI・証拠",
+      "controlled": true,
+      "count": 1,
+      "examples": [
+        {
+          "id": "BN-0050",
+          "title": "Adobe Acrobat（AIアシスタント）",
+          "sectionId": "C01",
+          "sectionName": "AIアシスタントのUI＋人物",
+          "reusableStructure": [
+            "UIカード＋人物写真を左に置く"
+          ],
+          "replaceRequired": [
+            "UI画像",
+            "人物写真"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/banner/BN-0050.json"
+        }
+      ]
+    },
+    {
+      "type": "キービジュアル",
+      "controlled": true,
+      "count": 1,
+      "examples": [
+        {
+          "id": "BN-0049",
+          "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
+          "sectionId": "C01",
+          "sectionName": "キービジュアル",
+          "reusableStructure": [
+            "全面のキービジュアルに、情報を周縁へ小さくまとめる構成"
+          ],
+          "replaceRequired": [
+            "キャラクターイラスト",
+            "背景"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/banner/BN-0049.json"
+        }
+      ]
+    },
+    {
+      "type": "キャッチコピー",
+      "controlled": true,
+      "count": 1,
+      "examples": [
+        {
+          "id": "BN-0049",
+          "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
+          "sectionId": "C02",
+          "sectionName": "キャッチコピー",
+          "reusableStructure": [
+            "暗い背景に白抜きの縦書きキャッチ"
+          ],
+          "replaceRequired": [
+            "コピーの文面",
+            "書体"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/banner/BN-0049.json"
         }
       ]
     },

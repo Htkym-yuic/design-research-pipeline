@@ -1,8 +1,14 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-/** Sectionの種類（ファイル名にも使う）。分析の units[].roleType はこの一覧から選ぶ。 */
-export const ROLE_TYPES = ["FV", "悩み提起", "共感", "解決策", "ベネフィット", "特徴", "実績", "比較", "商品紹介", "料金", "流れ", "FAQ", "CTA", "会社情報", "ナビ", "フッター", "その他"];
+/** Sectionの種類（LP・Web。ファイル名にも使う）。分析の units[].roleType は、媒体に応じた一覧から選ぶ。 */
+export const SECTION_TYPES = ["FV", "悩み提起", "共感", "解決策", "ベネフィット", "特徴", "実績", "比較", "商品紹介", "料金", "流れ", "FAQ", "CTA", "会社情報", "ナビ", "フッター", "その他"];
+/** バナーは、セクションではなく「要素」の構成のため、別の一覧を使う（CTA・ベネフィット・その他は、Sectionの種類と共通）。 */
+export const BANNER_ELEMENT_TYPES = ["キービジュアル", "人物・キャラ", "商品画像", "UI・証拠", "キャッチコピー", "補足コピー", "ベネフィット", "オファー", "CTA", "ロゴ", "注釈・権利", "背景・装飾", "その他"];
+/** 全部（索引・旧データの判定用）。 */
+export const ROLE_TYPES = [...new Set([...SECTION_TYPES, ...BANNER_ELEMENT_TYPES])];
+/** 媒体（lp / web / banner）ごとの、選べる種類。 */
+export const roleTypesFor = (media) => (media === "banner" ? BANNER_ELEMENT_TYPES : media === "lp" || media === "web" ? SECTION_TYPES : ROLE_TYPES);
 
 export const SECTION_DIR = "sections_by_unit";
 
