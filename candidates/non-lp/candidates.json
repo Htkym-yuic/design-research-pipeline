@@ -1,19 +1,19 @@
 {
-  "collectedAt": "2026-11-09T16:18:55.383Z",
-  "candidateCount": 8,
+  "collectedAt": "2026-11-10T16:17:01.420Z",
+  "candidateCount": 10,
   "candidates": [
     {
-      "id": "WB-0073",
+      "id": "WB-0075",
       "status": "candidate",
       "mediaType": "Web",
       "sourceKey": "web",
-      "title": "株式会社ツクル",
-      "captureUrl": "https://tsukuru-jp.com/",
-      "imageUrl": "https://sankoudesign.com/wp-content/uploads/tsukuru_t-400x350.jpg",
+      "title": "KIRINK",
+      "captureUrl": "https://media.kirinholdings.com/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/kirink_t-400x350.jpg",
       "landingUrl": null,
       "sourceName": "SANKOU!",
       "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/tsukuru/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/kirink/",
       "library": "Web_Research_Library",
       "notionEnv": "NOTION_WEB_DATA_SOURCE_ID",
       "saveImage": true,
@@ -23,23 +23,23 @@
       "metadata": {
         "width": 400,
         "height": 350,
-        "alt": "株式会社ツクル",
+        "alt": "KIRINK",
         "subtype": null,
         "subtypeLabel": null
       }
     },
     {
-      "id": "WB-0074",
+      "id": "WB-0076",
       "status": "candidate",
       "mediaType": "Web",
       "sourceKey": "web",
-      "title": "株式会社 川元工務店",
-      "captureUrl": "https://www.kawamoto5610.com/",
-      "imageUrl": "https://sankoudesign.com/wp-content/uploads/kawamotokoumuten_t-400x350.jpg",
+      "title": "ガイアエデュケーション",
+      "captureUrl": "https://www.gaia-edu.co.jp/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/gaiaeducation_t-400x350.jpg",
       "landingUrl": null,
       "sourceName": "SANKOU!",
       "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/kawamotokoumuten/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/gaiaeducation/",
       "library": "Web_Research_Library",
       "notionEnv": "NOTION_WEB_DATA_SOURCE_ID",
       "saveImage": true,
@@ -49,23 +49,23 @@
       "metadata": {
         "width": 400,
         "height": 350,
-        "alt": "株式会社 川元工務店",
+        "alt": "ガイアエデュケーション",
         "subtype": null,
         "subtypeLabel": null
       }
     },
     {
-      "id": "GR-0219",
+      "id": "GR-0224",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "忘年会のお知らせチラシ",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F0962d3c02b4b7d9ce5f103b40eeabd06%2F0962d3c02b4b7d9ce5f103b40eeabd06-400.webp&w=828&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F0962d3c02b4b7d9ce5f103b40eeabd06%2F0962d3c02b4b7d9ce5f103b40eeabd06-400.webp&w=828&q=75",
+      "title": "子ども会の芋掘り大会チラシ",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F147c2a4b040c9a7b1a83162a97ac7661%2F147c2a4b040c9a7b1a83162a97ac7661-400.webp&w=828&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F147c2a4b040c9a7b1a83162a97ac7661%2F147c2a4b040c9a7b1a83162a97ac7661-400.webp&w=828&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/flyer",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-32204",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30803",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -75,23 +75,23 @@
       "metadata": {
         "width": 283,
         "height": 400,
-        "alt": "忘年会のお知らせチラシ, チラシ, チラシテンプレート",
+        "alt": "子ども会の芋掘り大会チラシ, チラシ, チラシテンプレート",
         "subtype": "flyer",
         "subtypeLabel": "チラシ・フライヤー"
       }
     },
     {
-      "id": "GR-0220",
+      "id": "GR-0225",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
       "title": "忘年会のお知らせ",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F0c857f2a1953fde33240a4369218e2a7%2F0c857f2a1953fde33240a4369218e2a7-400.webp&w=828&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F0c857f2a1953fde33240a4369218e2a7%2F0c857f2a1953fde33240a4369218e2a7-400.webp&w=828&q=75",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F7e02edb818247cea47b6a19fbbb56cc6%2F7e02edb818247cea47b6a19fbbb56cc6-400.webp&w=828&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F7e02edb818247cea47b6a19fbbb56cc6%2F7e02edb818247cea47b6a19fbbb56cc6-400.webp&w=828&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/poster",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-28216",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-28215",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -107,17 +107,17 @@
       }
     },
     {
-      "id": "GR-0221",
+      "id": "GR-0226",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "茶色とオレンジ色のシンプルなクーポンバナー",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F094fc7194ee7c8f64906fea3d6d783ca%2F094fc7194ee7c8f64906fea3d6d783ca-400.webp&w=640&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F094fc7194ee7c8f64906fea3d6d783ca%2F094fc7194ee7c8f64906fea3d6d783ca-400.webp&w=640&q=75",
+      "title": "ブルー背景のネオン風忘年会バナー",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F890bfd7bc358aa7dc9c0dcd599b2856c%2F890bfd7bc358aa7dc9c0dcd599b2856c-400.webp&w=640&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F890bfd7bc358aa7dc9c0dcd599b2856c%2F890bfd7bc358aa7dc9c0dcd599b2856c-400.webp&w=640&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/banner",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-17519",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-17093",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -126,24 +126,24 @@
       "searchTerm": null,
       "metadata": {
         "width": 156,
-        "height": 81,
-        "alt": "茶色とオレンジ色のシンプルなクーポンバナー, バナー, バナーテンプレート",
+        "height": 104,
+        "alt": "ブルー背景のネオン風忘年会バナー, バナー, バナーテンプレート",
         "subtype": "social",
         "subtypeLabel": "SNS投稿・Web広告"
       }
     },
     {
-      "id": "GR-0222",
+      "id": "GR-0227",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "やわらか曲線フレームの雑貨店名刺デザイン",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F667d239c52411125a23e8d24ca149dd7%2F667d239c52411125a23e8d24ca149dd7-400.webp&w=384&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F667d239c52411125a23e8d24ca149dd7%2F667d239c52411125a23e8d24ca149dd7-400.webp&w=384&q=75",
+      "title": "カラフル幾何学模様の雑貨店名刺デザイン",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F29fb70510ce5940e89ad1eed931e1fad%2F29fb70510ce5940e89ad1eed931e1fad-400.webp&w=384&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F29fb70510ce5940e89ad1eed931e1fad%2F29fb70510ce5940e89ad1eed931e1fad-400.webp&w=384&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/business-card",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29791",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29790",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -153,23 +153,23 @@
       "metadata": {
         "width": 384,
         "height": 232,
-        "alt": "やわらか曲線フレームの雑貨店名刺デザイン\n, 名刺, 名刺テンプレート",
+        "alt": "カラフル幾何学模様の雑貨店名刺デザイン\n, 名刺, 名刺テンプレート",
         "subtype": "business-card",
         "subtypeLabel": "名刺・ショップカード"
       }
     },
     {
-      "id": "GR-0223",
+      "id": "GR-0228",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "赤と黒の直線的なロゴ",
-      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/52463ac1d1eb8c3a47c12654536d85db/52463ac1d1eb8c3a47c12654536d85db-400.webp",
-      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/52463ac1d1eb8c3a47c12654536d85db/52463ac1d1eb8c3a47c12654536d85db-400.webp",
+      "title": "水滴のようなロゴ",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/1e9412570463dab5e47945d3702296cc/1e9412570463dab5e47945d3702296cc-400.webp",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/1e9412570463dab5e47945d3702296cc/1e9412570463dab5e47945d3702296cc-400.webp",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/logo",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3077",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3073",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -179,27 +179,86 @@
       "metadata": {
         "width": 400,
         "height": 400,
-        "alt": "赤と黒の直線的なロゴ, ロゴ, ロゴテンプレート",
+        "alt": "水滴のようなロゴ, ロゴ, ロゴテンプレート",
         "subtype": "logo",
         "subtypeLabel": "ロゴ・VI/CI"
       }
     },
     {
-      "id": "PAT-0086",
+      "id": "CV-0059",
+      "status": "candidate",
+      "mediaType": "Canva",
+      "sourceKey": "canva",
+      "title": "Gold Modern Dhanteras Greetings Instagram Post",
+      "captureUrl": "https://template.canva.com/EAG1UDmXgKA/1/0/320w-L685VHGE9KQ.jpg",
+      "imageUrl": "https://template.canva.com/EAG1UDmXgKA/1/0/320w-L685VHGE9KQ.jpg",
+      "landingUrl": null,
+      "sourceName": "Canva",
+      "sourceUrl": "https://www.canva.com/templates/search/instagram-posts/",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAG1UDmXgKA-gold-modern-dhanteras-greetings-instagram-post/",
+      "library": "Canva_Research_Library",
+      "notionEnv": "NOTION_CANVA_DATA_SOURCE_ID",
+      "saveImage": true,
+      "materialId": null,
+      "authorProfileUrl": null,
+      "searchTerm": null,
+      "metadata": {
+        "width": 299,
+        "height": 374,
+        "alt": "Gold Modern Dhanteras Greetings Instagram Post ",
+        "subtype": null,
+        "subtypeLabel": null
+      }
+    },
+    {
+      "id": "PAT-0087",
       "status": "candidate",
       "mediaType": "Pattern",
       "sourceKey": "patterns",
-      "title": "株式会社ツクルに見るPC・SPの情報優先順位",
-      "captureUrl": "https://tsukuru-jp.com/",
+      "title": "Gold Modern Dhanteras Greetings Instagram Postに見る反復可能なテンプレート構造",
+      "captureUrl": "https://template.canva.com/EAG1UDmXgKA/1/0/320w-L685VHGE9KQ.jpg",
+      "imageUrl": null,
+      "landingUrl": null,
+      "sourceName": "日次収集から抽出（Canva）",
+      "sourceUrl": "https://www.canva.com/templates/search/instagram-posts/",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAG1UDmXgKA-gold-modern-dhanteras-greetings-instagram-post/",
+      "library": "Pattern_Research_Library",
+      "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
+      "saveImage": false,
+      "materialId": "PAT-0087",
+      "authorProfileUrl": null,
+      "searchTerm": null,
+      "metadata": {
+        "collectionMode": "derived_pattern",
+        "patternType": "反復",
+        "targetMedia": [
+          "Canva",
+          "Graphic",
+          "SNS"
+        ],
+        "rule": "画像枠・見出し・補足情報の位置を固定し、素材を差し替えても情報階層が崩れない構造を作る。",
+        "cautions": "テンプレートの複製ではなく、グリッド・余白・主従関係のみを参考にする。",
+        "evidenceIds": [
+          "CV-0059"
+        ]
+      }
+    },
+    {
+      "id": "PAT-0088",
+      "status": "candidate",
+      "mediaType": "Pattern",
+      "sourceKey": "patterns",
+      "title": "KIRINKに見るPC・SPの情報優先順位",
+      "captureUrl": "https://media.kirinholdings.com/",
       "imageUrl": null,
       "landingUrl": null,
       "sourceName": "日次収集から抽出（SANKOU!）",
       "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/tsukuru/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/kirink/",
       "library": "Pattern_Research_Library",
       "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
       "saveImage": false,
-      "materialId": "PAT-0086",
+      "materialId": "PAT-0088",
       "authorProfileUrl": null,
       "searchTerm": null,
       "metadata": {
@@ -212,7 +271,7 @@
         "rule": "画面幅が変わっても、主見出し・主要ベネフィット・CTAの意味と順序を維持する。",
         "cautions": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
         "evidenceIds": [
-          "WB-0073"
+          "WB-0075"
         ]
       }
     }
@@ -228,7 +287,7 @@
       "key": "web",
       "sourceName": "SANKOU!",
       "status": "collected",
-      "found": 29,
+      "found": 31,
       "accepted": 2,
       "reason": null,
       "diagnostic": null
@@ -291,8 +350,8 @@
       "key": "canva",
       "sourceName": "Canva",
       "status": "collected",
-      "found": 41,
-      "accepted": 0,
+      "found": 42,
+      "accepted": 1,
       "reason": null,
       "diagnostic": null
     },
@@ -304,9 +363,9 @@
       "accepted": 0,
       "reason": "取得元がGitHubホストランナーからのアクセスを拒否しました。ローカル収集ルートで再実行してください。",
       "diagnostic": {
-        "finalUrl": "https://www.ac-illust.com/main/search_result.php?word=%E9%A3%B2%E9%A3%9F",
+        "finalUrl": "https://www.ac-illust.com/main/search_result.php?word=EC+%E7%89%A9%E8%B2%A9",
         "title": "ERROR: The request could not be satisfied",
-        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: xJzGrxH_QvJlqF35qa0rUibtjLjrWnAu-AiMZSAUQDgDD",
+        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: IA84Us9dhiBGdsgGQIZ2VcDs9XD8Yp9ts012AfaMdLAfb",
         "figureCount": 0,
         "imageCount": 0
       }
@@ -319,9 +378,9 @@
       "accepted": 0,
       "reason": "取得元がGitHubホストランナーからのアクセスを拒否しました。ローカル収集ルートで再実行してください。",
       "diagnostic": {
-        "finalUrl": "https://www.photo-ac.com/main/search?q=%E9%A3%B2%E9%A3%9F",
+        "finalUrl": "https://www.photo-ac.com/main/search?q=EC+%E7%89%A9%E8%B2%A9",
         "title": "ERROR: The request could not be satisfied",
-        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: RU77H_kw7K-9uAmyj15YqNKfK5mCaMddDDLLMxV2rA6xP",
+        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: qDT4rUpD7RPGsf5wmFnpnxHoaDHPDKbnVS4agoG__nxdQ",
         "figureCount": 0,
         "imageCount": 0
       }
@@ -330,8 +389,8 @@
       "key": "patterns",
       "sourceName": "日次収集から抽出",
       "status": "collected",
-      "found": 1,
-      "accepted": 1,
+      "found": 2,
+      "accepted": 2,
       "reason": null,
       "diagnostic": null
     }

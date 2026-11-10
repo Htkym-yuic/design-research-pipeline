@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T16:18:55.383Z",
+  "updatedAt": "2026-11-10T16:17:01.420Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -1257,6 +1257,18 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-02T23:18:27.606Z"
+    },
+    {
+      "id": "CV-0059",
+      "title": "Gold Modern Dhanteras Greetings Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAG1UDmXgKA/1/0/320w-L685VHGE9KQ.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAG1UDmXgKA-gold-modern-dhanteras-greetings-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAG1UDmXgKA/1/0/320w-L685VHGE9KQ.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-10T16:17:01.420Z"
     },
     {
       "id": "GR-0001",
@@ -3923,6 +3935,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-09T16:18:55.383Z"
+    },
+    {
+      "id": "GR-0224",
+      "title": "子ども会の芋掘り大会チラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F147c2a4b040c9a7b1a83162a97ac7661%2F147c2a4b040c9a7b1a83162a97ac7661-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30803",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F147c2a4b040c9a7b1a83162a97ac7661%2F147c2a4b040c9a7b1a83162a97ac7661-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-10T16:17:01.420Z"
+    },
+    {
+      "id": "GR-0225",
+      "title": "忘年会のお知らせ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F7e02edb818247cea47b6a19fbbb56cc6%2F7e02edb818247cea47b6a19fbbb56cc6-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-28215",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F7e02edb818247cea47b6a19fbbb56cc6%2F7e02edb818247cea47b6a19fbbb56cc6-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-10T16:17:01.420Z"
+    },
+    {
+      "id": "GR-0226",
+      "title": "ブルー背景のネオン風忘年会バナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F890bfd7bc358aa7dc9c0dcd599b2856c%2F890bfd7bc358aa7dc9c0dcd599b2856c-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-17093",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F890bfd7bc358aa7dc9c0dcd599b2856c%2F890bfd7bc358aa7dc9c0dcd599b2856c-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-10T16:17:01.420Z"
+    },
+    {
+      "id": "GR-0227",
+      "title": "カラフル幾何学模様の雑貨店名刺デザイン",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F29fb70510ce5940e89ad1eed931e1fad%2F29fb70510ce5940e89ad1eed931e1fad-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29790",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F29fb70510ce5940e89ad1eed931e1fad%2F29fb70510ce5940e89ad1eed931e1fad-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-10T16:17:01.420Z"
+    },
+    {
+      "id": "GR-0228",
+      "title": "水滴のようなロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/1e9412570463dab5e47945d3702296cc/1e9412570463dab5e47945d3702296cc-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3073",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/1e9412570463dab5e47945d3702296cc/1e9412570463dab5e47945d3702296cc-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-10T16:17:01.420Z"
     },
     {
       "id": "ILAC-0001",
@@ -8318,6 +8390,30 @@
       "materialId": "PAT-0086",
       "authorProfileUrl": null,
       "reservedAt": "2026-11-09T16:18:55.383Z"
+    },
+    {
+      "id": "PAT-0087",
+      "title": "Gold Modern Dhanteras Greetings Instagram Postに見る反復可能なテンプレート構造",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Canva）",
+      "captureUrl": "https://template.canva.com/EAG1UDmXgKA/1/0/320w-L685VHGE9KQ.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAG1UDmXgKA-gold-modern-dhanteras-greetings-instagram-post/",
+      "imageUrl": null,
+      "materialId": "PAT-0087",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-10T16:17:01.420Z"
+    },
+    {
+      "id": "PAT-0088",
+      "title": "KIRINKに見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://media.kirinholdings.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/kirink/",
+      "imageUrl": null,
+      "materialId": "PAT-0088",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-10T16:17:01.420Z"
     },
     {
       "id": "PHAC-0001",
@@ -14775,6 +14871,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-09T16:18:55.383Z"
+    },
+    {
+      "id": "WB-0075",
+      "title": "KIRINK",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://media.kirinholdings.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/kirink/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/kirink_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-10T16:17:01.420Z"
+    },
+    {
+      "id": "WB-0076",
+      "title": "ガイアエデュケーション",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.gaia-edu.co.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/gaiaeducation/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/gaiaeducation_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-10T16:17:01.420Z"
     }
   ]
 }
