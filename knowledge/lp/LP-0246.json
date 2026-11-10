@@ -1,0 +1,1152 @@
+{
+  "id": "LP-0246",
+  "dis_ids": [
+    "DIS-LP-0002"
+  ],
+  "mediaType": "LP",
+  "media_type": "LP",
+  "title": "販促EXPO【大阪】のLPデザイン",
+  "brand": "販促EXPO【大阪】",
+  "industry_tags": [
+    "企業・会社・お店"
+  ],
+  "product_tags": [
+    "LP",
+    "サービス"
+  ],
+  "color_tags": [
+    "ネイビー",
+    "レッド",
+    "ピンク",
+    "水色"
+  ],
+  "layout_tags": [
+    "長尺LP",
+    "セクション分割",
+    "カード型",
+    "図解中心",
+    "FAQ",
+    "フォーム内包"
+  ],
+  "copy_types": [
+    "限定性訴求",
+    "価格訴求",
+    "問題解決型",
+    "社会的証明"
+  ],
+  "primary_appeal": "悩み→解決→できること→出展ジャンル→セミナー→専門展→声→手順→FAQの順に、来場登録まで一直線に導く、展示会の来場登録",
+  "offer": "11月17日（火）まで無料お申込み（以降は入場料5,500円・税込）",
+  "captureUrl": "https://www.marketing-week.jp/hub/ja-jp/lp/visit/osaka/spex.html",
+  "sourceUrl": "https://rdlp.jp/lp-archive/",
+  "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229569",
+  "source": {
+    "captured_url": "https://www.marketing-week.jp/hub/ja-jp/lp/visit/osaka/spex.html",
+    "reference_name": "LPアーカイブ",
+    "reference_url": "https://rdlp.jp/lp-archive/",
+    "reference_detail_url": "https://rdlp.jp/archives/otherdesign/lp/229569",
+    "notion_url": null,
+    "dis_notion_url": "https://app.notion.com/p/41324d4fa67181cd9741d12fdf8bfe1d",
+    "dropbox_master_path": null,
+    "dis_dropbox_path": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0002",
+    "github_knowledge_path": "knowledge/lp/LP-0246.json",
+    "archive_post_id": "229569"
+  },
+  "asset_status": {
+    "pc_full": {
+      "path": "01_Normal_Images/DIS-LP-0002_PC_full.png",
+      "width": 1452,
+      "height": 21277,
+      "status": "captured_unverified"
+    },
+    "pc_first_view": {
+      "path": "01_Normal_Images/DIS-LP-0002_PC_first_view.png",
+      "width": 1452,
+      "height": 900,
+      "status": "captured_unverified"
+    },
+    "sp_full": {
+      "path": "01_Normal_Images/DIS-LP-0002_SP_full.png",
+      "width": 387,
+      "height": 36799,
+      "status": "captured_unverified"
+    },
+    "sp_first_view": {
+      "path": "01_Normal_Images/DIS-LP-0002_SP_first_view.png",
+      "width": 387,
+      "height": 812,
+      "status": "captured_unverified"
+    },
+    "repository_crosscheck": "not_run"
+  },
+  "funnel_structure": [
+    {
+      "step": 1,
+      "role": "FV",
+      "pattern": "ファーストビュー（開催告知・日時会場）",
+      "description": "開催回・名称・日時・会場・来場メリットを、スクロール前の1画面で伝える導入"
+    },
+    {
+      "step": 2,
+      "role": "CTA",
+      "pattern": "申込CTA①（無料申込の期限）",
+      "description": "ファーストビュー直下で、来場登録の行動を促す"
+    },
+    {
+      "step": 3,
+      "role": "悩み提起",
+      "pattern": "課題提起（6つの悩みカード）",
+      "description": "対象者の悩みを具体的に並べ、自分ごと化させる"
+    },
+    {
+      "step": 4,
+      "role": "解決策",
+      "pattern": "解決の提示（販促EXPOでは）",
+      "description": "悩みの直後に、展示会が答えになることを一文で示す"
+    },
+    {
+      "step": 5,
+      "role": "ベネフィット",
+      "pattern": "販促EXPOでできること（3つの価値）",
+      "description": "展示会で得られる3つの価値を、番号つきカードで示す"
+    },
+    {
+      "step": 6,
+      "role": "商品紹介",
+      "pattern": "出展ジャンル（6分類）",
+      "description": "展示される製品・サービスの全体像を、6分類の写真つきで示す"
+    },
+    {
+      "step": 7,
+      "role": "特徴",
+      "pattern": "特設ゾーン（推し活／インバウンド）",
+      "description": "通常の出展ジャンルとは別の、特別企画エリアを示す"
+    },
+    {
+      "step": 8,
+      "role": "CTA",
+      "pattern": "申込CTA②",
+      "description": "出展情報を見た直後に、再度、来場登録へ誘導する"
+    },
+    {
+      "step": 9,
+      "role": "特徴",
+      "pattern": "セミナー概要",
+      "description": "無料セミナーの規模と魅力を伝え、聴講を促す"
+    },
+    {
+      "step": 10,
+      "role": "特徴",
+      "pattern": "登壇者一覧（セッション18件前後）",
+      "description": "登壇者とテーマを一覧にして、聴講したいと思わせる"
+    },
+    {
+      "step": 11,
+      "role": "CTA",
+      "pattern": "申込CTA③（セミナー向け）",
+      "description": "セミナーを見て興味を持った人を、来場登録へつなぐ"
+    },
+    {
+      "step": 12,
+      "role": "特徴",
+      "pattern": "マーケティングWeekとは（併催の全体像）",
+      "description": "展示会が属する大型イベントの全体像を、図で示す"
+    },
+    {
+      "step": 13,
+      "role": "ナビ",
+      "pattern": "9つの専門展ナビ（ボタン）",
+      "description": "読み手の悩みから、該当する専門展へ移動させるナビゲーション"
+    },
+    {
+      "step": 14,
+      "role": "商品紹介",
+      "pattern": "専門展の詳細（9カード＋スタートアップゲート）",
+      "description": "各専門展の内容と出展製品を、同じ型のカードで比較できるようにする"
+    },
+    {
+      "step": 15,
+      "role": "CTA",
+      "pattern": "申込CTA④",
+      "description": "専門展の一覧を見終えた位置で、登録を促す"
+    },
+    {
+      "step": 16,
+      "role": "実績",
+      "pattern": "過去来場者の声",
+      "description": "実際の来場者の評価で、来場の価値を裏付ける"
+    },
+    {
+      "step": 17,
+      "role": "流れ",
+      "pattern": "来場登録の3ステップ",
+      "description": "登録の手順を3ステップで示し、手間への不安を減らす"
+    },
+    {
+      "step": 18,
+      "role": "CTA",
+      "pattern": "申込CTA⑤",
+      "description": "手順を読み終えた直後の登録"
+    },
+    {
+      "step": 19,
+      "role": "会社情報",
+      "pattern": "アクセスと同時開催展",
+      "description": "会場の場所と、同時開催の他の展示会を伝える"
+    },
+    {
+      "step": 20,
+      "role": "FAQ",
+      "pattern": "よくある質問（FAQ）",
+      "description": "申込前の疑問を解消する"
+    },
+    {
+      "step": 21,
+      "role": "CTA",
+      "pattern": "申込CTA⑥（最終）",
+      "description": "ページの最後で、もう一度登録を促す"
+    },
+    {
+      "step": 22,
+      "role": "会社情報",
+      "pattern": "主催者情報",
+      "description": "主催会社の実績で、運営への信頼を補強する"
+    },
+    {
+      "step": 23,
+      "role": "フッター",
+      "pattern": "注記・フッター",
+      "description": "注記と法的リンク・著作権を示す"
+    }
+  ],
+  "section_patterns": [
+    {
+      "id": "C01",
+      "source_section": "U1",
+      "name": "ファーストビュー（開催告知・日時会場）",
+      "role": "FV",
+      "reusable_structure": [
+        "背景写真を薄く敷いた上に、キャッチ→名称→日時会場の順で縦に並べる構成。赤い丸バッジで規模感を添える"
+      ],
+      "replace_required": [
+        "背景の会場写真",
+        "展示会名・回数",
+        "日付・会場・規模の数値",
+        "キャッチコピー"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C02",
+      "source_section": "U2",
+      "name": "申込CTA①（無料申込の期限）",
+      "role": "CTA",
+      "reusable_structure": [
+        "全幅の濃色帯＋対比色（赤）のピル型ボタン＋期限の見出し＋小さな注記、の型。ページ内で同じ型を繰り返す"
+      ],
+      "replace_required": [
+        "日付・金額",
+        "ボタン文言"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C03",
+      "source_section": "U3",
+      "name": "課題提起（6つの悩みカード）",
+      "role": "悩み提起",
+      "reusable_structure": [
+        "3列×2行のカード。上段に白いイラスト枠、下段に紺地の短い悩み文、の型"
+      ],
+      "replace_required": [
+        "イラスト",
+        "悩みの文言（6件）"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C04",
+      "source_section": "U4",
+      "name": "解決の提示（販促EXPOでは）",
+      "role": "解決策",
+      "reusable_structure": [
+        "悩み→背景色を切り替えて→解決の宣言、の接続。ラベル＋見出し＋イラストの中央寄せ"
+      ],
+      "replace_required": [
+        "見出しコピー",
+        "イラスト"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C05",
+      "source_section": "U5",
+      "name": "販促EXPOでできること（3つの価値）",
+      "role": "ベネフィット",
+      "reusable_structure": [
+        "見出し帯＋3列カード（イラスト・番号・小見出し・短文）の型。番号を角に置いて順序感を出す"
+      ],
+      "replace_required": [
+        "イラスト",
+        "3つの価値の文言"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C06",
+      "source_section": "U6",
+      "name": "出展ジャンル（6分類）",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "3列×2行の写真カード。上辺だけ角を丸めた写真＋色ラインの区切り＋分類名＋箇条書き、の型"
+      ],
+      "replace_required": [
+        "写真（ストック写真と思われるもの）",
+        "分類名・箇条書き"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C07",
+      "source_section": "U7",
+      "name": "特設ゾーン（推し活／インバウンド）",
+      "role": "特徴",
+      "reusable_structure": [
+        "水色の背景枠＋見出し帯＋写真＋箇条書きの2カラム。帯の色を変えて別枠だとわかる"
+      ],
+      "replace_required": [
+        "写真",
+        "ゾーン名・箇条書き"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C08",
+      "source_section": "U8",
+      "name": "申込CTA②",
+      "role": "CTA",
+      "reusable_structure": [
+        "CTA①と同じ型の繰り返し（出展内容を見せた後の再提示）"
+      ],
+      "replace_required": [
+        "日付・金額"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C09",
+      "source_section": "U9",
+      "name": "セミナー概要",
+      "role": "特徴",
+      "reusable_structure": [
+        "左テキスト＋右写真の2カラム、その下に横長バナーを並べる構成"
+      ],
+      "replace_required": [
+        "会場写真",
+        "セミナー概要の文言",
+        "各バナー画像"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C10",
+      "source_section": "U10",
+      "name": "登壇者一覧（セッション18件前後）",
+      "role": "特徴",
+      "reusable_structure": [
+        "灰色カードに、見出し→副題→顔写真＋所属・氏名、を並べる型。複数登壇のカードは幅を広げる"
+      ],
+      "replace_required": [
+        "人物写真",
+        "氏名・所属",
+        "セッション名"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C11",
+      "source_section": "U11",
+      "name": "申込CTA③（セミナー向け）",
+      "role": "CTA",
+      "reusable_structure": [
+        "CTA帯の型に、直前の内容に合わせた補足文を1行追加したもの"
+      ],
+      "replace_required": [
+        "日付・金額",
+        "補足文"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C12",
+      "source_section": "U12",
+      "name": "マーケティングWeekとは（併催の全体像）",
+      "role": "特徴",
+      "reusable_structure": [
+        "中心の図＋周囲のラベルを線でつなぐ、全体像の図解の型"
+      ],
+      "replace_required": [
+        "八角形の図の文言",
+        "専門展の名称"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C13",
+      "source_section": "U13",
+      "name": "9つの専門展ナビ（ボタン）",
+      "role": "ナビ",
+      "reusable_structure": [
+        "『〜したい方へ』の悩みの言葉＋アイコン付きピル型ボタンの3×3のナビ。下向きの矢印で、下に詳細があることを示す"
+      ],
+      "replace_required": [
+        "アイコン",
+        "専門展の名称",
+        "悩みの文言"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C14",
+      "source_section": "U14",
+      "name": "専門展の詳細（9カード＋スタートアップゲート）",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "2列の同型カード。アイコン→写真→ピンクの一言→区切り線→箇条書き、の型"
+      ],
+      "replace_required": [
+        "写真",
+        "アイコン",
+        "専門展の名称・箇条書き"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C15",
+      "source_section": "U15",
+      "name": "申込CTA④",
+      "role": "CTA",
+      "reusable_structure": [
+        "CTA帯の型"
+      ],
+      "replace_required": [
+        "日付・金額"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C16",
+      "source_section": "U16",
+      "name": "過去来場者の声",
+      "role": "実績",
+      "reusable_structure": [
+        "水色のカードに、紺の見出し（属性）＋短い感想文、を2列で並べる型"
+      ],
+      "replace_required": [
+        "感想の文言",
+        "属性の表記"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C17",
+      "source_section": "U17",
+      "name": "来場登録の3ステップ",
+      "role": "流れ",
+      "reusable_structure": [
+        "見出し帯＋3列のステップ（大きな番号・線画・短い説明・注記）の型"
+      ],
+      "replace_required": [
+        "線画のイラスト",
+        "手順の文言"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C18",
+      "source_section": "U18",
+      "name": "申込CTA⑤",
+      "role": "CTA",
+      "reusable_structure": [
+        "CTA帯の型"
+      ],
+      "replace_required": [
+        "日付・金額"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C19",
+      "source_section": "U19",
+      "name": "アクセスと同時開催展",
+      "role": "会社情報",
+      "reusable_structure": [
+        "水色カードによる情報の整理、バナーの横並びによる関連展示会の紹介"
+      ],
+      "replace_required": [
+        "住所・駅名",
+        "展示会バナー"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C20",
+      "source_section": "U20",
+      "name": "よくある質問（FAQ）",
+      "role": "FAQ",
+      "reusable_structure": [
+        "質問を水色の帯、回答を白枠に分けた縦積みのFAQ。回答の先頭にAのマーク"
+      ],
+      "replace_required": [
+        "質問と回答の文言"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C21",
+      "source_section": "U21",
+      "name": "申込CTA⑥（最終）",
+      "role": "CTA",
+      "reusable_structure": [
+        "CTA帯の型"
+      ],
+      "replace_required": [
+        "日付・金額"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C22",
+      "source_section": "U22",
+      "name": "主催者情報",
+      "role": "会社情報",
+      "reusable_structure": [
+        "左写真＋右ロゴ・紹介文の2カラム"
+      ],
+      "replace_required": [
+        "写真",
+        "ロゴ",
+        "会社紹介の文言"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C23",
+      "source_section": "U23",
+      "name": "注記・フッター",
+      "role": "フッター",
+      "reusable_structure": [
+        "注記→リンク列→ロゴ、の標準的なフッター"
+      ],
+      "replace_required": [
+        "ロゴ・著作権表記"
+      ],
+      "rights_status": "reference_only"
+    }
+  ],
+  "reusable_principles": [
+    "紺の全幅の帯＋赤いピル型ボタン＋期限の見出し＋小さな注記、のCTA帯（区切りごとに繰り返す）",
+    "悩みのカード（イラスト枠＋文字帯）→背景色の切替→解決の宣言、の流れ",
+    "『〜したい方へ』の悩みの言葉つきピル型ボタンのナビ",
+    "同型の2列カード（アイコン→写真→一言→区切り線→箇条書き）",
+    "見出し帯＋3列の番号つきステップ",
+    "水色の帯の質問＋白枠の回答のFAQ",
+    "中心の図＋周囲のラベルを線でつなぐ全体像の図解"
+  ],
+  "cta_patterns": [
+    {
+      "name": "申込CTA①（無料申込の期限）",
+      "description": "濃い紺の全幅の帯に、赤いピル型ボタン『来場登録をする』、白い太字の『11月17日（火）まで無料お申込み』、小さな注記『以降は入場料5,500円（税込）』。 【SP】ボタンが幅いっぱい（約300px）に広がり、PCより大きい。見出しが『無／料お申込み』と、語の途中で折り返す。"
+    },
+    {
+      "name": "申込CTA②",
+      "description": "CTA①と同じ紺の帯・赤いボタン・期限の見出し・注記の型。 【SP】見出しが『無／料お申込み』と折り返す。"
+    },
+    {
+      "name": "申込CTA③（セミナー向け）",
+      "description": "紺の帯に、補足文『セミナーは展示会場内で開催されます。聴講には来場登録が必要です』、期限の見出し、赤いボタン、注記。 【SP】補足文・見出しが折り返す。"
+    },
+    {
+      "name": "申込CTA④",
+      "description": "紺の帯、期限の見出し、赤いボタン、注記。 【SP】PCと同じ型。"
+    },
+    {
+      "name": "申込CTA⑤",
+      "description": "紺の帯、期限の見出し、赤いボタン、注記。 【SP】PCと同じ型。"
+    },
+    {
+      "name": "申込CTA⑥（最終）",
+      "description": "紺の帯、期限の見出し、赤いボタン、注記。 【SP】PCと同じ型。"
+    }
+  ],
+  "trust_patterns": [
+    {
+      "name": "過去来場者の声",
+      "description": "アイコンつきの見出し『過去来場者からの声』、水色のカード4枚（紺の見出しに業種・役職、本文に感想）を2列で並べる。 【SP】4枚のカードが1列で縦に並ぶ。",
+      "required_caution": "実績・写真・数値は、案件ごとの権利と現在性の確認が必要。"
+    },
+    {
+      "name": "アクセスと同時開催展",
+      "description": "アイコン付きの見出し『アクセス』、右寄せの水色のカードに、会場名・住所・最寄駅（左側は空白）。続いて見出し『同時開催展』と、4つの展示会バナーを横一列で並べる。 【SP】会場カードの上に約250pxの空白があり、地図は見当たらない（PCと同様）。",
+      "required_caution": "実績・写真・数値は、案件ごとの権利と現在性の確認が必要。"
+    },
+    {
+      "name": "よくある質問（FAQ）",
+      "description": "灰色の背景に、水色の質問帯＋白い回答枠（丸いAのマーク）を縦に4つ。最初の質問の回答には、3ステップの線画も入る。 【SP】回答内の3ステップの線画が縦積みになる。",
+      "required_caution": "実績・写真・数値は、案件ごとの権利と現在性の確認が必要。"
+    },
+    {
+      "name": "主催者情報",
+      "description": "灰色の背景に見出し『主催者について』、左に会場の混雑写真、右に主催会社のロゴと紹介文。 【SP】写真・ロゴ・本文の縦積み。",
+      "required_caution": "実績・写真・数値は、案件ごとの権利と現在性の確認が必要。"
+    }
+  ],
+  "pricing_patterns": [],
+  "visual_patterns": [
+    {
+      "name": "color_legibility",
+      "description": "紺・赤・ピンク・水色・黄色を、役割（CTA・見出し・背景）ごとに分けている。紺×白の見出しは読みやすい。小さな注記と箇条書き、細い灰色の文字は読みにくい。"
+    },
+    {
+      "name": "layout_spacing",
+      "description": "3列・2列のカードグリッドを一貫して使い、余白も揃っている。登壇者カードは高さが揃わず、複数登壇のカードで列が崩れて見える箇所がある。"
+    },
+    {
+      "name": "visual_brand",
+      "description": "イラスト・ストック写真・登壇者写真・各バナーが混在し、バナーの配色は本体と異なる。展示会らしい賑やかさはあるが、統一感は中程度。"
+    }
+  ],
+  "rights_excluded": [
+    "ロゴ",
+    "人物",
+    "写真",
+    "コピー",
+    "価格",
+    "実績値"
+  ],
+  "unverified_claims": [
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "画面サイズによる1画面目の見え方（撮影は幅1452px・高さ900px）",
+      "status": "unverified",
+      "required_basis": [
+        "代表的な画面サイズで実機確認する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "SPの固定ボタン・スクロール時の動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "リンク先・クリック時の動き（ボタン・バナー・各専門展の遷移）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで各ボタン・バナーを操作して確認する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "SPの固定ボタン・スクロール時の動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "SPの固定ボタン・スクロール時の動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "SPの固定ボタン・スクロール時の動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "SPの固定ボタン・スクロール時の動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "写真の権利・出典",
+      "status": "unverified",
+      "required_basis": [
+        "素材の出典を確認する（再利用対象にしない）"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "SPの固定ボタン・スクロール時の動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "SPの固定ボタン・スクロール時の動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "リンク先・クリック時の動き（ボタン・バナー・各専門展の遷移）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで各ボタン・バナーを操作して確認する"
+      ],
+      "source_unit": "U8"
+    },
+    {
+      "claim": "SPの固定ボタン・スクロール時の動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U8"
+    },
+    {
+      "claim": "リンク先・クリック時の動き（ボタン・バナー・各専門展の遷移）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで各ボタン・バナーを操作して確認する"
+      ],
+      "source_unit": "U9"
+    },
+    {
+      "claim": "バナー内の細かな文字（小さくて読み取りにくい箇所）",
+      "status": "unverified",
+      "required_basis": [
+        "バナーを実ページで拡大して確認する"
+      ],
+      "source_unit": "U9"
+    },
+    {
+      "claim": "SPの固定ボタン・スクロール時の動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U9"
+    },
+    {
+      "claim": "登壇者の総数とセッションの詳細",
+      "status": "unverified",
+      "required_basis": [
+        "実ページのテキストを取得して件数を確認する"
+      ],
+      "source_unit": "U10"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U10"
+    },
+    {
+      "claim": "SPの固定ボタン・スクロール時の動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U10"
+    },
+    {
+      "claim": "リンク先・クリック時の動き（ボタン・バナー・各専門展の遷移）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで各ボタン・バナーを操作して確認する"
+      ],
+      "source_unit": "U11"
+    },
+    {
+      "claim": "SPの固定ボタン・スクロール時の動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U11"
+    },
+    {
+      "claim": "図の中の小さな文字の正確な文言",
+      "status": "unverified",
+      "required_basis": [
+        "元画像を拡大して確認する"
+      ],
+      "source_unit": "U12"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U12"
+    },
+    {
+      "claim": "SPの固定ボタン・スクロール時の動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U12"
+    },
+    {
+      "claim": "リンク先・クリック時の動き（ボタン・バナー・各専門展の遷移）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで各ボタン・バナーを操作して確認する"
+      ],
+      "source_unit": "U13"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U13"
+    },
+    {
+      "claim": "SPの固定ボタン・スクロール時の動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U13"
+    },
+    {
+      "claim": "各カードに詳細ページへのリンクがあるか",
+      "status": "unverified",
+      "required_basis": [
+        "実ページでナビのボタンを押して確認する"
+      ],
+      "source_unit": "U14"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U14"
+    },
+    {
+      "claim": "SPの固定ボタン・スクロール時の動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U14"
+    },
+    {
+      "claim": "リンク先・クリック時の動き（ボタン・バナー・各専門展の遷移）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで各ボタン・バナーを操作して確認する"
+      ],
+      "source_unit": "U15"
+    },
+    {
+      "claim": "SPの固定ボタン・スクロール時の動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U15"
+    },
+    {
+      "claim": "声の出典・調査時期・実在の確認",
+      "status": "unverified",
+      "required_basis": [
+        "実ページの注記・出典を確認する"
+      ],
+      "source_unit": "U16"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U16"
+    },
+    {
+      "claim": "SPの固定ボタン・スクロール時の動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U16"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U17"
+    },
+    {
+      "claim": "SPの固定ボタン・スクロール時の動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U17"
+    },
+    {
+      "claim": "リンク先・クリック時の動き（ボタン・バナー・各専門展の遷移）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで各ボタン・バナーを操作して確認する"
+      ],
+      "source_unit": "U18"
+    },
+    {
+      "claim": "SPの固定ボタン・スクロール時の動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U18"
+    },
+    {
+      "claim": "アクセスの左側の空白（地図が表示される想定の領域か）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで地図の表示を確認する"
+      ],
+      "source_unit": "U19"
+    },
+    {
+      "claim": "リンク先・クリック時の動き（ボタン・バナー・各専門展の遷移）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで各ボタン・バナーを操作して確認する"
+      ],
+      "source_unit": "U19"
+    },
+    {
+      "claim": "SPの固定ボタン・スクロール時の動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U19"
+    },
+    {
+      "claim": "開閉の動き（アコーディオン）か、すべて展開した表示か",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで質問をクリックして確認する"
+      ],
+      "source_unit": "U20"
+    },
+    {
+      "claim": "SPの固定ボタン・スクロール時の動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U20"
+    },
+    {
+      "claim": "リンク先・クリック時の動き（ボタン・バナー・各専門展の遷移）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで各ボタン・バナーを操作して確認する"
+      ],
+      "source_unit": "U21"
+    },
+    {
+      "claim": "SPの固定ボタン・スクロール時の動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U21"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U22"
+    },
+    {
+      "claim": "SPの固定ボタン・スクロール時の動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U22"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U23"
+    },
+    {
+      "claim": "SPの固定ボタン・スクロール時の動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U23"
+    }
+  ],
+  "recommended_use_cases": [],
+  "analysis_notes": {
+    "completion_status": "dis_analysis_done_28ch_pending",
+    "dis_analysis_ref": "DIS-LP-0002",
+    "remaining_limits": [
+      "タグ・訴求・オファーは、28章の分析で確定する",
+      "ライブラリー側の取り込み・28章の分析は未実施（このファイルはDISからの下書き）",
+      "CBS本体への実同期は未実施"
+    ]
+  },
+  "dis_evaluation": {
+    "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+    "axes": [
+      {
+        "key": "purpose_fit",
+        "label": "目的適合",
+        "score": 5,
+        "confidence": "high"
+      },
+      {
+        "key": "information_hierarchy",
+        "label": "情報優先順位",
+        "score": 4,
+        "confidence": "high"
+      },
+      {
+        "key": "visual_flow",
+        "label": "視線誘導",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "message_copy",
+        "label": "訴求・コピー",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "trust_safety",
+        "label": "信頼・安心",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "color_legibility",
+        "label": "配色・可読性",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "layout_spacing",
+        "label": "レイアウト・余白",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_brand",
+        "label": "ビジュアル・ブランド",
+        "score": 3,
+        "confidence": "medium"
+      },
+      {
+        "key": "implementation_reuse",
+        "label": "実装・転用性",
+        "score": 5,
+        "confidence": "high"
+      }
+    ],
+    "note": "28章の総合点（ヒューリスティック/100）とは別の物差し。足したり平均したりしない。"
+  },
+  "cbs_sync": {
+    "status": "draft_from_dis",
+    "knowledge_path": "knowledge/lp/LP-0246.json",
+    "exported_at": null,
+    "actual_cbs_import": "not_synced"
+  }
+}

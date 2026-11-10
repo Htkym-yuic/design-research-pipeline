@@ -1,0 +1,815 @@
+{
+  "id": "LP-0247",
+  "dis_ids": [
+    "DIS-LP-0003"
+  ],
+  "mediaType": "LP",
+  "media_type": "LP",
+  "title": "宇治山田歯科医院のLPデザイン",
+  "brand": "宇治山田歯科医院",
+  "industry_tags": [
+    "求人・採用関連",
+    "採用",
+    "病院・整体・マッサージ"
+  ],
+  "product_tags": [
+    "LP",
+    "サービス"
+  ],
+  "color_tags": [
+    "イエロー",
+    "オレンジ",
+    "ピンク",
+    "グリーン",
+    "マルチカラー"
+  ],
+  "layout_tags": [
+    "長尺LP",
+    "セクション分割",
+    "カード型",
+    "人物写真",
+    "ストーリー型",
+    "採用導線"
+  ],
+  "copy_types": [
+    "ベネフィット訴求",
+    "社会的証明",
+    "ターゲット明示",
+    "情緒訴求"
+  ],
+  "primary_appeal": "3つの魅力・先輩の声・1日の流れで働くイメージを見せ、見学で不安を和らげてから応募へ導く、歯科衛生士の採用",
+  "offer": "医院見学（面接ではない低いハードルの入口）から、ENTRY（外来担当／訪問担当・正社員）へ応募",
+  "captureUrl": "https://www.ujiyamada.com/lp/rec/dh/",
+  "sourceUrl": "https://rdlp.jp/lp-archive/",
+  "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229563",
+  "source": {
+    "captured_url": "https://www.ujiyamada.com/lp/rec/dh/",
+    "reference_name": "LPアーカイブ",
+    "reference_url": "https://rdlp.jp/lp-archive/",
+    "reference_detail_url": "https://rdlp.jp/archives/otherdesign/lp/229563",
+    "notion_url": null,
+    "dis_notion_url": "https://app.notion.com/p/41324d4fa671818fad48fc3c24802d20",
+    "dropbox_master_path": null,
+    "dis_dropbox_path": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0003",
+    "github_knowledge_path": "knowledge/lp/LP-0247.json",
+    "archive_post_id": "229563"
+  },
+  "asset_status": {
+    "pc_full": {
+      "path": "01_Normal_Images/DIS-LP-0003_PC_full.png",
+      "width": 1440,
+      "height": 19180,
+      "status": "captured_unverified"
+    },
+    "pc_first_view": {
+      "path": "01_Normal_Images/DIS-LP-0003_PC_first_view.png",
+      "width": 1440,
+      "height": 900,
+      "status": "captured_unverified"
+    },
+    "sp_full": {
+      "path": "01_Normal_Images/DIS-LP-0003_SP_full.png",
+      "width": 375,
+      "height": 19148,
+      "status": "captured_unverified"
+    },
+    "sp_first_view": {
+      "path": "01_Normal_Images/DIS-LP-0003_SP_first_view.png",
+      "width": 375,
+      "height": 812,
+      "status": "captured_unverified"
+    },
+    "repository_crosscheck": "not_run"
+  },
+  "funnel_structure": [
+    {
+      "step": 1,
+      "role": "FV",
+      "pattern": "医院名・FV（キャッチ）",
+      "description": "医院名・職種・キャッチを、1画面目で伝える導入"
+    },
+    {
+      "step": 2,
+      "role": "共感",
+      "pattern": "共感・ビジョン（なりたい理想）",
+      "description": "求職者の『なりたい』に寄り添い、医院の姿勢を一文で示す"
+    },
+    {
+      "step": 3,
+      "role": "ベネフィット",
+      "pattern": "魅力01（成長：サポート体制）",
+      "description": "『3つの魅力』の導入と、1つ目の魅力（成長できる環境）を示す"
+    },
+    {
+      "step": 4,
+      "role": "ベネフィット",
+      "pattern": "奨学金制度のご案内",
+      "description": "学生や助手の応募者に向け、奨学金の支援を伝える"
+    },
+    {
+      "step": 5,
+      "role": "特徴",
+      "pattern": "福利厚生ギャラリー（旅行・ユニフォーム）",
+      "description": "職場の雰囲気（社員旅行など）を、写真で伝える"
+    },
+    {
+      "step": 6,
+      "role": "ベネフィット",
+      "pattern": "魅力02（家庭・趣味：社会保険・働き方）",
+      "description": "2つ目の魅力（プライベートとの両立）と、制度を具体的に伝える"
+    },
+    {
+      "step": 7,
+      "role": "特徴",
+      "pattern": "魅力03（品質：設備・医療）",
+      "description": "3つ目の魅力（安全で快適、高度な歯科医療）を示す"
+    },
+    {
+      "step": 8,
+      "role": "会社情報",
+      "pattern": "院長あいさつ（経歴・資格）",
+      "description": "院長の考えと実績を示し、教育方針への信頼を作る"
+    },
+    {
+      "step": 9,
+      "role": "実績",
+      "pattern": "先輩の声①（磯和）",
+      "description": "実際に働く衛生士のインタビューで、職場の良さを裏付ける"
+    },
+    {
+      "step": 10,
+      "role": "実績",
+      "pattern": "先輩の声②（上村）",
+      "description": "2人目の声で、新卒・未経験の目線を加える"
+    },
+    {
+      "step": 11,
+      "role": "流れ",
+      "pattern": "歯科衛生士の1日（スケジュール）",
+      "description": "1日の流れを見せ、働くイメージと残業の少なさを伝える"
+    },
+    {
+      "step": 12,
+      "role": "CTA",
+      "pattern": "医院見学の案内（INTERNSHIPS）",
+      "description": "見学という低いハードルの入口を示し、応募前の不安を和らげる"
+    },
+    {
+      "step": 13,
+      "role": "CTA",
+      "pattern": "ENTRY（応募ボタン）",
+      "description": "応募の最終導線として、募集職種のボタンを示す"
+    },
+    {
+      "step": 14,
+      "role": "会社情報",
+      "pattern": "医院情報・フッター",
+      "description": "所在地・診療時間・外観写真で、通勤や雰囲気のイメージを伝える"
+    }
+  ],
+  "section_patterns": [
+    {
+      "id": "C01",
+      "source_section": "U1",
+      "name": "医院名・FV（キャッチ）",
+      "role": "FV",
+      "reusable_structure": [
+        "大きな図形＋角丸に切り抜いた写真＋白抜きの手書き風キャッチ、の重ね。下端に白い帯のアンカーナビを置く"
+      ],
+      "replace_required": [
+        "医院ロゴ・電話番号",
+        "写真（施術中・笑顔の写真）",
+        "キャッチコピー",
+        "図形の配色（ブランド色）"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C02",
+      "source_section": "U2",
+      "name": "共感・ビジョン（なりたい理想）",
+      "role": "共感",
+      "reusable_structure": [
+        "橙の帯＋写真を薄く敷く＋白抜きの見出し＋短文、の型"
+      ],
+      "replace_required": [
+        "背景写真",
+        "見出し・本文のコピー"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C03",
+      "source_section": "U3",
+      "name": "魅力01（成長：サポート体制）",
+      "role": "ベネフィット",
+      "reusable_structure": [
+        "番号つき見出し＋大きな写真＋丸い写真・手描きの吹き出し・色の箱の3列カード、の型"
+      ],
+      "replace_required": [
+        "写真",
+        "見出し・本文のコピー",
+        "手描きのイラスト（吹き出し・文具）"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C04",
+      "source_section": "U4",
+      "name": "奨学金制度のご案内",
+      "role": "ベネフィット",
+      "reusable_structure": [
+        "色つき見出し帯＋説明文＋2分割のボタン、のお知らせブロック"
+      ],
+      "replace_required": [
+        "制度の名称・説明文",
+        "イラスト"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C05",
+      "source_section": "U5",
+      "name": "福利厚生ギャラリー（旅行・ユニフォーム）",
+      "role": "特徴",
+      "reusable_structure": [
+        "スライダー（中央のスライドを大きく、左右を一部見せる）＋丸い吹き出しのキャプション"
+      ],
+      "replace_required": [
+        "写真（集合写真）",
+        "キャプション"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C06",
+      "source_section": "U6",
+      "name": "魅力02（家庭・趣味：社会保険・働き方）",
+      "role": "ベネフィット",
+      "reusable_structure": [
+        "番号つき見出し＋丸いスタンプの並び＋3列の写真カード、の型（魅力01と同じ型で、色だけ変える）"
+      ],
+      "replace_required": [
+        "写真",
+        "制度の名称・文言",
+        "スタンプの文言"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C07",
+      "source_section": "U7",
+      "name": "魅力03（品質：設備・医療）",
+      "role": "特徴",
+      "reusable_structure": [
+        "魅力01と同じ左テキスト＋右写真の型。ボタンで詳細ページへ"
+      ],
+      "replace_required": [
+        "写真",
+        "本文のコピー",
+        "設備の名称"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C08",
+      "source_section": "U8",
+      "name": "院長あいさつ（経歴・資格）",
+      "role": "会社情報",
+      "reusable_structure": [
+        "全幅の写真＋色面に重ねる見出し・本文、人物写真を右下に重ねる、年表とリスト"
+      ],
+      "replace_required": [
+        "院長の写真・氏名",
+        "経歴・資格",
+        "認定の写真・ロゴ",
+        "本文のコピー"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C09",
+      "source_section": "U9",
+      "name": "先輩の声①（磯和）",
+      "role": "実績",
+      "reusable_structure": [
+        "縞模様の背景＋人物写真＋見出し付きの回答、番号つきの質問（INTERVIEW）、2列のチェック付き小見出し"
+      ],
+      "replace_required": [
+        "人物写真・氏名",
+        "回答の文章"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C10",
+      "source_section": "U10",
+      "name": "先輩の声②（上村）",
+      "role": "実績",
+      "reusable_structure": [
+        "先輩の声①と同じ型を、人を変えて繰り返す"
+      ],
+      "replace_required": [
+        "人物写真・氏名",
+        "回答の文章"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C11",
+      "source_section": "U11",
+      "name": "歯科衛生士の1日（スケジュール）",
+      "role": "流れ",
+      "reusable_structure": [
+        "時刻つきカードを矢印でつなぐタイムライン（3列×2行）＋吹き出しで補足、の型"
+      ],
+      "replace_required": [
+        "時刻・業務内容",
+        "吹き出しの文言",
+        "写真"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C12",
+      "source_section": "U12",
+      "name": "医院見学の案内（INTERNSHIPS）",
+      "role": "CTA",
+      "reusable_structure": [
+        "求職者の不安を吹き出しで示す→提案の見出し→電話番号つきの申込み枠、の型"
+      ],
+      "replace_required": [
+        "電話番号・受付時間",
+        "見出し・説明文"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C13",
+      "source_section": "U13",
+      "name": "ENTRY（応募ボタン）",
+      "role": "CTA",
+      "reusable_structure": [
+        "ピンクの背景＋見出し＋職種別の2ボタン＋集合写真、の型"
+      ],
+      "replace_required": [
+        "集合写真",
+        "職種名",
+        "見出しのコピー"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C14",
+      "source_section": "U14",
+      "name": "医院情報・フッター",
+      "role": "会社情報",
+      "reusable_structure": [
+        "ロゴ・住所・診療時間表・SNSリンクの標準的なフッター＋写真の帯"
+      ],
+      "replace_required": [
+        "ロゴ・住所・電話番号",
+        "写真"
+      ],
+      "rights_status": "reference_only"
+    }
+  ],
+  "reusable_principles": [
+    "丸く切り抜いた写真＋手描きの吹き出し＋縞模様の色箱の3列カード（章ごとに色を変える）",
+    "番号つきの大見出し（英字の小さなラベル＋大きな数字）＋左テキスト・右写真",
+    "質問形式のインタビュー（INTERVIEW 01〜04）＋チェック付きの小見出し",
+    "時刻つきカードを矢印でつなぐタイムライン（吹き出しで補足）",
+    "不安を吹き出しで言葉にしてから提案する、見学の案内",
+    "職種別の2ボタンのENTRY",
+    "診療時間表つきの医院情報"
+  ],
+  "cta_patterns": [
+    {
+      "name": "医院見学の案内（INTERNSHIPS）",
+      "description": "ベージュの大きな枠に、大きな英字『INTERNSHIPS』、『医院見学について』、3つの吹き出し（いきなり面接は心配…／具体的な仕事内容が気になる…／医院の雰囲気を知りたい！）、見出し『宇治山田歯科医院に見学に来てみませんか？』、説明文、『見学にあたって』の注意、橙の申込み枠（お電話または募集要項ページのエントリーフォ…"
+    },
+    {
+      "name": "ENTRY（応募ボタン）",
+      "description": "ピンクの全幅の背景に、大きな英字『ENTRY』、『ご応募・お問い合わせ』、黄色の見出し『宇治山田歯科医院のスタッフが皆様のご応募お待ちしております！』、2つのボタン（外来担当：正社員／訪問担当：正社員）、下にスタッフの集合写真。 【SP】SPでは、2つのボタンが全幅で縦に並び、スタッフの集合写真は小さく表示される。"
+    }
+  ],
+  "trust_patterns": [
+    {
+      "name": "院長あいさつ（経歴・資格）",
+      "description": "黄色いグラデーションの帯の下に、院長の施術の大きな写真。茶色の面に、大きな英字『MESSAGE』、見出し『しっかりと基礎スキルを習得し、専門性も高めることができます』、長い本文、右に院長の写真と名前（片山 昇）。続いて、『日本人として初 W認定！』の写真とロゴ、院長経歴の年表、所属学会・資格のリスト、茶色のボタン『当院…",
+      "required_caution": "実績・写真・数値は、案件ごとの権利と現在性の確認が必要。"
+    },
+    {
+      "name": "先輩の声①（磯和）",
+      "description": "『先輩の声 VOICE』の雲型の見出し、黄色の縞模様の背景、左に衛生士の写真、右に名前と見出し『質の高い医療を提供し続ける』、本文。その下に『INTERVIEW 01〜04』の質問と回答。01は2列のチェック付きの見出し（歯周病治療をはじめ、幅広く診療経験を積める／先輩後輩分け隔てなく話しやすい…）、02〜04は短い回…",
+      "required_caution": "実績・写真・数値は、案件ごとの権利と現在性の確認が必要。"
+    },
+    {
+      "name": "先輩の声②（上村）",
+      "description": "縞模様の背景に、左に衛生士の写真、右に名前と見出し『衛生士の仕事が楽しいと思える』、本文。続く『INTERVIEW 01〜04』は、先輩の声①と同じ型で、2列のチェック付き見出しと回答、右に写真。 【SP】SPでは、1人目と同様に、1列で長く縦に続く。",
+      "required_caution": "実績・写真・数値は、案件ごとの権利と現在性の確認が必要。"
+    },
+    {
+      "name": "医院情報・フッター",
+      "description": "ベージュの背景に、医院ロゴ、住所、最寄り駅、『採用に関するお問い合わせ』の電話番号、診療時間表（月〜金8:30〜18:00、土は17:00まで、日・祝は休診）、インスタグラムのリンク。下に医院の外観・院内・子どもの診療の写真が3枚並ぶ。最下部に著作権表記とオフィシャルサイトへのバナー。 【SP】SPでは、診療時間表が全…",
+      "required_caution": "実績・写真・数値は、案件ごとの権利と現在性の確認が必要。"
+    }
+  ],
+  "pricing_patterns": [],
+  "visual_patterns": [
+    {
+      "name": "color_legibility",
+      "description": "パステルの配色は、やわらかく統一感がある。一方、茶色や灰色の小さな本文が長く続き、橙・茶の背景に白い細い文字を重ねる箇所（共感・院長あいさつ・1日）は、読みにくい。"
+    },
+    {
+      "name": "layout_spacing",
+      "description": "3列カードと、左テキスト＋右写真を、章ごとに一貫して使い、余白も広い。SPでは、医院情報の下に約400pxの空白がある。"
+    },
+    {
+      "name": "visual_brand",
+      "description": "丸く切り抜いた写真、手描き風の吹き出し、縞模様の色箱、パステルの配色が、全体で一貫し、医院の人柄を表す独自の世界観になっている。"
+    }
+  ],
+  "rights_excluded": [
+    "ロゴ",
+    "人物",
+    "写真",
+    "コピー",
+    "価格",
+    "実績値"
+  ],
+  "unverified_claims": [
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "リンク先（ボタン・バナー・各ページへの遷移）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで各ボタンを操作して確認する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "動き（スクロール時の表示・スライダー・固定ヘッダー）",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "人物写真の掲載許諾・権利",
+      "status": "unverified",
+      "required_basis": [
+        "素材の出典・許諾を確認する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "人物写真の掲載許諾・権利",
+      "status": "unverified",
+      "required_basis": [
+        "素材の出典・許諾を確認する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "人物写真の掲載許諾・権利",
+      "status": "unverified",
+      "required_basis": [
+        "素材の出典・許諾を確認する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "動き（スクロール時の表示・スライダー・固定ヘッダー）",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "リンク先（ボタン・バナー・各ページへの遷移）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで各ボタンを操作して確認する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "スライダーの全スライド・枚数",
+      "status": "unverified",
+      "required_basis": [
+        "実ページでスライドを送って確認する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "動き（スクロール時の表示・スライダー・固定ヘッダー）",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "人物写真の掲載許諾・権利",
+      "status": "unverified",
+      "required_basis": [
+        "素材の出典・許諾を確認する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "人物写真の掲載許諾・権利",
+      "status": "unverified",
+      "required_basis": [
+        "素材の出典・許諾を確認する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "リンク先（ボタン・バナー・各ページへの遷移）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで各ボタンを操作して確認する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "人物写真の掲載許諾・権利",
+      "status": "unverified",
+      "required_basis": [
+        "素材の出典・許諾を確認する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U8"
+    },
+    {
+      "claim": "人物写真の掲載許諾・権利",
+      "status": "unverified",
+      "required_basis": [
+        "素材の出典・許諾を確認する"
+      ],
+      "source_unit": "U8"
+    },
+    {
+      "claim": "認定・資格の根拠（外部の証明）",
+      "status": "unverified",
+      "required_basis": [
+        "各学会の公開情報で確認する"
+      ],
+      "source_unit": "U8"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U9"
+    },
+    {
+      "claim": "人物写真の掲載許諾・権利",
+      "status": "unverified",
+      "required_basis": [
+        "素材の出典・許諾を確認する"
+      ],
+      "source_unit": "U9"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U10"
+    },
+    {
+      "claim": "人物写真の掲載許諾・権利",
+      "status": "unverified",
+      "required_basis": [
+        "素材の出典・許諾を確認する"
+      ],
+      "source_unit": "U10"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U11"
+    },
+    {
+      "claim": "人物写真の掲載許諾・権利",
+      "status": "unverified",
+      "required_basis": [
+        "素材の出典・許諾を確認する"
+      ],
+      "source_unit": "U11"
+    },
+    {
+      "claim": "動き（スクロール時の表示・スライダー・固定ヘッダー）",
+      "status": "unverified",
+      "required_basis": [
+        "実機・実ブラウザで確認する"
+      ],
+      "source_unit": "U11"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U12"
+    },
+    {
+      "claim": "リンク先（ボタン・バナー・各ページへの遷移）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで各ボタンを操作して確認する"
+      ],
+      "source_unit": "U12"
+    },
+    {
+      "claim": "リンク先（ボタン・バナー・各ページへの遷移）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで各ボタンを操作して確認する"
+      ],
+      "source_unit": "U13"
+    },
+    {
+      "claim": "募集要項（給与・勤務時間・応募資格など）の掲載場所",
+      "status": "unverified",
+      "required_basis": [
+        "実ページでボタンの先を確認する"
+      ],
+      "source_unit": "U13"
+    },
+    {
+      "claim": "人物写真の掲載許諾・権利",
+      "status": "unverified",
+      "required_basis": [
+        "素材の出典・許諾を確認する"
+      ],
+      "source_unit": "U13"
+    },
+    {
+      "claim": "リンク先（ボタン・バナー・各ページへの遷移）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで各ボタンを操作して確認する"
+      ],
+      "source_unit": "U14"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U14"
+    },
+    {
+      "claim": "SPの医院情報下の大きな空白（約400px）",
+      "status": "unverified",
+      "required_basis": [
+        "実機で表示を確認する"
+      ],
+      "source_unit": "U14"
+    }
+  ],
+  "recommended_use_cases": [],
+  "analysis_notes": {
+    "completion_status": "dis_analysis_done_28ch_pending",
+    "dis_analysis_ref": "DIS-LP-0003",
+    "remaining_limits": [
+      "タグ・訴求・オファーは、28章の分析で確定する",
+      "ライブラリー側の取り込み・28章の分析は未実施（このファイルはDISからの下書き）",
+      "CBS本体への実同期は未実施"
+    ]
+  },
+  "dis_evaluation": {
+    "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+    "axes": [
+      {
+        "key": "purpose_fit",
+        "label": "目的適合",
+        "score": 4,
+        "confidence": "high"
+      },
+      {
+        "key": "information_hierarchy",
+        "label": "情報優先順位",
+        "score": 4,
+        "confidence": "high"
+      },
+      {
+        "key": "visual_flow",
+        "label": "視線誘導",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "message_copy",
+        "label": "訴求・コピー",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "trust_safety",
+        "label": "信頼・安心",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "color_legibility",
+        "label": "配色・可読性",
+        "score": 3,
+        "confidence": "medium"
+      },
+      {
+        "key": "layout_spacing",
+        "label": "レイアウト・余白",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_brand",
+        "label": "ビジュアル・ブランド",
+        "score": 5,
+        "confidence": "high"
+      },
+      {
+        "key": "implementation_reuse",
+        "label": "実装・転用性",
+        "score": 4,
+        "confidence": "medium"
+      }
+    ],
+    "note": "28章の総合点（ヒューリスティック/100）とは別の物差し。足したり平均したりしない。"
+  },
+  "cbs_sync": {
+    "status": "draft_from_dis",
+    "knowledge_path": "knowledge/lp/LP-0247.json",
+    "exported_at": null,
+    "actual_cbs_import": "not_synced"
+  }
+}

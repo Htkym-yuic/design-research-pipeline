@@ -1,0 +1,424 @@
+{
+  "id": "LP-0245",
+  "dis_ids": [
+    "DIS-LP-0001"
+  ],
+  "mediaType": "LP",
+  "media_type": "LP",
+  "title": "オランジーナのLPデザイン",
+  "brand": "オランジーナ",
+  "industry_tags": [
+    "飲料"
+  ],
+  "product_tags": [
+    "物販"
+  ],
+  "color_tags": [
+    "イエロー",
+    "ブルー"
+  ],
+  "layout_tags": [
+    "セクション分割"
+  ],
+  "copy_types": [
+    "数字訴求"
+  ],
+  "primary_appeal": "青と黄色の2色と、ずらした黄色の色面で、全6セクションを同じ型に統一した、飲料の商品紹介",
+  "offer": "（28章の分析で確定）",
+  "captureUrl": "http://orangina.jp/product/",
+  "sourceUrl": "https://rdlp.jp/lp-archive/",
+  "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/16359",
+  "source": {
+    "captured_url": "http://orangina.jp/product/",
+    "reference_name": "LPアーカイブ",
+    "reference_url": "https://rdlp.jp/lp-archive/",
+    "reference_detail_url": "https://rdlp.jp/archives/otherdesign/lp/16359",
+    "notion_url": "https://app.notion.com/p/41424d4fa6718170bc8cd9a7cebd504e",
+    "dis_notion_url": "https://app.notion.com/p/41324d4fa671812f91eff92ae5cad34e",
+    "dropbox_master_path": null,
+    "dis_dropbox_path": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0001",
+    "github_knowledge_path": "knowledge/lp/LP-0245.json",
+    "archive_post_id": "16359"
+  },
+  "asset_status": {
+    "pc_full": {
+      "path": "01_Normal_Images/DIS-LP-0001_PC_full.png",
+      "width": 1100,
+      "height": 3023,
+      "status": "captured_unverified"
+    },
+    "pc_first_view": {
+      "path": "01_Normal_Images/DIS-LP-0001_PC_first_view.png",
+      "width": 1100,
+      "height": 900,
+      "status": "captured_unverified"
+    },
+    "sp_full": {
+      "path": "01_Normal_Images/DIS-LP-0001_SP_full.png",
+      "status": "missing"
+    },
+    "sp_first_view": {
+      "path": "01_Normal_Images/DIS-LP-0001_SP_first_view.png",
+      "status": "missing"
+    },
+    "repository_crosscheck": "not_run"
+  },
+  "funnel_structure": [
+    {
+      "step": 1,
+      "role": "商品紹介",
+      "pattern": "PRODUCT（ブランド紹介・メイン写真）",
+      "description": "商品ブランドの由来と魅力を、見出し・要約・写真で最初に伝える導入セクション"
+    },
+    {
+      "step": 2,
+      "role": "商品紹介",
+      "pattern": "商品ラインアップ（3種）",
+      "description": "味の違いのある3種を並べ、選ぶ楽しさと商品群の広がりを示す"
+    },
+    {
+      "step": 3,
+      "role": "商品紹介",
+      "pattern": "ORANGINA（主力商品の詳細とサイズ展開）",
+      "description": "主力商品を大きく見せ、サイズ展開（缶・ボトル）を一覧にして、選択肢を伝える"
+    },
+    {
+      "step": 4,
+      "role": "特徴",
+      "pattern": "FEATURE（おいしさの特徴）",
+      "description": "味の特徴を、キーワードのラベルと短い説明で伝える"
+    },
+    {
+      "step": 5,
+      "role": "会社情報",
+      "pattern": "HISTORY（歴史の年表）",
+      "description": "ブランドの歴史を年表で見せ、長く愛されてきた信頼感を伝える"
+    },
+    {
+      "step": 6,
+      "role": "フッター",
+      "pattern": "SHARE・外部リンク（フッター）",
+      "description": "ページの共有と、関連サイトへの導線を、最下部にまとめる"
+    }
+  ],
+  "section_patterns": [
+    {
+      "id": "C01",
+      "source_section": "U1",
+      "name": "PRODUCT（ブランド紹介・メイン写真）",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "左テキスト＋右写真の2カラム。写真の背後に、ずらした色面を1枚敷いて奥行きを出す"
+      ],
+      "replace_required": [
+        "商品写真",
+        "ブランドの由来の文章",
+        "ロゴ・商品名"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C02",
+      "source_section": "U2",
+      "name": "商品ラインアップ（3種）",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "等間隔の3カラムに、商品画像＋名前＋色面のラベルを並べる構成"
+      ],
+      "replace_required": [
+        "商品画像",
+        "商品名",
+        "ラベルの文言"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C03",
+      "source_section": "U3",
+      "name": "ORANGINA（主力商品の詳細とサイズ展開）",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "大きな主役画像＋右にサイズ別の商品を並べる比較ライン。色面を敷いて主役を浮かせる"
+      ],
+      "replace_required": [
+        "商品画像",
+        "商品名・容量の表記",
+        "説明文"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C04",
+      "source_section": "U4",
+      "name": "FEATURE（おいしさの特徴）",
+      "role": "特徴",
+      "reusable_structure": [
+        "写真に、色面のキーワード帯を重ねる。本文側は、ラベル見出し＋短文を縦に並べる"
+      ],
+      "replace_required": [
+        "写真",
+        "特徴の文言",
+        "キーワードの文言"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C05",
+      "source_section": "U5",
+      "name": "HISTORY（歴史の年表）",
+      "role": "会社情報",
+      "reusable_structure": [
+        "縦線＋ノード＋年号＋短文の年表を左に置き、右に見出しと本文の対構成"
+      ],
+      "replace_required": [
+        "年号・出来事の文言",
+        "見出しと説明文",
+        "数字（販売国数など）"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C06",
+      "source_section": "U6",
+      "name": "SHARE・外部リンク（フッター）",
+      "role": "フッター",
+      "reusable_structure": [
+        "中央にSNS共有ボタン、右下に外部リンクを置く、最小限のフッター"
+      ],
+      "replace_required": [
+        "ロゴ・リンク先の名称",
+        "SNSの設定"
+      ],
+      "rights_status": "reference_only"
+    }
+  ],
+  "reusable_principles": [
+    "写真の背後に、ずらした色面を敷いて奥行きを出す2カラム構成",
+    "英字の大見出し＋斜体サブ見出し＋マーカー線のキャッチの、見出しの型",
+    "青地ラベル見出し＋短文の、特徴の並べ方",
+    "縦線とノードの年表",
+    "大きな主役画像＋サイズ別の商品を並べる比較ライン"
+  ],
+  "cta_patterns": [],
+  "trust_patterns": [
+    {
+      "name": "HISTORY（歴史の年表）",
+      "description": "左に、縦の線と丸いノードでつないだ年表（年号が大きく、各年に短い説明）。右に、黄色の四角を背にした英字の見出しと仏語サブ見出し、説明文。年表の最後（日本上陸）は、青い帯のラベルで強調されている。",
+      "required_caution": "実績・写真・数値は、案件ごとの権利と現在性の確認が必要。"
+    }
+  ],
+  "pricing_patterns": [],
+  "visual_patterns": [
+    {
+      "name": "color_legibility",
+      "description": "青と黄色を主軸にした配色で、見出しの視認性が高い。白地に小さく細い本文は、サイズ・字間が小さめで、読みやすさには余地がある。"
+    },
+    {
+      "name": "layout_spacing",
+      "description": "写真の背後に、ずらした黄色の四角を敷き、余白を広く取った構成で、奥行きとリズムがある。全セクションで同じ手法が一貫している。"
+    },
+    {
+      "name": "visual_brand",
+      "description": "青・黄色・斜体の仏語サブ見出し・手書き風のマーカー線が、フランス由来の雰囲気とブランドの明るさで、全体に一貫している。"
+    }
+  ],
+  "rights_excluded": [
+    "ロゴ",
+    "人物",
+    "写真",
+    "商品画像",
+    "コピー",
+    "価格",
+    "実績値"
+  ],
+  "unverified_claims": [
+    {
+      "claim": "ページ最上部のヘッダー・メインビジュアル・ナビゲーション",
+      "status": "unverified",
+      "required_basis": [
+        "実ページを確認できる環境で、最上部を撮影する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "各商品がクリックできるか（詳細への遷移）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで各商品をクリックして確認する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "左右の矢印の線が、スライダー（切り替え）かどうか",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで操作して確認する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "サイズ別の価格・購入先の有無",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで確認する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "成分・原材料などの根拠情報の有無",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで、注記や詳細ページを確認する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "年表のスクロール連動などの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで確認する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "年表の事実の裏付け",
+      "status": "unverified",
+      "required_basis": [
+        "公式の企業情報などで確認する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "購入ページや問い合わせへの導線",
+      "status": "unverified",
+      "required_basis": [
+        "実ページの上部・下部を確認する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U6"
+    }
+  ],
+  "recommended_use_cases": [],
+  "analysis_notes": {
+    "completion_status": "dis_analysis_done_28ch_pending",
+    "dis_analysis_ref": "DIS-LP-0001",
+    "remaining_limits": [
+      "タグ・訴求・オファーは、28章の分析で確定する",
+      "ライブラリー側の取り込み・28章の分析は未実施（このファイルはDISからの下書き）",
+      "CBS本体への実同期は未実施"
+    ]
+  },
+  "dis_evaluation": {
+    "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+    "axes": [
+      {
+        "key": "purpose_fit",
+        "label": "目的適合",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "information_hierarchy",
+        "label": "情報優先順位",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_flow",
+        "label": "視線誘導",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "message_copy",
+        "label": "訴求・コピー",
+        "score": 3,
+        "confidence": "low"
+      },
+      {
+        "key": "trust_safety",
+        "label": "信頼・安心",
+        "score": 3,
+        "confidence": "low"
+      },
+      {
+        "key": "color_legibility",
+        "label": "配色・可読性",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "layout_spacing",
+        "label": "レイアウト・余白",
+        "score": 5,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_brand",
+        "label": "ビジュアル・ブランド",
+        "score": 5,
+        "confidence": "medium"
+      },
+      {
+        "key": "implementation_reuse",
+        "label": "実装・転用性",
+        "score": 4,
+        "confidence": "medium"
+      }
+    ],
+    "note": "28章の総合点（ヒューリスティック/100）とは別の物差し。足したり平均したりしない。"
+  },
+  "cbs_sync": {
+    "status": "draft_from_dis",
+    "knowledge_path": "knowledge/lp/LP-0245.json",
+    "exported_at": null,
+    "actual_cbs_import": "not_synced"
+  }
+}
