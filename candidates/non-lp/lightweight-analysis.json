@@ -15388,6 +15388,170 @@
       "reviewPoints": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
       "deepDivePriority": "中",
       "generatedAt": "2026-11-09T16:19:28.849Z"
+    },
+    "WB-0075": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。KIRINK。",
+      "selectionReason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+      "visualSummary": "明色・白基調。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-10T16:17:25.238Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/WB-0075-kirink/03_Implementation_Blueprint/WB-0075_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/WB-0075-kirink/03_Implementation_Blueprint/WB-0075_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/WB-0075-kirink/03_Implementation_Blueprint/WB-0075_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/WB-0075-kirink/03_Implementation_Blueprint/WB-0075_elementor_implementation_guide.md",
+        "sections": 8,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "WB-0076": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。ガイアエデュケーション。",
+      "selectionReason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+      "visualSummary": "ニュートラル。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-10T16:17:25.248Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/WB-0076-untitled/03_Implementation_Blueprint/WB-0076_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/WB-0076-untitled/03_Implementation_Blueprint/WB-0076_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/WB-0076-untitled/03_Implementation_Blueprint/WB-0076_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/WB-0076-untitled/03_Implementation_Blueprint/WB-0076_elementor_implementation_guide.md",
+        "sections": 8,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0224": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したチラシ・フライヤー参考。子ども会の芋掘り大会チラシ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "暖色・黄橙系。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-10T16:17:25.257Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0224-untitled/03_Implementation_Blueprint/GR-0224_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0224-untitled/03_Implementation_Blueprint/GR-0224_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0224-untitled/03_Implementation_Blueprint/GR-0224_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0224-untitled/03_Implementation_Blueprint/GR-0224_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0225": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したポスター参考。忘年会のお知らせ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "暖色・黄橙系。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-10T16:17:25.265Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0225-untitled/03_Implementation_Blueprint/GR-0225_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0225-untitled/03_Implementation_Blueprint/GR-0225_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0225-untitled/03_Implementation_Blueprint/GR-0225_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0225-untitled/03_Implementation_Blueprint/GR-0225_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0226": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したSNS投稿・Web広告参考。ブルー背景のネオン風忘年会バナー。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "寒色・青紫系。156×104の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-10T16:17:25.274Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0226-untitled/03_Implementation_Blueprint/GR-0226_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0226-untitled/03_Implementation_Blueprint/GR-0226_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0226-untitled/03_Implementation_Blueprint/GR-0226_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0226-untitled/03_Implementation_Blueprint/GR-0226_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0227": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集した名刺・ショップカード参考。カラフル幾何学模様の雑貨店名刺デザイン。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。384×232の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-10T16:17:25.281Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0227-untitled/03_Implementation_Blueprint/GR-0227_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0227-untitled/03_Implementation_Blueprint/GR-0227_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0227-untitled/03_Implementation_Blueprint/GR-0227_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0227-untitled/03_Implementation_Blueprint/GR-0227_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0228": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したロゴ・VI/CI参考。水滴のようなロゴ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。400×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-10T16:17:25.290Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0228-untitled/03_Implementation_Blueprint/GR-0228_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0228-untitled/03_Implementation_Blueprint/GR-0228_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0228-untitled/03_Implementation_Blueprint/GR-0228_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0228-untitled/03_Implementation_Blueprint/GR-0228_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "CV-0059": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "Canvaから収集したCanva参考。Gold Modern Dhanteras Greetings Instagram Post。",
+      "selectionReason": "Canvaの新規候補として重複確認を通過。テンプレート化しやすい構成、文字組み、配色、情報階層の型を確認できるため。",
+      "visualSummary": "暖色・黄橙系。299×374の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-10T16:17:25.299Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/CV-0059-gold-modern-dhanteras-greetings-instagram-post/03_Implementation_Blueprint/CV-0059_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/CV-0059-gold-modern-dhanteras-greetings-instagram-post/03_Implementation_Blueprint/CV-0059_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/CV-0059-gold-modern-dhanteras-greetings-instagram-post/03_Implementation_Blueprint/CV-0059_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/CV-0059-gold-modern-dhanteras-greetings-instagram-post/03_Implementation_Blueprint/CV-0059_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PAT-0087": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（Canva）から収集したPattern参考。Gold Modern Dhanteras Greetings Instagram Postに見る反復可能なテンプレート構造。",
+      "selectionReason": "日次収集から抽出（Canva）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "画像枠・見出し・補足情報の位置を固定し、素材を差し替えても情報階層が崩れない構造を作る。 根拠候補: CV-0059",
+      "reviewPoints": "テンプレートの複製ではなく、グリッド・余白・主従関係のみを参考にする。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-10T16:17:25.299Z"
+    },
+    "PAT-0088": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（SANKOU!）から収集したPattern参考。KIRINKに見るPC・SPの情報優先順位。",
+      "selectionReason": "日次収集から抽出（SANKOU!）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "画面幅が変わっても、主見出し・主要ベネフィット・CTAの意味と順序を維持する。 根拠候補: WB-0075",
+      "reviewPoints": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-10T16:17:25.299Z"
     }
   }
 }
