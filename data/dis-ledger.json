@@ -349,6 +349,28 @@
           "attached",
           "attached"
         ]
+      },
+      "supplementCrops": {
+        "status": "created",
+        "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0001/01_Normal_Images/sections_by_unit",
+        "uploaded": [
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0001/01_Normal_Images/sections_by_unit/index.json",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0001/01_Normal_Images/sections_by_unit/pc_01_商品紹介.png",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0001/01_Normal_Images/sections_by_unit/pc_02_商品紹介.png",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0001/01_Normal_Images/sections_by_unit/pc_03_商品紹介.png",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0001/01_Normal_Images/sections_by_unit/pc_04_特徴.png",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0001/01_Normal_Images/sections_by_unit/pc_05_会社情報.png",
+          "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0001/01_Normal_Images/sections_by_unit/pc_06_フッター.png"
+        ],
+        "skippedExisting": [],
+        "at": "2026-11-09T22:14:53.559Z"
+      },
+      "supplementOverview": {
+        "status": "created",
+        "at": "2026-11-09T22:14:54.451Z",
+        "dropbox": "created",
+        "notion": "created",
+        "blockId": "41324d4f-a671-817a-bdd3-f3233fdc9641"
       }
     },
     {
@@ -485,6 +507,13 @@
           "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0002/01_Normal_Images/sections_by_unit/pc_02_CTA.png"
         ],
         "at": "2026-11-09T21:51:51.501Z"
+      },
+      "supplementOverview": {
+        "status": "created",
+        "at": "2026-11-09T22:13:55.713Z",
+        "dropbox": "created",
+        "notion": "created",
+        "blockId": "41324d4f-a671-812f-adc9-e1f4654a1b4f"
       }
     },
     {
