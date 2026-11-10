@@ -1008,10 +1008,10 @@ test("外部同期: 登録の時点で、分析内の外部同期が「登録済
   const { withRegisteredSync, analysisToMarkdown } = await import("./lib/analysis-schema.mjs");
   const a = completeAnalysis();
   const b = withRegisteredSync(a, "2026-11-10");
-  assert.equal(b.externalSync.notion, "登録済み（2026-11-10）");
+  assert.match(b.externalSync.notion, /^登録処理済み（2026-11-10。同じ参考URLの既存ページがある場合は新規作成せず/);
   assert.equal(b.externalSync.dropbox, "保存済み（2026-11-10）");
   assert.equal(b.externalSync.cbs, a.externalSync.cbs);
-  assert.match(analysisToMarkdown(b), /Notion=登録済み（2026-11-10） ／ Dropbox=保存済み（2026-11-10）/);
+  assert.match(analysisToMarkdown(b), /Notion=登録処理済み（2026-11-10。.*） ／ Dropbox=保存済み（2026-11-10）/);
   assert.notEqual(a.externalSync.notion, b.externalSync.notion); // 元は変更しない
 });
 

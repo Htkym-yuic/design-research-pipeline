@@ -167,5 +167,5 @@ function analysisToMarkdownV1(a) {
 
 /** 登録（Dropbox・Notionへの書込み）の時点で、分析内の「外部同期」を実際の状態に合わせる。CBSは対象外のまま。 */
 export function withRegisteredSync(a, date) {
-  return { ...a, externalSync: { ...a.externalSync, notion: `登録済み（${date}）`, dropbox: `保存済み（${date}）` } };
+  return { ...a, externalSync: { ...a.externalSync, notion: `登録処理済み（${date}。同じ参考URLの既存ページがある場合は新規作成せず、結果は台帳に記録）`, dropbox: `保存済み（${date}）` } };
 }

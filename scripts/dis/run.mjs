@@ -33,6 +33,7 @@ const { values: args } = parseArgs({
     fixture: { type: "string" },
     url: { type: "string" },
     device: { type: "string", default: "both" }, // both（PCとSP）／pc（PCのみ）／sp（SPのみ。--url にスマホ版のURL）
+    "allow-existing-url": { type: "boolean", default: false }, // 同じ参考URLの既存ページ（別の分析ルート）があっても、DISのページを別に作る（既存ページは変更しない）
     "sp-url": { type: "string" }, // スマホ版のURLがPC版と異なる場合だけ指定する（撮影のSPだけに使う）
     "from-archive": { type: "boolean", default: false },
     out: { type: "string", default: `${REPO_ROOT}outputs/dis` },
@@ -272,7 +273,7 @@ async function runMedia(media) {
     if (!ac.ok && (await readJson(`${it}/files.json`, [])).length) { r.stages.publish = `blocked: 画像の揃いが不足（${ac.errors.join("; ")}）`; return; }
     const entry = findEntry(ledger, key);
     // 本番書込みの直前に、分析内の「外部同期」を実際の状態（登録済み・保存済み）に合わせる。Dropbox・Notionの本文には、これが入る。
-    if (writeOk && analysis && !(entry?.dropbox?.status === "created" && entry?.notion?.status === "created")) {
+    if (writeOk && analysis && !(entry?.dropbox?.status === "created" && ["created", "skipped_exists"].includes(entry?.notion?.status))) {
       analysis = withRegisteredSync(analysis, args.date);
       await wj(`${it}/analysis.json`, analysis);
       await fs.writeFile(`${it}/analysis.md`, analysisToMarkdown(analysis));
@@ -307,7 +308,7 @@ async function runMedia(media) {
         if (result.dropbox.status !== "created") throw new Error(`Dropbox: ${result.dropbox.status}`);
       } else result.dropbox = { status: "skipped_already_done" };
       if (entry?.notion?.status !== "created") {
-        result.notionResult = await writeNotion({ cfg, media, values: notionValues, blocks: buildNotionBlocks(analysis, await fs.readFile(`${it}/analysis.md`, "utf8")), opts: { apply: args.apply }, extraProps: analysis.notionProps || {}, attachFile, bodyImages });
+        result.notionResult = await writeNotion({ cfg, media, values: notionValues, blocks: buildNotionBlocks(analysis, await fs.readFile(`${it}/analysis.md`, "utf8")), opts: { apply: args.apply }, allowExistingUrl: args["allow-existing-url"], extraProps: analysis.notionProps || {}, attachFile, bodyImages });
         upsertEntry(ledger, { ...base, notion: result.notionResult }); await saveLedger(ledger, ledgerFile);
       } else result.notionResult = { status: "skipped_already_done" };
     }

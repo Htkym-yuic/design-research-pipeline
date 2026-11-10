@@ -136,13 +136,14 @@ export function buildNotionBlocks(a, markdown) {
 }
 
 /** Notion作成専用アダプター。既存ページは編集せず、同じURLのページが既にあれば作成をスキップ。 */
-export async function writeNotion({ cfg, media, values, blocks, opts, extraProps = {}, attachFile = null, bodyImages = [] }) {
+export async function writeNotion({ cfg, media, values, blocks, opts, extraProps = {}, attachFile = null, bodyImages = [], allowExistingUrl = false }) {
   assertWritesAllowed(opts);
   requireEnv("NOTION_TOKEN");
   const ncfg = cfg.media[media].notion;
   const dsId = requireEnv(ncfg.envVar);
   const schema = (await getDataSource(dsId)).properties || {};
-  for (const col of ncfg.urlProps || ["参考URL", "URL"]) {
+  // allowExistingUrl: 同じ参考URLの既存ページ（別の分析ルート）があっても、DISのページを別に作る。既存ページは変更しない。重複作成は、台帳（ID単位）で防ぐ。
+  for (const col of allowExistingUrl ? [] : ncfg.urlProps || ["参考URL", "URL"]) {
     if (schema[col]?.type !== "url") continue;
     for (const u of [values.pageUrl, values.detailUrl].filter(Boolean)) {
       const found = await findPageByUrl(dsId, col, u);
