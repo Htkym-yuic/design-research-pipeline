@@ -1271,21 +1271,25 @@ test("cbs-draft: Web・バナーにも対応し、knowledge/<媒体>/ に新規�
   assert.deepEqual(["DIS-LP-0001", "DIS-BN-0002", "DIS-WB-0003", "X"].map((i) => mediaOf(i)?.dir ?? null), ["lp", "banner", "web", null]);
   const a = { brand: "サンプル", pageUrl: "https://ex.test/", summary: "要約。", units: [{ id: "U1", name: "FV", roleType: "FV", role: "つかみ", observation: "観察", reuseStructure: "左右2カラム", mustReplace: ["写真"], unknowns: [] }],
     axes: [{ key: "purpose_fit", label: "目的適合", score: 4, confidence: "medium" }], reuse: { reusableStructures: ["色面"] }, rights: { noReuse: ["ロゴ"] } };
-  const wb = buildKnowledgeDraft({ a, item: { disId: "DIS-WB-0001", sourceDetailUrl: "https://ex.test/detail" }, rel: null, sizes: {}, tags: {}, dropboxFolder: null });
-  assert.equal(wb.id, "DIS-WB-0001"); assert.equal(wb.mediaType, "Web"); assert.equal(wb.cbs_sync.knowledge_path, "knowledge/web/DIS-WB-0001.json");
+  // 番号の対応（ライブラリー番号）がない Web は、DISの番号を代わりに使わず、配置もできない
+  const wb0 = buildKnowledgeDraft({ a, item: { disId: "DIS-WB-0001", sourceDetailUrl: "https://ex.test/detail" }, rel: null, sizes: {}, tags: {}, dropboxFolder: null });
+  assert.equal(wb0.id, undefined); assert.deepEqual(wb0.dis_ids, ["DIS-WB-0001"]);
+  const wb = buildKnowledgeDraft({ a, item: { disId: "DIS-WB-0001", sourceDetailUrl: "https://ex.test/detail" }, rel: { libraryId: "WB-0069" }, sizes: {}, tags: {}, dropboxFolder: null });
+  assert.equal(wb.id, "WB-0069"); assert.equal(wb.mediaType, "Web"); assert.equal(wb.cbs_sync.knowledge_path, "knowledge/web/WB-0069.json");
   assert.equal(wb.funnel_structure, undefined); assert.equal(wb.asset_status, undefined); // LP専用の項目は入れない
   assert.equal(wb.section_patterns[0].role, "FV"); assert.equal(wb.dis_evaluation.axes[0].score, 4); assert.equal(wb.primary_appeal, "要約。");
   const repo = await fs.mkdtemp(path.join(os.tmpdir(), "dis-place-repo-"));
+  await assert.rejects(placeKnowledge({ draft: wb0, repo }), /ライブラリー番号がありません/);
+  await assert.rejects(placeKnowledge({ draft: { ...wb, id: "DIS-WB-0001" }, repo }), /ライブラリー番号の形式ではありません/);
   const rel = await placeKnowledge({ draft: wb, repo });
-  assert.equal(rel, path.join("knowledge", "web", "DIS-WB-0001.json"));
+  assert.equal(rel, path.join("knowledge", "web", "WB-0069.json"));
   assert.equal(JSON.parse(await fs.readFile(path.join(repo, rel), "utf8")).cbs_sync.actual_cbs_import, "not_synced");
   await assert.rejects(placeKnowledge({ draft: wb, repo }), /上書きしません/);
-  await assert.rejects(placeKnowledge({ draft: { ...wb, id: undefined }, repo }), /IDがありません/);
-  await assert.rejects(placeKnowledge({ draft: { ...wb, id: "DIS-WB-0009", cbs_sync: { status: "synced", actual_cbs_import: "done" } }, repo }), /下書き・未同期ではありません/);
+  await assert.rejects(placeKnowledge({ draft: { ...wb, id: "WB-0070", cbs_sync: { status: "synced", actual_cbs_import: "done" } }, repo }), /下書き・未同期ではありません/);
   const lp = buildKnowledgeDraft({ a, item: { disId: "DIS-LP-0001", sourceDetailUrl: "https://rdlp.jp/archives/otherdesign/lp/1" }, rel: { libraryId: "LP-0245" }, sizes: {}, tags: {}, dropboxFolder: null });
   assert.equal(lp.id, "LP-0245"); assert.equal(KNOWLEDGE_MEDIA.LP.dir, "lp");
   await assert.rejects(placeKnowledge({ draft: lp, repo }), /訴求・タグが未確定/); // LPは、28章で確定するまで配置しない
   const lpOk = buildKnowledgeDraft({ a, item: { disId: "DIS-LP-0001", sourceDetailUrl: "https://rdlp.jp/archives/otherdesign/lp/1" }, rel: { libraryId: "LP-0245" }, sizes: {}, tags: { primary_appeal: "確定した訴求", industry_tags: ["飲料・お酒"] }, dropboxFolder: null });
   assert.equal(await placeKnowledge({ draft: lpOk, repo }), path.join("knowledge", "lp", "LP-0245.json")); // 検証（LPナレッジ）を通って配置
-  await assert.rejects(placeKnowledge({ draft: { ...lpOk, id: "DIS-LP-0001" }, repo }), /LPナレッジの検証に失敗/); // LP-nnnn 形式でないIDは不可
+  await assert.rejects(placeKnowledge({ draft: { ...lpOk, id: "DIS-LP-0001" }, repo }), /ライブラリー番号の形式ではありません/); // DISの番号は、主のIDにしない
 });

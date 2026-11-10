@@ -48,11 +48,12 @@ export function buildKnowledgeDraft({ a, item, rel, sizes, tags = {}, dropboxFol
   const by = (types) => units.filter((u) => types.includes(u.roleType));
   const brand = String(a.brand || "").replace(/のLPデザイン$/, "");
   const asset = (key, file) => ({ path: `01_Normal_Images/${file}`, ...(sizes[key] || {}), status: sizes[key] ? "captured_unverified" : "missing" });
-  // LPは、ライブラリー番号（LP-nnnn）が主。Web・バナーは、ライブラリー番号の対応がまだ無いため、DISのIDを使う。
-  const id = isLp ? rel?.libraryId : (rel?.libraryId || item.disId);
+  // 全媒体とも、ライブラリー番号（LP-nnnn／BN-nnnn／WB-nnnn）が主（CBSの鍵）。DISの番号は、dis_ids で持つ。
+  // ライブラリー番号の対応（data/dis-relations.json）が先に必要。番号がないときは、DISの番号を代わりに使わない（同じ作品が2件になるため）。
+  const id = rel?.libraryId;
   const knowledgePath = id ? `knowledge/${media.dir}/${id}.json` : null;
   return {
-    id, mediaType: media.mediaType, media_type: media.mediaType, title: a.brand, brand,
+    id, dis_ids: [item.disId], mediaType: media.mediaType, media_type: media.mediaType, title: a.brand, brand,
     industry_tags: tags.industry_tags ?? [], product_tags: tags.product_tags ?? [], color_tags: tags.color_tags ?? [], layout_tags: tags.layout_tags ?? [], copy_types: tags.copy_types ?? [],
     primary_appeal: tags.primary_appeal ?? (isLp ? "（28章の分析で確定）" : short(a.summary, 200)), ...(isLp ? { offer: tags.offer ?? "（28章の分析で確定）" } : {}),
     captureUrl: a.pageUrl, sourceUrl: isLp ? "https://rdlp.jp/lp-archive/" : (item.sourceDetailUrl || a.pageUrl), sourceDetailUrl: item.sourceDetailUrl || a.pageUrl,
@@ -123,7 +124,8 @@ export function buildLp28Seed({ a, item, rel, sizes, files, dropboxFolder }) {
 export async function placeKnowledge({ draft, repo = REPO }) {
   const media = Object.values(KNOWLEDGE_MEDIA).find((m) => m.mediaType === draft.mediaType);
   if (!media) throw new Error(`媒体が不明です: ${draft.mediaType}`);
-  if (!draft.id) throw new Error("IDがありません。data/dis-relations.json に、DISの番号とライブラリー番号の対応を追加してください");
+  if (!draft.id) throw new Error("ライブラリー番号がありません。data/dis-relations.json に、DISの番号とライブラリー番号（LP-nnnn／BN-nnnn／WB-nnnn）の対応を追加してください");
+  if (!new RegExp(`^${{ LP: "LP", Banner: "BN", Web: "WB" }[media.mediaType]}-\\d{4}$`).test(draft.id)) throw new Error(`ライブラリー番号の形式ではありません: ${draft.id}（DISの番号は、主のIDにしません）`);
   if (String(draft.primary_appeal || "").startsWith("（28章")) throw new Error("訴求・タグが未確定です。--tags で primary_appeal・タグ（industry_tags など）を指定してください");
   const target = path.join(repo, "knowledge", media.dir, `${draft.id}.json`);
   const exists = await fs.access(target).then(() => true, () => false);
@@ -152,7 +154,7 @@ async function main() {
   if (!a) throw new Error("analysis.json が読めません");
   const relations = (await readJson(path.join(REPO, "data/dis-relations.json"), { relations: [] })).relations;
   const rel = relations.find((r) => r.disId === values.id) || null;
-  if (!rel) console.error(`注意: ${values.id} は data/dis-relations.json にありません（LP番号が未定のため、id は空になります）`);
+  if (!rel) console.error(`注意: ${values.id} は data/dis-relations.json にありません（ライブラリー番号が未定のため、id は空になります。番号を確保・対応づけてから、--place してください）`);
   const tags = values.tags ? await readJson(values.tags, {}) : {};
   const n = path.join(dir, "files/01_Normal_Images");
   const sizes = {};

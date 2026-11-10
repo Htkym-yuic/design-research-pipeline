@@ -82,7 +82,8 @@ function toIndexItem(data, knowledgePath) {
     summary: data.primary_appeal || data.analysis?.overview || null,
     knowledgePath,
     // DISの層（あれば）。評価点（DISの9軸）は、28章のヒューリスティックの総合点と混ぜず、別項目として持つ。
-    disId: data.analysis_notes?.dis_analysis_ref || null,
+    disId: data.analysis_notes?.dis_analysis_ref || data.dis_ids?.[0] || null,
+    disIds: data.dis_ids || (data.analysis_notes?.dis_analysis_ref ? [data.analysis_notes.dis_analysis_ref] : []),
     disEvaluation: data.dis_evaluation ? { method: data.dis_evaluation.method || null, axes: (data.dis_evaluation.axes || []).map((x) => ({ key: x.key, score: x.score, confidence: x.confidence })) } : null,
     sectionTypes: [...new Set(sections.map((x) => x.type).filter(Boolean))],
     sections,
