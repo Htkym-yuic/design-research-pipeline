@@ -1026,6 +1026,24 @@ test("cbs-draft: DISの分析から、CBS用ナレッジの下書きと28章の�
   assert.match(md, /ライブラリー未登録|なし（ライブラリー未登録/);
 });
 
+test("register-lp28: 28章のMarkdownを、Part1〜4に分け、表は表ブロック、画像は目印のブロックにする", async () => {
+  const { mdToBlocks, splitParts } = await import("./register-lp28.mjs");
+  const md = "# T\n\n![サムネ](images/a.jpg)\n\n| 項目 | 内容 |\n| --- | --- |\n| A | **B** |\n\n---\n\n## 8. 全Section分析\n\n### Section 01｜x\n\n1. 一\n2. 二\n\n### Section 04｜y\n\n- 点\n\n## 9. コピー\n\n> 注\n\n段落";
+  const p = splitParts(md);
+  assert.match(p.part1, /サムネ/); assert.match(p.part2, /Section 01/); assert.match(p.part3, /Section 04/); assert.match(p.part4, /^## 9\./);
+  const b = mdToBlocks(p.part1);
+  assert.equal(b[0].__image.rel, "images/a.jpg"); // 先頭のH1は省く
+  const tb = b.find((x) => x.type === "table");
+  assert.equal(tb.table.table_width, 2); assert.equal(tb.table.children.length, 2); // 区切り行は除く
+  assert.equal(tb.table.children[1].table_row.cells[1][0].text.content, "B"); // 太字の印は外す
+  assert.ok(b.some((x) => x.type === "divider"));
+  assert.deepEqual(mdToBlocks(p.part2).map((x) => x.type), ["heading_2", "heading_3", "numbered_list_item", "numbered_list_item"]);
+  assert.deepEqual(mdToBlocks(p.part4).map((x) => x.type), ["heading_2", "quote", "paragraph"]);
+  const long = mdToBlocks("あ".repeat(4000))[0].paragraph.rich_text;
+  assert.ok(long.length >= 3 && long.every((r) => r.text.content.length <= 1900)); // 2000文字の上限に収める（切り捨てない）
+  assert.throws(() => splitParts("## 1. a"), /章8/);
+});
+
 test("外部同期: 登録の時点で、分析内の外部同期が「登録済み・保存済み」になる（CBSは対象外のまま）", async () => {
   const { withRegisteredSync, analysisToMarkdown } = await import("./lib/analysis-schema.mjs");
   const a = completeAnalysis();

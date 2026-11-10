@@ -169,6 +169,18 @@ export async function createPage(dataSourceId, properties, children = []) {
   });
 }
 
+/** 既存ページの子ページを、新規に作る（親ページは変更しない。タイトルと本文の先頭のブロックのみ）。 */
+export async function createChildPage(parentPageId, title, children = []) {
+  return notionFetch("/pages", {
+    method: "POST",
+    body: JSON.stringify({
+      parent: { type: "page_id", page_id: parentPageId },
+      properties: { title: { title: [{ type: "text", text: { content: title } }] } },
+      children,
+    }),
+  });
+}
+
 export async function updatePageProperties(pageId, properties) {
   return notionFetch(`/pages/${pageId}`, {
     method: "PATCH",
