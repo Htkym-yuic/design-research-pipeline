@@ -23,11 +23,11 @@ export function tagsFromNotionProps(p = {}) {
   const arr = (v) => (Array.isArray(v) ? v : v ? [v] : []);
   const uniq = (xs) => [...new Set(xs.filter(Boolean))];
   return {
-    industry_tags: uniq([p["サイト種別"], ...String(p["ブランド・商材"] || "").split("／").slice(1)]),
-    product_tags: uniq([p["広告タイプ"]]),
+    industry_tags: uniq([...arr(p["業種タグ"]), p["サイト種別"], ...String(p["ブランド・商材"] || "").split("／").slice(1)]),
+    product_tags: uniq([...arr(p["商材"]), p["広告タイプ"]]),
     color_tags: uniq(arr(p["配色タグ"])),
     layout_tags: uniq([...arr(p["レイアウトタグ"]), ...arr(p["構成タイプ"])]),
-    copy_types: [],
+    copy_types: uniq(arr(p["コピータイプ"])),
   };
 }
 
@@ -48,7 +48,10 @@ export async function draftLegacy({ disId, root = REPO }) {
   if (missing.length) throw new Error(`Sectionの種類が未指定のUnitがあります: ${missing.map((u) => u.id).join(", ")}（scripts/dis/migration/roletypes.json）`);
   a = { ...a, pageUrl: ledger.pageUrl, brand: a.brand && a.brand !== "AUTO" ? a.brand : ledger.brand, units: a.units.map((u) => ({ ...u, roleType: types[u.id] })) };
   const sourceName = SOURCE_NAMES.find(([re]) => re.test(ledger.pageUrl))?.[1] || "DIS日次学習（自動収集）";
-  const draft = buildKnowledgeDraft({ a, item: { disId, sourceName, sourceDetailUrl: ledger.pageUrl }, rel, sizes: {}, tags: tagsFromNotionProps(a.notionProps), dropboxFolder: ledger.dropbox?.folder || null });
+  // 訴求・オファー・タグ・掲載元URLの補足（あれば、分析から作った値より優先）
+  const ov = (await readJson(f("scripts/dis/migration/knowledge-overrides.json")).catch(() => ({ overrides: {} }))).overrides[disId] || {};
+  const tags = { ...tagsFromNotionProps(a.notionProps), ...(ov.tags || {}), ...(ov.primary_appeal ? { primary_appeal: ov.primary_appeal } : {}), ...(ov.offer ? { offer: ov.offer } : {}) };
+  const draft = buildKnowledgeDraft({ a, item: { disId, sourceName: ov.sourceDetailUrl ? "LPアーカイブ" : sourceName, sourceDetailUrl: ov.sourceDetailUrl || ledger.pageUrl }, rel, sizes: {}, tags, dropboxFolder: ledger.dropbox?.folder || null });
   return { draft, analysis: a };
 }
 

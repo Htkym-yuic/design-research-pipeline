@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T13:50:28.147Z",
+  "generatedAt": "2026-11-10T13:54:01.236Z",
   "items": [
     {
       "id": "ILAC-0114",
@@ -751,6 +751,347 @@
         "固有コピー"
       ],
       "cbsSyncStatus": "ready_for_sync"
+    },
+    {
+      "id": "LP-0248",
+      "mediaType": "LP",
+      "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+      "tags": [
+        "旅行・アウトドア",
+        "飲食",
+        "マルチカラー",
+        "長尺LP",
+        "セクション分割",
+        "カード型",
+        "限定性訴求",
+        "実績訴求"
+      ],
+      "summary": "入場無料の東京の秋のイベント（観光協会・体験・グルメ）の告知。日時・会場・入場無料をファーストビューで先に伝え、体験コンテンツごとに色分けしたパネルを縦に積む",
+      "knowledgePath": "knowledge/lp/LP-0248.json",
+      "disId": "DIS-LP-20261107",
+      "disIds": [
+        "DIS-LP-20261107"
+      ],
+      "disEvaluation": {
+        "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+        "axes": [
+          {
+            "key": "purpose_fit",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "information_hierarchy",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "visual_flow",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "message_copy",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "trust_safety",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "color_legibility",
+            "score": 3,
+            "confidence": "low"
+          },
+          {
+            "key": "layout_spacing",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "visual_brand",
+            "score": 5,
+            "confidence": "medium"
+          },
+          {
+            "key": "implementation_reuse",
+            "score": 3,
+            "confidence": "low"
+          }
+        ]
+      },
+      "sectionTypes": [
+        "FV",
+        "その他",
+        "CTA",
+        "商品紹介",
+        "流れ",
+        "実績",
+        "会社情報",
+        "フッター"
+      ],
+      "sections": [
+        {
+          "type": "FV",
+          "name": "ファーストビュー（ヒーロー）"
+        },
+        {
+          "type": "その他",
+          "name": "NEWS（お知らせ）"
+        },
+        {
+          "type": "CTA",
+          "name": "SNS誘導バンド"
+        },
+        {
+          "type": "商品紹介",
+          "name": "ABOUT（イベント概要）"
+        },
+        {
+          "type": "商品紹介",
+          "name": "コンテンツ一覧タイル"
+        },
+        {
+          "type": "商品紹介",
+          "name": "観光協会PRブース"
+        },
+        {
+          "type": "商品紹介",
+          "name": "足湯体験"
+        },
+        {
+          "type": "商品紹介",
+          "name": "溶岩ウォーク"
+        },
+        {
+          "type": "商品紹介",
+          "name": "TOKYO SYUKAKUSAI KITCHEN"
+        },
+        {
+          "type": "商品紹介",
+          "name": "TOKYO SYUKAKUSAI BAR"
+        },
+        {
+          "type": "商品紹介",
+          "name": "TOKYO SYUKAKUSAI SOUP"
+        },
+        {
+          "type": "商品紹介",
+          "name": "TOKYO SYUKAKUSAI FOOD（特別メニュー）"
+        },
+        {
+          "type": "商品紹介",
+          "name": "復刻メニュー（カルーセル）"
+        },
+        {
+          "type": "商品紹介",
+          "name": "TOKYO周穫祭 Select Shop"
+        },
+        {
+          "type": "商品紹介",
+          "name": "360°VR体験"
+        },
+        {
+          "type": "商品紹介",
+          "name": "アーカイブ映像"
+        },
+        {
+          "type": "商品紹介",
+          "name": "ワークショップ"
+        },
+        {
+          "type": "流れ",
+          "name": "参加方法フロー（ワークショップ）"
+        },
+        {
+          "type": "商品紹介",
+          "name": "実演コーナー"
+        },
+        {
+          "type": "商品紹介",
+          "name": "TOKYO周遊スタンプラリー"
+        },
+        {
+          "type": "商品紹介",
+          "name": "TOKYO周穫祭 AI旅診断"
+        },
+        {
+          "type": "商品紹介",
+          "name": "被災地応援ブース"
+        },
+        {
+          "type": "実績",
+          "name": "昨年の様子（2025）"
+        },
+        {
+          "type": "CTA",
+          "name": "公式SNS"
+        },
+        {
+          "type": "会社情報",
+          "name": "ACCESS"
+        },
+        {
+          "type": "フッター",
+          "name": "フッター"
+        }
+      ],
+      "reusablePrinciples": [
+        "色分けタイル→同色パネルの二段構成",
+        "日付別2列カードと番号付き4ステップの共通コンポーネント",
+        "昨年の様子を今年のコンテンツと同じ順で並べる実績セクション"
+      ],
+      "rightsExcluded": [
+        "ロゴ",
+        "人物",
+        "写真",
+        "コピー",
+        "価格",
+        "実績値",
+        "地図・フロアマップ"
+      ],
+      "cbsSyncStatus": "draft_from_dis"
+    },
+    {
+      "id": "LP-0249",
+      "mediaType": "LP",
+      "title": "カルビー（miino・クリスプ「39キャンペーン」）",
+      "tags": [
+        "スイーツ・スナック菓子",
+        "マルチカラー",
+        "ピンク",
+        "グリーン",
+        "イエロー",
+        "人物主役FV",
+        "長尺LP",
+        "セクション分割",
+        "数字訴求",
+        "限定性訴求"
+      ],
+      "summary": "お菓子缶が1,000名様に当たる購入キャンペーン。何がもらえるか・いつまで・何を買うかを、ファーストビューの要約チップで先に伝える",
+      "knowledgePath": "knowledge/lp/LP-0249.json",
+      "disId": "DIS-LP-20261108",
+      "disIds": [
+        "DIS-LP-20261108"
+      ],
+      "disEvaluation": {
+        "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+        "axes": [
+          {
+            "key": "purpose_fit",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "information_hierarchy",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "visual_flow",
+            "score": 4,
+            "confidence": "low"
+          },
+          {
+            "key": "message_copy",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "trust_safety",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "color_legibility",
+            "score": 4,
+            "confidence": "low"
+          },
+          {
+            "key": "layout_spacing",
+            "score": 3,
+            "confidence": "medium"
+          },
+          {
+            "key": "visual_brand",
+            "score": 5,
+            "confidence": "medium"
+          },
+          {
+            "key": "implementation_reuse",
+            "score": 3,
+            "confidence": "low"
+          }
+        ]
+      },
+      "sectionTypes": [
+        "ナビ",
+        "FV",
+        "特徴",
+        "ベネフィット",
+        "流れ",
+        "その他",
+        "CTA",
+        "フッター"
+      ],
+      "sections": [
+        {
+          "type": "ナビ",
+          "name": "ヘッダー（注意喚起）"
+        },
+        {
+          "type": "FV",
+          "name": "ファーストビュー（キービジュアル＋要約）"
+        },
+        {
+          "type": "特徴",
+          "name": "キャンペーン概要"
+        },
+        {
+          "type": "ベネフィット",
+          "name": "賞品"
+        },
+        {
+          "type": "流れ",
+          "name": "応募方法"
+        },
+        {
+          "type": "その他",
+          "name": "応募条件（ラインナップ・規約）"
+        },
+        {
+          "type": "その他",
+          "name": "ムービー"
+        },
+        {
+          "type": "CTA",
+          "name": "ブランドサイトへの導線"
+        },
+        {
+          "type": "フッター",
+          "name": "フッター"
+        }
+      ],
+      "reusablePrinciples": [
+        "賞品・期間・対象の要約チップ",
+        "機能別の背景色分け＋旗形ラベル",
+        "番号付き4ステップ＋主要ボタンの色の統一",
+        "スクロール枠に収める表・規約"
+      ],
+      "rightsExcluded": [
+        "ロゴ",
+        "人物",
+        "写真",
+        "コピー",
+        "価格",
+        "実績値",
+        "キャラクター",
+        "賞品・商品画像",
+        "ムービー"
+      ],
+      "cbsSyncStatus": "draft_from_dis"
     },
     {
       "id": "WB-0069",

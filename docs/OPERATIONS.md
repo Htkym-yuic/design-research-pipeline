@@ -543,7 +543,7 @@ npm run dis:draft-legacy -- --id DIS-WB-20261107 --place    # knowledge/web/WB-0
 - 種類は、`scripts/dis/migration/roletypes.json` を重ねる（元のv2分析は変えない）。LP・Webは Section の種類、バナーは要素の種類（キービジュアル・キャッチコピー・ロゴ・CTA など）。
 - 種類の割り当てを直したときは、`--place --replace-draft`。同じDISの、CBS未同期の下書きだけ置き換える（手で作ったナレッジ・同期済みのものは、決して上書きしない）。
 - タグは、v2分析の `notionProps`（サイト種別・配色・レイアウトなど）から作る。訴求（`primary_appeal`）は、DISの要約の先頭。
-- 配置済み: `BN-0049`・`BN-0050`・`WB-0069`・`WB-0070`。LP（`LP-0248`・`LP-0249`）は、28章で訴求・タグを確定してから配置する。
+- 配置済み: `BN-0049`・`BN-0050`・`WB-0069`・`WB-0070`・`LP-0248`・`LP-0249`。LPの訴求・オファー・タグ・掲載元URLは、`scripts/dis/migration/knowledge-overrides.json`（分析の要約と、Notionの既存の選択肢から作った判断。ユーザーが確認する）。28章の分析で見直したら、`--place --replace-draft` で置き換える。
 - CBS本体への同期はしない（`cbs_sync` は下書き・未同期のまま）。インデックスの更新は `npm run cbs:export`。
 
 ### DIS: 種類（roleType）の一覧

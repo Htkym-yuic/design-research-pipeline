@@ -1,12 +1,408 @@
 {
-  "generatedAt": "2026-11-10T13:50:28.147Z",
+  "generatedAt": "2026-11-10T13:54:01.236Z",
   "note": "Sectionの種類ごとに、各ナレッジの該当Section（名前・再利用できる構造・差し替え必須の要素）を集めた索引。controlled=true は、DISの種類の一覧（FV・悩み提起など）にある種類。",
   "types": [
     {
+      "type": "商品紹介",
+      "controlled": true,
+      "count": 22,
+      "examples": [
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C04",
+          "sectionName": "ABOUT（イベント概要）",
+          "reusableStructure": [
+            "英字見出し＋中央揃えの短文"
+          ],
+          "replaceRequired": [
+            "文面",
+            "イラスト"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C05",
+          "sectionName": "コンテンツ一覧タイル",
+          "reusableStructure": [
+            "色付き角丸タイル（アイコン＋名称＋下向き矢印）"
+          ],
+          "replaceRequired": [
+            "アイコン",
+            "名称",
+            "色"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C06",
+          "sectionName": "観光協会PRブース",
+          "reusableStructure": [
+            "地域タブ＋共通カード（団体名・外部リンク・写真・要点・説明）"
+          ],
+          "replaceRequired": [
+            "団体名",
+            "写真",
+            "特産品",
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C07",
+          "sectionName": "足湯体験",
+          "reusableStructure": [
+            "写真＋コピー＋提供先カード（未定は Coming Soon）"
+          ],
+          "replaceRequired": [
+            "写真",
+            "文面",
+            "提供先"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C08",
+          "sectionName": "溶岩ウォーク",
+          "reusableStructure": [
+            "NEWラベル＋写真＋コピー"
+          ],
+          "replaceRequired": [
+            "写真",
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C09",
+          "sectionName": "TOKYO SYUKAKUSAI KITCHEN",
+          "reusableStructure": [
+            "サブロゴ＋区分カード＋MOREで折りたたみ"
+          ],
+          "replaceRequired": [
+            "写真",
+            "店名",
+            "メニュー",
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C10",
+          "sectionName": "TOKYO SYUKAKUSAI BAR",
+          "reusableStructure": [
+            "サブロゴ＋吹き出し注記＋カード型カルーセル"
+          ],
+          "replaceRequired": [
+            "商品画像",
+            "商品名",
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C11",
+          "sectionName": "TOKYO SYUKAKUSAI SOUP",
+          "reusableStructure": [
+            "サブロゴ＋写真＋注記"
+          ],
+          "replaceRequired": [
+            "写真",
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C12",
+          "sectionName": "TOKYO SYUKAKUSAI FOOD（特別メニュー）",
+          "reusableStructure": [
+            "メニューカード＋食材サムネイル＋提供元ラベル"
+          ],
+          "replaceRequired": [
+            "メニュー写真",
+            "食材",
+            "提供元"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C13",
+          "sectionName": "復刻メニュー（カルーセル）",
+          "reusableStructure": [
+            "カードカルーセル（矢印・ドット）"
+          ],
+          "replaceRequired": [
+            "メニュー写真",
+            "名称"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C14",
+          "sectionName": "TOKYO周穫祭 Select Shop",
+          "reusableStructure": [
+            "中央を白地で強調し左右を薄くするカルーセル"
+          ],
+          "replaceRequired": [
+            "商品画像",
+            "地域",
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C15",
+          "sectionName": "360°VR体験",
+          "reusableStructure": [
+            "画像＋コピー＋3種の説明"
+          ],
+          "replaceRequired": [
+            "画像",
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C16",
+          "sectionName": "アーカイブ映像",
+          "reusableStructure": [
+            "年別カード＋タブ＋動画サムネイル"
+          ],
+          "replaceRequired": [
+            "動画",
+            "人物",
+            "タイトル"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C17",
+          "sectionName": "ワークショップ",
+          "reusableStructure": [
+            "日付別2列＋共通カード（提供者・リンク・タイトル・説明・写真）"
+          ],
+          "replaceRequired": [
+            "提供者名",
+            "写真",
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C19",
+          "sectionName": "実演コーナー",
+          "reusableStructure": [
+            "ワークショップと同じ日付別2列カード"
+          ],
+          "replaceRequired": [
+            "人物写真",
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C20",
+          "sectionName": "TOKYO周遊スタンプラリー",
+          "reusableStructure": [
+            "バッジ＋写真＋番号付き4ステップ（色を変えて再利用）"
+          ],
+          "replaceRequired": [
+            "写真",
+            "景品",
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C21",
+          "sectionName": "TOKYO周穫祭 AI旅診断",
+          "reusableStructure": [
+            "操作画面の写真＋コピー＋WEB版の予告"
+          ],
+          "replaceRequired": [
+            "画面写真",
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C22",
+          "sectionName": "被災地応援ブース",
+          "reusableStructure": [
+            "県別カードのカルーセル（Select Shopと同型）"
+          ],
+          "replaceRequired": [
+            "商品",
+            "県名",
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C07",
+          "sectionName": "Services（サービス一覧）",
+          "reusableStructure": [
+            "3分類×6項目の箇条書き＋下線リンク"
+          ],
+          "replaceRequired": [
+            "サービス名"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        },
+        {
+          "id": "WB-0070",
+          "title": "FREDRIK（by FREDRIK PACKERS）",
+          "sectionId": "C05",
+          "sectionName": "商品の紹介（Jelly tote）",
+          "reusableStructure": [
+            "大きな見出し＋商品写真＋生活写真＋商品名・素材・価格"
+          ],
+          "replaceRequired": [
+            "商品",
+            "写真",
+            "価格"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0070.json"
+        },
+        {
+          "id": "WB-0070",
+          "title": "FREDRIK（by FREDRIK PACKERS）",
+          "sectionId": "C07",
+          "sectionName": "商品の紹介（キャップ・スウェット）と大きな漢字",
+          "reusableStructure": [
+            "商品写真＋装飾写真の重なり＋巨大な漢字"
+          ],
+          "replaceRequired": [
+            "写真",
+            "漢字",
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0070.json"
+        },
+        {
+          "id": "WB-0070",
+          "title": "FREDRIK（by FREDRIK PACKERS）",
+          "sectionId": "C09",
+          "sectionName": "商品の紹介（Anything tote）",
+          "reusableStructure": [
+            "見出し＋説明＋生活写真＋商品"
+          ],
+          "replaceRequired": [
+            "写真",
+            "商品",
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0070.json"
+        }
+      ]
+    },
+    {
       "type": "その他",
       "controlled": true,
-      "count": 6,
+      "count": 9,
       "examples": [
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C02",
+          "sectionName": "NEWS（お知らせ）",
+          "reusableStructure": [
+            "日付＋1行＋開閉の「+」"
+          ],
+          "replaceRequired": [
+            "お知らせの文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0249",
+          "title": "カルビー（miino・クリスプ「39キャンペーン」）",
+          "sectionId": "C06",
+          "sectionName": "応募条件（ラインナップ・規約）",
+          "reusableStructure": [
+            "旗形ラベル＋スクロール枠（表・規約）＋ヒント"
+          ],
+          "replaceRequired": [
+            "商品表",
+            "規約"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0249.json"
+        },
+        {
+          "id": "LP-0249",
+          "title": "カルビー（miino・クリスプ「39キャンペーン」）",
+          "sectionId": "C07",
+          "sectionName": "ムービー",
+          "reusableStructure": [
+            "旗形ラベル＋サムネイルカード＋キャプション"
+          ],
+          "replaceRequired": [
+            "動画",
+            "人物"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0249.json"
+        },
         {
           "id": "WB-0069",
           "title": "Baseline Design",
@@ -98,10 +494,123 @@
       ]
     },
     {
+      "type": "CTA",
+      "controlled": true,
+      "count": 6,
+      "examples": [
+        {
+          "id": "BN-0049",
+          "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
+          "sectionId": "C05",
+          "sectionName": "CTAバッジ「体験版配信中」",
+          "reusableStructure": [
+            "縁取りつきのバッジ型CTA"
+          ],
+          "replaceRequired": [
+            "文言",
+            "色"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/banner/BN-0049.json"
+        },
+        {
+          "id": "BN-0050",
+          "title": "Adobe Acrobat（AIアシスタント）",
+          "sectionId": "C03",
+          "sectionName": "CTAボタン",
+          "reusableStructure": [
+            "補色に近い青のピル形ボタン"
+          ],
+          "replaceRequired": [
+            "文言",
+            "色"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/banner/BN-0050.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C03",
+          "sectionName": "SNS誘導バンド",
+          "reusableStructure": [
+            "背景色の帯＋2つの並列ボタン"
+          ],
+          "replaceRequired": [
+            "ロゴ",
+            "アイコン",
+            "飾り"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C24",
+          "sectionName": "公式SNS",
+          "reusableStructure": [
+            "2枚の投稿サムネイルカード＋MORE"
+          ],
+          "replaceRequired": [
+            "画像",
+            "ロゴ"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0249",
+          "title": "カルビー（miino・クリスプ「39キャンペーン」）",
+          "sectionId": "C08",
+          "sectionName": "ブランドサイトへの導線",
+          "reusableStructure": [
+            "ブランドカラーの2つの大きなボタン"
+          ],
+          "replaceRequired": [
+            "ロゴ",
+            "リンク"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0249.json"
+        },
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C13",
+          "sectionName": "問い合わせ（Let’s work together）",
+          "reusableStructure": [
+            "左に説明、右にフォーム＋黒い送信ボタン"
+          ],
+          "replaceRequired": [
+            "文面",
+            "連絡先"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        }
+      ]
+    },
+    {
       "type": "ナビ",
       "controlled": true,
-      "count": 4,
+      "count": 5,
       "examples": [
+        {
+          "id": "LP-0249",
+          "title": "カルビー（miino・クリスプ「39キャンペーン」）",
+          "sectionId": "C01",
+          "sectionName": "ヘッダー（注意喚起）",
+          "reusableStructure": [
+            "小さなロゴ＋注意書きのヘッダー"
+          ],
+          "replaceRequired": [
+            "ロゴ",
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0249.json"
+        },
         {
           "id": "WB-0069",
           "title": "Baseline Design",
@@ -164,20 +673,54 @@
       ]
     },
     {
-      "type": "商品紹介",
+      "type": "FV",
       "controlled": true,
       "count": 4,
       "examples": [
         {
-          "id": "WB-0069",
-          "title": "Baseline Design",
-          "sectionId": "C07",
-          "sectionName": "Services（サービス一覧）",
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C01",
+          "sectionName": "ファーストビュー（ヒーロー）",
           "reusableStructure": [
-            "3分類×6項目の箇条書き＋下線リンク"
+            "巨大なロゴ＋日付・時間・会場のブロック＋バッジ2種"
           ],
           "replaceRequired": [
-            "サービス名"
+            "イラスト",
+            "写真",
+            "ロゴ",
+            "コピー"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0249",
+          "title": "カルビー（miino・クリスプ「39キャンペーン」）",
+          "sectionId": "C02",
+          "sectionName": "ファーストビュー（キービジュアル＋要約）",
+          "reusableStructure": [
+            "写真2枚で挟んだタイトルのロックアップ＋要約チップ2つ"
+          ],
+          "replaceRequired": [
+            "人物写真",
+            "ロゴ",
+            "商品画像"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0249.json"
+        },
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C02",
+          "sectionName": "ファーストビュー（ワードマーク）",
+          "reusableStructure": [
+            "画面幅いっぱいのワードマーク"
+          ],
+          "replaceRequired": [
+            "ワードマークの書体",
+            "名称"
           ],
           "rightsStatus": "reference_only",
           "knowledgePath": "knowledge/web/WB-0069.json"
@@ -185,47 +728,14 @@
         {
           "id": "WB-0070",
           "title": "FREDRIK（by FREDRIK PACKERS）",
-          "sectionId": "C05",
-          "sectionName": "商品の紹介（Jelly tote）",
+          "sectionId": "C02",
+          "sectionName": "ヒーロー",
           "reusableStructure": [
-            "大きな見出し＋商品写真＋生活写真＋商品名・素材・価格"
+            "巨大な繰り返しのワードマーク＋商品＋小さな最新情報の枠"
           ],
           "replaceRequired": [
-            "商品",
-            "写真",
-            "価格"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/web/WB-0070.json"
-        },
-        {
-          "id": "WB-0070",
-          "title": "FREDRIK（by FREDRIK PACKERS）",
-          "sectionId": "C07",
-          "sectionName": "商品の紹介（キャップ・スウェット）と大きな漢字",
-          "reusableStructure": [
-            "商品写真＋装飾写真の重なり＋巨大な漢字"
-          ],
-          "replaceRequired": [
-            "写真",
-            "漢字",
-            "文面"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/web/WB-0070.json"
-        },
-        {
-          "id": "WB-0070",
-          "title": "FREDRIK（by FREDRIK PACKERS）",
-          "sectionId": "C09",
-          "sectionName": "商品の紹介（Anything tote）",
-          "reusableStructure": [
-            "見出し＋説明＋生活写真＋商品"
-          ],
-          "replaceRequired": [
-            "写真",
-            "商品",
-            "文面"
+            "ワードマーク",
+            "商品画像"
           ],
           "rightsStatus": "reference_only",
           "knowledgePath": "knowledge/web/WB-0070.json"
@@ -233,51 +743,184 @@
       ]
     },
     {
-      "type": "CTA",
+      "type": "フッター",
+      "controlled": true,
+      "count": 4,
+      "examples": [
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C26",
+          "sectionName": "フッター",
+          "reusableStructure": [
+            "リンク列＋注意書き＋主催／お問合せ"
+          ],
+          "replaceRequired": [
+            "ロゴ",
+            "住所",
+            "連絡先"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0249",
+          "title": "カルビー（miino・クリスプ「39キャンペーン」）",
+          "sectionId": "C09",
+          "sectionName": "フッター",
+          "reusableStructure": [
+            "企業の共通フッター（リンク列）"
+          ],
+          "replaceRequired": [
+            "リンク"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0249.json"
+        },
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C14",
+          "sectionName": "フッター",
+          "reusableStructure": [
+            "リンク列＋巨大なワードマーク"
+          ],
+          "replaceRequired": [
+            "リンク",
+            "ワードマーク"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        },
+        {
+          "id": "WB-0070",
+          "title": "FREDRIK（by FREDRIK PACKERS）",
+          "sectionId": "C11",
+          "sectionName": "フッター",
+          "reusableStructure": [
+            "リンク列＋巨大なワードマーク"
+          ],
+          "replaceRequired": [
+            "リンク",
+            "ワードマーク"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0070.json"
+        }
+      ]
+    },
+    {
+      "type": "実績",
+      "controlled": true,
+      "count": 4,
+      "examples": [
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C23",
+          "sectionName": "昨年の様子（2025）",
+          "reusableStructure": [
+            "傾いた写真カード＋トピック名＋実績の数字＋「もっと見る」ボタン"
+          ],
+          "replaceRequired": [
+            "写真",
+            "数字",
+            "見出し"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C04",
+          "sectionName": "取引先ロゴ帯",
+          "reusableStructure": [
+            "グレー単色のロゴ帯（端はフェード）"
+          ],
+          "replaceRequired": [
+            "取引先ロゴ"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        },
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C08",
+          "sectionName": "顧客の声",
+          "reusableStructure": [
+            "黒い面＋ロゴ＋引用＋一文のハイライト＋顔写真・肩書"
+          ],
+          "replaceRequired": [
+            "引用文",
+            "ロゴ",
+            "人物"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        },
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C11",
+          "sectionName": "実績数値",
+          "reusableStructure": [
+            "4つのカード（大きな数字＋1行の説明）"
+          ],
+          "replaceRequired": [
+            "数値",
+            "説明"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        }
+      ]
+    },
+    {
+      "type": "ベネフィット",
       "controlled": true,
       "count": 3,
       "examples": [
         {
-          "id": "BN-0049",
-          "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
-          "sectionId": "C05",
-          "sectionName": "CTAバッジ「体験版配信中」",
-          "reusableStructure": [
-            "縁取りつきのバッジ型CTA"
-          ],
-          "replaceRequired": [
-            "文言",
-            "色"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/banner/BN-0049.json"
-        },
-        {
           "id": "BN-0050",
           "title": "Adobe Acrobat（AIアシスタント）",
-          "sectionId": "C03",
-          "sectionName": "CTAボタン",
+          "sectionId": "C02",
+          "sectionName": "便益コピー",
           "reusableStructure": [
-            "補色に近い青のピル形ボタン"
+            "白い太字2行のコピー"
           ],
           "replaceRequired": [
-            "文言",
-            "色"
+            "文面"
           ],
           "rightsStatus": "reference_only",
           "knowledgePath": "knowledge/banner/BN-0050.json"
         },
         {
-          "id": "WB-0069",
-          "title": "Baseline Design",
-          "sectionId": "C13",
-          "sectionName": "問い合わせ（Let’s work together）",
+          "id": "LP-0249",
+          "title": "カルビー（miino・クリスプ「39キャンペーン」）",
+          "sectionId": "C04",
+          "sectionName": "賞品",
           "reusableStructure": [
-            "左に説明、右にフォーム＋黒い送信ボタン"
+            "リボン見出し＋カード＋注記"
           ],
           "replaceRequired": [
-            "文面",
-            "連絡先"
+            "賞品画像",
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0249.json"
+        },
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C03",
+          "sectionName": "価値提案＋説明",
+          "reusableStructure": [
+            "左に要点見出し、右に補足の2カラム＋下線リンク"
+          ],
+          "replaceRequired": [
+            "コピー"
           ],
           "rightsStatus": "reference_only",
           "knowledgePath": "knowledge/web/WB-0069.json"
@@ -334,171 +977,26 @@
       ]
     },
     {
-      "type": "実績",
+      "type": "会社情報",
       "controlled": true,
       "count": 3,
       "examples": [
         {
-          "id": "WB-0069",
-          "title": "Baseline Design",
-          "sectionId": "C04",
-          "sectionName": "取引先ロゴ帯",
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C25",
+          "sectionName": "ACCESS",
           "reusableStructure": [
-            "グレー単色のロゴ帯（端はフェード）"
+            "周辺地図＋フロアマップ＋交通手段別カード"
           ],
           "replaceRequired": [
-            "取引先ロゴ"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/web/WB-0069.json"
-        },
-        {
-          "id": "WB-0069",
-          "title": "Baseline Design",
-          "sectionId": "C08",
-          "sectionName": "顧客の声",
-          "reusableStructure": [
-            "黒い面＋ロゴ＋引用＋一文のハイライト＋顔写真・肩書"
-          ],
-          "replaceRequired": [
-            "引用文",
-            "ロゴ",
-            "人物"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/web/WB-0069.json"
-        },
-        {
-          "id": "WB-0069",
-          "title": "Baseline Design",
-          "sectionId": "C11",
-          "sectionName": "実績数値",
-          "reusableStructure": [
-            "4つのカード（大きな数字＋1行の説明）"
-          ],
-          "replaceRequired": [
-            "数値",
-            "説明"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/web/WB-0069.json"
-        }
-      ]
-    },
-    {
-      "type": "FV",
-      "controlled": true,
-      "count": 2,
-      "examples": [
-        {
-          "id": "WB-0069",
-          "title": "Baseline Design",
-          "sectionId": "C02",
-          "sectionName": "ファーストビュー（ワードマーク）",
-          "reusableStructure": [
-            "画面幅いっぱいのワードマーク"
-          ],
-          "replaceRequired": [
-            "ワードマークの書体",
-            "名称"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/web/WB-0069.json"
-        },
-        {
-          "id": "WB-0070",
-          "title": "FREDRIK（by FREDRIK PACKERS）",
-          "sectionId": "C02",
-          "sectionName": "ヒーロー",
-          "reusableStructure": [
-            "巨大な繰り返しのワードマーク＋商品＋小さな最新情報の枠"
-          ],
-          "replaceRequired": [
-            "ワードマーク",
-            "商品画像"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/web/WB-0070.json"
-        }
-      ]
-    },
-    {
-      "type": "フッター",
-      "controlled": true,
-      "count": 2,
-      "examples": [
-        {
-          "id": "WB-0069",
-          "title": "Baseline Design",
-          "sectionId": "C14",
-          "sectionName": "フッター",
-          "reusableStructure": [
-            "リンク列＋巨大なワードマーク"
-          ],
-          "replaceRequired": [
-            "リンク",
-            "ワードマーク"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/web/WB-0069.json"
-        },
-        {
-          "id": "WB-0070",
-          "title": "FREDRIK（by FREDRIK PACKERS）",
-          "sectionId": "C11",
-          "sectionName": "フッター",
-          "reusableStructure": [
-            "リンク列＋巨大なワードマーク"
-          ],
-          "replaceRequired": [
-            "リンク",
-            "ワードマーク"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/web/WB-0070.json"
-        }
-      ]
-    },
-    {
-      "type": "ベネフィット",
-      "controlled": true,
-      "count": 2,
-      "examples": [
-        {
-          "id": "BN-0050",
-          "title": "Adobe Acrobat（AIアシスタント）",
-          "sectionId": "C02",
-          "sectionName": "便益コピー",
-          "reusableStructure": [
-            "白い太字2行のコピー"
-          ],
-          "replaceRequired": [
+            "地図",
+            "住所",
             "文面"
           ],
           "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/banner/BN-0050.json"
+          "knowledgePath": "knowledge/lp/LP-0248.json"
         },
-        {
-          "id": "WB-0069",
-          "title": "Baseline Design",
-          "sectionId": "C03",
-          "sectionName": "価値提案＋説明",
-          "reusableStructure": [
-            "左に要点見出し、右に補足の2カラム＋下線リンク"
-          ],
-          "replaceRequired": [
-            "コピー"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/web/WB-0069.json"
-        }
-      ]
-    },
-    {
-      "type": "会社情報",
-      "controlled": true,
-      "count": 2,
-      "examples": [
         {
           "id": "WB-0069",
           "title": "Baseline Design",
@@ -567,6 +1065,44 @@
       ]
     },
     {
+      "type": "流れ",
+      "controlled": true,
+      "count": 2,
+      "examples": [
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C18",
+          "sectionName": "参加方法フロー（ワークショップ）",
+          "reusableStructure": [
+            "番号付き4ステップのカード＋注意事項"
+          ],
+          "replaceRequired": [
+            "手順の文面",
+            "アイコン"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0249",
+          "title": "カルビー（miino・クリスプ「39キャンペーン」）",
+          "sectionId": "C05",
+          "sectionName": "応募方法",
+          "reusableStructure": [
+            "前提の吹き出し＋ピンクのCTA＋4ステップ＋注記"
+          ],
+          "replaceRequired": [
+            "イラスト",
+            "文面",
+            "アプリ名"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0249.json"
+        }
+      ]
+    },
+    {
       "type": "UI・証拠",
       "controlled": true,
       "count": 1,
@@ -629,6 +1165,27 @@
           ],
           "rightsStatus": "reference_only",
           "knowledgePath": "knowledge/banner/BN-0049.json"
+        }
+      ]
+    },
+    {
+      "type": "特徴",
+      "controlled": true,
+      "count": 1,
+      "examples": [
+        {
+          "id": "LP-0249",
+          "title": "カルビー（miino・クリスプ「39キャンペーン」）",
+          "sectionId": "C03",
+          "sectionName": "キャンペーン概要",
+          "reusableStructure": [
+            "ロックアップの再掲＋期間見出し＋説明"
+          ],
+          "replaceRequired": [
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0249.json"
         }
       ]
     },

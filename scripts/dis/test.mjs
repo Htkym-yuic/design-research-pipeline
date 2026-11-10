@@ -1386,3 +1386,21 @@ test("バナー要素の種類: バナーは要素の一覧、LP・Webは Sectio
   const f = path.join(repo, "knowledge/banner/BN-0077.json"); const cur = JSON.parse(await fs.readFile(f, "utf8")); cur.cbs_sync = { status: "synced", actual_cbs_import: "done" }; await fs.writeFile(f, JSON.stringify(cur));
   await assert.rejects(placeKnowledge({ draft: mk("ロゴ"), repo, replaceDraft: true }), /上書きしません/); // 同期済みは決して上書きしない
 });
+
+test("draft-legacy-knowledge: 旧形式のLP2件（LP-0248・LP-0249）は、確定した訴求・オファー・タグで下書きになり、検証を通って配置できる", async () => {
+  const { draftLegacy } = await import("./draft-legacy-knowledge.mjs");
+  const { placeKnowledge } = await import("./cbs-draft.mjs");
+  const { roleTypesFor } = await import("./lib/crop.mjs");
+  const repo = await fs.mkdtemp(path.join(os.tmpdir(), "dis-legacy-lp-"));
+  for (const [disId, id, units] of [["DIS-LP-20261107", "LP-0248", 26], ["DIS-LP-20261108", "LP-0249", 9]]) {
+    const { draft } = await draftLegacy({ disId });
+    assert.equal(draft.id, id); assert.deepEqual(draft.dis_ids, [disId]); assert.equal(draft.mediaType, "LP");
+    assert.equal(draft.section_patterns.length, units);
+    assert.ok(draft.section_patterns.every((p) => roleTypesFor("lp").includes(p.role)));
+    assert.ok(!draft.primary_appeal.startsWith("（28章") && !String(draft.offer).startsWith("（28章")); // 確定した訴求・オファー
+    assert.ok(draft.industry_tags.length > 0 && draft.layout_tags.length > 0 && draft.copy_types.length > 0);
+    assert.match(draft.sourceDetailUrl, /^https:\/\/rdlp\.jp\/archives\/otherdesign\/lp\/\d+$/);
+    assert.equal(draft.captureUrl.startsWith("http"), true); assert.notEqual(draft.captureUrl, "AUTO"); // 実ページのURLは、台帳から
+    assert.equal(await placeKnowledge({ draft, repo }), path.join("knowledge", "lp", `${id}.json`)); // LPナレッジの検証を通る
+  }
+});

@@ -1,0 +1,472 @@
+{
+  "id": "LP-0249",
+  "dis_ids": [
+    "DIS-LP-20261108"
+  ],
+  "mediaType": "LP",
+  "media_type": "LP",
+  "title": "カルビー（miino・クリスプ「39キャンペーン」）",
+  "brand": "カルビー（miino・クリスプ「39キャンペーン」）",
+  "industry_tags": [
+    "スイーツ・スナック菓子"
+  ],
+  "product_tags": [
+    "物販"
+  ],
+  "color_tags": [
+    "マルチカラー",
+    "ピンク",
+    "グリーン",
+    "イエロー"
+  ],
+  "layout_tags": [
+    "人物主役FV",
+    "長尺LP",
+    "セクション分割"
+  ],
+  "copy_types": [
+    "数字訴求",
+    "限定性訴求"
+  ],
+  "primary_appeal": "お菓子缶が1,000名様に当たる購入キャンペーン。何がもらえるか・いつまで・何を買うかを、ファーストビューの要約チップで先に伝える",
+  "offer": "お菓子缶（1,000名様）が当たる。対象商品の購入で応募",
+  "captureUrl": "https://www.calbee.co.jp/39cp2026/",
+  "sourceUrl": "https://rdlp.jp/lp-archive/",
+  "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229584",
+  "source": {
+    "captured_url": "https://www.calbee.co.jp/39cp2026/",
+    "reference_name": "LPアーカイブ",
+    "reference_url": "https://rdlp.jp/lp-archive/",
+    "reference_detail_url": "https://rdlp.jp/archives/otherdesign/lp/229584",
+    "notion_url": null,
+    "dis_notion_url": "https://app.notion.com/p/41124d4fa671817b9938d0d93033839b",
+    "dropbox_master_path": null,
+    "dis_dropbox_path": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-08/dis-daily/DIS-LP-20261108",
+    "github_knowledge_path": "knowledge/lp/LP-0249.json",
+    "archive_post_id": "229584"
+  },
+  "asset_status": {
+    "pc_full": {
+      "path": "01_Normal_Images/DIS-LP-20261108_PC_full.png",
+      "status": "missing"
+    },
+    "pc_first_view": {
+      "path": "01_Normal_Images/DIS-LP-20261108_PC_first_view.png",
+      "status": "missing"
+    },
+    "sp_full": {
+      "path": "01_Normal_Images/DIS-LP-20261108_SP_full.png",
+      "status": "missing"
+    },
+    "sp_first_view": {
+      "path": "01_Normal_Images/DIS-LP-20261108_SP_first_view.png",
+      "status": "missing"
+    },
+    "repository_crosscheck": "not_run"
+  },
+  "funnel_structure": [
+    {
+      "step": 1,
+      "role": "ナビ",
+      "pattern": "ヘッダー（注意喚起）",
+      "description": "企業ページとしての安心と、不審メールへの注意喚起"
+    },
+    {
+      "step": 2,
+      "role": "FV",
+      "pattern": "ファーストビュー（キービジュアル＋要約）",
+      "description": "賞品・期間・対象を最初の1画面で伝える"
+    },
+    {
+      "step": 3,
+      "role": "特徴",
+      "pattern": "キャンペーン概要",
+      "description": "名前の由来で納得感を作る"
+    },
+    {
+      "step": 4,
+      "role": "ベネフィット",
+      "pattern": "賞品",
+      "description": "賞品を独立したカードで強調する"
+    },
+    {
+      "step": 5,
+      "role": "流れ",
+      "pattern": "応募方法",
+      "description": "応募手順を番号付きで案内し、アプリのダウンロードへ誘導する"
+    },
+    {
+      "step": 6,
+      "role": "その他",
+      "pattern": "応募条件（ラインナップ・規約）",
+      "description": "長い表と規約をスクロール枠に収める"
+    },
+    {
+      "step": 7,
+      "role": "その他",
+      "pattern": "ムービー",
+      "description": "動画の入口（要約サムネイル）"
+    },
+    {
+      "step": 8,
+      "role": "CTA",
+      "pattern": "ブランドサイトへの導線",
+      "description": "ブランドサイトへの出口"
+    },
+    {
+      "step": 9,
+      "role": "フッター",
+      "pattern": "フッター",
+      "description": "企業の共通リンクを示す"
+    }
+  ],
+  "section_patterns": [
+    {
+      "id": "C01",
+      "source_section": "U1",
+      "name": "ヘッダー（注意喚起）",
+      "role": "ナビ",
+      "reusable_structure": [
+        "小さなロゴ＋注意書きのヘッダー"
+      ],
+      "replace_required": [
+        "ロゴ",
+        "文面"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C02",
+      "source_section": "U2",
+      "name": "ファーストビュー（キービジュアル＋要約）",
+      "role": "FV",
+      "reusable_structure": [
+        "写真2枚で挟んだタイトルのロックアップ＋要約チップ2つ"
+      ],
+      "replace_required": [
+        "人物写真",
+        "ロゴ",
+        "商品画像"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C03",
+      "source_section": "U3",
+      "name": "キャンペーン概要",
+      "role": "特徴",
+      "reusable_structure": [
+        "ロックアップの再掲＋期間見出し＋説明"
+      ],
+      "replace_required": [
+        "文面"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C04",
+      "source_section": "U4",
+      "name": "賞品",
+      "role": "ベネフィット",
+      "reusable_structure": [
+        "リボン見出し＋カード＋注記"
+      ],
+      "replace_required": [
+        "賞品画像",
+        "文面"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C05",
+      "source_section": "U5",
+      "name": "応募方法",
+      "role": "流れ",
+      "reusable_structure": [
+        "前提の吹き出し＋ピンクのCTA＋4ステップ＋注記"
+      ],
+      "replace_required": [
+        "イラスト",
+        "文面",
+        "アプリ名"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C06",
+      "source_section": "U6",
+      "name": "応募条件（ラインナップ・規約）",
+      "role": "その他",
+      "reusable_structure": [
+        "旗形ラベル＋スクロール枠（表・規約）＋ヒント"
+      ],
+      "replace_required": [
+        "商品表",
+        "規約"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C07",
+      "source_section": "U7",
+      "name": "ムービー",
+      "role": "その他",
+      "reusable_structure": [
+        "旗形ラベル＋サムネイルカード＋キャプション"
+      ],
+      "replace_required": [
+        "動画",
+        "人物"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C08",
+      "source_section": "U8",
+      "name": "ブランドサイトへの導線",
+      "role": "CTA",
+      "reusable_structure": [
+        "ブランドカラーの2つの大きなボタン"
+      ],
+      "replace_required": [
+        "ロゴ",
+        "リンク"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C09",
+      "source_section": "U9",
+      "name": "フッター",
+      "role": "フッター",
+      "reusable_structure": [
+        "企業の共通フッター（リンク列）"
+      ],
+      "replace_required": [
+        "リンク"
+      ],
+      "rights_status": "reference_only"
+    }
+  ],
+  "reusable_principles": [
+    "賞品・期間・対象の要約チップ",
+    "機能別の背景色分け＋旗形ラベル",
+    "番号付き4ステップ＋主要ボタンの色の統一",
+    "スクロール枠に収める表・規約"
+  ],
+  "cta_patterns": [
+    {
+      "name": "ブランドサイトへの導線",
+      "description": "薄い緑の斜線背景。角丸の大きなボタンが2つ：miino（緑）「ブランドサイト」、クリスプ（青）「ブランドサイト」。"
+    }
+  ],
+  "trust_patterns": [],
+  "pricing_patterns": [],
+  "visual_patterns": [
+    {
+      "name": "color_legibility",
+      "description": "配色: 機能ごとにセクションの背景色を変え（青＝概要、緑＝応募方法、黄＝応募条件、ピンク＝ムービー）、ブランドの色（ピンク・緑・黄）と一致させている（pc_01〜04）。 タイポグラフィ: 丸みのある太い見出し書体（旗形のラベル、手順の見出し）と、小さく太い本文の組み合わせ。ブランドの親しみやすさに合う（pc_03、pc_04）。"
+    },
+    {
+      "name": "layout_spacing",
+      "description": "PCは、中央の細い縦カラムに全内容を収め、左右は装飾のみ。情報量に対して余白は少なく、密度は高い（pc_01〜05）。"
+    },
+    {
+      "name": "visual_brand",
+      "description": "商品ロゴの色、背景色、書体、イラスト（旗・吹き出し・星）が全体で統一されている（pc_01〜04）。"
+    }
+  ],
+  "rights_excluded": [
+    "ロゴ",
+    "人物",
+    "写真",
+    "コピー",
+    "価格",
+    "実績値",
+    "キャラクター",
+    "賞品・商品画像",
+    "ムービー"
+  ],
+  "unverified_claims": [
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U8"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U8"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U9"
+    }
+  ],
+  "recommended_use_cases": [],
+  "analysis_notes": {
+    "completion_status": "dis_analysis_done_28ch_pending",
+    "dis_analysis_ref": "DIS-LP-20261108",
+    "remaining_limits": [
+      "タグ・訴求・オファーは、28章の分析で確定する",
+      "ライブラリー側の取り込み・28章の分析は未実施（このファイルはDISからの下書き）",
+      "CBS本体への実同期は未実施"
+    ]
+  },
+  "dis_evaluation": {
+    "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+    "axes": [
+      {
+        "key": "purpose_fit",
+        "label": "目的適合",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "information_hierarchy",
+        "label": "情報優先順位",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_flow",
+        "label": "視線誘導",
+        "score": 4,
+        "confidence": "low"
+      },
+      {
+        "key": "message_copy",
+        "label": "訴求・コピー",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "trust_safety",
+        "label": "信頼・安心",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "color_legibility",
+        "label": "配色・可読性",
+        "score": 4,
+        "confidence": "low"
+      },
+      {
+        "key": "layout_spacing",
+        "label": "レイアウト・余白",
+        "score": 3,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_brand",
+        "label": "ビジュアル・ブランド",
+        "score": 5,
+        "confidence": "medium"
+      },
+      {
+        "key": "implementation_reuse",
+        "label": "実装・転用性",
+        "score": 3,
+        "confidence": "low"
+      }
+    ],
+    "note": "28章の総合点（ヒューリスティック/100）とは別の物差し。足したり平均したりしない。"
+  },
+  "cbs_sync": {
+    "status": "draft_from_dis",
+    "knowledge_path": "knowledge/lp/LP-0249.json",
+    "exported_at": null,
+    "actual_cbs_import": "not_synced"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "note": "旧形式の登録済みLPの、ナレッジ用の補足（訴求・オファー・タグ・掲載元URL）。分析（v2）の要約・notionProps から作った判断。タグは、Notionのライブラリーに既にある選択肢から選ぶ。内容は、ユーザーが確認する。",
+  "overrides": {
+    "DIS-LP-20261107": {
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229551",
+      "primary_appeal": "入場無料の東京の秋のイベント（観光協会・体験・グルメ）の告知。日時・会場・入場無料をファーストビューで先に伝え、体験コンテンツごとに色分けしたパネルを縦に積む",
+      "offer": "入場無料（日時・会場限定のイベント）",
+      "tags": {
+        "industry_tags": [
+          "旅行・アウトドア",
+          "飲食"
+        ],
+        "product_tags": [
+          "サービス"
+        ],
+        "color_tags": [
+          "マルチカラー"
+        ],
+        "layout_tags": [
+          "長尺LP",
+          "セクション分割",
+          "カード型"
+        ],
+        "copy_types": [
+          "限定性訴求",
+          "実績訴求"
+        ]
+      }
+    },
+    "DIS-LP-20261108": {
+      "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229584",
+      "primary_appeal": "お菓子缶が1,000名様に当たる購入キャンペーン。何がもらえるか・いつまで・何を買うかを、ファーストビューの要約チップで先に伝える",
+      "offer": "お菓子缶（1,000名様）が当たる。対象商品の購入で応募"
+    }
+  }
+}

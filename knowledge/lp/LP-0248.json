@@ -1,0 +1,1046 @@
+{
+  "id": "LP-0248",
+  "dis_ids": [
+    "DIS-LP-20261107"
+  ],
+  "mediaType": "LP",
+  "media_type": "LP",
+  "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+  "brand": "TOKYO周穫祭2026【東京国際フォーラム】",
+  "industry_tags": [
+    "旅行・アウトドア",
+    "飲食"
+  ],
+  "product_tags": [
+    "サービス"
+  ],
+  "color_tags": [
+    "マルチカラー"
+  ],
+  "layout_tags": [
+    "長尺LP",
+    "セクション分割",
+    "カード型"
+  ],
+  "copy_types": [
+    "限定性訴求",
+    "実績訴求"
+  ],
+  "primary_appeal": "入場無料の東京の秋のイベント（観光協会・体験・グルメ）の告知。日時・会場・入場無料をファーストビューで先に伝え、体験コンテンツごとに色分けしたパネルを縦に積む",
+  "offer": "入場無料（日時・会場限定のイベント）",
+  "captureUrl": "https://tokyo-syuukaku-sai.jp/",
+  "sourceUrl": "https://rdlp.jp/lp-archive/",
+  "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/229551",
+  "source": {
+    "captured_url": "https://tokyo-syuukaku-sai.jp/",
+    "reference_name": "LPアーカイブ",
+    "reference_url": "https://rdlp.jp/lp-archive/",
+    "reference_detail_url": "https://rdlp.jp/archives/otherdesign/lp/229551",
+    "notion_url": null,
+    "dis_notion_url": "https://app.notion.com/p/41124d4fa6718187ae4adccd5c4dccdd",
+    "dropbox_master_path": null,
+    "dis_dropbox_path": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-07/dis-daily/DIS-LP-20261107",
+    "github_knowledge_path": "knowledge/lp/LP-0248.json",
+    "archive_post_id": "229551"
+  },
+  "asset_status": {
+    "pc_full": {
+      "path": "01_Normal_Images/DIS-LP-20261107_PC_full.png",
+      "status": "missing"
+    },
+    "pc_first_view": {
+      "path": "01_Normal_Images/DIS-LP-20261107_PC_first_view.png",
+      "status": "missing"
+    },
+    "sp_full": {
+      "path": "01_Normal_Images/DIS-LP-20261107_SP_full.png",
+      "status": "missing"
+    },
+    "sp_first_view": {
+      "path": "01_Normal_Images/DIS-LP-20261107_SP_first_view.png",
+      "status": "missing"
+    },
+    "repository_crosscheck": "not_run"
+  },
+  "funnel_structure": [
+    {
+      "step": 1,
+      "role": "FV",
+      "pattern": "ファーストビュー（ヒーロー）",
+      "description": "イベントの名称・日時・会場・入場無料を最初の1画面で伝える"
+    },
+    {
+      "step": 2,
+      "role": "その他",
+      "pattern": "NEWS（お知らせ）",
+      "description": "最新情報を1行に圧縮して伝える"
+    },
+    {
+      "step": 3,
+      "role": "CTA",
+      "pattern": "SNS誘導バンド",
+      "description": "SNSへ誘導し、最新情報の受け皿にする"
+    },
+    {
+      "step": 4,
+      "role": "商品紹介",
+      "pattern": "ABOUT（イベント概要）",
+      "description": "イベントの趣旨を短く説明する"
+    },
+    {
+      "step": 5,
+      "role": "商品紹介",
+      "pattern": "コンテンツ一覧タイル",
+      "description": "11コンテンツへの案内と、色の凡例を兼ねる"
+    },
+    {
+      "step": 6,
+      "role": "商品紹介",
+      "pattern": "観光協会PRブース",
+      "description": "出展団体を地域別に一覧で見せる"
+    },
+    {
+      "step": 7,
+      "role": "商品紹介",
+      "pattern": "足湯体験",
+      "description": "体験内容の紹介と提供先の案内"
+    },
+    {
+      "step": 8,
+      "role": "商品紹介",
+      "pattern": "溶岩ウォーク",
+      "description": "新規コンテンツをラベルで強調する"
+    },
+    {
+      "step": 9,
+      "role": "商品紹介",
+      "pattern": "TOKYO SYUKAKUSAI KITCHEN",
+      "description": "グルメの全体紹介と出店者の案内"
+    },
+    {
+      "step": 10,
+      "role": "商品紹介",
+      "pattern": "TOKYO SYUKAKUSAI BAR",
+      "description": "酒類の訴求と商品の見せ方"
+    },
+    {
+      "step": 11,
+      "role": "商品紹介",
+      "pattern": "TOKYO SYUKAKUSAI SOUP",
+      "description": "スープの紹介と、画像がイメージである旨の注記"
+    },
+    {
+      "step": 12,
+      "role": "商品紹介",
+      "pattern": "TOKYO SYUKAKUSAI FOOD（特別メニュー）",
+      "description": "特別メニューと使用食材（提供元）の対応を見せる"
+    },
+    {
+      "step": 13,
+      "role": "商品紹介",
+      "pattern": "復刻メニュー（カルーセル）",
+      "description": "過去メニューを横スクロールで見せる"
+    },
+    {
+      "step": 14,
+      "role": "商品紹介",
+      "pattern": "TOKYO周穫祭 Select Shop",
+      "description": "販売物を見せ、注目カードを強調する"
+    },
+    {
+      "step": 15,
+      "role": "商品紹介",
+      "pattern": "360°VR体験",
+      "description": "VR体験の概要と3種の案内"
+    },
+    {
+      "step": 16,
+      "role": "商品紹介",
+      "pattern": "アーカイブ映像",
+      "description": "過去の実績を年別に見せる"
+    },
+    {
+      "step": 17,
+      "role": "商品紹介",
+      "pattern": "ワークショップ",
+      "description": "日別・地域別の体験を案内する"
+    },
+    {
+      "step": 18,
+      "role": "流れ",
+      "pattern": "参加方法フロー（ワークショップ）",
+      "description": "応募の手順と条件を整理して伝える"
+    },
+    {
+      "step": 19,
+      "role": "商品紹介",
+      "pattern": "実演コーナー",
+      "description": "職人の実演を日別のラインナップで見せる"
+    },
+    {
+      "step": 20,
+      "role": "商品紹介",
+      "pattern": "TOKYO周遊スタンプラリー",
+      "description": "応募の仕組みと景品を案内する"
+    },
+    {
+      "step": 21,
+      "role": "商品紹介",
+      "pattern": "TOKYO周穫祭 AI旅診断",
+      "description": "サービスの提供場所・提供形態を伝える"
+    },
+    {
+      "step": 22,
+      "role": "商品紹介",
+      "pattern": "被災地応援ブース",
+      "description": "応援ブースの趣旨と商品を案内する"
+    },
+    {
+      "step": 23,
+      "role": "実績",
+      "pattern": "昨年の様子（2025）",
+      "description": "昨年の実績で今年の見どころを裏づける"
+    },
+    {
+      "step": 24,
+      "role": "CTA",
+      "pattern": "公式SNS",
+      "description": "SNSへ再び誘導する"
+    },
+    {
+      "step": 25,
+      "role": "会社情報",
+      "pattern": "ACCESS",
+      "description": "会場への行き方を案内する（日英併記）"
+    },
+    {
+      "step": 26,
+      "role": "フッター",
+      "pattern": "フッター",
+      "description": "主催・連絡先・注意書きを示す"
+    }
+  ],
+  "section_patterns": [
+    {
+      "id": "C01",
+      "source_section": "U1",
+      "name": "ファーストビュー（ヒーロー）",
+      "role": "FV",
+      "reusable_structure": [
+        "巨大なロゴ＋日付・時間・会場のブロック＋バッジ2種"
+      ],
+      "replace_required": [
+        "イラスト",
+        "写真",
+        "ロゴ",
+        "コピー"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C02",
+      "source_section": "U2",
+      "name": "NEWS（お知らせ）",
+      "role": "その他",
+      "reusable_structure": [
+        "日付＋1行＋開閉の「+」"
+      ],
+      "replace_required": [
+        "お知らせの文面"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C03",
+      "source_section": "U3",
+      "name": "SNS誘導バンド",
+      "role": "CTA",
+      "reusable_structure": [
+        "背景色の帯＋2つの並列ボタン"
+      ],
+      "replace_required": [
+        "ロゴ",
+        "アイコン",
+        "飾り"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C04",
+      "source_section": "U4",
+      "name": "ABOUT（イベント概要）",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "英字見出し＋中央揃えの短文"
+      ],
+      "replace_required": [
+        "文面",
+        "イラスト"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C05",
+      "source_section": "U5",
+      "name": "コンテンツ一覧タイル",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "色付き角丸タイル（アイコン＋名称＋下向き矢印）"
+      ],
+      "replace_required": [
+        "アイコン",
+        "名称",
+        "色"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C06",
+      "source_section": "U6",
+      "name": "観光協会PRブース",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "地域タブ＋共通カード（団体名・外部リンク・写真・要点・説明）"
+      ],
+      "replace_required": [
+        "団体名",
+        "写真",
+        "特産品",
+        "文面"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C07",
+      "source_section": "U7",
+      "name": "足湯体験",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "写真＋コピー＋提供先カード（未定は Coming Soon）"
+      ],
+      "replace_required": [
+        "写真",
+        "文面",
+        "提供先"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C08",
+      "source_section": "U8",
+      "name": "溶岩ウォーク",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "NEWラベル＋写真＋コピー"
+      ],
+      "replace_required": [
+        "写真",
+        "文面"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C09",
+      "source_section": "U9",
+      "name": "TOKYO SYUKAKUSAI KITCHEN",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "サブロゴ＋区分カード＋MOREで折りたたみ"
+      ],
+      "replace_required": [
+        "写真",
+        "店名",
+        "メニュー",
+        "文面"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C10",
+      "source_section": "U10",
+      "name": "TOKYO SYUKAKUSAI BAR",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "サブロゴ＋吹き出し注記＋カード型カルーセル"
+      ],
+      "replace_required": [
+        "商品画像",
+        "商品名",
+        "文面"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C11",
+      "source_section": "U11",
+      "name": "TOKYO SYUKAKUSAI SOUP",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "サブロゴ＋写真＋注記"
+      ],
+      "replace_required": [
+        "写真",
+        "文面"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C12",
+      "source_section": "U12",
+      "name": "TOKYO SYUKAKUSAI FOOD（特別メニュー）",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "メニューカード＋食材サムネイル＋提供元ラベル"
+      ],
+      "replace_required": [
+        "メニュー写真",
+        "食材",
+        "提供元"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C13",
+      "source_section": "U13",
+      "name": "復刻メニュー（カルーセル）",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "カードカルーセル（矢印・ドット）"
+      ],
+      "replace_required": [
+        "メニュー写真",
+        "名称"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C14",
+      "source_section": "U14",
+      "name": "TOKYO周穫祭 Select Shop",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "中央を白地で強調し左右を薄くするカルーセル"
+      ],
+      "replace_required": [
+        "商品画像",
+        "地域",
+        "文面"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C15",
+      "source_section": "U15",
+      "name": "360°VR体験",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "画像＋コピー＋3種の説明"
+      ],
+      "replace_required": [
+        "画像",
+        "文面"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C16",
+      "source_section": "U16",
+      "name": "アーカイブ映像",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "年別カード＋タブ＋動画サムネイル"
+      ],
+      "replace_required": [
+        "動画",
+        "人物",
+        "タイトル"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C17",
+      "source_section": "U17",
+      "name": "ワークショップ",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "日付別2列＋共通カード（提供者・リンク・タイトル・説明・写真）"
+      ],
+      "replace_required": [
+        "提供者名",
+        "写真",
+        "文面"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C18",
+      "source_section": "U18",
+      "name": "参加方法フロー（ワークショップ）",
+      "role": "流れ",
+      "reusable_structure": [
+        "番号付き4ステップのカード＋注意事項"
+      ],
+      "replace_required": [
+        "手順の文面",
+        "アイコン"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C19",
+      "source_section": "U19",
+      "name": "実演コーナー",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "ワークショップと同じ日付別2列カード"
+      ],
+      "replace_required": [
+        "人物写真",
+        "文面"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C20",
+      "source_section": "U20",
+      "name": "TOKYO周遊スタンプラリー",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "バッジ＋写真＋番号付き4ステップ（色を変えて再利用）"
+      ],
+      "replace_required": [
+        "写真",
+        "景品",
+        "文面"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C21",
+      "source_section": "U21",
+      "name": "TOKYO周穫祭 AI旅診断",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "操作画面の写真＋コピー＋WEB版の予告"
+      ],
+      "replace_required": [
+        "画面写真",
+        "文面"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C22",
+      "source_section": "U22",
+      "name": "被災地応援ブース",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "県別カードのカルーセル（Select Shopと同型）"
+      ],
+      "replace_required": [
+        "商品",
+        "県名",
+        "文面"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C23",
+      "source_section": "U23",
+      "name": "昨年の様子（2025）",
+      "role": "実績",
+      "reusable_structure": [
+        "傾いた写真カード＋トピック名＋実績の数字＋「もっと見る」ボタン"
+      ],
+      "replace_required": [
+        "写真",
+        "数字",
+        "見出し"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C24",
+      "source_section": "U24",
+      "name": "公式SNS",
+      "role": "CTA",
+      "reusable_structure": [
+        "2枚の投稿サムネイルカード＋MORE"
+      ],
+      "replace_required": [
+        "画像",
+        "ロゴ"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C25",
+      "source_section": "U25",
+      "name": "ACCESS",
+      "role": "会社情報",
+      "reusable_structure": [
+        "周辺地図＋フロアマップ＋交通手段別カード"
+      ],
+      "replace_required": [
+        "地図",
+        "住所",
+        "文面"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C26",
+      "source_section": "U26",
+      "name": "フッター",
+      "role": "フッター",
+      "reusable_structure": [
+        "リンク列＋注意書き＋主催／お問合せ"
+      ],
+      "replace_required": [
+        "ロゴ",
+        "住所",
+        "連絡先"
+      ],
+      "rights_status": "reference_only"
+    }
+  ],
+  "reusable_principles": [
+    "色分けタイル→同色パネルの二段構成",
+    "日付別2列カードと番号付き4ステップの共通コンポーネント",
+    "昨年の様子を今年のコンテンツと同じ順で並べる実績セクション"
+  ],
+  "cta_patterns": [
+    {
+      "name": "SNS誘導バンド",
+      "description": "薄い黄色の帯に旗飾りのイラスト。見出し「公式XやInstagramで最新情報発信中！」と、X・Instagramの角丸ボタン2つ（アイコン＋ラベル＋矢印）。"
+    },
+    {
+      "name": "公式SNS",
+      "description": "ピル形の見出し「公式SNS 情報発信中！」。ベージュのカード2枚（X・Instagram）。それぞれに投稿サムネイルと「MORE」ボタン。"
+    }
+  ],
+  "trust_patterns": [
+    {
+      "name": "昨年の様子（2025）",
+      "description": "薄緑の有機的な形の背景。見出し「2025 TOKYO SYUKAKUSAI 昨年の様子」。白い縁取りで傾けた写真（ポラロイド風）に、トピック名と短い説明、矢印と2つのドットを組み合わせたカード。トピックは当日のコンテンツと同じ順（観光協会PRブース・足湯体験・グルメキッチンカー・Select Shop・Bar・360°…",
+      "required_caution": "実績・写真・数値は、案件ごとの権利と現在性の確認が必要。"
+    },
+    {
+      "name": "ACCESS",
+      "description": "ピル形の見出し「ACCESS アクセス」。周辺地図（駅の出口・会場を赤で強調）、1階のフロアマップ（A〜Dホール・地上広場）、会場名・所在地（日英併記）。交通の案内は、JR線（黄）と地下鉄（ピーチ）のカードに日本語・英語を併記。",
+      "required_caution": "実績・写真・数値は、案件ごとの権利と現在性の確認が必要。"
+    }
+  ],
+  "pricing_patterns": [
+    {
+      "name": "TOKYO SYUKAKUSAI FOOD（特別メニュー）",
+      "description": "オレンジのサブロゴ。写真とコピー（観光協会とオレンジページが開発した特別メニュー）、注記「※今年度より有料での販売となります。」。メニューごとのカード（スープパスタ3種を確認）は、オレンジ見出し、メニュー写真、「使った特産品はこちら！」と、円形の食材サムネイルに協会名のラベルを付けた一覧。",
+      "basis_status": "requires_verification"
+    }
+  ],
+  "visual_patterns": [
+    {
+      "name": "color_legibility",
+      "description": "配色: コンテンツごとにパネルを色分け（緑・青緑・赤・オレンジ）し、タイルの色と対応する。背景は白〜薄グレーで彩度の高い面と交互に置く（pc_02〜05）。 SPの黄色タイル（Select Shop）は白文字で、読みにくい可能性がある（sp_02、未計測）。 サブブランドごとに色を割り当て（KITCHEN＝黄緑、BAR＝紺、SOUP＝黄、FOOD＝オレンジ）、アーカイブは年別に青・紫・ピンク（pc…"
+    },
+    {
+      "name": "layout_spacing",
+      "description": "パネルは角丸で左右に余白を取り、中のカードは2列。セクション間の余白が一定（pc_03〜05）。 SPでは2列のタイルが11個で最後に1つ余る（sp_02）。パネルは全幅の色面で、PCの角丸パネルとは構造が異なる。 昨年の様子は傾いた写真・重なり・円形写真で自由度が高く、上の整ったパネルと対比している（pc_15〜16）。"
+    },
+    {
+      "name": "visual_brand",
+      "description": "手描き風イラスト、丸みのある角丸、ロゴの書体、色の使い方がFVから各パネルまで一貫している（pc_01〜05）。 ワークショップの見出しアイコンは買い物袋で、タイルのアイコン（はさみ）と異なる点がある。 昨年の様子・ACCESS・フッターまで、同じイラスト（鳥・木・東京タワー）と色を使っている。"
+    }
+  ],
+  "rights_excluded": [
+    "ロゴ",
+    "人物",
+    "写真",
+    "コピー",
+    "価格",
+    "実績値",
+    "地図・フロアマップ"
+  ],
+  "unverified_claims": [
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U8"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U9"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U10"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U10"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U11"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U12"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U13"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U13"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U14"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U14"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U15"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U16"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U16"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U17"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U18"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U19"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U20"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U21"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U21"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U22"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U22"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U23"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U23"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U24"
+    },
+    {
+      "claim": "リンク先・開閉やスクロールなどの動き",
+      "status": "unverified",
+      "required_basis": [
+        "実機でクリック・スクロールして確認する"
+      ],
+      "source_unit": "U24"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U25"
+    },
+    {
+      "claim": "実寸・色・フォントの数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U26"
+    }
+  ],
+  "recommended_use_cases": [],
+  "analysis_notes": {
+    "completion_status": "dis_analysis_done_28ch_pending",
+    "dis_analysis_ref": "DIS-LP-20261107",
+    "remaining_limits": [
+      "タグ・訴求・オファーは、28章の分析で確定する",
+      "ライブラリー側の取り込み・28章の分析は未実施（このファイルはDISからの下書き）",
+      "CBS本体への実同期は未実施"
+    ]
+  },
+  "dis_evaluation": {
+    "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+    "axes": [
+      {
+        "key": "purpose_fit",
+        "label": "目的適合",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "information_hierarchy",
+        "label": "情報優先順位",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_flow",
+        "label": "視線誘導",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "message_copy",
+        "label": "訴求・コピー",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "trust_safety",
+        "label": "信頼・安心",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "color_legibility",
+        "label": "配色・可読性",
+        "score": 3,
+        "confidence": "low"
+      },
+      {
+        "key": "layout_spacing",
+        "label": "レイアウト・余白",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_brand",
+        "label": "ビジュアル・ブランド",
+        "score": 5,
+        "confidence": "medium"
+      },
+      {
+        "key": "implementation_reuse",
+        "label": "実装・転用性",
+        "score": 3,
+        "confidence": "low"
+      }
+    ],
+    "note": "28章の総合点（ヒューリスティック/100）とは別の物差し。足したり平均したりしない。"
+  },
+  "cbs_sync": {
+    "status": "draft_from_dis",
+    "knowledge_path": "knowledge/lp/LP-0248.json",
+    "exported_at": null,
+    "actual_cbs_import": "not_synced"
+  }
+}
