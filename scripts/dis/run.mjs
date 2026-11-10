@@ -82,7 +82,7 @@ async function runMedia(media) {
       const skippedSources = [];
       const sourceReports = [];
       if (args.url) {
-        const mc = await buildManualCandidate(args.url, media, undefined, cfg.sources);
+        const mc = await buildManualCandidate(args.url, media, undefined, cfg.sources, { fromArchive: args["from-archive"] });
         if (args["from-archive"]) {
           if (mc.sourceKey !== "rdlp" || media === "banner") throw new Error("--from-archive は、LPアーカイブ（rdlp）の紹介ページのURLをLP/Webで指定したときだけ使えます");
           mc.captureMode = "archive"; // 実ページではなく、アーカイブ掲載の全体画像で分析する
@@ -201,7 +201,7 @@ async function runMedia(media) {
       const { captureFullPage, downloadBanner } = await import("./lib/capture.mjs");
       const { captureFromArchive } = await import("./lib/capture.mjs");
       const files = cfg.media[media].capture === "public-image" ? await downloadBanner(sel.imageUrl, `${it}/files`)
-        : sel.captureMode === "archive" ? await captureFromArchive(sel.sourceDetailUrl, `${it}/files`, { id: disId })
+        : sel.captureMode === "archive" ? await captureFromArchive(sel.sourceDetailUrl, `${it}/files`, { id: disId, spDetailUrl: args["sp-url"] || null })
         : await captureFullPage(sel.pageUrl, `${it}/files`, { id: disId, spUrl: args["sp-url"] || null, targets: args.device === "both" ? ["pc", "sp"] : [args.device] }).catch((e) => { throw new Error(sel.sourceKey === "rdlp" ? `${e.message}\n  ※実ページが開けない場合は、同じコマンドに --from-archive を付けると、アーカイブ掲載の画像で分析できます（作業フォルダを消してから）` : e.message); });
       await wj(`${it}/files.json`, files);
       { const im = await readJson(`${it}/item.json`, {}); await wj(`${it}/item.json`, { ...im, devices: args.device === "both" ? ["pc", "sp"] : [args.device], ...(args["sp-url"] ? { spUrl: args["sp-url"] } : {}) }); }

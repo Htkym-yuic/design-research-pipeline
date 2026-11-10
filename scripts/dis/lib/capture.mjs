@@ -129,7 +129,8 @@ async function deriveSet(full, { id, NAME, name, viewportH, normal, notion, secD
 
 /** アーカイブの紹介ページが載せている「自分の全体画像」（full_N）のURLを取り出す（full.jpg 1枚、または full_1・full_2…）。関連作品のサムネイル等は対象外。 */
 export function parseArchiveFullImages(html, pageUrl) {
-  const re = /(?:src|data-src)=["']([^"']*\/image\/lp-archive\/(\d+)\/full(?:_(\d+))?\.[a-z0-9.]+)["']/gi;
+  // img の src／data-src のほか、JSON-LD の "contentUrl": "…/image/lp-archive/<ID>/full.png" も全体画像として扱う（img が /image/rdlp/ の表示用に変わったページがある）。
+  const re = /(?:(?:src|data-src)=|"contentUrl":\s*)["']?([^"'\s]*\/image\/lp-archive\/(\d+)\/full(?:_(\d+))?\.[a-z0-9.]+)["']/gi;
   const found = [];
   for (const m of html.matchAll(re)) { try { found.push({ url: new URL(m[1], pageUrl).href, postId: m[2], n: Number(m[3] || 0) }); } catch { /* 無視 */ } }
   if (!found.length) return [];
@@ -138,39 +139,90 @@ export function parseArchiveFullImages(html, pageUrl) {
 }
 
 /**
+ * 紹介ページの <img> から、PC版・スマホ版の全体画像（/image/rdlp/<ID>/full(_N).jpg.webp）を、alt の「PC版」「スマホ版」で振り分ける。
+ * スマホ版が full_1・full_2 のように縦に分かれている場合は、番号順に並べる（呼び出し側で縦につなぐ）。
+ */
+export function parseArchiveDeviceImages(html, pageUrl) {
+  const out = { pc: [], sp: [] };
+  for (const m of html.matchAll(/<img\b[^>]*>/gi)) {
+    const tag = m[0];
+    const src = tag.match(/\bsrc=["']([^"']*\/image\/rdlp\/\d+\/full(?:_(\d+))?\.[a-z0-9.]+)["']/i);
+    if (!src) continue;
+    const alt = (tag.match(/\balt=["']([^"']*)["']/i) || [])[1] || "";
+    const dev = /スマホ版/.test(alt) ? "sp" : /PC版/.test(alt) ? "pc" : null;
+    if (!dev) continue;
+    try { out[dev].push({ url: new URL(src[1], pageUrl).href, n: Number(src[2] || 0) }); } catch { /* 無視 */ }
+  }
+  for (const d of ["pc", "sp"]) out[d] = [...new Map(out[d].sort((a, b) => a.n - b.n).map((x) => [x.url, x])).values()];
+  return out;
+}
+
+/**
  * 実ページが開けない（公開終了・移転など）場合に、アーカイブが保存している全体画像で、撮影と同じファイル一式を作る。
  * 1案件の画像だけを取得する（一括ダウンロードなし）。取得できない・画像として読めない場合は、回避せず理由つきで止まる。
- * 幅の広い画像をPC、狭い画像をSPとして扱う。画像が1枚だけなら、PCのみ（SPは欠けるため、画像の揃いはNGになる）。
+ * 紹介ページにPC版・スマホ版（alt で判別）が載っていれば、それぞれPC・SPとして使う（スマホ版が複数枚に分かれていれば縦につなぐ）。
+ * 旧形式（alt なし）は、幅の広い画像をPC、狭い画像をSPとして扱う。画像が1枚だけなら、PCのみ（SPは欠けるため、画像の揃いはNGになる）。
  */
-export async function captureFromArchive(detailUrl, outDir, { id = "item", fetchImpl = fetch } = {}) {
+export async function captureFromArchive(detailUrl, outDir, { id = "item", fetchImpl = fetch, spDetailUrl = null } = {}) {
   const { default: sharp } = await import("sharp");
   const UA = { "User-Agent": "design-research-pipeline-dis/1.0 (public-pages-only)" };
-  const page = await fetchImpl(detailUrl, { headers: UA });
-  if (!page.ok) throw new Error(`アーカイブの紹介ページを取得できません HTTP ${page.status}（回避しない）`);
-  const imgs = parseArchiveFullImages(await page.text(), detailUrl).slice(0, 2);
-  if (!imgs.length) throw new Error("アーカイブの紹介ページに、全体画像（full_N）が見つかりません");
+  const getPage = async (u) => {
+    const r = await fetchImpl(u, { headers: UA });
+    if (!r.ok) throw new Error(`アーカイブの紹介ページを取得できません HTTP ${r.status}（回避しない）`);
+    return r.text();
+  };
+  const html = await getPage(detailUrl);
+  const byDev = parseArchiveDeviceImages(html, detailUrl);
+  const legacy = byDev.pc.length || byDev.sp.length ? [] : parseArchiveFullImages(html, detailUrl).slice(0, spDetailUrl ? 1 : 2);
+  if (spDetailUrl && !byDev.sp.length) { // スマホ版の紹介ページが別URLの場合は、そこから取る
+    const sp2 = parseArchiveDeviceImages(await getPage(spDetailUrl), spDetailUrl);
+    if (sp2.sp.length) byDev.sp = sp2.sp;
+    else { const l = parseArchiveFullImages(await getPage(spDetailUrl), spDetailUrl)[0]; if (l) byDev.sp = [{ ...l, referer: spDetailUrl }]; }
+  }
+  if (!byDev.pc.length && !byDev.sp.length && !legacy.length) throw new Error("アーカイブの紹介ページに、全体画像が見つかりません");
   const normal = path.join(outDir, "01_Normal_Images");
   const notion = path.join(outDir, "02_Notion_Images");
   const secDir = path.join(normal, "sections");
   await fs.mkdir(secDir, { recursive: true });
   await fs.mkdir(notion, { recursive: true });
-  const decoded = [];
-  for (const im of imgs) {
-    const r = await fetchImpl(im.url, { headers: { ...UA, Referer: detailUrl } });
+  const fetchImg = async (im) => {
+    const r = await fetchImpl(im.url, { headers: { ...UA, Referer: im.referer || detailUrl } });
     if (!r.ok) throw new Error(`画像取得失敗 HTTP ${r.status}（回避しない）: ${im.url}`);
     const buf = Buffer.from(await r.arrayBuffer());
     if (buf.length > MAX_IMAGE_BYTES) throw new Error("画像サイズ上限超過");
-    let meta;
-    try { meta = await sharp(buf, { limitInputPixels: false }).metadata(); } catch { throw new Error(`画像として読めません: ${im.url}`); }
-    decoded.push({ buf, width: meta.width, url: im.url });
-  }
-  decoded.sort((a, b) => b.width - a.width);
+    try { await sharp(buf, { limitInputPixels: false }).metadata(); } catch { throw new Error(`画像として読めません: ${im.url}`); }
+    return buf;
+  };
+  // 複数枚（full_1・full_2…）は、先頭の幅にそろえて縦につなぐ
+  const stack = async (bufs) => {
+    if (bufs.length === 1) return bufs[0];
+    const metas = await Promise.all(bufs.map((b) => sharp(b, { limitInputPixels: false }).metadata()));
+    const w = metas[0].width;
+    const parts = await Promise.all(bufs.map((b, i) => (metas[i].width === w ? sharp(b, { limitInputPixels: false }).png().toBuffer() : sharp(b, { limitInputPixels: false }).resize({ width: w }).png().toBuffer())));
+    const hs = await Promise.all(parts.map(async (b) => (await sharp(b, { limitInputPixels: false }).metadata()).height));
+    let top = 0;
+    const layers = parts.map((input, i) => { const l = { input, left: 0, top }; top += hs[i]; return l; });
+    return sharp({ create: { width: w, height: top, channels: 3, background: "#fff" }, limitInputPixels: false }).composite(layers).png().toBuffer();
+  };
+  const decoded = [];
   const files = [];
   const warnings = ["実ページではなく、アーカイブ掲載の画像から作成（実ページの動き・文言・最新状態は未確認）"];
   files.warnings = warnings;
+  if (byDev.pc.length || byDev.sp.length) {
+    for (const dev of ["pc", "sp"]) {
+      if (!byDev[dev].length) { warnings.push(`紹介ページに${dev === "pc" ? "PC" : "スマホ"}版の画像がありません`); continue; }
+      const buf = await stack(await Promise.all(byDev[dev].map(fetchImg)));
+      decoded.push({ dev, buf, width: (await sharp(buf, { limitInputPixels: false }).metadata()).width, url: byDev[dev].map((x) => x.url).join(" + ") });
+    }
+  } else {
+    const list = [];
+    for (const im of legacy) { const buf = await fetchImg(im); list.push({ buf, width: (await sharp(buf, { limitInputPixels: false }).metadata()).width, url: im.url }); }
+    list.sort((a, b) => b.width - a.width);
+    list.forEach((d, i) => decoded.push({ ...d, dev: i === 0 ? "pc" : "sp" }));
+    if (!list[1]) warnings.push("全体画像が1枚だけのため、PCとして扱う（PC/SPのどちらかは、画像を見て確認）。SPの画像はなし");
+  }
   const add = (local, rel) => files.push({ local, rel });
-  const plan = [["pc", decoded[0], 4, 300], ...(decoded[1] ? [["sp", decoded[1], 6, 150]] : [])];
-  if (!decoded[1]) warnings.push("全体画像が1枚だけのため、PCとして扱う（PC/SPのどちらかは、画像を見て確認）。SPの画像はなし");
+  const plan = decoded.map((d) => [d.dev, d, d.dev === "pc" ? 4 : 6, d.dev === "pc" ? 300 : 150]);
   for (const [name, d, mapCols, cellW] of plan) {
     const NAME = name.toUpperCase();
     const full = path.join(normal, `${id}_${NAME}_full.png`);
