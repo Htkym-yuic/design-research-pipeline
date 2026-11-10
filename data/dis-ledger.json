@@ -703,9 +703,15 @@
         ]
       },
       "notion": {
-        "status": "skipped_exists",
-        "pageId": "3d024d4f-a671-81b2-9000-c38f1b3a490b",
-        "matchedBy": "参考URL=https://rdlp.jp/archives/otherdesign/lp/200519?rdlp_flg=1"
+        "status": "created",
+        "pageId": "41424d4f-a671-815a-859e-d5290861c176",
+        "url": "https://app.notion.com/p/DIS-LP-0004-LP-41424d4fa671815a859ed5290861c176",
+        "blocks": 255,
+        "skippedProps": [],
+        "attachment": null,
+        "bodyImages": [
+          "attached"
+        ]
       }
     }
   ]
