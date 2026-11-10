@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T13:54:01.236Z",
+  "generatedAt": "2026-11-10T21:56:31.152Z",
   "items": [
     {
       "id": "ILAC-0114",
@@ -751,6 +751,495 @@
         "固有コピー"
       ],
       "cbsSyncStatus": "ready_for_sync"
+    },
+    {
+      "id": "LP-0245",
+      "mediaType": "LP",
+      "title": "オランジーナのLPデザイン",
+      "tags": [
+        "飲料",
+        "イエロー",
+        "ブルー",
+        "セクション分割",
+        "数字訴求"
+      ],
+      "summary": "青と黄色の2色と、ずらした黄色の色面で、全6セクションを同じ型に統一した、飲料の商品紹介",
+      "knowledgePath": "knowledge/lp/LP-0245.json",
+      "disId": "DIS-LP-0001",
+      "disIds": [
+        "DIS-LP-0001"
+      ],
+      "disEvaluation": {
+        "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+        "axes": [
+          {
+            "key": "purpose_fit",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "information_hierarchy",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "visual_flow",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "message_copy",
+            "score": 3,
+            "confidence": "low"
+          },
+          {
+            "key": "trust_safety",
+            "score": 3,
+            "confidence": "low"
+          },
+          {
+            "key": "color_legibility",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "layout_spacing",
+            "score": 5,
+            "confidence": "medium"
+          },
+          {
+            "key": "visual_brand",
+            "score": 5,
+            "confidence": "medium"
+          },
+          {
+            "key": "implementation_reuse",
+            "score": 4,
+            "confidence": "medium"
+          }
+        ]
+      },
+      "sectionTypes": [
+        "商品紹介",
+        "特徴",
+        "会社情報",
+        "フッター"
+      ],
+      "sections": [
+        {
+          "type": "商品紹介",
+          "name": "PRODUCT（ブランド紹介・メイン写真）"
+        },
+        {
+          "type": "商品紹介",
+          "name": "商品ラインアップ（3種）"
+        },
+        {
+          "type": "商品紹介",
+          "name": "ORANGINA（主力商品の詳細とサイズ展開）"
+        },
+        {
+          "type": "特徴",
+          "name": "FEATURE（おいしさの特徴）"
+        },
+        {
+          "type": "会社情報",
+          "name": "HISTORY（歴史の年表）"
+        },
+        {
+          "type": "フッター",
+          "name": "SHARE・外部リンク（フッター）"
+        }
+      ],
+      "reusablePrinciples": [
+        "写真の背後に、ずらした色面を敷いて奥行きを出す2カラム構成",
+        "英字の大見出し＋斜体サブ見出し＋マーカー線のキャッチの、見出しの型",
+        "青地ラベル見出し＋短文の、特徴の並べ方",
+        "縦線とノードの年表",
+        "大きな主役画像＋サイズ別の商品を並べる比較ライン"
+      ],
+      "rightsExcluded": [
+        "ロゴ",
+        "人物",
+        "写真",
+        "商品画像",
+        "コピー",
+        "価格",
+        "実績値"
+      ],
+      "cbsSyncStatus": "draft_from_dis"
+    },
+    {
+      "id": "LP-0246",
+      "mediaType": "LP",
+      "title": "販促EXPO【大阪】のLPデザイン",
+      "tags": [
+        "企業・会社・お店",
+        "ネイビー",
+        "レッド",
+        "ピンク",
+        "水色",
+        "長尺LP",
+        "セクション分割",
+        "カード型",
+        "図解中心",
+        "FAQ",
+        "フォーム内包",
+        "限定性訴求",
+        "価格訴求",
+        "問題解決型",
+        "社会的証明"
+      ],
+      "summary": "悩み→解決→できること→出展ジャンル→セミナー→専門展→声→手順→FAQの順に、来場登録まで一直線に導く、展示会の来場登録",
+      "knowledgePath": "knowledge/lp/LP-0246.json",
+      "disId": "DIS-LP-0002",
+      "disIds": [
+        "DIS-LP-0002"
+      ],
+      "disEvaluation": {
+        "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+        "axes": [
+          {
+            "key": "purpose_fit",
+            "score": 5,
+            "confidence": "high"
+          },
+          {
+            "key": "information_hierarchy",
+            "score": 4,
+            "confidence": "high"
+          },
+          {
+            "key": "visual_flow",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "message_copy",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "trust_safety",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "color_legibility",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "layout_spacing",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "visual_brand",
+            "score": 3,
+            "confidence": "medium"
+          },
+          {
+            "key": "implementation_reuse",
+            "score": 5,
+            "confidence": "high"
+          }
+        ]
+      },
+      "sectionTypes": [
+        "FV",
+        "CTA",
+        "悩み提起",
+        "解決策",
+        "ベネフィット",
+        "商品紹介",
+        "特徴",
+        "ナビ",
+        "実績",
+        "流れ",
+        "会社情報",
+        "FAQ",
+        "フッター"
+      ],
+      "sections": [
+        {
+          "type": "FV",
+          "name": "ファーストビュー（開催告知・日時会場）"
+        },
+        {
+          "type": "CTA",
+          "name": "申込CTA①（無料申込の期限）"
+        },
+        {
+          "type": "悩み提起",
+          "name": "課題提起（6つの悩みカード）"
+        },
+        {
+          "type": "解決策",
+          "name": "解決の提示（販促EXPOでは）"
+        },
+        {
+          "type": "ベネフィット",
+          "name": "販促EXPOでできること（3つの価値）"
+        },
+        {
+          "type": "商品紹介",
+          "name": "出展ジャンル（6分類）"
+        },
+        {
+          "type": "特徴",
+          "name": "特設ゾーン（推し活／インバウンド）"
+        },
+        {
+          "type": "CTA",
+          "name": "申込CTA②"
+        },
+        {
+          "type": "特徴",
+          "name": "セミナー概要"
+        },
+        {
+          "type": "特徴",
+          "name": "登壇者一覧（セッション18件前後）"
+        },
+        {
+          "type": "CTA",
+          "name": "申込CTA③（セミナー向け）"
+        },
+        {
+          "type": "特徴",
+          "name": "マーケティングWeekとは（併催の全体像）"
+        },
+        {
+          "type": "ナビ",
+          "name": "9つの専門展ナビ（ボタン）"
+        },
+        {
+          "type": "商品紹介",
+          "name": "専門展の詳細（9カード＋スタートアップゲート）"
+        },
+        {
+          "type": "CTA",
+          "name": "申込CTA④"
+        },
+        {
+          "type": "実績",
+          "name": "過去来場者の声"
+        },
+        {
+          "type": "流れ",
+          "name": "来場登録の3ステップ"
+        },
+        {
+          "type": "CTA",
+          "name": "申込CTA⑤"
+        },
+        {
+          "type": "会社情報",
+          "name": "アクセスと同時開催展"
+        },
+        {
+          "type": "FAQ",
+          "name": "よくある質問（FAQ）"
+        },
+        {
+          "type": "CTA",
+          "name": "申込CTA⑥（最終）"
+        },
+        {
+          "type": "会社情報",
+          "name": "主催者情報"
+        },
+        {
+          "type": "フッター",
+          "name": "注記・フッター"
+        }
+      ],
+      "reusablePrinciples": [
+        "紺の全幅の帯＋赤いピル型ボタン＋期限の見出し＋小さな注記、のCTA帯（区切りごとに繰り返す）",
+        "悩みのカード（イラスト枠＋文字帯）→背景色の切替→解決の宣言、の流れ",
+        "『〜したい方へ』の悩みの言葉つきピル型ボタンのナビ",
+        "同型の2列カード（アイコン→写真→一言→区切り線→箇条書き）",
+        "見出し帯＋3列の番号つきステップ",
+        "水色の帯の質問＋白枠の回答のFAQ",
+        "中心の図＋周囲のラベルを線でつなぐ全体像の図解"
+      ],
+      "rightsExcluded": [
+        "ロゴ",
+        "人物",
+        "写真",
+        "コピー",
+        "価格",
+        "実績値"
+      ],
+      "cbsSyncStatus": "draft_from_dis"
+    },
+    {
+      "id": "LP-0247",
+      "mediaType": "LP",
+      "title": "宇治山田歯科医院のLPデザイン",
+      "tags": [
+        "求人・採用関連",
+        "採用",
+        "病院・整体・マッサージ",
+        "イエロー",
+        "オレンジ",
+        "ピンク",
+        "グリーン",
+        "マルチカラー",
+        "長尺LP",
+        "セクション分割",
+        "カード型",
+        "人物写真",
+        "ストーリー型",
+        "採用導線",
+        "ベネフィット訴求",
+        "社会的証明",
+        "ターゲット明示",
+        "情緒訴求"
+      ],
+      "summary": "3つの魅力・先輩の声・1日の流れで働くイメージを見せ、見学で不安を和らげてから応募へ導く、歯科衛生士の採用",
+      "knowledgePath": "knowledge/lp/LP-0247.json",
+      "disId": "DIS-LP-0003",
+      "disIds": [
+        "DIS-LP-0003"
+      ],
+      "disEvaluation": {
+        "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+        "axes": [
+          {
+            "key": "purpose_fit",
+            "score": 4,
+            "confidence": "high"
+          },
+          {
+            "key": "information_hierarchy",
+            "score": 4,
+            "confidence": "high"
+          },
+          {
+            "key": "visual_flow",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "message_copy",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "trust_safety",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "color_legibility",
+            "score": 3,
+            "confidence": "medium"
+          },
+          {
+            "key": "layout_spacing",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "visual_brand",
+            "score": 5,
+            "confidence": "high"
+          },
+          {
+            "key": "implementation_reuse",
+            "score": 4,
+            "confidence": "medium"
+          }
+        ]
+      },
+      "sectionTypes": [
+        "FV",
+        "共感",
+        "ベネフィット",
+        "特徴",
+        "会社情報",
+        "実績",
+        "流れ",
+        "CTA"
+      ],
+      "sections": [
+        {
+          "type": "FV",
+          "name": "医院名・FV（キャッチ）"
+        },
+        {
+          "type": "共感",
+          "name": "共感・ビジョン（なりたい理想）"
+        },
+        {
+          "type": "ベネフィット",
+          "name": "魅力01（成長：サポート体制）"
+        },
+        {
+          "type": "ベネフィット",
+          "name": "奨学金制度のご案内"
+        },
+        {
+          "type": "特徴",
+          "name": "福利厚生ギャラリー（旅行・ユニフォーム）"
+        },
+        {
+          "type": "ベネフィット",
+          "name": "魅力02（家庭・趣味：社会保険・働き方）"
+        },
+        {
+          "type": "特徴",
+          "name": "魅力03（品質：設備・医療）"
+        },
+        {
+          "type": "会社情報",
+          "name": "院長あいさつ（経歴・資格）"
+        },
+        {
+          "type": "実績",
+          "name": "先輩の声①（磯和）"
+        },
+        {
+          "type": "実績",
+          "name": "先輩の声②（上村）"
+        },
+        {
+          "type": "流れ",
+          "name": "歯科衛生士の1日（スケジュール）"
+        },
+        {
+          "type": "CTA",
+          "name": "医院見学の案内（INTERNSHIPS）"
+        },
+        {
+          "type": "CTA",
+          "name": "ENTRY（応募ボタン）"
+        },
+        {
+          "type": "会社情報",
+          "name": "医院情報・フッター"
+        }
+      ],
+      "reusablePrinciples": [
+        "丸く切り抜いた写真＋手描きの吹き出し＋縞模様の色箱の3列カード（章ごとに色を変える）",
+        "番号つきの大見出し（英字の小さなラベル＋大きな数字）＋左テキスト・右写真",
+        "質問形式のインタビュー（INTERVIEW 01〜04）＋チェック付きの小見出し",
+        "時刻つきカードを矢印でつなぐタイムライン（吹き出しで補足）",
+        "不安を吹き出しで言葉にしてから提案する、見学の案内",
+        "職種別の2ボタンのENTRY",
+        "診療時間表つきの医院情報"
+      ],
+      "rightsExcluded": [
+        "ロゴ",
+        "人物",
+        "写真",
+        "コピー",
+        "価格",
+        "実績値"
+      ],
+      "cbsSyncStatus": "draft_from_dis"
     },
     {
       "id": "LP-0248",

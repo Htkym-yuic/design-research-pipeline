@@ -1,12 +1,91 @@
 {
-  "generatedAt": "2026-11-10T13:54:01.236Z",
+  "generatedAt": "2026-11-10T21:56:31.152Z",
   "note": "Sectionの種類ごとに、各ナレッジの該当Section（名前・再利用できる構造・差し替え必須の要素）を集めた索引。controlled=true は、DISの種類の一覧（FV・悩み提起など）にある種類。",
   "types": [
     {
       "type": "商品紹介",
       "controlled": true,
-      "count": 22,
+      "count": 27,
       "examples": [
+        {
+          "id": "LP-0245",
+          "title": "オランジーナのLPデザイン",
+          "sectionId": "C01",
+          "sectionName": "PRODUCT（ブランド紹介・メイン写真）",
+          "reusableStructure": [
+            "左テキスト＋右写真の2カラム。写真の背後に、ずらした色面を1枚敷いて奥行きを出す"
+          ],
+          "replaceRequired": [
+            "商品写真",
+            "ブランドの由来の文章",
+            "ロゴ・商品名"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0245.json"
+        },
+        {
+          "id": "LP-0245",
+          "title": "オランジーナのLPデザイン",
+          "sectionId": "C02",
+          "sectionName": "商品ラインアップ（3種）",
+          "reusableStructure": [
+            "等間隔の3カラムに、商品画像＋名前＋色面のラベルを並べる構成"
+          ],
+          "replaceRequired": [
+            "商品画像",
+            "商品名",
+            "ラベルの文言"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0245.json"
+        },
+        {
+          "id": "LP-0245",
+          "title": "オランジーナのLPデザイン",
+          "sectionId": "C03",
+          "sectionName": "ORANGINA（主力商品の詳細とサイズ展開）",
+          "reusableStructure": [
+            "大きな主役画像＋右にサイズ別の商品を並べる比較ライン。色面を敷いて主役を浮かせる"
+          ],
+          "replaceRequired": [
+            "商品画像",
+            "商品名・容量の表記",
+            "説明文"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0245.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C06",
+          "sectionName": "出展ジャンル（6分類）",
+          "reusableStructure": [
+            "3列×2行の写真カード。上辺だけ角を丸めた写真＋色ラインの区切り＋分類名＋箇条書き、の型"
+          ],
+          "replaceRequired": [
+            "写真（ストック写真と思われるもの）",
+            "分類名・箇条書き"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C14",
+          "sectionName": "専門展の詳細（9カード＋スタートアップゲート）",
+          "reusableStructure": [
+            "2列の同型カード。アイコン→写真→ピンクの一言→区切り線→箇条書き、の型"
+          ],
+          "replaceRequired": [
+            "写真",
+            "アイコン",
+            "専門展の名称・箇条書き"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
         {
           "id": "LP-0248",
           "title": "TOKYO周穫祭2026【東京国際フォーラム】",
@@ -355,6 +434,221 @@
       ]
     },
     {
+      "type": "CTA",
+      "controlled": true,
+      "count": 14,
+      "examples": [
+        {
+          "id": "BN-0049",
+          "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
+          "sectionId": "C05",
+          "sectionName": "CTAバッジ「体験版配信中」",
+          "reusableStructure": [
+            "縁取りつきのバッジ型CTA"
+          ],
+          "replaceRequired": [
+            "文言",
+            "色"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/banner/BN-0049.json"
+        },
+        {
+          "id": "BN-0050",
+          "title": "Adobe Acrobat（AIアシスタント）",
+          "sectionId": "C03",
+          "sectionName": "CTAボタン",
+          "reusableStructure": [
+            "補色に近い青のピル形ボタン"
+          ],
+          "replaceRequired": [
+            "文言",
+            "色"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/banner/BN-0050.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C02",
+          "sectionName": "申込CTA①（無料申込の期限）",
+          "reusableStructure": [
+            "全幅の濃色帯＋対比色（赤）のピル型ボタン＋期限の見出し＋小さな注記、の型。ページ内で同じ型を繰り返す"
+          ],
+          "replaceRequired": [
+            "日付・金額",
+            "ボタン文言"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C08",
+          "sectionName": "申込CTA②",
+          "reusableStructure": [
+            "CTA①と同じ型の繰り返し（出展内容を見せた後の再提示）"
+          ],
+          "replaceRequired": [
+            "日付・金額"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C11",
+          "sectionName": "申込CTA③（セミナー向け）",
+          "reusableStructure": [
+            "CTA帯の型に、直前の内容に合わせた補足文を1行追加したもの"
+          ],
+          "replaceRequired": [
+            "日付・金額",
+            "補足文"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C15",
+          "sectionName": "申込CTA④",
+          "reusableStructure": [
+            "CTA帯の型"
+          ],
+          "replaceRequired": [
+            "日付・金額"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C18",
+          "sectionName": "申込CTA⑤",
+          "reusableStructure": [
+            "CTA帯の型"
+          ],
+          "replaceRequired": [
+            "日付・金額"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C21",
+          "sectionName": "申込CTA⑥（最終）",
+          "reusableStructure": [
+            "CTA帯の型"
+          ],
+          "replaceRequired": [
+            "日付・金額"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
+        {
+          "id": "LP-0247",
+          "title": "宇治山田歯科医院のLPデザイン",
+          "sectionId": "C12",
+          "sectionName": "医院見学の案内（INTERNSHIPS）",
+          "reusableStructure": [
+            "求職者の不安を吹き出しで示す→提案の見出し→電話番号つきの申込み枠、の型"
+          ],
+          "replaceRequired": [
+            "電話番号・受付時間",
+            "見出し・説明文"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0247.json"
+        },
+        {
+          "id": "LP-0247",
+          "title": "宇治山田歯科医院のLPデザイン",
+          "sectionId": "C13",
+          "sectionName": "ENTRY（応募ボタン）",
+          "reusableStructure": [
+            "ピンクの背景＋見出し＋職種別の2ボタン＋集合写真、の型"
+          ],
+          "replaceRequired": [
+            "集合写真",
+            "職種名",
+            "見出しのコピー"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0247.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C03",
+          "sectionName": "SNS誘導バンド",
+          "reusableStructure": [
+            "背景色の帯＋2つの並列ボタン"
+          ],
+          "replaceRequired": [
+            "ロゴ",
+            "アイコン",
+            "飾り"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C24",
+          "sectionName": "公式SNS",
+          "reusableStructure": [
+            "2枚の投稿サムネイルカード＋MORE"
+          ],
+          "replaceRequired": [
+            "画像",
+            "ロゴ"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0249",
+          "title": "カルビー（miino・クリスプ「39キャンペーン」）",
+          "sectionId": "C08",
+          "sectionName": "ブランドサイトへの導線",
+          "reusableStructure": [
+            "ブランドカラーの2つの大きなボタン"
+          ],
+          "replaceRequired": [
+            "ロゴ",
+            "リンク"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0249.json"
+        },
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C13",
+          "sectionName": "問い合わせ（Let’s work together）",
+          "reusableStructure": [
+            "左に説明、右にフォーム＋黒い送信ボタン"
+          ],
+          "replaceRequired": [
+            "文面",
+            "連絡先"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        }
+      ]
+    },
+    {
       "type": "その他",
       "controlled": true,
       "count": 9,
@@ -494,97 +788,131 @@
       ]
     },
     {
-      "type": "CTA",
+      "type": "会社情報",
       "controlled": true,
-      "count": 6,
+      "count": 8,
       "examples": [
         {
-          "id": "BN-0049",
-          "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
+          "id": "LP-0245",
+          "title": "オランジーナのLPデザイン",
           "sectionId": "C05",
-          "sectionName": "CTAバッジ「体験版配信中」",
+          "sectionName": "HISTORY（歴史の年表）",
           "reusableStructure": [
-            "縁取りつきのバッジ型CTA"
+            "縦線＋ノード＋年号＋短文の年表を左に置き、右に見出しと本文の対構成"
           ],
           "replaceRequired": [
-            "文言",
-            "色"
+            "年号・出来事の文言",
+            "見出しと説明文",
+            "数字（販売国数など）"
           ],
           "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/banner/BN-0049.json"
+          "knowledgePath": "knowledge/lp/LP-0245.json"
         },
         {
-          "id": "BN-0050",
-          "title": "Adobe Acrobat（AIアシスタント）",
-          "sectionId": "C03",
-          "sectionName": "CTAボタン",
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C19",
+          "sectionName": "アクセスと同時開催展",
           "reusableStructure": [
-            "補色に近い青のピル形ボタン"
+            "水色カードによる情報の整理、バナーの横並びによる関連展示会の紹介"
           ],
           "replaceRequired": [
-            "文言",
-            "色"
+            "住所・駅名",
+            "展示会バナー"
           ],
           "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/banner/BN-0050.json"
+          "knowledgePath": "knowledge/lp/LP-0246.json"
         },
         {
-          "id": "LP-0248",
-          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
-          "sectionId": "C03",
-          "sectionName": "SNS誘導バンド",
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C22",
+          "sectionName": "主催者情報",
           "reusableStructure": [
-            "背景色の帯＋2つの並列ボタン"
+            "左写真＋右ロゴ・紹介文の2カラム"
           ],
           "replaceRequired": [
+            "写真",
             "ロゴ",
-            "アイコン",
-            "飾り"
+            "会社紹介の文言"
           ],
           "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0248.json"
+          "knowledgePath": "knowledge/lp/LP-0246.json"
         },
         {
-          "id": "LP-0248",
-          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
-          "sectionId": "C24",
-          "sectionName": "公式SNS",
-          "reusableStructure": [
-            "2枚の投稿サムネイルカード＋MORE"
-          ],
-          "replaceRequired": [
-            "画像",
-            "ロゴ"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0248.json"
-        },
-        {
-          "id": "LP-0249",
-          "title": "カルビー（miino・クリスプ「39キャンペーン」）",
+          "id": "LP-0247",
+          "title": "宇治山田歯科医院のLPデザイン",
           "sectionId": "C08",
-          "sectionName": "ブランドサイトへの導線",
+          "sectionName": "院長あいさつ（経歴・資格）",
           "reusableStructure": [
-            "ブランドカラーの2つの大きなボタン"
+            "全幅の写真＋色面に重ねる見出し・本文、人物写真を右下に重ねる、年表とリスト"
           ],
           "replaceRequired": [
-            "ロゴ",
-            "リンク"
+            "院長の写真・氏名",
+            "経歴・資格",
+            "認定の写真・ロゴ",
+            "本文のコピー"
           ],
           "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0249.json"
+          "knowledgePath": "knowledge/lp/LP-0247.json"
+        },
+        {
+          "id": "LP-0247",
+          "title": "宇治山田歯科医院のLPデザイン",
+          "sectionId": "C14",
+          "sectionName": "医院情報・フッター",
+          "reusableStructure": [
+            "ロゴ・住所・診療時間表・SNSリンクの標準的なフッター＋写真の帯"
+          ],
+          "replaceRequired": [
+            "ロゴ・住所・電話番号",
+            "写真"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0247.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C25",
+          "sectionName": "ACCESS",
+          "reusableStructure": [
+            "周辺地図＋フロアマップ＋交通手段別カード"
+          ],
+          "replaceRequired": [
+            "地図",
+            "住所",
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
         },
         {
           "id": "WB-0069",
           "title": "Baseline Design",
-          "sectionId": "C13",
-          "sectionName": "問い合わせ（Let’s work together）",
+          "sectionId": "C09",
+          "sectionName": "チーム紹介の導入",
           "reusableStructure": [
-            "左に説明、右にフォーム＋黒い送信ボタン"
+            "大見出し＋短い本文"
           ],
           "replaceRequired": [
-            "文面",
-            "連絡先"
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        },
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C10",
+          "sectionName": "Our team",
+          "reusableStructure": [
+            "左に見出し、右に写真つきの縦リスト"
+          ],
+          "replaceRequired": [
+            "人物写真",
+            "氏名",
+            "肩書"
           ],
           "rightsStatus": "reference_only",
           "knowledgePath": "knowledge/web/WB-0069.json"
@@ -592,10 +920,485 @@
       ]
     },
     {
+      "type": "特徴",
+      "controlled": true,
+      "count": 8,
+      "examples": [
+        {
+          "id": "LP-0245",
+          "title": "オランジーナのLPデザイン",
+          "sectionId": "C04",
+          "sectionName": "FEATURE（おいしさの特徴）",
+          "reusableStructure": [
+            "写真に、色面のキーワード帯を重ねる。本文側は、ラベル見出し＋短文を縦に並べる"
+          ],
+          "replaceRequired": [
+            "写真",
+            "特徴の文言",
+            "キーワードの文言"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0245.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C07",
+          "sectionName": "特設ゾーン（推し活／インバウンド）",
+          "reusableStructure": [
+            "水色の背景枠＋見出し帯＋写真＋箇条書きの2カラム。帯の色を変えて別枠だとわかる"
+          ],
+          "replaceRequired": [
+            "写真",
+            "ゾーン名・箇条書き"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C09",
+          "sectionName": "セミナー概要",
+          "reusableStructure": [
+            "左テキスト＋右写真の2カラム、その下に横長バナーを並べる構成"
+          ],
+          "replaceRequired": [
+            "会場写真",
+            "セミナー概要の文言",
+            "各バナー画像"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C10",
+          "sectionName": "登壇者一覧（セッション18件前後）",
+          "reusableStructure": [
+            "灰色カードに、見出し→副題→顔写真＋所属・氏名、を並べる型。複数登壇のカードは幅を広げる"
+          ],
+          "replaceRequired": [
+            "人物写真",
+            "氏名・所属",
+            "セッション名"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C12",
+          "sectionName": "マーケティングWeekとは（併催の全体像）",
+          "reusableStructure": [
+            "中心の図＋周囲のラベルを線でつなぐ、全体像の図解の型"
+          ],
+          "replaceRequired": [
+            "八角形の図の文言",
+            "専門展の名称"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
+        {
+          "id": "LP-0247",
+          "title": "宇治山田歯科医院のLPデザイン",
+          "sectionId": "C05",
+          "sectionName": "福利厚生ギャラリー（旅行・ユニフォーム）",
+          "reusableStructure": [
+            "スライダー（中央のスライドを大きく、左右を一部見せる）＋丸い吹き出しのキャプション"
+          ],
+          "replaceRequired": [
+            "写真（集合写真）",
+            "キャプション"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0247.json"
+        },
+        {
+          "id": "LP-0247",
+          "title": "宇治山田歯科医院のLPデザイン",
+          "sectionId": "C07",
+          "sectionName": "魅力03（品質：設備・医療）",
+          "reusableStructure": [
+            "魅力01と同じ左テキスト＋右写真の型。ボタンで詳細ページへ"
+          ],
+          "replaceRequired": [
+            "写真",
+            "本文のコピー",
+            "設備の名称"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0247.json"
+        },
+        {
+          "id": "LP-0249",
+          "title": "カルビー（miino・クリスプ「39キャンペーン」）",
+          "sectionId": "C03",
+          "sectionName": "キャンペーン概要",
+          "reusableStructure": [
+            "ロックアップの再掲＋期間見出し＋説明"
+          ],
+          "replaceRequired": [
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0249.json"
+        }
+      ]
+    },
+    {
+      "type": "ベネフィット",
+      "controlled": true,
+      "count": 7,
+      "examples": [
+        {
+          "id": "BN-0050",
+          "title": "Adobe Acrobat（AIアシスタント）",
+          "sectionId": "C02",
+          "sectionName": "便益コピー",
+          "reusableStructure": [
+            "白い太字2行のコピー"
+          ],
+          "replaceRequired": [
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/banner/BN-0050.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C05",
+          "sectionName": "販促EXPOでできること（3つの価値）",
+          "reusableStructure": [
+            "見出し帯＋3列カード（イラスト・番号・小見出し・短文）の型。番号を角に置いて順序感を出す"
+          ],
+          "replaceRequired": [
+            "イラスト",
+            "3つの価値の文言"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
+        {
+          "id": "LP-0247",
+          "title": "宇治山田歯科医院のLPデザイン",
+          "sectionId": "C03",
+          "sectionName": "魅力01（成長：サポート体制）",
+          "reusableStructure": [
+            "番号つき見出し＋大きな写真＋丸い写真・手描きの吹き出し・色の箱の3列カード、の型"
+          ],
+          "replaceRequired": [
+            "写真",
+            "見出し・本文のコピー",
+            "手描きのイラスト（吹き出し・文具）"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0247.json"
+        },
+        {
+          "id": "LP-0247",
+          "title": "宇治山田歯科医院のLPデザイン",
+          "sectionId": "C04",
+          "sectionName": "奨学金制度のご案内",
+          "reusableStructure": [
+            "色つき見出し帯＋説明文＋2分割のボタン、のお知らせブロック"
+          ],
+          "replaceRequired": [
+            "制度の名称・説明文",
+            "イラスト"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0247.json"
+        },
+        {
+          "id": "LP-0247",
+          "title": "宇治山田歯科医院のLPデザイン",
+          "sectionId": "C06",
+          "sectionName": "魅力02（家庭・趣味：社会保険・働き方）",
+          "reusableStructure": [
+            "番号つき見出し＋丸いスタンプの並び＋3列の写真カード、の型（魅力01と同じ型で、色だけ変える）"
+          ],
+          "replaceRequired": [
+            "写真",
+            "制度の名称・文言",
+            "スタンプの文言"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0247.json"
+        },
+        {
+          "id": "LP-0249",
+          "title": "カルビー（miino・クリスプ「39キャンペーン」）",
+          "sectionId": "C04",
+          "sectionName": "賞品",
+          "reusableStructure": [
+            "リボン見出し＋カード＋注記"
+          ],
+          "replaceRequired": [
+            "賞品画像",
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0249.json"
+        },
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C03",
+          "sectionName": "価値提案＋説明",
+          "reusableStructure": [
+            "左に要点見出し、右に補足の2カラム＋下線リンク"
+          ],
+          "replaceRequired": [
+            "コピー"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        }
+      ]
+    },
+    {
+      "type": "実績",
+      "controlled": true,
+      "count": 7,
+      "examples": [
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C16",
+          "sectionName": "過去来場者の声",
+          "reusableStructure": [
+            "水色のカードに、紺の見出し（属性）＋短い感想文、を2列で並べる型"
+          ],
+          "replaceRequired": [
+            "感想の文言",
+            "属性の表記"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
+        {
+          "id": "LP-0247",
+          "title": "宇治山田歯科医院のLPデザイン",
+          "sectionId": "C09",
+          "sectionName": "先輩の声①（磯和）",
+          "reusableStructure": [
+            "縞模様の背景＋人物写真＋見出し付きの回答、番号つきの質問（INTERVIEW）、2列のチェック付き小見出し"
+          ],
+          "replaceRequired": [
+            "人物写真・氏名",
+            "回答の文章"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0247.json"
+        },
+        {
+          "id": "LP-0247",
+          "title": "宇治山田歯科医院のLPデザイン",
+          "sectionId": "C10",
+          "sectionName": "先輩の声②（上村）",
+          "reusableStructure": [
+            "先輩の声①と同じ型を、人を変えて繰り返す"
+          ],
+          "replaceRequired": [
+            "人物写真・氏名",
+            "回答の文章"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0247.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C23",
+          "sectionName": "昨年の様子（2025）",
+          "reusableStructure": [
+            "傾いた写真カード＋トピック名＋実績の数字＋「もっと見る」ボタン"
+          ],
+          "replaceRequired": [
+            "写真",
+            "数字",
+            "見出し"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C04",
+          "sectionName": "取引先ロゴ帯",
+          "reusableStructure": [
+            "グレー単色のロゴ帯（端はフェード）"
+          ],
+          "replaceRequired": [
+            "取引先ロゴ"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        },
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C08",
+          "sectionName": "顧客の声",
+          "reusableStructure": [
+            "黒い面＋ロゴ＋引用＋一文のハイライト＋顔写真・肩書"
+          ],
+          "replaceRequired": [
+            "引用文",
+            "ロゴ",
+            "人物"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        },
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C11",
+          "sectionName": "実績数値",
+          "reusableStructure": [
+            "4つのカード（大きな数字＋1行の説明）"
+          ],
+          "replaceRequired": [
+            "数値",
+            "説明"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        }
+      ]
+    },
+    {
+      "type": "FV",
+      "controlled": true,
+      "count": 6,
+      "examples": [
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C01",
+          "sectionName": "ファーストビュー（開催告知・日時会場）",
+          "reusableStructure": [
+            "背景写真を薄く敷いた上に、キャッチ→名称→日時会場の順で縦に並べる構成。赤い丸バッジで規模感を添える"
+          ],
+          "replaceRequired": [
+            "背景の会場写真",
+            "展示会名・回数",
+            "日付・会場・規模の数値",
+            "キャッチコピー"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
+        {
+          "id": "LP-0247",
+          "title": "宇治山田歯科医院のLPデザイン",
+          "sectionId": "C01",
+          "sectionName": "医院名・FV（キャッチ）",
+          "reusableStructure": [
+            "大きな図形＋角丸に切り抜いた写真＋白抜きの手書き風キャッチ、の重ね。下端に白い帯のアンカーナビを置く"
+          ],
+          "replaceRequired": [
+            "医院ロゴ・電話番号",
+            "写真（施術中・笑顔の写真）",
+            "キャッチコピー",
+            "図形の配色（ブランド色）"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0247.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C01",
+          "sectionName": "ファーストビュー（ヒーロー）",
+          "reusableStructure": [
+            "巨大なロゴ＋日付・時間・会場のブロック＋バッジ2種"
+          ],
+          "replaceRequired": [
+            "イラスト",
+            "写真",
+            "ロゴ",
+            "コピー"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0248.json"
+        },
+        {
+          "id": "LP-0249",
+          "title": "カルビー（miino・クリスプ「39キャンペーン」）",
+          "sectionId": "C02",
+          "sectionName": "ファーストビュー（キービジュアル＋要約）",
+          "reusableStructure": [
+            "写真2枚で挟んだタイトルのロックアップ＋要約チップ2つ"
+          ],
+          "replaceRequired": [
+            "人物写真",
+            "ロゴ",
+            "商品画像"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0249.json"
+        },
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C02",
+          "sectionName": "ファーストビュー（ワードマーク）",
+          "reusableStructure": [
+            "画面幅いっぱいのワードマーク"
+          ],
+          "replaceRequired": [
+            "ワードマークの書体",
+            "名称"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        },
+        {
+          "id": "WB-0070",
+          "title": "FREDRIK（by FREDRIK PACKERS）",
+          "sectionId": "C02",
+          "sectionName": "ヒーロー",
+          "reusableStructure": [
+            "巨大な繰り返しのワードマーク＋商品＋小さな最新情報の枠"
+          ],
+          "replaceRequired": [
+            "ワードマーク",
+            "商品画像"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0070.json"
+        }
+      ]
+    },
+    {
       "type": "ナビ",
       "controlled": true,
-      "count": 5,
+      "count": 6,
       "examples": [
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C13",
+          "sectionName": "9つの専門展ナビ（ボタン）",
+          "reusableStructure": [
+            "『〜したい方へ』の悩みの言葉＋アイコン付きピル型ボタンの3×3のナビ。下向きの矢印で、下に詳細があることを示す"
+          ],
+          "replaceRequired": [
+            "アイコン",
+            "専門展の名称",
+            "悩みの文言"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
         {
           "id": "LP-0249",
           "title": "カルビー（miino・クリスプ「39キャンペーン」）",
@@ -673,80 +1476,39 @@
       ]
     },
     {
-      "type": "FV",
-      "controlled": true,
-      "count": 4,
-      "examples": [
-        {
-          "id": "LP-0248",
-          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
-          "sectionId": "C01",
-          "sectionName": "ファーストビュー（ヒーロー）",
-          "reusableStructure": [
-            "巨大なロゴ＋日付・時間・会場のブロック＋バッジ2種"
-          ],
-          "replaceRequired": [
-            "イラスト",
-            "写真",
-            "ロゴ",
-            "コピー"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0248.json"
-        },
-        {
-          "id": "LP-0249",
-          "title": "カルビー（miino・クリスプ「39キャンペーン」）",
-          "sectionId": "C02",
-          "sectionName": "ファーストビュー（キービジュアル＋要約）",
-          "reusableStructure": [
-            "写真2枚で挟んだタイトルのロックアップ＋要約チップ2つ"
-          ],
-          "replaceRequired": [
-            "人物写真",
-            "ロゴ",
-            "商品画像"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0249.json"
-        },
-        {
-          "id": "WB-0069",
-          "title": "Baseline Design",
-          "sectionId": "C02",
-          "sectionName": "ファーストビュー（ワードマーク）",
-          "reusableStructure": [
-            "画面幅いっぱいのワードマーク"
-          ],
-          "replaceRequired": [
-            "ワードマークの書体",
-            "名称"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/web/WB-0069.json"
-        },
-        {
-          "id": "WB-0070",
-          "title": "FREDRIK（by FREDRIK PACKERS）",
-          "sectionId": "C02",
-          "sectionName": "ヒーロー",
-          "reusableStructure": [
-            "巨大な繰り返しのワードマーク＋商品＋小さな最新情報の枠"
-          ],
-          "replaceRequired": [
-            "ワードマーク",
-            "商品画像"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/web/WB-0070.json"
-        }
-      ]
-    },
-    {
       "type": "フッター",
       "controlled": true,
-      "count": 4,
+      "count": 6,
       "examples": [
+        {
+          "id": "LP-0245",
+          "title": "オランジーナのLPデザイン",
+          "sectionId": "C06",
+          "sectionName": "SHARE・外部リンク（フッター）",
+          "reusableStructure": [
+            "中央にSNS共有ボタン、右下に外部リンクを置く、最小限のフッター"
+          ],
+          "replaceRequired": [
+            "ロゴ・リンク先の名称",
+            "SNSの設定"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0245.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C23",
+          "sectionName": "注記・フッター",
+          "reusableStructure": [
+            "注記→リンク列→ロゴ、の標準的なフッター"
+          ],
+          "replaceRequired": [
+            "ロゴ・著作権表記"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
         {
           "id": "LP-0248",
           "title": "TOKYO周穫祭2026【東京国際フォーラム】",
@@ -810,120 +1572,71 @@
       ]
     },
     {
-      "type": "実績",
+      "type": "流れ",
       "controlled": true,
       "count": 4,
       "examples": [
         {
-          "id": "LP-0248",
-          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
-          "sectionId": "C23",
-          "sectionName": "昨年の様子（2025）",
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C17",
+          "sectionName": "来場登録の3ステップ",
           "reusableStructure": [
-            "傾いた写真カード＋トピック名＋実績の数字＋「もっと見る」ボタン"
+            "見出し帯＋3列のステップ（大きな番号・線画・短い説明・注記）の型"
           ],
           "replaceRequired": [
-            "写真",
-            "数字",
-            "見出し"
+            "線画のイラスト",
+            "手順の文言"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
+        {
+          "id": "LP-0247",
+          "title": "宇治山田歯科医院のLPデザイン",
+          "sectionId": "C11",
+          "sectionName": "歯科衛生士の1日（スケジュール）",
+          "reusableStructure": [
+            "時刻つきカードを矢印でつなぐタイムライン（3列×2行）＋吹き出しで補足、の型"
+          ],
+          "replaceRequired": [
+            "時刻・業務内容",
+            "吹き出しの文言",
+            "写真"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0247.json"
+        },
+        {
+          "id": "LP-0248",
+          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
+          "sectionId": "C18",
+          "sectionName": "参加方法フロー（ワークショップ）",
+          "reusableStructure": [
+            "番号付き4ステップのカード＋注意事項"
+          ],
+          "replaceRequired": [
+            "手順の文面",
+            "アイコン"
           ],
           "rightsStatus": "reference_only",
           "knowledgePath": "knowledge/lp/LP-0248.json"
         },
         {
-          "id": "WB-0069",
-          "title": "Baseline Design",
-          "sectionId": "C04",
-          "sectionName": "取引先ロゴ帯",
-          "reusableStructure": [
-            "グレー単色のロゴ帯（端はフェード）"
-          ],
-          "replaceRequired": [
-            "取引先ロゴ"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/web/WB-0069.json"
-        },
-        {
-          "id": "WB-0069",
-          "title": "Baseline Design",
-          "sectionId": "C08",
-          "sectionName": "顧客の声",
-          "reusableStructure": [
-            "黒い面＋ロゴ＋引用＋一文のハイライト＋顔写真・肩書"
-          ],
-          "replaceRequired": [
-            "引用文",
-            "ロゴ",
-            "人物"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/web/WB-0069.json"
-        },
-        {
-          "id": "WB-0069",
-          "title": "Baseline Design",
-          "sectionId": "C11",
-          "sectionName": "実績数値",
-          "reusableStructure": [
-            "4つのカード（大きな数字＋1行の説明）"
-          ],
-          "replaceRequired": [
-            "数値",
-            "説明"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/web/WB-0069.json"
-        }
-      ]
-    },
-    {
-      "type": "ベネフィット",
-      "controlled": true,
-      "count": 3,
-      "examples": [
-        {
-          "id": "BN-0050",
-          "title": "Adobe Acrobat（AIアシスタント）",
-          "sectionId": "C02",
-          "sectionName": "便益コピー",
-          "reusableStructure": [
-            "白い太字2行のコピー"
-          ],
-          "replaceRequired": [
-            "文面"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/banner/BN-0050.json"
-        },
-        {
           "id": "LP-0249",
           "title": "カルビー（miino・クリスプ「39キャンペーン」）",
-          "sectionId": "C04",
-          "sectionName": "賞品",
+          "sectionId": "C05",
+          "sectionName": "応募方法",
           "reusableStructure": [
-            "リボン見出し＋カード＋注記"
+            "前提の吹き出し＋ピンクのCTA＋4ステップ＋注記"
           ],
           "replaceRequired": [
-            "賞品画像",
-            "文面"
+            "イラスト",
+            "文面",
+            "アプリ名"
           ],
           "rightsStatus": "reference_only",
           "knowledgePath": "knowledge/lp/LP-0249.json"
-        },
-        {
-          "id": "WB-0069",
-          "title": "Baseline Design",
-          "sectionId": "C03",
-          "sectionName": "価値提案＋説明",
-          "reusableStructure": [
-            "左に要点見出し、右に補足の2カラム＋下線リンク"
-          ],
-          "replaceRequired": [
-            "コピー"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/web/WB-0069.json"
         }
       ]
     },
@@ -977,59 +1690,6 @@
       ]
     },
     {
-      "type": "会社情報",
-      "controlled": true,
-      "count": 3,
-      "examples": [
-        {
-          "id": "LP-0248",
-          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
-          "sectionId": "C25",
-          "sectionName": "ACCESS",
-          "reusableStructure": [
-            "周辺地図＋フロアマップ＋交通手段別カード"
-          ],
-          "replaceRequired": [
-            "地図",
-            "住所",
-            "文面"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0248.json"
-        },
-        {
-          "id": "WB-0069",
-          "title": "Baseline Design",
-          "sectionId": "C09",
-          "sectionName": "チーム紹介の導入",
-          "reusableStructure": [
-            "大見出し＋短い本文"
-          ],
-          "replaceRequired": [
-            "文面"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/web/WB-0069.json"
-        },
-        {
-          "id": "WB-0069",
-          "title": "Baseline Design",
-          "sectionId": "C10",
-          "sectionName": "Our team",
-          "reusableStructure": [
-            "左に見出し、右に写真つきの縦リスト"
-          ],
-          "replaceRequired": [
-            "人物写真",
-            "氏名",
-            "肩書"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/web/WB-0069.json"
-        }
-      ]
-    },
-    {
       "type": "注釈・権利",
       "controlled": true,
       "count": 2,
@@ -1065,40 +1725,23 @@
       ]
     },
     {
-      "type": "流れ",
+      "type": "FAQ",
       "controlled": true,
-      "count": 2,
+      "count": 1,
       "examples": [
         {
-          "id": "LP-0248",
-          "title": "TOKYO周穫祭2026【東京国際フォーラム】",
-          "sectionId": "C18",
-          "sectionName": "参加方法フロー（ワークショップ）",
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C20",
+          "sectionName": "よくある質問（FAQ）",
           "reusableStructure": [
-            "番号付き4ステップのカード＋注意事項"
+            "質問を水色の帯、回答を白枠に分けた縦積みのFAQ。回答の先頭にAのマーク"
           ],
           "replaceRequired": [
-            "手順の文面",
-            "アイコン"
+            "質問と回答の文言"
           ],
           "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0248.json"
-        },
-        {
-          "id": "LP-0249",
-          "title": "カルビー（miino・クリスプ「39キャンペーン」）",
-          "sectionId": "C05",
-          "sectionName": "応募方法",
-          "reusableStructure": [
-            "前提の吹き出し＋ピンクのCTA＋4ステップ＋注記"
-          ],
-          "replaceRequired": [
-            "イラスト",
-            "文面",
-            "アプリ名"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0249.json"
+          "knowledgePath": "knowledge/lp/LP-0246.json"
         }
       ]
     },
@@ -1169,23 +1812,68 @@
       ]
     },
     {
-      "type": "特徴",
+      "type": "解決策",
       "controlled": true,
       "count": 1,
       "examples": [
         {
-          "id": "LP-0249",
-          "title": "カルビー（miino・クリスプ「39キャンペーン」）",
-          "sectionId": "C03",
-          "sectionName": "キャンペーン概要",
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C04",
+          "sectionName": "解決の提示（販促EXPOでは）",
           "reusableStructure": [
-            "ロックアップの再掲＋期間見出し＋説明"
+            "悩み→背景色を切り替えて→解決の宣言、の接続。ラベル＋見出し＋イラストの中央寄せ"
           ],
           "replaceRequired": [
-            "文面"
+            "見出しコピー",
+            "イラスト"
           ],
           "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0249.json"
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        }
+      ]
+    },
+    {
+      "type": "共感",
+      "controlled": true,
+      "count": 1,
+      "examples": [
+        {
+          "id": "LP-0247",
+          "title": "宇治山田歯科医院のLPデザイン",
+          "sectionId": "C02",
+          "sectionName": "共感・ビジョン（なりたい理想）",
+          "reusableStructure": [
+            "橙の帯＋写真を薄く敷く＋白抜きの見出し＋短文、の型"
+          ],
+          "replaceRequired": [
+            "背景写真",
+            "見出し・本文のコピー"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0247.json"
+        }
+      ]
+    },
+    {
+      "type": "悩み提起",
+      "controlled": true,
+      "count": 1,
+      "examples": [
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C03",
+          "sectionName": "課題提起（6つの悩みカード）",
+          "reusableStructure": [
+            "3列×2行のカード。上段に白いイラスト枠、下段に紺地の短い悩み文、の型"
+          ],
+          "replaceRequired": [
+            "イラスト",
+            "悩みの文言（6件）"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
         }
       ]
     },
