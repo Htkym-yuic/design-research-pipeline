@@ -1,6 +1,666 @@
 {
-  "generatedAt": "2026-10-11T09:32:07.989Z",
+  "generatedAt": "2026-11-10T13:47:39.414Z",
   "items": [
+    {
+      "id": "ILAC-0114",
+      "mediaType": "Asset",
+      "title": "ボランティア活動 ボランティア",
+      "tags": [
+        "介護",
+        "福祉",
+        "ボランティア"
+      ],
+      "summary": null,
+      "knowledgePath": "knowledge/asset/ILAC-0114.json",
+      "disId": null,
+      "disIds": [],
+      "disEvaluation": null,
+      "sectionTypes": [],
+      "sections": [],
+      "reusablePrinciples": [],
+      "rightsExcluded": [
+        "素材本体（画像ファイル）の保存・再配布。利用時はイラストACのライセンス条件に従うこと。"
+      ],
+      "cbsSyncStatus": "not_yet_synced"
+    },
+    {
+      "id": "ILAC-0115",
+      "mediaType": "Asset",
+      "title": "手03",
+      "tags": [
+        "介護",
+        "医療",
+        "家族・親子"
+      ],
+      "summary": null,
+      "knowledgePath": "knowledge/asset/ILAC-0115.json",
+      "disId": null,
+      "disIds": [],
+      "disEvaluation": null,
+      "sectionTypes": [],
+      "sections": [],
+      "reusablePrinciples": [],
+      "rightsExcluded": [
+        "素材本体（画像ファイル）の保存・再配布。利用時はイラストACのライセンス条件に従うこと。"
+      ],
+      "cbsSyncStatus": "not_yet_synced"
+    },
+    {
+      "id": "ILAC-0116",
+      "mediaType": "Asset",
+      "title": "ハートを持つ女性 ハート",
+      "tags": [
+        "恋愛",
+        "ギフト",
+        "汎用"
+      ],
+      "summary": null,
+      "knowledgePath": "knowledge/asset/ILAC-0116.json",
+      "disId": null,
+      "disIds": [],
+      "disEvaluation": null,
+      "sectionTypes": [],
+      "sections": [],
+      "reusablePrinciples": [],
+      "rightsExcluded": [
+        "素材本体（画像ファイル）の保存・再配布。利用時はイラストACのライセンス条件に従うこと。"
+      ],
+      "cbsSyncStatus": "not_yet_synced"
+    },
+    {
+      "id": "ILAC-0117",
+      "mediaType": "Asset",
+      "title": "介護ロボット ai",
+      "tags": [
+        "介護",
+        "介護テック",
+        "AI・ロボット"
+      ],
+      "summary": null,
+      "knowledgePath": "knowledge/asset/ILAC-0117.json",
+      "disId": null,
+      "disIds": [],
+      "disEvaluation": null,
+      "sectionTypes": [],
+      "sections": [],
+      "reusablePrinciples": [],
+      "rightsExcluded": [
+        "素材本体（画像ファイル）の保存・再配布。利用時はイラストACのライセンス条件に従うこと。"
+      ],
+      "cbsSyncStatus": "not_yet_synced"
+    },
+    {
+      "id": "ILAC-0118",
+      "mediaType": "Asset",
+      "title": "ボランティア ボランティア",
+      "tags": [
+        "介護",
+        "福祉",
+        "ボランティア"
+      ],
+      "summary": null,
+      "knowledgePath": "knowledge/asset/ILAC-0118.json",
+      "disId": null,
+      "disIds": [],
+      "disEvaluation": null,
+      "sectionTypes": [],
+      "sections": [],
+      "reusablePrinciples": [],
+      "rightsExcluded": [
+        "素材本体（画像ファイル）の保存・再配布。利用時はイラストACのライセンス条件に従うこと。"
+      ],
+      "cbsSyncStatus": "not_yet_synced"
+    },
+    {
+      "id": "ILAC-0119",
+      "mediaType": "Asset",
+      "title": "介護するロボット ai",
+      "tags": [
+        "介護",
+        "介護テック",
+        "AI・ロボット"
+      ],
+      "summary": null,
+      "knowledgePath": "knowledge/asset/ILAC-0119.json",
+      "disId": null,
+      "disIds": [],
+      "disEvaluation": null,
+      "sectionTypes": [],
+      "sections": [],
+      "reusablePrinciples": [],
+      "rightsExcluded": [
+        "素材本体（画像ファイル）の保存・再配布。利用時はイラストACのライセンス条件に従うこと。"
+      ],
+      "cbsSyncStatus": "not_yet_synced"
+    },
+    {
+      "id": "ILAC-0120",
+      "mediaType": "Asset",
+      "title": "少し先の未来たち ai",
+      "tags": [
+        "テクノロジー",
+        "リモート・デジタル",
+        "汎用"
+      ],
+      "summary": null,
+      "knowledgePath": "knowledge/asset/ILAC-0120.json",
+      "disId": null,
+      "disIds": [],
+      "disEvaluation": null,
+      "sectionTypes": [],
+      "sections": [],
+      "reusablePrinciples": [],
+      "rightsExcluded": [
+        "素材本体（画像ファイル）の保存・再配布。利用時はイラストACのライセンス条件に従うこと。"
+      ],
+      "cbsSyncStatus": "not_yet_synced"
+    },
+    {
+      "id": "ILAC-0121",
+      "mediaType": "Asset",
+      "title": "健康体操をする高齢者と介護スタッフ 健康体操",
+      "tags": [
+        "介護",
+        "健康・レクリエーション"
+      ],
+      "summary": null,
+      "knowledgePath": "knowledge/asset/ILAC-0121.json",
+      "disId": null,
+      "disIds": [],
+      "disEvaluation": null,
+      "sectionTypes": [],
+      "sections": [],
+      "reusablePrinciples": [],
+      "rightsExcluded": [
+        "素材本体（画像ファイル）の保存・再配布。利用時はイラストACのライセンス条件に従うこと。"
+      ],
+      "cbsSyncStatus": "not_yet_synced"
+    },
+    {
+      "id": "ILAC-0122",
+      "mediaType": "Asset",
+      "title": "おばあさん おばあさん",
+      "tags": [
+        "介護",
+        "高齢者ポートレート"
+      ],
+      "summary": null,
+      "knowledgePath": "knowledge/asset/ILAC-0122.json",
+      "disId": null,
+      "disIds": [],
+      "disEvaluation": null,
+      "sectionTypes": [],
+      "sections": [],
+      "reusablePrinciples": [],
+      "rightsExcluded": [
+        "素材本体（画像ファイル）の保存・再配布。利用時はイラストACのライセンス条件に従うこと。"
+      ],
+      "cbsSyncStatus": "not_yet_synced"
+    },
+    {
+      "id": "ILAC-0123",
+      "mediaType": "Asset",
+      "title": "ボランティア活動 ボランティア",
+      "tags": [
+        "福祉",
+        "ボランティア",
+        "地域活動"
+      ],
+      "summary": null,
+      "knowledgePath": "knowledge/asset/ILAC-0123.json",
+      "disId": null,
+      "disIds": [],
+      "disEvaluation": null,
+      "sectionTypes": [],
+      "sections": [],
+      "reusablePrinciples": [],
+      "rightsExcluded": [
+        "素材本体（画像ファイル）の保存・再配布。利用時はイラストACのライセンス条件に従うこと。"
+      ],
+      "cbsSyncStatus": "not_yet_synced"
+    },
+    {
+      "id": "PHAC-0114",
+      "mediaType": "Asset",
+      "title": "シニア男性にカウンセリングする理学療法士 リハビリ施設",
+      "tags": [
+        "介護",
+        "リハビリ",
+        "医療"
+      ],
+      "summary": null,
+      "knowledgePath": "knowledge/asset/PHAC-0114.json",
+      "disId": null,
+      "disIds": [],
+      "disEvaluation": null,
+      "sectionTypes": [],
+      "sections": [],
+      "reusablePrinciples": [],
+      "rightsExcluded": [
+        "素材本体（画像ファイル）の保存・再配布。利用時は写真ACのライセンス条件（プラン確認含む）に従うこと。"
+      ],
+      "cbsSyncStatus": "not_yet_synced"
+    },
+    {
+      "id": "PHAC-0115",
+      "mediaType": "Asset",
+      "title": "施設・デイサービスで働くケアマネージャー ケアマネージャー",
+      "tags": [
+        "介護",
+        "デイサービス",
+        "ケアマネジメント"
+      ],
+      "summary": null,
+      "knowledgePath": "knowledge/asset/PHAC-0115.json",
+      "disId": null,
+      "disIds": [],
+      "disEvaluation": null,
+      "sectionTypes": [],
+      "sections": [],
+      "reusablePrinciples": [],
+      "rightsExcluded": [
+        "素材本体（画像ファイル）の保存・再配布。利用時は写真ACのライセンス条件（プラン確認含む）に従うこと。"
+      ],
+      "cbsSyncStatus": "not_yet_synced"
+    },
+    {
+      "id": "PHAC-0116",
+      "mediaType": "Asset",
+      "title": "シニア男性とケアマネージャーの男性 老人ホーム",
+      "tags": [
+        "介護",
+        "老人ホーム",
+        "ケアマネジメント"
+      ],
+      "summary": null,
+      "knowledgePath": "knowledge/asset/PHAC-0116.json",
+      "disId": null,
+      "disIds": [],
+      "disEvaluation": null,
+      "sectionTypes": [],
+      "sections": [],
+      "reusablePrinciples": [],
+      "rightsExcluded": [
+        "素材本体（画像ファイル）の保存・再配布。利用時は写真ACのライセンス条件（プラン確認含む）に従うこと。"
+      ],
+      "cbsSyncStatus": "not_yet_synced"
+    },
+    {
+      "id": "PHAC-0117",
+      "mediaType": "Asset",
+      "title": "笑顔の高齢者女性と介護士 訪問介護",
+      "tags": [
+        "介護",
+        "訪問介護",
+        "在宅介護"
+      ],
+      "summary": null,
+      "knowledgePath": "knowledge/asset/PHAC-0117.json",
+      "disId": null,
+      "disIds": [],
+      "disEvaluation": null,
+      "sectionTypes": [],
+      "sections": [],
+      "reusablePrinciples": [],
+      "rightsExcluded": [
+        "素材本体（画像ファイル）の保存・再配布。利用時は写真ACのライセンス条件（プラン確認含む）に従うこと。"
+      ],
+      "cbsSyncStatus": "not_yet_synced"
+    },
+    {
+      "id": "PHAC-0118",
+      "mediaType": "Asset",
+      "title": "在宅介護で食事をするシニアの女性 食事",
+      "tags": [
+        "介護",
+        "在宅介護",
+        "介護食"
+      ],
+      "summary": null,
+      "knowledgePath": "knowledge/asset/PHAC-0118.json",
+      "disId": null,
+      "disIds": [],
+      "disEvaluation": null,
+      "sectionTypes": [],
+      "sections": [],
+      "reusablePrinciples": [],
+      "rightsExcluded": [
+        "素材本体（画像ファイル）の保存・再配布。利用時は写真ACのライセンス条件（プラン確認含む）に従うこと。"
+      ],
+      "cbsSyncStatus": "not_yet_synced"
+    },
+    {
+      "id": "PHAC-0119",
+      "mediaType": "Asset",
+      "title": "車椅子に乗ったシニア女性と介助する夫婦 介護",
+      "tags": [
+        "介護",
+        "家族介護",
+        "介護離職"
+      ],
+      "summary": null,
+      "knowledgePath": "knowledge/asset/PHAC-0119.json",
+      "disId": null,
+      "disIds": [],
+      "disEvaluation": null,
+      "sectionTypes": [],
+      "sections": [],
+      "reusablePrinciples": [],
+      "rightsExcluded": [
+        "素材本体（画像ファイル）の保存・再配布。利用時は写真ACのライセンス条件（プラン確認含む）に従うこと。"
+      ],
+      "cbsSyncStatus": "not_yet_synced"
+    },
+    {
+      "id": "PHAC-0120",
+      "mediaType": "Asset",
+      "title": "リハビリでマッサージをする理学療法士 作業療法士",
+      "tags": [
+        "介護",
+        "リハビリ",
+        "医療"
+      ],
+      "summary": null,
+      "knowledgePath": "knowledge/asset/PHAC-0120.json",
+      "disId": null,
+      "disIds": [],
+      "disEvaluation": null,
+      "sectionTypes": [],
+      "sections": [],
+      "reusablePrinciples": [],
+      "rightsExcluded": [
+        "素材本体（画像ファイル）の保存・再配布。利用時は写真ACのライセンス条件（プラン確認含む）に従うこと。"
+      ],
+      "cbsSyncStatus": "not_yet_synced"
+    },
+    {
+      "id": "PHAC-0121",
+      "mediaType": "Asset",
+      "title": "老人ホーム・介護施設にいる車椅子の女性 介護",
+      "tags": [
+        "介護",
+        "老人ホーム",
+        "施設介護"
+      ],
+      "summary": null,
+      "knowledgePath": "knowledge/asset/PHAC-0121.json",
+      "disId": null,
+      "disIds": [],
+      "disEvaluation": null,
+      "sectionTypes": [],
+      "sections": [],
+      "reusablePrinciples": [],
+      "rightsExcluded": [
+        "素材本体（画像ファイル）の保存・再配布。利用時は写真ACのライセンス条件（プラン確認含む）に従うこと。"
+      ],
+      "cbsSyncStatus": "not_yet_synced"
+    },
+    {
+      "id": "PHAC-0122",
+      "mediaType": "Asset",
+      "title": "公園で話す高齢者と笑顔の介護スタッフ女性 高齢者",
+      "tags": [
+        "介護",
+        "屋外レクリエーション"
+      ],
+      "summary": null,
+      "knowledgePath": "knowledge/asset/PHAC-0122.json",
+      "disId": null,
+      "disIds": [],
+      "disEvaluation": null,
+      "sectionTypes": [],
+      "sections": [],
+      "reusablePrinciples": [],
+      "rightsExcluded": [
+        "素材本体（画像ファイル）の保存・再配布。利用時は写真ACのライセンス条件（プラン確認含む）に従うこと。"
+      ],
+      "cbsSyncStatus": "not_yet_synced"
+    },
+    {
+      "id": "PHAC-0123",
+      "mediaType": "Asset",
+      "title": "リハビリでをするシニアと作業療法士 リハビリ",
+      "tags": [
+        "介護",
+        "リハビリ",
+        "医療"
+      ],
+      "summary": null,
+      "knowledgePath": "knowledge/asset/PHAC-0123.json",
+      "disId": null,
+      "disIds": [],
+      "disEvaluation": null,
+      "sectionTypes": [],
+      "sections": [],
+      "reusablePrinciples": [],
+      "rightsExcluded": [
+        "素材本体（画像ファイル）の保存・再配布。利用時は写真ACのライセンス条件（プラン確認含む）に従うこと。"
+      ],
+      "cbsSyncStatus": "not_yet_synced"
+    },
+    {
+      "id": "BN-0049",
+      "mediaType": "Banner",
+      "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
+      "tags": [
+        "ゲーム",
+        "ネイビー",
+        "ターコイズ",
+        "縦書き",
+        "ポスター型"
+      ],
+      "summary": "ゲームの新作を告知するディスプレイ広告バナー（見た目の比率は約6:5。画像の実寸は未計測）。キャラクターを円形に配したキービジュアルを全面に置き、縦書きのキャッチ、発売元ロゴ、対応機種、「体験版配信中」のバッジを周囲に配置している。",
+      "knowledgePath": "knowledge/banner/BN-0049.json",
+      "disId": "DIS-BN-20261107",
+      "disIds": [
+        "DIS-BN-20261107"
+      ],
+      "disEvaluation": {
+        "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+        "axes": [
+          {
+            "key": "purpose_fit",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "information_hierarchy",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "visual_flow",
+            "score": 4,
+            "confidence": "low"
+          },
+          {
+            "key": "message_copy",
+            "score": 3,
+            "confidence": "low"
+          },
+          {
+            "key": "trust_safety",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "color_legibility",
+            "score": 3,
+            "confidence": "low"
+          },
+          {
+            "key": "layout_spacing",
+            "score": 3,
+            "confidence": "medium"
+          },
+          {
+            "key": "visual_brand",
+            "score": 4,
+            "confidence": "low"
+          },
+          {
+            "key": "implementation_reuse",
+            "score": 2,
+            "confidence": "medium"
+          }
+        ]
+      },
+      "sectionTypes": [
+        "その他",
+        "CTA"
+      ],
+      "sections": [
+        {
+          "type": "その他",
+          "name": "キービジュアル"
+        },
+        {
+          "type": "その他",
+          "name": "キャッチコピー"
+        },
+        {
+          "type": "その他",
+          "name": "発売元ロゴ"
+        },
+        {
+          "type": "その他",
+          "name": "タイトルロゴ"
+        },
+        {
+          "type": "CTA",
+          "name": "CTAバッジ「体験版配信中」"
+        },
+        {
+          "type": "その他",
+          "name": "対応プラットフォーム"
+        },
+        {
+          "type": "その他",
+          "name": "著作権表記"
+        }
+      ],
+      "reusablePrinciples": [
+        "全面のキービジュアルに、情報を周縁へ小さくまとめる構成",
+        "暗い背景に白抜きの縦書きキャッチ",
+        "縁取りつきのCTAバッジ1つに絞る"
+      ],
+      "rightsExcluded": [
+        "ロゴ",
+        "人物",
+        "写真",
+        "コピー",
+        "価格",
+        "実績値",
+        "キャラクターイラスト",
+        "ゲームタイトル"
+      ],
+      "cbsSyncStatus": "draft_from_dis"
+    },
+    {
+      "id": "BN-0050",
+      "mediaType": "Banner",
+      "title": "Adobe Acrobat（AIアシスタント）",
+      "tags": [
+        "ソフトウェア",
+        "レッド",
+        "ブルー"
+      ],
+      "summary": "PDFのAIアシスタント機能を訴求する横長のディスプレイ広告バナー（見た目の比率は約8:1。728×90のリーダーボード相当と見られるが、画像の実寸は未計測）。赤い背景に、左から、AI機能のUIと人物の写真、白い太字の便益コピー、青い無料開始ボタン、製品ロゴを一列に並べている。",
+      "knowledgePath": "knowledge/banner/BN-0050.json",
+      "disId": "DIS-BN-20261108",
+      "disIds": [
+        "DIS-BN-20261108"
+      ],
+      "disEvaluation": {
+        "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+        "axes": [
+          {
+            "key": "purpose_fit",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "information_hierarchy",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "visual_flow",
+            "score": 4,
+            "confidence": "low"
+          },
+          {
+            "key": "message_copy",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "trust_safety",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "color_legibility",
+            "score": 4,
+            "confidence": "low"
+          },
+          {
+            "key": "layout_spacing",
+            "score": 3,
+            "confidence": "medium"
+          },
+          {
+            "key": "visual_brand",
+            "score": 5,
+            "confidence": "low"
+          },
+          {
+            "key": "implementation_reuse",
+            "score": 4,
+            "confidence": "medium"
+          }
+        ]
+      },
+      "sectionTypes": [
+        "その他",
+        "ベネフィット",
+        "CTA"
+      ],
+      "sections": [
+        {
+          "type": "その他",
+          "name": "AIアシスタントのUI＋人物"
+        },
+        {
+          "type": "ベネフィット",
+          "name": "便益コピー"
+        },
+        {
+          "type": "CTA",
+          "name": "CTAボタン"
+        },
+        {
+          "type": "その他",
+          "name": "製品ロゴ"
+        }
+      ],
+      "reusablePrinciples": [
+        "証拠→便益→CTA→ロゴの横一列",
+        "補色のピル形CTAを1つに絞る",
+        "2行以内の便益コピー"
+      ],
+      "rightsExcluded": [
+        "ロゴ",
+        "人物",
+        "写真",
+        "コピー",
+        "価格",
+        "実績値",
+        "製品のUI画像",
+        "製品ロゴ"
+      ],
+      "cbsSyncStatus": "draft_from_dis"
+    },
     {
       "id": "LP-0215",
       "mediaType": "LP",
@@ -27,7 +687,355 @@
         "利便性訴求"
       ],
       "summary": "価格不安を下げる無料見積・追加料金なし訴求と、認定・写真・FAQによる信頼形成",
-      "knowledgePath": "knowledge/lp/LP-0215.json"
+      "knowledgePath": "knowledge/lp/LP-0215.json",
+      "disId": null,
+      "disIds": [],
+      "disEvaluation": null,
+      "sectionTypes": [
+        "price_anxiety_reduction_hero",
+        "trust_reason_cards",
+        "price_case_cards",
+        "area_proof_cta",
+        "service_scope_and_flow",
+        "faq_to_form_closing"
+      ],
+      "sections": [
+        {
+          "type": "price_anxiety_reduction_hero",
+          "name": "価格不安解消FV"
+        },
+        {
+          "type": "trust_reason_cards",
+          "name": "選ばれる理由カード"
+        },
+        {
+          "type": "price_case_cards",
+          "name": "価格例カード"
+        },
+        {
+          "type": "area_proof_cta",
+          "name": "対応エリア＋実績CTA"
+        },
+        {
+          "type": "service_scope_and_flow",
+          "name": "サービス内容・流れリスト"
+        },
+        {
+          "type": "faq_to_form_closing",
+          "name": "FAQからフォームへの終盤導線"
+        }
+      ],
+      "reusablePrinciples": [
+        "価格への不安が強いサービスでは、FVで価格条件と無料相談条件を先に出す。",
+        "低価格訴求だけでは不信感が出やすいため、直後に認定・スタッフ・写真証拠を置く。",
+        "価格例は金額だけでなく、作業量・現場イメージ・条件とセットで提示する。",
+        "地域密着型サービスでは、対応エリアと電話導線を中盤以降で再提示する。",
+        "問い合わせ前の不安が多い商材では、作業フローとFAQをフォーム直前に置く。",
+        "長尺LPでは、FV、信頼形成、価格例、サービス範囲、FAQ、フォームの順序で検討心理を進める。"
+      ],
+      "rightsExcluded": [
+        "ロゴ",
+        "人物写真",
+        "スタッフ写真",
+        "店舗写真",
+        "作業写真",
+        "認定証画像",
+        "電話番号",
+        "会社情報",
+        "価格例の具体金額",
+        "満足度・No.1等の実績数値",
+        "固有コピー"
+      ],
+      "cbsSyncStatus": "ready_for_sync"
+    },
+    {
+      "id": "WB-0069",
+      "mediaType": "Web",
+      "title": "Baseline Design",
+      "tags": [
+        "コーポレート",
+        "ホワイト",
+        "ブラック",
+        "サービス理解型"
+      ],
+      "summary": "デザインシステムの支援・研修を提供する小規模チームの英語コーポレートサイト（ページ下部に「Made by hand in Framer」の表記）。PCでは巨大なセリフ体のワードマークで始め、SPでは価値提案の見出しを主役にし、取引先ロゴ→サービス→顧客の声→チーム→実績数値→記事→問い合わせの順に、単色基調で縦に積む。PC・SPともに最初からフッターまで画像で確認済み。",
+      "knowledgePath": "knowledge/web/WB-0069.json",
+      "disId": "DIS-WB-20261107",
+      "disIds": [
+        "DIS-WB-20261107"
+      ],
+      "disEvaluation": {
+        "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+        "axes": [
+          {
+            "key": "purpose_fit",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "information_hierarchy",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "visual_flow",
+            "score": 4,
+            "confidence": "low"
+          },
+          {
+            "key": "message_copy",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "trust_safety",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "color_legibility",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "layout_spacing",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "visual_brand",
+            "score": 5,
+            "confidence": "medium"
+          },
+          {
+            "key": "implementation_reuse",
+            "score": 3,
+            "confidence": "low"
+          }
+        ]
+      },
+      "sectionTypes": [
+        "ナビ",
+        "FV",
+        "ベネフィット",
+        "実績",
+        "その他",
+        "商品紹介",
+        "会社情報",
+        "CTA",
+        "フッター"
+      ],
+      "sections": [
+        {
+          "type": "ナビ",
+          "name": "ナビゲーション"
+        },
+        {
+          "type": "FV",
+          "name": "ファーストビュー（ワードマーク）"
+        },
+        {
+          "type": "ベネフィット",
+          "name": "価値提案＋説明"
+        },
+        {
+          "type": "実績",
+          "name": "取引先ロゴ帯"
+        },
+        {
+          "type": "その他",
+          "name": "作例ビジュアル（2枚）"
+        },
+        {
+          "type": "その他",
+          "name": "見出し「Systems are our thing, but people are the point.」"
+        },
+        {
+          "type": "商品紹介",
+          "name": "Services（サービス一覧）"
+        },
+        {
+          "type": "実績",
+          "name": "顧客の声"
+        },
+        {
+          "type": "会社情報",
+          "name": "チーム紹介の導入"
+        },
+        {
+          "type": "会社情報",
+          "name": "Our team"
+        },
+        {
+          "type": "実績",
+          "name": "実績数値"
+        },
+        {
+          "type": "その他",
+          "name": "Notes on design systems／Latest posts"
+        },
+        {
+          "type": "CTA",
+          "name": "問い合わせ（Let’s work together）"
+        },
+        {
+          "type": "フッター",
+          "name": "フッター"
+        }
+      ],
+      "reusablePrinciples": [
+        "巨大なワードマークだけで成立するFV",
+        "文字だけで階層を作る3階層（見出し・本文・小見出し）",
+        "取引先ロゴ→サービス→声→実績の順に信頼を積む構成"
+      ],
+      "rightsExcluded": [
+        "ロゴ",
+        "人物",
+        "写真",
+        "コピー",
+        "価格",
+        "実績値",
+        "取引先ロゴ",
+        "顧客の声の文面・氏名"
+      ],
+      "cbsSyncStatus": "draft_from_dis"
+    },
+    {
+      "id": "WB-0070",
+      "mediaType": "Web",
+      "title": "FREDRIK（by FREDRIK PACKERS）",
+      "tags": [
+        "EC",
+        "ホワイト",
+        "ブラック",
+        "利用シーン型"
+      ],
+      "summary": "折りたたみ式のバッグ・衣類を扱うブランドのオンラインストア（日英併記）。ファーストビューは、青い背景に、巾着型の商品とグラフィティ風の巨大なブランド名を散りばめ、直下にカテゴリ導線と流れる大きな標語を置く。以降は、商品写真・生活の写真・大きな英語の見出し（絵文字つき）を、非対称に配置した「編集的」な商品紹介が続き、最後にカテゴリのカルーセルとフッターで閉じる。PC・SPともに先頭からフッターまで画…",
+      "knowledgePath": "knowledge/web/WB-0070.json",
+      "disId": "DIS-WB-20261108",
+      "disIds": [
+        "DIS-WB-20261108"
+      ],
+      "disEvaluation": {
+        "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+        "axes": [
+          {
+            "key": "purpose_fit",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "information_hierarchy",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "visual_flow",
+            "score": 4,
+            "confidence": "low"
+          },
+          {
+            "key": "message_copy",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "trust_safety",
+            "score": 3,
+            "confidence": "low"
+          },
+          {
+            "key": "color_legibility",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "layout_spacing",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "visual_brand",
+            "score": 5,
+            "confidence": "medium"
+          },
+          {
+            "key": "implementation_reuse",
+            "score": 3,
+            "confidence": "low"
+          }
+        ]
+      },
+      "sectionTypes": [
+        "ナビ",
+        "FV",
+        "その他",
+        "商品紹介",
+        "フッター"
+      ],
+      "sections": [
+        {
+          "type": "ナビ",
+          "name": "お知らせバー＋ヘッダー"
+        },
+        {
+          "type": "FV",
+          "name": "ヒーロー"
+        },
+        {
+          "type": "ナビ",
+          "name": "カテゴリのストリップ"
+        },
+        {
+          "type": "その他",
+          "name": "流れる標語"
+        },
+        {
+          "type": "商品紹介",
+          "name": "商品の紹介（Jelly tote）"
+        },
+        {
+          "type": "その他",
+          "name": "バナーのスライダー"
+        },
+        {
+          "type": "商品紹介",
+          "name": "商品の紹介（キャップ・スウェット）と大きな漢字"
+        },
+        {
+          "type": "その他",
+          "name": "GIFTの帯"
+        },
+        {
+          "type": "商品紹介",
+          "name": "商品の紹介（Anything tote）"
+        },
+        {
+          "type": "ナビ",
+          "name": "カテゴリのカルーセル"
+        },
+        {
+          "type": "フッター",
+          "name": "フッター"
+        }
+      ],
+      "reusablePrinciples": [
+        "ブランド名の巨大な繰り返しワードマーク（ヒーローとフッター）",
+        "編集的で非対称な商品紹介のレイアウト",
+        "カテゴリ導線を3か所に置く"
+      ],
+      "rightsExcluded": [
+        "ロゴ",
+        "人物",
+        "写真",
+        "コピー",
+        "価格",
+        "実績値",
+        "商品名・商品画像",
+        "イラスト",
+        "第三者のブランド・商品の写真"
+      ],
+      "cbsSyncStatus": "draft_from_dis"
     }
   ]
 }

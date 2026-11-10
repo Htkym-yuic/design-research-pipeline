@@ -1,0 +1,754 @@
+{
+  "generatedAt": "2026-11-10T13:47:39.414Z",
+  "note": "Sectionの種類ごとに、各ナレッジの該当Section（名前・再利用できる構造・差し替え必須の要素）を集めた索引。controlled=true は、DISの種類の一覧（FV・悩み提起など）にある種類。",
+  "types": [
+    {
+      "type": "その他",
+      "controlled": true,
+      "count": 14,
+      "examples": [
+        {
+          "id": "BN-0049",
+          "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
+          "sectionId": "C01",
+          "sectionName": "キービジュアル",
+          "reusableStructure": [
+            "全面のキービジュアルに、情報を周縁へ小さくまとめる構成"
+          ],
+          "replaceRequired": [
+            "キャラクターイラスト",
+            "背景"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/banner/BN-0049.json"
+        },
+        {
+          "id": "BN-0049",
+          "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
+          "sectionId": "C02",
+          "sectionName": "キャッチコピー",
+          "reusableStructure": [
+            "暗い背景に白抜きの縦書きキャッチ"
+          ],
+          "replaceRequired": [
+            "コピーの文面",
+            "書体"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/banner/BN-0049.json"
+        },
+        {
+          "id": "BN-0049",
+          "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
+          "sectionId": "C03",
+          "sectionName": "発売元ロゴ",
+          "reusableStructure": [
+            "角に固定した単色ロゴ"
+          ],
+          "replaceRequired": [
+            "ロゴ"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/banner/BN-0049.json"
+        },
+        {
+          "id": "BN-0049",
+          "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
+          "sectionId": "C04",
+          "sectionName": "タイトルロゴ",
+          "reusableStructure": [
+            "キービジュアル下部の装飾ロゴ"
+          ],
+          "replaceRequired": [
+            "タイトルロゴ"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/banner/BN-0049.json"
+        },
+        {
+          "id": "BN-0049",
+          "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
+          "sectionId": "C06",
+          "sectionName": "対応プラットフォーム",
+          "reusableStructure": [
+            "統一サイズの単色ロゴを2段"
+          ],
+          "replaceRequired": [
+            "機種ロゴ"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/banner/BN-0049.json"
+        },
+        {
+          "id": "BN-0049",
+          "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
+          "sectionId": "C07",
+          "sectionName": "著作権表記",
+          "reusableStructure": [
+            "最下部の小さな著作権表記"
+          ],
+          "replaceRequired": [
+            "表記の文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/banner/BN-0049.json"
+        },
+        {
+          "id": "BN-0050",
+          "title": "Adobe Acrobat（AIアシスタント）",
+          "sectionId": "C01",
+          "sectionName": "AIアシスタントのUI＋人物",
+          "reusableStructure": [
+            "UIカード＋人物写真を左に置く"
+          ],
+          "replaceRequired": [
+            "UI画像",
+            "人物写真"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/banner/BN-0050.json"
+        },
+        {
+          "id": "BN-0050",
+          "title": "Adobe Acrobat（AIアシスタント）",
+          "sectionId": "C04",
+          "sectionName": "製品ロゴ",
+          "reusableStructure": [
+            "右端に固定したロゴ"
+          ],
+          "replaceRequired": [
+            "ロゴ"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/banner/BN-0050.json"
+        },
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C05",
+          "sectionName": "作例ビジュアル（2枚）",
+          "reusableStructure": [
+            "同じ高さの2枚を横並び・はみ出し"
+          ],
+          "replaceRequired": [
+            "作例の画像"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        },
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C06",
+          "sectionName": "見出し「Systems are our thing, but people are the point.」",
+          "reusableStructure": [
+            "罫線＋大きな見出し＋本文"
+          ],
+          "replaceRequired": [
+            "見出し",
+            "本文"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        },
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C12",
+          "sectionName": "Notes on design systems／Latest posts",
+          "reusableStructure": [
+            "見出し＋サムネイル付きの記事リスト"
+          ],
+          "replaceRequired": [
+            "記事",
+            "画像"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        },
+        {
+          "id": "WB-0070",
+          "title": "FREDRIK（by FREDRIK PACKERS）",
+          "sectionId": "C04",
+          "sectionName": "流れる標語",
+          "reusableStructure": [
+            "画面幅いっぱいの太字の標語"
+          ],
+          "replaceRequired": [
+            "標語の文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0070.json"
+        },
+        {
+          "id": "WB-0070",
+          "title": "FREDRIK（by FREDRIK PACKERS）",
+          "sectionId": "C06",
+          "sectionName": "バナーのスライダー",
+          "reusableStructure": [
+            "スライダーのタイル"
+          ],
+          "replaceRequired": [
+            "タイルの画像",
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0070.json"
+        },
+        {
+          "id": "WB-0070",
+          "title": "FREDRIK（by FREDRIK PACKERS）",
+          "sectionId": "C08",
+          "sectionName": "GIFTの帯",
+          "reusableStructure": [
+            "縦の繰り返し文字＋イラスト＋リンク"
+          ],
+          "replaceRequired": [
+            "イラスト",
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0070.json"
+        }
+      ]
+    },
+    {
+      "type": "ナビ",
+      "controlled": true,
+      "count": 4,
+      "examples": [
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C01",
+          "sectionName": "ナビゲーション",
+          "reusableStructure": [
+            "ロゴなし・右上に小さなリンク"
+          ],
+          "replaceRequired": [
+            "リンクの名称"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        },
+        {
+          "id": "WB-0070",
+          "title": "FREDRIK（by FREDRIK PACKERS）",
+          "sectionId": "C01",
+          "sectionName": "お知らせバー＋ヘッダー",
+          "reusableStructure": [
+            "細いお知らせバー＋日英2段のヘッダー"
+          ],
+          "replaceRequired": [
+            "お知らせ文",
+            "ラベル"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0070.json"
+        },
+        {
+          "id": "WB-0070",
+          "title": "FREDRIK（by FREDRIK PACKERS）",
+          "sectionId": "C03",
+          "sectionName": "カテゴリのストリップ",
+          "reusableStructure": [
+            "商品アイコン付きの横ストリップ"
+          ],
+          "replaceRequired": [
+            "カテゴリ名",
+            "アイコン"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0070.json"
+        },
+        {
+          "id": "WB-0070",
+          "title": "FREDRIK（by FREDRIK PACKERS）",
+          "sectionId": "C10",
+          "sectionName": "カテゴリのカルーセル",
+          "reusableStructure": [
+            "モデル写真のカルーセル"
+          ],
+          "replaceRequired": [
+            "モデル写真",
+            "カテゴリ名"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0070.json"
+        }
+      ]
+    },
+    {
+      "type": "商品紹介",
+      "controlled": true,
+      "count": 4,
+      "examples": [
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C07",
+          "sectionName": "Services（サービス一覧）",
+          "reusableStructure": [
+            "3分類×6項目の箇条書き＋下線リンク"
+          ],
+          "replaceRequired": [
+            "サービス名"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        },
+        {
+          "id": "WB-0070",
+          "title": "FREDRIK（by FREDRIK PACKERS）",
+          "sectionId": "C05",
+          "sectionName": "商品の紹介（Jelly tote）",
+          "reusableStructure": [
+            "大きな見出し＋商品写真＋生活写真＋商品名・素材・価格"
+          ],
+          "replaceRequired": [
+            "商品",
+            "写真",
+            "価格"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0070.json"
+        },
+        {
+          "id": "WB-0070",
+          "title": "FREDRIK（by FREDRIK PACKERS）",
+          "sectionId": "C07",
+          "sectionName": "商品の紹介（キャップ・スウェット）と大きな漢字",
+          "reusableStructure": [
+            "商品写真＋装飾写真の重なり＋巨大な漢字"
+          ],
+          "replaceRequired": [
+            "写真",
+            "漢字",
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0070.json"
+        },
+        {
+          "id": "WB-0070",
+          "title": "FREDRIK（by FREDRIK PACKERS）",
+          "sectionId": "C09",
+          "sectionName": "商品の紹介（Anything tote）",
+          "reusableStructure": [
+            "見出し＋説明＋生活写真＋商品"
+          ],
+          "replaceRequired": [
+            "写真",
+            "商品",
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0070.json"
+        }
+      ]
+    },
+    {
+      "type": "CTA",
+      "controlled": true,
+      "count": 3,
+      "examples": [
+        {
+          "id": "BN-0049",
+          "title": "THE DIOFIELD CHRONICLE（スクウェア・エニックス）",
+          "sectionId": "C05",
+          "sectionName": "CTAバッジ「体験版配信中」",
+          "reusableStructure": [
+            "縁取りつきのバッジ型CTA"
+          ],
+          "replaceRequired": [
+            "文言",
+            "色"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/banner/BN-0049.json"
+        },
+        {
+          "id": "BN-0050",
+          "title": "Adobe Acrobat（AIアシスタント）",
+          "sectionId": "C03",
+          "sectionName": "CTAボタン",
+          "reusableStructure": [
+            "補色に近い青のピル形ボタン"
+          ],
+          "replaceRequired": [
+            "文言",
+            "色"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/banner/BN-0050.json"
+        },
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C13",
+          "sectionName": "問い合わせ（Let’s work together）",
+          "reusableStructure": [
+            "左に説明、右にフォーム＋黒い送信ボタン"
+          ],
+          "replaceRequired": [
+            "文面",
+            "連絡先"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        }
+      ]
+    },
+    {
+      "type": "実績",
+      "controlled": true,
+      "count": 3,
+      "examples": [
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C04",
+          "sectionName": "取引先ロゴ帯",
+          "reusableStructure": [
+            "グレー単色のロゴ帯（端はフェード）"
+          ],
+          "replaceRequired": [
+            "取引先ロゴ"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        },
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C08",
+          "sectionName": "顧客の声",
+          "reusableStructure": [
+            "黒い面＋ロゴ＋引用＋一文のハイライト＋顔写真・肩書"
+          ],
+          "replaceRequired": [
+            "引用文",
+            "ロゴ",
+            "人物"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        },
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C11",
+          "sectionName": "実績数値",
+          "reusableStructure": [
+            "4つのカード（大きな数字＋1行の説明）"
+          ],
+          "replaceRequired": [
+            "数値",
+            "説明"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        }
+      ]
+    },
+    {
+      "type": "FV",
+      "controlled": true,
+      "count": 2,
+      "examples": [
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C02",
+          "sectionName": "ファーストビュー（ワードマーク）",
+          "reusableStructure": [
+            "画面幅いっぱいのワードマーク"
+          ],
+          "replaceRequired": [
+            "ワードマークの書体",
+            "名称"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        },
+        {
+          "id": "WB-0070",
+          "title": "FREDRIK（by FREDRIK PACKERS）",
+          "sectionId": "C02",
+          "sectionName": "ヒーロー",
+          "reusableStructure": [
+            "巨大な繰り返しのワードマーク＋商品＋小さな最新情報の枠"
+          ],
+          "replaceRequired": [
+            "ワードマーク",
+            "商品画像"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0070.json"
+        }
+      ]
+    },
+    {
+      "type": "フッター",
+      "controlled": true,
+      "count": 2,
+      "examples": [
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C14",
+          "sectionName": "フッター",
+          "reusableStructure": [
+            "リンク列＋巨大なワードマーク"
+          ],
+          "replaceRequired": [
+            "リンク",
+            "ワードマーク"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        },
+        {
+          "id": "WB-0070",
+          "title": "FREDRIK（by FREDRIK PACKERS）",
+          "sectionId": "C11",
+          "sectionName": "フッター",
+          "reusableStructure": [
+            "リンク列＋巨大なワードマーク"
+          ],
+          "replaceRequired": [
+            "リンク",
+            "ワードマーク"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0070.json"
+        }
+      ]
+    },
+    {
+      "type": "ベネフィット",
+      "controlled": true,
+      "count": 2,
+      "examples": [
+        {
+          "id": "BN-0050",
+          "title": "Adobe Acrobat（AIアシスタント）",
+          "sectionId": "C02",
+          "sectionName": "便益コピー",
+          "reusableStructure": [
+            "白い太字2行のコピー"
+          ],
+          "replaceRequired": [
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/banner/BN-0050.json"
+        },
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C03",
+          "sectionName": "価値提案＋説明",
+          "reusableStructure": [
+            "左に要点見出し、右に補足の2カラム＋下線リンク"
+          ],
+          "replaceRequired": [
+            "コピー"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        }
+      ]
+    },
+    {
+      "type": "会社情報",
+      "controlled": true,
+      "count": 2,
+      "examples": [
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C09",
+          "sectionName": "チーム紹介の導入",
+          "reusableStructure": [
+            "大見出し＋短い本文"
+          ],
+          "replaceRequired": [
+            "文面"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        },
+        {
+          "id": "WB-0069",
+          "title": "Baseline Design",
+          "sectionId": "C10",
+          "sectionName": "Our team",
+          "reusableStructure": [
+            "左に見出し、右に写真つきの縦リスト"
+          ],
+          "replaceRequired": [
+            "人物写真",
+            "氏名",
+            "肩書"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/web/WB-0069.json"
+        }
+      ]
+    },
+    {
+      "type": "area_proof_cta",
+      "controlled": false,
+      "count": 1,
+      "examples": [
+        {
+          "id": "LP-0215",
+          "title": "生活本舗 遺品整理・生前整理 LP",
+          "sectionId": "C04",
+          "sectionName": "対応エリア＋実績CTA",
+          "reusableStructure": [
+            "対応エリアを明示して利用可能性を判断させる",
+            "実績表現の近くに電話や問い合わせ導線を置く",
+            "中盤で再度CTAを出して検討者の行動を拾う"
+          ],
+          "replaceRequired": [
+            "電話番号",
+            "地域名",
+            "実績数値"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0215.json"
+        }
+      ]
+    },
+    {
+      "type": "faq_to_form_closing",
+      "controlled": false,
+      "count": 1,
+      "examples": [
+        {
+          "id": "LP-0215",
+          "title": "生活本舗 遺品整理・生前整理 LP",
+          "sectionId": "C06",
+          "sectionName": "FAQからフォームへの終盤導線",
+          "reusableStructure": [
+            "お客様の声で第三者評価を補強",
+            "FAQで最後の反論を処理",
+            "フォームと会社情報を連続配置してクロージングする"
+          ],
+          "replaceRequired": [
+            "FAQ文言",
+            "電話番号",
+            "会社情報",
+            "店舗写真"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0215.json"
+        }
+      ]
+    },
+    {
+      "type": "price_anxiety_reduction_hero",
+      "controlled": false,
+      "count": 1,
+      "examples": [
+        {
+          "id": "LP-0215",
+          "title": "生活本舗 遺品整理・生前整理 LP",
+          "sectionId": "C01",
+          "sectionName": "価格不安解消FV",
+          "reusableStructure": [
+            "大見出しで価格メリットを提示",
+            "無料見積・追加料金なしを近接配置",
+            "人物写真または相談相手感のあるビジュアルで安心感を補う",
+            "サービス対象をアイコンで早期提示"
+          ],
+          "replaceRequired": [
+            "ロゴ",
+            "人物写真",
+            "実績数値",
+            "固有コピー"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0215.json"
+        }
+      ]
+    },
+    {
+      "type": "price_case_cards",
+      "controlled": false,
+      "count": 1,
+      "examples": [
+        {
+          "id": "LP-0215",
+          "title": "生活本舗 遺品整理・生前整理 LP",
+          "sectionId": "C03",
+          "sectionName": "価格例カード",
+          "reusableStructure": [
+            "価格だけでなく作業量や現場イメージをセットで見せる",
+            "複数価格帯を並べて見積前の心理的ハードルを下げる",
+            "作業写真を証拠として添える"
+          ],
+          "replaceRequired": [
+            "現場写真",
+            "価格",
+            "作業条件"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0215.json"
+        }
+      ]
+    },
+    {
+      "type": "service_scope_and_flow",
+      "controlled": false,
+      "count": 1,
+      "examples": [
+        {
+          "id": "LP-0215",
+          "title": "生活本舗 遺品整理・生前整理 LP",
+          "sectionId": "C05",
+          "sectionName": "サービス内容・流れリスト",
+          "reusableStructure": [
+            "依頼できる内容をリストで整理",
+            "申し込み後の流れをステップ化",
+            "作業前の不安を手順説明で下げる"
+          ],
+          "replaceRequired": [
+            "サービス名",
+            "写真素材",
+            "作業条件"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0215.json"
+        }
+      ]
+    },
+    {
+      "type": "trust_reason_cards",
+      "controlled": false,
+      "count": 1,
+      "examples": [
+        {
+          "id": "LP-0215",
+          "title": "生活本舗 遺品整理・生前整理 LP",
+          "sectionId": "C02",
+          "sectionName": "選ばれる理由カード",
+          "reusableStructure": [
+            "他社比較の前に選ばれる理由を提示",
+            "認定・専任スタッフ・安心対応をカードで分解",
+            "信頼要素を価格訴求の直後に置く"
+          ],
+          "replaceRequired": [
+            "認定証",
+            "スタッフ写真",
+            "会社固有説明"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0215.json"
+        }
+      ]
+    }
+  ]
+}
