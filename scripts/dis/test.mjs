@@ -1004,6 +1004,28 @@ test("選定理由: 手動は「ユーザーが選定」、自動は候補レビ
   assert.equal(emptyAnalysis({ media: "lp", disId: "X", pageUrl: "u", brand: "b", selectionReason: "理由" }).selectionReason, "理由");
 });
 
+test("cbs-draft: DISの分析から、CBS用ナレッジの下書きと28章の下書きを作る（LP番号は対応表から、評価点は別に持ち、未同期）", async () => {
+  const { buildKnowledgeDraft, buildLp28Seed } = await import("./cbs-draft.mjs");
+  const a = completeAnalysis();
+  const rel = { disId: "DIS-LP-0009", relation: "reserved_for_library", libraryId: "LP-0300", establishedAt: "2026-11-10", canonicalKey: "rdlp:1" };
+  const sizes = { pc_full: { width: 1000, height: 5000 }, sp_full: { width: 400, height: 9000 } };
+  const item = { disId: "DIS-LP-0009", sourceDetailUrl: "https://rdlp.jp/archives/otherdesign/lp/1", sourceName: "LPアーカイブ", date: "2026-11-10" };
+  const d = buildKnowledgeDraft({ a, item, rel, sizes, dropboxFolder: "/x" });
+  assert.equal(d.id, "LP-0300");
+  assert.match(d.id, /^LP-\d{4}$/);
+  assert.equal(d.cbs_sync.status, "draft_from_dis");
+  assert.equal(d.cbs_sync.actual_cbs_import, "not_synced");
+  assert.equal(d.funnel_structure.length, a.units.length);
+  assert.equal(d.dis_evaluation.axes.length, a.axes.length); // DISの9軸は、別の欄に、方法つきで持つ
+  assert.ok(d.dis_evaluation.note.includes("別の物差し"));
+  const md = buildLp28Seed({ a, item, rel, sizes, files: ["files/x.png"], dropboxFolder: "/x" });
+  assert.match(md, /^# LP-0300｜/);
+  assert.match(md, /## 3\. Section位置索引/);
+  assert.match(md, /## 8\. 全Section分析/);
+  assert.match(md, /## 未作成の章/);
+  assert.match(md, /ライブラリー未登録|なし（ライブラリー未登録/);
+});
+
 test("外部同期: 登録の時点で、分析内の外部同期が「登録済み・保存済み」になる（CBSは対象外のまま）", async () => {
   const { withRegisteredSync, analysisToMarkdown } = await import("./lib/analysis-schema.mjs");
   const a = completeAnalysis();

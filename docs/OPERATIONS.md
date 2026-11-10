@@ -398,6 +398,25 @@ DRY_RUN=true npm run dis:run -- --media lp --url https://example.com/ --date 202
 - 日付は、Dropboxの日付フォルダ・Notion・台帳で管理する。
 - 手動指定（`--url`）は、URLごとに作業フォルダ（`<media>-url-<8桁>`）が分かれる。撮影・分析・検証・登録の各コマンドにも、同じ `--url` を付けて実行する。
 
+### DIS: ライブラリー番号との対応と、CBS・28章への下書き（`dis:cbs-draft`）
+
+DISの分析（`DIS-LP-nnnn`）は、ライブラリーの番号（`LP-nnnn`）と対応づけて扱う。対応は `data/dis-relations.json` に記録する。
+
+- `same_lp`: ライブラリーに同じLPの既存ページがある（例: DIS-LP-0004 = LP-0001）。番号は既存を維持し、主はライブラリー側。DISは追加の層。
+- `reserved_for_library`: ライブラリー未登録のLP。番号だけ確保した（例: DIS-LP-0001〜0003 = LP-0245〜0247。`data/id-counters.json`・`candidates/lp-archive/intake-reservations.json` も更新）。ライブラリーの取り込みと28章の分析は、あとで行う。
+- CBSには、LPの1件に、DISの層として付ける。DIS-LP単独では載せない。評価点（28章のヒューリスティックと、DISの9軸）は、混ぜずに、方法を明記して分ける。
+- 同じ参考URLの既存ページがあるときに、DISのページも作る場合は、登録に `--allow-existing-url` を付ける（既存ページは変更しない）。
+
+下書きの作成（ローカルのみ・外部書込みなし）:
+
+```bash
+npm run dis:cbs-draft -- --id DIS-LP-0001 [--tags <タグのJSON>]
+```
+
+- `cbs-knowledge-draft.json`: CBS用ナレッジ（`knowledge/lp/LP-nnnn.json` と同じ形）の下書き。`cbs_sync.status = draft_from_dis`、`actual_cbs_import = not_synced`。`npm run knowledge:validate-lp -- --input <ファイル>` で検証できる。`knowledge/lp/` への配置・CBSへの同期は、別途、指示があったときだけ。
+- `lp28-seed.md`: 28章（`lp-deep-analyzer`、章順v4.0）のうち、DISで埋められる章（ヘッダーメタ、章1・3・14〜17・23・28、章8の一部）の下書きと、未作成の章の一覧。
+- 28章の分析は、このファイルと、案件フォルダの画像（`files/01_Normal_Images/`、`sections_by_unit/`）を使い、`lp-deep-analyzer` の手順で、未作成の章を書く。1つのLPごとに会話を分ける（画像が重いため）。Notion・Dropboxへの登録は、確認のあとにだけ行う。
+
 ### DIS: PC版・スマホ版のURLが異なる場合／片方だけの場合（`--sp-url`・`--device`）
 
 LP・Webは、パソコン版とスマホ版でURLが異なることがある。対話では、PC版のURLとスマホ版のURLを2回聞き、無い場合は「なし」かそのままEnter（空）とする。答えに応じて、次の3パターンで撮影する（撮影の段階のみ。以降の段階には付けない）。

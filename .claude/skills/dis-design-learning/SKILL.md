@@ -95,6 +95,12 @@ DISは、既存のLP・バナー・Canva等の分析を消さずに、根拠付�
 
 分析と検証のあとで、`DRY_RUN=true npm run dis:run -- --media <媒体> [--url "<URL>"] --stage crop` を実行すると、案件フォルダの `files/01_Normal_Images/sections_by_unit/` に、`pc_01_FV.png`、`pc_02_悩み提起.png`、`sp_01_FV.png` のような名前で切り出される（番号はUnitの順）。登録時には、Dropboxにも新規ファイルとして入る。従来の機械的な分割（`sections/pc_01.jpg`）は、そのまま残る。旧形式の分析（`roleType` なし）は、検証を通るが、切り出しはできない。
 
+## ライブラリー番号・CBS・28章との関係
+
+- DISの分析は、ライブラリーの番号（`LP-nnnn`）と、`data/dis-relations.json` で対応づける（`same_lp`＝既存あり、`reserved_for_library`＝番号のみ確保）。同じLPは、ライブラリーの番号を主にし、DISは追加の層にする。
+- CBSには、LPの1件にDISの層として付ける。DIS-LP単独では載せない。評価点（28章のヒューリスティックとDISの9軸）は混ぜない。
+- `npm run dis:cbs-draft -- --id <DIS-ID>` で、CBS用ナレッジの下書き（`cbs-knowledge-draft.json`）と、28章の下書き（`lp28-seed.md`）をローカルに作れる。28章の本体は、`lp-deep-analyzer` の手順で、画像を読み直して書く（1LPごとに会話を分ける）。外部への登録・CBS同期は、ユーザーが明示したときだけ。
+
 ## このリポジトリでの実装
 
 コマンド・ファイル構成・スキーマ（dis-2.0）・日次運用の手順は [実装メモ](references/implementation-notes.md) を読む。
