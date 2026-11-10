@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T21:56:31.152Z",
+  "generatedAt": "2026-11-10T21:58:44.130Z",
   "note": "Sectionの種類ごとに、各ナレッジの該当Section（名前・再利用できる構造・差し替え必須の要素）を集めた索引。controlled=true は、DISの種類の一覧（FV・悩み提起など）にある種類。",
   "types": [
     {
@@ -1812,28 +1812,6 @@
       ]
     },
     {
-      "type": "解決策",
-      "controlled": true,
-      "count": 1,
-      "examples": [
-        {
-          "id": "LP-0246",
-          "title": "販促EXPO【大阪】のLPデザイン",
-          "sectionId": "C04",
-          "sectionName": "解決の提示（販促EXPOでは）",
-          "reusableStructure": [
-            "悩み→背景色を切り替えて→解決の宣言、の接続。ラベル＋見出し＋イラストの中央寄せ"
-          ],
-          "replaceRequired": [
-            "見出しコピー",
-            "イラスト"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0246.json"
-        }
-      ]
-    },
-    {
       "type": "共感",
       "controlled": true,
       "count": 1,
@@ -1871,6 +1849,28 @@
           "replaceRequired": [
             "イラスト",
             "悩みの文言（6件）"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        }
+      ]
+    },
+    {
+      "type": "解決策",
+      "controlled": true,
+      "count": 1,
+      "examples": [
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C04",
+          "sectionName": "解決の提示（販促EXPOでは）",
+          "reusableStructure": [
+            "悩み→背景色を切り替えて→解決の宣言、の接続。ラベル＋見出し＋イラストの中央寄せ"
+          ],
+          "replaceRequired": [
+            "見出しコピー",
+            "イラスト"
           ],
           "rightsStatus": "reference_only",
           "knowledgePath": "knowledge/lp/LP-0246.json"
