@@ -13,6 +13,7 @@ import path from "node:path";
 import { parseArgs } from "node:util";
 import { fileURLToPath } from "node:url";
 import { spawnSync } from "node:child_process";
+import { tagsFromNotionProps } from "./lib/knowledge-tags.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(here, "../..");
@@ -153,7 +154,7 @@ export async function placeKnowledge({ draft, repo = REPO, replaceDraft = false 
 }
 
 async function main() {
-  const { values } = parseArgs({ options: { id: { type: "string" }, dir: { type: "string" }, tags: { type: "string" }, place: { type: "boolean", default: false } } });
+  const { values } = parseArgs({ options: { id: { type: "string" }, dir: { type: "string" }, tags: { type: "string" }, place: { type: "boolean", default: false }, "replace-draft": { type: "boolean", default: false }, appeal: { type: "string" }, "appeal-from-summary": { type: "boolean", default: false }, offer: { type: "string" }, "knowledge-root": { type: "string" } } });
   if (!values.id) throw new Error("--id（例: DIS-LP-0001）が必要です");
   const dir = values.dir || (await findItemDir(values.id));
   const a = await readJson(path.join(dir, "analysis.json"));
@@ -162,7 +163,11 @@ async function main() {
   const relations = (await readJson(path.join(REPO, "data/dis-relations.json"), { relations: [] })).relations;
   const rel = relations.find((r) => r.disId === values.id) || null;
   if (!rel) console.error(`注意: ${values.id} は data/dis-relations.json にありません（ライブラリー番号が未定のため、id は空になります。番号を確保・対応づけてから、--place してください）`);
-  const tags = values.tags ? await readJson(values.tags, {}) : {};
+  // タグは、--tags のファイルが優先。なければ、分析の notionProps（Notionの既存の選択肢）から作る。訴求・オファーは、指定（--appeal／--appeal-from-summary／--offer）があるときだけ入れる。
+  const tags = { ...tagsFromNotionProps(a.notionProps), ...(values.tags ? await readJson(values.tags, {}) : {}) };
+  if (values.appeal) tags.primary_appeal = values.appeal;
+  else if (values["appeal-from-summary"] && !tags.primary_appeal) tags.primary_appeal = short(a.summary, 200);
+  if (values.offer) tags.offer = values.offer;
   const n = path.join(dir, "files/01_Normal_Images");
   const sizes = {};
   for (const [k, f] of [["pc_full", "PC_full"], ["pc_first_view", "PC_first_view"], ["sp_full", "SP_full"], ["sp_first_view", "SP_first_view"]]) { const s = await imgSize(path.join(n, `${values.id}_${f}.png`)); if (s) sizes[k] = s; }
@@ -176,7 +181,7 @@ async function main() {
   await fs.writeFile(path.join(dir, "cbs-knowledge-draft.json"), `${JSON.stringify(draft, null, 2)}\n`);
   const isLp = draft.mediaType === "LP";
   if (isLp) await fs.writeFile(path.join(dir, "lp28-seed.md"), `${buildLp28Seed({ a, item: { ...item, disId: values.id }, rel, sizes, files, dropboxFolder })}\n`);
-  const placed = values.place ? await placeKnowledge({ draft }) : null;
+  const placed = values.place ? await placeKnowledge({ draft, repo: values["knowledge-root"] || REPO, replaceDraft: values["replace-draft"] }) : null;
   console.log(JSON.stringify({ disId: values.id, knowledgeId: draft.id ?? null, dir, written: ["cbs-knowledge-draft.json", ...(isLp ? ["lp28-seed.md"] : [])], placed, units: (a.units || []).length, next: placed ? "git add でコミットし、cbs:export でインデックスを更新（CBS本体への同期は、確認後に別工程で行う）" : "knowledge/ に配置するなら --place（訴求・タグが確定していること）" }, null, 2));
 }
 

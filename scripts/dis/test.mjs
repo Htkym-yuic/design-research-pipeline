@@ -1404,3 +1404,21 @@ test("draft-legacy-knowledge: 旧形式のLP2件（LP-0248・LP-0249）は、確
     assert.equal(await placeKnowledge({ draft, repo }), path.join("knowledge", "lp", `${id}.json`)); // LPナレッジの検証を通る
   }
 });
+
+test("cbs-draft(CLI): notionPropsからタグを作り、--appeal-from-summary・--offerで訴求・オファーを入れて配置できる。指定がないLPは配置できない", async () => {
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-cli-"));
+  const dir = path.join(tmp, "item"); await fs.mkdir(dir, { recursive: true });
+  const a = { brand: "テストLPのLPデザイン", pageUrl: "https://ex.test/lp/", summary: "テストの要約。二文目。", notionProps: { "業種タグ": ["飲料・お酒"], "商材": ["物販"], "配色タグ": ["ブルー"], "レイアウトタグ": ["長尺LP"], "コピータイプ": ["数字訴求"] },
+    units: [{ id: "U1", name: "FV", roleType: "FV", role: "つかみ", observation: "観察", reuseStructure: "x", mustReplace: ["写真"], unknowns: [] }], axes: [{ key: "purpose_fit", label: "目的適合", score: 4, confidence: "medium" }], reuse: { reusableStructures: ["a"] }, rights: { noReuse: ["ロゴ"] } };
+  await fs.writeFile(path.join(dir, "analysis.json"), JSON.stringify(a));
+  await fs.writeFile(path.join(dir, "item.json"), JSON.stringify({ sourceDetailUrl: "https://rdlp.jp/archives/otherdesign/lp/1", sourceName: "LPアーカイブ" }));
+  const kr = path.join(tmp, "k");
+  const run = (...x) => spawnSync(process.execPath, [path.join(here, "cbs-draft.mjs"), "--id", "DIS-LP-0003", "--dir", dir, "--knowledge-root", kr, ...x], { encoding: "utf8" });
+  let r = run("--place");
+  assert.notEqual(r.status, 0); assert.match(r.stderr, /訴求・タグが未確定/); // 訴求の指定がないLPは、配置できない
+  r = run("--appeal-from-summary", "--offer", "テストの特典");
+  assert.equal(r.status, 0, r.stderr);
+  const draft = JSON.parse(await fs.readFile(path.join(dir, "cbs-knowledge-draft.json"), "utf8"));
+  assert.deepEqual([draft.industry_tags, draft.product_tags, draft.color_tags, draft.layout_tags, draft.copy_types], [["飲料・お酒"], ["物販"], ["ブルー"], ["長尺LP"], ["数字訴求"]]);
+  assert.equal(draft.primary_appeal, "テストの要約。二文目。"); assert.equal(draft.offer, "テストの特典");
+});
