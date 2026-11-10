@@ -108,7 +108,7 @@ export async function captureFullPage(url, outDir, { id = "item", spUrl = null, 
 
 
 /** 全体画像（{id}_{PC|SP}_full.png）から、first_view・分割画像・Section一覧・Notion用JPEGを作る（撮影とアーカイブ画像で共通）。 */
-async function deriveSet(full, { id, NAME, name, viewportH, normal, notion, secDir, mapCols, cellW, add, warnings }) {
+export async function deriveSet(full, { id, NAME, name, viewportH, normal, notion, secDir, mapCols, cellW, add, warnings }) {
   const { default: sharp } = await import("sharp");
   const meta = await sharp(full, { limitInputPixels: false }).metadata();
   const fv = path.join(normal, `${id}_${NAME}_first_view.png`);
@@ -259,4 +259,33 @@ export async function downloadBanner(imageUrl, outDir, fetchImpl = fetch) {
   try { await toNotionJpeg(orig, prev); }
   catch (e) { throw new Error(`Notion用画像の生成に失敗（形式: ${ext}）: ${e.message}`); }
   return [{ local: orig, rel: `01_Normal_Images/banner.${ext}` }, { local: prev, rel: "02_Notion_Images/banner_notion.jpg" }];
+}
+
+/**
+ * 取得済みの全体画像（Buffer）から、撮影・アーカイブ取得と同じファイル一式を作る（旧ライブラリーの取り込み用）。
+ * images: { pc?: Buffer, sp?: Buffer }。戻り値は、[{ local, rel }]（.warnings 付き）。
+ */
+export async function buildSetFromBuffers(outDir, id, images, { note = "" } = {}) {
+  const { default: sharp } = await import("sharp");
+  const normal = path.join(outDir, "01_Normal_Images");
+  const notion = path.join(outDir, "02_Notion_Images");
+  const secDir = path.join(normal, "sections");
+  await fs.mkdir(secDir, { recursive: true });
+  await fs.mkdir(notion, { recursive: true });
+  const files = [];
+  const warnings = note ? [note] : [];
+  files.warnings = warnings;
+  const add = (local, rel) => files.push({ local, rel });
+  for (const [name, mapCols, cellW, viewportH] of [["pc", 4, 300, 900], ["sp", 6, 150, 812]]) {
+    const buf = images[name];
+    if (!buf) { warnings.push(`${name === "pc" ? "PC" : "スマホ"}版の画像がありません`); continue; }
+    const NAME = name.toUpperCase();
+    const full = path.join(normal, `${id}_${NAME}_full.png`);
+    await sharp(buf, { limitInputPixels: false }).png().toFile(full);
+    add(full, `01_Normal_Images/${id}_${NAME}_full.png`);
+    const meta = await sharp(full, { limitInputPixels: false }).metadata();
+    warnings.push(`${NAME}: 画像の幅は${meta.width}px・高さは${meta.height}px`);
+    await deriveSet(full, { id, NAME, name, viewportH, normal, notion, secDir, mapCols, cellW, add, warnings });
+  }
+  return files;
 }

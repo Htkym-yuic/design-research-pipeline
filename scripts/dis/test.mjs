@@ -1422,3 +1422,53 @@ test("cbs-draft(CLI): notionPropsからタグを作り、--appeal-from-summary�
   assert.deepEqual([draft.industry_tags, draft.product_tags, draft.color_tags, draft.layout_tags, draft.copy_types], [["飲料・お酒"], ["LP/物販"], ["ブルー"], ["長尺LP"], ["数字訴求"]]);
   assert.equal(draft.primary_appeal, "テストの要約。二文目。"); assert.equal(draft.offer, "テストの特典");
 });
+
+test("ingest-library: 旧ライブラリーのLPを、DISの案件フォルダ（画像一式・テンプレート・対応表）に取り込む。Dropboxは読み取りのみ。重複は拒否", async () => {
+  const { ingestLibraryLp, parseSourceRecord, findLibraryFolder } = await import("./ingest-library.mjs");
+  const { validateItem } = await import("./validate-item.mjs");
+  const sharp = (await import("sharp")).default;
+  const mk = async (w, h) => sharp({ create: { width: w, height: h, channels: 3, background: "#39c" } }).jpeg().toBuffer();
+  const base = "/Research_Library/Design/LP_Research_Library/01_By_Date/2026-08-23/LP/All_LP_001-180/LP-0060_オンライン診療";
+  const pcJ = await mk(952, 3200), spJ = await mk(640, 4800);
+  const rec = { url: "https://rdlp.jp/archives/otherdesign/lp/227613", canonical_url: "https://rdlp.jp/archives/otherdesign/lp/227613", rdlp_id: "227613", heading: "オンライン診療のLPデザイン", title: "オンライン診療のLPデザイン｜…｜LPアーカイブ", info: { "登録日 2026-04-07": "https://gmo-healthtech.com/healthtechone/lp/telemedicine", "企業名": "GMOヘルステック株式会社", "カテゴリー": "デザイン・アプリ・システム" } };
+  const calls = [];
+  const dbx = {
+    searchNames: async (q) => { calls.push(["search", q]); return [{ tag: "folder", name: "LP-0060_オンライン診療", path: base }, { tag: "file", name: "LP-0060_x.md", path: base + "/x.md" }]; },
+    listFolder: async (p) => { calls.push(["list", p]); if (p.endsWith("03_Analysis")) return [{ tag: "file", name: "LP-0060_full_analysis_v6_20260920.md", path: `${p}/v6.md` }, { tag: "file", name: "LP-0060_full_analysis_v22_20260922.md", path: `${p}/v22.md` }, { tag: "file", name: "01_overview.md", path: `${p}/o.md` }]; return p.endsWith("01_PC/01_Full_Page") ? [{ tag: "file", name: "pc_00_full-page_rdlp-227613.jpg", path: `${p}/pc.jpg`, size: pcJ.length }] : p.endsWith("02_SP/01_Full_Page") ? [{ tag: "file", name: "sp_00_full-page.jpg", path: `${p}/sp.jpg`, size: spJ.length }] : []; },
+    downloadFile: async (p) => { calls.push(["download", p]); return p.endsWith("source-record.json") ? Buffer.from(JSON.stringify(rec)) : p.endsWith("v22.md") ? Buffer.from("旧分析v22") : p.endsWith("pc.jpg") ? pcJ : spJ; },
+  };
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), "dis-ing-"));
+  const w = async (p, o) => { await fs.mkdir(path.dirname(path.join(root, p)), { recursive: true }); await fs.writeFile(path.join(root, p), JSON.stringify(o)); };
+  await w("data/dis-ledger.json", { entries: [] });
+  await w("data/id-counters.json", { lp: { prefix: "LP", existingMax: 249, nextNumber: 250, digits: 4 } });
+  await w("data/dis-relations.json", { schemaVersion: "dis-relations-1.0", relations: [] });
+  const r = await ingestLibraryLp({ lp: "LP-0060", dbx, root, date: "2026-11-11" });
+  assert.equal(r.disId, "DIS-LP-0001"); assert.equal(r.pageUrl, "https://gmo-healthtech.com/healthtechone/lp/telemedicine"); assert.deepEqual(r.devices, ["pc", "sp"]);
+  assert.ok(r.itemDir.endsWith(path.join("LP", "0001_20261111_オンライン診療のLPデザイン")));
+  assert.ok(calls.every(([k]) => ["search", "list", "download"].includes(k))); // 読み取りのみ
+  for (const f of ["DIS-LP-0001_PC_full.png", "DIS-LP-0001_SP_full.png", "DIS-LP-0001_PC_first_view.png", "DIS-LP-0001_SP_sections.png"]) await fs.access(path.join(r.itemDir, "files/01_Normal_Images", f));
+  await fs.access(path.join(r.itemDir, "files/02_Notion_Images/DIS-LP-0001_PC_first_view_notion.jpg"));
+  const item = JSON.parse(await fs.readFile(path.join(r.itemDir, "item.json"), "utf8"));
+  assert.deepEqual([item.libraryId, item.mode, item.captureMode, item.sourceDetailUrl], ["LP-0060", "ライブラリー（旧）", "archive", "https://rdlp.jp/archives/otherdesign/lp/227613"]);
+  const rel = JSON.parse(await fs.readFile(path.join(root, "data/dis-relations.json"), "utf8")).relations;
+  assert.deepEqual([rel[0].disId, rel[0].libraryId, rel[0].relation, rel[0].canonicalKey], ["DIS-LP-0001", "LP-0060", "same_lp", "rdlp:227613"]);
+  const ana = JSON.parse(await fs.readFile(path.join(r.itemDir, "analysis.json"), "utf8"));
+  assert.equal(await fs.readFile(path.join(r.itemDir, "legacy-analysis.md"), "utf8"), "旧分析v22"); assert.ok(r.legacyAnalysis.endsWith("v22.md")); // 最新版（v22）の旧分析を複製
+  assert.equal(ana.status, "template"); assert.match(ana.selectionReason, /良い点: （分析時に記入）/); assert.match(ana.captureSource, /LP-0060/);
+  // 同じLPは、重複して取り込まない
+  await assert.rejects(ingestLibraryLp({ lp: "LP-0060", dbx, root, date: "2026-11-11" }), /すでに DIS-LP-0001 と対応づけられています/);
+  // 画像がなければ止まる
+  await assert.rejects(ingestLibraryLp({ lp: "LP-0060", dbx: { ...dbx, listFolder: async () => [] }, root: await (async () => { const r2 = await fs.mkdtemp(path.join(os.tmpdir(), "dis-ing2-")); for (const p of ["data/dis-ledger.json", "data/id-counters.json", "data/dis-relations.json"]) { await fs.mkdir(path.join(r2, "data"), { recursive: true }); await fs.copyFile(path.join(root, p), path.join(r2, p)); } await fs.writeFile(path.join(r2, "data/dis-relations.json"), JSON.stringify({ relations: [] })); return r2; })() }), /全体画像が見つかりません/);
+  assert.equal(parseSourceRecord(rec).brand, "オンライン診療のLPデザイン");
+  await assert.rejects(findLibraryFolder({ searchNames: async () => [] }, "LP-0999"), /見つかりません/);
+  // 検証: テンプレートのままではNG、完成した分析ならOK（analysis.md・text-index.json を作る。登録はしない）
+  const bad = await validateItem({ disId: "DIS-LP-0001", outDir: path.join(root, "outputs/dis") });
+  assert.equal(bad.ok, false);
+  const done = completeAnalysis(); done.media = "lp"; done.disId = "DIS-LP-0001"; done.units = done.units.map((u) => ({ ...u, roleType: "FV" })); done.selectionReason = "良い点: 構成が明快。（ユーザーが選定。ライブラリー LP-0060 を再分析）";
+  await fs.writeFile(path.join(r.itemDir, "analysis.json"), JSON.stringify(done));
+  await fs.writeFile(path.join(r.itemDir, "annotations.json"), JSON.stringify(completeAnnotations(done)));
+  const ok = await validateItem({ disId: "DIS-LP-0001", outDir: path.join(root, "outputs/dis") });
+  assert.equal(ok.ok, true, (ok.errors || []).join(";"));
+  await fs.access(path.join(r.itemDir, "analysis.md")); await fs.access(path.join(r.itemDir, "text-index.json"));
+  assert.equal(JSON.parse(await fs.readFile(path.join(r.itemDir, "analysis.json"), "utf8")).pageUrl, "https://gmo-healthtech.com/healthtechone/lp/telemedicine"); // 実LPのURLは、案件の情報から
+});

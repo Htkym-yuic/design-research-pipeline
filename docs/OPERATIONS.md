@@ -579,3 +579,15 @@ npm run dis:cbs-draft -- --id DIS-LP-0002 --appeal-from-summary --offer "<オフ
 - LPの訴求・オファーは、指定したときだけ入る。`--appeal "<訴求>"`（直接指定）または `--appeal-from-summary`（分析の要約の先頭を使う）、`--offer "<オファー>"`。LPは、訴求が未確定（「28章で確定」のまま）だと、`--place` はできない。
 - 前提: `data/dis-relations.json` に、ライブラリー番号の対応がある（`LP-0245〜0247`）。配置先は `knowledge/lp/LP-nnnn.json`（新規のみ。LPナレッジの検証を通る）。同じDISの、CBS未同期の下書きを置き換えるときは `--replace-draft`。
 - 配置したら、`knowledge/` の新しいファイルを、コミットしてプッシュする。そのあと、`npm run cbs:export` で、インデックスを更新する。
+
+### DIS: 旧ライブラリーのLPを取り込む（`dis:ingest-library`・`dis:validate-item`）
+
+詳しい手順は `docs/LIBRARY_DIS_BATCH.md`。
+
+```bash
+npm run dis:ingest-library -- --lp LP-0002      # Dropboxは読み取りのみ。DISの案件フォルダ・テンプレート・対応表への追記
+npm run dis:validate-item -- --id DIS-LP-0005   # 登録せずに、分析・注釈を検証（analysis.md・text-index.json を作る）
+```
+
+- 旧ライブラリーの画像は、アーカイブ掲載の全体画像（PC・SP）。取得は、Dropboxの環境変数（`DROPBOX_APP_KEY` など）が必要。
+- ライブラリーの番号（`LP-0002`）は、そのままナレッジのID。DISの連番は、`dis_ids`。Dropbox・Notionへの新規登録はしない。

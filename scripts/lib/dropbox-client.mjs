@@ -174,3 +174,35 @@ export async function uploadFileNoOverwrite(dropboxPath, fileBuffer) {
   }
   return response.json();
 }
+
+/** フォルダの直下の一覧（読み取りのみ）。[{ tag: "file"|"folder", name, path }] */
+export async function listFolder(dropboxPath) {
+  const accessToken = await getAccessToken();
+  const out = [];
+  let res = await fetch("https://api.dropboxapi.com/2/files/list_folder", { method: "POST", headers: { Authorization: `Bearer ${accessToken}`, "Content-Type": "application/json" }, body: JSON.stringify({ path: dropboxPath, recursive: false, limit: 2000 }) });
+  for (;;) {
+    if (!res.ok) throw new Error(`Dropbox一覧の取得に失敗しました（${res.status}） path=${dropboxPath}: ${await res.text().catch(() => "")}`);
+    const data = await res.json();
+    for (const e of data.entries || []) out.push({ tag: e[".tag"], name: e.name, path: e.path_display || e.path_lower, size: e.size });
+    if (!data.has_more) break;
+    res = await fetch("https://api.dropboxapi.com/2/files/list_folder/continue", { method: "POST", headers: { Authorization: `Bearer ${accessToken}`, "Content-Type": "application/json" }, body: JSON.stringify({ cursor: data.cursor }) });
+  }
+  return out;
+}
+
+/** ファイルの取得（読み取りのみ）。Buffer を返す。 */
+export async function downloadFile(dropboxPath) {
+  const accessToken = await getAccessToken();
+  const res = await fetch("https://content.dropboxapi.com/2/files/download", { method: "POST", headers: { Authorization: `Bearer ${accessToken}`, "Dropbox-API-Arg": dropboxApiArg({ path: dropboxPath }) } });
+  if (!res.ok) throw new Error(`Dropboxからの取得に失敗しました（${res.status}） path=${dropboxPath}: ${await res.text().catch(() => "")}`);
+  return Buffer.from(await res.arrayBuffer());
+}
+
+/** 名前の検索（読み取りのみ）。フォルダ名の先頭一致などは、呼び出し側で絞る。 */
+export async function searchNames(query, scopePath) {
+  const accessToken = await getAccessToken();
+  const res = await fetch("https://api.dropboxapi.com/2/files/search_v2", { method: "POST", headers: { Authorization: `Bearer ${accessToken}`, "Content-Type": "application/json" }, body: JSON.stringify({ query, options: { path: scopePath, max_results: 50, file_status: "active", filename_only: true } }) });
+  if (!res.ok) throw new Error(`Dropbox検索に失敗しました（${res.status}）: ${await res.text().catch(() => "")}`);
+  const data = await res.json();
+  return (data.matches || []).map((m) => m.metadata?.metadata).filter(Boolean).map((e) => ({ tag: e[".tag"], name: e.name, path: e.path_display }));
+}
