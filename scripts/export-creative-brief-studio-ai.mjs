@@ -12,6 +12,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { ROLE_TYPES } from "./dis/lib/crop.mjs"; // DISのSectionの種類（正本）
+import { loadExclusions, isExcluded } from "./dis/lib/cbs-exclusions.mjs";
 
 const args = parseArgs(process.argv.slice(2));
 const knowledgeDir = args.knowledge || "knowledge";
@@ -22,11 +23,15 @@ const entries = await collectKnowledgeFiles(knowledgeDir);
 const items = [];
 const knowledgeDocs = new Map();
 const skipped = [];
+const excluded = [];
+const exclusions = loadExclusions();
 for (const filePath of entries) {
   const relPath = path.relative(".", filePath);
   try {
     const raw = await fs.readFile(filePath, "utf8");
     const data = JSON.parse(raw);
+    const dis = data.dis_ids || (data.analysis_notes?.dis_analysis_ref ? [data.analysis_notes.dis_analysis_ref] : []);
+    if (isExcluded(dis, data.mediaType || data.media_type, exclusions)) { excluded.push(relPath); continue; }
     items.push(toIndexItem(data, relPath));
     knowledgeDocs.set(relPath, data);
   } catch (err) {
@@ -61,6 +66,7 @@ await fs.writeFile(
 console.log(`exports/creative-brief-studio-ai/ を更新しました。`);
 console.log(`  manifest.json / index.json: ${items.length}件`);
 console.log(`  section-patterns.json: ${sectionPatterns.length}種類`);
+if (excluded.length > 0) console.log(`  一時除外（config/cbs-export-exclusions.json）: ${excluded.length}件 ${excluded.map((x) => path.basename(x, ".json")).join("・")}`);
 if (skipped.length > 0) {
   console.log(`  スキップ: ${skipped.length}件`);
   for (const s of skipped) console.log(`    - ${s.path}: ${s.reason}`);

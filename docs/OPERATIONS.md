@@ -591,3 +591,7 @@ npm run dis:validate-item -- --id DIS-LP-0005   # 登録せずに、分析・注
 
 - 旧ライブラリーの画像は、アーカイブ掲載の全体画像（PC・SP）。取得は、Dropboxの環境変数（`DROPBOX_APP_KEY` など）が必要。
 - ライブラリーの番号（`LP-0002`）は、そのままナレッジのID。DISの連番は、`dis_ids`。Dropbox・Notionへの新規登録はしない。
+
+## CBSへの書き出しの一時除外
+
+`config/cbs-export-exclusions.json` に載せたDIS由来のナレッジは、`exports/creative-brief-studio-ai/` への書き出しと、`dis:cbs-draft --place` の配置の対象から外れる（`knowledge/` のファイルは残る）。現在は、旧形式（日付ID）の6件と、バナー／WebのDIS由来のすべてが対象。バナー／Webの分析とCBS側の拡張が固まったら、該当の行を消して、`node scripts/export-creative-brief-studio-ai.mjs` を再実行する。

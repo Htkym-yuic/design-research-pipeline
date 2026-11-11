@@ -1,12 +1,10 @@
 {
-  "generatedAt": "2026-11-10T21:58:44.130Z",
-  "itemCount": 30,
+  "generatedAt": "2026-11-11T09:24:44.490Z",
+  "itemCount": 24,
   "skippedCount": 0,
   "mediaTypes": [
     "Asset",
-    "Banner",
-    "LP",
-    "Web"
+    "LP"
   ],
   "source": "design-research-pipeline/knowledge/",
   "note": "このmanifest/indexはCBS側が検索に使う軽量インデックス。本番同期（CBS本体への反映）は別工程で、ユーザー確認後に行う。"
