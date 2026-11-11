@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * リポジトリ内の分析ファイル（candidates/dis/<日付>/<ID>.analysis.json と .annotations.json）を、
- * 案件フォルダ（outputs/dis/<LP|バナー|ウェブ>/<連番>_…/）に取り込む。ローカルのファイルのみ（外部書込みなし）。
+ * 案件フォルダ（outputs/dis/<LP|バナー|Web>/<連番>_…/）に取り込む。ローカルのファイルのみ（外部書込みなし）。
  *   node scripts/dis/import-analysis.mjs --id DIS-LP-0001 [--replace]
  * 既存の analysis.json が「テンプレートのまま」のときだけ置き換える。分析済みのものは、--replace がない限り上書きしない。
  */
@@ -12,12 +12,13 @@ import { fileURLToPath } from "node:url";
 import { loadConfig, REPO_ROOT } from "./lib/config.mjs";
 import { validateAnalysis } from "./lib/analysis-schema.mjs";
 import { validateAnnotations } from "./lib/annotations.mjs";
+import { mediaFolders } from "./lib/library.mjs";
 
 const readJson = async (f) => JSON.parse(await fs.readFile(f, "utf8"));
 
 export async function findItemDir(outDir, cfg, disId) {
-  for (const media of Object.keys(cfg.media)) {
-    const base = path.join(outDir, cfg.media[media].localFolder);
+  for (const media of Object.keys(cfg.media)) for (const folder of mediaFolders(cfg, media)) {
+    const base = path.join(outDir, folder);
     let names = [];
     try { names = await fs.readdir(base); } catch { continue; }
     for (const n of names) {

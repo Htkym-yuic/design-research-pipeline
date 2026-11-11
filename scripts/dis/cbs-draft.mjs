@@ -32,11 +32,13 @@ export const mediaOf = (disId) => KNOWLEDGE_MEDIA[/^DIS-(LP|BN|WB)-/.exec(disId)
 export async function findItemDir(disId, out = path.join(REPO, "outputs/dis")) {
   const m = /^DIS-(LP|BN|WB)-(\d{4})$/.exec(disId);
   if (!m) throw new Error(`DIS ID の形式が違います: ${disId}`);
-  const sub = { LP: "LP", BN: "バナー", WB: "ウェブ" }[m[1]];
-  const base = path.join(out, sub);
-  const hit = (await fs.readdir(base).catch(() => [])).find((d) => d.startsWith(`${m[2]}_`));
-  if (!hit) throw new Error(`案件フォルダが見つかりません: ${base}/${m[2]}_*`);
-  return path.join(base, hit);
+  const subs = { LP: ["LP"], BN: ["バナー"], WB: ["Web", "ウェブ"] }[m[1]]; // 先頭が現在の名前。続くのは以前の名前（読み取りのみ）
+  for (const sub of subs) {
+    const base = path.join(out, sub);
+    const hit = (await fs.readdir(base).catch(() => [])).find((d) => d.startsWith(`${m[2]}_`));
+    if (hit) return path.join(base, hit);
+  }
+  throw new Error(`案件フォルダが見つかりません: ${path.join(out, subs[0])}/${m[2]}_*`);
 }
 
 async function imgSize(file) {

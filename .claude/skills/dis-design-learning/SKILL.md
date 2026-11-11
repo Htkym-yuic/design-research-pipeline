@@ -65,7 +65,7 @@ DISは、既存のLP・バナー・Canva等の分析を消さずに、根拠付�
 1. 準備の確認: `outputs/dis/<日付>/<lp|banner|web>/review/contact_sheet.jpg` と `review.json` があるか。なければ `bash scripts/dis/daily-prep.sh`（書込みなし）を実行する。
 2. コンタクトシートを読む: 各候補を、`learning-value-rubric.md` の6項目（0〜3点）で採点し、**どこが良いか**を具体的に書いた `reason` を付ける。サムネイルだけで判断できない点は、控えめに採点し、撮影後に見直す。
 3. `outputs/dis/<日付>/<媒体>/learning.json` に `{ "items": [{ "no": 1, "criteria": {...6項目}, "reason": "…" }] }` を書き、`DRY_RUN=true npm run dis:run -- --media <媒体> --stage rescore` を実行する。13/18点以上の候補が選ばれる。基準未達ならスキップし、理由を伝える。
-4. 撮影とテンプレート: `DRY_RUN=true npm run dis:run -- --media <媒体> --stage capture,template --capture`。連番ID（`DIS-LP-0001` など）が採番され、案件フォルダ `outputs/dis/<LP|バナー|ウェブ>/<連番>_<日付>_<ブランド>/` ができる。
+4. 撮影とテンプレート: `DRY_RUN=true npm run dis:run -- --media <媒体> --stage capture,template --capture`。連番ID（`DIS-LP-0001` など）が採番され、案件フォルダ `outputs/dis/<LP|バナー|Web>/<連番>_<日付>_<ブランド>/` ができる。
 5. 以降は、手動と同じ（画像を全Sectionぶん読む → `analysis.json`・`annotations.json` を案件フォルダに書く → 検証 → 登録計画 → ユーザーに確認 → 登録）。選定理由は、手順2・3の `reason` と6項目の点数が、自動で入る。
 
 ## URLを指定された場合の対話フロー（手動。Macで動かすClaude Code）
@@ -82,7 +82,7 @@ DISは、既存のLP・バナー・Canva等の分析を消さずに、根拠付�
    - IDは媒体ごとの連番（`DIS-LP-0001`）が撮影時に採番される。
    - 403・robots.txt禁止・ログイン壁・Bot対策は回避せず、理由を伝えて止まる。
 3. 結果を確認する: `disId`、`capture` の「画像の揃い」、警告（アーカイブ画像・幅など）。PCとSPの画像幅が同じ場合は、PC/SPではなく前半・後半の分割画像の疑いがあるため、画像を見て確認する。
-4. 画像を実際に読む: 案件フォルダ `outputs/dis/<LP|バナー|ウェブ>/<連番>_<日付>_<ブランド>/files/01_Normal_Images/`（一覧は `outputs/dis/INDEX.md`） の全体画像と、`sections/` の分割画像を、全Sectionぶん読む。見えない箇所は推測せず、unknownsに残す。
+4. 画像を実際に読む: 案件フォルダ `outputs/dis/<LP|バナー|Web>/<連番>_<日付>_<ブランド>/files/01_Normal_Images/`（一覧は `outputs/dis/INDEX.md`） の全体画像と、`sections/` の分割画像を、全Sectionぶん読む。見えない箇所は推測せず、unknownsに残す。
 5. 分析を書く: 案件フォルダの `analysis.json`（dis-2.0）と `annotations.json` を埋める。手動指定の案件は、`selectionReason` の「良い点: （分析時に記入）」を、どこが良いかの具体的な文章に置き換える（未記入だと検証が通らない。最後の注記「（ユーザーが選定…）」は残す）。アーカイブ画像の場合は `captureSource` を残し、動き・実際の文言・最新状態を未確認として扱い、確信度を下げる。
 6. 検証する: `DRY_RUN=true npm run dis:run -- --media <…> --url "<URL>" --stage validate`（撮影・分析と同じ `--url` を付ける）。
 7. 登録計画（ドライラン: `--stage validate,publish`）を見せ、ユーザーに「登録する／見送る」を確認する。「登録する」の返事があったときだけ、`--apply` ＋ `DIS_ENABLE_WRITES=true` ＋ `DRY_RUN=false` で書き込む。登録後は、台帳のコミットとプッシュを案内し、DropboxとNotionを読み取りで確認する。

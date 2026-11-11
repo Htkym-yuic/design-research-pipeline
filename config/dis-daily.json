@@ -96,7 +96,8 @@
           "ステータス": "=レビュー待ち"
         }
       },
-      "localFolder": "ウェブ"
+      "localFolder": "Web",
+      "localFolderAliases": ["ウェブ"]
     }
   },
   "sources": [

@@ -160,7 +160,7 @@ test("buildNotionProps: スキーマにあるプロパティだけ設定", () =>
   assert.deepEqual(Object.keys(props).sort(), ["タイトル", "参考URL"]);
 });
 
-/** 媒体別フォルダ（LP / バナー / ウェブ）の中の、最初の案件フォルダ（連番_日付_ブランド）。 */
+/** 媒体別フォルダ（LP / バナー / Web）の中の、最初の案件フォルダ（連番_日付_ブランド）。 */
 async function itemDirOf(tmp, folder) {
   const base = path.join(tmp, "out", folder);
   const n = (await fs.readdir(base)).filter((x) => /^\d{4}_/.test(x)).sort()[0];
@@ -645,7 +645,7 @@ test("validate: 分析のdisId・pageUrlは選定結果で上書きされ、bran
   const run = (extra) => spawnSync(process.execPath, [path.join(here, "run.mjs"), "--fixture", path.join(tmp, "fx.json"), "--out", path.join(tmp, "out"), "--ledger", path.join(tmp, "l.json"), "--date", "2026-11-09", "--media", "web", ...extra], { env: { ...process.env, DRY_RUN: "true" }, encoding: "utf8" });
   assert.equal(run(["--stage", "collect,select,template"]).status, 0); // 採番はテンプレート作成時
   const a = completeAnalysis(); a.media = "web"; a.disId = "WRONG"; a.pageUrl = "https://wrong.example/"; a.brand = "AUTO";
-  const f = path.join(await itemDirOf(tmp, "ウェブ"), "analysis.json");
+  const f = path.join(await itemDirOf(tmp, "Web"), "analysis.json");
   await fs.writeFile(f, JSON.stringify(a));
   const r = run(["--stage", "validate"]);
   assert.equal(r.status, 0, r.stderr);
@@ -926,7 +926,7 @@ test("library: 媒体別フォルダ(LP/バナー/ウェブ)に連番_日付_ブ
   assert.equal(Array.from(safeBrand("あ".repeat(50))).length, 24);
   assert.equal(safeBrand("///"), "untitled");
   const cfg = await loadConfig();
-  assert.deepEqual(["lp", "banner", "web"].map((m) => cfg.media[m].localFolder), ["LP", "バナー", "ウェブ"]);
+  assert.deepEqual(["lp", "banner", "web"].map((m) => cfg.media[m].localFolder), ["LP", "バナー", "Web"]);
   assert.equal(itemRelDir(cfg, "banner", { disId: "DIS-BN-0002", date: "2026-11-10", brand: "X" }), path.join("バナー", "0002_20261110_X"));
   const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-lib-"));
   const mkItem = async (folder, name, item, extra = {}) => {
@@ -1484,3 +1484,15 @@ test("ingest-library: 旧ライブラリーのLPを、DISの案件フォルダ�
     assert.equal(isExcluded([], "Banner", ex), false);
   });
 }
+
+test("媒体フォルダ名: Web に切り替えても、以前の「ウェブ」フォルダの案件は、番号の予約・探索で認識される（新規は Web に作る）", async () => {
+  const { reservedFromLibrary, mediaFolders } = await import("./lib/library.mjs");
+  const { loadConfig } = await import("./lib/config.mjs");
+  const cfg = await loadConfig();
+  assert.deepEqual(mediaFolders(cfg, "web"), ["Web", "ウェブ"]);
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-alias-"));
+  await fs.mkdir(path.join(tmp, "ウェブ", "0007_20261101_OLD"), { recursive: true });
+  await fs.mkdir(path.join(tmp, "Web", "0008_20261111_NEW"), { recursive: true });
+  const ids = await reservedFromLibrary(tmp, cfg, "web");
+  assert.deepEqual(ids.sort(), [`${cfg.idPrefix}-${cfg.media.web.idCode}-0007`, `${cfg.idPrefix}-${cfg.media.web.idCode}-0008`].sort());
+});
