@@ -386,7 +386,7 @@ DRY_RUN=true npm run dis:run -- --media lp --url https://example.com/ --date 202
 ```
 
 - 重複（登録済み・180日以内）とID衝突（同じ日付・媒体のDIS-IDが使用済み）だけを確認する。13/18の基準と機械的スコアの足切りは適用しない（人が選んだものとして扱い、selectionReasonに明記）。
-- 出力先: `outputs/dis/<LP|バナー|Web>/<連番>_<日付>_<ブランド>/`（撮影画像は `files/`。撮影するには `--capture` が必要）。構成は下の「出力フォルダの構成」を参照。Dropbox・Notionへの書込みは、従来どおり `--apply` ＋ `DIS_ENABLE_WRITES=true` ＋ `DRY_RUN=false` のときだけ。
+- 出力先: `outputs/dis/<LP|Banner|Web>/<連番>_<日付>_<ブランド>/`（撮影画像は `files/`。撮影するには `--capture` が必要）。構成は下の「出力フォルダの構成」を参照。Dropbox・Notionへの書込みは、従来どおり `--apply` ＋ `DIS_ENABLE_WRITES=true` ＋ `DRY_RUN=false` のときだけ。
 - ログイン・課金壁・Bot対策・robots.txt禁止・403等は回避せず、理由を表示して止まる。
 - 同じ日付・媒体にすでに登録済みの場合は、`--date` で別の日付を指定する。
 

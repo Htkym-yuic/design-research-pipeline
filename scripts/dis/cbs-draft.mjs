@@ -32,7 +32,7 @@ export const mediaOf = (disId) => KNOWLEDGE_MEDIA[/^DIS-(LP|BN|WB)-/.exec(disId)
 export async function findItemDir(disId, out = path.join(REPO, "outputs/dis")) {
   const m = /^DIS-(LP|BN|WB)-(\d{4})$/.exec(disId);
   if (!m) throw new Error(`DIS ID の形式が違います: ${disId}`);
-  const subs = { LP: ["LP"], BN: ["バナー"], WB: ["Web", "ウェブ"] }[m[1]]; // 先頭が現在の名前。続くのは以前の名前（読み取りのみ）
+  const subs = { LP: ["LP"], BN: ["Banner", "バナー"], WB: ["Web", "ウェブ"] }[m[1]]; // 先頭が現在の名前。続くのは以前の名前（読み取りのみ）
   for (const sub of subs) {
     const base = path.join(out, sub);
     const hit = (await fs.readdir(base).catch(() => [])).find((d) => d.startsWith(`${m[2]}_`));

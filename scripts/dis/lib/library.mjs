@@ -13,7 +13,7 @@ export function itemFolderName({ disId, date, brand }) {
   return `${serial}_${String(date).replaceAll("-", "")}_${safeBrand(brand)}`;
 }
 
-/** 媒体別の案件フォルダ（<出力先>/<LP|バナー|Web>/<案件フォルダ>）。出力先からの相対パスを返す。 */
+/** 媒体別の案件フォルダ（<出力先>/<LP|Banner|Web>/<案件フォルダ>）。出力先からの相対パスを返す。 */
 export function itemRelDir(cfg, media, { disId, date, brand }) {
   return path.join(cfg.media[media].localFolder, itemFolderName({ disId, date, brand }));
 }

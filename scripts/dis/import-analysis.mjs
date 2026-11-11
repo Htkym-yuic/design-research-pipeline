@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * リポジトリ内の分析ファイル（candidates/dis/<日付>/<ID>.analysis.json と .annotations.json）を、
- * 案件フォルダ（outputs/dis/<LP|バナー|Web>/<連番>_…/）に取り込む。ローカルのファイルのみ（外部書込みなし）。
+ * 案件フォルダ（outputs/dis/<LP|Banner|Web>/<連番>_…/）に取り込む。ローカルのファイルのみ（外部書込みなし）。
  *   node scripts/dis/import-analysis.mjs --id DIS-LP-0001 [--replace]
  * 既存の analysis.json が「テンプレートのまま」のときだけ置き換える。分析済みのものは、--replace がない限り上書きしない。
  */

@@ -919,15 +919,15 @@ test("url-capture.sh: 書込みを無効に固定し、媒体・URL・アーカ�
   assert.ok(!/\$[A-Za-z_]+[^\x00-\x7F]/.test(src.replace(/\$\{[^}]*\}/g, "")), "bash 3.2: $VAR の直後に日本語を置かない（${VAR}を使う）");
 });
 
-test("library: 媒体別フォルダ(LP/バナー/ウェブ)に連番_日付_ブランドで並び、item.json・INDEX.mdで一覧できる。自動も手動も同じ連番", async () => {
+test("library: 媒体別フォルダ(LP/Banner/Web)に連番_日付_ブランドで並び、item.json・INDEX.mdで一覧できる。自動も手動も同じ連番", async () => {
   const { itemFolderName, safeBrand, itemRelDir, writeIndex, reservedFromLibrary } = await import("./lib/library.mjs");
   assert.equal(itemFolderName({ disId: "DIS-LP-0001", date: "2026-11-10", brand: "KAKEDASHIのLPデザイン" }), "0001_20261110_KAKEDASHIのLPデザイン");
   assert.equal(safeBrand('A/B: C*?"<>|  D'), "A_B_C_D");
   assert.equal(Array.from(safeBrand("あ".repeat(50))).length, 24);
   assert.equal(safeBrand("///"), "untitled");
   const cfg = await loadConfig();
-  assert.deepEqual(["lp", "banner", "web"].map((m) => cfg.media[m].localFolder), ["LP", "バナー", "Web"]);
-  assert.equal(itemRelDir(cfg, "banner", { disId: "DIS-BN-0002", date: "2026-11-10", brand: "X" }), path.join("バナー", "0002_20261110_X"));
+  assert.deepEqual(["lp", "banner", "web"].map((m) => cfg.media[m].localFolder), ["LP", "Banner", "Web"]);
+  assert.equal(itemRelDir(cfg, "banner", { disId: "DIS-BN-0002", date: "2026-11-10", brand: "X" }), path.join("Banner", "0002_20261110_X"));
   const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-lib-"));
   const mkItem = async (folder, name, item, extra = {}) => {
     const d = path.join(tmp, folder, name); await fs.mkdir(d, { recursive: true });
@@ -1495,4 +1495,16 @@ test("媒体フォルダ名: Web に切り替えても、以前の「ウェブ�
   await fs.mkdir(path.join(tmp, "Web", "0008_20261111_NEW"), { recursive: true });
   const ids = await reservedFromLibrary(tmp, cfg, "web");
   assert.deepEqual(ids.sort(), [`${cfg.idPrefix}-${cfg.media.web.idCode}-0007`, `${cfg.idPrefix}-${cfg.media.web.idCode}-0008`].sort());
+});
+
+test("媒体フォルダ名: Banner に切り替えても、以前の「バナー」フォルダの案件は、番号の予約で認識される", async () => {
+  const { reservedFromLibrary, mediaFolders } = await import("./lib/library.mjs");
+  const { loadConfig } = await import("./lib/config.mjs");
+  const cfg = await loadConfig();
+  assert.deepEqual(mediaFolders(cfg, "banner"), ["Banner", "バナー"]);
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "dis-alias-bn-"));
+  await fs.mkdir(path.join(tmp, "バナー", "0003_20261101_OLD"), { recursive: true });
+  await fs.mkdir(path.join(tmp, "Banner", "0004_20261111_NEW"), { recursive: true });
+  const ids = await reservedFromLibrary(tmp, cfg, "banner");
+  assert.equal(ids.length, 2);
 });

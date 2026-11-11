@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * 案件フォルダ（outputs/dis/<LP|バナー|Web>/<連番>_…/）の分析・注釈を検証し、analysis.md と text-index.json を作る。
+ * 案件フォルダ（outputs/dis/<LP|Banner|Web>/<連番>_…/）の分析・注釈を検証し、analysis.md と text-index.json を作る。
  * 登録（Dropbox・Notion）はしない。旧ライブラリーから取り込んだ案件など、登録しない案件の検証用。
  *   node scripts/dis/validate-item.mjs --id DIS-LP-0005
  */

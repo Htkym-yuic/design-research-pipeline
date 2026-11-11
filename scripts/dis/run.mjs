@@ -171,7 +171,7 @@ async function runMedia(media) {
   const key = idempotencyKey(media, sel.pageUrl);
   if (applyArchiveMode(sel, { fromArchive: args["from-archive"], media })) await wj(`${d}/selection.json`, { ...selection, selected: sel }); // 再実行時にも、アーカイブ画像モードへ切り替えられる
 
-  // 案件フォルダ（媒体別フォルダ内に、連番で並べる）: outputs/dis/<LP|バナー|Web>/0001_20261110_ブランド/ 。採番後に作成し、以降の撮影・分析・登録の成果物はここに置く。
+  // 案件フォルダ（媒体別フォルダ内に、連番で並べる）: outputs/dis/<LP|Banner|Web>/0001_20261110_ブランド/ 。採番後に作成し、以降の撮影・分析・登録の成果物はここに置く。
   let itemDir = selection.itemDir || null;
   let it = itemDir ? path.join(args.out, itemDir) : null;
   const setItemDir = async () => {

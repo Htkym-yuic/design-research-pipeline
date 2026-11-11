@@ -59,7 +59,8 @@
           "状態": "=要確認"
         }
       },
-      "localFolder": "バナー"
+      "localFolder": "Banner",
+      "localFolderAliases": ["バナー"]
     },
     "web": {
       "label": "Webサイト",
