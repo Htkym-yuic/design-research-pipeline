@@ -24,8 +24,8 @@
   },
   "web": {
     "prefix": "WB",
-    "existingMax": 70,
-    "nextNumber": 71,
+    "existingMax": 76,
+    "nextNumber": 77,
     "digits": 4,
     "sourceOfTruth": "Notion 03｜Webサイトリサーチライブラリー",
     "lastReservationAt": "2026-11-10T13:41:59.875Z"
