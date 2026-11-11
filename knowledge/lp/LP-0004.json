@@ -1,0 +1,852 @@
+{
+  "id": "LP-0004",
+  "dis_ids": [
+    "DIS-LP-0007"
+  ],
+  "mediaType": "LP",
+  "media_type": "LP",
+  "title": "front voiceのLPデザイン",
+  "brand": "front voice",
+  "industry_tags": [
+    "サービス・保険・金融"
+  ],
+  "product_tags": [
+    "LP/サービス"
+  ],
+  "color_tags": [
+    "ホワイト基調",
+    "オレンジ",
+    "グリーン",
+    "ベージュ・生成り"
+  ],
+  "layout_tags": [
+    "人物主役FV",
+    "長尺LP",
+    "カード型",
+    "セクション分割",
+    "ストーリー型"
+  ],
+  "copy_types": [
+    "権威性訴求",
+    "実績訴求",
+    "数字訴求",
+    "利便性訴求",
+    "ベネフィット訴求",
+    "価格訴求"
+  ],
+  "primary_appeal": "アナウンサー歴20年・在宅録音歴15年の元FM局アナウンサー本人が、スタジオ収録同等の機材とプロの音響エンジニアによる整音で、ナレーションを低価格・最短24時間・オンライン完結で納品する宅録ナレーションサービス。経歴→宅録の合理性（スタジオ収録との比較）→7用途の音声サンプル→文字数×納期の料金表→5STEP→利用者の声の順で、品質・価格・納期の不安を処理し、原稿のサンプル音声プレゼントでGoogleフォーム／公式LINEの相談へ導く",
+  "offer": "料金は文字数×納期の4段階（24時間／スピード3営業日／スタンダード約1週間／お任せ約2週間）。〜100文字（〜30秒）11,000〜17,000円、〜500文字 19,000〜24,000円、〜1,000文字 22,000〜35,000円、〜4,000文字（12〜16分）44,000〜75,000円、4,001文字以上は応相談（税の表記なし）。特典：お申し込みをご検討中の原稿のサンプル音声プレゼント（通常有料・1分以内・整音前）。リテイクは読み間違い・アクセントは無料、イメージ的な問題・原稿変更は全体の10%程度まで1回無料（2回目以降は別途）。事前入金（銀行振込）。取得時点のアーカイブ画像の表記で、現行は未確認",
+  "captureUrl": "https://rdlp.jp/archives/otherdesign/lp/200419?rdlp_flg=1",
+  "sourceUrl": "https://rdlp.jp/lp-archive/",
+  "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/200419?rdlp_flg=1",
+  "source": {
+    "captured_url": "https://rdlp.jp/archives/otherdesign/lp/200419?rdlp_flg=1",
+    "reference_name": "LPアーカイブ",
+    "reference_url": "https://rdlp.jp/lp-archive/",
+    "reference_detail_url": "https://rdlp.jp/archives/otherdesign/lp/200419?rdlp_flg=1",
+    "notion_url": "https://app.notion.com/p/3c724d4fa67181208cb8e153885f4735",
+    "dis_notion_url": null,
+    "dropbox_master_path": null,
+    "dis_dropbox_path": null,
+    "github_knowledge_path": "knowledge/lp/LP-0004.json",
+    "archive_post_id": "200419"
+  },
+  "asset_status": {
+    "pc_full": {
+      "path": "01_Normal_Images/DIS-LP-0007_PC_full.png",
+      "width": 2000,
+      "height": 15687,
+      "status": "captured_unverified"
+    },
+    "pc_first_view": {
+      "path": "01_Normal_Images/DIS-LP-0007_PC_first_view.png",
+      "width": 2000,
+      "height": 900,
+      "status": "captured_unverified"
+    },
+    "sp_full": {
+      "path": "01_Normal_Images/DIS-LP-0007_SP_full.png",
+      "width": 750,
+      "height": 24295,
+      "status": "captured_unverified"
+    },
+    "sp_first_view": {
+      "path": "01_Normal_Images/DIS-LP-0007_SP_first_view.png",
+      "width": 750,
+      "height": 812,
+      "status": "captured_unverified"
+    },
+    "repository_crosscheck": "not_run"
+  },
+  "funnel_structure": [
+    {
+      "step": 1,
+      "role": "FV",
+      "pattern": "FV（経験年数・大見出し・3つの丸バッジ）",
+      "description": "1画面目で、提供者本人（顔・マイク・ヘッドホン）、経験年数、サービスの種類（完全オンライン型）、3つの便益を一度に見せ、無形サービスの品質を人物で可視化する導入"
+    },
+    {
+      "step": 2,
+      "role": "共感",
+      "pattern": "提供者の紹介（narrator・氏名・経歴）",
+      "description": "FVで見せた本人を、氏名と経歴で紹介し、『誰が声を出すのか』を確定させて品質不安を下げる"
+    },
+    {
+      "step": 3,
+      "role": "実績",
+      "pattern": "経歴の実績（テレビ・ラジオ・CM・場内MC・その他）",
+      "description": "『多彩な経験を積んだ声のプロフェッショナル』として、発注用途（番組・CM・VP・イベント・教材）に近い実績を、カテゴリ別に並べて自己照合させる"
+    },
+    {
+      "step": 4,
+      "role": "解決策",
+      "pattern": "表現力の訴求（届ける相手にどのように伝わるか）",
+      "description": "経歴を、顧客の便益（『伝わり方』）に翻訳し、『表現力は一朝一夕で身につかない』とプロに頼む理由を作る"
+    },
+    {
+      "step": 5,
+      "role": "その他",
+      "pattern": "動画枠＋『届く』音声コンテンツの宣言",
+      "description": "動画（説明）への導線を作り、『“届く”音声コンテンツ制作なら front voice にご相談ください』と、サービスを宣言して、比較へ橋渡しする"
+    },
+    {
+      "step": 6,
+      "role": "比較",
+      "pattern": "スタジオ収録と宅録の比較（安さの理由）",
+      "description": "『なぜ宅録なのか』を、スタジオ収録の負担（費用・日程調整・立ち会い）との対比で説明し、安さを品質の低下ではなく負担の削減として納得させる"
+    },
+    {
+      "step": 7,
+      "role": "特徴",
+      "pattern": "機材と整音の説明＋7つの音声サンプル",
+      "description": "宅録への最大の不安（音質）を、機材・整音の説明と、用途別の音声サンプル（試聴）で事前に確認させる"
+    },
+    {
+      "step": 8,
+      "role": "料金",
+      "pattern": "料金表（文字数×納期の4段階）",
+      "description": "文字数と納期（4段階）の2軸の表で、見積り前に価格の予見性を与え、『高そう』という不安を先に解く"
+    },
+    {
+      "step": 9,
+      "role": "ベネフィット",
+      "pattern": "安価の理由とスピード納品（宅録だから）",
+      "description": "料金表の直後で、『通常は複数の費用が発生し高価。宅録は中間コストをカットできる』と理由を補い、予算が限られる層と、急ぎの層に向けて、2つの便益を言い切る"
+    },
+    {
+      "step": 10,
+      "role": "流れ",
+      "pattern": "依頼の流れ（flow・5STEP）",
+      "description": "仮申し込みから納品までの5つの手順と、通常の納期（5営業日）を示し、『何をすればよいか』『いつ届くか』の不安を解く"
+    },
+    {
+      "step": 11,
+      "role": "実績",
+      "pattern": "利用者の声（2件）",
+      "description": "実際の発注者の感想（品質・手間の少なさ）で、第三者の視点の安心を足す"
+    },
+    {
+      "step": 12,
+      "role": "共感",
+      "pattern": "コミュニケーションの約束と相談のきっかけ（3つの質問）",
+      "description": "『丁寧なコミュニケーションを第一に』という運営の姿勢を示し、『こんな相談でもいい』と3つの例を出して、問い合わせの心理的なハードルを下げる"
+    },
+    {
+      "step": 13,
+      "role": "CTA",
+      "pattern": "サンプル音声プレゼント＋二択CTA（Googleフォーム／公式LINE）",
+      "description": "『申込みを検討中の原稿のサンプル音声を、無料で作る』という低リスクの特典で、迷っている人の背中を押し、フォームかLINEのどちらかで問い合わせさせる（ページ内で最初のボタン）"
+    },
+    {
+      "step": 14,
+      "role": "FAQ",
+      "pattern": "注意事項（原稿・納期・納品データ・リテイク・お支払い）",
+      "description": "発注後のトラブル（原稿形式・納期の数え方・納品の形式と権利・修正の範囲・支払い）を、先に開示して、契約の不安を減らす"
+    },
+    {
+      "step": 15,
+      "role": "CTA",
+      "pattern": "SP下部の2ボタン（固定表示に見える帯）",
+      "description": "SPの画面下端に、フォームとLINEの2ボタンを横並びで見せ、条件を読み終えた直後に行動できるようにする（固定表示なら、全域で使える）"
+    }
+  ],
+  "section_patterns": [
+    {
+      "id": "C01",
+      "source_section": "U1",
+      "name": "FV（経験年数・大見出し・3つの丸バッジ）",
+      "role": "FV",
+      "reusable_structure": [
+        "全幅の人物写真＋『声』を橙で大きくした見出し＋チェック付き実績ラベル2つ＋丸バッジ3つ（便益）のFV。PCは人物左・コピー右、SPは見出し→人物写真に重ねたバッジ"
+      ],
+      "replace_required": [
+        "人物写真（本人・マイク）",
+        "ロゴ・ブランド名",
+        "『アナウンサー歴20年』『在宅録音歴15年』などの経験年数",
+        "『最短24時間』『低価格』などの便益の文言"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C02",
+      "source_section": "U2",
+      "name": "提供者の紹介（narrator・氏名・経歴）",
+      "role": "共感",
+      "reusable_structure": [
+        "橙のグラデーション帯＋はみ出す英字ラベル＋氏名・経歴の箇条書き＋帯に重ねた角丸の人物写真。PC・SPとも、重なりで立体感を作る"
+      ],
+      "replace_required": [
+        "人物写真",
+        "氏名・経歴（局名・番組名・学歴）",
+        "英字ラベルの文言"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C03",
+      "source_section": "U3",
+      "name": "経歴の実績（テレビ・ラジオ・CM・場内MC・その他）",
+      "role": "実績",
+      "reusable_structure": [
+        "ベージュのタブ（カテゴリ名）＋角丸カードの箇条書きを、PC2列・SP1列で並べる実績一覧"
+      ],
+      "replace_required": [
+        "番組名・企業名・大会名などの実績の固有名詞",
+        "見出しの『声』の文言"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C04",
+      "source_section": "U4",
+      "name": "表現力の訴求（届ける相手にどのように伝わるか）",
+      "role": "解決策",
+      "reusable_structure": [
+        "見出し（強調語だけ橙・傍点）＋説明文＋手書き風書体の吹き出しカード＋横顔の写真。PCは左右分割、SPは写真→テキスト"
+      ],
+      "replace_required": [
+        "写真（本人の仕事風景）",
+        "『表現力』『発声法』などの主張・コピー"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C05",
+      "source_section": "U5",
+      "name": "動画枠＋『届く』音声コンテンツの宣言",
+      "role": "その他",
+      "reusable_structure": [
+        "動画の枠（イラスト背景）＋波形アイコンで挟んだ中央の宣言見出し＋山形の区切り"
+      ],
+      "replace_required": [
+        "動画の内容（イラスト・音声）",
+        "宣言のコピー・ブランド名"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C06",
+      "source_section": "U6",
+      "name": "スタジオ収録と宅録の比較（安さの理由）",
+      "role": "比較",
+      "reusable_structure": [
+        "×（グレー・暗い見出し）と✓（橙・明るい背景）の2枚カードで、問題と解決を対比。各カードの下に表情の違う人物を置く"
+      ],
+      "replace_required": [
+        "人物写真（男性・本人）",
+        "比較の項目・文言",
+        "『まるっとカット』などのコピー"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C07",
+      "source_section": "U7",
+      "name": "機材と整音の説明＋7つの音声サンプル",
+      "role": "特徴",
+      "reusable_structure": [
+        "橙の面に白抜き見出し＋写真＋説明文、その下に白いカード（再生ボタン＋用途名の行×7）の試聴リスト"
+      ],
+      "replace_required": [
+        "ヘッドホンの写真",
+        "『スタジオ収録同等機材』『プロの音響エンジニア』などの主張",
+        "音声サンプルの用途名・音声そのもの",
+        "外部リンク先（Más Audio Sound）"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C08",
+      "source_section": "U8",
+      "name": "料金表（文字数×納期の4段階）",
+      "role": "料金",
+      "reusable_structure": [
+        "行＝文字数（目安時間つき）・列＝納期の4段階の価格マトリクス。列の見出しを黄→橙のグラデーションで、早いほど高い関係を示す"
+      ],
+      "replace_required": [
+        "金額（全セル）",
+        "文字数・納期の区切り",
+        "ブランド固有の納期名（スピード／スタンダード／お任せ）"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C09",
+      "source_section": "U9",
+      "name": "安価の理由とスピード納品（宅録だから）",
+      "role": "ベネフィット",
+      "reusable_structure": [
+        "円形の写真＋白いラベル付きの見出し＋本文を、左右（SPは縦）で交互に置く2つの便益ブロック。強調は橙の太字"
+      ],
+      "replace_required": [
+        "写真（本人・ノートPC）",
+        "『品質は妥協したくないが、予算が限られている』などのコピー",
+        "24時間納品の条件の文言"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C10",
+      "source_section": "U10",
+      "name": "依頼の流れ（flow・5STEP）",
+      "role": "流れ",
+      "reusable_structure": [
+        "ぼかした背景写真の上に、番号つき（橙の大きな数字）の白いカード5枚を、三角の矢でつなぐ縦の手順"
+      ],
+      "replace_required": [
+        "手順の文言・納期（5営業日）",
+        "背景写真",
+        "『フォームまたは公式LINE』の導線名"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C11",
+      "source_section": "U11",
+      "name": "利用者の声（2件）",
+      "role": "実績",
+      "reusable_structure": [
+        "生成りの背景に、シルエットの丸＋橙の見出し＋本文＋細い枠線を、左右にずらして並べる2件の声"
+      ],
+      "replace_required": [
+        "声の本文・見出し・属性（S社／K様など）",
+        "シルエットのイラスト"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C12",
+      "source_section": "U12",
+      "name": "コミュニケーションの約束と相談のきっかけ（3つの質問）",
+      "role": "共感",
+      "reusable_structure": [
+        "ロゴ＋手書き風の見出し＋橙の円3つ（相談例の吹き出し）＋『お気軽にご相談ください』の結び"
+      ],
+      "replace_required": [
+        "ロゴ",
+        "『丁寧なコミュニケーション』『丸投げ』などのコピー",
+        "相談例の文言"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C13",
+      "source_section": "U13",
+      "name": "サンプル音声プレゼント＋二択CTA（Googleフォーム／公式LINE）",
+      "role": "CTA",
+      "reusable_structure": [
+        "橙の角の装飾つき白いカード（バッジ＋特典の見出し＋注記＋写真）→ 『ご相談やお申込みはこちら』→ 色の違う2ボタン（橙のフォーム／緑のLINE）"
+      ],
+      "replace_required": [
+        "特典の内容・条件（サンプル音声）",
+        "ボタンの文言・リンク先・ブランド色（LINEの緑）",
+        "ミキサーの写真"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C14",
+      "source_section": "U14",
+      "name": "注意事項（原稿・納期・納品データ・リテイク・お支払い）",
+      "role": "FAQ",
+      "reusable_structure": [
+        "橙の背景に、白い角丸の1枚カード。アイコンつきの見出し＋チェック風の丸の箇条書き＋点線の区切りの5ブロックの条件一覧"
+      ],
+      "replace_required": [
+        "条件の数値・文言（10%・17時・形式の仕様など）",
+        "権利の記載",
+        "支払い方法"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C15",
+      "source_section": "U15",
+      "name": "SP下部の2ボタン（固定表示に見える帯）",
+      "role": "CTA",
+      "reusable_structure": [
+        "画面の下端に、2色のボタンを横並びにした帯（固定表示にする場合は、position: fixed のバー）"
+      ],
+      "replace_required": [
+        "ボタンの文言・リンク先・ブランド色"
+      ],
+      "rights_status": "reference_only"
+    }
+  ],
+  "reusable_principles": [
+    "全幅の人物写真＋『声』（橙）の大見出し＋チェックつき実績ラベル2つ＋丸バッジ3つ（便益）のFV（PCは左右、SPは縦）",
+    "橙の帯に重ねた人物写真＋はみ出す英字ラベル＋氏名・経歴の箇条書きの『担当者の紹介』",
+    "ベージュのタブつきカードで、カテゴリ別に実績を並べる一覧（PC2列／SP1列）",
+    "×（グレー・暗い見出し）と✓（橙・明るい背景）の2枚カードで、負担と解決を対比する比較",
+    "橙の面に白抜き見出し＋写真＋説明文、その下に白いカードの音声サンプル一覧（再生ボタン＋用途名の行×7）",
+    "行＝文字数（目安時間）・列＝納期4段階の価格マトリクス（列見出しを黄→橙のグラデーション）＋『クリックで表示』の開閉",
+    "ぼかした背景の上に、番号つき（橙の大きな数字）の白いカード5枚を、三角の矢でつなぐ縦の手順",
+    "橙の角の装飾つきの白いカード（特典）→『ご相談やお申込みはこちら』→ 橙と緑の二択ボタン、条件を白い1枚カードにまとめた注意事項"
+  ],
+  "cta_patterns": [
+    {
+      "name": "サンプル音声プレゼント＋二択CTA（Googleフォーム／公式LINE）",
+      "description": "【PC】白いカード（橙の角の装飾）：丸い橙のバッジ『今なら』、『お申し込みをご検討中の原稿の サンプル音声※プレゼント！』（橙の太字）、説明（社内のプレゼンやお仲間内での参考資料に／雰囲気やトーンを確認／ぜひお申し込みを）、注記3点（※通常有料／※原稿内容はこちらで変更／※1分以内・音質も整音前）。右に、ミキサー（SS…"
+    },
+    {
+      "name": "SP下部の2ボタン（固定表示に見える帯）",
+      "description": "【SP】画像の最下部に、薄いクリーム色の帯。左に橙の『Googleフォーム』（封筒アイコン）、右に緑の『公式LINE』が、横に並ぶ。PC全体画像には、同じ帯がない。"
+    }
+  ],
+  "trust_patterns": [
+    {
+      "name": "経歴の実績（テレビ・ラジオ・CM・場内MC・その他）",
+      "description": "【PC】見出し『多彩な経験を積んだ 声のプロフェッショナル』（『声』は橙で大きく、引用符つき）。ベージュのタブつきカードを2列：テレビ（三重テレビ・名古屋テレビの番組名とMC／レポーター等）、ラジオ（レディオキューブFM三重・岐阜放送）、CM・VPナレーション（TV-CM イオン、トヨタVP 他多数）、場内MC・実況（…",
+      "required_caution": "実績・写真・数値は、案件ごとの権利と現在性の確認が必要。"
+    },
+    {
+      "name": "利用者の声（2件）",
+      "description": "【PC】生成り（紙の質感）の背景に、細い英字『voice』＋『ご利用者の声』。左右にずらした2件：オレンジ→黄のグラデーションの丸に黒いシルエット（男性）、橙の見出しと本文、縦書きの小さな英字『VOICCE 01』。1件目『素晴らしい出来栄え』S社／K様（読み方の間の取り方が絶妙、スライドを見る方に強いインパクト）、2…",
+      "required_caution": "実績・写真・数値は、案件ごとの権利と現在性の確認が必要。"
+    },
+    {
+      "name": "注意事項（原稿・納期・納品データ・リテイク・お支払い）",
+      "description": "【PC】橙のグラデーションの背景に、波形の上端、白い角丸のカード：英字『notes』＋『注意事項』。5つの見出し（アイコンつき）と点線の区切り：原稿について（Word形式／文字数カウント／句読点・スペースは1文字／改行は含まない／PDFは見積り不可）、納期について（正式発注の翌日が1営業日目／17時までに送るよう努める…",
+      "required_caution": "実績・写真・数値は、案件ごとの権利と現在性の確認が必要。"
+    }
+  ],
+  "pricing_patterns": [
+    {
+      "name": "料金表（文字数×納期の4段階）",
+      "description": "【PC】細い英字『price』＋『価格と納期』、下に『クリックで表示 ⌄』（開閉に見える表示）。表は、左の見出し列『文字数（目安時間）』と、4つの納期の列：『24時間納品』（黄）、『スピード納品 3営業日』、『スタンダード納品 約1週間』、『お任せ納品 約2週間』（橙に向かうグラデーション）。行は〜100文字（〜30秒…",
+      "basis_status": "requires_verification"
+    }
+  ],
+  "visual_patterns": [
+    {
+      "name": "color_legibility",
+      "description": "白・生成りを基調に、橙（見出し・数字・ボタン・帯）で統一し、LINEの緑だけが別色の差し色。本文は黒系で読みやすく、料金表の数字も大きい。減点は、橙の面の上の白い小さな文字（U7の説明文・注記）がコントラストが低い点、橙のボタン（Googleフォーム）と装飾の橙が近く、行動点が埋もれやすい点、SPの料金表の5列が狭く、『スタンダード納品』が枠いっぱいな点。"
+    },
+    {
+      "name": "layout_spacing",
+      "description": "PCは中央の約半幅に収め、余白を広く取り、カード（角丸・影）と円形写真で、『やわらかい専門家』のトーンを保つ。章の切れ目は、弧・山形・波形で、反復している。SPは1列に再構成され、順序が保たれる。減点は、U14（注意事項）がSPで約3,500px続く点、PCの右側が約22%白く切れて見える区間（取得時の崩れの可能性）。"
+    },
+    {
+      "name": "visual_brand",
+      "description": "人物写真（本人）をFV・紹介・仕事風景・宅録・円形写真・特典で反復し、『人＝品質』を固定。橙＋細い英字見出し（narrator／price／flow／voice／notes）＋波形のモチーフで、音声サービスらしい一貫したトーン。イラスト（動画枠・声のシルエット）はやや汎用的で、ブランド固有性は人物写真が担う。"
+    }
+  ],
+  "rights_excluded": [
+    "ロゴ・ブランド名",
+    "人物（本人・男性モデル・イラストの人物）",
+    "写真・イラスト・動画・音声サンプル",
+    "コピー（声・注意事項を含む）",
+    "価格・納期・経験年数・実績",
+    "氏名・経歴・番組名・企業名などの固有名詞、LINE・Googleのブランド要素"
+  ],
+  "unverified_claims": [
+    {
+      "claim": "『アナウンサー歴20年』『在宅録音歴15年』の基準時点",
+      "status": "unverified",
+      "required_basis": [
+        "運営者の現行プロフィール・公式ページで、年数と起点を確認する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "『最短24時間』の適用条件（文字数・要相談）",
+      "status": "unverified",
+      "required_basis": [
+        "運営元に、24時間納品の対応条件を確認する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "経歴の裏付け（局名・在籍期間・学歴）",
+      "status": "unverified",
+      "required_basis": [
+        "公式プロフィール（所属事務所・本人の公開情報）で、現在の内容を確認する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "実績の掲載許諾・時期・役割の正確さ",
+      "status": "unverified",
+      "required_basis": [
+        "運営者に、実績の掲載可否・時期を確認する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "『声質は案内・説明動画に適している』の根拠",
+      "status": "unverified",
+      "required_basis": [
+        "利用例・評価の出典があれば、運営元に確認する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "動画の中身・再生の有無（実ページで、動画が置換されているか）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）で、動画の内容・長さ・自動再生の有無を確認する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "比較の条件（スタジオ費用がいくらか・どの水準のスタジオか）",
+      "status": "unverified",
+      "required_basis": [
+        "運営元に、比較の前提（一般的なスタジオ料金の目安）の根拠を確認する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "音声サンプルの中身（声の種類・長さ・再生方法）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで、再生の可否・音源の長さを確認する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "橙の帯の右側が白く切れて見える点（PC約22%・SP約4%）が、実ページでも同じか",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ・別の幅で確認する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "『Más Audio Sound』の関係（外部のマスタリング会社の記載）",
+      "status": "unverified",
+      "required_basis": [
+        "運営元に確認する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "金額の税込・税別、消費税・源泉徴収・追加費用",
+      "status": "unverified",
+      "required_basis": [
+        "運営元に、税の扱い・追加費用を確認する"
+      ],
+      "source_unit": "U8"
+    },
+    {
+      "claim": "『クリックで表示』の動作（表が折りたたまれているか）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで、初期状態と開閉の動作を確認する"
+      ],
+      "source_unit": "U8"
+    },
+    {
+      "claim": "現行の価格",
+      "status": "unverified",
+      "required_basis": [
+        "運営元の現行ページで確認する"
+      ],
+      "source_unit": "U8"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U8"
+    },
+    {
+      "claim": "24時間納品の対応条件（文字数の上限・受付時間・追加料金）",
+      "status": "unverified",
+      "required_basis": [
+        "運営元に、24時間納品の条件を確認する"
+      ],
+      "source_unit": "U9"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U9"
+    },
+    {
+      "claim": "STEP01（仮申し込み）にボタン・リンクが付いているか",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで、文字・番号にリンクがあるか確認する"
+      ],
+      "source_unit": "U10"
+    },
+    {
+      "claim": "『通常5営業日』と、料金表の『24時間／3営業日／約1週間／約2週間』の関係",
+      "status": "unverified",
+      "required_basis": [
+        "運営元に、納期の呼び方と標準の納期を確認する"
+      ],
+      "source_unit": "U10"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U10"
+    },
+    {
+      "claim": "声の出所・時期・掲載許諾",
+      "status": "unverified",
+      "required_basis": [
+        "運営元に、声の収集時期と許諾を確認する"
+      ],
+      "source_unit": "U11"
+    },
+    {
+      "claim": "『VOICCE』の綴り（誤字か意図的か）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで確認し、誤字なら修正を提案する"
+      ],
+      "source_unit": "U11"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U11"
+    },
+    {
+      "claim": "『フルサポート』『丸投げ』の対応範囲と追加費用",
+      "status": "unverified",
+      "required_basis": [
+        "運営元に、サポートの範囲と費用を確認する"
+      ],
+      "source_unit": "U12"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U12"
+    },
+    {
+      "claim": "サンプル音声の申込み方法・対象（フォームのどこで申し込むか）・期限・回数",
+      "status": "unverified",
+      "required_basis": [
+        "運営元に、特典の条件と期間を確認する"
+      ],
+      "source_unit": "U13"
+    },
+    {
+      "claim": "Googleフォーム・公式LINEの遷移先と入力項目",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで、遷移先・入力項目・返信の目安を確認する"
+      ],
+      "source_unit": "U13"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U13"
+    },
+    {
+      "claim": "条件の法的な有効性・利用規約との一致（著作隣接権・二次利用）",
+      "status": "unverified",
+      "required_basis": [
+        "運営元の規約・契約書で確認する"
+      ],
+      "source_unit": "U14"
+    },
+    {
+      "claim": "『現在、銀行振り込みにて受け付け』の現行の決済方法・振込手数料",
+      "status": "unverified",
+      "required_basis": [
+        "運営元に、現行の決済方法を確認する"
+      ],
+      "source_unit": "U14"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U14"
+    },
+    {
+      "claim": "この帯が、スクロール中に常に画面下に表示される固定バーか（それとも、ページ末尾の通常の要素か）",
+      "status": "unverified",
+      "required_basis": [
+        "実機のSPで、スクロール中に表示されるか確認する"
+      ],
+      "source_unit": "U15"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U15"
+    }
+  ],
+  "recommended_use_cases": [],
+  "analysis_notes": {
+    "completion_status": "dis_analysis_done_28ch_pending",
+    "dis_analysis_ref": "DIS-LP-0007",
+    "remaining_limits": [
+      "タグ・訴求・オファーは、28章の分析で確定する",
+      "ライブラリー側の取り込み・28章の分析は未実施（このファイルはDISからの下書き）",
+      "CBS本体への実同期は未実施"
+    ]
+  },
+  "dis_evaluation": {
+    "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+    "axes": [
+      {
+        "key": "purpose_fit",
+        "label": "目的適合",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "information_hierarchy",
+        "label": "情報優先順位",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_flow",
+        "label": "視線誘導",
+        "score": 3,
+        "confidence": "medium"
+      },
+      {
+        "key": "message_copy",
+        "label": "訴求・コピー",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "trust_safety",
+        "label": "信頼・安心",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "color_legibility",
+        "label": "配色・可読性",
+        "score": 3,
+        "confidence": "medium"
+      },
+      {
+        "key": "layout_spacing",
+        "label": "レイアウト・余白",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_brand",
+        "label": "ビジュアル・ブランド",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "implementation_reuse",
+        "label": "実装・転用性",
+        "score": 4,
+        "confidence": "medium"
+      }
+    ],
+    "note": "28章の総合点（ヒューリスティック/100）とは別の物差し。足したり平均したりしない。"
+  },
+  "cbs_sync": {
+    "status": "draft_from_dis",
+    "knowledge_path": "knowledge/lp/LP-0004.json",
+    "exported_at": null,
+    "actual_cbs_import": "not_synced"
+  }
+}

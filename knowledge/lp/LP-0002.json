@@ -1,0 +1,795 @@
+{
+  "id": "LP-0002",
+  "dis_ids": [
+    "DIS-LP-0005"
+  ],
+  "mediaType": "LP",
+  "media_type": "LP",
+  "title": "金山納豆のLPデザイン",
+  "brand": "金山納豆",
+  "industry_tags": [
+    "食品"
+  ],
+  "product_tags": [
+    "LP/物販"
+  ],
+  "color_tags": [
+    "ベージュ・生成り",
+    "ゴールド",
+    "オレンジ",
+    "ブラウン"
+  ],
+  "layout_tags": [
+    "商品主役FV",
+    "長尺LP",
+    "セクション分割",
+    "縦書き",
+    "写真主役",
+    "ストーリー型"
+  ],
+  "copy_types": [
+    "ベネフィット訴求",
+    "権威性訴求",
+    "社会的証明",
+    "数字訴求",
+    "情緒訴求",
+    "利便性訴求"
+  ],
+  "primary_appeal": "白河の清水とカナダ産小粒大豆で、匂い控えめにまろやかに仕上げた納豆。著名人・評価・購入者の声→選ばれる理由5つ→冷凍保存・レシピ・最短発送で36食まとめ買いの不安を解く、食品の商品紹介",
+  "offer": "3パック×12個入り（36食分）。価格・送料・購入ボタンは画像内に表示なし（アーカイブ画像の範囲で未確認）",
+  "captureUrl": "https://rdlp.jp/archives/otherdesign/lp/200369?rdlp_flg=1",
+  "sourceUrl": "https://rdlp.jp/lp-archive/",
+  "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/200369?rdlp_flg=1",
+  "source": {
+    "captured_url": "https://rdlp.jp/archives/otherdesign/lp/200369?rdlp_flg=1",
+    "reference_name": "LPアーカイブ",
+    "reference_url": "https://rdlp.jp/lp-archive/",
+    "reference_detail_url": "https://rdlp.jp/archives/otherdesign/lp/200369?rdlp_flg=1",
+    "notion_url": "https://app.notion.com/p/3d024d4fa6718162b8a7f24f63319ba6",
+    "dis_notion_url": null,
+    "dropbox_master_path": null,
+    "dis_dropbox_path": null,
+    "github_knowledge_path": "knowledge/lp/LP-0002.json",
+    "archive_post_id": "200369"
+  },
+  "asset_status": {
+    "pc_full": {
+      "path": "01_Normal_Images/DIS-LP-0005_PC_full.png",
+      "width": 1000,
+      "height": 11090,
+      "status": "captured_unverified"
+    },
+    "pc_first_view": {
+      "path": "01_Normal_Images/DIS-LP-0005_PC_first_view.png",
+      "width": 1000,
+      "height": 900,
+      "status": "captured_unverified"
+    },
+    "sp_full": {
+      "path": "01_Normal_Images/DIS-LP-0005_SP_full.png",
+      "width": 750,
+      "height": 17605,
+      "status": "captured_unverified"
+    },
+    "sp_first_view": {
+      "path": "01_Normal_Images/DIS-LP-0005_SP_first_view.png",
+      "width": 750,
+      "height": 812,
+      "status": "captured_unverified"
+    },
+    "repository_crosscheck": "not_run"
+  },
+  "funnel_structure": [
+    {
+      "step": 1,
+      "role": "FV",
+      "pattern": "FV（商品名・露出実績・品質ラベル・36食の構成）",
+      "description": "1画面目で、食欲（納豆ご飯の大きな写真）・商品名・産地・露出実績・品質条件・数量までを一度に見せる導入"
+    },
+    {
+      "step": 2,
+      "role": "実績",
+      "pattern": "著名人コメント（『有名女優も その美味しさを 大絶賛！』）",
+      "description": "FVの『有名女優』を、コメントで受けて、味と匂いへの不安を他者の経験で弱める"
+    },
+    {
+      "step": 3,
+      "role": "実績",
+      "pattern": "レビュー評価（4.79/5 獲得！）",
+      "description": "数値で評価を示し、味の主張を『多くの購入者が評価している』という事実に結びつける"
+    },
+    {
+      "step": 4,
+      "role": "実績",
+      "pattern": "購入者の声（苦手な方にもオススメ／大好きな味がまた食べられる嬉しさ）",
+      "description": "『数多くのお客様にお求めいただいています！』の見出しのもと、星5つの購入者コメント2件と、箸上げの写真で、味・匂い・家族利用の不安を弱める"
+    },
+    {
+      "step": 5,
+      "role": "その他",
+      "pattern": "章扉（金山納豆 選ばれる理由）",
+      "description": "社会的証明の章から、商品固有の5つの理由の章へ、読む姿勢を切り替える扉"
+    },
+    {
+      "step": 6,
+      "role": "特徴",
+      "pattern": "理由01 奇跡の水がもたらす風味",
+      "description": "産地（白河の水・ビャッコイ）を理由にして、匂いの少なさの根拠を示す"
+    },
+    {
+      "step": 7,
+      "role": "ベネフィット",
+      "pattern": "理由02 納豆のイメージが変わる ニオイ控えめ",
+      "description": "匂いが苦手な大人と子どもでも食べられる、という便益を、笑顔の子どもの写真で見せる"
+    },
+    {
+      "step": 8,
+      "role": "特徴",
+      "pattern": "理由03 豆にこだわり 味にこだわる",
+      "description": "原料（遺伝子組み換え大豆不使用・カナダ産小粒大豆）と無添加製法を、原料の写真で示す"
+    },
+    {
+      "step": 9,
+      "role": "ベネフィット",
+      "pattern": "理由04 健康的な毎日にアプローチする 栄養の宝庫",
+      "description": "栄養素の列挙で、毎日食べる理由（健康）を足す"
+    },
+    {
+      "step": 10,
+      "role": "特徴",
+      "pattern": "理由05 冷凍で最長60日保存（保存方法・解凍方法）",
+      "description": "36食のまとめ買いで起きる『食べ切れない』不安を、冷凍保存の手順で解消する"
+    },
+    {
+      "step": 11,
+      "role": "その他",
+      "pattern": "アレンジレシピ（納豆パスタ）",
+      "description": "ご飯以外の食べ方を見せ、36食の消費場面を広げる"
+    },
+    {
+      "step": 12,
+      "role": "流れ",
+      "pattern": "最短発送（当日12時まで翌営業日発送／工場から0日で発送／製造から最短日で到着）",
+      "description": "鮮度への不安（通販は古く届くのでは）を、注文締切・発送・到着の3枚のカードで処理する"
+    },
+    {
+      "step": 13,
+      "role": "商品紹介",
+      "pattern": "商品詳細（原材料・内容量・賞味期限・保存方法）",
+      "description": "原材料・内容量・賞味期限・保存方法を表にして、購入前の事実確認で締める。最終部で、購入への出口はない"
+    }
+  ],
+  "section_patterns": [
+    {
+      "id": "C01",
+      "source_section": "U1",
+      "name": "FV（商品名・露出実績・品質ラベル・36食の構成）",
+      "role": "FV",
+      "reusable_structure": [
+        "大きなシズル写真＋縦書きの商品名＋2つの菱形の品質ラベル＋商品箱＋数量の帯を1枚にまとめたヒーロー（PCは左右分割、SPは縦積み）"
+      ],
+      "replace_required": [
+        "納豆ご飯の写真・商品箱の写真",
+        "商品名・産地・縦書きのキャッチ",
+        "『有名女優』『テレビ番組』の露出文言",
+        "品質ラベルの文言",
+        "数量（3ヶパック×12個・36食分）"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C02",
+      "source_section": "U2",
+      "name": "著名人コメント（『有名女優も その美味しさを 大絶賛！』）",
+      "role": "実績",
+      "reusable_structure": [
+        "大きな見出しの円＋和紙カードの引用（短いコメント）で、FVの露出訴求を言葉で裏づける構造"
+      ],
+      "replace_required": [
+        "コメント本文・コメントした人物",
+        "『有名女優』の文言",
+        "金の円・和紙カードの装飾（ブランドの意匠）"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C03",
+      "source_section": "U3",
+      "name": "レビュー評価（4.79/5 獲得！）",
+      "role": "実績",
+      "reusable_structure": [
+        "月桂樹の飾り＋大きな評価数値＋星＋時点の注記、の評価バッジ構造"
+      ],
+      "replace_required": [
+        "評価数値（4.79/5）・星",
+        "『2022年10月時点』の注記",
+        "月桂樹の飾りの意匠"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C04",
+      "source_section": "U4",
+      "name": "購入者の声（苦手な方にもオススメ／大好きな味がまた食べられる嬉しさ）",
+      "role": "実績",
+      "reusable_structure": [
+        "大見出し＋豆形に切り抜いた写真＋星付きの短いコメント2件（見出し→3〜4行）の購入者の声"
+      ],
+      "replace_required": [
+        "コメント本文・星の数",
+        "箸上げの納豆ご飯の写真",
+        "豆形の切り抜き・金の縁取り（ブランドの意匠）"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C05",
+      "source_section": "U5",
+      "name": "章扉（金山納豆 選ばれる理由）",
+      "role": "その他",
+      "reusable_structure": [
+        "イラスト＋ロゴ＋『選ばれる理由』の章扉＋下向きの縦線（次章への誘導）"
+      ],
+      "replace_required": [
+        "イラスト",
+        "ロゴ・ブランド名",
+        "青海波などの和柄（ブランドの意匠）"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C06",
+      "source_section": "U6",
+      "name": "理由01 奇跡の水がもたらす風味",
+      "role": "特徴",
+      "reusable_structure": [
+        "大きな番号＋橙の見出し＋英字の副題＋本文（重要語だけ橙）＋豆形の写真、の理由カード（01〜05で共通の型）"
+      ],
+      "replace_required": [
+        "水・植物の写真",
+        "見出し・本文",
+        "産地・天然記念物の記述"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C07",
+      "source_section": "U7",
+      "name": "理由02 納豆のイメージが変わる ニオイ控えめ",
+      "role": "ベネフィット",
+      "reusable_structure": [
+        "番号＋右寄せ見出し＋本文＋人物写真（豆形）。左右反転で交互に並べる理由カード"
+      ],
+      "replace_required": [
+        "子どもの写真（人物）",
+        "見出し・本文"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C08",
+      "source_section": "U8",
+      "name": "理由03 豆にこだわり 味にこだわる",
+      "role": "特徴",
+      "reusable_structure": [
+        "番号＋見出し＋本文＋原料の写真。原料・製法の主張を、一次原料の写真で見せる型"
+      ],
+      "replace_required": [
+        "大豆の写真",
+        "原産地・製法の記述"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C09",
+      "source_section": "U9",
+      "name": "理由04 健康的な毎日にアプローチする 栄養の宝庫",
+      "role": "ベネフィット",
+      "reusable_structure": [
+        "番号＋見出し＋栄養素の列挙＋箸上げ写真の理由カード"
+      ],
+      "replace_required": [
+        "写真",
+        "栄養素の列挙・コピー"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C10",
+      "source_section": "U10",
+      "name": "理由05 冷凍で最長60日保存（保存方法・解凍方法）",
+      "role": "特徴",
+      "reusable_structure": [
+        "見出し＋ベネフィット本文＋写真＋パターン1/2の手順帯＋解凍方法の枠、の保存・使い方の章"
+      ],
+      "replace_required": [
+        "写真",
+        "保存期間・手順の文言"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C11",
+      "source_section": "U11",
+      "name": "アレンジレシピ（納豆パスタ）",
+      "role": "その他",
+      "reusable_structure": [
+        "大きな写真の章扉＋完成写真＋ノート風の材料メモ＋step 1〜3の作り方、のレシピ構造"
+      ],
+      "replace_required": [
+        "料理写真・レシピ本文",
+        "材料・分量",
+        "リボンなどの装飾（ブランドの意匠）"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C12",
+      "source_section": "U12",
+      "name": "最短発送（当日12時まで翌営業日発送／工場から0日で発送／製造から最短日で到着）",
+      "role": "流れ",
+      "reusable_structure": [
+        "導入見出し＋白い3枚カード（時間→在庫→到着）の、発送・納期の説明"
+      ],
+      "replace_required": [
+        "発送・納期の条件",
+        "梅の紋・金の影などの意匠",
+        "『最短発送』などの文言"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C13",
+      "source_section": "U13",
+      "name": "商品詳細（原材料・内容量・賞味期限・保存方法）",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "斜めの切り替え面の見出し＋罫線で区切る項目名／内容の2列の表、の商品仕様"
+      ],
+      "replace_required": [
+        "原材料・内容量・賞味期限・保存方法の記載",
+        "ブランド名の英字"
+      ],
+      "rights_status": "reference_only"
+    }
+  ],
+  "reusable_principles": [
+    "大きなシズル写真＋縦書きの商品名＋2つの菱形ラベル＋商品箱＋数量の帯（FV。PCは左右分割、SPは縦積み）",
+    "著名人コメントの円＋和紙カード→月桂樹の評価バッジ→星付きの購入者の声2件、という社会的証明の3段構成",
+    "章扉（イラスト＋ロゴ＋『選ばれる理由』）→大きな番号＋橙の見出し＋英字の副題＋本文＋豆形写真の理由カード5枚（PCは左右交互、SPは縦積み）",
+    "保存手順の帯（パターン1／or／パターン2）＋解凍方法の枠（まとめ買いの『食べ切れない』不安を処理）",
+    "大きな写真の章扉＋完成写真＋ノート風の材料メモ＋step 1〜3の作り方（レシピ）",
+    "白い3枚カード（締切→在庫→到着）の発送説明",
+    "斜めの切り替え面の見出し＋2列の表（項目名／内容）の商品詳細"
+  ],
+  "cta_patterns": [],
+  "trust_patterns": [
+    {
+      "name": "著名人コメント（『有名女優も その美味しさを 大絶賛！』）",
+      "description": "【PC】金色の円に『有名女優も その美味しさを 大絶賛！』、右に和紙のカードで3行のコメント（『納豆と言えばこれ！というぐらい美味しくて、納豆を食べる時はずっと金山納豆です。めんつゆと納豆を混ぜ、ご飯に乗せて食べるのも好きですね。』）。金の縁取り。【SP】金の円→和紙カードの順に縦積みし、コメントが4行に折り返る。コメ…",
+      "required_caution": "実績・写真・数値は、案件ごとの権利と現在性の確認が必要。"
+    },
+    {
+      "name": "レビュー評価（4.79/5 獲得！）",
+      "description": "【PC】月桂樹の飾りに挟まれて『レビュー評価 4.79/5 獲得！』、星5つ（最後は欠けた星）、右下に小さく『※2022年10月時点』。【SP】同じ構成を中央に1列。評価の件数・集計元・期間は見当たらない。",
+      "required_caution": "実績・写真・数値は、案件ごとの権利と現在性の確認が必要。"
+    },
+    {
+      "name": "購入者の声（苦手な方にもオススメ／大好きな味がまた食べられる嬉しさ）",
+      "description": "【PC】見出し『数多くのお客様にお求めいただいています！』と、右に豆の形に切り抜いた箸上げの納豆ご飯の写真（糸引き・青ねぎ）。左に★★★★★の見出し付きコメント2件（『苦手な方にもオススメ』『大好きな味がまた食べられる嬉しさ』）。各コメント3〜4行、罫線で区切る。【SP】縦書きの見出し→写真→コメント2件の縦積み。最下…",
+      "required_caution": "実績・写真・数値は、案件ごとの権利と現在性の確認が必要。"
+    }
+  ],
+  "pricing_patterns": [
+    {
+      "name": "商品詳細（原材料・内容量・賞味期限・保存方法）",
+      "description": "【PC】左上を斜めに切り取った面に『KANAYAMA NATTO』『商品詳細』、下に表：原材料（小粒大豆〈遺伝子組替え不使用〉・納豆菌／たれ：醤油、植物蛋白加水分解物、砂糖、ぶどう糖果糖液糖、醸造酢、食塩、みりん、カツオエキス、調味料／からし：からし、食塩、酸味料、酒精、ウコン色素、増粘多糖類、ビタミンC）、内容量（1…",
+      "basis_status": "requires_verification"
+    }
+  ],
+  "visual_patterns": [
+    {
+      "name": "color_legibility",
+      "description": "生成り・淡い金・濃茶・橙の配色は、和紙・金箔の世界観で統一され、本文は濃茶で読める。橙の強調語は本文より強い。PCの本文は小さい明朝（約14px相当）で、細い罫線の上に載り、1000px幅では読みにくい箇所がある。"
+    },
+    {
+      "name": "layout_spacing",
+      "description": "和紙のカードと広い余白、豆形に切り抜いた写真で、ゆったり読める。カードの型（番号・見出し・本文・写真）が理由01〜05で一貫する。SPは、1カラムで素直に積まれ、末尾（商品詳細）の下に余白が残る。"
+    },
+    {
+      "name": "visual_brand",
+      "description": "和紙・金箔・青海波の和柄、縦書きの明朝、橙の見出し、豆形の切り抜きが、FVから商品詳細まで一貫し、福島・白河の地域食品らしい世界観が強い。"
+    }
+  ],
+  "rights_excluded": [
+    "ロゴ",
+    "人物（子ども）",
+    "写真・イラスト",
+    "コピー（著名人コメント・購入者の声を含む）",
+    "価格・評価値・実績値",
+    "原材料・賞味期限・保存方法・発送条件などの商品固有の事実",
+    "商品パッケージのデザイン"
+  ],
+  "unverified_claims": [
+    {
+      "claim": "『有名女優』『多くのテレビ番組』の具体名（人物・番組・時期）",
+      "status": "unverified",
+      "required_basis": [
+        "出典（氏名・番組名・放映日）と掲載許諾を、運営元の資料で確認する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "コメントの発言者・出典・掲載許諾",
+      "status": "unverified",
+      "required_basis": [
+        "出典（人物・媒体）と契約・許諾の記録を確認する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "評価の件数・集計元（自社サイト／モール）・集計方法",
+      "status": "unverified",
+      "required_basis": [
+        "集計元のレビューページと件数を確認し、最新値に更新する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "コメントの出典・件数・投稿者属性・掲載許諾",
+      "status": "unverified",
+      "required_basis": [
+        "レビュー原文・投稿日・集計元を確認する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "水と匂いの低減の因果関係（試験条件・数値）",
+      "status": "unverified",
+      "required_basis": [
+        "品質試験・製造資料を運営元に確認する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "子どもの写真の出典・肖像許諾",
+      "status": "unverified",
+      "required_basis": [
+        "写真の撮影者・許諾の記録を確認する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "『無添加』の対象範囲",
+      "status": "unverified",
+      "required_basis": [
+        "運営元の表示根拠（食品表示）を確認し、対象を明記する"
+      ],
+      "source_unit": "U8"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U8"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U8"
+    },
+    {
+      "claim": "栄養の定量値（1食あたり）・表示根拠",
+      "status": "unverified",
+      "required_basis": [
+        "食品表示の栄養成分と、表示の根拠を確認する"
+      ],
+      "source_unit": "U9"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U9"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U9"
+    },
+    {
+      "claim": "冷凍60日・解凍の条件の裏づけ（試験・食品表示）",
+      "status": "unverified",
+      "required_basis": [
+        "保存試験の資料・表示を確認する"
+      ],
+      "source_unit": "U10"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U10"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U10"
+    },
+    {
+      "claim": "アレルゲン・栄養の記載",
+      "status": "unverified",
+      "required_basis": [
+        "食品表示・アレルゲンの情報を運営元に確認する"
+      ],
+      "source_unit": "U11"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U11"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U11"
+    },
+    {
+      "claim": "送料・配送方法（冷蔵・冷凍）・地域別の到着日",
+      "status": "unverified",
+      "required_basis": [
+        "運営元の購入ページで、送料・配送方法・到着の目安を確認する"
+      ],
+      "source_unit": "U12"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U12"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U12"
+    },
+    {
+      "claim": "価格・送料・購入ボタン・返品・アレルゲン・販売者の情報",
+      "status": "unverified",
+      "required_basis": [
+        "運営元の購入ページ・特定商取引法の表記で確認する"
+      ],
+      "source_unit": "U13"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U13"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U13"
+    }
+  ],
+  "recommended_use_cases": [],
+  "analysis_notes": {
+    "completion_status": "dis_analysis_done_28ch_pending",
+    "dis_analysis_ref": "DIS-LP-0005",
+    "remaining_limits": [
+      "タグ・訴求・オファーは、28章の分析で確定する",
+      "ライブラリー側の取り込み・28章の分析は未実施（このファイルはDISからの下書き）",
+      "CBS本体への実同期は未実施"
+    ]
+  },
+  "dis_evaluation": {
+    "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+    "axes": [
+      {
+        "key": "purpose_fit",
+        "label": "目的適合",
+        "score": 3,
+        "confidence": "medium"
+      },
+      {
+        "key": "information_hierarchy",
+        "label": "情報優先順位",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_flow",
+        "label": "視線誘導",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "message_copy",
+        "label": "訴求・コピー",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "trust_safety",
+        "label": "信頼・安心",
+        "score": 3,
+        "confidence": "medium"
+      },
+      {
+        "key": "color_legibility",
+        "label": "配色・可読性",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "layout_spacing",
+        "label": "レイアウト・余白",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_brand",
+        "label": "ビジュアル・ブランド",
+        "score": 5,
+        "confidence": "high"
+      },
+      {
+        "key": "implementation_reuse",
+        "label": "実装・転用性",
+        "score": 4,
+        "confidence": "medium"
+      }
+    ],
+    "note": "28章の総合点（ヒューリスティック/100）とは別の物差し。足したり平均したりしない。"
+  },
+  "cbs_sync": {
+    "status": "draft_from_dis",
+    "knowledge_path": "knowledge/lp/LP-0002.json",
+    "exported_at": null,
+    "actual_cbs_import": "not_synced"
+  }
+}

@@ -1,5 +1,33 @@
 {
   "note": "旧ライブラリーのLPのDIS分析の進捗（1件ごとに更新する）。status: pending／done／failed。",
-  "updatedAt": null,
-  "items": {}
+  "updatedAt": "2026-11-11T12:57:06.582Z",
+  "items": {
+    "LP-0002": {
+      "disId": "DIS-LP-0005",
+      "title": "金山納豆",
+      "status": "done",
+      "durationSec": 567,
+      "knowledge": "knowledge/lp/LP-0002.json",
+      "notes": "全13 Unit。9軸: 目的適合3/情報優先順位4/視線誘導4/訴求4/信頼3/配色4/レイアウト4/ビジュアル5/転用4。購入の出口（価格・送料・購入ボタン）が画像内に無い。旧分析v22との食い違いは reconciliation_LP-0002 に記録。実ページの動き・リンク先・最新の文言は未確認。",
+      "finishedAt": "2026-11-11T12:38:45.204Z"
+    },
+    "LP-0003": {
+      "disId": "DIS-LP-0006",
+      "title": "気くばり御膳_お試し4食コース",
+      "status": "done",
+      "durationSec": 528,
+      "knowledge": "knowledge/lp/LP-0003.json",
+      "notes": "全15 Unit。9軸: 目的適合5/情報優先順位4/視線誘導4/訴求5/信頼3/配色4/レイアウト4/ビジュアル4/転用5。最優先の改善は糖質比較の条件（条件の異なる比較に見える）。旧分析v22との食い違いは reconciliation_LP-0003 に記録。実績・監修・沿革の根拠、現行の価格・販売条件、実ページの動きは未確認。",
+      "finishedAt": "2026-11-11T12:47:34.206Z"
+    },
+    "LP-0004": {
+      "disId": "DIS-LP-0007",
+      "title": "front_voice",
+      "status": "done",
+      "durationSec": 572,
+      "knowledge": "knowledge/lp/LP-0004.json",
+      "notes": "全15 Unit（PC14＋SP専用1）。9軸合計34/45: 目的適合4/情報優先順位4/視線誘導3/訴求4/信頼4/配色3/レイアウト4/ビジュアル4/転用4。最優先の改善は相談ボタンが約8割の位置まで出ない点。音声サンプル・動画・フォーム/LINEの遷移先・SP固定バーの有無・経験年数の基準時点は未確認。旧分析v22との食い違いは reconciliation_LP-0004 に記録。",
+      "finishedAt": "2026-11-11T12:57:06.582Z"
+    }
+  }
 }

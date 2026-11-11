@@ -1,0 +1,882 @@
+{
+  "id": "LP-0003",
+  "dis_ids": [
+    "DIS-LP-0006"
+  ],
+  "mediaType": "LP",
+  "media_type": "LP",
+  "title": "気くばり御膳　お試し4食コースのLPデザイン",
+  "brand": "気くばり御膳　お試し4食コース",
+  "industry_tags": [
+    "食品"
+  ],
+  "product_tags": [
+    "LP/物販"
+  ],
+  "color_tags": [
+    "ホワイト基調",
+    "ベージュ・生成り",
+    "ゴールド",
+    "イエロー",
+    "レッド",
+    "クリーム"
+  ],
+  "layout_tags": [
+    "商品主役FV",
+    "長尺LP",
+    "セクション分割",
+    "カード型",
+    "写真主役"
+  ],
+  "copy_types": [
+    "ベネフィット訴求",
+    "数字訴求",
+    "権威性訴求",
+    "社会的証明",
+    "問題解決型",
+    "ターゲット明示",
+    "利便性訴求",
+    "価格訴求"
+  ],
+  "primary_appeal": "糖質を控えたい方向けに、カロリー・塩分に配慮した人気の冷凍おかず4食（平均235kcal・塩分1.6g・糖質13.2g）を、定期便ではなく1回限りで試せるお試しコース。料理のシズル→各メニューの数値→悩み→解決→こだわり→声→FAQ→注文手順の順で不安を処理し、同じ価格ブロックを3回再掲する、食品の商品紹介",
+  "offer": "お試し4食コース 通常3,132円（税込）＋送料800円のところ、2,980円（税込）・送料無料。定期便ではなく1回限りの注文可。最短2日でお届け（平日午前中の注文・決済完了で最短翌営業日出荷）。取得時点のアーカイブ画像の表記で、現行は未確認",
+  "captureUrl": "https://rdlp.jp/archives/otherdesign/lp/200092?rdlp_flg=1",
+  "sourceUrl": "https://rdlp.jp/lp-archive/",
+  "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/200092?rdlp_flg=1",
+  "source": {
+    "captured_url": "https://rdlp.jp/archives/otherdesign/lp/200092?rdlp_flg=1",
+    "reference_name": "LPアーカイブ",
+    "reference_url": "https://rdlp.jp/lp-archive/",
+    "reference_detail_url": "https://rdlp.jp/archives/otherdesign/lp/200092?rdlp_flg=1",
+    "notion_url": "https://app.notion.com/p/3d024d4fa67181c7917ae94cfe665c5b",
+    "dis_notion_url": null,
+    "dropbox_master_path": null,
+    "dis_dropbox_path": null,
+    "github_knowledge_path": "knowledge/lp/LP-0003.json",
+    "archive_post_id": "200092"
+  },
+  "asset_status": {
+    "pc_full": {
+      "path": "01_Normal_Images/DIS-LP-0006_PC_full.png",
+      "width": 1900,
+      "height": 13498,
+      "status": "captured_unverified"
+    },
+    "pc_first_view": {
+      "path": "01_Normal_Images/DIS-LP-0006_PC_first_view.png",
+      "width": 1900,
+      "height": 900,
+      "status": "captured_unverified"
+    },
+    "sp_full": {
+      "path": "01_Normal_Images/DIS-LP-0006_SP_full.png",
+      "width": 750,
+      "height": 23418,
+      "status": "captured_unverified"
+    },
+    "sp_first_view": {
+      "path": "01_Normal_Images/DIS-LP-0006_SP_first_view.png",
+      "width": 750,
+      "height": 812,
+      "status": "captured_unverified"
+    },
+    "repository_crosscheck": "not_run"
+  },
+  "funnel_structure": [
+    {
+      "step": 1,
+      "role": "FV",
+      "pattern": "FV（実績帯・糖質配慮の見出し・4食トレー）",
+      "description": "1画面目で、ブランド・実績・対象（糖質を控えたい方）・コース名・2つの訴求・4食の中身までを見せ、ヘッダーからいつでも購入に進める導入"
+    },
+    {
+      "step": 2,
+      "role": "特徴",
+      "pattern": "特徴2点（豊富な食材・自由に購入）",
+      "description": "『野菜が多い』『定期便ではない』という、買う前の2つの小さな不安・条件を、紙のメモ風カードで先に処理する"
+    },
+    {
+      "step": 3,
+      "role": "商品紹介",
+      "pattern": "メニュー4点（カロリー・糖質つき）",
+      "description": "4食の中身を、写真・カロリー・糖質・メニュー名で具体的に見せ、『これなら食べたい』と『数字で確認できる』を同時に作る"
+    },
+    {
+      "step": 4,
+      "role": "CTA",
+      "pattern": "価格のお得提示＋CTA（1回目）",
+      "description": "メニューを見て欲しくなった地点で、価格・送料無料・購入ボタンを一体で出し、1回目の購入を回収する"
+    },
+    {
+      "step": 5,
+      "role": "悩み提起",
+      "pattern": "悩み提起（食生活の悩み・糖質の黒板）",
+      "description": "食べ過ぎ・運動不足・偏食という身近な悩みから、『糖質を摂り過ぎているかも』という気づきへ導く"
+    },
+    {
+      "step": 6,
+      "role": "解決策",
+      "pattern": "解決策（気くばり御膳ならコントロール可能）",
+      "description": "悩みの直後に、『気くばり御膳なら』という解決を、糖質平均13.2gの数字と『年間135万食』の人気で示す"
+    },
+    {
+      "step": 7,
+      "role": "特徴",
+      "pattern": "『気くばり御膳』って？＋気くばりPOINT 01〜04",
+      "description": "商品の定義（管理栄養士監修・冷凍おかずセット）と、4つの『気くばり』（カロリー・彩り・栄養と塩分・手軽さ）で、選ぶ理由を整理する"
+    },
+    {
+      "step": 8,
+      "role": "共感",
+      "pattern": "悩みの再提示＋『おいしくサポートします』",
+      "description": "健康・時間・栄養管理の悩みを吹き出しで受け止め、『おいしくサポート』という約束と、糖尿病食で培った技術という背景へつなぐ"
+    },
+    {
+      "step": 9,
+      "role": "特徴",
+      "pattern": "3つのこだわり（おいしさ・商品・品質）",
+      "description": "味・開発・工場という3つの角度で、『ちゃんと作られている』信頼を、写真付きで見せる"
+    },
+    {
+      "step": 10,
+      "role": "CTA",
+      "pattern": "価格のお得提示＋CTA（2回目）",
+      "description": "『こだわり』で納得した地点で、2回目の価格・購入ボタンを再掲する"
+    },
+    {
+      "step": 11,
+      "role": "実績",
+      "pattern": "お客様の声（4件）",
+      "description": "味・栄養・手軽さ・食べやすさという、異なる不安を、生活者の言葉4件で処理する"
+    },
+    {
+      "step": 12,
+      "role": "FAQ",
+      "pattern": "よくあるご質問（3件）",
+      "description": "決済・手数料・別住所への配送という、購入直前の3つの不安を、Q&Aで処理する"
+    },
+    {
+      "step": 13,
+      "role": "流れ",
+      "pattern": "ご注文の流れ（4STEP）",
+      "description": "購入の手順を4つに分け、『簡単』『最短2日』という安心をつくる"
+    },
+    {
+      "step": 14,
+      "role": "CTA",
+      "pattern": "クロージング（健康的な食習慣を）＋CTA（3回目）＋電話",
+      "description": "最後に、感情の提案（健康的な食習慣をはじめてみませんか？）と、数値・価格・購入ボタンをまとめ、電話注文の導線も置く"
+    },
+    {
+      "step": 15,
+      "role": "フッター",
+      "pattern": "フッター（会社情報・リンク・コピーライト）",
+      "description": "会社情報・利用規約・プライバシー・特定商取引法・問い合わせへの出口"
+    }
+  ],
+  "section_patterns": [
+    {
+      "id": "C01",
+      "source_section": "U1",
+      "name": "FV（実績帯・糖質配慮の見出し・4食トレー）",
+      "role": "FV",
+      "reusable_structure": [
+        "固定ヘッダー（ロゴ＋電話＋購入ボタン）→実績の帯→大きなシズル写真＋対象者を名指す大見出し＋2つの訴求ラベル→商品（4食）の並び、のFV。PCは左右分割、SPは縦積み"
+      ],
+      "replace_required": [
+        "料理・トレーの写真",
+        "ブランド名・ロゴ・コース名",
+        "『18年』『135万食』『2020年』の実績の数値と注記",
+        "見出し・訴求ラベルの文言",
+        "電話番号"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C02",
+      "source_section": "U2",
+      "name": "特徴2点（豊富な食材・自由に購入）",
+      "role": "特徴",
+      "reusable_structure": [
+        "紙のメモ風カード（傾き・テープ・手描きアイコン）2枚で、価値と購入条件を短く伝える帯"
+      ],
+      "replace_required": [
+        "アイコン・イラスト",
+        "カードの見出し・本文",
+        "『100g以上』の数値と注記"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C03",
+      "source_section": "U3",
+      "name": "メニュー4点（カロリー・糖質つき）",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "写真カード（赤いリボンの番号＋黄色の丸バッジ（数値）＋橙の名前帯）×4。PCは2×2、SPは縦1列"
+      ],
+      "replace_required": [
+        "料理の写真",
+        "メニュー名・数値（カロリー・糖質）",
+        "番号・バッジの色（ブランドに合わせる）"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C04",
+      "source_section": "U4",
+      "name": "価格のお得提示＋CTA（1回目）",
+      "role": "CTA",
+      "reusable_structure": [
+        "取り消し線の通常価格＋巨大な赤い特別価格＋『送料無料』の丸＋赤い購入ボタンを、商品写真で挟んだ1ブロック（このLPでは3回、同じ型で再掲）"
+      ],
+      "replace_required": [
+        "価格・送料・割引の数字",
+        "ボタンの文言・リンク先",
+        "商品写真"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C05",
+      "source_section": "U5",
+      "name": "悩み提起（食生活の悩み・糖質の黒板）",
+      "role": "悩み提起",
+      "reusable_structure": [
+        "グレーの面＋雲形の吹き出し3点＋黒板風の枠（チェックリスト）の悩み提起"
+      ],
+      "replace_required": [
+        "悩みの文言",
+        "黒板の品目・数値",
+        "『ニチレイフーズ調べ』の注記"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C06",
+      "source_section": "U6",
+      "name": "解決策（気くばり御膳ならコントロール可能）",
+      "role": "解決策",
+      "reusable_structure": [
+        "悩み（グレー）→解決（サーモン色）の色の切り替え＋商品写真の囲み＋数値入りの結論文"
+      ],
+      "replace_required": [
+        "トレー写真",
+        "結論文・数値",
+        "『大好評』の吹き出しの数値"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C07",
+      "source_section": "U7",
+      "name": "『気くばり御膳』って？＋気くばりPOINT 01〜04",
+      "role": "特徴",
+      "reusable_structure": [
+        "商品の定義文＋番号つきの紙カード4枚（アイコン・見出し・点線・本文）＋野菜写真の装飾"
+      ],
+      "replace_required": [
+        "イラスト・パッケージ写真・野菜写真",
+        "定義文・各POINTの文言・数値",
+        "保存期間（9ヶ月）"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C08",
+      "source_section": "U8",
+      "name": "悩みの再提示＋『おいしくサポートします』",
+      "role": "共感",
+      "reusable_structure": [
+        "吹き出し（悩み3点）→『〜がサポートします！』の見出し→背景技術の短い説明＋商品写真"
+      ],
+      "replace_required": [
+        "吹き出しの文言",
+        "見出し・本文（糖尿病食の記述）",
+        "トレー写真"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C09",
+      "source_section": "U9",
+      "name": "3つのこだわり（おいしさ・商品・品質）",
+      "role": "特徴",
+      "reusable_structure": [
+        "章扉（写真＋白抜き見出し）→丸い番号＋写真＋英字の副題＋見出し＋本文の3枚（PCは左右交互、SPは縦積み）"
+      ],
+      "replace_required": [
+        "料理・管理栄養士・工場の写真",
+        "見出し・本文・『日本で初めて』『30年以上』の記述",
+        "英字の副題"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C10",
+      "source_section": "U10",
+      "name": "価格のお得提示＋CTA（2回目）",
+      "role": "CTA",
+      "reusable_structure": [
+        "同一の価格＋ボタンのブロックの再掲（背景色だけ変える）"
+      ],
+      "replace_required": [
+        "価格・送料・ボタンの文言",
+        "トレー写真"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C11",
+      "source_section": "U11",
+      "name": "お客様の声（4件）",
+      "role": "実績",
+      "reusable_structure": [
+        "人物イラスト＋番号＋手書き風の見出し＋本文（重要語に下線）×4、PCは2×2"
+      ],
+      "replace_required": [
+        "声の文言",
+        "人物イラスト",
+        "見出し"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C12",
+      "source_section": "U12",
+      "name": "よくあるご質問（3件）",
+      "role": "FAQ",
+      "reusable_structure": [
+        "Q（茶）／A（赤）の四角アイコン＋点線区切りの3件FAQ"
+      ],
+      "replace_required": [
+        "質問・回答",
+        "決済方法の一覧"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C13",
+      "source_section": "U13",
+      "name": "ご注文の流れ（4STEP）",
+      "role": "流れ",
+      "reusable_structure": [
+        "番号つきの白いカード4枚＋矢印＋赤い帯の見出し＋出荷の注記"
+      ],
+      "replace_required": [
+        "ステップの文言・アイコン",
+        "『最短2日』『翌営業日出荷』の条件"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C14",
+      "source_section": "U14",
+      "name": "クロージング（健康的な食習慣を）＋CTA（3回目）＋電話",
+      "role": "CTA",
+      "reusable_structure": [
+        "感情の提案の見出し＋写真＋白い箱にまとめた数値・価格・ボタン、最後に電話の箱（SP）"
+      ],
+      "replace_required": [
+        "写真",
+        "見出し・価格・ボタンの文言",
+        "電話番号・受付時間"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C15",
+      "source_section": "U15",
+      "name": "フッター（会社情報・リンク・コピーライト）",
+      "role": "フッター",
+      "reusable_structure": [
+        "リンク5点＋コピーライトの小さなフッター"
+      ],
+      "replace_required": [
+        "会社名・リンク・コピーライト"
+      ],
+      "rights_status": "reference_only"
+    }
+  ],
+  "reusable_principles": [
+    "固定ヘッダー（ロゴ＋電話＋購入ボタン）＋実績の帯＋大きなシズル写真＋対象者を名指す大見出し＋2つの訴求ラベル＋商品の並び（FV）",
+    "紙のメモ風カード2枚で、価値と購入条件を先に処理する帯",
+    "写真カード（赤いリボンの番号＋黄色の丸バッジ（数値）＋橙の名前帯）×4の商品紹介（PCは2×2、SPは1列）",
+    "取り消し線の通常価格＋巨大な赤い特別価格＋『送料無料』の丸＋赤い購入ボタンを、商品写真で挟んだ価格ブロック（3回再掲）",
+    "雲形の吹き出し3点＋黒板風の枠（チェックリスト）の悩み提起→サーモン色の面の解決（色の切り替え）",
+    "商品の定義文＋番号つきの紙カード4枚（POINT）",
+    "章扉（写真＋白抜き見出し）→丸い番号＋写真＋英字の副題＋見出し＋本文の3枚（こだわり）",
+    "人物イラスト＋手書き風の見出し＋下線つき本文の声4件／Q・Aの四角アイコンのFAQ3件／番号つきの白いカード4枚の注文手順"
+  ],
+  "cta_patterns": [
+    {
+      "name": "価格のお得提示＋CTA（1回目）",
+      "description": "【PC】4食のトレー写真が左右に2点ずつ。中央に『人気の4つのメニューがセットになった「お試しコース」』、『通常価格3,132円（税込）＋送料800円のところ』（取り消し線）、大きな赤『2,980円（税込）』、赤い丸『送料無料』、赤い大きなボタン『今すぐ試してみる』。【SP】左に黄色の丸バッジ（平均235kcal・塩分…"
+    },
+    {
+      "name": "価格のお得提示＋CTA（2回目）",
+      "description": "【PC】淡い黄緑がかった面に、1回目と同じ構成（トレー写真4点・コース名・取り消し線の3,132円＋送料800円・赤い2,980円・『送料無料』・赤ボタン）。【SP】平均235kcal・塩分1.6g・糖質13.2gの丸バッジ、トレー写真、同じ価格表示、赤ボタン。"
+    },
+    {
+      "name": "クロージング（健康的な食習慣を）＋CTA（3回目）＋電話",
+      "description": "【PC】黄緑がかった面に大皿の豚肉料理の写真。『カロリーや塩分を賢くコントロールしてしっかりおいしいおかず「気くばり御膳」で健康的な食習慣をはじめてみませんか？』。白い箱に、丸バッジ（平均235kcal・塩分平均1.6g・糖質平均13.2g）、トレー写真4点、『気くばり御膳』ロゴ、同じ価格表示（3,132円＋800円→…"
+    }
+  ],
+  "trust_patterns": [
+    {
+      "name": "お客様の声（4件）",
+      "description": "【PC】紙のテクスチャの面に、吹き出し『試してよかった！』『美味しかった！』、見出し『ご利用いただいた お客様のお声（User's Voice）』。2×2で、人物イラスト（女性）＋丸い番号＋手書き風の見出し『おかずがどれも美味しくて感動しました。』『栄養価もバランスがよい。また買います。』『レンジでチンするだけだから楽…",
+      "required_caution": "実績・写真・数値は、案件ごとの権利と現在性の確認が必要。"
+    },
+    {
+      "name": "よくあるご質問（3件）",
+      "description": "【PC】白い面に『よくあるご質問』、3組のQ（茶色の四角）とA（赤の四角）。『支払いはどのような方法がありますか？』（代金引換、クレジットカード、コンビニ決済、銀行振込、ネットバンキング、後払い、AmazonPay、PayPayの8つ）、『手数料はかかりますか？』、『購入者と異なる住所へも送ることはできますか？』（ギフ…",
+      "required_caution": "実績・写真・数値は、案件ごとの権利と現在性の確認が必要。"
+    }
+  ],
+  "pricing_patterns": [],
+  "visual_patterns": [
+    {
+      "name": "color_legibility",
+      "description": "本文は濃い茶・黒で、生成り・白の背景に対して読みやすい。価格・ボタンの赤は、黄緑がかった背景・生成り背景のどちらでも強く目立つ。一方、サーモン色の面の黄色い強調（『手軽にコントロール』）、金の帯の白抜き、グレーの面の注記、紙カード内の小さな注記は、コントラストが弱めに見える。"
+    },
+    {
+      "name": "layout_spacing",
+      "description": "本文の幅は約630〜1000px（PC）に収まり、カード・メニュー・声が、同じ幅・同じ間隔で並ぶ。SPは全てを1列にし、横幅いっぱいのボタンにする。メニュー4点・声4件・POINT4件が同じ型で整い、章ごとの余白も十分。一方、FVは要素が多く、SPのFVは約1,600pxと長い。"
+    },
+    {
+      "name": "visual_brand",
+      "description": "サーモン・生成り・黄緑がかった黄を基調に、紙のメモ・テープ・手描きの吹き出し・人物イラスト・手書き風の見出しで、『気くばり』（やさしさ・手作り感）をそろえる。料理の写真は、皿・背景の色を整えて、冷凍食品の印象を和らげる。商品名ロゴは、FV・最終CTAで小さく入る。"
+    }
+  ],
+  "rights_excluded": [
+    "ロゴ",
+    "人物（管理栄養士・工場の作業者・イラストの人物）",
+    "写真・イラスト",
+    "コピー（声・FAQを含む）",
+    "価格・実績値・栄養値（カロリー・糖質・塩分）",
+    "商品名・メニュー名・商品パッケージのデザイン"
+  ],
+  "unverified_claims": [
+    {
+      "claim": "『年間135万食』『18年』の集計条件・対象（シリーズ全体か、本コースか）",
+      "status": "unverified",
+      "required_basis": [
+        "運営元の資料で、集計期間・対象・最新値を確認する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "『野菜使用量100g以上』が、1食あたりか、4食の平均かの条件",
+      "status": "unverified",
+      "required_basis": [
+        "運営元の栄養・原材料の資料で確認する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "カロリー・糖質の測定方法・1食の重量・調理後か否か",
+      "status": "unverified",
+      "required_basis": [
+        "栄養成分表示（運営元の資料）で確認する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "価格・送料の現在の条件（期間・在庫・対象）",
+      "status": "unverified",
+      "required_basis": [
+        "運営元の現行ページで確認する（画像は取得時点のもの）"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "黒板の糖質量（ラーメン70gなど）の調査方法・1食の量",
+      "status": "unverified",
+      "required_basis": [
+        "『調べ』の資料（調査条件）を運営元に確認する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "『管理栄養士が監修』の範囲（誰が・どこまで）",
+      "status": "unverified",
+      "required_basis": [
+        "運営元の資料で確認する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "保存期間9ヶ月（製造日より）の条件（冷凍温度・開封）",
+      "status": "unverified",
+      "required_basis": [
+        "商品パッケージの表示で確認する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "『糖尿病食で培った技術』の具体（医療・医師監修の有無）",
+      "status": "unverified",
+      "required_basis": [
+        "運営元の資料と表示の根拠（栄養・医療表現の注意）を確認する"
+      ],
+      "source_unit": "U8"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U8"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U8"
+    },
+    {
+      "claim": "『日本で初めて冷凍食品をつくった企業』『30年以上』の出典・年",
+      "status": "unverified",
+      "required_basis": [
+        "運営元の会社情報・公式の沿革で確認する"
+      ],
+      "source_unit": "U9"
+    },
+    {
+      "claim": "写真の人物（管理栄養士）・工場の実在・撮影許諾",
+      "status": "unverified",
+      "required_basis": [
+        "運営元・制作会社に撮影の許諾と実態を確認する"
+      ],
+      "source_unit": "U9"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U9"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U9"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U10"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U10"
+    },
+    {
+      "claim": "声の出典（実際の購入者か・時期・件数・抽出方法）",
+      "status": "unverified",
+      "required_basis": [
+        "運営元のアンケート資料・掲載ルールを確認する"
+      ],
+      "source_unit": "U11"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U11"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U11"
+    },
+    {
+      "claim": "返品・キャンセル・解凍後の対応・アレルゲンのFAQの有無",
+      "status": "unverified",
+      "required_basis": [
+        "運営元の特定商取引法の表記・FAQ全体で確認する"
+      ],
+      "source_unit": "U12"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U12"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U12"
+    },
+    {
+      "claim": "配送の対象地域・冷凍便の受け取り条件",
+      "status": "unverified",
+      "required_basis": [
+        "運営元の配送ページ・特定商取引法の表記で確認する"
+      ],
+      "source_unit": "U13"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U13"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U13"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U14"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U14"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（公開されていれば）・保存HTMLで確認する"
+      ],
+      "source_unit": "U15"
+    },
+    {
+      "claim": "実寸・フォント・色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "実機またはデザインツールで計測する"
+      ],
+      "source_unit": "U15"
+    }
+  ],
+  "recommended_use_cases": [],
+  "analysis_notes": {
+    "completion_status": "dis_analysis_done_28ch_pending",
+    "dis_analysis_ref": "DIS-LP-0006",
+    "remaining_limits": [
+      "タグ・訴求・オファーは、28章の分析で確定する",
+      "ライブラリー側の取り込み・28章の分析は未実施（このファイルはDISからの下書き）",
+      "CBS本体への実同期は未実施"
+    ]
+  },
+  "dis_evaluation": {
+    "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+    "axes": [
+      {
+        "key": "purpose_fit",
+        "label": "目的適合",
+        "score": 5,
+        "confidence": "medium"
+      },
+      {
+        "key": "information_hierarchy",
+        "label": "情報優先順位",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_flow",
+        "label": "視線誘導",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "message_copy",
+        "label": "訴求・コピー",
+        "score": 5,
+        "confidence": "medium"
+      },
+      {
+        "key": "trust_safety",
+        "label": "信頼・安心",
+        "score": 3,
+        "confidence": "medium"
+      },
+      {
+        "key": "color_legibility",
+        "label": "配色・可読性",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "layout_spacing",
+        "label": "レイアウト・余白",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_brand",
+        "label": "ビジュアル・ブランド",
+        "score": 4,
+        "confidence": "high"
+      },
+      {
+        "key": "implementation_reuse",
+        "label": "実装・転用性",
+        "score": 5,
+        "confidence": "medium"
+      }
+    ],
+    "note": "28章の総合点（ヒューリスティック/100）とは別の物差し。足したり平均したりしない。"
+  },
+  "cbs_sync": {
+    "status": "draft_from_dis",
+    "knowledge_path": "knowledge/lp/LP-0003.json",
+    "exported_at": null,
+    "actual_cbs_import": "not_synced"
+  }
+}

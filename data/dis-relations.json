@@ -137,6 +137,57 @@
       "primaryId": "WB-0070",
       "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）。ライブラリー側の取り込み・28章の分析は未実施",
       "cbsPolicy": "ライブラリーに取り込みが済んだら、1件に、DISの層として付ける。DIS単独では、CBSに載せない。"
+    },
+    {
+      "disId": "DIS-LP-0005",
+      "relation": "same_lp",
+      "libraryId": "LP-0002",
+      "libraryNotionPageId": "3d024d4f-a671-8162-b8a7-f24f63319ba6",
+      "disNotionPageId": null,
+      "canonicalKey": "rdlp:200369",
+      "archiveImageIds": {
+        "pc": "7669",
+        "sp": "7670"
+      },
+      "primaryId": "LP-0002",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0002の1件に、DISの層として付ける。DIS-LP-0005を、独立したLPとして載せない。評価点（74/100と9軸）は混ぜず、方法を明記して分ける。",
+      "reconciliation": "outputs/dis/LP/0005_20261111_金山納豆のLPデザイン/reconciliation_LP-0002.md",
+      "establishedAt": "2026-11-11"
+    },
+    {
+      "disId": "DIS-LP-0006",
+      "relation": "same_lp",
+      "libraryId": "LP-0003",
+      "libraryNotionPageId": "3d024d4f-a671-81c7-917a-e94cfe665c5b",
+      "disNotionPageId": null,
+      "canonicalKey": "rdlp:200092",
+      "archiveImageIds": {
+        "pc": "6491",
+        "sp": "9115"
+      },
+      "primaryId": "LP-0003",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0003の1件に、DISの層として付ける。DIS-LP-0006を、独立したLPとして載せない。評価点（81/100と9軸）は混ぜず、方法を明記して分ける。",
+      "reconciliation": "outputs/dis/LP/0006_20261111_気くばり御膳_お試し4食コースのLPデザイン/reconciliation_LP-0003.md",
+      "establishedAt": "2026-11-11"
+    },
+    {
+      "disId": "DIS-LP-0007",
+      "relation": "same_lp",
+      "libraryId": "LP-0004",
+      "libraryNotionPageId": "3c724d4f-a671-8120-8cb8-e153885f4735",
+      "disNotionPageId": null,
+      "canonicalKey": "rdlp:200419",
+      "archiveImageIds": {
+        "pc": "7767",
+        "sp": "7768"
+      },
+      "primaryId": "LP-0004",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0004の1件に、DISの層として付ける。DIS-LP-0007を、独立したLPとして載せない。評価点（既存の総合評価8.0/10と9軸）は混ぜず、方法を明記して分ける。",
+      "reconciliation": "outputs/dis/LP/0007_20261111_front_voiceのLPデザイン/reconciliation_LP-0004.md",
+      "establishedAt": "2026-11-11"
     }
   ]
 }

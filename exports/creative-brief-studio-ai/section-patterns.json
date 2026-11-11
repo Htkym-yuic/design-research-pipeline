@@ -1,12 +1,316 @@
 {
-  "generatedAt": "2026-11-11T09:24:44.490Z",
+  "generatedAt": "2026-11-11T13:14:25.957Z",
   "note": "Sectionの種類ごとに、各ナレッジの該当Section（名前・再利用できる構造・差し替え必須の要素）を集めた索引。controlled=true は、DISの種類の一覧（FV・悩み提起など）にある種類。",
   "types": [
     {
+      "type": "特徴",
+      "controlled": true,
+      "count": 14,
+      "examples": [
+        {
+          "id": "LP-0002",
+          "title": "金山納豆のLPデザイン",
+          "sectionId": "C06",
+          "sectionName": "理由01 奇跡の水がもたらす風味",
+          "reusableStructure": [
+            "大きな番号＋橙の見出し＋英字の副題＋本文（重要語だけ橙）＋豆形の写真、の理由カード（01〜05で共通の型）"
+          ],
+          "replaceRequired": [
+            "水・植物の写真",
+            "見出し・本文",
+            "産地・天然記念物の記述"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0002.json"
+        },
+        {
+          "id": "LP-0002",
+          "title": "金山納豆のLPデザイン",
+          "sectionId": "C08",
+          "sectionName": "理由03 豆にこだわり 味にこだわる",
+          "reusableStructure": [
+            "番号＋見出し＋本文＋原料の写真。原料・製法の主張を、一次原料の写真で見せる型"
+          ],
+          "replaceRequired": [
+            "大豆の写真",
+            "原産地・製法の記述"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0002.json"
+        },
+        {
+          "id": "LP-0002",
+          "title": "金山納豆のLPデザイン",
+          "sectionId": "C10",
+          "sectionName": "理由05 冷凍で最長60日保存（保存方法・解凍方法）",
+          "reusableStructure": [
+            "見出し＋ベネフィット本文＋写真＋パターン1/2の手順帯＋解凍方法の枠、の保存・使い方の章"
+          ],
+          "replaceRequired": [
+            "写真",
+            "保存期間・手順の文言"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0002.json"
+        },
+        {
+          "id": "LP-0003",
+          "title": "気くばり御膳　お試し4食コースのLPデザイン",
+          "sectionId": "C02",
+          "sectionName": "特徴2点（豊富な食材・自由に購入）",
+          "reusableStructure": [
+            "紙のメモ風カード（傾き・テープ・手描きアイコン）2枚で、価値と購入条件を短く伝える帯"
+          ],
+          "replaceRequired": [
+            "アイコン・イラスト",
+            "カードの見出し・本文",
+            "『100g以上』の数値と注記"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0003.json"
+        },
+        {
+          "id": "LP-0003",
+          "title": "気くばり御膳　お試し4食コースのLPデザイン",
+          "sectionId": "C07",
+          "sectionName": "『気くばり御膳』って？＋気くばりPOINT 01〜04",
+          "reusableStructure": [
+            "商品の定義文＋番号つきの紙カード4枚（アイコン・見出し・点線・本文）＋野菜写真の装飾"
+          ],
+          "replaceRequired": [
+            "イラスト・パッケージ写真・野菜写真",
+            "定義文・各POINTの文言・数値",
+            "保存期間（9ヶ月）"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0003.json"
+        },
+        {
+          "id": "LP-0003",
+          "title": "気くばり御膳　お試し4食コースのLPデザイン",
+          "sectionId": "C09",
+          "sectionName": "3つのこだわり（おいしさ・商品・品質）",
+          "reusableStructure": [
+            "章扉（写真＋白抜き見出し）→丸い番号＋写真＋英字の副題＋見出し＋本文の3枚（PCは左右交互、SPは縦積み）"
+          ],
+          "replaceRequired": [
+            "料理・管理栄養士・工場の写真",
+            "見出し・本文・『日本で初めて』『30年以上』の記述",
+            "英字の副題"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0003.json"
+        },
+        {
+          "id": "LP-0004",
+          "title": "front voiceのLPデザイン",
+          "sectionId": "C07",
+          "sectionName": "機材と整音の説明＋7つの音声サンプル",
+          "reusableStructure": [
+            "橙の面に白抜き見出し＋写真＋説明文、その下に白いカード（再生ボタン＋用途名の行×7）の試聴リスト"
+          ],
+          "replaceRequired": [
+            "ヘッドホンの写真",
+            "『スタジオ収録同等機材』『プロの音響エンジニア』などの主張",
+            "音声サンプルの用途名・音声そのもの",
+            "外部リンク先（Más Audio Sound）"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0004.json"
+        },
+        {
+          "id": "LP-0245",
+          "title": "オランジーナのLPデザイン",
+          "sectionId": "C04",
+          "sectionName": "FEATURE（おいしさの特徴）",
+          "reusableStructure": [
+            "写真に、色面のキーワード帯を重ねる。本文側は、ラベル見出し＋短文を縦に並べる"
+          ],
+          "replaceRequired": [
+            "写真",
+            "特徴の文言",
+            "キーワードの文言"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0245.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C07",
+          "sectionName": "特設ゾーン（推し活／インバウンド）",
+          "reusableStructure": [
+            "水色の背景枠＋見出し帯＋写真＋箇条書きの2カラム。帯の色を変えて別枠だとわかる"
+          ],
+          "replaceRequired": [
+            "写真",
+            "ゾーン名・箇条書き"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C09",
+          "sectionName": "セミナー概要",
+          "reusableStructure": [
+            "左テキスト＋右写真の2カラム、その下に横長バナーを並べる構成"
+          ],
+          "replaceRequired": [
+            "会場写真",
+            "セミナー概要の文言",
+            "各バナー画像"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C10",
+          "sectionName": "登壇者一覧（セッション18件前後）",
+          "reusableStructure": [
+            "灰色カードに、見出し→副題→顔写真＋所属・氏名、を並べる型。複数登壇のカードは幅を広げる"
+          ],
+          "replaceRequired": [
+            "人物写真",
+            "氏名・所属",
+            "セッション名"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C12",
+          "sectionName": "マーケティングWeekとは（併催の全体像）",
+          "reusableStructure": [
+            "中心の図＋周囲のラベルを線でつなぐ、全体像の図解の型"
+          ],
+          "replaceRequired": [
+            "八角形の図の文言",
+            "専門展の名称"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
+        {
+          "id": "LP-0247",
+          "title": "宇治山田歯科医院のLPデザイン",
+          "sectionId": "C05",
+          "sectionName": "福利厚生ギャラリー（旅行・ユニフォーム）",
+          "reusableStructure": [
+            "スライダー（中央のスライドを大きく、左右を一部見せる）＋丸い吹き出しのキャプション"
+          ],
+          "replaceRequired": [
+            "写真（集合写真）",
+            "キャプション"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0247.json"
+        },
+        {
+          "id": "LP-0247",
+          "title": "宇治山田歯科医院のLPデザイン",
+          "sectionId": "C07",
+          "sectionName": "魅力03（品質：設備・医療）",
+          "reusableStructure": [
+            "魅力01と同じ左テキスト＋右写真の型。ボタンで詳細ページへ"
+          ],
+          "replaceRequired": [
+            "写真",
+            "本文のコピー",
+            "設備の名称"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0247.json"
+        }
+      ]
+    },
+    {
       "type": "CTA",
       "controlled": true,
-      "count": 8,
+      "count": 13,
       "examples": [
+        {
+          "id": "LP-0003",
+          "title": "気くばり御膳　お試し4食コースのLPデザイン",
+          "sectionId": "C04",
+          "sectionName": "価格のお得提示＋CTA（1回目）",
+          "reusableStructure": [
+            "取り消し線の通常価格＋巨大な赤い特別価格＋『送料無料』の丸＋赤い購入ボタンを、商品写真で挟んだ1ブロック（このLPでは3回、同じ型で再掲）"
+          ],
+          "replaceRequired": [
+            "価格・送料・割引の数字",
+            "ボタンの文言・リンク先",
+            "商品写真"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0003.json"
+        },
+        {
+          "id": "LP-0003",
+          "title": "気くばり御膳　お試し4食コースのLPデザイン",
+          "sectionId": "C10",
+          "sectionName": "価格のお得提示＋CTA（2回目）",
+          "reusableStructure": [
+            "同一の価格＋ボタンのブロックの再掲（背景色だけ変える）"
+          ],
+          "replaceRequired": [
+            "価格・送料・ボタンの文言",
+            "トレー写真"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0003.json"
+        },
+        {
+          "id": "LP-0003",
+          "title": "気くばり御膳　お試し4食コースのLPデザイン",
+          "sectionId": "C14",
+          "sectionName": "クロージング（健康的な食習慣を）＋CTA（3回目）＋電話",
+          "reusableStructure": [
+            "感情の提案の見出し＋写真＋白い箱にまとめた数値・価格・ボタン、最後に電話の箱（SP）"
+          ],
+          "replaceRequired": [
+            "写真",
+            "見出し・価格・ボタンの文言",
+            "電話番号・受付時間"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0003.json"
+        },
+        {
+          "id": "LP-0004",
+          "title": "front voiceのLPデザイン",
+          "sectionId": "C13",
+          "sectionName": "サンプル音声プレゼント＋二択CTA（Googleフォーム／公式LINE）",
+          "reusableStructure": [
+            "橙の角の装飾つき白いカード（バッジ＋特典の見出し＋注記＋写真）→ 『ご相談やお申込みはこちら』→ 色の違う2ボタン（橙のフォーム／緑のLINE）"
+          ],
+          "replaceRequired": [
+            "特典の内容・条件（サンプル音声）",
+            "ボタンの文言・リンク先・ブランド色（LINEの緑）",
+            "ミキサーの写真"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0004.json"
+        },
+        {
+          "id": "LP-0004",
+          "title": "front voiceのLPデザイン",
+          "sectionId": "C15",
+          "sectionName": "SP下部の2ボタン（固定表示に見える帯）",
+          "reusableStructure": [
+            "画面の下端に、2色のボタンを横並びにした帯（固定表示にする場合は、position: fixed のバー）"
+          ],
+          "replaceRequired": [
+            "ボタンの文言・リンク先・ブランド色"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0004.json"
+        },
         {
           "id": "LP-0246",
           "title": "販促EXPO【大阪】のLPデザイン",
@@ -127,84 +431,115 @@
       ]
     },
     {
-      "type": "特徴",
+      "type": "実績",
       "controlled": true,
-      "count": 7,
+      "count": 9,
       "examples": [
         {
-          "id": "LP-0245",
-          "title": "オランジーナのLPデザイン",
+          "id": "LP-0002",
+          "title": "金山納豆のLPデザイン",
+          "sectionId": "C02",
+          "sectionName": "著名人コメント（『有名女優も その美味しさを 大絶賛！』）",
+          "reusableStructure": [
+            "大きな見出しの円＋和紙カードの引用（短いコメント）で、FVの露出訴求を言葉で裏づける構造"
+          ],
+          "replaceRequired": [
+            "コメント本文・コメントした人物",
+            "『有名女優』の文言",
+            "金の円・和紙カードの装飾（ブランドの意匠）"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0002.json"
+        },
+        {
+          "id": "LP-0002",
+          "title": "金山納豆のLPデザイン",
+          "sectionId": "C03",
+          "sectionName": "レビュー評価（4.79/5 獲得！）",
+          "reusableStructure": [
+            "月桂樹の飾り＋大きな評価数値＋星＋時点の注記、の評価バッジ構造"
+          ],
+          "replaceRequired": [
+            "評価数値（4.79/5）・星",
+            "『2022年10月時点』の注記",
+            "月桂樹の飾りの意匠"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0002.json"
+        },
+        {
+          "id": "LP-0002",
+          "title": "金山納豆のLPデザイン",
           "sectionId": "C04",
-          "sectionName": "FEATURE（おいしさの特徴）",
+          "sectionName": "購入者の声（苦手な方にもオススメ／大好きな味がまた食べられる嬉しさ）",
           "reusableStructure": [
-            "写真に、色面のキーワード帯を重ねる。本文側は、ラベル見出し＋短文を縦に並べる"
+            "大見出し＋豆形に切り抜いた写真＋星付きの短いコメント2件（見出し→3〜4行）の購入者の声"
           ],
           "replaceRequired": [
-            "写真",
-            "特徴の文言",
-            "キーワードの文言"
+            "コメント本文・星の数",
+            "箸上げの納豆ご飯の写真",
+            "豆形の切り抜き・金の縁取り（ブランドの意匠）"
           ],
           "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0245.json"
+          "knowledgePath": "knowledge/lp/LP-0002.json"
+        },
+        {
+          "id": "LP-0003",
+          "title": "気くばり御膳　お試し4食コースのLPデザイン",
+          "sectionId": "C11",
+          "sectionName": "お客様の声（4件）",
+          "reusableStructure": [
+            "人物イラスト＋番号＋手書き風の見出し＋本文（重要語に下線）×4、PCは2×2"
+          ],
+          "replaceRequired": [
+            "声の文言",
+            "人物イラスト",
+            "見出し"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0003.json"
+        },
+        {
+          "id": "LP-0004",
+          "title": "front voiceのLPデザイン",
+          "sectionId": "C03",
+          "sectionName": "経歴の実績（テレビ・ラジオ・CM・場内MC・その他）",
+          "reusableStructure": [
+            "ベージュのタブ（カテゴリ名）＋角丸カードの箇条書きを、PC2列・SP1列で並べる実績一覧"
+          ],
+          "replaceRequired": [
+            "番組名・企業名・大会名などの実績の固有名詞",
+            "見出しの『声』の文言"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0004.json"
+        },
+        {
+          "id": "LP-0004",
+          "title": "front voiceのLPデザイン",
+          "sectionId": "C11",
+          "sectionName": "利用者の声（2件）",
+          "reusableStructure": [
+            "生成りの背景に、シルエットの丸＋橙の見出し＋本文＋細い枠線を、左右にずらして並べる2件の声"
+          ],
+          "replaceRequired": [
+            "声の本文・見出し・属性（S社／K様など）",
+            "シルエットのイラスト"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0004.json"
         },
         {
           "id": "LP-0246",
           "title": "販促EXPO【大阪】のLPデザイン",
-          "sectionId": "C07",
-          "sectionName": "特設ゾーン（推し活／インバウンド）",
+          "sectionId": "C16",
+          "sectionName": "過去来場者の声",
           "reusableStructure": [
-            "水色の背景枠＋見出し帯＋写真＋箇条書きの2カラム。帯の色を変えて別枠だとわかる"
+            "水色のカードに、紺の見出し（属性）＋短い感想文、を2列で並べる型"
           ],
           "replaceRequired": [
-            "写真",
-            "ゾーン名・箇条書き"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0246.json"
-        },
-        {
-          "id": "LP-0246",
-          "title": "販促EXPO【大阪】のLPデザイン",
-          "sectionId": "C09",
-          "sectionName": "セミナー概要",
-          "reusableStructure": [
-            "左テキスト＋右写真の2カラム、その下に横長バナーを並べる構成"
-          ],
-          "replaceRequired": [
-            "会場写真",
-            "セミナー概要の文言",
-            "各バナー画像"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0246.json"
-        },
-        {
-          "id": "LP-0246",
-          "title": "販促EXPO【大阪】のLPデザイン",
-          "sectionId": "C10",
-          "sectionName": "登壇者一覧（セッション18件前後）",
-          "reusableStructure": [
-            "灰色カードに、見出し→副題→顔写真＋所属・氏名、を並べる型。複数登壇のカードは幅を広げる"
-          ],
-          "replaceRequired": [
-            "人物写真",
-            "氏名・所属",
-            "セッション名"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0246.json"
-        },
-        {
-          "id": "LP-0246",
-          "title": "販促EXPO【大阪】のLPデザイン",
-          "sectionId": "C12",
-          "sectionName": "マーケティングWeekとは（併催の全体像）",
-          "reusableStructure": [
-            "中心の図＋周囲のラベルを線でつなぐ、全体像の図解の型"
-          ],
-          "replaceRequired": [
-            "八角形の図の文言",
-            "専門展の名称"
+            "感想の文言",
+            "属性の表記"
           ],
           "rightsStatus": "reference_only",
           "knowledgePath": "knowledge/lp/LP-0246.json"
@@ -212,14 +547,14 @@
         {
           "id": "LP-0247",
           "title": "宇治山田歯科医院のLPデザイン",
-          "sectionId": "C05",
-          "sectionName": "福利厚生ギャラリー（旅行・ユニフォーム）",
+          "sectionId": "C09",
+          "sectionName": "先輩の声①（磯和）",
           "reusableStructure": [
-            "スライダー（中央のスライドを大きく、左右を一部見せる）＋丸い吹き出しのキャプション"
+            "縞模様の背景＋人物写真＋見出し付きの回答、番号つきの質問（INTERVIEW）、2列のチェック付き小見出し"
           ],
           "replaceRequired": [
-            "写真（集合写真）",
-            "キャプション"
+            "人物写真・氏名",
+            "回答の文章"
           ],
           "rightsStatus": "reference_only",
           "knowledgePath": "knowledge/lp/LP-0247.json"
@@ -227,15 +562,340 @@
         {
           "id": "LP-0247",
           "title": "宇治山田歯科医院のLPデザイン",
-          "sectionId": "C07",
-          "sectionName": "魅力03（品質：設備・医療）",
+          "sectionId": "C10",
+          "sectionName": "先輩の声②（上村）",
           "reusableStructure": [
-            "魅力01と同じ左テキスト＋右写真の型。ボタンで詳細ページへ"
+            "先輩の声①と同じ型を、人を変えて繰り返す"
+          ],
+          "replaceRequired": [
+            "人物写真・氏名",
+            "回答の文章"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0247.json"
+        }
+      ]
+    },
+    {
+      "type": "ベネフィット",
+      "controlled": true,
+      "count": 7,
+      "examples": [
+        {
+          "id": "LP-0002",
+          "title": "金山納豆のLPデザイン",
+          "sectionId": "C07",
+          "sectionName": "理由02 納豆のイメージが変わる ニオイ控えめ",
+          "reusableStructure": [
+            "番号＋右寄せ見出し＋本文＋人物写真（豆形）。左右反転で交互に並べる理由カード"
+          ],
+          "replaceRequired": [
+            "子どもの写真（人物）",
+            "見出し・本文"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0002.json"
+        },
+        {
+          "id": "LP-0002",
+          "title": "金山納豆のLPデザイン",
+          "sectionId": "C09",
+          "sectionName": "理由04 健康的な毎日にアプローチする 栄養の宝庫",
+          "reusableStructure": [
+            "番号＋見出し＋栄養素の列挙＋箸上げ写真の理由カード"
           ],
           "replaceRequired": [
             "写真",
-            "本文のコピー",
-            "設備の名称"
+            "栄養素の列挙・コピー"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0002.json"
+        },
+        {
+          "id": "LP-0004",
+          "title": "front voiceのLPデザイン",
+          "sectionId": "C09",
+          "sectionName": "安価の理由とスピード納品（宅録だから）",
+          "reusableStructure": [
+            "円形の写真＋白いラベル付きの見出し＋本文を、左右（SPは縦）で交互に置く2つの便益ブロック。強調は橙の太字"
+          ],
+          "replaceRequired": [
+            "写真（本人・ノートPC）",
+            "『品質は妥協したくないが、予算が限られている』などのコピー",
+            "24時間納品の条件の文言"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0004.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C05",
+          "sectionName": "販促EXPOでできること（3つの価値）",
+          "reusableStructure": [
+            "見出し帯＋3列カード（イラスト・番号・小見出し・短文）の型。番号を角に置いて順序感を出す"
+          ],
+          "replaceRequired": [
+            "イラスト",
+            "3つの価値の文言"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
+        {
+          "id": "LP-0247",
+          "title": "宇治山田歯科医院のLPデザイン",
+          "sectionId": "C03",
+          "sectionName": "魅力01（成長：サポート体制）",
+          "reusableStructure": [
+            "番号つき見出し＋大きな写真＋丸い写真・手描きの吹き出し・色の箱の3列カード、の型"
+          ],
+          "replaceRequired": [
+            "写真",
+            "見出し・本文のコピー",
+            "手描きのイラスト（吹き出し・文具）"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0247.json"
+        },
+        {
+          "id": "LP-0247",
+          "title": "宇治山田歯科医院のLPデザイン",
+          "sectionId": "C04",
+          "sectionName": "奨学金制度のご案内",
+          "reusableStructure": [
+            "色つき見出し帯＋説明文＋2分割のボタン、のお知らせブロック"
+          ],
+          "replaceRequired": [
+            "制度の名称・説明文",
+            "イラスト"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0247.json"
+        },
+        {
+          "id": "LP-0247",
+          "title": "宇治山田歯科医院のLPデザイン",
+          "sectionId": "C06",
+          "sectionName": "魅力02（家庭・趣味：社会保険・働き方）",
+          "reusableStructure": [
+            "番号つき見出し＋丸いスタンプの並び＋3列の写真カード、の型（魅力01と同じ型で、色だけ変える）"
+          ],
+          "replaceRequired": [
+            "写真",
+            "制度の名称・文言",
+            "スタンプの文言"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0247.json"
+        }
+      ]
+    },
+    {
+      "type": "商品紹介",
+      "controlled": true,
+      "count": 7,
+      "examples": [
+        {
+          "id": "LP-0002",
+          "title": "金山納豆のLPデザイン",
+          "sectionId": "C13",
+          "sectionName": "商品詳細（原材料・内容量・賞味期限・保存方法）",
+          "reusableStructure": [
+            "斜めの切り替え面の見出し＋罫線で区切る項目名／内容の2列の表、の商品仕様"
+          ],
+          "replaceRequired": [
+            "原材料・内容量・賞味期限・保存方法の記載",
+            "ブランド名の英字"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0002.json"
+        },
+        {
+          "id": "LP-0003",
+          "title": "気くばり御膳　お試し4食コースのLPデザイン",
+          "sectionId": "C03",
+          "sectionName": "メニュー4点（カロリー・糖質つき）",
+          "reusableStructure": [
+            "写真カード（赤いリボンの番号＋黄色の丸バッジ（数値）＋橙の名前帯）×4。PCは2×2、SPは縦1列"
+          ],
+          "replaceRequired": [
+            "料理の写真",
+            "メニュー名・数値（カロリー・糖質）",
+            "番号・バッジの色（ブランドに合わせる）"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0003.json"
+        },
+        {
+          "id": "LP-0245",
+          "title": "オランジーナのLPデザイン",
+          "sectionId": "C01",
+          "sectionName": "PRODUCT（ブランド紹介・メイン写真）",
+          "reusableStructure": [
+            "左テキスト＋右写真の2カラム。写真の背後に、ずらした色面を1枚敷いて奥行きを出す"
+          ],
+          "replaceRequired": [
+            "商品写真",
+            "ブランドの由来の文章",
+            "ロゴ・商品名"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0245.json"
+        },
+        {
+          "id": "LP-0245",
+          "title": "オランジーナのLPデザイン",
+          "sectionId": "C02",
+          "sectionName": "商品ラインアップ（3種）",
+          "reusableStructure": [
+            "等間隔の3カラムに、商品画像＋名前＋色面のラベルを並べる構成"
+          ],
+          "replaceRequired": [
+            "商品画像",
+            "商品名",
+            "ラベルの文言"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0245.json"
+        },
+        {
+          "id": "LP-0245",
+          "title": "オランジーナのLPデザイン",
+          "sectionId": "C03",
+          "sectionName": "ORANGINA（主力商品の詳細とサイズ展開）",
+          "reusableStructure": [
+            "大きな主役画像＋右にサイズ別の商品を並べる比較ライン。色面を敷いて主役を浮かせる"
+          ],
+          "replaceRequired": [
+            "商品画像",
+            "商品名・容量の表記",
+            "説明文"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0245.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C06",
+          "sectionName": "出展ジャンル（6分類）",
+          "reusableStructure": [
+            "3列×2行の写真カード。上辺だけ角を丸めた写真＋色ラインの区切り＋分類名＋箇条書き、の型"
+          ],
+          "replaceRequired": [
+            "写真（ストック写真と思われるもの）",
+            "分類名・箇条書き"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C14",
+          "sectionName": "専門展の詳細（9カード＋スタートアップゲート）",
+          "reusableStructure": [
+            "2列の同型カード。アイコン→写真→ピンクの一言→区切り線→箇条書き、の型"
+          ],
+          "replaceRequired": [
+            "写真",
+            "アイコン",
+            "専門展の名称・箇条書き"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        }
+      ]
+    },
+    {
+      "type": "FV",
+      "controlled": true,
+      "count": 5,
+      "examples": [
+        {
+          "id": "LP-0002",
+          "title": "金山納豆のLPデザイン",
+          "sectionId": "C01",
+          "sectionName": "FV（商品名・露出実績・品質ラベル・36食の構成）",
+          "reusableStructure": [
+            "大きなシズル写真＋縦書きの商品名＋2つの菱形の品質ラベル＋商品箱＋数量の帯を1枚にまとめたヒーロー（PCは左右分割、SPは縦積み）"
+          ],
+          "replaceRequired": [
+            "納豆ご飯の写真・商品箱の写真",
+            "商品名・産地・縦書きのキャッチ",
+            "『有名女優』『テレビ番組』の露出文言",
+            "品質ラベルの文言",
+            "数量（3ヶパック×12個・36食分）"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0002.json"
+        },
+        {
+          "id": "LP-0003",
+          "title": "気くばり御膳　お試し4食コースのLPデザイン",
+          "sectionId": "C01",
+          "sectionName": "FV（実績帯・糖質配慮の見出し・4食トレー）",
+          "reusableStructure": [
+            "固定ヘッダー（ロゴ＋電話＋購入ボタン）→実績の帯→大きなシズル写真＋対象者を名指す大見出し＋2つの訴求ラベル→商品（4食）の並び、のFV。PCは左右分割、SPは縦積み"
+          ],
+          "replaceRequired": [
+            "料理・トレーの写真",
+            "ブランド名・ロゴ・コース名",
+            "『18年』『135万食』『2020年』の実績の数値と注記",
+            "見出し・訴求ラベルの文言",
+            "電話番号"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0003.json"
+        },
+        {
+          "id": "LP-0004",
+          "title": "front voiceのLPデザイン",
+          "sectionId": "C01",
+          "sectionName": "FV（経験年数・大見出し・3つの丸バッジ）",
+          "reusableStructure": [
+            "全幅の人物写真＋『声』を橙で大きくした見出し＋チェック付き実績ラベル2つ＋丸バッジ3つ（便益）のFV。PCは人物左・コピー右、SPは見出し→人物写真に重ねたバッジ"
+          ],
+          "replaceRequired": [
+            "人物写真（本人・マイク）",
+            "ロゴ・ブランド名",
+            "『アナウンサー歴20年』『在宅録音歴15年』などの経験年数",
+            "『最短24時間』『低価格』などの便益の文言"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0004.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C01",
+          "sectionName": "ファーストビュー（開催告知・日時会場）",
+          "reusableStructure": [
+            "背景写真を薄く敷いた上に、キャッチ→名称→日時会場の順で縦に並べる構成。赤い丸バッジで規模感を添える"
+          ],
+          "replaceRequired": [
+            "背景の会場写真",
+            "展示会名・回数",
+            "日付・会場・規模の数値",
+            "キャッチコピー"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        },
+        {
+          "id": "LP-0247",
+          "title": "宇治山田歯科医院のLPデザイン",
+          "sectionId": "C01",
+          "sectionName": "医院名・FV（キャッチ）",
+          "reusableStructure": [
+            "大きな図形＋角丸に切り抜いた写真＋白抜きの手書き風キャッチ、の重ね。下端に白い帯のアンカーナビを置く"
+          ],
+          "replaceRequired": [
+            "医院ロゴ・電話番号",
+            "写真（施術中・笑顔の写真）",
+            "キャッチコピー",
+            "図形の配色（ブランド色）"
           ],
           "rightsStatus": "reference_only",
           "knowledgePath": "knowledge/lp/LP-0247.json"
@@ -329,294 +989,57 @@
       ]
     },
     {
-      "type": "商品紹介",
+      "type": "流れ",
       "controlled": true,
       "count": 5,
       "examples": [
         {
-          "id": "LP-0245",
-          "title": "オランジーナのLPデザイン",
-          "sectionId": "C01",
-          "sectionName": "PRODUCT（ブランド紹介・メイン写真）",
+          "id": "LP-0002",
+          "title": "金山納豆のLPデザイン",
+          "sectionId": "C12",
+          "sectionName": "最短発送（当日12時まで翌営業日発送／工場から0日で発送／製造から最短日で到着）",
           "reusableStructure": [
-            "左テキスト＋右写真の2カラム。写真の背後に、ずらした色面を1枚敷いて奥行きを出す"
+            "導入見出し＋白い3枚カード（時間→在庫→到着）の、発送・納期の説明"
           ],
           "replaceRequired": [
-            "商品写真",
-            "ブランドの由来の文章",
-            "ロゴ・商品名"
+            "発送・納期の条件",
+            "梅の紋・金の影などの意匠",
+            "『最短発送』などの文言"
           ],
           "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0245.json"
+          "knowledgePath": "knowledge/lp/LP-0002.json"
         },
         {
-          "id": "LP-0245",
-          "title": "オランジーナのLPデザイン",
-          "sectionId": "C02",
-          "sectionName": "商品ラインアップ（3種）",
+          "id": "LP-0003",
+          "title": "気くばり御膳　お試し4食コースのLPデザイン",
+          "sectionId": "C13",
+          "sectionName": "ご注文の流れ（4STEP）",
           "reusableStructure": [
-            "等間隔の3カラムに、商品画像＋名前＋色面のラベルを並べる構成"
+            "番号つきの白いカード4枚＋矢印＋赤い帯の見出し＋出荷の注記"
           ],
           "replaceRequired": [
-            "商品画像",
-            "商品名",
-            "ラベルの文言"
+            "ステップの文言・アイコン",
+            "『最短2日』『翌営業日出荷』の条件"
           ],
           "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0245.json"
+          "knowledgePath": "knowledge/lp/LP-0003.json"
         },
         {
-          "id": "LP-0245",
-          "title": "オランジーナのLPデザイン",
-          "sectionId": "C03",
-          "sectionName": "ORANGINA（主力商品の詳細とサイズ展開）",
-          "reusableStructure": [
-            "大きな主役画像＋右にサイズ別の商品を並べる比較ライン。色面を敷いて主役を浮かせる"
-          ],
-          "replaceRequired": [
-            "商品画像",
-            "商品名・容量の表記",
-            "説明文"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0245.json"
-        },
-        {
-          "id": "LP-0246",
-          "title": "販促EXPO【大阪】のLPデザイン",
-          "sectionId": "C06",
-          "sectionName": "出展ジャンル（6分類）",
-          "reusableStructure": [
-            "3列×2行の写真カード。上辺だけ角を丸めた写真＋色ラインの区切り＋分類名＋箇条書き、の型"
-          ],
-          "replaceRequired": [
-            "写真（ストック写真と思われるもの）",
-            "分類名・箇条書き"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0246.json"
-        },
-        {
-          "id": "LP-0246",
-          "title": "販促EXPO【大阪】のLPデザイン",
-          "sectionId": "C14",
-          "sectionName": "専門展の詳細（9カード＋スタートアップゲート）",
-          "reusableStructure": [
-            "2列の同型カード。アイコン→写真→ピンクの一言→区切り線→箇条書き、の型"
-          ],
-          "replaceRequired": [
-            "写真",
-            "アイコン",
-            "専門展の名称・箇条書き"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0246.json"
-        }
-      ]
-    },
-    {
-      "type": "ベネフィット",
-      "controlled": true,
-      "count": 4,
-      "examples": [
-        {
-          "id": "LP-0246",
-          "title": "販促EXPO【大阪】のLPデザイン",
-          "sectionId": "C05",
-          "sectionName": "販促EXPOでできること（3つの価値）",
-          "reusableStructure": [
-            "見出し帯＋3列カード（イラスト・番号・小見出し・短文）の型。番号を角に置いて順序感を出す"
-          ],
-          "replaceRequired": [
-            "イラスト",
-            "3つの価値の文言"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0246.json"
-        },
-        {
-          "id": "LP-0247",
-          "title": "宇治山田歯科医院のLPデザイン",
-          "sectionId": "C03",
-          "sectionName": "魅力01（成長：サポート体制）",
-          "reusableStructure": [
-            "番号つき見出し＋大きな写真＋丸い写真・手描きの吹き出し・色の箱の3列カード、の型"
-          ],
-          "replaceRequired": [
-            "写真",
-            "見出し・本文のコピー",
-            "手描きのイラスト（吹き出し・文具）"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0247.json"
-        },
-        {
-          "id": "LP-0247",
-          "title": "宇治山田歯科医院のLPデザイン",
-          "sectionId": "C04",
-          "sectionName": "奨学金制度のご案内",
-          "reusableStructure": [
-            "色つき見出し帯＋説明文＋2分割のボタン、のお知らせブロック"
-          ],
-          "replaceRequired": [
-            "制度の名称・説明文",
-            "イラスト"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0247.json"
-        },
-        {
-          "id": "LP-0247",
-          "title": "宇治山田歯科医院のLPデザイン",
-          "sectionId": "C06",
-          "sectionName": "魅力02（家庭・趣味：社会保険・働き方）",
-          "reusableStructure": [
-            "番号つき見出し＋丸いスタンプの並び＋3列の写真カード、の型（魅力01と同じ型で、色だけ変える）"
-          ],
-          "replaceRequired": [
-            "写真",
-            "制度の名称・文言",
-            "スタンプの文言"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0247.json"
-        }
-      ]
-    },
-    {
-      "type": "実績",
-      "controlled": true,
-      "count": 3,
-      "examples": [
-        {
-          "id": "LP-0246",
-          "title": "販促EXPO【大阪】のLPデザイン",
-          "sectionId": "C16",
-          "sectionName": "過去来場者の声",
-          "reusableStructure": [
-            "水色のカードに、紺の見出し（属性）＋短い感想文、を2列で並べる型"
-          ],
-          "replaceRequired": [
-            "感想の文言",
-            "属性の表記"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0246.json"
-        },
-        {
-          "id": "LP-0247",
-          "title": "宇治山田歯科医院のLPデザイン",
-          "sectionId": "C09",
-          "sectionName": "先輩の声①（磯和）",
-          "reusableStructure": [
-            "縞模様の背景＋人物写真＋見出し付きの回答、番号つきの質問（INTERVIEW）、2列のチェック付き小見出し"
-          ],
-          "replaceRequired": [
-            "人物写真・氏名",
-            "回答の文章"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0247.json"
-        },
-        {
-          "id": "LP-0247",
-          "title": "宇治山田歯科医院のLPデザイン",
+          "id": "LP-0004",
+          "title": "front voiceのLPデザイン",
           "sectionId": "C10",
-          "sectionName": "先輩の声②（上村）",
+          "sectionName": "依頼の流れ（flow・5STEP）",
           "reusableStructure": [
-            "先輩の声①と同じ型を、人を変えて繰り返す"
+            "ぼかした背景写真の上に、番号つき（橙の大きな数字）の白いカード5枚を、三角の矢でつなぐ縦の手順"
           ],
           "replaceRequired": [
-            "人物写真・氏名",
-            "回答の文章"
+            "手順の文言・納期（5営業日）",
+            "背景写真",
+            "『フォームまたは公式LINE』の導線名"
           ],
           "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0247.json"
-        }
-      ]
-    },
-    {
-      "type": "FV",
-      "controlled": true,
-      "count": 2,
-      "examples": [
-        {
-          "id": "LP-0246",
-          "title": "販促EXPO【大阪】のLPデザイン",
-          "sectionId": "C01",
-          "sectionName": "ファーストビュー（開催告知・日時会場）",
-          "reusableStructure": [
-            "背景写真を薄く敷いた上に、キャッチ→名称→日時会場の順で縦に並べる構成。赤い丸バッジで規模感を添える"
-          ],
-          "replaceRequired": [
-            "背景の会場写真",
-            "展示会名・回数",
-            "日付・会場・規模の数値",
-            "キャッチコピー"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0246.json"
+          "knowledgePath": "knowledge/lp/LP-0004.json"
         },
-        {
-          "id": "LP-0247",
-          "title": "宇治山田歯科医院のLPデザイン",
-          "sectionId": "C01",
-          "sectionName": "医院名・FV（キャッチ）",
-          "reusableStructure": [
-            "大きな図形＋角丸に切り抜いた写真＋白抜きの手書き風キャッチ、の重ね。下端に白い帯のアンカーナビを置く"
-          ],
-          "replaceRequired": [
-            "医院ロゴ・電話番号",
-            "写真（施術中・笑顔の写真）",
-            "キャッチコピー",
-            "図形の配色（ブランド色）"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0247.json"
-        }
-      ]
-    },
-    {
-      "type": "フッター",
-      "controlled": true,
-      "count": 2,
-      "examples": [
-        {
-          "id": "LP-0245",
-          "title": "オランジーナのLPデザイン",
-          "sectionId": "C06",
-          "sectionName": "SHARE・外部リンク（フッター）",
-          "reusableStructure": [
-            "中央にSNS共有ボタン、右下に外部リンクを置く、最小限のフッター"
-          ],
-          "replaceRequired": [
-            "ロゴ・リンク先の名称",
-            "SNSの設定"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0245.json"
-        },
-        {
-          "id": "LP-0246",
-          "title": "販促EXPO【大阪】のLPデザイン",
-          "sectionId": "C23",
-          "sectionName": "注記・フッター",
-          "reusableStructure": [
-            "注記→リンク列→ロゴ、の標準的なフッター"
-          ],
-          "replaceRequired": [
-            "ロゴ・著作権表記"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0246.json"
-        }
-      ]
-    },
-    {
-      "type": "流れ",
-      "controlled": true,
-      "count": 2,
-      "examples": [
         {
           "id": "LP-0246",
           "title": "販促EXPO【大阪】のLPデザイン",
@@ -651,10 +1074,111 @@
       ]
     },
     {
+      "type": "共感",
+      "controlled": true,
+      "count": 4,
+      "examples": [
+        {
+          "id": "LP-0003",
+          "title": "気くばり御膳　お試し4食コースのLPデザイン",
+          "sectionId": "C08",
+          "sectionName": "悩みの再提示＋『おいしくサポートします』",
+          "reusableStructure": [
+            "吹き出し（悩み3点）→『〜がサポートします！』の見出し→背景技術の短い説明＋商品写真"
+          ],
+          "replaceRequired": [
+            "吹き出しの文言",
+            "見出し・本文（糖尿病食の記述）",
+            "トレー写真"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0003.json"
+        },
+        {
+          "id": "LP-0004",
+          "title": "front voiceのLPデザイン",
+          "sectionId": "C02",
+          "sectionName": "提供者の紹介（narrator・氏名・経歴）",
+          "reusableStructure": [
+            "橙のグラデーション帯＋はみ出す英字ラベル＋氏名・経歴の箇条書き＋帯に重ねた角丸の人物写真。PC・SPとも、重なりで立体感を作る"
+          ],
+          "replaceRequired": [
+            "人物写真",
+            "氏名・経歴（局名・番組名・学歴）",
+            "英字ラベルの文言"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0004.json"
+        },
+        {
+          "id": "LP-0004",
+          "title": "front voiceのLPデザイン",
+          "sectionId": "C12",
+          "sectionName": "コミュニケーションの約束と相談のきっかけ（3つの質問）",
+          "reusableStructure": [
+            "ロゴ＋手書き風の見出し＋橙の円3つ（相談例の吹き出し）＋『お気軽にご相談ください』の結び"
+          ],
+          "replaceRequired": [
+            "ロゴ",
+            "『丁寧なコミュニケーション』『丸投げ』などのコピー",
+            "相談例の文言"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0004.json"
+        },
+        {
+          "id": "LP-0247",
+          "title": "宇治山田歯科医院のLPデザイン",
+          "sectionId": "C02",
+          "sectionName": "共感・ビジョン（なりたい理想）",
+          "reusableStructure": [
+            "橙の帯＋写真を薄く敷く＋白抜きの見出し＋短文、の型"
+          ],
+          "replaceRequired": [
+            "背景写真",
+            "見出し・本文のコピー"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0247.json"
+        }
+      ]
+    },
+    {
       "type": "FAQ",
       "controlled": true,
-      "count": 1,
+      "count": 3,
       "examples": [
+        {
+          "id": "LP-0003",
+          "title": "気くばり御膳　お試し4食コースのLPデザイン",
+          "sectionId": "C12",
+          "sectionName": "よくあるご質問（3件）",
+          "reusableStructure": [
+            "Q（茶）／A（赤）の四角アイコン＋点線区切りの3件FAQ"
+          ],
+          "replaceRequired": [
+            "質問・回答",
+            "決済方法の一覧"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0003.json"
+        },
+        {
+          "id": "LP-0004",
+          "title": "front voiceのLPデザイン",
+          "sectionId": "C14",
+          "sectionName": "注意事項（原稿・納期・納品データ・リテイク・お支払い）",
+          "reusableStructure": [
+            "橙の背景に、白い角丸の1枚カード。アイコンつきの見出し＋チェック風の丸の箇条書き＋点線の区切りの5ブロックの条件一覧"
+          ],
+          "replaceRequired": [
+            "条件の数値・文言（10%・17時・形式の仕様など）",
+            "権利の記載",
+            "支払い方法"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0004.json"
+        },
         {
           "id": "LP-0246",
           "title": "販促EXPO【大阪】のLPデザイン",
@@ -665,6 +1189,201 @@
           ],
           "replaceRequired": [
             "質問と回答の文言"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        }
+      ]
+    },
+    {
+      "type": "その他",
+      "controlled": true,
+      "count": 3,
+      "examples": [
+        {
+          "id": "LP-0002",
+          "title": "金山納豆のLPデザイン",
+          "sectionId": "C05",
+          "sectionName": "章扉（金山納豆 選ばれる理由）",
+          "reusableStructure": [
+            "イラスト＋ロゴ＋『選ばれる理由』の章扉＋下向きの縦線（次章への誘導）"
+          ],
+          "replaceRequired": [
+            "イラスト",
+            "ロゴ・ブランド名",
+            "青海波などの和柄（ブランドの意匠）"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0002.json"
+        },
+        {
+          "id": "LP-0002",
+          "title": "金山納豆のLPデザイン",
+          "sectionId": "C11",
+          "sectionName": "アレンジレシピ（納豆パスタ）",
+          "reusableStructure": [
+            "大きな写真の章扉＋完成写真＋ノート風の材料メモ＋step 1〜3の作り方、のレシピ構造"
+          ],
+          "replaceRequired": [
+            "料理写真・レシピ本文",
+            "材料・分量",
+            "リボンなどの装飾（ブランドの意匠）"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0002.json"
+        },
+        {
+          "id": "LP-0004",
+          "title": "front voiceのLPデザイン",
+          "sectionId": "C05",
+          "sectionName": "動画枠＋『届く』音声コンテンツの宣言",
+          "reusableStructure": [
+            "動画の枠（イラスト背景）＋波形アイコンで挟んだ中央の宣言見出し＋山形の区切り"
+          ],
+          "replaceRequired": [
+            "動画の内容（イラスト・音声）",
+            "宣言のコピー・ブランド名"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0004.json"
+        }
+      ]
+    },
+    {
+      "type": "フッター",
+      "controlled": true,
+      "count": 3,
+      "examples": [
+        {
+          "id": "LP-0003",
+          "title": "気くばり御膳　お試し4食コースのLPデザイン",
+          "sectionId": "C15",
+          "sectionName": "フッター（会社情報・リンク・コピーライト）",
+          "reusableStructure": [
+            "リンク5点＋コピーライトの小さなフッター"
+          ],
+          "replaceRequired": [
+            "会社名・リンク・コピーライト"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0003.json"
+        },
+        {
+          "id": "LP-0245",
+          "title": "オランジーナのLPデザイン",
+          "sectionId": "C06",
+          "sectionName": "SHARE・外部リンク（フッター）",
+          "reusableStructure": [
+            "中央にSNS共有ボタン、右下に外部リンクを置く、最小限のフッター"
+          ],
+          "replaceRequired": [
+            "ロゴ・リンク先の名称",
+            "SNSの設定"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0245.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C23",
+          "sectionName": "注記・フッター",
+          "reusableStructure": [
+            "注記→リンク列→ロゴ、の標準的なフッター"
+          ],
+          "replaceRequired": [
+            "ロゴ・著作権表記"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        }
+      ]
+    },
+    {
+      "type": "解決策",
+      "controlled": true,
+      "count": 3,
+      "examples": [
+        {
+          "id": "LP-0003",
+          "title": "気くばり御膳　お試し4食コースのLPデザイン",
+          "sectionId": "C06",
+          "sectionName": "解決策（気くばり御膳ならコントロール可能）",
+          "reusableStructure": [
+            "悩み（グレー）→解決（サーモン色）の色の切り替え＋商品写真の囲み＋数値入りの結論文"
+          ],
+          "replaceRequired": [
+            "トレー写真",
+            "結論文・数値",
+            "『大好評』の吹き出しの数値"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0003.json"
+        },
+        {
+          "id": "LP-0004",
+          "title": "front voiceのLPデザイン",
+          "sectionId": "C04",
+          "sectionName": "表現力の訴求（届ける相手にどのように伝わるか）",
+          "reusableStructure": [
+            "見出し（強調語だけ橙・傍点）＋説明文＋手書き風書体の吹き出しカード＋横顔の写真。PCは左右分割、SPは写真→テキスト"
+          ],
+          "replaceRequired": [
+            "写真（本人の仕事風景）",
+            "『表現力』『発声法』などの主張・コピー"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0004.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C04",
+          "sectionName": "解決の提示（販促EXPOでは）",
+          "reusableStructure": [
+            "悩み→背景色を切り替えて→解決の宣言、の接続。ラベル＋見出し＋イラストの中央寄せ"
+          ],
+          "replaceRequired": [
+            "見出しコピー",
+            "イラスト"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0246.json"
+        }
+      ]
+    },
+    {
+      "type": "悩み提起",
+      "controlled": true,
+      "count": 2,
+      "examples": [
+        {
+          "id": "LP-0003",
+          "title": "気くばり御膳　お試し4食コースのLPデザイン",
+          "sectionId": "C05",
+          "sectionName": "悩み提起（食生活の悩み・糖質の黒板）",
+          "reusableStructure": [
+            "グレーの面＋雲形の吹き出し3点＋黒板風の枠（チェックリスト）の悩み提起"
+          ],
+          "replaceRequired": [
+            "悩みの文言",
+            "黒板の品目・数値",
+            "『ニチレイフーズ調べ』の注記"
+          ],
+          "rightsStatus": "reference_only",
+          "knowledgePath": "knowledge/lp/LP-0003.json"
+        },
+        {
+          "id": "LP-0246",
+          "title": "販促EXPO【大阪】のLPデザイン",
+          "sectionId": "C03",
+          "sectionName": "課題提起（6つの悩みカード）",
+          "reusableStructure": [
+            "3列×2行のカード。上段に白いイラスト枠、下段に紺地の短い悩み文、の型"
+          ],
+          "replaceRequired": [
+            "イラスト",
+            "悩みの文言（6件）"
           ],
           "rightsStatus": "reference_only",
           "knowledgePath": "knowledge/lp/LP-0246.json"
@@ -695,68 +1414,48 @@
       ]
     },
     {
-      "type": "共感",
+      "type": "比較",
       "controlled": true,
       "count": 1,
       "examples": [
         {
-          "id": "LP-0247",
-          "title": "宇治山田歯科医院のLPデザイン",
-          "sectionId": "C02",
-          "sectionName": "共感・ビジョン（なりたい理想）",
+          "id": "LP-0004",
+          "title": "front voiceのLPデザイン",
+          "sectionId": "C06",
+          "sectionName": "スタジオ収録と宅録の比較（安さの理由）",
           "reusableStructure": [
-            "橙の帯＋写真を薄く敷く＋白抜きの見出し＋短文、の型"
+            "×（グレー・暗い見出し）と✓（橙・明るい背景）の2枚カードで、問題と解決を対比。各カードの下に表情の違う人物を置く"
           ],
           "replaceRequired": [
-            "背景写真",
-            "見出し・本文のコピー"
+            "人物写真（男性・本人）",
+            "比較の項目・文言",
+            "『まるっとカット』などのコピー"
           ],
           "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0247.json"
+          "knowledgePath": "knowledge/lp/LP-0004.json"
         }
       ]
     },
     {
-      "type": "悩み提起",
+      "type": "料金",
       "controlled": true,
       "count": 1,
       "examples": [
         {
-          "id": "LP-0246",
-          "title": "販促EXPO【大阪】のLPデザイン",
-          "sectionId": "C03",
-          "sectionName": "課題提起（6つの悩みカード）",
+          "id": "LP-0004",
+          "title": "front voiceのLPデザイン",
+          "sectionId": "C08",
+          "sectionName": "料金表（文字数×納期の4段階）",
           "reusableStructure": [
-            "3列×2行のカード。上段に白いイラスト枠、下段に紺地の短い悩み文、の型"
+            "行＝文字数（目安時間つき）・列＝納期の4段階の価格マトリクス。列の見出しを黄→橙のグラデーションで、早いほど高い関係を示す"
           ],
           "replaceRequired": [
-            "イラスト",
-            "悩みの文言（6件）"
+            "金額（全セル）",
+            "文字数・納期の区切り",
+            "ブランド固有の納期名（スピード／スタンダード／お任せ）"
           ],
           "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0246.json"
-        }
-      ]
-    },
-    {
-      "type": "解決策",
-      "controlled": true,
-      "count": 1,
-      "examples": [
-        {
-          "id": "LP-0246",
-          "title": "販促EXPO【大阪】のLPデザイン",
-          "sectionId": "C04",
-          "sectionName": "解決の提示（販促EXPOでは）",
-          "reusableStructure": [
-            "悩み→背景色を切り替えて→解決の宣言、の接続。ラベル＋見出し＋イラストの中央寄せ"
-          ],
-          "replaceRequired": [
-            "見出しコピー",
-            "イラスト"
-          ],
-          "rightsStatus": "reference_only",
-          "knowledgePath": "knowledge/lp/LP-0246.json"
+          "knowledgePath": "knowledge/lp/LP-0004.json"
         }
       ]
     },
