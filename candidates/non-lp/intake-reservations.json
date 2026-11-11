@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T16:17:01.420Z",
+  "updatedAt": "2026-11-11T22:21:01.450Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -3995,6 +3995,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-10T16:17:01.420Z"
+    },
+    {
+      "id": "GR-0229",
+      "title": "秋祭りチラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F01f8449f4a8f245c1d3f904c18f3739a%2F01f8449f4a8f245c1d3f904c18f3739a-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30715",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F01f8449f4a8f245c1d3f904c18f3739a%2F01f8449f4a8f245c1d3f904c18f3739a-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-11T22:21:01.450Z"
+    },
+    {
+      "id": "GR-0230",
+      "title": "忘年会のお知らせ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F7264d32f62238465ef578464c3c9d03e%2F7264d32f62238465ef578464c3c9d03e-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-28195",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F7264d32f62238465ef578464c3c9d03e%2F7264d32f62238465ef578464c3c9d03e-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-11T22:21:01.450Z"
+    },
+    {
+      "id": "GR-0231",
+      "title": "赤背景の女子会忘年会バナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F8b0d98cf8e9d72fcf599a90ae9fee292%2F8b0d98cf8e9d72fcf599a90ae9fee292-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-17092",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F8b0d98cf8e9d72fcf599a90ae9fee292%2F8b0d98cf8e9d72fcf599a90ae9fee292-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-11T22:21:01.450Z"
+    },
+    {
+      "id": "GR-0232",
+      "title": "ポップカラーの雑貨店名刺デザイン",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fa17c9d4883316a6963a8a3eb4d5dc840%2Fa17c9d4883316a6963a8a3eb4d5dc840-400.webp&w=256&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29789",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fa17c9d4883316a6963a8a3eb4d5dc840%2Fa17c9d4883316a6963a8a3eb4d5dc840-400.webp&w=256&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-11T22:21:01.450Z"
+    },
+    {
+      "id": "GR-0233",
+      "title": "直線と曲線の組み合わせの青系のロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/3da8bde57314d319e8a4ed98f54a34e8/3da8bde57314d319e8a4ed98f54a34e8-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3069",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/3da8bde57314d319e8a4ed98f54a34e8/3da8bde57314d319e8a4ed98f54a34e8-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-11T22:21:01.450Z"
     },
     {
       "id": "ILAC-0001",
@@ -8414,6 +8474,30 @@
       "materialId": "PAT-0088",
       "authorProfileUrl": null,
       "reservedAt": "2026-11-10T16:17:01.420Z"
+    },
+    {
+      "id": "PAT-0089",
+      "title": "秋祭りチラシに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F01f8449f4a8f245c1d3f904c18f3739a%2F01f8449f4a8f245c1d3f904c18f3739a-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30715",
+      "imageUrl": null,
+      "materialId": "PAT-0089",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-11T22:21:01.450Z"
+    },
+    {
+      "id": "PAT-0090",
+      "title": "株式会社Mobitect | 日本の建築をモバイル化し、世界のライフスタイルを変える。に見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://mobitect.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/mobitect/",
+      "imageUrl": null,
+      "materialId": "PAT-0090",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-11T22:21:01.450Z"
     },
     {
       "id": "PHAC-0001",
@@ -14895,6 +14979,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-10T16:17:01.420Z"
+    },
+    {
+      "id": "WB-0077",
+      "title": "株式会社Mobitect | 日本の建築をモバイル化し、世界のライフスタイルを変える。",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://mobitect.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/mobitect/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/mobitect_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-11T22:21:01.450Z"
+    },
+    {
+      "id": "WB-0078",
+      "title": "岩月靖夫税理士事務所",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://iwatsuki-yasuo-office.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/iwatsukiyasuooffice/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/iwatsukiyasuooffice_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-11T22:21:01.450Z"
     }
   ]
 }
