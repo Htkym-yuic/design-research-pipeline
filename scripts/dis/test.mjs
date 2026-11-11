@@ -1472,3 +1472,15 @@ test("ingest-library: 旧ライブラリーのLPを、DISの案件フォルダ�
   await fs.access(path.join(r.itemDir, "analysis.md")); await fs.access(path.join(r.itemDir, "text-index.json"));
   assert.equal(JSON.parse(await fs.readFile(path.join(r.itemDir, "analysis.json"), "utf8")).pageUrl, "https://gmo-healthtech.com/healthtechone/lp/telemedicine"); // 実LPのURLは、案件の情報から
 });
+
+{
+  const { isExcluded } = await import("./lib/cbs-exclusions.mjs");
+  const ex = { ids: new Set(["DIS-LP-20261107"]), media: new Set(["banner", "web"]) };
+  test("cbs-exclusions: 旧形式の指定IDとバナー／WebのDIS由来は除外され、連番のLPとDISのIDがない既存ナレッジは影響を受けない", () => {
+    assert.equal(isExcluded(["DIS-LP-20261107"], "LP", ex), true);
+    assert.equal(isExcluded(["DIS-BN-0001"], "Banner", ex), true);
+    assert.equal(isExcluded(["DIS-WB-0001"], "Web", ex), true);
+    assert.equal(isExcluded(["DIS-LP-0001"], "LP", ex), false);
+    assert.equal(isExcluded([], "Banner", ex), false);
+  });
+}

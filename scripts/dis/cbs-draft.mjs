@@ -129,7 +129,7 @@ export async function placeKnowledge({ draft, repo = REPO, replaceDraft = false 
   if (!draft.id) throw new Error("ライブラリー番号がありません。data/dis-relations.json に、DISの番号とライブラリー番号（LP-nnnn／BN-nnnn／WB-nnnn）の対応を追加してください");
   if (!new RegExp(`^${{ LP: "LP", Banner: "BN", Web: "WB" }[media.mediaType]}-\\d{4}$`).test(draft.id)) throw new Error(`ライブラリー番号の形式ではありません: ${draft.id}（DISの番号は、主のIDにしません）`);
   if (String(draft.primary_appeal || "").startsWith("（28章")) throw new Error("訴求・タグが未確定です。--tags で primary_appeal・タグ（industry_tags など）を指定してください");
-  if (isExcluded(draft.dis_ids, draft.mediaType)) throw new Error("一時除外の対象です（config/cbs-export-exclusions.json）。配置しません");
+  if (repo === REPO && isExcluded(draft.dis_ids, draft.mediaType)) throw new Error("一時除外の対象です（config/cbs-export-exclusions.json）。配置しません");
   const target = path.join(repo, "knowledge", media.dir, `${draft.id}.json`);
   const exists = await fs.access(target).then(() => true, () => false);
   let overwrite = false;
