@@ -15552,6 +15552,152 @@
       "reviewPoints": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
       "deepDivePriority": "中",
       "generatedAt": "2026-11-10T16:17:25.299Z"
+    },
+    "WB-0077": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。株式会社Mobitect | 日本の建築をモバイル化し、世界のライフスタイルを変える。。",
+      "selectionReason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+      "visualSummary": "寒色・青紫系。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-11T22:21:44.802Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/WB-0077-mobitect/03_Implementation_Blueprint/WB-0077_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/WB-0077-mobitect/03_Implementation_Blueprint/WB-0077_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/WB-0077-mobitect/03_Implementation_Blueprint/WB-0077_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/WB-0077-mobitect/03_Implementation_Blueprint/WB-0077_elementor_implementation_guide.md",
+        "sections": 8,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "WB-0078": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。岩月靖夫税理士事務所。",
+      "selectionReason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+      "visualSummary": "明色・白基調。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-11T22:21:44.817Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/WB-0078-untitled/03_Implementation_Blueprint/WB-0078_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/WB-0078-untitled/03_Implementation_Blueprint/WB-0078_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/WB-0078-untitled/03_Implementation_Blueprint/WB-0078_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/WB-0078-untitled/03_Implementation_Blueprint/WB-0078_elementor_implementation_guide.md",
+        "sections": 8,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0229": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したチラシ・フライヤー参考。秋祭りチラシ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "暖色・黄橙系。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-11T22:21:44.832Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0229-untitled/03_Implementation_Blueprint/GR-0229_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0229-untitled/03_Implementation_Blueprint/GR-0229_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0229-untitled/03_Implementation_Blueprint/GR-0229_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0229-untitled/03_Implementation_Blueprint/GR-0229_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0230": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したポスター参考。忘年会のお知らせ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "寒色・青紫系。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-11T22:21:44.847Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0230-untitled/03_Implementation_Blueprint/GR-0230_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0230-untitled/03_Implementation_Blueprint/GR-0230_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0230-untitled/03_Implementation_Blueprint/GR-0230_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0230-untitled/03_Implementation_Blueprint/GR-0230_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0231": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したSNS投稿・Web広告参考。赤背景の女子会忘年会バナー。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "暖色・黄橙系。156×103の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-11T22:21:44.859Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0231-untitled/03_Implementation_Blueprint/GR-0231_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0231-untitled/03_Implementation_Blueprint/GR-0231_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0231-untitled/03_Implementation_Blueprint/GR-0231_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0231-untitled/03_Implementation_Blueprint/GR-0231_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0232": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集した名刺・ショップカード参考。ポップカラーの雑貨店名刺デザイン。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。242×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-11T22:21:44.873Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0232-untitled/03_Implementation_Blueprint/GR-0232_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0232-untitled/03_Implementation_Blueprint/GR-0232_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0232-untitled/03_Implementation_Blueprint/GR-0232_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0232-untitled/03_Implementation_Blueprint/GR-0232_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0233": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したロゴ・VI/CI参考。直線と曲線の組み合わせの青系のロゴ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。400×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-11T22:21:44.888Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0233-untitled/03_Implementation_Blueprint/GR-0233_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0233-untitled/03_Implementation_Blueprint/GR-0233_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0233-untitled/03_Implementation_Blueprint/GR-0233_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0233-untitled/03_Implementation_Blueprint/GR-0233_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PAT-0089": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（デザインAC）から収集したPattern参考。秋祭りチラシに見る文字組みと視線誘導。",
+      "selectionReason": "日次収集から抽出（デザインAC）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "主見出し・補足・画像・行動情報のサイズ差と配置から、最初に読ませる情報を明確にする。 根拠候補: GR-0229",
+      "reviewPoints": "素材そのものではなく、情報階層と余白の考え方だけを転用する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-11T22:21:44.888Z"
+    },
+    "PAT-0090": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（SANKOU!）から収集したPattern参考。株式会社Mobitect | 日本の建築をモバイル化し、世界のライフスタイルを変える。に見るPC・SPの情報優先順位。",
+      "selectionReason": "日次収集から抽出（SANKOU!）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "画面幅が変わっても、主見出し・主要ベネフィット・CTAの意味と順序を維持する。 根拠候補: WB-0077",
+      "reviewPoints": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-11T22:21:44.888Z"
     }
   }
 }
