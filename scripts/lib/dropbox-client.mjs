@@ -53,6 +53,18 @@ async function getAccessToken() {
  * Dropbox-API-Arg ヘッダー用のJSON。ヘッダーはASCIIのみのため、日本語など非ASCIIの文字を \uXXXX にエスケープする
  * （Dropbox側では、エスケープ前と同じ文字列として解釈される）。
  */
+/** 書込み系のAPI用。制限（429 too_many_write_operations）や一時的なサーバーエラーは、待って再試行する（最大8回。間隔は 1〜30秒ほどに伸ばす）。 */
+async function dbxFetch(url, init) {
+  let res;
+  for (let attempt = 0; ; attempt++) {
+    res = await fetch(url, init);
+    if (![429, 500, 502, 503, 504].includes(res.status) || attempt >= 8) return res;
+    const ra = Number(res.headers.get("retry-after")) || 0;
+    const wait = Math.max(ra, Math.min(30, 2 ** attempt)) + Math.random();
+    await new Promise((r) => setTimeout(r, wait * 1000));
+  }
+}
+
 export function dropboxApiArg(obj) {
   return JSON.stringify(obj).replace(/[\u0080-\uffff]/g, (c) => "\\u" + c.charCodeAt(0).toString(16).padStart(4, "0"));
 }
@@ -123,7 +135,7 @@ export async function checkAuth() {
 export async function ensureFolder(dropboxPath) {
   const accessToken = await getAccessToken();
 
-  const response = await fetch(CREATE_FOLDER_URL, {
+  const response = await dbxFetch(CREATE_FOLDER_URL, {
     method: "POST",
     headers: {
       Authorization: `Bearer ${accessToken}`,
@@ -159,7 +171,7 @@ export async function pathExists(dropboxPath) {
 /** 上書きしないアップロード（mode: add, autorename: false → 既存と衝突したらエラー）。 */
 export async function uploadFileNoOverwrite(dropboxPath, fileBuffer) {
   const accessToken = await getAccessToken();
-  const response = await fetch(UPLOAD_URL, {
+  const response = await dbxFetch(UPLOAD_URL, {
     method: "POST",
     headers: {
       Authorization: `Bearer ${accessToken}`,

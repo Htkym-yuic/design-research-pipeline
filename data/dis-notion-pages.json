@@ -1,0 +1,36 @@
+{
+  "note": "Notion『01 LPリサーチライブラリー』の既存ページ（LP-000n）とDISページのID。merge-library.mjs が使う。",
+  "pages": {
+    "LP-0001": {
+      "pageId": "3d024d4f-a671-81b2-9000-c38f1b3a490b",
+      "disPageId": "41424d4f-a671-815a-859e-d5290861c176"
+    },
+    "LP-0002": {
+      "pageId": "3d024d4f-a671-8162-b8a7-f24f63319ba6"
+    },
+    "LP-0003": {
+      "pageId": "3d024d4f-a671-81c7-917a-e94cfe665c5b"
+    },
+    "LP-0004": {
+      "pageId": "3c724d4f-a671-8120-8cb8-e153885f4735"
+    },
+    "LP-0005": {
+      "pageId": "3d124d4f-a671-8126-87ed-dace9b368c06"
+    },
+    "LP-0006": {
+      "pageId": "3d124d4f-a671-8192-98af-f815269a2aa5"
+    },
+    "LP-0007": {
+      "pageId": "3d124d4f-a671-8160-ba11-fc22befa3575"
+    },
+    "LP-0008": {
+      "pageId": "3d124d4f-a671-81ce-ac2a-f199839d41bb"
+    },
+    "LP-0009": {
+      "pageId": "3d124d4f-a671-81bb-a5de-fefb486490a7"
+    },
+    "LP-0010": {
+      "pageId": "3d124d4f-a671-8131-b55e-c87fb7e6ef25"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "note": "旧ライブラリーのLPのDIS分析の進捗（1件ごとに更新する）。status: pending／done／failed。",
-  "updatedAt": "2026-11-11T12:57:06.582Z",
+  "updatedAt": "2026-11-12T19:38:17.069Z",
   "items": {
     "LP-0002": {
       "disId": "DIS-LP-0005",
@@ -28,6 +28,1778 @@
       "knowledge": "knowledge/lp/LP-0004.json",
       "notes": "全15 Unit（PC14＋SP専用1）。9軸合計34/45: 目的適合4/情報優先順位4/視線誘導3/訴求4/信頼4/配色3/レイアウト4/ビジュアル4/転用4。最優先の改善は相談ボタンが約8割の位置まで出ない点。音声サンプル・動画・フォーム/LINEの遷移先・SP固定バーの有無・経験年数の基準時点は未確認。旧分析v22との食い違いは reconciliation_LP-0004 に記録。",
       "finishedAt": "2026-11-11T12:57:06.582Z"
+    },
+    "LP-0005": {
+      "disId": "DIS-LP-0008",
+      "title": "Sweet AMERICAのLPデザイン",
+      "status": "analyzed",
+      "durationSec": 189,
+      "tokens": 107051,
+      "units": 7,
+      "score": "32/45",
+      "validate": "OK",
+      "knowledge": null,
+      "notes": "dis:validate-item 通過。cbs-draft は未実施。durationSec／tokens はサブエージェント完了通知の値（並行実行のため単独実行より長め）。"
+    },
+    "LP-0006": {
+      "disId": "DIS-LP-0009",
+      "title": "CUP NOODLE LightのLPデザイン",
+      "status": "analyzed",
+      "durationSec": 192,
+      "tokens": 100529,
+      "units": 8,
+      "score": "34/45",
+      "validate": "OK",
+      "knowledge": null,
+      "notes": "dis:validate-item 通過。cbs-draft は未実施。durationSec／tokens はサブエージェント完了通知の値（並行実行のため単独実行より長め）。"
+    },
+    "LP-0007": {
+      "disId": "DIS-LP-0010",
+      "title": "助成金コンサルタント MatchのLPデザイン",
+      "status": "analyzed",
+      "durationSec": 309,
+      "tokens": 132401,
+      "units": 11,
+      "score": "34/45",
+      "validate": "OK",
+      "knowledge": null,
+      "notes": "dis:validate-item 通過。cbs-draft は未実施。durationSec／tokens はサブエージェント完了通知の値（並行実行のため単独実行より長め）。"
+    },
+    "LP-0008": {
+      "disId": "DIS-LP-0011",
+      "title": "PASTA de PON（パスタデポン）のLPデザイン",
+      "status": "analyzed",
+      "durationSec": 183,
+      "tokens": 103016,
+      "units": 10,
+      "score": "35/45",
+      "validate": "OK",
+      "knowledge": null,
+      "notes": "dis:validate-item 通過。cbs-draft は未実施。durationSec／tokens はサブエージェント完了通知の値（並行実行のため単独実行より長め）。"
+    },
+    "LP-0009": {
+      "disId": "DIS-LP-0012",
+      "title": "サンサンスポンジのLPデザイン",
+      "status": "analyzed",
+      "durationSec": 392,
+      "tokens": 203884,
+      "units": 22,
+      "score": "36/45",
+      "validate": "OK",
+      "knowledge": null,
+      "notes": "dis:validate-item 通過。cbs-draft は未実施。durationSec／tokens はサブエージェント完了通知の値（並行実行のため単独実行より長め）。"
+    },
+    "LP-0010": {
+      "disId": "DIS-LP-0013",
+      "title": "ホーウィン シェルコードバン長財布のLPデザイン",
+      "status": "analyzed",
+      "durationSec": 229,
+      "tokens": 129344,
+      "units": 9,
+      "score": "35/45",
+      "validate": "OK",
+      "knowledge": null,
+      "notes": "dis:validate-item 通過。cbs-draft は未実施。durationSec／tokens はサブエージェント完了通知の値（並行実行のため単独実行より長め）。"
+    },
+    "LP-0013": {
+      "status": "analyzed",
+      "durationSec": 152,
+      "tokens": 91815,
+      "disId": "DIS-LP-0016",
+      "title": "グレーピー グレープ & ティー ジェリー フラペチーノのLPデザイン",
+      "units": 6,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0012": {
+      "status": "analyzed",
+      "durationSec": 185,
+      "tokens": 98302,
+      "disId": "DIS-LP-0015",
+      "title": "SUNGLASSESのLPデザイン",
+      "units": 9,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0015": {
+      "status": "analyzed",
+      "durationSec": 177,
+      "tokens": 92705,
+      "disId": "DIS-LP-0018",
+      "title": "VOXのLPデザイン",
+      "units": 11,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0011": {
+      "status": "analyzed",
+      "durationSec": 236,
+      "tokens": 129097,
+      "disId": "DIS-LP-0014",
+      "title": "POCOP RougeのLPデザイン",
+      "units": 9,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0016": {
+      "status": "analyzed",
+      "durationSec": 246,
+      "tokens": 138018,
+      "disId": "DIS-LP-0019",
+      "title": "rela.cure ルームミストのLPデザイン",
+      "units": 12,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0014": {
+      "status": "analyzed",
+      "durationSec": 248,
+      "tokens": 118466,
+      "disId": "DIS-LP-0017",
+      "title": "チョコボールのLPデザイン",
+      "units": 11,
+      "score": "31/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0017": {
+      "status": "analyzed",
+      "durationSec": 192,
+      "tokens": 112955,
+      "disId": "DIS-LP-0020",
+      "title": "OANDA証券の法人口座開設のLPデザイン",
+      "units": 5,
+      "score": "32/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0018": {
+      "status": "analyzed",
+      "durationSec": 201,
+      "tokens": 111731,
+      "disId": "DIS-LP-0021",
+      "title": "炊込みご飯の素「椎茸メシ」のスマホLPデザインのLPデザイン",
+      "units": 10,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0019": {
+      "status": "analyzed",
+      "durationSec": 202,
+      "tokens": 99263,
+      "disId": "DIS-LP-0022",
+      "title": "寝ながらメディキュットのLPデザイン",
+      "units": 9,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0022": {
+      "status": "analyzed",
+      "durationSec": 238,
+      "tokens": 115609,
+      "disId": "DIS-LP-0025",
+      "title": "ほうじ茶ラテのLPデザイン",
+      "units": 10,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0021": {
+      "status": "analyzed",
+      "durationSec": 247,
+      "tokens": 127538,
+      "disId": "DIS-LP-0024",
+      "title": "ゴルフ専門トレーニングジム RiDEALのLPデザイン",
+      "units": 11,
+      "score": "36/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0024": {
+      "status": "analyzed",
+      "durationSec": 133,
+      "tokens": 80067,
+      "disId": "DIS-LP-0027",
+      "title": "スターバックス コーヒー ジャパン『秋のスイーツをもっとおいしくするコーヒー』のLPデザイン",
+      "units": 4,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0023": {
+      "status": "analyzed",
+      "durationSec": 196,
+      "tokens": 91612,
+      "disId": "DIS-LP-0026",
+      "title": "インドカレー8食セットのLPデザイン",
+      "units": 10,
+      "score": "32/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0020": {
+      "status": "analyzed",
+      "durationSec": 285,
+      "tokens": 151412,
+      "disId": "DIS-LP-0023",
+      "title": "クロサイドプラスのスマホLPデザインのLPデザイン",
+      "units": 12,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0025": {
+      "status": "analyzed",
+      "durationSec": 164,
+      "tokens": 90461,
+      "disId": "DIS-LP-0028",
+      "title": "抹茶フォンデュのLPデザイン",
+      "units": 8,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0027": {
+      "status": "analyzed",
+      "durationSec": 263,
+      "tokens": 128293,
+      "disId": "DIS-LP-0030",
+      "title": "PEONIA 美白BBクリームのLPデザイン",
+      "units": 15,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0031": {
+      "status": "analyzed",
+      "durationSec": 195,
+      "tokens": 113038,
+      "disId": "DIS-LP-0034",
+      "title": "HERITAGEのLPデザイン",
+      "units": 7,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0028": {
+      "status": "analyzed",
+      "durationSec": 214,
+      "tokens": 109124,
+      "disId": "DIS-LP-0031",
+      "title": "マルチビタミン＆ミネラルのLPデザイン",
+      "units": 11,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0026": {
+      "status": "analyzed",
+      "durationSec": 302,
+      "tokens": 152670,
+      "disId": "DIS-LP-0029",
+      "title": "快調茶のLPデザイン",
+      "units": 14,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0030": {
+      "status": "analyzed",
+      "durationSec": 256,
+      "tokens": 141155,
+      "disId": "DIS-LP-0033",
+      "title": "EXOCOMPLEX レッドドラゴンフルーツのLPデザイン",
+      "units": 12,
+      "score": "32/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0029": {
+      "status": "analyzed",
+      "durationSec": 321,
+      "tokens": 145731,
+      "disId": "DIS-LP-0032",
+      "title": "M&AベストパートナーズのLPデザイン",
+      "units": 17,
+      "score": "36/45",
+      "notes": "dis:validate-item 通過・切り出し済み。SP画像はPCのU10以降に相当する範囲のみ。Dropbox/Notion反映は別途。"
+    },
+    "LP-0034": {
+      "status": "analyzed",
+      "durationSec": 159,
+      "tokens": 96623,
+      "disId": "DIS-LP-0037",
+      "title": "古都と港町で夏めぐりのLPデザイン",
+      "units": 7,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPなし）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0033": {
+      "status": "analyzed",
+      "durationSec": 179,
+      "tokens": 95421,
+      "disId": "DIS-LP-0036",
+      "title": "冬を楽しむインタラクティブアート 雪とくらげ | 京都水族館のLPデザイン",
+      "units": 8,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0035": {
+      "status": "analyzed",
+      "durationSec": 185,
+      "tokens": 92117,
+      "disId": "DIS-LP-0038",
+      "title": "インドの刺繍店 タンカのLPデザイン",
+      "units": 10,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0036": {
+      "status": "analyzed",
+      "durationSec": 192,
+      "tokens": 99314,
+      "disId": "DIS-LP-0039",
+      "title": "SHISEIDO オイデルミン エッセンスローションのLPデザイン",
+      "units": 10,
+      "score": "36/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0032": {
+      "status": "analyzed",
+      "durationSec": 217,
+      "tokens": 105940,
+      "disId": "DIS-LP-0035",
+      "title": "ギリシャヨーグラーノのLPデザイン",
+      "units": 7,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0038": {
+      "status": "analyzed",
+      "durationSec": 219,
+      "tokens": 112960,
+      "disId": "DIS-LP-0041",
+      "title": "レッドドラゴンのLPデザイン",
+      "units": 16,
+      "score": "32/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0037": {
+      "status": "analyzed",
+      "durationSec": 342,
+      "tokens": 113757,
+      "disId": "DIS-LP-0040",
+      "title": "大辛ファイヤー！®︎のLPデザイン",
+      "units": 9,
+      "score": "36/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0040": {
+      "status": "analyzed",
+      "durationSec": 258,
+      "tokens": 140326,
+      "disId": "DIS-LP-0043",
+      "title": "ライザップゴルフのLPデザイン",
+      "units": 20,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPなし）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0039": {
+      "status": "analyzed",
+      "durationSec": 303,
+      "tokens": 151049,
+      "disId": "DIS-LP-0042",
+      "title": "ゴルフレッスンのLPデザイン",
+      "units": 16,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み（PC画像が一部欠落の可能性）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0041": {
+      "status": "analyzed",
+      "durationSec": 321,
+      "tokens": 145016,
+      "disId": "DIS-LP-0044",
+      "title": "カイテクのLPデザイン",
+      "units": 19,
+      "score": "37/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0044": {
+      "status": "analyzed",
+      "durationSec": 224,
+      "tokens": 108115,
+      "disId": "DIS-LP-0047",
+      "title": "オンライン英会話のLPデザイン",
+      "units": 12,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0042": {
+      "status": "analyzed",
+      "durationSec": 386,
+      "tokens": 169666,
+      "disId": "DIS-LP-0045",
+      "title": "Webマーケティング×生成AIで最先端スキルを習得するオンラインスクールのLPデザイン",
+      "units": 17,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0043": {
+      "status": "analyzed",
+      "durationSec": 251,
+      "tokens": 134114,
+      "disId": "DIS-LP-0046",
+      "title": "医療脱毛のLPデザイン",
+      "units": 18,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPなし）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0045": {
+      "status": "analyzed",
+      "durationSec": 172,
+      "tokens": 98015,
+      "disId": "DIS-LP-0048",
+      "title": "COCO塾のLPデザイン",
+      "units": 11,
+      "score": "32/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPなし）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0046": {
+      "status": "analyzed",
+      "durationSec": 270,
+      "tokens": 125957,
+      "disId": "DIS-LP-0049",
+      "title": "ライザップのLPデザイン",
+      "units": 23,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0047": {
+      "status": "analyzed",
+      "durationSec": 255,
+      "tokens": 129963,
+      "disId": "DIS-LP-0050",
+      "title": "レッドドラゴンのLPデザイン",
+      "units": 16,
+      "score": "31/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0051": {
+      "status": "analyzed",
+      "durationSec": 168,
+      "tokens": 99174,
+      "disId": "DIS-LP-0054",
+      "title": "「実感できる」ホットヨガならLAVAのLPデザイン",
+      "units": 14,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPなし）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0049": {
+      "status": "analyzed",
+      "durationSec": 232,
+      "tokens": 109304,
+      "disId": "DIS-LP-0052",
+      "title": "不動産投資のLPデザイン",
+      "units": 11,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0048": {
+      "status": "analyzed",
+      "durationSec": 252,
+      "tokens": 141127,
+      "disId": "DIS-LP-0051",
+      "title": "パーソナルトレーニングのLPデザイン",
+      "units": 18,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0050": {
+      "status": "analyzed",
+      "durationSec": 262,
+      "tokens": 146449,
+      "disId": "DIS-LP-0053",
+      "title": "遺品整理 ミライル まごころサ－ビスのLPデザイン",
+      "units": 16,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0054": {
+      "status": "analyzed",
+      "durationSec": 168,
+      "tokens": 95373,
+      "disId": "DIS-LP-0057",
+      "title": "ザ・タンサンのLPデザイン",
+      "units": 9,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0052": {
+      "status": "analyzed",
+      "durationSec": 194,
+      "tokens": 104096,
+      "disId": "DIS-LP-0055",
+      "title": "ストロベリーベリーマッチフラペチーノのLPデザイン",
+      "units": 7,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0053": {
+      "status": "analyzed",
+      "durationSec": 299,
+      "tokens": 146121,
+      "disId": "DIS-LP-0056",
+      "title": "菌活美人ステラ 乳酸菌生酵素のLPデザイン",
+      "units": 18,
+      "score": "31/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0055": {
+      "status": "analyzed",
+      "durationSec": 338,
+      "tokens": 147545,
+      "disId": "DIS-LP-0058",
+      "title": "プレミアムブラントゥースのLPデザイン",
+      "units": 20,
+      "score": "32/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0056": {
+      "status": "analyzed",
+      "durationSec": 257,
+      "tokens": 129196,
+      "disId": "DIS-LP-0059",
+      "title": "パーソナルプライベートジムのLPデザイン",
+      "units": 18,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPは後半欠け）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0059": {
+      "status": "analyzed",
+      "durationSec": 215,
+      "tokens": 118270,
+      "disId": "DIS-LP-0062",
+      "title": "MS-JapanのLPデザイン",
+      "units": 10,
+      "score": "36/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0058": {
+      "status": "analyzed",
+      "durationSec": 245,
+      "tokens": 124974,
+      "disId": "DIS-LP-0061",
+      "title": "WEBデザインスクールのLPデザイン",
+      "units": 16,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0060": {
+      "status": "analyzed",
+      "durationSec": 203,
+      "tokens": 112733,
+      "disId": "DIS-LP-0063",
+      "title": "オンライン診療のLPデザイン",
+      "units": 15,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0057": {
+      "status": "analyzed",
+      "durationSec": 358,
+      "tokens": 152713,
+      "disId": "DIS-LP-0060",
+      "title": "カゴの110番のLPデザイン",
+      "units": 27,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0061": {
+      "status": "analyzed",
+      "durationSec": 254,
+      "tokens": 129698,
+      "disId": "DIS-LP-0064",
+      "title": "ランディングページ制作のLPデザイン",
+      "units": 12,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0063": {
+      "status": "analyzed",
+      "durationSec": 214,
+      "tokens": 117545,
+      "disId": "DIS-LP-0066",
+      "title": "ドカ売れするLP制作！のLPデザイン",
+      "units": 16,
+      "score": "31/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0062": {
+      "status": "analyzed",
+      "durationSec": 250,
+      "tokens": 119527,
+      "disId": "DIS-LP-0065",
+      "title": "船井総研のクラウド評価advanceのLPデザイン",
+      "units": 11,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0064": {
+      "status": "analyzed",
+      "durationSec": 248,
+      "tokens": 132312,
+      "disId": "DIS-LP-0067",
+      "title": "マンション経営セミナーのLPデザイン",
+      "units": 11,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0067": {
+      "status": "analyzed",
+      "durationSec": 272,
+      "tokens": 135742,
+      "disId": "DIS-LP-0070",
+      "title": "アプリでかんたん NISAもりそなのLPデザイン",
+      "units": 11,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0066": {
+      "status": "analyzed",
+      "durationSec": 302,
+      "tokens": 139051,
+      "disId": "DIS-LP-0069",
+      "title": "経理・人事。法務の転職のLPデザイン",
+      "units": 11,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0069": {
+      "status": "analyzed",
+      "durationSec": 124,
+      "tokens": 79989,
+      "disId": "DIS-LP-0072",
+      "title": "グリーンゴルフ21のLPデザイン",
+      "units": 7,
+      "score": "29/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPなし）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0065": {
+      "status": "analyzed",
+      "durationSec": 442,
+      "tokens": 190260,
+      "disId": "DIS-LP-0068",
+      "title": "オルチャニストのLPデザイン",
+      "units": 34,
+      "score": "31/45",
+      "notes": "dis:validate-item 通過・切り出し済み（34 Unit。SP画像に不整合）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0068": {
+      "status": "analyzed",
+      "durationSec": 293,
+      "tokens": 140403,
+      "disId": "DIS-LP-0071",
+      "title": "英語1年マスタープログラム「トライズ」のLPデザイン",
+      "units": 16,
+      "score": "32/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0070": {
+      "status": "analyzed",
+      "durationSec": 286,
+      "tokens": 145267,
+      "disId": "DIS-LP-0073",
+      "title": "2024新春キャンペーンのLPデザイン",
+      "units": 17,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0071": {
+      "status": "analyzed",
+      "durationSec": 218,
+      "tokens": 110972,
+      "disId": "DIS-LP-0074",
+      "title": "ゴルフアカデミーのLPデザイン",
+      "units": 9,
+      "score": "36/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0073": {
+      "status": "analyzed",
+      "durationSec": 225,
+      "tokens": 122629,
+      "disId": "DIS-LP-0076",
+      "title": "フランチャイズ選びで失敗しないためのセミナーを無料で開催しますのLPデザイン",
+      "units": 13,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPなし）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0072": {
+      "status": "analyzed",
+      "durationSec": 300,
+      "tokens": 140615,
+      "disId": "DIS-LP-0075",
+      "title": "ゴルフレッスンのLPデザイン",
+      "units": 15,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPは後半欠け）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0074": {
+      "status": "analyzed",
+      "durationSec": 235,
+      "tokens": 129363,
+      "disId": "DIS-LP-0077",
+      "title": "おためしレッスンのLPデザイン",
+      "units": 9,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPは後半欠け）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0076": {
+      "status": "analyzed",
+      "durationSec": 183,
+      "tokens": 92793,
+      "disId": "DIS-LP-0079",
+      "title": "DMM英会話のLPデザイン",
+      "units": 11,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPなし）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0075": {
+      "status": "analyzed",
+      "durationSec": 209,
+      "tokens": 102091,
+      "disId": "DIS-LP-0078",
+      "title": "どんどん割のLPデザイン",
+      "units": 6,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPは後半欠け）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0077": {
+      "status": "analyzed",
+      "durationSec": 245,
+      "tokens": 123120,
+      "disId": "DIS-LP-0080",
+      "title": "ECC外語学院のLPデザイン",
+      "units": 10,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0078": {
+      "status": "analyzed",
+      "durationSec": 216,
+      "tokens": 108319,
+      "disId": "DIS-LP-0081",
+      "title": "12人のエキスパート達が語るメールセミナーのLPデザイン",
+      "units": 18,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0079": {
+      "status": "analyzed",
+      "durationSec": 189,
+      "tokens": 111694,
+      "disId": "DIS-LP-0082",
+      "title": "住友不動産販売のLPデザイン",
+      "units": 11,
+      "score": "36/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0080": {
+      "status": "analyzed",
+      "durationSec": 214,
+      "tokens": 122530,
+      "disId": "DIS-LP-0083",
+      "title": "クラウドバンクのLPデザイン",
+      "units": 13,
+      "score": "37/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0081": {
+      "status": "analyzed",
+      "durationSec": 249,
+      "tokens": 110375,
+      "disId": "DIS-LP-0084",
+      "title": "鍵のコンシェルジュのLPデザイン",
+      "units": 12,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPなし）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0082": {
+      "status": "analyzed",
+      "durationSec": 229,
+      "tokens": 121819,
+      "disId": "DIS-LP-0085",
+      "title": "パーソナルプライベートジムのLPデザイン",
+      "units": 15,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPなし）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0084": {
+      "status": "analyzed",
+      "durationSec": 208,
+      "tokens": 107484,
+      "disId": "DIS-LP-0087",
+      "title": "スタジオ・ヨギー体験キャンペーンのLPデザイン",
+      "units": 12,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPなし）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0085": {
+      "status": "analyzed",
+      "durationSec": 238,
+      "tokens": 118286,
+      "disId": "DIS-LP-0088",
+      "title": "TOMAS大崎校開校のLPデザイン",
+      "units": 8,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0083": {
+      "status": "analyzed",
+      "durationSec": 304,
+      "tokens": 142465,
+      "disId": "DIS-LP-0086",
+      "title": "パーソナルジムのLPデザイン",
+      "units": 17,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0086": {
+      "status": "analyzed",
+      "durationSec": 245,
+      "tokens": 134772,
+      "disId": "DIS-LP-0089",
+      "title": "瓶チュー BIN-CHUのLPデザイン",
+      "units": 9,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0087": {
+      "status": "analyzed",
+      "durationSec": 205,
+      "tokens": 107510,
+      "disId": "DIS-LP-0090",
+      "title": "全額返金キャンペーン実施中のLPデザイン",
+      "units": 10,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0088": {
+      "status": "analyzed",
+      "durationSec": 253,
+      "tokens": 148622,
+      "disId": "DIS-LP-0091",
+      "title": "経費精算システム キンクラのLPデザイン",
+      "units": 14,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0089": {
+      "status": "analyzed",
+      "durationSec": 308,
+      "tokens": 144231,
+      "disId": "DIS-LP-0092",
+      "title": "パーソナルジムのLPデザイン",
+      "units": 28,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み（28 Unit）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0091": {
+      "status": "analyzed",
+      "durationSec": 242,
+      "tokens": 112797,
+      "disId": "DIS-LP-0094",
+      "title": "大阪のプライベートジムRiseのLPデザイン",
+      "units": 12,
+      "score": "30/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0092": {
+      "status": "analyzed",
+      "durationSec": 226,
+      "tokens": 121322,
+      "disId": "DIS-LP-0095",
+      "title": "モバイル保険のLPデザイン",
+      "units": 12,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPなし）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0090": {
+      "status": "analyzed",
+      "durationSec": 291,
+      "tokens": 135813,
+      "disId": "DIS-LP-0093",
+      "title": "プライベートジムのLPデザイン",
+      "units": 14,
+      "score": "30/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0093": {
+      "status": "analyzed",
+      "durationSec": 228,
+      "tokens": 115972,
+      "disId": "DIS-LP-0096",
+      "title": "MONPE（モンペ）スツールひのきのLPデザイン",
+      "units": 10,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0094": {
+      "status": "analyzed",
+      "durationSec": 231,
+      "tokens": 112209,
+      "disId": "DIS-LP-0097",
+      "title": "フルリ クリアゲルクレンズのLPデザイン",
+      "units": 20,
+      "score": "32/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0096": {
+      "status": "analyzed",
+      "durationSec": 223,
+      "tokens": 118304,
+      "disId": "DIS-LP-0099",
+      "title": "ライザップのLPデザイン",
+      "units": 18,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPなし）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0095": {
+      "status": "analyzed",
+      "durationSec": 261,
+      "tokens": 137809,
+      "disId": "DIS-LP-0098",
+      "title": "全身痩せ×3回体験コースのLPデザイン",
+      "units": 10,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0098": {
+      "status": "analyzed",
+      "durationSec": 247,
+      "tokens": 138422,
+      "disId": "DIS-LP-0101",
+      "title": "WEB食い オンラインスクールのスマホLPデザインのLPデザイン",
+      "units": 14,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0099": {
+      "status": "analyzed",
+      "durationSec": 222,
+      "tokens": 100100,
+      "disId": "DIS-LP-0102",
+      "title": "中古ワンルームマンション経営セミナーのLPデザイン",
+      "units": 11,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0097": {
+      "status": "analyzed",
+      "durationSec": 323,
+      "tokens": 170358,
+      "disId": "DIS-LP-0100",
+      "title": "LAVAホットヨガ通い放題プランのLPデザイン",
+      "units": 23,
+      "score": "36/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0100": {
+      "status": "analyzed",
+      "durationSec": 258,
+      "tokens": 127820,
+      "disId": "DIS-LP-0103",
+      "title": "キャリタクのLPデザイン",
+      "units": 9,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0102": {
+      "status": "analyzed",
+      "durationSec": 237,
+      "tokens": 126747,
+      "disId": "DIS-LP-0105",
+      "title": "総合学園ヒューマンアカデミーのLPデザイン",
+      "units": 20,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0101": {
+      "status": "analyzed",
+      "durationSec": 264,
+      "tokens": 127653,
+      "disId": "DIS-LP-0104",
+      "title": "不動産投資のLPデザイン",
+      "units": 12,
+      "score": "32/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0103": {
+      "status": "analyzed",
+      "durationSec": 212,
+      "tokens": 104002,
+      "disId": "DIS-LP-0106",
+      "title": "世界に通じる英語力が身につく 個別指導型子ども英語教室LeptonのLPデザイン",
+      "units": 16,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPなし）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0107": {
+      "status": "analyzed",
+      "durationSec": 189,
+      "tokens": 101086,
+      "disId": "DIS-LP-0110",
+      "title": "ボディメイク専門パーソナルトレーニングジムのLPデザイン",
+      "units": 8,
+      "score": "31/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0104": {
+      "status": "analyzed",
+      "durationSec": 247,
+      "tokens": 126631,
+      "disId": "DIS-LP-0107",
+      "title": "ECCジュニアオンライン教室のLPデザイン",
+      "units": 15,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0105": {
+      "status": "analyzed",
+      "durationSec": 208,
+      "tokens": 116619,
+      "disId": "DIS-LP-0108",
+      "title": "パーソナルトレーニングジムのLPデザイン",
+      "units": 13,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0106": {
+      "status": "analyzed",
+      "durationSec": 221,
+      "tokens": 118300,
+      "disId": "DIS-LP-0109",
+      "title": "パーソナルトレーニング・ダイエットジムのLPデザイン",
+      "units": 15,
+      "score": "32/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0108": {
+      "status": "analyzed",
+      "durationSec": 183,
+      "tokens": 95957,
+      "disId": "DIS-LP-0111",
+      "title": "フィットネスハウスのLPデザイン",
+      "units": 7,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0109": {
+      "status": "analyzed",
+      "durationSec": 255,
+      "tokens": 143367,
+      "disId": "DIS-LP-0112",
+      "title": "ゴルフスクールのLPデザイン",
+      "units": 13,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0113": {
+      "status": "analyzed",
+      "durationSec": 183,
+      "tokens": 102285,
+      "disId": "DIS-LP-0116",
+      "title": "総合人材派遣 | テクノ・サービスのLPデザイン",
+      "units": 11,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0110": {
+      "status": "analyzed",
+      "durationSec": 231,
+      "tokens": 112785,
+      "disId": "DIS-LP-0113",
+      "title": "パーソナルトレーニングジム G-ROWのLPデザイン",
+      "units": 11,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0112": {
+      "status": "analyzed",
+      "durationSec": 213,
+      "tokens": 112529,
+      "disId": "DIS-LP-0115",
+      "title": "D.I.SアカデミーのLPデザイン",
+      "units": 12,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0114": {
+      "status": "analyzed",
+      "durationSec": 202,
+      "tokens": 103697,
+      "disId": "DIS-LP-0117",
+      "title": "フロンティア株式会社のLPデザイン",
+      "units": 7,
+      "score": "30/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0111": {
+      "status": "analyzed",
+      "durationSec": 297,
+      "tokens": 141090,
+      "disId": "DIS-LP-0114",
+      "title": "テニススクールのLPデザイン",
+      "units": 16,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0115": {
+      "status": "analyzed",
+      "durationSec": 203,
+      "tokens": 101036,
+      "disId": "DIS-LP-0118",
+      "title": "出張修理引取り・お届けサービスのLPデザイン",
+      "units": 9,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0116": {
+      "status": "analyzed",
+      "durationSec": 201,
+      "tokens": 106622,
+      "disId": "DIS-LP-0119",
+      "title": "天然水ウォーターサーバーのLPデザイン",
+      "units": 13,
+      "score": "32/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPなし）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0117": {
+      "status": "analyzed",
+      "durationSec": 263,
+      "tokens": 119641,
+      "disId": "DIS-LP-0120",
+      "title": "Ready Crew（レディくる）のLPデザイン",
+      "units": 11,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0119": {
+      "status": "analyzed",
+      "durationSec": 299,
+      "tokens": 142158,
+      "disId": "DIS-LP-0122",
+      "title": "個別指導塾ゴールフリーの2026年春期講習会のLPデザイン",
+      "units": 15,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0118": {
+      "status": "analyzed",
+      "durationSec": 358,
+      "tokens": 163990,
+      "disId": "DIS-LP-0121",
+      "title": "ゲームプログラミングスクールのLPデザイン",
+      "units": 22,
+      "score": "32/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0121": {
+      "status": "analyzed",
+      "durationSec": 311,
+      "tokens": 144684,
+      "disId": "DIS-LP-0124",
+      "title": "BEST SWING KAMATAのLPデザイン",
+      "units": 16,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0122": {
+      "status": "analyzed",
+      "durationSec": 242,
+      "tokens": 109173,
+      "disId": "DIS-LP-0125",
+      "title": "ymcメディカルトレーナーズスクールのLPデザイン",
+      "units": 15,
+      "score": "30/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0123": {
+      "status": "analyzed",
+      "durationSec": 222,
+      "tokens": 101809,
+      "disId": "DIS-LP-0126",
+      "title": "ヴィーナスアカデミーのLPデザイン",
+      "units": 14,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPなし）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0120": {
+      "status": "analyzed",
+      "durationSec": 433,
+      "tokens": 214069,
+      "disId": "DIS-LP-0123",
+      "title": "EYS音楽教室のLPデザイン",
+      "units": 20,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0125": {
+      "status": "analyzed",
+      "durationSec": 222,
+      "tokens": 111037,
+      "disId": "DIS-LP-0128",
+      "title": "アロマテラピー講座のLPデザイン",
+      "units": 14,
+      "score": "32/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPなし）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0124": {
+      "status": "analyzed",
+      "durationSec": 251,
+      "tokens": 124293,
+      "disId": "DIS-LP-0127",
+      "title": "テニススクール夏キャンペーンのLPデザイン",
+      "units": 13,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0127": {
+      "status": "analyzed",
+      "durationSec": 195,
+      "tokens": 107272,
+      "disId": "DIS-LP-0130",
+      "title": "中高年・シニア大歓迎求人特集のLPデザイン",
+      "units": 13,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0128": {
+      "status": "analyzed",
+      "durationSec": 204,
+      "tokens": 114737,
+      "disId": "DIS-LP-0131",
+      "title": "株式会社三栄広告社のLPデザイン",
+      "units": 12,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0129": {
+      "status": "analyzed",
+      "durationSec": 191,
+      "tokens": 112140,
+      "disId": "DIS-LP-0132",
+      "title": "とけうまカレーのLPデザイン",
+      "units": 8,
+      "score": "37/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0126": {
+      "status": "analyzed",
+      "durationSec": 338,
+      "tokens": 146583,
+      "disId": "DIS-LP-0129",
+      "title": "初心者専用ゴルフレッスンのLPデザイン",
+      "units": 15,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0133": {
+      "status": "analyzed",
+      "durationSec": 185,
+      "tokens": 104326,
+      "disId": "DIS-LP-0136",
+      "title": "エンワールド 採用サイトのスマホLPデザイン",
+      "units": 11,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0130": {
+      "status": "analyzed",
+      "durationSec": 299,
+      "tokens": 135012,
+      "disId": "DIS-LP-0133",
+      "title": "ゴルフスタジオZAMETのLPデザイン",
+      "units": 18,
+      "score": "30/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0131": {
+      "status": "analyzed",
+      "durationSec": 311,
+      "tokens": 161530,
+      "disId": "DIS-LP-0134",
+      "title": "セルフ脱毛サロン つるピカのLPデザイン",
+      "units": 14,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0135": {
+      "status": "analyzed",
+      "durationSec": 207,
+      "tokens": 105511,
+      "disId": "DIS-LP-0138",
+      "title": "MS-JapanのスマホLPデザインのLPデザイン",
+      "units": 11,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み（PC/SPとも末尾欠け）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0134": {
+      "status": "analyzed",
+      "durationSec": 304,
+      "tokens": 141312,
+      "disId": "DIS-LP-0137",
+      "title": "自動車保険の三井ダイレクト損保のスマホLPデザイン",
+      "units": 21,
+      "score": "37/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0132": {
+      "status": "analyzed",
+      "durationSec": 408,
+      "tokens": 170762,
+      "disId": "DIS-LP-0135",
+      "title": "ヒアロディープパッチのLPデザイン",
+      "units": 32,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み（32 Unit。SPは前半のみ）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0137": {
+      "status": "analyzed",
+      "durationSec": 210,
+      "tokens": 101390,
+      "disId": "DIS-LP-0140",
+      "title": "一般社団法人アジアサイエンスカフェのスマホLPデザインのLPデザイン",
+      "units": 7,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0136": {
+      "status": "analyzed",
+      "durationSec": 315,
+      "tokens": 125037,
+      "disId": "DIS-LP-0139",
+      "title": "CRAZY MONEY セミナーのスマホLPデザインのLPデザイン",
+      "units": 18,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0140": {
+      "status": "analyzed",
+      "durationSec": 217,
+      "tokens": 112683,
+      "disId": "DIS-LP-0143",
+      "title": "Believe TechnologyのスマホLPデザインのLPデザイン",
+      "units": 10,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0141": {
+      "status": "analyzed",
+      "durationSec": 222,
+      "tokens": 116481,
+      "disId": "DIS-LP-0144",
+      "title": "Video Learning StudioのスマホLPデザインのLPデザイン",
+      "units": 12,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0139": {
+      "status": "analyzed",
+      "durationSec": 253,
+      "tokens": 127093,
+      "disId": "DIS-LP-0142",
+      "title": "ワンクリアポのスマホLPデザインのLPデザイン",
+      "units": 9,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0142": {
+      "status": "analyzed",
+      "durationSec": 201,
+      "tokens": 109823,
+      "disId": "DIS-LP-0145",
+      "title": "BtoB受発注システムのスマホLPデザインのLPデザイン",
+      "units": 10,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0138": {
+      "status": "analyzed",
+      "durationSec": 293,
+      "tokens": 140288,
+      "disId": "DIS-LP-0141",
+      "title": "はじめてのテレビCMのLPデザイン",
+      "units": 13,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0143": {
+      "status": "analyzed",
+      "durationSec": 286,
+      "tokens": 136901,
+      "disId": "DIS-LP-0146",
+      "title": "ランディングページ制作のスマホLPデザインのLPデザイン",
+      "units": 13,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0144": {
+      "status": "analyzed",
+      "durationSec": 279,
+      "tokens": 119442,
+      "disId": "DIS-LP-0147",
+      "title": "副業アカデミー 公式メルマガのLPデザイン",
+      "units": 14,
+      "score": "32/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPは前半のみ）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0148": {
+      "status": "analyzed",
+      "durationSec": 227,
+      "tokens": 125811,
+      "disId": "DIS-LP-0151",
+      "title": "ワンストップSNS運用代行のスマホLPデザインのLPデザイン",
+      "units": 11,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0147": {
+      "status": "analyzed",
+      "durationSec": 235,
+      "tokens": 121247,
+      "disId": "DIS-LP-0150",
+      "title": "自動車保険のスマホLPデザインのLPデザイン",
+      "units": 9,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0146": {
+      "status": "analyzed",
+      "durationSec": 243,
+      "tokens": 141468,
+      "disId": "DIS-LP-0149",
+      "title": "DX BOOSTERのスマホLPデザインのLPデザイン",
+      "units": 13,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0145": {
+      "status": "analyzed",
+      "durationSec": 284,
+      "tokens": 144730,
+      "disId": "DIS-LP-0148",
+      "title": "ランディングページ（LP）制作のスマホLPデザインのLPデザイン",
+      "units": 12,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPは後半欠け）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0149": {
+      "status": "analyzed",
+      "durationSec": 212,
+      "tokens": 115613,
+      "disId": "DIS-LP-0152",
+      "title": "CAREER LEVERAGE 新卒就活サービスのスマホLPデザインのLPデザイン",
+      "units": 14,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0150": {
+      "status": "analyzed",
+      "durationSec": 278,
+      "tokens": 138788,
+      "disId": "DIS-LP-0153",
+      "title": "金融機関の創業融資について学べるweb講座のスマホLPデザインのLPデザイン",
+      "units": 12,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0152": {
+      "status": "analyzed",
+      "durationSec": 264,
+      "tokens": 129362,
+      "disId": "DIS-LP-0155",
+      "title": "不動産投資セミナーのスマホLPデザインのLPデザイン",
+      "units": 17,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0151": {
+      "status": "analyzed",
+      "durationSec": 295,
+      "tokens": 140939,
+      "disId": "DIS-LP-0154",
+      "title": "30年以上儲け続けるしくみを創る「セミナー」のスマホLPデザインのLPデザイン",
+      "units": 15,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0154": {
+      "status": "analyzed",
+      "durationSec": 249,
+      "tokens": 130892,
+      "disId": "DIS-LP-0157",
+      "title": "3日間集中プログラム AI×漫画講座のスマホLPデザインのLPデザイン",
+      "units": 13,
+      "score": "32/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPのみ）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0155": {
+      "status": "analyzed",
+      "durationSec": 267,
+      "tokens": 124243,
+      "disId": "DIS-LP-0158",
+      "title": "Instagram・TikTok運用代行サービス SNS革命のスマホLPデザインのLPデザイン",
+      "units": 12,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み（SPのみ）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0153": {
+      "status": "analyzed",
+      "durationSec": 331,
+      "tokens": 141844,
+      "disId": "DIS-LP-0156",
+      "title": "24/7 EnglishのスマホLPデザインのLPデザイン",
+      "units": 21,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0157": {
+      "status": "analyzed",
+      "durationSec": 291,
+      "tokens": 134031,
+      "disId": "DIS-LP-0160",
+      "title": "はじめよう！スタートアップキャンペーン！のスマホLPデザインのLPデザイン",
+      "units": 12,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0160": {
+      "status": "analyzed",
+      "durationSec": 255,
+      "tokens": 125014,
+      "disId": "DIS-LP-0163",
+      "title": "自動車保険のスマホLPデザインのLPデザイン",
+      "units": 13,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0156": {
+      "status": "analyzed",
+      "durationSec": 377,
+      "tokens": 164467,
+      "disId": "DIS-LP-0159",
+      "title": "ほけん申請エージェントのスマホLPデザインのLPデザイン",
+      "units": 22,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。PCとSPで版が違う疑い（手数料・屋号・電話番号）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0158": {
+      "status": "analyzed",
+      "durationSec": 382,
+      "tokens": 120991,
+      "disId": "DIS-LP-0161",
+      "title": "パーソナルトレーニングジム（BRUSH GYM）のスマホLPデザイン",
+      "units": 9,
+      "score": "30/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0161": {
+      "status": "analyzed",
+      "durationSec": 267,
+      "tokens": 143931,
+      "disId": "DIS-LP-0164",
+      "title": "その場で新型コロナ抗原を5分でチェックできる抗原検査キットのスマホLPデザインのLPデザイン",
+      "units": 13,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0159": {
+      "status": "analyzed",
+      "durationSec": 428,
+      "tokens": 206510,
+      "disId": "DIS-LP-0162",
+      "title": "投資の達人になる投資講座のスマホLPデザインのLPデザイン",
+      "units": 23,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0162": {
+      "status": "analyzed",
+      "durationSec": 219,
+      "tokens": 123056,
+      "disId": "DIS-LP-0165",
+      "title": "sitateru CLOUD 生活支援のスマホLPデザインのLPデザイン",
+      "units": 10,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0163": {
+      "status": "analyzed",
+      "durationSec": 284,
+      "tokens": 144551,
+      "disId": "DIS-LP-0166",
+      "title": "整理収納アドバイザーの資格認定講座のスマホLPデザインのLPデザイン",
+      "units": 12,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0164": {
+      "status": "analyzed",
+      "durationSec": 256,
+      "tokens": 122648,
+      "disId": "DIS-LP-0167",
+      "title": "ＵＴエイム株式会社のスマホLPデザインのLPデザイン",
+      "units": 13,
+      "score": "36/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0165": {
+      "status": "analyzed",
+      "durationSec": 268,
+      "tokens": 132445,
+      "disId": "DIS-LP-0168",
+      "title": "0からはじめる不動産投資セミナーのスマホLPデザインのLPデザイン",
+      "units": 10,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0166": {
+      "status": "analyzed",
+      "durationSec": 275,
+      "tokens": 122998,
+      "disId": "DIS-LP-0169",
+      "title": "ITエンジニアがブラック派遣から乗り換えで年収を上げる！のスマホLPデザインのLPデザイン",
+      "units": 13,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。 SP全体画像に継ぎ目の欠落・重複あり（U11のSP未指定）。"
+    },
+    "LP-0167": {
+      "status": "analyzed",
+      "durationSec": 264,
+      "tokens": 116042,
+      "disId": "DIS-LP-0170",
+      "title": "ニトリ 2019年度インターンシップサイト（NITORI Internship 2017）のLPデザイン",
+      "units": 10,
+      "score": "36/45",
+      "notes": "dis:validate-item 通過・切り出し済み。SP画像が途中で途切れる（U9・U10のSP未指定）。Dropbox/Notion反映は別途。"
+    },
+    "LP-0170": {
+      "status": "analyzed",
+      "durationSec": 197,
+      "tokens": 107645,
+      "disId": "DIS-LP-0173",
+      "title": "オリンピックご招待キャンペーンのスマホLPデザインのLPデザイン",
+      "units": 8,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0168": {
+      "status": "analyzed",
+      "durationSec": 351,
+      "tokens": 164002,
+      "disId": "DIS-LP-0171",
+      "title": "退職代行のスマホLPデザインのLPデザイン",
+      "units": 17,
+      "score": "34/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0169": {
+      "status": "analyzed",
+      "durationSec": 299,
+      "tokens": 160143,
+      "disId": "DIS-LP-0172",
+      "title": "不動産投資（Tokyo net worth／東京ネットワース）のスマホLPデザイン",
+      "units": 14,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0172": {
+      "status": "analyzed",
+      "durationSec": 199,
+      "tokens": 108479,
+      "disId": "DIS-LP-0175",
+      "title": "ファクタリング（ジャパンファクター）のLPデザイン",
+      "units": 8,
+      "score": "30/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0173": {
+      "status": "analyzed",
+      "durationSec": 204,
+      "tokens": 103330,
+      "disId": "DIS-LP-0176",
+      "title": "Broad WiMAX 初期契約解除制度のスマホLPデザインのLPデザイン",
+      "units": 6,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0171": {
+      "status": "analyzed",
+      "durationSec": 234,
+      "tokens": 126110,
+      "disId": "DIS-LP-0174",
+      "title": "匠の爽快ジョッキ当たる！キャンペーンのスマホLPデザインのLPデザイン",
+      "units": 10,
+      "score": "36/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0174": {
+      "status": "analyzed",
+      "durationSec": 208,
+      "tokens": 105098,
+      "disId": "DIS-LP-0177",
+      "title": "四国で金融業界のU・Iターン転職のスマホLPデザインのLPデザイン",
+      "units": 10,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0175": {
+      "status": "analyzed",
+      "durationSec": 226,
+      "tokens": 106123,
+      "disId": "DIS-LP-0178",
+      "title": "細野真宏の世界一わかりやすいエネルギーの授業のスマホLPデザインのLPデザイン",
+      "units": 10,
+      "score": "35/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0176": {
+      "status": "analyzed",
+      "durationSec": 268,
+      "tokens": 137646,
+      "disId": "DIS-LP-0179",
+      "title": "資産運用のスマホLPデザインのLPデザイン",
+      "units": 13,
+      "score": "30/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0179": {
+      "status": "analyzed",
+      "durationSec": 216,
+      "tokens": 122047,
+      "disId": "DIS-LP-0182",
+      "title": "Snowflake 人材不足の解消サポーター RAKUDEJI株式会社のスマホLPデザインのLPデザイン",
+      "units": 10,
+      "score": "32/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0180": {
+      "status": "analyzed",
+      "durationSec": 255,
+      "tokens": 130482,
+      "disId": "DIS-LP-0183",
+      "title": "サイト売却＆レベニューシェアサービスのスマホLPデザインのLPデザイン",
+      "units": 10,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0177": {
+      "status": "analyzed",
+      "durationSec": 275,
+      "tokens": 119551,
+      "disId": "DIS-LP-0180",
+      "title": "資産づくりセミナーのスマホLPデザイン（THEORY FACTORY）",
+      "units": 11,
+      "score": "29/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
+    },
+    "LP-0178": {
+      "status": "analyzed",
+      "durationSec": 309,
+      "tokens": 161110,
+      "disId": "DIS-LP-0181",
+      "title": "サイバー大学のLPデザイン",
+      "units": 16,
+      "score": "33/45",
+      "notes": "dis:validate-item 通過・切り出し済み。Dropbox/Notion反映は別途。"
     }
   }
 }

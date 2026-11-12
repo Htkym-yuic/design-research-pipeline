@@ -28,18 +28,25 @@ export async function loadLpPropertyConfig() {
   return cachedLpPropertyConfig;
 }
 
-async function notionFetch(path, options = {}) {
+export async function notionFetch(path, options = {}) {
   const token = requireEnv("NOTION_TOKEN");
 
-  const response = await fetch(`${API_BASE}${path}`, {
-    ...options,
-    headers: {
-      Authorization: `Bearer ${token}`,
-      "Notion-Version": NOTION_VERSION,
-      "Content-Type": "application/json",
-      ...(options.headers || {}),
-    },
-  });
+  let response;
+  for (let attempt = 0; ; attempt++) {
+    response = await fetch(`${API_BASE}${path}`, {
+      ...options,
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Notion-Version": NOTION_VERSION,
+        "Content-Type": "application/json",
+        ...(options.headers || {}),
+      },
+    });
+    // 制限（429）・一時的なサーバーエラー（502/503/504）は、待って再試行する（最大5回）
+    if (![429, 502, 503, 504].includes(response.status) || attempt >= 5) break;
+    const wait = Number(response.headers.get("retry-after")) || 2 ** attempt;
+    await new Promise((r) => setTimeout(r, wait * 1000));
+  }
 
   const data = await response.json().catch(() => ({}));
 
@@ -133,11 +140,16 @@ export async function findPageByMatchProperty(dataSourceId, config, matchValue) 
         property: config.matchProperty,
         [filterType]: { [matchOperator]: matchValue },
       },
-      page_size: 1,
+      page_size: matchOperator === "contains" ? 50 : 1,
     }),
   });
 
-  return result.results?.[0] || null;
+  if (matchOperator !== "contains") return result.results?.[0] || null;
+  // 「LP-0004」で探すと「DIS-LP-0004」のページも当たる。直前が「DIS-」のものは、別のページとして除く。
+  const esc = String(matchValue).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const re = new RegExp(`(?<!DIS-)${esc}`);
+  const titleOf = (page) => (page.properties?.[config.matchProperty]?.[filterType === "title" ? "title" : "rich_text"] || []).map((t) => t.plain_text ?? "").join("");
+  return result.results?.find((page) => re.test(titleOf(page))) || null;
 }
 
 /** 任意スキーマのtitle/rich_textプロパティで一致するページを1件探す。 */
@@ -229,15 +241,22 @@ export async function uploadFileForNotion(filePath, contentType = "image/jpeg") 
   form.append("file", new Blob([buffer], { type: contentType }), filename);
 
   const token = requireEnv("NOTION_TOKEN");
-  const response = await fetch(upload.upload_url || `${API_BASE}/file_uploads/${upload.id}/send`, {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${token}`,
-      "Notion-Version": NOTION_VERSION,
-    },
-    body: form,
-  });
-  const sent = await response.json().catch(() => ({}));
+  let response, sent;
+  for (let attempt = 0; ; attempt++) {
+    response = await fetch(upload.upload_url || `${API_BASE}/file_uploads/${upload.id}/send`, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Notion-Version": NOTION_VERSION,
+      },
+      body: form,
+    });
+    sent = await response.json().catch(() => ({}));
+    // 制限（429）・一時的なサーバーエラーは、待って再試行する（最大6回）
+    if (![429, 502, 503, 504].includes(response.status) || attempt >= 6) break;
+    const wait = Number(response.headers.get("retry-after")) || 2 ** attempt;
+    await new Promise((r) => setTimeout(r, wait * 1000));
+  }
   if (!response.ok) {
     throw new Error(`Notion画像アップロードに失敗しました（${response.status}）: ${sent?.message || JSON.stringify(sent)}`);
   }

@@ -13,3 +13,4 @@ deep-analysis/**/sp_sections/
 
 # DIS日次学習の実行成果物（画像・分析下書き）。台帳 data/dis-ledger.json のみGit管理。
 outputs/dis/
+data/.locks/

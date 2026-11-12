@@ -21,6 +21,7 @@ import { emptyAnalysis } from "./lib/analysis-schema.mjs";
 import { emptyAnnotations } from "./lib/annotations.mjs";
 import { MANUAL_REASON_PLACEHOLDER } from "./lib/review.mjs";
 import { planReservation } from "./reserve-library-id.mjs";
+import { updateJson } from "./lib/lock.mjs";
 
 export const OLD_LIBRARY_ROOT = "/Research_Library/Design/LP_Research_Library/01_By_Date";
 const IMG = /\.(jpe?g|png|webp)$/i;
@@ -99,7 +100,8 @@ export async function ingestLibraryLp({ lp, dbx, root = REPO_ROOT, date = new Da
   const counters = await readJson(f("data/id-counters.json"));
   const plan = planReservation({ disId, mode: "same", sameAs: lp, sourceUrl: rec.sourceDetailUrl, ledgerEntry: { pageUrl: item.pageUrl, brand: item.brand, notion: {} }, counters, relations, reservations: { reserved: [] } });
   relations.relations.push(plan.relationsAdd);
-  await fs.writeFile(f("data/dis-relations.json"), JSON.stringify(relations, null, 2) + "\n");
+  // 他の処理（Notion反映）が同時に対応表を更新していても壊さないよう、書込みの直前に読み直して、追記だけを行う
+  await updateJson(f("data/dis-relations.json"), { schemaVersion: "dis-relations-1.0", relations: [] }, (cur) => { cur.relations.push(plan.relationsAdd); return cur; });
   return { disId, lp, itemDir, brand: item.brand, pageUrl: item.pageUrl, devices: item.devices, legacyAnalysis: legacy, warnings: files.warnings };
 }
 

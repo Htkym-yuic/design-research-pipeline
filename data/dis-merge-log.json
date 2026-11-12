@@ -1,0 +1,5844 @@
+{
+  "entries": [
+    {
+      "at": "2026-11-12T13:18:04.516Z",
+      "disId": "DIS-LP-0004",
+      "lp": "LP-0001",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-10/dis-daily/DIS-LP-0004",
+          "uploaded": 1,
+          "skippedExisting": 66
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T13:19:19.157Z",
+      "disId": "DIS-LP-0004",
+      "lp": "LP-0001",
+      "dryRun": false,
+      "stages": {
+        "notion": [
+          {
+            "step": "番号の注記",
+            "todo": true
+          },
+          {
+            "step": "画像 PC Full Page",
+            "todo": true,
+            "reason": ""
+          },
+          {
+            "step": "画像 PC First View",
+            "todo": true,
+            "reason": ""
+          },
+          {
+            "step": "画像 SP Full Page",
+            "todo": true,
+            "reason": ""
+          },
+          {
+            "step": "画像 SP First View",
+            "todo": true,
+            "reason": ""
+          },
+          {
+            "step": "DIS 9軸分析の追記",
+            "todo": true
+          }
+        ],
+        "disPageNote": {
+          "todo": true
+        }
+      },
+      "log": [
+        {
+          "disId": "DIS-LP-0004",
+          "step": "画像差し替え PC Full Page",
+          "ok": true
+        },
+        {
+          "disId": "DIS-LP-0004",
+          "step": "画像差し替え PC First View",
+          "ok": true
+        },
+        {
+          "disId": "DIS-LP-0004",
+          "step": "画像差し替え SP Full Page",
+          "ok": true
+        },
+        {
+          "disId": "DIS-LP-0004",
+          "step": "画像差し替え SP First View",
+          "ok": true
+        },
+        {
+          "disId": "DIS-LP-0004",
+          "step": "DIS 9軸分析の追記",
+          "blocks": 326,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "at": "2026-11-12T13:22:45.684Z",
+      "disId": "DIS-LP-0005",
+      "lp": "LP-0002",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-11/dis-daily/DIS-LP-0005",
+          "uploaded": 54,
+          "skippedExisting": 0
+        },
+        "notion": [
+          {
+            "step": "番号の注記",
+            "todo": true
+          },
+          {
+            "step": "画像 PC Full Page",
+            "todo": true,
+            "reason": ""
+          },
+          {
+            "step": "画像 PC First View",
+            "todo": true,
+            "reason": ""
+          },
+          {
+            "step": "画像 SP Full Page",
+            "todo": true,
+            "reason": ""
+          },
+          {
+            "step": "画像 SP First View",
+            "todo": true,
+            "reason": ""
+          },
+          {
+            "step": "DIS 9軸分析の追記",
+            "todo": true
+          }
+        ]
+      },
+      "log": [
+        {
+          "disId": "DIS-LP-0005",
+          "step": "画像差し替え PC Full Page",
+          "ok": true
+        },
+        {
+          "disId": "DIS-LP-0005",
+          "step": "画像差し替え PC First View",
+          "ok": true
+        },
+        {
+          "disId": "DIS-LP-0005",
+          "step": "画像差し替え SP Full Page",
+          "ok": true
+        },
+        {
+          "disId": "DIS-LP-0005",
+          "step": "画像差し替え SP First View",
+          "ok": true
+        },
+        {
+          "disId": "DIS-LP-0005",
+          "step": "DIS 9軸分析の追記",
+          "blocks": 318,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "at": "2026-11-12T13:37:16.300Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0005",
+      "lp": "LP-0002",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 353,
+      "newBlocks": 679,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8124-bdf4-c99711a149cb",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0005-LP-41624d4fa6718124bdf4c99711a149cb",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8124-bdf4-c99711a149cb"
+    },
+    {
+      "at": "2026-11-12T13:38:26.565Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0004",
+      "lp": "LP-0001",
+      "dryRun": false,
+      "mode": "既存のDISページに28章を追記",
+      "oldTopLevelBlocks": 430,
+      "newBlocks": 428,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "status": "done",
+      "disPageId": "41424d4f-a671-815a-859e-d5290861c176"
+    },
+    {
+      "at": "2026-11-12T13:40:37.108Z",
+      "disId": "DIS-LP-0006",
+      "lp": "LP-0003",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-11/dis-daily/DIS-LP-0006",
+          "uploaded": 62,
+          "skippedExisting": 1
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T13:41:51.260Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0006",
+      "lp": "LP-0003",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 381,
+      "newBlocks": 736,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8195-8e6a-d8372f507c18",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0006-4-LP-41624d4fa67181958e6ad8372f507c18",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8195-8e6a-d8372f507c18"
+    },
+    {
+      "at": "2026-11-12T13:44:05.361Z",
+      "disId": "DIS-LP-0007",
+      "lp": "LP-0004",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-11/dis-daily/DIS-LP-0007",
+          "uploaded": 64,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T13:45:16.272Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0007",
+      "lp": "LP-0004",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 307,
+      "newBlocks": 664,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8115-b4b3-cd540c74a5bb",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0007-front-voice-LP-41624d4fa6718115b4b3cd540c74a5bb",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8115-b4b3-cd540c74a5bb"
+    },
+    {
+      "at": "2026-11-12T13:46:15.486Z",
+      "disId": "DIS-LP-0008",
+      "lp": "LP-0005",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0008",
+          "uploaded": 29,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T13:47:05.934Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0008",
+      "lp": "LP-0005",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 283,
+      "newBlocks": 483,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8198-81d6-f3c465b142c4",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0008-Sweet-AMERICA-LP-41624d4fa671819881d6f3c465b142c4",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8198-81d6-f3c465b142c4"
+    },
+    {
+      "at": "2026-11-12T13:47:39.183Z",
+      "disId": "DIS-LP-0009",
+      "lp": "LP-0006",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0009",
+          "uploaded": 16,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T13:48:16.884Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0009",
+      "lp": "LP-0006",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 380,
+      "newBlocks": 588,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8193-b309-e7aa9737ca92",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0009-CUP-NOODLE-Light-LP-41624d4fa6718193b309e7aa9737ca92",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8193-b309-e7aa9737ca92"
+    },
+    {
+      "at": "2026-11-12T13:50:01.241Z",
+      "disId": "DIS-LP-0010",
+      "lp": "LP-0007",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0010",
+          "uploaded": 50,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T13:51:07.404Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0010",
+      "lp": "LP-0007",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 404,
+      "newBlocks": 665,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-817b-bb2e-d6c4e5724544",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0010-Match-LP-41624d4fa671817bbb2ed6c4e5724544",
+      "status": "done",
+      "disPageId": "41624d4f-a671-817b-bb2e-d6c4e5724544"
+    },
+    {
+      "at": "2026-11-12T13:52:01.317Z",
+      "disId": "DIS-LP-0011",
+      "lp": "LP-0008",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0011",
+          "uploaded": 24,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T13:52:38.934Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0011",
+      "lp": "LP-0008",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 262,
+      "newBlocks": 488,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81ee-ba87-dc407df4d6d4",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0011-PASTA-de-PON-LP-41624d4fa67181eeba87dc407df4d6d4",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81ee-ba87-dc407df4d6d4"
+    },
+    {
+      "at": "2026-11-12T13:55:44.173Z",
+      "disId": "DIS-LP-0012",
+      "lp": "LP-0009",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0012",
+          "uploaded": 91,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T13:57:40.766Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0012",
+      "lp": "LP-0009",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 681,
+      "newBlocks": 1063,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81d4-ace5-e93f56d787c2",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0012-LP-41624d4fa67181d4ace5e93f56d787c2",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81d4-ace5-e93f56d787c2"
+    },
+    {
+      "at": "2026-11-12T13:59:05.922Z",
+      "disId": "DIS-LP-0013",
+      "lp": "LP-0010",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0013",
+          "uploaded": 41,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:00:00.611Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0013",
+      "lp": "LP-0010",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 370,
+      "newBlocks": 602,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81f6-85c5-f10bd0e95e74",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0013-LP-41624d4fa67181f685c5f10bd0e95e74",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81f6-85c5-f10bd0e95e74"
+    },
+    {
+      "at": "2026-11-12T14:02:43.434Z",
+      "disId": "DIS-LP-0014",
+      "lp": "LP-0011",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0014",
+          "uploaded": 44,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:03:37.348Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0014",
+      "lp": "LP-0011",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 410,
+      "newBlocks": 642,
+      "imagesToReupload": 4,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8148-95ff-c3344cc6b825",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0014-POCOP-Rouge-LP-41624d4fa671814895ffc3344cc6b825",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8148-95ff-c3344cc6b825"
+    },
+    {
+      "at": "2026-11-12T14:04:17.416Z",
+      "disId": "DIS-LP-0015",
+      "lp": "LP-0012",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0015",
+          "uploaded": 19,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:04:53.872Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0015",
+      "lp": "LP-0012",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 255,
+      "newBlocks": 466,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-810c-ada4-da652df354ac",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0015-SUNGLASSES-LP-41624d4fa671810cada4da652df354ac",
+      "status": "done",
+      "disPageId": "41624d4f-a671-810c-ada4-da652df354ac"
+    },
+    {
+      "at": "2026-11-12T14:05:49.071Z",
+      "disId": "DIS-LP-0016",
+      "lp": "LP-0013",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0016",
+          "uploaded": 26,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:06:34.140Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0016",
+      "lp": "LP-0013",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 285,
+      "newBlocks": 468,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81d4-81bb-f06dc76797fd",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0016-LP-41624d4fa67181d481bbf06dc76797fd",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81d4-81bb-f06dc76797fd"
+    },
+    {
+      "at": "2026-11-12T14:07:10.167Z",
+      "disId": "DIS-LP-0028",
+      "lp": "LP-0025",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0028",
+          "uploaded": 17,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:07:42.240Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0028",
+      "lp": "LP-0025",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 328,
+      "newBlocks": 532,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8154-9676-f9b58e6c2577",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0028-LP-41624d4fa67181549676f9b58e6c2577",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8154-9676-f9b58e6c2577"
+    },
+    {
+      "at": "2026-11-12T14:07:58.565Z",
+      "disId": "DIS-LP-0023",
+      "lp": "LP-0020",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0023",
+          "uploaded": 51,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:09:30.833Z",
+      "disId": "DIS-LP-0017",
+      "lp": "LP-0014",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0017",
+          "uploaded": 49,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:09:49.273Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0023",
+      "lp": "LP-0020",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 399,
+      "newBlocks": 683,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81ed-b6db-c540f38d9e54",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0023-LP-41624d4fa67181edb6dbc540f38d9e54",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81ed-b6db-c540f38d9e54"
+    },
+    {
+      "at": "2026-11-12T14:10:05.388Z",
+      "disId": "DIS-LP-0029",
+      "lp": "LP-0026",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0029",
+          "uploaded": 63,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:10:35.290Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0017",
+      "lp": "LP-0014",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 444,
+      "newBlocks": 699,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8157-bbe8-c97cc0f279e6",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0017-LP-41624d4fa6718157bbe8c97cc0f279e6",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8157-bbe8-c97cc0f279e6"
+    },
+    {
+      "at": "2026-11-12T14:11:18.880Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0029",
+      "lp": "LP-0026",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 352,
+      "newBlocks": 633,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81a1-8542-d2b5008d2775",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0029-LP-41624d4fa67181a18542d2b5008d2775",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81a1-8542-d2b5008d2775"
+    },
+    {
+      "at": "2026-11-12T14:11:29.366Z",
+      "disId": "DIS-LP-0035",
+      "lp": "LP-0032",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0035",
+          "uploaded": 28,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:11:33.954Z",
+      "disId": "DIS-LP-0018",
+      "lp": "LP-0015",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0018",
+          "uploaded": 20,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:11:51.805Z",
+      "disId": "DIS-LP-0024",
+      "lp": "LP-0021",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0024",
+          "uploaded": 57,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:12:10.457Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0018",
+      "lp": "LP-0015",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 254,
+      "newBlocks": 484,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81a4-8ae2-e1b216e1df57",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0018-VOX-LP-41624d4fa67181a48ae2e1b216e1df57",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81a4-8ae2-e1b216e1df57"
+    },
+    {
+      "at": "2026-11-12T14:12:19.046Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0035",
+      "lp": "LP-0032",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 253,
+      "newBlocks": 445,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8197-ae31-e79f610af0df",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0035-LP-41624d4fa6718197ae31e79f610af0df",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8197-ae31-e79f610af0df"
+    },
+    {
+      "at": "2026-11-12T14:13:07.707Z",
+      "disId": "DIS-LP-0036",
+      "lp": "LP-0033",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0036",
+          "uploaded": 17,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:13:35.050Z",
+      "disId": "DIS-LP-0025",
+      "lp": "LP-0022",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0025",
+          "uploaded": 39,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:13:39.908Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0036",
+      "lp": "LP-0033",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 233,
+      "newBlocks": 441,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81cf-b121-fe74e6174865",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0036-LP-41624d4fa67181cfb121fe74e6174865",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81cf-b121-fe74e6174865"
+    },
+    {
+      "at": "2026-11-12T14:14:01.074Z",
+      "disId": "DIS-LP-0030",
+      "lp": "LP-0027",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0030",
+          "uploaded": 62,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:14:16.758Z",
+      "disId": "DIS-LP-0019",
+      "lp": "LP-0016",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0019",
+          "uploaded": 44,
+          "skippedExisting": 6
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:14:32.099Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0025",
+      "lp": "LP-0022",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 352,
+      "newBlocks": 587,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81c2-8794-c139573b70e1",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0025-LP-41624d4fa67181c28794c139573b70e1",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81c2-8794-c139573b70e1"
+    },
+    {
+      "at": "2026-11-12T14:14:34.802Z",
+      "disId": "DIS-LP-0038",
+      "lp": "LP-0035",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0038",
+          "uploaded": 18,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:15:30.761Z",
+      "disId": "DIS-LP-0026",
+      "lp": "LP-0023",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0026",
+          "uploaded": 22,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:15:32.230Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0038",
+      "lp": "LP-0035",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 251,
+      "newBlocks": 478,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81c9-965f-dab434009fee",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0038-LP-41624d4fa67181c9965fdab434009fee",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81c9-965f-dab434009fee"
+    },
+    {
+      "at": "2026-11-12T14:15:35.031Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0030",
+      "lp": "LP-0027",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 378,
+      "newBlocks": 671,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-810b-b3a6-e77c88d3d4dc",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0030-PEONIA-BB-LP-41624d4fa671810bb3a6e77c88d3d4dc",
+      "status": "done",
+      "disPageId": "41624d4f-a671-810b-b3a6-e77c88d3d4dc"
+    },
+    {
+      "at": "2026-11-12T14:15:45.726Z",
+      "disId": "DIS-LP-0019",
+      "lp": "LP-0016",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0019",
+          "uploaded": 0,
+          "skippedExisting": 50
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:16:00.868Z",
+      "disId": "DIS-LP-0020",
+      "lp": "LP-0017",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0020",
+          "uploaded": 29,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:16:14.680Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0026",
+      "lp": "LP-0023",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 344,
+      "newBlocks": 561,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-813d-82e5-fcdd16fc5278",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0026-8-LP-41624d4fa671813d82e5fcdd16fc5278",
+      "status": "done",
+      "disPageId": "41624d4f-a671-813d-82e5-fcdd16fc5278"
+    },
+    {
+      "at": "2026-11-12T14:16:23.358Z",
+      "disId": "DIS-LP-0039",
+      "lp": "LP-0036",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0039",
+          "uploaded": 20,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:16:43.304Z",
+      "disId": "DIS-LP-0031",
+      "lp": "LP-0028",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0031",
+          "uploaded": 28,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:16:43.971Z",
+      "disId": "DIS-LP-0027",
+      "lp": "LP-0024",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0027",
+          "uploaded": 11,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:16:44.505Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0020",
+      "lp": "LP-0017",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 315,
+      "newBlocks": 497,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8177-93be-d4abb7fdfa75",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0020-OANDA-LP-41624d4fa671817793bed4abb7fdfa75",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8177-93be-d4abb7fdfa75"
+    },
+    {
+      "at": "2026-11-12T14:16:55.603Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0019",
+      "lp": "LP-0016",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 431,
+      "newBlocks": 695,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81af-8e61-d6514c26cf0d",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0019-rela-cure-LP-41624d4fa67181af8e61d6514c26cf0d",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81af-8e61-d6514c26cf0d"
+    },
+    {
+      "at": "2026-11-12T14:17:05.511Z",
+      "disId": "DIS-LP-0020",
+      "lp": "LP-0017",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0020",
+          "uploaded": 0,
+          "skippedExisting": 29
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:17:17.572Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0039",
+      "lp": "LP-0036",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 262,
+      "newBlocks": 504,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81ca-ae58-f34818272839",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0039-SHISEIDO-LP-41624d4fa67181caae58f34818272839",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81ca-ae58-f34818272839"
+    },
+    {
+      "at": "2026-11-12T14:17:31.528Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0027",
+      "lp": "LP-0024",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 342,
+      "newBlocks": 498,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-810e-98ff-de4035754146",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0027-LP-41624d4fa671810e98ffde4035754146",
+      "status": "done",
+      "disPageId": "41624d4f-a671-810e-98ff-de4035754146"
+    },
+    {
+      "at": "2026-11-12T14:17:52.155Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0031",
+      "lp": "LP-0028",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 410,
+      "newBlocks": 652,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81d4-abbd-ea1f64930b2c",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0031-LP-41624d4fa67181d4abbdea1f64930b2c",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81d4-abbd-ea1f64930b2c"
+    },
+    {
+      "at": "2026-11-12T14:18:13.695Z",
+      "disId": "DIS-LP-0021",
+      "lp": "LP-0018",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0021",
+          "uploaded": 36,
+          "skippedExisting": 3
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:18:16.825Z",
+      "disId": "DIS-LP-0021",
+      "lp": "LP-0018",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0021",
+          "uploaded": 19,
+          "skippedExisting": 20
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:18:48.248Z",
+      "disId": "DIS-LP-0040",
+      "lp": "LP-0037",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0040",
+          "uploaded": 36,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:19:22.767Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0021",
+      "lp": "LP-0018",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 309,
+      "newBlocks": 534,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8111-ba6c-e3be56185c41",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0021-LP-41624d4fa6718111ba6ce3be56185c41",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8111-ba6c-e3be56185c41"
+    },
+    {
+      "at": "2026-11-12T14:19:24.983Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0021",
+      "lp": "LP-0018",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 309,
+      "newBlocks": 534,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8172-a222-e96ebe1c5c39",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0021-LP-41624d4fa6718172a222e96ebe1c5c39",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8172-a222-e96ebe1c5c39"
+    },
+    {
+      "at": "2026-11-12T14:19:43.702Z",
+      "disId": "DIS-LP-0032",
+      "lp": "LP-0029",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0032",
+          "uploaded": 56,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:20:00.871Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0040",
+      "lp": "LP-0037",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 332,
+      "newBlocks": 559,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-810f-a32f-de8c07caf484",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0040-LP-41624d4fa671810fa32fde8c07caf484",
+      "status": "done",
+      "disPageId": "41624d4f-a671-810f-a32f-de8c07caf484"
+    },
+    {
+      "at": "2026-11-12T14:20:04.165Z",
+      "disId": "DIS-LP-0033",
+      "lp": "LP-0030",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0033",
+          "uploaded": 54,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:20:20.642Z",
+      "disId": "DIS-LP-0022",
+      "lp": "LP-0019",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0022",
+          "uploaded": 24,
+          "skippedExisting": 8
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:20:20.932Z",
+      "disId": "DIS-LP-0022",
+      "lp": "LP-0019",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0022",
+          "uploaded": 25,
+          "skippedExisting": 7
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:20:55.371Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0032",
+      "lp": "LP-0029",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 329,
+      "newBlocks": 666,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81cb-934b-f537120d504b",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0032-M-A-LP-41624d4fa67181cb934bf537120d504b",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81cb-934b-f537120d504b"
+    },
+    {
+      "at": "2026-11-12T14:21:22.252Z",
+      "disId": "DIS-LP-0041",
+      "lp": "LP-0038",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0041",
+          "uploaded": 35,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:21:30.702Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0033",
+      "lp": "LP-0030",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 378,
+      "newBlocks": 641,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81d6-b040-f5f4df4b13b8",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0033-EXOCOMPLEX-LP-41624d4fa67181d6b040f5f4df4b13b8",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81d6-b040-f5f4df4b13b8"
+    },
+    {
+      "at": "2026-11-12T14:21:35.661Z",
+      "disId": "DIS-LP-0037",
+      "lp": "LP-0034",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0037",
+          "uploaded": 15,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:21:36.390Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0022",
+      "lp": "LP-0019",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 286,
+      "newBlocks": 499,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-814d-ad3a-df84cbe8e757",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0022-LP-41624d4fa671814dad3adf84cbe8e757",
+      "status": "done",
+      "disPageId": "41624d4f-a671-814d-ad3a-df84cbe8e757"
+    },
+    {
+      "at": "2026-11-12T14:21:53.575Z",
+      "disId": "DIS-LP-0024",
+      "lp": "LP-0021",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0024",
+          "uploaded": 0,
+          "skippedExisting": 57
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:22:07.524Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0037",
+      "lp": "LP-0034",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 254,
+      "newBlocks": 437,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81e4-ba06-eba6ea350572",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0037-LP-41624d4fa67181e4ba06eba6ea350572",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81e4-ba06-eba6ea350572"
+    },
+    {
+      "at": "2026-11-12T14:22:20.145Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0041",
+      "lp": "LP-0038",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 422,
+      "newBlocks": 731,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8130-948d-e7eb3cce3b0e",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0041-LP-41624d4fa6718130948de7eb3cce3b0e",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8130-948d-e7eb3cce3b0e"
+    },
+    {
+      "at": "2026-11-12T14:22:36.819Z",
+      "disId": "DIS-LP-0049",
+      "lp": "LP-0046",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0049",
+          "uploaded": 38,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:22:49.490Z",
+      "disId": "DIS-LP-0034",
+      "lp": "LP-0031",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0034",
+          "uploaded": 36,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:22:53.196Z",
+      "disId": "DIS-LP-0024",
+      "lp": "LP-0021",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0024",
+          "uploaded": 0,
+          "skippedExisting": 57
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:23:35.215Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0049",
+      "lp": "LP-0046",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 349,
+      "newBlocks": 721,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-817c-9422-f9aed916c40a",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0049-LP-41624d4fa671817c9422f9aed916c40a",
+      "status": "done",
+      "disPageId": "41624d4f-a671-817c-9422-f9aed916c40a"
+    },
+    {
+      "at": "2026-11-12T14:23:45.013Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0034",
+      "lp": "LP-0031",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 342,
+      "newBlocks": 543,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8190-a92f-d1f69ee15617",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0034-HERITAGE-LP-41624d4fa6718190a92fd1f69ee15617",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8190-a92f-d1f69ee15617"
+    },
+    {
+      "at": "2026-11-12T14:23:56.136Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0024",
+      "lp": "LP-0021",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 406,
+      "newBlocks": 652,
+      "imagesToReupload": 4,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8140-8df3-dc6e535e0d3d",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0024-RiDEAL-LP-41624d4fa67181408df3dc6e535e0d3d",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8140-8df3-dc6e535e0d3d"
+    },
+    {
+      "at": "2026-11-12T14:24:18.571Z",
+      "disId": "DIS-LP-0042",
+      "lp": "LP-0039",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0042",
+          "uploaded": 62,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:24:57.471Z",
+      "disId": "DIS-LP-0050",
+      "lp": "LP-0047",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0050",
+          "uploaded": 35,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:25:05.765Z",
+      "disId": "DIS-LP-0055",
+      "lp": "LP-0052",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0055",
+          "uploaded": 30,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:25:36.022Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0042",
+      "lp": "LP-0039",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 393,
+      "newBlocks": 713,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81c8-82b8-fcfdd67cc527",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0042-LP-41624d4fa67181c882b8fcfdd67cc527",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81c8-82b8-fcfdd67cc527"
+    },
+    {
+      "at": "2026-11-12T14:25:49.540Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0050",
+      "lp": "LP-0047",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 345,
+      "newBlocks": 638,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8138-8da9-c73fe32450ba",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0050-LP-41624d4fa67181388da9c73fe32450ba",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8138-8da9-c73fe32450ba"
+    },
+    {
+      "at": "2026-11-12T14:25:52.553Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0055",
+      "lp": "LP-0052",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 230,
+      "newBlocks": 441,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8121-a5f8-fc3eccc10626",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0055-LP-41624d4fa6718121a5f8fc3eccc10626",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8121-a5f8-fc3eccc10626"
+    },
+    {
+      "at": "2026-11-12T14:26:55.822Z",
+      "disId": "DIS-LP-0043",
+      "lp": "LP-0040",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0043",
+          "uploaded": 37,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:27:21.647Z",
+      "disId": "DIS-LP-0057",
+      "lp": "LP-0054",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0057",
+          "uploaded": 37,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:27:49.748Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0043",
+      "lp": "LP-0040",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 344,
+      "newBlocks": 673,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-819d-8eee-ca520815de3b",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0043-LP-41624d4fa671819d8eeeca520815de3b",
+      "status": "done",
+      "disPageId": "41624d4f-a671-819d-8eee-ca520815de3b"
+    },
+    {
+      "at": "2026-11-12T14:28:12.715Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0057",
+      "lp": "LP-0054",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 255,
+      "newBlocks": 450,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-814f-9853-dc673e3ae44c",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0057-LP-41624d4fa671814f9853dc673e3ae44c",
+      "status": "done",
+      "disPageId": "41624d4f-a671-814f-9853-dc673e3ae44c"
+    },
+    {
+      "at": "2026-11-12T14:28:35.605Z",
+      "disId": "DIS-LP-0051",
+      "lp": "LP-0048",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0051",
+          "uploaded": 73,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:29:36.302Z",
+      "disId": "DIS-LP-0056",
+      "lp": "LP-0053",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0056",
+          "uploaded": 80,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:29:52.406Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0051",
+      "lp": "LP-0048",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 387,
+      "newBlocks": 724,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8192-a3a4-f16848eb4c8f",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0051-LP-41624d4fa6718192a3a4f16848eb4c8f",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8192-a3a4-f16848eb4c8f"
+    },
+    {
+      "at": "2026-11-12T14:30:24.956Z",
+      "disId": "DIS-LP-0044",
+      "lp": "LP-0041",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0044",
+          "uploaded": 70,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:31:18.174Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0056",
+      "lp": "LP-0053",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 372,
+      "newBlocks": 720,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81f8-9d37-e35baa1aaaaa",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0056-LP-41624d4fa67181f89d37e35baa1aaaaa",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81f8-9d37-e35baa1aaaaa"
+    },
+    {
+      "at": "2026-11-12T14:31:47.287Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0044",
+      "lp": "LP-0041",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 341,
+      "newBlocks": 704,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81ad-90d2-eedf324f3ff2",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0044-LP-41624d4fa67181ad90d2eedf324f3ff2",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81ad-90d2-eedf324f3ff2"
+    },
+    {
+      "at": "2026-11-12T14:31:48.252Z",
+      "disId": "DIS-LP-0052",
+      "lp": "LP-0049",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0052",
+          "uploaded": 44,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:32:46.738Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0052",
+      "lp": "LP-0049",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 307,
+      "newBlocks": 562,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81cd-a8c7-d3e457d72706",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0052-LP-41624d4fa67181cda8c7d3e457d72706",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81cd-a8c7-d3e457d72706"
+    },
+    {
+      "at": "2026-11-12T14:32:57.282Z",
+      "disId": "DIS-LP-0060",
+      "lp": "LP-0057",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0060",
+          "uploaded": 120,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:34:31.943Z",
+      "disId": "DIS-LP-0045",
+      "lp": "LP-0042",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0045",
+          "uploaded": 68,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:34:36.484Z",
+      "disId": "DIS-LP-0065",
+      "lp": "LP-0062",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0065",
+          "uploaded": 45,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:34:41.117Z",
+      "disId": "DIS-LP-0064",
+      "lp": "LP-0061",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0064",
+          "uploaded": 53,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:35:51.516Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0065",
+      "lp": "LP-0062",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 259,
+      "newBlocks": 491,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81de-af1a-d3b0e9a32748",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0065-advance-LP-41624d4fa67181deaf1ad3b0e9a32748",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81de-af1a-d3b0e9a32748"
+    },
+    {
+      "at": "2026-11-12T14:36:02.648Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0064",
+      "lp": "LP-0061",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 275,
+      "newBlocks": 557,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81a3-9848-fa7072f6d64d",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0064-LP-41624d4fa67181a39848fa7072f6d64d",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81a3-9848-fa7072f6d64d"
+    },
+    {
+      "at": "2026-11-12T14:36:13.097Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0045",
+      "lp": "LP-0042",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 314,
+      "newBlocks": 642,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8199-9a56-f6580dce84a0",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0045-Web-AI-LP-41624d4fa67181999a56f6580dce84a0",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8199-9a56-f6580dce84a0"
+    },
+    {
+      "at": "2026-11-12T14:36:23.706Z",
+      "disId": "DIS-LP-0058",
+      "lp": "LP-0055",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0058",
+          "uploaded": 85,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:36:29.787Z",
+      "disId": "DIS-LP-0063",
+      "lp": "LP-0060",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0063",
+          "uploaded": 54,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:37:38.414Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0063",
+      "lp": "LP-0060",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 214,
+      "newBlocks": 493,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81c1-890e-e1b5b457a836",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0063-LP-41624d4fa67181c1890ee1b5b457a836",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81c1-890e-e1b5b457a836"
+    },
+    {
+      "at": "2026-11-12T14:37:49.652Z",
+      "disId": "DIS-LP-0067",
+      "lp": "LP-0064",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0067",
+          "uploaded": 48,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:37:55.476Z",
+      "disId": "DIS-LP-0046",
+      "lp": "LP-0043",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0046",
+          "uploaded": 37,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:38:04.381Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0058",
+      "lp": "LP-0055",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 338,
+      "newBlocks": 713,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8193-a3c4-f608c9a4f6b3",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0058-LP-41624d4fa6718193a3c4f608c9a4f6b3",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8193-a3c4-f608c9a4f6b3"
+    },
+    {
+      "at": "2026-11-12T14:38:04.874Z",
+      "disId": "DIS-LP-0054",
+      "lp": "LP-0051",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0054",
+          "uploaded": 23,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:38:54.905Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0067",
+      "lp": "LP-0064",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 263,
+      "newBlocks": 519,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-814f-ace7-ea9d32511da3",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0067-LP-41624d4fa671814face7ea9d32511da3",
+      "status": "done",
+      "disPageId": "41624d4f-a671-814f-ace7-ea9d32511da3"
+    },
+    {
+      "at": "2026-11-12T14:38:58.982Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0054",
+      "lp": "LP-0051",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 302,
+      "newBlocks": 576,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8169-bd45-dfb7fa414a69",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0054-LAVA-LP-41624d4fa6718169bd45dfb7fa414a69",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8169-bd45-dfb7fa414a69"
+    },
+    {
+      "at": "2026-11-12T14:38:59.096Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0046",
+      "lp": "LP-0043",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 283,
+      "newBlocks": 600,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8148-ae33-d24663a141bd",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0046-LP-41624d4fa6718148ae33d24663a141bd",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8148-ae33-d24663a141bd"
+    },
+    {
+      "at": "2026-11-12T14:38:59.505Z",
+      "disId": "DIS-LP-0053",
+      "lp": "LP-0050",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0053",
+          "uploaded": 78,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:40:20.076Z",
+      "disId": "DIS-LP-0066",
+      "lp": "LP-0063",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0066",
+          "uploaded": 34,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:40:25.318Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0053",
+      "lp": "LP-0050",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 315,
+      "newBlocks": 633,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81a7-a6da-e582aa016b79",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0053-LP-41624d4fa67181a7a6dae582aa016b79",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81a7-a6da-e582aa016b79"
+    },
+    {
+      "at": "2026-11-12T14:40:34.037Z",
+      "disId": "DIS-LP-0059",
+      "lp": "LP-0056",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0059",
+          "uploaded": 59,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:40:51.888Z",
+      "disId": "DIS-LP-0074",
+      "lp": "LP-0071",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0074",
+          "uploaded": 42,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:41:01.122Z",
+      "disId": "DIS-LP-0060",
+      "lp": "LP-0057",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0060",
+          "uploaded": 0,
+          "skippedExisting": 120
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:41:02.277Z",
+      "disId": "DIS-LP-0077",
+      "lp": "LP-0074",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0077",
+          "uploaded": 37,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:41:02.717Z",
+      "disId": "DIS-LP-0070",
+      "lp": "LP-0067",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0070",
+          "uploaded": 47,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:41:07.937Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0066",
+      "lp": "LP-0063",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 334,
+      "newBlocks": 615,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8181-8d1b-d9a41764960f",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0066-LP-LP-41624d4fa67181818d1bd9a41764960f",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8181-8d1b-d9a41764960f"
+    },
+    {
+      "at": "2026-11-12T14:42:15.460Z",
+      "disId": "DIS-LP-0047",
+      "lp": "LP-0044",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0047",
+          "uploaded": 34,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:42:35.068Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0074",
+      "lp": "LP-0071",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 263,
+      "newBlocks": 488,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8158-bcdb-cddd8b0ad304",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0074-LP-41624d4fa6718158bcdbcddd8b0ad304",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8158-bcdb-cddd8b0ad304"
+    },
+    {
+      "at": "2026-11-12T14:42:35.984Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0059",
+      "lp": "LP-0056",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 313,
+      "newBlocks": 643,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-814a-83a6-d9d23a969768",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0059-LP-41624d4fa671814a83a6d9d23a969768",
+      "status": "done",
+      "disPageId": "41624d4f-a671-814a-83a6-d9d23a969768"
+    },
+    {
+      "at": "2026-11-12T14:42:55.392Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0070",
+      "lp": "LP-0067",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 265,
+      "newBlocks": 541,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-811a-9618-fc48e7dbfedd",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0070-NISA-LP-41624d4fa671811a9618fc48e7dbfedd",
+      "status": "done",
+      "disPageId": "41624d4f-a671-811a-9618-fc48e7dbfedd"
+    },
+    {
+      "at": "2026-11-12T14:42:58.797Z",
+      "disId": "DIS-LP-0069",
+      "lp": "LP-0066",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0069",
+          "uploaded": 46,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:42:59.392Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0077",
+      "lp": "LP-0074",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 292,
+      "newBlocks": 531,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8111-a054-d7d7055354e0",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0077-LP-41624d4fa6718111a054d7d7055354e0",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8111-a054-d7d7055354e0"
+    },
+    {
+      "at": "2026-11-12T14:43:03.315Z",
+      "disId": "DIS-LP-0080",
+      "lp": "LP-0077",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0080",
+          "uploaded": 48,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:43:56.709Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0047",
+      "lp": "LP-0044",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 243,
+      "newBlocks": 502,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81d5-aab6-fda7abdea3f5",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0047-LP-41624d4fa67181d5aab6fda7abdea3f5",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81d5-aab6-fda7abdea3f5"
+    },
+    {
+      "at": "2026-11-12T14:44:25.085Z",
+      "disId": "DIS-LP-0078",
+      "lp": "LP-0075",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0078",
+          "uploaded": 24,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:44:53.068Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0069",
+      "lp": "LP-0066",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 264,
+      "newBlocks": 529,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8139-949c-c886396a3c24",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0069-LP-41624d4fa6718139949cc886396a3c24",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8139-949c-c886396a3c24"
+    },
+    {
+      "at": "2026-11-12T14:44:58.189Z",
+      "disId": "DIS-LP-0075",
+      "lp": "LP-0072",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0075",
+          "uploaded": 57,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:44:58.661Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0080",
+      "lp": "LP-0077",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 275,
+      "newBlocks": 519,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8119-bd32-e4d7edc914d3",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0080-ECC-LP-41624d4fa6718119bd32e4d7edc914d3",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8119-bd32-e4d7edc914d3"
+    },
+    {
+      "at": "2026-11-12T14:45:01.780Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0060",
+      "lp": "LP-0057",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 261,
+      "newBlocks": 699,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8148-b0b6-f244387813d4",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0060-110-LP-41624d4fa6718148b0b6f244387813d4",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8148-b0b6-f244387813d4"
+    },
+    {
+      "at": "2026-11-12T14:45:09.477Z",
+      "disId": "DIS-LP-0048",
+      "lp": "LP-0045",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0048",
+          "uploaded": 19,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:45:14.453Z",
+      "disId": "DIS-LP-0061",
+      "lp": "LP-0058",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0061",
+          "uploaded": 62,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:45:16.270Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0078",
+      "lp": "LP-0075",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 234,
+      "newBlocks": 424,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8128-85a4-fe1117cced1c",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0078-LP-41624d4fa671812885a4fe1117cced1c",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8128-85a4-fe1117cced1c"
+    },
+    {
+      "at": "2026-11-12T14:45:31.655Z",
+      "disId": "DIS-LP-0072",
+      "lp": "LP-0069",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0072",
+          "uploaded": 15,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:46:07.932Z",
+      "disId": "DIS-LP-0079",
+      "lp": "LP-0076",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0079",
+          "uploaded": 20,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:46:37.598Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0072",
+      "lp": "LP-0069",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 223,
+      "newBlocks": 394,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81c2-b1ac-e8c7bd428814",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0072-21-LP-41624d4fa67181c2b1ace8c7bd428814",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81c2-b1ac-e8c7bd428814"
+    },
+    {
+      "at": "2026-11-12T14:46:40.195Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0048",
+      "lp": "LP-0045",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 239,
+      "newBlocks": 478,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-811b-af04-e1f8f88e1658",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0048-COCO-LP-41624d4fa671811baf04e1f8f88e1658",
+      "status": "done",
+      "disPageId": "41624d4f-a671-811b-af04-e1f8f88e1658"
+    },
+    {
+      "at": "2026-11-12T14:46:55.398Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0075",
+      "lp": "LP-0072",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 332,
+      "newBlocks": 630,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-815e-92e6-e95efaa4f2db",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0075-LP-41624d4fa671815e92e6e95efaa4f2db",
+      "status": "done",
+      "disPageId": "41624d4f-a671-815e-92e6-e95efaa4f2db"
+    },
+    {
+      "at": "2026-11-12T14:47:12.319Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0061",
+      "lp": "LP-0058",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 227,
+      "newBlocks": 504,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-812d-ba70-efef88171c6c",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0061-WEB-LP-41624d4fa671812dba70efef88171c6c",
+      "status": "done",
+      "disPageId": "41624d4f-a671-812d-ba70-efef88171c6c"
+    },
+    {
+      "at": "2026-11-12T14:47:13.721Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0079",
+      "lp": "LP-0076",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 257,
+      "newBlocks": 490,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81df-bb83-d2be243fae38",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0079-DMM-LP-41624d4fa67181dfbb83d2be243fae38",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81df-bb83-d2be243fae38"
+    },
+    {
+      "at": "2026-11-12T14:48:26.314Z",
+      "disId": "DIS-LP-0083",
+      "lp": "LP-0080",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0083",
+          "uploaded": 57,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:49:26.573Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0083",
+      "lp": "LP-0080",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 261,
+      "newBlocks": 514,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-812b-a112-f88631924ff6",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0083-LP-41624d4fa671812ba112f88631924ff6",
+      "status": "done",
+      "disPageId": "41624d4f-a671-812b-a112-f88631924ff6"
+    },
+    {
+      "at": "2026-11-12T14:49:29.056Z",
+      "disId": "DIS-LP-0062",
+      "lp": "LP-0059",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0062",
+          "uploaded": 37,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:49:41.514Z",
+      "disId": "DIS-LP-0086",
+      "lp": "LP-0083",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0086",
+          "uploaded": 68,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:49:54.823Z",
+      "disId": "DIS-LP-0068",
+      "lp": "LP-0065",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0068",
+          "uploaded": 119,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:49:55.650Z",
+      "disId": "DIS-LP-0082",
+      "lp": "LP-0079",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0082",
+          "uploaded": 46,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:50:22.933Z",
+      "disId": "DIS-LP-0076",
+      "lp": "LP-0073",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0076",
+          "uploaded": 23,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:50:29.627Z",
+      "disId": "DIS-LP-0084",
+      "lp": "LP-0081",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0084",
+          "uploaded": 23,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:50:37.442Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0062",
+      "lp": "LP-0059",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 227,
+      "newBlocks": 475,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8180-a6d5-c4d672c196a8",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0062-MS-Japan-LP-41624d4fa6718180a6d5c4d672c196a8",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8180-a6d5-c4d672c196a8"
+    },
+    {
+      "at": "2026-11-12T14:51:49.471Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0084",
+      "lp": "LP-0081",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 245,
+      "newBlocks": 502,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81fc-8770-eb5102f5ff57",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0084-LP-41624d4fa67181fc8770eb5102f5ff57",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81fc-8770-eb5102f5ff57"
+    },
+    {
+      "at": "2026-11-12T14:51:49.625Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0086",
+      "lp": "LP-0083",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 228,
+      "newBlocks": 562,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8190-a3e5-e3845687521a",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0086-LP-41624d4fa6718190a3e5e3845687521a",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8190-a3e5-e3845687521a"
+    },
+    {
+      "at": "2026-11-12T14:51:50.302Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0082",
+      "lp": "LP-0079",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 245,
+      "newBlocks": 489,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-810b-bab5-f156da0ea6a1",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0082-LP-41624d4fa671810bbab5f156da0ea6a1",
+      "status": "done",
+      "disPageId": "41624d4f-a671-810b-bab5-f156da0ea6a1"
+    },
+    {
+      "at": "2026-11-12T14:51:51.665Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0076",
+      "lp": "LP-0073",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 297,
+      "newBlocks": 567,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81db-8788-c67b7091f03d",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0076-LP-41624d4fa67181db8788c67b7091f03d",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81db-8788-c67b7091f03d"
+    },
+    {
+      "at": "2026-11-12T14:53:01.194Z",
+      "disId": "DIS-LP-0090",
+      "lp": "LP-0087",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0090",
+          "uploaded": 38,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:53:02.898Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0068",
+      "lp": "LP-0065",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 296,
+      "newBlocks": 833,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8192-a983-c5e94cc41d4c",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0068-LP-41624d4fa6718192a983c5e94cc41d4c",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8192-a983-c5e94cc41d4c"
+    },
+    {
+      "at": "2026-11-12T14:53:15.070Z",
+      "disId": "DIS-LP-0085",
+      "lp": "LP-0082",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0085",
+          "uploaded": 36,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:53:34.501Z",
+      "disId": "DIS-LP-0088",
+      "lp": "LP-0085",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0088",
+          "uploaded": 33,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:53:59.669Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0085",
+      "lp": "LP-0082",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 261,
+      "newBlocks": 570,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8193-b868-c3173cea7e69",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0085-LP-41624d4fa6718193b868c3173cea7e69",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8193-b868-c3173cea7e69"
+    },
+    {
+      "at": "2026-11-12T14:54:09.901Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0090",
+      "lp": "LP-0087",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 242,
+      "newBlocks": 479,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8163-943d-e2311512c1e4",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0090-LP-41624d4fa6718163943de2311512c1e4",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8163-943d-e2311512c1e4"
+    },
+    {
+      "at": "2026-11-12T14:54:19.379Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0088",
+      "lp": "LP-0085",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 195,
+      "newBlocks": 411,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81db-8363-e71a325ee142",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0088-TOMAS-LP-41624d4fa67181db8363e71a325ee142",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81db-8363-e71a325ee142"
+    },
+    {
+      "at": "2026-11-12T14:54:21.695Z",
+      "disId": "DIS-LP-0093",
+      "lp": "LP-0090",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0093",
+          "uploaded": 61,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:54:57.685Z",
+      "disId": "DIS-LP-0087",
+      "lp": "LP-0084",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0087",
+          "uploaded": 23,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:55:22.884Z",
+      "disId": "DIS-LP-0071",
+      "lp": "LP-0068",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0071",
+          "uploaded": 59,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:55:33.814Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0093",
+      "lp": "LP-0090",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 259,
+      "newBlocks": 548,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8123-9212-cab5d2ca35e7",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0093-LP-41624d4fa67181239212cab5d2ca35e7",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8123-9212-cab5d2ca35e7"
+    },
+    {
+      "at": "2026-11-12T14:55:35.554Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0087",
+      "lp": "LP-0084",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 211,
+      "newBlocks": 465,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81af-88eb-ddeb3ce69910",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0087-LP-41624d4fa67181af88ebddeb3ce69910",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81af-88eb-ddeb3ce69910"
+    },
+    {
+      "at": "2026-11-12T14:56:08.713Z",
+      "disId": "DIS-LP-0089",
+      "lp": "LP-0086",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0089",
+          "uploaded": 42,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:56:33.011Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0071",
+      "lp": "LP-0068",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 298,
+      "newBlocks": 610,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81bb-84ac-eb5bfb146dc2",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0071-1-LP-41624d4fa67181bb84aceb5bfb146dc2",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81bb-84ac-eb5bfb146dc2"
+    },
+    {
+      "at": "2026-11-12T14:56:46.143Z",
+      "disId": "DIS-LP-0097",
+      "lp": "LP-0094",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0097",
+          "uploaded": 35,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:57:00.125Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0089",
+      "lp": "LP-0086",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 194,
+      "newBlocks": 434,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8111-89a3-c71875ee9886",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0089-BIN-CHU-LP-41624d4fa671811189a3c71875ee9886",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8111-89a3-c71875ee9886"
+    },
+    {
+      "at": "2026-11-12T14:57:39.354Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0097",
+      "lp": "LP-0094",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 285,
+      "newBlocks": 632,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81af-8585-eeb98eb089b2",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0097-LP-41624d4fa67181af8585eeb98eb089b2",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81af-8585-eeb98eb089b2"
+    },
+    {
+      "at": "2026-11-12T14:57:41.134Z",
+      "disId": "DIS-LP-0094",
+      "lp": "LP-0091",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0094",
+          "uploaded": 60,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:57:55.716Z",
+      "disId": "DIS-LP-0091",
+      "lp": "LP-0088",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0091",
+          "uploaded": 2,
+          "skippedExisting": 62
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T14:58:46.344Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0094",
+      "lp": "LP-0091",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 263,
+      "newBlocks": 507,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-816b-b6ee-d28189b14c57",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0094-Rise-LP-41624d4fa671816bb6eed28189b14c57",
+      "status": "done",
+      "disPageId": "41624d4f-a671-816b-b6ee-d28189b14c57"
+    },
+    {
+      "at": "2026-11-12T14:59:10.787Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0091",
+      "lp": "LP-0088",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 259,
+      "newBlocks": 547,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-818d-8330-c9cafdc3e2ea",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0091-LP-41624d4fa671818d8330c9cafdc3e2ea",
+      "status": "done",
+      "disPageId": "41624d4f-a671-818d-8330-c9cafdc3e2ea"
+    },
+    {
+      "at": "2026-11-12T14:59:35.537Z",
+      "disId": "DIS-LP-0073",
+      "lp": "LP-0070",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0073",
+          "uploaded": 64,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:00:22.832Z",
+      "disId": "DIS-LP-0095",
+      "lp": "LP-0092",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0095",
+          "uploaded": 31,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:00:50.057Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0073",
+      "lp": "LP-0070",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 254,
+      "newBlocks": 592,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8165-9214-cffc4336a233",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0073-2024-LP-41624d4fa67181659214cffc4336a233",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8165-9214-cffc4336a233"
+    },
+    {
+      "at": "2026-11-12T15:00:53.797Z",
+      "disId": "DIS-LP-0092",
+      "lp": "LP-0089",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0092",
+          "uploaded": 109,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:00:55.362Z",
+      "disId": "DIS-LP-0098",
+      "lp": "LP-0095",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0098",
+          "uploaded": 41,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:01:07.118Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0095",
+      "lp": "LP-0092",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 262,
+      "newBlocks": 526,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-819f-8ec7-f884b22a4815",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0095-LP-41624d4fa671819f8ec7f884b22a4815",
+      "status": "done",
+      "disPageId": "41624d4f-a671-819f-8ec7-f884b22a4815"
+    },
+    {
+      "at": "2026-11-12T15:01:51.647Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0098",
+      "lp": "LP-0095",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 240,
+      "newBlocks": 482,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81da-b62b-f0e420930774",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0098-3-LP-jp-LP-41624d4fa67181dab62bf0e420930774",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81da-b62b-f0e420930774"
+    },
+    {
+      "at": "2026-11-12T15:02:34.074Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0092",
+      "lp": "LP-0089",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 292,
+      "newBlocks": 749,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81e8-9411-f264ea4f59b1",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0092-BEYOND-LP-41624d4fa67181e89411f264ea4f59b1",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81e8-9411-f264ea4f59b1"
+    },
+    {
+      "at": "2026-11-12T15:02:55.770Z",
+      "disId": "DIS-LP-0100",
+      "lp": "LP-0097",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0100",
+          "uploaded": 95,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:03:03.324Z",
+      "disId": "DIS-LP-0096",
+      "lp": "LP-0093",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0096",
+          "uploaded": 49,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:03:44.901Z",
+      "disId": "DIS-LP-0081",
+      "lp": "LP-0078",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0081",
+          "uploaded": 29,
+          "skippedExisting": 3
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:03:46.523Z",
+      "disId": "DIS-LP-0104",
+      "lp": "LP-0101",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0104",
+          "uploaded": 52,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:04:07.692Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0096",
+      "lp": "LP-0093",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 247,
+      "newBlocks": 487,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8167-af65-ead781fb3832",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0096-MONPE-LP-41624d4fa6718167af65ead781fb3832",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8167-af65-ead781fb3832"
+    },
+    {
+      "at": "2026-11-12T15:04:28.505Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0100",
+      "lp": "LP-0097",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 276,
+      "newBlocks": 679,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81dc-86b5-e463c838c3d9",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0100-LAVA-LP-41624d4fa67181dc86b5e463c838c3d9",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81dc-86b5-e463c838c3d9"
+    },
+    {
+      "at": "2026-11-12T15:04:35.479Z",
+      "disId": "DIS-LP-0099",
+      "lp": "LP-0096",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0099",
+          "uploaded": 31,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:04:39.129Z",
+      "disId": "DIS-LP-0108",
+      "lp": "LP-0105",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0108",
+          "uploaded": 55,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:04:58.273Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0081",
+      "lp": "LP-0078",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 256,
+      "newBlocks": 555,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81ee-bc82-efa710a5f614",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0081-12-LP-41624d4fa67181eebc82efa710a5f614",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81ee-bc82-efa710a5f614"
+    },
+    {
+      "at": "2026-11-12T15:05:16.047Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0104",
+      "lp": "LP-0101",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 254,
+      "newBlocks": 524,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81b4-acbc-d44cbf94feff",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0104-LP-41624d4fa67181b4acbcd44cbf94feff",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81b4-acbc-d44cbf94feff"
+    },
+    {
+      "at": "2026-11-12T15:05:45.589Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0099",
+      "lp": "LP-0096",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 275,
+      "newBlocks": 595,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81cd-9c4e-f0f660e0cb8b",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0099-LP-41624d4fa67181cd9c4ef0f660e0cb8b",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81cd-9c4e-f0f660e0cb8b"
+    },
+    {
+      "at": "2026-11-12T15:06:10.125Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0108",
+      "lp": "LP-0105",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 229,
+      "newBlocks": 494,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8102-82a4-f749f4e70116",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0108-LP-41624d4fa671810282a4f749f4e70116",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8102-82a4-f749f4e70116"
+    },
+    {
+      "at": "2026-11-12T15:06:56.717Z",
+      "disId": "DIS-LP-0101",
+      "lp": "LP-0098",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0101",
+          "uploaded": 58,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:08:00.518Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0101",
+      "lp": "LP-0098",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 234,
+      "newBlocks": 524,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-819e-ab8a-ecd65870133b",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0101-WEB-LP-41624d4fa671819eab8aecd65870133b",
+      "status": "done",
+      "disPageId": "41624d4f-a671-819e-ab8a-ecd65870133b"
+    },
+    {
+      "at": "2026-11-12T15:08:10.241Z",
+      "disId": "DIS-LP-0111",
+      "lp": "LP-0108",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0111",
+          "uploaded": 29,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:08:12.927Z",
+      "disId": "DIS-LP-0109",
+      "lp": "LP-0106",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0109",
+          "uploaded": 32,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:08:17.813Z",
+      "disId": "DIS-LP-0115",
+      "lp": "LP-0112",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0115",
+          "uploaded": 49,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:08:19.196Z",
+      "disId": "DIS-LP-0105",
+      "lp": "LP-0102",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0105",
+          "uploaded": 70,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:09:16.386Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0109",
+      "lp": "LP-0106",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 326,
+      "newBlocks": 583,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-819b-9ff1-d823521d86b6",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0109-LP-41624d4fa671819b9ff1d823521d86b6",
+      "status": "done",
+      "disPageId": "41624d4f-a671-819b-9ff1-d823521d86b6"
+    },
+    {
+      "at": "2026-11-12T15:09:19.287Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0111",
+      "lp": "LP-0108",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 234,
+      "newBlocks": 439,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8169-8b4d-cbe8da357d09",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0111-LP-41624d4fa67181698b4dcbe8da357d09",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8169-8b4d-cbe8da357d09"
+    },
+    {
+      "at": "2026-11-12T15:09:34.778Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0115",
+      "lp": "LP-0112",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 231,
+      "newBlocks": 486,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81b8-98dd-e185b728d0d6",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0115-D-I-S-LP-41624d4fa67181b898dde185b728d0d6",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81b8-98dd-e185b728d0d6"
+    },
+    {
+      "at": "2026-11-12T15:09:49.009Z",
+      "disId": "DIS-LP-0102",
+      "lp": "LP-0099",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0102",
+          "uploaded": 39,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:09:49.786Z",
+      "disId": "DIS-LP-0114",
+      "lp": "LP-0111",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0114",
+          "uploaded": 60,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:10:06.789Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0105",
+      "lp": "LP-0102",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 270,
+      "newBlocks": 640,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81a5-9362-d808201c14a2",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0105-LP-41624d4fa67181a59362d808201c14a2",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81a5-9362-d808201c14a2"
+    },
+    {
+      "at": "2026-11-12T15:10:31.291Z",
+      "disId": "DIS-LP-0116",
+      "lp": "LP-0113",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0116",
+          "uploaded": 22,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:11:07.138Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0102",
+      "lp": "LP-0099",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 250,
+      "newBlocks": 493,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81de-9bad-d2d8128f2c64",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0102-LP-41624d4fa67181de9badd2d8128f2c64",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81de-9bad-d2d8128f2c64"
+    },
+    {
+      "at": "2026-11-12T15:11:08.870Z",
+      "disId": "DIS-LP-0110",
+      "lp": "LP-0107",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0110",
+          "uploaded": 35,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:11:10.707Z",
+      "disId": "DIS-LP-0106",
+      "lp": "LP-0103",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0106",
+          "uploaded": 26,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:11:23.276Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0114",
+      "lp": "LP-0111",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 232,
+      "newBlocks": 550,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81c6-ad35-f5051037992a",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0114-LP-41624d4fa67181c6ad35f5051037992a",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81c6-ad35-f5051037992a"
+    },
+    {
+      "at": "2026-11-12T15:11:28.867Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0116",
+      "lp": "LP-0113",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 275,
+      "newBlocks": 521,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81e1-8d15-ce11b6e8c575",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0116-LP-41624d4fa67181e18d15ce11b6e8c575",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81e1-8d15-ce11b6e8c575"
+    },
+    {
+      "at": "2026-11-12T15:12:15.042Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0106",
+      "lp": "LP-0103",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 221,
+      "newBlocks": 514,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8138-a1b2-ddfb294281a7",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0106-Lepton-LP-41624d4fa6718138a1b2ddfb294281a7",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8138-a1b2-ddfb294281a7"
+    },
+    {
+      "at": "2026-11-12T15:12:19.774Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0110",
+      "lp": "LP-0107",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 268,
+      "newBlocks": 484,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8128-93fe-d2005f1d4a61",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0110-LP-41624d4fa671812893fed2005f1d4a61",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8128-93fe-d2005f1d4a61"
+    },
+    {
+      "at": "2026-11-12T15:12:48.101Z",
+      "disId": "DIS-LP-0117",
+      "lp": "LP-0114",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0117",
+          "uploaded": 31,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:13:01.329Z",
+      "disId": "DIS-LP-0103",
+      "lp": "LP-0100",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0103",
+          "uploaded": 41,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:13:44.340Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0117",
+      "lp": "LP-0114",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 270,
+      "newBlocks": 471,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8170-8f90-f7abb82d16dc",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0117-LP-41624d4fa67181708f90f7abb82d16dc",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8170-8f90-f7abb82d16dc"
+    },
+    {
+      "at": "2026-11-12T15:13:47.414Z",
+      "disId": "DIS-LP-0118",
+      "lp": "LP-0115",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0118",
+          "uploaded": 36,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:13:53.741Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0103",
+      "lp": "LP-0100",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 234,
+      "newBlocks": 463,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-813c-a71b-d63ee5c96c9b",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0103-LP-41624d4fa671813ca71bd63ee5c96c9b",
+      "status": "done",
+      "disPageId": "41624d4f-a671-813c-a71b-d63ee5c96c9b"
+    },
+    {
+      "at": "2026-11-12T15:13:54.524Z",
+      "disId": "DIS-LP-0112",
+      "lp": "LP-0109",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0112",
+          "uploaded": 54,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:14:18.235Z",
+      "disId": "DIS-LP-0107",
+      "lp": "LP-0104",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-12/dis-daily/DIS-LP-0107",
+          "uploaded": 51,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:14:35.035Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0118",
+      "lp": "LP-0115",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 268,
+      "newBlocks": 487,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81a1-98a3-eeb205141fb4",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0118-LP-41624d4fa67181a198a3eeb205141fb4",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81a1-98a3-eeb205141fb4"
+    },
+    {
+      "at": "2026-11-12T15:15:15.861Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0112",
+      "lp": "LP-0109",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 232,
+      "newBlocks": 517,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81b4-bb60-dbedac9752e6",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0112-LP-41624d4fa67181b4bb60dbedac9752e6",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81b4-bb60-dbedac9752e6"
+    },
+    {
+      "at": "2026-11-12T15:15:25.157Z",
+      "disId": "DIS-LP-0125",
+      "lp": "LP-0122",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0125",
+          "uploaded": 28,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:15:38.713Z",
+      "disId": "DIS-LP-0119",
+      "lp": "LP-0116",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0119",
+          "uploaded": 24,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:15:40.353Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0107",
+      "lp": "LP-0104",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 229,
+      "newBlocks": 534,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8168-b007-cdd409de612b",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0107-ECC-LP-41624d4fa6718168b007cdd409de612b",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8168-b007-cdd409de612b"
+    },
+    {
+      "at": "2026-11-12T15:16:04.994Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0125",
+      "lp": "LP-0122",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 245,
+      "newBlocks": 533,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8173-96fe-df02da6a88e8",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0125-ymc-LP-41624d4fa671817396fedf02da6a88e8",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8173-96fe-df02da6a88e8"
+    },
+    {
+      "at": "2026-11-12T15:16:15.713Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0119",
+      "lp": "LP-0116",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 236,
+      "newBlocks": 480,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8168-a2fe-c24f248f7309",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0119-LP-41624d4fa6718168a2fec24f248f7309",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8168-a2fe-c24f248f7309"
+    },
+    {
+      "at": "2026-11-12T15:17:21.102Z",
+      "disId": "DIS-LP-0126",
+      "lp": "LP-0123",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0126",
+          "uploaded": 24,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:17:59.772Z",
+      "disId": "DIS-LP-0121",
+      "lp": "LP-0118",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0121",
+          "uploaded": 106,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:18:04.006Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0126",
+      "lp": "LP-0123",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 264,
+      "newBlocks": 538,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-815a-b978-e938bc3a8531",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0126-LP-41624d4fa671815ab978e938bc3a8531",
+      "status": "done",
+      "disPageId": "41624d4f-a671-815a-b978-e938bc3a8531"
+    },
+    {
+      "at": "2026-11-12T15:18:24.541Z",
+      "disId": "DIS-LP-0120",
+      "lp": "LP-0117",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0120",
+          "uploaded": 50,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:18:34.747Z",
+      "disId": "DIS-LP-0113",
+      "lp": "LP-0110",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0113",
+          "uploaded": 53,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:19:21.316Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0120",
+      "lp": "LP-0117",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 250,
+      "newBlocks": 515,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81ff-b6dd-d69472f324c0",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0120-Ready-Crew-LP-41624d4fa67181ffb6ddd69472f324c0",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81ff-b6dd-d69472f324c0"
+    },
+    {
+      "at": "2026-11-12T15:19:30.022Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0113",
+      "lp": "LP-0110",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 234,
+      "newBlocks": 491,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8131-aed6-d370a14841b7",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0113-G-ROW-LP-41624d4fa6718131aed6d370a14841b7",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8131-aed6-d370a14841b7"
+    },
+    {
+      "at": "2026-11-12T15:20:11.568Z",
+      "disId": "DIS-LP-0121",
+      "lp": "LP-0118",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0121",
+          "uploaded": 0,
+          "skippedExisting": 106
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:20:43.942Z",
+      "disId": "DIS-LP-0122",
+      "lp": "LP-0119",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0122",
+          "uploaded": 65,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:21:06.111Z",
+      "disId": "DIS-LP-0123",
+      "lp": "LP-0120",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0123",
+          "uploaded": 101,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:21:45.809Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0121",
+      "lp": "LP-0118",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 264,
+      "newBlocks": 617,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-811d-8739-ee26ecd7c144",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0121-LP-41624d4fa671811d8739ee26ecd7c144",
+      "status": "done",
+      "disPageId": "41624d4f-a671-811d-8739-ee26ecd7c144"
+    },
+    {
+      "at": "2026-11-12T15:21:57.839Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0122",
+      "lp": "LP-0119",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 251,
+      "newBlocks": 564,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81dd-b8df-cb314ef82b46",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0122-2026-LP-41624d4fa67181ddb8dfcb314ef82b46",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81dd-b8df-cb314ef82b46"
+    },
+    {
+      "at": "2026-11-12T15:22:31.003Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0123",
+      "lp": "LP-0120",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 267,
+      "newBlocks": 646,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-810c-89c0-cbb698ebed68",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0123-EYS-LP-41624d4fa671810c89c0cbb698ebed68",
+      "status": "done",
+      "disPageId": "41624d4f-a671-810c-89c0-cbb698ebed68"
+    },
+    {
+      "at": "2026-11-12T15:24:23.294Z",
+      "disId": "DIS-LP-0129",
+      "lp": "LP-0126",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0129",
+          "uploaded": 62,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:24:33.085Z",
+      "disId": "DIS-LP-0124",
+      "lp": "LP-0121",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0124",
+          "uploaded": 60,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:24:35.411Z",
+      "disId": "DIS-LP-0127",
+      "lp": "LP-0124",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0127",
+          "uploaded": 53,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:25:49.442Z",
+      "disId": "DIS-LP-0133",
+      "lp": "LP-0130",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0133",
+          "uploaded": 61,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:25:51.528Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0129",
+      "lp": "LP-0126",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 280,
+      "newBlocks": 576,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81a2-ab6d-e64855233fe8",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0129-LP-41624d4fa67181a2ab6de64855233fe8",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81a2-ab6d-e64855233fe8"
+    },
+    {
+      "at": "2026-11-12T15:25:55.076Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0127",
+      "lp": "LP-0124",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 243,
+      "newBlocks": 522,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8190-80e3-c12d7cf9983c",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0127-LP-41624d4fa671819080e3c12d7cf9983c",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8190-80e3-c12d7cf9983c"
+    },
+    {
+      "at": "2026-11-12T15:25:57.964Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0124",
+      "lp": "LP-0121",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 248,
+      "newBlocks": 578,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8113-aa14-f37d7c19bc75",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0124-BEST-SWING-KAMATA-LP-41624d4fa6718113aa14f37d7c19bc75",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8113-aa14-f37d7c19bc75"
+    },
+    {
+      "at": "2026-11-12T15:27:00.145Z",
+      "disId": "DIS-LP-0128",
+      "lp": "LP-0125",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0128",
+          "uploaded": 27,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:27:07.439Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0133",
+      "lp": "LP-0130",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 232,
+      "newBlocks": 567,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8151-8c0f-fb2be2f2f3bb",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0133-ZAMET-LP-41624d4fa67181518c0ffb2be2f2f3bb",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8151-8c0f-fb2be2f2f3bb"
+    },
+    {
+      "at": "2026-11-12T15:27:40.558Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0128",
+      "lp": "LP-0125",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 253,
+      "newBlocks": 522,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8121-8163-fc78184ffb95",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0128-LP-41624d4fa67181218163fc78184ffb95",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8121-8163-fc78184ffb95"
+    },
+    {
+      "at": "2026-11-12T15:27:46.920Z",
+      "disId": "DIS-LP-0131",
+      "lp": "LP-0128",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0131",
+          "uploaded": 51,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:28:44.686Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0131",
+      "lp": "LP-0128",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 248,
+      "newBlocks": 514,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8187-a6c5-d9acc67ea292",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0131-LP-41624d4fa6718187a6c5d9acc67ea292",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8187-a6c5-d9acc67ea292"
+    },
+    {
+      "at": "2026-11-12T15:29:16.768Z",
+      "disId": "DIS-LP-0135",
+      "lp": "LP-0132",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0135",
+          "uploaded": 100,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:29:37.092Z",
+      "disId": "DIS-LP-0134",
+      "lp": "LP-0131",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0134",
+          "uploaded": 61,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:29:37.738Z",
+      "disId": "DIS-LP-0130",
+      "lp": "LP-0127",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0130",
+          "uploaded": 46,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:30:47.721Z",
+      "disId": "DIS-LP-0139",
+      "lp": "LP-0136",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0139",
+          "uploaded": 72,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:30:57.376Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0130",
+      "lp": "LP-0127",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 248,
+      "newBlocks": 518,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81a3-9709-fde8d8f742f1",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0130-LP-41624d4fa67181a39709fde8d8f742f1",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81a3-9709-fde8d8f742f1"
+    },
+    {
+      "at": "2026-11-12T15:31:05.338Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0134",
+      "lp": "LP-0131",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 247,
+      "newBlocks": 546,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-810c-9be8-fbc4ee5e77c9",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0134-LP-41624d4fa671810c9be8fbc4ee5e77c9",
+      "status": "done",
+      "disPageId": "41624d4f-a671-810c-9be8-fbc4ee5e77c9"
+    },
+    {
+      "at": "2026-11-12T15:31:07.696Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0135",
+      "lp": "LP-0132",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 274,
+      "newBlocks": 776,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81f7-8dbe-c06846afc456",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0135-LP-41624d4fa67181f78dbec06846afc456",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81f7-8dbe-c06846afc456"
+    },
+    {
+      "at": "2026-11-12T15:31:32.344Z",
+      "disId": "DIS-LP-0144",
+      "lp": "LP-0141",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0144",
+          "uploaded": 52,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:32:00.186Z",
+      "disId": "DIS-LP-0141",
+      "lp": "LP-0138",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0141",
+          "uploaded": 71,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:32:32.142Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0139",
+      "lp": "LP-0136",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 270,
+      "newBlocks": 619,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81f2-8464-d4cb85f2ca6f",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0139-CRAZY-MONEY-LP-41624d4fa67181f28464d4cb85f2ca6f",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81f2-8464-d4cb85f2ca6f"
+    },
+    {
+      "at": "2026-11-12T15:32:44.859Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0144",
+      "lp": "LP-0141",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 256,
+      "newBlocks": 523,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8145-a169-debb62816265",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0144-Video-Learning-Studio-LP-41624d4fa6718145a169debb62816265",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8145-a169-debb62816265"
+    },
+    {
+      "at": "2026-11-12T15:33:17.078Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0141",
+      "lp": "LP-0138",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 270,
+      "newBlocks": 557,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81f6-8437-f8447c66c5fa",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0141-CM-LP-41624d4fa67181f68437f8447c66c5fa",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81f6-8437-f8447c66c5fa"
+    },
+    {
+      "at": "2026-11-12T15:33:50.886Z",
+      "disId": "DIS-LP-0132",
+      "lp": "LP-0129",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0132",
+          "uploaded": 36,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:34:05.795Z",
+      "disId": "DIS-LP-0140",
+      "lp": "LP-0137",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0140",
+          "uploaded": 33,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:34:12.211Z",
+      "disId": "DIS-LP-0137",
+      "lp": "LP-0134",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0137",
+          "uploaded": 81,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:34:37.132Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0132",
+      "lp": "LP-0129",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 232,
+      "newBlocks": 451,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81bf-b5c3-e8013d9b65ea",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0132-LP-41624d4fa67181bfb5c3e8013d9b65ea",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81bf-b5c3-e8013d9b65ea"
+    },
+    {
+      "at": "2026-11-12T15:34:55.609Z",
+      "disId": "DIS-LP-0136",
+      "lp": "LP-0133",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0136",
+          "uploaded": 52,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:35:00.908Z",
+      "disId": "DIS-LP-0145",
+      "lp": "LP-0142",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0145",
+          "uploaded": 39,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:35:04.829Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0140",
+      "lp": "LP-0137",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 222,
+      "newBlocks": 426,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8112-91e7-df2eb7053379",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0140-LP-41624d4fa671811291e7df2eb7053379",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8112-91e7-df2eb7053379"
+    },
+    {
+      "at": "2026-11-12T15:36:14.537Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0137",
+      "lp": "LP-0134",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 286,
+      "newBlocks": 670,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81f7-9da3-f5680e817361",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0137-LP-41624d4fa67181f79da3f5680e817361",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81f7-9da3-f5680e817361"
+    },
+    {
+      "at": "2026-11-12T15:36:17.646Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0136",
+      "lp": "LP-0133",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 242,
+      "newBlocks": 460,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81ad-a321-f1e4680f9f9a",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0136-LP-41624d4fa67181ada321f1e4680f9f9a",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81ad-a321-f1e4680f9f9a"
+    },
+    {
+      "at": "2026-11-12T15:36:18.274Z",
+      "disId": "DIS-LP-0142",
+      "lp": "LP-0139",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0142",
+          "uploaded": 45,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:36:19.374Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0145",
+      "lp": "LP-0142",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 253,
+      "newBlocks": 505,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8185-ae14-e7796eb1535a",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0145-BtoB-LP-41624d4fa6718185ae14e7796eb1535a",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8185-ae14-e7796eb1535a"
+    },
+    {
+      "at": "2026-11-12T15:36:26.534Z",
+      "disId": "DIS-LP-0149",
+      "lp": "LP-0146",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0149",
+          "uploaded": 60,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:36:37.173Z",
+      "disId": "DIS-LP-0146",
+      "lp": "LP-0143",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0146",
+          "uploaded": 55,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:37:16.980Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0142",
+      "lp": "LP-0139",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 255,
+      "newBlocks": 484,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81de-baab-ed595e5d3f28",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0142-LP-41624d4fa67181debaabed595e5d3f28",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81de-baab-ed595e5d3f28"
+    },
+    {
+      "at": "2026-11-12T15:37:37.467Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0149",
+      "lp": "LP-0146",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 295,
+      "newBlocks": 578,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-813a-9bbb-c38b637f25e7",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0149-DX-BOOSTER-LP-41624d4fa671813a9bbbc38b637f25e7",
+      "status": "done",
+      "disPageId": "41624d4f-a671-813a-9bbb-c38b637f25e7"
+    },
+    {
+      "at": "2026-11-12T15:37:44.707Z",
+      "disId": "DIS-LP-0138",
+      "lp": "LP-0135",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0138",
+          "uploaded": 39,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:38:03.117Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0146",
+      "lp": "LP-0143",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 323,
+      "newBlocks": 620,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-811e-97b0-c224112b0818",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0146-LP-41624d4fa671811e97b0c224112b0818",
+      "status": "done",
+      "disPageId": "41624d4f-a671-811e-97b0-c224112b0818"
+    },
+    {
+      "at": "2026-11-12T15:38:43.658Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0138",
+      "lp": "LP-0135",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 222,
+      "newBlocks": 469,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81e1-aa7d-fb1812d01ad7",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0138-MS-Japan-LP-41624d4fa67181e1aa7dfb1812d01ad7",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81e1-aa7d-fb1812d01ad7"
+    },
+    {
+      "at": "2026-11-12T15:39:08.759Z",
+      "disId": "DIS-LP-0150",
+      "lp": "LP-0147",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0150",
+          "uploaded": 41,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:39:16.786Z",
+      "disId": "DIS-LP-0143",
+      "lp": "LP-0140",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0143",
+          "uploaded": 43,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:40:06.185Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0150",
+      "lp": "LP-0147",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 277,
+      "newBlocks": 501,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81c4-ba7b-c06a4ba9ad5d",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0150-LP-41624d4fa67181c4ba7bc06a4ba9ad5d",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81c4-ba7b-c06a4ba9ad5d"
+    },
+    {
+      "at": "2026-11-12T15:40:07.862Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0143",
+      "lp": "LP-0140",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 239,
+      "newBlocks": 472,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8107-bbfb-c75fc84868be",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0143-Believe-Technology-LP-41624d4fa6718107bbfbc75fc84868be",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8107-bbfb-c75fc84868be"
+    },
+    {
+      "at": "2026-11-12T15:40:13.385Z",
+      "disId": "DIS-LP-0147",
+      "lp": "LP-0144",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0147",
+          "uploaded": 49,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:40:49.376Z",
+      "disId": "DIS-LP-0152",
+      "lp": "LP-0149",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0152",
+          "uploaded": 62,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:41:15.186Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0147",
+      "lp": "LP-0144",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 333,
+      "newBlocks": 643,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81b2-beb2-dfc1e4029d88",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0147-LP-41624d4fa67181b2beb2dfc1e4029d88",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81b2-beb2-dfc1e4029d88"
+    },
+    {
+      "at": "2026-11-12T15:42:01.894Z",
+      "disId": "DIS-LP-0151",
+      "lp": "LP-0148",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0151",
+          "uploaded": 51,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:42:02.207Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0152",
+      "lp": "LP-0149",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 310,
+      "newBlocks": 565,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81b9-9741-c3f85ce6f8d5",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0152-CAREER-LEVERAGE-LP-41624d4fa67181b99741c3f85ce6f8d5",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81b9-9741-c3f85ce6f8d5"
+    },
+    {
+      "at": "2026-11-12T15:42:58.756Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0151",
+      "lp": "LP-0148",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 294,
+      "newBlocks": 542,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8106-9765-faf80f8e9346",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0151-SNS-LP-41624d4fa67181069765faf80f8e9346",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8106-9765-faf80f8e9346"
+    },
+    {
+      "at": "2026-11-12T15:43:05.010Z",
+      "disId": "DIS-LP-0154",
+      "lp": "LP-0151",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0154",
+          "uploaded": 52,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:43:32.491Z",
+      "disId": "DIS-LP-0148",
+      "lp": "LP-0145",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0148",
+          "uploaded": 50,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:44:06.546Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0154",
+      "lp": "LP-0151",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 337,
+      "newBlocks": 640,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81d4-af6c-fc6349bf4db7",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0154-30-LP-41624d4fa67181d4af6cfc6349bf4db7",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81d4-af6c-fc6349bf4db7"
+    },
+    {
+      "at": "2026-11-12T15:44:08.420Z",
+      "disId": "DIS-LP-0153",
+      "lp": "LP-0150",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0153",
+          "uploaded": 51,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:44:30.561Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0148",
+      "lp": "LP-0145",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 323,
+      "newBlocks": 602,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81fb-aefb-ed7e58566cbe",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0148-LP-LP-41624d4fa67181fbaefbed7e58566cbe",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81fb-aefb-ed7e58566cbe"
+    },
+    {
+      "at": "2026-11-12T15:45:06.650Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0153",
+      "lp": "LP-0150",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 311,
+      "newBlocks": 580,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-819a-b3fd-c65a29f68166",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0153-web-LP-41624d4fa671819ab3fdc65a29f68166",
+      "status": "done",
+      "disPageId": "41624d4f-a671-819a-b3fd-c65a29f68166"
+    },
+    {
+      "at": "2026-11-12T15:47:03.967Z",
+      "disId": "DIS-LP-0156",
+      "lp": "LP-0153",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0156",
+          "uploaded": 82,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:47:28.318Z",
+      "disId": "DIS-LP-0155",
+      "lp": "LP-0152",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0155",
+          "uploaded": 62,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:48:37.256Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0156",
+      "lp": "LP-0153",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 340,
+      "newBlocks": 720,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-816d-87ab-f246754d016a",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0156-24-7-English-LP-41624d4fa671816d87abf246754d016a",
+      "status": "done",
+      "disPageId": "41624d4f-a671-816d-87ab-f246754d016a"
+    },
+    {
+      "at": "2026-11-12T15:48:41.142Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0155",
+      "lp": "LP-0152",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 310,
+      "newBlocks": 640,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8174-8d09-ceca8a0ce1c3",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0155-LP-41624d4fa67181748d09ceca8a0ce1c3",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8174-8d09-ceca8a0ce1c3"
+    },
+    {
+      "at": "2026-11-12T15:49:37.922Z",
+      "disId": "DIS-LP-0159",
+      "lp": "LP-0156",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0159",
+          "uploaded": 88,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:49:54.895Z",
+      "disId": "DIS-LP-0157",
+      "lp": "LP-0154",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0157",
+          "uploaded": 33,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:49:56.445Z",
+      "disId": "DIS-LP-0162",
+      "lp": "LP-0159",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0162",
+          "uploaded": 98,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:50:47.861Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0157",
+      "lp": "LP-0154",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 299,
+      "newBlocks": 558,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-819f-8ea6-f3a070781c90",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0157-3-AI-LP-41624d4fa671819f8ea6f3a070781c90",
+      "status": "done",
+      "disPageId": "41624d4f-a671-819f-8ea6-f3a070781c90"
+    },
+    {
+      "at": "2026-11-12T15:51:22.225Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0159",
+      "lp": "LP-0156",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 390,
+      "newBlocks": 791,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8151-ba53-e48097cdc3af",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0159-LP-41624d4fa6718151ba53e48097cdc3af",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8151-ba53-e48097cdc3af"
+    },
+    {
+      "at": "2026-11-12T15:51:37.747Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0162",
+      "lp": "LP-0159",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 326,
+      "newBlocks": 750,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-810d-b774-e7047397819d",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0162-LP-41624d4fa671810db774e7047397819d",
+      "status": "done",
+      "disPageId": "41624d4f-a671-810d-b774-e7047397819d"
+    },
+    {
+      "at": "2026-11-12T15:51:52.850Z",
+      "disId": "DIS-LP-0165",
+      "lp": "LP-0162",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0165",
+          "uploaded": 43,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:51:55.384Z",
+      "disId": "DIS-LP-0158",
+      "lp": "LP-0155",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0158",
+          "uploaded": 30,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:52:34.220Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0158",
+      "lp": "LP-0155",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 283,
+      "newBlocks": 530,
+      "imagesToReupload": 3,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-815e-915c-dc82ee05554e",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0158-Instagram-TikTok-SNS-LP-41624d4fa671815e915cdc82ee05554e",
+      "status": "done",
+      "disPageId": "41624d4f-a671-815e-915c-dc82ee05554e"
+    },
+    {
+      "at": "2026-11-12T15:52:50.040Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0165",
+      "lp": "LP-0162",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 310,
+      "newBlocks": 555,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8141-9e97-c662cfa98ea9",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0165-sitateru-CLOUD-LP-41624d4fa67181419e97c662cfa98ea9",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8141-9e97-c662cfa98ea9"
+    },
+    {
+      "at": "2026-11-12T15:53:24.967Z",
+      "disId": "DIS-LP-0160",
+      "lp": "LP-0157",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0160",
+          "uploaded": 47,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:53:47.811Z",
+      "disId": "DIS-LP-0163",
+      "lp": "LP-0160",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0163",
+          "uploaded": 51,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:53:53.885Z",
+      "disId": "DIS-LP-0168",
+      "lp": "LP-0165",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0168",
+          "uploaded": 46,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:54:30.674Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0160",
+      "lp": "LP-0157",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 310,
+      "newBlocks": 586,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8191-b470-d8805c91fac8",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0160-LP-41624d4fa6718191b470d8805c91fac8",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8191-b470-d8805c91fac8"
+    },
+    {
+      "at": "2026-11-12T15:54:48.296Z",
+      "disId": "DIS-LP-0166",
+      "lp": "LP-0163",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0166",
+          "uploaded": 51,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:54:57.544Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0163",
+      "lp": "LP-0160",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 278,
+      "newBlocks": 553,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-818b-809c-ccd119975034",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0163-LP-41624d4fa671818b809cccd119975034",
+      "status": "done",
+      "disPageId": "41624d4f-a671-818b-809c-ccd119975034"
+    },
+    {
+      "at": "2026-11-12T15:54:59.595Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0168",
+      "lp": "LP-0165",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 298,
+      "newBlocks": 549,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81d3-82c1-d1c0659f9e1e",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0168-0-LP-41624d4fa67181d382c1d1c0659f9e1e",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81d3-82c1-d1c0659f9e1e"
+    },
+    {
+      "at": "2026-11-12T15:55:51.124Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0166",
+      "lp": "LP-0163",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 316,
+      "newBlocks": 596,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81fb-ac66-f90b9fc39c5c",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0166-LP-41624d4fa67181fbac66f90b9fc39c5c",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81fb-ac66-f90b9fc39c5c"
+    },
+    {
+      "at": "2026-11-12T15:56:06.320Z",
+      "disId": "DIS-LP-0161",
+      "lp": "LP-0158",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0161",
+          "uploaded": 41,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:56:47.594Z",
+      "disId": "DIS-LP-0169",
+      "lp": "LP-0166",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0169",
+          "uploaded": 47,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:57:00.511Z",
+      "disId": "DIS-LP-0164",
+      "lp": "LP-0161",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0164",
+          "uploaded": 53,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:57:03.572Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0161",
+      "lp": "LP-0158",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 246,
+      "newBlocks": 482,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8171-8876-f83d81b05f94",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0161-LP-41624d4fa67181718876f83d81b05f94",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8171-8876-f83d81b05f94"
+    },
+    {
+      "at": "2026-11-12T15:57:43.792Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0169",
+      "lp": "LP-0166",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 265,
+      "newBlocks": 524,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8192-97a1-eb4285f51418",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0169-IT-LP-41624d4fa671819297a1eb4285f51418",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8192-97a1-eb4285f51418"
+    },
+    {
+      "at": "2026-11-12T15:58:04.766Z",
+      "disId": "DIS-LP-0167",
+      "lp": "LP-0164",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0167",
+          "uploaded": 50,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:58:18.890Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0164",
+      "lp": "LP-0161",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 294,
+      "newBlocks": 565,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81ad-81ae-d04a9ef2fa09",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0164-5-LP-41624d4fa67181ad81aed04a9ef2fa09",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81ad-81ae-d04a9ef2fa09"
+    },
+    {
+      "at": "2026-11-12T15:59:01.317Z",
+      "disId": "DIS-LP-0170",
+      "lp": "LP-0167",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0170",
+          "uploaded": 37,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T15:59:06.231Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0167",
+      "lp": "LP-0164",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 296,
+      "newBlocks": 574,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-810f-8992-c9b29cae0fb1",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0167-LP-41624d4fa671810f8992c9b29cae0fb1",
+      "status": "done",
+      "disPageId": "41624d4f-a671-810f-8992-c9b29cae0fb1"
+    },
+    {
+      "at": "2026-11-12T15:59:54.764Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0170",
+      "lp": "LP-0167",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 315,
+      "newBlocks": 564,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81f3-b2b1-cfb48428f74d",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0170-2019-LP-41624d4fa67181f3b2b1cfb48428f74d",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81f3-b2b1-cfb48428f74d"
+    },
+    {
+      "at": "2026-11-12T19:13:22.628Z",
+      "disId": "DIS-LP-0177",
+      "lp": "LP-0174",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0177",
+          "uploaded": 39,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T19:13:42.918Z",
+      "disId": "DIS-LP-0174",
+      "lp": "LP-0171",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0174",
+          "uploaded": 46,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T19:14:21.413Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0177",
+      "lp": "LP-0174",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 253,
+      "newBlocks": 488,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-812f-ba25-f52344301f69",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0177-U-I-LP-41624d4fa671812fba25f52344301f69",
+      "status": "done",
+      "disPageId": "41624d4f-a671-812f-ba25-f52344301f69"
+    },
+    {
+      "at": "2026-11-12T19:14:40.291Z",
+      "disId": "DIS-LP-0171",
+      "lp": "LP-0168",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0171",
+          "uploaded": 68,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T19:14:40.470Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0174",
+      "lp": "LP-0171",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 277,
+      "newBlocks": 517,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8164-82b1-c598bee7e111",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0174-LP-41624d4fa671816482b1c598bee7e111",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8164-82b1-c598bee7e111"
+    },
+    {
+      "at": "2026-11-12T19:15:43.423Z",
+      "disId": "DIS-LP-0178",
+      "lp": "LP-0175",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0178",
+          "uploaded": 38,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T19:15:47.747Z",
+      "disId": "DIS-LP-0175",
+      "lp": "LP-0172",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0175",
+          "uploaded": 30,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T19:15:54.874Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0171",
+      "lp": "LP-0168",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 331,
+      "newBlocks": 660,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8182-bd90-c28f861bdb87",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0171-LP-41624d4fa6718182bd90c28f861bdb87",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8182-bd90-c28f861bdb87"
+    },
+    {
+      "at": "2026-11-12T19:16:36.092Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0175",
+      "lp": "LP-0172",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 236,
+      "newBlocks": 452,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8145-8fe4-d687abec3162",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0175-LP-41624d4fa67181458fe4d687abec3162",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8145-8fe4-d687abec3162"
+    },
+    {
+      "at": "2026-11-12T19:16:38.913Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0178",
+      "lp": "LP-0175",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 253,
+      "newBlocks": 492,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-810c-90d2-fc0529bbf1f3",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0178-LP-41624d4fa671810c90d2fc0529bbf1f3",
+      "status": "done",
+      "disPageId": "41624d4f-a671-810c-90d2-fc0529bbf1f3"
+    },
+    {
+      "at": "2026-11-12T19:17:38.462Z",
+      "disId": "DIS-LP-0176",
+      "lp": "LP-0173",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0176",
+          "uploaded": 28,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T19:18:06.113Z",
+      "disId": "DIS-LP-0172",
+      "lp": "LP-0169",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0172",
+          "uploaded": 63,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T19:18:26.358Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0176",
+      "lp": "LP-0173",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 253,
+      "newBlocks": 447,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81bc-abb8-eb81ef88602a",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0176-Broad-WiMAX-LP-41624d4fa67181bcabb8eb81ef88602a",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81bc-abb8-eb81ef88602a"
+    },
+    {
+      "at": "2026-11-12T19:18:39.081Z",
+      "disId": "DIS-LP-0179",
+      "lp": "LP-0176",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0179",
+          "uploaded": 56,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T19:19:16.181Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0172",
+      "lp": "LP-0169",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 314,
+      "newBlocks": 622,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8101-8325-fc5060f0cb26",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0172-LP-41624d4fa67181018325fc5060f0cb26",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8101-8325-fc5060f0cb26"
+    },
+    {
+      "at": "2026-11-12T19:19:42.161Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0179",
+      "lp": "LP-0176",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 249,
+      "newBlocks": 519,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8104-bb61-f5427b2f243f",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0179-LP-41624d4fa6718104bb61f5427b2f243f",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8104-bb61-f5427b2f243f"
+    },
+    {
+      "at": "2026-11-12T19:20:27.574Z",
+      "disId": "DIS-LP-0173",
+      "lp": "LP-0170",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0173",
+          "uploaded": 36,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T19:21:15.826Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0173",
+      "lp": "LP-0170",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 261,
+      "newBlocks": 471,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-814b-b572-ca2fc84ad12f",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0173-LP-41624d4fa671814bb572ca2fc84ad12f",
+      "status": "done",
+      "disPageId": "41624d4f-a671-814b-b572-ca2fc84ad12f"
+    },
+    {
+      "at": "2026-11-12T19:39:46.275Z",
+      "disId": "DIS-LP-0180",
+      "lp": "LP-0177",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0180",
+          "uploaded": 44,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T19:39:46.990Z",
+      "disId": "DIS-LP-0182",
+      "lp": "LP-0179",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0182",
+          "uploaded": 48,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T19:40:47.245Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0182",
+      "lp": "LP-0179",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 272,
+      "newBlocks": 511,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8184-96f7-fe94f96052f0",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0182-Snowflake-LP-41624d4fa671818496f7fe94f96052f0",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8184-96f7-fe94f96052f0"
+    },
+    {
+      "at": "2026-11-12T19:40:49.335Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0180",
+      "lp": "LP-0177",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 264,
+      "newBlocks": 523,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-81ea-9690-d5b3ae6f799a",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0180-LP-41624d4fa67181ea9690d5b3ae6f799a",
+      "status": "done",
+      "disPageId": "41624d4f-a671-81ea-9690-d5b3ae6f799a"
+    },
+    {
+      "at": "2026-11-12T19:42:26.302Z",
+      "disId": "DIS-LP-0183",
+      "lp": "LP-0180",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0183",
+          "uploaded": 44,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T19:43:20.728Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0183",
+      "lp": "LP-0180",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 246,
+      "newBlocks": 495,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-812f-8b91-f149ec931eb2",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0183-LP-41624d4fa671812f8b91f149ec931eb2",
+      "status": "done",
+      "disPageId": "41624d4f-a671-812f-8b91-f149ec931eb2"
+    },
+    {
+      "at": "2026-11-12T19:43:28.637Z",
+      "disId": "DIS-LP-0181",
+      "lp": "LP-0178",
+      "dryRun": false,
+      "stages": {
+        "dropbox": {
+          "status": "created",
+          "folder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0181",
+          "uploaded": 74,
+          "skippedExisting": 0
+        }
+      },
+      "log": []
+    },
+    {
+      "at": "2026-11-12T19:44:43.540Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0181",
+      "lp": "LP-0178",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 312,
+      "newBlocks": 629,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41624d4f-a671-8174-ae41-f3260479f49f",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0181-LP-41624d4fa6718174ae41f3260479f49f",
+      "status": "done",
+      "disPageId": "41624d4f-a671-8174-ae41-f3260479f49f"
+    }
+  ]
+}
