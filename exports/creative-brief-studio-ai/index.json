@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T13:14:25.957Z",
+  "generatedAt": "2026-11-12T20:21:30.123Z",
   "items": [
     {
       "id": "ILAC-0114",
@@ -948,6 +948,427 @@
         "コピー（声・注意事項を含む）",
         "価格・納期・経験年数・実績",
         "氏名・経歴・番組名・企業名などの固有名詞、LINE・Googleのブランド要素"
+      ],
+      "cbsSyncStatus": "draft_from_dis"
+    },
+    {
+      "id": "LP-0005",
+      "mediaType": "LP",
+      "title": "Sweet AMERICAのLPデザイン",
+      "tags": [
+        "食品",
+        "レッド",
+        "ホワイト基調",
+        "ブルー",
+        "商品主役FV",
+        "セクション分割",
+        "写真主役",
+        "価格訴求",
+        "数字訴求",
+        "ベネフィット訴求"
+      ],
+      "summary": "Krispy Kreme がハーシー・M&M'S・オレオとコラボした期間限定ドーナツを、企画名・期間・12個ボックスを1画面目に詰めたFVで見せ、単品→3個／12個のお得セット→来店できる6店舗の順で買い足しと来店へつなぐ、食品の期間限定キャンペーン告知",
+      "knowledgePath": "knowledge/lp/LP-0005.json",
+      "disId": "DIS-LP-0008",
+      "disIds": [
+        "DIS-LP-0008"
+      ],
+      "disEvaluation": {
+        "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+        "axes": [
+          {
+            "key": "purpose_fit",
+            "score": 3,
+            "confidence": "medium"
+          },
+          {
+            "key": "information_hierarchy",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "visual_flow",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "message_copy",
+            "score": 3,
+            "confidence": "medium"
+          },
+          {
+            "key": "trust_safety",
+            "score": 3,
+            "confidence": "medium"
+          },
+          {
+            "key": "color_legibility",
+            "score": 3,
+            "confidence": "medium"
+          },
+          {
+            "key": "layout_spacing",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "visual_brand",
+            "score": 5,
+            "confidence": "high"
+          },
+          {
+            "key": "implementation_reuse",
+            "score": 3,
+            "confidence": "low"
+          }
+        ]
+      },
+      "sectionTypes": [
+        "FV",
+        "商品紹介",
+        "その他",
+        "特徴",
+        "CTA",
+        "フッター"
+      ],
+      "sections": [
+        {
+          "type": "FV",
+          "name": "FV（企画名・期間バッジ・12個ボックス・導線2カード）"
+        },
+        {
+          "type": "商品紹介",
+          "name": "主役商品3種（ハーシー・M&M'S・オレオ）と単品価格"
+        },
+        {
+          "type": "商品紹介",
+          "name": "セット商品（アメリカンボックス／ダズン）とお得額"
+        },
+        {
+          "type": "その他",
+          "name": "動画枠（再生ボタン付き）"
+        },
+        {
+          "type": "特徴",
+          "name": "コラボショップ（3都市6店舗・限定メニュー）"
+        },
+        {
+          "type": "CTA",
+          "name": "関連映画コラボ（チア☆ダン）と外部リンク"
+        },
+        {
+          "type": "フッター",
+          "name": "終端（星の帯・著作権表記／SPはナビ・フッター）"
+        }
+      ],
+      "reusablePrinciples": [
+        "星条旗柄（地色＋縞）の全幅の背景に、企画名・期間の吹き出しバッジ・ボックス写真を重ねるキャンペーンFV",
+        "背景いっぱいの縞柄の上に、大きな商品写真を斜め／ジグザグに並べ、隣にロゴ・商品名・価格を置くポスター型の商品一覧",
+        "箱の写真＋セット名＋価格＋青い丸のお得バッジを1組にしたセット商品",
+        "赤い枠線＋中央の再生ボタンの動画枠",
+        "地色を変えた帯（水色の星柄）＋円形に切り抜いた店舗写真＋赤い矢印つきの店名ラベル＋黄色い限定メニュー帯の店舗案内",
+        "ポスター（左）＋ロゴ・期間・説明・商品2種（右）＋帯状のリンクボタンの関連企画ブロック"
+      ],
+      "rightsExcluded": [
+        "ロゴ・ブランド名・商標",
+        "人物（映画ポスターの出演者）・キャラクター（M&M'S）",
+        "商品・店舗・動画の写真",
+        "コピー",
+        "価格・期間・店名・お得額",
+        "映画のタイトル・ポスター"
+      ],
+      "cbsSyncStatus": "draft_from_dis"
+    },
+    {
+      "id": "LP-0007",
+      "mediaType": "LP",
+      "title": "助成金コンサルタント MatchのLPデザイン",
+      "tags": [
+        "サービス・保険・金融",
+        "ブルー",
+        "ホワイト基調",
+        "オレンジ",
+        "イエロー",
+        "セクション分割",
+        "カード型",
+        "ストーリー型",
+        "数字訴求",
+        "問題解決型",
+        "実績訴求",
+        "権威性訴求",
+        "ベネフィット訴求"
+      ],
+      "summary": "審査なし・返還不要・平均約300万円・返金保証を最初の画面で言い切り、助成金への先入観を『本当は間違っています』で反転してから、選ばれる理由5つ→受給実績→無料相談（Web／電話／30秒無料診断）へ導く、中小企業・個人事業主向けの助成金コンサル獲得LP",
+      "knowledgePath": "knowledge/lp/LP-0007.json",
+      "disId": "DIS-LP-0010",
+      "disIds": [
+        "DIS-LP-0010"
+      ],
+      "disEvaluation": {
+        "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+        "axes": [
+          {
+            "key": "purpose_fit",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "information_hierarchy",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "visual_flow",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "message_copy",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "trust_safety",
+            "score": 3,
+            "confidence": "low"
+          },
+          {
+            "key": "color_legibility",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "layout_spacing",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "visual_brand",
+            "score": 3,
+            "confidence": "medium"
+          },
+          {
+            "key": "implementation_reuse",
+            "score": 4,
+            "confidence": "medium"
+          }
+        ]
+      },
+      "sectionTypes": [
+        "FV",
+        "CTA",
+        "解決策",
+        "悩み提起",
+        "ベネフィット",
+        "比較",
+        "特徴",
+        "実績",
+        "FAQ"
+      ],
+      "sections": [
+        {
+          "type": "FV",
+          "name": "FV（審査なし・返済不要／平均約300万円／ワンストップ）"
+        },
+        {
+          "type": "CTA",
+          "name": "相談CTAの帯（無料相談＋問い合わせ／電話）"
+        },
+        {
+          "type": "解決策",
+          "name": "Matchとは？（サービス定義の2カード＋3人のイラスト）"
+        },
+        {
+          "type": "悩み提起",
+          "name": "助成金への先入観（『こんなイメージをお持ちではありませんか？』）"
+        },
+        {
+          "type": "ベネフィット",
+          "name": "それ、本当は間違っています！（平均約300万円・雇用保険の機会損失）"
+        },
+        {
+          "type": "比較",
+          "name": "助成金と補助金の違い"
+        },
+        {
+          "type": "特徴",
+          "name": "Matchが選ばれる理由（Point 01〜05）"
+        },
+        {
+          "type": "CTA",
+          "name": "相談CTAの帯（2回目）"
+        },
+        {
+          "type": "実績",
+          "name": "助成金受給実績（4件）"
+        },
+        {
+          "type": "FAQ",
+          "name": "よくあるご質問（Q&A 5問）"
+        },
+        {
+          "type": "CTA",
+          "name": "お問合せフォーム（5項目）＋フッター"
+        }
+      ],
+      "reusablePrinciples": [
+        "水色のブロブ背景＋橙の訴求（数値）＋濃紺の極太見出し（黄マーカー）＋人物イラスト＋『保証』ラベル付きの濃紺の帯のFV",
+        "濃紺の全幅の帯に、無料・特典の注記と、二択ボタン（Web：水色／電話：橙）を置くCTA帯（FV直下・中盤・終盤で反復）",
+        "灰色の大きな吹き出し（四隅の金具）に、丸アイコン付きの白カード2枚で、サービスを定義する構成と、先の3人のイラスト",
+        "『よくある誤解（丸写真×3）』→『それ、本当は間違っています！』→数字の箱→損失の吹き出し→制度の比較ボックス、という誤解の訂正の流れ",
+        "『Point 0n』ラベル＋大きな見出し＋マーカー付きの説明＋カプセル形の写真を、PCは左右交互・SPは縦積みにする5つの理由",
+        "人物アイコンが重なるカードに、ピル形ラベルと橙の金額を並べる実績4件（PC 2×2／SP 1列）",
+        "濃紺のQ丸＋質問＋＋／−のアコーディオン（1問目のみ開く）のFAQ",
+        "灰の箱に、必須（橙）／任意（紺）ラベルの5項目＋水色の確認ボタンの、最小のフォーム"
+      ],
+      "rightsExcluded": [
+        "ロゴ・ブランド名（会社のサプリ21／Match）",
+        "人物イラスト・アイコン・街並みのイラスト",
+        "ストック写真・実績の事例",
+        "コピー（数値・保証・No.1などの主張を含む）",
+        "電話番号・診断ツール・実績額",
+        "固有の制度の説明・FAQの文言"
+      ],
+      "cbsSyncStatus": "draft_from_dis"
+    },
+    {
+      "id": "LP-0010",
+      "mediaType": "LP",
+      "title": "ホーウィン シェルコードバン長財布のLPデザイン",
+      "tags": [
+        "ブラウン",
+        "ゴールド",
+        "ベージュ・生成り",
+        "ホワイト基調",
+        "商品主役FV",
+        "写真主役",
+        "セクション分割",
+        "縦書き",
+        "長尺LP",
+        "ストーリー型",
+        "権威性訴求",
+        "実績訴求",
+        "情緒訴求",
+        "ベネフィット訴求"
+      ],
+      "summary": "ホーウィン社のシェルコードバンを使った長財布を、百貨店バイヤーズ賞16年連続受賞・職人の紹介・素材ストーリー・接写の縦書きコラージュで鑑賞させ、仕様と3色の比較で所有欲を高める、高価格帯の革小物の鑑賞型LP",
+      "knowledgePath": "knowledge/lp/LP-0010.json",
+      "disId": "DIS-LP-0013",
+      "disIds": [
+        "DIS-LP-0013"
+      ],
+      "disEvaluation": {
+        "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+        "axes": [
+          {
+            "key": "purpose_fit",
+            "score": 3,
+            "confidence": "medium"
+          },
+          {
+            "key": "information_hierarchy",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "visual_flow",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "message_copy",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "trust_safety",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "color_legibility",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "layout_spacing",
+            "score": 4,
+            "confidence": "medium"
+          },
+          {
+            "key": "visual_brand",
+            "score": 5,
+            "confidence": "high"
+          },
+          {
+            "key": "implementation_reuse",
+            "score": 3,
+            "confidence": "medium"
+          }
+        ]
+      },
+      "sectionTypes": [
+        "FV",
+        "実績",
+        "会社情報",
+        "特徴",
+        "商品紹介"
+      ],
+      "sections": [
+        {
+          "type": "FV",
+          "name": "FV（3色の財布・機能美の見出し）"
+        },
+        {
+          "type": "実績",
+          "name": "受賞実績（百貨店バイヤーズ賞16年連続）"
+        },
+        {
+          "type": "会社情報",
+          "name": "ブランドと職人の紹介（CYPRIS・20年以上）"
+        },
+        {
+          "type": "特徴",
+          "name": "素材ストーリー（HORWEENとシェルコードバン）"
+        },
+        {
+          "type": "商品紹介",
+          "name": "機能性とフォルム（縦書き＋接写コラージュ）"
+        },
+        {
+          "type": "特徴",
+          "name": "DETAIL（仕様・収納・3つの便益）"
+        },
+        {
+          "type": "商品紹介",
+          "name": "COLOR（3色の比較）"
+        },
+        {
+          "type": "会社情報",
+          "name": "ブランドコンセプト（モルフォ蝶）"
+        },
+        {
+          "type": "商品紹介",
+          "name": "商品情報表（Item Information）"
+        }
+      ],
+      "reusablePrinciples": [
+        "黒い革面の全幅写真＋細い括弧枠の中央揃えの明朝見出し（小見出し→大見出し→細線→本文）のFV",
+        "暗色→生成り→茶→黒→白→黒→白→木目の色面の切替で、章を分ける縦長の構成",
+        "第三者評価（賞）を、ロゴ＋大見出し＋盾の帯＋説明帯で見せる実績ブロック",
+        "金枠の黒いカードに、英字ロゴ＋『〜とは？』＋本文＋被写体写真を置く素材・理念のカード",
+        "白い縁・影つきの接写写真の格子（PC）／縦積み（SP）＋縦書きの見出しのコラージュ",
+        "罫線の仕様表＋『写真と短文』3セットの便益ブロック",
+        "同じ大きさ・同じ背景の商品を並べ、色名だけを添える色比較",
+        "茶の見出し行つきの2列の商品情報表"
+      ],
+      "rightsExcluded": [
+        "ロゴ・ブランド名",
+        "人物・手・職人の写真",
+        "商品・素材・馬・蝶・額縁の写真",
+        "コピー・ブランド由来の物語",
+        "受賞の盾・実績・数字",
+        "価格・仕様の値"
       ],
       "cbsSyncStatus": "draft_from_dis"
     },

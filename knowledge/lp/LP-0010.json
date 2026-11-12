@@ -1,0 +1,576 @@
+{
+  "id": "LP-0010",
+  "dis_ids": [
+    "DIS-LP-0013"
+  ],
+  "mediaType": "LP",
+  "media_type": "LP",
+  "title": "ホーウィン シェルコードバン長財布のLPデザイン",
+  "brand": "ホーウィン シェルコードバン長財布",
+  "industry_tags": [],
+  "product_tags": [
+    "LP/物販"
+  ],
+  "color_tags": [
+    "ブラウン",
+    "ゴールド",
+    "ベージュ・生成り",
+    "ホワイト基調"
+  ],
+  "layout_tags": [
+    "商品主役FV",
+    "写真主役",
+    "セクション分割",
+    "縦書き",
+    "長尺LP",
+    "ストーリー型"
+  ],
+  "copy_types": [
+    "権威性訴求",
+    "実績訴求",
+    "情緒訴求",
+    "ベネフィット訴求"
+  ],
+  "primary_appeal": "ホーウィン社のシェルコードバンを使った長財布を、百貨店バイヤーズ賞16年連続受賞・職人の紹介・素材ストーリー・接写の縦書きコラージュで鑑賞させ、仕様と3色の比較で所有欲を高める、高価格帯の革小物の鑑賞型LP",
+  "offer": "なし（購入ボタン・価格・送料・保証は画像内に表示なし。商品情報表のみ）。取得時点のアーカイブ画像の表記で、現行は未確認",
+  "captureUrl": "https://rdlp.jp/archives/otherdesign/lp/73206",
+  "sourceUrl": "https://rdlp.jp/lp-archive/",
+  "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/73206",
+  "source": {
+    "captured_url": "https://rdlp.jp/archives/otherdesign/lp/73206",
+    "reference_name": "LPアーカイブ",
+    "reference_url": "https://rdlp.jp/lp-archive/",
+    "reference_detail_url": "https://rdlp.jp/archives/otherdesign/lp/73206",
+    "notion_url": "https://app.notion.com/p/3d124d4fa6718131b55ec87fb7e6ef25",
+    "dis_notion_url": "https://app.notion.com/p/41624d4fa67181f685c5f10bd0e95e74",
+    "dropbox_master_path": null,
+    "dis_dropbox_path": null,
+    "github_knowledge_path": "knowledge/lp/LP-0010.json",
+    "archive_post_id": "73206"
+  },
+  "asset_status": {
+    "pc_full": {
+      "path": "01_Normal_Images/DIS-LP-0013_PC_full.png",
+      "width": 952,
+      "height": 8444,
+      "status": "captured_unverified"
+    },
+    "pc_first_view": {
+      "path": "01_Normal_Images/DIS-LP-0013_PC_first_view.png",
+      "width": 952,
+      "height": 900,
+      "status": "captured_unverified"
+    },
+    "sp_full": {
+      "path": "01_Normal_Images/DIS-LP-0013_SP_full.png",
+      "width": 750,
+      "height": 12810,
+      "status": "captured_unverified"
+    },
+    "sp_first_view": {
+      "path": "01_Normal_Images/DIS-LP-0013_SP_first_view.png",
+      "width": 750,
+      "height": 812,
+      "status": "captured_unverified"
+    },
+    "repository_crosscheck": "not_run"
+  },
+  "funnel_structure": [
+    {
+      "step": 1,
+      "role": "FV",
+      "pattern": "FV（3色の財布・機能美の見出し）",
+      "description": "暗い革面に3色の長財布を斜めに重ね、光沢・縫い目・輪郭で『高級革』と分からせ、見出しで価値を言い切る"
+    },
+    {
+      "step": 2,
+      "role": "実績",
+      "pattern": "受賞実績（百貨店バイヤーズ賞16年連続）",
+      "description": "暗い質感の世界から、生成りの紙面へ切り替え、第三者の受賞で『高い理由』の最初の裏付けを出す"
+    },
+    {
+      "step": 3,
+      "role": "会社情報",
+      "pattern": "ブランドと職人の紹介（CYPRIS・20年以上）",
+      "description": "ブランド名と作り手（職人）を紹介し、『誰がどんな想いで作るか』で高価格の納得を作る"
+    },
+    {
+      "step": 4,
+      "role": "特徴",
+      "pattern": "素材ストーリー（HORWEENとシェルコードバン）",
+      "description": "素材の希少性・手間・手触りを物語にし、価格の根拠を『素材×時間』に置く"
+    },
+    {
+      "step": 5,
+      "role": "商品紹介",
+      "pattern": "機能性とフォルム（縦書き＋接写コラージュ）",
+      "description": "縦書きのコピーで品位を保ちながら、刻印・縫製・ファスナー・持った姿の写真で、触れない商品の質感を補う"
+    },
+    {
+      "step": 6,
+      "role": "特徴",
+      "pattern": "DETAIL（仕様・収納・3つの便益）",
+      "description": "『何が入るか・厚さ・取り出しやすさ』を、仕様表と3枚の写真で具体化し、実用面の不安を下げる"
+    },
+    {
+      "step": 7,
+      "role": "商品紹介",
+      "pattern": "COLOR（3色の比較）",
+      "description": "3色（ブラック・チョコ・ネイビー）を同じ大きさ・同じ背景で見せ、選ぶ段階に進める"
+    },
+    {
+      "step": 8,
+      "role": "会社情報",
+      "pattern": "ブランドコンセプト（モルフォ蝶）",
+      "description": "ブランド名の由来を、蝶の世界観で語り、『一生愛せる』という価値観で余韻を残す"
+    },
+    {
+      "step": 9,
+      "role": "商品紹介",
+      "pattern": "商品情報表（Item Information）",
+      "description": "品番・素材・サイズ・産地・仕様を、一覧表で最後に確認させる"
+    }
+  ],
+  "section_patterns": [
+    {
+      "id": "C01",
+      "source_section": "U1",
+      "name": "FV（3色の財布・機能美の見出し）",
+      "role": "FV",
+      "reusable_structure": [
+        "暗色の革面の写真全幅＋細い括弧枠の中央揃えの明朝見出し（小見出し→大見出し→細線→本文）＋左上・右上の小さなラベル／ロゴ"
+      ],
+      "replace_required": [
+        "商品写真（財布3色・額縁）",
+        "ブランドロゴ・品名",
+        "見出し・本文のコピー",
+        "『北米に現存する唯一』の主張"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C02",
+      "source_section": "U2",
+      "name": "受賞実績（百貨店バイヤーズ賞16年連続）",
+      "role": "実績",
+      "reusable_structure": [
+        "色面の切替（黒→生成り）＋ロゴ＋大見出し＋盾の帯（PC横一列／SP2段）＋賞の説明帯"
+      ],
+      "replace_required": [
+        "受賞ロゴ・盾の画像",
+        "『16年連続』などの実績表現",
+        "主催者名・賞の説明文"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C03",
+      "source_section": "U3",
+      "name": "ブランドと職人の紹介（CYPRIS・20年以上）",
+      "role": "会社情報",
+      "reusable_structure": [
+        "木目・革の質感の背景にロゴ＋『人物（職人）写真と見出し・本文』の左右（PC）／縦積み（SP）"
+      ],
+      "replace_required": [
+        "職人の写真",
+        "ロゴ",
+        "創業年・『半世紀』『20年以上』などの主張・本文"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C04",
+      "source_section": "U4",
+      "name": "素材ストーリー（HORWEENとシェルコードバン）",
+      "role": "特徴",
+      "reusable_structure": [
+        "金枠の黒いカード＋金色の英字ロゴ＋『〜とは？』の見出し＋本文＋右に被写体（馬）のモノクロ写真"
+      ],
+      "replace_required": [
+        "馬の写真",
+        "HORWEENのロゴ・社名",
+        "創業年・約8ヶ月などの数字・素材の説明文"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C05",
+      "source_section": "U5",
+      "name": "機能性とフォルム（縦書き＋接写コラージュ）",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "白い縁・影つきの写真を格子（PC）／縦積み（SP）に並べるコラージュ＋縦書きの見出しと本文＋『使っている手』の写真"
+      ],
+      "replace_required": [
+        "財布の接写写真・刻印・人物の手",
+        "縦書きの見出し・本文のコピー",
+        "英字ラベル"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C06",
+      "source_section": "U6",
+      "name": "DETAIL（仕様・収納・3つの便益）",
+      "role": "特徴",
+      "reusable_structure": [
+        "暗色面に、見出し→本文→罫線の仕様表→『写真＋短文』3セット（PCは横3列／SPは左右交互の縦積み）"
+      ],
+      "replace_required": [
+        "財布の写真（紙幣・コイン含む）",
+        "仕様の数値（サイズ・重さ・収納数）",
+        "3つの便益の文",
+        "円形の産地ラベル"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C07",
+      "source_section": "U7",
+      "name": "COLOR（3色の比較）",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "白背景に、同じ向き・大きさの商品正面を並べ、下に色名だけを添える色比較（PCは三角配置／SPは縦積み）"
+      ],
+      "replace_required": [
+        "財布の写真（3色）",
+        "色名"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C08",
+      "source_section": "U8",
+      "name": "ブランドコンセプト（モルフォ蝶）",
+      "role": "会社情報",
+      "reusable_structure": [
+        "木目の写真の全幅ヒーロー＋金枠の黒いカード（英字小見出し→見出し→象徴の写真→由来の本文）"
+      ],
+      "replace_required": [
+        "商品・木目・額縁の写真",
+        "蝶の写真",
+        "ロゴ・ブランド名の由来",
+        "『一生愛せる〜』の理念コピー"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C09",
+      "source_section": "U9",
+      "name": "商品情報表（Item Information）",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "茶の見出し行＋左に項目名・右に値の2列の商品情報表"
+      ],
+      "replace_required": [
+        "品番・素材・サイズ・仕様の値"
+      ],
+      "rights_status": "reference_only"
+    }
+  ],
+  "reusable_principles": [
+    "黒い革面の全幅写真＋細い括弧枠の中央揃えの明朝見出し（小見出し→大見出し→細線→本文）のFV",
+    "暗色→生成り→茶→黒→白→黒→白→木目の色面の切替で、章を分ける縦長の構成",
+    "第三者評価（賞）を、ロゴ＋大見出し＋盾の帯＋説明帯で見せる実績ブロック",
+    "金枠の黒いカードに、英字ロゴ＋『〜とは？』＋本文＋被写体写真を置く素材・理念のカード",
+    "白い縁・影つきの接写写真の格子（PC）／縦積み（SP）＋縦書きの見出しのコラージュ",
+    "罫線の仕様表＋『写真と短文』3セットの便益ブロック",
+    "同じ大きさ・同じ背景の商品を並べ、色名だけを添える色比較",
+    "茶の見出し行つきの2列の商品情報表"
+  ],
+  "cta_patterns": [],
+  "trust_patterns": [
+    {
+      "name": "受賞実績（百貨店バイヤーズ賞16年連続）",
+      "description": "【PC】生成りの古紙風の面。王冠のロゴ『Buyer's Prize』と、小見出し『国内のバイヤーから選ばれ続けるブランドの証』、大見出し『百貨店バイヤーズ賞 16年連続受賞！』。その下に、色違いの盾10枚を横一列に全幅で並べ、続けて『時代により機能が多少変わることがあったとしても、…完成度が上がっています』の文。下に『…",
+      "required_caution": "実績・写真・数値は、案件ごとの権利と現在性の確認が必要。"
+    },
+    {
+      "name": "ブランドと職人の紹介（CYPRIS・20年以上）",
+      "description": "【PC】木目と革の写真の背景に、白抜きのCYPRIS MORPHOのロゴ。その下に、左に白衣の職人が道具を握る写真、右に『日本の伝統技術にこだわり続けて20年以上。』と本文（1995年に東京で創業／半世紀におよぶ職人と若い職人集団）。茶色の革の質感の背景。【SP】ロゴ→職人の写真（幅いっぱい）→見出し→本文の縦積み。",
+      "required_caution": "実績・写真・数値は、案件ごとの権利と現在性の確認が必要。"
+    },
+    {
+      "name": "ブランドコンセプト（モルフォ蝶）",
+      "description": "【PC】木目の机と額縁・革の旅行鞄の上に、ブラック・ネイビーの財布と、内側を見せたチョコの財布。左にCYPRIS MORPHOのロゴ。下に金の枠の黒いカード『BRAND CONCEPT／一生愛せる本質的価値のあるものづくり』、青く光るモルフォ蝶の写真、ブランド名の由来の本文。【SP】同じ構成。カードが縦長になり、見出し…",
+      "required_caution": "実績・写真・数値は、案件ごとの権利と現在性の確認が必要。"
+    }
+  ],
+  "pricing_patterns": [],
+  "visual_patterns": [
+    {
+      "name": "color_legibility",
+      "description": "黒・濃茶・金を基調にし、生成り・白の面を挟む高級感のある配色。本文は暗色面の白抜きで読め、仕様表も罫線で整理されている。減点は、PCの盾の中の文字や、暗い背景の細い明朝の小さな本文（PCの受賞説明・仕様の注記）が、小さく読みにくい点。ブラックとネイビーの色差が小さく見える点。"
+    },
+    {
+      "name": "layout_spacing",
+      "description": "各Unitに十分な余白があり、中央揃えと左右の2分割を切り替える構成が安定。PCは写真の格子、SPは縦積みに、情報の優先度を保ったまま変換している。減点は、SPのHORWEENカードで、本文の右に馬の写真が食い込み、行が短く折れて読みにくい点。"
+    },
+    {
+      "name": "visual_brand",
+      "description": "商品写真の質（光沢・縫い目・刻印の接写）、額縁・木目・革・金枠・蝶の統一された世界観で、『一生もの』の高級感を最後まで保つ。明朝系の見出しとロゴの扱いも一貫している。"
+    }
+  ],
+  "rights_excluded": [
+    "ロゴ・ブランド名",
+    "人物・手・職人の写真",
+    "商品・素材・馬・蝶・額縁の写真",
+    "コピー・ブランド由来の物語",
+    "受賞の盾・実績・数字",
+    "価格・仕様の値"
+  ],
+  "unverified_claims": [
+    {
+      "claim": "『北米に現存する唯一のコードバンタンナー』の事実性",
+      "status": "unverified",
+      "required_basis": [
+        "ホーウィン社の公式情報・取扱元の資料で確認する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "購入ボタン・価格がFVにない点が意図か、キャプチャの範囲外か",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ（現行の商品ページ）で、FV付近のボタン・価格を確認する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・フェード等）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "受賞の対象年・受賞部門・審査の一次資料",
+      "status": "unverified",
+      "required_basis": [
+        "主催（織研新聞社）の公式発表・受賞ページで確認する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・フェード等）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "『20年以上』『半世紀におよぶ職人』『1995年創業』の整合",
+      "status": "unverified",
+      "required_basis": [
+        "ブランドの公式沿革で確認する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・フェード等）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "『創業1905年』『鞣し約8ヶ月』『創業当時から同じ手法』の裏付け",
+      "status": "unverified",
+      "required_basis": [
+        "ホーウィン社の公式情報で確認する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "素材の写真に使われている馬・素材写真の出所と許諾",
+      "status": "unverified",
+      "required_basis": [
+        "運営元・素材提供元に確認する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・フェード等）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "手で持つ写真の人物・モデルの許諾",
+      "status": "unverified",
+      "required_basis": [
+        "運営元に確認する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・フェード等）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "仕様の数値（カード入れ×6・サイズ・160g）が現行の商品情報と一致するか",
+      "status": "unverified",
+      "required_basis": [
+        "現行の商品ページ・取扱元の仕様表と照合する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・フェード等）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "ブラックとネイビーの色差、実物の艶・経年変化",
+      "status": "unverified",
+      "required_basis": [
+        "実物または公式の色見本・使用イメージで確認する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "色ごとの在庫・価格・購入導線",
+      "status": "unverified",
+      "required_basis": [
+        "現行の商品ページで確認する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・フェード等）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "蝶の写真の出所・許諾、由来の事実性",
+      "status": "unverified",
+      "required_basis": [
+        "運営元に確認する"
+      ],
+      "source_unit": "U8"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・フェード等）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U8"
+    },
+    {
+      "claim": "価格・在庫・カートボタン・配送・返品・保証・お手入れの記載",
+      "status": "unverified",
+      "required_basis": [
+        "現行の商品ページ（取扱元）で、価格・購入導線・保証の位置を確認する"
+      ],
+      "source_unit": "U9"
+    },
+    {
+      "claim": "SPに商品情報表が無い理由（取得の切れか、SPの仕様か）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページのSP表示で確認する"
+      ],
+      "source_unit": "U9"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・フェード等）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U9"
+    }
+  ],
+  "recommended_use_cases": [],
+  "analysis_notes": {
+    "completion_status": "dis_analysis_done_28ch_pending",
+    "dis_analysis_ref": "DIS-LP-0013",
+    "remaining_limits": [
+      "タグ・訴求・オファーは、28章の分析で確定する",
+      "ライブラリー側の取り込み・28章の分析は未実施（このファイルはDISからの下書き）",
+      "CBS本体への実同期は未実施"
+    ]
+  },
+  "dis_evaluation": {
+    "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+    "axes": [
+      {
+        "key": "purpose_fit",
+        "label": "目的適合",
+        "score": 3,
+        "confidence": "medium"
+      },
+      {
+        "key": "information_hierarchy",
+        "label": "情報優先順位",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_flow",
+        "label": "視線誘導",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "message_copy",
+        "label": "訴求・コピー",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "trust_safety",
+        "label": "信頼・安心",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "color_legibility",
+        "label": "配色・可読性",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "layout_spacing",
+        "label": "レイアウト・余白",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_brand",
+        "label": "ビジュアル・ブランド",
+        "score": 5,
+        "confidence": "high"
+      },
+      {
+        "key": "implementation_reuse",
+        "label": "実装・転用性",
+        "score": 3,
+        "confidence": "medium"
+      }
+    ],
+    "note": "28章の総合点（ヒューリスティック/100）とは別の物差し。足したり平均したりしない。"
+  },
+  "cbs_sync": {
+    "status": "draft_from_dis",
+    "knowledge_path": "knowledge/lp/LP-0010.json",
+    "exported_at": null,
+    "actual_cbs_import": "not_synced"
+  }
+}

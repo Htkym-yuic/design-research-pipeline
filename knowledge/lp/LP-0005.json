@@ -1,0 +1,513 @@
+{
+  "id": "LP-0005",
+  "dis_ids": [
+    "DIS-LP-0008"
+  ],
+  "mediaType": "LP",
+  "media_type": "LP",
+  "title": "Sweet AMERICAのLPデザイン",
+  "brand": "Sweet AMERICA",
+  "industry_tags": [
+    "食品"
+  ],
+  "product_tags": [
+    "LP/物販"
+  ],
+  "color_tags": [
+    "レッド",
+    "ホワイト基調",
+    "ブルー"
+  ],
+  "layout_tags": [
+    "商品主役FV",
+    "セクション分割",
+    "写真主役"
+  ],
+  "copy_types": [
+    "価格訴求",
+    "数字訴求",
+    "ベネフィット訴求"
+  ],
+  "primary_appeal": "Krispy Kreme がハーシー・M&M'S・オレオとコラボした期間限定ドーナツを、企画名・期間・12個ボックスを1画面目に詰めたFVで見せ、単品→3個／12個のお得セット→来店できる6店舗の順で買い足しと来店へつなぐ、食品の期間限定キャンペーン告知",
+  "offer": "期間限定（2/1〜3/21、無くなり次第終了）。単品3種 各230円（税込）、3個入りアメリカンボックス660円（30円お得）、12個入りアメリカンダズン2,000円（400円お得）。コラボ6店舗は+100円の限定トッピング。取得時点のアーカイブ画像の表記で、現行は未確認",
+  "captureUrl": "http://krispykreme.jp/campaign/sweetamerica/",
+  "sourceUrl": "https://rdlp.jp/lp-archive/",
+  "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/24738",
+  "source": {
+    "captured_url": "http://krispykreme.jp/campaign/sweetamerica/",
+    "reference_name": "LPアーカイブ",
+    "reference_url": "https://rdlp.jp/lp-archive/",
+    "reference_detail_url": "https://rdlp.jp/archives/otherdesign/lp/24738",
+    "notion_url": "https://app.notion.com/p/3d124d4fa671812687eddace9b368c06",
+    "dis_notion_url": "https://app.notion.com/p/41624d4fa671819881d6f3c465b142c4",
+    "dropbox_master_path": null,
+    "dis_dropbox_path": null,
+    "github_knowledge_path": "knowledge/lp/LP-0005.json",
+    "archive_post_id": "24738"
+  },
+  "asset_status": {
+    "pc_full": {
+      "path": "01_Normal_Images/DIS-LP-0008_PC_full.png",
+      "width": 954,
+      "height": 4404,
+      "status": "captured_unverified"
+    },
+    "pc_first_view": {
+      "path": "01_Normal_Images/DIS-LP-0008_PC_first_view.png",
+      "width": 954,
+      "height": 900,
+      "status": "captured_unverified"
+    },
+    "sp_full": {
+      "path": "01_Normal_Images/DIS-LP-0008_SP_full.png",
+      "width": 640,
+      "height": 4779,
+      "status": "captured_unverified"
+    },
+    "sp_first_view": {
+      "path": "01_Normal_Images/DIS-LP-0008_SP_first_view.png",
+      "width": 640,
+      "height": 812,
+      "status": "captured_unverified"
+    },
+    "repository_crosscheck": "not_run"
+  },
+  "funnel_structure": [
+    {
+      "step": 1,
+      "role": "FV",
+      "pattern": "FV（企画名・期間バッジ・12個ボックス・導線2カード）",
+      "description": "つかみ：ブランド名とコラボ3社を並べた企画名、期間限定バッジ、12個入りボックスで『何のキャンペーンか』を一度に見せる"
+    },
+    {
+      "step": 2,
+      "role": "商品紹介",
+      "pattern": "主役商品3種（ハーシー・M&M'S・オレオ）と単品価格",
+      "description": "主役：期間限定の3フレーバーを、大きな商品写真とロゴ・単品価格（各230円・税込）で、ポスターのように見せる"
+    },
+    {
+      "step": 3,
+      "role": "商品紹介",
+      "pattern": "セット商品（アメリカンボックス／ダズン）とお得額",
+      "description": "商品の続き：3個入り・12個入りのセット価格と『お得』額を並べ、まとめ買いへ導く"
+    },
+    {
+      "step": 4,
+      "role": "その他",
+      "pattern": "動画枠（再生ボタン付き）",
+      "description": "シズル：ドーナツの箱を上から見た動画の静止像で、味・質感を見せ、期待感を上げる"
+    },
+    {
+      "step": 5,
+      "role": "特徴",
+      "pattern": "コラボショップ（3都市6店舗・限定メニュー）",
+      "description": "体験の導線：期間限定の店舗が6つあることと店名、店舗限定の+100円トッピングを案内し、来店の理由を作る"
+    },
+    {
+      "step": 6,
+      "role": "CTA",
+      "pattern": "関連映画コラボ（チア☆ダン）と外部リンク",
+      "description": "追加の話題：映画とのコラボ商品2種（210円・2,000円）を紹介し、映画公式サイトへの外部リンクで終える"
+    },
+    {
+      "step": 7,
+      "role": "フッター",
+      "pattern": "終端（星の帯・著作権表記／SPはナビ・フッター）",
+      "description": "終端：PCは星条旗柄の細い帯と『©2017 映画『チア☆ダン』製作委員会』の1行で終わる。SPはサイト共通のナビとフッターが続く"
+    }
+  ],
+  "section_patterns": [
+    {
+      "id": "C01",
+      "source_section": "U1",
+      "name": "FV（企画名・期間バッジ・12個ボックス・導線2カード）",
+      "role": "FV",
+      "reusable_structure": [
+        "企画名（筆記体＋太字ロゴ）＋吹き出しの期間バッジ＋星条旗柄の背景＋ボックス写真。PCは右にボックス・左にコピーと小カード2つ、SPは企画名→バッジ＋ボックス→コピーの縦積み"
+      ],
+      "replace_required": [
+        "ブランド名・コラボ3社のロゴ",
+        "商品・ボックスの写真",
+        "『2.1-3.21』『無くなり次第終了』などの期間",
+        "星条旗モチーフ（国・テーマに合わせて差し替え）"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C02",
+      "source_section": "U2",
+      "name": "主役商品3種（ハーシー・M&M'S・オレオ）と単品価格",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "背景いっぱいの縞柄の上に、大きな商品写真を斜め／ジグザグに並べ、各写真の隣にロゴ・商品名・価格の3点を置くポスター型の商品一覧。散らし素材で動きを出す"
+      ],
+      "replace_required": [
+        "商品写真（3種）",
+        "コラボ元のロゴ・商標注記",
+        "商品名・価格（230円・税込）",
+        "キャラクター・散らし素材（チョコ・M&M'S・オレオ）",
+        "手書き風コピー『Share the Doughnuts!』"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C03",
+      "source_section": "U3",
+      "name": "セット商品（アメリカンボックス／ダズン）とお得額",
+      "role": "商品紹介",
+      "reusable_structure": [
+        "箱の写真＋セット名（日英）＋価格＋青い丸のお得バッジを、商品ごとに1組で並べるセット商品の見せ方"
+      ],
+      "replace_required": [
+        "箱の写真・中身",
+        "セット名・価格・お得額",
+        "バッジの色・文言"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C04",
+      "source_section": "U4",
+      "name": "動画枠（再生ボタン付き）",
+      "role": "その他",
+      "reusable_structure": [
+        "枠線つきの全幅の動画枠（赤い再生ボタン＋サムネイル）をページの中間に1つ置き、読み物の流れを切り替える"
+      ],
+      "replace_required": [
+        "動画のサムネイル・内容",
+        "枠線・再生ボタンの色",
+        "動画の配信先（YouTube等）の設定"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C05",
+      "source_section": "U5",
+      "name": "コラボショップ（3都市6店舗・限定メニュー）",
+      "role": "特徴",
+      "reusable_structure": [
+        "地色を変えた帯（水色の星柄）＋コラボロゴ列＋円形に切り抜いた店舗写真×4＋店名ボタン風ラベル＋黄色い限定メニュー帯の、店舗案内ブロック"
+      ],
+      "replace_required": [
+        "店舗写真・店名・所在地",
+        "コラボ元ロゴ・キャラクター",
+        "期間・限定メニューの内容・価格",
+        "地色・吹き出しの文言"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C06",
+      "source_section": "U6",
+      "name": "関連映画コラボ（チア☆ダン）と外部リンク",
+      "role": "CTA",
+      "reusable_structure": [
+        "ポスター写真（左）＋ロゴ・期間・説明・商品2種・価格（右）＋帯状のリンクボタンで、関連企画を1枚にまとめた誘導ブロック"
+      ],
+      "replace_required": [
+        "映画ポスター・人物写真・著作権表記",
+        "映画ロゴ・タイトル・説明文",
+        "商品名・価格・期間",
+        "外部リンクの文言・リンク先"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C07",
+      "source_section": "U7",
+      "name": "終端（星の帯・著作権表記／SPはナビ・フッター）",
+      "role": "フッター",
+      "reusable_structure": [
+        "終端の細い装飾帯＋権利表記。SPはサイト共通の赤・緑の帯でナビ・規約を縦に並べる（LPの内容とは切り離す）"
+      ],
+      "replace_required": [
+        "権利表記の文言",
+        "サイトのナビ・フッターのリンク構成",
+        "店舗情報・アプリ案内のリンク"
+      ],
+      "rights_status": "reference_only"
+    }
+  ],
+  "reusable_principles": [
+    "星条旗柄（地色＋縞）の全幅の背景に、企画名・期間の吹き出しバッジ・ボックス写真を重ねるキャンペーンFV",
+    "背景いっぱいの縞柄の上に、大きな商品写真を斜め／ジグザグに並べ、隣にロゴ・商品名・価格を置くポスター型の商品一覧",
+    "箱の写真＋セット名＋価格＋青い丸のお得バッジを1組にしたセット商品",
+    "赤い枠線＋中央の再生ボタンの動画枠",
+    "地色を変えた帯（水色の星柄）＋円形に切り抜いた店舗写真＋赤い矢印つきの店名ラベル＋黄色い限定メニュー帯の店舗案内",
+    "ポスター（左）＋ロゴ・期間・説明・商品2種（右）＋帯状のリンクボタンの関連企画ブロック"
+  ],
+  "cta_patterns": [
+    {
+      "name": "関連映画コラボ（チア☆ダン）と外部リンク",
+      "description": "【PC】白に薄いピンクの星柄・上下に赤／青の細い帯。左に映画ポスター風の人物写真、右に『チア☆ダン × Krispy Kreme』、『期間限定！ 2/1〜3/21』、説明文、ドーナツ写真（トゥインクル 210円）とダズン（全米制覇ダズン 2,000円・240円お得）、注記『一部店舗、イベント・催事店舗では販売しておりま…"
+    }
+  ],
+  "trust_patterns": [],
+  "pricing_patterns": [
+    {
+      "name": "主役商品3種（ハーシー・M&M'S・オレオ）と単品価格",
+      "description": "【PC】赤白ストライプの上に、円形に近いドーナツ写真を左から右下へジグザグに3つ（ハーシー→M&M'S→オレオ）。各写真の近くに、コラボ元ロゴ、『スイートアメリカ ○○』の商品名、英字名、『¥230（税込）』を小さめに添える。M&M'Sのキャラクター、手書き風『Share the Doughnuts!』、散らばるチョコ…",
+      "basis_status": "requires_verification"
+    }
+  ],
+  "visual_patterns": [
+    {
+      "name": "color_legibility",
+      "description": "星条旗の赤・白・青を、背景（FV）・バッジ・帯で一貫して使い、水色の地色で店舗の章を切り替える。商品の茶・黄・青・赤がよく映え、世界観は強い。減点は、赤白の縞の上に置いた黒い小さな価格・商品名・注記（特に商標注記・『画像はイメージです』）のコントラストが落ちる点、写真との重なりで文字が読みにくい箇所がある点。"
+    },
+    {
+      "name": "layout_spacing",
+      "description": "PCは954px幅に写真を大きく配置し、余白より密度で賑やかさを出すポスター型。章の切れ目は、地色（赤白→水色→白）と細い枠線で明確。SPは写真を大きくして縦積みに再構成し、順序が保たれる。減点は、PCのFVの小カード2つが小さく窮屈な点、SPの店名ボタンが折り返して並びがばらつく点。"
+    },
+    {
+      "name": "visual_brand",
+      "description": "星条旗の柄・筆記体と太字のロゴタイプ・吹き出しのバッジ・手書き風の『Share the Doughnuts!』・M&M'Sのキャラクターが、『アメリカのポップな祝祭』の世界観で揃う。コラボ3社のロゴと商品写真が主役で、ブランドの文脈が一目で分かる。店舗・映画の章も、地色と写真の質感を合わせて統一感を保つ。"
+    }
+  ],
+  "rights_excluded": [
+    "ロゴ・ブランド名・商標",
+    "人物（映画ポスターの出演者）・キャラクター（M&M'S）",
+    "商品・店舗・動画の写真",
+    "コピー",
+    "価格・期間・店名・お得額",
+    "映画のタイトル・ポスター"
+  ],
+  "unverified_claims": [
+    {
+      "claim": "PC／SPでFVの小カード（店舗・映画コラボ）の有無が違う理由",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ、またはアーカイブ原本で、SPの冒頭を確認する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する（キャンペーンは終了済みのため、取得できない可能性が高い）。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "価格が縞背景上の小さな文字で、読み取りやすさがどの程度かは実寸で未計測",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ・デザインツールで文字サイズ・コントラストを計測する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "商品ごとの詳細（原材料・アレルゲン・カロリー）",
+      "status": "unverified",
+      "required_basis": [
+        "公式の商品ページを確認する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する（キャンペーンは終了済みのため、取得できない可能性が高い）。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "お得額（30円・400円）の比較の前提",
+      "status": "unverified",
+      "required_basis": [
+        "公式の価格表・注記を確認する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "オンライン注文・予約の可否",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ・公式サイトを確認する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する（キャンペーンは終了済みのため、取得できない可能性が高い）。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "動画の内容・長さ・音声・再生中の見え方",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページで再生して確認する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "PCとSPでサムネイルの像が違う理由",
+      "status": "unverified",
+      "required_basis": [
+        "アーカイブ原本・実ページで確認する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する（キャンペーンは終了済みのため、取得できない可能性が高い）。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "店名ラベルのリンク先（店舗ページ／地図）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで確認する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "店舗の営業時間・所在地・在庫",
+      "status": "unverified",
+      "required_basis": [
+        "公式の店舗情報を確認する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する（キャンペーンは終了済みのため、取得できない可能性が高い）。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "SPで『公式サイトはこちら』が見えない理由",
+      "status": "unverified",
+      "required_basis": [
+        "実ページ・アーカイブ原本で確認する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "映画の公開・協賛関係（権利）",
+      "status": "unverified",
+      "required_basis": [
+        "権利者（映画製作委員会）の表記・条件を確認する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する（キャンペーンは終了済みのため、取得できない可能性が高い）。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "PCにナビ・フッターがない理由",
+      "status": "unverified",
+      "required_basis": [
+        "アーカイブ原本・実ページを確認する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "SPのSTOREの遷移先・動作（固定ヘッダの有無）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで確認する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する（キャンペーンは終了済みのため、取得できない可能性が高い）。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U7"
+    }
+  ],
+  "recommended_use_cases": [],
+  "analysis_notes": {
+    "completion_status": "dis_analysis_done_28ch_pending",
+    "dis_analysis_ref": "DIS-LP-0008",
+    "remaining_limits": [
+      "タグ・訴求・オファーは、28章の分析で確定する",
+      "ライブラリー側の取り込み・28章の分析は未実施（このファイルはDISからの下書き）",
+      "CBS本体への実同期は未実施"
+    ]
+  },
+  "dis_evaluation": {
+    "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+    "axes": [
+      {
+        "key": "purpose_fit",
+        "label": "目的適合",
+        "score": 3,
+        "confidence": "medium"
+      },
+      {
+        "key": "information_hierarchy",
+        "label": "情報優先順位",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_flow",
+        "label": "視線誘導",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "message_copy",
+        "label": "訴求・コピー",
+        "score": 3,
+        "confidence": "medium"
+      },
+      {
+        "key": "trust_safety",
+        "label": "信頼・安心",
+        "score": 3,
+        "confidence": "medium"
+      },
+      {
+        "key": "color_legibility",
+        "label": "配色・可読性",
+        "score": 3,
+        "confidence": "medium"
+      },
+      {
+        "key": "layout_spacing",
+        "label": "レイアウト・余白",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_brand",
+        "label": "ビジュアル・ブランド",
+        "score": 5,
+        "confidence": "high"
+      },
+      {
+        "key": "implementation_reuse",
+        "label": "実装・転用性",
+        "score": 3,
+        "confidence": "low"
+      }
+    ],
+    "note": "28章の総合点（ヒューリスティック/100）とは別の物差し。足したり平均したりしない。"
+  },
+  "cbs_sync": {
+    "status": "draft_from_dis",
+    "knowledge_path": "knowledge/lp/LP-0005.json",
+    "exported_at": null,
+    "actual_cbs_import": "not_synced"
+  }
+}

@@ -1,0 +1,686 @@
+{
+  "id": "LP-0007",
+  "dis_ids": [
+    "DIS-LP-0010"
+  ],
+  "mediaType": "LP",
+  "media_type": "LP",
+  "title": "助成金コンサルタント MatchのLPデザイン",
+  "brand": "助成金コンサルタント Match",
+  "industry_tags": [
+    "サービス・保険・金融"
+  ],
+  "product_tags": [
+    "LP/サービス"
+  ],
+  "color_tags": [
+    "ブルー",
+    "ホワイト基調",
+    "オレンジ",
+    "イエロー"
+  ],
+  "layout_tags": [
+    "セクション分割",
+    "カード型",
+    "ストーリー型"
+  ],
+  "copy_types": [
+    "数字訴求",
+    "問題解決型",
+    "実績訴求",
+    "権威性訴求",
+    "ベネフィット訴求"
+  ],
+  "primary_appeal": "審査なし・返還不要・平均約300万円・返金保証を最初の画面で言い切り、助成金への先入観を『本当は間違っています』で反転してから、選ばれる理由5つ→受給実績→無料相談（Web／電話／30秒無料診断）へ導く、中小企業・個人事業主向けの助成金コンサル獲得LP",
+  "offer": "無料相談（Web問い合わせ／電話）。お問い合わせの方に助成金額の目安が分かる『30秒無料診断ツール』を提供。返金保証あり（条件・期間・対象は画像内に表示なし）。相談の料金体系・成功報酬は未確認。取得時点のアーカイブ画像の表記で、現行は未確認",
+  "captureUrl": "https://rdlp.jp/archives/otherdesign/lp/200409",
+  "sourceUrl": "https://rdlp.jp/lp-archive/",
+  "sourceDetailUrl": "https://rdlp.jp/archives/otherdesign/lp/200409",
+  "source": {
+    "captured_url": "https://rdlp.jp/archives/otherdesign/lp/200409",
+    "reference_name": "LPアーカイブ",
+    "reference_url": "https://rdlp.jp/lp-archive/",
+    "reference_detail_url": "https://rdlp.jp/archives/otherdesign/lp/200409",
+    "notion_url": "https://app.notion.com/p/3d124d4fa6718160ba11fc22befa3575",
+    "dis_notion_url": "https://app.notion.com/p/41624d4fa671817bbb2ed6c4e5724544",
+    "dropbox_master_path": null,
+    "dis_dropbox_path": null,
+    "github_knowledge_path": "knowledge/lp/LP-0007.json",
+    "archive_post_id": "200409"
+  },
+  "asset_status": {
+    "pc_full": {
+      "path": "01_Normal_Images/DIS-LP-0010_PC_full.png",
+      "width": 2000,
+      "height": 10840,
+      "status": "captured_unverified"
+    },
+    "pc_first_view": {
+      "path": "01_Normal_Images/DIS-LP-0010_PC_first_view.png",
+      "width": 2000,
+      "height": 900,
+      "status": "captured_unverified"
+    },
+    "sp_full": {
+      "path": "01_Normal_Images/DIS-LP-0010_SP_full.png",
+      "width": 750,
+      "height": 18554,
+      "status": "captured_unverified"
+    },
+    "sp_first_view": {
+      "path": "01_Normal_Images/DIS-LP-0010_SP_first_view.png",
+      "width": 750,
+      "height": 812,
+      "status": "captured_unverified"
+    },
+    "repository_crosscheck": "not_run"
+  },
+  "funnel_structure": [
+    {
+      "step": 1,
+      "role": "FV",
+      "pattern": "FV（審査なし・返済不要／平均約300万円／ワンストップ）",
+      "description": "1画面目で、『誰でも・負担なく・大きく受け取れる』（審査なし・返還不要・平均約300万円・従業員1名から）と、『書類作成から申請代行まで全てお任せ』という支援範囲を言い切り、返金保証の帯で安心を添える導入"
+    },
+    {
+      "step": 2,
+      "role": "CTA",
+      "pattern": "相談CTAの帯（無料相談＋問い合わせ／電話）",
+      "description": "FVの直後に、『無料』『診断ツール』という低リスクの特典を添えて、Web問い合わせと電話の二経路の行動を、最初に出す"
+    },
+    {
+      "step": 3,
+      "role": "解決策",
+      "pattern": "Matchとは？（サービス定義の2カード＋3人のイラスト）",
+      "description": "サービスの正体を『中小企業特化・月間300件以上・国内No.1』と『提案から受給までワンストップ（社労士が申請）』の2点で定義し、続く説明の前提をそろえる"
+    },
+    {
+      "step": 4,
+      "role": "悩み提起",
+      "pattern": "助成金への先入観（『こんなイメージをお持ちではありませんか？』）",
+      "description": "読者が助成金に抱く3つの誤解（面倒・少額・つなぎ融資が必要）を、写真付きで先に言語化し、次のUnitでの訂正に備える"
+    },
+    {
+      "step": 5,
+      "role": "ベネフィット",
+      "pattern": "それ、本当は間違っています！（平均約300万円・雇用保険の機会損失）",
+      "description": "誤解を『間違い』と断定して反転し、平均受給額と、雇用保険を払っているのに受給しない『機会損失』（期限つき）で、行動の動機を作る"
+    },
+    {
+      "step": 6,
+      "role": "比較",
+      "pattern": "助成金と補助金の違い",
+      "description": "混同されやすい『補助金（審査・実績報告あり）』と『助成金（条件を満たせば受給、報告・返還不要）』を、短い文章で対比して、前段の『返還不要』に根拠を与える"
+    },
+    {
+      "step": 7,
+      "role": "特徴",
+      "pattern": "Matchが選ばれる理由（Point 01〜05）",
+      "description": "選ばれる理由を5点（実績・最安値・全業種対応・多様な助成金・診断から受給までワンストップ）に分け、数字・条件・安心を、写真と短い説明で順に積む"
+    },
+    {
+      "step": 8,
+      "role": "CTA",
+      "pattern": "相談CTAの帯（2回目）",
+      "description": "5つの理由を読み終えた、納得が高まった地点で、同じ二経路のCTAをもう一度出す"
+    },
+    {
+      "step": 9,
+      "role": "実績",
+      "pattern": "助成金受給実績（4件）",
+      "description": "実際の事例4件（地域・業種・従業員数・受給額）を、人物アイコン付きのカードで並べ、『自社でも受給できそう』と思わせ、金額の規模感を示す"
+    },
+    {
+      "step": 10,
+      "role": "FAQ",
+      "pattern": "よくあるご質問（Q&A 5問）",
+      "description": "返金・手間・雇用保険未加入・小規模・個人事業主という、申込前の代表的な不安を、アコーディオンで短く処理する"
+    },
+    {
+      "step": 11,
+      "role": "CTA",
+      "pattern": "お問合せフォーム（5項目）＋フッター",
+      "description": "最小の入力（会社名は任意）と、受給可否の分岐になる『雇用保険に加入していますか』の1問だけで、問い合わせの心理的ハードルを下げて締める"
+    }
+  ],
+  "section_patterns": [
+    {
+      "id": "C01",
+      "source_section": "U1",
+      "name": "FV（審査なし・返済不要／平均約300万円／ワンストップ）",
+      "role": "FV",
+      "reusable_structure": [
+        "水色のブロブ背景＋橙の訴求（上段）＋濃紺の極太見出し（黄マーカー）＋イラスト人物＋『返金保証』ラベル付きの濃紺の帯。PCは人物が右、SPは帯の右上に小さく重ねる"
+      ],
+      "replace_required": [
+        "ロゴ・ブランド名（会社のサプリ21／Match）",
+        "人物イラスト",
+        "『審査なし・返却不要』『平均約300万円』『従業員1名から』などの便益・数値",
+        "『返金保証』の文言"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C02",
+      "source_section": "U2",
+      "name": "相談CTAの帯（無料相談＋問い合わせ／電話）",
+      "role": "CTA",
+      "reusable_structure": [
+        "濃紺の全幅の帯＋白抜きの見出し＋小さな特典の注記＋水色（Web）と橙（電話）の二択ボタン。PCは横並び、SPは全幅で縦積み"
+      ],
+      "replace_required": [
+        "見出しの文言",
+        "診断ツールの名称・内容",
+        "ボタンの文言・リンク先",
+        "電話番号"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C03",
+      "source_section": "U3",
+      "name": "Matchとは？（サービス定義の2カード＋3人のイラスト）",
+      "role": "解決策",
+      "reusable_structure": [
+        "灰色の大きな吹き出し＋白い角丸カード2枚（丸アイコン＋太字の要点＋小さな補足）＋吹き出しの先に3人のイラスト。PCは横長、SPは縦積み"
+      ],
+      "replace_required": [
+        "見出し・本文の文言",
+        "『国内No.1』『月間300件以上』『60所』などの主張",
+        "アイコン・人物イラスト"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C04",
+      "source_section": "U4",
+      "name": "助成金への先入観（『こんなイメージをお持ちではありませんか？』）",
+      "role": "悩み提起",
+      "reusable_structure": [
+        "灰青のパネル＋丸く切り抜いた写真3つ（チェック付き）＋点線下線の短いラベル。尻尾で、次の『それ、本当は間違っています！』へつなぐ。PCは3列、SPは2＋1"
+      ],
+      "replace_required": [
+        "見出し・3つの誤解の文言",
+        "丸写真（人物・手元）",
+        "パネルの背景写真"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C05",
+      "source_section": "U5",
+      "name": "それ、本当は間違っています！（平均約300万円・雇用保険の機会損失）",
+      "role": "ベネフィット",
+      "reusable_structure": [
+        "幾何学パターンの背景＋断定の見出し（橙の筆線）＋イラスト人物＋白い角丸の箱に橙の特大の数字＋暗い灰の吹き出しで損失と期限を言う"
+      ],
+      "replace_required": [
+        "見出し・コピー",
+        "平均受給額の数値",
+        "雇用保険・年度予算の主張",
+        "イラスト人物・棒グラフ"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C06",
+      "source_section": "U6",
+      "name": "助成金と補助金の違い",
+      "role": "比較",
+      "reusable_structure": [
+        "四隅に点のある枠＋対比の見出し（語に枠）＋左右のアイコン＋短い比較文。表ではなく文章で対比する"
+      ],
+      "replace_required": [
+        "見出し・比較の文言",
+        "制度の説明内容",
+        "アイコン"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C07",
+      "source_section": "U7",
+      "name": "Matchが選ばれる理由（Point 01〜05）",
+      "role": "特徴",
+      "reusable_structure": [
+        "『Point 0n』ラベル＋大きな青の見出し＋マーカー付きの説明＋カプセル形の写真を、PCは左右交互、SPは縦積みで反復する5ブロック"
+      ],
+      "replace_required": [
+        "見出し・説明の文言",
+        "年間30,000社・6,000件・98%・最大2,500万円などの数値",
+        "ストック写真・アイコン",
+        "『業界最安値』などの主張"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C08",
+      "source_section": "U8",
+      "name": "相談CTAの帯（2回目）",
+      "role": "CTA",
+      "reusable_structure": [
+        "同一のCTA帯（濃紺背景＋水色／橙の二択）を、ページ内で複数回、区切りとして繰り返す"
+      ],
+      "replace_required": [
+        "見出し・注記の文言",
+        "ボタンの文言・リンク先",
+        "電話番号"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C09",
+      "source_section": "U9",
+      "name": "助成金受給実績（4件）",
+      "role": "実績",
+      "reusable_structure": [
+        "水色の丸の人物アイコンがカードに重なる＋濃紺のピル形ラベル＋橙の大きな金額の4カード。PCは2×2、SPは縦1列。下に街並みのイラストの帯で、章を切り替える"
+      ],
+      "replace_required": [
+        "地域・業種・従業員数・受給額の実績",
+        "人物イラスト",
+        "街並みのイラスト"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C10",
+      "source_section": "U10",
+      "name": "よくあるご質問（Q&A 5問）",
+      "role": "FAQ",
+      "reusable_structure": [
+        "濃紺の丸のQ＋質問文＋右端の＋／−のアコーディオンカードを縦に並べ、1問目だけ開く。背景は水色"
+      ],
+      "replace_required": [
+        "質問・回答の文言",
+        "運営固有の条件（雇用保険・従業員数）"
+      ],
+      "rights_status": "reference_only"
+    },
+    {
+      "id": "C11",
+      "source_section": "U11",
+      "name": "お問合せフォーム（5項目）＋フッター",
+      "role": "CTA",
+      "reusable_structure": [
+        "灰のフォーム箱＋必須（橙）／任意（紺）のラベル＋水色の確認ボタン。入力を5項目に絞り、確認画面を挟む（ボタン文言『送信内容を確認』）"
+      ],
+      "replace_required": [
+        "見出し・説明の文言",
+        "入力項目",
+        "ボタンの文言・送信先",
+        "フッターの表記"
+      ],
+      "rights_status": "reference_only"
+    }
+  ],
+  "reusable_principles": [
+    "水色のブロブ背景＋橙の訴求（数値）＋濃紺の極太見出し（黄マーカー）＋人物イラスト＋『保証』ラベル付きの濃紺の帯のFV",
+    "濃紺の全幅の帯に、無料・特典の注記と、二択ボタン（Web：水色／電話：橙）を置くCTA帯（FV直下・中盤・終盤で反復）",
+    "灰色の大きな吹き出し（四隅の金具）に、丸アイコン付きの白カード2枚で、サービスを定義する構成と、先の3人のイラスト",
+    "『よくある誤解（丸写真×3）』→『それ、本当は間違っています！』→数字の箱→損失の吹き出し→制度の比較ボックス、という誤解の訂正の流れ",
+    "『Point 0n』ラベル＋大きな見出し＋マーカー付きの説明＋カプセル形の写真を、PCは左右交互・SPは縦積みにする5つの理由",
+    "人物アイコンが重なるカードに、ピル形ラベルと橙の金額を並べる実績4件（PC 2×2／SP 1列）",
+    "濃紺のQ丸＋質問＋＋／−のアコーディオン（1問目のみ開く）のFAQ",
+    "灰の箱に、必須（橙）／任意（紺）ラベルの5項目＋水色の確認ボタンの、最小のフォーム"
+  ],
+  "cta_patterns": [
+    {
+      "name": "相談CTAの帯（無料相談＋問い合わせ／電話）",
+      "description": "【PC】濃紺の全幅の帯に、白い箱の『ご相談・お問い合わせ無料！』＋『まずはお気軽にご連絡下さい！』（左右に斜線）、小さく『お問合せいただいた方におおよその助成金額が算出できる「30秒無料診断ツール」もご提供しております。』（『30秒無料診断ツール』は黄）。下に水色のボタン『助成金について問い合わせる』と橙のボタン（電話…"
+    },
+    {
+      "name": "相談CTAの帯（2回目）",
+      "description": "【PC】U2と同じ濃紺の帯：『ご相談・お問い合わせ無料！まずはお気軽にご連絡下さい！』＋『30秒無料診断ツール』の注記＋水色の『助成金について問い合わせる』と橙の電話ボタン『098-882-1555』。【SP】全幅で縦2つ。内容・配置はU2と同じ（繰り返し）"
+    },
+    {
+      "name": "お問合せフォーム（5項目）＋フッター",
+      "description": "【PC】白〜水色のブロブ背景。見出し『お問合せフォーム』（下に短い線）、『どの助成金が対象かまずはお気軽にお問い合わせください。お問合せいただいた方におおよその助成金額が算出できる「無料診断ツール」もご提供しております。』。灰のフォーム箱に、貴社名（任意・紺ラベル）、ご担当者様名・お電話番号・メールアドレス（必須・橙ラ…"
+    }
+  ],
+  "trust_patterns": [
+    {
+      "name": "助成金受給実績（4件）",
+      "description": "【PC】白背景に、見出し『助成金受給実績』（下に短い線）。2×2のカード。各カードは、水色の丸に収めた人物イラスト（建設業の男性／歯科医の男性／飲食業の男性／サービス業の女性）が、灰のカードに一部重なり、濃紺のピル形ラベル（『鹿児島県 建設業』『従業員数：2名』）、『受給額：346万円』（橙の大きな数字、点線下線）。他…",
+      "required_caution": "実績・写真・数値は、案件ごとの権利と現在性の確認が必要。"
+    },
+    {
+      "name": "よくあるご質問（Q&A 5問）",
+      "description": "【PC】水色の背景に、見出し『よくあるご質問 Q&A』。白い角丸のカード5つ：1問目『助成金は返済が必要でしょうか。』は開いた状態で、点線の下に『助成金の返済は不要です。』。他4問（『書類の準備や手間をできるだけ抑えたいんですが・・・』『雇用保険に未加入の場合は助成金は受給できないでしょうか。』『社員2名の小さい会社で…",
+      "required_caution": "実績・写真・数値は、案件ごとの権利と現在性の確認が必要。"
+    }
+  ],
+  "pricing_patterns": [],
+  "visual_patterns": [
+    {
+      "name": "color_legibility",
+      "description": "水色（背景）・濃紺（見出し・CTA帯・信頼）・水色（Webボタン）・橙（電話ボタン・数字）・黄（マーカー）の役割分担が一貫し、金額・電話の橙が目立つ。本文は濃い灰〜紺で、白・水色背景に対してコントラストは十分。FVの極太見出しは、判読性が高い。弱みは、暗い灰の吹き出し（U5）と灰青のパネル（U4）の白抜き文字が、写真の上で、やや弱い点。水色のボタンの白文字のコントラストも、中程度。"
+    },
+    {
+      "name": "layout_spacing",
+      "description": "コンテンツ幅は約550px（PC、2000px幅の中央）に絞り、余白が広く、カード・吹き出し・カプセル写真の角丸で、柔らかく読みやすい。PCは左右交互、SPは1列に自然に再編集され、タップ領域の大きいボタン（SPは全幅）も確保される。弱みは、PCの中央の幅が狭く、左右の余白が大きい点（2000px画像では、約半分が背景）と、SPの5つの理由の縦の長さ。"
+    },
+    {
+      "name": "visual_brand",
+      "description": "水色のブロブ・幾何学・街並みのイラストで、堅い制度の商材を、親しみやすく・清潔に見せる。人物イラストと丸アイコンの統一感は高い。一方で、Point 01〜05の写真（指を立てるスーツの男性・コインの瓶・日本地図・書類の手元・笑顔の2人）は、汎用のストック写真で、助成金・Matchの独自性・固有の人物が見えない。FVの人物もイラストで、実在の専門家の顔が出ない。"
+    }
+  ],
+  "rights_excluded": [
+    "ロゴ・ブランド名（会社のサプリ21／Match）",
+    "人物イラスト・アイコン・街並みのイラスト",
+    "ストック写真・実績の事例",
+    "コピー（数値・保証・No.1などの主張を含む）",
+    "電話番号・診断ツール・実績額",
+    "固有の制度の説明・FAQの文言"
+  ],
+  "unverified_claims": [
+    {
+      "claim": "『返金保証』の条件（何が返金されるか・期間・対象）",
+      "status": "unverified",
+      "required_basis": [
+        "運営元・規約で、返金保証の対象と条件を確認する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "『平均受給額 約300万円』の算出根拠（母数・期間・対象制度）",
+      "status": "unverified",
+      "required_basis": [
+        "運営元に、集計の定義・時点を確認する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U1"
+    },
+    {
+      "claim": "『30秒無料診断ツール』の実体（入力項目・結果の見せ方・問い合わせとの関係）",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら、ツールの画面・入力項目を確認する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "電話ボタンのタップ動作（SPでの発信）と受付時間",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで、電話リンクと受付時間の表記を確認する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U2"
+    },
+    {
+      "claim": "『国内No.1』の根拠（調査主体・時点・比較範囲）",
+      "status": "unverified",
+      "required_basis": [
+        "運営元に、調査の出典と条件を確認する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "『全国60所のグループ社労士』の実体（所属・体制）と、『不正受給の心配がない』の範囲",
+      "status": "unverified",
+      "required_basis": [
+        "運営元・社労士事務所の公開情報で確認する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U3"
+    },
+    {
+      "claim": "3つの誤解が、実際の読者の声・調査に基づくかどうか",
+      "status": "unverified",
+      "required_basis": [
+        "運営元に、問い合わせの傾向・ヒアリングの根拠を確認する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U4"
+    },
+    {
+      "claim": "『年度予算に達し次第終了』の対象制度と期限",
+      "status": "unverified",
+      "required_basis": [
+        "運営元・制度の公式情報で、対象制度と受付期間を確認する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "『雇用保険が財源』『どんな企業でも受給可能』の範囲と例外（要件）",
+      "status": "unverified",
+      "required_basis": [
+        "制度の要件（雇用保険加入・要件）を一次情報で確認する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U5"
+    },
+    {
+      "claim": "『助成金は誰でも受給できる』『返還の必要は全くない』の例外（要件・不正受給時の返還など）",
+      "status": "unverified",
+      "required_basis": [
+        "制度の要件・不支給／返還の条件を一次情報で確認する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U6"
+    },
+    {
+      "claim": "『診断実績年間30,000社』『申請6,000件』『98%の受給率』『業界最安値』の定義・出典・時点",
+      "status": "unverified",
+      "required_basis": [
+        "運営元に、集計の定義と根拠資料を確認する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "写真が実在のスタッフ・顧客か、ストック写真か",
+      "status": "unverified",
+      "required_basis": [
+        "運営元・素材サイトで、写真の出所と許諾を確認する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U7"
+    },
+    {
+      "claim": "CTAがスクロールに追従するか（固定表示の有無）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで、スクロール時の固定表示の有無を確認する"
+      ],
+      "source_unit": "U8"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U8"
+    },
+    {
+      "claim": "事例の実在性・掲載許諾・受給時期・対象となった助成金名",
+      "status": "unverified",
+      "required_basis": [
+        "運営元に、事例の出所・許諾・時点と、全体の分布を確認する"
+      ],
+      "source_unit": "U9"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U9"
+    },
+    {
+      "claim": "閉じた4問の回答の内容",
+      "status": "unverified",
+      "required_basis": [
+        "実ページでアコーディオンを開いて確認する"
+      ],
+      "source_unit": "U10"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U10"
+    },
+    {
+      "claim": "個人情報の取扱い・プライバシーポリシー・同意の表示",
+      "status": "unverified",
+      "required_basis": [
+        "実ページで、フォーム下・フッターのリンクを確認する"
+      ],
+      "source_unit": "U11"
+    },
+    {
+      "claim": "送信後の流れ（返信の目安・営業連絡の有無）",
+      "status": "unverified",
+      "required_basis": [
+        "実ページの確認画面・サンクスページを確認する"
+      ],
+      "source_unit": "U11"
+    },
+    {
+      "claim": "運営会社・特定商取引法に基づく表記・所在地",
+      "status": "unverified",
+      "required_basis": [
+        "実ページのフッター・別ページを確認する"
+      ],
+      "source_unit": "U11"
+    },
+    {
+      "claim": "実際のページの動き（スクロール時の表示・アニメーション）・リンク先・実寸／フォント／色の数値",
+      "status": "unverified",
+      "required_basis": [
+        "公開中なら実ページ・保存HTMLで確認する。なければ、デザインツールで計測する"
+      ],
+      "source_unit": "U11"
+    }
+  ],
+  "recommended_use_cases": [],
+  "analysis_notes": {
+    "completion_status": "dis_analysis_done_28ch_pending",
+    "dis_analysis_ref": "DIS-LP-0010",
+    "remaining_limits": [
+      "タグ・訴求・オファーは、28章の分析で確定する",
+      "ライブラリー側の取り込み・28章の分析は未実施（このファイルはDISからの下書き）",
+      "CBS本体への実同期は未実施"
+    ]
+  },
+  "dis_evaluation": {
+    "method": "DIS 9軸（各1〜5点、根拠・確信度つき）",
+    "axes": [
+      {
+        "key": "purpose_fit",
+        "label": "目的適合",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "information_hierarchy",
+        "label": "情報優先順位",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_flow",
+        "label": "視線誘導",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "message_copy",
+        "label": "訴求・コピー",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "trust_safety",
+        "label": "信頼・安心",
+        "score": 3,
+        "confidence": "low"
+      },
+      {
+        "key": "color_legibility",
+        "label": "配色・可読性",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "layout_spacing",
+        "label": "レイアウト・余白",
+        "score": 4,
+        "confidence": "medium"
+      },
+      {
+        "key": "visual_brand",
+        "label": "ビジュアル・ブランド",
+        "score": 3,
+        "confidence": "medium"
+      },
+      {
+        "key": "implementation_reuse",
+        "label": "実装・転用性",
+        "score": 4,
+        "confidence": "medium"
+      }
+    ],
+    "note": "28章の総合点（ヒューリスティック/100）とは別の物差し。足したり平均したりしない。"
+  },
+  "cbs_sync": {
+    "status": "draft_from_dis",
+    "knowledge_path": "knowledge/lp/LP-0007.json",
+    "exported_at": null,
+    "actual_cbs_import": "not_synced"
+  }
+}
