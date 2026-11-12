@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T22:21:01.450Z",
+  "updatedAt": "2026-11-12T16:26:07.918Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -4055,6 +4055,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-11T22:21:01.450Z"
+    },
+    {
+      "id": "GR-0234",
+      "title": "感謝祭_裏面",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F521145dd99e5f8e5aab5308ec2a02238%2F521145dd99e5f8e5aab5308ec2a02238-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30672",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F521145dd99e5f8e5aab5308ec2a02238%2F521145dd99e5f8e5aab5308ec2a02238-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-12T16:26:07.918Z"
+    },
+    {
+      "id": "GR-0235",
+      "title": "ハッピーアワーポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F16a02d4ac6f2d09aa66864f0ee4d3c18%2F16a02d4ac6f2d09aa66864f0ee4d3c18-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-27947",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F16a02d4ac6f2d09aa66864f0ee4d3c18%2F16a02d4ac6f2d09aa66864f0ee4d3c18-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-12T16:26:07.918Z"
+    },
+    {
+      "id": "GR-0236",
+      "title": "鍋背景の白文字忘年会バナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F991915f769d2db4667ccb36ffb644d5e%2F991915f769d2db4667ccb36ffb644d5e-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-17091",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F991915f769d2db4667ccb36ffb644d5e%2F991915f769d2db4667ccb36ffb644d5e-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-12T16:26:07.918Z"
+    },
+    {
+      "id": "GR-0237",
+      "title": "シンプル上品な雑貨店名刺デザイン",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F45b4e0e87f2b4e1039788f4d39aaeb4c%2F45b4e0e87f2b4e1039788f4d39aaeb4c-400.webp&w=256&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29788",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F45b4e0e87f2b4e1039788f4d39aaeb4c%2F45b4e0e87f2b4e1039788f4d39aaeb4c-400.webp&w=256&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-12T16:26:07.918Z"
+    },
+    {
+      "id": "GR-0238",
+      "title": "金色の不動産のロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/504846b914af103064a36e9087d3a13d/504846b914af103064a36e9087d3a13d-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3065",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/504846b914af103064a36e9087d3a13d/504846b914af103064a36e9087d3a13d-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-12T16:26:07.918Z"
     },
     {
       "id": "ILAC-0001",
@@ -8498,6 +8558,30 @@
       "materialId": "PAT-0090",
       "authorProfileUrl": null,
       "reservedAt": "2026-11-11T22:21:01.450Z"
+    },
+    {
+      "id": "PAT-0091",
+      "title": "Mirrora CLINICに見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://mirrora.clinic/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/mirroraclinic/",
+      "imageUrl": null,
+      "materialId": "PAT-0091",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-12T16:26:07.918Z"
+    },
+    {
+      "id": "PAT-0092",
+      "title": "感謝祭_裏面に見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F521145dd99e5f8e5aab5308ec2a02238%2F521145dd99e5f8e5aab5308ec2a02238-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30672",
+      "imageUrl": null,
+      "materialId": "PAT-0092",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-12T16:26:07.918Z"
     },
     {
       "id": "PHAC-0001",
@@ -15003,6 +15087,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-11T22:21:01.450Z"
+    },
+    {
+      "id": "WB-0079",
+      "title": "Mirrora CLINIC",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://mirrora.clinic/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/mirroraclinic/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/mirroraclinic_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-12T16:26:07.918Z"
+    },
+    {
+      "id": "WB-0080",
+      "title": "元素化思考 | CREATIVE CLASS",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://creative-class.site/kodama-001-archive/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/creativeclass-001archive/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/creativeclasskodama001archive_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-12T16:26:07.918Z"
     }
   ]
 }
