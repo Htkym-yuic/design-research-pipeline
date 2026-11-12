@@ -1,0 +1,1460 @@
+{
+ "_note": "Sectionの型の見本（案）。画像は見ず、分析の文章から判断した。basis: explicit=文章が型とデバイスを明記／inferred=構造の記述から推定／role-only=役割・名称のみ（低確信）。sp が null のものは、SPの記述がない（未確認）。型は docs/SECTION_LAYOUT_ARCHETYPES_DRAFT.md の第2版。divider・diagram は新規候補。",
+ "generatedAt": "2026-11-12",
+ "items": {
+  "LP-0002": {
+   "C01": {
+    "role": "FV",
+    "name": "FV（商品名・露出実績・品質ラベル・36食の構成）",
+    "basis": "explicit",
+    "pc": {
+     "type": "fv-split",
+     "modifiers": [
+      "縦書き"
+     ]
+    },
+    "sp": {
+     "type": "fv-center",
+     "modifiers": []
+    },
+    "note": "PC左右分割／SP縦積み"
+   },
+   "C02": {
+    "role": "実績",
+    "name": "著名人コメント（『有名女優も その美味しさを 大絶賛！』）",
+    "basis": "inferred",
+    "pc": {
+     "type": "testimonial-cards",
+     "columns": 1,
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "引用カード"
+   },
+   "C03": {
+    "role": "実績",
+    "name": "レビュー評価（4.79/5 獲得！）",
+    "basis": "inferred",
+    "pc": {
+     "type": "proof-band",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "評価バッジ（数値・星）"
+   },
+   "C04": {
+    "role": "実績",
+    "name": "購入者の声（苦手な方にもオススメ／大好きな味がまた食べられる嬉しさ）",
+    "basis": "inferred",
+    "pc": {
+     "type": "testimonial-cards",
+     "columns": 2,
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "購入者の声2件"
+   },
+   "C05": {
+    "role": "その他",
+    "name": "章扉（金山納豆 選ばれる理由）",
+    "basis": "inferred",
+    "pc": {
+     "type": "divider",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "章扉。新規候補の型"
+   },
+   "C06": {
+    "role": "特徴",
+    "name": "理由01 奇跡の水がもたらす風味",
+    "basis": "inferred",
+    "pc": {
+     "type": "numbered-list",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "番号＋見出し＋本文＋写真（01〜05）"
+   },
+   "C07": {
+    "role": "ベネフィット",
+    "name": "理由02 納豆のイメージが変わる ニオイ控えめ",
+    "basis": "explicit",
+    "pc": {
+     "type": "numbered-list",
+     "modifiers": [
+      "左右交互"
+     ]
+    },
+    "sp": null,
+    "note": "左右反転で交互"
+   },
+   "C08": {
+    "role": "特徴",
+    "name": "理由03 豆にこだわり 味にこだわる",
+    "basis": "inferred",
+    "pc": {
+     "type": "numbered-list",
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C09": {
+    "role": "ベネフィット",
+    "name": "理由04 健康的な毎日にアプローチする 栄養の宝庫",
+    "basis": "inferred",
+    "pc": {
+     "type": "numbered-list",
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C10": {
+    "role": "特徴",
+    "name": "理由05 冷凍で最長60日保存（保存方法・解凍方法）",
+    "basis": "role-only",
+    "pc": {
+     "type": "flow-steps",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "保存手順（パターン1/2）。混在で確信度は低め"
+   },
+   "C11": {
+    "role": "その他",
+    "name": "アレンジレシピ（納豆パスタ）",
+    "basis": "inferred",
+    "pc": {
+     "type": "flow-steps",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "レシピ step1〜3"
+   },
+   "C12": {
+    "role": "流れ",
+    "name": "最短発送（当日12時まで翌営業日発送／工場から0日で発送／製造から最短日で到着）",
+    "basis": "explicit",
+    "pc": {
+     "type": "cards",
+     "columns": 3,
+     "modifiers": []
+    },
+    "sp": {
+     "type": "cards",
+     "columns": 1,
+     "modifiers": []
+    },
+    "note": "PC3カード横並び／SP時系列で縦（旧分析の記述）"
+   },
+   "C13": {
+    "role": "商品紹介",
+    "name": "商品詳細（原材料・内容量・賞味期限・保存方法）",
+    "basis": "inferred",
+    "pc": {
+     "type": "info-table",
+     "modifiers": [
+      "斜めの区切り"
+     ]
+    },
+    "sp": null,
+    "note": "商品仕様の2列表"
+   }
+  },
+  "LP-0003": {
+   "C01": {
+    "role": "FV",
+    "name": "FV（実績帯・糖質配慮の見出し・4食トレー）",
+    "basis": "explicit",
+    "pc": {
+     "type": "fv-split",
+     "modifiers": []
+    },
+    "sp": {
+     "type": "fv-center",
+     "modifiers": []
+    },
+    "note": "PC左右分割／SP縦積み"
+   },
+   "C02": {
+    "role": "特徴",
+    "name": "特徴2点（豊富な食材・自由に購入）",
+    "basis": "inferred",
+    "pc": {
+     "type": "cards",
+     "columns": 2,
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "紙メモ風カード2枚"
+   },
+   "C03": {
+    "role": "商品紹介",
+    "name": "メニュー4点（カロリー・糖質つき）",
+    "basis": "explicit",
+    "pc": {
+     "type": "cards",
+     "columns": 2,
+     "modifiers": []
+    },
+    "sp": {
+     "type": "cards",
+     "columns": 1,
+     "modifiers": []
+    },
+    "note": "PC2×2／SP縦1列"
+   },
+   "C04": {
+    "role": "CTA",
+    "name": "価格のお得提示＋CTA（1回目）",
+    "basis": "inferred",
+    "pc": {
+     "type": "cta-block",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "価格＋ボタンのブロック（3回再掲）"
+   },
+   "C05": {
+    "role": "悩み提起",
+    "name": "悩み提起（食生活の悩み・糖質の黒板）",
+    "basis": "inferred",
+    "pc": {
+     "type": "problem-checklist",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "吹き出し＋黒板風チェックリスト"
+   },
+   "C06": {
+    "role": "解決策",
+    "name": "解決策（気くばり御膳ならコントロール可能）",
+    "basis": "role-only",
+    "pc": {
+     "type": "text-block",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "悩み→解決の切替。型は低確信"
+   },
+   "C07": {
+    "role": "特徴",
+    "name": "『気くばり御膳』って？＋気くばりPOINT 01〜04",
+    "basis": "inferred",
+    "pc": {
+     "type": "numbered-list",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "番号つきカード4枚"
+   },
+   "C08": {
+    "role": "共感",
+    "name": "悩みの再提示＋『おいしくサポートします』",
+    "basis": "role-only",
+    "pc": {
+     "type": "problem-checklist",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "悩みの再提示"
+   },
+   "C09": {
+    "role": "特徴",
+    "name": "3つのこだわり（おいしさ・商品・品質）",
+    "basis": "explicit",
+    "pc": {
+     "type": "split-alternate",
+     "modifiers": []
+    },
+    "sp": {
+     "type": "numbered-list",
+     "modifiers": []
+    },
+    "note": "PC左右交互／SP縦積み"
+   },
+   "C10": {
+    "role": "CTA",
+    "name": "価格のお得提示＋CTA（2回目）",
+    "basis": "inferred",
+    "pc": {
+     "type": "cta-block",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "CTAの再掲"
+   },
+   "C11": {
+    "role": "実績",
+    "name": "お客様の声（4件）",
+    "basis": "inferred",
+    "pc": {
+     "type": "testimonial-cards",
+     "columns": 2,
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "PC2×2"
+   },
+   "C12": {
+    "role": "FAQ",
+    "name": "よくあるご質問（3件）",
+    "basis": "inferred",
+    "pc": {
+     "type": "faq-accordion",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "開閉の記述なし。Q／Aの縦積み"
+   },
+   "C13": {
+    "role": "流れ",
+    "name": "ご注文の流れ（4STEP）",
+    "basis": "inferred",
+    "pc": {
+     "type": "flow-steps",
+     "columns": 4,
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "4STEPカード＋矢印"
+   },
+   "C14": {
+    "role": "CTA",
+    "name": "クロージング（健康的な食習慣を）＋CTA（3回目）＋電話",
+    "basis": "inferred",
+    "pc": {
+     "type": "cta-block",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "クロージング"
+   },
+   "C15": {
+    "role": "フッター",
+    "name": "フッター（会社情報・リンク・コピーライト）",
+    "basis": "inferred",
+    "pc": {
+     "type": "nav-footer",
+     "modifiers": []
+    },
+    "sp": null
+   }
+  },
+  "LP-0004": {
+   "C01": {
+    "role": "FV",
+    "name": "FV（経験年数・大見出し・3つの丸バッジ）",
+    "basis": "explicit",
+    "pc": {
+     "type": "fv-person",
+     "modifiers": []
+    },
+    "sp": {
+     "type": "fv-person",
+     "modifiers": []
+    },
+    "note": "PC人物左・コピー右／SPバッジを写真に重ねる"
+   },
+   "C02": {
+    "role": "共感",
+    "name": "提供者の紹介（narrator・氏名・経歴）",
+    "basis": "role-only",
+    "pc": {
+     "type": "text-block",
+     "modifiers": [
+      "重なり"
+     ]
+    },
+    "sp": null,
+    "note": "提供者の紹介"
+   },
+   "C03": {
+    "role": "実績",
+    "name": "経歴の実績（テレビ・ラジオ・CM・場内MC・その他）",
+    "basis": "explicit",
+    "pc": {
+     "type": "cards",
+     "columns": 2,
+     "modifiers": []
+    },
+    "sp": {
+     "type": "cards",
+     "columns": 1,
+     "modifiers": []
+    },
+    "note": "PC2列／SP1列"
+   },
+   "C04": {
+    "role": "解決策",
+    "name": "表現力の訴求（届ける相手にどのように伝わるか）",
+    "basis": "explicit",
+    "pc": {
+     "type": "split-alternate",
+     "modifiers": []
+    },
+    "sp": {
+     "type": "text-block",
+     "modifiers": []
+    },
+    "note": "PC左右分割／SP写真→テキスト"
+   },
+   "C05": {
+    "role": "その他",
+    "name": "動画枠＋『届く』音声コンテンツの宣言",
+    "basis": "inferred",
+    "pc": {
+     "type": "media-embed",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "動画枠＋宣言"
+   },
+   "C06": {
+    "role": "比較",
+    "name": "スタジオ収録と宅録の比較（安さの理由）",
+    "basis": "explicit",
+    "pc": {
+     "type": "versus-columns",
+     "modifiers": []
+    },
+    "sp": {
+     "type": "versus-columns",
+     "modifiers": []
+    },
+    "note": "×と✓の2枚カード。SPは上下"
+   },
+   "C07": {
+    "role": "特徴",
+    "name": "機材と整音の説明＋7つの音声サンプル",
+    "basis": "inferred",
+    "pc": {
+     "type": "media-embed",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "試聴リスト（再生ボタン×7）"
+   },
+   "C08": {
+    "role": "料金",
+    "name": "料金表（文字数×納期の4段階）",
+    "basis": "explicit",
+    "pc": {
+     "type": "comparison-table",
+     "modifiers": []
+    },
+    "sp": {
+     "type": "comparison-table",
+     "modifiers": []
+    },
+    "note": "文字数×納期の価格マトリクス。SPは5列に圧縮"
+   },
+   "C09": {
+    "role": "ベネフィット",
+    "name": "安価の理由とスピード納品（宅録だから）",
+    "basis": "explicit",
+    "pc": {
+     "type": "split-alternate",
+     "modifiers": []
+    },
+    "sp": {
+     "type": "split-alternate",
+     "modifiers": []
+    },
+    "note": "左右（SPは縦）で交互"
+   },
+   "C10": {
+    "role": "流れ",
+    "name": "依頼の流れ（flow・5STEP）",
+    "basis": "explicit",
+    "pc": {
+     "type": "flow-steps",
+     "columns": 5,
+     "modifiers": []
+    },
+    "sp": {
+     "type": "flow-steps",
+     "columns": 5,
+     "modifiers": []
+    },
+    "note": "縦の5STEP"
+   },
+   "C11": {
+    "role": "実績",
+    "name": "利用者の声（2件）",
+    "basis": "inferred",
+    "pc": {
+     "type": "testimonial-cards",
+     "columns": 2,
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C12": {
+    "role": "共感",
+    "name": "コミュニケーションの約束と相談のきっかけ（3つの質問）",
+    "basis": "inferred",
+    "pc": {
+     "type": "cards",
+     "columns": 3,
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "相談例の円3つ"
+   },
+   "C13": {
+    "role": "CTA",
+    "name": "サンプル音声プレゼント＋二択CTA（Googleフォーム／公式LINE）",
+    "basis": "explicit",
+    "pc": {
+     "type": "cta-block",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "二択CTA（フォーム／LINE）"
+   },
+   "C14": {
+    "role": "FAQ",
+    "name": "注意事項（原稿・納期・納品データ・リテイク・お支払い）",
+    "basis": "inferred",
+    "pc": {
+     "type": "text-block",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "注意事項の5ブロック"
+   },
+   "C15": {
+    "role": "CTA",
+    "name": "SP下部の2ボタン（固定表示に見える帯）",
+    "basis": "explicit",
+    "pc": null,
+    "sp": {
+     "type": "cta-block",
+     "modifiers": []
+    },
+    "note": "SP下部の2ボタン帯"
+   }
+  },
+  "LP-0215": {
+   "C01": {
+    "role": "price_anxiety_reduction_hero",
+    "name": "価格不安解消FV",
+    "basis": "role-only",
+    "pc": {
+     "type": "fv-split",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "手書きのナレッジ。名称のみ"
+   },
+   "C02": {
+    "role": "trust_reason_cards",
+    "name": "選ばれる理由カード",
+    "basis": "role-only",
+    "pc": {
+     "type": "cards",
+     "columns": 3,
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C03": {
+    "role": "price_case_cards",
+    "name": "価格例カード",
+    "basis": "role-only",
+    "pc": {
+     "type": "pricing-cards",
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C04": {
+    "role": "area_proof_cta",
+    "name": "対応エリア＋実績CTA",
+    "basis": "role-only",
+    "pc": {
+     "type": "proof-band",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "実績＋CTAの混在"
+   },
+   "C05": {
+    "role": "service_scope_and_flow",
+    "name": "サービス内容・流れリスト",
+    "basis": "role-only",
+    "pc": {
+     "type": "flow-steps",
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C06": {
+    "role": "faq_to_form_closing",
+    "name": "FAQからフォームへの終盤導線",
+    "basis": "role-only",
+    "pc": {
+     "type": "faq-accordion",
+     "modifiers": []
+    },
+    "sp": null
+   }
+  },
+  "LP-0245": {
+   "C01": {
+    "role": "商品紹介",
+    "name": "PRODUCT（ブランド紹介・メイン写真）",
+    "basis": "explicit",
+    "pc": {
+     "type": "split-alternate",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "左テキスト＋右写真の2カラム"
+   },
+   "C02": {
+    "role": "商品紹介",
+    "name": "商品ラインアップ（3種）",
+    "basis": "explicit",
+    "pc": {
+     "type": "cards",
+     "columns": 3,
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "等間隔の3カラム"
+   },
+   "C03": {
+    "role": "商品紹介",
+    "name": "ORANGINA（主力商品の詳細とサイズ展開）",
+    "basis": "role-only",
+    "pc": {
+     "type": "split-alternate",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "主役＋サイズ別の並び。低確信"
+   },
+   "C04": {
+    "role": "特徴",
+    "name": "FEATURE（おいしさの特徴）",
+    "basis": "inferred",
+    "pc": {
+     "type": "split-alternate",
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C05": {
+    "role": "会社情報",
+    "name": "HISTORY（歴史の年表）",
+    "basis": "explicit",
+    "pc": {
+     "type": "timeline-vertical",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "縦線＋ノード＋年号"
+   },
+   "C06": {
+    "role": "フッター",
+    "name": "SHARE・外部リンク（フッター）",
+    "basis": "inferred",
+    "pc": {
+     "type": "nav-footer",
+     "modifiers": []
+    },
+    "sp": null
+   }
+  },
+  "LP-0246": {
+   "C01": {
+    "role": "FV",
+    "name": "ファーストビュー（開催告知・日時会場）",
+    "basis": "inferred",
+    "pc": {
+     "type": "fv-fullbleed",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "背景写真の上に縦に並べる"
+   },
+   "C02": {
+    "role": "CTA",
+    "name": "申込CTA①（無料申込の期限）",
+    "basis": "explicit",
+    "pc": {
+     "type": "cta-block",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "全幅の濃色帯＋ピル型ボタン"
+   },
+   "C03": {
+    "role": "悩み提起",
+    "name": "課題提起（6つの悩みカード）",
+    "basis": "explicit",
+    "pc": {
+     "type": "cards",
+     "columns": 3,
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "3列×2行の悩みカード"
+   },
+   "C04": {
+    "role": "解決策",
+    "name": "解決の提示（販促EXPOでは）",
+    "basis": "inferred",
+    "pc": {
+     "type": "text-block",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "中央寄せの宣言"
+   },
+   "C05": {
+    "role": "ベネフィット",
+    "name": "販促EXPOでできること（3つの価値）",
+    "basis": "explicit",
+    "pc": {
+     "type": "cards",
+     "columns": 3,
+     "modifiers": [
+      "番号"
+     ]
+    },
+    "sp": null,
+    "note": "3列カード"
+   },
+   "C06": {
+    "role": "商品紹介",
+    "name": "出展ジャンル（6分類）",
+    "basis": "explicit",
+    "pc": {
+     "type": "cards",
+     "columns": 3,
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "3列×2行の写真カード"
+   },
+   "C07": {
+    "role": "特徴",
+    "name": "特設ゾーン（推し活／インバウンド）",
+    "basis": "inferred",
+    "pc": {
+     "type": "split-alternate",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "2カラム"
+   },
+   "C08": {
+    "role": "CTA",
+    "name": "申込CTA②",
+    "basis": "explicit",
+    "pc": {
+     "type": "cta-block",
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C09": {
+    "role": "特徴",
+    "name": "セミナー概要",
+    "basis": "explicit",
+    "pc": {
+     "type": "split-alternate",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "左テキスト＋右写真の2カラム"
+   },
+   "C10": {
+    "role": "特徴",
+    "name": "登壇者一覧（セッション18件前後）",
+    "basis": "inferred",
+    "pc": {
+     "type": "cards",
+     "columns": "4+",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "登壇者カード"
+   },
+   "C11": {
+    "role": "CTA",
+    "name": "申込CTA③（セミナー向け）",
+    "basis": "explicit",
+    "pc": {
+     "type": "cta-block",
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C12": {
+    "role": "特徴",
+    "name": "マーケティングWeekとは（併催の全体像）",
+    "basis": "inferred",
+    "pc": {
+     "type": "diagram",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "全体像の図解。新規候補の型"
+   },
+   "C13": {
+    "role": "ナビ",
+    "name": "9つの専門展ナビ（ボタン）",
+    "basis": "explicit",
+    "pc": {
+     "type": "nav-footer",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "3×3のボタンナビ"
+   },
+   "C14": {
+    "role": "商品紹介",
+    "name": "専門展の詳細（9カード＋スタートアップゲート）",
+    "basis": "explicit",
+    "pc": {
+     "type": "cards",
+     "columns": 2,
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "2列の同型カード"
+   },
+   "C15": {
+    "role": "CTA",
+    "name": "申込CTA④",
+    "basis": "explicit",
+    "pc": {
+     "type": "cta-block",
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C16": {
+    "role": "実績",
+    "name": "過去来場者の声",
+    "basis": "explicit",
+    "pc": {
+     "type": "testimonial-cards",
+     "columns": 2,
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C17": {
+    "role": "流れ",
+    "name": "来場登録の3ステップ",
+    "basis": "explicit",
+    "pc": {
+     "type": "flow-steps",
+     "columns": 3,
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "3列のステップ"
+   },
+   "C18": {
+    "role": "CTA",
+    "name": "申込CTA⑤",
+    "basis": "explicit",
+    "pc": {
+     "type": "cta-block",
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C19": {
+    "role": "会社情報",
+    "name": "アクセスと同時開催展",
+    "basis": "inferred",
+    "pc": {
+     "type": "info-table",
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C20": {
+    "role": "FAQ",
+    "name": "よくある質問（FAQ）",
+    "basis": "inferred",
+    "pc": {
+     "type": "faq-accordion",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "縦積みのQ／A（開閉の記述なし）"
+   },
+   "C21": {
+    "role": "CTA",
+    "name": "申込CTA⑥（最終）",
+    "basis": "explicit",
+    "pc": {
+     "type": "cta-block",
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C22": {
+    "role": "会社情報",
+    "name": "主催者情報",
+    "basis": "inferred",
+    "pc": {
+     "type": "info-table",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "左写真＋右ロゴ・紹介文"
+   },
+   "C23": {
+    "role": "フッター",
+    "name": "注記・フッター",
+    "basis": "explicit",
+    "pc": {
+     "type": "nav-footer",
+     "modifiers": []
+    },
+    "sp": null
+   }
+  },
+  "LP-0247": {
+   "C01": {
+    "role": "FV",
+    "name": "医院名・FV（キャッチ）",
+    "basis": "role-only",
+    "pc": {
+     "type": "fv-fullbleed",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "図形＋切り抜き写真の重ね。低確信"
+   },
+   "C02": {
+    "role": "共感",
+    "name": "共感・ビジョン（なりたい理想）",
+    "basis": "role-only",
+    "pc": {
+     "type": "text-block",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "帯＋白抜き見出し"
+   },
+   "C03": {
+    "role": "ベネフィット",
+    "name": "魅力01（成長：サポート体制）",
+    "basis": "inferred",
+    "pc": {
+     "type": "numbered-list",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "番号つき見出し＋写真＋3列カード"
+   },
+   "C04": {
+    "role": "ベネフィット",
+    "name": "奨学金制度のご案内",
+    "basis": "role-only",
+    "pc": {
+     "type": "text-block",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "お知らせ＋2ボタン"
+   },
+   "C05": {
+    "role": "特徴",
+    "name": "福利厚生ギャラリー（旅行・ユニフォーム）",
+    "basis": "explicit",
+    "pc": {
+     "type": "media-embed",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "スライダー"
+   },
+   "C06": {
+    "role": "ベネフィット",
+    "name": "魅力02（家庭・趣味：社会保険・働き方）",
+    "basis": "inferred",
+    "pc": {
+     "type": "numbered-list",
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C07": {
+    "role": "特徴",
+    "name": "魅力03（品質：設備・医療）",
+    "basis": "explicit",
+    "pc": {
+     "type": "split-alternate",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "左テキスト＋右写真"
+   },
+   "C08": {
+    "role": "会社情報",
+    "name": "院長あいさつ（経歴・資格）",
+    "basis": "role-only",
+    "pc": {
+     "type": "text-block",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "院長あいさつ。低確信"
+   },
+   "C09": {
+    "role": "実績",
+    "name": "先輩の声①（磯和）",
+    "basis": "role-only",
+    "pc": {
+     "type": "testimonial-cards",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "インタビュー形式"
+   },
+   "C10": {
+    "role": "実績",
+    "name": "先輩の声②（上村）",
+    "basis": "role-only",
+    "pc": {
+     "type": "testimonial-cards",
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C11": {
+    "role": "流れ",
+    "name": "歯科衛生士の1日（スケジュール）",
+    "basis": "explicit",
+    "pc": {
+     "type": "timeline-vertical",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "時刻つきカード3列×2行を矢印でつなぐ"
+   },
+   "C12": {
+    "role": "CTA",
+    "name": "医院見学の案内（INTERNSHIPS）",
+    "basis": "inferred",
+    "pc": {
+     "type": "cta-block",
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C13": {
+    "role": "CTA",
+    "name": "ENTRY（応募ボタン）",
+    "basis": "inferred",
+    "pc": {
+     "type": "cta-block",
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C14": {
+    "role": "会社情報",
+    "name": "医院情報・フッター",
+    "basis": "explicit",
+    "pc": {
+     "type": "nav-footer",
+     "modifiers": []
+    },
+    "sp": null
+   }
+  },
+  "LP-0248": {
+   "C01": {
+    "role": "FV",
+    "name": "ファーストビュー（ヒーロー）",
+    "basis": "inferred",
+    "pc": {
+     "type": "fv-center",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "巨大ロゴ＋日時会場"
+   },
+   "C02": {
+    "role": "その他",
+    "name": "NEWS（お知らせ）",
+    "basis": "inferred",
+    "pc": {
+     "type": "faq-accordion",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "開閉の「+」"
+   },
+   "C03": {
+    "role": "CTA",
+    "name": "SNS誘導バンド",
+    "basis": "explicit",
+    "pc": {
+     "type": "cta-block",
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C04": {
+    "role": "商品紹介",
+    "name": "ABOUT（イベント概要）",
+    "basis": "explicit",
+    "pc": {
+     "type": "text-block",
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C05": {
+    "role": "商品紹介",
+    "name": "コンテンツ一覧タイル",
+    "basis": "inferred",
+    "pc": {
+     "type": "cards",
+     "columns": "4+",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "色付きタイル"
+   },
+   "C06": {
+    "role": "商品紹介",
+    "name": "観光協会PRブース",
+    "basis": "explicit",
+    "pc": {
+     "type": "cards",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "タブ＋共通カード"
+   },
+   "C07": {
+    "role": "商品紹介",
+    "name": "足湯体験",
+    "basis": "inferred",
+    "pc": {
+     "type": "split-alternate",
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C08": {
+    "role": "商品紹介",
+    "name": "溶岩ウォーク",
+    "basis": "inferred",
+    "pc": {
+     "type": "split-alternate",
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C09": {
+    "role": "商品紹介",
+    "name": "TOKYO SYUKAKUSAI KITCHEN",
+    "basis": "inferred",
+    "pc": {
+     "type": "cards",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "折りたたみ（MORE）あり"
+   },
+   "C10": {
+    "role": "商品紹介",
+    "name": "TOKYO SYUKAKUSAI BAR",
+    "basis": "explicit",
+    "pc": {
+     "type": "media-embed",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "カードカルーセル"
+   },
+   "C11": {
+    "role": "商品紹介",
+    "name": "TOKYO SYUKAKUSAI SOUP",
+    "basis": "inferred",
+    "pc": {
+     "type": "split-alternate",
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C12": {
+    "role": "商品紹介",
+    "name": "TOKYO SYUKAKUSAI FOOD（特別メニュー）",
+    "basis": "explicit",
+    "pc": {
+     "type": "cards",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "メニューカード"
+   },
+   "C13": {
+    "role": "商品紹介",
+    "name": "復刻メニュー（カルーセル）",
+    "basis": "explicit",
+    "pc": {
+     "type": "media-embed",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "カードカルーセル"
+   },
+   "C14": {
+    "role": "商品紹介",
+    "name": "TOKYO周穫祭 Select Shop",
+    "basis": "explicit",
+    "pc": {
+     "type": "media-embed",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "中央強調のカルーセル"
+   },
+   "C15": {
+    "role": "商品紹介",
+    "name": "360°VR体験",
+    "basis": "inferred",
+    "pc": {
+     "type": "split-alternate",
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C16": {
+    "role": "商品紹介",
+    "name": "アーカイブ映像",
+    "basis": "inferred",
+    "pc": {
+     "type": "media-embed",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "動画サムネ＋タブ"
+   },
+   "C17": {
+    "role": "商品紹介",
+    "name": "ワークショップ",
+    "basis": "explicit",
+    "pc": {
+     "type": "cards",
+     "columns": 2,
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "日付別2列"
+   },
+   "C18": {
+    "role": "流れ",
+    "name": "参加方法フロー（ワークショップ）",
+    "basis": "explicit",
+    "pc": {
+     "type": "flow-steps",
+     "columns": 4,
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C19": {
+    "role": "商品紹介",
+    "name": "実演コーナー",
+    "basis": "explicit",
+    "pc": {
+     "type": "cards",
+     "columns": 2,
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "日付別2列"
+   },
+   "C20": {
+    "role": "商品紹介",
+    "name": "TOKYO周遊スタンプラリー",
+    "basis": "inferred",
+    "pc": {
+     "type": "flow-steps",
+     "columns": 4,
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C21": {
+    "role": "商品紹介",
+    "name": "TOKYO周穫祭 AI旅診断",
+    "basis": "inferred",
+    "pc": {
+     "type": "split-alternate",
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C22": {
+    "role": "商品紹介",
+    "name": "被災地応援ブース",
+    "basis": "explicit",
+    "pc": {
+     "type": "media-embed",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "県別カードのカルーセル"
+   },
+   "C23": {
+    "role": "実績",
+    "name": "昨年の様子（2025）",
+    "basis": "inferred",
+    "pc": {
+     "type": "proof-band",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "傾いた写真カード＋数字"
+   },
+   "C24": {
+    "role": "CTA",
+    "name": "公式SNS",
+    "basis": "inferred",
+    "pc": {
+     "type": "cards",
+     "columns": 2,
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C25": {
+    "role": "会社情報",
+    "name": "ACCESS",
+    "basis": "explicit",
+    "pc": {
+     "type": "info-table",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "地図＋フロアマップ＋交通手段別カード"
+   },
+   "C26": {
+    "role": "フッター",
+    "name": "フッター",
+    "basis": "explicit",
+    "pc": {
+     "type": "nav-footer",
+     "modifiers": []
+    },
+    "sp": null
+   }
+  },
+  "LP-0249": {
+   "C01": {
+    "role": "ナビ",
+    "name": "ヘッダー（注意喚起）",
+    "basis": "inferred",
+    "pc": {
+     "type": "nav-footer",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "ヘッダー"
+   },
+   "C02": {
+    "role": "FV",
+    "name": "ファーストビュー（キービジュアル＋要約）",
+    "basis": "inferred",
+    "pc": {
+     "type": "fv-center",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "ロックアップ＋要約チップ"
+   },
+   "C03": {
+    "role": "特徴",
+    "name": "キャンペーン概要",
+    "basis": "inferred",
+    "pc": {
+     "type": "text-block",
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C04": {
+    "role": "ベネフィット",
+    "name": "賞品",
+    "basis": "inferred",
+    "pc": {
+     "type": "cards",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "賞品カード"
+   },
+   "C05": {
+    "role": "流れ",
+    "name": "応募方法",
+    "basis": "explicit",
+    "pc": {
+     "type": "flow-steps",
+     "columns": 4,
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C06": {
+    "role": "その他",
+    "name": "応募条件（ラインナップ・規約）",
+    "basis": "inferred",
+    "pc": {
+     "type": "info-table",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "スクロール枠（表・規約）"
+   },
+   "C07": {
+    "role": "その他",
+    "name": "ムービー",
+    "basis": "inferred",
+    "pc": {
+     "type": "media-embed",
+     "modifiers": []
+    },
+    "sp": null
+   },
+   "C08": {
+    "role": "CTA",
+    "name": "ブランドサイトへの導線",
+    "basis": "explicit",
+    "pc": {
+     "type": "cta-block",
+     "modifiers": []
+    },
+    "sp": null,
+    "note": "2つの大ボタン"
+   },
+   "C09": {
+    "role": "フッター",
+    "name": "フッター",
+    "basis": "explicit",
+    "pc": {
+     "type": "nav-footer",
+     "modifiers": []
+    },
+    "sp": null
+   }
+  }
+ }
+}

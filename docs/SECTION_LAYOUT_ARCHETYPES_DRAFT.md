@@ -97,3 +97,30 @@ layoutArchetype: {
 2. 確定した型で、DIS の LP（Section 127件）に、PC・SP それぞれの型を付ける（見本）。
 3. CBS の1,404件への付与は、見本の精度を見てから、方法（自動の推定＋確認）を決める。
 4. 確定した一覧を、分析スキーマ（dis-2.x）と、CBS の読み込みに反映する。
+
+## 7. 見本の結果（DIS の LP 9件・Section 127件）
+データ: `scripts/dis/migration/archetype-sample.json`（案。画像は見ず、分析の文章から付けた）。
+
+### 根拠の強さ
+| 根拠 | 件数 | 意味 |
+|---|---|---|
+| explicit | 53 | 文章が型（とデバイス）を明記している |
+| inferred | 57 | 構造の記述から推定した |
+| role-only | 17 | 役割・名称だけで付けた（低確信） |
+
+### 型の分布（PC側。PC がない1件は SP）
+cards 20／cta-block 15／split-alternate 14／flow-steps 9／text-block 9／media-embed 9／nav-footer 8／testimonial-cards 7／numbered-list 7／info-table 5／faq-accordion 4／fv-split 3／proof-band 3／problem-checklist 2／timeline-vertical 2／fv-fullbleed 2／fv-center 2／fv-person 1／versus-columns 1／comparison-table 1／pricing-cards 1／divider 1（新規候補）／diagram 1（新規候補）
+
+### 分かったこと
+1. **第2版の型で、127件は、2件を除いて収まった。** 収まらなかったのは、章扉（`divider`）と全体像の図解（`diagram`）。新しい型の候補として提案する。
+2. **SP の型は、9件にしか付けられなかった**（文章に SP の記述があるもの）。残りは未確認（`sp: null`）。画像（SP の全体画像）を見て付ける必要がある。
+3. **cards が最多（20件）。** 列数は属性で持つ判断が、妥当だった。ただし、列数が文章から取れないもの（LP-0248 の多くなど）は `columns` が空。
+4. **role-only の17件は信頼しない。** LP-0215（手書きのナレッジ。DIS ではない）の6件と、LP-0247・0248 の役割だけで付けたもの。画像で確認する。
+5. **同じ型が、複数の種類（roleType）にまたがる。** 例: cards は、特徴・実績・悩み提起・商品紹介・料金に使われている。種類と型を別の軸で持つ設計の根拠になった。
+6. **「複合」の Section がある。** 例: LP-0002 の「保存手順」（見出し＋写真＋手順＋解凍枠）、LP-0247 の「魅力01」（番号つき見出し＋大写真＋3列カード）。1つの型に決めにくい。複合を許すか（`primary`＋`secondary`）は、検討事項。
+
+### 新規候補
+| ID | 型 | 定義 | 見本での件数 |
+|---|---|---|---|
+| E1 | divider | 章扉・区切り（見出しと装飾だけで、次の章へ誘導する） | 1（LP-0002 C05） |
+| E2 | diagram | 中心の図とラベルを線でつなぐ図解 | 1（LP-0246 C12） |
