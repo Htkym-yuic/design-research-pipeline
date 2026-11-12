@@ -1,0 +1,41 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0076",
+  "mode": "analysis",
+  "selected_for_deep_analysis": true,
+  "selection_reason": "Web媒体で画像一式（PC/SP Full Page・First View）が揃っており、学校種別・用途タグ付き事例カードと製品カテゴリ×利用目的の二軸ナビゲーションという、他候補にない再利用価値を持つため",
+  "checks": {
+    "first_line": "Yes",
+    "chapters": "Yes",
+    "unit_headings": "Yes",
+    "unit_fields": "Yes",
+    "image_slots": "Yes",
+    "image_evidence": "Yes",
+    "candidate_parity": "Yes",
+    "rights": "Yes",
+    "unknowns": "Yes",
+    "sources": "Yes",
+    "run_record": "Yes",
+    "analysis_complete": "Yes"
+  },
+  "capture_cleanup": {
+    "status": "as_captured",
+    "topAnnouncementRetained": false
+  },
+  "implementation_blueprint": {
+    "status": "reviewed_pending_dropbox_sync",
+    "platform": "WordPress Elementor",
+    "sections": 11,
+    "path": "04_Implementation_Blueprint/WB-0076_elementor_blueprint.md",
+    "diagram": "04_Implementation_Blueprint/WB-0076_elementor_brain_implementation.png",
+    "notionDiagram": "04_Implementation_Blueprint/WB-0076_elementor_brain_implementation_notion.jpg"
+  },
+  "notion": {
+    "status": "pending"
+  },
+  "dropbox": {
+    "status": "not_synced_source_in_daily_intake",
+    "path": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-11/daily-intake/WB-0076/"
+  },
+  "cbs": "not_synced_user_approval_required"
+}

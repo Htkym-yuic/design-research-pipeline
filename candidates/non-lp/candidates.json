@@ -4,7 +4,7 @@
   "candidates": [
     {
       "id": "WB-0075",
-      "status": "candidate",
+      "status": "deep_analysis_completed",
       "mediaType": "Web",
       "sourceKey": "web",
       "title": "KIRINK",
@@ -26,11 +26,12 @@
         "alt": "KIRINK",
         "subtype": null,
         "subtypeLabel": null
-      }
+      },
+      "deepAnalysisPath": "deep-analysis/non-lp/2026-11-11/WB-0075-kirink"
     },
     {
       "id": "WB-0076",
-      "status": "candidate",
+      "status": "deep_analysis_completed",
       "mediaType": "Web",
       "sourceKey": "web",
       "title": "ガイアエデュケーション",
@@ -52,7 +53,8 @@
         "alt": "ガイアエデュケーション",
         "subtype": null,
         "subtypeLabel": null
-      }
+      },
+      "deepAnalysisPath": "deep-analysis/non-lp/2026-11-11/WB-0076-gaiaeducation"
     },
     {
       "id": "GR-0224",

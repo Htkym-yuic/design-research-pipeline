@@ -1,0 +1,29 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0076",
+  "media_type": "WB",
+  "asset_type": "Web",
+  "title": "GAIA EDUCATION（ガイアエデュケーション／学校向け什器・空間デザイン）",
+  "source_name": "SANKOU!",
+  "source_detail_url": "https://sankoudesign.com/web/gaiaeducation/",
+  "capture_url": "https://www.gaia-edu.co.jp/",
+  "official_url": "https://www.gaia-edu.co.jp/",
+  "analysis_status": "completed_and_validated",
+  "analysis_score": 83,
+  "notion_status": "completed",
+  "capture_status": "as_captured",
+  "implementationBlueprint": {
+    "status": "reviewed_pending_dropbox_sync",
+    "platform": "WordPress Elementor",
+    "sections": 11,
+    "path": "04_Implementation_Blueprint/WB-0076_elementor_blueprint.md",
+    "diagram": "04_Implementation_Blueprint/WB-0076_elementor_brain_implementation.png",
+    "notionDiagram": "04_Implementation_Blueprint/WB-0076_elementor_brain_implementation_notion.jpg",
+    "configJson": "04_Implementation_Blueprint/elementor-blueprint.json",
+    "previousDailyProvisional": "Dropbox 99_Needs_Review/2026-11-11/daily-intake/WB-0076/WB-0076_elementor_implementation.json"
+  },
+  "dropbox_status": "not_synced_source_in_daily_intake",
+  "dropbox_path": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-11/daily-intake/WB-0076/",
+  "cbs_status": "candidate_pending_user_approval",
+  "generated_at": "2026-11-11T00:00:00+09:00"
+}

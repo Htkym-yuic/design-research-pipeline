@@ -1,0 +1,25 @@
+{
+  "input": "deep-analysis/non-lp/2026-11-11/WB-0075-kirink/01_Normal_Images/WB-0075_SITE_PC_full.png",
+  "output": "deep-analysis/non-lp/2026-11-11/WB-0075-kirink/04_Implementation_Blueprint/WB-0075_elementor_brain_implementation.png",
+  "notionOutput": "deep-analysis/non-lp/2026-11-11/WB-0075-kirink/04_Implementation_Blueprint/WB-0075_elementor_brain_implementation_notion.jpg",
+  "railWidth": 620,
+  "sections": [
+    {"y":0,"height":230,"label":"00｜グローバルヘッダー＋日付/ロゴ","color":"#d7263d","lines":["親Container: 縦","Header Inner: Nav/言語切替/検索","日付＋KIRINKロゴ＋タグライン","HeaderはSticky想定（未確認）"]},
+    {"y":230,"height":710,"label":"01｜Hero＋年齢確認モーダル＋新着リスト","color":"#d7263d","lines":["2カラムContainer（左Hero／右News）","Heroはボタン＋写真","モーダルは中央オーバーレイ（固有コピー除外）","SP: 縦積み、モーダルは画面中央固定"]},
+    {"y":940,"height":620,"label":"02｜気になるキーワード＋カテゴリ別新着","color":"#ef6c00","lines":["タグチップ横スクロールContainer","色分けアンダーライン見出し＋Loop Grid","PC 2〜3列、SP 1列","カテゴリ数は新着記事数に応じ可変（未確認）"]},
+    {"y":1560,"height":1250,"label":"03｜次のキリン（特集グリッド）","color":"#ef6c00","lines":["見出し＋バッジInner","Loop Grid（PC 2〜3列／SP 1列）","Image／Category／Heading／Tags","カード型は他セクションと共通化"]},
+    {"y":2810,"height":1640,"label":"04｜連載（シリーズカラーカード）","color":"#00875a","lines":["見出し＋バッジInner","Loop Grid 3列×2行（PC）／1列（SP）","シリーズ固有背景色＋イラスト＋「連載を見る」","下部に連載一覧ボタン"]},
+    {"y":4450,"height":2050,"label":"05｜テーマ別新着（6テーマ）","color":"#00875a","lines":["テーマ見出し×最大6（色分けアンダーライン）","表示テーマのみLoop Grid 3列（PC）","ビジネス・経営は単独フル幅行","SP: 新着があるテーマのみ縦積み（未確認の表示条件）"]},
+    {"y":6500,"height":800,"label":"06｜キリン用語集＋Innovate2035バナー","color":"#005bd8","lines":["2カラムContainer","左: 用語集見出し＋一覧ボタン","右: Innovate2035説明カード（角丸破線枠）","SP: 縦積み"]},
+    {"y":7300,"height":200,"label":"07｜KIRINKロゴマーキー帯","color":"#005bd8","lines":["全幅Container、横スクロールアニメーション想定","KIRINKロゴタイプの反復表示","装飾目的、CTAなし"]},
+    {"y":7500,"height":800,"label":"08｜つながるメディア（関連メディアGrid）","color":"#6554c0","lines":["見出し＋バッジInner","Loop Grid 4列×2行（PC）／1列（SP）","Logo Image／Link Text／外部リンクアイコン","グループ各社メディアへの送客"]},
+    {"y":8300,"height":1058,"label":"09｜フッター（Contents/Themes/SNS＋法令）","color":"#6b778c","lines":["角丸背景Container","3カラムNav: Contents／Themes／SNS","法令アイコン＋著作権表記","親会社サイトへのリンク"]}
+  ],
+  "details": [
+    {"x":0,"y":0,"width":1200,"height":70,"label":"Global Nav Container","labelWidth":280},
+    {"x":0,"y":70,"width":1200,"height":160,"label":"日付＋ロゴ＋タグライン","labelWidth":250},
+    {"x":30,"y":230,"width":700,"height":710,"label":"Hero Image＋戻るボタン","labelWidth":230},
+    {"x":370,"y":240,"width":450,"height":400,"label":"年齢確認モーダル（除外対象）","labelWidth":270},
+    {"x":810,"y":300,"width":350,"height":620,"label":"新着記事 Loop List（3件）","labelWidth":230}
+  ]
+}

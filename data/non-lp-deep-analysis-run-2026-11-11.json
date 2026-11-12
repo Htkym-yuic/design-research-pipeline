@@ -1,0 +1,49 @@
+{
+  "schema_version": "drs-weekly-run-1.0",
+  "run_date": "2026-11-11",
+  "run_mode": "daily_auto_deep_analysis_loop",
+  "scope_note": "祐一さんの日次自動実行（深い分析ループ）。対象媒体（LP/Banner/Web/Graphic/Parts）の非LP新規候補10件のうちWB-0075・WB-0076の2件のみを対象とし、1回あたり最大2〜3件の制約を守るためGR-0224〜GR-0228（Graphic, 5件）・CV-0059（Canva, 対象媒体外）・PAT-0087/PAT-0088（Pattern, 対象媒体外）は今回対象外として次回以降に繰り越した。",
+  "selected": [
+    {
+      "id": "WB-0075",
+      "title": "KIRINK",
+      "analysis": "completed",
+      "markdown_validation_warnings": 0,
+      "knowledge_json": "validated",
+      "dropbox_files": 0,
+      "dropbox_status": "not_synced_source_in_daily_intake",
+      "notion": "completed",
+      "implementation_blueprint": "reviewed_pending_dropbox_sync",
+      "cbs_production_sync": "not_applied"
+    },
+    {
+      "id": "WB-0076",
+      "title": "ガイアエデュケーション（GAIA EDUCATION）",
+      "analysis": "completed",
+      "markdown_validation_warnings": 0,
+      "knowledge_json": "validated",
+      "dropbox_files": 0,
+      "dropbox_status": "not_synced_source_in_daily_intake",
+      "notion": "completed",
+      "implementation_blueprint": "reviewed_pending_dropbox_sync",
+      "cbs_production_sync": "not_applied"
+    }
+  ],
+  "deferred_to_next_run": [
+    { "id": "GR-0224", "reason": "1回あたり最大2〜3件の制約のため次回へ繰り越し" },
+    { "id": "GR-0225", "reason": "1回あたり最大2〜3件の制約のため次回へ繰り越し" },
+    { "id": "GR-0226", "reason": "1回あたり最大2〜3件の制約のため次回へ繰り越し" },
+    { "id": "GR-0227", "reason": "1回あたり最大2〜3件の制約のため次回へ繰り越し" },
+    { "id": "GR-0228", "reason": "1回あたり最大2〜3件の制約のため次回へ繰り越し" }
+  ],
+  "excluded_out_of_scope": [
+    { "id": "CV-0059", "reason": "mediaType=Canvaは対象媒体（LP/Banner/Web/Graphic/Parts）に含まれないため対象外" },
+    { "id": "PAT-0087", "reason": "mediaType=Pattern（デザイン原則・パターン）は対象媒体に含まれないため対象外" },
+    { "id": "PAT-0088", "reason": "mediaType=Pattern（デザイン原則・パターン）は対象媒体に含まれないため対象外" }
+  ],
+  "gaps": [
+    "Dropbox正本昇格は未実施（読み取り専用セッションのため）。ユーザー確認後に別工程で行う。",
+    "Notionの対象データベース・ページが本セッションから見つからなかった場合はスキップし、最終報告に明記する。"
+  ],
+  "cbs_production_sync": "not_applied_user_confirmation_required"
+}

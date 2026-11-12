@@ -1,0 +1,25 @@
+{
+  "input": "deep-analysis/non-lp/2026-11-11/WB-0076-gaiaeducation/01_Normal_Images/WB-0076_SITE_PC_full.png",
+  "output": "deep-analysis/non-lp/2026-11-11/WB-0076-gaiaeducation/04_Implementation_Blueprint/WB-0076_elementor_brain_implementation.png",
+  "notionOutput": "deep-analysis/non-lp/2026-11-11/WB-0076-gaiaeducation/04_Implementation_Blueprint/WB-0076_elementor_brain_implementation_notion.jpg",
+  "railWidth": 620,
+  "sections": [
+    {"y":0,"height":900,"label":"00｜Hero（コンセプトコピー＋教室写真）","color":"#d7263d","lines":["全幅Container、中央揃え","Heading（差し色強調）＋Image全幅","縦書き英語タグラインInner","幾何学図形はShape要素で装飾配置"]},
+    {"y":900,"height":660,"label":"01｜ABOUT（会社紹介＋写真ギャラリー）","color":"#ef6c00","lines":["角丸破線枠Container","Heading＋Text（左）／ミニバナー（右上）","写真5枚 Loop Grid（PC横並び／SP 2+1+2）","方眼背景はCSS背景画像で再現"]},
+    {"y":1560,"height":640,"label":"02｜PICK UP（お知らせカルーセル）","color":"#ef6c00","lines":["見出し＋矢印/ドットNav","Loop Carousel 4枚表示（PC）","Image／Heading（Card）","SP: 1〜2枚表示（未確認）"]},
+    {"y":2200,"height":900,"label":"03｜CASE STUDIES（タグ付き事例カード）","color":"#00875a","lines":["水色背景帯Section Container","Loop Grid 3列（PC）／1列（SP）","Image／School Name／Type Tag／用途Tag群","「インタビューあり」バッジはIcon List"]},
+    {"y":3100,"height":100,"label":"04｜キーワードマーキー帯","color":"#00875a","lines":["全幅Container、横スクロール想定","LEARNING/CREATIVE/GROW/CONNECT反復","装飾Icon付きテキスト"]},
+    {"y":3200,"height":950,"label":"05｜PRODUCTS（製品カテゴリGrid）","color":"#005bd8","lines":["見出しInner","Loop Grid 4列×2行（PC）／1列（SP）","Category Label／Image／矢印Icon Button","カテゴリ数8は固定長Repeater想定"]},
+    {"y":4150,"height":700,"label":"06｜目的から製品を探す","color":"#005bd8","lines":["2カラムContainer","左: 目的ボタンList（Icon List）","右: 参考写真コラージュ Grid","ボタンは製品カテゴリへのアンカー想定（未確認）"]},
+    {"y":4850,"height":550,"label":"07｜教室リニューアル・新設CTAバナー","color":"#6554c0","lines":["紺色背景Full Width Container","Image／Heading／ベネフィットTag×3","丸型Button（右下）"]},
+    {"y":5400,"height":550,"label":"08｜GAIA LABO（お客様の声）バナー","color":"#6554c0","lines":["破線枠Container","イラストIcon＋Heading＋吹き出しTag","Text＋丸型Button"]},
+    {"y":5950,"height":550,"label":"09｜NEWS（お知らせ一覧）","color":"#6b778c","lines":["見出しInner","Loop Grid／Posts Widget（3件）","Date／Tag／Title","もっと見るButton"]},
+    {"y":6500,"height":417,"label":"10｜CONTACT＋フッター","color":"#6b778c","lines":["紺色CONTACT Banner Container","Footer: Logo／3カラムLink List","お問い合わせ強調Button","法的リンク＋コーポレートロゴ"]}
+  ],
+  "details": [
+    {"x":0,"y":30,"width":1050,"height":110,"label":"コンセプト見出し（差し色強調）","labelWidth":280},
+    {"x":0,"y":150,"width":1150,"height":760,"label":"Hero Image（全幅教室写真）","labelWidth":230},
+    {"x":1070,"y":80,"width":80,"height":200,"label":"縦書き英語タグライン","labelWidth":220},
+    {"x":130,"y":1040,"width":940,"height":480,"label":"ABOUT Inner Container（破線枠）","labelWidth":260}
+  ]
+}

@@ -15405,6 +15405,13 @@
         "markdownPath": "screenshots/non-lp-candidates/WB-0075-kirink/03_Implementation_Blueprint/WB-0075_elementor_implementation_guide.md",
         "sections": 8,
         "status": "generated_daily_provisional"
+      },
+      "deepAnalysis": {
+        "status": "completed",
+        "analysisDate": "2026-11-11",
+        "score": 81,
+        "path": "deep-analysis/non-lp/2026-11-11/WB-0075-kirink/03_Analysis/WB-0075_full_analysis_drs-deep-1.0_20261111.md",
+        "knowledgeCandidate": "deep-analysis/non-lp/2026-11-11/WB-0075-kirink/03_Analysis/WB-0075_knowledge_candidate.json"
       }
     },
     "WB-0076": {
@@ -15423,6 +15430,13 @@
         "markdownPath": "screenshots/non-lp-candidates/WB-0076-untitled/03_Implementation_Blueprint/WB-0076_elementor_implementation_guide.md",
         "sections": 8,
         "status": "generated_daily_provisional"
+      },
+      "deepAnalysis": {
+        "status": "completed",
+        "analysisDate": "2026-11-11",
+        "score": 83,
+        "path": "deep-analysis/non-lp/2026-11-11/WB-0076-gaiaeducation/03_Analysis/WB-0076_full_analysis_drs-deep-1.0_20261111.md",
+        "knowledgeCandidate": "deep-analysis/non-lp/2026-11-11/WB-0076-gaiaeducation/03_Analysis/WB-0076_knowledge_candidate.json"
       }
     },
     "GR-0224": {

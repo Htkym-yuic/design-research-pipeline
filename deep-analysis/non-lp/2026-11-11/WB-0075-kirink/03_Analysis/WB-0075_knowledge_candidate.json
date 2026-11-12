@@ -1,0 +1,145 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0075",
+  "media_type": "WB",
+  "title": "KIRINK（キリングループ オウンドメディア）",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://sankoudesign.com/web/kirink/",
+    "capture_url": "https://media.kirinholdings.com/",
+    "official_url": "https://media.kirinholdings.com/"
+  },
+  "analysis": {
+    "summary": "キリンホールディングスのオウンドメディア。年齢確認モーダル付きのHero＋新着記事リストから、タグ／カテゴリ／特集／連載／テーマの5軸で同じ記事群を再編集し、回遊を最大化している。グループ内の関連メディアへの送客導線も明確。",
+    "score": {
+      "visual": 16,
+      "clarity": 17,
+      "originality": 11,
+      "reusability": 16,
+      "learning": 13,
+      "evidence": 8,
+      "total": 81
+    },
+    "units": [
+      {
+        "name": "ファーストビュー",
+        "role": "メディア名・タグライン・最新コンテンツを一画面で提示し、年齢確認を行う。",
+        "reuse": "ロゴ＋タグライン＋年齢確認等のコンプライアンスモーダル＋Hero記事＋新着リストの2カラムFV。",
+        "evidence": "PC/SP First View、PC/SP Full Page冒頭部。"
+      },
+      {
+        "name": "ナビゲーション",
+        "role": "モーション、言語切替、新着、連載、メディア説明、検索への分類導線を提供する。",
+        "reuse": "言語・形式切替＋コンテンツ種別ナビ＋検索の組み合わせ。",
+        "evidence": "PC/SP First View。"
+      },
+      {
+        "name": "主要コンテンツ",
+        "role": "同じ記事群をキーワード・カテゴリ・特集・連載という複数の切り口で再提示する。",
+        "reuse": "タグクラウド＋カテゴリ別新着ブロック＋特集グリッド＋連載カラーカードの多層回遊構成。",
+        "evidence": "PC Full Page中盤、SP Full Page該当区間。"
+      },
+      {
+        "name": "証拠・事例",
+        "role": "6テーマによる体系的な分類と、用語集・重要施策への深掘り導線を提供する。",
+        "reuse": "テーマ別カラー分類ブロック＋用語集・重要施策解説への誘導カードの組み合わせ。",
+        "evidence": "PC Full Page中盤〜後半、SP Full Page該当区間。"
+      },
+      {
+        "name": "問い合わせ・コンバージョン",
+        "role": "KIRINKを入口として、グループの他メディアへ送客する。",
+        "reuse": "「関連メディア一覧」セクション（ロゴ＋名称＋外部リンクアイコンのカードグリッド）。",
+        "evidence": "PC Full Page終盤。"
+      },
+      {
+        "name": "フッター",
+        "role": "Contents／Themes／SNSの3カラムで再探索を支援する。",
+        "reuse": "Contents／Themes／SNSの3カラムフッター＋法令表記＋親会社サイトへの導線。",
+        "evidence": "PC Full Page最下部。"
+      }
+    ]
+  },
+  "strengths": [
+    "5軸（タグ／カテゴリ／特集／連載／テーマ）での記事再編集による回遊最大化",
+    "カテゴリ・シリーズごとの色分けによる高い視認性",
+    "酒類メーカーとしての年齢確認・法令表記の構造的組み込み",
+    "関連メディア群への明確な送客導線"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "初回表示でHero記事がほぼ隠れる",
+      "evidence": "年齢確認モーダル＋Cookieバナーが同時表示",
+      "fix": "年齢確認とCookie同意を1つのモーダルに統合するか、Cookieバナーの表示タイミングを遅延させる",
+      "effect": "初回訪問時の記事視認率向上",
+      "metric": "モーダル閉鎖後のHero記事クリック率"
+    },
+    {
+      "priority": "P1",
+      "issue": "テーマ別新着の非表示条件が不明瞭",
+      "evidence": "撮影時点で2テーマが非表示",
+      "fix": "新着がないテーマには「現在新着記事はありません」等のプレースホルダーを表示",
+      "effect": "欠落ではなく仕様であることの明確化",
+      "metric": "テーマ別新着セクションの直帰率"
+    },
+    {
+      "priority": "P2",
+      "issue": "分類軸が多く全体像を把握しにくい",
+      "evidence": "タグ／カテゴリ／特集／連載／テーマの5種類が並立",
+      "fix": "トップページ冒頭に「見つけ方ガイド」のような簡易導線マップを追加",
+      "effect": "新規読者の回遊開始までの時間短縮",
+      "metric": "2記事目到達率"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "コンプライアンスモーダル付きHero＋新着リスト",
+      "keep": "モーダル＋Hero写真＋新着リストの2カラム構成",
+      "replace": "ブランド、写真、年齢確認の具体文言"
+    },
+    {
+      "id": "C02",
+      "name": "カテゴリ別色分けカードグリッド",
+      "keep": "色分けアンダーライン＋カードの型",
+      "replace": "カテゴリ名、配色、記事内容"
+    },
+    {
+      "id": "C03",
+      "name": "連載シリーズのカラーブランディングカード",
+      "keep": "カード単位の固有配色＋イラスト＋「連載を見る」導線",
+      "replace": "シリーズ名、イラスト、配色"
+    },
+    {
+      "id": "C04",
+      "name": "関連メディア送客グリッド（つながるメディア）",
+      "keep": "ロゴ＋名称＋外部リンクアイコンのグリッド",
+      "replace": "各社ロゴ、メディア名"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "KIRINK・キリンホールディングスのロゴ、社員・役員の顔写真、記事見出し・本文、連載名・イラスト、関連メディア各社のロゴ・名称、年齢確認モーダルの法令対応文言",
+    "reusable": "コンプライアンスモーダル付きFVの構成、カテゴリ別色分けカードグリッドの設計、連載カードのシリーズ別カラーブランディング手法、関連メディア送客グリッドの情報設計"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/WB-0075_SITE_PC_full.png",
+      "../01_Normal_Images/WB-0075_SITE_PC_first_view.png",
+      "../01_Normal_Images/WB-0075_SITE_SP_full.png",
+      "../01_Normal_Images/WB-0075_SITE_SP_first_view.png",
+      "https://media.kirinholdings.com/"
+    ],
+    "unknowns": [
+      "section_index_not_generated",
+      "interactive_states_unverified",
+      "dynamic_content_state_unverified",
+      "dom_measurement_unavailable",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

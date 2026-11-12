@@ -1,0 +1,145 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0076",
+  "media_type": "WB",
+  "title": "GAIA EDUCATION（ガイアエデュケーション／学校向け什器・空間デザイン）",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://sankoudesign.com/web/gaiaeducation/",
+    "capture_url": "https://www.gaia-edu.co.jp/",
+    "official_url": "https://www.gaia-edu.co.jp/"
+  },
+  "analysis": {
+    "summary": "学校向け什器・空間デザイン会社のコーポレートサイト。「学びの場を、空間から考える。」という上位コンセプトを掲げ、学校種別・用途タグ付きの導入事例カードと、製品カテゴリ×利用目的の二軸ナビゲーションで検索性を確保している。",
+    "score": {
+      "visual": 17,
+      "clarity": 17,
+      "originality": 10,
+      "reusability": 17,
+      "learning": 13,
+      "evidence": 9,
+      "total": 83
+    },
+    "units": [
+      {
+        "name": "ファーストビュー",
+        "role": "什器ではなく空間デザインという上位概念でブランドコンセプトを提示する。",
+        "reuse": "上位コンセプトコピー＋実写（現場写真）＋英語タグラインの組み合わせによるFV。",
+        "evidence": "PC/SP First View、PC/SP Full Page冒頭部。"
+      },
+      {
+        "name": "ナビゲーション",
+        "role": "製品、空間デザイン、私たちについてへの分類案内を行う。",
+        "reuse": "製品／提案事例／企業情報の3カテゴリ分類ナビ。",
+        "evidence": "PC Full Page最下部（フッター）。"
+      },
+      {
+        "name": "主要コンテンツ",
+        "role": "会社紹介、最新情報、導入事例、製品カテゴリという4種の情報で検討材料を段階的に提示する。",
+        "reuse": "ABOUT紹介＋最新情報カルーセル＋タグ付き事例カード＋カテゴリ別製品グリッドの組み合わせ。",
+        "evidence": "PC Full Page前半〜中盤、SP Full Page該当区間。"
+      },
+      {
+        "name": "証拠・事例",
+        "role": "学校種別・用途タグ付きで導入実績を提示し、利用シーンから製品を再検索できるようにする。",
+        "reuse": "学校種別＋用途タグ付き事例カード＋「目的から探す」ボタン型ナビゲーションの組み合わせ。",
+        "evidence": "PC Full Page中盤。"
+      },
+      {
+        "name": "問い合わせ・コンバージョン",
+        "role": "情報収集段階と意思決定段階の両方を段階的なバナーで受け止める。",
+        "reuse": "色帯バナー（見出し＋ベネフィットタグ＋丸型CTA）の反復と、CONTACTブロックの組み合わせ。",
+        "evidence": "PC Full Page中盤〜終盤。"
+      },
+      {
+        "name": "フッター",
+        "role": "製品／空間デザイン／私たちについての3カテゴリとお問い合わせへの導線を提供する。",
+        "reuse": "3カテゴリリンク＋強調お問い合わせバナー＋法的リンクのフッター構成。",
+        "evidence": "PC Full Page最下部。"
+      }
+    ]
+  },
+  "strengths": [
+    "什器ではなく「学びの場」という上位コンセプトでの統一",
+    "学校種別・用途タグ付き事例カードによる自校条件との照合しやすさ",
+    "製品カテゴリ軸と利用目的軸の二軸ナビゲーション",
+    "統一フォーマットのCTAバナー反復"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "ヘッダーナビの構造が画像から把握しにくい",
+      "evidence": "Full Page最上部にグローバルナビのテキストリンクが明確に確認できない",
+      "fix": "ヘッダーに製品／空間デザイン／事例／お問い合わせの主要カテゴリを明示する",
+      "effect": "サイト構造の初見理解を向上",
+      "metric": "直帰率、2ページ目到達率"
+    },
+    {
+      "priority": "P1",
+      "issue": "製品カテゴリ（8）と目的ボタン（4）の対応関係が不明瞭",
+      "evidence": "PRODUCTSと「目的から探す」が別セクションで接続情報がない",
+      "fix": "各製品カテゴリカードに対応する「目的」タグを併記する",
+      "effect": "目的起点・製品起点どちらからでも迷わず到達",
+      "metric": "製品詳細ページ到達率"
+    },
+    {
+      "priority": "P2",
+      "issue": "事例と製品の相互導線が弱い",
+      "evidence": "事例タグと製品カテゴリが別々に存在",
+      "fix": "事例カードの用途タグから対応製品カテゴリへ直接リンクする",
+      "effect": "事例から製品検討への回遊強化",
+      "metric": "事例カードクリック後の製品ページ遷移率"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "上位コンセプト型Hero（モノではなくコトを訴求）",
+      "keep": "コンセプトコピー＋現場写真＋英語タグラインの型",
+      "replace": "コピー、写真、タグライン文言"
+    },
+    {
+      "id": "C02",
+      "name": "学校種別・用途タグ付き事例カード",
+      "keep": "写真＋導入先名＋種別タグ＋用途タグ＋追加タグ数表示の型",
+      "replace": "学校名、写真、タグ内容"
+    },
+    {
+      "id": "C03",
+      "name": "製品カテゴリ×利用目的の二軸ナビゲーション",
+      "keep": "カテゴリグリッド＋目的ボタンリストの組み合わせ",
+      "replace": "カテゴリ名、目的文言、製品写真"
+    },
+    {
+      "id": "C04",
+      "name": "色帯CTAバナーの反復（提案・声・問い合わせ）",
+      "keep": "色帯＋見出し＋ベネフィットタグ＋丸型ボタンの型",
+      "replace": "文言、ブランドカラー、遷移先"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "GAIA EDUCATIONロゴ、教室・製品写真、学校名、導入事例の具体的内容、固有コピー、ブランドカラーの具体的な運用",
+    "reusable": "上位コンセプト型Heroの構成、学校種別・用途タグ付き事例カードの設計、製品カテゴリ×利用目的の二軸ナビゲーション、色帯CTAバナーの反復構造"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/WB-0076_SITE_PC_full.png",
+      "../01_Normal_Images/WB-0076_SITE_PC_first_view.png",
+      "../01_Normal_Images/WB-0076_SITE_SP_full.png",
+      "../01_Normal_Images/WB-0076_SITE_SP_first_view.png",
+      "https://www.gaia-edu.co.jp/"
+    ],
+    "unknowns": [
+      "section_index_not_generated",
+      "navigation_not_visible_in_capture",
+      "interactive_states_unverified",
+      "dom_measurement_unavailable",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}
