@@ -2312,6 +2312,18 @@
       "primaryId": "LP-0180",
       "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
       "cbsPolicy": "CBSには、LP-0180の1件に、DISの層として付ける。DIS-LP-0183を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。"
+    },
+    {
+      "disId": "DIS-LP-0184",
+      "libraryNotionPageId": null,
+      "disNotionPageId": null,
+      "canonicalKey": "rdlp:229258",
+      "establishedAt": "2026-11-13",
+      "relation": "same_lp",
+      "libraryId": "LP-0216",
+      "primaryId": "LP-0216",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0216の1件に、DISの層として付ける。DIS-LP-0184を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。"
     }
   ]
 }

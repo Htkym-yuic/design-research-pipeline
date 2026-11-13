@@ -48,6 +48,7 @@
     "dis:reserve-id": "node scripts/dis/reserve-library-id.mjs",
     "dis:draft-legacy": "node scripts/dis/draft-legacy-knowledge.mjs",
     "dis:ingest-library": "node scripts/dis/ingest-library.mjs",
+    "dis:ingest-archive": "node scripts/dis/ingest-archive.mjs",
     "dis:record-progress": "node scripts/dis/record-progress.mjs",
     "dis:crop-units": "node scripts/dis/crop-units.mjs",
     "dis:migrate-to-dis": "node scripts/dis/migrate-to-dis-page.mjs",
