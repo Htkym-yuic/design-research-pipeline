@@ -5884,6 +5884,4686 @@
         }
       },
       "backupFile": "outputs/dis/backup/DIS-LP-0183_20261113T123500Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T12:48:35.361Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0005",
+      "lp": "LP-0002",
+      "status": "done",
+      "pageId": "41624d4f-a671-8124-bdf4-c99711a149cb",
+      "steps": [
+        "アップロード 26枚",
+        "挿入 26枚（全Unit成功）",
+        "削除 画像26枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 679,
+        "byType": {
+          "callout": 1,
+          "heading_2": 44,
+          "heading_3": 44,
+          "image": 36,
+          "paragraph": 17,
+          "bulleted_list_item": 383,
+          "numbered_list_item": 142,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 677,
+        "byType": {
+          "callout": 1,
+          "heading_2": 44,
+          "heading_3": 42,
+          "image": 36,
+          "paragraph": 17,
+          "bulleted_list_item": 383,
+          "numbered_list_item": 142,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0005_20261113T124719Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T12:49:59.429Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0006",
+      "lp": "LP-0003",
+      "status": "done",
+      "pageId": "41624d4f-a671-8195-8e6a-d8372f507c18",
+      "steps": [
+        "アップロード 30枚",
+        "挿入 30枚（全Unit成功）",
+        "削除 画像30枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 736,
+        "byType": {
+          "callout": 1,
+          "heading_2": 43,
+          "heading_3": 46,
+          "image": 40,
+          "paragraph": 17,
+          "bulleted_list_item": 403,
+          "numbered_list_item": 173,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 734,
+        "byType": {
+          "callout": 1,
+          "heading_2": 43,
+          "heading_3": 44,
+          "image": 40,
+          "paragraph": 17,
+          "bulleted_list_item": 403,
+          "numbered_list_item": 173,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0006_20261113T124836Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T12:50:57.226Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0008",
+      "lp": "LP-0005",
+      "status": "done",
+      "pageId": "41624d4f-a671-8198-81d6-f3c465b142c4",
+      "steps": [
+        "アップロード 14枚",
+        "挿入 14枚（全Unit成功）",
+        "削除 画像14枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 483,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 34,
+          "image": 24,
+          "paragraph": 18,
+          "bulleted_list_item": 293,
+          "numbered_list_item": 60,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 481,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 32,
+          "image": 24,
+          "paragraph": 18,
+          "bulleted_list_item": 293,
+          "numbered_list_item": 60,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0008_20261113T125014Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T12:52:05.517Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0010",
+      "lp": "LP-0007",
+      "status": "done",
+      "pageId": "41624d4f-a671-817b-bb2e-d6c4e5724544",
+      "steps": [
+        "アップロード 22枚",
+        "挿入 22枚（全Unit成功）",
+        "削除 画像22枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 665,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 45,
+          "image": 32,
+          "paragraph": 18,
+          "bulleted_list_item": 343,
+          "numbered_list_item": 173,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 663,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 43,
+          "image": 32,
+          "paragraph": 18,
+          "bulleted_list_item": 343,
+          "numbered_list_item": 173,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0010_20261113T125102Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T12:54:19.879Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0012",
+      "lp": "LP-0009",
+      "status": "done",
+      "pageId": "41624d4f-a671-81d4-ace5-e93f56d787c2",
+      "steps": [
+        "アップロード 44枚",
+        "挿入 44枚（全Unit成功）",
+        "削除 画像44枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 1063,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 79,
+          "image": 54,
+          "paragraph": 17,
+          "bulleted_list_item": 377,
+          "numbered_list_item": 485,
+          "heading_1": 1,
+          "table": 9
+        }
+      },
+      "after": {
+        "total": 1061,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 77,
+          "image": 54,
+          "paragraph": 17,
+          "bulleted_list_item": 377,
+          "numbered_list_item": 485,
+          "heading_1": 1,
+          "table": 9
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0012_20261113T125211Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T12:55:21.703Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0014",
+      "lp": "LP-0011",
+      "status": "done",
+      "pageId": "41624d4f-a671-8148-95ff-c3344cc6b825",
+      "steps": [
+        "アップロード 18枚",
+        "挿入 18枚（全Unit成功）",
+        "削除 画像18枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 642,
+        "byType": {
+          "callout": 1,
+          "heading_2": 39,
+          "heading_3": 48,
+          "image": 26,
+          "paragraph": 20,
+          "bulleted_list_item": 222,
+          "numbered_list_item": 271,
+          "heading_1": 1,
+          "table": 14
+        }
+      },
+      "after": {
+        "total": 640,
+        "byType": {
+          "callout": 1,
+          "heading_2": 39,
+          "heading_3": 46,
+          "image": 26,
+          "paragraph": 20,
+          "bulleted_list_item": 222,
+          "numbered_list_item": 271,
+          "heading_1": 1,
+          "table": 14
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0014_20261113T125425Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T12:56:04.603Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0016",
+      "lp": "LP-0013",
+      "status": "done",
+      "pageId": "41624d4f-a671-81d4-81bb-f06dc76797fd",
+      "steps": [
+        "アップロード 12枚",
+        "挿入 12枚（全Unit成功）",
+        "削除 画像12枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 468,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 40,
+          "image": 22,
+          "paragraph": 18,
+          "bulleted_list_item": 218,
+          "numbered_list_item": 117,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 466,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 38,
+          "image": 22,
+          "paragraph": 18,
+          "bulleted_list_item": 218,
+          "numbered_list_item": 117,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0016_20261113T125527Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T12:57:10.971Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0017",
+      "lp": "LP-0014",
+      "status": "done",
+      "pageId": "41624d4f-a671-8157-bbe8-c97cc0f279e6",
+      "steps": [
+        "アップロード 22枚",
+        "挿入 22枚（全Unit成功）",
+        "削除 画像22枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 699,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 55,
+          "image": 32,
+          "paragraph": 17,
+          "bulleted_list_item": 285,
+          "numbered_list_item": 256,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 697,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 53,
+          "image": 32,
+          "paragraph": 17,
+          "bulleted_list_item": 285,
+          "numbered_list_item": 256,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0017_20261113T125605Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T12:58:26.021Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0019",
+      "lp": "LP-0016",
+      "status": "done",
+      "pageId": "41624d4f-a671-81af-8e61-d6514c26cf0d",
+      "steps": [
+        "アップロード 24枚",
+        "挿入 24枚（全Unit成功）",
+        "削除 画像24枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 695,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 55,
+          "image": 34,
+          "paragraph": 21,
+          "bulleted_list_item": 277,
+          "numbered_list_item": 251,
+          "heading_1": 1,
+          "table": 15
+        }
+      },
+      "after": {
+        "total": 693,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 53,
+          "image": 34,
+          "paragraph": 21,
+          "bulleted_list_item": 277,
+          "numbered_list_item": 251,
+          "heading_1": 1,
+          "table": 15
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0019_20261113T125715Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T12:58:59.762Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0020",
+      "lp": "LP-0017",
+      "status": "done",
+      "pageId": "41624d4f-a671-8177-93be-d4abb7fdfa75",
+      "steps": [
+        "アップロード 10枚",
+        "挿入 10枚（全Unit成功）",
+        "削除 画像10枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 497,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 37,
+          "image": 20,
+          "paragraph": 17,
+          "bulleted_list_item": 238,
+          "numbered_list_item": 133,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 495,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 35,
+          "image": 20,
+          "paragraph": 17,
+          "bulleted_list_item": 238,
+          "numbered_list_item": 133,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0020_20261113T125827Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:00:05.968Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0021",
+      "lp": "LP-0018",
+      "status": "done",
+      "pageId": "41624d4f-a671-8172-a222-e96ebe1c5c39",
+      "steps": [
+        "アップロード 20枚",
+        "挿入 20枚（全Unit成功）",
+        "削除 画像20枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 534,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 42,
+          "image": 30,
+          "paragraph": 19,
+          "bulleted_list_item": 262,
+          "numbered_list_item": 128,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 532,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 40,
+          "image": 30,
+          "paragraph": 19,
+          "bulleted_list_item": 262,
+          "numbered_list_item": 128,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0021_20261113T125900Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:01:02.809Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0022",
+      "lp": "LP-0019",
+      "status": "done",
+      "pageId": "41624d4f-a671-814d-ad3a-df84cbe8e757",
+      "steps": [
+        "アップロード 18枚",
+        "挿入 18枚（全Unit成功）",
+        "削除 画像18枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 499,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 39,
+          "image": 28,
+          "paragraph": 20,
+          "bulleted_list_item": 256,
+          "numbered_list_item": 103,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 497,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 37,
+          "image": 28,
+          "paragraph": 20,
+          "bulleted_list_item": 256,
+          "numbered_list_item": 103,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0022_20261113T130007Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:02:16.759Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0023",
+      "lp": "LP-0020",
+      "status": "done",
+      "pageId": "41624d4f-a671-81ed-b6db-c540f38d9e54",
+      "steps": [
+        "アップロード 24枚",
+        "挿入 24枚（全Unit成功）",
+        "削除 画像24枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 683,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 50,
+          "image": 34,
+          "paragraph": 18,
+          "bulleted_list_item": 298,
+          "numbered_list_item": 226,
+          "heading_1": 1,
+          "table": 15
+        }
+      },
+      "after": {
+        "total": 681,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 48,
+          "image": 34,
+          "paragraph": 18,
+          "bulleted_list_item": 298,
+          "numbered_list_item": 226,
+          "heading_1": 1,
+          "table": 15
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0023_20261113T130103Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:03:29.588Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0024",
+      "lp": "LP-0021",
+      "status": "done",
+      "pageId": "41624d4f-a671-8140-8df3-dc6e535e0d3d",
+      "steps": [
+        "アップロード 22枚",
+        "挿入 22枚（全Unit成功）",
+        "削除 画像22枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 652,
+        "byType": {
+          "callout": 1,
+          "heading_2": 39,
+          "heading_3": 43,
+          "image": 30,
+          "paragraph": 16,
+          "bulleted_list_item": 242,
+          "numbered_list_item": 266,
+          "heading_1": 1,
+          "table": 14
+        }
+      },
+      "after": {
+        "total": 650,
+        "byType": {
+          "callout": 1,
+          "heading_2": 39,
+          "heading_3": 41,
+          "image": 30,
+          "paragraph": 16,
+          "bulleted_list_item": 242,
+          "numbered_list_item": 266,
+          "heading_1": 1,
+          "table": 14
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0024_20261113T130217Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:04:34.235Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0025",
+      "lp": "LP-0022",
+      "status": "done",
+      "pageId": "41624d4f-a671-81c2-8794-c139573b70e1",
+      "steps": [
+        "アップロード 20枚",
+        "挿入 20枚（全Unit成功）",
+        "削除 画像20枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 587,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 43,
+          "image": 30,
+          "paragraph": 17,
+          "bulleted_list_item": 303,
+          "numbered_list_item": 141,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 585,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 41,
+          "image": 30,
+          "paragraph": 17,
+          "bulleted_list_item": 303,
+          "numbered_list_item": 141,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0025_20261113T130330Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:06:09.498Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0029",
+      "lp": "LP-0026",
+      "status": "done",
+      "pageId": "41624d4f-a671-81a1-8542-d2b5008d2775",
+      "steps": [
+        "アップロード 28枚",
+        "挿入 28枚（全Unit成功）",
+        "削除 画像28枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 633,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 49,
+          "image": 38,
+          "paragraph": 16,
+          "bulleted_list_item": 306,
+          "numbered_list_item": 172,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 631,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 47,
+          "image": 38,
+          "paragraph": 16,
+          "bulleted_list_item": 306,
+          "numbered_list_item": 172,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0029_20261113T130446Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:07:36.127Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0030",
+      "lp": "LP-0027",
+      "status": "done",
+      "pageId": "41624d4f-a671-810b-b3a6-e77c88d3d4dc",
+      "steps": [
+        "アップロード 30枚",
+        "挿入 30枚（全Unit成功）",
+        "削除 画像30枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 671,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 54,
+          "image": 40,
+          "paragraph": 14,
+          "bulleted_list_item": 328,
+          "numbered_list_item": 183,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 669,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 52,
+          "image": 40,
+          "paragraph": 14,
+          "bulleted_list_item": 328,
+          "numbered_list_item": 183,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0030_20261113T130610Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:08:55.386Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0033",
+      "lp": "LP-0030",
+      "status": "done",
+      "pageId": "41624d4f-a671-81d6-b040-f5f4df4b13b8",
+      "steps": [
+        "アップロード 24枚",
+        "挿入 24枚（全Unit成功）",
+        "削除 画像24枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 641,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 46,
+          "image": 34,
+          "paragraph": 17,
+          "bulleted_list_item": 335,
+          "numbered_list_item": 157,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 639,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 44,
+          "image": 34,
+          "paragraph": 17,
+          "bulleted_list_item": 335,
+          "numbered_list_item": 157,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0033_20261113T130745Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:09:39.488Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0034",
+      "lp": "LP-0031",
+      "status": "done",
+      "pageId": "41624d4f-a671-8190-a92f-d1f69ee15617",
+      "steps": [
+        "アップロード 14枚",
+        "挿入 14枚（全Unit成功）",
+        "削除 画像14枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 543,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 40,
+          "image": 24,
+          "paragraph": 16,
+          "bulleted_list_item": 270,
+          "numbered_list_item": 139,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 541,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 38,
+          "image": 24,
+          "paragraph": 16,
+          "bulleted_list_item": 270,
+          "numbered_list_item": 139,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0034_20261113T130856Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:10:52.738Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0040",
+      "lp": "LP-0037",
+      "status": "done",
+      "pageId": "41624d4f-a671-810f-a32f-de8c07caf484",
+      "steps": [
+        "アップロード 18枚",
+        "挿入 18枚（全Unit成功）",
+        "削除 画像18枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 559,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 43,
+          "image": 28,
+          "paragraph": 13,
+          "bulleted_list_item": 280,
+          "numbered_list_item": 140,
+          "heading_1": 1,
+          "table": 13
+        }
+      },
+      "after": {
+        "total": 557,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 41,
+          "image": 28,
+          "paragraph": 13,
+          "bulleted_list_item": 280,
+          "numbered_list_item": 140,
+          "heading_1": 1,
+          "table": 13
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0040_20261113T130958Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:12:48.676Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0044",
+      "lp": "LP-0041",
+      "status": "done",
+      "pageId": "41624d4f-a671-81ad-90d2-eedf324f3ff2",
+      "steps": [
+        "アップロード 38枚",
+        "挿入 38枚（全Unit成功）",
+        "削除 画像38枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 704,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 51,
+          "image": 48,
+          "paragraph": 14,
+          "bulleted_list_item": 346,
+          "numbered_list_item": 187,
+          "heading_1": 1,
+          "table": 16
+        }
+      },
+      "after": {
+        "total": 702,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 49,
+          "image": 48,
+          "paragraph": 14,
+          "bulleted_list_item": 346,
+          "numbered_list_item": 187,
+          "heading_1": 1,
+          "table": 16
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0044_20261113T131109Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:14:23.521Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0052",
+      "lp": "LP-0049",
+      "status": "done",
+      "pageId": "41624d4f-a671-81cd-a8c7-d3e457d72706",
+      "steps": [
+        "アップロード 22枚",
+        "挿入 22枚（全Unit成功）",
+        "削除 画像22枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 562,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 38,
+          "image": 32,
+          "paragraph": 14,
+          "bulleted_list_item": 285,
+          "numbered_list_item": 141,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 560,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 36,
+          "image": 32,
+          "paragraph": 14,
+          "bulleted_list_item": 285,
+          "numbered_list_item": 141,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0052_20261113T131319Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:15:56.663Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0053",
+      "lp": "LP-0050",
+      "status": "done",
+      "pageId": "41624d4f-a671-81a7-a6da-e582aa016b79",
+      "steps": [
+        "アップロード 32枚",
+        "挿入 32枚（全Unit成功）",
+        "削除 画像32枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 633,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 45,
+          "image": 42,
+          "paragraph": 14,
+          "bulleted_list_item": 305,
+          "numbered_list_item": 172,
+          "heading_1": 1,
+          "table": 13
+        }
+      },
+      "after": {
+        "total": 631,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 43,
+          "image": 42,
+          "paragraph": 14,
+          "bulleted_list_item": 305,
+          "numbered_list_item": 172,
+          "heading_1": 1,
+          "table": 13
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0053_20261113T131424Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:17:51.499Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0056",
+      "lp": "LP-0053",
+      "status": "done",
+      "pageId": "41624d4f-a671-81f8-9d37-e35baa1aaaaa",
+      "steps": [
+        "アップロード 36枚",
+        "挿入 36枚（全Unit成功）",
+        "削除 画像36枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 720,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 50,
+          "image": 46,
+          "paragraph": 12,
+          "bulleted_list_item": 326,
+          "numbered_list_item": 232,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 718,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 48,
+          "image": 46,
+          "paragraph": 12,
+          "bulleted_list_item": 326,
+          "numbered_list_item": 232,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0056_20261113T131605Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:18:47.877Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0057",
+      "lp": "LP-0054",
+      "status": "done",
+      "pageId": "41624d4f-a671-814f-9853-dc673e3ae44c",
+      "steps": [
+        "アップロード 18枚",
+        "挿入 18枚（全Unit成功）",
+        "削除 画像18枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 450,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 35,
+          "image": 28,
+          "paragraph": 13,
+          "bulleted_list_item": 208,
+          "numbered_list_item": 112,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 448,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 33,
+          "image": 28,
+          "paragraph": 13,
+          "bulleted_list_item": 208,
+          "numbered_list_item": 112,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0057_20261113T131752Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:20:38.571Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0058",
+      "lp": "LP-0055",
+      "status": "done",
+      "pageId": "41624d4f-a671-8193-a3c4-f608c9a4f6b3",
+      "steps": [
+        "アップロード 40枚",
+        "挿入 40枚（全Unit成功）",
+        "削除 画像40枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 713,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 51,
+          "image": 50,
+          "paragraph": 13,
+          "bulleted_list_item": 347,
+          "numbered_list_item": 198,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 711,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 49,
+          "image": 50,
+          "paragraph": 13,
+          "bulleted_list_item": 347,
+          "numbered_list_item": 198,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0058_20261113T131849Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:23:12.182Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0060",
+      "lp": "LP-0057",
+      "status": "done",
+      "pageId": "41624d4f-a671-8148-b0b6-f244387813d4",
+      "steps": [
+        "アップロード 54枚",
+        "挿入 54枚（全Unit成功）",
+        "削除 画像54枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 699,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 52,
+          "image": 64,
+          "paragraph": 13,
+          "bulleted_list_item": 393,
+          "numbered_list_item": 124,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 697,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 50,
+          "image": 64,
+          "paragraph": 13,
+          "bulleted_list_item": 393,
+          "numbered_list_item": 124,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0060_20261113T132043Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:24:35.323Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0061",
+      "lp": "LP-0058",
+      "status": "done",
+      "pageId": "41624d4f-a671-812d-ba70-efef88171c6c",
+      "steps": [
+        "アップロード 32枚",
+        "挿入 32枚（全Unit成功）",
+        "削除 画像32枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 504,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 39,
+          "image": 42,
+          "paragraph": 13,
+          "bulleted_list_item": 268,
+          "numbered_list_item": 89,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 502,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 37,
+          "image": 42,
+          "paragraph": 13,
+          "bulleted_list_item": 268,
+          "numbered_list_item": 89,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0061_20261113T132313Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:26:01.239Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0063",
+      "lp": "LP-0060",
+      "status": "done",
+      "pageId": "41624d4f-a671-81c1-890e-e1b5b457a836",
+      "steps": [
+        "アップロード 30枚",
+        "挿入 30枚（全Unit成功）",
+        "削除 画像30枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 493,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 37,
+          "image": 40,
+          "paragraph": 13,
+          "bulleted_list_item": 269,
+          "numbered_list_item": 81,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 491,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 35,
+          "image": 40,
+          "paragraph": 13,
+          "bulleted_list_item": 269,
+          "numbered_list_item": 81,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0063_20261113T132439Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:27:07.422Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0064",
+      "lp": "LP-0061",
+      "status": "done",
+      "pageId": "41624d4f-a671-81a3-9848-fa7072f6d64d",
+      "steps": [
+        "アップロード 24枚",
+        "挿入 24枚（全Unit成功）",
+        "削除 画像24枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 557,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 39,
+          "image": 34,
+          "paragraph": 12,
+          "bulleted_list_item": 307,
+          "numbered_list_item": 113,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 555,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 37,
+          "image": 34,
+          "paragraph": 12,
+          "bulleted_list_item": 307,
+          "numbered_list_item": 113,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0064_20261113T132602Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:28:19.806Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0067",
+      "lp": "LP-0064",
+      "status": "done",
+      "pageId": "41624d4f-a671-814f-ace7-ea9d32511da3",
+      "steps": [
+        "アップロード 22枚",
+        "挿入 22枚（全Unit成功）",
+        "削除 画像22枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 519,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 36,
+          "image": 32,
+          "paragraph": 12,
+          "bulleted_list_item": 255,
+          "numbered_list_item": 134,
+          "heading_1": 1,
+          "table": 8
+        }
+      },
+      "after": {
+        "total": 517,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 34,
+          "image": 32,
+          "paragraph": 12,
+          "bulleted_list_item": 255,
+          "numbered_list_item": 134,
+          "heading_1": 1,
+          "table": 8
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0067_20261113T132716Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:31:15.130Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0068",
+      "lp": "LP-0065",
+      "status": "done",
+      "pageId": "41624d4f-a671-8192-a983-c5e94cc41d4c",
+      "steps": [
+        "アップロード 68枚",
+        "挿入 68枚（全Unit成功）",
+        "削除 画像68枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 833,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 61,
+          "image": 78,
+          "paragraph": 12,
+          "bulleted_list_item": 466,
+          "numbered_list_item": 166,
+          "heading_1": 1,
+          "table": 8
+        }
+      },
+      "after": {
+        "total": 831,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 59,
+          "image": 78,
+          "paragraph": 12,
+          "bulleted_list_item": 466,
+          "numbered_list_item": 166,
+          "heading_1": 1,
+          "table": 8
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0068_20261113T132820Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:32:21.191Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0070",
+      "lp": "LP-0067",
+      "status": "done",
+      "pageId": "41624d4f-a671-811a-9618-fc48e7dbfedd",
+      "steps": [
+        "アップロード 22枚",
+        "挿入 22枚（全Unit成功）",
+        "削除 画像22枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 541,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 36,
+          "image": 32,
+          "paragraph": 12,
+          "bulleted_list_item": 268,
+          "numbered_list_item": 143,
+          "heading_1": 1,
+          "table": 8
+        }
+      },
+      "after": {
+        "total": 539,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 34,
+          "image": 32,
+          "paragraph": 12,
+          "bulleted_list_item": 268,
+          "numbered_list_item": 143,
+          "heading_1": 1,
+          "table": 8
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0070_20261113T133119Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:34:14.426Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0073",
+      "lp": "LP-0070",
+      "status": "done",
+      "pageId": "41624d4f-a671-8165-9214-cffc4336a233",
+      "steps": [
+        "アップロード 34枚",
+        "挿入 34枚（全Unit成功）",
+        "削除 画像34枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 592,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 42,
+          "image": 44,
+          "paragraph": 12,
+          "bulleted_list_item": 305,
+          "numbered_list_item": 137,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 590,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 40,
+          "image": 44,
+          "paragraph": 12,
+          "bulleted_list_item": 305,
+          "numbered_list_item": 137,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0073_20261113T133229Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:35:07.195Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0074",
+      "lp": "LP-0071",
+      "status": "done",
+      "pageId": "41624d4f-a671-8158-bcdb-cddd8b0ad304",
+      "steps": [
+        "アップロード 18枚",
+        "挿入 18枚（全Unit成功）",
+        "削除 画像18枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 488,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 34,
+          "image": 28,
+          "paragraph": 12,
+          "bulleted_list_item": 229,
+          "numbered_list_item": 133,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 486,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 32,
+          "image": 28,
+          "paragraph": 12,
+          "bulleted_list_item": 229,
+          "numbered_list_item": 133,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0074_20261113T133415Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:36:22.679Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0080",
+      "lp": "LP-0077",
+      "status": "done",
+      "pageId": "41624d4f-a671-8119-bd32-e4d7edc914d3",
+      "steps": [
+        "アップロード 20枚",
+        "挿入 20枚（全Unit成功）",
+        "削除 画像20枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 519,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 41,
+          "image": 30,
+          "paragraph": 12,
+          "bulleted_list_item": 222,
+          "numbered_list_item": 162,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 517,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 39,
+          "image": 30,
+          "paragraph": 12,
+          "bulleted_list_item": 222,
+          "numbered_list_item": 162,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0080_20261113T133525Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:37:27.801Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0082",
+      "lp": "LP-0079",
+      "status": "done",
+      "pageId": "41624d4f-a671-810b-bab5-f156da0ea6a1",
+      "steps": [
+        "アップロード 22枚",
+        "挿入 22枚（全Unit成功）",
+        "削除 画像22枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 489,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 36,
+          "image": 32,
+          "paragraph": 12,
+          "bulleted_list_item": 225,
+          "numbered_list_item": 132,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 487,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 34,
+          "image": 32,
+          "paragraph": 12,
+          "bulleted_list_item": 225,
+          "numbered_list_item": 132,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0082_20261113T133627Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:38:37.480Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0083",
+      "lp": "LP-0080",
+      "status": "done",
+      "pageId": "41624d4f-a671-812b-a112-f88631924ff6",
+      "steps": [
+        "アップロード 26枚",
+        "挿入 26枚（全Unit成功）",
+        "削除 画像26枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 514,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 39,
+          "image": 36,
+          "paragraph": 12,
+          "bulleted_list_item": 230,
+          "numbered_list_item": 145,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 512,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 37,
+          "image": 36,
+          "paragraph": 12,
+          "bulleted_list_item": 230,
+          "numbered_list_item": 145,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0083_20261113T133728Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:40:09.527Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0086",
+      "lp": "LP-0083",
+      "status": "done",
+      "pageId": "41624d4f-a671-8190-a3e5-e3845687521a",
+      "steps": [
+        "アップロード 34枚",
+        "挿入 34枚（全Unit成功）",
+        "削除 画像34枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 562,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 41,
+          "image": 44,
+          "paragraph": 12,
+          "bulleted_list_item": 295,
+          "numbered_list_item": 118,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 560,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 39,
+          "image": 44,
+          "paragraph": 12,
+          "bulleted_list_item": 295,
+          "numbered_list_item": 118,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0086_20261113T133845Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:41:08.645Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0089",
+      "lp": "LP-0086",
+      "status": "done",
+      "pageId": "41624d4f-a671-8111-89a3-c71875ee9886",
+      "steps": [
+        "アップロード 18枚",
+        "挿入 18枚（全Unit成功）",
+        "削除 画像18枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 434,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 31,
+          "image": 28,
+          "paragraph": 12,
+          "bulleted_list_item": 223,
+          "numbered_list_item": 88,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 432,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 29,
+          "image": 28,
+          "paragraph": 12,
+          "bulleted_list_item": 223,
+          "numbered_list_item": 88,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0089_20261113T134017Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:42:03.691Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0090",
+      "lp": "LP-0087",
+      "status": "done",
+      "pageId": "41624d4f-a671-8163-943d-e2311512c1e4",
+      "steps": [
+        "アップロード 20枚",
+        "挿入 20枚（全Unit成功）",
+        "削除 画像20枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 479,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 35,
+          "image": 30,
+          "paragraph": 12,
+          "bulleted_list_item": 220,
+          "numbered_list_item": 130,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 477,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 33,
+          "image": 30,
+          "paragraph": 12,
+          "bulleted_list_item": 220,
+          "numbered_list_item": 130,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0090_20261113T134109Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:43:19.341Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0091",
+      "lp": "LP-0088",
+      "status": "done",
+      "pageId": "41624d4f-a671-818d-8330-c9cafdc3e2ea",
+      "steps": [
+        "アップロード 28枚",
+        "挿入 28枚（全Unit成功）",
+        "削除 画像28枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 547,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 40,
+          "image": 38,
+          "paragraph": 12,
+          "bulleted_list_item": 256,
+          "numbered_list_item": 149,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 545,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 38,
+          "image": 38,
+          "paragraph": 12,
+          "bulleted_list_item": 256,
+          "numbered_list_item": 149,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0091_20261113T134204Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:45:44.478Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0092",
+      "lp": "LP-0089",
+      "status": "done",
+      "pageId": "41624d4f-a671-81e8-9411-f264ea4f59b1",
+      "steps": [
+        "アップロード 56枚",
+        "挿入 56枚（全Unit成功）",
+        "削除 画像56枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 749,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 56,
+          "image": 66,
+          "paragraph": 12,
+          "bulleted_list_item": 383,
+          "numbered_list_item": 180,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 747,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 54,
+          "image": 66,
+          "paragraph": 12,
+          "bulleted_list_item": 383,
+          "numbered_list_item": 180,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0092_20261113T134320Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:46:58.815Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0093",
+      "lp": "LP-0090",
+      "status": "done",
+      "pageId": "41624d4f-a671-8123-9212-cab5d2ca35e7",
+      "steps": [
+        "アップロード 28枚",
+        "挿入 28枚（全Unit成功）",
+        "削除 画像28枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 548,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 40,
+          "image": 38,
+          "paragraph": 12,
+          "bulleted_list_item": 259,
+          "numbered_list_item": 147,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 546,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 38,
+          "image": 38,
+          "paragraph": 12,
+          "bulleted_list_item": 259,
+          "numbered_list_item": 147,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0093_20261113T134545Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:48:05.107Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0094",
+      "lp": "LP-0091",
+      "status": "done",
+      "pageId": "41624d4f-a671-816b-b6ee-d28189b14c57",
+      "steps": [
+        "アップロード 24枚",
+        "挿入 24枚（全Unit成功）",
+        "削除 画像24枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 507,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 38,
+          "image": 34,
+          "paragraph": 12,
+          "bulleted_list_item": 229,
+          "numbered_list_item": 142,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 505,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 36,
+          "image": 34,
+          "paragraph": 12,
+          "bulleted_list_item": 229,
+          "numbered_list_item": 142,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0094_20261113T134659Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:49:12.123Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0098",
+      "lp": "LP-0095",
+      "status": "done",
+      "pageId": "41624d4f-a671-81da-b62b-f0e420930774",
+      "steps": [
+        "アップロード 20枚",
+        "挿入 20枚（全Unit成功）",
+        "削除 画像20枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 482,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 35,
+          "image": 30,
+          "paragraph": 12,
+          "bulleted_list_item": 219,
+          "numbered_list_item": 134,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 480,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 33,
+          "image": 30,
+          "paragraph": 12,
+          "bulleted_list_item": 219,
+          "numbered_list_item": 134,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0098_20261113T134816Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:51:16.524Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0100",
+      "lp": "LP-0097",
+      "status": "done",
+      "pageId": "41624d4f-a671-81dc-86b5-e463c838c3d9",
+      "steps": [
+        "アップロード 46枚",
+        "挿入 46枚（全Unit成功）",
+        "削除 画像46枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 679,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 50,
+          "image": 56,
+          "paragraph": 12,
+          "bulleted_list_item": 347,
+          "numbered_list_item": 162,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 677,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 48,
+          "image": 56,
+          "paragraph": 12,
+          "bulleted_list_item": 347,
+          "numbered_list_item": 162,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0100_20261113T134916Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:52:30.985Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0101",
+      "lp": "LP-0098",
+      "status": "done",
+      "pageId": "41624d4f-a671-819e-ab8a-ecd65870133b",
+      "steps": [
+        "アップロード 28枚",
+        "挿入 28枚（全Unit成功）",
+        "削除 画像28枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 524,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 38,
+          "image": 38,
+          "paragraph": 12,
+          "bulleted_list_item": 271,
+          "numbered_list_item": 113,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 522,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 36,
+          "image": 38,
+          "paragraph": 12,
+          "bulleted_list_item": 271,
+          "numbered_list_item": 113,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0101_20261113T135117Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:53:32.702Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0102",
+      "lp": "LP-0099",
+      "status": "done",
+      "pageId": "41624d4f-a671-81de-9bad-d2d8128f2c64",
+      "steps": [
+        "アップロード 22枚",
+        "挿入 22枚（全Unit成功）",
+        "削除 画像22枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 493,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 36,
+          "image": 32,
+          "paragraph": 12,
+          "bulleted_list_item": 237,
+          "numbered_list_item": 124,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 491,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 34,
+          "image": 32,
+          "paragraph": 12,
+          "bulleted_list_item": 237,
+          "numbered_list_item": 124,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0102_20261113T135232Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:54:24.439Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0103",
+      "lp": "LP-0100",
+      "status": "done",
+      "pageId": "41624d4f-a671-813c-a71b-d63ee5c96c9b",
+      "steps": [
+        "アップロード 18枚",
+        "挿入 18枚（全Unit成功）",
+        "削除 画像18枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 463,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 33,
+          "image": 28,
+          "paragraph": 12,
+          "bulleted_list_item": 225,
+          "numbered_list_item": 113,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 461,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 31,
+          "image": 28,
+          "paragraph": 12,
+          "bulleted_list_item": 225,
+          "numbered_list_item": 113,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0103_20261113T135333Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:55:30.873Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0104",
+      "lp": "LP-0101",
+      "status": "done",
+      "pageId": "41624d4f-a671-81b4-acbc-d44cbf94feff",
+      "steps": [
+        "アップロード 24枚",
+        "挿入 24枚（全Unit成功）",
+        "削除 画像24枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 524,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 37,
+          "image": 34,
+          "paragraph": 11,
+          "bulleted_list_item": 274,
+          "numbered_list_item": 114,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 522,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 35,
+          "image": 34,
+          "paragraph": 11,
+          "bulleted_list_item": 274,
+          "numbered_list_item": 114,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0104_20261113T135425Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:57:19.574Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0105",
+      "lp": "LP-0102",
+      "status": "done",
+      "pageId": "41624d4f-a671-81a5-9362-d808201c14a2",
+      "steps": [
+        "アップロード 40枚",
+        "挿入 40枚（全Unit成功）",
+        "削除 画像40枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 640,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 46,
+          "image": 50,
+          "paragraph": 11,
+          "bulleted_list_item": 350,
+          "numbered_list_item": 129,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 638,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 44,
+          "image": 50,
+          "paragraph": 11,
+          "bulleted_list_item": 350,
+          "numbered_list_item": 129,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0105_20261113T135532Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:58:35.337Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0108",
+      "lp": "LP-0105",
+      "status": "done",
+      "pageId": "41624d4f-a671-8102-82a4-f749f4e70116",
+      "steps": [
+        "アップロード 26枚",
+        "挿入 26枚（全Unit成功）",
+        "削除 画像26枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 494,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 37,
+          "image": 36,
+          "paragraph": 11,
+          "bulleted_list_item": 261,
+          "numbered_list_item": 95,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 492,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 35,
+          "image": 36,
+          "paragraph": 11,
+          "bulleted_list_item": 261,
+          "numbered_list_item": 95,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0108_20261113T135727Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T13:59:29.912Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0110",
+      "lp": "LP-0107",
+      "status": "done",
+      "pageId": "41624d4f-a671-8128-93fe-d2005f1d4a61",
+      "steps": [
+        "アップロード 16枚",
+        "挿入 16枚（全Unit成功）",
+        "削除 画像16枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 484,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 36,
+          "image": 26,
+          "paragraph": 11,
+          "bulleted_list_item": 260,
+          "numbered_list_item": 97,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 482,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 34,
+          "image": 26,
+          "paragraph": 11,
+          "bulleted_list_item": 260,
+          "numbered_list_item": 97,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0110_20261113T135839Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:00:44.293Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0112",
+      "lp": "LP-0109",
+      "status": "done",
+      "pageId": "41624d4f-a671-81b4-bb60-dbedac9752e6",
+      "steps": [
+        "アップロード 26枚",
+        "挿入 26枚（全Unit成功）",
+        "削除 画像26枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 517,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 37,
+          "image": 36,
+          "paragraph": 11,
+          "bulleted_list_item": 267,
+          "numbered_list_item": 112,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 515,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 35,
+          "image": 36,
+          "paragraph": 11,
+          "bulleted_list_item": 267,
+          "numbered_list_item": 112,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0112_20261113T135934Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:01:49.700Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0113",
+      "lp": "LP-0110",
+      "status": "done",
+      "pageId": "41624d4f-a671-8131-aed6-d370a14841b7",
+      "steps": [
+        "アップロード 22枚",
+        "挿入 22枚（全Unit成功）",
+        "削除 画像22枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 491,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 35,
+          "image": 32,
+          "paragraph": 11,
+          "bulleted_list_item": 249,
+          "numbered_list_item": 112,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 489,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 33,
+          "image": 32,
+          "paragraph": 11,
+          "bulleted_list_item": 249,
+          "numbered_list_item": 112,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0113_20261113T140045Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:03:17.807Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0114",
+      "lp": "LP-0111",
+      "status": "done",
+      "pageId": "41624d4f-a671-81c6-ad35-f5051037992a",
+      "steps": [
+        "アップロード 32枚",
+        "挿入 32枚（全Unit成功）",
+        "削除 画像32枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 550,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 40,
+          "image": 42,
+          "paragraph": 11,
+          "bulleted_list_item": 291,
+          "numbered_list_item": 114,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 548,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 38,
+          "image": 42,
+          "paragraph": 11,
+          "bulleted_list_item": 291,
+          "numbered_list_item": 114,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0114_20261113T140150Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:04:23.239Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0115",
+      "lp": "LP-0112",
+      "status": "done",
+      "pageId": "41624d4f-a671-81b8-98dd-e185b728d0d6",
+      "steps": [
+        "アップロード 24枚",
+        "挿入 24枚（全Unit成功）",
+        "削除 画像24枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 486,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 36,
+          "image": 34,
+          "paragraph": 11,
+          "bulleted_list_item": 245,
+          "numbered_list_item": 108,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "after": {
+        "total": 484,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 34,
+          "image": 34,
+          "paragraph": 11,
+          "bulleted_list_item": 245,
+          "numbered_list_item": 108,
+          "heading_1": 1,
+          "table": 10
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0115_20261113T140318Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:05:13.130Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0117",
+      "lp": "LP-0114",
+      "status": "done",
+      "pageId": "41624d4f-a671-8170-8f90-f7abb82d16dc",
+      "steps": [
+        "アップロード 14枚",
+        "挿入 14枚（全Unit成功）",
+        "削除 画像14枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 471,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 32,
+          "image": 24,
+          "paragraph": 12,
+          "bulleted_list_item": 221,
+          "numbered_list_item": 129,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 469,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 30,
+          "image": 24,
+          "paragraph": 12,
+          "bulleted_list_item": 221,
+          "numbered_list_item": 129,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0117_20261113T140427Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:06:27.909Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0120",
+      "lp": "LP-0117",
+      "status": "done",
+      "pageId": "41624d4f-a671-81ff-b6dd-d69472f324c0",
+      "steps": [
+        "アップロード 22枚",
+        "挿入 22枚（全Unit成功）",
+        "削除 画像22枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 515,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 35,
+          "image": 32,
+          "paragraph": 12,
+          "bulleted_list_item": 272,
+          "numbered_list_item": 111,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 513,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 33,
+          "image": 32,
+          "paragraph": 12,
+          "bulleted_list_item": 272,
+          "numbered_list_item": 111,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0120_20261113T140521Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:08:27.576Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0121",
+      "lp": "LP-0118",
+      "status": "done",
+      "pageId": "41624d4f-a671-811d-8739-ee26ecd7c144",
+      "steps": [
+        "アップロード 44枚",
+        "挿入 44枚（全Unit成功）",
+        "削除 画像44枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 617,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 47,
+          "image": 54,
+          "paragraph": 12,
+          "bulleted_list_item": 331,
+          "numbered_list_item": 120,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 615,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 45,
+          "image": 54,
+          "paragraph": 12,
+          "bulleted_list_item": 331,
+          "numbered_list_item": 120,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0121_20261113T140629Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:09:59.908Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0124",
+      "lp": "LP-0121",
+      "status": "done",
+      "pageId": "41624d4f-a671-8113-aa14-f37d7c19bc75",
+      "steps": [
+        "アップロード 32枚",
+        "挿入 32枚（全Unit成功）",
+        "削除 画像32枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 578,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 40,
+          "image": 42,
+          "paragraph": 12,
+          "bulleted_list_item": 321,
+          "numbered_list_item": 112,
+          "heading_1": 1,
+          "table": 9
+        }
+      },
+      "after": {
+        "total": 576,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 38,
+          "image": 42,
+          "paragraph": 12,
+          "bulleted_list_item": 321,
+          "numbered_list_item": 112,
+          "heading_1": 1,
+          "table": 9
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0124_20261113T140837Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:11:23.318Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0127",
+      "lp": "LP-0124",
+      "status": "done",
+      "pageId": "41624d4f-a671-8190-80e3-c12d7cf9983c",
+      "steps": [
+        "アップロード 26枚",
+        "挿入 26枚（全Unit成功）",
+        "削除 画像26枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 522,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 38,
+          "image": 36,
+          "paragraph": 10,
+          "bulleted_list_item": 257,
+          "numbered_list_item": 128,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 520,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 36,
+          "image": 36,
+          "paragraph": 10,
+          "bulleted_list_item": 257,
+          "numbered_list_item": 128,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0127_20261113T141010Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:12:52.124Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0129",
+      "lp": "LP-0126",
+      "status": "done",
+      "pageId": "41624d4f-a671-81a2-ab6d-e64855233fe8",
+      "steps": [
+        "アップロード 30枚",
+        "挿入 30枚（全Unit成功）",
+        "削除 画像30枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 576,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 42,
+          "image": 40,
+          "paragraph": 10,
+          "bulleted_list_item": 273,
+          "numbered_list_item": 158,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 574,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 40,
+          "image": 40,
+          "paragraph": 10,
+          "bulleted_list_item": 273,
+          "numbered_list_item": 158,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0129_20261113T141128Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:14:03.794Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0130",
+      "lp": "LP-0127",
+      "status": "done",
+      "pageId": "41624d4f-a671-81a3-9709-fde8d8f742f1",
+      "steps": [
+        "アップロード 26枚",
+        "挿入 26枚（全Unit成功）",
+        "削除 画像26枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 518,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 38,
+          "image": 36,
+          "paragraph": 10,
+          "bulleted_list_item": 254,
+          "numbered_list_item": 127,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 516,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 36,
+          "image": 36,
+          "paragraph": 10,
+          "bulleted_list_item": 254,
+          "numbered_list_item": 127,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0130_20261113T141253Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:15:09.742Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0131",
+      "lp": "LP-0128",
+      "status": "done",
+      "pageId": "41624d4f-a671-8187-a6c5-d9acc67ea292",
+      "steps": [
+        "アップロード 24枚",
+        "挿入 24枚（全Unit成功）",
+        "削除 画像24枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 514,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 37,
+          "image": 34,
+          "paragraph": 10,
+          "bulleted_list_item": 253,
+          "numbered_list_item": 127,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 512,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 35,
+          "image": 34,
+          "paragraph": 10,
+          "bulleted_list_item": 253,
+          "numbered_list_item": 127,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0131_20261113T141404Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:15:56.024Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0132",
+      "lp": "LP-0129",
+      "status": "done",
+      "pageId": "41624d4f-a671-81bf-b5c3-e8013d9b65ea",
+      "steps": [
+        "アップロード 16枚",
+        "挿入 16枚（全Unit成功）",
+        "削除 画像16枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 451,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 32,
+          "image": 26,
+          "paragraph": 10,
+          "bulleted_list_item": 216,
+          "numbered_list_item": 114,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 449,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 30,
+          "image": 26,
+          "paragraph": 10,
+          "bulleted_list_item": 216,
+          "numbered_list_item": 114,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0132_20261113T141510Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:17:12.631Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0134",
+      "lp": "LP-0131",
+      "status": "done",
+      "pageId": "41624d4f-a671-810c-9be8-fbc4ee5e77c9",
+      "steps": [
+        "アップロード 28枚",
+        "挿入 28枚（全Unit成功）",
+        "削除 画像28枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 546,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 39,
+          "image": 38,
+          "paragraph": 10,
+          "bulleted_list_item": 279,
+          "numbered_list_item": 127,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 544,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 37,
+          "image": 38,
+          "paragraph": 10,
+          "bulleted_list_item": 279,
+          "numbered_list_item": 127,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0134_20261113T141601Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:18:17.171Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0136",
+      "lp": "LP-0133",
+      "status": "done",
+      "pageId": "41624d4f-a671-81ad-a321-f1e4680f9f9a",
+      "steps": [
+        "アップロード 22枚",
+        "挿入 22枚（全Unit成功）",
+        "削除 画像22枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 460,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 36,
+          "image": 32,
+          "paragraph": 10,
+          "bulleted_list_item": 212,
+          "numbered_list_item": 117,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 458,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 34,
+          "image": 32,
+          "paragraph": 10,
+          "bulleted_list_item": 212,
+          "numbered_list_item": 117,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0136_20261113T141718Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:20:01.919Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0137",
+      "lp": "LP-0134",
+      "status": "done",
+      "pageId": "41624d4f-a671-81f7-9da3-f5680e817361",
+      "steps": [
+        "アップロード 42枚",
+        "挿入 42枚（全Unit成功）",
+        "削除 画像42枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 670,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 49,
+          "image": 52,
+          "paragraph": 10,
+          "bulleted_list_item": 333,
+          "numbered_list_item": 173,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 668,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 47,
+          "image": 52,
+          "paragraph": 10,
+          "bulleted_list_item": 333,
+          "numbered_list_item": 173,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0137_20261113T141818Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:21:39.294Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0139",
+      "lp": "LP-0136",
+      "status": "done",
+      "pageId": "41624d4f-a671-81f2-8464-d4cb85f2ca6f",
+      "steps": [
+        "アップロード 36枚",
+        "挿入 36枚（全Unit成功）",
+        "削除 画像36枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 619,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 45,
+          "image": 46,
+          "paragraph": 10,
+          "bulleted_list_item": 308,
+          "numbered_list_item": 157,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 617,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 43,
+          "image": 46,
+          "paragraph": 10,
+          "bulleted_list_item": 308,
+          "numbered_list_item": 157,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0139_20261113T142006Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:22:20.350Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0140",
+      "lp": "LP-0137",
+      "status": "done",
+      "pageId": "41624d4f-a671-8112-91e7-df2eb7053379",
+      "steps": [
+        "アップロード 14枚",
+        "挿入 14枚（全Unit成功）",
+        "削除 画像14枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 426,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 31,
+          "image": 24,
+          "paragraph": 10,
+          "bulleted_list_item": 196,
+          "numbered_list_item": 112,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 424,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 29,
+          "image": 24,
+          "paragraph": 10,
+          "bulleted_list_item": 196,
+          "numbered_list_item": 112,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0140_20261113T142140Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:23:33.226Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0141",
+      "lp": "LP-0138",
+      "status": "done",
+      "pageId": "41624d4f-a671-81f6-8437-f8447c66c5fa",
+      "steps": [
+        "アップロード 26枚",
+        "挿入 26枚（全Unit成功）",
+        "削除 画像26枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 557,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 40,
+          "image": 36,
+          "paragraph": 10,
+          "bulleted_list_item": 261,
+          "numbered_list_item": 157,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 555,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 38,
+          "image": 36,
+          "paragraph": 10,
+          "bulleted_list_item": 261,
+          "numbered_list_item": 157,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0141_20261113T142221Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:24:26.079Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0142",
+      "lp": "LP-0139",
+      "status": "done",
+      "pageId": "41624d4f-a671-81de-baab-ed595e5d3f28",
+      "steps": [
+        "アップロード 18枚",
+        "挿入 18枚（全Unit成功）",
+        "削除 画像18枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 484,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 35,
+          "image": 28,
+          "paragraph": 10,
+          "bulleted_list_item": 218,
+          "numbered_list_item": 140,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 482,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 33,
+          "image": 28,
+          "paragraph": 10,
+          "bulleted_list_item": 218,
+          "numbered_list_item": 140,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0142_20261113T142334Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:25:22.017Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0143",
+      "lp": "LP-0140",
+      "status": "done",
+      "pageId": "41624d4f-a671-8107-bbfb-c75fc84868be",
+      "steps": [
+        "アップロード 20枚",
+        "挿入 20枚（全Unit成功）",
+        "削除 画像20枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 472,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 35,
+          "image": 30,
+          "paragraph": 10,
+          "bulleted_list_item": 215,
+          "numbered_list_item": 129,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 470,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 33,
+          "image": 30,
+          "paragraph": 10,
+          "bulleted_list_item": 215,
+          "numbered_list_item": 129,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0143_20261113T142427Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:26:26.388Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0144",
+      "lp": "LP-0141",
+      "status": "done",
+      "pageId": "41624d4f-a671-8145-a169-debb62816265",
+      "steps": [
+        "アップロード 24枚",
+        "挿入 24枚（全Unit成功）",
+        "削除 画像24枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 523,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 38,
+          "image": 34,
+          "paragraph": 10,
+          "bulleted_list_item": 245,
+          "numbered_list_item": 143,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 521,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 36,
+          "image": 34,
+          "paragraph": 10,
+          "bulleted_list_item": 245,
+          "numbered_list_item": 143,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0144_20261113T142523Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:27:23.331Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0145",
+      "lp": "LP-0142",
+      "status": "done",
+      "pageId": "41624d4f-a671-8185-ae14-e7796eb1535a",
+      "steps": [
+        "アップロード 20枚",
+        "挿入 20枚（全Unit成功）",
+        "削除 画像20枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 505,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 36,
+          "image": 30,
+          "paragraph": 10,
+          "bulleted_list_item": 234,
+          "numbered_list_item": 142,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 503,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 34,
+          "image": 30,
+          "paragraph": 10,
+          "bulleted_list_item": 234,
+          "numbered_list_item": 142,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0145_20261113T142627Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:28:37.102Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0146",
+      "lp": "LP-0143",
+      "status": "done",
+      "pageId": "41624d4f-a671-811e-97b0-c224112b0818",
+      "steps": [
+        "アップロード 26枚",
+        "挿入 26枚（全Unit成功）",
+        "削除 画像26枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 620,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 40,
+          "image": 36,
+          "paragraph": 11,
+          "bulleted_list_item": 337,
+          "numbered_list_item": 142,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 618,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 38,
+          "image": 36,
+          "paragraph": 11,
+          "bulleted_list_item": 337,
+          "numbered_list_item": 142,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0146_20261113T142724Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:29:55.450Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0149",
+      "lp": "LP-0146",
+      "status": "done",
+      "pageId": "41624d4f-a671-813a-9bbb-c38b637f25e7",
+      "steps": [
+        "アップロード 26枚",
+        "挿入 26枚（全Unit成功）",
+        "削除 画像26枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 578,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 39,
+          "image": 36,
+          "paragraph": 12,
+          "bulleted_list_item": 296,
+          "numbered_list_item": 142,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 576,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 37,
+          "image": 36,
+          "paragraph": 12,
+          "bulleted_list_item": 296,
+          "numbered_list_item": 142,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0149_20261113T142846Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:30:47.249Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0150",
+      "lp": "LP-0147",
+      "status": "done",
+      "pageId": "41624d4f-a671-81c4-ba7b-c06a4ba9ad5d",
+      "steps": [
+        "アップロード 18枚",
+        "挿入 18枚（全Unit成功）",
+        "削除 画像18枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 501,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 34,
+          "image": 28,
+          "paragraph": 12,
+          "bulleted_list_item": 247,
+          "numbered_list_item": 127,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 499,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 32,
+          "image": 28,
+          "paragraph": 12,
+          "bulleted_list_item": 247,
+          "numbered_list_item": 127,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0150_20261113T142956Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:31:49.384Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0151",
+      "lp": "LP-0148",
+      "status": "done",
+      "pageId": "41624d4f-a671-8106-9765-faf80f8e9346",
+      "steps": [
+        "アップロード 22枚",
+        "挿入 22枚（全Unit成功）",
+        "削除 画像22枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 542,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 37,
+          "image": 32,
+          "paragraph": 12,
+          "bulleted_list_item": 267,
+          "numbered_list_item": 141,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 540,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 35,
+          "image": 32,
+          "paragraph": 12,
+          "bulleted_list_item": 267,
+          "numbered_list_item": 141,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0151_20261113T143048Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:33:10.168Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0152",
+      "lp": "LP-0149",
+      "status": "done",
+      "pageId": "41624d4f-a671-81b9-9741-c3f85ce6f8d5",
+      "steps": [
+        "アップロード 28枚",
+        "挿入 28枚（全Unit成功）",
+        "削除 画像28枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 565,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 41,
+          "image": 38,
+          "paragraph": 12,
+          "bulleted_list_item": 273,
+          "numbered_list_item": 148,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 563,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 39,
+          "image": 38,
+          "paragraph": 12,
+          "bulleted_list_item": 273,
+          "numbered_list_item": 148,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0152_20261113T143150Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:34:18.158Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0153",
+      "lp": "LP-0150",
+      "status": "done",
+      "pageId": "41624d4f-a671-819a-b3fd-c65a29f68166",
+      "steps": [
+        "アップロード 24枚",
+        "挿入 24枚（全Unit成功）",
+        "削除 画像24枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 580,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 39,
+          "image": 34,
+          "paragraph": 12,
+          "bulleted_list_item": 288,
+          "numbered_list_item": 154,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "after": {
+        "total": 578,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 37,
+          "image": 34,
+          "paragraph": 12,
+          "bulleted_list_item": 288,
+          "numbered_list_item": 154,
+          "heading_1": 1,
+          "table": 11
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0153_20261113T143311Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:35:56.528Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0155",
+      "lp": "LP-0152",
+      "status": "done",
+      "pageId": "41624d4f-a671-8174-8d09-ceca8a0ce1c3",
+      "steps": [
+        "アップロード 34枚",
+        "挿入 34枚（全Unit成功）",
+        "削除 画像34枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 640,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 44,
+          "image": 44,
+          "paragraph": 12,
+          "bulleted_list_item": 330,
+          "numbered_list_item": 156,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 638,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 42,
+          "image": 44,
+          "paragraph": 12,
+          "bulleted_list_item": 330,
+          "numbered_list_item": 156,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0155_20261113T143422Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:37:46.346Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0156",
+      "lp": "LP-0153",
+      "status": "done",
+      "pageId": "41624d4f-a671-816d-87ab-f246754d016a",
+      "steps": [
+        "アップロード 42枚",
+        "挿入 42枚（全Unit成功）",
+        "削除 画像42枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 720,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 50,
+          "image": 52,
+          "paragraph": 12,
+          "bulleted_list_item": 366,
+          "numbered_list_item": 186,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 718,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 48,
+          "image": 52,
+          "paragraph": 12,
+          "bulleted_list_item": 366,
+          "numbered_list_item": 186,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0156_20261113T143557Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:38:52.896Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0161",
+      "lp": "LP-0158",
+      "status": "done",
+      "pageId": "41624d4f-a671-8171-8876-f83d81b05f94",
+      "steps": [
+        "アップロード 18枚",
+        "挿入 18枚（全Unit成功）",
+        "削除 画像18枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 482,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 32,
+          "image": 28,
+          "paragraph": 12,
+          "bulleted_list_item": 260,
+          "numbered_list_item": 96,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 480,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 30,
+          "image": 28,
+          "paragraph": 12,
+          "bulleted_list_item": 260,
+          "numbered_list_item": 96,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0161_20261113T143802Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:40:56.209Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0162",
+      "lp": "LP-0159",
+      "status": "done",
+      "pageId": "41624d4f-a671-810d-b774-e7047397819d",
+      "steps": [
+        "アップロード 46枚",
+        "挿入 46枚（全Unit成功）",
+        "削除 画像46枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 750,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 51,
+          "image": 56,
+          "paragraph": 12,
+          "bulleted_list_item": 406,
+          "numbered_list_item": 171,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 748,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 49,
+          "image": 56,
+          "paragraph": 12,
+          "bulleted_list_item": 406,
+          "numbered_list_item": 171,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0162_20261113T143854Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:42:20.003Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0164",
+      "lp": "LP-0161",
+      "status": "done",
+      "pageId": "41624d4f-a671-81ad-81ae-d04a9ef2fa09",
+      "steps": [
+        "アップロード 26枚",
+        "挿入 26枚（全Unit成功）",
+        "削除 画像26枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 565,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 39,
+          "image": 36,
+          "paragraph": 12,
+          "bulleted_list_item": 282,
+          "numbered_list_item": 142,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 563,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 37,
+          "image": 36,
+          "paragraph": 12,
+          "bulleted_list_item": 282,
+          "numbered_list_item": 142,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0164_20261113T144109Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:43:15.847Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0165",
+      "lp": "LP-0162",
+      "status": "done",
+      "pageId": "41624d4f-a671-8141-9e97-c662cfa98ea9",
+      "steps": [
+        "アップロード 20枚",
+        "挿入 20枚（全Unit成功）",
+        "削除 画像20枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 555,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 37,
+          "image": 30,
+          "paragraph": 12,
+          "bulleted_list_item": 265,
+          "numbered_list_item": 157,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 553,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 35,
+          "image": 30,
+          "paragraph": 12,
+          "bulleted_list_item": 265,
+          "numbered_list_item": 157,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0165_20261113T144221Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:44:24.224Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0166",
+      "lp": "LP-0163",
+      "status": "done",
+      "pageId": "41624d4f-a671-81fb-ac66-f90b9fc39c5c",
+      "steps": [
+        "アップロード 24枚",
+        "挿入 24枚（全Unit成功）",
+        "削除 画像24枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 596,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 39,
+          "image": 34,
+          "paragraph": 12,
+          "bulleted_list_item": 300,
+          "numbered_list_item": 157,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 594,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 37,
+          "image": 34,
+          "paragraph": 12,
+          "bulleted_list_item": 300,
+          "numbered_list_item": 157,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0166_20261113T144317Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:45:37.791Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0167",
+      "lp": "LP-0164",
+      "status": "done",
+      "pageId": "41624d4f-a671-810f-8992-c9b29cae0fb1",
+      "steps": [
+        "アップロード 26枚",
+        "挿入 26枚（全Unit成功）",
+        "削除 画像26枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 574,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 40,
+          "image": 36,
+          "paragraph": 12,
+          "bulleted_list_item": 275,
+          "numbered_list_item": 157,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 572,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 38,
+          "image": 36,
+          "paragraph": 12,
+          "bulleted_list_item": 275,
+          "numbered_list_item": 157,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0167_20261113T144425Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:46:47.421Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0168",
+      "lp": "LP-0165",
+      "status": "done",
+      "pageId": "41624d4f-a671-81d3-82c1-d1c0659f9e1e",
+      "steps": [
+        "アップロード 20枚",
+        "挿入 20枚（全Unit成功）",
+        "削除 画像20枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 549,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 37,
+          "image": 30,
+          "paragraph": 12,
+          "bulleted_list_item": 259,
+          "numbered_list_item": 157,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 547,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 35,
+          "image": 30,
+          "paragraph": 12,
+          "bulleted_list_item": 259,
+          "numbered_list_item": 157,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0168_20261113T144538Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:48:24.966Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0171",
+      "lp": "LP-0168",
+      "status": "done",
+      "pageId": "41624d4f-a671-8182-bd90-c28f861bdb87",
+      "steps": [
+        "アップロード 34枚",
+        "挿入 34枚（全Unit成功）",
+        "削除 画像34枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 660,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 45,
+          "image": 44,
+          "paragraph": 12,
+          "bulleted_list_item": 333,
+          "numbered_list_item": 172,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 658,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 43,
+          "image": 44,
+          "paragraph": 12,
+          "bulleted_list_item": 333,
+          "numbered_list_item": 172,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0171_20261113T144655Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:49:46.622Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0172",
+      "lp": "LP-0169",
+      "status": "done",
+      "pageId": "41624d4f-a671-8101-8325-fc5060f0cb26",
+      "steps": [
+        "アップロード 28枚",
+        "挿入 28枚（全Unit成功）",
+        "削除 画像28枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 622,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 42,
+          "image": 38,
+          "paragraph": 12,
+          "bulleted_list_item": 301,
+          "numbered_list_item": 175,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 620,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 40,
+          "image": 38,
+          "paragraph": 12,
+          "bulleted_list_item": 301,
+          "numbered_list_item": 175,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0172_20261113T144826Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:50:40.388Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0173",
+      "lp": "LP-0170",
+      "status": "done",
+      "pageId": "41624d4f-a671-814b-b572-ca2fc84ad12f",
+      "steps": [
+        "アップロード 16枚",
+        "挿入 16枚（全Unit成功）",
+        "削除 画像16枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 471,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 33,
+          "image": 26,
+          "paragraph": 12,
+          "bulleted_list_item": 218,
+          "numbered_list_item": 128,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 469,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 31,
+          "image": 26,
+          "paragraph": 12,
+          "bulleted_list_item": 218,
+          "numbered_list_item": 128,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0173_20261113T144947Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:51:38.588Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0174",
+      "lp": "LP-0171",
+      "status": "done",
+      "pageId": "41624d4f-a671-8164-82b1-c598bee7e111",
+      "steps": [
+        "アップロード 20枚",
+        "挿入 20枚（全Unit成功）",
+        "削除 画像20枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 517,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 36,
+          "image": 30,
+          "paragraph": 12,
+          "bulleted_list_item": 244,
+          "numbered_list_item": 141,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 515,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 34,
+          "image": 30,
+          "paragraph": 12,
+          "bulleted_list_item": 244,
+          "numbered_list_item": 141,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0174_20261113T145041Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:52:24.874Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0175",
+      "lp": "LP-0172",
+      "status": "done",
+      "pageId": "41624d4f-a671-8145-8fe4-d687abec3162",
+      "steps": [
+        "アップロード 16枚",
+        "挿入 16枚（全Unit成功）",
+        "削除 画像16枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 452,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 32,
+          "image": 26,
+          "paragraph": 12,
+          "bulleted_list_item": 216,
+          "numbered_list_item": 112,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 450,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 30,
+          "image": 26,
+          "paragraph": 12,
+          "bulleted_list_item": 216,
+          "numbered_list_item": 112,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0175_20261113T145139Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:53:03.406Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0176",
+      "lp": "LP-0173",
+      "status": "done",
+      "pageId": "41624d4f-a671-81bc-abb8-eb81ef88602a",
+      "steps": [
+        "アップロード 12枚",
+        "挿入 12枚（全Unit成功）",
+        "削除 画像12枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 447,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 31,
+          "image": 22,
+          "paragraph": 12,
+          "bulleted_list_item": 200,
+          "numbered_list_item": 128,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 445,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 29,
+          "image": 22,
+          "paragraph": 12,
+          "bulleted_list_item": 200,
+          "numbered_list_item": 128,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0176_20261113T145226Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:54:05.593Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0177",
+      "lp": "LP-0174",
+      "status": "done",
+      "pageId": "41624d4f-a671-812f-ba25-f52344301f69",
+      "steps": [
+        "アップロード 20枚",
+        "挿入 20枚（全Unit成功）",
+        "削除 画像20枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 488,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 35,
+          "image": 30,
+          "paragraph": 12,
+          "bulleted_list_item": 230,
+          "numbered_list_item": 127,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 486,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 33,
+          "image": 30,
+          "paragraph": 12,
+          "bulleted_list_item": 230,
+          "numbered_list_item": 127,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0177_20261113T145304Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:55:02.467Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0178",
+      "lp": "LP-0175",
+      "status": "done",
+      "pageId": "41624d4f-a671-810c-90d2-fc0529bbf1f3",
+      "steps": [
+        "アップロード 20枚",
+        "挿入 20枚（全Unit成功）",
+        "削除 画像20枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 492,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 35,
+          "image": 30,
+          "paragraph": 12,
+          "bulleted_list_item": 234,
+          "numbered_list_item": 127,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 490,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 33,
+          "image": 30,
+          "paragraph": 12,
+          "bulleted_list_item": 234,
+          "numbered_list_item": 127,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0178_20261113T145406Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:56:11.445Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0179",
+      "lp": "LP-0176",
+      "status": "done",
+      "pageId": "41624d4f-a671-8104-bb61-f5427b2f243f",
+      "steps": [
+        "アップロード 26枚",
+        "挿入 26枚（全Unit成功）",
+        "削除 画像26枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 519,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 38,
+          "image": 36,
+          "paragraph": 12,
+          "bulleted_list_item": 252,
+          "numbered_list_item": 127,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 517,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 36,
+          "image": 36,
+          "paragraph": 12,
+          "bulleted_list_item": 252,
+          "numbered_list_item": 127,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0179_20261113T145503Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:57:14.049Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0180",
+      "lp": "LP-0177",
+      "status": "done",
+      "pageId": "41624d4f-a671-81ea-9690-d5b3ae6f799a",
+      "steps": [
+        "アップロード 22枚",
+        "挿入 22枚（全Unit成功）",
+        "削除 画像22枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 523,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 37,
+          "image": 32,
+          "paragraph": 12,
+          "bulleted_list_item": 246,
+          "numbered_list_item": 142,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 521,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 35,
+          "image": 32,
+          "paragraph": 12,
+          "bulleted_list_item": 246,
+          "numbered_list_item": 142,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0180_20261113T145612Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:58:42.355Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0181",
+      "lp": "LP-0178",
+      "status": "done",
+      "pageId": "41624d4f-a671-8174-ae41-f3260479f49f",
+      "steps": [
+        "アップロード 32枚",
+        "挿入 32枚（全Unit成功）",
+        "削除 画像32枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 629,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 45,
+          "image": 42,
+          "paragraph": 12,
+          "bulleted_list_item": 285,
+          "numbered_list_item": 191,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 627,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 43,
+          "image": 42,
+          "paragraph": 12,
+          "bulleted_list_item": 285,
+          "numbered_list_item": 191,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0181_20261113T145715Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T14:59:39.262Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0182",
+      "lp": "LP-0179",
+      "status": "done",
+      "pageId": "41624d4f-a671-8184-96f7-fe94f96052f0",
+      "steps": [
+        "アップロード 20枚",
+        "挿入 20枚（全Unit成功）",
+        "削除 画像20枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 511,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 37,
+          "image": 30,
+          "paragraph": 12,
+          "bulleted_list_item": 222,
+          "numbered_list_item": 156,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 509,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 35,
+          "image": 30,
+          "paragraph": 12,
+          "bulleted_list_item": 222,
+          "numbered_list_item": 156,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0182_20261113T145843Z_blocks-before.json"
     }
   ]
 }

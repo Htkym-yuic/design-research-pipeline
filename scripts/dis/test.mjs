@@ -1652,7 +1652,7 @@ test("restructure: --page が違う・無いときは、何も書かない", asy
 
 test("restructure: 置く画像と元の画像の枚数が合わない・すでに組み替え済みなら、何も書かずに止める", async () => {
   const fx = await restructureFixture();
-  await assert.rejects(fx.run({ unitImageFiles: [{ name: "pc_01_FV.png", path: "/x" }, { name: "sp_01_FV.png", path: "/x" }] }), /一致しません|置けるのは/);
+  await assert.rejects(fx.run({ unitImageFiles: [{ name: "pc_01_FV.png", path: "/x" }, { name: "sp_01_FV.png", path: "/x" }] }), /一致しません|置けるのは|PCかSPの画像が無い/);
   assert.equal(fx.log.length, 0);
   await fx.run(); // 1回目は成功
   await assert.rejects(fx.run(), /すでに組み替え済み/); // 2回目は、見出しが無いので止まる
@@ -1661,4 +1661,20 @@ test("restructure: 置く画像と元の画像の枚数が合わない・すで�
 test("restructure: 元の画像の削除に失敗したら、そこで止めて報告する（挿入は済んでいる）", async () => {
   const fx = await restructureFixture({ failDelete: true });
   await assert.rejects(fx.run(), (e) => /削除に失敗/.test(e.message) && e.result.inserted.length === 2);
+});
+
+test("restructure: PCかSPの画像が片方しか無いUnitがあれば、何も書かずに止める", async () => {
+  const fx = await restructureFixture();
+  await assert.rejects(fx.run({ unitImageFiles: [{ name: "pc_01_FV.png", path: "/x" }, { name: "sp_01_FV.png", path: "/x" }, { name: "pc_02_CTA.png", path: "/x" }] }), /PCかSPの画像が無いUnit: U2/);
+  assert.equal(fx.log.length, 0);
+});
+
+test("restructure-batch: 何も書いていない停止は「飛ばした」、書込みのエラーは「失敗」に分ける", async () => {
+  const { classify, MAX_CONSECUTIVE_FAILURES } = await import("./restructure-batch.mjs");
+  assert.equal(classify(0, "{}"), "success");
+  assert.equal(classify(1, "Error: DIS-LP-0157: PCかSPの画像が無いUnit: U1。何も書いていません"), "skipped");
+  assert.equal(classify(1, "DIS-LP-0001 に対応するLP番号がありません"), "skipped");
+  assert.equal(classify(1, "Error: DIS-LP-0009: U3 の画像の挿入に失敗したため、元の画像は消さずに止めました"), "failed");
+  assert.equal(classify(1, "Error: 元のブロックの削除に失敗して止めました"), "failed");
+  assert.equal(MAX_CONSECUTIVE_FAILURES, 3);
 });
