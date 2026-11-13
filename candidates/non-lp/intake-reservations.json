@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T16:26:07.918Z",
+  "updatedAt": "2026-11-13T21:40:23.488Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -4115,6 +4115,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-12T16:26:07.918Z"
+    },
+    {
+      "id": "GR-0239",
+      "title": "感謝祭",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fe7629b1585af26e9eae469784b9bd07a%2Fe7629b1585af26e9eae469784b9bd07a-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30662",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fe7629b1585af26e9eae469784b9bd07a%2Fe7629b1585af26e9eae469784b9bd07a-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-13T21:40:23.488Z"
+    },
+    {
+      "id": "GR-0240",
+      "title": "秋のイメージの本日休業ポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9540ae398eaa09b885cdfd85b33304ec%2F9540ae398eaa09b885cdfd85b33304ec-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-27869",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9540ae398eaa09b885cdfd85b33304ec%2F9540ae398eaa09b885cdfd85b33304ec-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-13T21:40:23.488Z"
+    },
+    {
+      "id": "GR-0241",
+      "title": "ビール背景で黒文字忘年会バナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F2423bb6a9daf06be5fcbb60c4e2fc1ed%2F2423bb6a9daf06be5fcbb60c4e2fc1ed-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-17090",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F2423bb6a9daf06be5fcbb60c4e2fc1ed%2F2423bb6a9daf06be5fcbb60c4e2fc1ed-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-13T21:40:23.488Z"
+    },
+    {
+      "id": "GR-0242",
+      "title": "ピンク幾何学模様のポップ雑貨店名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F4a8355477ffaede94ba4b56d93a8f81f%2F4a8355477ffaede94ba4b56d93a8f81f-400.webp&w=256&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29291",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F4a8355477ffaede94ba4b56d93a8f81f%2F4a8355477ffaede94ba4b56d93a8f81f-400.webp&w=256&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-13T21:40:23.488Z"
+    },
+    {
+      "id": "GR-0243",
+      "title": "ロゴテンプレート3061",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/675c81b2a27505be89012bfdb700937a/675c81b2a27505be89012bfdb700937a-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3061",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/675c81b2a27505be89012bfdb700937a/675c81b2a27505be89012bfdb700937a-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-13T21:40:23.488Z"
     },
     {
       "id": "ILAC-0001",
@@ -8582,6 +8642,30 @@
       "materialId": "PAT-0092",
       "authorProfileUrl": null,
       "reservedAt": "2026-11-12T16:26:07.918Z"
+    },
+    {
+      "id": "PAT-0093",
+      "title": "感謝祭に見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fe7629b1585af26e9eae469784b9bd07a%2Fe7629b1585af26e9eae469784b9bd07a-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30662",
+      "imageUrl": null,
+      "materialId": "PAT-0093",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-13T21:40:23.488Z"
+    },
+    {
+      "id": "PAT-0094",
+      "title": "アフラック 新卒採用サイトに見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://www.aflac-recruit.jp/newgraduate/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/aflac-newgraduate/",
+      "imageUrl": null,
+      "materialId": "PAT-0094",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-13T21:40:23.488Z"
     },
     {
       "id": "PHAC-0001",
@@ -15111,6 +15195,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-12T16:26:07.918Z"
+    },
+    {
+      "id": "WB-0081",
+      "title": "アフラック 新卒採用サイト",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.aflac-recruit.jp/newgraduate/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/aflac-newgraduate/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/aflacnewgraduate_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-13T21:40:23.488Z"
+    },
+    {
+      "id": "WB-0082",
+      "title": "有本昌虎公認会計士税理士事務所 | あなたの｢叶えたい！｣を応援する公認会計士税理士事務所",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://cpa-arimoto-masatora.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/arimotomasatora/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/arimotomasatora_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-13T21:40:23.488Z"
     }
   ]
 }
