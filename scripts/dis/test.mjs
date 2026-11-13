@@ -1750,3 +1750,19 @@ test("dis-page: 28章が入っていないページのコールアウトは、28
   const t = disCallout({ disId: "DIS-LP-0002", lp: null, oldPageId: null, dropboxFolderPath: "/d/x", has28: false }).callout.rich_text.map((x) => x.text.content).join("");
   assert.ok(!t.includes("28章分析（章1〜29）") && t.includes("28章分析は、このページには入っていない"));
 });
+
+test("register-new-dis: ローカルの同期フォルダへ上書きせずにコピーし、Dropbox側で全ファイルが見えるまで待つ", async () => {
+  const { copyToLocalDropbox, waitForSync } = await import("./register-new-dis.mjs");
+  const src = await fs.mkdtemp(path.join(os.tmpdir(), "dis-src-")), root = await fs.mkdtemp(path.join(os.tmpdir(), "dis-dbx-"));
+  await fs.writeFile(path.join(src, "a.txt"), "hello"); await fs.writeFile(path.join(src, "b.txt"), "world!");
+  const plan = [{ local: path.join(src, "a.txt"), remote: "/x/F/a.txt" }, { local: path.join(src, "b.txt"), remote: "/x/F/sub/b.txt" }];
+  const { copied } = await copyToLocalDropbox({ plan, folder: "/x/F", root });
+  assert.equal(await fs.readFile(path.join(root, "x/F/sub/b.txt"), "utf8"), "world!");
+  await assert.rejects(copyToLocalDropbox({ plan, folder: "/x/F", root }), /すでに/); // 2回目は、何もコピーしない
+  let n = 0;
+  const listFolder = async (d) => { n++; const all = { "/x/F": [{ tag: "folder", path: "/x/F/sub" }, { tag: "file", path: "/x/F/a.txt", size: n > 2 ? 5 : 0 }], "/x/F/sub": [{ tag: "file", path: "/x/F/sub/b.txt", size: 6 }] }; return all[d] || []; };
+  const r = await waitForSync({ copied, folder: "/x/F", listFolder, intervalSec: 0 });
+  assert.ok(r.ok && n > 2); // 最初は大きさが合わず、同期が進んでから完了になる
+  const bad = await waitForSync({ copied, folder: "/x/F", listFolder: async () => [], timeoutSec: 0, intervalSec: 0 });
+  assert.equal(bad.ok, false);
+});

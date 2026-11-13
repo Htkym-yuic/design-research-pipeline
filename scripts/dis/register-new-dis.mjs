@@ -10,6 +10,7 @@
  *   node scripts/dis/register-new-dis.mjs --id DIS-LP-0184 [--apply]
  */
 import fs from "node:fs/promises";
+import { constants as fsConstants } from "node:fs";
 import path from "node:path";
 import { parseArgs } from "node:util";
 import { fileURLToPath } from "node:url";
@@ -25,6 +26,7 @@ import { updateJson } from "./lib/lock.mjs";
 import { toJpeg, upload, sleep, SLOTS, MARK, exists, rt } from "./merge-library.mjs";
 import * as nc from "../lib/notion-client.mjs";
 import { requireEnv } from "../lib/env.mjs";
+import os from "node:os";
 
 const textOf = (b) => (b?.[b.type]?.rich_text || []).map((t) => t.plain_text ?? t.text?.content ?? "").join("");
 const MB = (n) => `${(n / 1e6).toFixed(1)}MB`;
@@ -69,8 +71,39 @@ export async function planNewDis({ disId, itemDir, cfg, rel }) {
   return { disId, lp, item, analysis, folder, md28, analysisMd, v, title, plan, sizes, byGroup, missing, metadata, metaFile, unitNames, slots, body28, body28Blocks: countBlocks(body28), body28Images: body28.filter((b) => b.__image).length, itemDir };
 }
 
+/** Dropboxの同期フォルダ（ローカル）へ、上書きせずにコピーする。すでにフォルダがあれば中止。 */
+export async function copyToLocalDropbox({ plan, folder, root }) {
+  const dest = path.join(root, folder);
+  if (await exists(dest)) throw new Error(`同期フォルダに、すでに ${dest} があります。何もコピーしません`);
+  const copied = [];
+  for (const p of plan) {
+    const to = path.join(root, p.remote);
+    await fs.mkdir(path.dirname(to), { recursive: true });
+    await fs.copyFile(p.local, to, fsConstants.COPYFILE_EXCL); // 既存ファイルがあればエラー（上書きしない）
+    copied.push({ remote: p.remote, bytes: (await fs.stat(p.local)).size });
+  }
+  return { dest, copied };
+}
+
+/** 同期の完了を、Dropbox側の一覧（読み取りのみ）で確かめる。全ファイルが、同じ大きさで見えるまで待つ。 */
+export async function waitForSync({ copied, folder, listFolder, timeoutSec = 900, intervalSec = 15, log = () => {} }) {
+  const want = new Map(copied.map((c) => [c.remote, c.bytes]));
+  const t0 = Date.now();
+  for (;;) {
+    const seen = new Map();
+    const walk = async (dir) => { for (const e of await listFolder(dir)) { if (e.tag === "folder") await walk(e.path); else seen.set(e.path, e.size); } };
+    await walk(folder).catch(() => {});
+    const lower = new Map([...seen].map(([k, v]) => [k.toLowerCase(), v]));
+    const missing = [...want].filter(([k, v]) => lower.get(k.toLowerCase()) !== v);
+    log(`同期待ち: ${want.size - missing.length}/${want.size}`);
+    if (!missing.length) return { ok: true, sec: Math.round((Date.now() - t0) / 1000) };
+    if (Date.now() - t0 > timeoutSec * 1000) return { ok: false, missing: missing.map(([k]) => k).slice(0, 5), sec: Math.round((Date.now() - t0) / 1000) };
+    await sleep(intervalSec * 1000);
+  }
+}
+
 async function main() {
-  const { values: args } = parseArgs({ options: { id: { type: "string" }, apply: { type: "boolean", default: false } } });
+  const { values: args } = parseArgs({ options: { id: { type: "string" }, apply: { type: "boolean", default: false }, dropbox: { type: "string", default: "api" } } });
   if (!args.id) throw new Error("--id DIS-LP-000n を指定");
   const disId = args.id;
   const cfg = await loadConfig();
@@ -101,8 +134,19 @@ async function main() {
   // 1) Dropbox（新規のみ。既存フォルダがあれば中止）
   await fs.writeFile(P.metaFile, `${JSON.stringify(P.metadata, null, 2)}\n`);
   await fs.writeFile(path.join(P.itemDir, "analysis.md"), P.analysisMd);
-  const dbx = await writeDropbox({ folder: P.folder, plan: P.plan, opts: { apply: true } });
-  if (dbx.status !== "created") throw new Error(`Dropbox: ${dbx.status}（${dbx.folder}）。Notionには書いていません`);
+  let dbx;
+  if (args.dropbox === "local") {
+    // ローカルの同期フォルダへ、上書きせずにコピー → 同期の完了を確かめてから、Notionへ進む
+    const root = process.env.DROPBOX_LOCAL_ROOT || path.join(os.homedir(), "Dropbox");
+    const { copied } = await copyToLocalDropbox({ plan: P.plan, folder: P.folder, root });
+    const { listFolder } = await import("../lib/dropbox-client.mjs");
+    const sync = await waitForSync({ copied, folder: P.folder, listFolder, log: (m) => console.error(m) });
+    if (!sync.ok) throw new Error(`Dropboxの同期が完了していません（${sync.sec}秒待ち。足りない例: ${sync.missing.join(", ")}）。Notionには書いていません`);
+    dbx = { status: "created", uploaded: copied.map((c) => c.remote), syncSec: sync.sec };
+  } else {
+    dbx = await writeDropbox({ folder: P.folder, plan: P.plan, opts: { apply: true } });
+    if (dbx.status !== "created") throw new Error(`Dropbox: ${dbx.status}（${dbx.folder}）。Notionには書いていません`);
+  }
 
   // 2) Notion（新規ページ1つ）。旧ページへのリンク・Dropboxのリンクは、冒頭のコールアウトへ
   const img = path.join(P.itemDir, "files", "01_Normal_Images");

@@ -2332,6 +2332,426 @@
         "notionPageId": "41724d4f-a671-8135-9b8e-df652f69cfbe",
         "note": "28章はDISページの中（28章分析の見出し）"
       }
+    },
+    {
+      "disId": "DIS-LP-0185",
+      "libraryNotionPageId": "3e724d4f-a671-8100-86b3-dc925b63ff33",
+      "disNotionPageId": "41724d4f-a671-818b-b088-cf7abe684947",
+      "canonicalKey": "rdlp:229257",
+      "establishedAt": "2026-11-13",
+      "relation": "same_lp",
+      "libraryId": "LP-0217",
+      "primaryId": "LP-0217",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0217の1件に、DISの層として付ける。DIS-LP-0185を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。",
+      "lp28": {
+        "version": "v1.0",
+        "status": "registered",
+        "registeredAt": "2026-11-13",
+        "dropboxFolder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-14/dis-daily/DIS-LP-0185/28ch",
+        "notionPageId": "41724d4f-a671-818b-b088-cf7abe684947",
+        "note": "28章はDISページの中（28章分析の見出し）"
+      }
+    },
+    {
+      "disId": "DIS-LP-0186",
+      "libraryNotionPageId": "3e724d4f-a671-81b3-a5e4-c69087992af3",
+      "disNotionPageId": "41724d4f-a671-8135-82ad-e2b668f296ec",
+      "canonicalKey": "rdlp:229256",
+      "establishedAt": "2026-11-13",
+      "relation": "same_lp",
+      "libraryId": "LP-0218",
+      "primaryId": "LP-0218",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0218の1件に、DISの層として付ける。DIS-LP-0186を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。",
+      "lp28": {
+        "version": "v1.0",
+        "status": "registered",
+        "registeredAt": "2026-11-13",
+        "dropboxFolder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-14/dis-daily/DIS-LP-0186/28ch",
+        "notionPageId": "41724d4f-a671-8135-82ad-e2b668f296ec",
+        "note": "28章はDISページの中（28章分析の見出し）"
+      }
+    },
+    {
+      "disId": "DIS-LP-0187",
+      "libraryNotionPageId": "3e724d4f-a671-81ac-8f3b-dea1e184762b",
+      "disNotionPageId": "41724d4f-a671-81a0-bbdf-c5ada919caf1",
+      "canonicalKey": "rdlp:229255",
+      "establishedAt": "2026-11-13",
+      "relation": "same_lp",
+      "libraryId": "LP-0219",
+      "primaryId": "LP-0219",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0219の1件に、DISの層として付ける。DIS-LP-0187を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。",
+      "lp28": {
+        "version": "v1.0",
+        "status": "registered",
+        "registeredAt": "2026-11-13",
+        "dropboxFolder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-14/dis-daily/DIS-LP-0187/28ch",
+        "notionPageId": "41724d4f-a671-81a0-bbdf-c5ada919caf1",
+        "note": "28章はDISページの中（28章分析の見出し）"
+      }
+    },
+    {
+      "disId": "DIS-LP-0188",
+      "libraryNotionPageId": "3e724d4f-a671-8177-956f-f4d6de83fe14",
+      "disNotionPageId": "41724d4f-a671-8146-981f-f9f3e2301e4a",
+      "canonicalKey": "rdlp:229253",
+      "establishedAt": "2026-11-13",
+      "relation": "same_lp",
+      "libraryId": "LP-0220",
+      "primaryId": "LP-0220",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0220の1件に、DISの層として付ける。DIS-LP-0188を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。",
+      "lp28": {
+        "version": "v1.0",
+        "status": "registered",
+        "registeredAt": "2026-11-13",
+        "dropboxFolder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-14/dis-daily/DIS-LP-0188/28ch",
+        "notionPageId": "41724d4f-a671-8146-981f-f9f3e2301e4a",
+        "note": "28章はDISページの中（28章分析の見出し）"
+      }
+    },
+    {
+      "disId": "DIS-LP-0189",
+      "libraryNotionPageId": "3e724d4f-a671-81c5-8301-f6c63346aff5",
+      "disNotionPageId": "41724d4f-a671-814a-bdbb-d4ec1e263f96",
+      "canonicalKey": "rdlp:229249",
+      "establishedAt": "2026-11-13",
+      "relation": "same_lp",
+      "libraryId": "LP-0221",
+      "primaryId": "LP-0221",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0221の1件に、DISの層として付ける。DIS-LP-0189を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。",
+      "lp28": {
+        "version": "v1.0",
+        "status": "registered",
+        "registeredAt": "2026-11-13",
+        "dropboxFolder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-14/dis-daily/DIS-LP-0189/28ch",
+        "notionPageId": "41724d4f-a671-814a-bdbb-d4ec1e263f96",
+        "note": "28章はDISページの中（28章分析の見出し）"
+      }
+    },
+    {
+      "disId": "DIS-LP-0190",
+      "libraryNotionPageId": "3e724d4f-a671-81e0-acc6-f233e5eaf888",
+      "disNotionPageId": "41724d4f-a671-81ba-b9a5-ebb6f4351056",
+      "canonicalKey": "rdlp:229259",
+      "establishedAt": "2026-11-13",
+      "relation": "same_lp",
+      "libraryId": "LP-0222",
+      "primaryId": "LP-0222",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0222の1件に、DISの層として付ける。DIS-LP-0190を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。",
+      "lp28": {
+        "version": "v1.0",
+        "status": "registered",
+        "registeredAt": "2026-11-13",
+        "dropboxFolder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-14/dis-daily/DIS-LP-0190/28ch",
+        "notionPageId": "41724d4f-a671-81ba-b9a5-ebb6f4351056",
+        "note": "28章はDISページの中（28章分析の見出し）"
+      }
+    },
+    {
+      "disId": "DIS-LP-0191",
+      "libraryNotionPageId": "3e824d4f-a671-813f-8dcf-c81929a3d362",
+      "disNotionPageId": "41724d4f-a671-814c-b251-c7d75dfdd1e9",
+      "canonicalKey": "rdlp:229246",
+      "establishedAt": "2026-11-13",
+      "relation": "same_lp",
+      "libraryId": "LP-0225",
+      "primaryId": "LP-0225",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0225の1件に、DISの層として付ける。DIS-LP-0191を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。",
+      "lp28": {
+        "version": "v1.0",
+        "status": "registered",
+        "registeredAt": "2026-11-13",
+        "dropboxFolder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-14/dis-daily/DIS-LP-0191/28ch",
+        "notionPageId": "41724d4f-a671-814c-b251-c7d75dfdd1e9",
+        "note": "28章はDISページの中（28章分析の見出し）"
+      }
+    },
+    {
+      "disId": "DIS-LP-0192",
+      "libraryNotionPageId": "3e824d4f-a671-81f3-a6fd-deaa30b1238d",
+      "disNotionPageId": "41724d4f-a671-81e2-b008-da853566cd73",
+      "canonicalKey": "rdlp:229244",
+      "establishedAt": "2026-11-13",
+      "relation": "same_lp",
+      "libraryId": "LP-0226",
+      "primaryId": "LP-0226",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0226の1件に、DISの層として付ける。DIS-LP-0192を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。",
+      "lp28": {
+        "version": "v1.0",
+        "status": "registered",
+        "registeredAt": "2026-11-13",
+        "dropboxFolder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-14/dis-daily/DIS-LP-0192/28ch",
+        "notionPageId": "41724d4f-a671-81e2-b008-da853566cd73",
+        "note": "28章はDISページの中（28章分析の見出し）"
+      }
+    },
+    {
+      "disId": "DIS-LP-0193",
+      "libraryNotionPageId": "3e824d4f-a671-81c9-8eca-ebc3c938680c",
+      "disNotionPageId": "41724d4f-a671-81f8-8665-e8032ae8b1bf",
+      "canonicalKey": "rdlp:229243",
+      "establishedAt": "2026-11-13",
+      "relation": "same_lp",
+      "libraryId": "LP-0229",
+      "primaryId": "LP-0229",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0229の1件に、DISの層として付ける。DIS-LP-0193を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。",
+      "lp28": {
+        "version": "v1.0",
+        "status": "registered",
+        "registeredAt": "2026-11-13",
+        "dropboxFolder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-14/dis-daily/DIS-LP-0193/28ch",
+        "notionPageId": "41724d4f-a671-81f8-8665-e8032ae8b1bf",
+        "note": "28章はDISページの中（28章分析の見出し）"
+      }
+    },
+    {
+      "disId": "DIS-LP-0194",
+      "libraryNotionPageId": "3e824d4f-a671-817f-b08c-cba5430da611",
+      "disNotionPageId": "41724d4f-a671-81ae-896f-d5f08622b55d",
+      "canonicalKey": "rdlp:229242",
+      "establishedAt": "2026-11-13",
+      "relation": "same_lp",
+      "libraryId": "LP-0230",
+      "primaryId": "LP-0230",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0230の1件に、DISの層として付ける。DIS-LP-0194を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。",
+      "lp28": {
+        "version": "v1.0",
+        "status": "registered",
+        "registeredAt": "2026-11-13",
+        "dropboxFolder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-14/dis-daily/DIS-LP-0194/28ch",
+        "notionPageId": "41724d4f-a671-81ae-896f-d5f08622b55d",
+        "note": "28章はDISページの中（28章分析の見出し）"
+      }
+    },
+    {
+      "disId": "DIS-LP-0195",
+      "libraryNotionPageId": "3e924d4f-a671-8110-9ca0-d9da3100d23d",
+      "disNotionPageId": "41724d4f-a671-8163-aa54-faa279a62ddd",
+      "canonicalKey": "rdlp:229241",
+      "establishedAt": "2026-11-13",
+      "relation": "same_lp",
+      "libraryId": "LP-0231",
+      "primaryId": "LP-0231",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0231の1件に、DISの層として付ける。DIS-LP-0195を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。",
+      "lp28": {
+        "version": "v1.0",
+        "status": "registered",
+        "registeredAt": "2026-11-13",
+        "dropboxFolder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-14/dis-daily/DIS-LP-0195/28ch",
+        "notionPageId": "41724d4f-a671-8163-aa54-faa279a62ddd",
+        "note": "28章はDISページの中（28章分析の見出し）"
+      }
+    },
+    {
+      "disId": "DIS-LP-0196",
+      "libraryNotionPageId": "3e924d4f-a671-81bf-84aa-ccc819cc8b6b",
+      "disNotionPageId": "41724d4f-a671-81aa-ad97-fbab75f7ff78",
+      "canonicalKey": "rdlp:229240",
+      "establishedAt": "2026-11-13",
+      "relation": "same_lp",
+      "libraryId": "LP-0232",
+      "primaryId": "LP-0232",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0232の1件に、DISの層として付ける。DIS-LP-0196を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。",
+      "lp28": {
+        "version": "v1.0",
+        "status": "registered",
+        "registeredAt": "2026-11-13",
+        "dropboxFolder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-14/dis-daily/DIS-LP-0196/28ch",
+        "notionPageId": "41724d4f-a671-81aa-ad97-fbab75f7ff78",
+        "note": "28章はDISページの中（28章分析の見出し）"
+      }
+    },
+    {
+      "disId": "DIS-LP-0197",
+      "libraryNotionPageId": "3e924d4f-a671-81cc-8281-e82ff6ea1fb2",
+      "disNotionPageId": "41724d4f-a671-8188-9d14-f5dde55e4133",
+      "canonicalKey": "rdlp:227366",
+      "establishedAt": "2026-11-13",
+      "relation": "same_lp",
+      "libraryId": "LP-0233",
+      "primaryId": "LP-0233",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0233の1件に、DISの層として付ける。DIS-LP-0197を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。",
+      "lp28": {
+        "version": "v1.0",
+        "status": "registered",
+        "registeredAt": "2026-11-13",
+        "dropboxFolder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-14/dis-daily/DIS-LP-0197/28ch",
+        "notionPageId": "41724d4f-a671-8188-9d14-f5dde55e4133",
+        "note": "28章はDISページの中（28章分析の見出し）"
+      }
+    },
+    {
+      "disId": "DIS-LP-0198",
+      "libraryNotionPageId": "3ea24d4f-a671-812f-b959-fa50456e67b0",
+      "disNotionPageId": "41724d4f-a671-8135-b5fd-ed80b48d1905",
+      "canonicalKey": "rdlp:229269",
+      "establishedAt": "2026-11-13",
+      "relation": "same_lp",
+      "libraryId": "LP-0235",
+      "primaryId": "LP-0235",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0235の1件に、DISの層として付ける。DIS-LP-0198を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。",
+      "lp28": {
+        "version": "v1.0",
+        "status": "registered",
+        "registeredAt": "2026-11-13",
+        "dropboxFolder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-14/dis-daily/DIS-LP-0198/28ch",
+        "notionPageId": "41724d4f-a671-8135-b5fd-ed80b48d1905",
+        "note": "28章はDISページの中（28章分析の見出し）"
+      }
+    },
+    {
+      "disId": "DIS-LP-0199",
+      "libraryNotionPageId": "3ea24d4f-a671-8164-913c-e3faeb920099",
+      "disNotionPageId": "41724d4f-a671-815f-b994-fa4b25164294",
+      "canonicalKey": "rdlp:229267",
+      "establishedAt": "2026-11-13",
+      "relation": "same_lp",
+      "libraryId": "LP-0236",
+      "primaryId": "LP-0236",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0236の1件に、DISの層として付ける。DIS-LP-0199を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。",
+      "lp28": {
+        "version": "v1.0",
+        "status": "registered",
+        "registeredAt": "2026-11-13",
+        "dropboxFolder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-14/dis-daily/DIS-LP-0199/28ch",
+        "notionPageId": "41724d4f-a671-815f-b994-fa4b25164294",
+        "note": "28章はDISページの中（28章分析の見出し）"
+      }
+    },
+    {
+      "disId": "DIS-LP-0200",
+      "libraryNotionPageId": "3eb24d4f-a671-81a1-9363-d373b43ddce2",
+      "disNotionPageId": "41724d4f-a671-818a-8960-ee1ffc4b363e",
+      "canonicalKey": "rdlp:229266",
+      "establishedAt": "2026-11-13",
+      "relation": "same_lp",
+      "libraryId": "LP-0237",
+      "primaryId": "LP-0237",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0237の1件に、DISの層として付ける。DIS-LP-0200を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。",
+      "lp28": {
+        "version": "v1.0",
+        "status": "registered",
+        "registeredAt": "2026-11-13",
+        "dropboxFolder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-14/dis-daily/DIS-LP-0200/28ch",
+        "notionPageId": "41724d4f-a671-818a-8960-ee1ffc4b363e",
+        "note": "28章はDISページの中（28章分析の見出し）"
+      }
+    },
+    {
+      "disId": "DIS-LP-0201",
+      "libraryNotionPageId": "3ec24d4f-a671-8143-a351-d59c4100b8b1",
+      "disNotionPageId": "41724d4f-a671-8148-b37a-c45fa366880e",
+      "canonicalKey": "rdlp:229274",
+      "establishedAt": "2026-11-13",
+      "relation": "same_lp",
+      "libraryId": "LP-0239",
+      "primaryId": "LP-0239",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0239の1件に、DISの層として付ける。DIS-LP-0201を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。",
+      "lp28": {
+        "version": "v1.0",
+        "status": "registered",
+        "registeredAt": "2026-11-13",
+        "dropboxFolder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-14/dis-daily/DIS-LP-0201/28ch",
+        "notionPageId": "41724d4f-a671-8148-b37a-c45fa366880e",
+        "note": "28章はDISページの中（28章分析の見出し）"
+      }
+    },
+    {
+      "disId": "DIS-LP-0202",
+      "libraryNotionPageId": "3ec24d4f-a671-8169-8bb6-db12c672fbe4",
+      "disNotionPageId": "41724d4f-a671-814d-9c19-c7e29b72e74e",
+      "canonicalKey": "rdlp:229285",
+      "establishedAt": "2026-11-13",
+      "relation": "same_lp",
+      "libraryId": "LP-0240",
+      "primaryId": "LP-0240",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0240の1件に、DISの層として付ける。DIS-LP-0202を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。",
+      "lp28": {
+        "version": "v1.0",
+        "status": "registered",
+        "registeredAt": "2026-11-13",
+        "dropboxFolder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-14/dis-daily/DIS-LP-0202/28ch",
+        "notionPageId": "41724d4f-a671-814d-9c19-c7e29b72e74e",
+        "note": "28章はDISページの中（28章分析の見出し）"
+      }
+    },
+    {
+      "disId": "DIS-LP-0203",
+      "libraryNotionPageId": "3ed24d4f-a671-81a6-9ea5-f7980bd44d13",
+      "disNotionPageId": "41724d4f-a671-8193-ad3e-dc942596abe4",
+      "canonicalKey": "rdlp:229272",
+      "establishedAt": "2026-11-13",
+      "relation": "same_lp",
+      "libraryId": "LP-0241",
+      "primaryId": "LP-0241",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0241の1件に、DISの層として付ける。DIS-LP-0203を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。",
+      "lp28": {
+        "version": "v1.0",
+        "status": "registered",
+        "registeredAt": "2026-11-13",
+        "dropboxFolder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-14/dis-daily/DIS-LP-0203/28ch",
+        "notionPageId": "41724d4f-a671-8193-ad3e-dc942596abe4",
+        "note": "28章はDISページの中（28章分析の見出し）"
+      }
+    },
+    {
+      "disId": "DIS-LP-0204",
+      "libraryNotionPageId": "3ed24d4f-a671-81c0-99da-e9dc117fdb87",
+      "disNotionPageId": "41724d4f-a671-81f2-a52e-ef3f0466b70b",
+      "canonicalKey": "rdlp:229293",
+      "establishedAt": "2026-11-13",
+      "relation": "same_lp",
+      "libraryId": "LP-0242",
+      "primaryId": "LP-0242",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0242の1件に、DISの層として付ける。DIS-LP-0204を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。",
+      "lp28": {
+        "version": "v1.0",
+        "status": "registered",
+        "registeredAt": "2026-11-13",
+        "dropboxFolder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-14/dis-daily/DIS-LP-0204/28ch",
+        "notionPageId": "41724d4f-a671-81f2-a52e-ef3f0466b70b",
+        "note": "28章はDISページの中（28章分析の見出し）"
+      }
+    },
+    {
+      "disId": "DIS-LP-0205",
+      "libraryNotionPageId": "3ee24d4f-a671-81e7-8824-d5bf28d4af3d",
+      "disNotionPageId": "41724d4f-a671-81f0-8721-f0904001e84f",
+      "canonicalKey": "rdlp:229291",
+      "establishedAt": "2026-11-13",
+      "relation": "same_lp",
+      "libraryId": "LP-0243",
+      "primaryId": "LP-0243",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0243の1件に、DISの層として付ける。DIS-LP-0205を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。",
+      "lp28": {
+        "version": "v1.0",
+        "status": "registered",
+        "registeredAt": "2026-11-13",
+        "dropboxFolder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-14/dis-daily/DIS-LP-0205/28ch",
+        "notionPageId": "41724d4f-a671-81f0-8721-f0904001e84f",
+        "note": "28章はDISページの中（28章分析の見出し）"
+      }
     }
   ]
 }
