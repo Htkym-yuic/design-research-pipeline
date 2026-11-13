@@ -1,0 +1,140 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0034",
+  "media_type": "WB",
+  "title": "UNION TEC | 人類に意義ある空間を",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://sankoudesign.com/web/uniontec/",
+    "capture_url": "https://www.union-tec.jp/",
+    "official_url": "https://www.union-tec.jp/"
+  },
+  "analysis": {
+    "summary": "社名ワードマークを背景に楕円マスクした写真を重ねるヒーロー表現で、空間デザイン・施工会社としてのクリエイティブな姿勢を印象づけている。 理念文で「空間は箱ではなく体験・価値を生む」立場を説明し、Capability→Serviceで事業領域4分野を提示する。 業態別事例カルーセルとNewsリストを分離し、複数拠点情報付きフッターで組織の信頼性を補強する。",
+    "score": {
+      "visual": 15,
+      "clarity": 16,
+      "originality": 9,
+      "reusability": 16,
+      "learning": 10,
+      "evidence": 7,
+      "total": 73
+    },
+    "units": [
+      {
+        "name": "ファーストビュー",
+        "role": "企業の創造的な姿勢と空間デザイン領域を印象づける。",
+        "reuse": "社名ワードマーク背景＋円形マスク写真＋分割見出しコピー＋リード文＋スクロール誘導。",
+        "evidence": "PC/SP First View、PC/SP Full Page冒頭、reference.png。"
+      },
+      {
+        "name": "ナビゲーション",
+        "role": "強み・事業展開・企業情報・採用など目的別ページへ分類案内する。",
+        "reuse": "検討系ナビ＋採用・更新系ナビの二群分離＋固定Contactボタン。",
+        "evidence": "PC/SP First View、PC/SP Full Page冒頭。"
+      },
+      {
+        "name": "主要コンテンツ",
+        "role": "企業理念と事業領域（強み・サービス内容）を説明する。",
+        "reuse": "理念文（3段落）＋強みセクション（見出し＋CTA）＋事業領域4分野の箇条書き＋Discover more導線。",
+        "evidence": "PC Full Page（y≈1060〜4009px）、SP Full Page該当区間。"
+      },
+      {
+        "name": "証拠・事例",
+        "role": "業態別の施工実績と、企業活動・メディア掲載の継続性を示す。",
+        "reuse": "業態ラベル付き事例カルーセル＋日付・カテゴリタグ付きNewsリスト＋View All導線。",
+        "evidence": "PC Full Page（y≈4010〜6640px付近）、SP Full Page該当区間。"
+      },
+      {
+        "name": "問い合わせ・コンバージョン",
+        "role": "発注検討者を問い合わせへ、各セクションの詳細情報へ誘導する。",
+        "reuse": "ヘッダー／フッター常設Contactボタン＋セクション単位のDiscover more二段導線。",
+        "evidence": "PC/SP First View、PC/SP Full Page全域。"
+      },
+      {
+        "name": "フッター",
+        "role": "企業としての規模感、採用情報、各種ナビゲーション、信頼性団体ロゴを提示する。",
+        "reuse": "採用訴求＋企業ワードマーク再掲＋複数拠点情報＋ナビ再掲＋認定ロゴ列＋固定Contact＋著作権の順構成。",
+        "evidence": "PC Full Page末尾（y≈8300〜9955px）、SP Full Page末尾。"
+      }
+    ]
+  },
+  "strengths": [
+    "ワードマーク＋楕円写真を重ねる印象的なヒーロー表現",
+    "理念文から事業領域への抽象→具体の流れ",
+    "業態別事例とNewsを分離した信頼構成",
+    "複数拠点明示による規模感の補強"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "リードCTAの温度差不足",
+      "evidence": "Contact/Discover moreのみで統一",
+      "fix": "検討段階別のCTAラベルを追加",
+      "effect": "離脱前の情報収集ニーズを拾える",
+      "metric": "問い合わせ到達率"
+    },
+    {
+      "priority": "P1",
+      "issue": "価格帯・対応規模が不明瞭",
+      "evidence": "本文中に料金・規模情報なし",
+      "fix": "Service内に対応可能な空間規模・業態の目安を明記",
+      "effect": "不適合な問い合わせの削減",
+      "metric": "問い合わせ後の商談成立率"
+    },
+    {
+      "priority": "P2",
+      "issue": "Capability情報の薄さ",
+      "evidence": "セクション内の情報量が少ない（要再検証）",
+      "fix": "強み（技術力・実績件数等）を数値・アイコンで補強",
+      "effect": "強みの説得力向上",
+      "metric": "Capabilityセクション滞在時間"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "ワードマーク＋楕円写真ヒーロー",
+      "keep": "背景ワードマーク、楕円マスク写真、分割見出しコピー",
+      "replace": "ブランド名、写真、コピー文言"
+    },
+    {
+      "id": "C02",
+      "name": "業態別事例カルーセル＋Newsリスト分離",
+      "keep": "業態ラベル、カルーセル形式、日付・カテゴリタグ付きNewsリスト",
+      "replace": "事例写真、クライアント名、記事内容"
+    },
+    {
+      "id": "C03",
+      "name": "採用訴求＋多拠点情報付きフッター",
+      "keep": "採用訴求、拠点情報列、認定ロゴ列の順序",
+      "replace": "写真、拠点住所、ロゴ"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "UNION TECロゴ、施工現場・プロダクト写真、クライアント名、事例写真、ポートレート写真、固有コピー文言、協会・認定ロゴ",
+    "reusable": "ワードマーク＋楕円写真のヒーロー構造、理念文→強み→事業領域の情報順序、業態別事例カルーセルとNewsリストの分離構成、採用訴求付きフッターの構造"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/WB-0034_SITE_PC_full.png",
+      "../01_Normal_Images/WB-0034_SITE_PC_first_view.png",
+      "../01_Normal_Images/WB-0034_SITE_SP_full.png",
+      "../01_Normal_Images/WB-0034_SITE_SP_first_view.png",
+      "../01_Normal_Images/WB-0034_reference.png",
+      "https://www.union-tec.jp/"
+    ],
+    "unknowns": [
+      "section_index_not_generated",
+      "lazy_content_not_rendered",
+      "capture_timing_midtransition",
+      "interactive_states_unverified",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}
