@@ -17,8 +17,9 @@ export function dropboxLink(folder) {
 }
 
 /** 冒頭のコールアウト（旧LPページへのリンク・Dropboxへのリンク入り）。 */
-export function disCallout({ disId, lp, oldPageId, dropboxFolderPath }) {
-  const parts = [...rt(`番号: ${disId}（DIS）${lp ? `＝ ${lp}（旧ライブラリー）` : ''}。このページが正。DISの9軸分析（dis-2.0）と、旧ライブラリーの28章分析（章1〜29）を1ページにまとめている。2つの評価の点数は別の方法によるもので、混ぜない。`)];
+export function disCallout({ disId, lp, oldPageId, dropboxFolderPath, has28 = true }) {
+  const body = has28 ? "DISの9軸分析（dis-2.0）と、旧ライブラリーの28章分析（章1〜29）を1ページにまとめている。2つの評価の点数は別の方法によるもので、混ぜない。" : "DISの9軸分析（dis-2.0）のページ。28章分析は、このページには入っていない。";
+  const parts = [...rt(`番号: ${disId}（DIS）${lp ? `＝ ${lp}（旧ライブラリー）` : ''}。このページが正。${body}`)];
   if (oldPageId) parts.push(...rt("\n旧ページ: "), ...rt(`${lp}｜LP分析`, notionPageUrl(oldPageId)));
   if (dropboxFolderPath) parts.push(...rt("\nDropbox正本: "), ...rt(dropboxFolderPath, dropboxLink(dropboxFolderPath)));
   return { object: "block", type: "callout", callout: { icon: { type: "emoji", emoji: "🔗" }, rich_text: parts } };

@@ -13908,6 +13908,167 @@
       "dropboxFolder": "/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/2026-11-13/dis-daily/DIS-LP-0184",
       "files": 90,
       "blocks": 682
+    },
+    {
+      "at": "2026-11-13T22:13:43.199Z",
+      "kind": "add-unit-images",
+      "disId": "DIS-LP-0004",
+      "lp": "LP-0001",
+      "status": "done",
+      "pageId": "41424d4f-a671-815a-859e-d5290861c176",
+      "steps": [
+        "アップロード 32枚",
+        "挿入 32枚（全Unit成功）",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 684,
+        "byType": {
+          "heading_2": 39,
+          "callout": 1,
+          "image": 7,
+          "bulleted_list_item": 361,
+          "paragraph": 17,
+          "heading_3": 44,
+          "numbered_list_item": 202,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 716,
+        "byType": {
+          "heading_2": 39,
+          "callout": 1,
+          "image": 39,
+          "bulleted_list_item": 361,
+          "paragraph": 17,
+          "heading_3": 44,
+          "numbered_list_item": 202,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0004_20261113T221243Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T22:14:23.657Z",
+      "kind": "add-unit-images",
+      "disId": "DIS-LP-0001",
+      "lp": "LP-0245",
+      "status": "done",
+      "pageId": "41324d4f-a671-812f-91ef-f92ae5cad34e",
+      "steps": [
+        "アップロード 6枚",
+        "挿入 6枚（全Unit成功）",
+        "コールアウトを冒頭に新しく追加",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 140,
+        "byType": {
+          "heading_2": 10,
+          "image": 3,
+          "bulleted_list_item": 91,
+          "paragraph": 8,
+          "heading_3": 12,
+          "numbered_list_item": 16
+        }
+      },
+      "after": {
+        "total": 147,
+        "byType": {
+          "callout": 1,
+          "heading_2": 10,
+          "image": 9,
+          "bulleted_list_item": 91,
+          "paragraph": 8,
+          "heading_3": 12,
+          "numbered_list_item": 16
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0001_20261113T221406Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T22:15:40.649Z",
+      "kind": "add-unit-images",
+      "disId": "DIS-LP-0002",
+      "lp": null,
+      "status": "done",
+      "pageId": "41324d4f-a671-81cd-9741-d12fdf8bfe1d",
+      "steps": [
+        "アップロード 46枚",
+        "挿入 46枚（全Unit成功）",
+        "コールアウトを冒頭に新しく追加",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 329,
+        "byType": {
+          "image": 5,
+          "heading_2": 10,
+          "bulleted_list_item": 257,
+          "paragraph": 8,
+          "heading_3": 29,
+          "numbered_list_item": 20
+        }
+      },
+      "after": {
+        "total": 376,
+        "byType": {
+          "callout": 1,
+          "image": 51,
+          "heading_2": 10,
+          "bulleted_list_item": 257,
+          "paragraph": 8,
+          "heading_3": 29,
+          "numbered_list_item": 20
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0002_20261113T221425Z_blocks-before.json"
+    },
+    {
+      "at": "2026-11-13T22:16:35.277Z",
+      "kind": "add-unit-images",
+      "disId": "DIS-LP-0003",
+      "lp": null,
+      "status": "done",
+      "pageId": "41324d4f-a671-818f-ad48-fc3c24802d20",
+      "steps": [
+        "アップロード 28枚",
+        "挿入 28枚（全Unit成功）",
+        "コールアウトを冒頭に新しく追加",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 232,
+        "byType": {
+          "heading_2": 10,
+          "image": 1,
+          "bulleted_list_item": 173,
+          "paragraph": 8,
+          "heading_3": 20,
+          "numbered_list_item": 20
+        }
+      },
+      "after": {
+        "total": 261,
+        "byType": {
+          "callout": 1,
+          "heading_2": 10,
+          "image": 29,
+          "bulleted_list_item": 173,
+          "paragraph": 8,
+          "heading_3": 20,
+          "numbered_list_item": 20
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0003_20261113T221542Z_blocks-before.json"
     }
   ]
 }

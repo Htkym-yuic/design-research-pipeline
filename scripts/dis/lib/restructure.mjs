@@ -100,3 +100,72 @@ export async function applyRestructure({ disId, lp, pageId, pageArg, oldPageId, 
   result.afterFile = afterFile; result.after = countBlocks(after);
   return result;
 }
+
+/**
+ * Unit画像が、まだ1枚も無いDISページ（末尾の「Unit画像」の見出しが無い形）に、各Unitの分析のすぐ下へ、PC→SPの順で画像を足す。
+ * 消すものは無い。全部のUnitへの挿入が済んだことを確かめてから、コールアウト（無ければ冒頭に新しく足す）・外部同期の1行・プロパティ2つを書き換える。
+ * 合わないときは、何も書かずに止める。
+ */
+export async function applyAddUnitImages({ disId, lp, pageId, pageArg, oldPageId, folderPath, unitImageFiles, backupDir, deps, now = new Date() }) {
+  if (!pageArg) throw new Error("--page（書き換える1ページのID）が必要です");
+  if (norm(pageArg) !== norm(pageId)) throw new Error(`--page（${pageArg}）が、${disId} のDISページ（${pageId}）と一致しません。何も書いていません`);
+  const { listBlocks, uploadImage, insertAfter, insertAtStart, updateBlock, updatePageProps, imageBlock } = deps;
+  const result = { disId, pageId, inserted: [], deleted: [], steps: [] };
+  const before = await listBlocks(pageId);
+  await fs.mkdir(backupDir, { recursive: true });
+  const backupFile = path.join(backupDir, `${disId}_${stamp(now)}_blocks-before.json`);
+  await fs.writeFile(backupFile, `${JSON.stringify(before, null, 2)}\n`, { flag: "wx" });
+  const beforeIds = new Set(before.map((b) => b.id));
+  result.backupFile = backupFile; result.before = countBlocks(before);
+
+  const names = unitImageFiles.map((f) => f.name);
+  const plan = planRestructure(before, groupUnitImages(names));
+  if (plan.oldImageHeadingIds.length) throw new Error(`${disId}: 末尾の「Unit画像」の見出しがあります（この処理の対象ではありません。--restructure を使います）。何も書いていません`);
+  const planned = plan.moves.reduce((n, m) => n + m.images.length, 0);
+  if (!plan.moves.length || planned !== names.length) throw new Error(`${disId}: 画像${names.length}枚のうち、Unitの下へ置けるのは${planned}枚です（Unit見出し${plan.moves.length}件）。何も書いていません`);
+  // どのUnitの下にも、すでに画像があれば、二重に置かない
+  const heads = before.map((b, i) => ({ b, i })).filter(({ b }) => /^heading_[123]$/.test(b.type));
+  for (const m of plan.moves) {
+    const h = heads.find(({ b }) => btext(b).startsWith(m.title));
+    const next = heads.find((x) => x.i > h.i);
+    if (before.slice(h.i + 1, next ? next.i : before.length).some((b) => b.type === "image")) throw new Error(`${disId}: ${m.unit} の下に、すでに画像があります。何も書いていません`);
+  }
+  result.plan = { unitsWithoutImages: plan.unitsWithoutImages, moves: plan.moves.map((m) => ({ unit: m.unit, insertAfterBlockId: m.insertAfterBlockId, images: m.images })) };
+
+  const uploaded = {};
+  for (const f of unitImageFiles) uploaded[f.name] = await uploadImage(f.path, f.name.replace(/\.png$/, ""));
+  result.steps.push(`アップロード ${Object.keys(uploaded).length}枚`);
+  for (const m of plan.moves) {
+    if (!m.images.length) continue;
+    try {
+      const r = await insertAfter(pageId, m.images.map((n) => imageBlock(uploaded[n], n.replace(/\.png$/, ""))), m.insertAfterBlockId);
+      result.inserted.push({ unit: m.unit, images: m.images, blockIds: (r?.results || []).map((b) => b.id).filter((id) => id && !beforeIds.has(id)) });
+    } catch (e) {
+      const err = new Error(`${disId}: ${m.unit} の画像の挿入に失敗して止めました（挿入済み: ${result.inserted.map((x) => x.unit).join(",") || "なし"}）: ${e.message}`);
+      err.result = result; throw err;
+    }
+  }
+  const afterInsert = await listBlocks(pageId);
+  if (afterInsert.length - before.length !== names.length) { const err = new Error(`${disId}: 挿入後のブロック数が、想定（+${names.length}）と違います（+${afterInsert.length - before.length}）。止めました`); err.result = result; throw err; }
+  result.steps.push(`挿入 ${names.length}枚（全Unit成功）`);
+
+  const has28 = before.some((b) => b.type === "heading_1" && btext(b).startsWith("28章分析"));
+  const newCallout = disCallout({ disId, lp, oldPageId, dropboxFolderPath: folderPath, has28 });
+  const cur = await listBlocks(pageId);
+  const callout = cur.find((b) => b.type === "callout" && btext(b).includes(`番号: ${disId}（DIS）`));
+  if (callout) { await updateBlock(callout.id, { callout: { rich_text: newCallout.callout.rich_text } }); result.steps.push("コールアウトを書き換え"); }
+  else { await insertAtStart(pageId, [newCallout]); result.steps.push("コールアウトを冒頭に新しく追加"); }
+  const sync = cur.find((b) => b.type === "bulleted_list_item" && /^外部同期:/.test(btext(b)));
+  if (sync) {
+    const fixed = fixExternalSyncLine(`- ${btext(sync)}`, { dropboxFolderPath: folderPath, lp }).replace(/^- /, "");
+    await updateBlock(sync.id, { bulleted_list_item: { rich_text: [{ type: "text", text: { content: fixed } }] } });
+    result.steps.push("外部同期の1行を書き換え");
+  } else result.steps.push("WARNING: 「外部同期」の行が見つからず、書き換えていません");
+  await updatePageProps(pageId, { "Dropbox正本パス": dropboxPathProp(folderPath), "Notion同期": { checkbox: true } });
+  result.steps.push("プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え");
+  const after = await listBlocks(pageId);
+  const afterFile = path.join(backupDir, `${disId}_${stamp(now)}_blocks-after.json`);
+  await fs.writeFile(afterFile, `${JSON.stringify(after, null, 2)}\n`, { flag: "wx" });
+  result.afterFile = afterFile; result.after = countBlocks(after);
+  return result;
+}

@@ -1604,16 +1604,18 @@ async function restructureFixture(over = {}) {
       const made = children.map((c) => ({ id: `new${n++}`, type: "image", image: c.image }));
       blocks.splice(i + 1, 0, ...made); log.push(`insert:${after}`); return { results: made };
     },
+    insertAtStart: async (_p, children) => { const made = children.map((c, k) => ({ id: `top${k}`, type: c.type, [c.type]: { rich_text: (c[c.type].rich_text || []).map((t) => ({ plain_text: t.text.content, ...t })) } })); blocks.splice(0, 0, ...made); log.push("insertAtStart"); return { results: made }; },
     deleteBlock: async (id) => { if (over.failDelete) throw new Error("削除失敗"); blocks = blocks.filter((b) => b.id !== id); log.push(`delete:${id}`); },
     updateBlock: async (id, body) => { log.push(`update:${id}`); const b = blocks.find((x) => x.id === id); b[b.type] = { rich_text: body[b.type].rich_text.map((t) => ({ plain_text: t.plain_text ?? t.text.content, ...t })) }; },
     updatePageProps: async (id, props) => { log.push(`props:${Object.keys(props).join("+")}`); },
   };
   const dir = await fs.mkdtemp(path.join(os.tmpdir(), "dis-restr-"));
   const files = ["pc_01_FV.png", "sp_01_FV.png", "pc_02_CTA.png", "sp_02_CTA.png"].map((name) => ({ name, path: `/x/${name}` }));
-  const { applyRestructure } = await import("./lib/restructure.mjs");
+  const { applyRestructure, applyAddUnitImages } = await import("./lib/restructure.mjs");
   let k = 0;
+  const add = (o = {}) => applyAddUnitImages({ now: new Date(Date.now() + (k++) * 2000), disId: "DIS-LP-0183", lp: "LP-0180", pageId: "41624d4f-a671-812f-8b91-f149ec931eb2", pageArg: "41624d4fa671812f8b91f149ec931eb2", oldPageId: "3c724d4f-a671-81b3-9ff2-f43b49598fa9", folderPath: "/d/x", unitImageFiles: files, backupDir: dir, deps, ...o });
   const run = (o = {}) => applyRestructure({ now: new Date(Date.now() + (k++) * 2000), disId: "DIS-LP-0183", lp: "LP-0180", pageId: "41624d4f-a671-812f-8b91-f149ec931eb2", pageArg: "41624d4fa671812f8b91f149ec931eb2", oldPageId: "3c724d4f-a671-81b3-9ff2-f43b49598fa9", folderPath: "/d/x", unitImageFiles: files, backupDir: dir, deps, ...o });
-  return { run, log, dir, get blocks() { return blocks; } };
+  return { run, add, log, dir, get blocks() { return blocks; } };
 }
 
 test("restructure: 先にバックアップ→全アップロード→全Unitへ挿入→そのあとで元の画像・見出しを消す（順番を逆にしない）", async () => {
@@ -1718,4 +1720,33 @@ test("lp28-props: メイン訴求・取得日・タグは、そのLPのanalysis�
   // analysisが無ければ、メイン訴求やタグは入れない（推測しない）
   const w = lp28Values({ md, item: { date: "2026-12-01" }, analysis: {}, lpId: "LP-0999", disId: "DIS-LP-0999" });
   assert.ok(!("メイン訴求" in w.props) && !("配色タグ" in w.props));
+});
+
+test("add-unit-images: 末尾の見出しが無いページに、各Unitの下へPC→SPの画像を足す。消すものは無く、コールアウトが無ければ冒頭に足す", async () => {
+  const fx = await restructureFixture({ dropOld: ["co", "h-pc", "i1", "i2", "h-sp", "i3", "i4"] });
+  const n0 = fx.blocks.length;
+  const r = await fx.add();
+  assert.deepEqual(r.inserted.map((x) => x.images), [["pc_01_FV.png", "sp_01_FV.png"], ["pc_02_CTA.png", "sp_02_CTA.png"]]);
+  assert.equal(fx.blocks.length, n0 + 4 + 1); // 画像4枚＋コールアウト1つ
+  assert.equal(fx.blocks[0].type, "callout");
+  assert.ok(fx.log.includes("insertAtStart") && !fx.log.some((x) => x.startsWith("delete")));
+  assert.deepEqual(r.steps.filter((x) => /コールアウト/.test(x)), ["コールアウトを冒頭に新しく追加"]);
+  assert.ok(fx.log.some((x) => x.startsWith("props:")));
+});
+
+test("add-unit-images: Unitの下にすでに画像がある・末尾の見出しがある・置けない画像があるときは、何も書かずに止める", async () => {
+  const a = await restructureFixture(); // 末尾の見出しがある
+  await assert.rejects(a.add(), /末尾の「Unit画像」の見出しがあります/);
+  assert.equal(a.log.length, 0);
+  const b = await restructureFixture({ dropOld: ["h-pc", "i1", "i2", "h-sp", "i3", "i4"] });
+  await b.add(); // 1回目は成功
+  await assert.rejects(b.add(), /すでに画像があります/); // 2回目は、二重に置かない
+  const c = await restructureFixture({ dropOld: ["h-pc", "i1", "i2", "h-sp", "i3", "i4"] });
+  await assert.rejects(c.add({ unitImageFiles: [{ name: "pc_09_X.png", path: "/x" }] }), /置けるのは0枚/);
+});
+
+test("dis-page: 28章が入っていないページのコールアウトは、28章を含むと書かない", async () => {
+  const { disCallout } = await import("./lib/dis-page.mjs");
+  const t = disCallout({ disId: "DIS-LP-0002", lp: null, oldPageId: null, dropboxFolderPath: "/d/x", has28: false }).callout.rich_text.map((x) => x.text.content).join("");
+  assert.ok(!t.includes("28章分析（章1〜29）") && t.includes("28章分析は、このページには入っていない"));
 });

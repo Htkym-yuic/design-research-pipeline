@@ -129,7 +129,7 @@ async function buildDis({ disId, lp, itemDir, ctx, oldPageId, folderPath }) {
 }
 
 /** 既存のDISページを、新しい形に組み替える。既定は計画だけ（読み取りのみ）。--apply（＋DIS_ENABLE_WRITES=true・DRY_RUN=false）のときだけ、--page で指定した1ページを書き換える。 */
-async function restructureRun({ disId, lp, entry, rel, itemDir, folder, wr, pageArg, reserved }) {
+async function restructureRun({ disId, lp, entry, rel, itemDir, folder, wr, pageArg, reserved, addOnly }) {
   const pageId = entry.disPageId || rel.disNotionPageId;
   if (!pageId) throw new Error(`${disId} のDISページがありません`);
   const sbu = path.join(itemDir, "files", "01_Normal_Images", "sections_by_unit");
@@ -140,29 +140,31 @@ async function restructureRun({ disId, lp, entry, rel, itemDir, folder, wr, page
     console.log(JSON.stringify({ disId, lp, dryRun: true, pageId, blocks: blocks.length, ...plan, properties: { "Dropbox正本パス": `リンク化（${folder}）`, "Notion同期": "NO → YES（チェックを入れる）" }, callout: "冒頭のコールアウトに、旧ページ・Dropboxのリンクを足す", externalSyncLine: "「Notion=未登録（ローカルのみ）」の行を、実際の状態に書き換える" }, null, 2));
     return;
   }
-  const { applyRestructure } = await import("./lib/restructure.mjs");
+  const { applyRestructure, applyAddUnitImages } = await import("./lib/restructure.mjs");
+  const apply = addOnly ? applyAddUnitImages : applyRestructure;
   const deps = {
     listBlocks: listBlockChildren,
     uploadImage: async (file, name) => upload(await toJpeg(file, name)),
     imageBlock: imageUploadBlock,
     insertAfter: async (parent, children, after) => { const r = await insertBlockChildrenAfter(parent, children, after); await sleep(350); return r; },
     deleteBlock: async (id) => { await notionDelete(id); await sleep(350); },
+    insertAtStart: (parent, children) => notionFetch(`/blocks/${parent}/children`, { method: "PATCH", body: JSON.stringify({ children, position: { type: "start" } }) }),
     updateBlock: (id, body) => notionFetch(`/blocks/${id}`, { method: "PATCH", body: JSON.stringify(body) }),
     updatePageProps: (id, properties) => notionFetch(`/pages/${id}`, { method: "PATCH", body: JSON.stringify({ properties }) }),
   };
   let result;
   try {
-    result = await applyRestructure({ disId, lp, pageId, pageArg, oldPageId: reserved ? null : entry.pageId || rel.libraryNotionPageId, folderPath: folder, unitImageFiles: names.map((n) => ({ name: n, path: path.join(sbu, n) })), backupDir: path.join(REPO_ROOT, "outputs/dis/backup"), deps });
+    result = await apply({ disId, lp, pageId, pageArg, oldPageId: reserved ? null : entry.pageId || rel.libraryNotionPageId, folderPath: folder, unitImageFiles: names.map((n) => ({ name: n, path: path.join(sbu, n) })), backupDir: path.join(REPO_ROOT, "outputs/dis/backup"), deps });
   } catch (e) {
     console.error(JSON.stringify({ disId, status: "stopped", error: e.message, ...(e.result ? { result: e.result } : {}) }, null, 2));
     throw e;
   }
-  await updateJson(path.join(REPO_ROOT, "data/dis-merge-log.json"), { entries: [] }, (prev) => { prev.entries.push({ at: new Date().toISOString(), kind: "restructure-dis-page", disId, lp, status: "done", pageId, steps: result.steps, before: result.before, after: result.after, backupFile: path.relative(REPO_ROOT, result.backupFile) }); return prev; });
+  await updateJson(path.join(REPO_ROOT, "data/dis-merge-log.json"), { entries: [] }, (prev) => { prev.entries.push({ at: new Date().toISOString(), kind: addOnly ? "add-unit-images" : "restructure-dis-page", disId, lp, status: "done", pageId, steps: result.steps, before: result.before, after: result.after, backupFile: path.relative(REPO_ROOT, result.backupFile) }); return prev; });
   console.log(JSON.stringify({ disId, status: "done", ...result }, null, 2));
 }
 
 async function main() {
-  const { values: args } = parseArgs({ options: { id: { type: "string" }, apply: { type: "boolean", default: false }, restructure: { type: "boolean", default: false }, page: { type: "string" } } });
+  const { values: args } = parseArgs({ options: { id: { type: "string" }, apply: { type: "boolean", default: false }, restructure: { type: "boolean", default: false }, "add-unit-images": { type: "boolean", default: false }, page: { type: "string" } } });
   if (!args.id) throw new Error("--id DIS-LP-000n を指定");
   // 同じ番号を2つの処理が同時に反映して、ページが重複しないよう、番号ごとに排他をかける（実書込みのときだけ）
   const lockDir = path.join(REPO_ROOT, "data", ".locks", `migrate-${args.id}`);
@@ -174,6 +176,7 @@ async function main() {
 }
 
 async function run(args) {
+  if (args["add-unit-images"]) args.restructure = true;
   if (args.restructure && args.apply && !args.page) throw new Error("--restructure --apply には、組み替える1ページのIDを --page で指定してください");
   const cfg = await loadConfig();
   const pages = await readJson(path.join(REPO_ROOT, "data/dis-notion-pages.json"));
@@ -193,7 +196,10 @@ async function run(args) {
   const dsId = requireEnv(cfg.media.lp.notion.envVar);
   const folder = dropboxFolder(cfg, "lp", item.date, disId);
 
-  if (args.restructure) return restructureRun({ disId, lp: reserved ? null : lp, entry, rel, itemDir, folder, wr, pageArg: args.page, reserved });
+  if (args.restructure) {
+  const hasOld = !reserved || (args["add-unit-images"] && rel.libraryNotionPageId);
+  return restructureRun({ disId, lp: hasOld ? lp : null, entry, rel, itemDir, folder, wr, pageArg: args.page, reserved: !hasOld, addOnly: args["add-unit-images"] });
+  }
   const oldBlocks = await listBlockChildren(entry.pageId);
   const range = oldRange(oldBlocks, disId);
   const oldPage = await notionFetch(`/pages/${entry.pageId}`);
