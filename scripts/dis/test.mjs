@@ -1591,6 +1591,7 @@ async function restructureFixture(over = {}) {
   const im = (id) => ({ id, type: "image", image: {} });
   const callout = { id: "co", type: "callout", callout: { rich_text: [{ plain_text: "番号: DIS-LP-0183（DIS）＝ LP-0180" }] } };
   let blocks = [callout, h("rt", "撮り直し画像", 2), im("r1"), h("h-u1", "U1 FV"), p("p1"), p("sync", "外部同期: CBS=未同期（x） ／ Notion=未登録（ローカルのみ） ／ Dropbox=未保存"), h("h-u2", "U2 CTA"), p("p2"), h("h-a", "9軸評価", 2), p("p3"), h("h-pc", "PC Unit画像（pc_NN_種類）"), im("i1"), im("i2"), h("h-sp", "SP Unit画像（sp_NN_種類）"), im("i3"), im("i4"), h("h-28", "28章分析", 1), p("p4")];
+  blocks = blocks.filter((b) => !(over.dropOld || []).includes(b.id));
   const log = [];
   let n = 0;
   const deps = {
@@ -1663,10 +1664,34 @@ test("restructure: 元の画像の削除に失敗したら、そこで止めて�
   await assert.rejects(fx.run(), (e) => /削除に失敗/.test(e.message) && e.result.inserted.length === 2);
 });
 
-test("restructure: PCかSPの画像が片方しか無いUnitがあれば、何も書かずに止める", async () => {
+test("restructure: PCかSPの片方しか無いUnitは、あるほうだけを置き、元の画像と見出しを消す", async () => {
+  const fx = await restructureFixture({ dropOld: ["i4"] });
+  const r = await fx.run({ unitImageFiles: [{ name: "pc_01_FV.png", path: "/x" }, { name: "sp_01_FV.png", path: "/x" }, { name: "pc_02_CTA.png", path: "/x" }] });
+  assert.deepEqual(r.inserted.map((x) => x.images), [["pc_01_FV.png", "sp_01_FV.png"], ["pc_02_CTA.png"]]);
+  assert.ok(!fx.blocks.some((b) => b.id === "h-pc" || b.id === "h-sp" || b.id === "i1"));
+});
+
+test("restructure: 画像が1枚も無いUnitには何も置かない（挿入しない）", async () => {
+  const fx = await restructureFixture({ dropOld: ["i3", "i4"] });
+  const r = await fx.run({ unitImageFiles: [{ name: "pc_01_FV.png", path: "/x" }, { name: "sp_01_FV.png", path: "/x" }] });
+  assert.equal(r.inserted.length, 1);
+  assert.deepEqual(r.plan.unitsWithoutImages, ["U2"]);
+  assert.equal(fx.log.filter((x) => x.startsWith("insert")).length, 1);
+});
+
+test("restructure: どのUnitにも対応しない画像が1枚でもあれば、何も書かずに止める", async () => {
   const fx = await restructureFixture();
-  await assert.rejects(fx.run({ unitImageFiles: [{ name: "pc_01_FV.png", path: "/x" }, { name: "sp_01_FV.png", path: "/x" }, { name: "pc_02_CTA.png", path: "/x" }] }), /PCかSPの画像が無いUnit: U2/);
+  const files = [...["pc_01_FV.png", "sp_01_FV.png", "pc_02_CTA.png", "sp_02_CTA.png", "pc_03_X.png"]].map((name) => ({ name, path: "/x" }));
+  await assert.rejects(fx.run({ unitImageFiles: files }), /置けるのは4枚|何も書いていません/);
   assert.equal(fx.log.length, 0);
+});
+
+test("dis-page: 旧ライブラリーの番号が無い（予約番号）ときは、コールアウトと外部同期の行に旧LPの記述を入れない", async () => {
+  const { disCallout, fixExternalSyncLine } = await import("./lib/dis-page.mjs");
+  const t = disCallout({ disId: "DIS-LP-0002", lp: null, oldPageId: null, dropboxFolderPath: "/d/x" }).callout.rich_text.map((x) => x.text.content).join("");
+  assert.ok(t.startsWith("番号: DIS-LP-0002（DIS）。このページが正。") && !t.includes("旧ページ") && !t.includes("＝ "));
+  const l = fixExternalSyncLine("- 外部同期: CBS=未同期 ／ Notion=未登録 ／ Dropbox=未保存", { dropboxFolderPath: "/d/x", lp: null });
+  assert.ok(!l.includes("旧ライブラリー") && l.includes("Notion=登録済み（このページ）"));
 });
 
 test("restructure-batch: 何も書いていない停止は「飛ばした」、書込みのエラーは「失敗」に分ける", async () => {

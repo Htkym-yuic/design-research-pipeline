@@ -129,7 +129,7 @@ async function buildDis({ disId, lp, itemDir, ctx, oldPageId, folderPath }) {
 }
 
 /** 既存のDISページを、新しい形に組み替える。既定は計画だけ（読み取りのみ）。--apply（＋DIS_ENABLE_WRITES=true・DRY_RUN=false）のときだけ、--page で指定した1ページを書き換える。 */
-async function restructureRun({ disId, lp, entry, rel, itemDir, folder, wr, pageArg }) {
+async function restructureRun({ disId, lp, entry, rel, itemDir, folder, wr, pageArg, reserved }) {
   const pageId = entry.disPageId || rel.disNotionPageId;
   if (!pageId) throw new Error(`${disId} のDISページがありません`);
   const sbu = path.join(itemDir, "files", "01_Normal_Images", "sections_by_unit");
@@ -152,7 +152,7 @@ async function restructureRun({ disId, lp, entry, rel, itemDir, folder, wr, page
   };
   let result;
   try {
-    result = await applyRestructure({ disId, lp, pageId, pageArg, oldPageId: entry.pageId || rel.libraryNotionPageId, folderPath: folder, unitImageFiles: names.map((n) => ({ name: n, path: path.join(sbu, n) })), backupDir: path.join(REPO_ROOT, "outputs/dis/backup"), deps });
+    result = await applyRestructure({ disId, lp, pageId, pageArg, oldPageId: reserved ? null : entry.pageId || rel.libraryNotionPageId, folderPath: folder, unitImageFiles: names.map((n) => ({ name: n, path: path.join(sbu, n) })), backupDir: path.join(REPO_ROOT, "outputs/dis/backup"), deps });
   } catch (e) {
     console.error(JSON.stringify({ disId, status: "stopped", error: e.message, ...(e.result ? { result: e.result } : {}) }, null, 2));
     throw e;
@@ -177,10 +177,12 @@ async function run(args) {
   if (args.restructure && args.apply && !args.page) throw new Error("--restructure --apply には、組み替える1ページのIDを --page で指定してください");
   const cfg = await loadConfig();
   const pages = await readJson(path.join(REPO_ROOT, "data/dis-notion-pages.json"));
-  const rel = (await readJson(path.join(REPO_ROOT, "data/dis-relations.json"))).relations.find((r) => r.disId === args.id && r.relation === "same_lp");
+  const allRels = (await readJson(path.join(REPO_ROOT, "data/dis-relations.json"))).relations;
+  const rel = allRels.find((r) => r.disId === args.id && r.relation === "same_lp") || (args.restructure ? allRels.find((r) => r.disId === args.id && r.relation === "reserved_for_library") : null);
   if (!rel) throw new Error(`${args.id} に対応するLP番号がありません`);
+  const reserved = rel.relation === "reserved_for_library"; // 旧LPページへのリンクは付けない（組み替えのときだけ）
   const lp = rel.libraryId, disId = args.id;
-  const entry = pages.pages[lp] || (rel.libraryNotionPageId ? { pageId: rel.libraryNotionPageId } : null) || await (async () => { const f = await findPageByMatchProperty(requireEnv(cfg.media.lp.notion.envVar), await loadLpPropertyConfig(), lp); return f ? { pageId: f.id } : null; })();
+  const entry = reserved ? {} : pages.pages[lp] || (rel.libraryNotionPageId ? { pageId: rel.libraryNotionPageId } : null) || await (async () => { const f = await findPageByMatchProperty(requireEnv(cfg.media.lp.notion.envVar), await loadLpPropertyConfig(), lp); return f ? { pageId: f.id } : null; })();
   if (!entry) throw new Error(`${lp} のNotionページが見つかりません`);
   const itemDir = await findItemDir(path.join(REPO_ROOT, "outputs/dis"), cfg, disId);
   const item = await readJson(path.join(itemDir, "item.json"));
@@ -191,7 +193,7 @@ async function run(args) {
   const dsId = requireEnv(cfg.media.lp.notion.envVar);
   const folder = dropboxFolder(cfg, "lp", item.date, disId);
 
-  if (args.restructure) return restructureRun({ disId, lp, entry, rel, itemDir, folder, wr, pageArg: args.page });
+  if (args.restructure) return restructureRun({ disId, lp: reserved ? null : lp, entry, rel, itemDir, folder, wr, pageArg: args.page, reserved });
   const oldBlocks = await listBlockChildren(entry.pageId);
   const range = oldRange(oldBlocks, disId);
   const oldPage = await notionFetch(`/pages/${entry.pageId}`);

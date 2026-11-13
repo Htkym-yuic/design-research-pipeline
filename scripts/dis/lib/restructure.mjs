@@ -44,12 +44,10 @@ export async function applyRestructure({ disId, lp, pageId, pageArg, oldPageId, 
   if (!plan.oldImageHeadingIds.length) throw new Error(`${disId}: 末尾の「Unit画像」の見出しがありません（すでに組み替え済みか、形が違います）。何も書いていません`);
   const planned = plan.moves.reduce((n, m) => n + m.images.length, 0);
   if (!plan.moves.length || planned !== names.length) throw new Error(`${disId}: 画像${names.length}枚のうち、Unitの下へ置けるのは${planned}枚です（Unit見出し${plan.moves.length}件）。何も書いていません`);
-  const grouped = groupUnitImages(names);
-  const lacking = plan.moves.filter((m) => !((grouped[m.unit] || []).some((n) => n.startsWith("pc_")) && (grouped[m.unit] || []).some((n) => n.startsWith("sp_")))).map((m) => m.unit);
-  if (lacking.length) throw new Error(`${disId}: PCかSPの画像が無いUnit: ${lacking.join(",")}。何も書いていません`);
   if (plan.oldImageBlockIds.length !== names.length) throw new Error(`${disId}: 末尾の元の画像が${plan.oldImageBlockIds.length}枚で、置く画像（${names.length}枚）と一致しません。何も書いていません`);
-  if (plan.unitsWithoutImages.length) throw new Error(`${disId}: 画像が無いUnit: ${plan.unitsWithoutImages.join(",")}。何も書いていません`);
-  result.plan = { moves: plan.moves.map((m) => ({ unit: m.unit, insertAfterBlockId: m.insertAfterBlockId, images: m.images })), oldImageBlocks: plan.oldImageBlockIds.length, oldHeadings: plan.oldImageHeadingIds.length };
+  // PCかSPの片方しか無いUnitは、あるほうだけを置く。両方無いUnitには何も置かない。どのUnitにも対応しない画像が1枚でもあれば、上の枚数の確認で止まる
+  const emptyUnits = plan.unitsWithoutImages;
+  result.plan = { unitsWithoutImages: emptyUnits, moves: plan.moves.map((m) => ({ unit: m.unit, insertAfterBlockId: m.insertAfterBlockId, images: m.images })), oldImageBlocks: plan.oldImageBlockIds.length, oldHeadings: plan.oldImageHeadingIds.length };
 
   // 1. 先に、画像をすべてアップロード（失敗してもページは変わらない）
   const uploaded = {};
@@ -58,6 +56,7 @@ export async function applyRestructure({ disId, lp, pageId, pageArg, oldPageId, 
 
   // 2. 各Unitの直後へ挿入（PC→SPの順）。失敗したら、消さずに止まる
   for (const m of plan.moves) {
+    if (!m.images.length) continue;
     try {
       const r = await insertAfter(pageId, m.images.map((n) => imageBlock(uploaded[n], n.replace(/\.png$/, ""))), m.insertAfterBlockId);
       result.inserted.push({ unit: m.unit, images: m.images, blockIds: (r?.results || []).map((b) => b.id).filter((id) => id && !beforeIds.has(id)) }); // Notionは、周辺のブロックも返すため、元からあったものは除く

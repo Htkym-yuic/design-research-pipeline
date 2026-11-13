@@ -18,7 +18,7 @@ export function dropboxLink(folder) {
 
 /** 冒頭のコールアウト（旧LPページへのリンク・Dropboxへのリンク入り）。 */
 export function disCallout({ disId, lp, oldPageId, dropboxFolderPath }) {
-  const parts = [...rt(`番号: ${disId}（DIS）＝ ${lp}（旧ライブラリー）。このページが正。DISの9軸分析（dis-2.0）と、旧ライブラリーの28章分析（章1〜29）を1ページにまとめている。2つの評価の点数は別の方法によるもので、混ぜない。`)];
+  const parts = [...rt(`番号: ${disId}（DIS）${lp ? `＝ ${lp}（旧ライブラリー）` : ''}。このページが正。DISの9軸分析（dis-2.0）と、旧ライブラリーの28章分析（章1〜29）を1ページにまとめている。2つの評価の点数は別の方法によるもので、混ぜない。`)];
   if (oldPageId) parts.push(...rt("\n旧ページ: "), ...rt(`${lp}｜LP分析`, notionPageUrl(oldPageId)));
   if (dropboxFolderPath) parts.push(...rt("\nDropbox正本: "), ...rt(dropboxFolderPath, dropboxLink(dropboxFolderPath)));
   return { object: "block", type: "callout", callout: { icon: { type: "emoji", emoji: "🔗" }, rich_text: parts } };
@@ -31,7 +31,7 @@ export const dropboxPathProp = (folder) => ({ rich_text: rt(folder, dropboxLink(
 export function fixExternalSyncLine(md, { dropboxFolderPath, lp }) {
   return String(md).replace(/^- 外部同期:.*$/m, (line) => {
     const cbs = /CBS=(.*?) ／ Notion=/.exec(line)?.[1] ?? "未同期";
-    return `- 外部同期: CBS=${cbs} ／ Notion=登録済み（このページ。旧ライブラリーの${lp}のページは、読み取りのみで、本文は変更していない） ／ Dropbox=保存済み（${dropboxFolderPath}）`;
+    return `- 外部同期: CBS=${cbs} ／ Notion=登録済み（このページ${lp ? `。旧ライブラリーの${lp}のページは、読み取りのみで、本文は変更していない` : ''}） ／ Dropbox=保存済み（${dropboxFolderPath}）`;
   });
 }
 
