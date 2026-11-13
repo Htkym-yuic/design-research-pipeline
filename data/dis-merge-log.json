@@ -5839,6 +5839,51 @@
       "newPageUrl": "https://app.notion.com/p/DIS-LP-0181-LP-41624d4fa6718174ae41f3260479f49f",
       "status": "done",
       "disPageId": "41624d4f-a671-8174-ae41-f3260479f49f"
+    },
+    {
+      "at": "2026-11-13T12:35:57.672Z",
+      "kind": "restructure-dis-page",
+      "disId": "DIS-LP-0183",
+      "lp": "LP-0180",
+      "status": "done",
+      "pageId": "41624d4f-a671-812f-8b91-f149ec931eb2",
+      "steps": [
+        "アップロード 20枚",
+        "挿入 20枚（全Unit成功）",
+        "削除 画像20枚＋見出し2件",
+        "コールアウトを書き換え",
+        "外部同期の1行を書き換え",
+        "プロパティ2つ（Dropbox正本パス・Notion同期）を書き換え"
+      ],
+      "before": {
+        "total": 495,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 35,
+          "image": 30,
+          "paragraph": 12,
+          "bulleted_list_item": 237,
+          "numbered_list_item": 127,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "after": {
+        "total": 493,
+        "byType": {
+          "callout": 1,
+          "heading_2": 40,
+          "heading_3": 33,
+          "image": 30,
+          "paragraph": 12,
+          "bulleted_list_item": 237,
+          "numbered_list_item": 127,
+          "heading_1": 1,
+          "table": 12
+        }
+      },
+      "backupFile": "outputs/dis/backup/DIS-LP-0183_20261113T123500Z_blocks-before.json"
     }
   ]
 }

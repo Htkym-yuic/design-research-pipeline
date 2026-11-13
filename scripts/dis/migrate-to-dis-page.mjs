@@ -20,7 +20,7 @@ import { listBlockChildren, appendBlockChildren, insertBlockChildrenAfter, headi
 import { requireEnv } from "../lib/env.mjs";
 import { updateJson } from "./lib/lock.mjs";
 import { disCallout, dropboxPathProp, fixExternalSyncLine, buildAnalysisBlocks, groupUnitImages, planRestructure } from "./lib/dis-page.mjs";
-import { toJpeg, downloadToTemp, upload, text, rt, notionUrl, exists, sleep, SLOTS, MARK, OLD_TOGGLE } from "./merge-library.mjs";
+import { toJpeg, downloadToTemp, upload, text, rt, notionUrl, exists, sleep, SLOTS, MARK, OLD_TOGGLE, notionDelete } from "./merge-library.mjs";
 
 const COPY_PROPS = ["ブランド", "参考URL", "出典", "取得日", "商材", "カテゴリ", "業種タグ", "配色タグ", "レイアウトタグ", "コピータイプ", "メイン訴求"];
 const warn = [];
@@ -128,19 +128,41 @@ async function buildDis({ disId, lp, itemDir, ctx, oldPageId, folderPath }) {
   return out;
 }
 
-/** 既存のDISページを、新しい形に組み替える計画（読み取りだけ）。本番の書換えは、方式の確認後に実装する（いまは、--apply でも実行しない）。 */
-async function restructurePlan({ disId, lp, entry, itemDir, folder, wr }) {
-  if (wr) throw new Error("--restructure の本番書換えは未実装です（計画の確認後に実装します）。書込みはしていません");
-  if (!entry.disPageId) throw new Error(`${disId} のDISページがありません`);
+/** 既存のDISページを、新しい形に組み替える。既定は計画だけ（読み取りのみ）。--apply（＋DIS_ENABLE_WRITES=true・DRY_RUN=false）のときだけ、--page で指定した1ページを書き換える。 */
+async function restructureRun({ disId, lp, entry, rel, itemDir, folder, wr, pageArg }) {
+  const pageId = entry.disPageId || rel.disNotionPageId;
+  if (!pageId) throw new Error(`${disId} のDISページがありません`);
   const sbu = path.join(itemDir, "files", "01_Normal_Images", "sections_by_unit");
-  const names = (await exists(sbu)) ? (await fs.readdir(sbu)).filter((n) => /^(pc|sp)_\d{2}_.+\.png$/.test(n)) : [];
-  const blocks = await listBlockChildren(entry.disPageId);
-  const plan = planRestructure(blocks, groupUnitImages(names));
-  console.log(JSON.stringify({ disId, lp, dryRun: true, pageId: entry.disPageId, ...plan, properties: { "Dropbox正本パス": `リンク化（${folder}）`, "Notion同期": "NO → YES（チェックを入れる）" }, callout: "冒頭のコールアウトに、旧ページ・Dropboxのリンクを足す", externalSyncLine: "「Notion=未登録（ローカルのみ）」の行を、実際の状態に書き換える" }, null, 2));
+  const names = ((await exists(sbu)) ? await fs.readdir(sbu) : []).filter((n) => /^(pc|sp)_\d{2}_.+\.png$/.test(n)).sort();
+  if (!wr) {
+    const blocks = await listBlockChildren(pageId);
+    const plan = planRestructure(blocks, groupUnitImages(names));
+    console.log(JSON.stringify({ disId, lp, dryRun: true, pageId, blocks: blocks.length, ...plan, properties: { "Dropbox正本パス": `リンク化（${folder}）`, "Notion同期": "NO → YES（チェックを入れる）" }, callout: "冒頭のコールアウトに、旧ページ・Dropboxのリンクを足す", externalSyncLine: "「Notion=未登録（ローカルのみ）」の行を、実際の状態に書き換える" }, null, 2));
+    return;
+  }
+  const { applyRestructure } = await import("./lib/restructure.mjs");
+  const deps = {
+    listBlocks: listBlockChildren,
+    uploadImage: async (file, name) => upload(await toJpeg(file, name)),
+    imageBlock: imageUploadBlock,
+    insertAfter: async (parent, children, after) => { const r = await insertBlockChildrenAfter(parent, children, after); await sleep(350); return r; },
+    deleteBlock: async (id) => { await notionDelete(id); await sleep(350); },
+    updateBlock: (id, body) => notionFetch(`/blocks/${id}`, { method: "PATCH", body: JSON.stringify(body) }),
+    updatePageProps: (id, properties) => notionFetch(`/pages/${id}`, { method: "PATCH", body: JSON.stringify({ properties }) }),
+  };
+  let result;
+  try {
+    result = await applyRestructure({ disId, lp, pageId, pageArg, oldPageId: entry.pageId || rel.libraryNotionPageId, folderPath: folder, unitImageFiles: names.map((n) => ({ name: n, path: path.join(sbu, n) })), backupDir: path.join(REPO_ROOT, "outputs/dis/backup"), deps });
+  } catch (e) {
+    console.error(JSON.stringify({ disId, status: "stopped", error: e.message, ...(e.result ? { result: e.result } : {}) }, null, 2));
+    throw e;
+  }
+  await updateJson(path.join(REPO_ROOT, "data/dis-merge-log.json"), { entries: [] }, (prev) => { prev.entries.push({ at: new Date().toISOString(), kind: "restructure-dis-page", disId, lp, status: "done", pageId, steps: result.steps, before: result.before, after: result.after, backupFile: path.relative(REPO_ROOT, result.backupFile) }); return prev; });
+  console.log(JSON.stringify({ disId, status: "done", ...result }, null, 2));
 }
 
 async function main() {
-  const { values: args } = parseArgs({ options: { id: { type: "string" }, apply: { type: "boolean", default: false }, restructure: { type: "boolean", default: false } } });
+  const { values: args } = parseArgs({ options: { id: { type: "string" }, apply: { type: "boolean", default: false }, restructure: { type: "boolean", default: false }, page: { type: "string" } } });
   if (!args.id) throw new Error("--id DIS-LP-000n を指定");
   // 同じ番号を2つの処理が同時に反映して、ページが重複しないよう、番号ごとに排他をかける（実書込みのときだけ）
   const lockDir = path.join(REPO_ROOT, "data", ".locks", `migrate-${args.id}`);
@@ -152,6 +174,7 @@ async function main() {
 }
 
 async function run(args) {
+  if (args.restructure && args.apply && !args.page) throw new Error("--restructure --apply には、組み替える1ページのIDを --page で指定してください");
   const cfg = await loadConfig();
   const pages = await readJson(path.join(REPO_ROOT, "data/dis-notion-pages.json"));
   const rel = (await readJson(path.join(REPO_ROOT, "data/dis-relations.json"))).relations.find((r) => r.disId === args.id && r.relation === "same_lp");
@@ -168,7 +191,7 @@ async function run(args) {
   const dsId = requireEnv(cfg.media.lp.notion.envVar);
   const folder = dropboxFolder(cfg, "lp", item.date, disId);
 
-  if (args.restructure) return restructurePlan({ disId, lp, entry, itemDir, folder, wr });
+  if (args.restructure) return restructureRun({ disId, lp, entry, rel, itemDir, folder, wr, pageArg: args.page });
   const oldBlocks = await listBlockChildren(entry.pageId);
   const range = oldRange(oldBlocks, disId);
   const oldPage = await notionFetch(`/pages/${entry.pageId}`);

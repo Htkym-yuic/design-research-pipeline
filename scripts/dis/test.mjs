@@ -1583,3 +1583,82 @@ test("dis-page: 既存ページの組み替え計画（Unitごとの移動先・
   assert.deepEqual(r.oldImageBlockIds, ["i1", "i2", "i3", "i4"]);
   assert.deepEqual(r.oldImageHeadingIds, ["h-pc", "h-sp"]);
 });
+
+// ---- --restructure の本番処理（Notionは差し替え） ----
+async function restructureFixture(over = {}) {
+  const h = (id, t, lv = 3) => ({ id, type: `heading_${lv}`, [`heading_${lv}`]: { rich_text: [{ plain_text: t }] } });
+  const p = (id, t = "x") => ({ id, type: "bulleted_list_item", bulleted_list_item: { rich_text: [{ plain_text: t }] } });
+  const im = (id) => ({ id, type: "image", image: {} });
+  const callout = { id: "co", type: "callout", callout: { rich_text: [{ plain_text: "番号: DIS-LP-0183（DIS）＝ LP-0180" }] } };
+  let blocks = [callout, h("rt", "撮り直し画像", 2), im("r1"), h("h-u1", "U1 FV"), p("p1"), p("sync", "外部同期: CBS=未同期（x） ／ Notion=未登録（ローカルのみ） ／ Dropbox=未保存"), h("h-u2", "U2 CTA"), p("p2"), h("h-a", "9軸評価", 2), p("p3"), h("h-pc", "PC Unit画像（pc_NN_種類）"), im("i1"), im("i2"), h("h-sp", "SP Unit画像（sp_NN_種類）"), im("i3"), im("i4"), h("h-28", "28章分析", 1), p("p4")];
+  const log = [];
+  let n = 0;
+  const deps = {
+    listBlocks: async () => blocks.map((b) => ({ ...b })),
+    uploadImage: async (f, name) => { log.push(`upload:${name}`); return `up-${name}`; },
+    imageBlock: (id, cap) => ({ type: "image", image: { id, cap } }),
+    insertAfter: async (_page, children, after) => {
+      if (over.failInsertAt === log.filter((x) => x.startsWith("insert")).length) throw new Error("API失敗");
+      const i = blocks.findIndex((b) => b.id === after);
+      const made = children.map((c) => ({ id: `new${n++}`, type: "image", image: c.image }));
+      blocks.splice(i + 1, 0, ...made); log.push(`insert:${after}`); return { results: made };
+    },
+    deleteBlock: async (id) => { if (over.failDelete) throw new Error("削除失敗"); blocks = blocks.filter((b) => b.id !== id); log.push(`delete:${id}`); },
+    updateBlock: async (id, body) => { log.push(`update:${id}`); const b = blocks.find((x) => x.id === id); b[b.type] = { rich_text: body[b.type].rich_text.map((t) => ({ plain_text: t.plain_text ?? t.text.content, ...t })) }; },
+    updatePageProps: async (id, props) => { log.push(`props:${Object.keys(props).join("+")}`); },
+  };
+  const dir = await fs.mkdtemp(path.join(os.tmpdir(), "dis-restr-"));
+  const files = ["pc_01_FV.png", "sp_01_FV.png", "pc_02_CTA.png", "sp_02_CTA.png"].map((name) => ({ name, path: `/x/${name}` }));
+  const { applyRestructure } = await import("./lib/restructure.mjs");
+  let k = 0;
+  const run = (o = {}) => applyRestructure({ now: new Date(Date.now() + (k++) * 2000), disId: "DIS-LP-0183", lp: "LP-0180", pageId: "41624d4f-a671-812f-8b91-f149ec931eb2", pageArg: "41624d4fa671812f8b91f149ec931eb2", oldPageId: "3c724d4f-a671-81b3-9ff2-f43b49598fa9", folderPath: "/d/x", unitImageFiles: files, backupDir: dir, deps, ...o });
+  return { run, log, dir, get blocks() { return blocks; } };
+}
+
+test("restructure: 先にバックアップ→全アップロード→全Unitへ挿入→そのあとで元の画像・見出しを消す（順番を逆にしない）", async () => {
+  const fx = await restructureFixture();
+  const r = await fx.run();
+  const L = fx.log;
+  assert.ok((await fs.readdir(fx.dir)).some((f) => /_blocks-before\.json$/.test(f)) && (await fs.readdir(fx.dir)).some((f) => /_blocks-after\.json$/.test(f)));
+  const lastInsert = L.map((x, i) => (x.startsWith("insert") ? i : -1)).filter((i) => i >= 0).pop();
+  const firstDelete = L.findIndex((x) => x.startsWith("delete"));
+  const lastUpload = L.map((x, i) => (x.startsWith("upload") ? i : -1)).filter((i) => i >= 0).pop();
+  assert.ok(lastUpload < L.findIndex((x) => x.startsWith("insert")) && lastInsert < firstDelete);
+  assert.deepEqual(L.filter((x) => x.startsWith("delete")), ["delete:i1", "delete:i2", "delete:i3", "delete:i4", "delete:h-pc", "delete:h-sp"]);
+  const seq = fx.blocks.map((b) => b.id);
+  assert.ok(seq.indexOf("p1") < seq.indexOf("new0") && seq.indexOf("new1") < seq.indexOf("h-u2")); // U1の下に、PC→SP
+  assert.ok(seq.indexOf("p2") < seq.indexOf("new2") && seq.indexOf("new3") < seq.indexOf("h-a"));
+  assert.deepEqual(seq.filter((id) => /^(r1|h-28|p3|p4|rt)$/.test(id)).sort(), ["h-28", "p3", "p4", "r1", "rt"]); // 触らない部分は残る
+  assert.equal(r.before.total, 18); assert.equal(r.after.total, 18 - 6 + 4);
+  assert.ok(L.includes("update:co") && L.includes("update:sync") && L.includes("props:Dropbox正本パス+Notion同期"));
+  const sync = fx.blocks.find((b) => b.id === "sync").bulleted_list_item.rich_text[0].plain_text;
+  assert.match(sync, /Notion=登録済み/); assert.doesNotMatch(sync, /未登録|ローカルのみ/);
+});
+
+test("restructure: 途中で挿入に失敗したら、元の画像は消さずに止まり、状況を報告する", async () => {
+  const fx = await restructureFixture({ failInsertAt: 1 });
+  await assert.rejects(fx.run(), (e) => /U2 の画像の挿入に失敗/.test(e.message) && /元の画像は消さず/.test(e.message) && e.result.inserted.length === 1);
+  assert.equal(fx.log.filter((x) => x.startsWith("delete")).length, 0);
+  assert.ok(fx.blocks.some((b) => b.id === "i1") && fx.blocks.some((b) => b.id === "h-pc"));
+});
+
+test("restructure: --page が違う・無いときは、何も書かない", async () => {
+  const fx = await restructureFixture();
+  await assert.rejects(fx.run({ pageArg: "00000000-0000-0000-0000-000000000000" }), /一致しません/);
+  await assert.rejects(fx.run({ pageArg: "" }), /--page/);
+  assert.equal(fx.log.length, 0);
+  assert.deepEqual(await fs.readdir(fx.dir), []);
+});
+
+test("restructure: 置く画像と元の画像の枚数が合わない・すでに組み替え済みなら、何も書かずに止める", async () => {
+  const fx = await restructureFixture();
+  await assert.rejects(fx.run({ unitImageFiles: [{ name: "pc_01_FV.png", path: "/x" }, { name: "sp_01_FV.png", path: "/x" }] }), /一致しません|置けるのは/);
+  assert.equal(fx.log.length, 0);
+  await fx.run(); // 1回目は成功
+  await assert.rejects(fx.run(), /すでに組み替え済み/); // 2回目は、見出しが無いので止まる
+});
+
+test("restructure: 元の画像の削除に失敗したら、そこで止めて報告する（挿入は済んでいる）", async () => {
+  const fx = await restructureFixture({ failDelete: true });
+  await assert.rejects(fx.run(), (e) => /削除に失敗/.test(e.message) && e.result.inserted.length === 2);
+});
