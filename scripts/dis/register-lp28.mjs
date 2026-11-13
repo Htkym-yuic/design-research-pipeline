@@ -15,6 +15,7 @@ import { fileURLToPath } from "node:url";
 import { loadConfig, REPO_ROOT } from "./lib/config.mjs";
 import { assertWritesAllowed, writesAllowed } from "./lib/write-guard.mjs";
 import { findItemDir } from "./import-analysis.mjs";
+import { checkLp28Chapter8 } from "./lib/lp28-check.mjs";
 
 const rtChunks = (text, max = 1900) => {
   const t = String(text ?? "").replace(/\*\*(.+?)\*\*/g, "$1");
@@ -65,6 +66,9 @@ const countBlocks = (blocks) => blocks.reduce((n, b) => n + 1 + (b.table?.childr
 
 export async function planLp28({ itemDir, lpId, disId, entry, rel }) {
   const md = await fs.readFile(path.join(itemDir, "28ch", `${lpId}_v1.0.md`), "utf8");
+  // 登録の前に、第8章の書式を検証する（項目1〜15が別の行・項目15に20字以上の繰り返しが無い）。NGなら、何も作らず止める
+  const chk = checkLp28Chapter8(md);
+  if (!chk.ok) throw new Error(`28章の第8章の書式が不正です（登録しません）:\n  ${chk.errors.join("\n  ")}`);
   const parts = splitParts(md);
   const brand = (/^# .+?｜(.+?)｜LP分析/m.exec(md) || [])[1] || "";
   const date = "2026-11-10";

@@ -16,9 +16,10 @@ import { loadConfig, REPO_ROOT, readJson } from "./lib/config.mjs";
 import { assertWritesAllowed, writesAllowed } from "./lib/write-guard.mjs";
 import { dropboxFolder, markdownToBlocks } from "./lib/adapters.mjs";
 import { findItemDir } from "./import-analysis.mjs";
-import { listBlockChildren, appendBlockChildren, insertBlockChildrenAfter, headingBlock, paragraphBlock, imageUploadBlock, notionFetch, findPageByMatchProperty, loadLpPropertyConfig } from "../lib/notion-client.mjs";
+import { listBlockChildren, appendBlockChildren, insertBlockChildrenAfter, headingBlock, paragraphBlock, imageUploadBlock, notionFetch, findPageByMatchProperty, loadLpPropertyConfig, getDataSource } from "../lib/notion-client.mjs";
 import { requireEnv } from "../lib/env.mjs";
 import { updateJson } from "./lib/lock.mjs";
+import { disCallout, dropboxPathProp, fixExternalSyncLine, buildAnalysisBlocks, groupUnitImages, planRestructure } from "./lib/dis-page.mjs";
 import { toJpeg, downloadToTemp, upload, text, rt, notionUrl, exists, sleep, SLOTS, MARK, OLD_TOGGLE } from "./merge-library.mjs";
 
 const COPY_PROPS = ["ブランド", "参考URL", "出典", "取得日", "商材", "カテゴリ", "業種タグ", "配色タグ", "レイアウトタグ", "コピータイプ", "メイン訴求"];
@@ -97,10 +98,11 @@ function oldRange(blocks, disId) {
   return (end >= 0 ? blocks.slice(0, end) : blocks).filter((b) => !(b.type === "callout" && (text(b).includes(`${disId}（DIS）`) || text(b).includes("移行済み"))));
 }
 
-async function buildDis({ disId, lp, itemDir, ctx }) {
+async function buildDis({ disId, lp, itemDir, ctx, oldPageId, folderPath }) {
   const img = path.join(itemDir, "files", "01_Normal_Images");
   const out = [];
-  out.push({ object: "block", type: "callout", callout: { icon: { type: "emoji", emoji: "🔗" }, rich_text: rt(`番号: ${disId}（DIS）＝ ${lp}（旧ライブラリー）。このページが正。DISの9軸分析（dis-2.0）と、旧ライブラリーの28章分析（章1〜29）を1ページにまとめている。2つの評価の点数は別の方法によるもので、混ぜない。`) } });
+  // 冒頭のコールアウト：旧LPページ（Notionのページへのリンク）とDropbox正本（リンク）
+  out.push(disCallout({ disId, lp, oldPageId, dropboxFolderPath: folderPath }));
   const slotBlocks = [];
   for (const [label, key] of Object.entries(SLOTS)) {
     const src = path.join(img, `${disId}_${key}.png`);
@@ -109,22 +111,36 @@ async function buildDis({ disId, lp, itemDir, ctx }) {
     slotBlocks.push(ctx.dry ? paragraphBlock(`[画像 ${key}]`) : imageUploadBlock(await upload(await toJpeg(src, `${disId}_${key}`)), `DIS撮り直し（${disId}）${label}`));
   }
   if (slotBlocks.length) out.push(headingBlock("撮り直し画像（DIS）：ファーストビュー・全体", 2), ...slotBlocks);
-  const md = await fs.readFile(path.join(itemDir, "analysis.md"), "utf8");
-  out.push(headingBlock(`${MARK}（dis-2.0）｜${disId}`, 2), paragraphBlock(`この見出しは、DISの9軸（1〜5点）による評価。下の「28章分析」（旧ライブラリー）の点数とは別の方法で、混ぜない。`), ...markdownToBlocks(md));
+  const md = fixExternalSyncLine(await fs.readFile(path.join(itemDir, "analysis.md"), "utf8"), { dropboxFolderPath: folderPath, lp });
+  out.push(headingBlock(`${MARK}（dis-2.0）｜${disId}`, 2), paragraphBlock(`この見出しは、DISの9軸（1〜5点）による評価。下の「28章分析」（旧ライブラリー）の点数とは別の方法で、混ぜない。`));
+  // Unit画像は、ページ末尾ではなく、各Unitの分析のすぐ下に置く（PC→SPの順）
   const sbu = path.join(img, "sections_by_unit");
-  for (const dev of ["pc", "sp"]) {
-    const names = (await exists(sbu)) ? (await fs.readdir(sbu)).filter((n) => n.startsWith(`${dev}_`) && n.endsWith(".png")).sort() : [];
-    if (!names.length) continue;
-    out.push(headingBlock(`${dev.toUpperCase()} Unit画像（${dev}_NN_種類）`, 3));
-    for (const n of names) out.push(ctx.dry ? paragraphBlock(`[画像 ${n}]`) : imageUploadBlock(await upload(await toJpeg(path.join(sbu, n), n.replace(/\.png$/, ""))), n.replace(/\.png$/, "")));
-  }
+  const names = (await exists(sbu)) ? (await fs.readdir(sbu)).filter((n) => /^(pc|sp)_\d{2}_.+\.png$/.test(n)) : [];
+  const imageBlock = async (n) => (ctx.dry ? paragraphBlock(`[画像 ${n}]`) : imageUploadBlock(await upload(await toJpeg(path.join(sbu, `${n}.png`), n)), n));
+  // 画像のアップロードは非同期のため、先にすべて用意してから、同期の組み立てに渡す
+  const ready = {};
+  for (const n of names) ready[n.replace(/\.png$/, "")] = await imageBlock(n.replace(/\.png$/, ""));
+  const placed = buildAnalysisBlocks(md, groupUnitImages(names), (n) => ready[n]);
+  if (placed.orphans.length) warn.push(`対応するUnitが分析に無い画像: ${placed.orphans.join(", ")}`);
+  out.push(...placed.blocks);
   const rec = (await fs.readdir(itemDir)).find((n) => /^reconciliation_.*\.md$/.test(n));
   if (rec) out.push(headingBlock(`28章とDISの食い違い（${rec.replace(/\.md$/, "")}）`, 2), ...markdownToBlocks(await fs.readFile(path.join(itemDir, rec), "utf8")));
   return out;
 }
 
+/** 既存のDISページを、新しい形に組み替える計画（読み取りだけ）。本番の書換えは、方式の確認後に実装する（いまは、--apply でも実行しない）。 */
+async function restructurePlan({ disId, lp, entry, itemDir, folder, wr }) {
+  if (wr) throw new Error("--restructure の本番書換えは未実装です（計画の確認後に実装します）。書込みはしていません");
+  if (!entry.disPageId) throw new Error(`${disId} のDISページがありません`);
+  const sbu = path.join(itemDir, "files", "01_Normal_Images", "sections_by_unit");
+  const names = (await exists(sbu)) ? (await fs.readdir(sbu)).filter((n) => /^(pc|sp)_\d{2}_.+\.png$/.test(n)) : [];
+  const blocks = await listBlockChildren(entry.disPageId);
+  const plan = planRestructure(blocks, groupUnitImages(names));
+  console.log(JSON.stringify({ disId, lp, dryRun: true, pageId: entry.disPageId, ...plan, properties: { "Dropbox正本パス": `リンク化（${folder}）`, "Notion同期": "NO → YES（チェックを入れる）" }, callout: "冒頭のコールアウトに、旧ページ・Dropboxのリンクを足す", externalSyncLine: "「Notion=未登録（ローカルのみ）」の行を、実際の状態に書き換える" }, null, 2));
+}
+
 async function main() {
-  const { values: args } = parseArgs({ options: { id: { type: "string" }, apply: { type: "boolean", default: false } } });
+  const { values: args } = parseArgs({ options: { id: { type: "string" }, apply: { type: "boolean", default: false }, restructure: { type: "boolean", default: false } } });
   if (!args.id) throw new Error("--id DIS-LP-000n を指定");
   // 同じ番号を2つの処理が同時に反映して、ページが重複しないよう、番号ごとに排他をかける（実書込みのときだけ）
   const lockDir = path.join(REPO_ROOT, "data", ".locks", `migrate-${args.id}`);
@@ -152,6 +168,7 @@ async function run(args) {
   const dsId = requireEnv(cfg.media.lp.notion.envVar);
   const folder = dropboxFolder(cfg, "lp", item.date, disId);
 
+  if (args.restructure) return restructurePlan({ disId, lp, entry, itemDir, folder, wr });
   const oldBlocks = await listBlockChildren(entry.pageId);
   const range = oldRange(oldBlocks, disId);
   const oldPage = await notionFetch(`/pages/${entry.pageId}`);
@@ -163,7 +180,7 @@ async function run(args) {
 
   const plan = { disId, lp, dryRun: !wr, mode: entry.disPageId ? "既存のDISページに28章を追記" : "DISページを新規作成", oldTopLevelBlocks: range.length };
   const copied = await cloneList(range, ctx);
-  const disBlocks = entry.disPageId ? [] : await buildDis({ disId, lp, itemDir, ctx });
+  const disBlocks = entry.disPageId ? [] : await buildDis({ disId, lp, itemDir, ctx, oldPageId: entry.pageId, folderPath: folder });
   const head = [headingBlock(`28章分析（旧ライブラリー）｜${lp}`, 1), paragraphBlock(`以下は、旧ライブラリーの ${lp} ページ（28章分析。v2.2系）の本文を複製したもの（内容は書き換えていない）。上のDIS 9軸分析とは評価の方法が違うため、点数は混ぜない。`)];
   const all = [...disBlocks, ...head, ...copied];
   plan.newBlocks = all.length; plan.imagesToReupload = ctx.images; plan.warnings = warn;
@@ -172,9 +189,11 @@ async function run(args) {
 
   let pageId = entry.disPageId;
   if (!pageId) {
+    const dsProps = (await getDataSource(dsId)).properties || {};
     const props = { タイトル: { title: rt(oldTitle.replace(/^LP-\d{4}/, disId)) } };
     for (const k of COPY_PROPS) { const v = copyProp(oldPage.properties[k]); if (v) props[k] = v; }
-    props["Dropbox正本パス"] = { rich_text: rt(folder) };
+    props["Dropbox正本パス"] = dropboxPathProp(folder); // 文字ではなくリンク
+    if (dsProps["Notion同期"]?.type === "checkbox") props["Notion同期"] = { checkbox: true };
     props["進捗メモ"] = { rich_text: rt(`${lp} から移行（DISを正）。28章分析は本文の後半。CBSの鍵は旧番号 ${lp}。`) };
     const page = await notionFetch("/pages", { method: "POST", body: JSON.stringify({ parent: { type: "data_source_id", data_source_id: dsId }, properties: props, children: all.slice(0, 90) }) });
     pageId = page.id; plan.newPageId = pageId; plan.newPageUrl = page.url;

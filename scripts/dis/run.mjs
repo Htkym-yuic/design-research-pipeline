@@ -45,6 +45,12 @@ const { values: args } = parseArgs({
   },
 });
 
+/** sections_by_unit（pc_NN_種類.png・sp_NN_種類.png）。あれば、Notionの各Unitの下に置く。 */
+async function listUnitImages(it) {
+  const dir = `${it}/files/01_Normal_Images/sections_by_unit`;
+  return (await fs.readdir(dir).catch(() => [])).filter((n) => /^(pc|sp)_\d{2}_.+\.png$/.test(n)).sort().map((name) => ({ name, path: `${dir}/${name}` }));
+}
+
 const STAGES = ["collect", "select", "review", "rescore", "capture", "template", "validate", "crop", "publish"];
 const DEFAULT_STAGES = STAGES.filter((s) => !["review", "rescore", "crop"].includes(s));
 const stages = args.stage === "all" ? DEFAULT_STAGES : args.stage.split(",");
@@ -308,7 +314,7 @@ async function runMedia(media) {
         if (result.dropbox.status !== "created") throw new Error(`Dropbox: ${result.dropbox.status}`);
       } else result.dropbox = { status: "skipped_already_done" };
       if (entry?.notion?.status !== "created") {
-        result.notionResult = await writeNotion({ cfg, media, values: notionValues, blocks: buildNotionBlocks(analysis, await fs.readFile(`${it}/analysis.md`, "utf8")), opts: { apply: args.apply }, allowExistingUrl: args["allow-existing-url"], extraProps: analysis.notionProps || {}, attachFile, bodyImages });
+        result.notionResult = await writeNotion({ cfg, media, values: notionValues, blocks: buildNotionBlocks(analysis, await fs.readFile(`${it}/analysis.md`, "utf8")), opts: { apply: args.apply }, allowExistingUrl: args["allow-existing-url"], extraProps: analysis.notionProps || {}, attachFile, bodyImages, markdown: await fs.readFile(`${it}/analysis.md`, "utf8"), unitImages: await listUnitImages(it) });
         upsertEntry(ledger, { ...base, notion: result.notionResult }); await saveLedger(ledger, ledgerFile);
       } else result.notionResult = { status: "skipped_already_done" };
     }

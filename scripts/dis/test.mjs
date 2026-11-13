@@ -1508,3 +1508,78 @@ test("媒体フォルダ名: Banner に切り替えても、以前の「バナ�
   const ids = await reservedFromLibrary(tmp, cfg, "banner");
   assert.equal(ids.length, 2);
 });
+
+// ---- 28章の第8章の検証・DISページの新しい形 ----
+const sec = (n, o = {}) => [`### Section ${String(n).padStart(2, "0")}｜テスト`, "", ...["Section番号・位置", "役割", "見出し・主要コピー", "価格・オファー", "CTA", "バッジ・ラベル", "アイコン", "カード・表・FAQ", "装飾", "画像・人物・商品配置", "訴求意図・購入心理への作用", "PC/SP差", "証拠ソース", "確信度", "未確認事項・failure_reason"].map((l, i) => `${i + 1}. ${l}: ${o[i + 1] ?? "内容" + i}`), ""].join("\n");
+const ch8 = (...secs) => ["## 7. x", "", "## 8. 全Section分析（固定15項目）", "", ...secs, "## 9. y", ""].join("\n");
+
+test("lp28-check: 第8章の項目1〜15が別の行で、項目15に繰り返しが無ければ通る", async () => {
+  const { checkLp28Chapter8 } = await import("./lib/lp28-check.mjs");
+  const r = checkLp28Chapter8(ch8(sec(1), sec(2)));
+  assert.equal(r.ok, true); assert.equal(r.sections, 2);
+});
+
+test("lp28-check: 項目が1行につながっていると、NGにする", async () => {
+  const { checkLp28Chapter8 } = await import("./lib/lp28-check.mjs");
+  const bad = sec(1).replace("\n2. 役割:", " 2. 役割:");
+  const r = checkLp28Chapter8(ch8(bad));
+  assert.equal(r.ok, false);
+  assert.ok(r.errors.some((e) => /別々の行/.test(e)) && r.errors.some((e) => /つながっています/.test(e)));
+});
+
+test("lp28-check: 項目15に、20字以上の同じ並びが2回あるとNG（短い重複・別の文はOK）", async () => {
+  const { checkLp28Chapter8, findRepeat } = await import("./lib/lp28-check.mjs");
+  const dup = "FVの見出しに主ボタンが無い意図（アニメーションの有無）";
+  assert.equal(checkLp28Chapter8(ch8(sec(1, { 15: `${dup}／リンク先／${dup}` }))).ok, false);
+  assert.equal(checkLp28Chapter8(ch8(sec(1, { 15: "リンク先／リンク先／フォント／色" }))).ok, true);
+  assert.equal(findRepeat("あいうえお".repeat(2)), null); // 10字×2は、20字未満
+  assert.equal(findRepeat("ABCDEFGHIJKLMNOPQRST-x-ABCDEFGHIJKLMNOPQRST"), "ABCDEFGHIJKLMNOPQRST"); // ちょうど20字の繰り返し
+  assert.equal(findRepeat("ABCDEFGHIJKLMNOPQRS-x-ABCDEFGHIJKLMNOPQRS"), null); // 19字は、対象外
+});
+
+test("lp28-check: 章8・章9が無いと、NG", async () => {
+  const { checkLp28Chapter8 } = await import("./lib/lp28-check.mjs");
+  assert.equal(checkLp28Chapter8("## 1. a").ok, false);
+});
+
+test("dis-page: Unit画像は、各Unitの分析のすぐ下に、PC→SPの順で置く（末尾にまとめない）", async () => {
+  const { buildAnalysisBlocks, groupUnitImages, splitUnits } = await import("./lib/dis-page.mjs");
+  const md = ["# t", "", "## 概要", "", "- a", "", "## Section / Unit（2/2）", "", "### U1 FV", "", "- 位置: x", "", "### U2 CTA", "", "- 位置: y", "", "## 9軸評価", "", "- z"].join("\n");
+  const g = groupUnitImages(["sp_01_FV.png", "pc_02_CTA.png", "pc_01_FV.png", "sp_02_CTA.png", "index.json"]);
+  assert.deepEqual(g.U1, ["pc_01_FV.png", "sp_01_FV.png"]);
+  const { blocks, orphans, placed } = buildAnalysisBlocks(md, g, (n) => ({ type: "image", cap: n }));
+  assert.equal(placed, 4); assert.deepEqual(orphans, []);
+  const seq = blocks.map((b) => (b.type === "image" ? `IMG:${b.cap}` : (b[b.type]?.rich_text?.[0]?.text?.content || "").slice(0, 8)));
+  const iU1 = seq.findIndex((x) => x.startsWith("U1 FV")), iPc1 = seq.indexOf("IMG:pc_01_FV"), iSp1 = seq.indexOf("IMG:sp_01_FV"), iU2 = seq.findIndex((x) => x.startsWith("U2 CTA"));
+  assert.ok(iU1 < iPc1 && iPc1 < iSp1 && iSp1 < iU2, seq.join(" | "));
+  assert.ok(seq.indexOf("IMG:sp_02_CTA") < seq.findIndex((x) => x.startsWith("9軸評価")));
+  assert.equal(splitUnits(md).units.length, 2);
+  const o = buildAnalysisBlocks(md, groupUnitImages(["pc_07_X.png"]), (n) => n); // 対応するUnitが無い画像は、捨てずに報告する
+  assert.deepEqual(o.orphans, ["pc_07_X.png"]);
+});
+
+test("dis-page: コールアウトに旧ページ・Dropboxのリンク、Dropbox正本パスはリンク、外部同期の古い表示を直す", async () => {
+  const { disCallout, dropboxPathProp, dropboxLink, fixExternalSyncLine, notionPageUrl } = await import("./lib/dis-page.mjs");
+  const c = disCallout({ disId: "DIS-LP-0183", lp: "LP-0180", oldPageId: "3c724d4f-a671-81b3-9ff2-f43b49598fa9", dropboxFolderPath: "/design/A B/DIS-LP-0183" });
+  const links = c.callout.rich_text.filter((t) => t.text.link).map((t) => t.text.link.url);
+  assert.deepEqual(links, ["https://app.notion.com/p/3c724d4fa67181b39ff2f43b49598fa9", "https://www.dropbox.com/home/design/A%20B/DIS-LP-0183"]);
+  assert.equal(notionPageUrl("a-b"), "https://app.notion.com/p/ab");
+  assert.equal(dropboxPathProp("/d/x").rich_text[0].text.link.url, dropboxLink("/d/x"));
+  const md = "- 外部同期: CBS=未同期（DISはCBSへ同期しない） ／ Notion=未登録（ローカルのみ。既存…） ／ Dropbox=未保存（読み取りのみ）\n- 次";
+  const f = fixExternalSyncLine(md, { dropboxFolderPath: "/d/x", lp: "LP-0180" });
+  assert.match(f, /CBS=未同期（DISはCBSへ同期しない） ／ Notion=登録済み（このページ/);
+  assert.doesNotMatch(f, /未登録|ローカルのみ|未保存/);
+  assert.match(f, /\n- 次$/);
+});
+
+test("dis-page: 既存ページの組み替え計画（Unitごとの移動先・移す画像・末尾の古い画像）", async () => {
+  const { planRestructure, groupUnitImages } = await import("./lib/dis-page.mjs");
+  const h = (id, t, lv = 3) => ({ id, type: `heading_${lv}`, [`heading_${lv}`]: { rich_text: [{ plain_text: t }] } });
+  const p = (id) => ({ id, type: "bulleted_list_item", bulleted_list_item: { rich_text: [{ plain_text: "x" }] } });
+  const im = (id) => ({ id, type: "image", image: {} });
+  const blocks = [h("h-u1", "U1 FV"), p("p1"), h("h-u2", "U2 CTA"), p("p2"), h("h-a", "9軸評価", 2), p("p3"), h("h-pc", "PC Unit画像（pc_NN_種類）"), im("i1"), im("i2"), h("h-sp", "SP Unit画像（sp_NN_種類）"), im("i3"), im("i4"), h("h-28", "28章分析", 1), p("p4")];
+  const r = planRestructure(blocks, groupUnitImages(["pc_01_FV.png", "sp_01_FV.png", "pc_02_CTA.png", "sp_02_CTA.png"]));
+  assert.deepEqual(r.moves.map((m) => [m.unit, m.insertAfterBlockId, m.images.length]), [["U1", "p1", 2], ["U2", "p2", 2]]);
+  assert.deepEqual(r.oldImageBlockIds, ["i1", "i2", "i3", "i4"]);
+  assert.deepEqual(r.oldImageHeadingIds, ["h-pc", "h-sp"]);
+});

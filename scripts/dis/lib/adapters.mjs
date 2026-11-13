@@ -4,6 +4,7 @@ import { assertWritesAllowed } from "./write-guard.mjs";
 import { requireEnv } from "../../lib/env.mjs";
 import { appendBlockChildren, createPage, findPageByUrl, getDataSource, buildPropertyByType, headingBlock, paragraphBlock, uploadFileForNotion, imageUploadBlock } from "../../lib/notion-client.mjs";
 import { ensureFolder, pathExists, uploadFileNoOverwrite } from "../../lib/dropbox-client.mjs";
+import { dropboxPathProp, buildAnalysisBlocks, groupUnitImages } from "./dis-page.mjs";
 
 /** Dropbox保存先。99_Needs_Review/<日付>/dis-daily/<DIS-ID>/ （新規フォルダーのみ） */
 export function dropboxFolder(cfg, media, date, disId, env = process.env) {
@@ -136,7 +137,7 @@ export function buildNotionBlocks(a, markdown) {
 }
 
 /** Notion作成専用アダプター。既存ページは編集せず、同じURLのページが既にあれば作成をスキップ。 */
-export async function writeNotion({ cfg, media, values, blocks, opts, extraProps = {}, attachFile = null, bodyImages = [], allowExistingUrl = false }) {
+export async function writeNotion({ cfg, media, values, blocks, opts, extraProps = {}, attachFile = null, bodyImages = [], allowExistingUrl = false, markdown = null, unitImages = [] }) {
   assertWritesAllowed(opts);
   requireEnv("NOTION_TOKEN");
   const ncfg = cfg.media[media].notion;
@@ -152,6 +153,17 @@ export async function writeNotion({ cfg, media, values, blocks, opts, extraProps
   }
   const skipped = [];
   const props = buildNotionProps(schema, values, ncfg.propertyMap || DEFAULT_PROPERTY_MAP, extraProps, skipped);
+  // 新しい形：Dropbox正本パスは文字ではなくリンク。「Notion同期」は、登録した時点でYES。
+  if (values.dropboxFolder && schema["Dropbox正本パス"]?.type === "rich_text") props["Dropbox正本パス"] = dropboxPathProp(values.dropboxFolder);
+  if (schema["Notion同期"]?.type === "checkbox") props["Notion同期"] = { checkbox: true };
+  // 新しい形：Unit画像（pc_NN・sp_NN）は、ページ末尾ではなく、各Unitの分析のすぐ下に置く（PC→SPの順）
+  if (markdown && unitImages.length) {
+    const { toJpeg } = await import("../merge-library.mjs");
+    const ready = {};
+    for (const u of unitImages) { const n = u.name.replace(/\.png$/, ""); ready[n] = imageUploadBlock(await uploadFileForNotion(await toJpeg(u.path, n), "image/jpeg"), n); }
+    const placed = buildAnalysisBlocks(markdown, groupUnitImages(unitImages.map((u) => u.name)), (n) => ready[n]);
+    blocks = placed.blocks;
+  }
   let attachment = null;
   if (attachFile && ncfg.fileProp && schema[ncfg.fileProp]?.type === "files") {
     try {
