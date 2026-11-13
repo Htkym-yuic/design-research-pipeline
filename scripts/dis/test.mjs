@@ -1703,3 +1703,19 @@ test("restructure-batch: 何も書いていない停止は「飛ばした」、�
   assert.equal(classify(1, "Error: 元のブロックの削除に失敗して止めました"), "failed");
   assert.equal(MAX_CONSECUTIVE_FAILURES, 3);
 });
+
+// ---- 28章の登録の値は、各LPの内容から作る（固定の文を持たない） ----
+test("lp28-props: メイン訴求・取得日・タグは、そのLPのanalysis・itemから作り、別のLPの文を入れない", async () => {
+  const { lp28Values, stampMarkdown } = await import("./lib/lp28-props.mjs");
+  const md = "# LP-0999｜テストブランド｜LP分析（統一28章 v4.0）\n\n| ヘッダーメタ | 内容 |\n| --- | --- |\n| ステータス | 完成（v1.0）。PCのみ |\n\n---\n\n### Section 01\n### Section 02\n";
+  const v = lp28Values({ md, item: { date: "2026-12-01", sourceDetailUrl: "https://example.com/a" }, analysis: { summary: "ヨガ教室の体験申込LP。続きの文。", notionProps: { "カテゴリ": "その他", "配色タグ": ["グリーン"] } }, lpId: "LP-0999", disId: "DIS-LP-0999" });
+  assert.equal(v.props["メイン訴求"], "ヨガ教室の体験申込LP。");
+  assert.equal(v.props["取得日"], "2026-12-01");
+  assert.deepEqual(v.props["配色タグ"], ["グリーン"]);
+  assert.equal(v.sections, 2);
+  const all = JSON.stringify(v) + stampMarkdown({ lpId: "LP-0999", disId: "DIS-LP-0999", date: v.date, sections: v.sections, status: v.status, dropboxBase: "/d" });
+  assert.ok(!/炭酸|フランス|オランジーナ|2026-11-10|PC画像の全6Section/.test(all));
+  // analysisが無ければ、メイン訴求やタグは入れない（推測しない）
+  const w = lp28Values({ md, item: { date: "2026-12-01" }, analysis: {}, lpId: "LP-0999", disId: "DIS-LP-0999" });
+  assert.ok(!("メイン訴求" in w.props) && !("配色タグ" in w.props));
+});

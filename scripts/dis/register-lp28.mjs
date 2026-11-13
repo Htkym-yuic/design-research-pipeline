@@ -16,6 +16,7 @@ import { loadConfig, REPO_ROOT } from "./lib/config.mjs";
 import { assertWritesAllowed, writesAllowed } from "./lib/write-guard.mjs";
 import { findItemDir } from "./import-analysis.mjs";
 import { checkLp28Chapter8 } from "./lib/lp28-check.mjs";
+import { lp28Values, stampMarkdown } from "./lib/lp28-props.mjs";
 
 const rtChunks = (text, max = 1900) => {
   const t = String(text ?? "").replace(/\*\*(.+?)\*\*/g, "$1");
@@ -70,8 +71,11 @@ export async function planLp28({ itemDir, lpId, disId, entry, rel }) {
   const chk = checkLp28Chapter8(md);
   if (!chk.ok) throw new Error(`28章の第8章の書式が不正です（登録しません）:\n  ${chk.errors.join("\n  ")}`);
   const parts = splitParts(md);
-  const brand = (/^# .+?｜(.+?)｜LP分析/m.exec(md) || [])[1] || "";
-  const date = "2026-11-10";
+  const item = await readItem(itemDir);
+  const analysis = JSON.parse(await fs.readFile(path.join(itemDir, "analysis.json"), "utf8").catch(() => "{}"));
+  const v = lp28Values({ md, item, analysis, lpId, disId });
+  const { brand, date } = v;
+  if (!date) throw new Error("取得日（item.json の date）が分かりません。登録しません");
   const dropboxBase = `/design/Design_Research_Library/LP_Research_Library/99_Needs_Review/${date}/lp28-${lpId}/${lpId}-${brand}`;
   const files = [];
   const add = async (local, remote, kind) => { try { const st = await fs.stat(local); files.push({ local, remote: `${dropboxBase}/${remote}`, bytes: st.size, kind }); } catch { /* 無ければ除外 */ } };
@@ -79,16 +83,16 @@ export async function planLp28({ itemDir, lpId, disId, entry, rel }) {
   await add(path.join(itemDir, "28ch", `${lpId}_v1.0.md`), `03_Analysis/${lpId}_v1.0.md`, "28章Markdown");
   await add(path.join(itemDir, "28ch", `${lpId}_v1.0.html`), `03_Analysis/${lpId}_v1.0.html`, "1ページ完全版HTML");
   for (const f of (await fs.readdir(img).catch(() => [])).sort()) await add(path.join(img, f), `01_Normal_Images/${/^pc_|^sp_/.test(f) ? "sections_by_unit/" : ""}${f}`, "画像");
-  const meta = { lpId, disId, brand, version: "v1.0", date, archiveUrl: rel?.canonicalKey, note: "PCのみ・アーカイブ画像。SP・実ページは未確認。DISとの対応は data/dis-relations.json" };
-  const title = `${lpId}｜${brand}｜LP分析`;
-  const props = { タイトル: title, ブランド: brand, 参考URL: (await readItem(itemDir)).sourceDetailUrl, 出典: "LPアーカイブ（アーカイブ掲載の画像。DISの分析から28章化）", 取得日: date, Dropbox正本パス: dropboxBase, メイン訴求: "フランス生まれの炭酸飲料の、由来・種類・特徴・歴史の紹介（購入導線は画像の範囲で確認できない）", 進捗メモ: `${date}: 28章 v1.0（PCのみ・アーカイブ画像）。SP・実ページ未確認。${disId} と対応`, カテゴリ: "その他", 商材: ["LP", "物販"], 業種タグ: ["飲料・食品"], 配色タグ: ["ホワイト基調", "ブルー", "イエロー"], レイアウトタグ: ["セクション分割", "写真主役", "図解中心", "カタログ型"], コピータイプ: ["情緒訴求", "機能訴求"], ステータス: "進行中" };
+  const meta = { lpId, disId, brand, version: "v1.0", date, archiveUrl: item.sourceDetailUrl || rel?.canonicalKey, note: `${v.headerStatus || "28章 v1.0"}。DISとの対応は data/dis-relations.json` };
+  const title = v.props["タイトル"];
+  const props = { ...v.props, Dropbox正本パス: dropboxBase };
   const pages = [
     { name: `Part1（ヘッダー＋章1〜7）`, title, md: parts.part1, parent: "library" },
     { name: "Part2（章8前半：Section 01〜03）", title: `${lpId}｜章8 全Section分析（前半：01〜03）`, md: parts.part2, parent: "part1" },
     { name: "Part3（章8後半：Section 04〜06）", title: `${lpId}｜章8 全Section分析（後半：04〜06）`, md: parts.part3, parent: "part1" },
     { name: "Part4（章9〜28＋✅マーク）", title: `${lpId}｜章9〜28`, md: parts.part4, parent: "part1" },
   ].map((p) => { const blocks = mdToBlocks(p.md); return { ...p, blocks, blockCount: countBlocks(blocks), images: blocks.filter((b) => b.__image).length }; });
-  const stamp = { title: `✅ 分析表記済み｜${lpId} 台帳反映`, md: `# ✅ 分析表記済み｜${lpId}\n\n- 28章 v1.0（${date}）。対象: PC画像の全6Section。SP・実ページは未確認（章17）。\n- 対応するDIS: ${disId}（Dropbox・Notionに登録済み）\n- 台帳: Dropbox ${dropboxBase}\n- CBS同期: 未同期` };
+  const stamp = { title: `✅ 分析表記済み｜${lpId} 台帳反映`, md: stampMarkdown({ lpId, disId, date, sections: v.sections, status: v.status, dropboxBase }) };
   return { md, title, props, files, meta, pages, stamp, dropboxBase };
 }
 
