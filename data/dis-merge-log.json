@@ -14335,6 +14335,12 @@
       "lp": "LP-0224",
       "status": "skipped",
       "reason": "アーカイブのURLが LP-0228 と同じ（同じLP）。LP-0228 は28章まで分析済みのため、二重に分析しない"
+    },
+    {
+      "kind": "user-requested-delete",
+      "at": "2026-11-14T00:52:58.082Z",
+      "status": "done",
+      "note": "LP-0001-R1ページをゴミ箱へ（LP-0001／DIS-LP-0004と同じLPのため）。LP-0214のElementor脳内実装ブロック103件を削除。バックアップ: outputs/dis/backup/"
     }
   ]
 }
