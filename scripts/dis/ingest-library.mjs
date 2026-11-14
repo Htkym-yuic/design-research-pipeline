@@ -29,7 +29,12 @@ const readJson = async (f, d = null) => { try { return JSON.parse(await fs.readF
 
 /** 旧ライブラリーの、LPフォルダを探す（名前が `LP-nnnn_` で始まるフォルダ）。 */
 export async function findLibraryFolder(dbx, lp) {
-  const hits = (await dbx.searchNames(`${lp}_`, OLD_LIBRARY_ROOT)).filter((e) => e.tag === "folder" && e.name.startsWith(`${lp}_`));
+  // フォルダ名は、LP-0201_ のように4桁のものと、LP-181_ のように3桁のものがある（LP-0181〜0200の一部）
+  const short = `LP-${Number(lp.slice(3))}_`;
+  const names = [...new Set([`${lp}_`, short])];
+  const found = [];
+  for (const nm of names) found.push(...(await dbx.searchNames(nm, OLD_LIBRARY_ROOT)).filter((e) => e.tag === "folder" && e.name.startsWith(nm)));
+  const hits = [...new Map(found.map((e) => [e.path, e])).values()];
   if (!hits.length) throw new Error(`旧ライブラリーに ${lp} のフォルダが見つかりません（${OLD_LIBRARY_ROOT} 配下を検索）`);
   if (hits.length > 1) throw new Error(`${lp} のフォルダが複数あります。どれか確認してください: ${hits.map((h) => h.path).join(" / ")}`);
   return hits[0];
