@@ -1779,3 +1779,19 @@ test("register-new-dis: sections_by_unit/index.json は、あればDropboxに置
   assert.equal(r[0].local, path.join(dir, "files/01_Normal_Images/sections_by_unit/index.json"));
   assert.deepEqual(await sectionsIndexFile(dir, [{ rel: "01_Normal_Images/sections_by_unit/index.json", local: "x" }]), []); // 二重にしない
 });
+
+test("lp28-align: 旧28章を v4.0 の形にそろえる（章名・ヘッダーメタ・章29の移動。中身は変えない）", async () => {
+  const { refTitles, parseChapters, alignToV40 } = await import("./lib/lp28-align.mjs");
+  const ref = refTitles("## 1. 基本情報\n\n## 8. 全Section分析（固定15項目）\n\n## 24. 更新・検証記録\n\n## 28. 実行・重複防止記録\n");
+  assert.equal(ref[8], "全Section分析（固定15項目）");
+  const md = ["# LP-0009｜X｜LP分析", "", "## 1. 基本情報", "", "| 項目 | 内容 | 根拠 |", "|---|---|---|", "| 商材 | 物販 | a |", "", "## 8. 全Section分析", "", "本文8", "", "## 24. 更新・検証記録", "", "本文24", "", "## 28. 実行・重複防止記録", "", "本文28", "", "## 29. 更新履歴", "", "- 履歴"].join("\n");
+  const r = alignToV40({ md, ref, lp: "LP-0009", brand: "X", disId: "DIS-LP-0099", props: {}, thumbnailRef: null });
+  const ch = parseChapters(r.md).chapters;
+  assert.ok(!ch.some((c) => c.n === 29)); // 章29は、章24の末尾へ移す
+  assert.ok(ch.find((c) => c.n === 24).body.includes("本文24") && ch.find((c) => c.n === 24).body.includes("- 履歴"));
+  assert.equal(ch.find((c) => c.n === 8).title, "全Section分析（固定15項目）");
+  assert.ok(ch.find((c) => c.n === 8).body.includes("本文8")); // 中身は変えない
+  assert.ok(r.md.startsWith("# LP-0009｜X｜LP分析（統一28章 v4.0）") && r.md.includes("| ヘッダーメタ | 内容 |"));
+  assert.ok(r.mapping.some((m) => m.n === 29 && m.kind.includes("章24")));
+  assert.ok(r.mapping.filter((m) => m.kind.startsWith("足す")).length >= 1); // 旧28章に無い章は、足して「未確認」と書く
+});

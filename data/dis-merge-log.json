@@ -14901,6 +14901,16 @@
       "newPageUrl": "https://app.notion.com/p/DIS-LP-0239-Awarefy-LP-41824d4fa67181a587f3e4f49e1b11f4",
       "status": "done",
       "disPageId": "41824d4f-a671-81a5-87f3-e4f49e1b11f4"
+    },
+    {
+      "at": "2026-11-14T04:28:04.096Z",
+      "kind": "user-approved-delete",
+      "status": "done",
+      "note": "重複（アーカイブURLがLP-0227・0228と同じ）の2ページを、ゴミ箱へ移した: LP-0223（自衛官募集・21ブロック）、LP-0224（LOCOKウェルネスガーデン品川御殿山テニススクール・21ブロック）。Dropboxのファイルは消していない（daily-intake-LP-0223-LP-0224/ にLP-0223-mod・LP-0224-locok、計26ファイル）。バックアップ: outputs/dis/backup/LP-0223-before-trash.json、LP-0224-before-trash.json",
+      "pageIds": [
+        "3e824d4f-a671-816c-95f1-f5227c8d1d76",
+        "3e824d4f-a671-81da-964f-e6531c67f647"
+      ]
     }
   ]
 }
