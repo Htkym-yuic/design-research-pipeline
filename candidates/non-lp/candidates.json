@@ -1,19 +1,19 @@
 {
-  "collectedAt": "2026-11-13T21:40:23.488Z",
+  "collectedAt": "2026-11-14T20:10:40.992Z",
   "candidateCount": 9,
   "candidates": [
     {
-      "id": "WB-0081",
+      "id": "WB-0083",
       "status": "candidate",
       "mediaType": "Web",
       "sourceKey": "web",
-      "title": "アフラック 新卒採用サイト",
-      "captureUrl": "https://www.aflac-recruit.jp/newgraduate/",
-      "imageUrl": "https://sankoudesign.com/wp-content/uploads/aflacnewgraduate_t-400x350.jpg",
+      "title": "Morisawa Fonts2026年度 新書体特設ページ | 株式会社モリサワ",
+      "captureUrl": "https://new.morisawafonts.com/2026/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/morisawafonts2026_t-400x350.jpg",
       "landingUrl": null,
       "sourceName": "SANKOU!",
       "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/aflac-newgraduate/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/morisawafonts2026/",
       "library": "Web_Research_Library",
       "notionEnv": "NOTION_WEB_DATA_SOURCE_ID",
       "saveImage": true,
@@ -23,23 +23,23 @@
       "metadata": {
         "width": 400,
         "height": 350,
-        "alt": "アフラック 新卒採用サイト",
+        "alt": "Morisawa Fonts2026年度 新書体特設ページ | 株式会社モリサワ",
         "subtype": null,
         "subtypeLabel": null
       }
     },
     {
-      "id": "WB-0082",
+      "id": "WB-0084",
       "status": "candidate",
       "mediaType": "Web",
       "sourceKey": "web",
-      "title": "有本昌虎公認会計士税理士事務所 | あなたの｢叶えたい！｣を応援する公認会計士税理士事務所",
-      "captureUrl": "https://cpa-arimoto-masatora.com/",
-      "imageUrl": "https://sankoudesign.com/wp-content/uploads/arimotomasatora_t-400x350.jpg",
+      "title": "大人になるまでに知っておきたい 目と視力のこと | 眼鏡市場",
+      "captureUrl": "https://www.meganeichiba.jp/kids-eyecare/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/meganeichibakidseyecare_t-400x350.jpg",
       "landingUrl": null,
       "sourceName": "SANKOU!",
       "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/arimotomasatora/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/meganeichiba-kidseyecare/",
       "library": "Web_Research_Library",
       "notionEnv": "NOTION_WEB_DATA_SOURCE_ID",
       "saveImage": true,
@@ -49,23 +49,23 @@
       "metadata": {
         "width": 400,
         "height": 350,
-        "alt": "有本昌虎公認会計士税理士事務所 | あなたの｢叶えたい！｣を応援する公認会計士税理士事務所",
+        "alt": "大人になるまでに知っておきたい 目と視力のこと | 眼鏡市場",
         "subtype": null,
         "subtypeLabel": null
       }
     },
     {
-      "id": "GR-0239",
+      "id": "GR-0244",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "感謝祭",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fe7629b1585af26e9eae469784b9bd07a%2Fe7629b1585af26e9eae469784b9bd07a-400.webp&w=828&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fe7629b1585af26e9eae469784b9bd07a%2Fe7629b1585af26e9eae469784b9bd07a-400.webp&w=828&q=75",
+      "title": "敬老の日ギフト広告チラシ",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9fadd5e20e41a858119a71fc7be732ea%2F9fadd5e20e41a858119a71fc7be732ea-400.webp&w=828&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9fadd5e20e41a858119a71fc7be732ea%2F9fadd5e20e41a858119a71fc7be732ea-400.webp&w=828&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/flyer",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30662",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30660",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -75,23 +75,23 @@
       "metadata": {
         "width": 283,
         "height": 400,
-        "alt": "感謝祭, チラシ, チラシテンプレート",
+        "alt": "敬老の日ギフト広告チラシ, チラシ, チラシテンプレート",
         "subtype": "flyer",
         "subtypeLabel": "チラシ・フライヤー"
       }
     },
     {
-      "id": "GR-0240",
+      "id": "GR-0245",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "秋のイメージの本日休業ポスター",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9540ae398eaa09b885cdfd85b33304ec%2F9540ae398eaa09b885cdfd85b33304ec-400.webp&w=828&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9540ae398eaa09b885cdfd85b33304ec%2F9540ae398eaa09b885cdfd85b33304ec-400.webp&w=828&q=75",
+      "title": "秋の感謝祭セールポスター_横向き",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Ffc2a80ad0ede26509d5c7e2af5ad1179%2Ffc2a80ad0ede26509d5c7e2af5ad1179-400.webp&w=1200&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Ffc2a80ad0ede26509d5c7e2af5ad1179%2Ffc2a80ad0ede26509d5c7e2af5ad1179-400.webp&w=1200&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/poster",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-27869",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-27775",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -99,25 +99,25 @@
       "authorProfileUrl": null,
       "searchTerm": null,
       "metadata": {
-        "width": 283,
-        "height": 400,
-        "alt": "秋のイメージの本日休業ポスター, ポスター, ポスターテンプレート",
+        "width": 400,
+        "height": 283,
+        "alt": "秋の感謝祭セールポスター_横向き, ポスター, ポスターテンプレート",
         "subtype": "poster",
         "subtypeLabel": "ポスター"
       }
     },
     {
-      "id": "GR-0241",
+      "id": "GR-0246",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "ビール背景で黒文字忘年会バナー",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F2423bb6a9daf06be5fcbb60c4e2fc1ed%2F2423bb6a9daf06be5fcbb60c4e2fc1ed-400.webp&w=640&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F2423bb6a9daf06be5fcbb60c4e2fc1ed%2F2423bb6a9daf06be5fcbb60c4e2fc1ed-400.webp&w=640&q=75",
+      "title": "料理写真の忘年会バナー",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F3f56838a65ece3f488393bff90f805d7%2F3f56838a65ece3f488393bff90f805d7-400.webp&w=640&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F3f56838a65ece3f488393bff90f805d7%2F3f56838a65ece3f488393bff90f805d7-400.webp&w=640&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/banner",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-17090",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-17089",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -127,23 +127,23 @@
       "metadata": {
         "width": 156,
         "height": 104,
-        "alt": "ビール背景で黒文字忘年会バナー, バナー, バナーテンプレート",
+        "alt": "料理写真の忘年会バナー, バナー, バナーテンプレート",
         "subtype": "social",
         "subtypeLabel": "SNS投稿・Web広告"
       }
     },
     {
-      "id": "GR-0242",
+      "id": "GR-0247",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "ピンク幾何学模様のポップ雑貨店名刺",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F4a8355477ffaede94ba4b56d93a8f81f%2F4a8355477ffaede94ba4b56d93a8f81f-400.webp&w=256&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F4a8355477ffaede94ba4b56d93a8f81f%2F4a8355477ffaede94ba4b56d93a8f81f-400.webp&w=256&q=75",
+      "title": "パープル配色の縦型シンプル雑貨店名刺",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F315c852848a4328c96ca4033cb6b8c93%2F315c852848a4328c96ca4033cb6b8c93-400.webp&w=256&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F315c852848a4328c96ca4033cb6b8c93%2F315c852848a4328c96ca4033cb6b8c93-400.webp&w=256&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/business-card",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29291",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29290",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -153,23 +153,23 @@
       "metadata": {
         "width": 242,
         "height": 400,
-        "alt": "ピンク幾何学模様のポップ雑貨店名刺\n, 名刺, 名刺テンプレート",
+        "alt": "パープル配色の縦型シンプル雑貨店名刺\n, 名刺, 名刺テンプレート",
         "subtype": "business-card",
         "subtypeLabel": "名刺・ショップカード"
       }
     },
     {
-      "id": "GR-0243",
+      "id": "GR-0248",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "ロゴテンプレート3061",
-      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/675c81b2a27505be89012bfdb700937a/675c81b2a27505be89012bfdb700937a-400.webp",
-      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/675c81b2a27505be89012bfdb700937a/675c81b2a27505be89012bfdb700937a-400.webp",
+      "title": "金色の「U」のロゴ",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/5a42f016d310260a612c40db82defefd/5a42f016d310260a612c40db82defefd-400.webp",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/5a42f016d310260a612c40db82defefd/5a42f016d310260a612c40db82defefd-400.webp",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/logo",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3061",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3057",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -179,59 +179,27 @@
       "metadata": {
         "width": 400,
         "height": 400,
-        "alt": "ロゴテンプレート3061, ロゴ, ロゴテンプレート",
+        "alt": "金色の「U」のロゴ, ロゴ, ロゴテンプレート",
         "subtype": "logo",
         "subtypeLabel": "ロゴ・VI/CI"
       }
     },
     {
-      "id": "PAT-0093",
+      "id": "PAT-0095",
       "status": "candidate",
       "mediaType": "Pattern",
       "sourceKey": "patterns",
-      "title": "感謝祭に見る文字組みと視線誘導",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fe7629b1585af26e9eae469784b9bd07a%2Fe7629b1585af26e9eae469784b9bd07a-400.webp&w=828&q=75",
-      "imageUrl": null,
-      "landingUrl": null,
-      "sourceName": "日次収集から抽出（デザインAC）",
-      "sourceUrl": "https://www.design-ac.net/free-template/flyer",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30662",
-      "library": "Pattern_Research_Library",
-      "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
-      "saveImage": false,
-      "materialId": "PAT-0093",
-      "authorProfileUrl": null,
-      "searchTerm": null,
-      "metadata": {
-        "collectionMode": "derived_pattern",
-        "patternType": "視線誘導",
-        "targetMedia": [
-          "Graphic",
-          "Banner"
-        ],
-        "rule": "主見出し・補足・画像・行動情報のサイズ差と配置から、最初に読ませる情報を明確にする。",
-        "cautions": "素材そのものではなく、情報階層と余白の考え方だけを転用する。",
-        "evidenceIds": [
-          "GR-0239"
-        ]
-      }
-    },
-    {
-      "id": "PAT-0094",
-      "status": "candidate",
-      "mediaType": "Pattern",
-      "sourceKey": "patterns",
-      "title": "アフラック 新卒採用サイトに見るPC・SPの情報優先順位",
-      "captureUrl": "https://www.aflac-recruit.jp/newgraduate/",
+      "title": "Morisawa Fonts2026年度 新書体特設ページ | 株式会社モリサワに見るPC・SPの情報優先順位",
+      "captureUrl": "https://new.morisawafonts.com/2026/",
       "imageUrl": null,
       "landingUrl": null,
       "sourceName": "日次収集から抽出（SANKOU!）",
       "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/aflac-newgraduate/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/morisawafonts2026/",
       "library": "Pattern_Research_Library",
       "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
       "saveImage": false,
-      "materialId": "PAT-0094",
+      "materialId": "PAT-0095",
       "authorProfileUrl": null,
       "searchTerm": null,
       "metadata": {
@@ -244,7 +212,39 @@
         "rule": "画面幅が変わっても、主見出し・主要ベネフィット・CTAの意味と順序を維持する。",
         "cautions": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
         "evidenceIds": [
-          "WB-0081"
+          "WB-0083"
+        ]
+      }
+    },
+    {
+      "id": "PAT-0096",
+      "status": "candidate",
+      "mediaType": "Pattern",
+      "sourceKey": "patterns",
+      "title": "敬老の日ギフト広告チラシに見る文字組みと視線誘導",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9fadd5e20e41a858119a71fc7be732ea%2F9fadd5e20e41a858119a71fc7be732ea-400.webp&w=828&q=75",
+      "imageUrl": null,
+      "landingUrl": null,
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "sourceUrl": "https://www.design-ac.net/free-template/flyer",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30660",
+      "library": "Pattern_Research_Library",
+      "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
+      "saveImage": false,
+      "materialId": "PAT-0096",
+      "authorProfileUrl": null,
+      "searchTerm": null,
+      "metadata": {
+        "collectionMode": "derived_pattern",
+        "patternType": "視線誘導",
+        "targetMedia": [
+          "Graphic",
+          "Banner"
+        ],
+        "rule": "主見出し・補足・画像・行動情報のサイズ差と配置から、最初に読ませる情報を明確にする。",
+        "cautions": "素材そのものではなく、情報階層と余白の考え方だけを転用する。",
+        "evidenceIds": [
+          "GR-0244"
         ]
       }
     }
@@ -254,7 +254,7 @@
       "key": "banner",
       "sourceName": "バナー広場",
       "status": "collected",
-      "found": 45,
+      "found": 48,
       "accepted": 0,
       "reason": null,
       "diagnostic": null
@@ -308,7 +308,7 @@
       "key": "graphic",
       "sourceName": "デザインAC",
       "status": "collected",
-      "found": 65,
+      "found": 66,
       "accepted": 1,
       "reason": null,
       "diagnostic": null
@@ -326,7 +326,7 @@
       "key": "canva",
       "sourceName": "Canva",
       "status": "collected",
-      "found": 42,
+      "found": 41,
       "accepted": 0,
       "reason": null,
       "diagnostic": null
@@ -339,9 +339,9 @@
       "accepted": 0,
       "reason": "取得元がGitHubホストランナーからのアクセスを拒否しました。ローカル収集ルートで再実行してください。",
       "diagnostic": {
-        "finalUrl": "https://www.ac-illust.com/main/search_result.php?word=%E6%8E%A1%E7%94%A8",
+        "finalUrl": "https://www.ac-illust.com/main/search_result.php?word=%E5%AE%B6%E6%97%8F",
         "title": "ERROR: The request could not be satisfied",
-        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: mDXT9KGitqvacy5GDwIXHPDrK0MMY1_-0bCEEz27gckVr",
+        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: Cr_mW1pz22ZTyc7HJHv_2_4nhnibs_6v0yNqidDDdBV_T",
         "figureCount": 0,
         "imageCount": 0
       }
@@ -354,9 +354,9 @@
       "accepted": 0,
       "reason": "取得元がGitHubホストランナーからのアクセスを拒否しました。ローカル収集ルートで再実行してください。",
       "diagnostic": {
-        "finalUrl": "https://www.photo-ac.com/main/search?q=%E6%8E%A1%E7%94%A8",
+        "finalUrl": "https://www.photo-ac.com/main/search?q=%E5%AE%B6%E6%97%8F",
         "title": "ERROR: The request could not be satisfied",
-        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: 9oEMpf0K6KDBZW7bcTdCvYjQ3dNhx1ymNLxypXwfJDr6p",
+        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: -j4Tqwbid-ixtrF4IbicLtjSXlChhYZ9XDC2bqeDobrJZ",
         "figureCount": 0,
         "imageCount": 0
       }

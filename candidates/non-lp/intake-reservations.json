@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T21:40:23.488Z",
+  "updatedAt": "2026-11-14T20:10:40.992Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -4175,6 +4175,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-13T21:40:23.488Z"
+    },
+    {
+      "id": "GR-0244",
+      "title": "敬老の日ギフト広告チラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9fadd5e20e41a858119a71fc7be732ea%2F9fadd5e20e41a858119a71fc7be732ea-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30660",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9fadd5e20e41a858119a71fc7be732ea%2F9fadd5e20e41a858119a71fc7be732ea-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-14T20:10:40.992Z"
+    },
+    {
+      "id": "GR-0245",
+      "title": "秋の感謝祭セールポスター_横向き",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Ffc2a80ad0ede26509d5c7e2af5ad1179%2Ffc2a80ad0ede26509d5c7e2af5ad1179-400.webp&w=1200&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-27775",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Ffc2a80ad0ede26509d5c7e2af5ad1179%2Ffc2a80ad0ede26509d5c7e2af5ad1179-400.webp&w=1200&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-14T20:10:40.992Z"
+    },
+    {
+      "id": "GR-0246",
+      "title": "料理写真の忘年会バナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F3f56838a65ece3f488393bff90f805d7%2F3f56838a65ece3f488393bff90f805d7-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-17089",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F3f56838a65ece3f488393bff90f805d7%2F3f56838a65ece3f488393bff90f805d7-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-14T20:10:40.992Z"
+    },
+    {
+      "id": "GR-0247",
+      "title": "パープル配色の縦型シンプル雑貨店名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F315c852848a4328c96ca4033cb6b8c93%2F315c852848a4328c96ca4033cb6b8c93-400.webp&w=256&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29290",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F315c852848a4328c96ca4033cb6b8c93%2F315c852848a4328c96ca4033cb6b8c93-400.webp&w=256&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-14T20:10:40.992Z"
+    },
+    {
+      "id": "GR-0248",
+      "title": "金色の「U」のロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/5a42f016d310260a612c40db82defefd/5a42f016d310260a612c40db82defefd-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3057",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/5a42f016d310260a612c40db82defefd/5a42f016d310260a612c40db82defefd-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-14T20:10:40.992Z"
     },
     {
       "id": "ILAC-0001",
@@ -8666,6 +8726,30 @@
       "materialId": "PAT-0094",
       "authorProfileUrl": null,
       "reservedAt": "2026-11-13T21:40:23.488Z"
+    },
+    {
+      "id": "PAT-0095",
+      "title": "Morisawa Fonts2026年度 新書体特設ページ | 株式会社モリサワに見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://new.morisawafonts.com/2026/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/morisawafonts2026/",
+      "imageUrl": null,
+      "materialId": "PAT-0095",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-14T20:10:40.992Z"
+    },
+    {
+      "id": "PAT-0096",
+      "title": "敬老の日ギフト広告チラシに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9fadd5e20e41a858119a71fc7be732ea%2F9fadd5e20e41a858119a71fc7be732ea-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30660",
+      "imageUrl": null,
+      "materialId": "PAT-0096",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-14T20:10:40.992Z"
     },
     {
       "id": "PHAC-0001",
@@ -15219,6 +15303,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-13T21:40:23.488Z"
+    },
+    {
+      "id": "WB-0083",
+      "title": "Morisawa Fonts2026年度 新書体特設ページ | 株式会社モリサワ",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://new.morisawafonts.com/2026/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/morisawafonts2026/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/morisawafonts2026_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-14T20:10:40.992Z"
+    },
+    {
+      "id": "WB-0084",
+      "title": "大人になるまでに知っておきたい 目と視力のこと | 眼鏡市場",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.meganeichiba.jp/kids-eyecare/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/meganeichiba-kidseyecare/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/meganeichibakidseyecare_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-14T20:10:40.992Z"
     }
   ]
 }
