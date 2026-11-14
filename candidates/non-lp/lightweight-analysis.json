@@ -15974,6 +15974,152 @@
       "reviewPoints": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
       "deepDivePriority": "中",
       "generatedAt": "2026-11-13T21:41:34.481Z"
+    },
+    "WB-0083": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。Morisawa Fonts2026年度 新書体特設ページ | 株式会社モリサワ。",
+      "selectionReason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+      "visualSummary": "暖色・黄橙系。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-14T20:11:11.151Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/WB-0083-morisawa-fonts2026/03_Implementation_Blueprint/WB-0083_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/WB-0083-morisawa-fonts2026/03_Implementation_Blueprint/WB-0083_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/WB-0083-morisawa-fonts2026/03_Implementation_Blueprint/WB-0083_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/WB-0083-morisawa-fonts2026/03_Implementation_Blueprint/WB-0083_elementor_implementation_guide.md",
+        "sections": 8,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "WB-0084": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。大人になるまでに知っておきたい 目と視力のこと | 眼鏡市場。",
+      "selectionReason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+      "visualSummary": "明色・白基調。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-14T20:11:11.167Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/WB-0084-untitled/03_Implementation_Blueprint/WB-0084_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/WB-0084-untitled/03_Implementation_Blueprint/WB-0084_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/WB-0084-untitled/03_Implementation_Blueprint/WB-0084_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/WB-0084-untitled/03_Implementation_Blueprint/WB-0084_elementor_implementation_guide.md",
+        "sections": 8,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0244": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したチラシ・フライヤー参考。敬老の日ギフト広告チラシ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "ニュートラル。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-14T20:11:11.182Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0244-untitled/03_Implementation_Blueprint/GR-0244_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0244-untitled/03_Implementation_Blueprint/GR-0244_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0244-untitled/03_Implementation_Blueprint/GR-0244_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0244-untitled/03_Implementation_Blueprint/GR-0244_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0245": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したポスター参考。秋の感謝祭セールポスター_横向き。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "暖色・黄橙系。400×283の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-14T20:11:11.197Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0245-untitled/03_Implementation_Blueprint/GR-0245_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0245-untitled/03_Implementation_Blueprint/GR-0245_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0245-untitled/03_Implementation_Blueprint/GR-0245_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0245-untitled/03_Implementation_Blueprint/GR-0245_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0246": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したSNS投稿・Web広告参考。料理写真の忘年会バナー。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "暖色・黄橙系。156×104の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-14T20:11:11.210Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0246-untitled/03_Implementation_Blueprint/GR-0246_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0246-untitled/03_Implementation_Blueprint/GR-0246_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0246-untitled/03_Implementation_Blueprint/GR-0246_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0246-untitled/03_Implementation_Blueprint/GR-0246_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0247": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集した名刺・ショップカード参考。パープル配色の縦型シンプル雑貨店名刺。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "寒色・青紫系。242×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-14T20:11:11.223Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0247-untitled/03_Implementation_Blueprint/GR-0247_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0247-untitled/03_Implementation_Blueprint/GR-0247_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0247-untitled/03_Implementation_Blueprint/GR-0247_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0247-untitled/03_Implementation_Blueprint/GR-0247_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0248": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したロゴ・VI/CI参考。金色の「U」のロゴ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "ニュートラル。400×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-14T20:11:11.239Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0248-u/03_Implementation_Blueprint/GR-0248_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0248-u/03_Implementation_Blueprint/GR-0248_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0248-u/03_Implementation_Blueprint/GR-0248_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0248-u/03_Implementation_Blueprint/GR-0248_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PAT-0095": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（SANKOU!）から収集したPattern参考。Morisawa Fonts2026年度 新書体特設ページ | 株式会社モリサワに見るPC・SPの情報優先順位。",
+      "selectionReason": "日次収集から抽出（SANKOU!）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "画面幅が変わっても、主見出し・主要ベネフィット・CTAの意味と順序を維持する。 根拠候補: WB-0083",
+      "reviewPoints": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-14T20:11:11.239Z"
+    },
+    "PAT-0096": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（デザインAC）から収集したPattern参考。敬老の日ギフト広告チラシに見る文字組みと視線誘導。",
+      "selectionReason": "日次収集から抽出（デザインAC）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "主見出し・補足・画像・行動情報のサイズ差と配置から、最初に読ませる情報を明確にする。 根拠候補: GR-0244",
+      "reviewPoints": "素材そのものではなく、情報階層と余白の考え方だけを転用する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-14T20:11:11.239Z"
     }
   }
 }
