@@ -56,7 +56,7 @@ export function parseSourceRecord(rec = {}) {
   return { brand: heading, pageUrl: realUrl || rec.canonical_url || rec.url || null, sourceDetailUrl: rec.canonical_url || rec.url || null, rdlpId: rec.rdlp_id || null, company: info["企業名"] || null, product: info["商品・サービス名"] || null, category: info["カテゴリー"] || null, catchCopy: info["キャッチコピー"] || null };
 }
 
-export async function ingestLibraryLp({ lp, dbx, root = REPO_ROOT, date = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10) }) {
+export async function ingestLibraryLp({ lp, dbx, folderPath = null, root = REPO_ROOT, date = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10) }) {
   if (!/^LP-\d{3,4}$/.test(lp)) throw new Error(`--lp は LP-0002 の形式です: ${lp}`);
   const cfg = await loadConfig();
   const f = (p) => path.join(root, p);
@@ -66,7 +66,8 @@ export async function ingestLibraryLp({ lp, dbx, root = REPO_ROOT, date = new Da
   if (dup) throw new Error(`${lp} は、すでに ${dup.disId} と対応づけられています（${dup.relation}）。重複して取り込みません`);
 
   // 1. 旧ライブラリーのフォルダと、元の記録（読み取りのみ）
-  const folder = await findLibraryFolder(dbx, lp);
+  // 名前の検索で見つからないときは、Notionの「保存先」などで分かっているフォルダを --folder で指定できる（読み取りのみ）
+  const folder = folderPath ? { path: folderPath, name: folderPath.split("/").pop() } : await findLibraryFolder(dbx, lp);
   const rec = parseSourceRecord(JSON.parse((await dbx.downloadFile(`${folder.path}/00_Metadata/source-record.json`).catch(() => Buffer.from("{}"))).toString("utf8")));
   const pc = await pickImage(dbx, `${folder.path}/01_PC/01_Full_Page`);
   const sp = await pickImage(dbx, `${folder.path}/02_SP/01_Full_Page`);
@@ -111,10 +112,10 @@ export async function ingestLibraryLp({ lp, dbx, root = REPO_ROOT, date = new Da
 }
 
 async function main() {
-  const { values } = parseArgs({ options: { lp: { type: "string" }, date: { type: "string" } } });
+  const { values } = parseArgs({ options: { lp: { type: "string" }, date: { type: "string" }, folder: { type: "string" } } });
   if (!values.lp) throw new Error("--lp（例: LP-0002）が必要です");
   const dbx = await import("../lib/dropbox-client.mjs");
-  const r = await ingestLibraryLp({ lp: values.lp, dbx, ...(values.date ? { date: values.date } : {}) });
+  const r = await ingestLibraryLp({ lp: values.lp, dbx, folderPath: values.folder || null, ...(values.date ? { date: values.date } : {}) });
   console.log(JSON.stringify({ ...r, next: [`旧分析（比較の参考。内容は引き継がない）: ${r.legacyAnalysis ? `${r.itemDir}/legacy-analysis.md` : "なし"}`, `画像を読んで ${r.itemDir}/analysis.json と annotations.json を書く（9軸・Unit・roleType・regions・notionProps・選定理由の「良い点」）`, `npm run dis:validate-item -- --id ${r.disId}`, `npm run dis:cbs-draft -- --id ${r.disId} --appeal-from-summary --offer "<オファー>" --place`] }, null, 2));
 }
 
