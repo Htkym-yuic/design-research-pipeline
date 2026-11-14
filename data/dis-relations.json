@@ -3079,8 +3079,8 @@
     },
     {
       "disId": "DIS-LP-0233",
-      "libraryNotionPageId": null,
-      "disNotionPageId": null,
+      "libraryNotionPageId": "3e424d4f-a671-8169-8b68-e1d77e3cfd32",
+      "disNotionPageId": "41824d4f-a671-8195-a539-f9e2b78e2c5c",
       "canonicalKey": "lp:null",
       "establishedAt": "2026-11-14",
       "relation": "same_lp",
@@ -3091,8 +3091,8 @@
     },
     {
       "disId": "DIS-LP-0234",
-      "libraryNotionPageId": null,
-      "disNotionPageId": null,
+      "libraryNotionPageId": "3e424d4f-a671-8188-afc4-d118027607e2",
+      "disNotionPageId": "41824d4f-a671-81ed-9f34-c004b3de3319",
       "canonicalKey": "lp:null",
       "establishedAt": "2026-11-14",
       "relation": "same_lp",
@@ -3136,6 +3136,18 @@
       "primaryId": "LP-0212",
       "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
       "cbsPolicy": "CBSには、LP-0212の1件に、DISの層として付ける。DIS-LP-0237を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。"
+    },
+    {
+      "disId": "DIS-LP-0238",
+      "libraryNotionPageId": null,
+      "disNotionPageId": null,
+      "canonicalKey": "lp:null",
+      "establishedAt": "2026-11-14",
+      "relation": "same_lp",
+      "libraryId": "LP-0213",
+      "primaryId": "LP-0213",
+      "disRole": "追加の層（構造・再利用・再現手順・改善案・Unit別の切り出し）",
+      "cbsPolicy": "CBSには、LP-0213の1件に、DISの層として付ける。DIS-LP-0238を、独立した作品として載せない。評価点は混ぜず、方法を明記して分ける。"
     }
   ]
 }
