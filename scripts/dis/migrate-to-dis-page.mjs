@@ -69,6 +69,10 @@ async function cloneBlock(b, ctx) {
       if (text(b).startsWith("旧画像（アーカイブ掲載")) return c; // 以前に足した、旧画像のトグルは、中の旧画像だけを出す
       return { object: "block", type: t, toggle: { rich_text: cleanRT(b.toggle.rich_text), ...(c.length ? { children: c } : {}) } };
     }
+    case "heading_4": { // 見出し4は、複製先では見出し3として作る（文字・順序は同じ。LP-0214 の旧「分析テスト」のSection見出し）
+      const c = await kids();
+      return { object: "block", type: "heading_3", heading_3: { rich_text: cleanRT(b.heading_4.rich_text), ...(c.length ? { children: c } : {}) } };
+    }
     case "code": return { object: "block", type: t, code: { rich_text: cleanRT(b.code.rich_text), language: b.code.language, caption: cleanRT(b.code.caption) } };
     case "divider": return { object: "block", type: t, divider: {} };
     case "table": {
@@ -95,7 +99,8 @@ async function cloneList(blocks, ctx) {
 /** 旧ページの、28章分析（章1〜29）の範囲だけを取り出す（以前に足した「DIS 9軸分析」以降と、番号の注記は除く）。 */
 function oldRange(blocks, disId) {
   const end = blocks.findIndex((b) => /^heading_/.test(b.type) && text(b).startsWith(MARK));
-  return (end >= 0 ? blocks.slice(0, end) : blocks).filter((b) => !(b.type === "callout" && (text(b).includes(`${disId}（DIS）`) || text(b).includes("移行済み"))));
+  // 子ページ（別の内容のページ。LP-0214 の末尾にある2つなど）は、このLPの分析ではないので、複製しない
+  return (end >= 0 ? blocks.slice(0, end) : blocks).filter((b) => b.type !== "child_page").filter((b) => !(b.type === "callout" && (text(b).includes(`${disId}（DIS）`) || text(b).includes("移行済み"))));
 }
 
 async function buildDis({ disId, lp, itemDir, ctx, oldPageId, folderPath }) {
