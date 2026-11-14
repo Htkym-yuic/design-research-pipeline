@@ -55,7 +55,17 @@ async function main() {
   if (process.env.DIS_ENABLE_WRITES !== "true" || process.env.DRY_RUN !== "false") throw new Error("DIS_ENABLE_WRITES=true と DRY_RUN=false が必要です");
 
   const root = process.env.DROPBOX_LOCAL_ROOT || path.join(os.homedir(), "Dropbox");
-  const { copied } = await copyToLocalDropbox({ plan, folder, root });
+  // 前回、Dropboxへのコピーのあとで止まったときの再開: フォルダがすでにあり、全ファイルが同じ大きさでそろっているときだけ、コピーを省く（上書きはしない）
+  let copied;
+  if (await exists(path.join(root, folder))) {
+    copied = [];
+    for (const f of plan) {
+      const a = await fs.stat(f.local), b = await fs.stat(path.join(root, f.remote)).catch(() => null);
+      if (!b || a.size !== b.size) throw new Error(`${a.size === b?.size ? "" : "同期フォルダの"}${f.remote} が、前回のコピーと合いません。何もコピーしません`);
+      copied.push({ remote: f.remote, bytes: a.size });
+    }
+    console.log(`Dropbox: 前回コピー済みの${copied.length}ファイルを確認しました（再コピーなし）`);
+  } else ({ copied } = await copyToLocalDropbox({ plan, folder, root }));
   const { listFolder } = await import("../lib/dropbox-client.mjs");
   const sync = await waitForSync({ copied, folder, listFolder, log: (m) => console.error(m) });
   if (!sync.ok) throw new Error(`${a.id}: Dropboxの同期が完了していません（足りない例: ${sync.missing.join(", ")}）。Notionには書いていません`);

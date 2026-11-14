@@ -14805,6 +14805,38 @@
       "newPageUrl": "https://app.notion.com/p/DIS-LP-0233-LP-41824d4fa6718195a539f9e2b78e2c5c",
       "status": "done",
       "disPageId": "41824d4f-a671-8195-a539-f9e2b78e2c5c"
+    },
+    {
+      "at": "2026-11-14T02:51:43.900Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0235",
+      "lp": "LP-0210",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 220,
+      "newBlocks": 545,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41824d4f-a671-8179-b5dc-d241db7e50ad",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0235-C-LP-41824d4fa6718179b5dcd241db7e50ad",
+      "status": "done",
+      "disPageId": "41824d4f-a671-8179-b5dc-d241db7e50ad"
+    },
+    {
+      "at": "2026-11-14T02:53:22.976Z",
+      "kind": "migrate-to-dis-page",
+      "disId": "DIS-LP-0236",
+      "lp": "LP-0211",
+      "dryRun": false,
+      "mode": "DISページを新規作成",
+      "oldTopLevelBlocks": 220,
+      "newBlocks": 499,
+      "imagesToReupload": 6,
+      "warnings": [],
+      "newPageId": "41824d4f-a671-813a-99c6-c384fc73ca02",
+      "newPageUrl": "https://app.notion.com/p/DIS-LP-0236-LP-41824d4fa671813a99c6c384fc73ca02",
+      "status": "done",
+      "disPageId": "41824d4f-a671-813a-99c6-c384fc73ca02"
     }
   ]
 }
