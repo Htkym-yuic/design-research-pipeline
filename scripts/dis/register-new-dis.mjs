@@ -49,7 +49,9 @@ export async function planNewDis({ disId, itemDir, cfg, rel }) {
   const metaFile = path.join(itemDir, "metadata.json");
   generated.push({ local: metaFile, rel: "metadata.json" });
   const metadata = { disId, media: "lp", date: item.date, captureSource: item.captureMode || "archive", pageUrl: item.pageUrl, sourceName: item.sourceName, sourceDetailUrl: item.sourceDetailUrl, brand: item.brand, analysisVersion: analysis.analysisVersion, relatedLp: lp };
-  const plan = planDropboxFiles([...captured, ...generated], folder);
+  // sections_by_unit/index.json は、crop-units が作る（撮影時の files.json には載らない）ので、あれば足す。Unit画像と同じ場所に置く
+  const sectionsIndex = await sectionsIndexFile(itemDir, captured);
+  const plan = planDropboxFiles([...captured, ...sectionsIndex, ...generated], folder);
   const ch = path.join(itemDir, "28ch");
   plan.push({ local: path.join(ch, `${lp}_v1.0.md`), remote: `${folder}/28ch/${lp}_v1.0.md` });
   for (const f of (await fs.readdir(path.join(ch, "images")).catch(() => [])).sort()) plan.push({ local: path.join(ch, "images", f), remote: `${folder}/28ch/images/${f}` });
@@ -69,6 +71,14 @@ export async function planNewDis({ disId, itemDir, cfg, rel }) {
   const body28 = mdToBlocks(md28);
   const countBlocks = (bl) => bl.reduce((n, b) => n + 1 + (b.table?.children?.length || 0), 0);
   return { disId, lp, item, analysis, folder, md28, analysisMd, v, title, plan, sizes, byGroup, missing, metadata, metaFile, unitNames, slots, body28, body28Blocks: countBlocks(body28), body28Images: body28.filter((b) => b.__image).length, itemDir };
+}
+
+/** sections_by_unit/index.json（Unitの切り出し一覧）。ローカルにあり、まだ計画に入っていなければ、Dropboxに置くファイルとして返す。 */
+export async function sectionsIndexFile(itemDir, captured = []) {
+  const rel = "01_Normal_Images/sections_by_unit/index.json";
+  const local = path.join(itemDir, "files", rel);
+  if (captured.some((f) => f.rel === rel) || !(await exists(local))) return [];
+  return [{ local, rel }];
 }
 
 /** Dropboxの同期フォルダ（ローカル）へ、上書きせずにコピーする。すでにフォルダがあれば中止。 */

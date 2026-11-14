@@ -1766,3 +1766,16 @@ test("register-new-dis: ローカルの同期フォルダへ上書きせずに�
   const bad = await waitForSync({ copied, folder: "/x/F", listFolder: async () => [], timeoutSec: 0, intervalSec: 0 });
   assert.equal(bad.ok, false);
 });
+
+test("register-new-dis: sections_by_unit/index.json は、あればDropboxに置く計画に入り、すでに計画にあれば重ねない", async () => {
+  const { sectionsIndexFile } = await import("./register-new-dis.mjs");
+  const dir = await fs.mkdtemp(path.join(os.tmpdir(), "dis-idx-"));
+  assert.deepEqual(await sectionsIndexFile(dir, []), []); // ファイルが無ければ、何も足さない
+  await fs.mkdir(path.join(dir, "files/01_Normal_Images/sections_by_unit"), { recursive: true });
+  await fs.writeFile(path.join(dir, "files/01_Normal_Images/sections_by_unit/index.json"), "{}");
+  const r = await sectionsIndexFile(dir, []);
+  assert.equal(r.length, 1);
+  assert.equal(r[0].rel, "01_Normal_Images/sections_by_unit/index.json");
+  assert.equal(r[0].local, path.join(dir, "files/01_Normal_Images/sections_by_unit/index.json"));
+  assert.deepEqual(await sectionsIndexFile(dir, [{ rel: "01_Normal_Images/sections_by_unit/index.json", local: "x" }]), []); // 二重にしない
+});
