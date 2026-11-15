@@ -17210,6 +17210,286 @@
       },
       "秒": 202,
       "backup": "/Users/m1_macbook/design-research-pipeline-auto/outputs/dis/backup/DIS-LP-0096-28ch-before-align.json"
+    },
+    {
+      "at": "2026-11-15T11:28:13.942Z",
+      "kind": "align-lp28",
+      "disId": "DIS-LP-0097",
+      "lp": "LP-0094",
+      "url": "https://app.notion.com/p/41624d4fa67181af8585eeb98eb089b2",
+      "置き換えた古いブロック": 287,
+      "追加した新しいブロック": 294,
+      "画像": {
+        "旧": 3,
+        "新": 4
+      },
+      "lp28check": {
+        "ok": true,
+        "sections": 9,
+        "errors": []
+      },
+      "28章より前の部分が不変": true,
+      "章1〜28が各1回": true,
+      "章29の見出し無し": true,
+      "章24の末尾に旧・章29": true,
+      "全ブロック": {
+        "前": 631,
+        "後": 638
+      },
+      "秒": 229,
+      "backup": "/Users/m1_macbook/design-research-pipeline-auto/outputs/dis/backup/DIS-LP-0097-28ch-before-align.json"
+    },
+    {
+      "at": "2026-11-15T11:31:42.109Z",
+      "kind": "align-lp28",
+      "disId": "DIS-LP-0098",
+      "lp": "LP-0095",
+      "url": "https://app.notion.com/p/41624d4fa67181dab62bf0e420930774",
+      "置き換えた古いブロック": 242,
+      "追加した新しいブロック": 249,
+      "画像": {
+        "旧": 6,
+        "新": 7
+      },
+      "lp28check": {
+        "ok": true,
+        "sections": 7,
+        "errors": []
+      },
+      "28章より前の部分が不変": true,
+      "章1〜28が各1回": true,
+      "章29の見出し無し": true,
+      "章24の末尾に旧・章29": true,
+      "全ブロック": {
+        "前": 480,
+        "後": 487
+      },
+      "秒": 203,
+      "backup": "/Users/m1_macbook/design-research-pipeline-auto/outputs/dis/backup/DIS-LP-0098-28ch-before-align.json"
+    },
+    {
+      "at": "2026-11-15T11:35:25.398Z",
+      "kind": "align-lp28",
+      "disId": "DIS-LP-0099",
+      "lp": "LP-0096",
+      "url": "https://app.notion.com/p/41624d4fa67181cd9c4ef0f660e0cb8b",
+      "置き換えた古いブロック": 277,
+      "追加した新しいブロック": 284,
+      "画像": {
+        "旧": 3,
+        "新": 4
+      },
+      "lp28check": {
+        "ok": true,
+        "sections": 9,
+        "errors": []
+      },
+      "28章より前の部分が不変": true,
+      "章1〜28が各1回": true,
+      "章29の見出し無し": true,
+      "章24の末尾に旧・章29": true,
+      "全ブロック": {
+        "前": 594,
+        "後": 601
+      },
+      "秒": 217,
+      "backup": "/Users/m1_macbook/design-research-pipeline-auto/outputs/dis/backup/DIS-LP-0099-28ch-before-align.json"
+    },
+    {
+      "at": "2026-11-15T11:39:09.239Z",
+      "kind": "align-lp28",
+      "disId": "DIS-LP-0100",
+      "lp": "LP-0097",
+      "url": "https://app.notion.com/p/41624d4fa67181dc86b5e463c838c3d9",
+      "置き換えた古いブロック": 278,
+      "追加した新しいブロック": 285,
+      "画像": {
+        "旧": 6,
+        "新": 7
+      },
+      "lp28check": {
+        "ok": true,
+        "sections": 9,
+        "errors": []
+      },
+      "28章より前の部分が不変": true,
+      "章1〜28が各1回": true,
+      "章29の見出し無し": true,
+      "章24の末尾に旧・章29": true,
+      "全ブロック": {
+        "前": 677,
+        "後": 684
+      },
+      "秒": 218,
+      "backup": "/Users/m1_macbook/design-research-pipeline-auto/outputs/dis/backup/DIS-LP-0100-28ch-before-align.json"
+    },
+    {
+      "at": "2026-11-15T11:42:38.539Z",
+      "kind": "align-lp28",
+      "disId": "DIS-LP-0101",
+      "lp": "LP-0098",
+      "url": "https://app.notion.com/p/41624d4fa671819eab8aecd65870133b",
+      "置き換えた古いブロック": 236,
+      "追加した新しいブロック": 243,
+      "画像": {
+        "旧": 6,
+        "新": 7
+      },
+      "lp28check": {
+        "ok": true,
+        "sections": 6,
+        "errors": []
+      },
+      "28章より前の部分が不変": true,
+      "章1〜28が各1回": true,
+      "章29の見出し無し": true,
+      "章24の末尾に旧・章29": true,
+      "全ブロック": {
+        "前": 522,
+        "後": 529
+      },
+      "秒": 204,
+      "backup": "/Users/m1_macbook/design-research-pipeline-auto/outputs/dis/backup/DIS-LP-0101-28ch-before-align.json"
+    },
+    {
+      "at": "2026-11-15T11:46:06.181Z",
+      "kind": "align-lp28",
+      "disId": "DIS-LP-0102",
+      "lp": "LP-0099",
+      "url": "https://app.notion.com/p/41624d4fa67181de9badd2d8128f2c64",
+      "置き換えた古いブロック": 252,
+      "追加した新しいブロック": 259,
+      "画像": {
+        "旧": 6,
+        "新": 7
+      },
+      "lp28check": {
+        "ok": true,
+        "sections": 7,
+        "errors": []
+      },
+      "28章より前の部分が不変": true,
+      "章1〜28が各1回": true,
+      "章29の見出し無し": true,
+      "章24の末尾に旧・章29": true,
+      "全ブロック": {
+        "前": 491,
+        "後": 498
+      },
+      "秒": 202,
+      "backup": "/Users/m1_macbook/design-research-pipeline-auto/outputs/dis/backup/DIS-LP-0102-28ch-before-align.json"
+    },
+    {
+      "at": "2026-11-15T11:49:24.173Z",
+      "kind": "align-lp28",
+      "disId": "DIS-LP-0103",
+      "lp": "LP-0100",
+      "url": "https://app.notion.com/p/41624d4fa671813ca71bd63ee5c96c9b",
+      "置き換えた古いブロック": 236,
+      "追加した新しいブロック": 243,
+      "画像": {
+        "旧": 6,
+        "新": 7
+      },
+      "lp28check": {
+        "ok": true,
+        "sections": 6,
+        "errors": []
+      },
+      "28章より前の部分が不変": true,
+      "章1〜28が各1回": true,
+      "章29の見出し無し": true,
+      "章24の末尾に旧・章29": true,
+      "全ブロック": {
+        "前": 461,
+        "後": 468
+      },
+      "秒": 193,
+      "backup": "/Users/m1_macbook/design-research-pipeline-auto/outputs/dis/backup/DIS-LP-0103-28ch-before-align.json"
+    },
+    {
+      "at": "2026-11-15T11:53:02.342Z",
+      "kind": "align-lp28",
+      "disId": "DIS-LP-0104",
+      "lp": "LP-0101",
+      "url": "https://app.notion.com/p/41624d4fa67181b4acbcd44cbf94feff",
+      "置き換えた古いブロック": 256,
+      "追加した新しいブロック": 263,
+      "画像": {
+        "旧": 6,
+        "新": 7
+      },
+      "lp28check": {
+        "ok": true,
+        "sections": 6,
+        "errors": []
+      },
+      "28章より前の部分が不変": true,
+      "章1〜28が各1回": true,
+      "章29の見出し無し": true,
+      "章24の末尾に旧・章29": true,
+      "全ブロック": {
+        "前": 522,
+        "後": 529
+      },
+      "秒": 213,
+      "backup": "/Users/m1_macbook/design-research-pipeline-auto/outputs/dis/backup/DIS-LP-0104-28ch-before-align.json"
+    },
+    {
+      "at": "2026-11-15T11:56:49.548Z",
+      "kind": "align-lp28",
+      "disId": "DIS-LP-0105",
+      "lp": "LP-0102",
+      "url": "https://app.notion.com/p/41624d4fa67181a59362d808201c14a2",
+      "置き換えた古いブロック": 272,
+      "追加した新しいブロック": 279,
+      "画像": {
+        "旧": 6,
+        "新": 7
+      },
+      "lp28check": {
+        "ok": true,
+        "sections": 7,
+        "errors": []
+      },
+      "28章より前の部分が不変": true,
+      "章1〜28が各1回": true,
+      "章29の見出し無し": true,
+      "章24の末尾に旧・章29": true,
+      "全ブロック": {
+        "前": 638,
+        "後": 645
+      },
+      "秒": 220,
+      "backup": "/Users/m1_macbook/design-research-pipeline-auto/outputs/dis/backup/DIS-LP-0105-28ch-before-align.json"
+    },
+    {
+      "at": "2026-11-15T11:59:55.886Z",
+      "kind": "align-lp28",
+      "disId": "DIS-LP-0106",
+      "lp": "LP-0103",
+      "url": "https://app.notion.com/p/41624d4fa6718138a1b2ddfb294281a7",
+      "置き換えた古いブロック": 223,
+      "追加した新しいブロック": 230,
+      "画像": {
+        "旧": 3,
+        "新": 4
+      },
+      "lp28check": {
+        "ok": true,
+        "sections": 4,
+        "errors": []
+      },
+      "28章より前の部分が不変": true,
+      "章1〜28が各1回": true,
+      "章29の見出し無し": true,
+      "章24の末尾に旧・章29": true,
+      "全ブロック": {
+        "前": 513,
+        "後": 520
+      },
+      "秒": 181,
+      "backup": "/Users/m1_macbook/design-research-pipeline-auto/outputs/dis/backup/DIS-LP-0106-28ch-before-align.json"
     }
   ]
 }
