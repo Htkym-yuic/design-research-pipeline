@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T20:10:40.992Z",
+  "updatedAt": "2026-11-15T16:22:42.400Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -1269,6 +1269,18 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-10T16:17:01.420Z"
+    },
+    {
+      "id": "CV-0060",
+      "title": "White and Black Minimalist Lifestyle Photo Collage Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAHLX5bwJP4/1/0/320w-0Y7txoRKbKE.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAHLX5bwJP4-white-and-black-minimalist-lifestyle-photo-collage-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAHLX5bwJP4/1/0/320w-0Y7txoRKbKE.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-15T16:22:42.400Z"
     },
     {
       "id": "GR-0001",
@@ -4235,6 +4247,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-14T20:10:40.992Z"
+    },
+    {
+      "id": "GR-0249",
+      "title": "ヨガスタジオ体験チラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F5b2e064908e7e7c4f2177aa8e2e27147%2F5b2e064908e7e7c4f2177aa8e2e27147-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30269",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F5b2e064908e7e7c4f2177aa8e2e27147%2F5b2e064908e7e7c4f2177aa8e2e27147-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-15T16:22:42.400Z"
+    },
+    {
+      "id": "GR-0250",
+      "title": "秋の感謝祭セールポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9562b1daad6e31d4a26bb673f69bf2d5%2F9562b1daad6e31d4a26bb673f69bf2d5-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-27746",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9562b1daad6e31d4a26bb673f69bf2d5%2F9562b1daad6e31d4a26bb673f69bf2d5-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-15T16:22:42.400Z"
+    },
+    {
+      "id": "GR-0251",
+      "title": "オレンジ色ベースの縦割りされた秋食向けバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fa7730a9892be9855eb3d299e44809ef2%2Fa7730a9892be9855eb3d299e44809ef2-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-16358",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fa7730a9892be9855eb3d299e44809ef2%2Fa7730a9892be9855eb3d299e44809ef2-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-15T16:22:42.400Z"
+    },
+    {
+      "id": "GR-0252",
+      "title": "ボタニカル柄のフレグランスショップ名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fb9a901d033d2139dffca33cbb2ae6d19%2Fb9a901d033d2139dffca33cbb2ae6d19-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29289",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fb9a901d033d2139dffca33cbb2ae6d19%2Fb9a901d033d2139dffca33cbb2ae6d19-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-15T16:22:42.400Z"
+    },
+    {
+      "id": "GR-0253",
+      "title": "金色のV字のようなロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/1ae95adc4f20c435fee09cd00a8cad36/1ae95adc4f20c435fee09cd00a8cad36-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3025",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/1ae95adc4f20c435fee09cd00a8cad36/1ae95adc4f20c435fee09cd00a8cad36-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-15T16:22:42.400Z"
     },
     {
       "id": "ILAC-0001",
@@ -8750,6 +8822,30 @@
       "materialId": "PAT-0096",
       "authorProfileUrl": null,
       "reservedAt": "2026-11-14T20:10:40.992Z"
+    },
+    {
+      "id": "PAT-0097",
+      "title": "ヨガスタジオ体験チラシに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F5b2e064908e7e7c4f2177aa8e2e27147%2F5b2e064908e7e7c4f2177aa8e2e27147-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30269",
+      "imageUrl": null,
+      "materialId": "PAT-0097",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-15T16:22:42.400Z"
+    },
+    {
+      "id": "PAT-0098",
+      "title": "White and Black Minimalist Lifestyle Photo Collage Instagram Postに見る反復可能なテンプレート構造",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Canva）",
+      "captureUrl": "https://template.canva.com/EAHLX5bwJP4/1/0/320w-0Y7txoRKbKE.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAHLX5bwJP4-white-and-black-minimalist-lifestyle-photo-collage-instagram-post/",
+      "imageUrl": null,
+      "materialId": "PAT-0098",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-15T16:22:42.400Z"
     },
     {
       "id": "PHAC-0001",
@@ -15327,6 +15423,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-14T20:10:40.992Z"
+    },
+    {
+      "id": "WB-0085",
+      "title": "株式会社大泉工場",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://oks-j.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/oks/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/oks_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-15T16:22:42.400Z"
+    },
+    {
+      "id": "WB-0086",
+      "title": "AHKAH | オフィシャルサイト",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.ahkah.jp/ext/2026Holiday_mymood_mylove/index.html",
+      "sourceDetailUrl": "https://sankoudesign.com/contentpage/ahkah-2026holidaymymoodmylove/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/ahkah2026Holidaymymoodmylove_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-15T16:22:42.400Z"
     }
   ]
 }
