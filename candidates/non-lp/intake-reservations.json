@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T16:22:42.400Z",
+  "updatedAt": "2026-11-16T16:23:34.864Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -4307,6 +4307,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-15T16:22:42.400Z"
+    },
+    {
+      "id": "GR-0254",
+      "title": "ヨガスタジオ体験チラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fabfd52bf7f8f2656025654cfc8ea8c04%2Fabfd52bf7f8f2656025654cfc8ea8c04-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30268",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fabfd52bf7f8f2656025654cfc8ea8c04%2Fabfd52bf7f8f2656025654cfc8ea8c04-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-16T16:23:34.864Z"
+    },
+    {
+      "id": "GR-0255",
+      "title": "年末年始休業のお知らせ_横",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F0e1842dfcc8eb5a0560dc083702f9ec6%2F0e1842dfcc8eb5a0560dc083702f9ec6-400.webp&w=1200&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-32276",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F0e1842dfcc8eb5a0560dc083702f9ec6%2F0e1842dfcc8eb5a0560dc083702f9ec6-400.webp&w=1200&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-16T16:23:34.864Z"
+    },
+    {
+      "id": "GR-0256",
+      "title": "文字が大きめのオレンジ色ベースの秋食向けバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fb4807f622c7a2b3aac8213f494a36c46%2Fb4807f622c7a2b3aac8213f494a36c46-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-16301",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fb4807f622c7a2b3aac8213f494a36c46%2Fb4807f622c7a2b3aac8213f494a36c46-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-16T16:23:34.864Z"
+    },
+    {
+      "id": "GR-0257",
+      "title": "縦ライン配色のナチュラル雑貨店名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Ff53fbab70b1191defab750cec6f58146%2Ff53fbab70b1191defab750cec6f58146-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29288",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Ff53fbab70b1191defab750cec6f58146%2Ff53fbab70b1191defab750cec6f58146-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-16T16:23:34.864Z"
+    },
+    {
+      "id": "GR-0258",
+      "title": "三色の抽象的なロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/7c3b1afe20e1233691d9872151644792/7c3b1afe20e1233691d9872151644792-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3021",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/7c3b1afe20e1233691d9872151644792/7c3b1afe20e1233691d9872151644792-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-16T16:23:34.864Z"
     },
     {
       "id": "ILAC-0001",
@@ -8846,6 +8906,30 @@
       "materialId": "PAT-0098",
       "authorProfileUrl": null,
       "reservedAt": "2026-11-15T16:22:42.400Z"
+    },
+    {
+      "id": "PAT-0099",
+      "title": "温耳鼻咽喉科に見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://on-jibika.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/onjibika/",
+      "imageUrl": null,
+      "materialId": "PAT-0099",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-16T16:23:34.864Z"
+    },
+    {
+      "id": "PAT-0100",
+      "title": "フロンティアエージェンシーに見るセクション内の役割集約",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Parts.）",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/11/frontier-ag_00003.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/7322",
+      "imageUrl": null,
+      "materialId": "PAT-0100",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-16T16:23:34.864Z"
     },
     {
       "id": "PHAC-0001",
@@ -14421,6 +14505,18 @@
       "reservedAt": "2026-11-03T16:26:38.288Z"
     },
     {
+      "id": "PT-0183",
+      "title": "フロンティアエージェンシー",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/11/frontier-ag_00003.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/7322",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/11/frontier-ag_00003.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-16T16:23:34.864Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -15447,6 +15543,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-15T16:22:42.400Z"
+    },
+    {
+      "id": "WB-0087",
+      "title": "温耳鼻咽喉科",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://on-jibika.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/onjibika/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/onjibika_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-16T16:23:34.864Z"
+    },
+    {
+      "id": "WB-0088",
+      "title": "LANDIC 採用サイト",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.landic.com/recruit/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/landic-recruit/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/landicrecruit_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-16T16:23:34.864Z"
     }
   ]
 }
