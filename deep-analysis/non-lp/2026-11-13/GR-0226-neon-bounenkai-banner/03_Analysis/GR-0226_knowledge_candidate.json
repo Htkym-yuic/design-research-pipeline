@@ -1,0 +1,68 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "GR-0226",
+  "media_type": "GR",
+  "title": "ネオン風忘年会バナー",
+  "source": {
+    "source_name": "デザインAC",
+    "source_detail_url": "https://www.design-ac.net/free-template/banner-template-17093",
+    "capture_url": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F890bfd7bc358aa7dc9c0dcd599b2856c%2F890bfd7bc358aa7dc9c0dcd599b2856c-400.webp&w=640&q=75",
+    "official_url": null
+  },
+  "analysis": {
+    "summary": "青〜紫のグラデーション背景にネオンサイン風の発光文字を組み合わせ、夜のイベント感を演出。「宴」「呑」「騒」という漢字一文字＋説明の3分割ベネフィットブロックで個室・飲み放題・パーティールームという差別化要素を訴求する二段構成。日付はプレースホルダーのまま収集されている。",
+    "score": {
+      "visual": 17,
+      "clarity": 14,
+      "originality": 12,
+      "reusability": 16,
+      "learning": 11,
+      "evidence": 8,
+      "total": 78
+    },
+    "units": [
+      { "name": "ネオンタイトル・キャッチコピー", "role": "忘年会の開催告知であることを、夜のネオン演出で印象的に伝える。", "reuse": "グラデーション背景＋ネオン管風発光文字のタイトル表現。", "evidence": "GR-0226_reference.png上部〜中央。" },
+      { "name": "日付プレースホルダー・予約受付情報", "role": "予約受付が開始されたことを告知する。", "reuse": "日付＋「ご予約受付開始」の組み合わせによる行動喚起の一行。", "evidence": "原画像最上部。" },
+      { "name": "ベネフィットブロック「宴」", "role": "個室の有無という差別化要素を提示する。", "reuse": "漢字一文字＋条件説明の組み合わせによるベネフィットブロック。", "evidence": "原画像下部左。" },
+      { "name": "ベネフィットブロック「呑」", "role": "飲み放題・送迎サービスという利便性を提示する。", "reuse": "漢字一文字＋利便性説明のベネフィットブロック。", "evidence": "原画像下部中央。" },
+      { "name": "ベネフィットブロック「騒」", "role": "パーティールームの設備という差別化要素を提示する。", "reuse": "漢字一文字＋設備説明のベネフィットブロック。", "evidence": "原画像下部右。" },
+      { "name": "イラスト装飾", "role": "ネオンタイトルを視覚的に補強し、乾杯・祝祭のイメージを添える。", "reuse": "タイトル脇に添える象徴的なアイコンイラスト。", "evidence": "原画像中央右。" }
+    ]
+  },
+  "strengths": [
+    "ネオン演出で夜のイベント感を即座に伝えられる",
+    "漢字一文字＋説明文のベネフィットブロックが簡潔で分かりやすい",
+    "送迎可能の明記で飲酒時の不安に応えている"
+  ],
+  "improvements": [
+    { "priority": "P0", "issue": "日付がプレースホルダーのまま", "evidence": "「0000.00.00 FRI」の未入力表示", "fix": "実際の予約受付開始日を明記する", "effect": "広告としての信頼性向上", "metric": "クリック率・予約問い合わせ数" },
+    { "priority": "P1", "issue": "予約連絡先・店舗名が不明", "evidence": "画像内に店舗名・連絡先の記載が確認できない", "fix": "店舗名・電話番号・予約フォームリンクを追加", "effect": "予約行動への直接誘導", "metric": "予約転換率" },
+    { "priority": "P2", "issue": "3ベネフィットブロックの優先順位が不明瞭", "evidence": "「宴」「呑」「騒」が等価に並ぶのみ", "fix": "最も訴求力の高い要素を視覚的に強調する", "effect": "主要ベネフィットの印象強化", "metric": "アイトラッキング・クリック分布" }
+  ],
+  "reusable_patterns": [
+    { "id": "C01", "name": "グラデーション背景＋ネオン管風発光タイトル", "keep": "グラデーション背景＋発光文字のタイトル表現", "replace": "タイトル文言、配色、装飾" },
+    { "id": "C02", "name": "日付＋受付開始の行動喚起一行", "keep": "日付＋短い行動喚起文の一行配置", "replace": "日付、文言" },
+    { "id": "C03", "name": "漢字一文字＋説明文の3分割ベネフィットブロック", "keep": "漢字一文字＋2行説明の3分割構成", "replace": "漢字、説明文内容" }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "ネオン文字デザインそのもの、固有コピー文言、乾杯グラスイラストの具体的な表現",
+    "reusable": "グラデーション背景＋ネオン管風タイトルの表現手法、日付＋受付開始の一行配置、漢字一文字＋説明文の3分割ベネフィットブロック構造"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/GR-0226_reference.png",
+      "https://www.design-ac.net/free-template/banner-template-17093"
+    ],
+    "unknowns": [
+      "enlarged_typography_capture_missing",
+      "content_detail_unverified",
+      "print_mockup_missing",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

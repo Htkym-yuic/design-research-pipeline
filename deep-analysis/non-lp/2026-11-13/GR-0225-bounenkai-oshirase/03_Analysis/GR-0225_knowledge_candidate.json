@@ -1,0 +1,68 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "GR-0225",
+  "media_type": "GR",
+  "title": "忘年会のお知らせポスター",
+  "source": {
+    "source_name": "デザインAC",
+    "source_detail_url": "https://www.design-ac.net/free-template/poster-template-28215",
+    "capture_url": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F7e02edb818247cea47b6a19fbbb56cc6%2F7e02edb818247cea47b6a19fbbb56cc6-400.webp&w=828&q=75",
+    "official_url": null
+  },
+  "analysis": {
+    "summary": "英字ロゴタイプ＋和文タイトルという二層見出しで、カジュアルながらも企業イベントらしい品位を両立させている。日時・会場・出欠締切の3項目のみに情報を絞り込み、下部の乾杯写真が文字情報を補わずとも懇親の場であることを直感的に伝えている。",
+    "score": {
+      "visual": 17,
+      "clarity": 18,
+      "originality": 10,
+      "reusability": 19,
+      "learning": 12,
+      "evidence": 8,
+      "total": 84
+    },
+    "units": [
+      { "name": "作品全体", "role": "社内忘年会の開催告知と出欠判断材料の提示を一枚で完結させる。", "reuse": "二層見出し＋簡潔な情報表＋情緒写真の組み合わせ。", "evidence": "GR-0225_reference.png全体。" },
+      { "name": "タイトル・見出し", "role": "イベントの格式と種別を提示する。", "reuse": "英字ロゴ＋和文タイトルの二層見出し。", "evidence": "原画像上部。" },
+      { "name": "案内文", "role": "開催意図を簡潔に伝え、招待のトーンを作る。", "reuse": "タイトル直後に置く謝意・招待の短文。", "evidence": "原画像中央上部。" },
+      { "name": "情報表", "role": "出欠判断に必要な3項目を提示する。", "reuse": "角丸枠線の3項目情報表。", "evidence": "原画像中央。" },
+      { "name": "乾杯写真", "role": "忘年会が懇親・交流の場であることを情緒的に伝える。", "reuse": "顔を写さない手元クローズアップの乾杯写真という汎用的な表現手法。", "evidence": "原画像下部。" },
+      { "name": "装飾・背景", "role": "上部の文字情報と下部の写真を明確に分離し、全体のトーンを統一する。", "reuse": "無地背景＋上下2段の面分割という最小装飾の構成。", "evidence": "原画像全体。" }
+    ]
+  },
+  "strengths": [
+    "情報を3項目に絞り判断を容易にしている",
+    "顔を写さない写真で汎用性が高い",
+    "英字＋和文の二層見出しで品位がある"
+  ],
+  "improvements": [
+    { "priority": "P0", "issue": "会費の記載が確認できない", "evidence": "画像内に会費情報が見当たらない", "fix": "会費・支払方法を情報表に追加", "effect": "参加判断の迷いを削減", "metric": "出欠回答までの日数" },
+    { "priority": "P1", "issue": "返信方法が不明瞭", "evidence": "メール・口頭等の明記がない", "fix": "出欠回答のQRコード・URLを追加", "effect": "幹事の集計負担を削減", "metric": "回答率・回答所要時間" },
+    { "priority": "P2", "issue": "服装規定の記載が確認できない", "evidence": "画像内に服装案内がない", "fix": "カジュアル可否等の一言を追記", "effect": "参加者の服装不安を解消", "metric": "参加者アンケート" }
+  ],
+  "reusable_patterns": [
+    { "id": "C01", "name": "英字ロゴ＋和文タイトルの二層見出し", "keep": "英字小見出し＋和文大見出しの配置", "replace": "ロゴ文言、タイトル、配色" },
+    { "id": "C02", "name": "角丸枠線の3項目情報表", "keep": "ラベル＋内容の3段ボックス", "replace": "日時、会場、締切日" },
+    { "id": "C03", "name": "顔を写さない手元クローズアップ写真", "keep": "手元のみのクローズアップ構図", "replace": "被写体、写真そのもの" }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "乾杯写真の人物、固有の会場名・日時、固有コピー文言",
+    "reusable": "二層見出し構造、角丸枠線の3項目情報表、手元クローズアップ写真の構図手法"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/GR-0225_reference.png",
+      "https://www.design-ac.net/free-template/poster-template-28215"
+    ],
+    "unknowns": [
+      "enlarged_typography_capture_missing",
+      "content_detail_unverified",
+      "print_mockup_missing",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}
