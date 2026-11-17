@@ -1,0 +1,59 @@
+{
+  "schema_version": "drs-weekly-run-1.0",
+  "run_date": "2026-11-17",
+  "run_mode": "daily_auto_deep_analysis_loop",
+  "scope_note": "祐一さんの日次自動実行（深い分析ループ）。2026-11-11の収集時に1回あたり最大2〜3件の制約で繰り越しとなっていたGR-0227（名刺テンプレート）・GR-0228（ロゴテンプレート）の2件を今回処理し、長期化していた2026-11-11収集分の繰り越し候補（GR-0224〜GR-0228）をすべて処理完了した。2026-11-12〜2026-11-17に新規収集された候補（WB-0079/0080, GR-0234〜0238, WB-0089/0090, GR-0259〜0263等）は今回対象外として次回以降に繰り越した。",
+  "selected": [
+    {
+      "id": "GR-0227",
+      "title": "カラフル幾何学模様の雑貨店名刺デザイン",
+      "analysis": "completed",
+      "markdown_validation_warnings": 0,
+      "knowledge_json": "validated",
+      "dropbox_files": 0,
+      "dropbox_status": "not_synced_source_in_daily_intake",
+      "notion": "pending",
+      "cbs_production_sync": "not_applied"
+    },
+    {
+      "id": "GR-0228",
+      "title": "水滴のようなロゴ",
+      "analysis": "completed",
+      "markdown_validation_warnings": 0,
+      "knowledge_json": "validated",
+      "dropbox_files": 0,
+      "dropbox_status": "not_synced_source_in_daily_intake",
+      "notion": "pending",
+      "cbs_production_sync": "not_applied"
+    }
+  ],
+  "deferred_to_next_run": [
+    { "id": "WB-0079", "reason": "2026-11-12収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "WB-0080", "reason": "2026-11-12収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "GR-0234", "reason": "2026-11-12収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "GR-0235", "reason": "2026-11-12収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "GR-0236", "reason": "2026-11-12収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "GR-0237", "reason": "2026-11-12収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "GR-0238", "reason": "2026-11-12収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "WB-0089", "reason": "2026-11-17収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "WB-0090", "reason": "2026-11-17収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "GR-0259", "reason": "2026-11-17収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "GR-0260", "reason": "2026-11-17収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "GR-0261", "reason": "2026-11-17収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "GR-0262", "reason": "2026-11-17収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "GR-0263", "reason": "2026-11-17収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "note", "reason": "2026-11-14〜2026-11-16の収集分は未確認。次回以降のcandidates.json履歴・lightweight-analysis.jsonで確認が必要" }
+  ],
+  "excluded_out_of_scope": [
+    { "id": "PAT-0091", "reason": "mediaType=Pattern（デザイン原則・パターン）は対象媒体に含まれないため対象外" },
+    { "id": "PAT-0092", "reason": "mediaType=Pattern（デザイン原則・パターン）は対象媒体に含まれないため対象外" },
+    { "id": "PAT-0101", "reason": "mediaType=Pattern（デザイン原則・パターン）は対象媒体に含まれないため対象外" },
+    { "id": "PAT-0102", "reason": "mediaType=Pattern（デザイン原則・パターン）は対象媒体に含まれないため対象外" }
+  ],
+  "gaps": [
+    "Dropbox正本昇格は未実施（読み取り専用セッションのため）。ユーザー確認後に別工程で行う。",
+    "Notion更新は、2026-11-13〜2026-11-17の複数回にわたりセッションのコンテナ再起動が同じNotion書き込み呼び出しの最中に繰り返し発生し、完了できなかった。GR-0224〜GR-0228の5件すべてでnotion_status=pendingのまま。原因調査（承認待ちのまま完了しない等）とあわせて、別セッションでの再試行が必要。",
+    "候補の繰り越しバックログが増加している（現時点で14件が次回送り）。1回あたり最大2〜3件の制約のペースでは追いつかない可能性があり、ユーザーとの対話で優先順位付けまたは制約緩和を検討する必要がある。"
+  ],
+  "cbs_production_sync": "not_applied_user_confirmation_required"
+}

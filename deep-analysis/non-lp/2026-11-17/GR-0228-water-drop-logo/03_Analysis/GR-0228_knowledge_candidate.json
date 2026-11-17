@@ -1,0 +1,67 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "GR-0228",
+  "media_type": "GR",
+  "title": "水滴のようなロゴ",
+  "source": {
+    "source_name": "デザインAC",
+    "source_detail_url": "https://www.design-ac.net/free-template/logo-template-3073",
+    "capture_url": "https://data.design-ac.net/data/thumbnails/templates/1e9412570463dab5e47945d3702296cc/1e9412570463dab5e47945d3702296cc-400.webp",
+    "official_url": null
+  },
+  "analysis": {
+    "summary": "水・清潔・透明感を想起させる雫型のシンボルマークと、その下に社名・タグラインを縦積みする、業種を問わず使える汎用ロゴテンプレート。シンボル単体でも社名を含むフルロゴとしても機能する分離可能な構成。",
+    "score": {
+      "visual": 16,
+      "clarity": 16,
+      "originality": 8,
+      "reusability": 18,
+      "learning": 10,
+      "evidence": 7,
+      "total": 75
+    },
+    "units": [
+      { "name": "作品全体", "role": "水・清潔感をテーマにした汎用企業ロゴとして機能する。", "reuse": "シンボル＋社名＋タグラインの縦積み3層構成。", "evidence": "GR-0228_reference.png全体。" },
+      { "name": "シンボルマーク", "role": "水・清潔・透明感という抽象的な価値観を視覚的に象徴する。", "reuse": "グラデーション＋ハイライトによる雫型シンボルの造形手法。", "evidence": "原画像上部。" },
+      { "name": "社名ロゴタイプ", "role": "具体的な社名・ブランド名を記載する領域を示す。", "reuse": "シンボル直下に太字で社名を配置する構成。", "evidence": "原画像中央下寄り。" },
+      { "name": "タグライン", "role": "ブランドメッセージ・キャッチコピーを記載する領域を示す。", "reuse": "社名直下に細字でタグラインを配置する構成。", "evidence": "原画像最下部。" },
+      { "name": "背景・余白", "role": "ロゴ単体としての汎用性を確保する。", "reuse": "無地背景＋十分な余白によるロゴの汎用設計。", "evidence": "原画像全体。" },
+      { "name": "配色設計", "role": "水・清潔感という業種イメージを配色で一貫させる。", "reuse": "シンボルに有彩色、文字に無彩色を充てる配色の役割分担。", "evidence": "原画像全体。" }
+    ]
+  },
+  "strengths": [
+    "シンボル単体でも社名部分を含むフルロゴでも使える分離可能な構成",
+    "色数を2系統に絞り運用しやすい",
+    "余白設計により汎用性が高い"
+  ],
+  "improvements": [
+    { "priority": "P0", "issue": "モノクロ・反転版の展開例が未確認", "evidence": "print_mockup_missing", "fix": "単色・白抜き版のバリエーションを用意する", "effect": "名刺の片色印刷・暗色背景での運用に対応", "metric": "各媒体での視認性テスト" },
+    { "priority": "P1", "issue": "シンボル単体のfavicon用バリエーションがない", "evidence": "Webサイトでの小サイズ表示を想定した切り出しが確認できない", "fix": "シンボルのみの正方形バリエーションを作成", "effect": "ブラウザタブ等での認識性向上", "metric": "favicon視認性テスト" },
+    { "priority": "P2", "issue": "配色のHEX値が未実測", "evidence": "低解像度・asset_license_unverified", "fix": "正確な配色コードを実測・記録する", "effect": "印刷・Web間での色再現の一貫性確保", "metric": "色差測定" }
+  ],
+  "reusable_patterns": [
+    { "id": "C01", "name": "シンボル＋社名＋タグラインの縦積み3層構成", "keep": "シンボル→社名→タグラインの縦積み配置", "replace": "シンボル造形、社名、タグライン" },
+    { "id": "C02", "name": "グラデーション＋ハイライトによる立体感演出", "keep": "グラデーション＋白ハイライトの組み合わせ", "replace": "シンボルの具体形状、配色" },
+    { "id": "C03", "name": "シンボルに有彩色・文字に無彩色を充てる配色設計", "keep": "有彩色シンボル＋無彩色文字の役割分担", "replace": "具体的な配色値" }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "シンボルの具体的な造形・グラデーション配色",
+    "reusable": "シンボル＋社名＋タグラインの縦積み3層構成、グラデーション＋ハイライトによる立体感演出手法、有彩色シンボル×無彩色文字の配色設計"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/GR-0228_reference.png",
+      "https://www.design-ac.net/free-template/logo-template-3073"
+    ],
+    "unknowns": [
+      "enlarged_typography_capture_missing",
+      "print_mockup_missing",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

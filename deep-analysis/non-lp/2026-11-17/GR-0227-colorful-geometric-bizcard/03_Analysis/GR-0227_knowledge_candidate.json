@@ -1,0 +1,68 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "GR-0227",
+  "media_type": "GR",
+  "title": "カラフル幾何学模様の雑貨店名刺デザイン",
+  "source": {
+    "source_name": "デザインAC",
+    "source_detail_url": "https://www.design-ac.net/free-template/business-card-template-29790",
+    "capture_url": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F29fb70510ce5940e89ad1eed931e1fad%2F29fb70510ce5940e89ad1eed931e1fad-400.webp&w=384&q=75",
+    "official_url": null
+  },
+  "analysis": {
+    "summary": "賑やかな幾何学模様の背景の上に、情報を読みやすい白カードを重ねる「カード・オン・背景」という二層構成。業種→氏名→連絡先という情報階層が明確で、雑貨店・個人商店向けの名刺テンプレートとして汎用的に使える。",
+    "score": {
+      "visual": 15,
+      "clarity": 17,
+      "originality": 9,
+      "reusability": 17,
+      "learning": 10,
+      "evidence": 8,
+      "total": 76
+    },
+    "units": [
+      { "name": "作品全体", "role": "雑貨店・個人商店向けの名刺として、業種・氏名・連絡先を一枚で伝える。", "reuse": "カラフル背景＋白カードの二層構成。", "evidence": "GR-0227_reference.png全体。" },
+      { "name": "タイトル・見出し（業種ラベル）", "role": "名刺の持ち主の業種を一言で示す。", "reuse": "業種ラベル→氏名の優先順位構成。", "evidence": "原画像カード上部。" },
+      { "name": "氏名", "role": "名刺の持ち主を特定する最重要情報を提示する。", "reuse": "カード中央に最大サイズで氏名を配置する構成。", "evidence": "原画像カード中段。" },
+      { "name": "連絡先情報", "role": "具体的な接触手段（住所・メール・電話）を提供する。", "reuse": "郵便番号・住所・メール・電話の4行連絡先ブロック。", "evidence": "原画像カード下段。" },
+      { "name": "装飾・背景", "role": "雑貨店・個人商店らしい親しみやすさ・賑やかさを演出する。", "reuse": "カード外周を幾何学パターンで埋める装飾手法。", "evidence": "原画像全面。" },
+      { "name": "アクセント帯", "role": "カラフルな背景と白カードの間に視覚的な引き締めを加える。", "reuse": "主配色と対比する単色アクセント帯を端に配置する手法。", "evidence": "原画像右端。" }
+    ]
+  },
+  "strengths": [
+    "カード・オン・背景の二層構成で装飾性と可読性を両立",
+    "業種→氏名→連絡先の情報階層が明確",
+    "紺のアクセント帯で単調さを防いでいる"
+  ],
+  "improvements": [
+    { "priority": "P0", "issue": "ロゴマークの有無が不明", "evidence": "画像内にロゴらしき要素が確認できない", "fix": "店舗ロゴをカード内に追加する余白を確保する", "effect": "ブランド認知の向上", "metric": "名刺からの再訪問・問い合わせ率" },
+    { "priority": "P1", "issue": "デジタル連絡手段がない", "evidence": "メール・電話のみでSNS/Web記載なし", "fix": "QRコードまたはWebサイトURLを追加", "effect": "オンライン接点の獲得", "metric": "QRスキャン数" },
+    { "priority": "P2", "issue": "裏面デザインが未確認", "evidence": "print_mockup_missing", "fix": "裏面に店舗紹介やマップを追加検討", "effect": "名刺の情報量・訴求力向上", "metric": "名刺保管率（アンケート）" }
+  ],
+  "reusable_patterns": [
+    { "id": "C01", "name": "カラフル背景＋白カードの二層構成", "keep": "背景装飾＋中央白カードの重ね配置", "replace": "幾何学パターン、配色" },
+    { "id": "C02", "name": "業種ラベル→氏名の優先順位構成", "keep": "ラベル行＋大型氏名の階層", "replace": "業種文言、氏名" },
+    { "id": "C03", "name": "4行連絡先ブロック", "keep": "郵便番号・住所・メール・電話の4行構成", "replace": "具体的な連絡先" }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "具体的な幾何学パターンの形状・配色、ダミー氏名・住所・メール・電話番号",
+    "reusable": "カード・オン・背景の二層構成、業種ラベル→氏名の優先順位構成、4行連絡先ブロックの型"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/GR-0227_reference.png",
+      "https://www.design-ac.net/free-template/business-card-template-29790"
+    ],
+    "unknowns": [
+      "enlarged_typography_capture_missing",
+      "print_mockup_missing",
+      "low_resolution_measurement_unavailable",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}
