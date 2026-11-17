@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T16:23:34.864Z",
+  "updatedAt": "2026-11-17T16:30:26.069Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -4367,6 +4367,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-16T16:23:34.864Z"
+    },
+    {
+      "id": "GR-0259",
+      "title": "忘年会開催のお知らせ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F0eaa58bbace930ea267ac0fc86880ae5%2F0eaa58bbace930ea267ac0fc86880ae5-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-32278",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F0eaa58bbace930ea267ac0fc86880ae5%2F0eaa58bbace930ea267ac0fc86880ae5-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-17T16:30:26.069Z"
+    },
+    {
+      "id": "GR-0260",
+      "title": "ダイヤ柄のオータムセールポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fefbb153c9cde426359f643c242eb55ac%2Fefbb153c9cde426359f643c242eb55ac-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-26603",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fefbb153c9cde426359f643c242eb55ac%2Fefbb153c9cde426359f643c242eb55ac-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-17T16:30:26.069Z"
+    },
+    {
+      "id": "GR-0261",
+      "title": "ひょうたんの形をしたイラストのある秋食向けバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F852845836365630c3a83a8476c3f426a%2F852845836365630c3a83a8476c3f426a-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-16300",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F852845836365630c3a83a8476c3f426a%2F852845836365630c3a83a8476c3f426a-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-17T16:30:26.069Z"
+    },
+    {
+      "id": "GR-0262",
+      "title": "オレンジ格子背景のシンプル雑貨店名刺",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F1fa4e86e300abff817c76980aa7e3c4f%2F1fa4e86e300abff817c76980aa7e3c4f-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29287",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F1fa4e86e300abff817c76980aa7e3c4f%2F1fa4e86e300abff817c76980aa7e3c4f-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-17T16:30:26.069Z"
+    },
+    {
+      "id": "GR-0263",
+      "title": "丸みを帯びた抽象的なロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/704862ceafcaaf7301373eb67f9d85d3/704862ceafcaaf7301373eb67f9d85d3-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3017",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/704862ceafcaaf7301373eb67f9d85d3/704862ceafcaaf7301373eb67f9d85d3-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-17T16:30:26.069Z"
     },
     {
       "id": "ILAC-0001",
@@ -8930,6 +8990,30 @@
       "materialId": "PAT-0100",
       "authorProfileUrl": null,
       "reservedAt": "2026-11-16T16:23:34.864Z"
+    },
+    {
+      "id": "PAT-0101",
+      "title": "忘年会開催のお知らせに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F0eaa58bbace930ea267ac0fc86880ae5%2F0eaa58bbace930ea267ac0fc86880ae5-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-32278",
+      "imageUrl": null,
+      "materialId": "PAT-0101",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-17T16:30:26.069Z"
+    },
+    {
+      "id": "PAT-0102",
+      "title": "Running with words | ニューバランス公式サイトに見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://nbgcp.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/runningwithwords/",
+      "imageUrl": null,
+      "materialId": "PAT-0102",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-17T16:30:26.069Z"
     },
     {
       "id": "PHAC-0001",
@@ -15567,6 +15651,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-16T16:23:34.864Z"
+    },
+    {
+      "id": "WB-0089",
+      "title": "Running with words | ニューバランス公式サイト",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://nbgcp.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/runningwithwords/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/runningwithwords_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-17T16:30:26.069Z"
+    },
+    {
+      "id": "WB-0090",
+      "title": "株式会社ロンドマーク",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.rondomark.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/rondomark/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/rondomark02_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-17T16:30:26.069Z"
     }
   ]
 }

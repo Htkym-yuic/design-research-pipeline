@@ -1,19 +1,19 @@
 {
-  "collectedAt": "2026-11-16T16:23:34.864Z",
-  "candidateCount": 10,
+  "collectedAt": "2026-11-17T16:30:26.069Z",
+  "candidateCount": 9,
   "candidates": [
     {
-      "id": "WB-0087",
+      "id": "WB-0089",
       "status": "candidate",
       "mediaType": "Web",
       "sourceKey": "web",
-      "title": "温耳鼻咽喉科",
-      "captureUrl": "https://on-jibika.com/",
-      "imageUrl": "https://sankoudesign.com/wp-content/uploads/onjibika_t-400x350.jpg",
+      "title": "Running with words | ニューバランス公式サイト",
+      "captureUrl": "https://nbgcp.com/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/runningwithwords_t-400x350.jpg",
       "landingUrl": null,
       "sourceName": "SANKOU!",
       "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/onjibika/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/runningwithwords/",
       "library": "Web_Research_Library",
       "notionEnv": "NOTION_WEB_DATA_SOURCE_ID",
       "saveImage": true,
@@ -23,23 +23,23 @@
       "metadata": {
         "width": 400,
         "height": 350,
-        "alt": "温耳鼻咽喉科",
+        "alt": "Running with words | ニューバランス公式サイト",
         "subtype": null,
         "subtypeLabel": null
       }
     },
     {
-      "id": "WB-0088",
+      "id": "WB-0090",
       "status": "candidate",
       "mediaType": "Web",
       "sourceKey": "web",
-      "title": "LANDIC 採用サイト",
-      "captureUrl": "https://www.landic.com/recruit/",
-      "imageUrl": "https://sankoudesign.com/wp-content/uploads/landicrecruit_t-400x350.jpg",
+      "title": "株式会社ロンドマーク",
+      "captureUrl": "https://www.rondomark.jp/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/rondomark02_t-400x350.jpg",
       "landingUrl": null,
       "sourceName": "SANKOU!",
       "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/landic-recruit/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/rondomark/",
       "library": "Web_Research_Library",
       "notionEnv": "NOTION_WEB_DATA_SOURCE_ID",
       "saveImage": true,
@@ -49,23 +49,23 @@
       "metadata": {
         "width": 400,
         "height": 350,
-        "alt": "LANDIC 採用サイト",
+        "alt": "株式会社ロンドマーク",
         "subtype": null,
         "subtypeLabel": null
       }
     },
     {
-      "id": "GR-0254",
+      "id": "GR-0259",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "ヨガスタジオ体験チラシ",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fabfd52bf7f8f2656025654cfc8ea8c04%2Fabfd52bf7f8f2656025654cfc8ea8c04-400.webp&w=828&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fabfd52bf7f8f2656025654cfc8ea8c04%2Fabfd52bf7f8f2656025654cfc8ea8c04-400.webp&w=828&q=75",
+      "title": "忘年会開催のお知らせ",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F0eaa58bbace930ea267ac0fc86880ae5%2F0eaa58bbace930ea267ac0fc86880ae5-400.webp&w=828&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F0eaa58bbace930ea267ac0fc86880ae5%2F0eaa58bbace930ea267ac0fc86880ae5-400.webp&w=828&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/flyer",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-30268",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-32278",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -75,23 +75,23 @@
       "metadata": {
         "width": 283,
         "height": 400,
-        "alt": "ヨガスタジオ体験チラシ, チラシ, チラシテンプレート",
+        "alt": "忘年会開催のお知らせ, チラシ, チラシテンプレート",
         "subtype": "flyer",
         "subtypeLabel": "チラシ・フライヤー"
       }
     },
     {
-      "id": "GR-0255",
+      "id": "GR-0260",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "年末年始休業のお知らせ_横",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F0e1842dfcc8eb5a0560dc083702f9ec6%2F0e1842dfcc8eb5a0560dc083702f9ec6-400.webp&w=1200&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F0e1842dfcc8eb5a0560dc083702f9ec6%2F0e1842dfcc8eb5a0560dc083702f9ec6-400.webp&w=1200&q=75",
+      "title": "ダイヤ柄のオータムセールポスター",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fefbb153c9cde426359f643c242eb55ac%2Fefbb153c9cde426359f643c242eb55ac-400.webp&w=828&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fefbb153c9cde426359f643c242eb55ac%2Fefbb153c9cde426359f643c242eb55ac-400.webp&w=828&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/poster",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-32276",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-26603",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -99,25 +99,25 @@
       "authorProfileUrl": null,
       "searchTerm": null,
       "metadata": {
-        "width": 400,
-        "height": 283,
-        "alt": "年末年始休業のお知らせ_横, ポスター, ポスターテンプレート",
+        "width": 283,
+        "height": 400,
+        "alt": "ダイヤ柄のオータムセールポスター, ポスター, ポスターテンプレート",
         "subtype": "poster",
         "subtypeLabel": "ポスター"
       }
     },
     {
-      "id": "GR-0256",
+      "id": "GR-0261",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "文字が大きめのオレンジ色ベースの秋食向けバナー",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fb4807f622c7a2b3aac8213f494a36c46%2Fb4807f622c7a2b3aac8213f494a36c46-400.webp&w=640&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fb4807f622c7a2b3aac8213f494a36c46%2Fb4807f622c7a2b3aac8213f494a36c46-400.webp&w=640&q=75",
+      "title": "ひょうたんの形をしたイラストのある秋食向けバナー",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F852845836365630c3a83a8476c3f426a%2F852845836365630c3a83a8476c3f426a-400.webp&w=640&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F852845836365630c3a83a8476c3f426a%2F852845836365630c3a83a8476c3f426a-400.webp&w=640&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/banner",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-16301",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-16300",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -127,23 +127,23 @@
       "metadata": {
         "width": 156,
         "height": 104,
-        "alt": "文字が大きめのオレンジ色ベースの秋食向けバナー, バナー, バナーテンプレート",
+        "alt": "ひょうたんの形をしたイラストのある秋食向けバナー, バナー, バナーテンプレート",
         "subtype": "social",
         "subtypeLabel": "SNS投稿・Web広告"
       }
     },
     {
-      "id": "GR-0257",
+      "id": "GR-0262",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "縦ライン配色のナチュラル雑貨店名刺",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Ff53fbab70b1191defab750cec6f58146%2Ff53fbab70b1191defab750cec6f58146-400.webp&w=384&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Ff53fbab70b1191defab750cec6f58146%2Ff53fbab70b1191defab750cec6f58146-400.webp&w=384&q=75",
+      "title": "オレンジ格子背景のシンプル雑貨店名刺",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F1fa4e86e300abff817c76980aa7e3c4f%2F1fa4e86e300abff817c76980aa7e3c4f-400.webp&w=384&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F1fa4e86e300abff817c76980aa7e3c4f%2F1fa4e86e300abff817c76980aa7e3c4f-400.webp&w=384&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/business-card",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29288",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29287",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -153,23 +153,23 @@
       "metadata": {
         "width": 384,
         "height": 232,
-        "alt": "縦ライン配色のナチュラル雑貨店名刺\n, 名刺, 名刺テンプレート",
+        "alt": "オレンジ格子背景のシンプル雑貨店名刺\n, 名刺, 名刺テンプレート",
         "subtype": "business-card",
         "subtypeLabel": "名刺・ショップカード"
       }
     },
     {
-      "id": "GR-0258",
+      "id": "GR-0263",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "三色の抽象的なロゴ",
-      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/7c3b1afe20e1233691d9872151644792/7c3b1afe20e1233691d9872151644792-400.webp",
-      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/7c3b1afe20e1233691d9872151644792/7c3b1afe20e1233691d9872151644792-400.webp",
+      "title": "丸みを帯びた抽象的なロゴ",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/704862ceafcaaf7301373eb67f9d85d3/704862ceafcaaf7301373eb67f9d85d3-400.webp",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/704862ceafcaaf7301373eb67f9d85d3/704862ceafcaaf7301373eb67f9d85d3-400.webp",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/logo",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3021",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3017",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -179,53 +179,59 @@
       "metadata": {
         "width": 400,
         "height": 400,
-        "alt": "三色の抽象的なロゴ, ロゴ, ロゴテンプレート",
+        "alt": "丸みを帯びた抽象的なロゴ, ロゴ, ロゴテンプレート",
         "subtype": "logo",
         "subtypeLabel": "ロゴ・VI/CI"
       }
     },
     {
-      "id": "PT-0183",
-      "status": "candidate",
-      "mediaType": "Parts",
-      "sourceKey": "parts",
-      "title": "フロンティアエージェンシー",
-      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/11/frontier-ag_00003.png",
-      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/11/frontier-ag_00003.png",
-      "landingUrl": null,
-      "sourceName": "Parts.",
-      "sourceUrl": "https://partsdesign.net/",
-      "sourceDetailUrl": "https://partsdesign.net/archives/7322",
-      "library": "Parts_Research_Library",
-      "notionEnv": "NOTION_PARTS_DATA_SOURCE_ID",
-      "saveImage": true,
-      "materialId": null,
-      "authorProfileUrl": null,
-      "searchTerm": null,
-      "metadata": {
-        "width": 1652,
-        "height": 941,
-        "alt": null,
-        "subtype": null,
-        "subtypeLabel": null
-      }
-    },
-    {
-      "id": "PAT-0099",
+      "id": "PAT-0101",
       "status": "candidate",
       "mediaType": "Pattern",
       "sourceKey": "patterns",
-      "title": "温耳鼻咽喉科に見るPC・SPの情報優先順位",
-      "captureUrl": "https://on-jibika.com/",
+      "title": "忘年会開催のお知らせに見る文字組みと視線誘導",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F0eaa58bbace930ea267ac0fc86880ae5%2F0eaa58bbace930ea267ac0fc86880ae5-400.webp&w=828&q=75",
+      "imageUrl": null,
+      "landingUrl": null,
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "sourceUrl": "https://www.design-ac.net/free-template/flyer",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-32278",
+      "library": "Pattern_Research_Library",
+      "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
+      "saveImage": false,
+      "materialId": "PAT-0101",
+      "authorProfileUrl": null,
+      "searchTerm": null,
+      "metadata": {
+        "collectionMode": "derived_pattern",
+        "patternType": "視線誘導",
+        "targetMedia": [
+          "Graphic",
+          "Banner"
+        ],
+        "rule": "主見出し・補足・画像・行動情報のサイズ差と配置から、最初に読ませる情報を明確にする。",
+        "cautions": "素材そのものではなく、情報階層と余白の考え方だけを転用する。",
+        "evidenceIds": [
+          "GR-0259"
+        ]
+      }
+    },
+    {
+      "id": "PAT-0102",
+      "status": "candidate",
+      "mediaType": "Pattern",
+      "sourceKey": "patterns",
+      "title": "Running with words | ニューバランス公式サイトに見るPC・SPの情報優先順位",
+      "captureUrl": "https://nbgcp.com/",
       "imageUrl": null,
       "landingUrl": null,
       "sourceName": "日次収集から抽出（SANKOU!）",
       "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/onjibika/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/runningwithwords/",
       "library": "Pattern_Research_Library",
       "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
       "saveImage": false,
-      "materialId": "PAT-0099",
+      "materialId": "PAT-0102",
       "authorProfileUrl": null,
       "searchTerm": null,
       "metadata": {
@@ -238,40 +244,7 @@
         "rule": "画面幅が変わっても、主見出し・主要ベネフィット・CTAの意味と順序を維持する。",
         "cautions": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
         "evidenceIds": [
-          "WB-0087"
-        ]
-      }
-    },
-    {
-      "id": "PAT-0100",
-      "status": "candidate",
-      "mediaType": "Pattern",
-      "sourceKey": "patterns",
-      "title": "フロンティアエージェンシーに見るセクション内の役割集約",
-      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/11/frontier-ag_00003.png",
-      "imageUrl": null,
-      "landingUrl": null,
-      "sourceName": "日次収集から抽出（Parts.）",
-      "sourceUrl": "https://partsdesign.net/",
-      "sourceDetailUrl": "https://partsdesign.net/archives/7322",
-      "library": "Pattern_Research_Library",
-      "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
-      "saveImage": false,
-      "materialId": "PAT-0100",
-      "authorProfileUrl": null,
-      "searchTerm": null,
-      "metadata": {
-        "collectionMode": "derived_pattern",
-        "patternType": "構成",
-        "targetMedia": [
-          "Parts",
-          "Web",
-          "LP"
-        ],
-        "rule": "一つのセクション内で見出し・説明・証拠・行動導線の役割を整理し、他案件へ転用可能な単位として捉える。",
-        "cautions": "切り出し範囲が広すぎないか、前後セクションへの依存がないかを確認する。",
-        "evidenceIds": [
-          "PT-0183"
+          "WB-0089"
         ]
       }
     }
@@ -335,7 +308,7 @@
       "key": "graphic",
       "sourceName": "デザインAC",
       "status": "collected",
-      "found": 65,
+      "found": 64,
       "accepted": 1,
       "reason": null,
       "diagnostic": null
@@ -345,7 +318,7 @@
       "sourceName": "Parts.",
       "status": "collected",
       "found": 180,
-      "accepted": 1,
+      "accepted": 0,
       "reason": null,
       "diagnostic": null
     },
@@ -353,7 +326,7 @@
       "key": "canva",
       "sourceName": "Canva",
       "status": "collected",
-      "found": 42,
+      "found": 41,
       "accepted": 0,
       "reason": null,
       "diagnostic": null
@@ -366,9 +339,9 @@
       "accepted": 0,
       "reason": "取得元がGitHubホストランナーからのアクセスを拒否しました。ローカル収集ルートで再実行してください。",
       "diagnostic": {
-        "finalUrl": "https://www.ac-illust.com/main/search_result.php?word=%E3%83%86%E3%82%AF%E3%83%8E%E3%83%AD%E3%82%B8%E3%83%BC",
+        "finalUrl": "https://www.ac-illust.com/main/search_result.php?word=%E8%87%AA%E7%84%B6+%E5%9C%B0%E5%9F%9F",
         "title": "ERROR: The request could not be satisfied",
-        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: 0s0uvfqIS3l1We0aZau-8zUSg79lGdno4z1a-JSy2VOjv",
+        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: Gw9ugCkUu0VMGNDR4iVB0C6iuOHXfLqmYDnoVfsOKT-w-",
         "figureCount": 0,
         "imageCount": 0
       }
@@ -381,9 +354,9 @@
       "accepted": 0,
       "reason": "取得元がGitHubホストランナーからのアクセスを拒否しました。ローカル収集ルートで再実行してください。",
       "diagnostic": {
-        "finalUrl": "https://www.photo-ac.com/main/search?q=%E3%83%86%E3%82%AF%E3%83%8E%E3%83%AD%E3%82%B8%E3%83%BC",
+        "finalUrl": "https://www.photo-ac.com/main/search?q=%E8%87%AA%E7%84%B6+%E5%9C%B0%E5%9F%9F",
         "title": "ERROR: The request could not be satisfied",
-        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: uepMJ9yF2FQ4kCvQHew5pUrFirVJD0ipWpLe4NwCl4dLH",
+        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: 4J_OYxKfjUEQHf7MqA4rpgdiDumPFcXejvjdlFW2DfWTJ",
         "figureCount": 0,
         "imageCount": 0
       }
