@@ -28,9 +28,10 @@ export function checkLp28Chapter8(md) {
   const s = String(md);
   const a = s.search(/^## 8\. /m), b = s.search(/^## 9\. /m);
   if (a < 0 || b < 0 || a > b) return { ok: false, sections: 0, errors: ["章8・章9の見出しが見つかりません"] };
-  const secs = s.slice(a, b).split(/^(?=### Section)/m).slice(1);
+  // Section の小見出し: 「### Section 01｜…」のほか、「### PC S01」「### SP S01」「### SP—」の書き方も検査の対象にする
+  const secs = s.slice(a, b).split(/^(?=### (?:Section|PC\s*S|SP\s*S|SP\s*[—–-]))/m).slice(1);
   const errors = [];
-  if (!secs.length) errors.push("第8章に「### Section」がありません");
+  if (!secs.length) errors.push("第8章に「### Section」（または「### PC S01」「### SP S01」）がありません");
   for (const sec of secs) {
     const lines = sec.split("\n");
     const head = lines[0].replace(/^###\s*/, "").slice(0, 24);
