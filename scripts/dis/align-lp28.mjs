@@ -9,7 +9,7 @@ import fs from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import { parseArgs } from "node:util";
-import { constants as fsc } from "node:fs";
+import fsSync, { constants as fsc } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { REPO_ROOT, readJson } from "./lib/config.mjs";
 import { findItemDir } from "./import-analysis.mjs";
@@ -23,7 +23,7 @@ import { readNotionChapter28 } from "./compare-lp28.mjs";
 import { compareNotionToMd } from "./lib/lp28-compare.mjs";
 import { dropboxFolder } from "./lib/adapters.mjs";
 import { checkLp28Chapter8 } from "./lib/lp28-check.mjs";
-import { refTitles, parseChapters, basicInfo, alignToV40 } from "./lib/lp28-align.mjs";
+import { refTitles, parseChapters, basicInfo, alignToV40, detectChapterMap } from "./lib/lp28-align.mjs";
 
 const text = (b) => (b?.[b.type]?.rich_text || []).map((t) => t.plain_text ?? "").join("");
 const exists = async (p) => { try { await fs.access(p); return true; } catch { return false; } };
@@ -63,7 +63,12 @@ export async function prepare(disId) {
   const brand = (/^LP-\d+｜(.+?)｜/.exec(title) || [])[1] || "";
   const props = { "取得日": lib.properties["取得日"]?.date?.start, "コピータイプ": (lib.properties["コピータイプ"]?.multi_select || []).map((o) => o.name).join("／"), "オファー": (lib.properties["オファー"]?.rich_text || []).map((t) => t.plain_text).join("") };
   const { chapters } = parseChapters(sourceMd);
-  const aligned = alignToV40({ md: sourceMd, ref, lp: rel.libraryId, brand, disId, info: basicInfo(chapters.find((c) => c.n === 1)?.body || ""), props, thumbnailRef: `images/${rel.libraryId}_thumbnail.jpg` });
+  // 別構成（P4）の旧28章は、mdに章2の画像が無い。標準画像の6枠（PC/SPのFull Page・First View・Section一覧）を、案件フォルダの標準画像から足す
+  const slots = [["PC Full Page", "PC_full"], ["PC First View", "PC_first_view"], ["PC Section一覧", "PC_sections"], ["SP Full Page", "SP_full"], ["SP First View", "SP_first_view"], ["SP Section一覧", "SP_sections"]];
+  const ch2Images = detectChapterMap(parseChapters(sourceMd).chapters) && itemDir
+    ? slots.map(([title, k]) => ({ title, ref: path.join(itemDir, "files", "01_Normal_Images", `${disId}_${k}.png`) })).filter((x) => fsSync.existsSync(x.ref))
+    : [];
+  const aligned = alignToV40({ ch2Images, md: sourceMd, ref, lp: rel.libraryId, brand, disId, info: basicInfo(chapters.find((c) => c.n === 1)?.body || ""), props, thumbnailRef: `images/${rel.libraryId}_thumbnail.jpg` });
   const blocks = await listBlockChildren(rel.disNotionPageId);
   const n28 = await readNotionChapter28(rel.disNotionPageId, blocks);
   const cmp = compareNotionToMd({ notionLines: n28.lines.filter((l) => !l.startsWith("以下は、旧ライブラリーの")), notionChapterNums: n28.nums, md: sourceMd });

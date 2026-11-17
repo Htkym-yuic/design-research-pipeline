@@ -59,20 +59,47 @@ export function headerMeta({ lp, disId, info, props = {}, date = "", version = "
 }
 
 /**
+ * 章の並びが別構成の旧28章（P4: 「ファーストビュー要約」「Section固定項目」の並びの v2.2 29章）を、
+ * v4.0 の章へ、意味で対応づける表。新しい章番号 → 旧の章番号（複数のときは、小見出しでつなぐ。空なら「未確認」）。
+ */
+export const P4_MAP = {
+  1: [1], 2: [2], 3: [3], 4: [], 5: [5], 6: [6], 7: [18], 8: [8], 9: [7, 10], 10: [11], 11: [9], 12: [12, 14], 13: [22], 14: [23],
+  15: [15], 16: [], 17: [27], 18: [13], 19: [19], 20: [20], 21: [21], 22: [17], 23: [4, 16], 24: [24, 25, 29], 25: [], 26: [26], 27: [], 28: [28],
+};
+
+/** 旧28章の章の名前から、P4（別構成）かどうかを見分ける。 */
+export function detectChapterMap(chapters) {
+  const t = (n) => chapters.find((c) => c.n === n)?.title || "";
+  return t(2) === "ファーストビュー要約" && t(8) === "Section固定項目" && t(29) === "更新履歴" ? P4_MAP : null;
+}
+
+/**
  * 旧28章を v4.0 の形にそろえる。戻り値: { md, mapping, notes }
  *   mapping: 章ごとの { n, from, to, kind: 同名|名前変更|章29→章24へ移動|足す }
  */
-export function alignToV40({ md, ref, lp, brand, disId, info, props, date, thumbnailRef = "images/thumbnail.jpg", markLine }) {
+export function alignToV40({ md, ref, lp, brand, disId, info, props, date, thumbnailRef = "images/thumbnail.jpg", markLine, ch2Images = [] }) {
   const { chapters } = parseChapters(md);
   const byN = new Map(chapters.map((c) => [c.n, c]));
+  const cmap = detectChapterMap(chapters);
   const mapping = [], notes = [];
   const out = [];
   out.push(`# ${lp}｜${brand}｜LP分析（統一28章 v4.0）`, "");
   if (thumbnailRef) out.push(`![サムネイル](${thumbnailRef})`, "");
   out.push(headerMeta({ lp, disId, info: info || basicInfo(byN.get(1)?.body || ""), props, date, thumbnail: Boolean(thumbnailRef) }), "", "---", "");
   for (let n = 1; n <= 28; n++) {
-    const c = byN.get(n);
     const to = ref[n];
+    if (cmap) {
+      const srcs = (cmap[n] || []).map((k) => byN.get(k)).filter(Boolean);
+      if (!srcs.length) { mapping.push({ n, from: null, to, kind: "足す（旧28章に無い章。内容は「未確認」）" }); out.push(`## ${n}. ${to}`, "", U + "。", ""); continue; }
+      let body = srcs[0].body;
+      // 旧28章（別構成）のmdには、章2の実画像の記載が無い。いまのNotionにある6枠を落とさないよう、同じ6枠を章2の先頭に置く
+      if (n === 2 && ch2Images.length) body = ch2Images.map((x) => `### ${x.title}\n\n![${x.title}](${x.ref})`).join("\n\n") + "\n\n" + body;
+      for (const x of srcs.slice(1)) body += `\n\n### 旧・章${x.n} ${x.title}${x.n === 29 ? "（旧28章の章29。そのまま移した）" : "（旧28章の章" + x.n + "。そのまま移した）"}\n\n${x.body.trim()}`;
+      mapping.push({ n, from: srcs.map((x) => `${x.n}. ${x.title}`).join(" + "), to, kind: srcs.length > 1 ? `意味で対応（旧章${srcs.map((x) => x.n).join("＋")}をつなぐ）` : `意味で対応（旧章${srcs[0].n}）` });
+      out.push(`## ${n}. ${to}`, "", body, "", n === 23 || n === 27 ? "---" : "", n === 23 || n === 27 ? "" : "");
+      continue;
+    }
+    const c = byN.get(n);
     if (!c) { mapping.push({ n, from: null, to, kind: "足す（旧28章に無い章。内容は「未確認」）" }); out.push(`## ${n}. ${to}`, "", U + "。", ""); continue; }
     let body = c.body;
     if (n === 24 && byN.get(29)) {
@@ -81,7 +108,7 @@ export function alignToV40({ md, ref, lp, brand, disId, info, props, date, thumb
     } else mapping.push({ n, from: c.title, to, kind: c.title === to ? "同名" : "名前変更" });
     out.push(`## ${n}. ${to}`, "", body, "", n === 23 || n === 27 ? "---" : "", n === 23 || n === 27 ? "" : "");
   }
-  if (byN.get(29)) mapping.push({ n: 29, from: byN.get(29).title, to: "（章24の末尾へ移動）", kind: "章29→章24へ移動" });
+  if (byN.get(29) && !cmap) mapping.push({ n: 29, from: byN.get(29).title, to: "（章24の末尾へ移動）", kind: "章29→章24へ移動" });
   const extra = chapters.filter((c) => c.n > 29);
   if (extra.length) notes.push(`章${extra.map((c) => c.n).join("・")}は、v4.0に対応する章がなく、そろえていない（${extra.length}章）`);
   out.push("---", "", markLine || `**✅ 分析表記済み｜${lp} ${brand} v1.0（形のみ統一28章 v4.0にそろえた版。内容は旧28章のまま）**`, "");
