@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T16:30:26.069Z",
+  "updatedAt": "2026-11-18T16:26:18.551Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -4427,6 +4427,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-17T16:30:26.069Z"
+    },
+    {
+      "id": "GR-0264",
+      "title": "忘年会のご案内",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fff2ef496412b635a6b541cc86951445f%2Fff2ef496412b635a6b541cc86951445f-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-32297",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fff2ef496412b635a6b541cc86951445f%2Fff2ef496412b635a6b541cc86951445f-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-18T16:26:18.551Z"
+    },
+    {
+      "id": "GR-0265",
+      "title": "地区の市民運動会案内",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F85c564df6a01de5a8881caf9d21ffede%2F85c564df6a01de5a8881caf9d21ffede-400.webp&w=1200&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-26506",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F85c564df6a01de5a8881caf9d21ffede%2F85c564df6a01de5a8881caf9d21ffede-400.webp&w=1200&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-18T16:26:18.551Z"
+    },
+    {
+      "id": "GR-0266",
+      "title": "黄色ベースの華やかな秋食向けバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Ff3d84f6b32c60ac7ae7ae5bd3ffe188f%2Ff3d84f6b32c60ac7ae7ae5bd3ffe188f-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-16299",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Ff3d84f6b32c60ac7ae7ae5bd3ffe188f%2Ff3d84f6b32c60ac7ae7ae5bd3ffe188f-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-18T16:26:18.551Z"
+    },
+    {
+      "id": "GR-0267",
+      "title": "おしゃれな横長ビジネス名刺デザイン",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fa1d3258b2bf76bb6a10142794a9ee48c%2Fa1d3258b2bf76bb6a10142794a9ee48c-400.webp&w=256&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29015",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fa1d3258b2bf76bb6a10142794a9ee48c%2Fa1d3258b2bf76bb6a10142794a9ee48c-400.webp&w=256&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-18T16:26:18.551Z"
+    },
+    {
+      "id": "GR-0268",
+      "title": "紫とピンクの正方形のロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/17c2b53034c01dcc96d82f91fb2818bc/17c2b53034c01dcc96d82f91fb2818bc-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3013",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/17c2b53034c01dcc96d82f91fb2818bc/17c2b53034c01dcc96d82f91fb2818bc-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-18T16:26:18.551Z"
     },
     {
       "id": "ILAC-0001",
@@ -9014,6 +9074,30 @@
       "materialId": "PAT-0102",
       "authorProfileUrl": null,
       "reservedAt": "2026-11-17T16:30:26.069Z"
+    },
+    {
+      "id": "PAT-0103",
+      "title": "Life Edit Renovation | MAJOR SCALE × PICNIC MOTELに見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://major-scale.jp/life-edit-renovation/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/majorscale-lifeeditrenovation/",
+      "imageUrl": null,
+      "materialId": "PAT-0103",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-18T16:26:18.551Z"
+    },
+    {
+      "id": "PAT-0104",
+      "title": "忘年会のご案内に見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fff2ef496412b635a6b541cc86951445f%2Fff2ef496412b635a6b541cc86951445f-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-32297",
+      "imageUrl": null,
+      "materialId": "PAT-0104",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-18T16:26:18.551Z"
     },
     {
       "id": "PHAC-0001",
@@ -15675,6 +15759,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-17T16:30:26.069Z"
+    },
+    {
+      "id": "WB-0091",
+      "title": "Life Edit Renovation | MAJOR SCALE × PICNIC MOTEL",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://major-scale.jp/life-edit-renovation/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/majorscale-lifeeditrenovation/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/lifeeditrenovation_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-18T16:26:18.551Z"
+    },
+    {
+      "id": "WB-0092",
+      "title": "Tokyo Sky Corridor（KK線）『Roof Park Art Fes 2026』",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://roofpark-artfes.metro.tokyo.lg.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/roofparkartfes2026/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/roofparkartfes2026_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-18T16:26:18.551Z"
     }
   ]
 }
