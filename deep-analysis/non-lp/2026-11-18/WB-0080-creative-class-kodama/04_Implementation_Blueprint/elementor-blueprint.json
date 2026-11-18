@@ -1,0 +1,15 @@
+{
+  "input": "deep-analysis/non-lp/2026-11-18/WB-0080-creative-class-kodama/01_Normal_Images/WB-0080_SITE_PC_full.png",
+  "output": "deep-analysis/non-lp/2026-11-18/WB-0080-creative-class-kodama/04_Implementation_Blueprint/WB-0080_elementor_brain_implementation.png",
+  "notionOutput": "deep-analysis/non-lp/2026-11-18/WB-0080-creative-class-kodama/04_Implementation_Blueprint/WB-0080_elementor_brain_implementation_notion.jpg",
+  "railWidth": 620,
+  "sections": [
+    { "y": 0, "height": 1200, "label": "01 ヘッダー+ヒーロー", "color": "#ff3b30", "lines": ["講座名「元素化思考」", "抽象3Dビジュアル+動画埋め込み"] },
+    { "y": 1200, "height": 2000, "label": "02 概念説明・図解", "color": "#ff9500", "lines": ["「なんとなく好き」の価値", "4分割の幾何学ダイアグラム+引用コメント"] },
+    { "y": 3200, "height": 2800, "label": "03 カリキュラム一覧", "color": "#34c759", "lines": ["項目名+説明文のテーブル", "「手を動かして〜」の区切り文言"] },
+    { "y": 6000, "height": 1000, "label": "04 マスタープロフィール", "color": "#007aff", "lines": ["紺色背景", "小玉千陽氏の紹介"] },
+    { "y": 7000, "height": 2500, "label": "05 受講生の声", "color": "#5856d6", "lines": ["カードグリッド（3カラム）", "受講生の証言"] },
+    { "y": 9500, "height": 2418, "label": "06 料金プラン+購入前FAQ", "color": "#af52de", "lines": ["個人向け2種+チーム向け2種", "購入前の注意事項リスト"] },
+    { "y": 11918, "height": 1000, "label": "07 最終CTA+フッター", "color": "#8e8e93", "lines": ["「自分の感覚を、もっと自由に。」", "CREATIVE CLASSロゴ"] }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0080",
+  "media_type": "WB",
+  "title": "元素化思考｜CREATIVE CLASS（小玉千陽 オンライン講座）",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://sankoudesign.com/web/creativeclass-001archive/",
+    "capture_url": "https://creative-class.site/kodama-001-archive/",
+    "official_url": "https://creative-class.site/kodama-001-archive/"
+  },
+  "analysis": {
+    "summary": "「元素化思考（Design as Chemistry）」という独自メソッド名を核に、抽象的な3Dビジュアルと動画で講座の世界観を提示する概念先行型のオンライン講座セールスページ。カリキュラム一覧→マスタープロフィール→受講生の声→料金プランという典型的な説得構成を踏襲し、個人・チーム両対応の料金設計を持つ。",
+    "score": {
+      "visual": 16,
+      "clarity": 13,
+      "originality": 12,
+      "reusability": 16,
+      "learning": 13,
+      "evidence": 9,
+      "total": 79
+    },
+    "units": [
+      { "name": "ファーストビュー", "role": "講座名・メソッド名・マスター名を提示し、紹介動画で興味を喚起する。", "reuse": "抽象3Dビジュアル＋大見出し＋サブタイトル＋動画埋め込みのヒーロー構成。", "evidence": "PC/SP First View、PC/SP Full Page冒頭部。" },
+      { "name": "概念説明・図解", "role": "「なんとなく好き」という感覚的な価値を、言語化・図解によって説明する。", "reuse": "見出し＋本文＋概念図解＋引用コメントの組み合わせ。", "evidence": "PC Full Page前半（y約1200〜3200px相当）。" },
+      { "name": "カリキュラム一覧", "role": "講座で学べる範囲を、入口から定番までの段階的なカリキュラムとして具体的に提示する。", "reuse": "項目名＋説明文の横組みテーブル型カリキュラム一覧。", "evidence": "PC Full Page中盤（y約3200〜6000px相当）。" },
+      { "name": "マスタープロフィール", "role": "講師（マスター）の実在性・専門性を示し、信頼を形成する。", "reuse": "背景色を切り替えた単独の講師紹介セクション。", "evidence": "PC Full Page中盤（y約6000〜7000px相当）。" },
+      { "name": "受講生の声", "role": "実際の受講生の評価を提示し、社会的証明によって購入への不安を軽減する。", "reuse": "カードグリッド型の受講生の声・レビュー表示。", "evidence": "PC Full Page中盤〜後半（y約7000〜9500px相当）。" },
+      { "name": "料金プラン・購入前の注意事項", "role": "個人・チームそれぞれの料金プランを提示し、購入前に知っておくべき注意事項を伝える。", "reuse": "個人向け・チーム向けを分けた料金プランカード＋購入前FAQリストの組み合わせ。", "evidence": "PC Full Page後半（y約9500〜12918px相当）。" }
+    ]
+  },
+  "strengths": [
+    "抽象的な概念を図解で視覚的に言語化している",
+    "マスター紹介・受講生の声を紺色背景でまとめ信頼形成ゾーンを明確化",
+    "個人・チーム向けの料金プランを両方用意している"
+  ],
+  "improvements": [
+    { "priority": "P0", "issue": "独自用語「元素化思考」の初見理解が難しい可能性", "evidence": "サブタイトル・図解はあるが一言での言い換えが少ない", "fix": "ヒーロー直下に一文で「何が得られるか」を言い換える説明を追加", "effect": "初見離脱率の低減", "metric": "ヒーロー直下のスクロール継続率" },
+    { "priority": "P1", "issue": "カリキュラム項目の具体的な学習内容が読み取りにくい", "evidence": "項目文言が小さく判読困難な箇所がある", "fix": "カリキュラム各項目にアイコンまたは一言サマリーを追加", "effect": "カリキュラムの理解速度向上", "metric": "カリキュラムセクション滞在時間" },
+    { "priority": "P2", "issue": "受講前後の変化を示す具体例がない", "evidence": "受講生の声はあるが定量的な変化の提示が確認できない", "fix": "受講前後のビフォーアフター例や成果物を追加", "effect": "効果への納得感向上", "metric": "料金プランセクションへの到達率" }
+  ],
+  "reusable_patterns": [
+    { "id": "C01", "name": "抽象3Dビジュアル＋動画埋め込みのヒーロー", "keep": "大見出し＋サブタイトル＋抽象ビジュアル＋動画の配置", "replace": "ビジュアル、動画、講座名" },
+    { "id": "C02", "name": "概念図解＋引用コメントによる価値の言語化", "keep": "見出し＋本文＋図解＋引用コメントの組み合わせ", "replace": "図解の具体的内容、コメント文言" },
+    { "id": "C03", "name": "背景色を切り替えた講師紹介＋受講生の声の信頼形成ゾーン", "keep": "暗色背景セクション＋カードグリッドの連続配置", "replace": "講師情報、受講生の声内容" },
+    { "id": "C04", "name": "個人向け・チーム向けを分けた料金プラン設計", "keep": "個人プラン・チームプランの2系統グリッド", "replace": "具体的な価格、プラン内容" }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "「元素化思考」のロゴ・ビジュアル、マスター（小玉千陽氏）の氏名・写真・プロフィール、受講生の声の具体的な発言内容、固有の料金・カリキュラム項目",
+    "reusable": "抽象3Dビジュアル＋動画埋め込みのヒーロー構成、概念図解＋引用コメントによる価値の言語化手法、背景色切り替えによる信頼形成ゾーンの構成、個人・チーム分離の料金プラン設計"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/WB-0080_SITE_PC_full.png",
+      "../01_Normal_Images/WB-0080_SITE_PC_first_view.png",
+      "../01_Normal_Images/WB-0080_SITE_SP_full.png",
+      "../01_Normal_Images/WB-0080_SITE_SP_first_view.png",
+      "https://creative-class.site/kodama-001-archive/",
+      "https://sankoudesign.com/web/creativeclass-001archive/"
+    ],
+    "unknowns": [
+      "section_index_not_generated",
+      "low_resolution_measurement_unavailable",
+      "interactive_states_unverified",
+      "dom_measurement_unavailable",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}
