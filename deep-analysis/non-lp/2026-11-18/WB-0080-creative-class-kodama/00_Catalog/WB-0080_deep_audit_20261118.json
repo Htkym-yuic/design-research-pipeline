@@ -1,0 +1,29 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "WB-0080",
+  "mode": "analysis",
+  "selected_for_deep_analysis": true,
+  "selection_reason": "2026-11-12収集の新規候補のうち、画像一式（PC/SP Full Page・First View）が揃っており、概念の図解化と個人・チーム両対応の料金設計という他候補にない再利用価値を持つため",
+  "checks": {
+    "first_line": "Yes",
+    "chapters": "Yes",
+    "unit_headings": "Yes",
+    "unit_fields": "Yes",
+    "image_slots": "Yes",
+    "image_evidence": "Yes",
+    "candidate_parity": "Yes",
+    "rights": "Yes",
+    "unknowns": "Yes",
+    "sources": "Yes",
+    "run_record": "Yes",
+    "analysis_complete": "Yes"
+  },
+  "notion": {
+    "status": "pending"
+  },
+  "dropbox": {
+    "status": "not_synced_source_in_daily_intake",
+    "path": "/design/Design_Research_Library/Web_Research_Library/99_Needs_Review/2026-11-13/daily-intake/WB-0080/"
+  },
+  "cbs": "not_synced_user_approval_required"
+}

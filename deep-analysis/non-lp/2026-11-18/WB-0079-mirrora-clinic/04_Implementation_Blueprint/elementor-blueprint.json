@@ -1,0 +1,16 @@
+{
+  "input": "deep-analysis/non-lp/2026-11-18/WB-0079-mirrora-clinic/01_Normal_Images/WB-0079_SITE_PC_full.png",
+  "output": "deep-analysis/non-lp/2026-11-18/WB-0079-mirrora-clinic/04_Implementation_Blueprint/WB-0079_elementor_brain_implementation.png",
+  "notionOutput": "deep-analysis/non-lp/2026-11-18/WB-0079-mirrora-clinic/04_Implementation_Blueprint/WB-0079_elementor_brain_implementation_notion.jpg",
+  "railWidth": 620,
+  "sections": [
+    { "y": 0, "height": 900, "label": "01 ヘッダー+ヒーロー（カルーセル）", "color": "#ff3b30", "lines": ["院内写真カルーセル（1-4）", "ロゴ+タグライン重畳", "ナビ+予約CTA"] },
+    { "y": 900, "height": 1800, "label": "02 導入ステートメント+信頼写真", "color": "#ff9500", "lines": ["「まなざしが、すべてを変える。」", "ドクター写真+院内コラージュ"] },
+    { "y": 2700, "height": 1800, "label": "03 Menu一覧", "color": "#34c759", "lines": ["施術メニュー5項目程度", "矢印リンク+ご予約ボタン"] },
+    { "y": 4500, "height": 1100, "label": "04 院内写真（場面転換）", "color": "#007aff", "lines": ["廊下の全幅写真", "情報セクション間の視覚的な間"] },
+    { "y": 5600, "height": 1600, "label": "05 Information", "color": "#5856d6", "lines": ["診療時間表", "アクセス情報"] },
+    { "y": 7200, "height": 1500, "label": "06 Campaign", "color": "#af52de", "lines": ["料金訴求カード×2", "¥76,000 / 4,800円〜"] },
+    { "y": 8700, "height": 800, "label": "07 News + Calendar", "color": "#ff2d55", "lines": ["最新情報リスト", "カレンダー表"] },
+    { "y": 9500, "height": 1522, "label": "08 フッター", "color": "#8e8e93", "lines": ["大型リングロゴ", "クリニック情報+著作権表記"] }
+  ]
+}

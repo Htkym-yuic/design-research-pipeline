@@ -1,0 +1,73 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0079",
+  "media_type": "WB",
+  "title": "Mirrora CLINIC（ミロラクリニック）",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://sankoudesign.com/web/mirroraclinic/",
+    "capture_url": "https://mirrora.clinic/",
+    "official_url": "https://mirrora.clinic/"
+  },
+  "analysis": {
+    "summary": "「まなざしが、すべてを変える。」というコピーを核に、施術の機能的な説明より先に院内の高級感ある空間写真とブランドの世界観を提示する、イメージ訴求優先型の美容クリニックサイト。ブランドイメージ訴求と価格訴求を異なるセクションで使い分けている。",
+    "score": {
+      "visual": 17,
+      "clarity": 14,
+      "originality": 11,
+      "reusability": 16,
+      "learning": 13,
+      "evidence": 9,
+      "total": 80
+    },
+    "units": [
+      { "name": "ファーストビュー", "role": "高級感のある院内空間を複数カットで見せ、ブランドの世界観を一瞬で伝える。", "reuse": "空間写真カルーセル＋ロゴ・タグライン＋CTAの重畳型ヒーロー。", "evidence": "PC/SP First View、PC/SP Full Page冒頭部。" },
+      { "name": "ナビゲーション", "role": "About／Menu／Price／Case／Newsといったカテゴリへの分類案内と、予約への直接導線を提供する。", "reuse": "透過テキストナビ＋不透明CTAボタンの組み合わせ。", "evidence": "PC/SP First View。" },
+      { "name": "導入ステートメント・メニュー", "role": "ブランドの理念を言葉で伝え、ドクター・空間への信頼を積み上げ、具体的な施術メニューへ誘導する。", "reuse": "理念ステートメント＋信頼写真＋メニューリストの組み合わせ。", "evidence": "PC Full Page前半（y約900〜4500px相当）。" },
+      { "name": "院内写真（廊下）", "role": "施術エリアへ向かう廊下の高級感を印象付ける、場面転換的な写真セクション。", "reuse": "情報セクションの合間に写真のみのセクションを挟む構成。", "evidence": "PC Full Page中盤（y約4500〜5600px相当）。" },
+      { "name": "Information・Campaign・News・Calendar", "role": "診療時間・アクセスという実務情報、具体的な料金訴求、最新情報・カレンダーを提示する。", "reuse": "基本情報（Information）＋価格訴求（Campaign）＋最新情報（News/Calendar）の3セクション構成。", "evidence": "PC Full Page中盤〜後半（y約5600〜9500px相当）。" },
+      { "name": "フッター", "role": "ブランドロゴの再掲、クリニック情報、各ページへの再探索導線を提供する。", "reuse": "ヒーローと呼応するモチーフをフッターに再配置する構成。", "evidence": "PC Full Page最下部（y約9500〜11022px相当）。" }
+    ]
+  },
+  "strengths": [
+    "空間写真を主役にした上質なブランド訴求",
+    "理念コピーと信頼写真の組み合わせが自然",
+    "価格訴求セクションを独立させ両方のニーズに応えている"
+  ],
+  "improvements": [
+    { "priority": "P0", "issue": "Menu一覧の情報量が少ない", "evidence": "各項目が簡潔なテキストリンクのみ", "fix": "各メニューに一言の説明・料金目安を添える", "effect": "トップページでの比較検討のしやすさ向上", "metric": "Menu項目クリック率・個別ページ到達率" },
+    { "priority": "P1", "issue": "ヘッダーナビの1項目が判読困難", "evidence": "画像解像度の制約でテキストを断定できない", "fix": "実サイトでナビ項目を確認し正式名称を記録する", "effect": "ナビゲーション構造の正確な把握", "metric": "—" },
+    { "priority": "P2", "issue": "News欄の情報が小さく読みにくい", "evidence": "文字サイズが小さく判読困難な箇所がある", "fix": "News欄のフォントサイズ・行間を拡大する", "effect": "最新情報の視認性向上", "metric": "News欄のクリック率" }
+  ],
+  "reusable_patterns": [
+    { "id": "C01", "name": "空間写真カルーセル＋重畳ロゴ・タグラインのヒーロー", "keep": "写真カルーセル＋ロゴ・タグライン・CTAの重畳配置", "replace": "写真、ロゴ、タグライン、配色" },
+    { "id": "C02", "name": "理念ステートメント＋信頼写真＋メニューリストの組み合わせ", "keep": "見出し＋本文＋写真＋メニューリストの順序", "replace": "コピー、写真、メニュー内容" },
+    { "id": "C03", "name": "情報セクション間に写真のみのセクションを挟む構成", "keep": "全幅写真のみの単独セクション", "replace": "写真そのもの" },
+    { "id": "C04", "name": "基本情報＋価格訴求＋最新情報の3セクション構成", "keep": "Information／Campaign／News・Calendarの並び", "replace": "診療時間、価格、News内容" }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "Mirrora CLINICのロゴ、院内写真、ドクター写真、固有コピー、具体的な料金・診療時間・News内容",
+    "reusable": "空間写真カルーセル型ヒーローの構成、理念ステートメント＋信頼写真＋メニューリストの組み合わせ、情報セクション間に写真のみを挟む構成、基本情報＋価格訴求＋最新情報の3セクション構成"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/WB-0079_SITE_PC_full.png",
+      "../01_Normal_Images/WB-0079_SITE_PC_first_view.png",
+      "../01_Normal_Images/WB-0079_SITE_SP_full.png",
+      "../01_Normal_Images/WB-0079_SITE_SP_first_view.png",
+      "https://mirrora.clinic/",
+      "https://sankoudesign.com/web/mirroraclinic/"
+    ],
+    "unknowns": [
+      "section_index_not_generated",
+      "low_resolution_measurement_unavailable",
+      "dom_measurement_unavailable",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}
