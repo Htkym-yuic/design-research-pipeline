@@ -16740,6 +16740,106 @@
       "reviewPoints": "素材そのものではなく、情報階層と余白の考え方だけを転用する。",
       "deepDivePriority": "中",
       "generatedAt": "2026-11-18T16:27:27.081Z"
+    },
+    "GR-0269": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したチラシ・フライヤー参考。親子と大人向け講座のイベント案内チラシ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "ニュートラル。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-19T16:18:07.717Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0269-untitled/03_Implementation_Blueprint/GR-0269_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0269-untitled/03_Implementation_Blueprint/GR-0269_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0269-untitled/03_Implementation_Blueprint/GR-0269_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0269-untitled/03_Implementation_Blueprint/GR-0269_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0270": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したポスター参考。秋の臨時休業のお知らせポスター。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "暖色・黄橙系。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-19T16:18:07.728Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0270-untitled/03_Implementation_Blueprint/GR-0270_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0270-untitled/03_Implementation_Blueprint/GR-0270_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0270-untitled/03_Implementation_Blueprint/GR-0270_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0270-untitled/03_Implementation_Blueprint/GR-0270_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0271": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したSNS投稿・Web広告参考。ビールラベル的な秋食向けバナー。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "暖色・黄橙系。156×104の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-19T16:18:07.738Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0271-untitled/03_Implementation_Blueprint/GR-0271_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0271-untitled/03_Implementation_Blueprint/GR-0271_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0271-untitled/03_Implementation_Blueprint/GR-0271_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0271-untitled/03_Implementation_Blueprint/GR-0271_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0272": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集した名刺・ショップカード参考。ミニマルな縦長ビジネス名刺デザイン。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。242×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-19T16:18:07.748Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0272-untitled/03_Implementation_Blueprint/GR-0272_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0272-untitled/03_Implementation_Blueprint/GR-0272_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0272-untitled/03_Implementation_Blueprint/GR-0272_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0272-untitled/03_Implementation_Blueprint/GR-0272_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0273": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したロゴ・VI/CI参考。紫とピンクの正方形のロゴ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。400×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-19T16:18:07.759Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0273-untitled/03_Implementation_Blueprint/GR-0273_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0273-untitled/03_Implementation_Blueprint/GR-0273_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0273-untitled/03_Implementation_Blueprint/GR-0273_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0273-untitled/03_Implementation_Blueprint/GR-0273_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PAT-0105": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（デザインAC）から収集したPattern参考。親子と大人向け講座のイベント案内チラシに見る文字組みと視線誘導。",
+      "selectionReason": "日次収集から抽出（デザインAC）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "主見出し・補足・画像・行動情報のサイズ差と配置から、最初に読ませる情報を明確にする。 根拠候補: GR-0269",
+      "reviewPoints": "素材そのものではなく、情報階層と余白の考え方だけを転用する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-19T16:18:07.759Z"
     }
   }
 }
