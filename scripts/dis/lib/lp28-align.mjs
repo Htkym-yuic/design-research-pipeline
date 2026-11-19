@@ -77,10 +77,12 @@ export function detectChapterMap(chapters) {
  * 旧28章を v4.0 の形にそろえる。戻り値: { md, mapping, notes }
  *   mapping: 章ごとの { n, from, to, kind: 同名|名前変更|章29→章24へ移動|足す }
  */
-export function alignToV40({ md, ref, lp, brand, disId, info, props, date, thumbnailRef = "images/thumbnail.jpg", markLine, ch2Images = [] }) {
+export function alignToV40({ md, ref, lp, brand, disId, info, props, date, thumbnailRef = "images/thumbnail.jpg", markLine, ch2Images = [], notionCh28Md = "", notionCh29Md = "" }) {
   const { chapters } = parseChapters(md);
   const byN = new Map(chapters.map((c) => [c.n, c]));
   const cmap = detectChapterMap(chapters);
+  // 章0（実行・重複防止記録）で始まり、章28が無い形（章0〜27）は、章0を章28へ移す
+  const shift0 = !cmap && byN.has(0) && !byN.has(28) && chapters.every((c) => c.n <= 27);
   const mapping = [], notes = [];
   const out = [];
   out.push(`# ${lp}｜${brand}｜LP分析（統一28章 v4.0）`, "");
@@ -99,13 +101,21 @@ export function alignToV40({ md, ref, lp, brand, disId, info, props, date, thumb
       out.push(`## ${n}. ${to}`, "", body, "", n === 23 || n === 27 ? "---" : "", n === 23 || n === 27 ? "" : "");
       continue;
     }
-    const c = byN.get(n);
+    const c = n === 28 && shift0 ? byN.get(0) : byN.get(n);
     if (!c) { mapping.push({ n, from: null, to, kind: "足す（旧28章に無い章。内容は「未確認」）" }); out.push(`## ${n}. ${to}`, "", U + "。", ""); continue; }
     let body = c.body;
-    if (n === 24 && byN.get(29)) {
+    // 章2: 旧28章のmdに無い実画像の枠（例: First View）を、先頭に足す
+    if (n === 2 && ch2Images.length) body = ch2Images.map((x) => `### ${x.title}\n\n![${x.title}](${x.ref})`).join("\n\n") + "\n\n" + body;
+    // 章28: Notionにだけあった補完記録（写し）は、消さずに、小見出しで残す
+    if (n === 28 && notionCh28Md) body += `\n\n### 旧・Notion章28（補完記録。2026-11-14にNotionへ写した、旧v2の章0の写し）\n\n${notionCh28Md}`;
+    // 章24: mdに無いNotionの章29（更新履歴）は、章24の最後に小見出しで移す
+    if (n === 24 && !byN.get(29) && notionCh29Md) {
+      body += `\n\n### 旧・章29 更新履歴（旧28章の章29。Notionにあったものを、そのまま移した）\n\n${notionCh29Md}`;
+      mapping.push({ n, from: c.title, to, kind: (c.title === to ? "同名" : "名前変更") + "＋末尾に、Notionの章29の内容を足す" });
+    } else if (n === 24 && byN.get(29)) {
       body += `\n\n### 旧・章29 更新履歴（旧28章の章29。そのまま移した）\n\n${byN.get(29).body.trim()}`;
       mapping.push({ n, from: c.title, to, kind: c.title === to ? "同名（末尾に、章29の内容を足す）" : "名前変更＋末尾に、章29の内容を足す" });
-    } else mapping.push({ n, from: c.title, to, kind: c.title === to ? "同名" : "名前変更" });
+    } else mapping.push({ n, from: shift0 && n === 28 ? `0. ${c.title}` : c.title, to, kind: shift0 && n === 28 ? "章0→章28へ移動" : c.title === to ? "同名" : "名前変更" });
     out.push(`## ${n}. ${to}`, "", body, "", n === 23 || n === 27 ? "---" : "", n === 23 || n === 27 ? "" : "");
   }
   if (byN.get(29) && !cmap) mapping.push({ n: 29, from: byN.get(29).title, to: "（章24の末尾へ移動）", kind: "章29→章24へ移動" });
