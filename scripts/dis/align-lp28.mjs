@@ -31,7 +31,28 @@ const exists = async (p) => { try { await fs.access(p); return true; } catch { r
 /** 旧ライブラリーのNotionページの「保存先」から、ローカルの同期フォルダにある最新の full_analysis（Markdown）を探す。 */
 export async function findSourceMd(libProps, root = path.join(os.homedir(), "Dropbox")) {
   const raw = (libProps["保存先"]?.rich_text || []).map((t) => t.plain_text).join("") || (libProps["Dropbox正本パス"]?.rich_text || []).map((t) => t.plain_text).join("");
-  if (!raw) return null;
+  const byNumber = async () => {
+    // 「保存先」が短く切れている・空のとき: LP番号から、01_By_Date 配下の LP-nnnn_… フォルダを探す
+    const id = /^LP-0*(\d+)/.exec((libProps["タイトル"]?.title || []).map((t) => t.plain_text).join(""))?.[1];
+    if (!id) return null;
+    const lib = path.join(root, "Research_Library", "Design", "LP_Research_Library", "01_By_Date");
+    if (!(await exists(lib))) return null;
+    const hits = [];
+    for (const d of await fs.readdir(lib)) for (const k of ["LP"]) {
+      const lv1 = path.join(lib, d, k); if (!(await exists(lv1))) continue;
+      for (const c of await fs.readdir(lv1)) {
+        const lv2 = path.join(lv1, c); if (!(await fs.stat(lv2)).isDirectory()) continue;
+        for (const f of await fs.readdir(lv2)) if (new RegExp(`^LP-0*${id}_`).test(f) && !/pre_recovery/.test(f)) hits.push(path.join(lv2, f, "03_Analysis"));
+      }
+    }
+    for (const dir of hits) {
+      if (!(await exists(dir))) continue;
+      const files = (await fs.readdir(dir)).filter((f) => /full_analysis_v\d+.*\.md$/.test(f) && !/draft/.test(f)).sort((a, b) => Number(/_v(\d+)/.exec(b)?.[1]) - Number(/_v(\d+)/.exec(a)?.[1]) || (b > a ? 1 : -1));
+      if (files[0]) return { file: path.join(dir, files[0]), version: /_v(\d+)/.exec(files[0])?.[0].slice(1) };
+    }
+    return null;
+  };
+  if (!raw) return byNumber();
   let p = raw.replace(/^https?:.*$/, "");
   const m = /^(.*?\/LP-0?\d+_[^/]+)/.exec(p);
   const base = m ? m[1] : p.replace(/\/03_Analysis.*$/, "");
@@ -41,7 +62,7 @@ export async function findSourceMd(libProps, root = path.join(os.homedir(), "Dro
     const files = (await fs.readdir(dir)).filter((f) => /full_analysis_v\d+.*\.md$/.test(f) && !/draft/.test(f)).sort((a, b) => Number(/_v(\d+)/.exec(b)?.[1]) - Number(/_v(\d+)/.exec(a)?.[1]) || (b > a ? 1 : -1));
     if (files[0]) return { file: path.join(dir, files[0]), version: /_v(\d+)/.exec(files[0])?.[0].slice(1) };
   }
-  return null;
+  return byNumber();
 }
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
