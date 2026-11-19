@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T16:26:18.551Z",
+  "updatedAt": "2026-11-19T16:18:04.792Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -4487,6 +4487,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-18T16:26:18.551Z"
+    },
+    {
+      "id": "GR-0269",
+      "title": "親子と大人向け講座のイベント案内チラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F7e034fd740277647487f93bb80203053%2F7e034fd740277647487f93bb80203053-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29980",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F7e034fd740277647487f93bb80203053%2F7e034fd740277647487f93bb80203053-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-19T16:18:04.792Z"
+    },
+    {
+      "id": "GR-0270",
+      "title": "秋の臨時休業のお知らせポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F36b9293271efa1e161818fa69e85b3a2%2F36b9293271efa1e161818fa69e85b3a2-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-26502",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F36b9293271efa1e161818fa69e85b3a2%2F36b9293271efa1e161818fa69e85b3a2-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-19T16:18:04.792Z"
+    },
+    {
+      "id": "GR-0271",
+      "title": "ビールラベル的な秋食向けバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F6833880480b2655264d29024573a91a9%2F6833880480b2655264d29024573a91a9-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-16298",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F6833880480b2655264d29024573a91a9%2F6833880480b2655264d29024573a91a9-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-19T16:18:04.792Z"
+    },
+    {
+      "id": "GR-0272",
+      "title": "ミニマルな縦長ビジネス名刺デザイン",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F8b6f8bf5b6535a3705b8fbdfc2f347b9%2F8b6f8bf5b6535a3705b8fbdfc2f347b9-400.webp&w=256&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29014",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F8b6f8bf5b6535a3705b8fbdfc2f347b9%2F8b6f8bf5b6535a3705b8fbdfc2f347b9-400.webp&w=256&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-19T16:18:04.792Z"
+    },
+    {
+      "id": "GR-0273",
+      "title": "紫とピンクの正方形のロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/3dbc179eafb0e26ec46a18e12c9c6716/3dbc179eafb0e26ec46a18e12c9c6716-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3008",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/3dbc179eafb0e26ec46a18e12c9c6716/3dbc179eafb0e26ec46a18e12c9c6716-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-19T16:18:04.792Z"
     },
     {
       "id": "ILAC-0001",
@@ -9098,6 +9158,18 @@
       "materialId": "PAT-0104",
       "authorProfileUrl": null,
       "reservedAt": "2026-11-18T16:26:18.551Z"
+    },
+    {
+      "id": "PAT-0105",
+      "title": "親子と大人向け講座のイベント案内チラシに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F7e034fd740277647487f93bb80203053%2F7e034fd740277647487f93bb80203053-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29980",
+      "imageUrl": null,
+      "materialId": "PAT-0105",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-19T16:18:04.792Z"
     },
     {
       "id": "PHAC-0001",

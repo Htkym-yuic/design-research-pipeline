@@ -1,71 +1,19 @@
 {
-  "collectedAt": "2026-11-18T16:26:18.551Z",
-  "candidateCount": 9,
+  "collectedAt": "2026-11-19T16:18:04.792Z",
+  "candidateCount": 6,
   "candidates": [
     {
-      "id": "WB-0091",
-      "status": "candidate",
-      "mediaType": "Web",
-      "sourceKey": "web",
-      "title": "Life Edit Renovation | MAJOR SCALE × PICNIC MOTEL",
-      "captureUrl": "https://major-scale.jp/life-edit-renovation/",
-      "imageUrl": "https://sankoudesign.com/wp-content/uploads/lifeeditrenovation_t-400x350.jpg",
-      "landingUrl": null,
-      "sourceName": "SANKOU!",
-      "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/majorscale-lifeeditrenovation/",
-      "library": "Web_Research_Library",
-      "notionEnv": "NOTION_WEB_DATA_SOURCE_ID",
-      "saveImage": true,
-      "materialId": null,
-      "authorProfileUrl": null,
-      "searchTerm": null,
-      "metadata": {
-        "width": 400,
-        "height": 350,
-        "alt": "Life Edit Renovation | MAJOR SCALE × PICNIC MOTEL",
-        "subtype": null,
-        "subtypeLabel": null
-      }
-    },
-    {
-      "id": "WB-0092",
-      "status": "candidate",
-      "mediaType": "Web",
-      "sourceKey": "web",
-      "title": "Tokyo Sky Corridor（KK線）『Roof Park Art Fes 2026』",
-      "captureUrl": "https://roofpark-artfes.metro.tokyo.lg.jp/",
-      "imageUrl": "https://sankoudesign.com/wp-content/uploads/roofparkartfes2026_t-400x350.jpg",
-      "landingUrl": null,
-      "sourceName": "SANKOU!",
-      "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/roofparkartfes2026/",
-      "library": "Web_Research_Library",
-      "notionEnv": "NOTION_WEB_DATA_SOURCE_ID",
-      "saveImage": true,
-      "materialId": null,
-      "authorProfileUrl": null,
-      "searchTerm": null,
-      "metadata": {
-        "width": 400,
-        "height": 350,
-        "alt": "Tokyo Sky Corridor（KK線）『Roof Park Art Fes 2026』",
-        "subtype": null,
-        "subtypeLabel": null
-      }
-    },
-    {
-      "id": "GR-0264",
+      "id": "GR-0269",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "忘年会のご案内",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fff2ef496412b635a6b541cc86951445f%2Fff2ef496412b635a6b541cc86951445f-400.webp&w=828&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fff2ef496412b635a6b541cc86951445f%2Fff2ef496412b635a6b541cc86951445f-400.webp&w=828&q=75",
+      "title": "親子と大人向け講座のイベント案内チラシ",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F7e034fd740277647487f93bb80203053%2F7e034fd740277647487f93bb80203053-400.webp&w=828&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F7e034fd740277647487f93bb80203053%2F7e034fd740277647487f93bb80203053-400.webp&w=828&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/flyer",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-32297",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29980",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -75,23 +23,23 @@
       "metadata": {
         "width": 283,
         "height": 400,
-        "alt": "忘年会のご案内, チラシ, チラシテンプレート",
+        "alt": "親子と大人向け講座のイベント案内チラシ\n, チラシ, チラシテンプレート",
         "subtype": "flyer",
         "subtypeLabel": "チラシ・フライヤー"
       }
     },
     {
-      "id": "GR-0265",
+      "id": "GR-0270",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "地区の市民運動会案内",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F85c564df6a01de5a8881caf9d21ffede%2F85c564df6a01de5a8881caf9d21ffede-400.webp&w=1200&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F85c564df6a01de5a8881caf9d21ffede%2F85c564df6a01de5a8881caf9d21ffede-400.webp&w=1200&q=75",
+      "title": "秋の臨時休業のお知らせポスター",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F36b9293271efa1e161818fa69e85b3a2%2F36b9293271efa1e161818fa69e85b3a2-400.webp&w=828&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F36b9293271efa1e161818fa69e85b3a2%2F36b9293271efa1e161818fa69e85b3a2-400.webp&w=828&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/poster",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-26506",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-26502",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -99,25 +47,25 @@
       "authorProfileUrl": null,
       "searchTerm": null,
       "metadata": {
-        "width": 400,
-        "height": 283,
-        "alt": "地区の市民運動会案内, ポスター, ポスターテンプレート",
+        "width": 283,
+        "height": 400,
+        "alt": "秋の臨時休業のお知らせポスター, ポスター, ポスターテンプレート",
         "subtype": "poster",
         "subtypeLabel": "ポスター"
       }
     },
     {
-      "id": "GR-0266",
+      "id": "GR-0271",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "黄色ベースの華やかな秋食向けバナー",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Ff3d84f6b32c60ac7ae7ae5bd3ffe188f%2Ff3d84f6b32c60ac7ae7ae5bd3ffe188f-400.webp&w=640&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Ff3d84f6b32c60ac7ae7ae5bd3ffe188f%2Ff3d84f6b32c60ac7ae7ae5bd3ffe188f-400.webp&w=640&q=75",
+      "title": "ビールラベル的な秋食向けバナー",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F6833880480b2655264d29024573a91a9%2F6833880480b2655264d29024573a91a9-400.webp&w=640&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F6833880480b2655264d29024573a91a9%2F6833880480b2655264d29024573a91a9-400.webp&w=640&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/banner",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-16299",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-16298",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -127,23 +75,23 @@
       "metadata": {
         "width": 156,
         "height": 104,
-        "alt": "黄色ベースの華やかな秋食向けバナー, バナー, バナーテンプレート",
+        "alt": "ビールラベル的な秋食向けバナー, バナー, バナーテンプレート",
         "subtype": "social",
         "subtypeLabel": "SNS投稿・Web広告"
       }
     },
     {
-      "id": "GR-0267",
+      "id": "GR-0272",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "おしゃれな横長ビジネス名刺デザイン",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fa1d3258b2bf76bb6a10142794a9ee48c%2Fa1d3258b2bf76bb6a10142794a9ee48c-400.webp&w=256&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fa1d3258b2bf76bb6a10142794a9ee48c%2Fa1d3258b2bf76bb6a10142794a9ee48c-400.webp&w=256&q=75",
+      "title": "ミニマルな縦長ビジネス名刺デザイン",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F8b6f8bf5b6535a3705b8fbdfc2f347b9%2F8b6f8bf5b6535a3705b8fbdfc2f347b9-400.webp&w=256&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F8b6f8bf5b6535a3705b8fbdfc2f347b9%2F8b6f8bf5b6535a3705b8fbdfc2f347b9-400.webp&w=256&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/business-card",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29015",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29014",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -153,23 +101,23 @@
       "metadata": {
         "width": 242,
         "height": 400,
-        "alt": "おしゃれな横長ビジネス名刺デザイン\n, 名刺, 名刺テンプレート",
+        "alt": "ミニマルな縦長ビジネス名刺デザイン\n, 名刺, 名刺テンプレート",
         "subtype": "business-card",
         "subtypeLabel": "名刺・ショップカード"
       }
     },
     {
-      "id": "GR-0268",
+      "id": "GR-0273",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
       "title": "紫とピンクの正方形のロゴ",
-      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/17c2b53034c01dcc96d82f91fb2818bc/17c2b53034c01dcc96d82f91fb2818bc-400.webp",
-      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/17c2b53034c01dcc96d82f91fb2818bc/17c2b53034c01dcc96d82f91fb2818bc-400.webp",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/3dbc179eafb0e26ec46a18e12c9c6716/3dbc179eafb0e26ec46a18e12c9c6716-400.webp",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/3dbc179eafb0e26ec46a18e12c9c6716/3dbc179eafb0e26ec46a18e12c9c6716-400.webp",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/logo",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3013",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3008",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -185,53 +133,21 @@
       }
     },
     {
-      "id": "PAT-0103",
+      "id": "PAT-0105",
       "status": "candidate",
       "mediaType": "Pattern",
       "sourceKey": "patterns",
-      "title": "Life Edit Renovation | MAJOR SCALE × PICNIC MOTELに見るPC・SPの情報優先順位",
-      "captureUrl": "https://major-scale.jp/life-edit-renovation/",
-      "imageUrl": null,
-      "landingUrl": null,
-      "sourceName": "日次収集から抽出（SANKOU!）",
-      "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/majorscale-lifeeditrenovation/",
-      "library": "Pattern_Research_Library",
-      "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
-      "saveImage": false,
-      "materialId": "PAT-0103",
-      "authorProfileUrl": null,
-      "searchTerm": null,
-      "metadata": {
-        "collectionMode": "derived_pattern",
-        "patternType": "情報設計",
-        "targetMedia": [
-          "Web",
-          "LP"
-        ],
-        "rule": "画面幅が変わっても、主見出し・主要ベネフィット・CTAの意味と順序を維持する。",
-        "cautions": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
-        "evidenceIds": [
-          "WB-0091"
-        ]
-      }
-    },
-    {
-      "id": "PAT-0104",
-      "status": "candidate",
-      "mediaType": "Pattern",
-      "sourceKey": "patterns",
-      "title": "忘年会のご案内に見る文字組みと視線誘導",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fff2ef496412b635a6b541cc86951445f%2Fff2ef496412b635a6b541cc86951445f-400.webp&w=828&q=75",
+      "title": "親子と大人向け講座のイベント案内チラシに見る文字組みと視線誘導",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F7e034fd740277647487f93bb80203053%2F7e034fd740277647487f93bb80203053-400.webp&w=828&q=75",
       "imageUrl": null,
       "landingUrl": null,
       "sourceName": "日次収集から抽出（デザインAC）",
       "sourceUrl": "https://www.design-ac.net/free-template/flyer",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-32297",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29980",
       "library": "Pattern_Research_Library",
       "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
       "saveImage": false,
-      "materialId": "PAT-0104",
+      "materialId": "PAT-0105",
       "authorProfileUrl": null,
       "searchTerm": null,
       "metadata": {
@@ -244,7 +160,7 @@
         "rule": "主見出し・補足・画像・行動情報のサイズ差と配置から、最初に読ませる情報を明確にする。",
         "cautions": "素材そのものではなく、情報階層と余白の考え方だけを転用する。",
         "evidenceIds": [
-          "GR-0264"
+          "GR-0269"
         ]
       }
     }
@@ -253,24 +169,18 @@
     {
       "key": "banner",
       "sourceName": "バナー広場",
-      "status": "unavailable",
-      "found": 0,
+      "status": "collected",
+      "found": 48,
       "accepted": 0,
-      "reason": "対象画像を取得できませんでした。次回再試行します。",
-      "diagnostic": {
-        "finalUrl": "https://banner-hiroba.com/",
-        "title": "少々お待ちください…",
-        "bodyPreview": "リクエストが確認されるまでお待ちください…",
-        "figureCount": 0,
-        "imageCount": 0
-      }
+      "reason": null,
+      "diagnostic": null
     },
     {
       "key": "web",
       "sourceName": "SANKOU!",
       "status": "collected",
       "found": 29,
-      "accepted": 2,
+      "accepted": 0,
       "reason": null,
       "diagnostic": null
     },
@@ -340,39 +250,39 @@
     {
       "key": "illustrationAc",
       "sourceName": "イラストAC",
-      "status": "unavailable",
+      "status": "blocked",
       "found": 0,
       "accepted": 0,
-      "reason": "対象画像を取得できませんでした。次回再試行します。",
+      "reason": "取得元がGitHubホストランナーからのアクセスを拒否しました。ローカル収集ルートで再実行してください。",
       "diagnostic": {
-        "finalUrl": "https://www.ac-illust.com/main/search_result.php?word=%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9",
-        "title": "Let's confirm you are human",
-        "bodyPreview": "Let's confirm you are human Complete the security check before continuing. This step verifies that you are not a bot, which helps to protect your account and prevent spam. Begin Select language العربية Čeština Dansk Deutsch English Español Français Bahasa Indonesia Italiano 日本語 한국어 Nederlands Polski Português Svenska ไทย Türkçe 中文 Apply",
+        "finalUrl": "https://www.ac-illust.com/main/search_result.php?word=%E7%BE%8E%E5%AE%B9",
+        "title": "ERROR: The request could not be satisfied",
+        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: gDZIaXouJijWiGxY0zvegwN9iccqREiVOIjFo9tNorNpz",
         "figureCount": 0,
-        "imageCount": 3
+        "imageCount": 0
       }
     },
     {
       "key": "photoAc",
       "sourceName": "写真AC",
-      "status": "unavailable",
+      "status": "blocked",
       "found": 0,
       "accepted": 0,
-      "reason": "対象画像を取得できませんでした。次回再試行します。",
+      "reason": "取得元がGitHubホストランナーからのアクセスを拒否しました。ローカル収集ルートで再実行してください。",
       "diagnostic": {
-        "finalUrl": "https://www.photo-ac.com/main/search?q=%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9",
-        "title": "Let's confirm you are human",
-        "bodyPreview": "Let's confirm you are human Complete the security check before continuing. This step verifies that you are not a bot, which helps to protect your account and prevent spam. Begin Select language العربية Čeština Dansk Deutsch English Español Français Bahasa Indonesia Italiano 日本語 한국어 Nederlands Polski Português Svenska ไทย Türkçe 中文 Apply",
+        "finalUrl": "https://www.photo-ac.com/main/search?q=%E7%BE%8E%E5%AE%B9",
+        "title": "ERROR: The request could not be satisfied",
+        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: wIyhEQKar_10FtMidSZFzeaHm1iXKQQdZdQI26s3TSdwn",
         "figureCount": 0,
-        "imageCount": 3
+        "imageCount": 0
       }
     },
     {
       "key": "patterns",
       "sourceName": "日次収集から抽出",
       "status": "collected",
-      "found": 2,
-      "accepted": 2,
+      "found": 1,
+      "accepted": 1,
       "reason": null,
       "diagnostic": null
     }
