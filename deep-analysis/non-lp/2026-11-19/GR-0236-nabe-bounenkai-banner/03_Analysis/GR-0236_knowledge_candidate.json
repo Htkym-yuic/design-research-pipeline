@@ -1,0 +1,68 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "GR-0236",
+  "media_type": "GR",
+  "title": "鍋背景の白文字忘年会バナー",
+  "source": {
+    "source_name": "デザインAC",
+    "source_detail_url": "https://www.design-ac.net/free-template/banner-template-17091",
+    "capture_url": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F991915f769d2db4667ccb36ffb644d5e%2F991915f769d2db4667ccb36ffb644d5e-400.webp&w=640&q=75",
+    "official_url": null
+  },
+  "analysis": {
+    "summary": "鍋料理の実写を全面背景に使い、その上に白抜き文字で「忘年会」を重ねることで季節感と業態を同時に伝えるSNS/Web広告バナー。左端にプラン情報、右端にSNSクーポン訴求を分離配置している。",
+    "score": {
+      "visual": 16,
+      "clarity": 14,
+      "originality": 9,
+      "reusability": 17,
+      "learning": 12,
+      "evidence": 8,
+      "total": 76
+    },
+    "units": [
+      { "name": "作品全体", "role": "鍋料理店の忘年会プランを、実写背景と白文字タイトルで訴求する。", "reuse": "実写背景＋白文字大見出し＋左右訴求ブロックの3層構成。", "evidence": "GR-0236_reference.png全体。" },
+      { "name": "タイトル・見出し", "role": "バナーの訴求内容を一語で確定する。", "reuse": "写真背景上の白抜き縁取り大見出し＋吹き出しコピーの組み合わせ。", "evidence": "原画像中央。" },
+      { "name": "左端プラン情報", "role": "具体的なプラン内容（メニュー・時間帯・形式・予約状況）を縦に並べて提示する。", "reuse": "単語単位の縦積みプラン情報ブロック。", "evidence": "原画像左端。" },
+      { "name": "右端クーポン訴求", "role": "SNSフォロワー向けの追加特典を訴求する。", "reuse": "プラン情報と特典情報を画面両端に分離配置する構成。", "evidence": "原画像右端。" },
+      { "name": "背景写真", "role": "鍋料理という業態・商品を実写で説得力を持って伝える。", "reuse": "商品写真を全面背景に使い、その上に文字を重ねる構成。", "evidence": "原画像全面。" },
+      { "name": "配色・文字処理", "role": "写真背景の上でも全ての文字情報の可読性を確保する。", "reuse": "写真背景上で白文字＋縁取り/背景帯を統一的に使う処理。", "evidence": "原画像全体。" }
+    ]
+  },
+  "strengths": [
+    "実写背景で料理の具体性を直接的に伝えている",
+    "プラン情報と特典情報を左右に分離し情報を整理している",
+    "口語的なコピーでカジュアルな印象を演出"
+  ],
+  "improvements": [
+    { "priority": "P0", "issue": "価格・会費の記載がない", "evidence": "画像内に金額情報が見当たらない", "fix": "コース価格の目安を追加する", "effect": "予約検討の判断材料を補強", "metric": "問い合わせ件数・予約転換率" },
+    { "priority": "P1", "issue": "「平日17:00〜」の意味が曖昧", "evidence": "開店時間かプラン開始時間か特定できない", "fix": "「忘年会プラン受付時間」等、対象を明確にする文言に変更", "effect": "誤解の防止", "metric": "予約時の問い合わせ減少" },
+    { "priority": "P2", "issue": "矢印アイコンの意図が不明瞭", "evidence": "クーポン訴求の矢印が何を指すか判読困難", "fix": "クーポン取得方法（QR・URL等）を矢印の先に明記する", "effect": "クーポン利用率向上", "metric": "クーポン利用件数" }
+  ],
+  "reusable_patterns": [
+    { "id": "C01", "name": "実写背景＋白文字大見出し＋左右訴求ブロックの3層構成", "keep": "全面写真＋中央見出し＋左右ブロックの配置", "replace": "写真、見出し文言、訴求内容" },
+    { "id": "C02", "name": "単語単位の縦積みプラン情報ブロック", "keep": "単語を縦に積み上げる構成", "replace": "プラン内容、時間帯" },
+    { "id": "C03", "name": "写真背景上で白文字＋縁取り/背景帯を統一的に使う処理", "keep": "白抜き＋縁取り/背景帯の統一処理", "replace": "具体的な配色・太さ" }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "鍋料理の実写写真、固有のクーポン訴求文言、具体的な時間帯・プラン名称",
+    "reusable": "実写背景＋白文字大見出し＋左右訴求ブロックの3層構成、単語単位の縦積みプラン情報ブロック、写真背景上の文字可読性処理"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/GR-0236_reference.png",
+      "https://www.design-ac.net/free-template/banner-template-17091"
+    ],
+    "unknowns": [
+      "enlarged_typography_capture_missing",
+      "content_detail_unverified",
+      "print_mockup_missing",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

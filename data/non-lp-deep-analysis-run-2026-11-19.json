@@ -1,0 +1,58 @@
+{
+  "schema_version": "drs-weekly-run-1.0",
+  "run_date": "2026-11-19",
+  "run_mode": "daily_auto_deep_analysis_loop",
+  "scope_note": "祐一さんの日次自動実行（深い分析ループ）。2026-11-12収集分の繰り越し候補のうち残っていたGR-0235・GR-0236・GR-0237（いずれもGraphic）の3件を処理し、2026-11-12収集分の全候補（WB-0079/0080, GR-0234〜0238）の処理を完了した。",
+  "selected": [
+    {
+      "id": "GR-0235",
+      "title": "ハッピーアワーポスター",
+      "analysis": "completed",
+      "markdown_validation_warnings": 0,
+      "knowledge_json": "validated",
+      "dropbox_files": 0,
+      "dropbox_status": "not_synced_source_in_daily_intake",
+      "notion": "pending",
+      "cbs_production_sync": "not_applied"
+    },
+    {
+      "id": "GR-0236",
+      "title": "鍋背景の白文字忘年会バナー",
+      "analysis": "completed",
+      "markdown_validation_warnings": 0,
+      "knowledge_json": "validated",
+      "dropbox_files": 0,
+      "dropbox_status": "not_synced_source_in_daily_intake",
+      "notion": "pending",
+      "cbs_production_sync": "not_applied"
+    },
+    {
+      "id": "GR-0237",
+      "title": "シンプル上品な雑貨店名刺デザイン",
+      "analysis": "completed",
+      "markdown_validation_warnings": 0,
+      "knowledge_json": "validated",
+      "dropbox_files": 0,
+      "dropbox_status": "not_synced_source_in_daily_intake",
+      "notion": "pending",
+      "cbs_production_sync": "not_applied"
+    }
+  ],
+  "deferred_to_next_run": [
+    { "id": "WB-0089", "reason": "2026-11-17収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "WB-0090", "reason": "2026-11-17収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "GR-0259", "reason": "2026-11-17収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "GR-0260", "reason": "2026-11-17収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "GR-0261", "reason": "2026-11-17収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "GR-0262", "reason": "2026-11-17収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "GR-0263", "reason": "2026-11-17収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "note", "reason": "2026-11-14〜2026-11-18の収集分および2026-11-19の最新収集分は本セッションでは未確認。次回以降にcandidates.json履歴・lightweight-analysis.jsonで確認が必要" }
+  ],
+  "excluded_out_of_scope": [],
+  "gaps": [
+    "Dropbox正本昇格は未実施（読み取り専用セッションのため）。ユーザー確認後に別工程で行う。",
+    "Notion更新は、2026-11-13〜2026-11-19の間、notion-update-page呼び出しの最中に繰り返しセッションのコンテナ再起動が発生し完了できなかった。GR-0224〜GR-0228・WB-0079・WB-0080・GR-0234〜GR-0237の計11件すべてでnotion_status=pendingのまま。ユーザーへの状況確認も2回試みたがいずれも同様の再起動で中断された。原因調査（Notion関連ツール呼び出しが恒常的に完了しない等）が必要。",
+    "候補の繰り越しバックログは2026-11-12収集分の処理完了により7件（2026-11-17収集分のみ）に減少したが、2026-11-14〜19収集分は未確認のため実際の残件数は追加で存在する可能性が高い。"
+  ],
+  "cbs_production_sync": "not_applied_user_confirmation_required"
+}
