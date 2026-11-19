@@ -20161,6 +20161,118 @@
       "追加した新しいブロック": 229,
       "備考": "旧ブロックの削除の途中で、Notion APIが524を返して止まった（13件削除済み）。残り194件の削除を、同じバックアップの一覧に沿って再開し、完了。検証5項目は手で実施し、すべてOK。",
       "backup": "outputs/dis/backup/DIS-LP-0225-28ch-before-align.json"
+    },
+    {
+      "at": "2026-11-19T12:05:51.947Z",
+      "kind": "align-lp28",
+      "disId": "DIS-LP-0024",
+      "lp": "LP-0021",
+      "url": "https://app.notion.com/p/41624d4fa67181408df3dc6e535e0d3d",
+      "置き換えた古いブロック": 425,
+      "追加した新しいブロック": 475,
+      "画像": {
+        "旧": 4,
+        "新": 7
+      },
+      "lp28check": {
+        "ok": true,
+        "sections": 16,
+        "errors": []
+      },
+      "28章より前の部分が不変": true,
+      "章1〜28が各1回": true,
+      "章29の見出し無し": true,
+      "章24の末尾に旧・章29": true,
+      "全ブロック": {
+        "前": 667,
+        "後": 717
+      },
+      "秒": 337,
+      "backup": "/Users/m1_macbook/design-research-pipeline-auto/outputs/dis/backup/DIS-LP-0024-28ch-before-align.json"
+    },
+    {
+      "at": "2026-11-19T12:08:43.222Z",
+      "kind": "align-lp28",
+      "disId": "DIS-LP-0224",
+      "lp": "LP-0199",
+      "url": "https://app.notion.com/p/41824d4fa671812d9ae8c987f6c87cd6",
+      "置き換えた古いブロック": 202,
+      "追加した新しいブロック": 246,
+      "画像": {
+        "旧": 6,
+        "新": 7
+      },
+      "lp28check": {
+        "ok": true,
+        "sections": 7,
+        "errors": []
+      },
+      "28章より前の部分が不変": true,
+      "章1〜28が各1回": true,
+      "章29の見出し無し": true,
+      "章24の末尾に旧・章29": true,
+      "全ブロック": {
+        "前": 430,
+        "後": 474
+      },
+      "秒": 165,
+      "backup": "/Users/m1_macbook/design-research-pipeline-auto/outputs/dis/backup/DIS-LP-0224-28ch-before-align.json"
+    },
+    {
+      "at": "2026-11-19T12:11:53.815Z",
+      "kind": "align-lp28",
+      "disId": "DIS-LP-0227",
+      "lp": "LP-0203",
+      "url": "https://app.notion.com/p/41824d4fa67181a0a317edb098c21d8f",
+      "置き換えた古いブロック": 220,
+      "追加した新しいブロック": 278,
+      "画像": {
+        "旧": 6,
+        "新": 7
+      },
+      "lp28check": {
+        "ok": true,
+        "sections": 9,
+        "errors": []
+      },
+      "28章より前の部分が不変": true,
+      "章1〜28が各1回": true,
+      "章29の見出し無し": true,
+      "章24の末尾に旧・章29": true,
+      "全ブロック": {
+        "前": 452,
+        "後": 510
+      },
+      "秒": 184,
+      "backup": "/Users/m1_macbook/design-research-pipeline-auto/outputs/dis/backup/DIS-LP-0227-28ch-before-align.json"
+    },
+    {
+      "at": "2026-11-19T12:14:21.001Z",
+      "kind": "align-lp28",
+      "disId": "DIS-LP-0228",
+      "lp": "LP-0202",
+      "url": "https://app.notion.com/p/41824d4fa671811a8a0eef47f331fc1c",
+      "置き換えた古いブロック": 156,
+      "追加した新しいブロック": 214,
+      "画像": {
+        "旧": 6,
+        "新": 7
+      },
+      "lp28check": {
+        "ok": true,
+        "sections": 5,
+        "errors": []
+      },
+      "28章より前の部分が不変": true,
+      "章1〜28が各1回": true,
+      "章29の見出し無し": true,
+      "章24の末尾に旧・章29": true,
+      "全ブロック": {
+        "前": 352,
+        "後": 410
+      },
+      "秒": 142,
+      "backup": "/Users/m1_macbook/design-research-pipeline-auto/outputs/dis/backup/DIS-LP-0228-28ch-before-align.json"
     }
   ]
 }
