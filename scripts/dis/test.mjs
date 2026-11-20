@@ -1828,3 +1828,13 @@ test("find-rdlp: 実ページURLと一致する紹介ページだけを採用し
   const blocked = await findRdlpFor("https://www.ministop.co.jp/zzz/", { getter: { robots: async () => true, get: async () => ({ ok: false, status: 403, text: "" }) }, sleep: noSleep });
   assert.equal(blocked.status, "blocked");
 });
+
+test("capture-queue: アーカイブ揃え直しの一覧（libraryId・rdlpUrl）を、撮影の形にそろえ、rdlpUrlがないものは対象にしない", async () => {
+  const { normalizeQueue, buildArgs } = await import("./capture-queue.mjs");
+  const q = JSON.parse(await fs.readFile("data/dis-archive-align-queue.json", "utf8"));
+  const n = normalizeQueue(q);
+  assert.ok(n.items.length > 0 && n.items.length === q.items.filter((i) => i.rdlpUrl).length);
+  assert.ok(n.items.every((i) => i.fromArchive && /^https:\/\/rdlp\.jp\/archives\/otherdesign\/lp\/\d+$/.test(i.url)));
+  assert.ok(buildArgs(n.items[0], "2026-11-20").includes("--from-archive"));
+  assert.equal(new Set(q.items.map((i) => i.libraryId)).size, q.items.length);
+});

@@ -1,0 +1,797 @@
+{
+ "note": "LPの画像を、アーカイブ（rdlp）掲載の全体画像に揃え直す対象（2026-11-20）。Dropboxの案件別フォルダの画像は、実ページの撮影（rdlpの full-page ファイルがない）だったLP。rdlpの紹介ページは、Notionの「出典」・予約ファイルから取得。rdlpIdがないもの（status=need_rdlp）は、dis:find-rdlp か手動で探す。既存の画像・分析は変更しない（新しいフォルダ・新しいIDで作る）。",
+ "createdAt": "2026-11-20",
+ "media": "lp",
+ "items": [
+  {
+   "libraryId": "LP-0014",
+   "title": "チョコボール",
+   "realUrl": "https://www.morinaga.co.jp/kyorochan/",
+   "rdlpId": "227465",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/227465",
+   "existingDisIds": [
+    "DIS-LP-0017"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0015",
+   "title": "VOX",
+   "realUrl": "https://www.vox.jp/Form/Product/ProductDetail.aspx?pid=1001&shop=0",
+   "rdlpId": "13518",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/13518",
+   "existingDisIds": [
+    "DIS-LP-0018"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0031",
+   "title": "HERITAGE",
+   "realUrl": "https://www.aigan.co.jp/feature/heritage/",
+   "rdlpId": null,
+   "source": null,
+   "rdlpUrl": null,
+   "existingDisIds": [
+    "DIS-LP-0034"
+   ],
+   "status": "need_rdlp"
+  },
+  {
+   "libraryId": "LP-0181",
+   "title": "Qast Clone",
+   "realUrl": "https://www.clone.qast.jp/",
+   "rdlpId": "229041",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229041",
+   "existingDisIds": [
+    "DIS-LP-0206"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0182",
+   "title": "首と肩のことだけを考えたダブル枕",
+   "realUrl": "https://doublepillow-basic.calqs-sleep.com/doublepillow-basic",
+   "rdlpId": "229030",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229030",
+   "existingDisIds": [
+    "DIS-LP-0207"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0183",
+   "title": "コスメを買うなら三井住友カード！",
+   "realUrl": "https://www.smbc-card.com/camp/cosme/index.jsp?dk=dip-gpt-nrg-pr-100011",
+   "rdlpId": "229061",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229061",
+   "existingDisIds": [
+    "DIS-LP-0208"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0184",
+   "title": "こくまろカレー",
+   "realUrl": "https://housefoods.jp/products/special/kokumaro/",
+   "rdlpId": "229055",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229055",
+   "existingDisIds": [
+    "DIS-LP-0209"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0185",
+   "title": "カラーコーディネーター検定試験",
+   "realUrl": "https://kentei.tokyo-cci.or.jp/lp/color/0004.html",
+   "rdlpId": "229072",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229072",
+   "existingDisIds": [
+    "DIS-LP-0210"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0186",
+   "title": "鼻セレブ SKINLISM 美容液マスク プレミアム",
+   "realUrl": "https://shop.e-nepia.com/lp?u=npa_lp_sheetmask_premium_meta_001",
+   "rdlpId": "229065",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229065",
+   "existingDisIds": [
+    "DIS-LP-0211"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0187",
+   "title": "生成AI用データ構造化",
+   "realUrl": "https://tsk-pf.com/ai-data-structuring",
+   "rdlpId": "229084",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229084",
+   "existingDisIds": [
+    "DIS-LP-0212"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0188",
+   "title": "超速RECOVER",
+   "realUrl": "https://www.ichibiki.co.jp/brand/recover/",
+   "rdlpId": "229078",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229078",
+   "existingDisIds": [
+    "DIS-LP-0213"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0189",
+   "title": "謎解きイベント新宿御苑植物巡り",
+   "realUrl": "https://machihack.com/shokubutsumeguri",
+   "rdlpId": "229091",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229091",
+   "existingDisIds": [
+    "DIS-LP-0214"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0190",
+   "title": "ナッツボン ブランドサイト",
+   "realUrl": "https://kanro.jp/pages/nutbon",
+   "rdlpId": "229085",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229085",
+   "existingDisIds": [
+    "DIS-LP-0215"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0191",
+   "title": "いわて旅割キャンペーン",
+   "realUrl": "https://travel.rakuten.co.jp/movement/iwate/202606_iwate/",
+   "rdlpId": "229098",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229098",
+   "existingDisIds": [
+    "DIS-LP-0216"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0192",
+   "title": "ミルクレア",
+   "realUrl": "https://www.akagi.com/brand/milcrea2026new/",
+   "rdlpId": "229095",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229095",
+   "existingDisIds": [
+    "DIS-LP-0217"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0193",
+   "title": "酔処 へべれけ",
+   "realUrl": "https://www.hebereke-utsunomiya.com/",
+   "rdlpId": "229100",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229100",
+   "existingDisIds": [
+    "DIS-LP-0218"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0194",
+   "title": "スペシャルパフェ",
+   "realUrl": "https://www.akagi.com/brand/special-parfait/",
+   "rdlpId": "229106",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229106",
+   "existingDisIds": [
+    "DIS-LP-0219"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0195",
+   "title": "mRNA HEALTH TRACKER",
+   "realUrl": "https://mht.glico.com/lp/",
+   "rdlpId": "229121",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229121",
+   "existingDisIds": [
+    "DIS-LP-0220"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0196",
+   "title": "jelloma",
+   "realUrl": "https://www.jelloma.com/",
+   "rdlpId": "229117",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229117",
+   "existingDisIds": [
+    "DIS-LP-0221"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0197",
+   "title": "マルチカルテ",
+   "realUrl": "https://kartie-cloud.jp/karte/",
+   "rdlpId": "229125",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229125",
+   "existingDisIds": [
+    "DIS-LP-0222"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0198",
+   "title": "ごほうびソフト-至福のモンブラン-",
+   "realUrl": "https://www.ministop.co.jp/syohin/sweets/softcream/gohoubisoft-montblanc/",
+   "rdlpId": "229127",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229127",
+   "existingDisIds": [
+    "DIS-LP-0223"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0199",
+   "title": "アートリンガル",
+   "realUrl": "https://artlingual.com/school/higashinakano/index.html",
+   "rdlpId": "229131",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229131",
+   "existingDisIds": [
+    "DIS-LP-0224"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0200",
+   "title": "バティスト ドライシャンプー",
+   "realUrl": "https://www.batistee.jp/",
+   "rdlpId": "229089",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229089",
+   "existingDisIds": [
+    "DIS-LP-0225"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0201",
+   "title": "YOLU カームナイトリペア シャンプー／トリートメント",
+   "realUrl": "https://yolu.jp/product/calm_night/shampoo_treatment/",
+   "rdlpId": null,
+   "source": null,
+   "rdlpUrl": null,
+   "existingDisIds": [
+    "DIS-LP-0226"
+   ],
+   "status": "need_rdlp"
+  },
+  {
+   "libraryId": "LP-0202",
+   "title": "はじめてでもわかる広告入門セミナー",
+   "realUrl": "https://www.lycbiz.com/jp/seminar/ondemand/ly-ads/beginner-friendly/v2/",
+   "rdlpId": "229123",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229123",
+   "existingDisIds": [
+    "DIS-LP-0228"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0203",
+   "title": "ルルルン ハイドラ 5ALA マスク",
+   "realUrl": "https://lululun.com/shop/products/LUAA391113",
+   "rdlpId": "229088",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229088",
+   "existingDisIds": [
+    "DIS-LP-0227"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0204",
+   "title": "オバジ C25セラム ネオ",
+   "realUrl": "https://www.shop.rohto.co.jp/category/skincare/obagi/obagi-c/199891.html",
+   "rdlpId": null,
+   "source": null,
+   "rdlpUrl": null,
+   "existingDisIds": [
+    "DIS-LP-0229"
+   ],
+   "status": "need_rdlp"
+  },
+  {
+   "libraryId": "LP-0205",
+   "title": "２泊３日の草津旅",
+   "realUrl": "https://hoshinoresorts.com/jp/sp/kusatsu-stay/",
+   "rdlpId": null,
+   "source": null,
+   "rdlpUrl": null,
+   "existingDisIds": [
+    "DIS-LP-0230"
+   ],
+   "status": "need_rdlp"
+  },
+  {
+   "libraryId": "LP-0206",
+   "title": "すごい納豆 S-903",
+   "realUrl": "https://rdlp.jp/archives/otherdesign/lp/104155",
+   "rdlpId": "104155",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/104155",
+   "existingDisIds": [
+    "DIS-LP-0231"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0207",
+   "title": "未知なる深海からの脱出",
+   "realUrl": "https://realdgame.jp/s/deepocean/",
+   "rdlpId": null,
+   "source": null,
+   "rdlpUrl": null,
+   "existingDisIds": [
+    "DIS-LP-0232"
+   ],
+   "status": "need_rdlp"
+  },
+  {
+   "libraryId": "LP-0208",
+   "title": "レイトン教授と蒸気の新世界",
+   "realUrl": "https://rdlp.jp/archives/otherdesign/lp/229115",
+   "rdlpId": "229115",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229115",
+   "existingDisIds": [
+    "DIS-LP-0233"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0209",
+   "title": "アクセルジャパン プレミアムプラン",
+   "realUrl": "https://accel-japan.com/lp/sp1_2606/",
+   "rdlpId": null,
+   "source": null,
+   "rdlpUrl": null,
+   "existingDisIds": [
+    "DIS-LP-0234"
+   ],
+   "status": "need_rdlp"
+  },
+  {
+   "libraryId": "LP-0210",
+   "title": "ヒアルモイスト プラセンタ +C",
+   "realUrl": "https://www.hyalmoist.jp/air/offer4/",
+   "rdlpId": null,
+   "source": null,
+   "rdlpUrl": null,
+   "existingDisIds": [
+    "DIS-LP-0235"
+   ],
+   "status": "need_rdlp"
+  },
+  {
+   "libraryId": "LP-0211",
+   "title": "ラビット フランチャイズ加盟店募集",
+   "realUrl": "https://www.e-rabbit.jp/fc-lp/",
+   "rdlpId": "226313",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/226313",
+   "existingDisIds": [
+    "DIS-LP-0236"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0212",
+   "title": "PeQoly ピュア ドライシャンプー",
+   "realUrl": "https://dstyleshop.jp/view/page/peqoly-dryshampoo-cat",
+   "rdlpId": "229164",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229164",
+   "existingDisIds": [
+    "DIS-LP-0237"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0213",
+   "title": "サンセリテ青山",
+   "realUrl": "https://www.club-sincerite.co.jp/",
+   "rdlpId": "227651",
+   "source": "Notion「出典」",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/227651",
+   "existingDisIds": [
+    "DIS-LP-0238"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0214",
+   "title": "Awarefy",
+   "realUrl": "https://www.awarefy.com/app",
+   "rdlpId": "229261",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229261",
+   "existingDisIds": [
+    "DIS-LP-0239"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0215",
+   "title": "生活本舗",
+   "realUrl": "https://seikatsuhonpo.com/ihinseiri/",
+   "rdlpId": "229263",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229263",
+   "existingDisIds": [
+    "DIS-LP-0240"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0216",
+   "title": "QuizKnock10周年プロジェクト",
+   "realUrl": "https://10th.quizknock.com/",
+   "rdlpId": "229258",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229258",
+   "existingDisIds": [
+    "DIS-LP-0184"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0217",
+   "title": "ここだけのミルチグッズで100周年をお祝いしよう！",
+   "realUrl": "https://www.felissimo.co.jp/collect/mchoco_fsc?tid=sbn_fc_MEIJICHOCOLATE2609_L",
+   "rdlpId": "229257",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229257",
+   "existingDisIds": [
+    "DIS-LP-0185"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0218",
+   "title": "タンブルウィード オールスター THE LAST",
+   "realUrl": "https://cont.tumbleweed.jp/allstar26/",
+   "rdlpId": "229256",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229256",
+   "existingDisIds": [
+    "DIS-LP-0186"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0219",
+   "title": "マイプレッカ",
+   "realUrl": "https://www.kaneka-womens-healthcare.com/",
+   "rdlpId": "229255",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229255",
+   "existingDisIds": [
+    "DIS-LP-0187"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0220",
+   "title": "premal",
+   "realUrl": "https://sfc.jp/ie/lineup/premal/",
+   "rdlpId": "229253",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229253",
+   "existingDisIds": [
+    "DIS-LP-0188"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0221",
+   "title": "色彩学園",
+   "realUrl": "https://www.aft.or.jp/shikisaigakuen2023/",
+   "rdlpId": "229249",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229249",
+   "existingDisIds": [
+    "DIS-LP-0189"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0222",
+   "title": "秋をあそびつくそうSunshine City",
+   "realUrl": "https://sunshinecity.jp/file/official/autumn/",
+   "rdlpId": "229259",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229259",
+   "existingDisIds": [
+    "DIS-LP-0190"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0223",
+   "title": "自衛官募集",
+   "realUrl": "https://www.mod.go.jp/gsdf/jieikanbosyu/",
+   "rdlpId": "229262",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229262",
+   "existingDisIds": [],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0224",
+   "title": "LOCOKウェルネスガーデン品川御殿⼭テニススクール",
+   "realUrl": "https://www.sports-create.com/gotenyama/jrtennis/",
+   "rdlpId": "229247",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229247",
+   "existingDisIds": [],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0225",
+   "title": "レックインドアテニススクール新百合ヶ丘",
+   "realUrl": "https://rec-tennis.com/school/shinyurigaoka/campaign/goldenkids",
+   "rdlpId": "229246",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229246",
+   "existingDisIds": [
+    "DIS-LP-0191"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0226",
+   "title": "まっぷたつ？パフェ",
+   "realUrl": "https://www.dennys.jp/menu/half-parfait/grapes/",
+   "rdlpId": "229244",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229244",
+   "existingDisIds": [
+    "DIS-LP-0192"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0227",
+   "title": "自衛官募集",
+   "realUrl": "https://www.mod.go.jp/gsdf/jieikanbosyu/",
+   "rdlpId": "229262",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229262",
+   "existingDisIds": [],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0228",
+   "title": "LOCOKウェルネスガーデン品川御殿⼭テニススクール",
+   "realUrl": "https://www.sports-create.com/gotenyama/jrtennis/",
+   "rdlpId": "229247",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229247",
+   "existingDisIds": [],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0229",
+   "title": "FAIRLUCENT",
+   "realUrl": "https://www.menard.co.jp/fairlucent/",
+   "rdlpId": "229243",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229243",
+   "existingDisIds": [
+    "DIS-LP-0193"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0230",
+   "title": "ポケモンカードゲーム事業",
+   "realUrl": "https://www.creatures.co.jp/",
+   "rdlpId": "229242",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229242",
+   "existingDisIds": [
+    "DIS-LP-0194"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0231",
+   "title": "ピカチュウ ハニークリーム ラテ",
+   "realUrl": "https://www.starbucks.co.jp/cafe/pokemon/?nid=wh_00",
+   "rdlpId": "229241",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229241",
+   "existingDisIds": [
+    "DIS-LP-0195"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0232",
+   "title": "ぷっちょ × Aぇ! group",
+   "realUrl": "https://puccho.jp/aegroup/",
+   "rdlpId": "229240",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229240",
+   "existingDisIds": [
+    "DIS-LP-0196"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0233",
+   "title": "白玉姫",
+   "realUrl": "https://item.rakuten.co.jp/oga/sth_12/",
+   "rdlpId": "227366",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/227366",
+   "existingDisIds": [
+    "DIS-LP-0197"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0234",
+   "title": "ロープライスセット",
+   "realUrl": "https://www.aigan.co.jp/feature/set_megane/",
+   "rdlpId": "227485",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/227485",
+   "existingDisIds": [],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0235",
+   "title": "TVer採用サイト",
+   "realUrl": "https://recruit.tver.co.jp/",
+   "rdlpId": "229269",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229269",
+   "existingDisIds": [
+    "DIS-LP-0198"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0236",
+   "title": "エリクシール ブライトニング化粧水",
+   "realUrl": "https://www.shiseido.co.jp/elixir/promotion/brightening-lotion-emulsion/",
+   "rdlpId": "229267",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229267",
+   "existingDisIds": [
+    "DIS-LP-0199"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0237",
+   "title": "物流",
+   "realUrl": "https://www.bluedge.co.jp/",
+   "rdlpId": "229266",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229266",
+   "existingDisIds": [
+    "DIS-LP-0200"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0238",
+   "title": "口腔崩壊外来",
+   "realUrl": "https://next.houkai.jp/",
+   "rdlpId": "229276",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229276",
+   "existingDisIds": [],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0239",
+   "title": "MANY PEOPLE採用サイト",
+   "realUrl": "https://www.manypeople-k.com/recruit/",
+   "rdlpId": "229274",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229274",
+   "existingDisIds": [
+    "DIS-LP-0201"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0240",
+   "title": "ステューピッド・ネバー・ダイズ",
+   "realUrl": "https://stupidneverdies.sega.com/ja/",
+   "rdlpId": "229285",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229285",
+   "existingDisIds": [
+    "DIS-LP-0202"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0241",
+   "title": "アートを巡る下呂温泉の旅",
+   "realUrl": "https://travel.rakuten.co.jp/movement/gifu/202608_gero/",
+   "rdlpId": "229272",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229272",
+   "existingDisIds": [
+    "DIS-LP-0203"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0242",
+   "title": "type",
+   "realUrl": "https://type.jp/s/campaign92/",
+   "rdlpId": "229293",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229293",
+   "existingDisIds": [
+    "DIS-LP-0204"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0243",
+   "title": "コムキャリ",
+   "realUrl": "https://www.jt-tsushin.jp/agent",
+   "rdlpId": "229291",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229291",
+   "existingDisIds": [
+    "DIS-LP-0205"
+   ],
+   "status": "ready"
+  },
+  {
+   "libraryId": "LP-0244",
+   "title": "環境計測株式会社",
+   "realUrl": "https://www.kankyou-keisoku.co.jp/",
+   "rdlpId": "229295",
+   "source": "予約ファイル",
+   "rdlpUrl": "https://rdlp.jp/archives/otherdesign/lp/229295",
+   "existingDisIds": [],
+   "status": "ready"
+  }
+ ]
+}

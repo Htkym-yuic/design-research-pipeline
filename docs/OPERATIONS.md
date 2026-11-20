@@ -630,3 +630,20 @@ npm run dis:capture-queue -- --archive-only --limit 5   # アーカイブの画�
 - robots.txt を確認し、リクエストの間隔をあける。403・429 が出たら、回避せず、全体を止める。
 - 結果は `data/dis-rdlp-lookup.json`（found／notfound／blocked）。notfound は、rdlp に載っていない、または、検索の候補に出なかった。`--retry` で、notfound・blocked を再実行できる。
 - 見つからないものは、rdlp にないので、実ページの撮影になる（撮影キューの既定）。アーカイブの画像だけで揃えたい場合は、`--archive-only` を付ける。
+
+### DIS: LPの画像を、アーカイブ掲載の画像に揃え直す（`data/dis-archive-align-queue.json`）
+
+LP-0014・0015・0031・0181〜0244 の画像は、実ページの撮影だった（Dropbox に rdlp の `full-page_rdlp-<ID>` ファイルがない）。LP-0001〜0180 などとそろえるため、rdlp の紹介ページが載せている全体画像（アーカイブ画像）で撮り直す。**既存の画像・分析は変更しない。新しいフォルダ・新しい DIS 番号で作る。**
+
+- 対象 67 件（2026-11-20）。うち 60 件は、rdlp の紹介ページ URL が分かった（Notion の「出典」・予約ファイルから）。7 件（LP-0031・0201・0204・0205・0207・0209・0210）は、紹介ページを探す（`status: need_rdlp`）。
+- 60 件のうち、すでに DIS の番号がある LP が多い（`existingDisIds`）。それらは、実ページの撮影からの分析。撮り直したあとの分析を、置き換えるか、追加の層にするかは、ユーザーが決める。
+
+```bash
+git pull origin claude/stoic-davinci-b2ek8x
+npm run dis:capture-queue -- --queue data/dis-archive-align-queue.json --list
+npm run dis:capture-queue -- --queue data/dis-archive-align-queue.json --limit 1     # まず1件
+npm run dis:capture-queue -- --queue data/dis-archive-align-queue.json --limit 10    # 続き
+```
+
+- 進捗: `data/dis-archive-align-queue-progress.json`。ローカルのみ（`DRY_RUN=true`）。
+- 7件の紹介ページは、rdlp のページで探すか、`dis:find-rdlp` で探す（今は旧キュー用。対象の切り替えは、必要になったら追加する）。
