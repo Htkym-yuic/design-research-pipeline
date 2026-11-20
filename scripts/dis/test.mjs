@@ -1838,3 +1838,27 @@ test("capture-queue: アーカイブ揃え直しの一覧（libraryId・rdlpUrl�
   assert.ok(buildArgs(n.items[0], "2026-11-20").includes("--from-archive"));
   assert.equal(new Set(q.items.map((i) => i.libraryId)).size, q.items.length);
 });
+
+test("archive-shots: 新しいLP番号（LP-0250〜）で、アーカイブ画像を案件別フォルダに保存する。PCとSPが同じ画像ならSPは保存せず、既存のフォルダは上書きしない", async () => {
+  const { default: sharp } = await import("sharp");
+  const { shootOne, nextLpNumber, safeTitle, samePixels } = await import("./archive-shots.mjs");
+  const mk = (w, h, c) => sharp({ create: { width: w, height: h, channels: 3, background: c } }).png().toBuffer();
+  const pc = await mk(952, 3000, "#336699"), sp = await mk(750, 4000, "#cc6633");
+  const pages = { "https://rdlp.jp/archives/otherdesign/lp/777": `<img alt="PC版" src="/image/rdlp/777/full.jpg"><img alt="スマホ版" src="/image/rdlp/777/full_1.jpg">`, "https://rdlp.jp/archives/otherdesign/lp/778": `<img alt="PC版" src="/image/rdlp/778/full.jpg"><img alt="スマホ版" src="/image/rdlp/778/full_1.jpg">` };
+  const imgs = { "https://rdlp.jp/image/rdlp/777/full.jpg": pc, "https://rdlp.jp/image/rdlp/777/full_1.jpg": sp, "https://rdlp.jp/image/rdlp/778/full.jpg": pc, "https://rdlp.jp/image/rdlp/778/full_1.jpg": pc };
+  const fetchImpl = async (u) => (pages[u] ? { ok: true, status: 200, text: async () => pages[u] } : imgs[u] ? { ok: true, status: 200, arrayBuffer: async () => imgs[u].buffer.slice(imgs[u].byteOffset, imgs[u].byteOffset + imgs[u].length) } : { ok: false, status: 404 });
+  const dest = await fs.mkdtemp(path.join(os.tmpdir(), "shots-dest-"));
+  const dry = await shootOne({ rdlpUrl: "https://rdlp.jp/archives/otherdesign/lp/777", libraryId: "LP-0250", title: "テスト/名前", destRoot: dest, apply: false, fetchImpl });
+  assert.deepEqual(dry.devices, ["pc", "sp"]);
+  assert.deepEqual((await fs.readdir(dest)), []); // ドライランは、何も書かない
+  const r = await shootOne({ rdlpUrl: "https://rdlp.jp/archives/otherdesign/lp/777", libraryId: "LP-0250", title: "テスト/名前", destRoot: dest, apply: true, fetchImpl });
+  assert.deepEqual((await fs.readdir(r.folder)).sort(), ["LP-0250_テスト_名前_PC_FV.png", "LP-0250_テスト_名前_PC_全体.png", "LP-0250_テスト_名前_SP_FV.png", "LP-0250_テスト_名前_SP_全体.png"]);
+  await assert.rejects(() => shootOne({ rdlpUrl: "https://rdlp.jp/archives/otherdesign/lp/777", libraryId: "LP-0250", title: "テスト/名前", destRoot: dest, apply: true, fetchImpl }), /上書きしません/);
+  const same = await shootOne({ rdlpUrl: "https://rdlp.jp/archives/otherdesign/lp/778", libraryId: "LP-0251", title: "同じ画像", destRoot: dest, apply: true, fetchImpl });
+  assert.deepEqual(same.devices, ["pc"]);
+  assert.ok(same.notes[0].includes("SPは保存しない"));
+  assert.equal(await samePixels(pc, sp), false);
+  assert.equal(safeTitle("a/b:c"), "a_b_c");
+  assert.equal(nextLpNumber({ lp: { existingMax: 249, nextNumber: 250 } }, { items: [] }, { reserved: [] }), 250);
+  assert.throws(() => nextLpNumber({ lp: { existingMax: 249, nextNumber: 252 } }, { items: [] }, { reserved: [] }), /連続していません/);
+});

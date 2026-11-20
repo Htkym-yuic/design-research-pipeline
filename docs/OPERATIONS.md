@@ -647,3 +647,21 @@ npm run dis:capture-queue -- --queue data/dis-archive-align-queue.json --limit 1
 
 - 進捗: `data/dis-archive-align-queue-progress.json`。ローカルのみ（`DRY_RUN=true`）。
 - 7件の紹介ページは、rdlp のページで探すか、`dis:find-rdlp` で探す（今は旧キュー用。対象の切り替えは、必要になったら追加する）。
+
+### DIS: アーカイブ画像を、新しい LP 番号で Dropbox の案件別フォルダに保存する（`dis:archive-shots`）
+
+分析はしない。アーカイブ（rdlp）掲載の全体画像を取得して、**DIS の番号を使わず**、LP-XXXX の形で、`10_デザイン/01_言語化ラボ/10_LP/01_案件別/` に保存する。番号は、ライブラリーの末尾から振る（LP-0250〜）。元の LP 番号（例: LP-0014）との対応は、`data/lp-archive-realign.json` に追記する。
+
+```bash
+git pull origin claude/stoic-davinci-b2ek8x
+npm run dis:archive-shots -- --list                       # 一覧
+npm run dis:archive-shots -- --limit 1                    # ドライラン（取得して、番号・保存先の計画を表示。何も書かない）
+DIS_ENABLE_WRITES=true npm run dis:archive-shots -- --limit 1 --apply   # 保存（新規のみ）
+```
+
+- 対象: `data/dis-archive-align-queue.json` の rdlpUrl があるもの（60件）。
+- 保存先: `~/Library/CloudStorage/Dropbox/10_デザイン/01_言語化ラボ/10_LP/01_案件別/LP-0250_チョコボール/`（`--dest` で変更）。ファイル: `LP-0250_チョコボール_PC_全体.png`・`_SP_全体.png`・`_PC_FV.png`・`_SP_FV.png`。
+- フォルダがすでにあるときは、上書きせず中止。PC と SP が同じ画像のとき（アーカイブが1枚だけ載せている場合）は、SP を保存しない。
+- 書込みは `--apply` と `DIS_ENABLE_WRITES=true` の両方が必要。書込み後は、`data/id-counters.json`・`data/lp-archive-realign.json`・`candidates/lp-archive/intake-reservations.json` をコミットして、プッシュする。
+- robots.txt・403 は回避しない。失敗は理由を表示して、次へ進む。
+- 先に作った `DIS-LP-0328_チョコボールのLPデザイン`（`dis:capture-queue` の撮影で、Dropbox の同期フォルダにコピーされた分）は、この方式に置き換える。ファイルの移動・削除は、ユーザーが行う（このツールは、既存を変更しない）。
