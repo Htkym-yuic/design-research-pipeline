@@ -1795,3 +1795,15 @@ test("lp28-align: 旧28章を v4.0 の形にそろえる（章名・ヘッダー
   assert.ok(r.mapping.some((m) => m.n === 29 && m.kind.includes("章24")));
   assert.ok(r.mapping.filter((m) => m.kind.startsWith("足す")).length >= 1); // 旧28章に無い章は、足して「未確認」と書く
 });
+
+test("capture-queue: 撮影の待ち行列。rdlp は --from-archive を付け、DRY_RUN のローカル撮影だけを呼ぶ", async () => {
+  const { buildArgs } = await import("./capture-queue.mjs");
+  const q = JSON.parse(await fs.readFile("data/dis-capture-queue.json", "utf8"));
+  assert.equal(q.media, "lp");
+  assert.ok(q.items.length > 0);
+  assert.equal(new Set(q.items.map((i) => i.url)).size, q.items.length); // 重複なし
+  const rd = buildArgs({ url: "https://rdlp.jp/archives/otherdesign/lp/1", fromArchive: true }, "2026-11-20");
+  assert.ok(rd.includes("--from-archive") && rd.includes("--capture"));
+  const real = buildArgs({ url: "https://example.com/", fromArchive: false }, "2026-11-20");
+  assert.ok(!real.includes("--from-archive") && !real.includes("--apply"));
+});

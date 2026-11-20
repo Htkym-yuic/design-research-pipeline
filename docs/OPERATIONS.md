@@ -595,3 +595,21 @@ npm run dis:validate-item -- --id DIS-LP-0005   # 登録せずに、分析・注
 ## CBSへの書き出しの一時除外
 
 `config/cbs-export-exclusions.json` に載せたDIS由来のナレッジは、`exports/creative-brief-studio-ai/` への書き出しと、`dis:cbs-draft --place` の配置の対象から外れる（`knowledge/` のファイルは残る）。現在は、旧形式（日付ID）の6件と、バナー／WebのDIS由来のすべてが対象。バナー／Webの分析とCBS側の拡張が固まったら、該当の行を消して、`node scripts/export-creative-brief-studio-ai.mjs` を再実行する。
+
+## DIS: スクショのない URL をまとめて撮影する（`dis:capture-queue`）
+
+`data/dis-capture-queue.json` に、記録のなかった36件（rdlp 2件、実ページ34件。2026-11-20 に、渡された243件を照合して抽出）を入れている。ローカルのみ（`DRY_RUN=true`）で、1件ずつ、撮影・テンプレート作成まで進める。Dropbox・Notion・台帳には書かない。
+
+```bash
+git pull origin claude/stoic-davinci-b2ek8x
+npm run dis:capture-queue -- --list              # 一覧と状態（実行しない）
+npm run dis:capture-queue -- --limit 3           # 先頭3件で試す
+npm run dis:capture-queue -- --limit 10          # 続き（done は飛ばす）
+npm run dis:capture-queue -- --retry-failed      # 失敗したものだけ再実行
+```
+
+- 進捗: `data/dis-capture-progress.json`（done／failed。失敗は、出力の末尾を理由として記録）。終わったらコミットして、プッシュする。
+- ログイン・課金壁・Bot対策・403は回避しない。失敗は記録して、次へ進む。
+- rdlp の2件は、`--from-archive`（アーカイブ掲載の画像）。実ページの URL が分かったら、キューを直して、通常撮影にする。
+- 非rdlpの34件には、すでに撮影済みの案件の実ページ URL が混ざっている可能性がある。`dis:run` の重複確認（登録済み・180日以内）は働くが、旧ライブラリーの LP は、Notion に実ページの URL を持たないため、気づかずに二重に撮ることがある。撮影前に、Mac で、各 LP の分析ファイルを、URL で検索して確認すると確実。
+- 撮影したあとの分析、ナレッジ化、登録は、通常の手順（`docs/LIBRARY_DIS_BATCH.md` など）で行う。本番の登録（`--apply`）は、ユーザーの指示があるまで使わない。

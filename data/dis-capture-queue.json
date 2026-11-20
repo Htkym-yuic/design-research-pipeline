@@ -1,0 +1,187 @@
+{
+ "note": "スクショの記録がなかったURL（2026-11-20に、渡された243件を、Dropbox・台帳・予約・ナレッジと照合して抽出）。非rdlpの34件には、すでに撮影済みの案件の実ページURLが混ざっている可能性がある（例: morinaga.co.jp/kyorochan は LP-0014 の分析に名前が出る）。撮影前に、dis:run の重複確認（登録済み・180日以内）が働く。",
+ "createdAt": "2026-11-20",
+ "media": "lp",
+ "items": [
+  {
+   "url": "https://www.morinaga.co.jp/kyorochan/",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://www.vox.jp/Form/Product/ProductDetail.aspx?pid=1001&shop=0",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://www.aigan.co.jp/feature/heritage/",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://www.clone.qast.jp/",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://doublepillow-basic.calqs-sleep.com/doublepillow-basic",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://www.smbc-card.com/camp/cosme/index.jsp?dk=dip-gpt-nrg-pr-100011",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://housefoods.jp/products/special/kokumaro/",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://kentei.tokyo-cci.or.jp/lp/color/0004.html",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://shop.e-nepia.com/lp?u=npa_lp_sheetmask_premium_meta_001",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://tsk-pf.com/ai-data-structuring",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://www.ichibiki.co.jp/brand/recover/",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://machihack.com/shokubutsumeguri",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://kanro.jp/pages/nutbon",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://travel.rakuten.co.jp/movement/iwate/202606_iwate/",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://www.akagi.com/brand/milcrea2026new/",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://www.hebereke-utsunomiya.com/",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://www.akagi.com/brand/special-parfait/",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://mht.glico.com/lp/",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://www.jelloma.com/",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://kartie-cloud.jp/karte/",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://www.ministop.co.jp/syohin/sweets/softcream/gohoubisoft-montblanc/",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://artlingual.com/school/higashinakano/index.html",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://www.batistee.jp/",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://yolu.jp/product/calm_night/shampoo_treatment/",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://www.lycbiz.com/jp/seminar/ondemand/ly-ads/beginner-friendly/v2/",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://lululun.com/shop/products/LUAA391113",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://www.shop.rohto.co.jp/category/skincare/obagi/obagi-c/199891.html",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://hoshinoresorts.com/jp/sp/kusatsu-stay/",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://rdlp.jp/archives/otherdesign/lp/104155",
+   "fromArchive": true,
+   "note": "rdlpの紹介ページ。実ページのURLが不明なため、アーカイブ掲載の画像で撮影"
+  },
+  {
+   "url": "https://realdgame.jp/s/deepocean/",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://rdlp.jp/archives/otherdesign/lp/229115",
+   "fromArchive": true,
+   "note": "rdlpの紹介ページ。実ページのURLが不明なため、アーカイブ掲載の画像で撮影"
+  },
+  {
+   "url": "https://accel-japan.com/lp/sp1_2606/",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://www.hyalmoist.jp/air/offer4/",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://www.e-rabbit.jp/fc-lp/",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://dstyleshop.jp/view/page/peqoly-dryshampoo-cat",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  },
+  {
+   "url": "https://www.club-sincerite.co.jp/",
+   "fromArchive": false,
+   "note": "実ページを撮影（PC・SP）"
+  }
+ ]
+}
