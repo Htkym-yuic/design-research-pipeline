@@ -1,0 +1,68 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "GR-0237",
+  "media_type": "GR",
+  "title": "シンプル上品な雑貨店名刺デザイン",
+  "source": {
+    "source_name": "デザインAC",
+    "source_detail_url": "https://www.design-ac.net/free-template/business-card-template-29788",
+    "capture_url": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F45b4e0e87f2b4e1039788f4d39aaeb4c%2F45b4e0e87f2b4e1039788f4d39aaeb4c-400.webp&w=256&q=75",
+    "official_url": null
+  },
+  "analysis": {
+    "summary": "ティール色の外枠と四隅の装飾的なコーナーオーナメントで額縁のような上品さを演出し、内側のクリーム色カードに情報を集約する名刺デザイン。業種→氏名→連絡先の階層に加え、QRコードを名刺面に直接組み込んでいる。",
+    "score": {
+      "visual": 16,
+      "clarity": 17,
+      "originality": 9,
+      "reusability": 18,
+      "learning": 11,
+      "evidence": 6,
+      "total": 77
+    },
+    "units": [
+      { "name": "作品全体", "role": "雑貨店・個人商店向けの名刺として、業種・氏名・連絡先・デジタル接点を一枚で伝える。", "reuse": "二重枠＋コーナーオーナメント＋中央情報カードの額縁型構成。", "evidence": "GR-0237_reference.png全体。" },
+      { "name": "外枠・コーナーオーナメント", "role": "額縁のような上品な第一印象を作り、情報領域を視覚的に区切る。", "reuse": "二重枠＋四隅コーナーオーナメントによる額縁型フレーム。", "evidence": "原画像外周。" },
+      { "name": "業種ラベル・氏名", "role": "業種と氏名という名刺の核となる2情報を提示する。", "reuse": "業種ラベル→氏名の優先順位構成。", "evidence": "原画像カード上段〜中段。" },
+      { "name": "連絡先情報", "role": "具体的な接触手段（住所・メール・電話）を提供する。", "reuse": "郵便番号・住所・メール・電話の4行連絡先ブロック。", "evidence": "原画像カード下段。" },
+      { "name": "QRコード", "role": "名刺面から直接デジタル接点へ誘導する。", "reuse": "名刺面下部へのQRコード統合。", "evidence": "原画像最下部。" },
+      { "name": "配色設計", "role": "ティールとクリームの2色に絞り、上品で落ち着いた印象を作る。", "reuse": "ティール＋クリームの2色配色設計。", "evidence": "原画像全体。" }
+    ]
+  },
+  "strengths": [
+    "ティール＋クリームの2色で上品さを表現している",
+    "QRコードを名刺に統合しデジタル接点を作っている",
+    "四隅の装飾で額縁のような高級感がある"
+  ],
+  "improvements": [
+    { "priority": "P0", "issue": "QRコードの遷移先が不明瞭", "evidence": "画像内に遷移先の説明がない", "fix": "QRコード付近に「Webサイト」「SNS」等の遷移先を明記する", "effect": "スキャン率の向上", "metric": "QRスキャン数" },
+    { "priority": "P1", "issue": "縦型名刺の収納性が未確認", "evidence": "一般的な横型名刺入れとの適合性が画像からは判断できない", "fix": "実際の名刺入れでの収まりを確認する", "effect": "実用性の担保", "metric": "—" },
+    { "priority": "P2", "issue": "配色のHEX値が未実測", "evidence": "低解像度・asset_license_unverified", "fix": "正確な配色コードを実測・記録する", "effect": "印刷・Web間での色再現の一貫性確保", "metric": "色差測定" }
+  ],
+  "reusable_patterns": [
+    { "id": "C01", "name": "二重枠＋コーナーオーナメント＋中央情報カードの額縁型構成", "keep": "外枠＋四隅装飾＋中央カードの重ね配置", "replace": "飾り罫のデザイン、配色" },
+    { "id": "C02", "name": "名刺面下部へのQRコード統合", "keep": "カード最下部中央のQRコード配置", "replace": "QRコードの遷移先データ" },
+    { "id": "C03", "name": "ティール＋クリームの2色配色設計", "keep": "外枠色＋カード背景色＋文字色の3要素分担", "replace": "具体的な配色値" }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "具体的な飾り罫のデザイン、ダミー氏名・住所・メール・電話番号、QRコードの遷移先データ",
+    "reusable": "額縁型構成、QRコード統合の原則、2色配色設計"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/GR-0237_reference.png",
+      "https://www.design-ac.net/free-template/business-card-template-29788"
+    ],
+    "unknowns": [
+      "enlarged_typography_capture_missing",
+      "print_mockup_missing",
+      "content_detail_unverified",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

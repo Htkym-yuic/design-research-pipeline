@@ -1,0 +1,68 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "GR-0235",
+  "media_type": "GR",
+  "title": "ハッピーアワーポスター",
+  "source": {
+    "source_name": "デザインAC",
+    "source_detail_url": "https://www.design-ac.net/free-template/poster-template-27947",
+    "capture_url": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F16a02d4ac6f2d09aa66864f0ee4d3c18%2F16a02d4ac6f2d09aa66864f0ee4d3c18-400.webp&w=828&q=75",
+    "official_url": null
+  },
+  "analysis": {
+    "summary": "「Happy Hour」という英字見出しと泡の垂れるビールイラスト・乾杯するジョッキのイラストのみで、言葉を尽くさずに居酒屋のタイムセールを伝えるポスター。時間帯と価格という2つの数値情報だけに絞り込んでいる。",
+    "score": {
+      "visual": 15,
+      "clarity": 17,
+      "originality": 8,
+      "reusability": 18,
+      "learning": 11,
+      "evidence": 8,
+      "total": 77
+    },
+    "units": [
+      { "name": "作品全体", "role": "居酒屋のハッピーアワー（時間帯限定の割引企画）を一瞬で伝える。", "reuse": "泡イラスト帯＋大見出し＋乾杯イラスト＋数値情報の縦積み構成。", "evidence": "GR-0235_reference.png全体。" },
+      { "name": "タイトル・見出し", "role": "企画名を一語で確定する。", "reuse": "英字の企画名を最大サイズで中央配置する見出し。", "evidence": "原画像上部中央。" },
+      { "name": "乾杯イラスト", "role": "ビールを飲む楽しい雰囲気を視覚的に補強する。", "reuse": "2つの飲料を左右対称に配置する乾杯イラスト。", "evidence": "原画像中央。" },
+      { "name": "時間帯・価格訴求", "role": "具体的な時間帯と価格という実務判断材料を提示する。", "reuse": "条件（時間帯）＋価格訴求（最大フォント）の2段構成。", "evidence": "原画像中央下部。" },
+      { "name": "店舗名", "role": "発行主体（店舗）を示す。", "reuse": "最下部に小さく店舗名を配置する構成。", "evidence": "原画像最下部。" },
+      { "name": "背景・配色設計", "role": "ビールを想起させる配色で、テーマを色だけで伝える。", "reuse": "テーマカラー単色背景＋上部装飾のみの最小構成。", "evidence": "原画像全体。" }
+    ]
+  },
+  "strengths": [
+    "情報を時間帯と価格の2点に絞り判断を容易にしている",
+    "色とイラストだけでビール・お得感を伝えている",
+    "価格を最大フォントで強調している"
+  ],
+  "improvements": [
+    { "priority": "P0", "issue": "割引の大きさが伝わりにくい", "evidence": "通常価格との比較表示がない", "fix": "「通常○○円→350円」等の比較を追加する", "effect": "割引訴求力の向上", "metric": "ハッピーアワー時間帯の来店数" },
+    { "priority": "P1", "issue": "対象ドリンクの範囲が不明瞭", "evidence": "「生ビール」のみの記載で他ドリンクの扱いが不明", "fix": "対象ドリンクの範囲を明記する", "effect": "誤解による来店後のトラブル防止", "metric": "問い合わせ件数" },
+    { "priority": "P2", "issue": "曜日の指定がない", "evidence": "時間帯のみで曜日条件の記載がない", "fix": "対象曜日（平日のみ等）を明記する", "effect": "来店タイミングの誤解防止", "metric": "来店客の満足度" }
+  ],
+  "reusable_patterns": [
+    { "id": "C01", "name": "泡イラスト帯＋大見出し＋乾杯イラスト＋数値情報の縦積み構成", "keep": "イラスト→見出し→数値情報の3段構成", "replace": "イラスト内容、見出し文言、配色" },
+    { "id": "C02", "name": "条件（時間帯）＋価格訴求（最大フォント）の2段構成", "keep": "条件文字＋大型価格数字の階層", "replace": "時間帯、価格" },
+    { "id": "C03", "name": "テーマカラー単色背景＋上部装飾のみの最小構成", "keep": "単色背景＋上部装飾の構成", "replace": "配色、装飾内容" }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "店舗名プレースホルダー「居酒屋 出財映士」、具体的なイラストデザイン",
+    "reusable": "泡イラスト帯＋大見出し＋乾杯イラスト＋数値情報の縦積み構成、条件＋価格訴求の2段構成、単色背景＋上部装飾の最小構成"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/GR-0235_reference.png",
+      "https://www.design-ac.net/free-template/poster-template-27947"
+    ],
+    "unknowns": [
+      "enlarged_typography_capture_missing",
+      "content_detail_unverified",
+      "print_mockup_missing",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}
