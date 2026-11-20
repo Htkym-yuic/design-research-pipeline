@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T16:18:04.792Z",
+  "updatedAt": "2026-11-20T16:34:14.379Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -4547,6 +4547,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-19T16:18:04.792Z"
+    },
+    {
+      "id": "GR-0274",
+      "title": "シニア向け健康講座と体操教室の案内チラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F896de0261b33cc7202253d411db16024%2F896de0261b33cc7202253d411db16024-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29978",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F896de0261b33cc7202253d411db16024%2F896de0261b33cc7202253d411db16024-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-20T16:34:14.379Z"
+    },
+    {
+      "id": "GR-0275",
+      "title": "秋の本日臨時休業のお知らせポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Ff57b3df0e5d7ef95b2e404260eba3da3%2Ff57b3df0e5d7ef95b2e404260eba3da3-400.webp&w=1200&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-26497",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Ff57b3df0e5d7ef95b2e404260eba3da3%2Ff57b3df0e5d7ef95b2e404260eba3da3-400.webp&w=1200&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-20T16:34:14.379Z"
+    },
+    {
+      "id": "GR-0276",
+      "title": "灰色ベースにポップなワンポイント効果の入った秋食向けバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F439b719bfef4c35b0edf2a2930ed8007%2F439b719bfef4c35b0edf2a2930ed8007-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-16297",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F439b719bfef4c35b0edf2a2930ed8007%2F439b719bfef4c35b0edf2a2930ed8007-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-20T16:34:14.379Z"
+    },
+    {
+      "id": "GR-0277",
+      "title": "シンプルな横長ビジネス名刺デザイン",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F4bfceedd1fb4b73d278f3fb3b3f9ea5c%2F4bfceedd1fb4b73d278f3fb3b3f9ea5c-400.webp&w=256&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29013",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F4bfceedd1fb4b73d278f3fb3b3f9ea5c%2F4bfceedd1fb4b73d278f3fb3b3f9ea5c-400.webp&w=256&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-20T16:34:14.379Z"
+    },
+    {
+      "id": "GR-0278",
+      "title": "三角形の不動産ロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/370c633e5a9978a78e0046f89b263385/370c633e5a9978a78e0046f89b263385-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3004",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/370c633e5a9978a78e0046f89b263385/370c633e5a9978a78e0046f89b263385-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-20T16:34:14.379Z"
     },
     {
       "id": "ILAC-0001",
@@ -9170,6 +9230,18 @@
       "materialId": "PAT-0105",
       "authorProfileUrl": null,
       "reservedAt": "2026-11-19T16:18:04.792Z"
+    },
+    {
+      "id": "PAT-0106",
+      "title": "シニア向け健康講座と体操教室の案内チラシに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F896de0261b33cc7202253d411db16024%2F896de0261b33cc7202253d411db16024-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29978",
+      "imageUrl": null,
+      "materialId": "PAT-0106",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-20T16:34:14.379Z"
     },
     {
       "id": "PHAC-0001",
