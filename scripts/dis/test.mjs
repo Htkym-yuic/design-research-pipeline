@@ -1865,9 +1865,12 @@ test("archive-shots: 新しいLP番号（LP-0250〜）で、アーカイブ画�
 
 test("renumber-copy: 名前の中のLP-nnnnを新番号に置き換え、重複のLPは除外し、元は変更せず、既存は上書きしない", async () => {
   const { buildLookup, renameRel, planCopy, applyCopy } = await import("./renumber-copy.mjs");
-  const lookup = buildLookup({ items: [{ oldLp: "LP-0014", newId: "DIS-LP-0014", status: "adopted" }, { oldLp: "LP-0136", newId: "DIS-LP-0135", status: "adopted" }, { oldLp: "LP-0135", newId: null, status: "excluded_duplicate" }] });
+  const lookup = buildLookup({ items: [{ oldLp: "LP-0014", newId: "DIS-LP-0014", status: "adopted", oldDisIds: ["DIS-LP-0200"] }, { oldLp: "LP-0136", newId: "DIS-LP-0135", status: "adopted" }, { oldLp: "LP-0135", newId: null, status: "excluded_duplicate", oldDisIds: ["DIS-LP-0138"] }] }, { relations: [{ disId: "DIS-LP-0316", libraryId: "LP-0136" }] });
   assert.equal(renameRel("02_セクション別/01_FV/PC/LP-0136_x_PC_01_FV.png", lookup).newRel, "02_セクション別/01_FV/PC/DIS-LP-0135_x_PC_01_FV.png");
-  assert.equal(renameRel("01_案件別/DIS-LP-0014_x/a.png", lookup).newRel, "01_案件別/DIS-LP-0014_x/a.png"); // すでに DIS- が付くものは、変えない
+  assert.equal(renameRel("01_案件別/DIS-LP-0200_x/DIS-LP-0200_x_PC.png", lookup).newRel, "01_案件別/DIS-LP-0014_x/DIS-LP-0014_x_PC.png"); // 旧DISの連番は、LP番号を引いて、新番号にする
+  assert.equal(renameRel("a/DIS-LP-0316_y.png", lookup).newRel, "a/DIS-LP-0135_y.png"); // 手元の関連付けからも引く
+  assert.equal(renameRel("a/DIS-LP-0138_z.png", lookup).excluded, true); // 重複のLPの旧DIS番号
+  assert.deepEqual(renameRel("a/DIS-LP-0999_z.png", lookup).unmapped, ["DIS-LP-0999"]);
   assert.equal(renameRel("01_案件別/LP-0135_x/a.png", lookup).excluded, true);
   assert.deepEqual(renameRel("01_案件別/LP-9999_x/a.png", lookup).unmapped, ["LP-9999"]);
   const src = await fs.mkdtemp(path.join(os.tmpdir(), "rn-src-")), dest = await fs.mkdtemp(path.join(os.tmpdir(), "rn-dst-"));
@@ -1877,6 +1880,11 @@ test("renumber-copy: 名前の中のLP-nnnnを新番号に置き換え、重複�
   await w("02_セクション別/01_FV/PC/LP-0135_重複_PC_01_FV.png", "cc");
   const plan = await planCopy(src, ["01_案件別", "02_セクション別"], lookup);
   assert.equal(plan.copies.length, 2); assert.equal(plan.excluded.length, 1); assert.equal(plan.unmapped.length, 0);
+  await w("01_案件別/DIS-LP-0999_未対応/x.png", "zz");
+  const strict = await planCopy(src, ["01_案件別"], lookup);
+  assert.equal(strict.unmapped.length, 1);
+  const lenient = await planCopy(src, ["01_案件別"], lookup, { skipUnmapped: true });
+  assert.equal(lenient.unmapped.length, 0); assert.equal(lenient.skipped.length, 1);
   const r = await applyCopy(src, dest, plan);
   assert.equal(r.done, 2);
   assert.ok(await fs.access(path.join(dest, "01_案件別/DIS-LP-0014_チョコ/DIS-LP-0014_チョコ_PC_全体.png")).then(() => true, () => false));
