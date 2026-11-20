@@ -1,0 +1,13 @@
+{
+  "input": "deep-analysis/non-lp/2026-11-20/WB-0090-rondomark/01_Normal_Images/WB-0090_SITE_PC_full.png",
+  "output": "deep-analysis/non-lp/2026-11-20/WB-0090-rondomark/04_Implementation_Blueprint/WB-0090_elementor_brain_implementation.png",
+  "notionOutput": "deep-analysis/non-lp/2026-11-20/WB-0090-rondomark/04_Implementation_Blueprint/WB-0090_elementor_brain_implementation_notion.jpg",
+  "railWidth": 620,
+  "sections": [
+    { "y": 0, "height": 1800, "label": "01 ヘッダー+ヒーロー", "color": "#ff3b30", "lines": ["キャッチコピー+補足説明文", "ナビ+お問い合わせCTA"] },
+    { "y": 1800, "height": 6200, "label": "02 サービス領域一覧（推定）", "color": "#ff9500", "lines": ["AI&Technology / Strategy&Marketing等", "1画面1項目の大型タイポグラフィ（演出区間、未確認）"] },
+    { "y": 8000, "height": 1000, "label": "03 アプローチ説明+CTA", "color": "#34c759", "lines": ["「アプローチ・取り組みを見る」"] },
+    { "y": 9000, "height": 12000, "label": "04 成果セクション（未確認、スクロール演出区間）", "color": "#5856d6", "lines": ["「成果の、つくりかた」", "本文・事例は静止画未確認"] },
+    { "y": 21000, "height": 2625, "label": "05 最終CTA+フッター", "color": "#8e8e93", "lines": ["CTA帯", "会社情報・フッターリンク"] }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "drs-weekly-run-1.0",
+  "run_date": "2026-11-20",
+  "run_mode": "daily_auto_deep_analysis_loop",
+  "scope_note": "祐一さんの日次自動実行（深い分析ループ）。2026-11-17収集分の繰り越し候補のうちWB-0089・WB-0090（Web）・GR-0259（Graphic）の3件を処理した。",
+  "selected": [
+    {
+      "id": "WB-0089",
+      "title": "Running with words（ニューバランス）",
+      "analysis": "completed",
+      "markdown_validation_warnings": 0,
+      "knowledge_json": "validated",
+      "dropbox_files": 0,
+      "dropbox_status": "not_synced_source_in_daily_intake",
+      "notion": "pending",
+      "implementation_blueprint": "reviewed_pending_dropbox_sync",
+      "cbs_production_sync": "not_applied"
+    },
+    {
+      "id": "WB-0090",
+      "title": "株式会社ロンドマーク",
+      "analysis": "completed",
+      "markdown_validation_warnings": 0,
+      "knowledge_json": "validated",
+      "dropbox_files": 0,
+      "dropbox_status": "not_synced_source_in_daily_intake",
+      "notion": "pending",
+      "implementation_blueprint": "reviewed_pending_dropbox_sync",
+      "cbs_production_sync": "not_applied",
+      "note": "スクロール連動のテキストリビュー演出区間（成果セクション）の大部分が静止画キャプチャでは未確認。実機でのスクロール確認が別途必要。"
+    },
+    {
+      "id": "GR-0259",
+      "title": "忘年会開催のお知らせ",
+      "analysis": "completed",
+      "markdown_validation_warnings": 0,
+      "knowledge_json": "validated",
+      "dropbox_files": 0,
+      "dropbox_status": "not_synced_source_in_daily_intake",
+      "notion": "pending",
+      "cbs_production_sync": "not_applied"
+    }
+  ],
+  "deferred_to_next_run": [
+    { "id": "GR-0260", "reason": "2026-11-17収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "GR-0261", "reason": "2026-11-17収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "GR-0262", "reason": "2026-11-17収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "GR-0263", "reason": "2026-11-17収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "GR-0274", "reason": "2026-11-20収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "GR-0275", "reason": "2026-11-20収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "GR-0276", "reason": "2026-11-20収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "GR-0277", "reason": "2026-11-20収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "GR-0278", "reason": "2026-11-20収集の新規候補。1回あたり最大2〜3件の制約のため繰り越し" },
+    { "id": "note", "reason": "2026-11-14〜2026-11-19収集分は本セッションでは未確認。次回以降にcandidates.json履歴・lightweight-analysis.jsonで確認が必要" }
+  ],
+  "excluded_out_of_scope": [
+    { "id": "PAT-0106", "reason": "mediaType=Pattern（デザイン原則・パターン）は対象媒体に含まれないため対象外" }
+  ],
+  "gaps": [
+    "Dropbox正本昇格は未実施（読み取り専用セッションのため）。ユーザー確認後に別工程で行う。",
+    "Notion更新は、2026-11-13〜2026-11-20の間、notion-update-page呼び出しの最中に繰り返しセッションのコンテナ再起動が発生し完了できなかった。GR-0224〜GR-0228・WB-0079・WB-0080・GR-0234〜GR-0237・WB-0089・WB-0090・GR-0259の計14件すべてでnotion_status=pendingのまま。ユーザーへの状況確認も2回試みたがいずれも同様の再起動で中断された。",
+    "WB-0090はスクロール連動のテキストリビュー演出区間（推定で全体の半分以上）が静止画キャプチャでは確認できず、未確認事項として多く記録されている。実機でのスクロール確認が必要。",
+    "候補の繰り越しバックログは9件（2026-11-17収集分の残り4件＋2026-11-20収集分5件）に加え、2026-11-14〜19収集分が未確認のため、実際の残件数はさらに多い可能性がある。"
+  ],
+  "cbs_production_sync": "not_applied_user_confirmation_required"
+}
