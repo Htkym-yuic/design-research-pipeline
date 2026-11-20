@@ -1,6 +1,6 @@
 {
- "note": "LPの番号の振り直しの対応表（案）。docs/lp-renumber-plan.csv から作成。newId=新しい DIS-LP 番号。excluded_duplicate は、同じ rdlp の投稿が別の LP にあるため、新番号を振らない（削除はしない）。ユーザーの確認後に、確定する。",
- "status": "draft",
+ "note": "LPの番号の振り直しの対応表（案）。docs/lp-renumber-plan.csv から作成。newId=新しい DIS-LP 番号。excluded_duplicate は、同じ rdlp の投稿が別の LP にあるため、新番号を振らない（削除はしない）。ユーザーが一覧表を確認して、確定した（2026-11-21）。",
+ "status": "confirmed",
  "createdAt": "2026-11-21",
  "items": [
   {
@@ -3183,5 +3183,6 @@
    "newFolder": "DIS-LP-0243_宇治山田歯科医院",
    "note": null
   }
- ]
+ ],
+ "confirmedAt": "2026-11-21"
 }
