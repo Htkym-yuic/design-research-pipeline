@@ -1807,3 +1807,24 @@ test("capture-queue: 撮影の待ち行列。rdlp は --from-archive を付け�
   const real = buildArgs({ url: "https://example.com/", fromArchive: false }, "2026-11-20");
   assert.ok(!real.includes("--from-archive") && !real.includes("--apply"));
 });
+
+test("find-rdlp: 実ページURLと一致する紹介ページだけを採用し、403では止まる（回避しない）", async () => {
+  const { findRdlpFor, keywordsFor, normalizeUrl } = await import("./find-rdlp.mjs");
+  assert.equal(normalizeUrl("https://www.Example.com/a/b/?x=1#h"), "example.com/a/b");
+  assert.deepEqual(keywordsFor("https://www.ministop.co.jp/syohin/sweets/softcream/gohoubisoft-montblanc/").slice(0, 1), ["ministop"]);
+  const card = (id) => `<div class="lp-card lp-show-wrap"><div class="lp-card-img"><a href="/archives/otherdesign/lp/${id}"><img alt="t${id}"></a></div><div class="lp-card-label">t${id}</div><input name="post_id" value="${id}"></div>`;
+  const detail = (real) => `<html><a class="url_check" href="${real}"><img src="/x.jpg"></a></html>`;
+  const pages = {
+    "https://rdlp.jp/archives/otherdesign/lp/1": detail("https://www.ministop.co.jp/other/"),
+    "https://rdlp.jp/archives/otherdesign/lp/2": detail("https://www.ministop.co.jp/syohin/sweets/softcream/gohoubisoft-montblanc"),
+  };
+  const getter = { robots: async () => true, get: async (u) => (u.includes("/lp-archive/search") ? { ok: true, status: 200, text: card(1) + card(2) } : { ok: true, status: 200, text: pages[u] || "" }) };
+  const noSleep = () => Promise.resolve();
+  const r = await findRdlpFor("https://www.ministop.co.jp/syohin/sweets/softcream/gohoubisoft-montblanc/", { getter, sleep: noSleep });
+  assert.equal(r.status, "found");
+  assert.equal(r.rdlpUrl, "https://rdlp.jp/archives/otherdesign/lp/2");
+  const none = await findRdlpFor("https://www.ministop.co.jp/zzz/", { getter, sleep: noSleep });
+  assert.equal(none.status, "notfound");
+  const blocked = await findRdlpFor("https://www.ministop.co.jp/zzz/", { getter: { robots: async () => true, get: async () => ({ ok: false, status: 403, text: "" }) }, sleep: noSleep });
+  assert.equal(blocked.status, "blocked");
+});

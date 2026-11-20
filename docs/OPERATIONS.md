@@ -613,3 +613,20 @@ npm run dis:capture-queue -- --retry-failed      # 失敗したものだけ再�
 - rdlp の2件は、`--from-archive`（アーカイブ掲載の画像）。実ページの URL が分かったら、キューを直して、通常撮影にする。
 - 非rdlpの34件には、すでに撮影済みの案件の実ページ URL が混ざっている可能性がある。`dis:run` の重複確認（登録済み・180日以内）は働くが、旧ライブラリーの LP は、Notion に実ページの URL を持たないため、気づかずに二重に撮ることがある。撮影前に、Mac で、各 LP の分析ファイルを、URL で検索して確認すると確実。
 - 撮影したあとの分析、ナレッジ化、登録は、通常の手順（`docs/LIBRARY_DIS_BATCH.md` など）で行う。本番の登録（`--apply`）は、ユーザーの指示があるまで使わない。
+
+### DIS: 実ページURLから、rdlp の紹介ページを探す（`dis:find-rdlp`）
+
+アーカイブ掲載の画像（LPアーカイブ自身の全体画像）で揃えたいとき、実ページのURLしか分からないものは、先に rdlp の紹介ページURLを探す。Mac で実行する（読み取りのみ。クラウドの環境からは、rdlp を開かない）。
+
+```bash
+git pull origin claude/stoic-davinci-b2ek8x
+npm run dis:find-rdlp -- --limit 3          # まず3件
+npm run dis:find-rdlp -- --list             # 状態の一覧
+npm run dis:find-rdlp -- --update-queue     # 見つかったものを撮影キューに反映（rdlpUrl・fromArchive）
+npm run dis:capture-queue -- --archive-only --limit 5   # アーカイブの画像で撮るものだけ撮影
+```
+
+- 探し方: 実ページのドメインなどをキーワードに rdlp の検索ページを開き、候補の紹介ページに載っている「実ページのURL」が、探しているURLと一致したものだけを採用する（一致しないものは採用しない）。
+- robots.txt を確認し、リクエストの間隔をあける。403・429 が出たら、回避せず、全体を止める。
+- 結果は `data/dis-rdlp-lookup.json`（found／notfound／blocked）。notfound は、rdlp に載っていない、または、検索の候補に出なかった。`--retry` で、notfound・blocked を再実行できる。
+- 見つからないものは、rdlp にないので、実ページの撮影になる（撮影キューの既定）。アーカイブの画像だけで揃えたい場合は、`--archive-only` を付ける。

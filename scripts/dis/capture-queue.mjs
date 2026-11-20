@@ -5,6 +5,7 @@
  *   npm run dis:capture-queue -- --list                   # 一覧と状態（実行しない）
  *   npm run dis:capture-queue -- --limit 5                # 未処理のうち先頭5件を実行
  *   npm run dis:capture-queue -- --only <URLの一部>       # 指定のURLだけ
+ *   npm run dis:capture-queue -- --archive-only --limit 5 # アーカイブ掲載の画像で撮るものだけ（実ページは撮らない）
  *
  * ・DRY_RUN=true で dis:run を呼ぶ。Dropbox・Notion・台帳には書かない。
  * ・ログイン・課金壁・Bot対策・403などは回避しない。失敗は理由（出力の末尾）を記録して、次へ進む。再試行もしない。
@@ -18,8 +19,8 @@ const QUEUE = "data/dis-capture-queue.json";
 const PROGRESS = "data/dis-capture-progress.json";
 
 export function buildArgs(item, date) {
-  const a = ["run", "dis:run", "--", "--media", "lp", "--url", item.url, "--date", date, "--stage", "collect,select,capture,template", "--capture"];
-  if (item.fromArchive) a.push("--from-archive");
+  const a = ["run", "dis:run", "--", "--media", "lp", "--url", item.rdlpUrl || item.url, "--date", date, "--stage", "collect,select,capture,template", "--capture"];
+  if (item.fromArchive || item.rdlpUrl) a.push("--from-archive");
   return a;
 }
 
@@ -28,24 +29,25 @@ function readJson(f, fallback) {
 }
 
 function main() {
-  const { values } = parseArgs({ options: { list: { type: "boolean" }, limit: { type: "string" }, only: { type: "string" }, date: { type: "string" }, "retry-failed": { type: "boolean" } } });
+  const { values } = parseArgs({ options: { list: { type: "boolean" }, limit: { type: "string" }, only: { type: "string" }, date: { type: "string" }, "retry-failed": { type: "boolean" }, "archive-only": { type: "boolean" } } });
   const queue = readJson(QUEUE, null);
   if (!queue) throw new Error(`${QUEUE} がありません。git pull してください`);
   const progress = readJson(PROGRESS, { updatedAt: null, items: {} });
   const date = values.date || new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
   const state = (u) => progress.items[u]?.status || "pending";
   if (values.list) {
-    for (const it of queue.items) console.log(`${state(it.url).padEnd(8)} ${it.fromArchive ? "[archive] " : ""}${it.url}`);
+    for (const it of queue.items) console.log(`${state(it.url).padEnd(8)} ${it.fromArchive || it.rdlpUrl ? "[archive] " : ""}${it.rdlpUrl || it.url}`);
     const c = {}; for (const it of queue.items) c[state(it.url)] = (c[state(it.url)] || 0) + 1;
     console.log(JSON.stringify(c));
     return;
   }
   let todo = queue.items.filter((it) => state(it.url) === "pending" || (values["retry-failed"] && state(it.url) === "failed"));
+  if (values["archive-only"]) todo = todo.filter((it) => it.fromArchive || it.rdlpUrl); // アーカイブ掲載の画像で撮るものだけ（実ページの撮影は後回し）
   if (values.only) todo = todo.filter((it) => it.url.includes(values.only));
   if (values.limit) todo = todo.slice(0, Number(values.limit));
   console.log(`対象 ${todo.length} 件（日付 ${date}、DRY_RUN=true・ローカルのみ）`);
   for (const it of todo) {
-    console.log(`\n== ${it.url}${it.fromArchive ? "（アーカイブの画像）" : ""}`);
+    console.log(`\n== ${it.rdlpUrl || it.url}${it.fromArchive || it.rdlpUrl ? "（アーカイブの画像）" : ""}`);
     const started = Date.now();
     const r = spawnSync("npm", buildArgs(it, date), { encoding: "utf8", env: { ...process.env, DRY_RUN: "true" } });
     const out = `${r.stdout || ""}${r.stderr || ""}`.trim();
