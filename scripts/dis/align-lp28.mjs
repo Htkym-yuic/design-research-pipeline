@@ -23,7 +23,7 @@ import { readNotionChapter28 } from "./compare-lp28.mjs";
 import { compareNotionToMd } from "./lib/lp28-compare.mjs";
 import { dropboxFolder } from "./lib/adapters.mjs";
 import { checkLp28Chapter8 } from "./lib/lp28-check.mjs";
-import { refTitles, parseChapters, basicInfo, alignToV40, detectChapterMap } from "./lib/lp28-align.mjs";
+import { refTitles, parseChapters, basicInfo, alignToV40, detectChapterMap, moveCh29ToCh24 } from "./lib/lp28-align.mjs";
 
 const text = (b) => (b?.[b.type]?.rich_text || []).map((t) => t.plain_text ?? "").join("");
 const exists = async (p) => { try { await fs.access(p); return true; } catch { return false; } };
@@ -68,24 +68,65 @@ export async function findSourceMd(libProps, root = path.join(os.homedir(), "Dro
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const notionUrl = (id) => `https://app.notion.com/p/${String(id).replace(/-/g, "")}`;
 
+
+/** Notionの旧28章の部分（ブロック）を、Markdownにする（mdが無いページ用）。太字・コード・リンクは残す。画像は、案件フォルダの標準画像の6枠に、前の小見出しで対応づける。 */
+async function notionPartToMd(part, { itemDir, disId }) {
+  const rtMd = (arr) => (arr || []).map((x) => { let s = x.plain_text ?? ""; if (!s) return ""; const a = x.annotations || {}; if (a.code) s = "`" + s + "`"; if (a.bold) s = "**" + s + "**"; if (x.href) s = `[${s}](${x.href})`; return s; }).join("");
+  const slots = [["PC Full Page", "PC_full"], ["PC First View", "PC_first_view"], ["PC Section一覧", "PC_sections"], ["SP Full Page", "SP_full"], ["SP First View", "SP_first_view"], ["SP Section一覧", "SP_sections"]];
+  const out = []; let h3 = "", num = 0, prevNum = false, notionImgDir = null, notionImgN = 0;
+  for (const b of part.slice(1)) {
+    const rich = b[b.type]?.rich_text;
+    const tx = rtMd(rich);
+    if (b.type !== "numbered_list_item") { prevNum = false; num = 0; }
+    if (b.type === "paragraph") { if (!tx.startsWith("以下は、旧ライブラリーの")) out.push(tx, ""); }
+    else if (b.type === "heading_2") out.push("", `## ${text(b)}`, "");
+    else if (b.type === "heading_3") { h3 = text(b); out.push("", `### ${text(b)}`, ""); }
+    else if (b.type === "bulleted_list_item") out.push(`- ${tx}`);
+    else if (b.type === "numbered_list_item") { num = prevNum ? num + 1 : 1; prevNum = true; out.push(`${num}. ${tx}`); }
+    else if (b.type === "quote") out.push(`> ${tx}`, "");
+    else if (b.type === "divider") out.push("---", "");
+    else if (b.type === "table") {
+      const rows = (await listBlockChildren(b.id)).map((r) => r.table_row.cells.map((c) => rtMd(c).replace(/\|/g, "／").replace(/\n/g, " ")));
+      if (rows.length) out.push("", `| ${rows[0].join(" | ")} |`, `| ${rows[0].map(() => "---").join(" | ")} |`, ...rows.slice(1).map((r) => `| ${r.join(" | ")} |`), "");
+    } else if (b.type === "image") {
+      const slot = h3.includes("旧画像") ? null : slots.find(([title]) => h3.includes(title));
+      let file = slot && itemDir ? path.join(itemDir, "files", "01_Normal_Images", `${disId}_${slot[1]}.png`) : null;
+      if (!(file && fsSync.existsSync(file))) {
+        // 標準画像に当たらない画像（例: 旧画像・参照のみ）は、いまのNotionの画像をそのまま取り出して、入れ直す
+        file = null;
+        const img = b.image; const url = img?.type === "file" ? img.file.url : img?.type === "external" ? img.external.url : "";
+        if (url) { const r = await fetch(url); if (r.ok) { const ext = (/image\/(png|jpe?g|webp|gif)/.exec(r.headers.get("content-type") || "")?.[1] || "png").replace("jpeg", "jpg"); const dir = notionImgDir || (notionImgDir = await fs.mkdtemp(path.join(os.tmpdir(), "dis-notion-img-"))); file = path.join(dir, `${disId}_notion_${++notionImgN}.${ext}`); await fs.writeFile(file, Buffer.from(await r.arrayBuffer())); } }
+      }
+      if (file) out.push("", `![${h3}](${file})`, ""); else out.push("", `（画像を取り込めなかった: ${h3 || "小見出しなし"}）`, "");
+    } else if (tx) out.push(tx, "");
+    else out.push("", `（${b.type} は、取り込めなかった）`, "");
+  }
+  return out.join("\n").replace(/\n{3,}/g, "\n\n");
+}
+
 /** 準備（読み取りのみ）: 元のMarkdown・そろえた後のMarkdown・Notionの今の28章の部分・比較。 */
-export async function prepare(disId) {
+export async function prepare(disId, opts = {}) {
   const cfg = await loadConfig();
   const rel = (await readJson(path.join(REPO_ROOT, "data/dis-relations.json"))).relations.find((r) => r.disId === disId && r.relation === "same_lp");
   if (!rel?.disNotionPageId || !rel.libraryNotionPageId) throw new Error(`${disId}: 対応表にDISページ・旧LPページのIDがありません`);
   const itemDir = await findItemDir(path.join(REPO_ROOT, "outputs/dis"), cfg, disId);
   const lib = await notionFetch(`/pages/${rel.libraryNotionPageId}`);
-  const src = await findSourceMd(lib.properties);
+  const src = opts.replaceV40 ? { file: opts.md } : opts.fromNotion ? { file: "(Notionの本文から作成)" } : await findSourceMd(lib.properties);
   if (!src) throw new Error(`${disId}: 旧ライブラリーの full_analysis（Markdown）が、同期フォルダに見つかりません`);
-  const sourceMd = await fs.readFile(src.file, "utf8");
+  const blocks = await listBlockChildren(rel.disNotionPageId);
+  // 置き換える部分: 通常は「28章分析（旧ライブラリー）」の見出しから。--replace-v40 は、すでにある「28章分析（統一28章 v4.0）」の部分だけ
+  const v40off = opts.replaceV40 ? blocks.findIndex((b) => b.type === "heading_1" && text(b).startsWith("28章分析（統一28章 v4.0）")) : 0;
+  if (opts.replaceV40 && v40off < 0) throw new Error(`${disId}: 「28章分析（統一28章 v4.0）」の見出しがありません`);
+  const n28raw = await readNotionChapter28(rel.disNotionPageId, v40off ? blocks.slice(v40off) : blocks);
+  const n28 = { ...n28raw, start: n28raw.start < 0 ? -1 : n28raw.start + v40off };
+  const itemDirForImages = itemDir;
+  const sourceMd = opts.fromNotion ? await notionPartToMd(n28.part, { itemDir: itemDirForImages, disId }) : await fs.readFile(src.file, "utf8");
   const refFile = (await fs.readdir(path.join(REPO_ROOT, "outputs/dis/LP"))).filter((d) => d.startsWith("0001_")).map((d) => path.join(REPO_ROOT, "outputs/dis/LP", d, "28ch/LP-0245_v1.0.md"))[0];
   const ref = refTitles(await fs.readFile(refFile, "utf8"));
   const title = (lib.properties["タイトル"]?.title || []).map((t) => t.plain_text).join("");
   const brand = (/^LP-\d+｜(.+?)｜/.exec(title) || [])[1] || "";
   const props = { "取得日": lib.properties["取得日"]?.date?.start, "コピータイプ": (lib.properties["コピータイプ"]?.multi_select || []).map((o) => o.name).join("／"), "オファー": (lib.properties["オファー"]?.rich_text || []).map((t) => t.plain_text).join("") };
   const { chapters } = parseChapters(sourceMd);
-  const blocks = await listBlockChildren(rel.disNotionPageId);
-  const n28 = await readNotionChapter28(rel.disNotionPageId, blocks);
   const cmp = compareNotionToMd({ notionLines: n28.lines.filter((l) => !l.startsWith("以下は、旧ライブラリーの")), notionChapterNums: n28.nums, md: sourceMd });
   const isP4 = Boolean(detectChapterMap(chapters));
   // 章0〜27の形（章0が実行・重複防止記録）: 章0を章28にする。Notionの章29（更新履歴）は、章24の末尾へ移す
@@ -105,14 +146,16 @@ export async function prepare(disId) {
     const i29 = part.findIndex((b) => b.type === "heading_2" && /^29\. /.test(text(b)));
     if (i29 >= 0) { carry.ch29Blocks = part.length - i29; carry.ch29Md = await blocksToMd(part.slice(i29 + 1)); }
   }
-  const aligned = alignToV40({ ch2Images, notionCh28Md: carry.ch28Md, notionCh29Md: carry.ch29Md, md: sourceMd, ref, lp: rel.libraryId, brand, disId, info: basicInfo(chapters.find((c) => c.n === 1)?.body || ""), props, thumbnailRef: `images/${rel.libraryId}_thumbnail.jpg` });
+  const aligned = opts.replaceV40
+    ? { md: moveCh29ToCh24(sourceMd), mapping: chapters.filter((c) => c.n <= 28).map((c) => ({ n: c.n, from: c.title, to: ref[c.n] || c.title, kind: "同名" })), notes: [] }
+    : alignToV40({ ch2Images: opts.fromNotion ? [] : ch2Images, notionCh28Md: carry.ch28Md, notionCh29Md: carry.ch29Md, md: sourceMd, ref, lp: rel.libraryId, brand, disId, info: basicInfo(chapters.find((c) => c.n === 1)?.body || ""), props, thumbnailRef: `images/${rel.libraryId}_thumbnail.jpg` });
   // 取り込めるもの以外に、Notionにしか無いものが残っているか（章28・29は、取り込む分だけ除く）
   // 章0（旧v2の実行・重複防止記録）の中身は、章28の補完記録（章0の写し）として、取り込む。章0と写しの文が、同じかも確かめる
   const ch0Copied = lateOk && cmp.notionOnlyChapters.includes(0);
   const handled = { chapters: [...(shift0 ? [28, 29] : []), ...(ch0Copied ? [0] : [])], lateBlocks: carry.ch28Blocks };
   const unhandledChapters = cmp.notionOnlyChapters.filter((n) => !handled.chapters.includes(n));
   const unhandledLate = n28.lateBlocks - handled.lateBlocks;
-  return { cfg, rel, itemDir, src, sourceMd, chapters, ref, brand, aligned, blocks, n28, cmp, lp: rel.libraryId, carry, unhandledChapters, unhandledLate };
+  return { cfg, rel, itemDir, src, sourceMd, chapters, ref, brand, aligned, blocks, n28, cmp, lp: rel.libraryId, carry, unhandledChapters, unhandledLate, v40off };
 }
 
 /** Notionのブロック（段落・箇条書き・表・小見出し）を、Markdownの文字にする（取り込み用。文字だけ）。 */
@@ -144,13 +187,13 @@ async function backupBlocks(ctx, file) {
   return full.length;
 }
 
-async function apply(disId) {
+async function apply(disId, opts = {}) {
   if (process.env.DIS_ENABLE_WRITES !== "true" || process.env.DRY_RUN !== "false") throw new Error("DIS_ENABLE_WRITES=true と DRY_RUN=false が必要です");
-  const ctx = await prepare(disId);
+  const ctx = await prepare(disId, opts);
   const { rel, aligned, n28, cmp, lp } = ctx;
   // 1) 止める条件（Notionにしか無い章・あとから足した内容があるページは、書き換えずに止まる）
   if (n28.start < 0) throw new Error(`${disId}: Notionに「28章分析」の見出しがありません。何も書いていません`);
-  if (n28.part.some((b) => b.type === "heading_1" && text(b).startsWith("28章分析（統一28章 v4.0）"))) throw new Error(`${disId}: すでにそろえ済みです。何も書いていません`);
+  if (!opts.replaceV40 && n28.part.some((b) => b.type === "heading_1" && text(b).startsWith("28章分析（統一28章 v4.0）"))) throw new Error(`${disId}: すでにそろえ済みです。何も書いていません`);
   if (ctx.unhandledChapters.length || ctx.unhandledLate) throw new Error(`${disId}: Notionにしか無い内容があるため、止めます（章: ${ctx.unhandledChapters.join(",") || "なし"}／あとから足した・直したブロック: ${ctx.unhandledLate}件）。何も書いていません`);
   const chk = checkLp28Chapter8(aligned.md);
   if (!chk.ok) throw new Error(`${disId}: lp28-check がNGです（${chk.errors.join(" / ")}）。何も書いていません`);
@@ -164,10 +207,10 @@ async function apply(disId) {
   const thumb = path.join(imgDir, `${lp}_thumbnail.jpg`);
   const fv = path.join(ctx.itemDir, "files", "01_Normal_Images", `${disId}_PC_first_view.png`);
   if (await exists(fv)) { const { default: sharp } = await import("sharp"); await sharp(fv, { limitInputPixels: false }).resize({ width: 640, withoutEnlargement: true }).jpeg({ quality: 80 }).toFile(thumb); map.set(`images/${lp}_thumbnail.jpg`, { local: thumb, name: `${lp}_thumbnail.jpg` }); }
-  else md = md.replace(new RegExp(`^!\\[サムネイル\\]\\(images/${lp}_thumbnail\\.jpg\\)\\s*\n`, "m"), "");
+  else if (!opts.replaceV40) md = md.replace(new RegExp(`^!\\[サムネイル\\]\\(images/${lp}_thumbnail\\.jpg\\)\\s*\n`, "m"), "");
   for (const m of [...md.matchAll(/^!\[([^\]]*)\]\(([^)]+)\)\s*$/gm)]) {
     const ref = m[2];
-    if (map.has(ref) || ref.startsWith("images/")) continue;
+    if (map.has(ref) || (ref.startsWith("images/") && !opts.replaceV40)) continue;
     const local = path.resolve(srcDir, ref);
     if (!(await exists(local))) { md = md.replace(m[0], `（画像は旧ライブラリーに無い: ${path.basename(ref)}）`); continue; }
     map.set(ref, { local, name: path.basename(ref) });
@@ -204,7 +247,12 @@ async function apply(disId) {
 
   // 5) 新しいブロックを、ページの末尾に追加（古いブロックは、まだ消さない）
   const body = mdToBlocks(md);
-  const blocks = [nc.headingBlock(`28章分析（統一28章 v4.0）｜${lp}`, 1), nc.paragraphBlock(`以下は、${lp} の28章分析（旧ライブラリーの本文。章の名前と並びを統一28章 v4.0 にそろえた版。内容は書き換えていない。章29「更新履歴」は、章24の末尾へ移した）。上のDIS 9軸分析とは評価の方法が違うため、点数は混ぜない。`)];
+  const intro = opts.replaceV40
+    ? `以下は、${lp} の28章分析（v1.0。アーカイブ画像から作成した版を、表のまま入れ直した）。章29「更新履歴」は、章24の末尾へ移した。上の「分析テスト v0.1」・DIS 9軸分析とは評価の方法が違うため、点数は混ぜない。`
+    : opts.fromNotion
+      ? `以下は、${lp} の28章分析（旧ライブラリーの本文。Dropboxに元のMarkdownが無いため、Notionの本文から作った。章の名前と並びを統一28章 v4.0 にそろえた版。内容は書き換えていない。章29「更新履歴」は、章24の末尾へ移した）。上のDIS 9軸分析とは評価の方法が違うため、点数は混ぜない。`
+      : `以下は、${lp} の28章分析（旧ライブラリーの本文。章の名前と並びを統一28章 v4.0 にそろえた版。内容は書き換えていない。章29「更新履歴」は、章24の末尾へ移した）。上のDIS 9軸分析とは評価の方法が違うため、点数は混ぜない。`;
+  const blocks = [nc.headingBlock(`28章分析（統一28章 v4.0）｜${lp}`, 1), nc.paragraphBlock(intro)];
   for (const b of body) {
     if (!b.__image) { blocks.push(b); continue; }
     const v = [...map.entries()].find(([k, x]) => `images/${x.name}` === b.__image.rel);
@@ -232,10 +280,11 @@ async function apply(disId) {
   // 7) 読み直し
   const after = await listBlockChildren(rel.disNotionPageId);
   const unchanged = ctx.blocks.slice(0, n28.start).every((b, i) => after[i]?.id === b.id && after[i].type === b.type);
-  const n2 = await readNotionChapter28(rel.disNotionPageId, after);
+  const off = ctx.v40off || 0;
+  const n2 = await readNotionChapter28(rel.disNotionPageId, off ? after.slice(off) : after);
   const nums = n2.nums.filter((n) => n >= 1 && n <= 29);
   const dupOrMissing = [...Array(28)].map((_, i) => i + 1).filter((n) => nums.filter((x) => x === n).length !== 1);
-  const ch24 = (() => { const i = after.findIndex((b) => /^heading_2$/.test(b.type) && text(b).startsWith("24. 更新・検証記録")); const j = after.findIndex((b, k) => k > i && /^heading_2$/.test(b.type)); return after.slice(i, j).some((b) => text(b).startsWith("旧・章29")); })();
+  const ch24 = (() => { const a2 = off ? after.slice(off) : after; const i = a2.findIndex((b) => /^heading_2$/.test(b.type) && text(b).startsWith("24. 更新・検証記録")); const j = a2.findIndex((b, k) => k > i && /^heading_2$/.test(b.type)); return a2.slice(i, j).some((b) => text(b).startsWith("旧・章29")); })();
   const result = { disId, lp, url: notionUrl(rel.disNotionPageId), 置き換えた古いブロック: deleted, 追加した新しいブロック: blocks.length, 画像: { 旧: old.filter((b) => b.type === "image").length, 新: blocks.filter((b) => b.type === "image").length }, lp28check: chk, "28章より前の部分が不変": unchanged, "章1〜28が各1回": dupOrMissing.length === 0, "章29の見出し無し": !nums.includes(29), "章24の末尾に旧・章29": ch24, 全ブロック: { 前: before, 後: after.length }, 秒: Math.round((Date.now() - t0) / 1000), backup: bk };
   const logf = path.join(REPO_ROOT, "data/dis-merge-log.json");
   const lg = JSON.parse(await fs.readFile(logf, "utf8")); lg.entries.push({ at: new Date().toISOString(), kind: "align-lp28", ...result }); await fs.writeFile(logf, JSON.stringify(lg, null, 2) + "\n");
@@ -244,10 +293,12 @@ async function apply(disId) {
 
 async function main() {
   const t0 = Date.now();
-  const { values: a } = parseArgs({ options: { id: { type: "string" }, apply: { type: "boolean", default: false } } });
+  const { values: a } = parseArgs({ options: { id: { type: "string" }, apply: { type: "boolean", default: false }, "replace-v40": { type: "boolean", default: false }, md: { type: "string" }, "from-notion": { type: "boolean", default: false } } });
+  const opts = { replaceV40: a["replace-v40"], md: a.md, fromNotion: a["from-notion"] };
+  if (opts.replaceV40 && !opts.md) throw new Error("--replace-v40 には --md <ファイル> が必要です");
   if (!a.id) throw new Error("--id DIS-LP-000n が必要です");
-  if (a.apply) return apply(a.id);
-  const ctx = await prepare(a.id);
+  if (a.apply) return apply(a.id, opts);
+  const ctx = await prepare(a.id, opts);
   const { rel, itemDir, src, sourceMd, chapters, aligned, blocks, n28, cmp, lp, brand } = ctx;
   const chk = checkLp28Chapter8(aligned.md);
   const newBlocks = mdToBlocks(aligned.md);

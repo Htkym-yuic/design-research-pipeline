@@ -67,6 +67,27 @@ export const P4_MAP = {
   15: [15], 16: [], 17: [27], 18: [13], 19: [19], 20: [20], 21: [21], 22: [17], 23: [4, 16], 24: [24, 25, 29], 25: [], 26: [26], 27: [], 28: [28],
 };
 
+/**
+ * すでに統一28章 v4.0 の名前で書かれた Markdown（章1〜29）の、章29（更新履歴）を、章24の最後へ小見出しで移す。
+ * 章29の本文は、最初の「---」までとする。戻り値: 移したあとの Markdown（章29が無ければ、そのまま）。
+ */
+export function moveCh29ToCh24(md) {
+  const lines = String(md).split("\n");
+  const i29 = lines.findIndex((l) => /^## 29\. /.test(l));
+  if (i29 < 0) return String(md);
+  let end = lines.length;
+  for (let k = i29 + 1; k < lines.length; k++) if (/^---\s*$/.test(lines[k])) { end = k; break; }
+  const body = lines.slice(i29 + 1, end).join("\n").trim();
+  const rest = [...lines.slice(0, i29), ...lines.slice(end)];
+  const i24 = rest.findIndex((l) => /^## 24\. /.test(l));
+  const i25 = rest.findIndex((l, k) => k > i24 && /^## 25\. /.test(l));
+  if (i24 < 0 || i25 < 0) throw new Error("章24・章25の見出しが見つかりません");
+  let ins = i25;
+  while (ins > i24 && (rest[ins - 1].trim() === "" || /^---\s*$/.test(rest[ins - 1]))) ins--;
+  rest.splice(ins, 0, "", "### 旧・章29 更新履歴（旧28章の章29。そのまま移した）", "", body, "");
+  return rest.join("\n").replace(/\n{3,}/g, "\n\n");
+}
+
 /** 旧28章の章の名前から、P4（別構成）かどうかを見分ける。 */
 export function detectChapterMap(chapters) {
   const t = (n) => chapters.find((c) => c.n === n)?.title || "";
