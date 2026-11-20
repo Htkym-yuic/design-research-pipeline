@@ -1,0 +1,73 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0090",
+  "media_type": "WB",
+  "title": "株式会社ロンドマーク（RONDOMARK）",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://sankoudesign.com/web/rondomark/",
+    "capture_url": "https://www.rondomark.jp/",
+    "official_url": "https://www.rondomark.jp/"
+  },
+  "analysis": {
+    "summary": "「視点につくる。それが、正解への近道になる。」というコピーを核に、AI活用・戦略・Web開発・ブランディング・クリエイティブ制作の5サービス領域を1画面ずつ大きなテキストで提示するコーポレートサイト。大きな余白とスクロール演出を多用したミニマルなレイアウトだが、静止画では確認できない演出区間が多い。",
+    "score": {
+      "visual": 15,
+      "clarity": 11,
+      "originality": 10,
+      "reusability": 15,
+      "learning": 11,
+      "evidence": 8,
+      "total": 70
+    },
+    "units": [
+      { "name": "ファーストビュー", "role": "会社のスタンス・キャッチコピーを提示する。", "reuse": "写真を使わないタイポグラフィ主体のヒーロー構成。", "evidence": "PC/SP First View、PC/SP Full Page冒頭部。" },
+      { "name": "ナビゲーション", "role": "About／Approach／Service／Works／Case Study／Member／Journalという会社情報・実績へのカテゴリ別案内を提供する。", "reuse": "ナビ項目に件数を上付き表記する手法＋独立したCTAボタン。", "evidence": "PC/SP First View。" },
+      { "name": "サービス領域一覧", "role": "提供するサービス領域を、1画面1項目の大きな文字で順に提示する。", "reuse": "1画面1サービス項目の大型タイポグラフィ提示。", "evidence": "PC Full Page前半（y約1800〜8000px相当と推測）。" },
+      { "name": "アプローチ説明・CTA", "role": "具体的な取り組み方針を説明し、詳細ページへの導線を提供する。", "reuse": "短い説明文＋矢印付きCTAボタンの組み合わせ。", "evidence": "SP First View、PC Full Page中盤。" },
+      { "name": "成果セクション（未確認範囲）", "role": "実績・成果に関する情報を提示すると推測される。", "reuse": "スクロール演出による段階的な見出し表示（詳細は未確認）。", "evidence": "PC Full Page中盤（y約9000〜21000px相当）。" },
+      { "name": "最終CTA・フッター", "role": "問い合わせへの最終的な行動喚起と、会社情報・再探索導線を提供する。", "reuse": "ミニマルなページ構成の最後に濃色の最終CTA帯を挟む構成。", "evidence": "PC Full Page最下部。" }
+    ]
+  },
+  "strengths": [
+    "写真に頼らずタイポグラフィと余白でブランドの知的な印象を作っている",
+    "サービス領域を1画面1項目で大きく見せ提供範囲の広さを印象付けている",
+    "ナビに実績件数を添えて信頼感を補強している"
+  ],
+  "improvements": [
+    { "priority": "P0", "issue": "スクロール演出区間の内容が静止画で確認できない", "evidence": "「成果の、つくりかた」以降が大部分グレーアウト・白紙状態", "fix": "実サイトでスクロール操作を行い演出後の内容を確認・記録する", "effect": "分析の完全性向上", "metric": "—" },
+    { "priority": "P1", "issue": "具体的な実績・事例情報が不足", "evidence": "Case Study等の内容が本分析では未確認", "fix": "実績セクションの内容を実機で確認し訴求力を評価する", "effect": "信頼形成要素の充実度評価", "metric": "—" },
+    { "priority": "P2", "issue": "演出が効かない環境への配慮が不明", "evidence": "フォールバック表示の有無が未確認", "fix": "低速回線・JS無効環境での表示を確認する", "effect": "アクセシビリティの担保", "metric": "直帰率（低速環境セグメント）" }
+  ],
+  "reusable_patterns": [
+    { "id": "C01", "name": "写真を使わないタイポグラフィ主体のヒーロー構成", "keep": "キャッチコピー＋補足説明文の左寄せ配置", "replace": "コピー、説明文" },
+    { "id": "C02", "name": "1画面1サービス項目の大型タイポグラフィ提示", "keep": "1項目1画面の大型文字の縦連続配置", "replace": "サービス項目名" },
+    { "id": "C03", "name": "ナビ項目に件数を上付き表記する手法", "keep": "項目名＋上付き数字の組み合わせ", "replace": "具体的な件数" }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "「RONDOMARK」のロゴ、固有コピー、具体的な実績・事例内容、会社情報",
+    "reusable": "写真を使わないタイポグラフィ主体のヒーロー構成、1画面1サービス項目の大型タイポグラフィ提示、ナビ項目に件数を上付き表記する手法"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/WB-0090_SITE_PC_full.png",
+      "../01_Normal_Images/WB-0090_SITE_PC_first_view.png",
+      "../01_Normal_Images/WB-0090_SITE_SP_full.png",
+      "../01_Normal_Images/WB-0090_SITE_SP_first_view.png",
+      "https://www.rondomark.jp/",
+      "https://sankoudesign.com/web/rondomark/"
+    ],
+    "unknowns": [
+      "section_index_not_generated",
+      "interactive_states_unverified",
+      "low_resolution_measurement_unavailable",
+      "dom_measurement_unavailable",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

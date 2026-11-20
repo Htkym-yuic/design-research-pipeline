@@ -1,0 +1,68 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "GR-0259",
+  "media_type": "GR",
+  "title": "忘年会開催のお知らせ",
+  "source": {
+    "source_name": "デザインAC",
+    "source_detail_url": "https://www.design-ac.net/free-template/flyer-template-32278",
+    "capture_url": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F0eaa58bbace930ea267ac0fc86880ae5%2F0eaa58bbace930ea267ac0fc86880ae5-400.webp&w=828&q=75",
+    "official_url": null
+  },
+  "analysis": {
+    "summary": "「年末恒例！」のバッジで毎年の定例行事であることを示し、案内文で感謝を伝えたうえで日時・場所・参加費・出欠締切の4項目を明確な表形式で提示する、完成度の高い社内忘年会告知チラシ。プレースホルダーではなく全項目が具体的な値で記入済みの完成例として収集されている。",
+    "score": {
+      "visual": 15,
+      "clarity": 18,
+      "originality": 8,
+      "reusability": 18,
+      "learning": 13,
+      "evidence": 9,
+      "total": 81
+    },
+    "units": [
+      { "name": "作品全体", "role": "社内忘年会の開催告知と、出欠判断に必要な実務情報を一枚で完結させる。", "reuse": "バッジ＋見出し＋案内文＋4項目情報表＋乾杯イラスト＋結びの挨拶の縦積み構成。", "evidence": "GR-0259_reference.png全体。" },
+      { "name": "タイトル・見出し（バッジ＋見出し）", "role": "定例行事であることと、イベント種別を確定する。", "reuse": "前提バッジ＋確定見出しの二層構成。", "evidence": "原画像上部。" },
+      { "name": "案内文", "role": "開催意図（感謝の気持ち）を伝え、招待のトーンを作る。", "reuse": "労い＋感謝の意を伝える案内文の型。", "evidence": "原画像中央上部。" },
+      { "name": "4項目情報表", "role": "出欠判断に必要な実務情報を網羅的に提示する。", "reuse": "日時・場所・参加費・締切の4項目情報表。", "evidence": "原画像中段。" },
+      { "name": "乾杯イラスト", "role": "忘年会が懇親の場であることを視覚的に補強する。", "reuse": "情報表の後に乾杯イラストを配置する締めくくりの型。", "evidence": "原画像下部。" },
+      { "name": "結びの挨拶・装飾", "role": "丁寧な締めくくりの挨拶と発行主体（幹事）を示し、冬らしい季節感を演出する。", "reuse": "結びの挨拶＋発信者クレジットの締めくくり構成。", "evidence": "原画像最下部・全体背景。" }
+    ]
+  },
+  "strengths": [
+    "日時・場所・参加費・締切の4項目を網羅した完成度の高い情報設計",
+    "労い＋感謝の案内文で社内文書として丁寧",
+    "「幹事一同」のクレジットで発信主体が明確"
+  ],
+  "improvements": [
+    { "priority": "P0", "issue": "返信方法が不明瞭", "evidence": "メール・口頭等の明記がない", "fix": "幹事の連絡先（内線・メールアドレス等）を追記する", "effect": "出欠回答の手間を削減", "metric": "出欠回答までの日数" },
+    { "priority": "P1", "issue": "参加費の支払い方法が不明", "evidence": "当日現金か事前振込かの記載がない", "fix": "支払い方法を情報表に追加する", "effect": "当日の会計トラブル防止", "metric": "当日の会計所要時間" },
+    { "priority": "P2", "issue": "服装規定の記載がない", "evidence": "カジュアル可否等の案内がない", "fix": "一言「平服でお越しください」等を追記する", "effect": "参加者の服装不安を解消", "metric": "参加者アンケート" }
+  ],
+  "reusable_patterns": [
+    { "id": "C01", "name": "前提バッジ＋確定見出しの二層構成", "keep": "バッジ＋見出しの二段配置", "replace": "バッジ文言、見出し文言" },
+    { "id": "C02", "name": "日時・場所・参加費・締切の4項目情報表", "keep": "ラベル＋内容の4段リスト", "replace": "日時、場所、参加費、締切" },
+    { "id": "C03", "name": "結びの挨拶＋発信者クレジットの締めくくり構成", "keep": "結びの挨拶文＋クレジットの配置", "replace": "挨拶文言、クレジット名義" }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "会場名「ビアレストラン葵」、固有の日時・参加費、具体的な乾杯イラストのデザイン",
+    "reusable": "前提バッジ＋確定見出しの二層構成、4項目情報表の型、結びの挨拶＋発信者クレジットの構成"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/GR-0259_reference.png",
+      "https://www.design-ac.net/free-template/flyer-template-32278"
+    ],
+    "unknowns": [
+      "enlarged_typography_capture_missing",
+      "content_detail_unverified",
+      "print_mockup_missing",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

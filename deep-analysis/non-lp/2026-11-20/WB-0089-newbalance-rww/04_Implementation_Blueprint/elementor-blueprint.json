@@ -1,0 +1,13 @@
+{
+  "input": "deep-analysis/non-lp/2026-11-20/WB-0089-newbalance-rww/01_Normal_Images/WB-0089_SITE_PC_full.png",
+  "output": "deep-analysis/non-lp/2026-11-20/WB-0089-newbalance-rww/04_Implementation_Blueprint/WB-0089_elementor_brain_implementation.png",
+  "notionOutput": "deep-analysis/non-lp/2026-11-20/WB-0089-newbalance-rww/04_Implementation_Blueprint/WB-0089_elementor_brain_implementation_notion.jpg",
+  "railWidth": 620,
+  "sections": [
+    { "y": 0, "height": 2200, "label": "01 ヘッダー+ヒーロー（コラージュ）", "color": "#ff3b30", "lines": ["5名モデル+抽象図形コラージュ", "ロゴ+キャッチコピー+ナビ"] },
+    { "y": 2200, "height": 11800, "label": "02 雑誌風ビジュアルブロック群", "color": "#ff9500", "lines": ["PB not found / 48/365 等", "雑誌表紙風ブロックの連続配置"] },
+    { "y": 14000, "height": 4000, "label": "03 Products", "color": "#34c759", "lines": ["製品カードグリッド"] },
+    { "y": 18000, "height": 2500, "label": "04 Shop", "color": "#007aff", "lines": ["店舗・購入リンク一覧"] },
+    { "y": 20500, "height": 3506, "label": "05 フッター", "color": "#8e8e93", "lines": ["ニューバランスロゴ", "簡潔なリンク群"] }
+  ]
+}

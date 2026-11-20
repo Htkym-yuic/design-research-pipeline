@@ -1,0 +1,72 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "WB-0089",
+  "media_type": "WB",
+  "title": "Running with words（ニューバランス「言葉と、走る。」ブランドキャンペーンサイト）",
+  "source": {
+    "source_name": "SANKOU!",
+    "source_detail_url": "https://sankoudesign.com/web/runningwithwords/",
+    "capture_url": "https://nbgcp.com/",
+    "official_url": "https://nbgcp.com/"
+  },
+  "analysis": {
+    "summary": "「言葉と、走る。」というコピーを核に、5名のモデルと抽象図形・タイポグラフィを組み合わせたコラージュ型ヒーローで、プロダクト訴求よりアートディレクションを前面に出したブランドキャンペーンサイト。雑誌表紙風ビジュアルブロックを連続させテーマを多角的に展開している。",
+    "score": {
+      "visual": 18,
+      "clarity": 13,
+      "originality": 14,
+      "reusability": 15,
+      "learning": 13,
+      "evidence": 9,
+      "total": 82
+    },
+    "units": [
+      { "name": "ファーストビュー", "role": "キャンペーンタイトルと複数のモデルのビジュアルで、世界観を一瞬で伝える。", "reuse": "複数モデル＋抽象図形・タイポグラフィのコラージュ型ヒーロー。", "evidence": "PC/SP First View、PC/SP Full Page冒頭部。" },
+      { "name": "ナビゲーション", "role": "Concept／Visual／10words／Products／Shop／Artistという、キャンペーンの構成要素へのカテゴリ別案内を提供する。", "reuse": "キャンペーン固有のカテゴリ名を用いたナビゲーション構成。", "evidence": "PC/SP First View。" },
+      { "name": "雑誌風ビジュアルブロック群", "role": "「言葉と、走る。」というテーマを、複数の短い言葉・ビジュアルで繰り返し展開する。", "reuse": "雑誌表紙風の単位ブロックを連続配置し、同一テーマを多角的に展開する構成。", "evidence": "PC Full Page前半〜中盤（y約1000〜14000px相当）。" },
+      { "name": "Products", "role": "キャンペーンに関連する具体的な製品を提示する。", "reuse": "ビジュアル訴求セクションの後に製品グリッドを配置する構成。", "evidence": "PC Full Page後半（y約14000〜18000px相当）。" },
+      { "name": "Shop", "role": "製品を購入できる店舗・ECサイトへの導線を提供する。", "reuse": "ビジュアル訴求の後にシンプルなテキストリストで購入導線を提供する構成。", "evidence": "PC Full Page後半〜最下部。" },
+      { "name": "フッター", "role": "ニューバランスのロゴ再掲と、各ページへの再探索導線を提供する。", "reuse": "華やかなビジュアルセクションの後に最小限のフッターを配置する構成。", "evidence": "PC Full Page最下部。" }
+    ]
+  },
+  "strengths": [
+    "プロダクト訴求を抑えたアートディレクション主体の構成でブランド体験を作っている",
+    "複数の雑誌風ビジュアルブロックで同一テーマを多角的に展開している",
+    "Products・Shopの配置順でブランド体験から購買への自然な移行を作っている"
+  ],
+  "improvements": [
+    { "priority": "P0", "issue": "製品・購入導線への到達が遅い", "evidence": "Products/Shopがページ最下部に集中", "fix": "ヒーロー近辺にProducts/Shopへのショートカットリンクを追加する", "effect": "購買検討層の離脱防止", "metric": "Products/Shopセクションの到達率" },
+    { "priority": "P1", "issue": "ビジュアルブロックの文言が判読しづらい箇所がある", "evidence": "画像解像度の制約で一部のコピーが不明瞭", "fix": "コピーのフォントサイズ・コントラストを調整する", "effect": "メッセージ伝達力の向上", "metric": "スクロール完了率" },
+    { "priority": "P2", "issue": "具体的な製品スペック説明が少ない", "evidence": "Productsセクションの情報量が限定的", "fix": "素材・サイズ等の簡単な説明を追加する", "effect": "購買検討の後押し", "metric": "製品詳細ページ遷移率" }
+  ],
+  "reusable_patterns": [
+    { "id": "C01", "name": "複数モデル＋抽象図形・タイポグラフィのコラージュ型ヒーロー", "keep": "モデル複数名＋コラージュ要素＋ロゴ・コピーの配置", "replace": "モデル写真、コピー、コラージュ意匠" },
+    { "id": "C02", "name": "雑誌表紙風の単位ブロックを連続配置するテーマ展開手法", "keep": "独立した雑誌表紙風ブロックの縦連続配置", "replace": "各ブロックのコピー・ビジュアル" },
+    { "id": "C03", "name": "ビジュアル訴求の後に製品グリッド・購入導線を配置する構成", "keep": "Products→Shopの配置順", "replace": "製品内容、店舗情報" }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "ニューバランスのロゴ、起用モデルの写真、固有コピー、コラージュの具体的な意匠、製品写真・店舗名",
+    "reusable": "コラージュ型ヒーローの構成、雑誌表紙風ブロックの連続配置によるテーマ展開手法、ブランド体験後に製品・購入導線を配置する構成"
+  },
+  "evidence": {
+    "files": [
+      "../01_Normal_Images/WB-0089_SITE_PC_full.png",
+      "../01_Normal_Images/WB-0089_SITE_PC_first_view.png",
+      "../01_Normal_Images/WB-0089_SITE_SP_full.png",
+      "../01_Normal_Images/WB-0089_SITE_SP_first_view.png",
+      "https://nbgcp.com/",
+      "https://sankoudesign.com/web/runningwithwords/"
+    ],
+    "unknowns": [
+      "section_index_not_generated",
+      "low_resolution_measurement_unavailable",
+      "dom_measurement_unavailable",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}
