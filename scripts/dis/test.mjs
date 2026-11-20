@@ -1862,3 +1862,27 @@ test("archive-shots: 新しいLP番号（LP-0250〜）で、アーカイブ画�
   assert.equal(nextLpNumber({ lp: { existingMax: 249, nextNumber: 250 } }, { items: [] }, { reserved: [] }), 250);
   assert.throws(() => nextLpNumber({ lp: { existingMax: 249, nextNumber: 252 } }, { items: [] }, { reserved: [] }), /連続していません/);
 });
+
+test("renumber-copy: 名前の中のLP-nnnnを新番号に置き換え、重複のLPは除外し、元は変更せず、既存は上書きしない", async () => {
+  const { buildLookup, renameRel, planCopy, applyCopy } = await import("./renumber-copy.mjs");
+  const lookup = buildLookup({ items: [{ oldLp: "LP-0014", newId: "DIS-LP-0014", status: "adopted" }, { oldLp: "LP-0136", newId: "DIS-LP-0135", status: "adopted" }, { oldLp: "LP-0135", newId: null, status: "excluded_duplicate" }] });
+  assert.equal(renameRel("02_セクション別/01_FV/PC/LP-0136_x_PC_01_FV.png", lookup).newRel, "02_セクション別/01_FV/PC/DIS-LP-0135_x_PC_01_FV.png");
+  assert.equal(renameRel("01_案件別/DIS-LP-0014_x/a.png", lookup).newRel, "01_案件別/DIS-LP-0014_x/a.png"); // すでに DIS- が付くものは、変えない
+  assert.equal(renameRel("01_案件別/LP-0135_x/a.png", lookup).excluded, true);
+  assert.deepEqual(renameRel("01_案件別/LP-9999_x/a.png", lookup).unmapped, ["LP-9999"]);
+  const src = await fs.mkdtemp(path.join(os.tmpdir(), "rn-src-")), dest = await fs.mkdtemp(path.join(os.tmpdir(), "rn-dst-"));
+  const w = async (rel, t) => { await fs.mkdir(path.dirname(path.join(src, rel)), { recursive: true }); await fs.writeFile(path.join(src, rel), t); };
+  await w("01_案件別/LP-0014_チョコ/LP-0014_チョコ_PC_全体.png", "aaa");
+  await w("02_セクション別/01_FV/PC/LP-0014_チョコ_PC_01_FV.png", "bb");
+  await w("02_セクション別/01_FV/PC/LP-0135_重複_PC_01_FV.png", "cc");
+  const plan = await planCopy(src, ["01_案件別", "02_セクション別"], lookup);
+  assert.equal(plan.copies.length, 2); assert.equal(plan.excluded.length, 1); assert.equal(plan.unmapped.length, 0);
+  const r = await applyCopy(src, dest, plan);
+  assert.equal(r.done, 2);
+  assert.ok(await fs.access(path.join(dest, "01_案件別/DIS-LP-0014_チョコ/DIS-LP-0014_チョコ_PC_全体.png")).then(() => true, () => false));
+  assert.ok(await fs.access(path.join(src, "01_案件別/LP-0014_チョコ/LP-0014_チョコ_PC_全体.png")).then(() => true, () => false)); // 元は残る
+  const again = await applyCopy(src, dest, plan);
+  assert.equal(again.skipped, 2); // 再実行は、同じ容量ならスキップ
+  await fs.writeFile(path.join(dest, "01_案件別/DIS-LP-0014_チョコ/DIS-LP-0014_チョコ_PC_全体.png"), "different");
+  await assert.rejects(() => applyCopy(src, dest, plan), /上書きしません/);
+});
