@@ -2163,3 +2163,19 @@ test("capture-to-case: フォルダ名・コピー計画を作り、全体とFV�
   const r2 = await copyNew(plan);
   assert.equal(r2.copied.length, 0); assert.equal(r2.skipped.length, 3);
 });
+
+test("capture-to-case --replace: 既存は削除せず日時つきで差し替え前へ移し、新しいものを保存する（元が無ければ、既存は動かさない）", async () => {
+  const { planCopies, copyReplace } = await import("./capture-to-case.mjs");
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), "rep-"));
+  const tmp = path.join(root, "tmp"), src = path.join(root, "10_LP"), bak = path.join(root, "bak");
+  await fs.mkdir(path.join(tmp, "01_Normal_Images"), { recursive: true });
+  await fs.writeFile(path.join(tmp, "01_Normal_Images", "LP-0227_PC_full.png"), "NEW");
+  const plan = planCopies(src, "LP-0227_x", tmp, "LP-0227", ["pc"]);
+  await fs.mkdir(path.dirname(plan[0].to), { recursive: true });
+  await fs.writeFile(plan[0].to, "OLD"); await fs.writeFile(plan[1].to, "OLDFV");
+  const r = await copyReplace(plan, bak, "S1");
+  assert.equal(r.copied.length, 1); assert.equal(r.replaced.length, 1); assert.equal(r.missing.length, 1);
+  assert.equal(await fs.readFile(plan[0].to, "utf8"), "NEW");
+  assert.equal(await fs.readFile(r.replaced[0].backup, "utf8"), "OLD");
+  assert.equal(await fs.readFile(plan[1].to, "utf8"), "OLDFV");
+});
