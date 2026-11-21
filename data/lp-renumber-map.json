@@ -1,6 +1,6 @@
 {
- "note": "LPの番号の振り直しの対応表（案）。DIS-LP の数字 = LP の数字に作り直した（2026-11-21）。ユーザーの再確認後に、確定する。excluded_duplicate は、同じ rdlp の投稿が別の LP にあるため、DIS-LP の番号を作らない（削除はしない）。",
- "status": "draft",
+ "note": "LP の番号を詰めて、DIS-LP の数字と、そろえる対応表。ユーザーが一覧表を確認して、確定した（2026-11-21。番号を詰める方針も、2026-11-21 に確認）。Notion・CBS・ナレッジ・台帳の番号の変更は、別の段階（バックアップと手順の確認が必要）。",
+ "status": "confirmed",
  "createdAt": "2026-11-21",
  "items": [
   {
@@ -14,7 +14,8 @@
    ],
    "oldFolder": "LP-0001_ルミアグラス",
    "newFolder": "DIS-LP-0001_ルミアグラス",
-   "note": null
+   "note": null,
+   "newLp": "LP-0001"
   },
   {
    "newId": "DIS-LP-0002",
@@ -27,7 +28,8 @@
    ],
    "oldFolder": "LP-0002_金山納豆",
    "newFolder": "DIS-LP-0002_金山納豆",
-   "note": null
+   "note": null,
+   "newLp": "LP-0002"
   },
   {
    "newId": "DIS-LP-0003",
@@ -40,7 +42,8 @@
    ],
    "oldFolder": "LP-0003_気くばり御膳_お試し4食コース",
    "newFolder": "DIS-LP-0003_気くばり御膳_お試し4食コース",
-   "note": null
+   "note": null,
+   "newLp": "LP-0003"
   },
   {
    "newId": "DIS-LP-0004",
@@ -53,7 +56,8 @@
    ],
    "oldFolder": "LP-0004_front_voice",
    "newFolder": "DIS-LP-0004_front_voice",
-   "note": null
+   "note": null,
+   "newLp": "LP-0004"
   },
   {
    "newId": "DIS-LP-0005",
@@ -66,7 +70,8 @@
    ],
    "oldFolder": "LP-0005_Sweet_AMERICA",
    "newFolder": "DIS-LP-0005_Sweet_AMERICA",
-   "note": null
+   "note": null,
+   "newLp": "LP-0005"
   },
   {
    "newId": "DIS-LP-0006",
@@ -79,7 +84,8 @@
    ],
    "oldFolder": "LP-0006_CUP_NOODLE_Light",
    "newFolder": "DIS-LP-0006_CUP_NOODLE_Light",
-   "note": null
+   "note": null,
+   "newLp": "LP-0006"
   },
   {
    "newId": "DIS-LP-0007",
@@ -92,7 +98,8 @@
    ],
    "oldFolder": "LP-0007_助成金コンサルタント_Match",
    "newFolder": "DIS-LP-0007_助成金コンサルタント_Match",
-   "note": null
+   "note": null,
+   "newLp": "LP-0007"
   },
   {
    "newId": "DIS-LP-0008",
@@ -105,7 +112,8 @@
    ],
    "oldFolder": "LP-0008_PASTA_de_PON",
    "newFolder": "DIS-LP-0008_PASTA_de_PON",
-   "note": null
+   "note": null,
+   "newLp": "LP-0008"
   },
   {
    "newId": "DIS-LP-0009",
@@ -118,7 +126,8 @@
    ],
    "oldFolder": "LP-0009_サンサンスポンジ",
    "newFolder": "DIS-LP-0009_サンサンスポンジ",
-   "note": null
+   "note": null,
+   "newLp": "LP-0009"
   },
   {
    "newId": "DIS-LP-0010",
@@ -131,7 +140,8 @@
    ],
    "oldFolder": "LP-0010_ホーウィン_シェルコードバン長財布",
    "newFolder": "DIS-LP-0010_ホーウィン_シェルコードバン長財布",
-   "note": null
+   "note": null,
+   "newLp": "LP-0010"
   },
   {
    "newId": "DIS-LP-0011",
@@ -144,7 +154,8 @@
    ],
    "oldFolder": "LP-0011_POCOP_Rouge",
    "newFolder": "DIS-LP-0011_POCOP_Rouge",
-   "note": null
+   "note": null,
+   "newLp": "LP-0011"
   },
   {
    "newId": "DIS-LP-0012",
@@ -157,7 +168,8 @@
    ],
    "oldFolder": "LP-0012_SUNGLASSES",
    "newFolder": "DIS-LP-0012_SUNGLASSES",
-   "note": null
+   "note": null,
+   "newLp": "LP-0012"
   },
   {
    "newId": "DIS-LP-0013",
@@ -170,7 +182,8 @@
    ],
    "oldFolder": "LP-0013_グレーピー_グレープ_&_ティー_ジェリ",
    "newFolder": "DIS-LP-0013_グレーピー_グレープ_&_ティー_ジェリ",
-   "note": null
+   "note": null,
+   "newLp": "LP-0013"
   },
   {
    "newId": "DIS-LP-0014",
@@ -183,7 +196,8 @@
    ],
    "oldFolder": "LP-0014_チョコボール",
    "newFolder": "DIS-LP-0014_チョコボール",
-   "note": null
+   "note": null,
+   "newLp": "LP-0014"
   },
   {
    "newId": "DIS-LP-0015",
@@ -196,7 +210,8 @@
    ],
    "oldFolder": "LP-0015_VOX",
    "newFolder": "DIS-LP-0015_VOX",
-   "note": null
+   "note": null,
+   "newLp": "LP-0015"
   },
   {
    "newId": "DIS-LP-0016",
@@ -209,7 +224,8 @@
    ],
    "oldFolder": "LP-0016_rela.cure_ルームミスト",
    "newFolder": "DIS-LP-0016_rela.cure_ルームミスト",
-   "note": null
+   "note": null,
+   "newLp": "LP-0016"
   },
   {
    "newId": "DIS-LP-0017",
@@ -222,7 +238,8 @@
    ],
    "oldFolder": "LP-0017_OANDA証券の法人口座開設",
    "newFolder": "DIS-LP-0017_OANDA証券の法人口座開設",
-   "note": null
+   "note": null,
+   "newLp": "LP-0017"
   },
   {
    "newId": "DIS-LP-0018",
@@ -235,7 +252,8 @@
    ],
    "oldFolder": "LP-0018_炊込みご飯の素「椎茸メシ」",
    "newFolder": "DIS-LP-0018_炊込みご飯の素「椎茸メシ」",
-   "note": null
+   "note": null,
+   "newLp": "LP-0018"
   },
   {
    "newId": "DIS-LP-0019",
@@ -248,7 +266,8 @@
    ],
    "oldFolder": "LP-0019_寝ながらメディキュット",
    "newFolder": "DIS-LP-0019_寝ながらメディキュット",
-   "note": null
+   "note": null,
+   "newLp": "LP-0019"
   },
   {
    "newId": "DIS-LP-0020",
@@ -261,7 +280,8 @@
    ],
    "oldFolder": "LP-0020_クロサイドプラス",
    "newFolder": "DIS-LP-0020_クロサイドプラス",
-   "note": null
+   "note": null,
+   "newLp": "LP-0020"
   },
   {
    "newId": "DIS-LP-0021",
@@ -274,7 +294,8 @@
    ],
    "oldFolder": "LP-0021_ゴルフ専門トレーニングジム_RiDEAL",
    "newFolder": "DIS-LP-0021_ゴルフ専門トレーニングジム_RiDEAL",
-   "note": null
+   "note": null,
+   "newLp": "LP-0021"
   },
   {
    "newId": "DIS-LP-0022",
@@ -287,7 +308,8 @@
    ],
    "oldFolder": "LP-0022_ほうじ茶ラテ",
    "newFolder": "DIS-LP-0022_ほうじ茶ラテ",
-   "note": null
+   "note": null,
+   "newLp": "LP-0022"
   },
   {
    "newId": "DIS-LP-0023",
@@ -300,7 +322,8 @@
    ],
    "oldFolder": "LP-0023_インドカレー8食セット",
    "newFolder": "DIS-LP-0023_インドカレー8食セット",
-   "note": null
+   "note": null,
+   "newLp": "LP-0023"
   },
   {
    "newId": "DIS-LP-0024",
@@ -313,7 +336,8 @@
    ],
    "oldFolder": "LP-0024_秋のスイーツをもっとおいしくするコーヒー",
    "newFolder": "DIS-LP-0024_秋のスイーツをもっとおいしくするコーヒー",
-   "note": null
+   "note": null,
+   "newLp": "LP-0024"
   },
   {
    "newId": "DIS-LP-0025",
@@ -326,7 +350,8 @@
    ],
    "oldFolder": "LP-0025_抹茶フォンデュ",
    "newFolder": "DIS-LP-0025_抹茶フォンデュ",
-   "note": null
+   "note": null,
+   "newLp": "LP-0025"
   },
   {
    "newId": "DIS-LP-0026",
@@ -339,7 +364,8 @@
    ],
    "oldFolder": "LP-0026_快調茶",
    "newFolder": "DIS-LP-0026_快調茶",
-   "note": null
+   "note": null,
+   "newLp": "LP-0026"
   },
   {
    "newId": "DIS-LP-0027",
@@ -352,7 +378,8 @@
    ],
    "oldFolder": "LP-0027_PEONIA_美白BBクリーム",
    "newFolder": "DIS-LP-0027_PEONIA_美白BBクリーム",
-   "note": null
+   "note": null,
+   "newLp": "LP-0027"
   },
   {
    "newId": "DIS-LP-0028",
@@ -365,7 +392,8 @@
    ],
    "oldFolder": "LP-0028_マルチビタミン&ミネラル",
    "newFolder": "DIS-LP-0028_マルチビタミン&ミネラル",
-   "note": null
+   "note": null,
+   "newLp": "LP-0028"
   },
   {
    "newId": "DIS-LP-0029",
@@ -378,7 +406,8 @@
    ],
    "oldFolder": "LP-0029_M&Aベストパートナーズ",
    "newFolder": "DIS-LP-0029_M&Aベストパートナーズ",
-   "note": null
+   "note": null,
+   "newLp": "LP-0029"
   },
   {
    "newId": "DIS-LP-0030",
@@ -391,7 +420,8 @@
    ],
    "oldFolder": "LP-0030_EXOCOMPLEX_レッドドラゴンフル",
    "newFolder": "DIS-LP-0030_EXOCOMPLEX_レッドドラゴンフル",
-   "note": null
+   "note": null,
+   "newLp": "LP-0030"
   },
   {
    "newId": "DIS-LP-0031",
@@ -404,7 +434,8 @@
    ],
    "oldFolder": "LP-0031_HERITAGE",
    "newFolder": "DIS-LP-0031_HERITAGE",
-   "note": null
+   "note": null,
+   "newLp": "LP-0031"
   },
   {
    "newId": "DIS-LP-0032",
@@ -417,7 +448,8 @@
    ],
    "oldFolder": "LP-0032_ギリシャヨーグラーノ",
    "newFolder": "DIS-LP-0032_ギリシャヨーグラーノ",
-   "note": null
+   "note": null,
+   "newLp": "LP-0032"
   },
   {
    "newId": "DIS-LP-0033",
@@ -430,7 +462,8 @@
    ],
    "oldFolder": "LP-0033_冬を楽しむインタラクティブアート_雪とく",
    "newFolder": "DIS-LP-0033_冬を楽しむインタラクティブアート_雪とく",
-   "note": null
+   "note": null,
+   "newLp": "LP-0033"
   },
   {
    "newId": "DIS-LP-0034",
@@ -443,7 +476,8 @@
    ],
    "oldFolder": "LP-0034_古都と港町で夏めぐり",
    "newFolder": "DIS-LP-0034_古都と港町で夏めぐり",
-   "note": null
+   "note": null,
+   "newLp": "LP-0034"
   },
   {
    "newId": "DIS-LP-0035",
@@ -456,7 +490,8 @@
    ],
    "oldFolder": "LP-0035_インドの刺繍店_タンカ",
    "newFolder": "DIS-LP-0035_インドの刺繍店_タンカ",
-   "note": null
+   "note": null,
+   "newLp": "LP-0035"
   },
   {
    "newId": "DIS-LP-0036",
@@ -469,7 +504,8 @@
    ],
    "oldFolder": "LP-0036_SHISEIDO_オイデルミン_エッセン",
    "newFolder": "DIS-LP-0036_SHISEIDO_オイデルミン_エッセン",
-   "note": null
+   "note": null,
+   "newLp": "LP-0036"
   },
   {
    "newId": "DIS-LP-0037",
@@ -482,7 +518,8 @@
    ],
    "oldFolder": "LP-0037_大辛ファイヤー",
    "newFolder": "DIS-LP-0037_大辛ファイヤー",
-   "note": null
+   "note": null,
+   "newLp": "LP-0037"
   },
   {
    "newId": "DIS-LP-0038",
@@ -495,7 +532,8 @@
    ],
    "oldFolder": "LP-0038_レッドドラゴン",
    "newFolder": "DIS-LP-0038_レッドドラゴン",
-   "note": null
+   "note": null,
+   "newLp": "LP-0038"
   },
   {
    "newId": "DIS-LP-0039",
@@ -508,7 +546,8 @@
    ],
    "oldFolder": "LP-0039_ゴルフレッスン",
    "newFolder": "DIS-LP-0039_ゴルフレッスン",
-   "note": null
+   "note": null,
+   "newLp": "LP-0039"
   },
   {
    "newId": "DIS-LP-0040",
@@ -521,7 +560,8 @@
    ],
    "oldFolder": "LP-0040_ライザップゴルフ",
    "newFolder": "DIS-LP-0040_ライザップゴルフ",
-   "note": null
+   "note": null,
+   "newLp": "LP-0040"
   },
   {
    "newId": "DIS-LP-0041",
@@ -534,7 +574,8 @@
    ],
    "oldFolder": "LP-0041_カイテク",
    "newFolder": "DIS-LP-0041_カイテク",
-   "note": null
+   "note": null,
+   "newLp": "LP-0041"
   },
   {
    "newId": "DIS-LP-0042",
@@ -547,7 +588,8 @@
    ],
    "oldFolder": "LP-0042_Webマーケティング×生成AIで最先端ス",
    "newFolder": "DIS-LP-0042_Webマーケティング×生成AIで最先端ス",
-   "note": null
+   "note": null,
+   "newLp": "LP-0042"
   },
   {
    "newId": "DIS-LP-0043",
@@ -560,7 +602,8 @@
    ],
    "oldFolder": "LP-0043_医療脱毛",
    "newFolder": "DIS-LP-0043_医療脱毛",
-   "note": null
+   "note": null,
+   "newLp": "LP-0043"
   },
   {
    "newId": "DIS-LP-0044",
@@ -573,7 +616,8 @@
    ],
    "oldFolder": "LP-0044_オンライン英会話",
    "newFolder": "DIS-LP-0044_オンライン英会話",
-   "note": null
+   "note": null,
+   "newLp": "LP-0044"
   },
   {
    "newId": "DIS-LP-0045",
@@ -586,7 +630,8 @@
    ],
    "oldFolder": "LP-0045_COCO塾",
    "newFolder": "DIS-LP-0045_COCO塾",
-   "note": null
+   "note": null,
+   "newLp": "LP-0045"
   },
   {
    "newId": "DIS-LP-0046",
@@ -599,7 +644,8 @@
    ],
    "oldFolder": "LP-0046_ライザップ",
    "newFolder": "DIS-LP-0046_ライザップ",
-   "note": null
+   "note": null,
+   "newLp": "LP-0046"
   },
   {
    "newId": "DIS-LP-0047",
@@ -612,7 +658,8 @@
    ],
    "oldFolder": "LP-0047_レッドドラゴン",
    "newFolder": "DIS-LP-0047_レッドドラゴン",
-   "note": null
+   "note": null,
+   "newLp": "LP-0047"
   },
   {
    "newId": "DIS-LP-0048",
@@ -625,7 +672,8 @@
    ],
    "oldFolder": "LP-0048_パーソナルトレーニング",
    "newFolder": "DIS-LP-0048_パーソナルトレーニング",
-   "note": null
+   "note": null,
+   "newLp": "LP-0048"
   },
   {
    "newId": "DIS-LP-0049",
@@ -639,7 +687,8 @@
    ],
    "oldFolder": "LP-0049_不動産投資",
    "newFolder": "DIS-LP-0049_不動産投資",
-   "note": null
+   "note": null,
+   "newLp": "LP-0049"
   },
   {
    "newId": "DIS-LP-0050",
@@ -653,7 +702,8 @@
    ],
    "oldFolder": "LP-0050_遺品整理_ミライル_まごころサービス",
    "newFolder": "DIS-LP-0050_遺品整理_ミライル_まごころサービス",
-   "note": null
+   "note": null,
+   "newLp": "LP-0050"
   },
   {
    "newId": "DIS-LP-0051",
@@ -666,7 +716,8 @@
    ],
    "oldFolder": "LP-0051_「実感できる」ホットヨガならLAVA",
    "newFolder": "DIS-LP-0051_「実感できる」ホットヨガならLAVA",
-   "note": null
+   "note": null,
+   "newLp": "LP-0051"
   },
   {
    "newId": "DIS-LP-0052",
@@ -679,7 +730,8 @@
    ],
    "oldFolder": "LP-0052_ストロベリーベリーマッチフラペチーノ",
    "newFolder": "DIS-LP-0052_ストロベリーベリーマッチフラペチーノ",
-   "note": null
+   "note": null,
+   "newLp": "LP-0052"
   },
   {
    "newId": "DIS-LP-0053",
@@ -692,7 +744,8 @@
    ],
    "oldFolder": "LP-0053_菌活美人ステラ_乳酸菌生酵素",
    "newFolder": "DIS-LP-0053_菌活美人ステラ_乳酸菌生酵素",
-   "note": null
+   "note": null,
+   "newLp": "LP-0053"
   },
   {
    "newId": "DIS-LP-0054",
@@ -705,7 +758,8 @@
    ],
    "oldFolder": "LP-0054_ザ・タンサン",
    "newFolder": "DIS-LP-0054_ザ・タンサン",
-   "note": null
+   "note": null,
+   "newLp": "LP-0054"
   },
   {
    "newId": "DIS-LP-0055",
@@ -718,7 +772,8 @@
    ],
    "oldFolder": "LP-0055_プレミアムブラントゥース",
    "newFolder": "DIS-LP-0055_プレミアムブラントゥース",
-   "note": null
+   "note": null,
+   "newLp": "LP-0055"
   },
   {
    "newId": "DIS-LP-0056",
@@ -731,7 +786,8 @@
    ],
    "oldFolder": "LP-0056_パーソナルプライベートジム",
    "newFolder": "DIS-LP-0056_パーソナルプライベートジム",
-   "note": null
+   "note": null,
+   "newLp": "LP-0056"
   },
   {
    "newId": "DIS-LP-0057",
@@ -744,7 +800,8 @@
    ],
    "oldFolder": "LP-0057_カゴの110番",
    "newFolder": "DIS-LP-0057_カゴの110番",
-   "note": null
+   "note": null,
+   "newLp": "LP-0057"
   },
   {
    "newId": "DIS-LP-0058",
@@ -757,7 +814,8 @@
    ],
    "oldFolder": "LP-0058_WEBデザインスクール",
    "newFolder": "DIS-LP-0058_WEBデザインスクール",
-   "note": null
+   "note": null,
+   "newLp": "LP-0058"
   },
   {
    "newId": "DIS-LP-0059",
@@ -770,7 +828,8 @@
    ],
    "oldFolder": "LP-0059_MS-Japan",
    "newFolder": "DIS-LP-0059_MS-Japan",
-   "note": null
+   "note": null,
+   "newLp": "LP-0059"
   },
   {
    "newId": "DIS-LP-0060",
@@ -783,7 +842,8 @@
    ],
    "oldFolder": "LP-0060_オンライン診療",
    "newFolder": "DIS-LP-0060_オンライン診療",
-   "note": null
+   "note": null,
+   "newLp": "LP-0060"
   },
   {
    "newId": "DIS-LP-0061",
@@ -796,7 +856,8 @@
    ],
    "oldFolder": "LP-0061_ランディングページ制作",
    "newFolder": "DIS-LP-0061_ランディングページ制作",
-   "note": null
+   "note": null,
+   "newLp": "LP-0061"
   },
   {
    "newId": "DIS-LP-0062",
@@ -809,7 +870,8 @@
    ],
    "oldFolder": "LP-0062_船井総研のクラウド評価advance",
    "newFolder": "DIS-LP-0062_船井総研のクラウド評価advance",
-   "note": null
+   "note": null,
+   "newLp": "LP-0062"
   },
   {
    "newId": "DIS-LP-0063",
@@ -822,7 +884,8 @@
    ],
    "oldFolder": "LP-0063_ドカ売れするLP制作",
    "newFolder": "DIS-LP-0063_ドカ売れするLP制作",
-   "note": null
+   "note": null,
+   "newLp": "LP-0063"
   },
   {
    "newId": "DIS-LP-0064",
@@ -835,7 +898,8 @@
    ],
    "oldFolder": "LP-0064_マンション経営セミナー",
    "newFolder": "DIS-LP-0064_マンション経営セミナー",
-   "note": null
+   "note": null,
+   "newLp": "LP-0064"
   },
   {
    "newId": "DIS-LP-0065",
@@ -848,7 +912,8 @@
    ],
    "oldFolder": "LP-0065_オルチャニスト",
    "newFolder": "DIS-LP-0065_オルチャニスト",
-   "note": null
+   "note": null,
+   "newLp": "LP-0065"
   },
   {
    "newId": "DIS-LP-0066",
@@ -861,7 +926,8 @@
    ],
    "oldFolder": "LP-0066_経理・人事。法務の転職",
    "newFolder": "DIS-LP-0066_経理・人事。法務の転職",
-   "note": null
+   "note": null,
+   "newLp": "LP-0066"
   },
   {
    "newId": "DIS-LP-0067",
@@ -874,7 +940,8 @@
    ],
    "oldFolder": "LP-0067_アプリでかんたん_NISAもりそな",
    "newFolder": "DIS-LP-0067_アプリでかんたん_NISAもりそな",
-   "note": null
+   "note": null,
+   "newLp": "LP-0067"
   },
   {
    "newId": "DIS-LP-0068",
@@ -887,7 +954,8 @@
    ],
    "oldFolder": "LP-0068_英語1年マスタープログラム「トライズ」",
    "newFolder": "DIS-LP-0068_英語1年マスタープログラム「トライズ」",
-   "note": null
+   "note": null,
+   "newLp": "LP-0068"
   },
   {
    "newId": "DIS-LP-0069",
@@ -901,7 +969,8 @@
    ],
    "oldFolder": "LP-0069_グリーンゴルフ21",
    "newFolder": "DIS-LP-0069_グリーンゴルフ21",
-   "note": null
+   "note": null,
+   "newLp": "LP-0069"
   },
   {
    "newId": "DIS-LP-0070",
@@ -915,7 +984,8 @@
    ],
    "oldFolder": "LP-0070_2024新春キャンペーン",
    "newFolder": "DIS-LP-0070_2024新春キャンペーン",
-   "note": null
+   "note": null,
+   "newLp": "LP-0070"
   },
   {
    "newId": "DIS-LP-0071",
@@ -928,7 +998,8 @@
    ],
    "oldFolder": "LP-0071_ゴルフアカデミー",
    "newFolder": "DIS-LP-0071_ゴルフアカデミー",
-   "note": null
+   "note": null,
+   "newLp": "LP-0071"
   },
   {
    "newId": "DIS-LP-0072",
@@ -941,7 +1012,8 @@
    ],
    "oldFolder": "LP-0072_ゴルフレッスン",
    "newFolder": "DIS-LP-0072_ゴルフレッスン",
-   "note": null
+   "note": null,
+   "newLp": "LP-0072"
   },
   {
    "newId": "DIS-LP-0073",
@@ -954,7 +1026,8 @@
    ],
    "oldFolder": "LP-0073_フランチャイズ選びで失敗しないためのセミ",
    "newFolder": "DIS-LP-0073_フランチャイズ選びで失敗しないためのセミ",
-   "note": null
+   "note": null,
+   "newLp": "LP-0073"
   },
   {
    "newId": "DIS-LP-0074",
@@ -967,7 +1040,8 @@
    ],
    "oldFolder": "LP-0074_おためしレッスン",
    "newFolder": "DIS-LP-0074_おためしレッスン",
-   "note": null
+   "note": null,
+   "newLp": "LP-0074"
   },
   {
    "newId": "DIS-LP-0075",
@@ -981,7 +1055,8 @@
    ],
    "oldFolder": "LP-0075_どんどん割",
    "newFolder": "DIS-LP-0075_どんどん割",
-   "note": null
+   "note": null,
+   "newLp": "LP-0075"
   },
   {
    "newId": "DIS-LP-0076",
@@ -994,7 +1069,8 @@
    ],
    "oldFolder": "LP-0076_DMM英会話",
    "newFolder": "DIS-LP-0076_DMM英会話",
-   "note": null
+   "note": null,
+   "newLp": "LP-0076"
   },
   {
    "newId": "DIS-LP-0077",
@@ -1007,7 +1083,8 @@
    ],
    "oldFolder": "LP-0077_ECC外語学院",
    "newFolder": "DIS-LP-0077_ECC外語学院",
-   "note": null
+   "note": null,
+   "newLp": "LP-0077"
   },
   {
    "newId": "DIS-LP-0078",
@@ -1020,7 +1097,8 @@
    ],
    "oldFolder": "LP-0078_12人のエキスパート達が語るメールセミナ",
    "newFolder": "DIS-LP-0078_12人のエキスパート達が語るメールセミナ",
-   "note": null
+   "note": null,
+   "newLp": "LP-0078"
   },
   {
    "newId": "DIS-LP-0079",
@@ -1033,7 +1111,8 @@
    ],
    "oldFolder": "LP-0079_住友不動産販売",
    "newFolder": "DIS-LP-0079_住友不動産販売",
-   "note": null
+   "note": null,
+   "newLp": "LP-0079"
   },
   {
    "newId": "DIS-LP-0080",
@@ -1046,7 +1125,8 @@
    ],
    "oldFolder": "LP-0080_クラウドバンク",
    "newFolder": "DIS-LP-0080_クラウドバンク",
-   "note": null
+   "note": null,
+   "newLp": "LP-0080"
   },
   {
    "newId": "DIS-LP-0081",
@@ -1059,7 +1139,8 @@
    ],
    "oldFolder": "LP-0081_鍵のコンシェルジュ",
    "newFolder": "DIS-LP-0081_鍵のコンシェルジュ",
-   "note": null
+   "note": null,
+   "newLp": "LP-0081"
   },
   {
    "newId": "DIS-LP-0082",
@@ -1072,7 +1153,8 @@
    ],
    "oldFolder": "LP-0082_パーソナルプライベートジム",
    "newFolder": "DIS-LP-0082_パーソナルプライベートジム",
-   "note": null
+   "note": null,
+   "newLp": "LP-0082"
   },
   {
    "newId": "DIS-LP-0083",
@@ -1085,7 +1167,8 @@
    ],
    "oldFolder": "LP-0083_パーソナルジム",
    "newFolder": "DIS-LP-0083_パーソナルジム",
-   "note": null
+   "note": null,
+   "newLp": "LP-0083"
   },
   {
    "newId": "DIS-LP-0084",
@@ -1098,7 +1181,8 @@
    ],
    "oldFolder": "LP-0084_スタジオ・ヨギー体験キャンペーン",
    "newFolder": "DIS-LP-0084_スタジオ・ヨギー体験キャンペーン",
-   "note": null
+   "note": null,
+   "newLp": "LP-0084"
   },
   {
    "newId": "DIS-LP-0085",
@@ -1111,7 +1195,8 @@
    ],
    "oldFolder": "LP-0085_TOMAS大崎校開校",
    "newFolder": "DIS-LP-0085_TOMAS大崎校開校",
-   "note": null
+   "note": null,
+   "newLp": "LP-0085"
   },
   {
    "newId": "DIS-LP-0086",
@@ -1124,7 +1209,8 @@
    ],
    "oldFolder": "LP-0086_瓶チュー_BIN-CHU",
    "newFolder": "DIS-LP-0086_瓶チュー_BIN-CHU",
-   "note": null
+   "note": null,
+   "newLp": "LP-0086"
   },
   {
    "newId": "DIS-LP-0087",
@@ -1137,7 +1223,8 @@
    ],
    "oldFolder": "LP-0087_全額返金キャンペーン実施中",
    "newFolder": "DIS-LP-0087_全額返金キャンペーン実施中",
-   "note": null
+   "note": null,
+   "newLp": "LP-0087"
   },
   {
    "newId": "DIS-LP-0088",
@@ -1150,7 +1237,8 @@
    ],
    "oldFolder": "LP-0088_経費精算システム_キンクラ",
    "newFolder": "DIS-LP-0088_経費精算システム_キンクラ",
-   "note": null
+   "note": null,
+   "newLp": "LP-0088"
   },
   {
    "newId": "DIS-LP-0089",
@@ -1163,7 +1251,8 @@
    ],
    "oldFolder": "LP-0089_BEYOND_パーソナルジム",
    "newFolder": "DIS-LP-0089_BEYOND_パーソナルジム",
-   "note": null
+   "note": null,
+   "newLp": "LP-0089"
   },
   {
    "newId": "DIS-LP-0090",
@@ -1176,7 +1265,8 @@
    ],
    "oldFolder": "LP-0090_世田谷フィジコ",
    "newFolder": "DIS-LP-0090_世田谷フィジコ",
-   "note": null
+   "note": null,
+   "newLp": "LP-0090"
   },
   {
    "newId": "DIS-LP-0091",
@@ -1189,7 +1279,8 @@
    ],
    "oldFolder": "LP-0091_大阪のプライベートジムRise",
    "newFolder": "DIS-LP-0091_大阪のプライベートジムRise",
-   "note": null
+   "note": null,
+   "newLp": "LP-0091"
   },
   {
    "newId": "DIS-LP-0092",
@@ -1202,7 +1293,8 @@
    ],
    "oldFolder": "LP-0092_モバイル保険",
    "newFolder": "DIS-LP-0092_モバイル保険",
-   "note": null
+   "note": null,
+   "newLp": "LP-0092"
   },
   {
    "newId": "DIS-LP-0093",
@@ -1215,7 +1307,8 @@
    ],
    "oldFolder": "LP-0093_MONPE（モンペ）スツールひのき",
    "newFolder": "DIS-LP-0093_MONPE（モンペ）スツールひのき",
-   "note": null
+   "note": null,
+   "newLp": "LP-0093"
   },
   {
    "newId": "DIS-LP-0094",
@@ -1228,7 +1321,8 @@
    ],
    "oldFolder": "LP-0094_フルリ_クリアゲルクレンズ",
    "newFolder": "DIS-LP-0094_フルリ_クリアゲルクレンズ",
-   "note": null
+   "note": null,
+   "newLp": "LP-0094"
   },
   {
    "newId": "DIS-LP-0095",
@@ -1241,7 +1335,8 @@
    ],
    "oldFolder": "LP-0095_全身痩せ×3回体験コース",
    "newFolder": "DIS-LP-0095_全身痩せ×3回体験コース",
-   "note": null
+   "note": null,
+   "newLp": "LP-0095"
   },
   {
    "newId": "DIS-LP-0096",
@@ -1254,7 +1349,8 @@
    ],
    "oldFolder": "LP-0096_ライザップ",
    "newFolder": "DIS-LP-0096_ライザップ",
-   "note": null
+   "note": null,
+   "newLp": "LP-0096"
   },
   {
    "newId": "DIS-LP-0097",
@@ -1267,7 +1363,8 @@
    ],
    "oldFolder": "LP-0097_LAVAホットヨガ通い放題プラン",
    "newFolder": "DIS-LP-0097_LAVAホットヨガ通い放題プラン",
-   "note": null
+   "note": null,
+   "newLp": "LP-0097"
   },
   {
    "newId": "DIS-LP-0098",
@@ -1280,7 +1377,8 @@
    ],
    "oldFolder": "LP-0098_WEB食い_オンラインスクール",
    "newFolder": "DIS-LP-0098_WEB食い_オンラインスクール",
-   "note": null
+   "note": null,
+   "newLp": "LP-0098"
   },
   {
    "newId": "DIS-LP-0099",
@@ -1293,7 +1391,8 @@
    ],
    "oldFolder": "LP-0099_中古ワンルームマンション経営セミナー",
    "newFolder": "DIS-LP-0099_中古ワンルームマンション経営セミナー",
-   "note": null
+   "note": null,
+   "newLp": "LP-0099"
   },
   {
    "newId": "DIS-LP-0100",
@@ -1306,7 +1405,8 @@
    ],
    "oldFolder": "LP-0100_キャリタク",
    "newFolder": "DIS-LP-0100_キャリタク",
-   "note": null
+   "note": null,
+   "newLp": "LP-0100"
   },
   {
    "newId": "DIS-LP-0101",
@@ -1319,7 +1419,8 @@
    ],
    "oldFolder": "LP-0101_不動産投資",
    "newFolder": "DIS-LP-0101_不動産投資",
-   "note": null
+   "note": null,
+   "newLp": "LP-0101"
   },
   {
    "newId": "DIS-LP-0102",
@@ -1332,7 +1433,8 @@
    ],
    "oldFolder": "LP-0102_総合学園ヒューマンアカデミー",
    "newFolder": "DIS-LP-0102_総合学園ヒューマンアカデミー",
-   "note": null
+   "note": null,
+   "newLp": "LP-0102"
   },
   {
    "newId": "DIS-LP-0103",
@@ -1345,7 +1447,8 @@
    ],
    "oldFolder": "LP-0103_世界に通じる英語力が身につく_個別指導型",
    "newFolder": "DIS-LP-0103_世界に通じる英語力が身につく_個別指導型",
-   "note": null
+   "note": null,
+   "newLp": "LP-0103"
   },
   {
    "newId": "DIS-LP-0104",
@@ -1358,7 +1461,8 @@
    ],
    "oldFolder": "LP-0104_ECCジュニアオンライン教室",
    "newFolder": "DIS-LP-0104_ECCジュニアオンライン教室",
-   "note": null
+   "note": null,
+   "newLp": "LP-0104"
   },
   {
    "newId": "DIS-LP-0105",
@@ -1371,7 +1475,8 @@
    ],
    "oldFolder": "LP-0105_パーソナルトレーニングジム",
    "newFolder": "DIS-LP-0105_パーソナルトレーニングジム",
-   "note": null
+   "note": null,
+   "newLp": "LP-0105"
   },
   {
    "newId": "DIS-LP-0106",
@@ -1384,7 +1489,8 @@
    ],
    "oldFolder": "LP-0106_パーソナルトレーニング・ダイエットジム",
    "newFolder": "DIS-LP-0106_パーソナルトレーニング・ダイエットジム",
-   "note": null
+   "note": null,
+   "newLp": "LP-0106"
   },
   {
    "newId": "DIS-LP-0107",
@@ -1397,7 +1503,8 @@
    ],
    "oldFolder": "LP-0107_ボディメイク専門パーソナルトレーニングジ",
    "newFolder": "DIS-LP-0107_ボディメイク専門パーソナルトレーニングジ",
-   "note": null
+   "note": null,
+   "newLp": "LP-0107"
   },
   {
    "newId": "DIS-LP-0108",
@@ -1410,7 +1517,8 @@
    ],
    "oldFolder": "LP-0108_フィットネスハウス",
    "newFolder": "DIS-LP-0108_フィットネスハウス",
-   "note": null
+   "note": null,
+   "newLp": "LP-0108"
   },
   {
    "newId": "DIS-LP-0109",
@@ -1423,7 +1531,8 @@
    ],
    "oldFolder": "LP-0109_ゴルフスクール",
    "newFolder": "DIS-LP-0109_ゴルフスクール",
-   "note": null
+   "note": null,
+   "newLp": "LP-0109"
   },
   {
    "newId": "DIS-LP-0110",
@@ -1436,7 +1545,8 @@
    ],
    "oldFolder": "LP-0110_パーソナルトレーニングジム_G-ROW",
    "newFolder": "DIS-LP-0110_パーソナルトレーニングジム_G-ROW",
-   "note": null
+   "note": null,
+   "newLp": "LP-0110"
   },
   {
    "newId": "DIS-LP-0111",
@@ -1449,7 +1559,8 @@
    ],
    "oldFolder": "LP-0111_テニススクール",
    "newFolder": "DIS-LP-0111_テニススクール",
-   "note": null
+   "note": null,
+   "newLp": "LP-0111"
   },
   {
    "newId": "DIS-LP-0112",
@@ -1462,7 +1573,8 @@
    ],
    "oldFolder": "LP-0112_D.I.Sアカデミー",
    "newFolder": "DIS-LP-0112_D.I.Sアカデミー",
-   "note": null
+   "note": null,
+   "newLp": "LP-0112"
   },
   {
    "newId": "DIS-LP-0113",
@@ -1475,7 +1587,8 @@
    ],
    "oldFolder": "LP-0113_総合人材派遣",
    "newFolder": "DIS-LP-0113_総合人材派遣",
-   "note": null
+   "note": null,
+   "newLp": "LP-0113"
   },
   {
    "newId": "DIS-LP-0114",
@@ -1488,7 +1601,8 @@
    ],
    "oldFolder": "LP-0114_フロンティア株式会社",
    "newFolder": "DIS-LP-0114_フロンティア株式会社",
-   "note": null
+   "note": null,
+   "newLp": "LP-0114"
   },
   {
    "newId": "DIS-LP-0115",
@@ -1501,7 +1615,8 @@
    ],
    "oldFolder": "LP-0115_出張修理引取り・お届けサービス",
    "newFolder": "DIS-LP-0115_出張修理引取り・お届けサービス",
-   "note": null
+   "note": null,
+   "newLp": "LP-0115"
   },
   {
    "newId": "DIS-LP-0116",
@@ -1514,7 +1629,8 @@
    ],
    "oldFolder": "LP-0116_天然水ウォーターサーバー",
    "newFolder": "DIS-LP-0116_天然水ウォーターサーバー",
-   "note": null
+   "note": null,
+   "newLp": "LP-0116"
   },
   {
    "newId": "DIS-LP-0117",
@@ -1527,7 +1643,8 @@
    ],
    "oldFolder": "LP-0117_Ready_Crew",
    "newFolder": "DIS-LP-0117_Ready_Crew",
-   "note": null
+   "note": null,
+   "newLp": "LP-0117"
   },
   {
    "newId": "DIS-LP-0118",
@@ -1540,7 +1657,8 @@
    ],
    "oldFolder": "LP-0118_ゲームプログラミングスクール",
    "newFolder": "DIS-LP-0118_ゲームプログラミングスクール",
-   "note": null
+   "note": null,
+   "newLp": "LP-0118"
   },
   {
    "newId": "DIS-LP-0119",
@@ -1553,7 +1671,8 @@
    ],
    "oldFolder": "LP-0119_個別指導塾ゴールフリーの2026年春期講",
    "newFolder": "DIS-LP-0119_個別指導塾ゴールフリーの2026年春期講",
-   "note": null
+   "note": null,
+   "newLp": "LP-0119"
   },
   {
    "newId": "DIS-LP-0120",
@@ -1566,7 +1685,8 @@
    ],
    "oldFolder": "LP-0120_EYS音楽教室",
    "newFolder": "DIS-LP-0120_EYS音楽教室",
-   "note": null
+   "note": null,
+   "newLp": "LP-0120"
   },
   {
    "newId": "DIS-LP-0121",
@@ -1579,7 +1699,8 @@
    ],
    "oldFolder": "LP-0121_BEST_SWING_KAMATA",
    "newFolder": "DIS-LP-0121_BEST_SWING_KAMATA",
-   "note": null
+   "note": null,
+   "newLp": "LP-0121"
   },
   {
    "newId": "DIS-LP-0122",
@@ -1592,7 +1713,8 @@
    ],
    "oldFolder": "LP-0122_ymcメディカルトレーナーズスクール",
    "newFolder": "DIS-LP-0122_ymcメディカルトレーナーズスクール",
-   "note": null
+   "note": null,
+   "newLp": "LP-0122"
   },
   {
    "newId": "DIS-LP-0123",
@@ -1605,7 +1727,8 @@
    ],
    "oldFolder": "LP-0123_ヴィーナスアカデミー",
    "newFolder": "DIS-LP-0123_ヴィーナスアカデミー",
-   "note": null
+   "note": null,
+   "newLp": "LP-0123"
   },
   {
    "newId": "DIS-LP-0124",
@@ -1618,7 +1741,8 @@
    ],
    "oldFolder": "LP-0124_テニススクール夏キャンペーン",
    "newFolder": "DIS-LP-0124_テニススクール夏キャンペーン",
-   "note": null
+   "note": null,
+   "newLp": "LP-0124"
   },
   {
    "newId": "DIS-LP-0125",
@@ -1631,7 +1755,8 @@
    ],
    "oldFolder": "LP-0125_アロマテラピー講座",
    "newFolder": "DIS-LP-0125_アロマテラピー講座",
-   "note": null
+   "note": null,
+   "newLp": "LP-0125"
   },
   {
    "newId": "DIS-LP-0126",
@@ -1644,7 +1769,8 @@
    ],
    "oldFolder": "LP-0126_初心者専用ゴルフレッスン",
    "newFolder": "DIS-LP-0126_初心者専用ゴルフレッスン",
-   "note": null
+   "note": null,
+   "newLp": "LP-0126"
   },
   {
    "newId": "DIS-LP-0127",
@@ -1657,7 +1783,8 @@
    ],
    "oldFolder": "LP-0127_中高年・シニア大歓迎求人特集",
    "newFolder": "DIS-LP-0127_中高年・シニア大歓迎求人特集",
-   "note": null
+   "note": null,
+   "newLp": "LP-0127"
   },
   {
    "newId": "DIS-LP-0128",
@@ -1670,7 +1797,8 @@
    ],
    "oldFolder": "LP-0128_株式会社三栄広告社",
    "newFolder": "DIS-LP-0128_株式会社三栄広告社",
-   "note": null
+   "note": null,
+   "newLp": "LP-0128"
   },
   {
    "newId": "DIS-LP-0129",
@@ -1683,7 +1811,8 @@
    ],
    "oldFolder": "LP-0129_とけうまカレー",
    "newFolder": "DIS-LP-0129_とけうまカレー",
-   "note": null
+   "note": null,
+   "newLp": "LP-0129"
   },
   {
    "newId": "DIS-LP-0130",
@@ -1696,7 +1825,8 @@
    ],
    "oldFolder": "LP-0130_ゴルフスタジオZAMET",
    "newFolder": "DIS-LP-0130_ゴルフスタジオZAMET",
-   "note": null
+   "note": null,
+   "newLp": "LP-0130"
   },
   {
    "newId": "DIS-LP-0131",
@@ -1709,7 +1839,8 @@
    ],
    "oldFolder": "LP-0131_セルフ脱毛サロン_つるピカ",
    "newFolder": "DIS-LP-0131_セルフ脱毛サロン_つるピカ",
-   "note": null
+   "note": null,
+   "newLp": "LP-0131"
   },
   {
    "newId": "DIS-LP-0132",
@@ -1722,7 +1853,8 @@
    ],
    "oldFolder": "LP-0132_ヒアロディープパッチ",
    "newFolder": "DIS-LP-0132_ヒアロディープパッチ",
-   "note": null
+   "note": null,
+   "newLp": "LP-0132"
   },
   {
    "newId": "DIS-LP-0133",
@@ -1735,7 +1867,8 @@
    ],
    "oldFolder": "LP-0133_エンワールド_採用サイト",
    "newFolder": "DIS-LP-0133_エンワールド_採用サイト",
-   "note": null
+   "note": null,
+   "newLp": "LP-0133"
   },
   {
    "newId": "DIS-LP-0134",
@@ -1748,7 +1881,8 @@
    ],
    "oldFolder": "LP-0134_自動車保険の三井ダイレクト損保",
    "newFolder": "DIS-LP-0134_自動車保険の三井ダイレクト損保",
-   "note": null
+   "note": null,
+   "newLp": "LP-0134"
   },
   {
    "newId": null,
@@ -1761,10 +1895,11 @@
    ],
    "oldFolder": "LP-0135_MS-Japan",
    "newFolder": null,
-   "note": "LP-0059 と同じ rdlp 227533"
+   "note": "LP-0059 と同じ rdlp 227533",
+   "newLp": null
   },
   {
-   "newId": "DIS-LP-0136",
+   "newId": "DIS-LP-0135",
    "oldLp": "LP-0136",
    "title": "CRAZY_MONEY_セミナー",
    "rdlpId": "200722",
@@ -1773,11 +1908,12 @@
     "DIS-LP-0139"
    ],
    "oldFolder": "LP-0136_CRAZY_MONEY_セミナー",
-   "newFolder": "DIS-LP-0136_CRAZY_MONEY_セミナー",
-   "note": null
+   "newFolder": "DIS-LP-0135_CRAZY_MONEY_セミナー",
+   "note": null,
+   "newLp": "LP-0135"
   },
   {
-   "newId": "DIS-LP-0137",
+   "newId": "DIS-LP-0136",
    "oldLp": "LP-0137",
    "title": "一般社団法人アジアサイエンスカフェ",
    "rdlpId": "227373",
@@ -1786,11 +1922,12 @@
     "DIS-LP-0140"
    ],
    "oldFolder": "LP-0137_一般社団法人アジアサイエンスカフェ",
-   "newFolder": "DIS-LP-0137_一般社団法人アジアサイエンスカフェ",
-   "note": null
+   "newFolder": "DIS-LP-0136_一般社団法人アジアサイエンスカフェ",
+   "note": null,
+   "newLp": "LP-0136"
   },
   {
-   "newId": "DIS-LP-0138",
+   "newId": "DIS-LP-0137",
    "oldLp": "LP-0138",
    "title": "はじめてのテレビCM",
    "rdlpId": "200689",
@@ -1799,11 +1936,12 @@
     "DIS-LP-0141"
    ],
    "oldFolder": "LP-0138_はじめてのテレビCM",
-   "newFolder": "DIS-LP-0138_はじめてのテレビCM",
-   "note": null
+   "newFolder": "DIS-LP-0137_はじめてのテレビCM",
+   "note": null,
+   "newLp": "LP-0137"
   },
   {
-   "newId": "DIS-LP-0139",
+   "newId": "DIS-LP-0138",
    "oldLp": "LP-0139",
    "title": "ワンクリアポ",
    "rdlpId": "200144",
@@ -1812,11 +1950,12 @@
     "DIS-LP-0142"
    ],
    "oldFolder": "LP-0139_ワンクリアポ",
-   "newFolder": "DIS-LP-0139_ワンクリアポ",
-   "note": null
+   "newFolder": "DIS-LP-0138_ワンクリアポ",
+   "note": null,
+   "newLp": "LP-0138"
   },
   {
-   "newId": "DIS-LP-0140",
+   "newId": "DIS-LP-0139",
    "oldLp": "LP-0140",
    "title": "Believe_Technology",
    "rdlpId": "227595",
@@ -1825,11 +1964,12 @@
     "DIS-LP-0143"
    ],
    "oldFolder": "LP-0140_Believe_Technology",
-   "newFolder": "DIS-LP-0140_Believe_Technology",
-   "note": null
+   "newFolder": "DIS-LP-0139_Believe_Technology",
+   "note": null,
+   "newLp": "LP-0139"
   },
   {
-   "newId": "DIS-LP-0141",
+   "newId": "DIS-LP-0140",
    "oldLp": "LP-0141",
    "title": "Video_Learning_Studi",
    "rdlpId": "211541",
@@ -1838,11 +1978,12 @@
     "DIS-LP-0144"
    ],
    "oldFolder": "LP-0141_Video_Learning_Studi",
-   "newFolder": "DIS-LP-0141_Video_Learning_Studi",
-   "note": null
+   "newFolder": "DIS-LP-0140_Video_Learning_Studi",
+   "note": null,
+   "newLp": "LP-0140"
   },
   {
-   "newId": "DIS-LP-0142",
+   "newId": "DIS-LP-0141",
    "oldLp": "LP-0142",
    "title": "BtoB受発注システム",
    "rdlpId": "209937",
@@ -1851,8 +1992,9 @@
     "DIS-LP-0145"
    ],
    "oldFolder": "LP-0142_BtoB受発注システム",
-   "newFolder": "DIS-LP-0142_BtoB受発注システム",
-   "note": null
+   "newFolder": "DIS-LP-0141_BtoB受発注システム",
+   "note": null,
+   "newLp": "LP-0141"
   },
   {
    "newId": null,
@@ -1865,10 +2007,11 @@
    ],
    "oldFolder": "LP-0143_ランディングページ制作",
    "newFolder": null,
-   "note": "LP-0061 と同じ rdlp 221210"
+   "note": "LP-0061 と同じ rdlp 221210",
+   "newLp": null
   },
   {
-   "newId": "DIS-LP-0144",
+   "newId": "DIS-LP-0142",
    "oldLp": "LP-0144",
    "title": "副業アカデミー公式メルマガ",
    "rdlpId": "35920",
@@ -1877,11 +2020,12 @@
     "DIS-LP-0147"
    ],
    "oldFolder": "LP-0144_副業アカデミー公式メルマガ",
-   "newFolder": "DIS-LP-0144_副業アカデミー公式メルマガ",
-   "note": null
+   "newFolder": "DIS-LP-0142_副業アカデミー公式メルマガ",
+   "note": null,
+   "newLp": "LP-0142"
   },
   {
-   "newId": "DIS-LP-0145",
+   "newId": "DIS-LP-0143",
    "oldLp": "LP-0145",
    "title": "ランディングページ（LP）制作",
    "rdlpId": "218993",
@@ -1890,11 +2034,12 @@
     "DIS-LP-0148"
    ],
    "oldFolder": "LP-0145_ランディングページ（LP）制作",
-   "newFolder": "DIS-LP-0145_ランディングページ（LP）制作",
-   "note": null
+   "newFolder": "DIS-LP-0143_ランディングページ（LP）制作",
+   "note": null,
+   "newLp": "LP-0143"
   },
   {
-   "newId": "DIS-LP-0146",
+   "newId": "DIS-LP-0144",
    "oldLp": "LP-0146",
    "title": "DX_BOOSTER",
    "rdlpId": "227845",
@@ -1903,11 +2048,12 @@
     "DIS-LP-0149"
    ],
    "oldFolder": "LP-0146_DX_BOOSTER",
-   "newFolder": "DIS-LP-0146_DX_BOOSTER",
-   "note": null
+   "newFolder": "DIS-LP-0144_DX_BOOSTER",
+   "note": null,
+   "newLp": "LP-0144"
   },
   {
-   "newId": "DIS-LP-0147",
+   "newId": "DIS-LP-0145",
    "oldLp": "LP-0147",
    "title": "自動車保険",
    "rdlpId": "55118",
@@ -1916,11 +2062,12 @@
     "DIS-LP-0150"
    ],
    "oldFolder": "LP-0147_自動車保険",
-   "newFolder": "DIS-LP-0147_自動車保険",
-   "note": null
+   "newFolder": "DIS-LP-0145_自動車保険",
+   "note": null,
+   "newLp": "LP-0145"
   },
   {
-   "newId": "DIS-LP-0148",
+   "newId": "DIS-LP-0146",
    "oldLp": "LP-0148",
    "title": "ワンストップSNS運用代行",
    "rdlpId": "200947",
@@ -1929,11 +2076,12 @@
     "DIS-LP-0151"
    ],
    "oldFolder": "LP-0148_ワンストップSNS運用代行",
-   "newFolder": "DIS-LP-0148_ワンストップSNS運用代行",
-   "note": null
+   "newFolder": "DIS-LP-0146_ワンストップSNS運用代行",
+   "note": null,
+   "newLp": "LP-0146"
   },
   {
-   "newId": "DIS-LP-0149",
+   "newId": "DIS-LP-0147",
    "oldLp": "LP-0149",
    "title": "CAREER_LEVERAGE_新卒就活",
    "rdlpId": "200936",
@@ -1942,11 +2090,12 @@
     "DIS-LP-0152"
    ],
    "oldFolder": "LP-0149_CAREER_LEVERAGE_新卒就活",
-   "newFolder": "DIS-LP-0149_CAREER_LEVERAGE_新卒就活",
-   "note": null
+   "newFolder": "DIS-LP-0147_CAREER_LEVERAGE_新卒就活",
+   "note": null,
+   "newLp": "LP-0147"
   },
   {
-   "newId": "DIS-LP-0150",
+   "newId": "DIS-LP-0148",
    "oldLp": "LP-0150",
    "title": "金融機関の創業融資について学べるweb講",
    "rdlpId": "200441",
@@ -1955,11 +2104,12 @@
     "DIS-LP-0153"
    ],
    "oldFolder": "LP-0150_金融機関の創業融資について学べるweb講",
-   "newFolder": "DIS-LP-0150_金融機関の創業融資について学べるweb講",
-   "note": null
+   "newFolder": "DIS-LP-0148_金融機関の創業融資について学べるweb講",
+   "note": null,
+   "newLp": "LP-0148"
   },
   {
-   "newId": "DIS-LP-0151",
+   "newId": "DIS-LP-0149",
    "oldLp": "LP-0151",
    "title": "30年以上儲け続けるしくみを創るセミナー",
    "rdlpId": "41307",
@@ -1968,11 +2118,12 @@
     "DIS-LP-0154"
    ],
    "oldFolder": "LP-0151_30年以上儲け続けるしくみを創るセミナー",
-   "newFolder": "DIS-LP-0151_30年以上儲け続けるしくみを創るセミナー",
-   "note": null
+   "newFolder": "DIS-LP-0149_30年以上儲け続けるしくみを創るセミナー",
+   "note": null,
+   "newLp": "LP-0149"
   },
   {
-   "newId": "DIS-LP-0152",
+   "newId": "DIS-LP-0150",
    "oldLp": "LP-0152",
    "title": "不動産投資セミナー",
    "rdlpId": "36484",
@@ -1981,11 +2132,12 @@
     "DIS-LP-0155"
    ],
    "oldFolder": "LP-0152_不動産投資セミナー",
-   "newFolder": "DIS-LP-0152_不動産投資セミナー",
-   "note": null
+   "newFolder": "DIS-LP-0150_不動産投資セミナー",
+   "note": null,
+   "newLp": "LP-0150"
   },
   {
-   "newId": "DIS-LP-0153",
+   "newId": "DIS-LP-0151",
    "oldLp": "LP-0153",
    "title": "24-7_English",
    "rdlpId": "62594",
@@ -1994,11 +2146,12 @@
     "DIS-LP-0156"
    ],
    "oldFolder": "LP-0153_24-7_English",
-   "newFolder": "DIS-LP-0153_24-7_English",
-   "note": null
+   "newFolder": "DIS-LP-0151_24-7_English",
+   "note": null,
+   "newLp": "LP-0151"
   },
   {
-   "newId": "DIS-LP-0154",
+   "newId": "DIS-LP-0152",
    "oldLp": "LP-0154",
    "title": "3日間集中プログラム_AI×漫画講座",
    "rdlpId": "200871",
@@ -2007,11 +2160,12 @@
     "DIS-LP-0157"
    ],
    "oldFolder": "LP-0154_3日間集中プログラム_AI×漫画講座",
-   "newFolder": "DIS-LP-0154_3日間集中プログラム_AI×漫画講座",
-   "note": null
+   "newFolder": "DIS-LP-0152_3日間集中プログラム_AI×漫画講座",
+   "note": null,
+   "newLp": "LP-0152"
   },
   {
-   "newId": "DIS-LP-0155",
+   "newId": "DIS-LP-0153",
    "oldLp": "LP-0155",
    "title": "Instagram・TikTok運用代行",
    "rdlpId": "200824",
@@ -2020,11 +2174,12 @@
     "DIS-LP-0158"
    ],
    "oldFolder": "LP-0155_Instagram・TikTok運用代行",
-   "newFolder": "DIS-LP-0155_Instagram・TikTok運用代行",
-   "note": null
+   "newFolder": "DIS-LP-0153_Instagram・TikTok運用代行",
+   "note": null,
+   "newLp": "LP-0153"
   },
   {
-   "newId": "DIS-LP-0156",
+   "newId": "DIS-LP-0154",
    "oldLp": "LP-0156",
    "title": "ほけん申請エージェント",
    "rdlpId": "103207",
@@ -2033,11 +2188,12 @@
     "DIS-LP-0159"
    ],
    "oldFolder": "LP-0156_ほけん申請エージェント",
-   "newFolder": "DIS-LP-0156_ほけん申請エージェント",
-   "note": null
+   "newFolder": "DIS-LP-0154_ほけん申請エージェント",
+   "note": null,
+   "newLp": "LP-0154"
   },
   {
-   "newId": "DIS-LP-0157",
+   "newId": "DIS-LP-0155",
    "oldLp": "LP-0157",
    "title": "はじめよう！スタートアップキャンペーン！",
    "rdlpId": "50787",
@@ -2046,11 +2202,12 @@
     "DIS-LP-0160"
    ],
    "oldFolder": "LP-0157_はじめよう！スタートアップキャンペーン！",
-   "newFolder": "DIS-LP-0157_はじめよう！スタートアップキャンペーン！",
-   "note": null
+   "newFolder": "DIS-LP-0155_はじめよう！スタートアップキャンペーン！",
+   "note": null,
+   "newLp": "LP-0155"
   },
   {
-   "newId": "DIS-LP-0158",
+   "newId": "DIS-LP-0156",
    "oldLp": "LP-0158",
    "title": "パーソナルトレーニングジム",
    "rdlpId": "63588",
@@ -2059,11 +2216,12 @@
     "DIS-LP-0161"
    ],
    "oldFolder": "LP-0158_パーソナルトレーニングジム",
-   "newFolder": "DIS-LP-0158_パーソナルトレーニングジム",
-   "note": null
+   "newFolder": "DIS-LP-0156_パーソナルトレーニングジム",
+   "note": null,
+   "newLp": "LP-0156"
   },
   {
-   "newId": "DIS-LP-0159",
+   "newId": "DIS-LP-0157",
    "oldLp": "LP-0159",
    "title": "投資の達人になる投資講座",
    "rdlpId": "116566",
@@ -2072,11 +2230,12 @@
     "DIS-LP-0162"
    ],
    "oldFolder": "LP-0159_投資の達人になる投資講座",
-   "newFolder": "DIS-LP-0159_投資の達人になる投資講座",
-   "note": null
+   "newFolder": "DIS-LP-0157_投資の達人になる投資講座",
+   "note": null,
+   "newLp": "LP-0157"
   },
   {
-   "newId": "DIS-LP-0160",
+   "newId": "DIS-LP-0158",
    "oldLp": "LP-0160",
    "title": "自動車保険",
    "rdlpId": "73579",
@@ -2085,11 +2244,12 @@
     "DIS-LP-0163"
    ],
    "oldFolder": "LP-0160_自動車保険",
-   "newFolder": "DIS-LP-0160_自動車保険",
-   "note": null
+   "newFolder": "DIS-LP-0158_自動車保険",
+   "note": null,
+   "newLp": "LP-0158"
   },
   {
-   "newId": "DIS-LP-0161",
+   "newId": "DIS-LP-0159",
    "oldLp": "LP-0161",
    "title": "その場で新型コロナ抗原を5分でチェックで",
    "rdlpId": "200126",
@@ -2098,11 +2258,12 @@
     "DIS-LP-0164"
    ],
    "oldFolder": "LP-0161_その場で新型コロナ抗原を5分でチェックで",
-   "newFolder": "DIS-LP-0161_その場で新型コロナ抗原を5分でチェックで",
-   "note": null
+   "newFolder": "DIS-LP-0159_その場で新型コロナ抗原を5分でチェックで",
+   "note": null,
+   "newLp": "LP-0159"
   },
   {
-   "newId": "DIS-LP-0162",
+   "newId": "DIS-LP-0160",
    "oldLp": "LP-0162",
    "title": "sitateru_CLOUD_生活支援",
    "rdlpId": "200510",
@@ -2111,11 +2272,12 @@
     "DIS-LP-0165"
    ],
    "oldFolder": "LP-0162_sitateru_CLOUD_生活支援",
-   "newFolder": "DIS-LP-0162_sitateru_CLOUD_生活支援",
-   "note": null
+   "newFolder": "DIS-LP-0160_sitateru_CLOUD_生活支援",
+   "note": null,
+   "newLp": "LP-0160"
   },
   {
-   "newId": "DIS-LP-0163",
+   "newId": "DIS-LP-0161",
    "oldLp": "LP-0163",
    "title": "整理収納アドバイザーの資格認定講座",
    "rdlpId": "220822",
@@ -2124,11 +2286,12 @@
     "DIS-LP-0166"
    ],
    "oldFolder": "LP-0163_整理収納アドバイザーの資格認定講座",
-   "newFolder": "DIS-LP-0163_整理収納アドバイザーの資格認定講座",
-   "note": null
+   "newFolder": "DIS-LP-0161_整理収納アドバイザーの資格認定講座",
+   "note": null,
+   "newLp": "LP-0161"
   },
   {
-   "newId": "DIS-LP-0164",
+   "newId": "DIS-LP-0162",
    "oldLp": "LP-0164",
    "title": "ＵＴエイム株式会社",
    "rdlpId": "223771",
@@ -2137,11 +2300,12 @@
     "DIS-LP-0167"
    ],
    "oldFolder": "LP-0164_ＵＴエイム株式会社",
-   "newFolder": "DIS-LP-0164_ＵＴエイム株式会社",
-   "note": null
+   "newFolder": "DIS-LP-0162_ＵＴエイム株式会社",
+   "note": null,
+   "newLp": "LP-0162"
   },
   {
-   "newId": "DIS-LP-0165",
+   "newId": "DIS-LP-0163",
    "oldLp": "LP-0165",
    "title": "0からはじめる不動産投資セミナー",
    "rdlpId": "35441",
@@ -2150,11 +2314,12 @@
     "DIS-LP-0168"
    ],
    "oldFolder": "LP-0165_0からはじめる不動産投資セミナー",
-   "newFolder": "DIS-LP-0165_0からはじめる不動産投資セミナー",
-   "note": null
+   "newFolder": "DIS-LP-0163_0からはじめる不動産投資セミナー",
+   "note": null,
+   "newLp": "LP-0163"
   },
   {
-   "newId": "DIS-LP-0166",
+   "newId": "DIS-LP-0164",
    "oldLp": "LP-0166",
    "title": "ITエンジニアがブラック派遣から乗り換え",
    "rdlpId": "15415",
@@ -2163,11 +2328,12 @@
     "DIS-LP-0169"
    ],
    "oldFolder": "LP-0166_ITエンジニアがブラック派遣から乗り換え",
-   "newFolder": "DIS-LP-0166_ITエンジニアがブラック派遣から乗り換え",
-   "note": null
+   "newFolder": "DIS-LP-0164_ITエンジニアがブラック派遣から乗り換え",
+   "note": null,
+   "newLp": "LP-0164"
   },
   {
-   "newId": "DIS-LP-0167",
+   "newId": "DIS-LP-0165",
    "oldLp": "LP-0167",
    "title": "2019年度インターンシップサイト",
    "rdlpId": "44790",
@@ -2176,11 +2342,12 @@
     "DIS-LP-0170"
    ],
    "oldFolder": "LP-0167_2019年度インターンシップサイト",
-   "newFolder": "DIS-LP-0167_2019年度インターンシップサイト",
-   "note": null
+   "newFolder": "DIS-LP-0165_2019年度インターンシップサイト",
+   "note": null,
+   "newLp": "LP-0165"
   },
   {
-   "newId": "DIS-LP-0168",
+   "newId": "DIS-LP-0166",
    "oldLp": "LP-0168",
    "title": "退職代行",
    "rdlpId": "81531",
@@ -2189,11 +2356,12 @@
     "DIS-LP-0171"
    ],
    "oldFolder": "LP-0168_退職代行",
-   "newFolder": "DIS-LP-0168_退職代行",
-   "note": null
+   "newFolder": "DIS-LP-0166_退職代行",
+   "note": null,
+   "newLp": "LP-0166"
   },
   {
-   "newId": "DIS-LP-0169",
+   "newId": "DIS-LP-0167",
    "oldLp": "LP-0169",
    "title": "不動産投資",
    "rdlpId": "29330",
@@ -2202,11 +2370,12 @@
     "DIS-LP-0172"
    ],
    "oldFolder": "LP-0169_不動産投資",
-   "newFolder": "DIS-LP-0169_不動産投資",
-   "note": null
+   "newFolder": "DIS-LP-0167_不動産投資",
+   "note": null,
+   "newLp": "LP-0167"
   },
   {
-   "newId": "DIS-LP-0170",
+   "newId": "DIS-LP-0168",
    "oldLp": "LP-0170",
    "title": "オリンピックご招待キャンペーン",
    "rdlpId": "54641",
@@ -2215,11 +2384,12 @@
     "DIS-LP-0173"
    ],
    "oldFolder": "LP-0170_オリンピックご招待キャンペーン",
-   "newFolder": "DIS-LP-0170_オリンピックご招待キャンペーン",
-   "note": null
+   "newFolder": "DIS-LP-0168_オリンピックご招待キャンペーン",
+   "note": null,
+   "newLp": "LP-0168"
   },
   {
-   "newId": "DIS-LP-0171",
+   "newId": "DIS-LP-0169",
    "oldLp": "LP-0171",
    "title": "匠の爽快ジョッキ当たる！キャンペーン",
    "rdlpId": "54559",
@@ -2228,11 +2398,12 @@
     "DIS-LP-0174"
    ],
    "oldFolder": "LP-0171_匠の爽快ジョッキ当たる！キャンペーン",
-   "newFolder": "DIS-LP-0171_匠の爽快ジョッキ当たる！キャンペーン",
-   "note": null
+   "newFolder": "DIS-LP-0169_匠の爽快ジョッキ当たる！キャンペーン",
+   "note": null,
+   "newLp": "LP-0169"
   },
   {
-   "newId": "DIS-LP-0172",
+   "newId": "DIS-LP-0170",
    "oldLp": "LP-0172",
    "title": "ファクタリング",
    "rdlpId": "86838",
@@ -2241,11 +2412,12 @@
     "DIS-LP-0175"
    ],
    "oldFolder": "LP-0172_ファクタリング",
-   "newFolder": "DIS-LP-0172_ファクタリング",
-   "note": null
+   "newFolder": "DIS-LP-0170_ファクタリング",
+   "note": null,
+   "newLp": "LP-0170"
   },
   {
-   "newId": "DIS-LP-0173",
+   "newId": "DIS-LP-0171",
    "oldLp": "LP-0173",
    "title": "Broad_WiMAX_初期契約解除制度",
    "rdlpId": "205420",
@@ -2254,11 +2426,12 @@
     "DIS-LP-0176"
    ],
    "oldFolder": "LP-0173_Broad_WiMAX_初期契約解除制度",
-   "newFolder": "DIS-LP-0173_Broad_WiMAX_初期契約解除制度",
-   "note": null
+   "newFolder": "DIS-LP-0171_Broad_WiMAX_初期契約解除制度",
+   "note": null,
+   "newLp": "LP-0171"
   },
   {
-   "newId": "DIS-LP-0174",
+   "newId": "DIS-LP-0172",
    "oldLp": "LP-0174",
    "title": "四国で金融業界のU・Iターン転職",
    "rdlpId": "74076",
@@ -2267,11 +2440,12 @@
     "DIS-LP-0177"
    ],
    "oldFolder": "LP-0174_四国で金融業界のU・Iターン転職",
-   "newFolder": "DIS-LP-0174_四国で金融業界のU・Iターン転職",
-   "note": null
+   "newFolder": "DIS-LP-0172_四国で金融業界のU・Iターン転職",
+   "note": null,
+   "newLp": "LP-0172"
   },
   {
-   "newId": "DIS-LP-0175",
+   "newId": "DIS-LP-0173",
    "oldLp": "LP-0175",
    "title": "細野真宏の世界一わかりやすいエネルギーの",
    "rdlpId": "38425",
@@ -2280,11 +2454,12 @@
     "DIS-LP-0178"
    ],
    "oldFolder": "LP-0175_細野真宏の世界一わかりやすいエネルギーの",
-   "newFolder": "DIS-LP-0175_細野真宏の世界一わかりやすいエネルギーの",
-   "note": null
+   "newFolder": "DIS-LP-0173_細野真宏の世界一わかりやすいエネルギーの",
+   "note": null,
+   "newLp": "LP-0173"
   },
   {
-   "newId": "DIS-LP-0176",
+   "newId": "DIS-LP-0174",
    "oldLp": "LP-0176",
    "title": "トウシェル_資産運用無料相談サービス",
    "rdlpId": "35773",
@@ -2293,11 +2468,12 @@
     "DIS-LP-0179"
    ],
    "oldFolder": "LP-0176_トウシェル_資産運用無料相談サービス",
-   "newFolder": "DIS-LP-0176_トウシェル_資産運用無料相談サービス",
-   "note": null
+   "newFolder": "DIS-LP-0174_トウシェル_資産運用無料相談サービス",
+   "note": null,
+   "newLp": "LP-0174"
   },
   {
-   "newId": "DIS-LP-0177",
+   "newId": "DIS-LP-0175",
    "oldLp": "LP-0177",
    "title": "資産づくりセミナー",
    "rdlpId": "35781",
@@ -2306,11 +2482,12 @@
     "DIS-LP-0180"
    ],
    "oldFolder": "LP-0177_資産づくりセミナー",
-   "newFolder": "DIS-LP-0177_資産づくりセミナー",
-   "note": null
+   "newFolder": "DIS-LP-0175_資産づくりセミナー",
+   "note": null,
+   "newLp": "LP-0175"
   },
   {
-   "newId": "DIS-LP-0178",
+   "newId": "DIS-LP-0176",
    "oldLp": "LP-0178",
    "title": "サイバー大学",
    "rdlpId": "61524",
@@ -2319,11 +2496,12 @@
     "DIS-LP-0181"
    ],
    "oldFolder": "LP-0178_サイバー大学",
-   "newFolder": "DIS-LP-0178_サイバー大学",
-   "note": null
+   "newFolder": "DIS-LP-0176_サイバー大学",
+   "note": null,
+   "newLp": "LP-0176"
   },
   {
-   "newId": "DIS-LP-0179",
+   "newId": "DIS-LP-0177",
    "oldLp": "LP-0179",
    "title": "Snowflake_人材不足の解消サポー",
    "rdlpId": "200790",
@@ -2332,11 +2510,12 @@
     "DIS-LP-0182"
    ],
    "oldFolder": "LP-0179_Snowflake_人材不足の解消サポー",
-   "newFolder": "DIS-LP-0179_Snowflake_人材不足の解消サポー",
-   "note": null
+   "newFolder": "DIS-LP-0177_Snowflake_人材不足の解消サポー",
+   "note": null,
+   "newLp": "LP-0177"
   },
   {
-   "newId": "DIS-LP-0180",
+   "newId": "DIS-LP-0178",
    "oldLp": "LP-0180",
    "title": "サイト売却＆レベニューシェアサービス",
    "rdlpId": "200262",
@@ -2345,11 +2524,12 @@
     "DIS-LP-0183"
    ],
    "oldFolder": "LP-0180_サイト売却＆レベニューシェアサービス",
-   "newFolder": "DIS-LP-0180_サイト売却＆レベニューシェアサービス",
-   "note": null
+   "newFolder": "DIS-LP-0178_サイト売却＆レベニューシェアサービス",
+   "note": null,
+   "newLp": "LP-0178"
   },
   {
-   "newId": "DIS-LP-0181",
+   "newId": "DIS-LP-0179",
    "oldLp": "LP-0181",
    "title": "Qast_Clone",
    "rdlpId": "229041",
@@ -2358,11 +2538,12 @@
     "DIS-LP-0206"
    ],
    "oldFolder": "LP-0181_Qast_Clone",
-   "newFolder": "DIS-LP-0181_Qast_Clone",
-   "note": null
+   "newFolder": "DIS-LP-0179_Qast_Clone",
+   "note": null,
+   "newLp": "LP-0179"
   },
   {
-   "newId": "DIS-LP-0182",
+   "newId": "DIS-LP-0180",
    "oldLp": "LP-0182",
    "title": "首と肩のことだけを考えたダブル枕",
    "rdlpId": "229030",
@@ -2371,11 +2552,12 @@
     "DIS-LP-0207"
    ],
    "oldFolder": "LP-0182_首と肩のことだけを考えたダブル枕",
-   "newFolder": "DIS-LP-0182_首と肩のことだけを考えたダブル枕",
-   "note": null
+   "newFolder": "DIS-LP-0180_首と肩のことだけを考えたダブル枕",
+   "note": null,
+   "newLp": "LP-0180"
   },
   {
-   "newId": "DIS-LP-0183",
+   "newId": "DIS-LP-0181",
    "oldLp": "LP-0183",
    "title": "コスメを買うなら三井住友カード",
    "rdlpId": "229061",
@@ -2384,11 +2566,12 @@
     "DIS-LP-0208"
    ],
    "oldFolder": "LP-0183_コスメを買うなら三井住友カード",
-   "newFolder": "DIS-LP-0183_コスメを買うなら三井住友カード",
-   "note": null
+   "newFolder": "DIS-LP-0181_コスメを買うなら三井住友カード",
+   "note": null,
+   "newLp": "LP-0181"
   },
   {
-   "newId": "DIS-LP-0184",
+   "newId": "DIS-LP-0182",
    "oldLp": "LP-0184",
    "title": "こくまろカレー",
    "rdlpId": "229055",
@@ -2397,11 +2580,12 @@
     "DIS-LP-0209"
    ],
    "oldFolder": "LP-0184_こくまろカレー",
-   "newFolder": "DIS-LP-0184_こくまろカレー",
-   "note": null
+   "newFolder": "DIS-LP-0182_こくまろカレー",
+   "note": null,
+   "newLp": "LP-0182"
   },
   {
-   "newId": "DIS-LP-0185",
+   "newId": "DIS-LP-0183",
    "oldLp": "LP-0185",
    "title": "カラーコーディネーター検定試験",
    "rdlpId": "229072",
@@ -2410,11 +2594,12 @@
     "DIS-LP-0210"
    ],
    "oldFolder": "LP-0185_カラーコーディネーター検定試験",
-   "newFolder": "DIS-LP-0185_カラーコーディネーター検定試験",
-   "note": null
+   "newFolder": "DIS-LP-0183_カラーコーディネーター検定試験",
+   "note": null,
+   "newLp": "LP-0183"
   },
   {
-   "newId": "DIS-LP-0186",
+   "newId": "DIS-LP-0184",
    "oldLp": "LP-0186",
    "title": "鼻セレブ_SKINLISM_美容液マスク",
    "rdlpId": "229065",
@@ -2423,11 +2608,12 @@
     "DIS-LP-0211"
    ],
    "oldFolder": "LP-0186_鼻セレブ_SKINLISM_美容液マスク",
-   "newFolder": "DIS-LP-0186_鼻セレブ_SKINLISM_美容液マスク",
-   "note": null
+   "newFolder": "DIS-LP-0184_鼻セレブ_SKINLISM_美容液マスク",
+   "note": null,
+   "newLp": "LP-0184"
   },
   {
-   "newId": "DIS-LP-0187",
+   "newId": "DIS-LP-0185",
    "oldLp": "LP-0187",
    "title": "生成AI用データ構造化",
    "rdlpId": "229084",
@@ -2436,11 +2622,12 @@
     "DIS-LP-0212"
    ],
    "oldFolder": "LP-0187_生成AI用データ構造化",
-   "newFolder": "DIS-LP-0187_生成AI用データ構造化",
-   "note": null
+   "newFolder": "DIS-LP-0185_生成AI用データ構造化",
+   "note": null,
+   "newLp": "LP-0185"
   },
   {
-   "newId": "DIS-LP-0188",
+   "newId": "DIS-LP-0186",
    "oldLp": "LP-0188",
    "title": "超速RECOVER",
    "rdlpId": "229078",
@@ -2449,11 +2636,12 @@
     "DIS-LP-0213"
    ],
    "oldFolder": "LP-0188_超速RECOVER",
-   "newFolder": "DIS-LP-0188_超速RECOVER",
-   "note": null
+   "newFolder": "DIS-LP-0186_超速RECOVER",
+   "note": null,
+   "newLp": "LP-0186"
   },
   {
-   "newId": "DIS-LP-0189",
+   "newId": "DIS-LP-0187",
    "oldLp": "LP-0189",
    "title": "謎解きイベント新宿御苑植物巡り",
    "rdlpId": "229091",
@@ -2462,11 +2650,12 @@
     "DIS-LP-0214"
    ],
    "oldFolder": "LP-0189_謎解きイベント新宿御苑植物巡り",
-   "newFolder": "DIS-LP-0189_謎解きイベント新宿御苑植物巡り",
-   "note": null
+   "newFolder": "DIS-LP-0187_謎解きイベント新宿御苑植物巡り",
+   "note": null,
+   "newLp": "LP-0187"
   },
   {
-   "newId": "DIS-LP-0190",
+   "newId": "DIS-LP-0188",
    "oldLp": "LP-0190",
    "title": "ナッツボン_ブランドサイト",
    "rdlpId": "229085",
@@ -2475,11 +2664,12 @@
     "DIS-LP-0215"
    ],
    "oldFolder": "LP-0190_ナッツボン_ブランドサイト",
-   "newFolder": "DIS-LP-0190_ナッツボン_ブランドサイト",
-   "note": null
+   "newFolder": "DIS-LP-0188_ナッツボン_ブランドサイト",
+   "note": null,
+   "newLp": "LP-0188"
   },
   {
-   "newId": "DIS-LP-0191",
+   "newId": "DIS-LP-0189",
    "oldLp": "LP-0191",
    "title": "いわて旅割キャンペーン",
    "rdlpId": "229098",
@@ -2488,11 +2678,12 @@
     "DIS-LP-0216"
    ],
    "oldFolder": "LP-0191_いわて旅割キャンペーン",
-   "newFolder": "DIS-LP-0191_いわて旅割キャンペーン",
-   "note": null
+   "newFolder": "DIS-LP-0189_いわて旅割キャンペーン",
+   "note": null,
+   "newLp": "LP-0189"
   },
   {
-   "newId": "DIS-LP-0192",
+   "newId": "DIS-LP-0190",
    "oldLp": "LP-0192",
    "title": "ミルクレア",
    "rdlpId": "229095",
@@ -2501,11 +2692,12 @@
     "DIS-LP-0217"
    ],
    "oldFolder": "LP-0192_ミルクレア",
-   "newFolder": "DIS-LP-0192_ミルクレア",
-   "note": null
+   "newFolder": "DIS-LP-0190_ミルクレア",
+   "note": null,
+   "newLp": "LP-0190"
   },
   {
-   "newId": "DIS-LP-0193",
+   "newId": "DIS-LP-0191",
    "oldLp": "LP-0193",
    "title": "酔処_へべれけ",
    "rdlpId": "229100",
@@ -2514,11 +2706,12 @@
     "DIS-LP-0218"
    ],
    "oldFolder": "LP-0193_酔処_へべれけ",
-   "newFolder": "DIS-LP-0193_酔処_へべれけ",
-   "note": null
+   "newFolder": "DIS-LP-0191_酔処_へべれけ",
+   "note": null,
+   "newLp": "LP-0191"
   },
   {
-   "newId": "DIS-LP-0194",
+   "newId": "DIS-LP-0192",
    "oldLp": "LP-0194",
    "title": "スペシャルパフェ",
    "rdlpId": "229106",
@@ -2527,11 +2720,12 @@
     "DIS-LP-0219"
    ],
    "oldFolder": "LP-0194_スペシャルパフェ",
-   "newFolder": "DIS-LP-0194_スペシャルパフェ",
-   "note": null
+   "newFolder": "DIS-LP-0192_スペシャルパフェ",
+   "note": null,
+   "newLp": "LP-0192"
   },
   {
-   "newId": "DIS-LP-0195",
+   "newId": "DIS-LP-0193",
    "oldLp": "LP-0195",
    "title": "mRNA_HEALTH_TRACKER",
    "rdlpId": "229121",
@@ -2540,11 +2734,12 @@
     "DIS-LP-0220"
    ],
    "oldFolder": "LP-0195_mRNA_HEALTH_TRACKER",
-   "newFolder": "DIS-LP-0195_mRNA_HEALTH_TRACKER",
-   "note": null
+   "newFolder": "DIS-LP-0193_mRNA_HEALTH_TRACKER",
+   "note": null,
+   "newLp": "LP-0193"
   },
   {
-   "newId": "DIS-LP-0196",
+   "newId": "DIS-LP-0194",
    "oldLp": "LP-0196",
    "title": "jelloma",
    "rdlpId": "229117",
@@ -2553,11 +2748,12 @@
     "DIS-LP-0221"
    ],
    "oldFolder": "LP-0196_jelloma",
-   "newFolder": "DIS-LP-0196_jelloma",
-   "note": null
+   "newFolder": "DIS-LP-0194_jelloma",
+   "note": null,
+   "newLp": "LP-0194"
   },
   {
-   "newId": "DIS-LP-0197",
+   "newId": "DIS-LP-0195",
    "oldLp": "LP-0197",
    "title": "マルチカルテ",
    "rdlpId": "229125",
@@ -2566,11 +2762,12 @@
     "DIS-LP-0222"
    ],
    "oldFolder": "LP-0197_マルチカルテ",
-   "newFolder": "DIS-LP-0197_マルチカルテ",
-   "note": null
+   "newFolder": "DIS-LP-0195_マルチカルテ",
+   "note": null,
+   "newLp": "LP-0195"
   },
   {
-   "newId": "DIS-LP-0198",
+   "newId": "DIS-LP-0196",
    "oldLp": "LP-0198",
    "title": "ごほうびソフト-至福のモンブラン-",
    "rdlpId": "229127",
@@ -2579,11 +2776,12 @@
     "DIS-LP-0223"
    ],
    "oldFolder": "LP-0198_ごほうびソフト-至福のモンブラン-",
-   "newFolder": "DIS-LP-0198_ごほうびソフト-至福のモンブラン-",
-   "note": null
+   "newFolder": "DIS-LP-0196_ごほうびソフト-至福のモンブラン-",
+   "note": null,
+   "newLp": "LP-0196"
   },
   {
-   "newId": "DIS-LP-0199",
+   "newId": "DIS-LP-0197",
    "oldLp": "LP-0199",
    "title": "アートリンガル",
    "rdlpId": "229131",
@@ -2592,11 +2790,12 @@
     "DIS-LP-0224"
    ],
    "oldFolder": "LP-0199_アートリンガル",
-   "newFolder": "DIS-LP-0199_アートリンガル",
-   "note": null
+   "newFolder": "DIS-LP-0197_アートリンガル",
+   "note": null,
+   "newLp": "LP-0197"
   },
   {
-   "newId": "DIS-LP-0200",
+   "newId": "DIS-LP-0198",
    "oldLp": "LP-0200",
    "title": "バティスト_ドライシャンプー",
    "rdlpId": "229089",
@@ -2605,11 +2804,12 @@
     "DIS-LP-0225"
    ],
    "oldFolder": "LP-0200_バティスト_ドライシャンプー",
-   "newFolder": "DIS-LP-0200_バティスト_ドライシャンプー",
-   "note": null
+   "newFolder": "DIS-LP-0198_バティスト_ドライシャンプー",
+   "note": null,
+   "newLp": "LP-0198"
   },
   {
-   "newId": "DIS-LP-0201",
+   "newId": "DIS-LP-0199",
    "oldLp": "LP-0201",
    "title": "YOLU_カームナイトリペア",
    "rdlpId": null,
@@ -2618,11 +2818,12 @@
     "DIS-LP-0226"
    ],
    "oldFolder": "LP-0201_YOLU_カームナイトリペア",
-   "newFolder": "DIS-LP-0201_YOLU_カームナイトリペア",
-   "note": null
+   "newFolder": "DIS-LP-0199_YOLU_カームナイトリペア",
+   "note": null,
+   "newLp": "LP-0199"
   },
   {
-   "newId": "DIS-LP-0202",
+   "newId": "DIS-LP-0200",
    "oldLp": "LP-0202",
    "title": "はじめてでもわかる広告入門セミナー",
    "rdlpId": "229123",
@@ -2631,11 +2832,12 @@
     "DIS-LP-0228"
    ],
    "oldFolder": "LP-0202_はじめてでもわかる広告入門セミナー",
-   "newFolder": "DIS-LP-0202_はじめてでもわかる広告入門セミナー",
-   "note": null
+   "newFolder": "DIS-LP-0200_はじめてでもわかる広告入門セミナー",
+   "note": null,
+   "newLp": "LP-0200"
   },
   {
-   "newId": "DIS-LP-0203",
+   "newId": "DIS-LP-0201",
    "oldLp": "LP-0203",
    "title": "ルルルン_ハイドラ_5ALA_マスク",
    "rdlpId": "229088",
@@ -2644,11 +2846,12 @@
     "DIS-LP-0227"
    ],
    "oldFolder": "LP-0203_ルルルン_ハイドラ_5ALA_マスク",
-   "newFolder": "DIS-LP-0203_ルルルン_ハイドラ_5ALA_マスク",
-   "note": null
+   "newFolder": "DIS-LP-0201_ルルルン_ハイドラ_5ALA_マスク",
+   "note": null,
+   "newLp": "LP-0201"
   },
   {
-   "newId": "DIS-LP-0204",
+   "newId": "DIS-LP-0202",
    "oldLp": "LP-0204",
    "title": "オバジ_C25セラム_ネオ",
    "rdlpId": null,
@@ -2657,11 +2860,12 @@
     "DIS-LP-0229"
    ],
    "oldFolder": "LP-0204_オバジ_C25セラム_ネオ",
-   "newFolder": "DIS-LP-0204_オバジ_C25セラム_ネオ",
-   "note": null
+   "newFolder": "DIS-LP-0202_オバジ_C25セラム_ネオ",
+   "note": null,
+   "newLp": "LP-0202"
   },
   {
-   "newId": "DIS-LP-0205",
+   "newId": "DIS-LP-0203",
    "oldLp": "LP-0205",
    "title": "２泊３日の草津旅",
    "rdlpId": null,
@@ -2670,11 +2874,12 @@
     "DIS-LP-0230"
    ],
    "oldFolder": "LP-0205_２泊３日の草津旅",
-   "newFolder": "DIS-LP-0205_２泊３日の草津旅",
-   "note": null
+   "newFolder": "DIS-LP-0203_２泊３日の草津旅",
+   "note": null,
+   "newLp": "LP-0203"
   },
   {
-   "newId": "DIS-LP-0206",
+   "newId": "DIS-LP-0204",
    "oldLp": "LP-0206",
    "title": "すごい納豆_S-903",
    "rdlpId": "104155",
@@ -2683,11 +2888,12 @@
     "DIS-LP-0231"
    ],
    "oldFolder": "LP-0206_すごい納豆_S-903",
-   "newFolder": "DIS-LP-0206_すごい納豆_S-903",
-   "note": null
+   "newFolder": "DIS-LP-0204_すごい納豆_S-903",
+   "note": null,
+   "newLp": "LP-0204"
   },
   {
-   "newId": "DIS-LP-0207",
+   "newId": "DIS-LP-0205",
    "oldLp": "LP-0207",
    "title": "未知なる深海からの脱出",
    "rdlpId": null,
@@ -2696,11 +2902,12 @@
     "DIS-LP-0232"
    ],
    "oldFolder": "LP-0207_未知なる深海からの脱出",
-   "newFolder": "DIS-LP-0207_未知なる深海からの脱出",
-   "note": null
+   "newFolder": "DIS-LP-0205_未知なる深海からの脱出",
+   "note": null,
+   "newLp": "LP-0205"
   },
   {
-   "newId": "DIS-LP-0208",
+   "newId": "DIS-LP-0206",
    "oldLp": "LP-0208",
    "title": "レイトン教授と蒸気の新世界",
    "rdlpId": "229115",
@@ -2709,11 +2916,12 @@
     "DIS-LP-0233"
    ],
    "oldFolder": "LP-0208_レイトン教授と蒸気の新世界",
-   "newFolder": "DIS-LP-0208_レイトン教授と蒸気の新世界",
-   "note": null
+   "newFolder": "DIS-LP-0206_レイトン教授と蒸気の新世界",
+   "note": null,
+   "newLp": "LP-0206"
   },
   {
-   "newId": "DIS-LP-0209",
+   "newId": "DIS-LP-0207",
    "oldLp": "LP-0209",
    "title": "アクセルジャパン_プレミアムプラン",
    "rdlpId": null,
@@ -2722,11 +2930,12 @@
     "DIS-LP-0234"
    ],
    "oldFolder": "LP-0209_アクセルジャパン_プレミアムプラン",
-   "newFolder": "DIS-LP-0209_アクセルジャパン_プレミアムプラン",
-   "note": null
+   "newFolder": "DIS-LP-0207_アクセルジャパン_プレミアムプラン",
+   "note": null,
+   "newLp": "LP-0207"
   },
   {
-   "newId": "DIS-LP-0210",
+   "newId": "DIS-LP-0208",
    "oldLp": "LP-0210",
    "title": "ヒアルモイスト_プラセンタ+C",
    "rdlpId": null,
@@ -2735,11 +2944,12 @@
     "DIS-LP-0235"
    ],
    "oldFolder": "LP-0210_ヒアルモイスト_プラセンタ+C",
-   "newFolder": "DIS-LP-0210_ヒアルモイスト_プラセンタ+C",
-   "note": null
+   "newFolder": "DIS-LP-0208_ヒアルモイスト_プラセンタ+C",
+   "note": null,
+   "newLp": "LP-0208"
   },
   {
-   "newId": "DIS-LP-0211",
+   "newId": "DIS-LP-0209",
    "oldLp": "LP-0211",
    "title": "ラビット_フランチャイズ加盟店募集",
    "rdlpId": "226313",
@@ -2748,11 +2958,12 @@
     "DIS-LP-0236"
    ],
    "oldFolder": "LP-0211_ラビット_フランチャイズ加盟店募集",
-   "newFolder": "DIS-LP-0211_ラビット_フランチャイズ加盟店募集",
-   "note": null
+   "newFolder": "DIS-LP-0209_ラビット_フランチャイズ加盟店募集",
+   "note": null,
+   "newLp": "LP-0209"
   },
   {
-   "newId": "DIS-LP-0212",
+   "newId": "DIS-LP-0210",
    "oldLp": "LP-0212",
    "title": "PeQoly_ピュア_ドライシャンプー",
    "rdlpId": "229164",
@@ -2761,11 +2972,12 @@
     "DIS-LP-0237"
    ],
    "oldFolder": "LP-0212_PeQoly_ピュア_ドライシャンプー",
-   "newFolder": "DIS-LP-0212_PeQoly_ピュア_ドライシャンプー",
-   "note": null
+   "newFolder": "DIS-LP-0210_PeQoly_ピュア_ドライシャンプー",
+   "note": null,
+   "newLp": "LP-0210"
   },
   {
-   "newId": "DIS-LP-0213",
+   "newId": "DIS-LP-0211",
    "oldLp": "LP-0213",
    "title": "サンセリテ青山",
    "rdlpId": "227651",
@@ -2774,11 +2986,12 @@
     "DIS-LP-0238"
    ],
    "oldFolder": "LP-0213_サンセリテ青山",
-   "newFolder": "DIS-LP-0213_サンセリテ青山",
-   "note": null
+   "newFolder": "DIS-LP-0211_サンセリテ青山",
+   "note": null,
+   "newLp": "LP-0211"
   },
   {
-   "newId": "DIS-LP-0214",
+   "newId": "DIS-LP-0212",
    "oldLp": "LP-0214",
    "title": "Awarefy",
    "rdlpId": "229261",
@@ -2787,11 +3000,12 @@
     "DIS-LP-0239"
    ],
    "oldFolder": "LP-0214_Awarefy",
-   "newFolder": "DIS-LP-0214_Awarefy",
-   "note": null
+   "newFolder": "DIS-LP-0212_Awarefy",
+   "note": null,
+   "newLp": "LP-0212"
   },
   {
-   "newId": "DIS-LP-0215",
+   "newId": "DIS-LP-0213",
    "oldLp": "LP-0215",
    "title": "生活本舗",
    "rdlpId": "229263",
@@ -2800,11 +3014,12 @@
     "DIS-LP-0240"
    ],
    "oldFolder": "LP-0215_生活本舗",
-   "newFolder": "DIS-LP-0215_生活本舗",
-   "note": null
+   "newFolder": "DIS-LP-0213_生活本舗",
+   "note": null,
+   "newLp": "LP-0213"
   },
   {
-   "newId": "DIS-LP-0216",
+   "newId": "DIS-LP-0214",
    "oldLp": "LP-0216",
    "title": "QuizKnock10周年プロジェクト",
    "rdlpId": "229258",
@@ -2813,11 +3028,12 @@
     "DIS-LP-0184"
    ],
    "oldFolder": "LP-0216_QuizKnock10周年プロジェクト",
-   "newFolder": "DIS-LP-0216_QuizKnock10周年プロジェクト",
-   "note": null
+   "newFolder": "DIS-LP-0214_QuizKnock10周年プロジェクト",
+   "note": null,
+   "newLp": "LP-0214"
   },
   {
-   "newId": "DIS-LP-0217",
+   "newId": "DIS-LP-0215",
    "oldLp": "LP-0217",
    "title": "ここだけのミルチグッズで100周年をお祝",
    "rdlpId": "229257",
@@ -2826,11 +3042,12 @@
     "DIS-LP-0185"
    ],
    "oldFolder": "LP-0217_ここだけのミルチグッズで100周年をお祝",
-   "newFolder": "DIS-LP-0217_ここだけのミルチグッズで100周年をお祝",
-   "note": null
+   "newFolder": "DIS-LP-0215_ここだけのミルチグッズで100周年をお祝",
+   "note": null,
+   "newLp": "LP-0215"
   },
   {
-   "newId": "DIS-LP-0218",
+   "newId": "DIS-LP-0216",
    "oldLp": "LP-0218",
    "title": "タンブルウィード_オールスター_THE_",
    "rdlpId": "229256",
@@ -2839,11 +3056,12 @@
     "DIS-LP-0186"
    ],
    "oldFolder": "LP-0218_タンブルウィード_オールスター_THE_",
-   "newFolder": "DIS-LP-0218_タンブルウィード_オールスター_THE_",
-   "note": null
+   "newFolder": "DIS-LP-0216_タンブルウィード_オールスター_THE_",
+   "note": null,
+   "newLp": "LP-0216"
   },
   {
-   "newId": "DIS-LP-0219",
+   "newId": "DIS-LP-0217",
    "oldLp": "LP-0219",
    "title": "マイプレッカ",
    "rdlpId": "229255",
@@ -2852,11 +3070,12 @@
     "DIS-LP-0187"
    ],
    "oldFolder": "LP-0219_マイプレッカ",
-   "newFolder": "DIS-LP-0219_マイプレッカ",
-   "note": null
+   "newFolder": "DIS-LP-0217_マイプレッカ",
+   "note": null,
+   "newLp": "LP-0217"
   },
   {
-   "newId": "DIS-LP-0220",
+   "newId": "DIS-LP-0218",
    "oldLp": "LP-0220",
    "title": "premal",
    "rdlpId": "229253",
@@ -2865,11 +3084,12 @@
     "DIS-LP-0188"
    ],
    "oldFolder": "LP-0220_premal",
-   "newFolder": "DIS-LP-0220_premal",
-   "note": null
+   "newFolder": "DIS-LP-0218_premal",
+   "note": null,
+   "newLp": "LP-0218"
   },
   {
-   "newId": "DIS-LP-0221",
+   "newId": "DIS-LP-0219",
    "oldLp": "LP-0221",
    "title": "色彩学園",
    "rdlpId": "229249",
@@ -2878,11 +3098,12 @@
     "DIS-LP-0189"
    ],
    "oldFolder": "LP-0221_色彩学園",
-   "newFolder": "DIS-LP-0221_色彩学園",
-   "note": null
+   "newFolder": "DIS-LP-0219_色彩学園",
+   "note": null,
+   "newLp": "LP-0219"
   },
   {
-   "newId": "DIS-LP-0222",
+   "newId": "DIS-LP-0220",
    "oldLp": "LP-0222",
    "title": "秋をあそびつくそうSunshine_Ci",
    "rdlpId": "229259",
@@ -2891,11 +3112,12 @@
     "DIS-LP-0190"
    ],
    "oldFolder": "LP-0222_秋をあそびつくそうSunshine_Ci",
-   "newFolder": "DIS-LP-0222_秋をあそびつくそうSunshine_Ci",
-   "note": null
+   "newFolder": "DIS-LP-0220_秋をあそびつくそうSunshine_Ci",
+   "note": null,
+   "newLp": "LP-0220"
   },
   {
-   "newId": "DIS-LP-0225",
+   "newId": "DIS-LP-0221",
    "oldLp": "LP-0225",
    "title": "レックインドアテニススクール新百合ヶ丘",
    "rdlpId": "229246",
@@ -2904,11 +3126,12 @@
     "DIS-LP-0191"
    ],
    "oldFolder": "LP-0225_レックインドアテニススクール新百合ヶ丘",
-   "newFolder": "DIS-LP-0225_レックインドアテニススクール新百合ヶ丘",
-   "note": null
+   "newFolder": "DIS-LP-0221_レックインドアテニススクール新百合ヶ丘",
+   "note": null,
+   "newLp": "LP-0221"
   },
   {
-   "newId": "DIS-LP-0226",
+   "newId": "DIS-LP-0222",
    "oldLp": "LP-0226",
    "title": "まっぷたつ？パフェ",
    "rdlpId": "229244",
@@ -2917,11 +3140,12 @@
     "DIS-LP-0192"
    ],
    "oldFolder": "LP-0226_まっぷたつ？パフェ",
-   "newFolder": "DIS-LP-0226_まっぷたつ？パフェ",
-   "note": null
+   "newFolder": "DIS-LP-0222_まっぷたつ？パフェ",
+   "note": null,
+   "newLp": "LP-0222"
   },
   {
-   "newId": "DIS-LP-0227",
+   "newId": "DIS-LP-0223",
    "oldLp": "LP-0227",
    "title": "自衛官募集",
    "rdlpId": "229262",
@@ -2929,10 +3153,11 @@
    "oldDisIds": [],
    "oldFolder": null,
    "newFolder": null,
-   "note": "案件別フォルダなし"
+   "note": "案件別フォルダなし",
+   "newLp": "LP-0223"
   },
   {
-   "newId": "DIS-LP-0228",
+   "newId": "DIS-LP-0224",
    "oldLp": "LP-0228",
    "title": "LOCOKウェルネスガーデン品川御殿⼭テニススクール",
    "rdlpId": "229247",
@@ -2940,10 +3165,11 @@
    "oldDisIds": [],
    "oldFolder": null,
    "newFolder": null,
-   "note": "案件別フォルダなし"
+   "note": "案件別フォルダなし",
+   "newLp": "LP-0224"
   },
   {
-   "newId": "DIS-LP-0229",
+   "newId": "DIS-LP-0225",
    "oldLp": "LP-0229",
    "title": "FAIRLUCENT",
    "rdlpId": "229243",
@@ -2952,11 +3178,12 @@
     "DIS-LP-0193"
    ],
    "oldFolder": "LP-0229_FAIRLUCENT",
-   "newFolder": "DIS-LP-0229_FAIRLUCENT",
-   "note": null
+   "newFolder": "DIS-LP-0225_FAIRLUCENT",
+   "note": null,
+   "newLp": "LP-0225"
   },
   {
-   "newId": "DIS-LP-0230",
+   "newId": "DIS-LP-0226",
    "oldLp": "LP-0230",
    "title": "ポケモンカードゲーム事業",
    "rdlpId": "229242",
@@ -2965,11 +3192,12 @@
     "DIS-LP-0194"
    ],
    "oldFolder": "LP-0230_ポケモンカードゲーム事業",
-   "newFolder": "DIS-LP-0230_ポケモンカードゲーム事業",
-   "note": null
+   "newFolder": "DIS-LP-0226_ポケモンカードゲーム事業",
+   "note": null,
+   "newLp": "LP-0226"
   },
   {
-   "newId": "DIS-LP-0231",
+   "newId": "DIS-LP-0227",
    "oldLp": "LP-0231",
    "title": "ピカチュウ_ハニークリーム_ラテ",
    "rdlpId": "229241",
@@ -2978,11 +3206,12 @@
     "DIS-LP-0195"
    ],
    "oldFolder": "LP-0231_ピカチュウ_ハニークリーム_ラテ",
-   "newFolder": "DIS-LP-0231_ピカチュウ_ハニークリーム_ラテ",
-   "note": null
+   "newFolder": "DIS-LP-0227_ピカチュウ_ハニークリーム_ラテ",
+   "note": null,
+   "newLp": "LP-0227"
   },
   {
-   "newId": "DIS-LP-0232",
+   "newId": "DIS-LP-0228",
    "oldLp": "LP-0232",
    "title": "ぷっちょ_×_Aぇ!_group",
    "rdlpId": "229240",
@@ -2991,11 +3220,12 @@
     "DIS-LP-0196"
    ],
    "oldFolder": "LP-0232_ぷっちょ_×_Aぇ!_group",
-   "newFolder": "DIS-LP-0232_ぷっちょ_×_Aぇ!_group",
-   "note": null
+   "newFolder": "DIS-LP-0228_ぷっちょ_×_Aぇ!_group",
+   "note": null,
+   "newLp": "LP-0228"
   },
   {
-   "newId": "DIS-LP-0233",
+   "newId": "DIS-LP-0229",
    "oldLp": "LP-0233",
    "title": "白玉姫",
    "rdlpId": "227366",
@@ -3004,22 +3234,24 @@
     "DIS-LP-0197"
    ],
    "oldFolder": "LP-0233_白玉姫",
-   "newFolder": "DIS-LP-0233_白玉姫",
-   "note": null
+   "newFolder": "DIS-LP-0229_白玉姫",
+   "note": null,
+   "newLp": "LP-0229"
   },
   {
-   "newId": "DIS-LP-0234",
+   "newId": "DIS-LP-0230",
    "oldLp": "LP-0234",
    "title": "ロープライスセット",
    "rdlpId": "227485",
    "status": "adopted",
    "oldDisIds": [],
    "oldFolder": "LP-0234_ロープライスセット",
-   "newFolder": "DIS-LP-0234_ロープライスセット",
-   "note": null
+   "newFolder": "DIS-LP-0230_ロープライスセット",
+   "note": null,
+   "newLp": "LP-0230"
   },
   {
-   "newId": "DIS-LP-0235",
+   "newId": "DIS-LP-0231",
    "oldLp": "LP-0235",
    "title": "TVer採用サイト",
    "rdlpId": "229269",
@@ -3028,11 +3260,12 @@
     "DIS-LP-0198"
    ],
    "oldFolder": "LP-0235_TVer採用サイト",
-   "newFolder": "DIS-LP-0235_TVer採用サイト",
-   "note": null
+   "newFolder": "DIS-LP-0231_TVer採用サイト",
+   "note": null,
+   "newLp": "LP-0231"
   },
   {
-   "newId": "DIS-LP-0236",
+   "newId": "DIS-LP-0232",
    "oldLp": "LP-0236",
    "title": "エリクシール_ブライトニング化粧水",
    "rdlpId": "229267",
@@ -3041,11 +3274,12 @@
     "DIS-LP-0199"
    ],
    "oldFolder": "LP-0236_エリクシール_ブライトニング化粧水",
-   "newFolder": "DIS-LP-0236_エリクシール_ブライトニング化粧水",
-   "note": null
+   "newFolder": "DIS-LP-0232_エリクシール_ブライトニング化粧水",
+   "note": null,
+   "newLp": "LP-0232"
   },
   {
-   "newId": "DIS-LP-0237",
+   "newId": "DIS-LP-0233",
    "oldLp": "LP-0237",
    "title": "物流",
    "rdlpId": "229266",
@@ -3054,22 +3288,24 @@
     "DIS-LP-0200"
    ],
    "oldFolder": "LP-0237_物流",
-   "newFolder": "DIS-LP-0237_物流",
-   "note": null
+   "newFolder": "DIS-LP-0233_物流",
+   "note": null,
+   "newLp": "LP-0233"
   },
   {
-   "newId": "DIS-LP-0238",
+   "newId": "DIS-LP-0234",
    "oldLp": "LP-0238",
    "title": "口腔崩壊外来",
    "rdlpId": "229276",
    "status": "adopted",
    "oldDisIds": [],
    "oldFolder": "LP-0238_口腔崩壊外来",
-   "newFolder": "DIS-LP-0238_口腔崩壊外来",
-   "note": null
+   "newFolder": "DIS-LP-0234_口腔崩壊外来",
+   "note": null,
+   "newLp": "LP-0234"
   },
   {
-   "newId": "DIS-LP-0239",
+   "newId": "DIS-LP-0235",
    "oldLp": "LP-0239",
    "title": "MANY_PEOPLE採用サイト",
    "rdlpId": "229274",
@@ -3078,11 +3314,12 @@
     "DIS-LP-0201"
    ],
    "oldFolder": "LP-0239_MANY_PEOPLE採用サイト",
-   "newFolder": "DIS-LP-0239_MANY_PEOPLE採用サイト",
-   "note": null
+   "newFolder": "DIS-LP-0235_MANY_PEOPLE採用サイト",
+   "note": null,
+   "newLp": "LP-0235"
   },
   {
-   "newId": "DIS-LP-0240",
+   "newId": "DIS-LP-0236",
    "oldLp": "LP-0240",
    "title": "ステューピッド・ネバー・ダイズ",
    "rdlpId": "229285",
@@ -3091,11 +3328,12 @@
     "DIS-LP-0202"
    ],
    "oldFolder": "LP-0240_ステューピッド・ネバー・ダイズ",
-   "newFolder": "DIS-LP-0240_ステューピッド・ネバー・ダイズ",
-   "note": null
+   "newFolder": "DIS-LP-0236_ステューピッド・ネバー・ダイズ",
+   "note": null,
+   "newLp": "LP-0236"
   },
   {
-   "newId": "DIS-LP-0241",
+   "newId": "DIS-LP-0237",
    "oldLp": "LP-0241",
    "title": "アートを巡る下呂温泉の旅",
    "rdlpId": "229272",
@@ -3104,11 +3342,12 @@
     "DIS-LP-0203"
    ],
    "oldFolder": "LP-0241_アートを巡る下呂温泉の旅",
-   "newFolder": "DIS-LP-0241_アートを巡る下呂温泉の旅",
-   "note": null
+   "newFolder": "DIS-LP-0237_アートを巡る下呂温泉の旅",
+   "note": null,
+   "newLp": "LP-0237"
   },
   {
-   "newId": "DIS-LP-0242",
+   "newId": "DIS-LP-0238",
    "oldLp": "LP-0242",
    "title": "type",
    "rdlpId": "229293",
@@ -3117,11 +3356,12 @@
     "DIS-LP-0204"
    ],
    "oldFolder": "LP-0242_type",
-   "newFolder": "DIS-LP-0242_type",
-   "note": null
+   "newFolder": "DIS-LP-0238_type",
+   "note": null,
+   "newLp": "LP-0238"
   },
   {
-   "newId": "DIS-LP-0243",
+   "newId": "DIS-LP-0239",
    "oldLp": "LP-0243",
    "title": "コムキャリ",
    "rdlpId": "229291",
@@ -3130,22 +3370,24 @@
     "DIS-LP-0205"
    ],
    "oldFolder": "LP-0243_コムキャリ",
-   "newFolder": "DIS-LP-0243_コムキャリ",
-   "note": null
+   "newFolder": "DIS-LP-0239_コムキャリ",
+   "note": null,
+   "newLp": "LP-0239"
   },
   {
-   "newId": "DIS-LP-0244",
+   "newId": "DIS-LP-0240",
    "oldLp": "LP-0244",
    "title": "環境計測株式会社",
    "rdlpId": "229295",
    "status": "adopted",
    "oldDisIds": [],
    "oldFolder": "LP-0244_環境計測株式会社",
-   "newFolder": "DIS-LP-0244_環境計測株式会社",
-   "note": null
+   "newFolder": "DIS-LP-0240_環境計測株式会社",
+   "note": null,
+   "newLp": "LP-0240"
   },
   {
-   "newId": "DIS-LP-0245",
+   "newId": "DIS-LP-0241",
    "oldLp": "LP-0245",
    "title": "オランジーナ",
    "rdlpId": "16359",
@@ -3154,11 +3396,12 @@
     "DIS-LP-0001"
    ],
    "oldFolder": "LP-0245_オランジーナ",
-   "newFolder": "DIS-LP-0245_オランジーナ",
-   "note": null
+   "newFolder": "DIS-LP-0241_オランジーナ",
+   "note": null,
+   "newLp": "LP-0241"
   },
   {
-   "newId": "DIS-LP-0246",
+   "newId": "DIS-LP-0242",
    "oldLp": "LP-0246",
    "title": "販促EXPO大阪",
    "rdlpId": "229569",
@@ -3167,11 +3410,12 @@
     "DIS-LP-0002"
    ],
    "oldFolder": "LP-0246_販促EXPO大阪",
-   "newFolder": "DIS-LP-0246_販促EXPO大阪",
-   "note": null
+   "newFolder": "DIS-LP-0242_販促EXPO大阪",
+   "note": null,
+   "newLp": "LP-0242"
   },
   {
-   "newId": "DIS-LP-0247",
+   "newId": "DIS-LP-0243",
    "oldLp": "LP-0247",
    "title": "宇治山田歯科医院",
    "rdlpId": "229563",
@@ -3180,9 +3424,11 @@
     "DIS-LP-0003"
    ],
    "oldFolder": "LP-0247_宇治山田歯科医院",
-   "newFolder": "DIS-LP-0247_宇治山田歯科医院",
-   "note": null
+   "newFolder": "DIS-LP-0243_宇治山田歯科医院",
+   "note": null,
+   "newLp": "LP-0243"
   }
  ],
- "numbering": "DIS-LP の数字は、LP の番号と同じ（DIS-LP-0014 = LP-0014）。重複のLPと、もとから欠けている番号は、詰めずに空ける。旧DISの連番（oldDisIds）は、使わなくなる。"
+ "confirmedAt": "2026-11-21",
+ "numbering": "DIS-LP の数字 = 新しい LP の番号（空き番号を詰めた連番 0001〜0243）。旧 LP 番号（oldLp）→ 新 LP 番号（newLp）・DIS-LP 番号（newId）。LP-0001〜0134 は変わらない。LP-0136 以降が変わる。重複（LP-0135・0143）は、新番号を振らない（削除はしない）。旧DISの連番（oldDisIds）は、使わなくなる。"
 }
