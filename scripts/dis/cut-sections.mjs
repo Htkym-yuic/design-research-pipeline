@@ -50,7 +50,7 @@ export const outName = (folder, dev, idx, kind) => `${folder}_${dev}_${String(id
 
 export async function runPlan(src, plan, { apply = false } = {}) {
   const { default: sharp } = await import("sharp");
-  const out = { errors: [], warnings: [], cuts: [], created: 0, skipped: 0 };
+  const out = { errors: [], warnings: [], cuts: [], created: 0, skipped: 0, createdFiles: [] };
   for (const dev of ["PC", "SP"]) {
     const d = plan.devices?.[dev];
     if (!d?.sections?.length) continue;
@@ -70,7 +70,7 @@ export async function runPlan(src, plan, { apply = false } = {}) {
     if (await fs.access(c.to).then(() => true, () => false)) { out.skipped++; continue; }
     await fs.mkdir(path.dirname(c.to), { recursive: true });
     await sharp(c.full, { limitInputPixels: false }).extract({ left: 0, top: c.y0, width: c.width, height: c.y1 - c.y0 }).png().toFile(c.to);
-    out.created++;
+    out.created++; out.createdFiles.push(c.to);
   }
   return out;
 }
@@ -85,6 +85,11 @@ async function main() {
   for (const w of r.warnings) console.log(`⚠ ${w}`);
   for (const e of r.errors) console.error(`✗ ${e}`);
   if (r.errors.length) { console.error("\n計画にエラーがあります。何も保存していません。"); process.exit(1); }
+  if (v.apply && r.createdFiles.length) {
+    const logPath = path.join(path.dirname(path.resolve(v.plan)), "..", "cut-sections-log.jsonl");
+    await fs.appendFile(logPath, JSON.stringify({ at: new Date().toISOString(), lp: plan.lp, plan: v.plan, created: r.createdFiles.map((f) => path.relative(v.src, f)) }) + "\n");
+    console.log(`作成したファイルの記録: ${path.relative(process.cwd(), logPath)}（取り消すときは、ここに書かれたファイルだけを消す）`);
+  }
   console.log(v.apply ? `\n保存 ${r.created} 件／すでにあるためスキップ ${r.skipped} 件` : "\nドライランです。何も保存していません。");
 }
 

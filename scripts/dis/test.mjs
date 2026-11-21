@@ -2048,7 +2048,7 @@ test("cut-sections: 計画を検証し（範囲・種類・順番・重なり）
   const dry = await runPlan(src, plan);
   assert.equal(dry.cuts.length, 2); assert.equal(dry.created, 0);
   const real = await runPlan(src, plan, { apply: true });
-  assert.equal(real.created, 2);
+  assert.equal(real.created, 2); assert.equal(real.createdFiles.length, 2);
   const m = await sharp(path.join(src, "02_セクション別/01_FV/PC/LP-0227_テスト_PC_01_FV.png")).metadata();
   assert.deepEqual([m.width, m.height], [300, 900]);
   const again = await runPlan(src, plan, { apply: true });
