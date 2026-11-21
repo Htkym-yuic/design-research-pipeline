@@ -2011,3 +2011,20 @@ test("crop-fv: 全体画像の上端からFVを切り出し、02_セクション
   await assert.rejects(() => cropFv(plan, 1200), /上書きしません/);
   await assert.rejects(() => planFv(src, "LP-0099", "SP"), /0 件/);
 });
+
+test("copy-lp-source: 旧ライブラリーの全体・FV画像を01_案件別へコピーし、元は変更せず、既存は上書きしない", async () => {
+  const { planFor, applyCopy, TARGETS } = await import("./copy-lp-source.mjs");
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), "cls-"));
+  const items = planFor(root, TARGETS[0]);
+  assert.equal(items.length, 4);
+  assert.ok(items[0].to.endsWith("10_デザイン/01_言語化ラボ/10_LP/01_案件別/LP-0227_タニカのあまざけ/LP-0227_タニカのあまざけ_PC_全体.png"));
+  for (const it of items.slice(0, 3)) { await fs.mkdir(path.dirname(it.from), { recursive: true }); await fs.writeFile(it.from, it.what); }
+  const r = await applyCopy(items);
+  assert.equal(r.copied, 3); assert.equal(r.missing.length, 1);
+  assert.equal(await fs.readFile(items[0].to, "utf8"), "PC 全体");
+  assert.equal(await fs.readFile(items[0].from, "utf8"), "PC 全体");
+  const again = await applyCopy(items);
+  assert.equal(again.skipped, 3); assert.equal(again.copied, 0);
+  await fs.writeFile(items[0].to, "different-size-content");
+  await assert.rejects(() => applyCopy(items), /上書きしません/);
+});
