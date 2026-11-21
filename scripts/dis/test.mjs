@@ -2079,3 +2079,29 @@ test("lp-master-export: DropboxのWeb URL・セクション名の分解・構成
   assert.equal(parseSectionName("LP-0001_a_PC_全体.png"), null);
   assert.equal(structureText([{ kindName: "FV" }, { kindName: "CTA" }, { kindName: "CTA" }, { kindName: "FAQ" }]), "FV > CTA×2 > FAQ");
 });
+
+test("rename-lp-folder: フォルダとファイルの番号を付け替え（移動のみ）、既存の同名は止める", async () => {
+  const { planRename, applyRename, swap } = await import("./rename-lp-folder.mjs");
+  assert.equal(swap("LP-0227_x_PC_01_FV.png", "LP-0227_x", "LP-0223_x"), "LP-0223_x_PC_01_FV.png");
+  const src = await fs.mkdtemp(path.join(os.tmpdir(), "rl-"));
+  const w = async (rel) => { await fs.mkdir(path.dirname(path.join(src, rel)), { recursive: true }); await fs.writeFile(path.join(src, rel), "x"); };
+  await w("01_案件別/LP-0227_x/LP-0227_x_PC_全体.png");
+  await w("01_案件別/LP-0227_x/LP-0227_x_SP_全体.png");
+  await w("02_セクション別/01_FV/PC/LP-0227_x_PC_01_FV.png");
+  await w("02_セクション別/01_FV/PC/LP-0228_y_PC_01_FV.png");
+  await w("91_参考_概観図/LP-0227_x_SP_概観.png");
+  const plan = await planRename(src, "LP-0227_x", "LP-0223_x");
+  assert.equal(plan.moves.length, 5); assert.equal(plan.conflicts.length, 0);
+  await applyRename(plan);
+  const has = (r) => fs.access(path.join(src, r)).then(() => true, () => false);
+  assert.ok(await has("01_案件別/LP-0223_x/LP-0223_x_PC_全体.png"));
+  assert.ok(await has("02_セクション別/01_FV/PC/LP-0223_x_PC_01_FV.png"));
+  assert.ok(await has("91_参考_概観図/LP-0223_x_SP_概観.png"));
+  assert.ok(await has("02_セクション別/01_FV/PC/LP-0228_y_PC_01_FV.png")); // 他のLPは触らない
+  assert.ok(!(await has("01_案件別/LP-0227_x")));
+  await w("01_案件別/LP-0227_x/LP-0227_x_PC_全体.png");
+  await w("01_案件別/LP-0223_x/LP-0223_x_PC_全体.png");
+  const p2 = await planRename(src, "LP-0227_x", "LP-0223_x");
+  assert.ok(p2.conflicts.length > 0);
+  await assert.rejects(() => applyRename(p2), /止めます/);
+});
