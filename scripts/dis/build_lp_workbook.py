@@ -168,7 +168,7 @@ def build(a):
         rc = old["recapture"].get(r["LP番号"], {})
         ws.append([r["LP番号"], r["タイトル"], "", "", "", "", rc.get("追加した画像", ""), " / ".join(x for x in (r["要対応"], r.get("備考", "")) if x)])
         row = ws.max_row
-        link(ws.cell(row=row, column=3), r["アーカイブURL"], "アーカイブ"); link(ws.cell(row=row, column=4), r["案件別リンク"], "フォルダ")
+        link(ws.cell(row=row, column=3), r["アーカイブURL"] or r.get("元ページURL", ""), "アーカイブ" if r["アーカイブURL"] else "元ページ（公式）"); link(ws.cell(row=row, column=4), r["案件別リンク"], "フォルダ")
         link(ws.cell(row=row, column=5), r["PC全体画像リンク"], "PC全体"); link(ws.cell(row=row, column=6), r["SP全体画像リンク"], "SP全体")
     widths(ws, [10, 34, 12, 10, 10, 10, 22, 40]); ws.freeze_panes = "C2"; ws.auto_filter.ref = ws.dimensions; wrap(ws, (8,))
 
