@@ -25,3 +25,4 @@ data/lp-master.csv
 data/lp-master-sections.csv
 data/rename-lp-folder-log.jsonl
 data/compare-trees-unmatched.csv
+data/move-reference-folders-log.json

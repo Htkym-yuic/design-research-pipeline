@@ -2123,3 +2123,26 @@ test("compare-trees: 名前が違っても中身（ハッシュ）が同じな�
   assert.ok(r.unmatched.some((u) => u.reason.includes("中身が違う")));
   assert.ok(r.unmatched.some((u) => u.reason.includes("容量のファイルがBにない")));
 });
+
+test("move-reference-folders: 91〜96だけを10_LPの外へ移し、01・02は動かさず、同名があれば止める", async () => {
+  const { isRef, planMove, applyMove } = await import("./move-reference-folders.mjs");
+  assert.equal(isRef("91_参考_概観図"), true); assert.equal(isRef("96_参考_アーカイブ版"), true);
+  assert.equal(isRef("01_案件別"), false); assert.equal(isRef("97_x"), false);
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), "mrf-"));
+  const w = async (rel) => { await fs.mkdir(path.dirname(path.join(root, rel)), { recursive: true }); await fs.writeFile(path.join(root, rel), "x"); };
+  await w("10_LP/01_案件別/LP-0001_a/a.png"); await w("10_LP/02_セクション別/01_FV/PC/b.png");
+  await w("10_LP/93_参考_DIS分析ファイル/LP-0001/28ch/x.md"); await w("10_LP/91_参考_概観図/o.png");
+  const dest = path.join(root, "02_LP参考資料");
+  const plan = await planMove(path.join(root, "10_LP"), dest);
+  assert.equal(plan.moves.length, 2); assert.equal(plan.conflicts.length, 0);
+  await applyMove(plan, dest);
+  const has = (r) => fs.access(path.join(root, r)).then(() => true, () => false);
+  assert.ok(await has("02_LP参考資料/93_参考_DIS分析ファイル/LP-0001/28ch/x.md"));
+  assert.ok(await has("02_LP参考資料/README.txt"));
+  assert.ok(await has("10_LP/01_案件別/LP-0001_a/a.png")); assert.ok(await has("10_LP/02_セクション別/01_FV/PC/b.png"));
+  assert.ok(!(await has("10_LP/91_参考_概観図")));
+  await w("10_LP/91_参考_概観図/again.png");
+  const p2 = await planMove(path.join(root, "10_LP"), dest);
+  assert.ok(p2.conflicts.length > 0);
+  await assert.rejects(() => applyMove(p2, dest), /止めます/);
+});

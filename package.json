@@ -52,6 +52,7 @@
     "dis:copy-lp-source": "node scripts/dis/copy-lp-source.mjs",
     "dis:rename-lp-folder": "node scripts/dis/rename-lp-folder.mjs",
     "dis:compare-trees": "node scripts/dis/compare-trees.mjs",
+    "dis:move-reference-folders": "node scripts/dis/move-reference-folders.mjs",
     "dis:cut-sections": "node scripts/dis/cut-sections.mjs",
     "dis:section-review-prep": "node scripts/dis/section-review-prep.mjs",
     "dis:section-review-summary": "node scripts/dis/section-review-summary.mjs",
