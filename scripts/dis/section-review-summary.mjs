@@ -10,7 +10,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const REPO = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
-export const VERDICTS = ["ok", "wrong_kind", "mixed", "bad_crop", "duplicate", "unreadable"];
+export const VERDICTS = ["ok", "wrong_kind", "mixed", "bad_crop", "duplicate", "split", "unreadable"];
 
 /** 結果の配列から、集計と直す候補を作る。 */
 export function summarize(results) {
