@@ -72,12 +72,13 @@ async function main() {
   const { values: v } = parseArgs({ options: { src: { type: "string", default: DEFAULT_SRC }, out: { type: "string", default: "data/lp-section-audit" } } });
   const map = JSON.parse(await fs.readFile(path.join(REPO, "data/lp-renumber-map.json"), "utf8"));
   const { by, kinds } = await scan(v.src);
+  const expected = JSON.parse(await fs.readFile(path.join(REPO, "config/section-expected-gaps.json"), "utf8").catch(() => "{}")).items || {};
   const rows = map.items.map((it) => {
     const rec = by.get(it.oldLp);
     const pcKinds = rec ? [...rec.sections.PC].sort() : [], spKinds = rec ? [...rec.sections.SP].sort() : [];
     const have = new Set([...pcKinds, ...spKinds]);
     return {
-      lp: it.oldLp, title: it.title, 区分: classify(rec), 案件別フォルダ: rec?.hasCaseDir ? "有" : "無",
+      lp: it.oldLp, title: it.title, 区分: (classify(rec) === "SPなし" && expected[it.oldLp]?.SP) ? "SPなし（許容）" : (classify(rec) === "PCなし" && expected[it.oldLp]?.PC) ? "PCなし（許容）" : classify(rec), 案件別フォルダ: rec?.hasCaseDir ? "有" : "無",
       全体PC: rec?.full.PC ? "有" : "無", 全体SP: rec?.full.SP ? "有" : "無",
       PC種類数: pcKinds.length, SP種類数: spKinds.length,
       取得済みの種類: [...have].map((k) => k.replace(/^\d+_/, "")).join("/"), 重複扱い: it.status === "excluded_duplicate" ? "重複" : "",
@@ -120,7 +121,7 @@ async function main() {
     console.log(`  ${k.padEnd(10)} ${String(pc).padStart(4)} / ${String(sp).padStart(4)} / ${String(both).padStart(4)} / ${String(map.items.length - new Set(map.items.filter((it) => by.get(it.oldLp)?.sections.PC.has(k) || by.get(it.oldLp)?.sections.SP.has(k))).size).padStart(4)}`);
   }
   const fv = kinds.find((k) => /FV/.test(k));
-  const noFv = (dev) => map.items.filter((it) => !by.get(it.oldLp)?.sections[dev].has(fv)).map((it) => it.oldLp);
+  const noFv = (dev) => map.items.filter((it) => !expected[it.oldLp]?.[dev] && !by.get(it.oldLp)?.sections[dev].has(fv)).map((it) => it.oldLp);
   console.log(`\n[FV（${fv}）が無いLP]  PC: ${noFv("PC").length}件 ${noFv("PC").join(" ")}\n                    SP: ${noFv("SP").length}件 ${noFv("SP").join(" ")}`);
   for (const it of map.items) { const r = by.get(it.oldLp); const row = { lp: it.oldLp, title: it.title, 案件別: r?.hasCaseDir ? "有" : "無" }; for (const k of kinds) row[k] = `${r?.sections.PC.has(k) ? "PC" : "-"}${r?.sections.SP.has(k) ? "SP" : "-"}`; matrix.push(row); }
   const mh = Object.keys(matrix[0]);

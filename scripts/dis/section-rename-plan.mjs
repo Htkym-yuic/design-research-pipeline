@@ -71,10 +71,12 @@ async function main() {
     rows.push({ 種類: f.kind, 端末: f.dev, 現在のファイル名: f.file, DIS番号: p.dis, 推定LP番号: lp, 根拠: r?.basis || "対応するLPが見つからない", 新ファイル名: newName, 衝突: conflict });
   }
   const { by } = await scan(v.src);
+  const expected = JSON.parse(await fs.readFile(path.join(REPO, "config/section-expected-gaps.json"), "utf8").catch(() => "{}")).items || {};
   const gaps = [];
   const renameOk = new Set(rows.filter((r) => r.推定LP番号 && !r.衝突).map((r) => `${r.推定LP番号}|${r.種類}|${r.端末}`));
   const fvKind = kinds.find((k) => /FV/.test(k));
   for (const it of map.items) for (const dev of ["PC", "SP"]) {
+    if (expected[it.oldLp]?.[dev]) continue;
     const now = have.has(`${it.oldLp}|${fvKind}|${dev}`);
     const after = now || renameOk.has(`${it.oldLp}|${fvKind}|${dev}`);
     const hasFull = !!by.get(it.oldLp)?.full[dev];
