@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 /**
- * LP-0227・LP-0228 の全体画像・FV画像を、Dropbox の旧ライブラリー（Research_Library/…/01_By_Date/2026-09-27）から、
+ * LP-0223（旧LP-0227 タニカ）・LP-0224（旧LP-0228 リクルート）の全体画像・FV画像を、Dropbox の旧ライブラリー（Research_Library/…/01_By_Date/2026-09-27）から、
  * 10_LP/01_案件別/<LP-nnnn_名前>/ へ、コピーする（コピーのみ。元は変更しない。先にあるファイルは上書きしない）。
  *
  *   node scripts/dis/copy-lp-source.mjs                                   # ドライラン（計画の表示のみ）
  *   DIS_ENABLE_WRITES=true node scripts/dis/copy-lp-source.mjs --apply     # コピー（新規のみ）
- *   オプション: --dropbox <Dropboxの同期フォルダ> （既定: ~/Library/CloudStorage/Dropbox） / --lp LP-0228（指定したLPだけ。省略すると、両方）
+ *   オプション: --dropbox <Dropboxの同期フォルダ> （既定: ~/Library/CloudStorage/Dropbox） / --lp LP-0224（指定したLPだけ。省略すると、両方）
  *
  * ・元: <Dropbox>/Research_Library/Design/LP_Research_Library/01_By_Date/2026-09-27/LP/<Product|Service>/<LP-nnnn_名前>/{01_PC,02_SP}/…
  * ・先: <Dropbox>/10_デザイン/01_言語化ラボ/10_LP/01_案件別/<LP-nnnn_名前>/<LP-nnnn_名前>_<PC|SP>_<全体|FV>.png
@@ -18,20 +18,21 @@ import { fileURLToPath } from "node:url";
 
 const OLD = "Research_Library/Design/LP_Research_Library/01_By_Date/2026-09-27/LP";
 const NEW = "10_デザイン/01_言語化ラボ/10_LP/01_案件別";
+// lp/folder: 新しい番号（コピー先）。srcLp/srcFolder: 旧ライブラリー（2026-09-27）での、元の番号・フォルダ名（番号ずれの整理前）
 export const TARGETS = [
-  { lp: "LP-0227", folder: "LP-0227_タニカのあまざけ", kind: "Product" },
-  { lp: "LP-0228", folder: "LP-0228_リクルートダイレクトスカウト", kind: "Service" },
+  { lp: "LP-0223", folder: "LP-0223_タニカのあまざけ", srcLp: "LP-0227", srcFolder: "LP-0227_タニカのあまざけ", kind: "Product" },
+  { lp: "LP-0224", folder: "LP-0224_リクルートダイレクトスカウト", srcLp: "LP-0228", srcFolder: "LP-0228_リクルートダイレクトスカウト", kind: "Service" },
 ];
 
 /** 1つのLPの、コピー計画（元・先・種別）。 */
 export function planFor(root, t) {
-  const base = path.join(root, OLD, t.kind, t.folder);
+  const base = path.join(root, OLD, t.kind, t.srcFolder);
   const dest = path.join(root, NEW, t.folder);
   const items = [];
   for (const dev of ["PC", "SP"]) {
     const d = dev === "PC" ? "01_PC" : "02_SP";
-    items.push({ what: `${dev} 全体`, from: path.join(base, d, "01_Full_Page", `${t.lp}_${dev}_full_page_20260927.png`), to: path.join(dest, `${t.folder}_${dev}_全体.png`) });
-    items.push({ what: `${dev} FV`, from: path.join(base, d, "02_First_View", `${t.lp}_${dev}_first_view_20260927.png`), to: path.join(dest, `${t.folder}_${dev}_FV.png`) });
+    items.push({ what: `${dev} 全体`, from: path.join(base, d, "01_Full_Page", `${t.srcLp}_${dev}_full_page_20260927.png`), to: path.join(dest, `${t.folder}_${dev}_全体.png`) });
+    items.push({ what: `${dev} FV`, from: path.join(base, d, "02_First_View", `${t.srcLp}_${dev}_first_view_20260927.png`), to: path.join(dest, `${t.folder}_${dev}_FV.png`) });
   }
   return items;
 }

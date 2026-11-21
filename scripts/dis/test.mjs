@@ -2017,7 +2017,8 @@ test("copy-lp-source: 旧ライブラリーの全体・FV画像を01_案件別�
   const root = await fs.mkdtemp(path.join(os.tmpdir(), "cls-"));
   const items = planFor(root, TARGETS[0]);
   assert.equal(items.length, 4);
-  assert.ok(items[0].to.endsWith("10_デザイン/01_言語化ラボ/10_LP/01_案件別/LP-0227_タニカのあまざけ/LP-0227_タニカのあまざけ_PC_全体.png"));
+  assert.ok(items[0].to.endsWith("10_デザイン/01_言語化ラボ/10_LP/01_案件別/LP-0223_タニカのあまざけ/LP-0223_タニカのあまざけ_PC_全体.png"));
+  assert.ok(items[0].from.includes("LP-0227_タニカのあまざけ") && items[0].from.endsWith("LP-0227_PC_full_page_20260927.png"));
   for (const it of items.slice(0, 3)) { await fs.mkdir(path.dirname(it.from), { recursive: true }); await fs.writeFile(it.from, it.what); }
   const r = await applyCopy(items);
   assert.equal(r.copied, 3); assert.equal(r.missing.length, 1);
