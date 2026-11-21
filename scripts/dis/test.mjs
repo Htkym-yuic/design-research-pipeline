@@ -2106,3 +2106,20 @@ test("rename-lp-folder: フォルダとファイルの番号を付け替え（�
   assert.ok(p2.conflicts.length > 0);
   await assert.rejects(() => applyRename(p2), /止めます/);
 });
+
+test("compare-trees: 名前が違っても中身（ハッシュ）が同じなら、同じものとして数える", async () => {
+  const { compareTrees, walk } = await import("./compare-trees.mjs");
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), "ct-"));
+  const w = async (rel, t) => { await fs.mkdir(path.dirname(path.join(root, rel)), { recursive: true }); await fs.writeFile(path.join(root, rel), t); };
+  await w("A/DIS-LP-0001_x/a.png", "aaaa");       // Bに、別名で同じ中身
+  await w("A/DIS-LP-0002_y/b.png", "bbbb");       // Bに、同じ容量で中身が違う
+  await w("A/DIS-LP-0003_z/c.png", "cccccc");     // Bに無い
+  await w("B/LP-0001_x/renamed.png", "aaaa");
+  await w("B/LP-0002_y/b.png", "bbbX");
+  const A = []; for await (const f of walk(path.join(root, "A"))) A.push(f);
+  const B = []; for await (const f of walk(path.join(root, "B"))) B.push(f);
+  const r = await compareTrees(A, B);
+  assert.equal(r.total, 3); assert.equal(r.matched, 1); assert.equal(r.unmatched.length, 2);
+  assert.ok(r.unmatched.some((u) => u.reason.includes("中身が違う")));
+  assert.ok(r.unmatched.some((u) => u.reason.includes("容量のファイルがBにない")));
+});
