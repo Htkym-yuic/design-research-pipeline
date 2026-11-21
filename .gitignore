@@ -16,3 +16,5 @@ outputs/dis/
 data/.locks/
 .claude/settings.local.json
 data/lp-section-review-fixes.csv
+data/section-dis-rename-plan.csv
+data/section-gaps.csv

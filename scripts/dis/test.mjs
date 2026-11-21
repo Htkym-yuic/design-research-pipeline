@@ -1978,3 +1978,18 @@ test("section-review-summary: 判定を集計し、要修正と不足の一覧�
   assert.equal(s.fixes.length, 2); assert.equal(s.missing.length, 1);
   assert.deepEqual(s.problemLps, ["LP-0001", "LP-0002"]);
 });
+
+test("section-rename-plan: DIS-LP-…のファイル名を分解し、対応表・関係表・タイトルでLP番号を推定する", async () => {
+  const { parseDisName, resolveLp, norm } = await import("./section-rename-plan.mjs");
+  const p = parseDisName("DIS-LP-0317_チョコボール_PC_01_FV.png");
+  assert.deepEqual([p.dis, p.name, p.dev, p.seq, p.kindName], ["DIS-LP-0317", "チョコボール", "PC", "01", "FV"]);
+  assert.equal(parseDisName("LP-0001_a_PC_01_FV.png"), null);
+  const map = { items: [{ oldLp: "LP-0001", title: "ルミアグラス", oldDisIds: ["DIS-LP-0004"] }, { oldLp: "LP-0014", title: "チョコボール", oldDisIds: [] }, { oldLp: "LP-0181", title: "Qast_Clone", oldDisIds: [] }] };
+  const rel = { relations: [{ disId: "DIS-LP-0099", libraryId: "LP-0050" }] };
+  assert.equal(resolveLp({ dis: "DIS-LP-0004", name: "x" }, map, rel).lp, "LP-0001");
+  assert.equal(resolveLp({ dis: "DIS-LP-0099", name: "x" }, map, rel).lp, "LP-0050");
+  assert.equal(resolveLp({ dis: "DIS-LP-0317", name: "チョコボール" }, map, rel).basis, "タイトル一致");
+  assert.equal(resolveLp({ dis: "DIS-LP-0319", name: "Qast Clone" }, map, rel).lp, "LP-0181");
+  assert.equal(resolveLp({ dis: "DIS-LP-0500", name: "全然ちがう" }, map, rel), null);
+  assert.equal(norm("PASTA de PON"), norm("PASTA_de_PON"));
+});
