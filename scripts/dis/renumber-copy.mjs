@@ -7,7 +7,7 @@
  *   node scripts/dis/renumber-copy.mjs --verify             # コピー先と元の、ファイル数・容量を照合
  *
  * ・対応表: data/lp-renumber-map.json（status=draft のあいだは、ドライランのみ。--apply には、status=confirmed が必要）
- * ・元: <Dropbox同期フォルダ>/10_デザイン/01_言語化ラボ/10_LP（--src）  先: 同じ階層の 10_LP_新番号（--dest）
+ * ・元: <Dropbox同期フォルダ>/10_デザイン/01_言語化ラボ/10_LP（--src）  先: 同じ階層の 10_LP_DIS（--dest）
  * ・対象のフォルダ: 既定は 01_案件別・02_セクション別（--include で追加。例: 91_参考_概観図）
  * ・名前の変更: 名前の中の「LP-nnnn」を「DIS-LP-mmmm」に置き換える（フォルダ名・ファイル名とも。すでに DIS- が付くものは変えない）。
  * ・重複のため除外した LP は、コピーしない（元には残る）。対応表にない LP 番号は、止めて報告する。
@@ -113,7 +113,7 @@ async function main() {
   const relations = JSON.parse(await fs.readFile(path.join(REPO, "data/dis-relations.json"), "utf8").catch(() => "null"));
   const lookup = buildLookup(map, relations);
   const src = values.src || path.join(BASE, "10_LP");
-  const dest = values.dest || path.join(BASE, "10_LP_新番号");
+  const dest = values.dest || path.join(BASE, "10_LP_DIS");
   const include = (values.include || "01_案件別,02_セクション別").split(",").map((s) => s.trim()).filter(Boolean);
   const plan = await planCopy(src, include, lookup, { skipUnmapped: !!values["skip-unmapped"] });
   const gb = (plan.bytes / 1024 ** 3).toFixed(2);
