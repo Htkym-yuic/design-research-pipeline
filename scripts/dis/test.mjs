@@ -2147,3 +2147,19 @@ test("move-reference-folders: 91〜96だけを10_LPの外へ移し、01・02は�
   assert.ok(p2.conflicts.length > 0);
   await assert.rejects(() => applyMove(p2, dest), /止めます/);
 });
+
+test("capture-to-case: フォルダ名・コピー計画を作り、全体とFVを新規のみ案件別へ保存する", async () => {
+  const { folderName, planCopies, copyNew } = await import("./capture-to-case.mjs");
+  assert.equal(folderName("LP-0227", " 自衛官 募集 "), "LP-0227_自衛官_募集");
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), "ctc-"));
+  const tmp = path.join(root, "tmp"), src = path.join(root, "10_LP");
+  await fs.mkdir(path.join(tmp, "01_Normal_Images"), { recursive: true });
+  for (const f of ["LP-0227_PC_full.png", "LP-0227_PC_first_view.png", "LP-0227_SP_full.png"]) await fs.writeFile(path.join(tmp, "01_Normal_Images", f), f);
+  const plan = planCopies(src, "LP-0227_自衛官募集", tmp, "LP-0227", ["pc", "sp"]);
+  assert.equal(plan.length, 4);
+  assert.ok(plan[0].to.endsWith("01_案件別/LP-0227_自衛官募集/LP-0227_自衛官募集_PC_全体.png"));
+  const r = await copyNew(plan);
+  assert.equal(r.copied.length, 3); assert.equal(r.missing.length, 1);
+  const r2 = await copyNew(plan);
+  assert.equal(r2.copied.length, 0); assert.equal(r2.skipped.length, 3);
+});
