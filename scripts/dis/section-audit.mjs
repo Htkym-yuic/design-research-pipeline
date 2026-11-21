@@ -101,6 +101,31 @@ async function main() {
   console.log("\n[PCの種類数の分布]（種類数: LP数）  " + Object.entries(hist).sort((a, b) => a[0] - b[0]).map(([n, c]) => `${n}:${c}`).join("  "));
   const thin = rows.filter((r) => r.区分 === "取得済み" && (Math.min(r.PC種類数, r.SP種類数) <= 3 || Math.abs(r.PC種類数 - r.SP種類数) >= 3));
   if (thin.length) console.log(`\n[要確認: 種類数が3以下、またはPCとSPの差が3以上] ${thin.length}件\n  ` + thin.map((r) => `${r.lp} ${r.title}  PC${r.PC種類数}/SP${r.SP種類数} [${r.取得済みの種類}]`).join("\n  "));
+  // 有無の一覧表（案件別 × セクション別）
+  const caseLps = [...by].filter(([, r]) => r.hasCaseDir).map(([lp]) => lp).sort();
+  const secLps = [...by].filter(([, r]) => r.sections.PC.size || r.sections.SP.size).map(([lp]) => lp).sort();
+  const inMap = new Set(map.items.map((i) => i.oldLp));
+  const caseNoSec = caseLps.filter((lp) => !secLps.includes(lp));
+  const secNoCase = secLps.filter((lp) => !caseLps.includes(lp));
+  console.log(`\n[案件別 ↔ セクション別]  案件別のLPフォルダ: ${caseLps.length} / セクション別に1枚でもあるLP: ${secLps.length}`);
+  console.log(`  案件別にあって、セクション別に1枚も無い: ${caseNoSec.length}件 ${caseNoSec.join(" ")}`);
+  console.log(`  セクション別にあって、案件別に無い: ${secNoCase.length}件 ${secNoCase.join(" ")}`);
+  console.log(`  対応表（${map.items.length}件）のうち、案件別フォルダが無い: ${map.items.filter((i) => !by.get(i.oldLp)?.hasCaseDir).map((i) => i.oldLp).join(" ") || "なし"}`);
+  console.log(`  案件別・セクション別にあるが、対応表に無い番号: ${[...new Set([...caseLps, ...secLps])].filter((lp) => !inMap.has(lp)).join(" ") || "なし"}`);
+  console.log("\n[種類ごとの有無]（LP数: PCあり / SPあり / 両方 / どちらも無し）");
+  const matrix = [];
+  for (const k of kinds) {
+    let pc = 0, sp = 0, both = 0;
+    for (const it of map.items) { const r = by.get(it.oldLp); const a = r?.sections.PC.has(k), b = r?.sections.SP.has(k); if (a) pc++; if (b) sp++; if (a && b) both++; }
+    console.log(`  ${k.padEnd(10)} ${String(pc).padStart(4)} / ${String(sp).padStart(4)} / ${String(both).padStart(4)} / ${String(map.items.length - new Set(map.items.filter((it) => by.get(it.oldLp)?.sections.PC.has(k) || by.get(it.oldLp)?.sections.SP.has(k))).size).padStart(4)}`);
+  }
+  const fv = kinds.find((k) => /FV/.test(k));
+  const noFv = (dev) => map.items.filter((it) => !by.get(it.oldLp)?.sections[dev].has(fv)).map((it) => it.oldLp);
+  console.log(`\n[FV（${fv}）が無いLP]  PC: ${noFv("PC").length}件 ${noFv("PC").join(" ")}\n                    SP: ${noFv("SP").length}件 ${noFv("SP").join(" ")}`);
+  for (const it of map.items) { const r = by.get(it.oldLp); const row = { lp: it.oldLp, title: it.title, 案件別: r?.hasCaseDir ? "有" : "無" }; for (const k of kinds) row[k] = `${r?.sections.PC.has(k) ? "PC" : "-"}${r?.sections.SP.has(k) ? "SP" : "-"}`; matrix.push(row); }
+  const mh = Object.keys(matrix[0]);
+  await fs.writeFile(path.join(REPO, "data/lp-section-matrix.csv"), [mh.join(","), ...matrix.map((r) => mh.map((h) => `"${r[h]}"`).join(","))].join("\n") + "\n");
+  console.log("\n有無の一覧表: data/lp-section-matrix.csv（LP × 16種類。PC/SP/-）");
   const head = Object.keys(rows[0]);
   const csv = [head.join(","), ...rows.map((r) => head.map((h) => `"${String(r[h]).replace(/"/g, '""')}"`).join(","))].join("\n") + "\n";
   await fs.writeFile(path.join(REPO, v.out + ".csv"), csv);
