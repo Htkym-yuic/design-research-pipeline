@@ -60,6 +60,7 @@ async function main() {
       secs.get(key).push({ seq: p.seq, kindName: p.kindName, file: f.name, kind: k });
     }
   }
+  const notes = JSON.parse(await fs.readFile(path.join(REPO, "config/ledger-notes.json"), "utf8").catch(() => "{}")).items || {};
   const rows = [], secRows = [];
   const inMap = new Set(map.items.map((i) => i.oldLp));
   const extra = [...new Set([...caseDirs.keys(), ...[...secs.keys()].map((k) => k.split("|")[0])])].filter((lp) => !inMap.has(lp)).sort()
@@ -80,7 +81,7 @@ async function main() {
       for (const s of list) secRows.push({ LP番号: it.oldLp, タイトル: it.title, 端末: dev, 順番: s.seq, 種類: s.kind, ファイル名: s.file, リンク: dropboxUrl(relRoot(path.join(v.src, "02_セクション別", s.kind, dev, s.file)), "preview") });
     }
     if (!folder) flags.push("案件別フォルダなし");
-    row.要対応 = flags.join(" / "); rows.push(row);
+    row.要対応 = flags.join(" / "); row.備考 = notes[it.oldLp] || ""; rows.push(row);
   }
   await fs.writeFile(path.join(REPO, "data/lp-master.csv"), toCsv(rows));
   await fs.writeFile(path.join(REPO, "data/lp-master-sections.csv"), toCsv(secRows.length ? secRows : [{ LP番号: "" }]));

@@ -119,7 +119,7 @@ def build(a):
     ws.append(["LP番号", "案件名", "ステータス", "優先度", "PC", "SP", "PCセクション数", "SPセクション数", "要対応", "メモ"]); head(ws)
     for r in master:
         title = r["タイトル"] + (f"  ［{r['重複']}］" if r.get("重複") else "")
-        ws.append([r["LP番号"], title, "未着手", "", r["PC有無"], r["SP有無"], int(r["PCセクション数"] or 0), int(r["SPセクション数"] or 0), r["要対応"], ""])
+        ws.append([r["LP番号"], title, "未着手", "", r["PC有無"], r["SP有無"], int(r["PCセクション数"] or 0), int(r["SPセクション数"] or 0), r["要対応"], r.get("備考", "")])
         if r["要対応"]: ws.cell(row=ws.max_row, column=9).font = Font(color="C00000")
     widths(ws, [10, 38, 11, 8, 10, 10, 9, 9, 40, 30]); ws.freeze_panes = "C2"; ws.auto_filter.ref = ws.dimensions; wrap(ws, (9, 10))
     for f, col in (('"未着手,言語化中,評価待ち,完了"', "C"), ('"高,中,低"', "D")):
@@ -166,7 +166,7 @@ def build(a):
     ws.append(["LP番号", "案件名", "アーカイブ（元ページ）", "案件別フォルダ", "PC全体画像", "SP全体画像", "SP画像の出所", "備考"]); head(ws)
     for r in master:
         rc = old["recapture"].get(r["LP番号"], {})
-        ws.append([r["LP番号"], r["タイトル"], "", "", "", "", rc.get("追加した画像", ""), r["要対応"]])
+        ws.append([r["LP番号"], r["タイトル"], "", "", "", "", rc.get("追加した画像", ""), " / ".join(x for x in (r["要対応"], r.get("備考", "")) if x)])
         row = ws.max_row
         link(ws.cell(row=row, column=3), r["アーカイブURL"], "アーカイブ"); link(ws.cell(row=row, column=4), r["案件別リンク"], "フォルダ")
         link(ws.cell(row=row, column=5), r["PC全体画像リンク"], "PC全体"); link(ws.cell(row=row, column=6), r["SP全体画像リンク"], "SP全体")
@@ -231,9 +231,16 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("--master", default="data/lp-master.csv"); p.add_argument("--sections", default="data/lp-master-sections.csv")
     p.add_argument("--ledger-dir", default=None); p.add_argument("--notion", default=None); p.add_argument("--out", required=True)
+    p.add_argument("--replace", action="store_true", help="すでにあるファイルは、削除せずに、同じフォルダの _旧台帳/ へ日時つきで移してから、新しく作る")
     a = p.parse_args(); a.out = os.path.expanduser(a.out)
-    if os.path.exists(a.out): sys.exit(f"すでにあるため、上書きしません: {a.out}")
-    wb, n, s, nn, found = build(a); wb.save(a.out)
+    if os.path.exists(a.out) and not a.replace: sys.exit(f"すでにあるため、上書きしません: {a.out}（入れ替えるときは --replace）")
+    wb, n, s, nn, found = build(a)
+    if os.path.exists(a.out):
+        import shutil, time
+        bk = os.path.join(os.path.dirname(a.out), "_旧台帳"); os.makedirs(bk, exist_ok=True)
+        base, ext = os.path.splitext(os.path.basename(a.out)); dest = os.path.join(bk, f"{base}.{time.strftime('%Y-%m-%dT%H-%M-%S')}{ext}")
+        shutil.move(a.out, dest); print(f"古いファイルを移しました（削除していません）: {dest}")
+    wb.save(a.out)
     print(f"作成: {a.out}（LP {n} 件／セクション画像 {s} 件／Notion行 {nn} 件／旧ファイル取り込み: {', '.join(found) or 'なし'}）")
 
 if __name__ == "__main__":
