@@ -1925,3 +1925,25 @@ test("move-archive-out: 01_案件別のDIS-LP-0316〜0328だけを外へ移し�
   assert.equal(p3.conflicts.length, 1);
   await assert.rejects(() => applyMoves(p3), /上書きしません/);
 });
+
+test("section-audit: セクション画像の取得状況を、全体画像・PC/SP・種類数から区分する", async () => {
+  const { scan, classify } = await import("./section-audit.mjs");
+  const src = await fs.mkdtemp(path.join(os.tmpdir(), "sa-"));
+  const w = async (rel) => { await fs.mkdir(path.dirname(path.join(src, rel)), { recursive: true }); await fs.writeFile(path.join(src, rel), "x"); };
+  await w("01_案件別/LP-0001_a/LP-0001_a_PC_全体.png");
+  await w("01_案件別/LP-0002_b/LP-0002_b_PC_全体.png");
+  await w("01_案件別/LP-0003_c/readme.txt");
+  await w("01_案件別/LP-0004_d/LP-0004_d_PC_全体.png");
+  await w("02_セクション別/01_FV/PC/LP-0002_b_PC_01_FV.png");
+  await w("02_セクション別/01_FV/PC/LP-0004_d_PC_01_FV.png");
+  await w("02_セクション別/01_FV/SP/LP-0004_d_SP_01_FV.png");
+  await w("02_セクション別/02_悩み提起/PC/LP-0004_d_PC_02_悩み提起.png");
+  await w("02_セクション別/02_悩み提起/SP/LP-0004_d_SP_02_悩み提起.png");
+  const { by, kinds } = await scan(src);
+  assert.deepEqual(kinds, ["01_FV", "02_悩み提起"]);
+  assert.equal(classify(by.get("LP-0001")), "セクション未取得（全体画像あり）");
+  assert.equal(classify(by.get("LP-0002")), "SPなし");
+  assert.equal(classify(by.get("LP-0003")), "全体画像なし");
+  assert.equal(classify(by.get("LP-0004")), "取得済み");
+  assert.equal(classify(by.get("LP-0099")), "全体画像なし");
+});
