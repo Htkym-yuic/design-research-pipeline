@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T16:34:14.379Z",
+  "updatedAt": "2026-11-21T16:18:41.563Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -4607,6 +4607,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-20T16:34:14.379Z"
+    },
+    {
+      "id": "GR-0279",
+      "title": "ヨガイベントチラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fd5ac86ad74e1880b20a0f8ad84bc70ee%2Fd5ac86ad74e1880b20a0f8ad84bc70ee-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29953",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fd5ac86ad74e1880b20a0f8ad84bc70ee%2Fd5ac86ad74e1880b20a0f8ad84bc70ee-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-21T16:18:41.563Z"
+    },
+    {
+      "id": "GR-0280",
+      "title": "忘年会新年会の予約案内ポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F2076dcc478d7be900a9680798d57d16a%2F2076dcc478d7be900a9680798d57d16a-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-26492",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F2076dcc478d7be900a9680798d57d16a%2F2076dcc478d7be900a9680798d57d16a-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-21T16:18:41.563Z"
+    },
+    {
+      "id": "GR-0281",
+      "title": "くすみカラーでちぎり模様の秋食向けバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F1068a20eaeff12b23884664977cce096%2F1068a20eaeff12b23884664977cce096-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-16296",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F1068a20eaeff12b23884664977cce096%2F1068a20eaeff12b23884664977cce096-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-21T16:18:41.563Z"
+    },
+    {
+      "id": "GR-0282",
+      "title": "スタイリッシュな縦長ビジネス名刺デザイン",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F23bc950bc6742925b83e80ca7ec94d21%2F23bc950bc6742925b83e80ca7ec94d21-400.webp&w=256&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29012",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F23bc950bc6742925b83e80ca7ec94d21%2F23bc950bc6742925b83e80ca7ec94d21-400.webp&w=256&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-21T16:18:41.563Z"
+    },
+    {
+      "id": "GR-0283",
+      "title": "オレンジと緑の抽象的なロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/bb15b0e64e95361fb5d7845dd98ac8f2/bb15b0e64e95361fb5d7845dd98ac8f2-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3101",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/bb15b0e64e95361fb5d7845dd98ac8f2/bb15b0e64e95361fb5d7845dd98ac8f2-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-21T16:18:41.563Z"
     },
     {
       "id": "ILAC-0001",
@@ -9242,6 +9302,18 @@
       "materialId": "PAT-0106",
       "authorProfileUrl": null,
       "reservedAt": "2026-11-20T16:34:14.379Z"
+    },
+    {
+      "id": "PAT-0107",
+      "title": "ヨガイベントチラシに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fd5ac86ad74e1880b20a0f8ad84bc70ee%2Fd5ac86ad74e1880b20a0f8ad84bc70ee-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29953",
+      "imageUrl": null,
+      "materialId": "PAT-0107",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-21T16:18:41.563Z"
     },
     {
       "id": "PHAC-0001",
