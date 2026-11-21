@@ -135,7 +135,8 @@ export function parseArchiveFullImages(html, pageUrl) {
   for (const m of html.matchAll(re)) { try { found.push({ url: new URL(m[1], pageUrl).href, postId: m[2], n: Number(m[3] || 0) }); } catch { /* 無視 */ } }
   if (!found.length) return [];
   const own = found[0].postId; // 先頭の full_ が、この紹介ページ自身の画像
-  return [...new Map(found.filter((f) => f.postId === own).sort((a, b) => a.n - b.n).map((f) => [f.url, f])).values()];
+  // 「full.jpg」と「full.jpg.webp」は、同じ画像の別形式。同じ番号（n）は1つにまとめる（PCとSPに取り違えない）
+  return [...new Map(found.filter((f) => f.postId === own).sort((a, b) => a.n - b.n).map((f) => [`${f.postId}_${f.n}`, f])).values()];
 }
 
 /**
@@ -146,7 +147,7 @@ export function parseArchiveDeviceImages(html, pageUrl) {
   const out = { pc: [], sp: [] };
   for (const m of html.matchAll(/<img\b[^>]*>/gi)) {
     const tag = m[0];
-    const src = tag.match(/\bsrc=["']([^"']*\/image\/rdlp\/\d+\/full(?:_(\d+))?\.[a-z0-9.]+)["']/i);
+    const src = tag.match(/\bsrc=["']([^"']*\/image\/(?:rdlp|lp-archive)\/\d+\/full(?:_(\d+))?\.[a-z0-9.]+)["']/i);
     if (!src) continue;
     const alt = (tag.match(/\balt=["']([^"']*)["']/i) || [])[1] || "";
     const dev = /スマホ版/.test(alt) ? "sp" : /PC版/.test(alt) ? "pc" : null;

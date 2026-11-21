@@ -2179,3 +2179,15 @@ test("capture-to-case --replace: 既存は削除せず日時つきで差し替�
   assert.equal(await fs.readFile(r.replaced[0].backup, "utf8"), "OLD");
   assert.equal(await fs.readFile(plan[1].to, "utf8"), "OLDFV");
 });
+
+test("アーカイブ画像の取得: lp-archive の PC版・スマホ版を alt で振り分け、jpg と webp を重複として数えない", async () => {
+  const { parseArchiveDeviceImages, parseArchiveFullImages } = await import("./lib/capture.mjs");
+  const html = `<a href="https://x/"><img src="/image/lp-archive/103545/full.jpg.webp" alt="自衛官募集のLPデザイン（中途採用）PC版"></a>
+    <a href="https://x/"><img src="/image/lp-archive/103546/full.jpg.webp" alt="自衛官募集のLPデザイン（中途採用）スマホ版"></a>
+    <img src="/image/lp-archive/103605/200x400.jpg.webp" alt="関連PC版">`;
+  const d = parseArchiveDeviceImages(html, "https://rdlp.jp/archives/otherdesign/lp/229262");
+  assert.deepEqual(d.pc.map((x) => x.url), ["https://rdlp.jp/image/lp-archive/103545/full.jpg.webp"]);
+  assert.deepEqual(d.sp.map((x) => x.url), ["https://rdlp.jp/image/lp-archive/103546/full.jpg.webp"]);
+  const legacy = `<script type="application/ld+json">{"contentUrl": "https://rdlp.jp/image/lp-archive/103545/full.jpg"}</script><img src="/image/lp-archive/103545/full.jpg.webp">`;
+  assert.equal(parseArchiveFullImages(legacy, "https://rdlp.jp/archives/otherdesign/lp/229262").length, 1);
+});
