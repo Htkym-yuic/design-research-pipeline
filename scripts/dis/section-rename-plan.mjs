@@ -14,6 +14,7 @@ import os from "node:os";
 import path from "node:path";
 import { parseArgs } from "node:util";
 import { fileURLToPath } from "node:url";
+import { scan } from "./section-audit.mjs";
 
 const REPO = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const DEFAULT_SRC = path.join(os.homedir(), "Library/CloudStorage/Dropbox/10_デザイン/01_言語化ラボ/10_LP");
@@ -69,13 +70,15 @@ async function main() {
     const conflict = lp && have.get(`${lp}|${f.kind}|${f.dev}`) ? "衝突（既に同じLP・種類・端末のファイルあり）" : "";
     rows.push({ 種類: f.kind, 端末: f.dev, 現在のファイル名: f.file, DIS番号: p.dis, 推定LP番号: lp, 根拠: r?.basis || "対応するLPが見つからない", 新ファイル名: newName, 衝突: conflict });
   }
+  const { by } = await scan(v.src);
   const gaps = [];
   const renameOk = new Set(rows.filter((r) => r.推定LP番号 && !r.衝突).map((r) => `${r.推定LP番号}|${r.種類}|${r.端末}`));
   const fvKind = kinds.find((k) => /FV/.test(k));
   for (const it of map.items) for (const dev of ["PC", "SP"]) {
     const now = have.has(`${it.oldLp}|${fvKind}|${dev}`);
     const after = now || renameOk.has(`${it.oldLp}|${fvKind}|${dev}`);
-    if (!now) gaps.push({ lp: it.oldLp, title: it.title, 端末: dev, 種類: fvKind, 現在: "なし", DIS分を直した後: after ? "あり（DIS-の分で埋まる）" : "なし（作成が必要）", 重複扱い: it.status === "excluded_duplicate" ? "重複" : "" });
+    const hasFull = !!by.get(it.oldLp)?.full[dev];
+    if (!now) gaps.push({ lp: it.oldLp, title: it.title, 端末: dev, 種類: fvKind, 現在: "なし", DIS分を直した後: after ? "あり（DIS-の分で埋まる）" : "なし（作成が必要）", 全体画像: hasFull ? "あり" : "なし", 作成方法: after ? "不要" : hasFull ? "全体画像から切り出し" : "URLから撮影", 重複扱い: it.status === "excluded_duplicate" ? "重複" : "" });
   }
   const summary = {};
   for (const r of rows) { const k = r.衝突 ? "衝突" : r.推定LP番号 ? "直せる" : "未対応"; summary[k] = (summary[k] || 0) + 1; }
@@ -84,7 +87,7 @@ async function main() {
   for (const r of rows) { const k = `${r.DIS番号}→${r.推定LP番号 || "?"}（${r.根拠}）`; byDis.set(k, (byDis.get(k) || 0) + 1); }
   for (const [k, n] of [...byDis].sort()) console.log(`  ${k}  ${n}件`);
   console.log(`\nFV（${fvKind}）が無い 端末別LP: ${gaps.length} 件（うち DIS- の分で埋まる: ${gaps.filter((g) => g.DIS分を直した後.startsWith("あり")).length}、作成が必要: ${gaps.filter((g) => g.DIS分を直した後.startsWith("なし")).length}）`);
-  for (const g of gaps) console.log(`  ${g.lp} ${g.端末} ${g.title}  → ${g.DIS分を直した後}${g.重複扱い ? " [重複]" : ""}`);
+  for (const g of gaps) console.log(`  ${g.lp} ${g.端末} ${g.title}  → ${g.DIS分を直した後} / 全体画像${g.全体画像} → ${g.作成方法}${g.重複扱い ? " [重複]" : ""}`);
   const csv = (arr) => { if (!arr.length) return ""; const h = Object.keys(arr[0]); return [h.join(","), ...arr.map((r) => h.map((k) => `"${String(r[k]).replace(/"/g, '""')}"`).join(","))].join("\n") + "\n"; };
   await fs.writeFile(path.join(REPO, "data/section-dis-rename-plan.csv"), csv(rows));
   await fs.writeFile(path.join(REPO, "data/section-gaps.csv"), csv(gaps));
