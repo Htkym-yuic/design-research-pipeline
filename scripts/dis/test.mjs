@@ -2070,3 +2070,12 @@ test("full-edge-audit: 末尾の空白・幅の違い・切り出し範囲の過
   assert.ok(flagsFor({ width: 390, height: 6000, tailBlank: 30, bottomTouch: false, coverage: 0.3 }, 390).some((s) => s.includes("小さい")));
   assert.ok(flagsFor({ width: 390, height: 900, tailBlank: 30, bottomTouch: false, coverage: null }, 390).some((s) => s.includes("高さ")));
 });
+
+test("lp-master-export: DropboxのWeb URL・セクション名の分解・構成の文字列", async () => {
+  const { dropboxUrl, parseSectionName, structureText } = await import("./lp-master-export.mjs");
+  assert.equal(dropboxUrl("10_デザイン/a b/LP-0001_x", "home"), "https://www.dropbox.com/home/10_%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3/a%20b/LP-0001_x");
+  assert.ok(dropboxUrl("a/LP&b.png", "preview").startsWith("https://www.dropbox.com/preview/a/LP%26b.png"));
+  assert.deepEqual(parseSectionName("LP-0001_a_PC_03_特徴.png"), { dev: "PC", seq: 3, kindName: "特徴" });
+  assert.equal(parseSectionName("LP-0001_a_PC_全体.png"), null);
+  assert.equal(structureText([{ kindName: "FV" }, { kindName: "CTA" }, { kindName: "CTA" }, { kindName: "FAQ" }]), "FV > CTA×2 > FAQ");
+});

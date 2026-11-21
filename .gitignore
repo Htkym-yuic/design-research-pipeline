@@ -21,3 +21,5 @@ data/section-gaps.csv
 data/lp-section-matrix.csv
 data/cut-sections-log.jsonl
 data/full-edge-audit.csv
+data/lp-master.csv
+data/lp-master-sections.csv
