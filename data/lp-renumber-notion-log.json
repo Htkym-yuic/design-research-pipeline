@@ -1,0 +1,568 @@
+{
+ "note": "Notion『01 LPリサーチライブラリー』の LP ページの、タイトル先頭の番号を詰めた記録（2026-11-21）。タイトルだけを変更（他の項目・本文は変更しない）。元に戻すには、newLp を oldLp に置き換える（重複2件は、印を外す）。",
+ "stage": "3 done",
+ "notionPagesRenamed": 109,
+ "duplicatesMarked": [
+  {
+   "oldLp": "LP-0135",
+   "markedTitle": "【重複・除外】旧LP-0135｜…"
+  },
+  {
+   "oldLp": "LP-0143",
+   "markedTitle": "【重複・除外】旧LP-0143｜…"
+  }
+ ],
+ "notRenamed": {
+  "LP-0001〜0134": "番号が変わらないため",
+  "LP-0246・0247": "Notion のLPページがない（番号は、対応表にのみ）",
+  "LP-143〜LP-147（3桁の旧形式の5ページ）": "4桁のページと二重になっているため、変更せず、ユーザーの確認待ち",
+  "DIS-LP-nnnn（旧DISの連番のページ）": "段階5。まだ変更していない"
+ },
+ "changed": [
+  {
+   "oldLp": "LP-0136",
+   "newLp": "LP-0135",
+   "title": "CRAZY_MONEY_セミナー"
+  },
+  {
+   "oldLp": "LP-0137",
+   "newLp": "LP-0136",
+   "title": "一般社団法人アジアサイエンスカフェ"
+  },
+  {
+   "oldLp": "LP-0138",
+   "newLp": "LP-0137",
+   "title": "はじめてのテレビCM"
+  },
+  {
+   "oldLp": "LP-0139",
+   "newLp": "LP-0138",
+   "title": "ワンクリアポ"
+  },
+  {
+   "oldLp": "LP-0140",
+   "newLp": "LP-0139",
+   "title": "Believe_Technology"
+  },
+  {
+   "oldLp": "LP-0141",
+   "newLp": "LP-0140",
+   "title": "Video_Learning_Studi"
+  },
+  {
+   "oldLp": "LP-0142",
+   "newLp": "LP-0141",
+   "title": "BtoB受発注システム"
+  },
+  {
+   "oldLp": "LP-0144",
+   "newLp": "LP-0142",
+   "title": "副業アカデミー公式メルマガ"
+  },
+  {
+   "oldLp": "LP-0145",
+   "newLp": "LP-0143",
+   "title": "ランディングページ（LP）制作"
+  },
+  {
+   "oldLp": "LP-0146",
+   "newLp": "LP-0144",
+   "title": "DX_BOOSTER"
+  },
+  {
+   "oldLp": "LP-0147",
+   "newLp": "LP-0145",
+   "title": "自動車保険"
+  },
+  {
+   "oldLp": "LP-0148",
+   "newLp": "LP-0146",
+   "title": "ワンストップSNS運用代行"
+  },
+  {
+   "oldLp": "LP-0149",
+   "newLp": "LP-0147",
+   "title": "CAREER_LEVERAGE_新卒就活"
+  },
+  {
+   "oldLp": "LP-0150",
+   "newLp": "LP-0148",
+   "title": "金融機関の創業融資について学べるweb講"
+  },
+  {
+   "oldLp": "LP-0151",
+   "newLp": "LP-0149",
+   "title": "30年以上儲け続けるしくみを創るセミナー"
+  },
+  {
+   "oldLp": "LP-0152",
+   "newLp": "LP-0150",
+   "title": "不動産投資セミナー"
+  },
+  {
+   "oldLp": "LP-0153",
+   "newLp": "LP-0151",
+   "title": "24-7_English"
+  },
+  {
+   "oldLp": "LP-0154",
+   "newLp": "LP-0152",
+   "title": "3日間集中プログラム_AI×漫画講座"
+  },
+  {
+   "oldLp": "LP-0155",
+   "newLp": "LP-0153",
+   "title": "Instagram・TikTok運用代行"
+  },
+  {
+   "oldLp": "LP-0156",
+   "newLp": "LP-0154",
+   "title": "ほけん申請エージェント"
+  },
+  {
+   "oldLp": "LP-0157",
+   "newLp": "LP-0155",
+   "title": "はじめよう！スタートアップキャンペーン！"
+  },
+  {
+   "oldLp": "LP-0158",
+   "newLp": "LP-0156",
+   "title": "パーソナルトレーニングジム"
+  },
+  {
+   "oldLp": "LP-0159",
+   "newLp": "LP-0157",
+   "title": "投資の達人になる投資講座"
+  },
+  {
+   "oldLp": "LP-0160",
+   "newLp": "LP-0158",
+   "title": "自動車保険"
+  },
+  {
+   "oldLp": "LP-0161",
+   "newLp": "LP-0159",
+   "title": "その場で新型コロナ抗原を5分でチェックで"
+  },
+  {
+   "oldLp": "LP-0162",
+   "newLp": "LP-0160",
+   "title": "sitateru_CLOUD_生活支援"
+  },
+  {
+   "oldLp": "LP-0163",
+   "newLp": "LP-0161",
+   "title": "整理収納アドバイザーの資格認定講座"
+  },
+  {
+   "oldLp": "LP-0164",
+   "newLp": "LP-0162",
+   "title": "ＵＴエイム株式会社"
+  },
+  {
+   "oldLp": "LP-0165",
+   "newLp": "LP-0163",
+   "title": "0からはじめる不動産投資セミナー"
+  },
+  {
+   "oldLp": "LP-0166",
+   "newLp": "LP-0164",
+   "title": "ITエンジニアがブラック派遣から乗り換え"
+  },
+  {
+   "oldLp": "LP-0167",
+   "newLp": "LP-0165",
+   "title": "2019年度インターンシップサイト"
+  },
+  {
+   "oldLp": "LP-0168",
+   "newLp": "LP-0166",
+   "title": "退職代行"
+  },
+  {
+   "oldLp": "LP-0169",
+   "newLp": "LP-0167",
+   "title": "不動産投資"
+  },
+  {
+   "oldLp": "LP-0170",
+   "newLp": "LP-0168",
+   "title": "オリンピックご招待キャンペーン"
+  },
+  {
+   "oldLp": "LP-0171",
+   "newLp": "LP-0169",
+   "title": "匠の爽快ジョッキ当たる！キャンペーン"
+  },
+  {
+   "oldLp": "LP-0172",
+   "newLp": "LP-0170",
+   "title": "ファクタリング"
+  },
+  {
+   "oldLp": "LP-0173",
+   "newLp": "LP-0171",
+   "title": "Broad_WiMAX_初期契約解除制度"
+  },
+  {
+   "oldLp": "LP-0174",
+   "newLp": "LP-0172",
+   "title": "四国で金融業界のU・Iターン転職"
+  },
+  {
+   "oldLp": "LP-0175",
+   "newLp": "LP-0173",
+   "title": "細野真宏の世界一わかりやすいエネルギーの"
+  },
+  {
+   "oldLp": "LP-0176",
+   "newLp": "LP-0174",
+   "title": "トウシェル_資産運用無料相談サービス"
+  },
+  {
+   "oldLp": "LP-0177",
+   "newLp": "LP-0175",
+   "title": "資産づくりセミナー"
+  },
+  {
+   "oldLp": "LP-0178",
+   "newLp": "LP-0176",
+   "title": "サイバー大学"
+  },
+  {
+   "oldLp": "LP-0179",
+   "newLp": "LP-0177",
+   "title": "Snowflake_人材不足の解消サポー"
+  },
+  {
+   "oldLp": "LP-0180",
+   "newLp": "LP-0178",
+   "title": "サイト売却＆レベニューシェアサービス"
+  },
+  {
+   "oldLp": "LP-0181",
+   "newLp": "LP-0179",
+   "title": "Qast_Clone"
+  },
+  {
+   "oldLp": "LP-0182",
+   "newLp": "LP-0180",
+   "title": "首と肩のことだけを考えたダブル枕"
+  },
+  {
+   "oldLp": "LP-0183",
+   "newLp": "LP-0181",
+   "title": "コスメを買うなら三井住友カード"
+  },
+  {
+   "oldLp": "LP-0184",
+   "newLp": "LP-0182",
+   "title": "こくまろカレー"
+  },
+  {
+   "oldLp": "LP-0185",
+   "newLp": "LP-0183",
+   "title": "カラーコーディネーター検定試験"
+  },
+  {
+   "oldLp": "LP-0186",
+   "newLp": "LP-0184",
+   "title": "鼻セレブ_SKINLISM_美容液マスク"
+  },
+  {
+   "oldLp": "LP-0187",
+   "newLp": "LP-0185",
+   "title": "生成AI用データ構造化"
+  },
+  {
+   "oldLp": "LP-0188",
+   "newLp": "LP-0186",
+   "title": "超速RECOVER"
+  },
+  {
+   "oldLp": "LP-0189",
+   "newLp": "LP-0187",
+   "title": "謎解きイベント新宿御苑植物巡り"
+  },
+  {
+   "oldLp": "LP-0190",
+   "newLp": "LP-0188",
+   "title": "ナッツボン_ブランドサイト"
+  },
+  {
+   "oldLp": "LP-0191",
+   "newLp": "LP-0189",
+   "title": "いわて旅割キャンペーン"
+  },
+  {
+   "oldLp": "LP-0192",
+   "newLp": "LP-0190",
+   "title": "ミルクレア"
+  },
+  {
+   "oldLp": "LP-0193",
+   "newLp": "LP-0191",
+   "title": "酔処_へべれけ"
+  },
+  {
+   "oldLp": "LP-0194",
+   "newLp": "LP-0192",
+   "title": "スペシャルパフェ"
+  },
+  {
+   "oldLp": "LP-0195",
+   "newLp": "LP-0193",
+   "title": "mRNA_HEALTH_TRACKER"
+  },
+  {
+   "oldLp": "LP-0196",
+   "newLp": "LP-0194",
+   "title": "jelloma"
+  },
+  {
+   "oldLp": "LP-0197",
+   "newLp": "LP-0195",
+   "title": "マルチカルテ"
+  },
+  {
+   "oldLp": "LP-0198",
+   "newLp": "LP-0196",
+   "title": "ごほうびソフト-至福のモンブラン-"
+  },
+  {
+   "oldLp": "LP-0199",
+   "newLp": "LP-0197",
+   "title": "アートリンガル"
+  },
+  {
+   "oldLp": "LP-0200",
+   "newLp": "LP-0198",
+   "title": "バティスト_ドライシャンプー"
+  },
+  {
+   "oldLp": "LP-0201",
+   "newLp": "LP-0199",
+   "title": "YOLU_カームナイトリペア"
+  },
+  {
+   "oldLp": "LP-0202",
+   "newLp": "LP-0200",
+   "title": "はじめてでもわかる広告入門セミナー"
+  },
+  {
+   "oldLp": "LP-0203",
+   "newLp": "LP-0201",
+   "title": "ルルルン_ハイドラ_5ALA_マスク"
+  },
+  {
+   "oldLp": "LP-0204",
+   "newLp": "LP-0202",
+   "title": "オバジ_C25セラム_ネオ"
+  },
+  {
+   "oldLp": "LP-0205",
+   "newLp": "LP-0203",
+   "title": "２泊３日の草津旅"
+  },
+  {
+   "oldLp": "LP-0206",
+   "newLp": "LP-0204",
+   "title": "すごい納豆_S-903"
+  },
+  {
+   "oldLp": "LP-0207",
+   "newLp": "LP-0205",
+   "title": "未知なる深海からの脱出"
+  },
+  {
+   "oldLp": "LP-0208",
+   "newLp": "LP-0206",
+   "title": "レイトン教授と蒸気の新世界"
+  },
+  {
+   "oldLp": "LP-0209",
+   "newLp": "LP-0207",
+   "title": "アクセルジャパン_プレミアムプラン"
+  },
+  {
+   "oldLp": "LP-0210",
+   "newLp": "LP-0208",
+   "title": "ヒアルモイスト_プラセンタ+C"
+  },
+  {
+   "oldLp": "LP-0211",
+   "newLp": "LP-0209",
+   "title": "ラビット_フランチャイズ加盟店募集"
+  },
+  {
+   "oldLp": "LP-0212",
+   "newLp": "LP-0210",
+   "title": "PeQoly_ピュア_ドライシャンプー"
+  },
+  {
+   "oldLp": "LP-0213",
+   "newLp": "LP-0211",
+   "title": "サンセリテ青山"
+  },
+  {
+   "oldLp": "LP-0214",
+   "newLp": "LP-0212",
+   "title": "Awarefy"
+  },
+  {
+   "oldLp": "LP-0215",
+   "newLp": "LP-0213",
+   "title": "生活本舗"
+  },
+  {
+   "oldLp": "LP-0216",
+   "newLp": "LP-0214",
+   "title": "QuizKnock10周年プロジェクト"
+  },
+  {
+   "oldLp": "LP-0217",
+   "newLp": "LP-0215",
+   "title": "ここだけのミルチグッズで100周年をお祝"
+  },
+  {
+   "oldLp": "LP-0218",
+   "newLp": "LP-0216",
+   "title": "タンブルウィード_オールスター_THE_"
+  },
+  {
+   "oldLp": "LP-0219",
+   "newLp": "LP-0217",
+   "title": "マイプレッカ"
+  },
+  {
+   "oldLp": "LP-0220",
+   "newLp": "LP-0218",
+   "title": "premal"
+  },
+  {
+   "oldLp": "LP-0221",
+   "newLp": "LP-0219",
+   "title": "色彩学園"
+  },
+  {
+   "oldLp": "LP-0222",
+   "newLp": "LP-0220",
+   "title": "秋をあそびつくそうSunshine_Ci"
+  },
+  {
+   "oldLp": "LP-0225",
+   "newLp": "LP-0221",
+   "title": "レックインドアテニススクール新百合ヶ丘"
+  },
+  {
+   "oldLp": "LP-0226",
+   "newLp": "LP-0222",
+   "title": "まっぷたつ？パフェ"
+  },
+  {
+   "oldLp": "LP-0227",
+   "newLp": "LP-0223",
+   "title": "自衛官募集"
+  },
+  {
+   "oldLp": "LP-0228",
+   "newLp": "LP-0224",
+   "title": "LOCOKウェルネスガーデン品川御殿⼭テニススクール"
+  },
+  {
+   "oldLp": "LP-0229",
+   "newLp": "LP-0225",
+   "title": "FAIRLUCENT"
+  },
+  {
+   "oldLp": "LP-0230",
+   "newLp": "LP-0226",
+   "title": "ポケモンカードゲーム事業"
+  },
+  {
+   "oldLp": "LP-0231",
+   "newLp": "LP-0227",
+   "title": "ピカチュウ_ハニークリーム_ラテ"
+  },
+  {
+   "oldLp": "LP-0232",
+   "newLp": "LP-0228",
+   "title": "ぷっちょ_×_Aぇ!_group"
+  },
+  {
+   "oldLp": "LP-0233",
+   "newLp": "LP-0229",
+   "title": "白玉姫"
+  },
+  {
+   "oldLp": "LP-0234",
+   "newLp": "LP-0230",
+   "title": "ロープライスセット"
+  },
+  {
+   "oldLp": "LP-0235",
+   "newLp": "LP-0231",
+   "title": "TVer採用サイト"
+  },
+  {
+   "oldLp": "LP-0236",
+   "newLp": "LP-0232",
+   "title": "エリクシール_ブライトニング化粧水"
+  },
+  {
+   "oldLp": "LP-0237",
+   "newLp": "LP-0233",
+   "title": "物流"
+  },
+  {
+   "oldLp": "LP-0238",
+   "newLp": "LP-0234",
+   "title": "口腔崩壊外来"
+  },
+  {
+   "oldLp": "LP-0239",
+   "newLp": "LP-0235",
+   "title": "MANY_PEOPLE採用サイト"
+  },
+  {
+   "oldLp": "LP-0240",
+   "newLp": "LP-0236",
+   "title": "ステューピッド・ネバー・ダイズ"
+  },
+  {
+   "oldLp": "LP-0241",
+   "newLp": "LP-0237",
+   "title": "アートを巡る下呂温泉の旅"
+  },
+  {
+   "oldLp": "LP-0242",
+   "newLp": "LP-0238",
+   "title": "type"
+  },
+  {
+   "oldLp": "LP-0243",
+   "newLp": "LP-0239",
+   "title": "コムキャリ"
+  },
+  {
+   "oldLp": "LP-0244",
+   "newLp": "LP-0240",
+   "title": "環境計測株式会社"
+  },
+  {
+   "oldLp": "LP-0245",
+   "newLp": "LP-0241",
+   "title": "オランジーナ"
+  },
+  {
+   "oldLp": "LP-0246",
+   "newLp": "LP-0242",
+   "title": "販促EXPO大阪"
+  },
+  {
+   "oldLp": "LP-0247",
+   "newLp": "LP-0243",
+   "title": "宇治山田歯科医院"
+  }
+ ]
+}
