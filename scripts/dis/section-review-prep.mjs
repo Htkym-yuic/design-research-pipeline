@@ -56,17 +56,34 @@ export async function collect(src, lp) {
   return { full, sections };
 }
 
+/** 全体シートの目盛り（元画像のy座標）。各列の上に「y 範囲」、左端に 500px ごとの目盛りを描く。 */
+export function rulerSvg(w, h, origTop, origBottom, scale, step = 500) {
+  const ticks = [];
+  for (let y = Math.ceil(origTop / step) * step; y < origBottom; y += step) {
+    const py = Math.round((y - origTop) * scale);
+    ticks.push(`<line x1="0" y1="${py}" x2="${w}" y2="${py}" stroke="#e11" stroke-width="1" stroke-dasharray="4 3"/><text x="3" y="${py + 12}" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#e11">${y}</text>`);
+  }
+  return Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}">${ticks.join("")}</svg>`);
+}
+
 async function fullSheet(sharp, file, out) {
   const meta = await sharp(file, { limitInputPixels: false }).metadata();
-  const W = 340, scale = W / meta.width, totalH = Math.round(meta.height * scale), SEG = 1500;
+  const W = 340, scale = W / meta.width, totalH = Math.round(meta.height * scale), SEG = 1500, HEAD = 22;
   const ranges = sliceRanges(totalH, SEG);
   const base = await sharp(file, { limitInputPixels: false }).resize({ width: W }).png().toBuffer();
   const parts = [];
-  for (const [top, h] of ranges) parts.push(await sharp(base).extract({ left: 0, top, width: W, height: h }).png().toBuffer());
+  for (const [top, h] of ranges) {
+    const col = await sharp(base).extract({ left: 0, top, width: W, height: h }).png().toBuffer();
+    const oTop = Math.round(top / scale), oBot = Math.round((top + h) / scale);
+    const ruler = rulerSvg(W, h, oTop, oBot, scale);
+    const colWithRuler = await sharp(col).composite([{ input: ruler, left: 0, top: 0 }]).png().toBuffer();
+    const head = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${HEAD}"><rect width="100%" height="100%" fill="#222"/><text x="6" y="16" font-size="13" font-family="Helvetica,Arial,sans-serif" fill="#fff">y ${oTop}-${oBot}  (w=${meta.width})</text></svg>`);
+    parts.push({ col: colWithRuler, head });
+  }
   const gap = 14, cols = parts.length;
-  await sharp({ create: { width: gap + cols * (W + gap), height: SEG + 2 * gap, channels: 3, background: "#ffffff" } })
-    .composite(parts.map((b, i) => ({ input: b, left: gap + i * (W + gap), top: gap }))).jpeg({ quality: 72 }).toFile(out);
-  return { columns: cols, scaledHeight: totalH };
+  await sharp({ create: { width: gap + cols * (W + gap), height: SEG + HEAD + 2 * gap, channels: 3, background: "#ffffff" } })
+    .composite(parts.flatMap((p, i) => [{ input: p.head, left: gap + i * (W + gap), top: gap }, { input: p.col, left: gap + i * (W + gap), top: gap + HEAD }])).jpeg({ quality: 72 }).toFile(out);
+  return { columns: cols, scaledHeight: totalH, originalWidth: meta.width, originalHeight: meta.height };
 }
 
 async function sectionsSheet(sharp, items, out) {

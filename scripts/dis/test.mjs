@@ -2028,3 +2028,32 @@ test("copy-lp-source: 旧ライブラリーの全体・FV画像を01_案件別�
   await fs.writeFile(items[0].to, "different-size-content");
   await assert.rejects(() => applyCopy(items), /上書きしません/);
 });
+
+test("cut-sections: 計画を検証し（範囲・種類・順番・重なり）、全体画像から切り出して新規のみ保存する", async () => {
+  const { validateSections, outName, runPlan, KINDS } = await import("./cut-sections.mjs");
+  assert.equal(KINDS.length, 16);
+  assert.equal(outName("LP-0227_タニカ", "PC", 0, "01_FV"), "LP-0227_タニカ_PC_01_FV.png");
+  assert.equal(outName("LP-0227_タニカ", "SP", 5, "06_ベネフィット"), "LP-0227_タニカ_SP_06_ベネフィット.png");
+  const bad = validateSections([{ y0: 0, y1: 50, kind: "01_FV" }, { y0: 40, y1: 3000, kind: "99_x" }], 2000);
+  assert.ok(bad.errors.some((e) => /60px 未満/.test(e)));
+  assert.ok(bad.errors.some((e) => /種類が不正/.test(e)));
+  assert.ok(bad.errors.some((e) => /超えています/.test(e)));
+  const ok = validateSections([{ y0: 0, y1: 900, kind: "01_FV" }, { y0: 850, y1: 2000, kind: "02_悩み提起" }], 2000);
+  assert.equal(ok.errors.length, 0); assert.ok(ok.warnings.some((w) => /重なって/.test(w)));
+  const { default: sharp } = await import("sharp");
+  const src = await fs.mkdtemp(path.join(os.tmpdir(), "cs-"));
+  await fs.mkdir(path.join(src, "01_案件別/LP-0227_テスト"), { recursive: true });
+  await sharp({ create: { width: 300, height: 2000, channels: 3, background: "#aac" } }).png().toFile(path.join(src, "01_案件別/LP-0227_テスト/LP-0227_テスト_PC_全体.png"));
+  const plan = { lp: "LP-0227", folder: "LP-0227_テスト", devices: { PC: { sections: [{ y0: 0, y1: 900, kind: "01_FV" }, { y0: 900, y1: 2000, kind: "11_フッター" }] } } };
+  const dry = await runPlan(src, plan);
+  assert.equal(dry.cuts.length, 2); assert.equal(dry.created, 0);
+  const real = await runPlan(src, plan, { apply: true });
+  assert.equal(real.created, 2);
+  const m = await sharp(path.join(src, "02_セクション別/01_FV/PC/LP-0227_テスト_PC_01_FV.png")).metadata();
+  assert.deepEqual([m.width, m.height], [300, 900]);
+  const again = await runPlan(src, plan, { apply: true });
+  assert.equal(again.created, 0); assert.equal(again.skipped, 2);
+  const badPlan = { ...plan, devices: { PC: { sections: [{ y0: 0, y1: 99999, kind: "01_FV" }] } } };
+  const r2 = await runPlan(src, badPlan, { apply: true });
+  assert.ok(r2.errors.length && r2.created === 0);
+});

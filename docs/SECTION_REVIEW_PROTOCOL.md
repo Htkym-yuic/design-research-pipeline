@@ -63,3 +63,30 @@ LPごとに、`data/lp-section-review/LP-nnnn.json`（リポジトリ内）に�
 npm run dis:section-review-summary
 ```
 判定ごとの件数、問題のあるLP、直す候補の一覧（`data/lp-section-review-fixes.csv`）が出る。**ファイルの付け替え・切り直し・撮り直しは、一覧を確認してから、別の手順で行う**（この手順では、何も動かさない）。
+
+## 6. セクション画像が無いLPを作る（切り出し）
+対象: 全体画像はあるが、セクション画像が無い端末（例: LP-0227・0228、LP-0029 SPのFV）。**範囲は、全体画像を見て決める**。
+
+1. シートを作る（全体シートには、元画像の y 座標の目盛り（赤い点線、500pxごと）と、各列の y 範囲が入る）。
+   ```bash
+   npm run dis:section-review-prep -- --lp LP-0227
+   ```
+2. Claude Code で、`~/dis-review-sheets/LP-0227_PC_full.jpg`（SPも）を見て、**ページの上から順に、セクションの範囲（y0〜y1、元のpx）と種類**を決め、`data/section-cut-plans/LP-0227.json` に書く。
+   - 基準は、本書の「判定の基準」と同じ。FV は「最初のCTAボタンまで」。1つのセクションを2枚に分けない（split にしない）。1枚に2つの役割を入れない（mixed にしない）。
+   - 切れ目は、背景色や余白の境目に置く。見出しや文字の途中で切らない。隣の領域の混入は、約5%以下。
+   - ページの最下部（フッター）まで、取りこぼしなく入れる。最下部が空白や途中切れなら、`note` に書く。
+3. 計画を検証する（何も保存しない）。範囲・種類・順番・重なり・最下部の取りこぼしを、チェックする。
+   ```bash
+   npm run dis:cut-sections -- --plan data/section-cut-plans/LP-0227.json
+   ```
+4. 確認して、保存する（新規のみ。すでにあるファイルは、スキップ）。
+   ```bash
+   DIS_ENABLE_WRITES=true npm run dis:cut-sections -- --plan data/section-cut-plans/LP-0227.json --apply
+   ```
+   出力: `02_セクション別/<NN_種類>/<PC|SP>/<LP-nnnn_名前>_<PC|SP>_<NN>_<種類>.png`（NN はページ上の順番）。
+
+計画の書式:
+```json
+{ "lp": "LP-0227", "folder": "LP-0227_タニカのあまざけ",
+  "devices": { "PC": { "sections": [ { "y0": 0, "y1": 1800, "kind": "01_FV", "note": "" } ] }, "SP": { "sections": [] } } }
+```

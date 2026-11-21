@@ -48,6 +48,7 @@
     "dis:section-rename-plan": "node scripts/dis/section-rename-plan.mjs",
     "dis:crop-fv": "node scripts/dis/crop-fv.mjs",
     "dis:copy-lp-source": "node scripts/dis/copy-lp-source.mjs",
+    "dis:cut-sections": "node scripts/dis/cut-sections.mjs",
     "dis:section-review-prep": "node scripts/dis/section-review-prep.mjs",
     "dis:section-review-summary": "node scripts/dis/section-review-summary.mjs",
     "dis:probe": "node scripts/dis/probe.mjs",
