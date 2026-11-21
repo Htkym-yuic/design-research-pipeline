@@ -1894,3 +1894,34 @@ test("renumber-copy: 名前の中のLP-nnnnを新番号に置き換え、重複�
   await fs.writeFile(path.join(dest, "01_案件別/DIS-LP-0014_チョコ/DIS-LP-0014_チョコ_PC_全体.png"), "different");
   await assert.rejects(() => applyCopy(src, dest, plan), /上書きしません/);
 });
+
+test("move-archive-out: 01_案件別のDIS-LP-0316〜0328だけを外へ移し、LP-nnnnは動かさず、既存は上書きしない", async () => {
+  const { isTarget, planMoves, applyMoves } = await import("./move-archive-out.mjs");
+  assert.equal(isTarget("DIS-LP-0316_x"), true);
+  assert.equal(isTarget("DIS-LP-0328"), true);
+  assert.equal(isTarget("DIS-LP-0315_x"), false);
+  assert.equal(isTarget("DIS-LP-0329_x"), false);
+  assert.equal(isTarget("LP-0320_x"), false);
+  const src = await fs.mkdtemp(path.join(os.tmpdir(), "mv-src-"));
+  const w = async (rel, t) => { await fs.mkdir(path.dirname(path.join(src, rel)), { recursive: true }); await fs.writeFile(path.join(src, rel), t); };
+  await w("01_案件別/DIS-LP-0316_a/a.png", "1");
+  await w("01_案件別/LP-0014_b/b.png", "2");
+  await w("01_案件別/DIS-LP-0200_c/c.png", "3");
+  await w("02_セクション別/01_FV/PC/DIS-LP-0316_a_PC_01_FV.png", "4");
+  const p1 = await planMoves(src, "96_参考_アーカイブ版");
+  assert.equal(p1.moves.length, 1);
+  const p2 = await planMoves(src, "96_参考_アーカイブ版", { withSections: true });
+  assert.equal(p2.moves.length, 2);
+  const r = await applyMoves(p2);
+  assert.equal(r.done, 2);
+  const has = (rel) => fs.access(path.join(src, rel)).then(() => true, () => false);
+  assert.ok(await has("96_参考_アーカイブ版/01_案件別/DIS-LP-0316_a/a.png"));
+  assert.ok(await has("96_参考_アーカイブ版/02_セクション別/01_FV/PC/DIS-LP-0316_a_PC_01_FV.png"));
+  assert.ok(!(await has("01_案件別/DIS-LP-0316_a")));
+  assert.ok(await has("01_案件別/LP-0014_b/b.png"));
+  assert.ok(await has("01_案件別/DIS-LP-0200_c/c.png"));
+  await w("01_案件別/DIS-LP-0316_a/a.png", "again");
+  const p3 = await planMoves(src, "96_参考_アーカイブ版");
+  assert.equal(p3.conflicts.length, 1);
+  await assert.rejects(() => applyMoves(p3), /上書きしません/);
+});

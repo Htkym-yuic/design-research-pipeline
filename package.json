@@ -43,6 +43,7 @@
     "dis:find-rdlp": "node scripts/dis/find-rdlp.mjs",
     "dis:archive-shots": "node scripts/dis/archive-shots.mjs",
     "dis:renumber-copy": "node scripts/dis/renumber-copy.mjs",
+    "dis:move-archive-out": "node scripts/dis/move-archive-out.mjs",
     "dis:probe": "node scripts/dis/probe.mjs",
     "dis:probe-all": "node scripts/dis/probe-all.mjs",
     "dis:search": "node scripts/dis/search.mjs",
