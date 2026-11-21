@@ -1,0 +1,26 @@
+{
+  "lp": "LP-0155",
+  "reviewedAt": "2026-11-21",
+  "devices": {
+    "PC": { "structure": [], "sections": [], "missing": [], "note": "PCのシートとセクション画像がなく（manifestのPCが空）、確認していない" },
+    "SP": {
+      "structure": ["FV（最初のCTAまで）", "悩み提起（独立・副業を考える方へ）", "ベネフィット（成長市場・本部サポート等）", "市場背景（なぜ今SNS運用代行か REASON01〜03）", "悩み提起（メリットは分かっているのに現実は）", "解決策・サービス説明（販売代理店のお仕事）", "CTA", "特徴（ココが違う POINT01〜03）", "報酬体系（3コース表）", "FAQ", "資料請求フォーム"],
+      "sections": [
+        { "index": 1, "file": "LP-0155_Instagram・TikTok運用代行_SP_01_FV.png", "assignedKind": "01_FV", "verdict": "split", "note": "バッジ（250万円・経験ゼロOK）までで切れ、最初のCTAボタンが#8に分かれている。同じ組: #1＋#8。結合の候補" },
+        { "index": 2, "file": "LP-0155_Instagram・TikTok運用代行_SP_03_悩み提起.png", "assignedKind": "02_悩み提起", "verdict": "ok", "note": "お悩みカード。下端に矢印が少し入る（5%以下）" },
+        { "index": 3, "file": "LP-0155_Instagram・TikTok運用代行_SP_06_悩み提起.png", "assignedKind": "02_悩み提起", "verdict": "ok", "note": "「メリットは分かっているのに現実には」＋2つの悩み。#2とは別の悩み提起" },
+        { "index": 4, "file": "LP-0155_Instagram・TikTok運用代行_SP_07_解決策.png", "assignedKind": "03_解決策", "verdict": "ok", "note": "販売代理店のお仕事の説明（サービス紹介寄り）" },
+        { "index": 5, "file": "LP-0155_Instagram・TikTok運用代行_SP_05_特徴.png", "assignedKind": "05_特徴", "verdict": "wrong_kind", "correctKind": "12_その他", "note": "「なぜ今SNS運用代行がアツいのか」REASON01〜03。市場背景の説明で特徴ではない（判断が分かれる）。実際の特徴は#6" },
+        { "index": 6, "file": "LP-0155_Instagram・TikTok運用代行_SP_09_特徴.png", "assignedKind": "05_特徴", "verdict": "ok", "note": "「ココが違う」POINT01〜03。画像が細長く、小さい文字はシート上で読めないが構成は確認できた" },
+        { "index": 7, "file": "LP-0155_Instagram・TikTok運用代行_SP_04_ベネフィット.png", "assignedKind": "06_ベネフィット", "verdict": "ok", "note": "オレンジ帯の4項目。上端に矢印が少し入る（5%以下）" },
+        { "index": 8, "file": "LP-0155_Instagram・TikTok運用代行_SP_02_CTA.png", "assignedKind": "09_CTA", "verdict": "split", "note": "FV直下の資料請求ボタンだけ。FVの続き。同じ組: #1＋#8" },
+        { "index": 9, "file": "LP-0155_Instagram・TikTok運用代行_SP_08_CTA.png", "assignedKind": "09_CTA", "verdict": "ok", "note": "「無料の資料請求で詳しく見てみる」ボタンだけの細い帯" },
+        { "index": 10, "file": "LP-0155_Instagram・TikTok運用代行_SP_12_CTA.png", "assignedKind": "09_CTA", "verdict": "ok", "note": "資料請求フォーム" },
+        { "index": 11, "file": "LP-0155_Instagram・TikTok運用代行_SP_11_FAQ.png", "assignedKind": "10_FAQ", "verdict": "ok", "note": "よくあるご質問3件" },
+        { "index": 12, "file": "LP-0155_Instagram・TikTok運用代行_SP_10_料金.png", "assignedKind": "14_料金", "verdict": "bad_crop", "note": "3コースの報酬表の右側が切れている（2コース目以降が途中まで）。全体画像でも同じ位置で切れており、元の撮影で横にはみ出した可能性（撮り直し候補）" }
+      ],
+      "missing": [],
+      "note": "全体画像の最下部が資料請求フォームで終わり、フッター・著作権表記が見えない。全体画像が最後まで撮れていない可能性（撮り直し候補）"
+    }
+  }
+}

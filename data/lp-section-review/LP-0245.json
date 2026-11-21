@@ -1,0 +1,21 @@
+{
+  "lp": "LP-0245",
+  "reviewedAt": "2026-11-21",
+  "devices": {
+    "PC": {
+      "structure": ["PRODUCT（商品の導入）", "フレーバー3種の一覧", "ORANGINA（サイズ展開）", "FEATURE（特徴）", "HISTORY（ブランドの歴史）", "SHARE／WORLD LINK", "（その下は白紙）"],
+      "sections": [
+        { "index": 1, "file": "LP-0245_オランジーナ_PC_01_FV.png", "assignedKind": "01_FV", "verdict": "mixed", "note": "ページ最上部の1画面分。PRODUCT導入（#2）とフレーバー一覧の上部（#3）が入り、ボトルが途中で切れる。#2・#3と内容が重なる。このLPには独立したキービジュアル／FVがなく、最上部がPRODUCT導入のため、FVとしては不適切" },
+        { "index": 2, "file": "LP-0245_オランジーナ_PC_01_商品紹介.png", "assignedKind": "04_商品紹介", "verdict": "ok", "note": "PRODUCT 見出し・本文・写真" },
+        { "index": 3, "file": "LP-0245_オランジーナ_PC_02_商品紹介.png", "assignedKind": "04_商品紹介", "verdict": "ok", "note": "ORANGINA／HONEY LEMONGINA／BLOOD ORANGINA の3本。見出しなしの一覧だけ" },
+        { "index": 4, "file": "LP-0245_オランジーナ_PC_03_商品紹介.png", "assignedKind": "04_商品紹介", "verdict": "ok", "note": "ORANGINA サイズ展開" },
+        { "index": 5, "file": "LP-0245_オランジーナ_PC_04_特徴.png", "assignedKind": "05_特徴", "verdict": "ok", "note": "FEATURE（果実感・自然な甘み）" },
+        { "index": 6, "file": "LP-0245_オランジーナ_PC_06_フッター.png", "assignedKind": "11_フッター", "verdict": "ok", "note": "SHARE（Facebook/Twitter）とWORLD LINKのみ。コピーライトは見えない" },
+        { "index": 7, "file": "LP-0245_オランジーナ_PC_05_会社情報.png", "assignedKind": "15_会社情報", "verdict": "wrong_kind", "correctKind": "12_その他", "note": "HISTORY（1936〜2012のブランドの歴史）。企業情報ではなくブランドのヒストリー" }
+      ],
+      "missing": [],
+      "note": "全体画像は、SHARE／WORLD LINKの下が、ページの約4割にわたって白紙。フッター・著作権表記が見えず、全体画像が最後まで撮れていない（または空白が長く撮られた）可能性（撮り直し候補）"
+    },
+    "SP": { "structure": [], "sections": [], "missing": [], "note": "SPのシートとセクション画像がなく（manifestのSPが空）、確認していない" }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "lp": "LP-0154",
+  "reviewedAt": "2026-11-21",
+  "devices": {
+    "PC": { "structure": [], "sections": [], "missing": [], "note": "PCのシートとセクション画像がなく（manifestのPCが空）、確認していない" },
+    "SP": {
+      "structure": ["FV（最初のCTAまで）", "悩み提起", "安心（ご安心ください）", "解決策（なぜ漫画か→印税生活）", "「漫画設置予定」の灰色プレースホルダ", "特徴（POINT1〜4）", "制作例", "CTA（絵心・センス不要）", "お客様の声（Voice01〜05）", "日本最大級コミュニティ（実績）", "申し込みの流れ", "申し込みフォーム"],
+      "sections": [
+        { "index": 1, "file": "LP-0154_3日間集中プログラム_AI×漫画講座_SP_01_FV.png", "assignedKind": "01_FV", "verdict": "split", "note": "主コピーまでで切れ、最初のCTA（プレゼント＋申込ボタン）が#10に分かれている。同じ組: #1＋#10。結合の候補" },
+        { "index": 2, "file": "LP-0154_3日間集中プログラム_AI×漫画講座_SP_03_悩み提起.png", "assignedKind": "02_悩み提起", "verdict": "ok", "note": "お悩みチェックリスト5項目" },
+        { "index": 3, "file": "LP-0154_3日間集中プログラム_AI×漫画講座_SP_04_共感.png", "assignedKind": "02_悩み提起", "verdict": "split", "note": "「ご安心ください」の帯だけ。悩みではなく解決策の導入で、#4と同じ青い背景で続く。同じ組: #3＋#4。結合する場合の種類は03_解決策" },
+        { "index": 4, "file": "LP-0154_3日間集中プログラム_AI×漫画講座_SP_05_解決策.png", "assignedKind": "03_解決策", "verdict": "split", "note": "なぜ漫画なのか→印税生活が可能。#3の続き。同じ組: #3＋#4" },
+        { "index": 5, "file": "LP-0154_3日間集中プログラム_AI×漫画講座_SP_07_特徴.png", "assignedKind": "05_特徴", "verdict": "ok", "note": "Features POINT1〜4" },
+        { "index": 6, "file": "LP-0154_3日間集中プログラム_AI×漫画講座_SP_08_実績.png", "assignedKind": "07_実績", "verdict": "ok", "note": "制作例の紹介（受講生の作品）。末尾に次のCTAへの導入文" },
+        { "index": 7, "file": "LP-0154_3日間集中プログラム_AI×漫画講座_SP_10_実績.png", "assignedKind": "07_実績", "verdict": "ok", "note": "お客様の声 Voice01〜05。画像が細長く、小さい文字はシート上で読めないが、構成は確認できた" },
+        { "index": 8, "file": "LP-0154_3日間集中プログラム_AI×漫画講座_SP_11_実績.png", "assignedKind": "07_実績", "verdict": "ok", "note": "日本最大級のコミュニティ（収益グラフ）" },
+        { "index": 9, "file": "LP-0154_3日間集中プログラム_AI×漫画講座_SP_12_流れ.png", "assignedKind": "08_流れ", "verdict": "ok", "note": "お申込みの流れ（3ステップ）" },
+        { "index": 10, "file": "LP-0154_3日間集中プログラム_AI×漫画講座_SP_02_CTA.png", "assignedKind": "09_CTA", "verdict": "split", "note": "FV下部の続き（特殊プロンプト無料プレゼント＋申込ボタン）。#1と同じ背景で続く。同じ組: #1＋#10" },
+        { "index": 11, "file": "LP-0154_3日間集中プログラム_AI×漫画講座_SP_09_CTA.png", "assignedKind": "09_CTA", "verdict": "ok", "note": "中盤のCTA。FV下部と同じ内容の繰り返し（LPの設計）" },
+        { "index": 12, "file": "LP-0154_3日間集中プログラム_AI×漫画講座_SP_13_CTA.png", "assignedKind": "09_CTA", "verdict": "ok", "note": "申し込みフォーム＋ボタン" },
+        { "index": 13, "file": "LP-0154_3日間集中プログラム_AI×漫画講座_SP_06_その他.png", "assignedKind": "12_その他", "verdict": "bad_crop", "note": "灰色の板に「漫画設置予定」とだけ書かれたプレースホルダ。中身がない。切り出し対象から外す候補" }
+      ],
+      "missing": [],
+      "note": "全体画像の最下部が申し込みフォームで終わり、フッター・著作権表記が見えない。全体画像が最後まで撮れていない可能性（撮り直し候補）"
+    }
+  }
+}
