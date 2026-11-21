@@ -45,6 +45,8 @@
     "dis:renumber-copy": "node scripts/dis/renumber-copy.mjs",
     "dis:move-archive-out": "node scripts/dis/move-archive-out.mjs",
     "dis:section-audit": "node scripts/dis/section-audit.mjs",
+    "dis:section-review-prep": "node scripts/dis/section-review-prep.mjs",
+    "dis:section-review-summary": "node scripts/dis/section-review-summary.mjs",
     "dis:probe": "node scripts/dis/probe.mjs",
     "dis:probe-all": "node scripts/dis/probe-all.mjs",
     "dis:search": "node scripts/dis/search.mjs",

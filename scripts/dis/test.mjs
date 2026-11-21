@@ -1947,3 +1947,34 @@ test("section-audit: セクション画像の取得状況を、全体画像・PC
   assert.equal(classify(by.get("LP-0004")), "取得済み");
   assert.equal(classify(by.get("LP-0099")), "全体画像なし");
 });
+
+test("section-review-prep: 全体画像の区切りと、切り出し一覧の配置を計算する（実画像でシートが作れる）", async () => {
+  const { sliceRanges, gridPositions, kindCode, collect } = await import("./section-review-prep.mjs");
+  assert.deepEqual(sliceRanges(3200, 1500), [[0, 1500], [1500, 1500], [3000, 200]]);
+  assert.deepEqual(sliceRanges(1000, 1500), [[0, 1000]]);
+  const g = gridPositions(6, 5, 100, 200, 10);
+  assert.deepEqual(g[0], { left: 10, top: 10 });
+  assert.deepEqual(g[5], { left: 10, top: 220 });
+  assert.equal(kindCode("06_ベネフィット"), "K06");
+  const { default: sharp } = await import("sharp");
+  const src = await fs.mkdtemp(path.join(os.tmpdir(), "srp-"));
+  const mk = async (rel, w, h) => { await fs.mkdir(path.dirname(path.join(src, rel)), { recursive: true }); await sharp({ create: { width: w, height: h, channels: 3, background: "#88c" } }).png().toFile(path.join(src, rel)); };
+  await mk("01_案件別/LP-0001_a/LP-0001_a_PC_全体.png", 400, 4000);
+  await mk("02_セクション別/01_FV/PC/LP-0001_a_PC_01_FV.png", 400, 600);
+  await mk("02_セクション別/06_ベネフィット/PC/LP-0001_a_PC_06_ベネフィット.png", 400, 700);
+  const c = await collect(src, "LP-0001");
+  assert.ok(c.full.PC); assert.equal(c.full.SP, null);
+  assert.equal(c.sections.PC.length, 2); assert.equal(c.sections.SP.length, 0);
+});
+
+test("section-review-summary: 判定を集計し、要修正と不足の一覧を作る", async () => {
+  const { summarize } = await import("./section-review-summary.mjs");
+  const s = summarize([
+    { lp: "LP-0001", devices: { PC: { sections: [{ file: "a", assignedKind: "01_FV", verdict: "ok" }, { file: "b", assignedKind: "06_ベネフィット", verdict: "wrong_kind", correctKind: "02_悩み提起", note: "n" }], missing: [{ kind: "10_FAQ", evidence: "e" }] } } },
+    { lp: "LP-0002", devices: { PC: { sections: [{ file: "c", assignedKind: "01_FV", verdict: "ok" }], missing: [] }, SP: { sections: [{ file: "d", assignedKind: "09_CTA", verdict: "mixed" }] } } },
+  ]);
+  assert.equal(s.reviewed, 2);
+  assert.equal(s.verdicts.ok, 2); assert.equal(s.verdicts.wrong_kind, 1); assert.equal(s.verdicts.mixed, 1);
+  assert.equal(s.fixes.length, 2); assert.equal(s.missing.length, 1);
+  assert.deepEqual(s.problemLps, ["LP-0001", "LP-0002"]);
+});
