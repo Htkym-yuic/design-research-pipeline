@@ -2057,3 +2057,16 @@ test("cut-sections: 計画を検証し（範囲・種類・順番・重なり）
   const r2 = await runPlan(src, badPlan, { apply: true });
   assert.ok(r2.errors.length && r2.created === 0);
 });
+
+test("full-edge-audit: 末尾の空白・幅の違い・切り出し範囲の過不足を、疑いとして出す", async () => {
+  const { tailBlank, mode, flagsFor } = await import("./full-edge-audit.mjs");
+  assert.equal(tailBlank([false, true, true, true]), 3);
+  assert.equal(tailBlank([true, false]), 0);
+  assert.equal(mode([1366, 1366, 1280]), 1366);
+  assert.deepEqual(flagsFor({ width: 1366, height: 5000, tailBlank: 20, bottomTouch: false, coverage: 1 }, 1366), []);
+  assert.ok(flagsFor({ width: 1366, height: 5000, tailBlank: 1800, bottomTouch: false, coverage: 1 }, 1366)[0].includes("末尾が空白"));
+  assert.ok(flagsFor({ width: 1366, height: 5000, tailBlank: 0, bottomTouch: true, coverage: 1 }, 1366)[0].includes("切れている"));
+  assert.ok(flagsFor({ width: 750, height: 15046, tailBlank: 30, bottomTouch: false, coverage: 1 }, 390).some((s) => s.includes("幅が他と違う")));
+  assert.ok(flagsFor({ width: 390, height: 6000, tailBlank: 30, bottomTouch: false, coverage: 0.3 }, 390).some((s) => s.includes("小さい")));
+  assert.ok(flagsFor({ width: 390, height: 900, tailBlank: 30, bottomTouch: false, coverage: null }, 390).some((s) => s.includes("高さ")));
+});
