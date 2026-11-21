@@ -1,0 +1,100 @@
+{
+  "lp": "LP-0008",
+  "reviewedAt": "2026-11-21",
+  "devices": {
+    "PC": {
+      "structure": [
+        "FV",
+        "コンセプト紹介(PASTA de pon)",
+        "実績(金賞受賞・月間47,000個)",
+        "特徴(Taste of secret 01〜04)",
+        "商品紹介(11種のフレーバー)",
+        "アレンジレシピ",
+        "お客様の声",
+        "小袋プレゼント",
+        "ギフトBOX(Wrapping)"
+      ],
+      "sections": [
+        {
+          "index": 1,
+          "file": "LP-0008_PASTA_de_PON_PC_01_FV.png",
+          "assignedKind": "01_FV",
+          "verdict": "ok",
+          "note": ""
+        },
+        {
+          "index": 2,
+          "file": "LP-0008_PASTA_de_PON_PC_02_商品紹介.png",
+          "assignedKind": "04_商品紹介",
+          "verdict": "bad_crop",
+          "note": "上端にFVの商品画像の下部が入っている（高さの約5%を超える見込み）。内容はコンセプト紹介で商品紹介として妥当"
+        },
+        {
+          "index": 3,
+          "file": "LP-0008_PASTA_de_PON_PC_05_商品紹介.png",
+          "assignedKind": "04_商品紹介",
+          "verdict": "split",
+          "note": "「11 kinds of flavor」の見出しと導入。#4と同じセクション（#3＋#4）で、単体では不完全。結合の候補"
+        },
+        {
+          "index": 4,
+          "file": "LP-0008_PASTA_de_PON_PC_06_商品紹介.png",
+          "assignedKind": "04_商品紹介",
+          "verdict": "split",
+          "note": "#3の続き（11種のフレーバー一覧）。見出しなしで始まる。同じ組: #3＋#4。結合の候補"
+        },
+        {
+          "index": 5,
+          "file": "LP-0008_PASTA_de_PON_PC_04_特徴.png",
+          "assignedKind": "05_特徴",
+          "verdict": "ok",
+          "note": "Taste of secret 01〜04"
+        },
+        {
+          "index": 6,
+          "file": "LP-0008_PASTA_de_PON_PC_07_ベネフィット.png",
+          "assignedKind": "06_ベネフィット",
+          "verdict": "wrong_kind",
+          "correctKind": "12_その他",
+          "note": "Arrange Recipe（食べ方・アレンジ提案）。ベネフィット訴求ではない"
+        },
+        {
+          "index": 7,
+          "file": "LP-0008_PASTA_de_PON_PC_03_実績.png",
+          "assignedKind": "07_実績",
+          "verdict": "ok",
+          "note": "金賞受賞・販売実績"
+        },
+        {
+          "index": 8,
+          "file": "LP-0008_PASTA_de_PON_PC_08_実績.png",
+          "assignedKind": "07_実績",
+          "verdict": "ok",
+          "note": "User Voices（お客様の声）"
+        },
+        {
+          "index": 9,
+          "file": "LP-0008_PASTA_de_PON_PC_09_その他.png",
+          "assignedKind": "12_その他",
+          "verdict": "ok",
+          "note": "小袋6枚プレゼントのキャンペーン帯。上端に前セクションの赤い縁（5%以下）"
+        },
+        {
+          "index": 10,
+          "file": "LP-0008_PASTA_de_PON_PC_10_その他.png",
+          "assignedKind": "12_その他",
+          "verdict": "ok",
+          "note": "Wrapping（ギフトBOX）"
+        }
+      ],
+      "missing": [],
+      "note": "全体画像の最下部がWrapping（ギフトBOX）で終わり、フッター・著作権表記・会社情報が見えない。全体画像が最後まで撮れていない可能性（撮り直し候補）"
+    },
+    "SP": {
+      "structure": [],
+      "sections": [],
+      "missing": [],
+      "note": "SPのシートとセクション画像がなく（manifestのSPが空）、確認していない"
+    }
+  }
+}
