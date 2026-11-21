@@ -96,7 +96,7 @@ def build(a):
         ("案件台帳: LP-0001〜 の一覧と、状況（ステータス・優先度・PC/SPの有無・セクション数・要対応）。案件管理は、ここ。", False),
         ("LP構成: LPごとの構成。16種類のセクションの有無（○／－）、構成の流れ（上から順）、構造から出した所見（総評・いいところ・悪いところ・改善）。", False),
         ("言語化: 自分の問い・感じたこと・訴求の言語化を書く（黄色）。AIが分析して、点数・コメント・改善案を書く（青）。", False),
-        ("保管場所: どこに何が入っているか。アーカイブ・フォルダ・全体画像のリンク（クリックでDropboxが開く）、SP画像の出所、元のフォルダ名。", False),
+        ("保管場所: どこに何が入っているか。アーカイブ・フォルダ・全体画像のリンク（クリックでDropboxが開く）、SP画像の出所。", False),
         ("フォルダ地図: Dropboxのフォルダの役割。", False),
         ("セクション画像一覧: セクション画像1枚ごとの一覧とリンク。LP番号や種類で絞り込める。", False),
         ("オファー・特典一覧／評価観点: 特典の整理表と、AIが採点する5観点の目安。", False),
@@ -163,14 +163,14 @@ def build(a):
 
     # ---- 保管場所
     ws = wb.create_sheet("保管場所")
-    ws.append(["LP番号", "案件名", "アーカイブ（元ページ）", "案件別フォルダ", "PC全体画像", "SP全体画像", "SP画像の出所", "元フォルダ（旧パイプライン）", "備考"]); head(ws)
+    ws.append(["LP番号", "案件名", "アーカイブ（元ページ）", "案件別フォルダ", "PC全体画像", "SP全体画像", "SP画像の出所", "備考"]); head(ws)
     for r in master:
         rc = old["recapture"].get(r["LP番号"], {})
-        ws.append([r["LP番号"], r["タイトル"], "", "", "", "", rc.get("追加した画像", ""), old["origin"].get(r["LP番号"], ""), r["要対応"]])
+        ws.append([r["LP番号"], r["タイトル"], "", "", "", "", rc.get("追加した画像", ""), r["要対応"]])
         row = ws.max_row
         link(ws.cell(row=row, column=3), r["アーカイブURL"], "アーカイブ"); link(ws.cell(row=row, column=4), r["案件別リンク"], "フォルダ")
         link(ws.cell(row=row, column=5), r["PC全体画像リンク"], "PC全体"); link(ws.cell(row=row, column=6), r["SP全体画像リンク"], "SP全体")
-    widths(ws, [10, 34, 12, 10, 10, 10, 22, 50, 36]); ws.freeze_panes = "C2"; ws.auto_filter.ref = ws.dimensions; wrap(ws, (8, 9))
+    widths(ws, [10, 34, 12, 10, 10, 10, 22, 40]); ws.freeze_panes = "C2"; ws.auto_filter.ref = ws.dimensions; wrap(ws, (8,))
 
     # ---- フォルダ地図
     ws = wb.create_sheet("フォルダ地図")
@@ -221,8 +221,8 @@ def build(a):
     # ---- 整理メモ
     ws = wb.create_sheet("整理メモ")
     ws.append(["旧ファイル（10_デザイン/00_台帳/）", "このブックでの置き場所", "取り込めたか"]); head(ws)
-    for name, where in [("LP対応表_案件別リスト.xlsx", "LP構成（構成の流れ・総評・いいところ・悪いところ・改善）／案件台帳／保管場所"), ("対応表_LP_元フォルダ.csv", "保管場所（元フォルダ（旧パイプライン））"), ("再撮影コピー結果.csv", "保管場所（SP画像の出所）")]:
-        ws.append([name, where, "取り込み済み" if name in old["found"] else "（今回は未指定）"])
+    for name, where in [("LP対応表_案件別リスト.xlsx", "LP構成（構成の流れ・総評・いいところ・悪いところ・改善）／案件台帳／保管場所"), ("対応表_LP_元フォルダ.csv", "取り込まない（旧パイプラインの番号は不要と判断。今後は、Dropboxの格納先との紐付けに切り替える）"), ("再撮影コピー結果.csv", "保管場所（SP画像の出所）")]:
+        ws.append([name, where, ("取り込まない" if name.startswith("対応表_") else "取り込み済み") if name in old["found"] else "（今回は未指定）"])
     ws.append([]); ws.append(["確認できたら、旧ファイルは、00_台帳の中の別フォルダ（例: _旧台帳）に移して、しばらく置いてから削除する。"])
     widths(ws, [44, 70, 18])
     return wb, len(master), len(secs), len(notion), old["found"]
