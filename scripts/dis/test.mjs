@@ -1993,3 +1993,21 @@ test("section-rename-plan: DIS-LP-…のファイル名を分解し、対応表�
   assert.equal(resolveLp({ dis: "DIS-LP-0500", name: "全然ちがう" }, map, rel), null);
   assert.equal(norm("PASTA de PON"), norm("PASTA_de_PON"));
 });
+
+test("crop-fv: 全体画像の上端からFVを切り出し、02_セクション別/01_FVへ新規保存し、既存は上書きしない", async () => {
+  const { planFv, cropFv } = await import("./crop-fv.mjs");
+  const { default: sharp } = await import("sharp");
+  const src = await fs.mkdtemp(path.join(os.tmpdir(), "cf-"));
+  await fs.mkdir(path.join(src, "01_案件別/LP-0029_テスト"), { recursive: true });
+  await fs.mkdir(path.join(src, "02_セクション別/01_FV/SP"), { recursive: true });
+  await sharp({ create: { width: 390, height: 5000, channels: 3, background: "#cc8" } }).png().toFile(path.join(src, "01_案件別/LP-0029_テスト/LP-0029_テスト_SP_全体.png"));
+  const plan = await planFv(src, "LP-0029", "SP");
+  assert.ok(plan.out.endsWith("02_セクション別/01_FV/SP/LP-0029_テスト_SP_01_FV.png"));
+  await assert.rejects(() => cropFv(plan, 9999), /不正/);
+  const r = await cropFv(plan, 1200);
+  assert.equal(r.height, 1200);
+  const m = await sharp(plan.out).metadata();
+  assert.deepEqual([m.width, m.height], [390, 1200]);
+  await assert.rejects(() => cropFv(plan, 1200), /上書きしません/);
+  await assert.rejects(() => planFv(src, "LP-0099", "SP"), /0 件/);
+});

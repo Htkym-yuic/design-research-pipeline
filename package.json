@@ -46,6 +46,7 @@
     "dis:move-archive-out": "node scripts/dis/move-archive-out.mjs",
     "dis:section-audit": "node scripts/dis/section-audit.mjs",
     "dis:section-rename-plan": "node scripts/dis/section-rename-plan.mjs",
+    "dis:crop-fv": "node scripts/dis/crop-fv.mjs",
     "dis:section-review-prep": "node scripts/dis/section-review-prep.mjs",
     "dis:section-review-summary": "node scripts/dis/section-review-summary.mjs",
     "dis:probe": "node scripts/dis/probe.mjs",
