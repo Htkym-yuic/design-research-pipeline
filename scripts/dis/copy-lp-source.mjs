@@ -5,7 +5,7 @@
  *
  *   node scripts/dis/copy-lp-source.mjs                                   # ドライラン（計画の表示のみ）
  *   DIS_ENABLE_WRITES=true node scripts/dis/copy-lp-source.mjs --apply     # コピー（新規のみ）
- *   オプション: --dropbox <Dropboxの同期フォルダ> （既定: ~/Library/CloudStorage/Dropbox）
+ *   オプション: --dropbox <Dropboxの同期フォルダ> （既定: ~/Library/CloudStorage/Dropbox） / --lp LP-0228（指定したLPだけ。省略すると、両方）
  *
  * ・元: <Dropbox>/Research_Library/Design/LP_Research_Library/01_By_Date/2026-09-27/LP/<Product|Service>/<LP-nnnn_名前>/{01_PC,02_SP}/…
  * ・先: <Dropbox>/10_デザイン/01_言語化ラボ/10_LP/01_案件別/<LP-nnnn_名前>/<LP-nnnn_名前>_<PC|SP>_<全体|FV>.png
@@ -53,8 +53,10 @@ export async function applyCopy(items) {
 }
 
 async function main() {
-  const { values: v } = parseArgs({ options: { dropbox: { type: "string", default: path.join(os.homedir(), "Library/CloudStorage/Dropbox") }, apply: { type: "boolean", default: false } } });
-  const items = TARGETS.flatMap((t) => planFor(v.dropbox, t));
+  const { values: v } = parseArgs({ options: { dropbox: { type: "string", default: path.join(os.homedir(), "Library/CloudStorage/Dropbox") }, apply: { type: "boolean", default: false }, lp: { type: "string" } } });
+  const targets = v.lp ? TARGETS.filter((t) => t.lp === v.lp) : TARGETS;
+  if (!targets.length) { console.error(`対象外のLPです: ${v.lp}（対象: ${TARGETS.map((t) => t.lp).join(", ")}）`); process.exit(1); }
+  const items = targets.flatMap((t) => planFor(v.dropbox, t));
   for (const it of items) {
     const st = await fs.stat(it.from).catch(() => null);
     const ex = await fs.stat(it.to).catch(() => null);
