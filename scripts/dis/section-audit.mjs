@@ -91,6 +91,16 @@ async function main() {
     const list = rows.filter((r) => r.区分 === k);
     if (list.length) console.log(`\n[${k}] ${list.length}件\n  ` + list.map((r) => `${r.lp}${r.重複扱い ? "(重複)" : ""} ${r.title}`).join("\n  "));
   }
+  // 種類ごとの取得状況（PC/SP それぞれ、何件のLPに画像があるか）と、種類数の少ないLP
+  const perKind = Object.fromEntries(kinds.map((k) => [k, { PC: 0, SP: 0 }]));
+  for (const it of map.items) { const rec = by.get(it.oldLp); if (!rec) continue; for (const d of ["PC", "SP"]) for (const k of rec.sections[d]) perKind[k][d]++; }
+  console.log("\n[種類ごとの取得LP数]（PC / SP）");
+  for (const k of kinds) console.log(`  ${k.padEnd(10)} ${String(perKind[k].PC).padStart(4)} / ${String(perKind[k].SP).padStart(4)}`);
+  const hist = {};
+  for (const r of rows) hist[r.PC種類数] = (hist[r.PC種類数] || 0) + 1;
+  console.log("\n[PCの種類数の分布]（種類数: LP数）  " + Object.entries(hist).sort((a, b) => a[0] - b[0]).map(([n, c]) => `${n}:${c}`).join("  "));
+  const thin = rows.filter((r) => r.区分 === "取得済み" && (Math.min(r.PC種類数, r.SP種類数) <= 3 || Math.abs(r.PC種類数 - r.SP種類数) >= 3));
+  if (thin.length) console.log(`\n[要確認: 種類数が3以下、またはPCとSPの差が3以上] ${thin.length}件\n  ` + thin.map((r) => `${r.lp} ${r.title}  PC${r.PC種類数}/SP${r.SP種類数} [${r.取得済みの種類}]`).join("\n  "));
   const head = Object.keys(rows[0]);
   const csv = [head.join(","), ...rows.map((r) => head.map((h) => `"${String(r[h]).replace(/"/g, '""')}"`).join(","))].join("\n") + "\n";
   await fs.writeFile(path.join(REPO, v.out + ".csv"), csv);
