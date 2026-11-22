@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T16:18:41.563Z",
+  "updatedAt": "2026-11-22T16:18:17.451Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -4669,6 +4669,66 @@
       "reservedAt": "2026-11-21T16:18:41.563Z"
     },
     {
+      "id": "GR-0284",
+      "title": "秋の屋外イベントチラシテンプレート",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9dd0546ebe5b003a020d015a69e1ab0f%2F9dd0546ebe5b003a020d015a69e1ab0f-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-25435",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9dd0546ebe5b003a020d015a69e1ab0f%2F9dd0546ebe5b003a020d015a69e1ab0f-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-22T16:18:17.451Z"
+    },
+    {
+      "id": "GR-0285",
+      "title": "秋の感謝祭SALE！イラストポスター",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fdb7cd8f6c7ca4f1e16b209267e5cc6db%2Fdb7cd8f6c7ca4f1e16b209267e5cc6db-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-26481",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fdb7cd8f6c7ca4f1e16b209267e5cc6db%2Fdb7cd8f6c7ca4f1e16b209267e5cc6db-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-22T16:18:17.451Z"
+    },
+    {
+      "id": "GR-0286",
+      "title": "真ん中に枯れ葉イラストの入った秋食向けバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fdd235165801138e6612c160204026f9b%2Fdd235165801138e6612c160204026f9b-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-16294",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fdd235165801138e6612c160204026f9b%2Fdd235165801138e6612c160204026f9b-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-22T16:18:17.451Z"
+    },
+    {
+      "id": "GR-0287",
+      "title": "モダンな縦長ビジネス名刺デザイン",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F4f2dc2bdf16da3fa4108cac6fb797ad4%2F4f2dc2bdf16da3fa4108cac6fb797ad4-400.webp&w=256&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29011",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F4f2dc2bdf16da3fa4108cac6fb797ad4%2F4f2dc2bdf16da3fa4108cac6fb797ad4-400.webp&w=256&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-22T16:18:17.451Z"
+    },
+    {
+      "id": "GR-0288",
+      "title": "3つのひし形の組み合わせのロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/babd3f539f0f4494d6f09427ed068bf4/babd3f539f0f4494d6f09427ed068bf4-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-2999",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/babd3f539f0f4494d6f09427ed068bf4/babd3f539f0f4494d6f09427ed068bf4-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-22T16:18:17.451Z"
+    },
+    {
       "id": "ILAC-0001",
       "title": "DX デジタルトランスフォーメーション 人物",
       "mediaType": "Asset",
@@ -9314,6 +9374,30 @@
       "materialId": "PAT-0107",
       "authorProfileUrl": null,
       "reservedAt": "2026-11-21T16:18:41.563Z"
+    },
+    {
+      "id": "PAT-0108",
+      "title": "FUCURA | つづく縁起の、かたち。に見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://fucura.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/fucura/",
+      "imageUrl": null,
+      "materialId": "PAT-0108",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-22T16:18:17.451Z"
+    },
+    {
+      "id": "PAT-0109",
+      "title": "秋の屋外イベントチラシテンプレートに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9dd0546ebe5b003a020d015a69e1ab0f%2F9dd0546ebe5b003a020d015a69e1ab0f-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-25435",
+      "imageUrl": null,
+      "materialId": "PAT-0109",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-22T16:18:17.451Z"
     },
     {
       "id": "PHAC-0001",
@@ -15999,6 +16083,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-18T16:26:18.551Z"
+    },
+    {
+      "id": "WB-0093",
+      "title": "FUCURA | つづく縁起の、かたち。",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://fucura.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/fucura/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/fucura_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-22T16:18:17.451Z"
+    },
+    {
+      "id": "WB-0094",
+      "title": "ラフ株式会社 | 大人の趣味活",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://laughinc.co.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/laugh/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/laugh_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-22T16:18:17.451Z"
     }
   ]
 }

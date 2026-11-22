@@ -1,19 +1,71 @@
 {
-  "collectedAt": "2026-11-21T16:18:41.563Z",
-  "candidateCount": 6,
+  "collectedAt": "2026-11-22T16:18:17.451Z",
+  "candidateCount": 9,
   "candidates": [
     {
-      "id": "GR-0279",
+      "id": "WB-0093",
+      "status": "candidate",
+      "mediaType": "Web",
+      "sourceKey": "web",
+      "title": "FUCURA | つづく縁起の、かたち。",
+      "captureUrl": "https://fucura.com/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/fucura_t-400x350.jpg",
+      "landingUrl": null,
+      "sourceName": "SANKOU!",
+      "sourceUrl": "https://sankoudesign.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/fucura/",
+      "library": "Web_Research_Library",
+      "notionEnv": "NOTION_WEB_DATA_SOURCE_ID",
+      "saveImage": true,
+      "materialId": null,
+      "authorProfileUrl": null,
+      "searchTerm": null,
+      "metadata": {
+        "width": 400,
+        "height": 350,
+        "alt": "FUCURA | つづく縁起の、かたち。",
+        "subtype": null,
+        "subtypeLabel": null
+      }
+    },
+    {
+      "id": "WB-0094",
+      "status": "candidate",
+      "mediaType": "Web",
+      "sourceKey": "web",
+      "title": "ラフ株式会社 | 大人の趣味活",
+      "captureUrl": "https://laughinc.co.jp/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/laugh_t-400x350.jpg",
+      "landingUrl": null,
+      "sourceName": "SANKOU!",
+      "sourceUrl": "https://sankoudesign.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/laugh/",
+      "library": "Web_Research_Library",
+      "notionEnv": "NOTION_WEB_DATA_SOURCE_ID",
+      "saveImage": true,
+      "materialId": null,
+      "authorProfileUrl": null,
+      "searchTerm": null,
+      "metadata": {
+        "width": 400,
+        "height": 350,
+        "alt": "ラフ株式会社 | 大人の趣味活",
+        "subtype": null,
+        "subtypeLabel": null
+      }
+    },
+    {
+      "id": "GR-0284",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "ヨガイベントチラシ",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fd5ac86ad74e1880b20a0f8ad84bc70ee%2Fd5ac86ad74e1880b20a0f8ad84bc70ee-400.webp&w=828&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fd5ac86ad74e1880b20a0f8ad84bc70ee%2Fd5ac86ad74e1880b20a0f8ad84bc70ee-400.webp&w=828&q=75",
+      "title": "秋の屋外イベントチラシテンプレート",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9dd0546ebe5b003a020d015a69e1ab0f%2F9dd0546ebe5b003a020d015a69e1ab0f-400.webp&w=828&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9dd0546ebe5b003a020d015a69e1ab0f%2F9dd0546ebe5b003a020d015a69e1ab0f-400.webp&w=828&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/flyer",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29953",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-25435",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -23,23 +75,23 @@
       "metadata": {
         "width": 283,
         "height": 400,
-        "alt": "ヨガイベントチラシ, チラシ, チラシテンプレート",
+        "alt": "秋の屋外イベントチラシテンプレート, チラシ, チラシテンプレート",
         "subtype": "flyer",
         "subtypeLabel": "チラシ・フライヤー"
       }
     },
     {
-      "id": "GR-0280",
+      "id": "GR-0285",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "忘年会新年会の予約案内ポスター",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F2076dcc478d7be900a9680798d57d16a%2F2076dcc478d7be900a9680798d57d16a-400.webp&w=828&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F2076dcc478d7be900a9680798d57d16a%2F2076dcc478d7be900a9680798d57d16a-400.webp&w=828&q=75",
+      "title": "秋の感謝祭SALE！イラストポスター",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fdb7cd8f6c7ca4f1e16b209267e5cc6db%2Fdb7cd8f6c7ca4f1e16b209267e5cc6db-400.webp&w=828&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fdb7cd8f6c7ca4f1e16b209267e5cc6db%2Fdb7cd8f6c7ca4f1e16b209267e5cc6db-400.webp&w=828&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/poster",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-26492",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-26481",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -49,23 +101,23 @@
       "metadata": {
         "width": 283,
         "height": 400,
-        "alt": "忘年会新年会の予約案内ポスター, ポスター, ポスターテンプレート",
+        "alt": "秋の感謝祭SALE！イラストポスター, ポスター, ポスターテンプレート",
         "subtype": "poster",
         "subtypeLabel": "ポスター"
       }
     },
     {
-      "id": "GR-0281",
+      "id": "GR-0286",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "くすみカラーでちぎり模様の秋食向けバナー",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F1068a20eaeff12b23884664977cce096%2F1068a20eaeff12b23884664977cce096-400.webp&w=640&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F1068a20eaeff12b23884664977cce096%2F1068a20eaeff12b23884664977cce096-400.webp&w=640&q=75",
+      "title": "真ん中に枯れ葉イラストの入った秋食向けバナー",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fdd235165801138e6612c160204026f9b%2Fdd235165801138e6612c160204026f9b-400.webp&w=640&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fdd235165801138e6612c160204026f9b%2Fdd235165801138e6612c160204026f9b-400.webp&w=640&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/banner",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-16296",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-16294",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -75,23 +127,23 @@
       "metadata": {
         "width": 156,
         "height": 104,
-        "alt": "くすみカラーでちぎり模様の秋食向けバナー, バナー, バナーテンプレート",
+        "alt": "真ん中に枯れ葉イラストの入った秋食向けバナー, バナー, バナーテンプレート",
         "subtype": "social",
         "subtypeLabel": "SNS投稿・Web広告"
       }
     },
     {
-      "id": "GR-0282",
+      "id": "GR-0287",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "スタイリッシュな縦長ビジネス名刺デザイン",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F23bc950bc6742925b83e80ca7ec94d21%2F23bc950bc6742925b83e80ca7ec94d21-400.webp&w=256&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F23bc950bc6742925b83e80ca7ec94d21%2F23bc950bc6742925b83e80ca7ec94d21-400.webp&w=256&q=75",
+      "title": "モダンな縦長ビジネス名刺デザイン",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F4f2dc2bdf16da3fa4108cac6fb797ad4%2F4f2dc2bdf16da3fa4108cac6fb797ad4-400.webp&w=256&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F4f2dc2bdf16da3fa4108cac6fb797ad4%2F4f2dc2bdf16da3fa4108cac6fb797ad4-400.webp&w=256&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/business-card",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29012",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29011",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -101,23 +153,23 @@
       "metadata": {
         "width": 242,
         "height": 400,
-        "alt": "スタイリッシュな縦長ビジネス名刺デザイン\n, 名刺, 名刺テンプレート",
+        "alt": "モダンな縦長ビジネス名刺デザイン\n, 名刺, 名刺テンプレート",
         "subtype": "business-card",
         "subtypeLabel": "名刺・ショップカード"
       }
     },
     {
-      "id": "GR-0283",
+      "id": "GR-0288",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "オレンジと緑の抽象的なロゴ",
-      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/bb15b0e64e95361fb5d7845dd98ac8f2/bb15b0e64e95361fb5d7845dd98ac8f2-400.webp",
-      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/bb15b0e64e95361fb5d7845dd98ac8f2/bb15b0e64e95361fb5d7845dd98ac8f2-400.webp",
+      "title": "3つのひし形の組み合わせのロゴ",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/babd3f539f0f4494d6f09427ed068bf4/babd3f539f0f4494d6f09427ed068bf4-400.webp",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/babd3f539f0f4494d6f09427ed068bf4/babd3f539f0f4494d6f09427ed068bf4-400.webp",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/logo",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3101",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-2999",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -127,27 +179,59 @@
       "metadata": {
         "width": 400,
         "height": 400,
-        "alt": "オレンジと緑の抽象的なロゴ, ロゴ, ロゴテンプレート",
+        "alt": "3つのひし形の組み合わせのロゴ, ロゴ, ロゴテンプレート",
         "subtype": "logo",
         "subtypeLabel": "ロゴ・VI/CI"
       }
     },
     {
-      "id": "PAT-0107",
+      "id": "PAT-0108",
       "status": "candidate",
       "mediaType": "Pattern",
       "sourceKey": "patterns",
-      "title": "ヨガイベントチラシに見る文字組みと視線誘導",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fd5ac86ad74e1880b20a0f8ad84bc70ee%2Fd5ac86ad74e1880b20a0f8ad84bc70ee-400.webp&w=828&q=75",
+      "title": "FUCURA | つづく縁起の、かたち。に見るPC・SPの情報優先順位",
+      "captureUrl": "https://fucura.com/",
+      "imageUrl": null,
+      "landingUrl": null,
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "sourceUrl": "https://sankoudesign.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/fucura/",
+      "library": "Pattern_Research_Library",
+      "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
+      "saveImage": false,
+      "materialId": "PAT-0108",
+      "authorProfileUrl": null,
+      "searchTerm": null,
+      "metadata": {
+        "collectionMode": "derived_pattern",
+        "patternType": "情報設計",
+        "targetMedia": [
+          "Web",
+          "LP"
+        ],
+        "rule": "画面幅が変わっても、主見出し・主要ベネフィット・CTAの意味と順序を維持する。",
+        "cautions": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
+        "evidenceIds": [
+          "WB-0093"
+        ]
+      }
+    },
+    {
+      "id": "PAT-0109",
+      "status": "candidate",
+      "mediaType": "Pattern",
+      "sourceKey": "patterns",
+      "title": "秋の屋外イベントチラシテンプレートに見る文字組みと視線誘導",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9dd0546ebe5b003a020d015a69e1ab0f%2F9dd0546ebe5b003a020d015a69e1ab0f-400.webp&w=828&q=75",
       "imageUrl": null,
       "landingUrl": null,
       "sourceName": "日次収集から抽出（デザインAC）",
       "sourceUrl": "https://www.design-ac.net/free-template/flyer",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29953",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-25435",
       "library": "Pattern_Research_Library",
       "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
       "saveImage": false,
-      "materialId": "PAT-0107",
+      "materialId": "PAT-0109",
       "authorProfileUrl": null,
       "searchTerm": null,
       "metadata": {
@@ -160,7 +244,7 @@
         "rule": "主見出し・補足・画像・行動情報のサイズ差と配置から、最初に読ませる情報を明確にする。",
         "cautions": "素材そのものではなく、情報階層と余白の考え方だけを転用する。",
         "evidenceIds": [
-          "GR-0279"
+          "GR-0284"
         ]
       }
     }
@@ -178,15 +262,9 @@
     {
       "key": "web",
       "sourceName": "SANKOU!",
-      "status": "failed",
-      "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://sankoudesign.com/\", waiting until \"domcontentloaded\"\n"
-    },
-    {
-      "key": "graphic",
-      "sourceName": "デザインAC",
       "status": "collected",
-      "found": 70,
-      "accepted": 1,
+      "found": 29,
+      "accepted": 2,
       "reason": null,
       "diagnostic": null
     },
@@ -221,7 +299,16 @@
       "key": "graphic",
       "sourceName": "デザインAC",
       "status": "collected",
-      "found": 57,
+      "found": 70,
+      "accepted": 1,
+      "reason": null,
+      "diagnostic": null
+    },
+    {
+      "key": "graphic",
+      "sourceName": "デザインAC",
+      "status": "collected",
+      "found": 69,
       "accepted": 1,
       "reason": null,
       "diagnostic": null
@@ -229,8 +316,11 @@
     {
       "key": "parts",
       "sourceName": "Parts.",
-      "status": "failed",
-      "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://partsdesign.net/\", waiting until \"domcontentloaded\"\n"
+      "status": "collected",
+      "found": 180,
+      "accepted": 0,
+      "reason": null,
+      "diagnostic": null
     },
     {
       "key": "canva",
@@ -249,9 +339,9 @@
       "accepted": 0,
       "reason": "取得元がGitHubホストランナーからのアクセスを拒否しました。ローカル収集ルートで再実行してください。",
       "diagnostic": {
-        "finalUrl": "https://www.ac-illust.com/main/search_result.php?word=%E4%BB%8B%E8%AD%B7",
+        "finalUrl": "https://www.ac-illust.com/main/search_result.php?word=%E6%95%99%E8%82%B2",
         "title": "ERROR: The request could not be satisfied",
-        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: ZrGIkDp4XZucLuTPK8936J6gJJyCp58zS20sZ0TcnsOyf",
+        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: 4BwFKtFf3ruGpFmS4peI_vIExZJ1aQwaofya4pOr_TRvz",
         "figureCount": 0,
         "imageCount": 0
       }
@@ -264,9 +354,9 @@
       "accepted": 0,
       "reason": "取得元がGitHubホストランナーからのアクセスを拒否しました。ローカル収集ルートで再実行してください。",
       "diagnostic": {
-        "finalUrl": "https://www.photo-ac.com/main/search?q=%E4%BB%8B%E8%AD%B7",
+        "finalUrl": "https://www.photo-ac.com/main/search?q=%E6%95%99%E8%82%B2",
         "title": "ERROR: The request could not be satisfied",
-        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: Tn5D441joruIYrKLK3nBqTFvFD2-3psBvBrIvIyY_ZGpL",
+        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: e3dxa7WaWlL0DMs2T2m18kJdphOfyeXcGv0Rr2t1kRil5",
         "figureCount": 0,
         "imageCount": 0
       }
@@ -275,8 +365,8 @@
       "key": "patterns",
       "sourceName": "日次収集から抽出",
       "status": "collected",
-      "found": 1,
-      "accepted": 1,
+      "found": 2,
+      "accepted": 2,
       "reason": null,
       "diagnostic": null
     }
