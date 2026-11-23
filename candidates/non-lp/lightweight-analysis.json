@@ -17186,6 +17186,134 @@
       "reviewPoints": "素材そのものではなく、情報階層と余白の考え方だけを転用する。",
       "deepDivePriority": "中",
       "generatedAt": "2026-11-22T16:18:43.297Z"
+    },
+    "WB-0095": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。VUILD – Architecture。",
+      "selectionReason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+      "visualSummary": "暖色・黄橙系。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-23T16:26:34.121Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/WB-0095-vuild-architecture/03_Implementation_Blueprint/WB-0095_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/WB-0095-vuild-architecture/03_Implementation_Blueprint/WB-0095_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/WB-0095-vuild-architecture/03_Implementation_Blueprint/WB-0095_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/WB-0095-vuild-architecture/03_Implementation_Blueprint/WB-0095_elementor_implementation_guide.md",
+        "sections": 8,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "WB-0096": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。SHIBUYA PARCO / 百軒店。",
+      "selectionReason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+      "visualSummary": "暗色・黒基調。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-23T16:26:34.136Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/WB-0096-shibuya-parco/03_Implementation_Blueprint/WB-0096_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/WB-0096-shibuya-parco/03_Implementation_Blueprint/WB-0096_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/WB-0096-shibuya-parco/03_Implementation_Blueprint/WB-0096_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/WB-0096-shibuya-parco/03_Implementation_Blueprint/WB-0096_elementor_implementation_guide.md",
+        "sections": 8,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0289": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したチラシ・フライヤー参考。筋力アップ教室の案内チラシ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "ニュートラル。283×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-23T16:26:34.150Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0289-untitled/03_Implementation_Blueprint/GR-0289_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0289-untitled/03_Implementation_Blueprint/GR-0289_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0289-untitled/03_Implementation_Blueprint/GR-0289_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0289-untitled/03_Implementation_Blueprint/GR-0289_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0290": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したSNS投稿・Web広告参考。シックなお取り寄せ向けの秋食バナー。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "暖色・黄橙系。156×103の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-23T16:26:34.164Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0290-untitled/03_Implementation_Blueprint/GR-0290_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0290-untitled/03_Implementation_Blueprint/GR-0290_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0290-untitled/03_Implementation_Blueprint/GR-0290_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0290-untitled/03_Implementation_Blueprint/GR-0290_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0291": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集した名刺・ショップカード参考。クールな横長ビジネス名刺デザイン。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "明色・白基調。384×232の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-23T16:26:34.176Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0291-untitled/03_Implementation_Blueprint/GR-0291_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0291-untitled/03_Implementation_Blueprint/GR-0291_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0291-untitled/03_Implementation_Blueprint/GR-0291_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0291-untitled/03_Implementation_Blueprint/GR-0291_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "GR-0292": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "デザインACから収集したロゴ・VI/CI参考。六角形のロゴ。",
+      "selectionReason": "デザインACの新規候補として重複確認を通過。文字組み、配色、余白、視線誘導を完成作品単位で確認できるため。",
+      "visualSummary": "寒色・青紫系。400×400の掲載画像を基準に確認。",
+      "usefulPoints": "単体ビジュアルの構成・余白・文字組みを確認可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-23T16:26:34.191Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/GR-0292-untitled/03_Implementation_Blueprint/GR-0292_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/GR-0292-untitled/03_Implementation_Blueprint/GR-0292_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/GR-0292-untitled/03_Implementation_Blueprint/GR-0292_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/GR-0292-untitled/03_Implementation_Blueprint/GR-0292_elementor_implementation_guide.md",
+        "sections": 4,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PAT-0110": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（デザインAC）から収集したPattern参考。筋力アップ教室の案内チラシに見る文字組みと視線誘導。",
+      "selectionReason": "日次収集から抽出（デザインAC）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "主見出し・補足・画像・行動情報のサイズ差と配置から、最初に読ませる情報を明確にする。 根拠候補: GR-0289",
+      "reviewPoints": "素材そのものではなく、情報階層と余白の考え方だけを転用する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-23T16:26:34.191Z"
+    },
+    "PAT-0111": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（SANKOU!）から収集したPattern参考。VUILD – Architectureに見るPC・SPの情報優先順位。",
+      "selectionReason": "日次収集から抽出（SANKOU!）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "画面幅が変わっても、主見出し・主要ベネフィット・CTAの意味と順序を維持する。 根拠候補: WB-0095",
+      "reviewPoints": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-23T16:26:34.191Z"
     }
   }
 }
