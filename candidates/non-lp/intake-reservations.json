@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T16:18:17.451Z",
+  "updatedAt": "2026-11-23T16:25:59.127Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -4729,6 +4729,54 @@
       "reservedAt": "2026-11-22T16:18:17.451Z"
     },
     {
+      "id": "GR-0289",
+      "title": "筋力アップ教室の案内チラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fb096eae45280965d8e7737b27f445e7b%2Fb096eae45280965d8e7737b27f445e7b-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29433",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fb096eae45280965d8e7737b27f445e7b%2Fb096eae45280965d8e7737b27f445e7b-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-23T16:25:59.127Z"
+    },
+    {
+      "id": "GR-0290",
+      "title": "シックなお取り寄せ向けの秋食バナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fa0bb20b80ecc6cb3b380a34f20f0ad5e%2Fa0bb20b80ecc6cb3b380a34f20f0ad5e-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-16293",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fa0bb20b80ecc6cb3b380a34f20f0ad5e%2Fa0bb20b80ecc6cb3b380a34f20f0ad5e-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-23T16:25:59.127Z"
+    },
+    {
+      "id": "GR-0291",
+      "title": "クールな横長ビジネス名刺デザイン",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Ff30b56fb880a0663e53396bf5eeb52ee%2Ff30b56fb880a0663e53396bf5eeb52ee-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29010",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Ff30b56fb880a0663e53396bf5eeb52ee%2Ff30b56fb880a0663e53396bf5eeb52ee-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-23T16:25:59.127Z"
+    },
+    {
+      "id": "GR-0292",
+      "title": "六角形のロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/212d167577e957be7fe568f2e0e210cc/212d167577e957be7fe568f2e0e210cc-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3096",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/212d167577e957be7fe568f2e0e210cc/212d167577e957be7fe568f2e0e210cc-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-23T16:25:59.127Z"
+    },
+    {
       "id": "ILAC-0001",
       "title": "DX デジタルトランスフォーメーション 人物",
       "mediaType": "Asset",
@@ -9398,6 +9446,30 @@
       "materialId": "PAT-0109",
       "authorProfileUrl": null,
       "reservedAt": "2026-11-22T16:18:17.451Z"
+    },
+    {
+      "id": "PAT-0110",
+      "title": "筋力アップ教室の案内チラシに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fb096eae45280965d8e7737b27f445e7b%2Fb096eae45280965d8e7737b27f445e7b-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29433",
+      "imageUrl": null,
+      "materialId": "PAT-0110",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-23T16:25:59.127Z"
+    },
+    {
+      "id": "PAT-0111",
+      "title": "VUILD – Architectureに見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://vuild.co.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/vuild/",
+      "imageUrl": null,
+      "materialId": "PAT-0111",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-23T16:25:59.127Z"
     },
     {
       "id": "PHAC-0001",
@@ -16107,6 +16179,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-22T16:18:17.451Z"
+    },
+    {
+      "id": "WB-0095",
+      "title": "VUILD – Architecture",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://vuild.co.jp/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/vuild/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/vuild02_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-23T16:25:59.127Z"
+    },
+    {
+      "id": "WB-0096",
+      "title": "SHIBUYA PARCO / 百軒店",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://shibuya.parco.jp/page/hyakkendana-dommune/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/shibuyaparco-hyakkendanadommune/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/hyakkendanadommune_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-23T16:25:59.127Z"
     }
   ]
 }

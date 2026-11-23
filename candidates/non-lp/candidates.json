@@ -1,19 +1,19 @@
 {
-  "collectedAt": "2026-11-22T16:18:17.451Z",
-  "candidateCount": 9,
+  "collectedAt": "2026-11-23T16:25:59.127Z",
+  "candidateCount": 8,
   "candidates": [
     {
-      "id": "WB-0093",
+      "id": "WB-0095",
       "status": "candidate",
       "mediaType": "Web",
       "sourceKey": "web",
-      "title": "FUCURA | つづく縁起の、かたち。",
-      "captureUrl": "https://fucura.com/",
-      "imageUrl": "https://sankoudesign.com/wp-content/uploads/fucura_t-400x350.jpg",
+      "title": "VUILD – Architecture",
+      "captureUrl": "https://vuild.co.jp/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/vuild02_t-400x350.jpg",
       "landingUrl": null,
       "sourceName": "SANKOU!",
       "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/fucura/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/vuild/",
       "library": "Web_Research_Library",
       "notionEnv": "NOTION_WEB_DATA_SOURCE_ID",
       "saveImage": true,
@@ -23,23 +23,23 @@
       "metadata": {
         "width": 400,
         "height": 350,
-        "alt": "FUCURA | つづく縁起の、かたち。",
+        "alt": "VUILD – Architecture, Democratized.",
         "subtype": null,
         "subtypeLabel": null
       }
     },
     {
-      "id": "WB-0094",
+      "id": "WB-0096",
       "status": "candidate",
       "mediaType": "Web",
       "sourceKey": "web",
-      "title": "ラフ株式会社 | 大人の趣味活",
-      "captureUrl": "https://laughinc.co.jp/",
-      "imageUrl": "https://sankoudesign.com/wp-content/uploads/laugh_t-400x350.jpg",
+      "title": "SHIBUYA PARCO / 百軒店",
+      "captureUrl": "https://shibuya.parco.jp/page/hyakkendana-dommune/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/hyakkendanadommune_t-400x350.jpg",
       "landingUrl": null,
       "sourceName": "SANKOU!",
       "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/laugh/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/shibuyaparco-hyakkendanadommune/",
       "library": "Web_Research_Library",
       "notionEnv": "NOTION_WEB_DATA_SOURCE_ID",
       "saveImage": true,
@@ -49,23 +49,23 @@
       "metadata": {
         "width": 400,
         "height": 350,
-        "alt": "ラフ株式会社 | 大人の趣味活",
+        "alt": "SHIBUYA PARCO / 百軒店",
         "subtype": null,
         "subtypeLabel": null
       }
     },
     {
-      "id": "GR-0284",
+      "id": "GR-0289",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "秋の屋外イベントチラシテンプレート",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9dd0546ebe5b003a020d015a69e1ab0f%2F9dd0546ebe5b003a020d015a69e1ab0f-400.webp&w=828&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9dd0546ebe5b003a020d015a69e1ab0f%2F9dd0546ebe5b003a020d015a69e1ab0f-400.webp&w=828&q=75",
+      "title": "筋力アップ教室の案内チラシ",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fb096eae45280965d8e7737b27f445e7b%2Fb096eae45280965d8e7737b27f445e7b-400.webp&w=828&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fb096eae45280965d8e7737b27f445e7b%2Fb096eae45280965d8e7737b27f445e7b-400.webp&w=828&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/flyer",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-25435",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29433",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -75,49 +75,23 @@
       "metadata": {
         "width": 283,
         "height": 400,
-        "alt": "秋の屋外イベントチラシテンプレート, チラシ, チラシテンプレート",
+        "alt": "筋力アップ教室の案内チラシ\n, チラシ, チラシテンプレート",
         "subtype": "flyer",
         "subtypeLabel": "チラシ・フライヤー"
       }
     },
     {
-      "id": "GR-0285",
+      "id": "GR-0290",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "秋の感謝祭SALE！イラストポスター",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fdb7cd8f6c7ca4f1e16b209267e5cc6db%2Fdb7cd8f6c7ca4f1e16b209267e5cc6db-400.webp&w=828&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fdb7cd8f6c7ca4f1e16b209267e5cc6db%2Fdb7cd8f6c7ca4f1e16b209267e5cc6db-400.webp&w=828&q=75",
-      "landingUrl": null,
-      "sourceName": "デザインAC",
-      "sourceUrl": "https://www.design-ac.net/free-template/poster",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-26481",
-      "library": "Graphic_Research_Library",
-      "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
-      "saveImage": true,
-      "materialId": null,
-      "authorProfileUrl": null,
-      "searchTerm": null,
-      "metadata": {
-        "width": 283,
-        "height": 400,
-        "alt": "秋の感謝祭SALE！イラストポスター, ポスター, ポスターテンプレート",
-        "subtype": "poster",
-        "subtypeLabel": "ポスター"
-      }
-    },
-    {
-      "id": "GR-0286",
-      "status": "candidate",
-      "mediaType": "Graphic",
-      "sourceKey": "graphic",
-      "title": "真ん中に枯れ葉イラストの入った秋食向けバナー",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fdd235165801138e6612c160204026f9b%2Fdd235165801138e6612c160204026f9b-400.webp&w=640&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fdd235165801138e6612c160204026f9b%2Fdd235165801138e6612c160204026f9b-400.webp&w=640&q=75",
+      "title": "シックなお取り寄せ向けの秋食バナー",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fa0bb20b80ecc6cb3b380a34f20f0ad5e%2Fa0bb20b80ecc6cb3b380a34f20f0ad5e-400.webp&w=640&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fa0bb20b80ecc6cb3b380a34f20f0ad5e%2Fa0bb20b80ecc6cb3b380a34f20f0ad5e-400.webp&w=640&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/banner",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-16294",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-16293",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -126,24 +100,24 @@
       "searchTerm": null,
       "metadata": {
         "width": 156,
-        "height": 104,
-        "alt": "真ん中に枯れ葉イラストの入った秋食向けバナー, バナー, バナーテンプレート",
+        "height": 103,
+        "alt": "シックなお取り寄せ向けの秋食バナー, バナー, バナーテンプレート",
         "subtype": "social",
         "subtypeLabel": "SNS投稿・Web広告"
       }
     },
     {
-      "id": "GR-0287",
+      "id": "GR-0291",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "モダンな縦長ビジネス名刺デザイン",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F4f2dc2bdf16da3fa4108cac6fb797ad4%2F4f2dc2bdf16da3fa4108cac6fb797ad4-400.webp&w=256&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F4f2dc2bdf16da3fa4108cac6fb797ad4%2F4f2dc2bdf16da3fa4108cac6fb797ad4-400.webp&w=256&q=75",
+      "title": "クールな横長ビジネス名刺デザイン",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Ff30b56fb880a0663e53396bf5eeb52ee%2Ff30b56fb880a0663e53396bf5eeb52ee-400.webp&w=384&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Ff30b56fb880a0663e53396bf5eeb52ee%2Ff30b56fb880a0663e53396bf5eeb52ee-400.webp&w=384&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/business-card",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29011",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29010",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -151,25 +125,25 @@
       "authorProfileUrl": null,
       "searchTerm": null,
       "metadata": {
-        "width": 242,
-        "height": 400,
-        "alt": "モダンな縦長ビジネス名刺デザイン\n, 名刺, 名刺テンプレート",
+        "width": 384,
+        "height": 232,
+        "alt": "クールな横長ビジネス名刺デザイン\n, 名刺, 名刺テンプレート",
         "subtype": "business-card",
         "subtypeLabel": "名刺・ショップカード"
       }
     },
     {
-      "id": "GR-0288",
+      "id": "GR-0292",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "3つのひし形の組み合わせのロゴ",
-      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/babd3f539f0f4494d6f09427ed068bf4/babd3f539f0f4494d6f09427ed068bf4-400.webp",
-      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/babd3f539f0f4494d6f09427ed068bf4/babd3f539f0f4494d6f09427ed068bf4-400.webp",
+      "title": "六角形のロゴ",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/212d167577e957be7fe568f2e0e210cc/212d167577e957be7fe568f2e0e210cc-400.webp",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/212d167577e957be7fe568f2e0e210cc/212d167577e957be7fe568f2e0e210cc-400.webp",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/logo",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-2999",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3096",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -179,59 +153,27 @@
       "metadata": {
         "width": 400,
         "height": 400,
-        "alt": "3つのひし形の組み合わせのロゴ, ロゴ, ロゴテンプレート",
+        "alt": "六角形のロゴ, ロゴ, ロゴテンプレート",
         "subtype": "logo",
         "subtypeLabel": "ロゴ・VI/CI"
       }
     },
     {
-      "id": "PAT-0108",
+      "id": "PAT-0110",
       "status": "candidate",
       "mediaType": "Pattern",
       "sourceKey": "patterns",
-      "title": "FUCURA | つづく縁起の、かたち。に見るPC・SPの情報優先順位",
-      "captureUrl": "https://fucura.com/",
-      "imageUrl": null,
-      "landingUrl": null,
-      "sourceName": "日次収集から抽出（SANKOU!）",
-      "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/fucura/",
-      "library": "Pattern_Research_Library",
-      "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
-      "saveImage": false,
-      "materialId": "PAT-0108",
-      "authorProfileUrl": null,
-      "searchTerm": null,
-      "metadata": {
-        "collectionMode": "derived_pattern",
-        "patternType": "情報設計",
-        "targetMedia": [
-          "Web",
-          "LP"
-        ],
-        "rule": "画面幅が変わっても、主見出し・主要ベネフィット・CTAの意味と順序を維持する。",
-        "cautions": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
-        "evidenceIds": [
-          "WB-0093"
-        ]
-      }
-    },
-    {
-      "id": "PAT-0109",
-      "status": "candidate",
-      "mediaType": "Pattern",
-      "sourceKey": "patterns",
-      "title": "秋の屋外イベントチラシテンプレートに見る文字組みと視線誘導",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F9dd0546ebe5b003a020d015a69e1ab0f%2F9dd0546ebe5b003a020d015a69e1ab0f-400.webp&w=828&q=75",
+      "title": "筋力アップ教室の案内チラシに見る文字組みと視線誘導",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fb096eae45280965d8e7737b27f445e7b%2Fb096eae45280965d8e7737b27f445e7b-400.webp&w=828&q=75",
       "imageUrl": null,
       "landingUrl": null,
       "sourceName": "日次収集から抽出（デザインAC）",
       "sourceUrl": "https://www.design-ac.net/free-template/flyer",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-25435",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29433",
       "library": "Pattern_Research_Library",
       "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
       "saveImage": false,
-      "materialId": "PAT-0109",
+      "materialId": "PAT-0110",
       "authorProfileUrl": null,
       "searchTerm": null,
       "metadata": {
@@ -244,7 +186,39 @@
         "rule": "主見出し・補足・画像・行動情報のサイズ差と配置から、最初に読ませる情報を明確にする。",
         "cautions": "素材そのものではなく、情報階層と余白の考え方だけを転用する。",
         "evidenceIds": [
-          "GR-0284"
+          "GR-0289"
+        ]
+      }
+    },
+    {
+      "id": "PAT-0111",
+      "status": "candidate",
+      "mediaType": "Pattern",
+      "sourceKey": "patterns",
+      "title": "VUILD – Architectureに見るPC・SPの情報優先順位",
+      "captureUrl": "https://vuild.co.jp/",
+      "imageUrl": null,
+      "landingUrl": null,
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "sourceUrl": "https://sankoudesign.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/vuild/",
+      "library": "Pattern_Research_Library",
+      "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
+      "saveImage": false,
+      "materialId": "PAT-0111",
+      "authorProfileUrl": null,
+      "searchTerm": null,
+      "metadata": {
+        "collectionMode": "derived_pattern",
+        "patternType": "情報設計",
+        "targetMedia": [
+          "Web",
+          "LP"
+        ],
+        "rule": "画面幅が変わっても、主見出し・主要ベネフィット・CTAの意味と順序を維持する。",
+        "cautions": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
+        "evidenceIds": [
+          "WB-0095"
         ]
       }
     }
@@ -280,11 +254,8 @@
     {
       "key": "graphic",
       "sourceName": "デザインAC",
-      "status": "collected",
-      "found": 70,
-      "accepted": 1,
-      "reason": null,
-      "diagnostic": null
+      "status": "failed",
+      "error": "page.evaluate: Execution context was destroyed, most likely because of a navigation"
     },
     {
       "key": "graphic",
@@ -326,7 +297,7 @@
       "key": "canva",
       "sourceName": "Canva",
       "status": "collected",
-      "found": 41,
+      "found": 40,
       "accepted": 0,
       "reason": null,
       "diagnostic": null
@@ -339,9 +310,9 @@
       "accepted": 0,
       "reason": "取得元がGitHubホストランナーからのアクセスを拒否しました。ローカル収集ルートで再実行してください。",
       "diagnostic": {
-        "finalUrl": "https://www.ac-illust.com/main/search_result.php?word=%E6%95%99%E8%82%B2",
+        "finalUrl": "https://www.ac-illust.com/main/search_result.php?word=%E9%A3%B2%E9%A3%9F",
         "title": "ERROR: The request could not be satisfied",
-        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: 4BwFKtFf3ruGpFmS4peI_vIExZJ1aQwaofya4pOr_TRvz",
+        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: 1lHGTUntzfgIdgg3MjNSHpG1OZH4mUyXRzNs_vXs9muPz",
         "figureCount": 0,
         "imageCount": 0
       }
@@ -354,9 +325,9 @@
       "accepted": 0,
       "reason": "取得元がGitHubホストランナーからのアクセスを拒否しました。ローカル収集ルートで再実行してください。",
       "diagnostic": {
-        "finalUrl": "https://www.photo-ac.com/main/search?q=%E6%95%99%E8%82%B2",
+        "finalUrl": "https://www.photo-ac.com/main/search?q=%E9%A3%B2%E9%A3%9F",
         "title": "ERROR: The request could not be satisfied",
-        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: e3dxa7WaWlL0DMs2T2m18kJdphOfyeXcGv0Rr2t1kRil5",
+        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: wBpasp5UXzcYm-Z2p6lJv64IR9T-bCQsuIz60jJR9Apyb",
         "figureCount": 0,
         "imageCount": 0
       }
