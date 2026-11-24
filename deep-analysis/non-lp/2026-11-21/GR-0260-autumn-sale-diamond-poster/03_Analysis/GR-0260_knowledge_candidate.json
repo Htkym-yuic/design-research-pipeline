@@ -1,0 +1,134 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "GR-0260",
+  "media_type": "GR",
+  "title": "ダイヤ柄のオータムセールポスター",
+  "source": {
+    "source_name": "デザインAC",
+    "source_detail_url": "https://www.design-ac.net/free-template/poster-template-26603",
+    "capture_url": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fefbb153c9cde426359f643c242eb55ac%2Fefbb153c9cde426359f643c242eb55ac-400.webp&w=828&q=75",
+    "official_url": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2Fefbb153c9cde426359f643c242eb55ac%2Fefbb153c9cde426359f643c242eb55ac-400.webp&w=828&q=75"
+  },
+  "analysis": {
+    "summary": "ダイヤ柄背景と茶色の二重枠で秋らしい高級感を演出しつつ、中央白帯に「Autumn SALE」「MAX 50%OFF」という核心情報を簡潔に配置する季節セールポスター。日付はプレースホルダーのまま収集されたテンプレート状態。",
+    "score": {
+      "visual": 16,
+      "clarity": 16,
+      "originality": 8,
+      "reusability": 18,
+      "learning": 12,
+      "evidence": 8,
+      "total": 78
+    },
+    "units": [
+      {
+        "name": "作品全体",
+        "role": "秋のセール情報を見出し・割引率・期間・店舗名の4要素で簡潔に伝える",
+        "reuse": "二重枠＋ダイヤ柄背景＋中央白帯の情報配置",
+        "evidence": "GR-0260_reference.pngの目視確認"
+      },
+      {
+        "name": "タイトル・見出し",
+        "role": "セールの種別を一語で確定する",
+        "reuse": "細字の季節名＋極太字の催事名という二行見出し",
+        "evidence": "GR-0260_reference.pngの目視確認"
+      },
+      {
+        "name": "割引率訴求",
+        "role": "最大割引率を提示し最も強い購買動機を作る",
+        "reuse": "「MAX」＋最大サイズの割引率数字という強調パターン",
+        "evidence": "GR-0260_reference.pngの目視確認"
+      },
+      {
+        "name": "期間情報",
+        "role": "セール期間を示し行動の期限を伝える",
+        "reuse": "開始日→矢印→終了日の期間表記",
+        "evidence": "GR-0260_reference.pngの目視確認"
+      },
+      {
+        "name": "ロゴ・発行情報",
+        "role": "発行主体（店舗）を示す",
+        "reuse": "黒背景バッジによる店舗名表示",
+        "evidence": "GR-0260_reference.pngの目視確認"
+      },
+      {
+        "name": "装飾・背景",
+        "role": "秋らしい季節感と高級感を演出する",
+        "reuse": "ダイヤ柄背景＋二重枠の額縁構成",
+        "evidence": "GR-0260_reference.pngの目視確認"
+      }
+    ]
+  },
+  "strengths": [
+    "ダイヤ柄と二重枠で安売り感を抑えた上質なセール訴求",
+    "割引率を最大サイズで強調し購買動機を作る",
+    "情報を4要素に絞り簡潔"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "日付がプレースホルダーのまま",
+      "evidence": "「2025.0.00SUN → 0.00SUN」の未入力表示",
+      "fix": "実際のセール期間を明記する",
+      "effect": "広告としての信頼性向上",
+      "metric": "来店数・問い合わせ数"
+    },
+    {
+      "priority": "P1",
+      "issue": "対象商品の記載がない",
+      "evidence": "画像内に対象カテゴリの明記がない",
+      "fix": "「対象：秋冬商品」等の一言を追加する",
+      "effect": "来店前の期待値形成",
+      "metric": "来店後の満足度"
+    },
+    {
+      "priority": "P2",
+      "issue": "適用店舗（オンライン／実店舗）が不明",
+      "evidence": "画像内に明記がない",
+      "fix": "適用範囲を一言追記する",
+      "effect": "誤解による来店後のトラブル防止",
+      "metric": "問い合わせ件数"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "ダイヤ柄背景＋二重枠の額縁構成",
+      "keep": "装飾背景＋外枠＋中央白帯の配置",
+      "replace": "パターン、配色"
+    },
+    {
+      "id": "C02",
+      "name": "「MAX」＋最大サイズの割引率数字という強調パターン",
+      "keep": "MAX表記＋大型数字の階層",
+      "replace": "具体的な割引率"
+    },
+    {
+      "id": "C03",
+      "name": "開始日→矢印→終了日の期間表記",
+      "keep": "矢印接続による期間表記",
+      "replace": "具体的な日付"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "「AC STORE」の店舗名、具体的なダイヤ柄の配色・比率、具体的な割引率、具体的な日付",
+    "reusable": "二重枠＋ダイヤ柄背景＋中央白帯の構成、MAX＋割引率の強調パターン、期間の矢印接続表記"
+  },
+  "evidence": {
+    "files": [
+      "https://www.design-ac.net/free-template/poster-template-26603",
+      "GR-0260_reference.png"
+    ],
+    "unknowns": [
+      "enlarged_typography_capture_missing",
+      "content_detail_unverified",
+      "print_mockup_missing",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

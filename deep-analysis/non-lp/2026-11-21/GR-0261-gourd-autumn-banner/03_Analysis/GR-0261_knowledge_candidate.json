@@ -1,0 +1,133 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "GR-0261",
+  "media_type": "GR",
+  "title": "ひょうたんの形をしたイラストのある秋食向けバナー",
+  "source": {
+    "source_name": "デザインAC",
+    "source_detail_url": "https://www.design-ac.net/free-template/banner-template-16300",
+    "capture_url": "https://www.design-ac.net/free-template/banner-template-16300",
+    "official_url": "https://www.design-ac.net/free-template/banner-template-16300"
+  },
+  "analysis": {
+    "summary": "オレンジ〜赤のグラデーションと黒スキャロップ枠で秋食への熱量を演出し、中央のひょうたん型バッジに「沼る秋食厳選」の縦書き見出しを凝縮して配置するSNS/Web向けティザーバナー。対象商品名はなく、日付はプレースホルダーのまま。",
+    "score": {
+      "visual": 17,
+      "clarity": 14,
+      "originality": 11,
+      "reusability": 16,
+      "learning": 10,
+      "evidence": 6,
+      "total": 74
+    },
+    "units": [
+      {
+        "name": "作品全体",
+        "role": "秋の食品企画をSNS/Web上で一瞥で認知させWEB限定ページへの興味を喚起する",
+        "reuse": "ひょうたん型バッジ＋縦書き見出し＋吹き出し＋限定訴求リボンの放射状配置",
+        "evidence": "GR-0261_reference.pngの目視確認"
+      },
+      {
+        "name": "中央バッジ・縦書き見出し",
+        "role": "企画名「沼る秋食厳選」を一つの塊として提示する",
+        "reuse": "有機形状バッジ＋縦書き3段見出し（修飾語・核心語・修飾語の順）",
+        "evidence": "GR-0261_reference.pngの目視確認"
+      },
+      {
+        "name": "吹き出し補足コピー",
+        "role": "企画への期待感を具体的な一言で補足する",
+        "reuse": "バッジに寄り添う吹き出し型の補足コピー",
+        "evidence": "GR-0261_reference.pngの目視確認"
+      },
+      {
+        "name": "日付プレースホルダー",
+        "role": "企画の開催・掲載期間を示す",
+        "reuse": "日付＋曜日の表記フォーマット",
+        "evidence": "GR-0261_reference.pngの目視確認"
+      },
+      {
+        "name": "限定訴求リボン",
+        "role": "入手経路を限定し特別感を訴求する",
+        "reuse": "黒リボン型バッジによる「限定チャネル＋購入形態」の二段表記",
+        "evidence": "GR-0261_reference.pngの目視確認"
+      },
+      {
+        "name": "装飾・背景",
+        "role": "秋の食への「沼る」ほどの熱量・季節感を演出する",
+        "reuse": "グラデーション背景＋スキャロップ枠の組み合わせ",
+        "evidence": "GR-0261_reference.pngの目視確認"
+      }
+    ]
+  },
+  "strengths": [
+    "ひょうたん型バッジによる視覚的なアクセント",
+    "縦書き見出しで企画名を凝縮して伝える",
+    "吹き出しとリボンで情報の役割を視覚的に区別"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "対象商品の具体名・情報が一切ない",
+      "evidence": "画像内に商品名・カテゴリの記載なし",
+      "fix": "対象商品のジャンル（例：スイーツ・海鮮等）を一言追加する",
+      "effect": "クリック前の期待値形成・CTR向上",
+      "metric": "クリック率"
+    },
+    {
+      "priority": "P1",
+      "issue": "日付がプレースホルダーのまま",
+      "evidence": "「0000.00.00 SUN」の未入力表示",
+      "fix": "実際の掲載・開催日を明記する",
+      "effect": "情報の信頼性向上",
+      "metric": "閲覧数・保存数"
+    },
+    {
+      "priority": "P2",
+      "issue": "具体的なCTA・遷移先の記載がない",
+      "evidence": "画像内にURLやボタンの記載なし",
+      "fix": "「詳細はプロフィールのリンクから」等の導線を追記する",
+      "effect": "遷移率向上",
+      "metric": "リンククリック数"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "有機形状バッジ＋縦書き3段見出し",
+      "keep": "バッジ形状＋3段見出しの文字サイズ階層",
+      "replace": "具体的なコピー、バッジの配色"
+    },
+    {
+      "id": "C02",
+      "name": "バッジに寄り添う吹き出し型補足コピー",
+      "keep": "吹き出し形状＋2行コピーの配置",
+      "replace": "具体的なコピー文言"
+    },
+    {
+      "id": "C03",
+      "name": "黒リボン型バッジによる限定チャネル表記",
+      "keep": "リボン形状＋二段表記",
+      "replace": "具体的な文言"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "バッジ・リボンの正確な輪郭形状、グラデーション背景の具体的な配色比率・テクスチャパターン",
+    "reusable": "有機形状バッジ＋縦書き見出しの構造、吹き出し型補足コピーの配置、リボン型限定訴求の二段表記"
+  },
+  "evidence": {
+    "files": [
+      "https://www.design-ac.net/free-template/banner-template-16300",
+      "GR-0261_reference.png"
+    ],
+    "unknowns": [
+      "enlarged_typography_capture_missing",
+      "content_detail_unverified",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

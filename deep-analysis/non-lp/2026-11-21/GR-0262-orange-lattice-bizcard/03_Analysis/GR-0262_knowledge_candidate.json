@@ -1,0 +1,134 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "GR-0262",
+  "media_type": "GR",
+  "title": "オレンジ格子背景のシンプル雑貨店名刺",
+  "source": {
+    "source_name": "デザインAC",
+    "source_detail_url": "https://www.design-ac.net/free-template/business-card-template-29287",
+    "capture_url": "https://www.design-ac.net/free-template/business-card-template-29287",
+    "official_url": "https://www.design-ac.net/free-template/business-card-template-29287"
+  },
+  "analysis": {
+    "summary": "オレンジ地に白格子柄の背景上に白い角丸カードで情報領域を明確に区切り、業種ラベル・氏名・連絡先を階層的に配置する名刺デザイン。QRコードやロゴ等の付加要素はなく、住所・連絡先はテンプレート固有の架空情報。",
+    "score": {
+      "visual": 15,
+      "clarity": 17,
+      "originality": 7,
+      "reusability": 17,
+      "learning": 10,
+      "evidence": 6,
+      "total": 72
+    },
+    "units": [
+      {
+        "name": "作品全体",
+        "role": "氏名・業種・連絡先を一枚の名刺として明瞭に伝える",
+        "reuse": "オレンジ格子背景＋中央白カードの二層構成",
+        "evidence": "GR-0262_reference.pngの目視確認"
+      },
+      {
+        "name": "装飾・背景",
+        "role": "名刺全体の第一印象を鮮やかにする",
+        "reuse": "単色背景＋等間隔格子線のパターン",
+        "evidence": "GR-0262_reference.pngの目視確認"
+      },
+      {
+        "name": "本文・補足（情報カード）",
+        "role": "情報領域を背景から視覚的に分離し可読性を確保する",
+        "reuse": "装飾背景から浮かせた白角丸カードによる情報領域の分離",
+        "evidence": "GR-0262_reference.pngの目視確認"
+      },
+      {
+        "name": "タイトル・見出し（業種ラベル・氏名）",
+        "role": "氏名を主役としつつ業種文脈を補足する",
+        "reuse": "小さめの業種ラベル＋最大サイズの氏名という二段見出し",
+        "evidence": "GR-0262_reference.pngの目視確認"
+      },
+      {
+        "name": "ロゴ・発行情報（連絡先ブロック）",
+        "role": "具体的な連絡手段を提供する",
+        "reuse": "郵便番号→住所→メール→電話の4行連絡先フォーマット",
+        "evidence": "GR-0262_reference.pngの目視確認"
+      },
+      {
+        "name": "余白・比率バランス",
+        "role": "カードと背景の比率を調整し情報領域の圧迫感を防ぐ",
+        "reuse": "カード外周に均等な余白を残す比率設計",
+        "evidence": "GR-0262_reference.pngの目視確認"
+      }
+    ]
+  },
+  "strengths": [
+    "オレンジ格子背景による鮮やかな第一印象",
+    "白カードによる情報領域の明確な分離",
+    "業種ラベル・氏名・連絡先の階層が整理されている"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "デジタル接点（QRコード・SNS）の記載がない",
+      "evidence": "カード内に該当要素なし",
+      "fix": "QRコードまたはSNSアカウントを一行追加する",
+      "effect": "名刺交換後の継続的な接点形成",
+      "metric": "フォロー率・サイト訪問数"
+    },
+    {
+      "priority": "P1",
+      "issue": "取扱商品・サービス内容が不明",
+      "evidence": "「General store」のみで業種詳細がない",
+      "fix": "「雑貨・ギフト取扱」等の一言を追加する",
+      "effect": "初対面での業務理解の促進",
+      "metric": "会話のきっかけ増加"
+    },
+    {
+      "priority": "P2",
+      "issue": "ロゴ・ブランド要素がない",
+      "evidence": "カード内にロゴ図版が確認できない",
+      "fix": "店舗ロゴを小さく配置する",
+      "effect": "ブランド認知の強化",
+      "metric": "再来店・再連絡率"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "オレンジ格子背景＋中央白カードの二層構成",
+      "keep": "背景パターン＋浮かせたカードの構成",
+      "replace": "配色、パターンの種類"
+    },
+    {
+      "id": "C02",
+      "name": "小さめ業種ラベル＋最大サイズ氏名の二段見出し",
+      "keep": "ラベル＋氏名の文字サイズ階層",
+      "replace": "具体的な氏名・業種名"
+    },
+    {
+      "id": "C03",
+      "name": "郵便番号→住所→メール→電話の4行連絡先フォーマット",
+      "keep": "4行の並び順・階層",
+      "replace": "具体的な住所・連絡先情報"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "「Yamada Yuki」「General store」の氏名・業種プレースホルダー、具体的な住所・メールアドレス・電話番号",
+    "reusable": "オレンジ格子背景＋中央白カードの二層構成、業種ラベル＋氏名の二段見出し、4行連絡先フォーマットの並び順"
+  },
+  "evidence": {
+    "files": [
+      "https://www.design-ac.net/free-template/business-card-template-29287",
+      "GR-0262_reference.png"
+    ],
+    "unknowns": [
+      "enlarged_typography_capture_missing",
+      "content_detail_unverified",
+      "print_mockup_missing",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

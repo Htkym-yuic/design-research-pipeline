@@ -1,0 +1,51 @@
+{
+  "schema_version": "drs-weekly-run-1.0",
+  "run_date": "2026-11-21",
+  "run_mode": "daily_auto_deep_analysis_loop",
+  "scope_note": "日次自動実行（深い分析ループ）。2026-11-17収集分の繰り越し候補のうち最も予約日時が古いGR-0260・GR-0261・GR-0262の3件（いずれもグラフィック）を処理した。",
+  "selected": [
+    {
+      "id": "GR-0260",
+      "title": "ダイヤ柄のオータムセールポスター",
+      "analysis": "completed",
+      "markdown_validation_warnings": 0,
+      "knowledge_json": "validated",
+      "score": 78,
+      "notion": "pending",
+      "cbs_production_sync": "not_applied"
+    },
+    {
+      "id": "GR-0261",
+      "title": "ひょうたんの形をしたイラストのある秋食向けバナー",
+      "analysis": "completed",
+      "markdown_validation_warnings": 0,
+      "knowledge_json": "validated",
+      "score": 74,
+      "notion": "pending",
+      "cbs_production_sync": "not_applied",
+      "note": "対象商品の具体名・価格帯が画像内に一切記載されておらず、ティザー的な訴求のみであることを明記して分析した。"
+    },
+    {
+      "id": "GR-0262",
+      "title": "オレンジ格子背景のシンプル雑貨店名刺",
+      "analysis": "completed",
+      "markdown_validation_warnings": 0,
+      "knowledge_json": "validated",
+      "score": 72,
+      "notion": "pending",
+      "cbs_production_sync": "not_applied"
+    }
+  ],
+  "deferred_to_next_run": [
+    {"id": "GR-0263", "title": "丸みを帯びた抽象的なロゴ", "reservedAt": "2026-11-17T16:30:26.069Z"},
+    {"note": "2026-11-21収集分（GR-0279〜GR-0283、PAT-0107）は2026-11-17繰り越し分より新しいため今回は対象外。2026-11-22・23収集分（GR-0279台以降、GR-0287・GR-0288等）も同様に未着手。2026-11-14〜11-20の収集分についても、本セッションでの深い分析完了はWB-0089・WB-0090・GR-0259（2026-11-20処理分、PR #27・未マージ）までで、それ以降の新規収集分の完了状況は未確認。"}
+  ],
+  "excluded_out_of_scope": [],
+  "gaps": [
+    "Dropbox正本昇格は未実施（ユーザー確認待ち、絶対にしないことに該当するため）。",
+    "Notion更新は、2026-11-13頃から断続的に発生しているコンテナ/ワーカー再起動により本セッションでも複数回中断され、GR-0260ページへのinsert_content呼び出しが2回とも再起動で破棄された（page_last_edited_atの変化なしで確認）。GR-0260・GR-0261・GR-0262の3件ともnotion_status=pendingのまま。",
+    "候補の繰り越しバックログは、intake-reservations.json全体で1353件に達しており、1日2〜3件のペースでは到底追いつかない規模まで拡大している。直近でもGR-0263（2026-11-17収集）が未着手のまま残っており、2026-11-21〜23の新規収集（GR-0279〜GR-0288等）もすべて未着手。",
+    "PR #18〜#27（2026-10-10〜2026-11-20作成分）はすべてオープンのままマージされておらず、本パイプラインの成果物が1ヶ月以上レビューされていない可能性が高い。"
+  ],
+  "cbs_production_sync": "not_applied_user_confirmation_required"
+}
