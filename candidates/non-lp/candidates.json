@@ -1,19 +1,19 @@
 {
-  "collectedAt": "2026-11-23T16:25:59.127Z",
-  "candidateCount": 8,
+  "collectedAt": "2026-11-25T00:10:40.690Z",
+  "candidateCount": 11,
   "candidates": [
     {
-      "id": "WB-0095",
+      "id": "WB-0097",
       "status": "candidate",
       "mediaType": "Web",
       "sourceKey": "web",
-      "title": "VUILD – Architecture",
-      "captureUrl": "https://vuild.co.jp/",
-      "imageUrl": "https://sankoudesign.com/wp-content/uploads/vuild02_t-400x350.jpg",
+      "title": "mei-sis | 名刺の注文が子ども食堂のサポートに",
+      "captureUrl": "https://mei-sis.com/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/meisis_t-400x350.jpg",
       "landingUrl": null,
       "sourceName": "SANKOU!",
       "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/vuild/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/meisis/",
       "library": "Web_Research_Library",
       "notionEnv": "NOTION_WEB_DATA_SOURCE_ID",
       "saveImage": true,
@@ -23,23 +23,23 @@
       "metadata": {
         "width": 400,
         "height": 350,
-        "alt": "VUILD – Architecture, Democratized.",
+        "alt": "mei-sis | 名刺の注文が子ども食堂のサポートに",
         "subtype": null,
         "subtypeLabel": null
       }
     },
     {
-      "id": "WB-0096",
+      "id": "WB-0098",
       "status": "candidate",
       "mediaType": "Web",
       "sourceKey": "web",
-      "title": "SHIBUYA PARCO / 百軒店",
-      "captureUrl": "https://shibuya.parco.jp/page/hyakkendana-dommune/",
-      "imageUrl": "https://sankoudesign.com/wp-content/uploads/hyakkendanadommune_t-400x350.jpg",
+      "title": "ナイトウェル | 柚子の香りに、心ほどける夜。香りとうるおいに包まれる冬のナイトケア | IGNIS 公式サイト",
+      "captureUrl": "https://albion.co.jp/site/p/ignis_pickup_nightwell_202611.aspx",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/ignisnightwell_t-400x350.jpg",
       "landingUrl": null,
       "sourceName": "SANKOU!",
       "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/shibuyaparco-hyakkendanadommune/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/ignis-nightwell/",
       "library": "Web_Research_Library",
       "notionEnv": "NOTION_WEB_DATA_SOURCE_ID",
       "saveImage": true,
@@ -49,23 +49,23 @@
       "metadata": {
         "width": 400,
         "height": 350,
-        "alt": "SHIBUYA PARCO / 百軒店",
+        "alt": "ナイトウェル | 柚子の香りに、心ほどける夜。香りとうるおいに包まれる冬のナイトケア | IGNIS 公式サイト",
         "subtype": null,
         "subtypeLabel": null
       }
     },
     {
-      "id": "GR-0289",
+      "id": "GR-0293",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "筋力アップ教室の案内チラシ",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fb096eae45280965d8e7737b27f445e7b%2Fb096eae45280965d8e7737b27f445e7b-400.webp&w=828&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fb096eae45280965d8e7737b27f445e7b%2Fb096eae45280965d8e7737b27f445e7b-400.webp&w=828&q=75",
+      "title": "ジム体験キャンペーンチラシ",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F8a585ae2425dd8a4964d779788225e11%2F8a585ae2425dd8a4964d779788225e11-400.webp&w=828&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F8a585ae2425dd8a4964d779788225e11%2F8a585ae2425dd8a4964d779788225e11-400.webp&w=828&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/flyer",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29433",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29331",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -75,23 +75,49 @@
       "metadata": {
         "width": 283,
         "height": 400,
-        "alt": "筋力アップ教室の案内チラシ\n, チラシ, チラシテンプレート",
+        "alt": "ジム体験キャンペーンチラシ, チラシ, チラシテンプレート",
         "subtype": "flyer",
         "subtypeLabel": "チラシ・フライヤー"
       }
     },
     {
-      "id": "GR-0290",
+      "id": "GR-0294",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "シックなお取り寄せ向けの秋食バナー",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fa0bb20b80ecc6cb3b380a34f20f0ad5e%2Fa0bb20b80ecc6cb3b380a34f20f0ad5e-400.webp&w=640&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fa0bb20b80ecc6cb3b380a34f20f0ad5e%2Fa0bb20b80ecc6cb3b380a34f20f0ad5e-400.webp&w=640&q=75",
+      "title": "ナチュラルな色合いの雑貨イベントのチラシ",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1f67f18de8e00676558b6f940d4008fd%2F1f67f18de8e00676558b6f940d4008fd-400.webp&w=828&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1f67f18de8e00676558b6f940d4008fd%2F1f67f18de8e00676558b6f940d4008fd-400.webp&w=828&q=75",
+      "landingUrl": null,
+      "sourceName": "デザインAC",
+      "sourceUrl": "https://www.design-ac.net/free-template/poster",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-26459",
+      "library": "Graphic_Research_Library",
+      "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
+      "saveImage": true,
+      "materialId": null,
+      "authorProfileUrl": null,
+      "searchTerm": null,
+      "metadata": {
+        "width": 283,
+        "height": 400,
+        "alt": "ナチュラルな色合いの雑貨イベントのチラシ, ポスター, ポスターテンプレート",
+        "subtype": "poster",
+        "subtypeLabel": "ポスター"
+      }
+    },
+    {
+      "id": "GR-0295",
+      "status": "candidate",
+      "mediaType": "Graphic",
+      "sourceKey": "graphic",
+      "title": "皆で食べる写真が入ったシンプルな秋食向けバナー",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F093c629b1658fa1179b1e8153e04b0f6%2F093c629b1658fa1179b1e8153e04b0f6-400.webp&w=640&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F093c629b1658fa1179b1e8153e04b0f6%2F093c629b1658fa1179b1e8153e04b0f6-400.webp&w=640&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/banner",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-16293",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-16292",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -100,24 +126,24 @@
       "searchTerm": null,
       "metadata": {
         "width": 156,
-        "height": 103,
-        "alt": "シックなお取り寄せ向けの秋食バナー, バナー, バナーテンプレート",
+        "height": 104,
+        "alt": "皆で食べる写真が入ったシンプルな秋食向けバナー, バナー, バナーテンプレート",
         "subtype": "social",
         "subtypeLabel": "SNS投稿・Web広告"
       }
     },
     {
-      "id": "GR-0291",
+      "id": "GR-0296",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "クールな横長ビジネス名刺デザイン",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Ff30b56fb880a0663e53396bf5eeb52ee%2Ff30b56fb880a0663e53396bf5eeb52ee-400.webp&w=384&q=75",
-      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Ff30b56fb880a0663e53396bf5eeb52ee%2Ff30b56fb880a0663e53396bf5eeb52ee-400.webp&w=384&q=75",
+      "title": "落ち着いた横長ビジネス名刺デザイン",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fb81d739269e23ed5b9aad8384d4e28b7%2Fb81d739269e23ed5b9aad8384d4e28b7-400.webp&w=384&q=75",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fb81d739269e23ed5b9aad8384d4e28b7%2Fb81d739269e23ed5b9aad8384d4e28b7-400.webp&w=384&q=75",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/business-card",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29010",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29009",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -127,23 +153,23 @@
       "metadata": {
         "width": 384,
         "height": 232,
-        "alt": "クールな横長ビジネス名刺デザイン\n, 名刺, 名刺テンプレート",
+        "alt": "落ち着いた横長ビジネス名刺デザイン\n, 名刺, 名刺テンプレート",
         "subtype": "business-card",
         "subtypeLabel": "名刺・ショップカード"
       }
     },
     {
-      "id": "GR-0292",
+      "id": "GR-0297",
       "status": "candidate",
       "mediaType": "Graphic",
       "sourceKey": "graphic",
-      "title": "六角形のロゴ",
-      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/212d167577e957be7fe568f2e0e210cc/212d167577e957be7fe568f2e0e210cc-400.webp",
-      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/212d167577e957be7fe568f2e0e210cc/212d167577e957be7fe568f2e0e210cc-400.webp",
+      "title": "六角形の組み合わせのロゴ",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/4952b198adc5996c628ff64732aaea3a/4952b198adc5996c628ff64732aaea3a-400.webp",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/4952b198adc5996c628ff64732aaea3a/4952b198adc5996c628ff64732aaea3a-400.webp",
       "landingUrl": null,
       "sourceName": "デザインAC",
       "sourceUrl": "https://www.design-ac.net/free-template/logo",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3096",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3092",
       "library": "Graphic_Research_Library",
       "notionEnv": "NOTION_GRAPHIC_DATA_SOURCE_ID",
       "saveImage": true,
@@ -153,27 +179,79 @@
       "metadata": {
         "width": 400,
         "height": 400,
-        "alt": "六角形のロゴ, ロゴ, ロゴテンプレート",
+        "alt": "六角形の組み合わせのロゴ, ロゴ, ロゴテンプレート",
         "subtype": "logo",
         "subtypeLabel": "ロゴ・VI/CI"
       }
     },
     {
-      "id": "PAT-0110",
+      "id": "PT-0184",
+      "status": "candidate",
+      "mediaType": "Parts",
+      "sourceKey": "parts",
+      "title": "プロカン",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/11/procan_00017.png",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/11/procan_00017.png",
+      "landingUrl": null,
+      "sourceName": "Parts.",
+      "sourceUrl": "https://partsdesign.net/",
+      "sourceDetailUrl": "https://partsdesign.net/archives/7343",
+      "library": "Parts_Research_Library",
+      "notionEnv": "NOTION_PARTS_DATA_SOURCE_ID",
+      "saveImage": true,
+      "materialId": null,
+      "authorProfileUrl": null,
+      "searchTerm": null,
+      "metadata": {
+        "width": 1553,
+        "height": 357,
+        "alt": null,
+        "subtype": null,
+        "subtypeLabel": null
+      }
+    },
+    {
+      "id": "CV-0061",
+      "status": "candidate",
+      "mediaType": "Canva",
+      "sourceKey": "canva",
+      "title": "Green Checkered Star Happy Holidays Christmas Greeting Instagram Post",
+      "captureUrl": "https://template.canva.com/EAHR2_gWARo/1/0/320w-G46iO0z5jdk.jpg",
+      "imageUrl": "https://template.canva.com/EAHR2_gWARo/1/0/320w-G46iO0z5jdk.jpg",
+      "landingUrl": null,
+      "sourceName": "Canva",
+      "sourceUrl": "https://www.canva.com/templates/search/instagram-posts/",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAHR2_gWARo-green-checkered-star-happy-holidays-christmas-greeting-instagram-post/",
+      "library": "Canva_Research_Library",
+      "notionEnv": "NOTION_CANVA_DATA_SOURCE_ID",
+      "saveImage": true,
+      "materialId": null,
+      "authorProfileUrl": null,
+      "searchTerm": null,
+      "metadata": {
+        "width": 299,
+        "height": 374,
+        "alt": "Green Checkered Star Happy Holidays Christmas Greeting Instagram Post",
+        "subtype": null,
+        "subtypeLabel": null
+      }
+    },
+    {
+      "id": "PAT-0112",
       "status": "candidate",
       "mediaType": "Pattern",
       "sourceKey": "patterns",
-      "title": "筋力アップ教室の案内チラシに見る文字組みと視線誘導",
-      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fb096eae45280965d8e7737b27f445e7b%2Fb096eae45280965d8e7737b27f445e7b-400.webp&w=828&q=75",
+      "title": "ジム体験キャンペーンチラシに見る文字組みと視線誘導",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F8a585ae2425dd8a4964d779788225e11%2F8a585ae2425dd8a4964d779788225e11-400.webp&w=828&q=75",
       "imageUrl": null,
       "landingUrl": null,
       "sourceName": "日次収集から抽出（デザインAC）",
       "sourceUrl": "https://www.design-ac.net/free-template/flyer",
-      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29433",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29331",
       "library": "Pattern_Research_Library",
       "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
       "saveImage": false,
-      "materialId": "PAT-0110",
+      "materialId": "PAT-0112",
       "authorProfileUrl": null,
       "searchTerm": null,
       "metadata": {
@@ -186,39 +264,40 @@
         "rule": "主見出し・補足・画像・行動情報のサイズ差と配置から、最初に読ませる情報を明確にする。",
         "cautions": "素材そのものではなく、情報階層と余白の考え方だけを転用する。",
         "evidenceIds": [
-          "GR-0289"
+          "GR-0293"
         ]
       }
     },
     {
-      "id": "PAT-0111",
+      "id": "PAT-0113",
       "status": "candidate",
       "mediaType": "Pattern",
       "sourceKey": "patterns",
-      "title": "VUILD – Architectureに見るPC・SPの情報優先順位",
-      "captureUrl": "https://vuild.co.jp/",
+      "title": "Green Checkered Star Happy Holidays Christmas Greeting Instagram Postに見る反復可能なテンプレート構造",
+      "captureUrl": "https://template.canva.com/EAHR2_gWARo/1/0/320w-G46iO0z5jdk.jpg",
       "imageUrl": null,
       "landingUrl": null,
-      "sourceName": "日次収集から抽出（SANKOU!）",
-      "sourceUrl": "https://sankoudesign.com/",
-      "sourceDetailUrl": "https://sankoudesign.com/web/vuild/",
+      "sourceName": "日次収集から抽出（Canva）",
+      "sourceUrl": "https://www.canva.com/templates/search/instagram-posts/",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAHR2_gWARo-green-checkered-star-happy-holidays-christmas-greeting-instagram-post/",
       "library": "Pattern_Research_Library",
       "notionEnv": "NOTION_PATTERNS_DATA_SOURCE_ID",
       "saveImage": false,
-      "materialId": "PAT-0111",
+      "materialId": "PAT-0113",
       "authorProfileUrl": null,
       "searchTerm": null,
       "metadata": {
         "collectionMode": "derived_pattern",
-        "patternType": "情報設計",
+        "patternType": "反復",
         "targetMedia": [
-          "Web",
-          "LP"
+          "Canva",
+          "Graphic",
+          "SNS"
         ],
-        "rule": "画面幅が変わっても、主見出し・主要ベネフィット・CTAの意味と順序を維持する。",
-        "cautions": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
+        "rule": "画像枠・見出し・補足情報の位置を固定し、素材を差し替えても情報階層が崩れない構造を作る。",
+        "cautions": "テンプレートの複製ではなく、グリッド・余白・主従関係のみを参考にする。",
         "evidenceIds": [
-          "WB-0095"
+          "CV-0061"
         ]
       }
     }
@@ -254,12 +333,6 @@
     {
       "key": "graphic",
       "sourceName": "デザインAC",
-      "status": "failed",
-      "error": "page.evaluate: Execution context was destroyed, most likely because of a navigation"
-    },
-    {
-      "key": "graphic",
-      "sourceName": "デザインAC",
       "status": "collected",
       "found": 70,
       "accepted": 1,
@@ -279,7 +352,16 @@
       "key": "graphic",
       "sourceName": "デザインAC",
       "status": "collected",
-      "found": 69,
+      "found": 70,
+      "accepted": 1,
+      "reason": null,
+      "diagnostic": null
+    },
+    {
+      "key": "graphic",
+      "sourceName": "デザインAC",
+      "status": "collected",
+      "found": 65,
       "accepted": 1,
       "reason": null,
       "diagnostic": null
@@ -289,7 +371,7 @@
       "sourceName": "Parts.",
       "status": "collected",
       "found": 180,
-      "accepted": 0,
+      "accepted": 1,
       "reason": null,
       "diagnostic": null
     },
@@ -297,8 +379,8 @@
       "key": "canva",
       "sourceName": "Canva",
       "status": "collected",
-      "found": 40,
-      "accepted": 0,
+      "found": 39,
+      "accepted": 1,
       "reason": null,
       "diagnostic": null
     },
@@ -310,9 +392,9 @@
       "accepted": 0,
       "reason": "取得元がGitHubホストランナーからのアクセスを拒否しました。ローカル収集ルートで再実行してください。",
       "diagnostic": {
-        "finalUrl": "https://www.ac-illust.com/main/search_result.php?word=%E9%A3%B2%E9%A3%9F",
+        "finalUrl": "https://www.ac-illust.com/main/search_result.php?word=EC+%E7%89%A9%E8%B2%A9",
         "title": "ERROR: The request could not be satisfied",
-        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: 1lHGTUntzfgIdgg3MjNSHpG1OZH4mUyXRzNs_vXs9muPz",
+        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: DxCmnjHKUP3E5_XHqIbhhGYshbS62EKxHLwfComUhpA2t",
         "figureCount": 0,
         "imageCount": 0
       }
@@ -325,9 +407,9 @@
       "accepted": 0,
       "reason": "取得元がGitHubホストランナーからのアクセスを拒否しました。ローカル収集ルートで再実行してください。",
       "diagnostic": {
-        "finalUrl": "https://www.photo-ac.com/main/search?q=%E9%A3%B2%E9%A3%9F",
+        "finalUrl": "https://www.photo-ac.com/main/search?q=EC+%E7%89%A9%E8%B2%A9",
         "title": "ERROR: The request could not be satisfied",
-        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: wBpasp5UXzcYm-Z2p6lJv64IR9T-bCQsuIz60jJR9Apyb",
+        "bodyPreview": "403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: qzHnXmSRuFqFWLJuQAv2FNEL-sD90-1c0-H6vFHvgolVt",
         "figureCount": 0,
         "imageCount": 0
       }

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T16:25:59.127Z",
+  "updatedAt": "2026-11-25T00:10:40.690Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -1281,6 +1281,18 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-15T16:22:42.400Z"
+    },
+    {
+      "id": "CV-0061",
+      "title": "Green Checkered Star Happy Holidays Christmas Greeting Instagram Post",
+      "mediaType": "Canva",
+      "sourceName": "Canva",
+      "captureUrl": "https://template.canva.com/EAHR2_gWARo/1/0/320w-G46iO0z5jdk.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAHR2_gWARo-green-checkered-star-happy-holidays-christmas-greeting-instagram-post/",
+      "imageUrl": "https://template.canva.com/EAHR2_gWARo/1/0/320w-G46iO0z5jdk.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-25T00:10:40.690Z"
     },
     {
       "id": "GR-0001",
@@ -4775,6 +4787,66 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-23T16:25:59.127Z"
+    },
+    {
+      "id": "GR-0293",
+      "title": "ジム体験キャンペーンチラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F8a585ae2425dd8a4964d779788225e11%2F8a585ae2425dd8a4964d779788225e11-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29331",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F8a585ae2425dd8a4964d779788225e11%2F8a585ae2425dd8a4964d779788225e11-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-25T00:10:40.690Z"
+    },
+    {
+      "id": "GR-0294",
+      "title": "ナチュラルな色合いの雑貨イベントのチラシ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1f67f18de8e00676558b6f940d4008fd%2F1f67f18de8e00676558b6f940d4008fd-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/poster-template-26459",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F1f67f18de8e00676558b6f940d4008fd%2F1f67f18de8e00676558b6f940d4008fd-400.webp&w=828&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-25T00:10:40.690Z"
+    },
+    {
+      "id": "GR-0295",
+      "title": "皆で食べる写真が入ったシンプルな秋食向けバナー",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F093c629b1658fa1179b1e8153e04b0f6%2F093c629b1658fa1179b1e8153e04b0f6-400.webp&w=640&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/banner-template-16292",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2F093c629b1658fa1179b1e8153e04b0f6%2F093c629b1658fa1179b1e8153e04b0f6-400.webp&w=640&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-25T00:10:40.690Z"
+    },
+    {
+      "id": "GR-0296",
+      "title": "落ち着いた横長ビジネス名刺デザイン",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fb81d739269e23ed5b9aad8384d4e28b7%2Fb81d739269e23ed5b9aad8384d4e28b7-400.webp&w=384&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/business-card-template-29009",
+      "imageUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fthumbnails%2Ftemplates%2Fb81d739269e23ed5b9aad8384d4e28b7%2Fb81d739269e23ed5b9aad8384d4e28b7-400.webp&w=384&q=75",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-25T00:10:40.690Z"
+    },
+    {
+      "id": "GR-0297",
+      "title": "六角形の組み合わせのロゴ",
+      "mediaType": "Graphic",
+      "sourceName": "デザインAC",
+      "captureUrl": "https://data.design-ac.net/data/thumbnails/templates/4952b198adc5996c628ff64732aaea3a/4952b198adc5996c628ff64732aaea3a-400.webp",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/logo-template-3092",
+      "imageUrl": "https://data.design-ac.net/data/thumbnails/templates/4952b198adc5996c628ff64732aaea3a/4952b198adc5996c628ff64732aaea3a-400.webp",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-25T00:10:40.690Z"
     },
     {
       "id": "ILAC-0001",
@@ -9470,6 +9542,30 @@
       "materialId": "PAT-0111",
       "authorProfileUrl": null,
       "reservedAt": "2026-11-23T16:25:59.127Z"
+    },
+    {
+      "id": "PAT-0112",
+      "title": "ジム体験キャンペーンチラシに見る文字組みと視線誘導",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（デザインAC）",
+      "captureUrl": "https://www.design-ac.net/_next/image?url=https%3A%2F%2Fdata.design-ac.net%2Fdata%2Fcreator%2Fthumbnails%2Ftemplates%2F8a585ae2425dd8a4964d779788225e11%2F8a585ae2425dd8a4964d779788225e11-400.webp&w=828&q=75",
+      "sourceDetailUrl": "https://www.design-ac.net/free-template/flyer-template-29331",
+      "imageUrl": null,
+      "materialId": "PAT-0112",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-25T00:10:40.690Z"
+    },
+    {
+      "id": "PAT-0113",
+      "title": "Green Checkered Star Happy Holidays Christmas Greeting Instagram Postに見る反復可能なテンプレート構造",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（Canva）",
+      "captureUrl": "https://template.canva.com/EAHR2_gWARo/1/0/320w-G46iO0z5jdk.jpg",
+      "sourceDetailUrl": "https://www.canva.com/templates/EAHR2_gWARo-green-checkered-star-happy-holidays-christmas-greeting-instagram-post/",
+      "imageUrl": null,
+      "materialId": "PAT-0113",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-25T00:10:40.690Z"
     },
     {
       "id": "PHAC-0001",
@@ -15057,6 +15153,18 @@
       "reservedAt": "2026-11-16T16:23:34.864Z"
     },
     {
+      "id": "PT-0184",
+      "title": "プロカン",
+      "mediaType": "Parts",
+      "sourceName": "Parts.",
+      "captureUrl": "https://partsdesign.net/wp-content/uploads/2026/11/procan_00017.png",
+      "sourceDetailUrl": "https://partsdesign.net/archives/7343",
+      "imageUrl": "https://partsdesign.net/wp-content/uploads/2026/11/procan_00017.png",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-25T00:10:40.690Z"
+    },
+    {
       "id": "WB-0001",
       "title": "コーディング代行･外注サービスならくまWeb",
       "mediaType": "Web",
@@ -16203,6 +16311,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-23T16:25:59.127Z"
+    },
+    {
+      "id": "WB-0097",
+      "title": "mei-sis | 名刺の注文が子ども食堂のサポートに",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://mei-sis.com/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/meisis/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/meisis_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-25T00:10:40.690Z"
+    },
+    {
+      "id": "WB-0098",
+      "title": "ナイトウェル | 柚子の香りに、心ほどける夜。香りとうるおいに包まれる冬のナイトケア | IGNIS 公式サイト",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://albion.co.jp/site/p/ignis_pickup_nightwell_202611.aspx",
+      "sourceDetailUrl": "https://sankoudesign.com/web/ignis-nightwell/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/ignisnightwell_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-25T00:10:40.690Z"
     }
   ]
 }
