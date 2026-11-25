@@ -17496,6 +17496,52 @@
       "reviewPoints": "テンプレートの複製ではなく、グリッド・余白・主従関係のみを参考にする。",
       "deepDivePriority": "中",
       "generatedAt": "2026-11-25T00:11:27.215Z"
+    },
+    "WB-0099": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。小学校高学年･ジュニアのカラフルな冬スタイルに | KIDS Athletic Style WINTER | THE NORTH FACE。",
+      "selectionReason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+      "visualSummary": "寒色・青紫系。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-25T21:05:30.840Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/WB-0099-kids-athletic-style-winter-the-north-face/03_Implementation_Blueprint/WB-0099_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/WB-0099-kids-athletic-style-winter-the-north-face/03_Implementation_Blueprint/WB-0099_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/WB-0099-kids-athletic-style-winter-the-north-face/03_Implementation_Blueprint/WB-0099_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/WB-0099-kids-athletic-style-winter-the-north-face/03_Implementation_Blueprint/WB-0099_elementor_implementation_guide.md",
+        "sections": 8,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "WB-0100": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "SANKOU!から収集したWeb参考。vibely。",
+      "selectionReason": "SANKOU!の新規候補として重複確認を通過。PC/SPのファーストビューとページ構成を比較し、情報優先順位とレスポンシブ差を学べるため。",
+      "visualSummary": "明色・白基調。400×350の掲載画像を基準に確認。",
+      "usefulPoints": "PC/SPのFV・全体構成を比較可能",
+      "reviewPoints": "コピー・権利・正確な訴求分類は週末レビューで確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-25T21:05:30.856Z",
+      "implementationBlueprint": {
+        "pngPath": "screenshots/non-lp-candidates/WB-0100-vibely/03_Implementation_Blueprint/WB-0100_elementor_brain_implementation.png",
+        "notionPath": "screenshots/non-lp-candidates/WB-0100-vibely/03_Implementation_Blueprint/WB-0100_elementor_brain_implementation_notion.jpg",
+        "jsonPath": "screenshots/non-lp-candidates/WB-0100-vibely/03_Implementation_Blueprint/WB-0100_elementor_implementation.json",
+        "markdownPath": "screenshots/non-lp-candidates/WB-0100-vibely/03_Implementation_Blueprint/WB-0100_elementor_implementation_guide.md",
+        "sections": 8,
+        "status": "generated_daily_provisional"
+      }
+    },
+    "PAT-0114": {
+      "analysisMode": "automated_daily_first_pass",
+      "overview": "日次収集から抽出（SANKOU!）から収集したPattern参考。小学校高学年･ジュニアのカラフルな冬スタイルに | KIDS Athletic Style WINTER | THE NORTH FACEに見るPC・SPの情報優先順位。",
+      "selectionReason": "日次収集から抽出（SANKOU!）の新規候補として重複確認を通過。複数の収集事例に共通するデザイン原則を、再利用可能な判断基準として残すため。",
+      "visualSummary": "メタ情報のみ。?×?の掲載画像を基準に確認。",
+      "usefulPoints": "画面幅が変わっても、主見出し・主要ベネフィット・CTAの意味と順序を維持する。 根拠候補: WB-0099",
+      "reviewPoints": "単なる縮小ではなく、折り返し・CTA位置・画像トリミングを実画像で確認する。",
+      "deepDivePriority": "中",
+      "generatedAt": "2026-11-25T21:05:30.856Z"
     }
   }
 }
