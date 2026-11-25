@@ -24,11 +24,11 @@
   },
   "web": {
     "prefix": "WB",
-    "existingMax": 98,
-    "nextNumber": 99,
+    "existingMax": 100,
+    "nextNumber": 101,
     "digits": 4,
     "sourceOfTruth": "Notion 03｜Webサイトリサーチライブラリー",
-    "lastReservationAt": "2026-11-25T00:10:40.691Z"
+    "lastReservationAt": "2026-11-25T21:04:35.038Z"
   },
   "graphic": {
     "prefix": "GR",
@@ -48,11 +48,11 @@
   },
   "patterns": {
     "prefix": "PAT",
-    "existingMax": 113,
-    "nextNumber": 114,
+    "existingMax": 114,
+    "nextNumber": 115,
     "digits": 4,
     "sourceOfTruth": "Notion 06｜デザイン原則・パターン",
-    "lastReservationAt": "2026-11-25T00:10:40.690Z"
+    "lastReservationAt": "2026-11-25T21:04:35.037Z"
   },
   "canva": {
     "prefix": "CV",

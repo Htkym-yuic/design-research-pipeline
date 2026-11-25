@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T00:10:40.690Z",
+  "updatedAt": "2026-11-25T21:04:35.037Z",
   "reserved": [
     {
       "id": "BN-0001",
@@ -9568,6 +9568,18 @@
       "reservedAt": "2026-11-25T00:10:40.690Z"
     },
     {
+      "id": "PAT-0114",
+      "title": "小学校高学年･ジュニアのカラフルな冬スタイルに | KIDS Athletic Style WINTER | THE NORTH FACEに見るPC・SPの情報優先順位",
+      "mediaType": "Pattern",
+      "sourceName": "日次収集から抽出（SANKOU!）",
+      "captureUrl": "https://www.thenorthface.jp/special/athletic_style/winter2026/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/thenorthface-athleticwinter2026/",
+      "imageUrl": null,
+      "materialId": "PAT-0114",
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-25T21:04:35.037Z"
+    },
+    {
       "id": "PHAC-0001",
       "title": "ノートパソコンを持つおしゃれな女性",
       "mediaType": "Asset",
@@ -16335,6 +16347,30 @@
       "materialId": null,
       "authorProfileUrl": null,
       "reservedAt": "2026-11-25T00:10:40.690Z"
+    },
+    {
+      "id": "WB-0099",
+      "title": "小学校高学年･ジュニアのカラフルな冬スタイルに | KIDS Athletic Style WINTER | THE NORTH FACE",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://www.thenorthface.jp/special/athletic_style/winter2026/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/thenorthface-athleticwinter2026/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/thenorthfaceathleticwinter2026_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-25T21:04:35.037Z"
+    },
+    {
+      "id": "WB-0100",
+      "title": "vibely",
+      "mediaType": "Web",
+      "sourceName": "SANKOU!",
+      "captureUrl": "https://vibely.site/",
+      "sourceDetailUrl": "https://sankoudesign.com/web/vibely/",
+      "imageUrl": "https://sankoudesign.com/wp-content/uploads/vibely_t-400x350.jpg",
+      "materialId": null,
+      "authorProfileUrl": null,
+      "reservedAt": "2026-11-25T21:04:35.037Z"
     }
   ]
 }
