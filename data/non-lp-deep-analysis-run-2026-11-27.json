@@ -1,0 +1,54 @@
+{
+  "schema_version": "drs-weekly-run-1.0",
+  "run_date": "2026-11-27",
+  "run_mode": "daily_auto_deep_analysis_loop",
+  "scope_note": "日次自動実行（深い分析ループ）。GR-0263（2026-11-17収集・繰り越し最後の1件）、GR-0264・GR-0265（2026-11-18収集分の最も予約日時が古い2件）の3件（いずれもグラフィック）を処理した。",
+  "selected": [
+    {
+      "id": "GR-0263",
+      "title": "丸みを帯びた抽象的なロゴ",
+      "analysis": "completed",
+      "markdown_validation_warnings": 0,
+      "knowledge_json": "validated",
+      "score": 70,
+      "notion": "pending",
+      "cbs_production_sync": "not_applied"
+    },
+    {
+      "id": "GR-0264",
+      "title": "忘年会のご案内",
+      "analysis": "completed",
+      "markdown_validation_warnings": 0,
+      "knowledge_json": "validated",
+      "score": 80,
+      "notion": "pending",
+      "cbs_production_sync": "not_applied"
+    },
+    {
+      "id": "GR-0265",
+      "title": "地区の市民運動会案内",
+      "analysis": "completed",
+      "markdown_validation_warnings": 0,
+      "knowledge_json": "validated",
+      "score": 76,
+      "notion": "pending",
+      "cbs_production_sync": "not_applied"
+    }
+  ],
+  "deferred_to_next_run": [
+    {"id": "GR-0266", "title": "黄色ベースの華やかな秋食向けバナー", "reservedAt": "2026-11-18T16:26:18.551Z"},
+    {"id": "GR-0267", "title": "おしゃれな横長ビジネス名刺デザイン", "reservedAt": "2026-11-18T16:26:18.551Z"},
+    {"id": "GR-0268", "title": "紫とピンクの正方形のロゴ", "reservedAt": "2026-11-18T16:26:18.551Z"},
+    {"id": "WB-0091", "title": "Life Edit Renovation | MAJOR SCALE × PICNIC MOTEL", "reservedAt": "2026-11-18T16:26:18.551Z"},
+    {"id": "WB-0092", "title": "Tokyo Sky Corridor（KK線）『Roof Park Art Fes 2026』", "reservedAt": "2026-11-18T16:26:18.551Z"},
+    {"note": "2026-11-19以降の収集分（GR-0269〜、WB-0093〜等）、2026-11-21〜27の新規収集分（GR-0279〜GR-0292等）もすべて未着手。2026-11-02〜11-16の間に収集された、まだ深い分析が完了していない可能性のあるGR/WB/PT/BN候補の全量は本セッションでは未監査。"}
+  ],
+  "excluded_out_of_scope": [],
+  "gaps": [
+    "Dropbox正本昇格は未実施（ユーザー確認待ち、絶対にしないことに該当するため）。",
+    "Notion更新は、2026-11-13頃から断続的に発生しているコンテナ/ワーカー再起動により本セッションでも複数回（2026-11-22〜26にかけて計5回以上）中断され、GR-0260・GR-0261ページへのinsert_content呼び出しがすべて再起動で破棄された（page_last_edited_atの変化なしで確認）。今回のGR-0263・GR-0264・GR-0265については、環境の不安定さを踏まえ今回のサイクルでは試行を見送った。GR-0260〜GR-0265の6件すべてnotion_status=pendingのまま。",
+    "候補の繰り越しバックログは、intake-reservations.json全体で1353件超（2026-09-27収集分から存在）に達しており、1日2〜3件のペースでは到底追いつかない規模まで拡大している。本セッションでは2026-11-17〜19収集分の範囲内でのみ処理を継続しており、それ以前（2026-09-27〜2026-11-16）の収集分でまだ未分析のものが残っている可能性を排除できていない。",
+    "PR #18〜#28（2026-10-10〜2026-11-24作成分）はすべてオープンのままマージされておらず、本パイプラインの成果物が1ヶ月半以上レビューされていない可能性が高い。"
+  ],
+  "cbs_production_sync": "not_applied_user_confirmation_required"
+}
