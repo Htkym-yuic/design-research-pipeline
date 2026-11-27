@@ -1,0 +1,30 @@
+{
+  "schema_version": "drs-deep-1.0",
+  "id": "GR-0264",
+  "mode": "analysis",
+  "selected_for_deep_analysis": true,
+  "selection_reason": "2026-11-18収集分の候補のうち予約日時が最も古く、情緒的コピーと実務情報ボックスの役割分担が明確な社内イベント案内チラシの優れた完成例として再利用価値が高いため選定した。",
+  "checks": {
+    "first_line": "Yes",
+    "chapters": "Yes",
+    "unit_headings": "Yes",
+    "unit_fields": "Yes",
+    "image_slots": "Yes",
+    "image_evidence": "Yes",
+    "candidate_parity": "Yes",
+    "rights": "Yes",
+    "unknowns": "Yes",
+    "sources": "Yes",
+    "run_record": "Yes",
+    "analysis_complete": "Yes"
+  },
+  "notion": {
+    "status": "pending",
+    "page_url": null
+  },
+  "dropbox": {
+    "status": "not_promoted_user_confirmation_required",
+    "path": "/design/Design_Research_Library/Graphic_Research_Library/99_Needs_Review/2026-11-19/daily-intake/GR-0264"
+  },
+  "cbs": "not_synced_user_approval_required"
+}

@@ -1,0 +1,134 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "GR-0265",
+  "media_type": "GR",
+  "title": "地区の市民運動会案内",
+  "source": {
+    "source_name": "デザインAC",
+    "source_detail_url": "https://www.design-ac.net/free-template/poster-template-26506",
+    "capture_url": "https://www.design-ac.net/free-template/poster-template-26506",
+    "official_url": "https://www.design-ac.net/free-template/poster-template-26506"
+  },
+  "analysis": {
+    "summary": "青空・太陽・砂地という屋外運動会を直感的に想起させる背景と、バブル調の「うんどうかい」見出しで明るく楽しいイベントの第一印象を作るポスター。紅白の旗を持つ子供キャラクター2人が紅組・白組対抗の構図を表現。日時・会場・回数・主催情報はすべてプレースホルダーのまま。",
+    "score": {
+      "visual": 17,
+      "clarity": 15,
+      "originality": 9,
+      "reusability": 17,
+      "learning": 11,
+      "evidence": 7,
+      "total": 76
+    },
+    "units": [
+      {
+        "name": "作品全体",
+        "role": "地域の運動会を告知し開催回数・日時・会場・主催団体を伝える",
+        "reuse": "回数バッジ＋バブル調見出し＋情報ボックス＋紅白旗キャラクターの縦型配置",
+        "evidence": "GR-0265_reference.pngの目視確認"
+      },
+      {
+        "name": "タイトル・見出し",
+        "role": "イベント種別を一語で確定する",
+        "reuse": "回数・地区名バッジ＋バブル調ひらがな見出しの組み合わせ",
+        "evidence": "GR-0265_reference.pngの目視確認"
+      },
+      {
+        "name": "本文・補足",
+        "role": "開催日時と会場を伝える",
+        "reuse": "項目名（小）＋値（大）の情報ボックス構成",
+        "evidence": "GR-0265_reference.pngの目視確認"
+      },
+      {
+        "name": "写真・イラスト",
+        "role": "参加対象（子供・家族）とイベントの雰囲気（紅白対抗）を視覚的に伝える",
+        "reuse": "紅白対抗を象徴する旗を持つ子供キャラクターの左右対称配置",
+        "evidence": "GR-0265_reference.pngの目視確認"
+      },
+      {
+        "name": "装飾・背景",
+        "role": "屋外・晴天・運動場という開催環境を直感的に伝える",
+        "reuse": "空（上部）＋地面（下部）の上下2分割による情景表現",
+        "evidence": "GR-0265_reference.pngの目視確認"
+      },
+      {
+        "name": "ロゴ・発行情報",
+        "role": "主催団体・協力団体を示す",
+        "reuse": "主催・協力を分けて明記する一行テキストフォーマット",
+        "evidence": "GR-0265_reference.pngの目視確認"
+      }
+    ]
+  },
+  "strengths": [
+    "背景だけで屋外運動会の季節感を演出",
+    "バブル調見出しで子供・家族層への親しみやすさを表現",
+    "紅白旗キャラクターで対抗戦の雰囲気を直感的に伝える"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "雨天時の対応が不明",
+      "evidence": "画像内に中止・延期基準の記載がない",
+      "fix": "「雨天時は翌日に順延」等を明記する",
+      "effect": "参加検討時の不安解消",
+      "metric": "問い合わせ件数"
+    },
+    {
+      "priority": "P1",
+      "issue": "参加費・持ち物の記載がない",
+      "evidence": "情報ボックスに日時・会場のみ",
+      "fix": "「参加費無料」「動きやすい服装でお越しください」等を追加する",
+      "effect": "参加準備の明確化",
+      "metric": "当日の準備不備件数"
+    },
+    {
+      "priority": "P2",
+      "issue": "対象年齢・参加条件が不明",
+      "evidence": "画像内に参加資格の記載がない",
+      "fix": "「地区在住の方ならどなたでも」等を明記する",
+      "effect": "参加対象の誤解防止",
+      "metric": "参加者属性の適合率"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "回数・地区名バッジ＋バブル調ひらがな見出しの組み合わせ",
+      "keep": "バッジ＋バブル調見出しの階層配置",
+      "replace": "具体的な回数・地区名・イベント名"
+    },
+    {
+      "id": "C02",
+      "name": "項目名（小）＋値（大）の情報ボックス構成",
+      "keep": "項目名・値の強弱構造",
+      "replace": "具体的な日時・会場名"
+    },
+    {
+      "id": "C03",
+      "name": "空（上部）＋地面（下部）の上下2分割による情景表現",
+      "keep": "上下2分割の背景構成",
+      "replace": "具体的な配色のトーン・装飾形状"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "「名前入れる地区」「名前入れる小学校」のプレースホルダー、具体的な日時・会場名、キャラクターの具体的な造形",
+    "reusable": "回数・地区名バッジ＋バブル調見出しの組み合わせ、情報ボックスの項目名・値の強弱構造、上下2分割の背景構成、紅白旗による対抗構図の演出手法"
+  },
+  "evidence": {
+    "files": [
+      "https://www.design-ac.net/free-template/poster-template-26506",
+      "GR-0265_reference.png"
+    ],
+    "unknowns": [
+      "enlarged_typography_capture_missing",
+      "content_detail_unverified",
+      "print_mockup_missing",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

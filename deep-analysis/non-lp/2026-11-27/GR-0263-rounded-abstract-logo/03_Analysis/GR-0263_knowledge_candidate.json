@@ -1,0 +1,134 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "GR-0263",
+  "media_type": "GR",
+  "title": "丸みを帯びた抽象的なロゴ",
+  "source": {
+    "source_name": "デザインAC",
+    "source_detail_url": "https://www.design-ac.net/free-template/logo-template-3017",
+    "capture_url": "https://www.design-ac.net/free-template/logo-template-3017",
+    "official_url": "https://www.design-ac.net/free-template/logo-template-3017"
+  },
+  "analysis": {
+    "summary": "2つの丸みを帯びた図形を重ね合わせ、青〜紫〜ティールのグラデーションで奥行きを演出する抽象ロゴマークのテンプレート。「COMPANY NAME」「Lorem Ipsum」はダミーテキストのままで、業種を限定しない汎用的な構成。",
+    "score": {
+      "visual": 16,
+      "clarity": 14,
+      "originality": 8,
+      "reusability": 17,
+      "learning": 9,
+      "evidence": 6,
+      "total": 70
+    },
+    "units": [
+      {
+        "name": "作品全体",
+        "role": "抽象ロゴマーク＋社名＋タグラインという汎用的な企業ロゴの基本構成を提示する",
+        "reuse": "重なり合う2図形のグラデーションマーク＋社名＋タグラインの垂直配置",
+        "evidence": "GR-0263_reference.pngの目視確認"
+      },
+      {
+        "name": "タイトル・見出し",
+        "role": "企業・ブランドの視覚的アイコンとして機能する",
+        "reuse": "2図形の重なり＋グラデーションによる奥行き表現",
+        "evidence": "GR-0263_reference.pngの目視確認"
+      },
+      {
+        "name": "本文・補足",
+        "role": "発行主体（社名）とタグラインを示す",
+        "reuse": "太字・色付きの社名＋細字・淡色のタグラインという二段テキスト構成",
+        "evidence": "GR-0263_reference.pngの目視確認"
+      },
+      {
+        "name": "写真・イラスト",
+        "role": "該当なし（写真・イラスト要素は使用されていない）",
+        "reuse": "幾何学図形のみでロゴを完結させる構成原則",
+        "evidence": "GR-0263_reference.pngの目視確認"
+      },
+      {
+        "name": "装飾・背景",
+        "role": "マークと文字要素を引き立てる土台となる",
+        "reuse": "マークのグラデーションと同系統・明度差のある単色背景",
+        "evidence": "GR-0263_reference.pngの目視確認"
+      },
+      {
+        "name": "ロゴ・発行情報",
+        "role": "ロゴデザインのプレゼンテーション形式を示す",
+        "reuse": "正方形フォーマットでのロゴ単体プレゼンテーション形式",
+        "evidence": "GR-0263_reference.pngの目視確認"
+      }
+    ]
+  },
+  "strengths": [
+    "グラデーションと図形の重なりでモダンな印象を作る",
+    "正方形フォーマットで汎用性が高い",
+    "社名とタグラインの文字階層が明確"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "タグラインがダミーテキストのまま",
+      "evidence": "「Lorem Ipsum」の表示",
+      "fix": "実際のタグライン文言を明記する",
+      "effect": "ブランドメッセージの明確化",
+      "metric": "ブランド認知調査"
+    },
+    {
+      "priority": "P1",
+      "issue": "業種を示唆する要素が一切ない",
+      "evidence": "幾何学図形のみで具象的モチーフがない",
+      "fix": "業種特有の形状的ヒントを微調整する",
+      "effect": "第一印象での業種理解促進",
+      "metric": "ロゴ単体での業種推測率"
+    },
+    {
+      "priority": "P2",
+      "issue": "単色背景でロゴの実使用イメージが限定的",
+      "evidence": "背景が単色のみ",
+      "fix": "白背景・ダーク背景等の複数バリエーションを並記する",
+      "effect": "実使用場面での適合性確認が容易になる",
+      "metric": "ロゴ発注時の修正依頼件数"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "2図形の重なり＋グラデーションによる奥行き表現",
+      "keep": "2図形の重なり構造＋グラデーションの階調",
+      "replace": "具体的な図形の形状・配色"
+    },
+    {
+      "id": "C02",
+      "name": "太字・色付きの社名＋細字・淡色のタグラインという二段テキスト構成",
+      "keep": "二段テキストのウェイト・色差階層",
+      "replace": "具体的な社名・タグライン文言"
+    },
+    {
+      "id": "C03",
+      "name": "マークのグラデーションと同系統・明度差のある単色背景",
+      "keep": "同系統配色＋明度差の原則",
+      "replace": "具体的な背景色のトーン"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "図形の正確な輪郭・比率・グラデーションの色相角度、「COMPANY NAME」「Lorem Ipsum」のダミーテキスト",
+    "reusable": "2図形の重なり＋グラデーションの奥行き表現、二段テキストの階層構造、同系統配色＋明度差の背景原則"
+  },
+  "evidence": {
+    "files": [
+      "https://www.design-ac.net/free-template/logo-template-3017",
+      "GR-0263_reference.png"
+    ],
+    "unknowns": [
+      "enlarged_typography_capture_missing",
+      "content_detail_unverified",
+      "print_mockup_missing",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}

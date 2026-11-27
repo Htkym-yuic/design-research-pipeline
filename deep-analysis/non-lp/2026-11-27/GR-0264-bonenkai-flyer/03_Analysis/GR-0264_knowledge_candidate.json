@@ -1,0 +1,134 @@
+{
+  "schema_version": "drs-non-lp-knowledge-1.0",
+  "id": "GR-0264",
+  "media_type": "GR",
+  "title": "忘年会のご案内",
+  "source": {
+    "source_name": "デザインAC",
+    "source_detail_url": "https://www.design-ac.net/free-template/flyer-template-32297",
+    "capture_url": "https://www.design-ac.net/free-template/flyer-template-32297",
+    "official_url": "https://www.design-ac.net/free-template/flyer-template-32297"
+  },
+  "analysis": {
+    "summary": "黄色背景と黒枠で親しみやすさを演出し、「忘年会」の最大見出しとビールを持つ猫キャラクターで社内イベントの楽しさを伝える案内チラシ。日時・会場・会費の実務情報を右下の情報ボックスに集約し、情緒的コピー領域と明確に分離している。",
+    "score": {
+      "visual": 17,
+      "clarity": 18,
+      "originality": 10,
+      "reusability": 18,
+      "learning": 11,
+      "evidence": 6,
+      "total": 80
+    },
+    "units": [
+      {
+        "name": "作品全体",
+        "role": "忘年会の開催を告知し日時・会場・会費を伝え参加意思表明を促す",
+        "reuse": "導入コピー＋見出し＋補足コピー＋キャラクター＋情報ボックス＋注意書きの6要素構成",
+        "evidence": "GR-0264_reference.pngの目視確認"
+      },
+      {
+        "name": "タイトル・見出し",
+        "role": "イベント種別を一語で確定する",
+        "reuse": "小見出し（文脈）＋最大サイズ見出し（イベント名）の組み合わせ",
+        "evidence": "GR-0264_reference.pngの目視確認"
+      },
+      {
+        "name": "本文・補足",
+        "role": "開催への労いの文脈と当日の過ごし方の期待感を伝える",
+        "reuse": "見出しを挟んだ労いコピー（導入）＋期待感コピー（補足）の二段構成",
+        "evidence": "GR-0264_reference.pngの目視確認"
+      },
+      {
+        "name": "写真・イラスト",
+        "role": "イベントの楽しい雰囲気を視覚的に演出する",
+        "reuse": "擬音語付きキャラクターイラストによる雰囲気演出",
+        "evidence": "GR-0264_reference.pngの目視確認"
+      },
+      {
+        "name": "装飾・背景",
+        "role": "親しみやすく明るい第一印象を作る",
+        "reuse": "黄色背景＋黒太枠の額縁構成",
+        "evidence": "GR-0264_reference.pngの目視確認"
+      },
+      {
+        "name": "ロゴ・発行情報",
+        "role": "日時・会場・会費という実務情報と参加連絡の期限を伝える",
+        "reuse": "項目名＋値の表形式による実務情報ボックス＋期限付き注意書きの組み合わせ",
+        "evidence": "GR-0264_reference.pngの目視確認"
+      }
+    ]
+  },
+  "strengths": [
+    "情緒的コピーと実務情報の役割分担が明確",
+    "キャラクターで親しみやすさを演出",
+    "参加連絡の期限を明記している"
+  ],
+  "improvements": [
+    {
+      "priority": "P0",
+      "issue": "支払い方法の記載がない",
+      "evidence": "情報ボックスに会費はあるが支払い方法の明記がない",
+      "fix": "「当日会場でお支払いください」等を追記する",
+      "effect": "当日の運営がスムーズになる",
+      "metric": "当日の精算トラブル件数"
+    },
+    {
+      "priority": "P1",
+      "issue": "幹事の連絡先が不明",
+      "evidence": "「幹事にお声掛けください」とあるが連絡先の明記がない",
+      "fix": "幹事名・内線番号を情報ボックスに追加する",
+      "effect": "参加連絡の確実性向上",
+      "metric": "参加連絡の回収率"
+    },
+    {
+      "priority": "P2",
+      "issue": "不参加者への対応が不明",
+      "evidence": "「来られる人は」のみで不参加時の扱いが不明",
+      "fix": "「不参加の場合は連絡不要です」等を一言添える",
+      "effect": "幹事への不要な問い合わせ削減",
+      "metric": "問い合わせ件数"
+    }
+  ],
+  "reusable_patterns": [
+    {
+      "id": "C01",
+      "name": "見出しを挟んだ労いコピー＋期待感コピーの二段構成",
+      "keep": "導入コピー・補足コピーの配置と役割分担",
+      "replace": "具体的なコピー文言"
+    },
+    {
+      "id": "C02",
+      "name": "擬音語付きキャラクターイラストによる雰囲気演出",
+      "keep": "キャラクター＋擬音語吹き出しの組み合わせ",
+      "replace": "具体的なキャラクター造形"
+    },
+    {
+      "id": "C03",
+      "name": "項目名＋値の表形式による実務情報ボックス＋期限付き注意書き",
+      "keep": "情報ボックスの表形式＋注意書きの配置",
+      "replace": "具体的な日時・会場・会費・期限"
+    }
+  ],
+  "rights": {
+    "status": "rights_unknown",
+    "excluded": "「○○ビアレストラン」の会場名、具体的な日時・会費・期限日、猫キャラクターの具体的な造形",
+    "reusable": "見出しを挟んだ労いコピー＋期待感コピーの二段構成、擬音語付きキャラクターイラストの演出手法、表形式の実務情報ボックス＋期限付き注意書き"
+  },
+  "evidence": {
+    "files": [
+      "https://www.design-ac.net/free-template/flyer-template-32297",
+      "GR-0264_reference.png"
+    ],
+    "unknowns": [
+      "enlarged_typography_capture_missing",
+      "content_detail_unverified",
+      "print_mockup_missing",
+      "asset_license_unverified"
+    ]
+  },
+  "cbs_sync": {
+    "status": "candidate_pending_user_approval",
+    "production_synced": false
+  }
+}
